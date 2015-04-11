@@ -1,0 +1,33 @@
+\usepackage{amsmath,amssymb}
+\usepackage{ifxetex,ifluatex}
+\newif\ifxetexorluatex
+\ifxetex
+  \xetexorluatextrue
+\else
+  \ifluatex
+    \xetexorluatextrue
+  \else
+    \xetexorluatexfalse
+  \fi
+\fi
+\ifxetexorluatex
+  \usepackage{fontspec}
+\else
+   \usepackage[T1]{fontenc}
+\fi
+\usepackage[normalem]{ulem}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp,lipsum,comment,tabularx,array}
+\usepackage[version=3]{mhchem}
+\includecomment{comment}
+\usepackage[per-mode = symbol]{siunitx}
+\DeclareSIUnit\curie{Ci}
+\DeclareSIUnit\molar{M}
+\setlength{\bibsep}{2pt}
+\raggedright
+\raggedbottom
+\setlength{\parindent}{.3in}
+\renewcommand\nomname{Abbreviations}
+\def\nompreamble{\addcontentsline{toc}{chapter}{\nomname}\markboth{\nomname}{\nomname}} 
+\let\nomenclOrig\nomenclature
+\renewcommand*{\nomenclature}[3][]{#2\nomenclOrig[#1]{#2}{#3}}

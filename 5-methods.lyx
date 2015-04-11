@@ -1,0 +1,226 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ucthesisLyx
+\options DoubleSpaced, ChapterTitleNewPage, LyXBibliographyStyle=UCThesisBibStyleUnsrt
+\use_default_options true
+\master thesis.lyx
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package auto
+\inputencoding ascii
+\fontencoding T1
+\font_roman Georgia
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format pdf5
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 2
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style 
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\branch childonly
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5in
+\topmargin 1.5in
+\rightmargin 1in
+\bottommargin 1.5in
+\secnumdepth 0
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Methods
+\end_layout
+
+\begin_layout Section
+Literature review
+\end_layout
+
+\begin_layout Standard
+The introduction section was based on review of all literature indexed by
+ PubMed.
+ Search expressions included `testosterone OR androgens`, `dexamethasone
+ OR prednisone OR prednisolone OR hydrocortisone OR cortisone OR triamcinolone
+ OR fludrocortisone`, `Cushing`, `ribosome OR polysome OR lysosome OR autophagos
+ome OR proteasome OR ligase OR cathepsin OR FOXO OR IGF1 OR calpain OR mTOR
+ OR AMPK OR Akt`and combinations thereof.
+ Relevant primary data were summarized.
+\end_layout
+
+\begin_layout Standard
+Literature plots were digitized with WebPlotDigitizer, a web application
+ created by Ankit Rohatgi
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ankitrohatgi2015webplotdigitizer"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Animal studies
+\end_layout
+
+\begin_layout Standard
+Male, 6-8 week old (young adult), C57Bl/6J mice were used, using protocols
+ approved by the Institutional Animal Care and Use Committee of the Boston
+ University School of Medicine.
+ Mice were acclimated for 3-7 days between delivery from The Jackson Laboratorie
+s through experimental interventions.
+ Mice were injected subcutaneously every morning for 1-7 days with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{200}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ corn-oil based solution, including 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{14}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ (?) ethanol, which delivered .
+\end_layout
+
+\begin_layout Section
+Cell culture studies
+\end_layout
+
+\begin_layout Section
+Immunofluorescence microscopy
+\end_layout
+
+\begin_layout Section
+In vivo studies
+\end_layout
+
+\begin_layout Section
+Metabolic measurements at organism level
+\end_layout
+
+\begin_layout Section
+Measurement of muscle protein synthesis and degradation
+\end_layout
+
+\begin_layout Section
+Enzymatic assays
+\end_layout
+
+\begin_layout Section
+Gene expression
+\end_layout
+
+\begin_layout Section
+Immunoblot
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch childonly
+status collapsed
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "thesis-refs"
+options "UCThesisBibStyleUnsrt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
