@@ -97,7 +97,7 @@ Biological premises
 \end_layout
 
 \begin_layout Section
-Normal skeletal muscle
+Skeletal muscle histology
 \end_layout
 
 \begin_layout Standard
@@ -116,7 +116,7 @@ key "wang2003whole-body"
  Owing to the ability to measure individual muscles in any experiment, the
  scientific community has not been under pressure to develop accurate techniques
  that measure total skeletal muscle mass in mice.
- A proxy measure of murine skeletal muscle mass, lean body mass is an impressive
+ A proxy measure of murine skeletal muscle mass, lean body mass averaged
  81% of total body weight in adult males (detailed in results section).
 \end_layout
 
@@ -147,7 +147,7 @@ The tendons are dense connective tissue structure, which extend into the
  In turn, epimysium emits connective septing structures termed perimysium,
  splitting muscles into subunits termed fascicles.
  At an even lower level, a thin, sparse connective structure called endomysium
- coats each polynucleate cell (termed myofiber).
+ coats each polynucleate, elongated cell (termed myofiber).
  Connective tissue supports the terminal branches of the nervous, circulatory
  and lymphatic systems.
  In addition, connective tissue inside the muscle provides mechanical anchoring
@@ -189,6 +189,23 @@ s, with novel collagen synthesis possibly complicating protein synthesis
 \end_layout
 
 \begin_layout Standard
+In addition to the contractile myofiber, a population of mononculeate cells
+ called satellite cells is identifiable based on histological features.
+ Satellite cells are nearly devoid of cytosol, sitting in close proximity
+ to the fiber, under the external lamina.
+ They can be identified by markers such as Pax7 and, on the membrane, CD34
+ (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scharner2011muscle"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
 Each myofiber is a syncytium that has formed, and grows, by fusing with
  surrounding mononucleate cells called myoblasts.
  Myoblasts are cells derived from a population of proliferating satellite
@@ -199,17 +216,6 @@ Each myofiber is a syncytium that has formed, and grows, by fusing with
 \begin_inset CommandInset citation
 LatexCommand citep
 key "yin2013satellite"
-
-\end_inset
-
-).
- Satellite cells are cells nearly devoid of cytosol, sitting in close proximity
- to the fiber, under the external lamina.
- They can be identified by markers such as Pax7 and, on the membrane, CD34
- (reviewed in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "scharner2011muscle"
 
 \end_inset
 
@@ -245,6 +251,9 @@ key "lowe1999stretch-induced"
 \end_inset
 
 .
+ These example of amitotic hypertrophy demonstrate that the number of nuclei
+ and the pace of transcription are not always limiting factors in muscle
+ hypertrophy.
 \end_layout
 
 \begin_layout Standard
@@ -292,7 +301,8 @@ key "lukaski1981relationship"
 
 \end_inset
 
-, it may be impossible to discern muscle catabolism through 3MH measurement.
+, 3MH measurement may lack sensitivity when used as a indicator for muscle
+ catabolic rate.
  On one hand, increased catabolism is expected to cause increased 3MH output,
  but on the other, an atrophic muscle has less 3MH to release.
 \end_layout
@@ -308,7 +318,7 @@ During experiments that perturb muscle mass equilibrium, the level of the
 \end_layout
 
 \begin_layout Section
-Muscle formation during physiological conditions
+Physiological muscle formation
 \end_layout
 
 \begin_layout Standard
@@ -379,7 +389,6 @@ description "T-box"
 \end_inset
 
 ) 1.
- 
 \end_layout
 
 \begin_layout Standard
@@ -490,6 +499,10 @@ key "schuelke2004myostatin"
  in adults.
 \end_layout
 
+\begin_layout Section
+Physiological muscle hypertrophy
+\end_layout
+
 \begin_layout Standard
 In adulthood, most limb and trunk satellite cells are Pax7
 \begin_inset script superscript
@@ -526,9 +539,14 @@ key "relaix2006pax3"
 \end_inset
 
 .
- The most common scenario for muscle growth and remodeling is probably the
- response to exhausting physical activity, including exercise.
- In healthy volunteers, the acute response to exercise includes increased
+ The most common physiological scenario for muscle growth and remodeling
+ is probably the response to exhausting physical activity, including exercise.
+ Experimentally, muscle growth is induced by muscle overload, or muscle
+ unloading and reloading, which may be conceived as forms of aerobic exercise.
+\end_layout
+
+\begin_layout Standard
+In healthy volunteers, the acute response to exercise includes increased
  increased intramuscular expression of MRFs MyoD and myogenin, and increased
  circulating IGF-I and IL-6
 \begin_inset CommandInset citation
@@ -676,7 +694,7 @@ Generation and regeneration of muscle in common scenarios, such as development
 \end_layout
 
 \begin_layout Section
-Normal muscle metabolism
+Physiological muscle metabolism
 \end_layout
 
 \begin_layout Standard
@@ -1134,7 +1152,7 @@ Control of muscle mass through innervation
 \end_layout
 
 \begin_layout Section
-Regulation of muscle mass via the immune system
+Interactions between muscle and the immune system
 \end_layout
 
 \begin_layout Section
