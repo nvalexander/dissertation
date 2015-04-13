@@ -189,8 +189,9 @@ s, with novel collagen synthesis possibly complicating protein synthesis
 \end_layout
 
 \begin_layout Standard
-In addition to the contractile myofiber, a population of mononculeate cells
- called satellite cells is identifiable based on histological features.
+The myofiber is the histological base unit of contractile tissue.
+ Another muscle-specific population of cells comprises the mononuclear,
+ proliferating cells, called satellite cells.
  Satellite cells are nearly devoid of cytosol, sitting in close proximity
  to the fiber, under the external lamina.
  They can be identified by markers such as Pax7 and, on the membrane, CD34
@@ -202,14 +203,25 @@ key "scharner2011muscle"
 \end_inset
 
 ).
- 
 \end_layout
 
 \begin_layout Standard
-Each myofiber is a syncytium that has formed, and grows, by fusing with
- surrounding mononucleate cells called myoblasts.
- Myoblasts are cells derived from a population of proliferating satellite
+Each myofiber is a syncytium, that forms and grows by fusion with neighboring
  cells.
+ The only way to acquire nuclei to the myofibers is fusion with surrounding
+ proliferative mononucleate cells.
+ Cells that have the ability to undergo mitosis and to fuse with myofibers
+ are typically designated myoblasts.
+ In vivo, myoblasts are derived from a subset of satellite cells.
+ Experimentally, α7 integrin is an effective marker for selecting proliferative
+ precursors from muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "blanco-bose2001purification"
+
+\end_inset
+
+, although its sensitivity and specificity are yet to be established.
  Alternate sources of nuclei in the myofiber are subject of ongoing research,
  but their relative importance is expected to be minor at best (reviewed
  in 
@@ -221,7 +233,7 @@ key "yin2013satellite"
 
 ).
  A transplant of seven satellite cells from an adult mouse is capable of
- yielding more than a hundred multinucleate myotubes, thus demonstrating
+ yielding more than a hundred multinucleate myofibers, thus demonstrating
  former's ability to regenerate muscle
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -230,8 +242,25 @@ key "collins2005stem"
 \end_inset
 
 .
- The proliferative niche is expected to play an important role in muscle
- atrophy and recovery.
+ The transformation of quiescent satellite cells to proliferating myoblast
+ is regulated by the interplay of growth factors, external lamina, and contact
+ with myofibers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bischoff1986proliferation"
+
+\end_inset
+
+.
+ In vivo, myofiber nuclei are typically peripheral, while in vitro incomplete
+ models often yield elongated, contractile cells, with central nuclei, akin
+ to regenerating fibers.
+ The latter are typically termed myotubes.
+\end_layout
+
+\begin_layout Standard
+The proliferative niche can play an important role in muscle atrophy and
+ recovery.
  However, muscle hypertrophy may occur without cell divisions.
  For example, the muscles of mice receiving clenbuterol and of rats undergoing
  eccentric training gain 20-30% muscle mass without apparent DNA changes
@@ -259,9 +288,9 @@ key "lowe1999stretch-induced"
 \begin_layout Standard
 A large majority of the myofiber cytosol is the contractile apparatus, in
  the shape of bundles of protein filaments termed myofibrils.
- Within microfibrils, myosin and actin filaments alternate, held together
+ Within myofibrils, myosin and actin filaments alternate, held together
  by multiprotein complexes containing titin.
- Myofibril proteins are about two thirds of the total myotube protein
+ Myofibril proteins are about two thirds of the total myofiber protein
 \begin_inset CommandInset citation
 LatexCommand citep
 key "waterlow1978protein"
@@ -293,7 +322,7 @@ ted.
 \end_layout
 
 \begin_layout Standard
-Similar issues govern the use of 3MH as a marker for muscle protein catabolism.
+Similar issues govern the use of 3MH as a marker for myofiber protein catabolism.
  Given that the main correlate of urinary 3MH is muscle mass
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -309,7 +338,7 @@ key "lukaski1981relationship"
 
 \begin_layout Standard
 During experiments that perturb muscle mass equilibrium, the level of the
- regulators, of typical housekeeping proteins, and of non-myotube proteins
+ regulators, of typical housekeeping proteins, and of non-myofiber proteins
  may fluctuate in manners that convolve their specific modulation with overall
  muscle protein kinetics.
  Investigation of recovery from muscle loss is burdened by the fact that
@@ -346,7 +375,7 @@ description "muscle regulatory factor"
 ).
  In animal models, the cells in epaxial and hypaxial muscle initiate the
  formation of trunk and limb muscles.
- In mice, the limb muscle early progenitors express myogenic factor (
+ The limb muscle early progenitors express myogenic factor (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Myf"
@@ -362,25 +391,18 @@ key "daston1996pax-3,francetic2011skeletal"
 \end_inset
 
 .
- In mice, the function of Myf5 may be supplanted by the myogenic regulatory
- factor (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Mrf"
-description "myogenic regulatory factor"
-
-\end_inset
-
-) 4
+ Myf5 is a strong inductor of the muscle transcriptional program and phenotype,
+ with the ability to convert embryonic fibroblasts to myosin-containing
+ syncitia
 \begin_inset CommandInset citation
 LatexCommand citep
-key "sambasivan2009distinct"
+key "braun1989novel"
 
 \end_inset
 
 .
- At the same time, cranial muscle formation is coordinated in a different
- manner, through the transcription factor T-box (
+ Cranial muscle formation is coordinated in a partly different manner, through
+ the transcription factors T-box (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Tbx"
@@ -388,16 +410,28 @@ description "T-box"
 
 \end_inset
 
-) 1.
-\end_layout
+) 1 and paired-like homeodomain (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Pitx"
+description "paired-like homeodomain"
 
-\begin_layout Standard
-Once this early stage is completed, later fetal muscle progenitors converge
+\end_inset
+
+) 2
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sambasivan2009distinct"
+
+\end_inset
+
+.
+ Once this early stage is completed, later fetal muscle progenitors converge
  to a phenotype remarkable for the expression of the MRF MyoD, due to stimulatio
 n by the transcription factor Pax7
 \begin_inset CommandInset citation
 LatexCommand citep
-key "tajbakhsh1997redefining,oustanina2004pax7"
+key "tajbakhsh1997redefining"
 
 \end_inset
 
@@ -420,11 +454,48 @@ description "Online Mendelian Inheritance in Man"
 
 ) database, there is no reported case of human mutation of Myf5 or MyoD,
  further supporting the idea of duplicate function.
- Such redundancy between MRFs complicates their study.
 \end_layout
 
 \begin_layout Standard
-The most likely source of adult satellite cells is this set of fetal Pax3
+By itself, expression of Myf5 and MyoD does not induce muscle attributes.
+ However, this specification stage is soon followed by expression of another
+ MRF, myogenin, which synchronizes with expression of muscle-specific enzymes
+ and contractile proteins
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bergstrom2001molecular"
+
+\end_inset
+
+.
+ Myogenin also stimulates the synthesis of the MRF myogenic regulatory factor
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Mrf"
+description "myogenic regulatory factor"
+
+\end_inset
+
+) 4
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hasty1993muscle"
+
+\end_inset
+
+.
+ All the four MRFs share structural features, and at times, are juxtaposed
+ in the genome.
+ 
+\begin_inset space ~
+\end_inset
+
+Such redundancy between MRFs complicates their study.
+\end_layout
+
+\begin_layout Standard
+The most likely source of adult satellite cells is a subset of fetal Pax3
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -453,14 +524,9 @@ key "dellavalle2011pericytes,labarge2002biological"
 \end_inset
 
 .
- The scenario in which slow-rate muscle changes are induced indirectly,
- by modulating an extramuscular pool of stem cells, cannot be excluded.
- If this were the case, the aforementioned experiments that use irradiated
- limbs to deplete local dividing cells become less informative.
-\end_layout
-
-\begin_layout Standard
-Immediately after birth, the number of satellite cells is much higher than
+ In contrast, neonate and infantile muscle combines features of the fetal
+ and the adult muscle.
+ Immediately after birth, the number of satellite cells is much higher than
  in the adult, with a one magnitude order drops between birth and 10 years
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -470,8 +536,6 @@ key "verdijk2014satellite"
 
 .
  This decay carries on throughout the life time at slower rate.
- It is believed that a higher number of satellite cells in juvenile muscle
- improves its growth rate.
  Perinatal Pax7 knockout is disabling, while the adult conditional knockout
  does not exhibit pathological traits
 \begin_inset CommandInset citation
@@ -480,8 +544,12 @@ key "lepper2009adult"
 
 \end_inset
 
-.
- The few reports of viable human mutations in the myostatin gene concern
+, suggesting that muscle maintenance in the adult does not rely on the same
+ mechanism as juvenile muscle growth.
+\end_layout
+
+\begin_layout Standard
+The few reports of viable human mutations in the myostatin gene concern
  newborns with unusual unusually large muscles, due to loss of function
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -490,13 +558,42 @@ key "schuelke2004myostatin"
 \end_inset
 
 .
- There are no documented constitutively active mutations in the human moystatin
+ There are no documented constitutively active mutations in the human myostatin
  gene.
- In the absence of animal models, it is hard to predict whether myostatin
- has a permissive or a vital role in neonate muscle formation.
+ Experimental myostatin perturbations in chicken embryos alter the population
+ of muscle precursor cells
+\begin_inset CommandInset citation
+LatexCommand citep
+key "manceau2008myostatin"
+
+\end_inset
+
+.
+ In mice, differences between myostatin-null and wild type develop by the
+ second week of embryogenesis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "matsakas2010altered"
+
+\end_inset
+
+.
+ Nevertheless, myostatin defects appear to cause ampler changes in muscle
+ mass after birth
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lin2002myostatin,schuelke2004myostatin"
+
+\end_inset
+
+.
+ The relative importance of myostatin in embryo muscle development is to
+ be determined.
  Overall, muscle formation in children appears different, and should be
- more susceptible to modulation via satellite cells, than muscle restoration
- in adults.
+ more susceptible to modulation via mitotic mechanisms, compared to muscle
+ restoration in adults.
+ Effect of GC is likely to differ qualitatively between juvenile and adult
+ muscle.
 \end_layout
 
 \begin_layout Section
@@ -583,7 +680,7 @@ key "snijders2014acute,schiffer2011mstn"
 
 .
  In the long term, exercise increases fiber CSA, density of satellite cells
- and the number of myotube nuclei, while the level of intramuscular MyoD,
+ and the number of myofiber nuclei, while the level of intramuscular MyoD,
  IGF-I, myostatin slowly return to normal
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -671,8 +768,8 @@ key "olguin2004pax-7"
 \end_inset
 
 .
- Preliminary evidence suggest undifferentiated C2C12 cells do not express
- Pax3 either
+ Preliminary evidence suggest these myoblast-like cells do not express Pax3
+ either
 \begin_inset CommandInset citation
 LatexCommand citep
 key "epstein1995pax3"
@@ -680,17 +777,16 @@ key "epstein1995pax3"
 \end_inset
 
 .
- Therefore, C2C12 is an incomplete model of muscle development.
+ Therefore, the C2C12 line are an incomplete model of muscle accretion through
+ proliferative means.
 \end_layout
 
 \begin_layout Standard
 Generation and regeneration of muscle in common scenarios, such as development
  and adaptation, remain an object of study, due to their complexity.
- Concurring redundancy forestall attempts to envisage a common pattern of
- muscle formation.
- In fact, variability in the importance of the immune cells, of MRFs and
- of IGF-I may be so ample that practically no shared mechanism of regeneration
- exists.
+ Variable importance of the immune cells, of MRFs and of IGF-I, and concurring
+ redundancy forestall attempts to envisage a common pattern of muscle hypertroph
+y.
 \end_layout
 
 \begin_layout Section
