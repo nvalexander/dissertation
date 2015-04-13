@@ -549,18 +549,7 @@ key "lepper2009adult"
 \end_layout
 
 \begin_layout Standard
-The few reports of viable human mutations in the myostatin gene concern
- newborns with unusual unusually large muscles, due to loss of function
-\begin_inset CommandInset citation
-LatexCommand citep
-key "schuelke2004myostatin"
-
-\end_inset
-
-.
- There are no documented constitutively active mutations in the human myostatin
- gene.
- Experimental myostatin perturbations in chicken embryos alter the population
+Experimental myostatin perturbations in chicken embryos alter the population
  of muscle precursor cells
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -587,6 +576,17 @@ key "lin2002myostatin,schuelke2004myostatin"
 \end_inset
 
 .
+ The few reports of viable human mutations in the myostatin gene concern
+ newborns with unusual unusually large muscles, due to loss of function
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schuelke2004myostatin"
+
+\end_inset
+
+.
+ There are no documented constitutively active mutations in the human myostatin
+ gene.
  The relative importance of myostatin in embryo muscle development is to
  be determined.
  Overall, muscle formation in children appears different, and should be
