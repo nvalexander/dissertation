@@ -347,7 +347,7 @@ During experiments that perturb muscle mass equilibrium, the level of the
 \end_layout
 
 \begin_layout Section
-Physiological muscle formation
+Prenatal and juvenile muscle development
 \end_layout
 
 \begin_layout Standard
@@ -418,14 +418,14 @@ description "paired-like homeodomain"
 
 \end_inset
 
-) 2
+) (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "sambasivan2009distinct"
+key "noden2005relations"
 
 \end_inset
 
-.
+).
  Once this early stage is completed, later fetal muscle progenitors converge
  to a phenotype remarkable for the expression of the MRF MyoD, due to stimulatio
 n by the transcription factor Pax7
@@ -454,10 +454,7 @@ description "Online Mendelian Inheritance in Man"
 
 ) database, there is no reported case of human mutation of Myf5 or MyoD,
  further supporting the idea of duplicate function.
-\end_layout
-
-\begin_layout Standard
-By itself, expression of Myf5 and MyoD does not induce muscle attributes.
+ Neither Myf5, nor MyoD induce muscle attributes.
  However, this specification stage is soon followed by expression of another
  MRF, myogenin, which synchronizes with expression of muscle-specific enzymes
  and contractile proteins
@@ -485,13 +482,105 @@ key "hasty1993muscle"
 \end_inset
 
 .
- All the four MRFs share structural features, and at times, are juxtaposed
- in the genome.
- 
-\begin_inset space ~
+ All the four MRFs share structural features, and some are juxtaposed in
+ the genome.
+ Such redundancy between MRFs complicates their study.
+\end_layout
+
+\begin_layout Standard
+In chick embryos, overexpression of IGF-I induces a rapid increase in the
+ ratio of myoblast to myofiber nuclei, while fiber density is unchanged
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mitchell2002insulin-like"
+
 \end_inset
 
-Such redundancy between MRFs complicates their study.
+.
+ In addition to the pro-proliferative effect, IGF-I stimulates protein anabolism
+ in prenatal muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shen2003protein"
+
+\end_inset
+
+.
+ It is unlikely that increases in protein accretion at the time when body
+ weight is much smaller will provide lasting effects on muscle mass.
+\end_layout
+
+\begin_layout Standard
+In mice, phenotypic differences between myostatin-null and wild type develop
+ by the second week of embryogenesis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "matsakas2010altered"
+
+\end_inset
+
+.
+ Experimental myostatin perturbations in chicken embryos alter the population
+ of muscle precursor cells
+\begin_inset CommandInset citation
+LatexCommand citep
+key "manceau2008myostatin"
+
+\end_inset
+
+.
+ The few reports of viable human mutations in the myostatin gene concern
+ newborns with unusual unusually large muscles, due to loss of function
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schuelke2004myostatin"
+
+\end_inset
+
+.
+ Nevertheless, myostatin defects appear to cause ampler changes in muscle
+ mass after birth
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lin2002myostatin,schuelke2004myostatin"
+
+\end_inset
+
+.
+ The relative importance of myostatin in embryo muscle development is to
+ be determined.
+\end_layout
+
+\begin_layout Standard
+Immediately after birth, the number of satellite cells is much higher than
+ in the adult, with a one magnitude order drops between birth and 10 years
+\begin_inset CommandInset citation
+LatexCommand citep
+key "verdijk2014satellite"
+
+\end_inset
+
+.
+ This decay carries on throughout the life time at slower rate.
+ Perinatal Pax7 knockout reduces muscle ability to regenerate, while its
+ genetic depletion in utero or at adulthood does not exhibit pathological
+ traits
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lepper2009adult"
+
+\end_inset
+
+, suggesting that juvenile muscle growth is distinct from muscle development
+ at other ages.
+ Overall, muscle formation in children appears qualitatively different from
+ adult muscle hypertrophy and regeneration, and should be more susceptible
+ to modulation via mitotic mechanisms.
+ Accordingly, the effect of GC on muscle differs between juvenile and adult.
+\end_layout
+
+\begin_layout Section
+Adult muscle development and hypertrophy
 \end_layout
 
 \begin_layout Standard
@@ -524,84 +613,7 @@ key "dellavalle2011pericytes,labarge2002biological"
 \end_inset
 
 .
- In contrast, neonate and infantile muscle combines features of the fetal
- and the adult muscle.
- Immediately after birth, the number of satellite cells is much higher than
- in the adult, with a one magnitude order drops between birth and 10 years
-\begin_inset CommandInset citation
-LatexCommand citep
-key "verdijk2014satellite"
-
-\end_inset
-
-.
- This decay carries on throughout the life time at slower rate.
- Perinatal Pax7 knockout is disabling, while the adult conditional knockout
- does not exhibit pathological traits
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lepper2009adult"
-
-\end_inset
-
-, suggesting that muscle maintenance in the adult does not rely on the same
- mechanism as juvenile muscle growth.
-\end_layout
-
-\begin_layout Standard
-Experimental myostatin perturbations in chicken embryos alter the population
- of muscle precursor cells
-\begin_inset CommandInset citation
-LatexCommand citep
-key "manceau2008myostatin"
-
-\end_inset
-
-.
- In mice, differences between myostatin-null and wild type develop by the
- second week of embryogenesis
-\begin_inset CommandInset citation
-LatexCommand citep
-key "matsakas2010altered"
-
-\end_inset
-
-.
- Nevertheless, myostatin defects appear to cause ampler changes in muscle
- mass after birth
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lin2002myostatin,schuelke2004myostatin"
-
-\end_inset
-
-.
- The few reports of viable human mutations in the myostatin gene concern
- newborns with unusual unusually large muscles, due to loss of function
-\begin_inset CommandInset citation
-LatexCommand citep
-key "schuelke2004myostatin"
-
-\end_inset
-
-.
- There are no documented constitutively active mutations in the human myostatin
- gene.
- The relative importance of myostatin in embryo muscle development is to
- be determined.
- Overall, muscle formation in children appears different, and should be
- more susceptible to modulation via mitotic mechanisms, compared to muscle
- restoration in adults.
- Effect of GC is likely to differ qualitatively between juvenile and adult
- muscle.
-\end_layout
-
-\begin_layout Section
-Physiological muscle hypertrophy
-\end_layout
-
-\begin_layout Standard
-In adulthood, most limb and trunk satellite cells are Pax7
+ In adulthood, most limb and trunk satellite cells are Pax7
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -636,14 +648,59 @@ key "relaix2006pax3"
 \end_inset
 
 .
- The most common physiological scenario for muscle growth and remodeling
- is probably the response to exhausting physical activity, including exercise.
- Experimentally, muscle growth is induced by muscle overload, or muscle
- unloading and reloading, which may be conceived as forms of aerobic exercise.
+ After the age of 20, nuclei in human muscle maintain an almost constant
+ length of telomeres, indicating that few new nuclei are made by mitosis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "decary1997replicative"
+
+\end_inset
+
+.
+ Moreover, the proportion of satellite cells with proliferating abilities
+ is decreasing with age, as more and more of them approach the Hayflick
+ limit
+\begin_inset CommandInset citation
+LatexCommand citep
+key "renault2000skeletal"
+
+\end_inset
+
+.
+ A gradual change shifts muscle from a mitotic to a postmitotic profile,
+ with muscle growth achieved more and more by increase in cell size.
+ While the typical adult is more commonly undergoing loss of muscle after
+ the age of 30
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ref needed
+\end_layout
+
+\end_inset
+
+, the muscle is adept at growing and remodeling under two common circumstances,
+ exercise and injury.
 \end_layout
 
 \begin_layout Standard
-In healthy volunteers, the acute response to exercise includes increased
+Humans achieve muscle mass growth following exercise, although some forms
+ of exercise are more suitable at increasing strength or resistance that
+ mass per se
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ref needed
+\end_layout
+
+\end_inset
+
+.
+ In animals, muscle growth is induced by muscle overload, or muscle unloading
+ and reloading, which may be conceived as forms of aerobic exercise.
+ In healthy volunteers, the acute response to exercise includes increased
  increased intramuscular expression of MRFs MyoD and myogenin, and increased
  circulating IGF-I and IL-6
 \begin_inset CommandInset citation
@@ -679,7 +736,7 @@ key "snijders2014acute,schiffer2011mstn"
 \end_inset
 
 .
- In the long term, exercise increases fiber CSA, density of satellite cells
+ In the long term, exercise increases fiber CSA, density of satellite cells,
  and the number of myofiber nuclei, while the level of intramuscular MyoD,
  IGF-I, myostatin slowly return to normal
 \begin_inset CommandInset citation
@@ -689,6 +746,8 @@ key "hanssen2013effect"
 \end_inset
 
 .
+ Taken together, these molecular findings indicate that post-exercise growth
+ is in part due to hyperplasia, and in part due to hypertrophy.
 \end_layout
 
 \begin_layout Standard
@@ -803,9 +862,19 @@ key "berg2002each,wasserman2009four"
 \end_inset
 
 ).
- After normal feeding, muscle builds polysaccharides reserves, in part because
- it can synthesize and deposit the largest glycogen stores in the body,
- but also because it cannot release glucose.
+ In humans, up to 90% of the glucose absorbed after a meal is removed from
+ circulation by the skeletal muscles
+\begin_inset CommandInset citation
+LatexCommand cite
+key "defronzo1981effect,katz1983splanchnic"
+
+\end_inset
+
+, meaning that muscles have a paramount role in the development of insulin
+ resistance and eventually diabetes mellitus.After normal feeding, muscle
+ builds polysaccharides reserves, in part because it can synthesize and
+ deposit the largest glycogen stores in the body, but also because it cannot
+ release glucose.
  
 \begin_inset Note Note
 status open
@@ -1512,6 +1581,10 @@ IGF-I role in muscle homeostasis
 
 \begin_layout Standard
 IGF-IEa isoform
+\end_layout
+
+\begin_layout Standard
+IGF-I expression is GH-independent before the age of 6 months (PMID: 11726733).
 \end_layout
 
 \begin_layout Standard
