@@ -280,9 +280,9 @@ key "lowe1999stretch-induced"
 \end_inset
 
 .
- These example of amitotic hypertrophy demonstrate that the number of nuclei
- and the pace of transcription are not always limiting factors in muscle
- hypertrophy.
+ These example of amitotic hypertrophy demonstrate that, in some circumstances,
+ the number of nuclei and the pace of transcription are limiting factors
+ in muscle growth.
 \end_layout
 
 \begin_layout Standard
@@ -347,15 +347,29 @@ During experiments that perturb muscle mass equilibrium, the level of the
 \end_layout
 
 \begin_layout Section
-Prenatal and juvenile muscle development
+Mitosis-dependent muscle development
 \end_layout
 
 \begin_layout Standard
-There are similarities and differences between de novo muscle formation
- seen before birth and the accretion of adult muscle.
- Early in utero, the mesoderm, which is the source of muscle progenitor
- cells, undergoes segmentation and differentiation to form somites, dermomyotome
-s, and eventually myotomes (reviewed in 
+Around puberty, muscle growth is associated with a massive shift of nuclei
+ from the satellite cells to the myofibers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "neal2012satellite"
+
+\end_inset
+
+.
+ Even earlier, de novo muscle development is remarkable for its accretion
+ of new nuclei to the myofiber.
+ Pre-adulthood muscle growth appears reliant on hyperplasia, and cell proliferat
+ion regulators are likely crucial in determination of muscle mass.
+\end_layout
+
+\begin_layout Standard
+In utero, the mesoderm, which is the source of muscle progenitor cells,
+ undergoes segmentation and differentiation to form somites, dermomyotomes,
+ and eventually myotomes (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "yusuf2012myogenesis"
@@ -577,275 +591,6 @@ key "lepper2009adult"
  adult muscle hypertrophy and regeneration, and should be more susceptible
  to modulation via mitotic mechanisms.
  Accordingly, the effect of GC on muscle differs between juvenile and adult.
-\end_layout
-
-\begin_layout Section
-Adult muscle development and hypertrophy
-\end_layout
-
-\begin_layout Standard
-The most likely source of adult satellite cells is a subset of fetal Pax3
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
-Pax7
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- cells.
- Some cells, such as bone marrow stem cells and pericytes, have the ability
- to fuse with myotubes, and possibly contribute to the muscle stem cell
- population
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dellavalle2011pericytes,labarge2002biological"
-
-\end_inset
-
-.
- In adulthood, most limb and trunk satellite cells are Pax7
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
-, while head satellite cells are often Pax3
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
-Pax7
-\begin_inset script superscript
-
-\begin_layout Plain Layout
--
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "relaix2006pax3"
-
-\end_inset
-
-.
- After the age of 20, nuclei in human muscle maintain an almost constant
- length of telomeres, indicating that few new nuclei are made by mitosis
-\begin_inset CommandInset citation
-LatexCommand citep
-key "decary1997replicative"
-
-\end_inset
-
-.
- Moreover, the proportion of satellite cells with proliferating abilities
- is decreasing with age, as more and more of them approach the Hayflick
- limit
-\begin_inset CommandInset citation
-LatexCommand citep
-key "renault2000skeletal"
-
-\end_inset
-
-.
- A gradual change shifts muscle from a mitotic to a postmitotic profile,
- with muscle growth achieved more and more by increase in cell size.
- While the typical adult is more commonly undergoing loss of muscle after
- the age of 30
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ref needed
-\end_layout
-
-\end_inset
-
-, the muscle is adept at growing and remodeling under two common circumstances,
- exercise and injury.
-\end_layout
-
-\begin_layout Standard
-Humans achieve muscle mass growth following exercise, although some forms
- of exercise are more suitable at increasing strength or resistance that
- mass per se
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ref needed
-\end_layout
-
-\end_inset
-
-.
- In animals, muscle growth is induced by muscle overload, or muscle unloading
- and reloading, which may be conceived as forms of aerobic exercise.
- In healthy volunteers, the acute response to exercise includes increased
- increased intramuscular expression of MRFs MyoD and myogenin, and increased
- circulating IGF-I and IL-6
-\begin_inset CommandInset citation
-LatexCommand citep
-key "grubb2014igf-1,ullum1994bicycle,bickel2005time"
-
-\end_inset
-
-.
- These signals are associated with increased proliferation of satellite
- cells and recruitment of neutrophils to the muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fielding1993acute,snijders2014acute"
-
-\end_inset
-
-.
- In the acute phase, the satellite cells colocalize with IGF-I
-\begin_inset CommandInset citation
-LatexCommand citep
-key "grubb2014igf-1"
-
-\end_inset
-
-.
- Interestingly, the negative muscle regulator myostatin is not correlating
- with the phenotype, that is, it is not decreased by acute exercise
-\begin_inset CommandInset citation
-LatexCommand citep
-key "snijders2014acute,schiffer2011mstn"
-
-\end_inset
-
-.
- In the long term, exercise increases fiber CSA, density of satellite cells,
- and the number of myofiber nuclei, while the level of intramuscular MyoD,
- IGF-I, myostatin slowly return to normal
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hanssen2013effect"
-
-\end_inset
-
-.
- Taken together, these molecular findings indicate that post-exercise growth
- is in part due to hyperplasia, and in part due to hypertrophy.
-\end_layout
-
-\begin_layout Standard
-A similar biphasic response is yielded by injury.
- In the immediate stage after injury, the muscle is infiltrated by pro-inflammat
-ory M1 macrophages, while at later stage, anti-inflammatory (M2) subclass
- dominates (reviewed in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "rigamonti2014macrophage"
-
-\end_inset
-
-).
- Although the studies are rather incomplete, it appears that, similar to
- exercise adaptations, injury triggers a burst of growth factors, probably
- including IGF-I, basic fibroblast growth factor (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "bFGF"
-description "basic fibroblast growth factor"
-
-\end_inset
-
-), and transforming growth factor-beta (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "TGF-β"
-description "transforming growth factor-beta"
-
-\end_inset
-
-) (
-\begin_inset CommandInset citation
-LatexCommand citep
-key "robertson1993role"
-
-\end_inset
-
-).
- Most of the studies of regeneration provide circumstantial evidence, such
- as improved healing in the presence of a presumed mediator, rather than
- impaired healing in its absence.
- Still unidentified molecules from crushed muscle are able to stimulate
- myoblast proliferation, above the levels caused by stimulation with known
- growth factors
-\begin_inset CommandInset citation
-LatexCommand citep
-key "haugk1995regulation"
-
-\end_inset
-
-.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO check if MRFs are changed in regeneration after injury.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This work uses extensively the C2C12 cell line, an immortalized female mouse
- muscle progenitor line obtained from a muscle recovering after mechanical
- injury.
- Less than half of the C2C12 cells in their proliferating, undifferentiated
- form, express MyoD or Pax7
-\begin_inset CommandInset citation
-LatexCommand citep
-key "olguin2004pax-7"
-
-\end_inset
-
-.
- Preliminary evidence suggest these myoblast-like cells do not express Pax3
- either
-\begin_inset CommandInset citation
-LatexCommand citep
-key "epstein1995pax3"
-
-\end_inset
-
-.
- Therefore, the C2C12 line are an incomplete model of muscle accretion through
- proliferative means.
-\end_layout
-
-\begin_layout Standard
-Generation and regeneration of muscle in common scenarios, such as development
- and adaptation, remain an object of study, due to their complexity.
- Variable importance of the immune cells, of MRFs and of IGF-I, and concurring
- redundancy forestall attempts to envisage a common pattern of muscle hypertroph
-y.
 \end_layout
 
 \begin_layout Section
@@ -1071,6 +816,300 @@ key "garlick1980rapid,cynober2003metabolic"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Adult muscle hypertrophy
+\end_layout
+
+\begin_layout Standard
+After the age of 20, nuclei in human muscle maintain an almost constant
+ length of telomeres, indicating that mitosis is a rare phenomenon in the
+ adult muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "decary1997replicative"
+
+\end_inset
+
+.
+ Moreover, the proportion of satellite cells with proliferating abilities
+ decreases with age, as more of them approach the Hayflick limit
+\begin_inset CommandInset citation
+LatexCommand citep
+key "renault2000skeletal"
+
+\end_inset
+
+.
+ With aging, muscle gradually shifts from a mitotic to a postmitotic profile,
+ with muscle growth achieved increasingly through hypertrophy, that is,
+ cell size growth.
+ While the typical adult is more commonly undergoing loss of muscle after
+ the age of 30
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ref needed
+\end_layout
+
+\end_inset
+
+, the muscle is adept at growing and remodeling under two common circumstances,
+ exercise and injury.
+ The most likely source of new myofiber nuclei are the adult satellite cells,
+ derived from a subset of fetal Pax3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+Pax7
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ref needed
+\end_layout
+
+\end_inset
+
+.
+ Some cells, such as bone marrow stem cells and pericytes, have the ability
+ to fuse with myotubes, and possibly contribute to the muscle stem cell
+ population
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dellavalle2011pericytes,labarge2002biological"
+
+\end_inset
+
+.
+ In adulthood, most limb and trunk satellite cells are Pax7
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+, while head satellite cells are often Pax3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+Pax7
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "relaix2006pax3"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Humans achieve muscle mass growth following exercise, although some forms
+ of exercise are more suitable at increasing strength or resistance that
+ mass per se
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ref needed
+\end_layout
+
+\end_inset
+
+.
+ In animals, muscle growth is induced by muscle overload, or muscle unloading
+ and reloading, which may be conceived as forms of aerobic exercise.
+ In healthy volunteers, the acute response to exercise includes increased
+ increased intramuscular expression of MRFs MyoD and myogenin, and increased
+ circulating IGF-I and IL-6
+\begin_inset CommandInset citation
+LatexCommand citep
+key "grubb2014igf-1,ullum1994bicycle,bickel2005time"
+
+\end_inset
+
+.
+ These signals are associated with increased proliferation of satellite
+ cells and recruitment of neutrophils to the muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fielding1993acute,snijders2014acute"
+
+\end_inset
+
+.
+ In the acute phase, the satellite cells colocalize with IGF-I
+\begin_inset CommandInset citation
+LatexCommand citep
+key "grubb2014igf-1"
+
+\end_inset
+
+.
+ Interestingly, the negative muscle regulator myostatin is not correlating
+ with the phenotype, that is, it is not decreased by acute exercise
+\begin_inset CommandInset citation
+LatexCommand citep
+key "snijders2014acute,schiffer2011mstn"
+
+\end_inset
+
+.
+ On the other hand, acute exercise increases the fractional protein synthesis
+ rate in muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dreyer2010resistance,harber2010muscle"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the long term, exercise increases fiber CSA, density of satellite cells,
+ and the number of myofiber nuclei, while the level of intramuscular MyoD,
+ IGF-I, myostatin slowly return to normal
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hanssen2013effect"
+
+\end_inset
+
+.
+ Taken together, these molecular findings indicate that post-exercise growth
+ is in part due to hyperplasia, and in part due to hypertrophy.
+\end_layout
+
+\begin_layout Standard
+A similar biphasic response is yielded by injury.
+ In the immediate stage after injury, the muscle is infiltrated by pro-inflammat
+ory M1 macrophages, while at later stage, anti-inflammatory (M2) subclass
+ dominates (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rigamonti2014macrophage"
+
+\end_inset
+
+).
+ Although the studies are rather incomplete, it appears that, similar to
+ exercise adaptations, injury triggers a burst of growth factors, probably
+ including IGF-I, basic fibroblast growth factor (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "bFGF"
+description "basic fibroblast growth factor"
+
+\end_inset
+
+), and transforming growth factor-beta (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TGF-β"
+description "transforming growth factor-beta"
+
+\end_inset
+
+) (
+\begin_inset CommandInset citation
+LatexCommand citep
+key "robertson1993role"
+
+\end_inset
+
+).
+ Most of the studies of regeneration provide circumstantial evidence, such
+ as improved healing in the presence of a presumed mediator, rather than
+ impaired healing in its absence.
+ Still unidentified molecules from crushed muscle are able to stimulate
+ myoblast proliferation, above the levels caused by stimulation with known
+ growth factors
+\begin_inset CommandInset citation
+LatexCommand citep
+key "haugk1995regulation"
+
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO check if MRFs are changed in regeneration after injury.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This work uses extensively the C2C12 cell line, an immortalized female mouse
+ muscle progenitor line obtained from a muscle recovering after mechanical
+ injury.
+ Less than half of the C2C12 cells in their proliferating, undifferentiated
+ form, express MyoD or Pax7
+\begin_inset CommandInset citation
+LatexCommand citep
+key "olguin2004pax-7"
+
+\end_inset
+
+.
+ Preliminary evidence suggest these myoblast-like cells do not express Pax3
+ either
+\begin_inset CommandInset citation
+LatexCommand citep
+key "epstein1995pax3"
+
+\end_inset
+
+.
+ Therefore, the C2C12 line are an incomplete model of muscle accretion through
+ proliferative means.
+\end_layout
+
+\begin_layout Standard
+Generation and regeneration of muscle in common scenarios, such as development
+ and adaptation, remain an object of study, due to their complexity.
+ Variable importance of the immune cells, of MRFs and of IGF-I, and concurring
+ redundancy forestall attempts to envisage a common pattern of muscle hypertroph
+y.
 \end_layout
 
 \begin_layout Section
