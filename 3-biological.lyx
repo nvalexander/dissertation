@@ -118,6 +118,15 @@ key "wang2003whole-body"
  that measure total skeletal muscle mass in mice.
  A proxy measure of murine skeletal muscle mass, lean body mass averaged
  81% of total body weight in adult males (detailed in results section).
+ Three fifths of the human body's protein is confined to the muscle contractile
+ and support structures
+\begin_inset CommandInset citation
+LatexCommand citep
+key "santilli2014clinical"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -281,7 +290,7 @@ key "lowe1999stretch-induced"
 
 .
  These example of amitotic hypertrophy demonstrate that, in some circumstances,
- the number of nuclei and the pace of transcription are limiting factors
+ the number of nuclei and the pace of transcription are not limiting factors
  in muscle growth.
 \end_layout
 
@@ -432,7 +441,7 @@ description "paired-like homeodomain"
 
 \end_inset
 
-) (reviewed in 
+) 2 (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "noden2005relations"
@@ -520,8 +529,19 @@ key "shen2003protein"
 \end_inset
 
 .
- It is unlikely that increases in protein accretion at the time when body
- weight is much smaller will provide lasting effects on muscle mass.
+ Defects in IGF-1R signaling determine low birth weight and subsequent growth
+ retardation in humans and transgenic mice, although it is unclear this
+ is due to the mitotic or to the anabolic deficiency
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fernandez2001functional,abuzzahab2003igf-i"
+
+\end_inset
+
+.
+ Moreover, the murine model may be marred by the formation of hybrid dimers
+ between IGF-1R and insulin receptor, which is likely to impair insulin
+ signaling as well.
 \end_layout
 
 \begin_layout Standard
@@ -590,7 +610,126 @@ key "lepper2009adult"
  Overall, muscle formation in children appears qualitatively different from
  adult muscle hypertrophy and regeneration, and should be more susceptible
  to modulation via mitotic mechanisms.
- Accordingly, the effect of GC on muscle differs between juvenile and adult.
+ This may be underlie a difference between juvenile and adult in the atrophying
+ effect of GC on muscle.
+\end_layout
+
+\begin_layout Standard
+The most likely source of new myofiber nuclei are the adult satellite cells,
+ derived from a subset of fetal Pax3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+Pax7
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ref needed
+\end_layout
+
+\end_inset
+
+.
+ Some cells, such as bone marrow stem cells and pericytes, have the ability
+ to fuse with myotubes, and possibly contribute to the muscle stem cell
+ population
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dellavalle2011pericytes,labarge2002biological"
+
+\end_inset
+
+.
+ In adulthood, most limb and trunk satellite cells are Pax7
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+, while head satellite cells are often Pax3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+Pax7
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "relaix2006pax3"
+
+\end_inset
+
+.
+ However, in longitudinal studies, human muscle mass, as estimated by body
+ potassium, decreases in men and and stagnates in women over the age of
+ 30
+\begin_inset CommandInset citation
+LatexCommand citep
+key "forbes1970adult"
+
+\end_inset
+
+.
+ As evidenced by studies such as the New Mexico Elder Health Survey, 1993-1995,
+ with aging, loss of muscle mass accelerates 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "baumgartner1998epidemiology"
+
+\end_inset
+
+.
+ Any muscle growth mechanism, including that dependent on satellite cells,
+ is likely less powerful in adulthood than in childhood.
+ Indeed, after the age of 20, nuclei in human muscle maintain an almost
+ constant length of telomeres, indicating that mitosis is a rare phenomenon
+ in the adult muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "decary1997replicative"
+
+\end_inset
+
+.
+ Moreover, the proportion of satellite cells with proliferating abilities
+ decreases with age, as more of them approach the Hayflick limit
+\begin_inset CommandInset citation
+LatexCommand citep
+key "renault2000skeletal"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -607,7 +746,81 @@ key "berg2002each,wasserman2009four"
 \end_inset
 
 ).
- In humans, up to 90% of the glucose absorbed after a meal is removed from
+ Because its ability to fatty acid is negligible, muscle is a consumer and
+ a minor store, but not a generator, of fatty acids
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ref needed
+\end_layout
+
+\end_inset
+
+.
+ During fast, more than half of infused non-esterified fatty acids (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NEFA"
+description "non-esterified fatty acids"
+
+\end_inset
+
+) are taken up by muscle, with a higher rate of incorporation in type II
+ oxidative muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "li1995triglyceride"
+
+\end_inset
+
+.
+ In contrast, after feeding, oversupply of NEFA is compensated mainly by
+ increased uptake, in absolute terms, in the visceral adipose tissue, with
+ minor contributions from other adipose tissue, liver, and muscle.
+ After repeated exercise, muscle lipoprotein lipase expression is increased,
+ indicative of an adaptive improvement in muscle ability to extract NEFA
+ from circulating triglycerides
+\begin_inset CommandInset citation
+LatexCommand citep
+key "seip1997induction"
+
+\end_inset
+
+.
+ Ongoing studies suggest that muscle oxidative (catabolic) uptake of NEFA
+ is upregulated by peroxisome proliferator-activated receptor (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PPAR"
+description "peroxisome proliferator-activated receptor"
+
+\end_inset
+
+) β/δ, which stimulates expression of the lipolysis rate-limiting enzyme,
+ carnitine palmitoyltransferase I
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang2003peroxisome-proliferator-activated,narkar2008ampk"
+
+\end_inset
+
+.
+ This hypothesis is supported by fast- and exercise-induced upregulation
+ of muscle PPAR δ
+\begin_inset CommandInset citation
+LatexCommand citep
+key "watt2004suppression,holst2003nutritional"
+
+\end_inset
+
+.
+ Organ-level studies are impaired by the existence of nontrivial intramuscular
+ adipose tissue.
+\end_layout
+
+\begin_layout Standard
+In humans, up to 90% of the glucose absorbed after a meal is removed from
  circulation by the skeletal muscles
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -615,11 +828,11 @@ key "defronzo1981effect,katz1983splanchnic"
 
 \end_inset
 
-, meaning that muscles have a paramount role in the development of insulin
- resistance and eventually diabetes mellitus.After normal feeding, muscle
- builds polysaccharides reserves, in part because it can synthesize and
- deposit the largest glycogen stores in the body, but also because it cannot
- release glucose.
+, meaning that muscles should have a paramount role in the development of
+ insulin resistance and eventually diabetes mellitus.
+ After normal feeding, muscle builds polysaccharides reserves, in part because
+ it can synthesize and deposit the largest glycogen stores in the body,
+ but also because it cannot release glucose.
  
 \begin_inset Note Note
 status open
@@ -687,7 +900,7 @@ key "suryawan1998molecular"
 
 .
  Many studies trace leucine disappearance from the bloodstream, and have
- to keep track of its anabolic and energetic usage.
+ to keep track of its anabolic (non-oxidative) and energetic usage.
  More recently, BCAA are considered regulators of muscle protein in their
  own.
  Some studies show that BCAA ingestion or infusion increase protein synthesis
@@ -823,117 +1036,12 @@ Adult muscle hypertrophy
 \end_layout
 
 \begin_layout Standard
-After the age of 20, nuclei in human muscle maintain an almost constant
- length of telomeres, indicating that mitosis is a rare phenomenon in the
- adult muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "decary1997replicative"
-
-\end_inset
-
-.
- Moreover, the proportion of satellite cells with proliferating abilities
- decreases with age, as more of them approach the Hayflick limit
-\begin_inset CommandInset citation
-LatexCommand citep
-key "renault2000skeletal"
-
-\end_inset
-
-.
- With aging, muscle gradually shifts from a mitotic to a postmitotic profile,
+With aging, muscle gradually shifts from a mitotic to a postmitotic profile,
  with muscle growth achieved increasingly through hypertrophy, that is,
  cell size growth.
- While the typical adult is more commonly undergoing loss of muscle after
- the age of 30
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ref needed
-\end_layout
-
-\end_inset
-
-, the muscle is adept at growing and remodeling under two common circumstances,
- exercise and injury.
- The most likely source of new myofiber nuclei are the adult satellite cells,
- derived from a subset of fetal Pax3
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
-Pax7
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- cells
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ref needed
-\end_layout
-
-\end_inset
-
-.
- Some cells, such as bone marrow stem cells and pericytes, have the ability
- to fuse with myotubes, and possibly contribute to the muscle stem cell
- population
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dellavalle2011pericytes,labarge2002biological"
-
-\end_inset
-
-.
- In adulthood, most limb and trunk satellite cells are Pax7
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
-, while head satellite cells are often Pax3
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
-Pax7
-\begin_inset script superscript
-
-\begin_layout Plain Layout
--
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "relaix2006pax3"
-
-\end_inset
-
-.
- 
+ While the typical middle-aged or elderly adult is undergoing net loss of
+ muscle mass, the muscle is still adept at re-growing and remodeling under
+ two common circumstances, exercise and injury.
 \end_layout
 
 \begin_layout Standard
@@ -953,8 +1061,8 @@ Ref needed
  In animals, muscle growth is induced by muscle overload, or muscle unloading
  and reloading, which may be conceived as forms of aerobic exercise.
  In healthy volunteers, the acute response to exercise includes increased
- increased intramuscular expression of MRFs MyoD and myogenin, and increased
- circulating IGF-I and IL-6
+ intramuscular expression of MRFs MyoD and myogenin, and increased circulating
+ IGF-I and IL-6
 \begin_inset CommandInset citation
 LatexCommand citep
 key "grubb2014igf-1,ullum1994bicycle,bickel2005time"
@@ -979,8 +1087,8 @@ key "grubb2014igf-1"
 \end_inset
 
 .
- Interestingly, the negative muscle regulator myostatin is not correlating
- with the phenotype, that is, it is not decreased by acute exercise
+ The negative muscle regulator myostatin is not correlating with the phenotype,
+ that is, it is not decreased by acute exercise
 \begin_inset CommandInset citation
 LatexCommand citep
 key "snijders2014acute,schiffer2011mstn"
@@ -988,11 +1096,20 @@ key "snijders2014acute,schiffer2011mstn"
 \end_inset
 
 .
- On the other hand, acute exercise increases the fractional protein synthesis
- rate in muscle
+ Acute exercise increases the fractional protein synthesis rate in muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dreyer2010resistance,harber2010muscle"
+
+\end_inset
+
+.
+ Interestingly, a single bout of exercise during fast leads to increases
+ circulating cortisol levels and the release of 3-MH, indicative of increased
+ stimulation of protein degradation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bird2006liquid"
 
 \end_inset
 
@@ -1010,8 +1127,19 @@ key "hanssen2013effect"
 \end_inset
 
 .
- Taken together, these molecular findings indicate that post-exercise growth
- is in part due to hyperplasia, and in part due to hypertrophy.
+ On the other hand, long-term exercise induces the expression of catabolic
+ markers, such as the E3 ligases MAFbx and MuRF-1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stefanetti2014regulation"
+
+\end_inset
+
+.
+ Taken together, these molecular findings indicate exercise causes muscle
+ remodeling, which manifests as increased muscle turnover, with upregulation
+ of both protein degradation and synthesis.
+ Moreover, post-exercise muscle accretion combines hyperplasia and hypertrophy.
 \end_layout
 
 \begin_layout Standard
