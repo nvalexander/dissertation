@@ -134,7 +134,7 @@ status collapsed
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "thesis-refs"
+bibfiles "thesis,thesis2"
 options "UCThesisBibStyleUnsrt"
 
 \end_inset

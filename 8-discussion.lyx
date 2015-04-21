@@ -106,27 +106,7 @@ todo
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "thesis-refs,thesis-refs2"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch childonly
-status collapsed
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "thesis-refs"
-options "UCThesisBibStyleUnsrt"
-
-\end_inset
-
-
-\end_layout
+bibfiles "thesis,thesis2"
 
 \end_inset
 

@@ -191,8 +191,8 @@ key "grounds2005strength,mann2011aberrant"
 
 .
  Muscle mass changes should require remodeling of all these connective structure
-s, with novel collagen synthesis possibly complicating protein synthesis
- at muscle level.
+s, with novel collagen synthesis possibly misleading measurements of protein
+ synthesis in atrophying muscle.
  In addition to the contractile and connective components, muscles include
  vascular, nervous, adipose, blood and immune cells.
 \end_layout
@@ -218,7 +218,7 @@ key "scharner2011muscle"
 Each myofiber is a syncytium, that forms and grows by fusion with neighboring
  cells.
  The only way to acquire nuclei to the myofibers is fusion with surrounding
- proliferative mononucleate cells.
+ proliferative mononucleate cells, or with neighboring myofibers.
  Cells that have the ability to undergo mitosis and to fuse with myofibers
  are typically designated myoblasts.
  In vivo, myoblasts are derived from a subset of satellite cells.
@@ -356,7 +356,7 @@ During experiments that perturb muscle mass equilibrium, the level of the
 \end_layout
 
 \begin_layout Section
-Mitosis-dependent muscle development
+Preadult muscle development
 \end_layout
 
 \begin_layout Standard
@@ -478,18 +478,33 @@ description "Online Mendelian Inheritance in Man"
 ) database, there is no reported case of human mutation of Myf5 or MyoD,
  further supporting the idea of duplicate function.
  Neither Myf5, nor MyoD induce muscle attributes.
- However, this specification stage is soon followed by expression of another
- MRF, myogenin, which synchronizes with expression of muscle-specific enzymes
- and contractile proteins
+ However, the expression of either will promote expression of another MRF,
+ myogenin, which marks the transition form specification to differentiation.
+ MRFs share structural features, and some are juxtaposed in the genome,
+ making their study difficult.
+\end_layout
+
+\begin_layout Standard
+Initiation of myogenin expression marks the transition from specification
+ to differentiation stage.
+ In cultured cells, myogenin expression is followed by p21 expression, which
+ removes the muscle precursor from the cell cycle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "andres1996myogenin"
+
+\end_inset
+
+.
+ Subsequent changes include expression of muscle-specific enzymes and contractil
+e proteins
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bergstrom2001molecular"
 
 \end_inset
 
-.
- Myogenin also stimulates the synthesis of the MRF myogenic regulatory factor
- (
+, of a fourth MRF, the myogenic regulatory factor (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Mrf"
@@ -504,10 +519,20 @@ key "hasty1993muscle"
 
 \end_inset
 
+, and, finally, acquisition of fusogenic abilities.
+ In humans, by the seventh week of gestation, the initial wave of myoblast
+ fusion slows down, and a second proliferative stage starts.
+ The latter tapers off, leading to formation of secondary myotubes, within
+ the same laminar sheath with a primary myotube.
+ Around the seventeenth week, some secondary myotubes migrate to form independen
+t centers of coalescence for a third set of myotubes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "draeger1987primary"
+
+\end_inset
+
 .
- All the four MRFs share structural features, and some are juxtaposed in
- the genome.
- Such redundancy between MRFs complicates their study.
 \end_layout
 
 \begin_layout Standard
@@ -766,7 +791,7 @@ description "non-esterified fatty acids"
 
 \end_inset
 
-) are taken up by muscle, with a higher rate of incorporation in type II
+) are taken up by muscle, with a higher rate of incorporation in type I
  oxidative muscle
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -811,6 +836,15 @@ key "wang2003peroxisome-proliferator-activated,narkar2008ampk"
 \begin_inset CommandInset citation
 LatexCommand citep
 key "watt2004suppression,holst2003nutritional"
+
+\end_inset
+
+.
+ Moreover, PPAR δ overexpression leads to increase in type I fibers and
+ subsequent resistance to high-fat diet
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang2003peroxisome-proliferator-activated"
 
 \end_inset
 
@@ -1032,7 +1066,7 @@ key "garlick1980rapid,cynober2003metabolic"
 \end_layout
 
 \begin_layout Section
-Adult muscle hypertrophy
+Adult muscle remodeling
 \end_layout
 
 \begin_layout Standard
@@ -1114,6 +1148,23 @@ key "bird2006liquid"
 \end_inset
 
 .
+ Concomitant amino acid feeding extinguishes GC and catabolic response to
+ exercise.
+ Variations in regimens of exercise and timing and composition of diet led
+ to a plethora of studies.
+ Just as most of the short-term exercise routines do not lead to muscle
+ macroscopic changes, some studies describe an absence of changes at molecular
+ level following short-term exercise (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vanloon2014there"
+
+\end_inset
+
+).
+ An important future direction in exercise science is establishing what
+ distinguishes an effective brief exercise routine from an ineffective one.
+ In this context, GC may be interesting noninvasive markers.
 \end_layout
 
 \begin_layout Standard
@@ -1480,49 +1531,14 @@ re may limit their ability to replicate in vivo phenomena.
 \end_layout
 
 \begin_layout Section
-Control of muscle mass through innervation
-\end_layout
-
-\begin_layout Standard
-The muscle and nerves
-\end_layout
-
-\begin_layout Section
-Interactions between muscle and the immune system
-\end_layout
-
-\begin_layout Section
-The role of vascularization in muscle mass regulation
+Interaction of muscle mass and vascularization
 \end_layout
 
 \begin_layout Standard
 Muscle vascularization is a modulator of muscle mass and contractility.
-\end_layout
-
-\begin_layout Standard
-Manipulation of vascular endothelial growth factor (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "VEGF"
-description "vascular endothelial growth factor"
-
-\end_inset
-
-), the main regulator of angiogenesis, brought important evidence in this
- direction.
- Like most non-lymphoid tissues, muscles express VEGF-A.
- For example, mice whose muscle VEGF-A secretion was genetically depleted
- by muscle creatine kinase (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "MCK"
-description "muscle creatine kinase"
-
-\end_inset
-
-)-driven Cre recombinase still express a tenth of the muscle VEGF-A protein,
- but have only half of the capillaries per muscle fiber, compared to their
- Cre
+ Mice whose muscle VEGF-A secretion was genetically depleted still express
+ a tenth of the muscle VEGF-A protein, but have only half of the capillaries
+ per muscle fiber, compared to their Cre
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1539,17 +1555,17 @@ key "olfert2009muscle-specific"
 \end_inset
 
 .
- The muscle VEGF-A-depleted mice have 12% lighter gastrocnemii, although
- the muscle loss become effectively null, when normalized to total body
- weight.
+ The muscle-restricted VEGF-A-depleted mice have 12% lighter gastrocnemii,
+ although the muscle loss disappears when muscle mass is normalized to total
+ body weight.
  The loss does not affect a specific fiber type more than the others.
- More importantly, the muscle depleted of VEGF-A is less able of endurance
- effort (80% shorter time to exhaustion on the inclined treadmill) and of
- brief anaerobic exercise (34% lower maximal running speed).
- A large part of this effect has been attributed to the defect in perfusion,
- which blunt insulin's ability to stimulate muscle glucose uptake, as suggested
- by the finding that VEGF-A-depleted muscle regains full ability to uptake
- glucose when explanted
+ Therefore, the muscle depleted of VEGF-A is less able of endurance effort
+ (80% shorter time to exhaustion on the inclined treadmill) and of brief
+ anaerobic exercise (34% lower maximal running speed).
+ It has been suggested that the most direct effect of VEGF-A depletion is
+ partial segregation of muscle from blood-carried endocrine signals.
+ For example, VEGF_A-depleted muscle has lower glucose uptake, a defect
+ which is reversed by explantation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bonner2013muscle-specific"
@@ -1560,11 +1576,9 @@ key "bonner2013muscle-specific"
 \end_layout
 
 \begin_layout Standard
-The opposite manipulation of VEGF provides evidence for a different mechanism
- of action.
- Murine muscles injected with VEGF-A-expressing retroviruses display a higher
- proportion of hypertrophic (with abnormally wide cross-sectional area)
- fibers than those expressing bacterial β-galactosidase
+Conversely, murine muscles injected with VEGF-A-expressing retroviruses
+ display a higher proportion of hypertrophic fibers than those expressing
+ bacterial β-galactosidase
 \begin_inset CommandInset citation
 LatexCommand cite
 key "arsic2004vascular"
@@ -1572,16 +1586,18 @@ key "arsic2004vascular"
 \end_inset
 
 .
- Moreover, in the VEGF-A-expressing muscle, many of the fibers have central
- nuclei, a sign of increased fusion with myoblasts.
- Because the murine C2C12 differentiates faster, into longer myotubes with
- more nuclei, when treated with recombinant VEGF, the profusogenic potential
- of VEGF appears to be unmediated by other cells or organs.
+ Moreover, in the VEGF-A-overexpressing muscle, many of the fibers have
+ central nuclei, a sign of increased fusion with myoblasts.
+ In the murine C2C12 cell line, VEGF-A causes faster differentiation, into
+ longer myotubes, with more nuclei per fiber, although mitotic rates are
+ in fact diminished.
+ These observations are consistent with direct anti-apoptotic and profusogenic
+ effects.
 \end_layout
 
 \begin_layout Standard
 The relative importance of VEGF overexpression during myogenesis is still
- open to debate, as conditional, localized VEGF receptor (
+ open to debate, as muscle-restricted VEGF receptor (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "VEGFR"
@@ -1589,19 +1605,10 @@ description "VEGF receptor"
 
 \end_inset
 
-; flt1) knockouts are still missing.
- Conditionality is compulsory because non-conditional knockout of VEGFR1,
- the most frequent receptor in muscle, is lethal
-\begin_inset CommandInset citation
-LatexCommand cite
-key "shalaby1995failure"
-
-\end_inset
-
-.
- Multiple effects concur to obfuscate VEGF in hypertrophying muscle.
- VEGF promoter contains three binding sites for the myogenic transcription
- factor MyoD (myod1), meaning that growing muscle will express more VEGF
+) knockout animals were not studied yet.
+ Multiple effects concur to obfuscate VEGF action in hypertrophying muscle.
+ First, VEGF promoter contains three binding sites for MyoD, meaning that
+ growing muscle will express more VEGF
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bryan2008coordinated"
@@ -1609,34 +1616,8 @@ key "bryan2008coordinated"
 \end_inset
 
 .
- The peroxisome proliferator-activated receptor γ (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "PPARgamma"
-description "peroxisome proliferator-activated receptor gamma"
-
-\end_inset
-
-) coactivator 1 (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "PGC-1"
-description "PPARg coactivator 1"
-
-\end_inset
-
-; ppargc1a) has an important role in muscle hypertrophy, conversion to oxidative
- fiber type, and increase in endurance capacity, as it stimulates mitochondria
- biosynthesis
-\begin_inset CommandInset citation
-LatexCommand cite
-key "lin2002transcriptional"
-
-\end_inset
-
-.
- But a reliable effect of PGC-1 is VEGF synthesis, even in the absence of
- hypoxia-induced factor 1α (
+ Second, although the canonical upregulator of VEGF is hypoxia-induced factor
+ 1α (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HIF 1a"
@@ -1644,7 +1625,15 @@ description "hypoxia-induced factor 1a"
 
 \end_inset
 
-), the most common inducer of VEGF
+), muscle VEGF is also stimulated by PPAR γ coactivator 1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PGC-1"
+description "PPARg coactivator 1"
+
+\end_inset
+
+)
 \begin_inset CommandInset citation
 LatexCommand citep
 key "vianna2006hypomorphic,rowe2011pgc-1beta"
@@ -1652,8 +1641,20 @@ key "vianna2006hypomorphic,rowe2011pgc-1beta"
 \end_inset
 
 .
- VEGFR activation has very diverse effects, including phosphorylation of
- Src family proteins
+ Even in the absence of VEGF, PGC-1 facilitates mitochondria biosynthesis,
+ leading to oxidative fiber hypertrophy and improvements in endurance capacity
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lin2002transcriptional"
+
+\end_inset
+
+.
+ Therefore, it is difficult to distinguish VEGF-induced muscle changes from
+ the common muscle remodeling program.
+ Finally, VEGFR activation has multiple effects, including phosphorylation
+ of Src family proteins
 \begin_inset CommandInset citation
 LatexCommand cite
 key "waltenberger1994different"
@@ -1709,9 +1710,23 @@ key "korpelainen1999endothelial"
 .
  Most of these VEGF effects overlap with the effects of many other muscle
  anabolic agents.
- Thus, it is unclear whether VEGF plays an important role in muscle hypertrophy,
- provides the auxiliary adjustment of vasculature to fiber ratio, or is
- an irrelevant side effect.
+ Thus, it is unclear whether VEGF plays a mediating role in muscle hypertrophy,
+ or it provides the auxiliary adjustment of vasculature to fiber ratio.
+\end_layout
+
+\begin_layout Section
+Control of muscle mass through innervation
+\end_layout
+
+\begin_layout Standard
+The muscle and its primary neural contact, the lower alpha motor neuron,
+ are involved in a mutually beneficial life-long interaction, beyond the
+ functional contact through the neuro-muscular junction.
+ 
+\end_layout
+
+\begin_layout Section
+Interactions between muscle and the immune system
 \end_layout
 
 \begin_layout Section
@@ -2704,7 +2719,7 @@ status open
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "thesis-refs,thesis-refs2"
+bibfiles "thesis,thesis2"
 options "UCThesisBibStyleUnsrt"
 
 \end_inset
