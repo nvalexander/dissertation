@@ -1719,10 +1719,194 @@ Control of muscle mass through innervation
 \end_layout
 
 \begin_layout Standard
-The muscle and its primary neural contact, the lower alpha motor neuron,
- are involved in a mutually beneficial life-long interaction, beyond the
- functional contact through the neuro-muscular junction.
- 
+Limb and trunk muscles are controlled by the lower (alpha) motoneuron, located
+ in the ventral horn of the spinal cord.
+ Their main point of contact is a chemical synapse, the neuro-muscular junction
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NMJ"
+description "neuro-muscular junction"
+
+\end_inset
+
+).
+ In addition to the direct synaptic activity, muscles and lower motoneurons
+ are involved in a mutually beneficial life-long interaction.
+ In utero, experimental destruction of motoneurons with bungarotoxin abolishes
+ formation of secondary myotubes, although it has limited effect on the
+ formation of primary fibers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "harris1981embryonic"
+
+\end_inset
+
+.
+ Conversely, motoneuron precursors from the embryo spinal cord degenerate
+ and die if they cannot engage in significant interactions with myofibers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "oconnor1974cell"
+
+\end_inset
+
+.
+ Eliminated motoneurons include neurons whose axons fail to reach myotubes
+ and neurons which eventually fail to maintain contact with myotubes, due
+ to synapse elimination.
+ The latter is a selective, competitive process, whose molecular basis is
+ still unknown, and which ensures injectivity of the correspondence between
+ lower motoneurons and myofibers (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "favero2014hebb-based"
+
+\end_inset
+
+).
+ For a few days after birth, rat motoneurons go into a particularly sensitive
+ state, when axotomy determines motoneuron death
+\begin_inset CommandInset citation
+LatexCommand citep
+key "burls1991absence"
+
+\end_inset
+
+.
+ Thence, axotomy elicits the reprogramming of the neuron into a less differentia
+ted state, followed by axonal regrowth (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kuno1990target,grinnell1995dynamics"
+
+\end_inset
+
+).
+ The re-establishment of contact between the motoneuron and muscle causes
+ the reverse molecular changes, suggesting the existence of muscle-secreted
+ neurotrophic factors.
+ The ability of NMJ to regenerate or even preserve its optimal structure
+ degrades with aging, although it is not clear whether NMJ cause or are
+ caused by aging-related muscle loss
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gonzalez-freire2014neuromuscular"
+
+\end_inset
+
+.
+ The improvement in NMJ regeneration through exercise has been seen as an
+ important path towards its understanding.
+ Factors that improve muscle's ability to exercise or even mimic exercise,
+ such as IGF-I or androgens, have been shown to benefit NMJ recovery or
+ to slow down its degradation during aging
+\begin_inset CommandInset citation
+LatexCommand citep
+key "serra2013characterization,nishimune2014role,apel2010effect"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The loss of contact with the lower motoneuron elicits similar changes in
+ the muscle, with clinical relevance in the understanding and treatment
+ of spinal cord injury and spinal muscular atrophy.
+ Conceptually, denervation is distinct from disuse, such as that induced
+ by damage to the upper motoneuron.
+ Clinically, the latter manifests differently, through a syndrome termed
+ pyramidal weakness, that mainly affect muscles opposing gravity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "thijs1998distribution"
+
+\end_inset
+
+.
+ In humans, after upper motoneuron damage, disuse response occurs in a few
+ days after injury, and leads to exaggerated spasticity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "purves2001damage"
+
+\end_inset
+
+.
+ Understandably, literature does not describe any animal model of disuse
+ by experimental damage to the upper motoneuron.
+ In fact, literature contains multiple examples where 
+\begin_inset Quotes eld
+\end_inset
+
+disuse
+\begin_inset Quotes erd
+\end_inset
+
+ is taken to mean 
+\begin_inset Quotes eld
+\end_inset
+
+absence of action potentials, due to denervation
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+lack of work, due to denervation, unloading, immobilization
+\begin_inset Quotes erd
+\end_inset
+
+, or even both
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jackman2004molecular"
+
+\end_inset
+
+.
+ Consequently, there are no experimental attempts to disentangle muscle-maintain
+ing effects of work, of the NMJ transmitter, acetylcholine, and of any other
+ musculotrophic neuron-released factor.
+\end_layout
+
+\begin_layout Standard
+Experimental denervation causes rapid and ample loss of muscle mass.
+ For example, three weeks after sciatic nerve removal, the tibialis anterior
+ muscle halves in weight
+\begin_inset CommandInset citation
+LatexCommand citep
+key "macdonald2014denervation"
+
+\end_inset
+
+.
+ In a seminal study, Goldberg demonstrated that denervation leads to increased
+ loss of prelabeled muscle protein, proving that denervation upregulates
+ protein degradation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "goldberg1969protein"
+
+\end_inset
+
+.
+ In addition, the specific activity of the remaining muscle protein was
+ essentially the same as in control limbs.
+ Increased or even unchanged protein synthesis rates would have caused a
+ reduction in specific activity.
+ Therefore, Goldberg concluded that denervation causes protein synthesis
+ decreases.
+ However, such a reduction in protein synthesis rate is consistent with
+ an indiscriminate loss of translation initiation and elongation factors,
+ as much as with an active mechanism of protein synthesis cessation.
+ Further studies brought evidence towards a denervation-triggered, regulated
+ molecular mechanism of protein translation shutoff, but tweaked Goldberg's
+ intervention, and eluded measurements of protein synthesis rate in their
+ experiments.
 \end_layout
 
 \begin_layout Section
