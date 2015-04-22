@@ -1900,13 +1900,28 @@ key "goldberg1969protein"
  reduction in specific activity.
  Therefore, Goldberg concluded that denervation causes protein synthesis
  decreases.
- However, such a reduction in protein synthesis rate is consistent with
- an indiscriminate loss of translation initiation and elongation factors,
+\end_layout
+
+\begin_layout Standard
+However, Goldberg's observed reduction in protein synthesis rate is consistent
+ with an indiscriminate loss of translation initiation and elongation factors,
  as much as with an active mechanism of protein synthesis cessation.
- Further studies brought evidence towards a denervation-triggered, regulated
- molecular mechanism of protein translation shutoff, but tweaked Goldberg's
- intervention, and eluded measurements of protein synthesis rate in their
- experiments.
+ Moreover, recent functional studies, measuring protein synthesis rate directly
+ and for shorter time intervals (hours, rather than weeks), found that denervati
+on stimulates translation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "goncalves2012clenbuterol,quy2013proteasome-dependent,gomes2012upregulation"
+
+\end_inset
+
+.
+ On the other hand, follow-up studies found molecular changes in regulators
+ of translation, indirectly supporting a regulated, denervation-triggered
+ mechanism of protein translation shutoff.
+ The irreconcilable differences between functional and molecular studies
+ of denervation epitomize similar predicaments in the study of muscle atrophy
+ due to other etiologies, including GAML.
 \end_layout
 
 \begin_layout Section
