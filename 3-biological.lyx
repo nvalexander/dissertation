@@ -1988,8 +1988,12 @@ key "bodine2001akt/mtor"
 , the scientific community assumed, since the beginning of the 2000's, that
  denervation-induced Akt inactivation leads to loss of downstream mTOR-mediated
  effects.
- However, in 2014, Tang and colleagues found that, on the contrary, rapamycin
- abolishes denervation-induced loss of muscle mass
+ Recent studies contradicted this paradigm.
+ In 2013, Quy and colleagues found that denervation increased Threonine-389
+ phosphorylation and catalytic activity of p70-S6K, indicating that denervation
+ causes in fact activation of mTOR complex 1.
+ In 2014, Tang and colleagues proved that rapamycin abolishes denervation-induce
+d loss of muscle mass
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tang2014mtorc1"
@@ -1997,35 +2001,75 @@ key "tang2014mtorc1"
 \end_inset
 
 .
- At the same time, rapamycin preserved Akt phosphorylation at Threonine-308,
- which is otherwise lost upon denervation.
- Tang's conclusion is that mTOR complex 1 should be activated for denervation-as
-sociated muscle atrophy to proceed in its later stage.
- Supporting the hypothesis of mTOR complex 1 activation, denervation was
- found to cause increased Threonine-389 phosphorylation and catalytic activity
- of p70-S6K.
- A more plausible chain of events places mTOR complex 1 activation as the
- causal event in late muscle denervation.
- Next, in what is otherwise known as the mTOR complex 1 negative feedback
- loop, Akt is inactivated.
+ These experiments prove that mTOR complex 1 should be activated for denervation
+-associated muscle atrophy to proceed in its later stage.
+ Tang showed that denervation causes phosphorylation of insulin receptor
+ substrate (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IRS"
+description "insulin receptor substrate"
+
+\end_inset
+
+) 1, suggesting that activated mTOR complex 1 inhibits Akt through what
+ is typically their negative feedback loop.
+ Quy found that mTOR complex 1 activation is lost upon proteasome inhibition
+ with bortezomib, thus placing its role event further down the chain of
+ causality, after the proteasome releases significant amounts of free amino
+ acids.
 \end_layout
 
 \begin_layout Standard
-Establishing a role for mTOR complex 1 in denervation-induced loss of muscle
- mass is crucial.
+Establishing the role for mTOR complex 1 in denervation-induced loss of
+ muscle mass is crucial.
  In the previous conceptual frame, mTOR complex 1 supposed inactivation
  was thought to play a restrictive role on protein synthesis and to remove
- a restriction on autophagy, and implied a co-operation between multiple
- anabolic and catabolic pathways towards achieving muscle atrophy.
- Conceptually, it may seem more difficult to reconcile denervation-induced
- loss of muscle mass with a mTOR complex 1-stimulated protein synthesis
- and inhibited autophagy.
+ a restriction on autophagy.
+ This hypothesis was conceptually attractive, because it implied a co-operation
+ between multiple anabolic and catabolic pathways, towards achieving muscle
+ loss.
+ In particular, denervation-induced autophagy appealed to the muscle biologists
+ of the 2000's.
+ For example, in a never-replicated experiment, one group claimed that the
+ luysosomal inhibitor chloroquine prevents denervation-induced muscle loss
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schwartz1990effects"
+
+\end_inset
+
+.
+ Others showed that denervation upregulates lysosomal enzyme cathepsin L
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mammucari2007foxo3"
+
+\end_inset
+
+, while a third group claimed that denervation causes buildup of the autophagoso
+mal marker LC3-II 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ju2010quantitation"
+
+\end_inset
+
+.
  However, the lysosomal inhibitors leupeptin, methylamine, and E64-c have
- minimal effects on the release of free tyrosine from denervated muscle,
- suggesting that autophagy is indeed repressed in 
+ minimal effects on the release of free tyrosine from denervated muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "furuno1990role"
+
+\end_inset
+
+.
+ GFP-LC3 transgenic mice exhibited a loss of autophagosomes in denervated
+ muscles
+\begin_inset CommandInset citation
+LatexCommand citep
+key "quy2013proteasome-dependent"
 
 \end_inset
 
@@ -2034,7 +2078,8 @@ key "furuno1990role"
 \end_layout
 
 \begin_layout Standard
-In Goldberg's 1969 experiment, the specific activity of the remaining muscle
+A similar debate surrounds protein synthesis regulation in denervation.
+ In Goldberg's 1969 experiment, the specific activity of the remaining muscle
  protein was essentially the same as in control limbs.
  Increased or even unchanged protein synthesis rates would have caused a
  reduction in specific activity.
@@ -2054,12 +2099,39 @@ key "goncalves2012clenbuterol,quy2013proteasome-dependent,gomes2012upregulation,
 .
  Unlike the 1969 study, contemporary studies measured protein synthesis
  rate directly and over shorter time intervals (hours, rather than weeks).
- On the other hand, follow-up studies found molecular changes in regulators
- of translation, indirectly supporting a regulated, denervation-triggered
- mechanism of protein translation shutoff.
+ As in the case of autophagy, follow-up studies found molecular changes
+ in regulators of translation, in some cases supporting a regulated, denervation
+-triggered mechanism of protein translation shutoff, in others refuting
+ them.
+ Both Tang and Quy found that denervation causes increased phosphorylation
+ of 4E-BP, thus leading to stimulation of protein synthesis.
+ Both also show that the effect on 4E-BP is prevented by rapamycin, demonstratin
+g that protein synthesis is upregulated through an mTOR-dependent mechanism.
+\end_layout
+
+\begin_layout Standard
+Given that rapamycin has essentially no effect on adult muscle mass
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ref needed
+\end_layout
+
+\end_inset
+
+, it may be that mTOR is not the crucial effector of denervation-induced
+ muscle loss once thought.
+ Recent studies show that its activation, and the downstream net anabolic
+ effects it elicits through autophagy and translation, cannot explain the
+ observed phenotype.
+ Denervation-induced muscle loss is, to great extent, produced by the ubiquitin-
+proteasome system.
+ Better experiments are needed in order to understand autophagy and of mTOR
+ in denervation-induced muscle loss.
  The irreconcilable differences between functional and molecular studies
  of denervation epitomize similar predicaments in the study of muscle atrophy
- due to other etiologies, including GAML.
+ due to other etiologies, including the less-understood GAML.
 \end_layout
 
 \begin_layout Section
