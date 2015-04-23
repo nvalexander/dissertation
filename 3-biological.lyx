@@ -1894,28 +1894,65 @@ key "goldberg1969protein"
 \end_inset
 
 .
- In addition, the specific activity of the remaining muscle protein was
- essentially the same as in control limbs.
- Increased or even unchanged protein synthesis rates would have caused a
- reduction in specific activity.
- Therefore, Goldberg concluded that denervation causes protein synthesis
- decreases.
-\end_layout
-
-\begin_layout Standard
-However, Goldberg's observed reduction in protein synthesis rate is consistent
- with an indiscriminate loss of translation initiation and elongation factors,
- as much as with an active mechanism of protein synthesis cessation.
- Moreover, recent functional studies, measuring protein synthesis rate directly
- and for shorter time intervals (hours, rather than weeks), found that denervati
-on stimulates translation
+ Moreover, denervation increases urinary 3MH, indicating activation of catabolis
+m
 \begin_inset CommandInset citation
 LatexCommand citep
-key "goncalves2012clenbuterol,quy2013proteasome-dependent,gomes2012upregulation"
+key "furuno1990role"
 
 \end_inset
 
 .
+ The rate of muscle loss in denervated muscle is halved by the proteasome
+ inhibitor bortezomib
+\begin_inset CommandInset citation
+LatexCommand citep
+key "beehler2006reduction"
+
+\end_inset
+
+.
+ Denervation upregulates all the ubiquitin-proteasome pathway components,
+ including ubiquitin, the E3 ligases MuRF1 and MAbx, and the proteasomal
+ subunit macropain 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "medina1995increase,bodine2001identification"
+
+\end_inset
+
+.
+ Denervation stimulates proteasome enzymatic activity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gomes2012upregulation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In Goldberg's 1969 experiment, the specific activity of the remaining muscle
+ protein was essentially the same as in control limbs.
+ Increased or even unchanged protein synthesis rates would have caused a
+ reduction in specific activity.
+ Therefore, Goldberg concluded that denervation causes protein synthesis
+ decreases, thus opening a debate that is still unsettled.
+ Goldberg's observed reduction in protein synthesis rate is consistent with
+ an indiscriminate loss of translation initiation and elongation factors,
+ as much as with an active mechanism of protein synthesis cessation.
+ Moreover, more recent functional studies, including some from Goldberg's
+ group, found that denervation stimulates translation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "goncalves2012clenbuterol,quy2013proteasome-dependent,gomes2012upregulation,joshi2014differential,furuno1990role"
+
+\end_inset
+
+.
+ Unlike the 1969 study, contemporary studies measured protein synthesis
+ rate directly and over shorter time intervals (hours, rather than weeks).
  On the other hand, follow-up studies found molecular changes in regulators
  of translation, indirectly supporting a regulated, denervation-triggered
  mechanism of protein translation shutoff.
