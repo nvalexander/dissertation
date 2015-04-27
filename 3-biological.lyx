@@ -2317,13 +2317,20 @@ key "hong1995effects"
 \end_layout
 
 \begin_layout Standard
-After five days of Dexa, circulating levels of insulin and glucose are increased.
+After five days of Dexa, circulating levels of insulin and glucose are increased
+\begin_inset CommandInset citation
+LatexCommand citep
+key "saad1993modulation"
+
+\end_inset
+
+.
  It is unclear whether insulin changes induce intramuscular changes.
  On one hand, autophosphorylated insulin receptor appears unchanged in absolute
  and relative terms.
  Downstream, phosphorylated IRS1 is essentially unchanged in absolute terms.
  On the other hand, Dexa causes a reduction in total IRS 1, and therefore
- a decrease in the ratio phosphorylated / total IRS 1.
+ a increase in the ratio phosphorylated / total IRS 1.
  In addition, Dexa causes a decrease in IRS 1-associated phosphatidylinositol
  3-kinase (
 \begin_inset CommandInset nomenclature
