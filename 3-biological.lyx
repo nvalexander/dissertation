@@ -881,27 +881,23 @@ TODO expand on glycemia direct action, if any
 \end_layout
 
 \begin_layout Standard
-Muscle work is generated at such high rates, that most glucose use occurs
- in the cytosol, without shuttling to mitochondria, through glycolysis.
- Some of the tri-carbon byproduct of the muscle, pyruvate, is then further
- oxidized in the muscle in the tricarboxylic acid cycle, but a significant
- amount converted to lactate and released in the blood stream.
- As part of the Cori cycle, muscle-released lactate is reassembled into
- glucose by the liver, and re-released into the blood stream, for muscle
- use.
-\end_layout
-
-\begin_layout Standard
-A similar shuttling mechanism further enables muscle to rely on glycolysis,
- by transaminating excess pyruvate into the amino acid alanine.
- Alanine released in the blood is similarly converted by liver into glucose.
- Transamination requires the amino acid glutamate.
- In various tissues, glutamate can be converted interconverted with glutamine,
- or converted into various other non-essential amino acids, including glutamine,
- proline, or arginine.
- Indeed, at rest, human muscle uptakes significant amounts of glutamate,
- some serine, while releasing alanine, glutamine, and trace amounts of the
- other amino acids
+Muscle work is generated at such high rates, that most glucose is processed
+ solely through glycolysis, in the cytosol, to the three-carbon pyruvate.
+ Some of the pyruvate is further oxidized in the muscle, through the tricarboxyl
+ic acid cycle, but a significant amount is converted to lactate and released
+ in the blood stream.
+ As part of the Cori cycle, circulating lactate is reassembled into glucose
+ by the liver, and re-released into the blood stream, for muscle use.
+ A similar shuttling mechanism further enables muscle to rely on glycolysis,
+ by transaminating excess pyruvate to the amino acid alanine, similarly
+ released in the blood.
+ Circulating alanine is converted by liver to glucose.
+ Pyruvate transamination requires the amino acid glutamate.
+ Muscle uses glutamate for other metabolic processes, including the synthesis
+ of non-essential amino acids, including proline and arginine.
+ Therefore, at rest, human muscle uptakes significant amounts of glutamate,
+ less serine, while releasing alanine, glutamine, and smaller amounts of
+ the other amino acids
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gelfand1986removal"
@@ -909,15 +905,27 @@ key "gelfand1986removal"
 \end_inset
 
 .
- Among the amino acids with a trend for release, isoleucine, leucine, methionine
-, phenylalanine, threonine, and valine cannot be synthesized by humans.
- Their net release indicates that, at rest, basal level of protein degradation
- surpass protein synthesis.
+ Glutamine is synthesized in muscle in order to carry to the liver, through
+ the blood, the excess nitrogen yielded by amino acid release during protein
+ degradation.
 \end_layout
 
 \begin_layout Standard
-In the absence of preferred energetic substrates, muscles readily feed on
- essential branched-chain amino acids (
+The glutamine secretion is mainly a vehicle for shuttling excess nitrogen
+ to the liver, where it is further converted to urea.
+\end_layout
+
+\begin_layout Standard
+Among the amino acids with a trend for release between meals, isoleucine,
+ leucine, methionine, phenylalanine, threonine, and valine cannot be synthesized
+ by humans.
+ Their net release indicates that, at rest, basal level of protein degradation
+ slightly surpass protein synthesis.
+ Conversely, for a steady muscle mass, there must be net protein synthesis
+ in the fed state.
+ Feeding status is relayed to the muscle by a surge in insulin and, independentl
+y, by an increase in circulating levels of essential branched-chain amino
+ acids (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "BCAA"
@@ -925,18 +933,8 @@ description "branched-chain amino acids"
 
 \end_inset
 
-), that is, valine, isoleucine, and leucine
-\begin_inset CommandInset citation
-LatexCommand citep
-key "suryawan1998molecular"
-
-\end_inset
-
-.
- Many studies trace leucine disappearance from the bloodstream, and have
- to keep track of its anabolic (non-oxidative) and energetic usage.
- More recently, BCAA are considered regulators of muscle protein in their
- own.
+), that is, valine, isoleucine, and leucine.
+ The signaling effects of BCAA are not completely understood.
  Some studies show that BCAA ingestion or infusion increase protein synthesis
  rate
 \begin_inset CommandInset citation
@@ -945,7 +943,7 @@ key "bennet1989increase"
 
 \end_inset
 
-, while others claim that, on the contrary, BCAA reduce protein degradation
+, while others claim that BCAA solely reduce protein degradation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "nair1992leucine"
@@ -965,10 +963,7 @@ key "barazzoni2012insulin"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-One study investigated the action of BCAA at clamped normal insulin levels
+ One study investigated the action of BCAA at clamped normal insulin levels
 \begin_inset CommandInset citation
 LatexCommand citep
 key "cuthbertson2005anabolic"
@@ -978,8 +973,8 @@ key "cuthbertson2005anabolic"
 .
  In young, healthy controls, BCAA alone were able to increase the fractional
  synthesis rate for myofibrilar protein.
- At the same time, BCAA caused an increase in phosphorylation of Mechanistic
- Target of Rapamycin (
+ At the same time, BCAA caused an increase in phosphorylation of mechanistic
+ target of rapamycin (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "mTOR"
@@ -1038,6 +1033,27 @@ description "eIF4E binding protein"
  The action of mTOR complex 1 on 4E-BP is the canonical way in which the
  former stimulates protein synthesis, by abolishing the latter's ability
  to bind and inhibit the mandatory translation initiation factor eIF4E.
+ Many of these anabolic markers may be paradoxically elevated in acute,
+ non-starving atrophy settings, where BCAA sudden release increases their
+ circulating levels.
+\end_layout
+
+\begin_layout Standard
+In addition to their signaling roles, BCAA are also used by muscle as protein
+ precursors, and as energetic substrates, when preferred energetic substrates
+ are not available
+\begin_inset CommandInset citation
+LatexCommand citep
+key "suryawan1998molecular"
+
+\end_inset
+
+.
+ In studies which measure leucine disappearance from the bloodstream or
+ culture medium, a distinction must be made between the leucine used in
+ non-oxidative, anabolic reactions and the alpha-ketoisocaproate-forming,
+ ergogenic usage.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1661,15 +1677,15 @@ key "waltenberger1994different"
 
 \end_inset
 
-, of phospholipase C γ (
+, of phospholipase C (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "PLCg"
-description "phospholipase C g"
+symbol "PLC"
+description "phospholipase C"
 
 \end_inset
 
-)
+) γ
 \begin_inset CommandInset citation
 LatexCommand citep
 key "seetharam1995unique"
@@ -1733,7 +1749,16 @@ description "neuro-muscular junction"
 ).
  In addition to the direct synaptic activity, muscles and lower motoneurons
  are involved in a mutually beneficial life-long interaction.
- In utero, experimental destruction of motoneurons with bungarotoxin abolishes
+ The loss of NMJ-mediated stimulation leads to rapid, sizeable loss of muscle
+ mass, commonly seen in spinal cord injury.
+ Experimentally, denervation of a hindlimb or hemidiaphragm is a relatively
+ simple procedure, allowing the use of an animal as its own control.
+ Experimental denervation is the most studied model of muscle atrophy, generatin
+g working hypotheses for the study of GAML.
+\end_layout
+
+\begin_layout Standard
+In utero, experimental destruction of motoneurons with bungarotoxin abolishes
  formation of secondary myotubes, although it has limited effect on the
  formation of primary fibers
 \begin_inset CommandInset citation
@@ -2131,15 +2156,184 @@ proteasome system.
  in denervation-induced muscle loss.
  The irreconcilable differences between functional and molecular studies
  of denervation epitomize similar predicaments in the study of muscle atrophy
- due to other etiologies, including the less-understood GAML.
-\end_layout
-
-\begin_layout Section
-Interactions between muscle and the immune system
+ due to other etiologies, including the less-explored GAML.
 \end_layout
 
 \begin_layout Section
 Animal models of steroid myopathy
+\end_layout
+
+\begin_layout Standard
+In the 75 years since the discovery of chronic steroid myopathy, scientists
+ attempted, with variable success, to develop multiple animal models.
+ In dogs, seven days of 0.44 mg / kg body weight X day Dexa cause increased
+ nitrogen excretion, increased glutamine and alanine release from the hindlimb
+\begin_inset CommandInset citation
+LatexCommand citep
+key "muhlbacher1984effects"
+
+\end_inset
+
+.
+ In rabbit, four days of 1 mg / kg body weight Dexa did not change muscle
+ mass, despite the upregulation of some catabolic markers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "yeh1994effects"
+
+\end_inset
+
+.
+ However, early studies were marred by an absence of good functional outcomes,
+ such as muscle force or mass.
+ Moreover, the modern molecular correlates of muscle loss were not known,
+ and could not have been investigated.
+ 
+\end_layout
+
+\begin_layout Standard
+An extensive literature documents the effect of GC on rats.
+ The effects of 7-day, 5 mg / kg body weight X day treatment allow the classific
+ation of GCs in two subsets
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bullock1972relative"
+
+\end_inset
+
+.
+ The short-acting subset, including prednisolone and corticosterone, causes
+ gains in body weight.
+ The net gain in body weight is the result of increased adiposity and of
+ MR-mediated water retention, combined with a net neutral effect on muscle
+ mass.
+ In contrast, long-acting, specific GCs, such as Dexa, betamethasone, and
+ triamcinolone, cause loss of body weight, and an even more rapid loss of
+ muscle mass.
+ In response to Dexa, rat muscle fibers undergo reductions in CSA, to an
+ ampler degree in fast twitch fibers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "prezant1997gender-specific,baptista2013leucine"
+
+\end_inset
+
+.
+ Dexa-induced loss of muscle mass is present, although less manifest, in
+ female rats, possibly because, in males, hypercortisolism is compounded
+ by a reduction in circulating T levels
+\begin_inset CommandInset citation
+LatexCommand citep
+key "prezant1997gender-specific"
+
+\end_inset
+
+.
+ In line with the section on human steroid myopathy, this section will focus
+ on the effects of Dexa on male rats.
+\end_layout
+
+\begin_layout Standard
+The main mechanism for rat GAML appears to be an increase in protein degradation.
+ Treatment with 1 mg / kg body weight Dexa, for 10 days, more than doubles
+ the urinary 3-MH output
+\begin_inset CommandInset citation
+LatexCommand citep
+key "seene1988effect"
+
+\end_inset
+
+.
+ Dexa increases tyrosine release from muscle explants, even when the lysosome
+ inhibitor methylamine and the lysosome / calpain inhibitor E-64 was added
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wing1993glucocorticoids"
+
+\end_inset
+
+.
+ The effect is present even when the explants, rather than the animals,
+ were treated with Dexa.
+\end_layout
+
+\begin_layout Standard
+Ubiquitin expression is stimulated by hours of Dexa treatment
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wing1993glucocorticoids"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dexa increases muscle glutamine synthetase activity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "king1983glutamine"
+
+\end_inset
+
+, possibly as an adaptation to increased free amino acids.
+\end_layout
+
+\begin_layout Standard
+In the first hours after receiving GCs, the rate of protein synthesis in
+ the muscle decreases, as indicated by reductions in incorporation of labeled
+ precursors and by a reduction in the proportion of polyribosomes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "peters1970biochemical,young1968sedimentation"
+
+\end_inset
+
+.
+ The proportion of polysomes recovers to basal level in less than 24 hours,
+ when the GC is short-acting prednisone
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bullock1972relative"
+
+\end_inset
+
+.
+ In contrast, polysome downregulation lasts more than two days after Dexa.
+\end_layout
+
+\begin_layout Standard
+Six or 24 hours of 10-1000 nM Dexa determined increased release of radioactive
+ tyrosine from rat L8 fully differentiated myotubes.
+ In these cells, Dexa upregulated the expression of m-calpain and cathepsins
+ D and B
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hong1995effects"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+After five days of Dexa, circulating levels of insulin and glucose are increased.
+ It is unclear whether insulin changes induce intramuscular changes.
+ On one hand, autophosphorylated insulin receptor appears unchanged in absolute
+ and relative terms.
+ Downstream, phosphorylated IRS1 is essentially unchanged in absolute terms.
+ On the other hand, Dexa causes a reduction in total IRS 1, and therefore
+ a decrease in the ratio phosphorylated / total IRS 1.
+ In addition, Dexa causes a decrease in IRS 1-associated phosphatidylinositol
+ 3-kinase (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PI3K"
+description "phosphatidylinositol 3-kinase"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section

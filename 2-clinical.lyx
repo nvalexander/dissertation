@@ -1509,11 +1509,8 @@ description "cross-sectional area"
 \end_inset
 
 ) of the type I and IIa (slow twitch, oxidative / glycolytic) fibers.
- Such diameter increases in spite of loss of function and content are explained
- by a disorganized intracellular structure, and cast into doubt the utility
- of CSA measurements in GAML.
- Such gains in the ratio fast-to-slow twitch fibers are associated with
- insulin resistance
+ Gains in the ratio fast-to-slow twitch fibers are associated with insulin
+ resistance
 \begin_inset CommandInset citation
 LatexCommand citep
 key "simoneau1995skeletal"
@@ -1521,6 +1518,11 @@ key "simoneau1995skeletal"
 \end_inset
 
 .
+ Diameter increases in spite of loss of function and protein content have
+ been explained by a disorganized intracellular structure.
+ A more practical consequence of these findings is the dereliction of CSA
+ measurements in GAML.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3467,6 +3469,51 @@ key "ferrando2001testosterone"
 ion is given to the normogonadal.
  The hypothesis that T inhibits protein degradation remains tempting, but
  better studies are needed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename data/PMID12519877/proteasomeactivity.jpg
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Changes in proteasome enzymatic activity following 6 months of T therapy
+ (pending permission from Endocrine Society
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferrando2003differential"
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
