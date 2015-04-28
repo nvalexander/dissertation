@@ -1613,7 +1613,14 @@ key "bonner2013muscle-specific"
 
 .
  In addition, vascularization defects may induce relative intramuscular
- hypoxia, which is an independent atrophying, pro-proteolytic factor.
+ hypoxia, which is an independent atrophying, pro-proteolytic factor
+\begin_inset CommandInset citation
+LatexCommand citep
+key "detheije2015differential"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1637,6 +1644,9 @@ key "bryan2008coordinated"
 \end_inset
 
 .
+ Development of vasculature in growing muscle may be a physiologically meaningfu
+l way to ensure vasculature remains competent upon increase circulatory
+ demands.
  Second, although the canonical upregulator of VEGF is hypoxia-induced factor
  1α (
 \begin_inset CommandInset nomenclature
@@ -1732,7 +1742,7 @@ key "korpelainen1999endothelial"
  Most of these VEGF effects overlap with the effects of many other muscle
  anabolic agents.
  Thus, it is unclear whether VEGF plays a mediating role in muscle hypertrophy,
- or it provides the auxiliary adjustment of vasculature to fiber ratio.
+ or it provides the homeostasis of the vasculature to fiber ratio.
 \end_layout
 
 \begin_layout Section
@@ -2256,12 +2266,9 @@ key "weinstein1995glucocorticoid-induced"
 \end_inset
 
 .
- Even 
-\end_layout
-
-\begin_layout Standard
-Autophosphorylated insulin receptor and phosphorylated IRS1 are unaltered,
- in absolute and relative terms
+ Inicative of a disconnection between blood and muscle, autophosphorylated
+ insulin receptor and phosphorylated IRS1 are unaltered, in absolute and
+ relative terms
 \begin_inset CommandInset citation
 LatexCommand citep
 key "saad1993modulation"
@@ -2269,16 +2276,7 @@ key "saad1993modulation"
 \end_inset
 
 .
- Nevertheless, Dexa caused a decrease in IRS 1-associated phosphatidylinositol
- 3-kinase (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "PI3K"
-description "phosphatidylinositol 3-kinase"
-
-\end_inset
-
-).
+ Moreover, Dexa causes a decrease in IRS 1-associated PI3K.
 \end_layout
 
 \begin_layout Standard
