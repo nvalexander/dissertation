@@ -2236,7 +2236,7 @@ key "prezant1997gender-specific"
 \begin_layout Standard
 The most poignant change induced by chronic Dexa at muscle level is the
  induction of insulin resistance, resulting in uncompensated hyperglycemia.
- Dexa-indiced hyperglycemia stimulates insulin secretion
+ Dexa-induced hyperglycemia stimulates insulin secretion
 \begin_inset CommandInset citation
 LatexCommand citep
 key "saad1993modulation"
@@ -2251,11 +2251,19 @@ key "weinstein1995glucocorticoid-induced"
 \end_inset
 
 .
- Autophosphorylated insulin receptor appears unchanged in absolute and relative
- terms.
- Downstream, phosphorylated IRS1 is essentially unchanged in absolute terms.
- In one study, Dexa caused a reduction in total IRS 1, and therefore a increase
- in the ratio phosphorylated / total IRS 1.
+ Even 
+\end_layout
+
+\begin_layout Standard
+Autophosphorylated insulin receptor and phosphorylated IRS1 are unaltered,
+ in absolute and relative terms
+\begin_inset CommandInset citation
+LatexCommand citep
+key "saad1993modulation"
+
+\end_inset
+
+.
  Nevertheless, Dexa caused a decrease in IRS 1-associated phosphatidylinositol
  3-kinase (
 \begin_inset CommandInset nomenclature
@@ -2345,6 +2353,18 @@ Six or 24 hours of 10-1000 nM Dexa determined increased release of radioactive
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hong1995effects"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Insulin or IGF-I, in concentrations close to the physiological levels, increase
+ glucose uptake about 10-fold
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weinstein1995glucocorticoid-induced"
 
 \end_inset
 
