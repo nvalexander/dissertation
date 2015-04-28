@@ -2234,18 +2234,38 @@ key "prezant1997gender-specific"
 \end_layout
 
 \begin_layout Standard
-The most poignant change induced by Dexa at muscle level is the induction
- of insulin resistance, resulting in uncompensated hyperglycemia.
- After five days of Dexa, circulating levels of insulin are correspondingly
- increased
+The most poignant change induced by chronic Dexa at muscle level is the
+ induction of insulin resistance, resulting in uncompensated hyperglycemia.
+ Dexa-indiced hyperglycemia stimulates insulin secretion
 \begin_inset CommandInset citation
 LatexCommand citep
 key "saad1993modulation"
 
 \end_inset
 
-, but muscle's glucose uptake is paradoxically decreased.
- 
+, but muscle's glucose uptake is paradoxically depressed
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weinstein1995glucocorticoid-induced"
+
+\end_inset
+
+.
+ Autophosphorylated insulin receptor appears unchanged in absolute and relative
+ terms.
+ Downstream, phosphorylated IRS1 is essentially unchanged in absolute terms.
+ In one study, Dexa caused a reduction in total IRS 1, and therefore a increase
+ in the ratio phosphorylated / total IRS 1.
+ Nevertheless, Dexa caused a decrease in IRS 1-associated phosphatidylinositol
+ 3-kinase (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PI3K"
+description "phosphatidylinositol 3-kinase"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -2329,37 +2349,6 @@ key "hong1995effects"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Muscles
-\end_layout
-
-\begin_layout Standard
-After five days of Dexa, circulating levels of insulin and glucose are increased
-\begin_inset CommandInset citation
-LatexCommand citep
-key "saad1993modulation"
-
-\end_inset
-
-.
- It is unclear whether insulin changes induce intramuscular changes.
- On one hand, autophosphorylated insulin receptor appears unchanged in absolute
- and relative terms.
- Downstream, phosphorylated IRS1 is essentially unchanged in absolute terms.
- On the other hand, Dexa causes a reduction in total IRS 1, and therefore
- a increase in the ratio phosphorylated / total IRS 1.
- In addition, Dexa causes a decrease in IRS 1-associated phosphatidylinositol
- 3-kinase (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "PI3K"
-description "phosphatidylinositol 3-kinase"
-
-\end_inset
-
-).
 \end_layout
 
 \begin_layout Section
