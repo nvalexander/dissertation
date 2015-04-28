@@ -2234,6 +2234,21 @@ key "prezant1997gender-specific"
 \end_layout
 
 \begin_layout Standard
+The most poignant change induced by Dexa at muscle level is the induction
+ of insulin resistance, resulting in uncompensated hyperglycemia.
+ After five days of Dexa, circulating levels of insulin are correspondingly
+ increased
+\begin_inset CommandInset citation
+LatexCommand citep
+key "saad1993modulation"
+
+\end_inset
+
+, but muscle's glucose uptake is paradoxically decreased.
+ 
+\end_layout
+
+\begin_layout Standard
 The main mechanism for rat GAML appears to be an increase in protein degradation.
  Treatment with 1 mg / kg body weight Dexa, for 10 days, more than doubles
  the urinary 3-MH output
@@ -2314,6 +2329,10 @@ key "hong1995effects"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Muscles
 \end_layout
 
 \begin_layout Standard
