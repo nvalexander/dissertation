@@ -1578,17 +1578,6 @@ key "olfert2009muscle-specific"
  Therefore, the muscle depleted of VEGF-A is less able of endurance effort
  (80% shorter time to exhaustion on the inclined treadmill) and of brief
  anaerobic exercise (34% lower maximal running speed).
- It has been suggested that the most direct effect of VEGF-A depletion is
- partial segregation of muscle from blood-carried endocrine signals.
- For example, VEGF_A-depleted muscle has lower glucose uptake, a defect
- which is reversed by explantation 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bonner2013muscle-specific"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -1609,6 +1598,22 @@ key "arsic2004vascular"
  in fact diminished.
  These observations are consistent with direct anti-apoptotic and profusogenic
  effects.
+\end_layout
+
+\begin_layout Standard
+It has been suggested that the most direct effect of VEGF-A depletion is
+ partial segregation of muscle from blood-carried endocrine signals.
+ For example, VEGF-A-depleted muscle has lower glucose uptake, a defect
+ which is reversed by explantation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bonner2013muscle-specific"
+
+\end_inset
+
+.
+ In addition, vascularization defects may induce relative intramuscular
+ hypoxia, which is an independent atrophying, pro-proteolytic factor.
 \end_layout
 
 \begin_layout Standard
