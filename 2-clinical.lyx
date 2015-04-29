@@ -753,9 +753,20 @@ key "arth195816-methylated,arth195816-methylateda"
 
 \begin_layout Standard
 Dexa is completely unable to cause edema and electrolyte imbalance.
- Still, Dexa is about 20 times more potent in causing hyperglycemia, suggesting
- that anti-inflammatory and hyperglycemic actions are intermediated by the
- same receptor.
+ Nevertheless, Dexa is 52 times more potent in suppressing endogenous GC
+ secretion, and 35 times more potent in causing hyperglycemia.
+ In animals, Dexa is 160 times more potent than cortisol in the inhibition
+ of granuloma test of immune function
+\begin_inset CommandInset citation
+LatexCommand citep
+key "silber1959biology"
+
+\end_inset
+
+.
+ These findings suggest that anti-inflammatory and hyperglycemic actions
+ are intermediated by the same specific, Dexa-sensitive receptor, whereas
+ electrolyte changes are caused by cortisol through a different pathway.
  To date, efforts to synthesize steroids with anti-inflammatory action that
  do not interfere with metabolism have failed.
  Compounds such as A276575
@@ -1221,6 +1232,9 @@ key "bowyer1985steroid"
 \end_inset
 
 .
+ It is unclear whether the muscle deleterious effects follow the same ratio
+ seen in the hyperglycemia-inducing studies, where Dexa is more than 20
+ times stronger than XXXX
 \end_layout
 
 \begin_layout Standard
