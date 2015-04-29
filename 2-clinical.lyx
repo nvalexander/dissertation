@@ -754,7 +754,14 @@ key "arth195816-methylated,arth195816-methylateda"
 \begin_layout Standard
 Dexa is completely unable to cause edema and electrolyte imbalance.
  Nevertheless, Dexa is 52 times more potent in suppressing endogenous GC
- secretion, and 35 times more potent in causing hyperglycemia.
+ secretion, and 35 times more potent in causing hyperglycemia
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frawley1959effects,meikle1977potency"
+
+\end_inset
+
+.
  In animals, Dexa is 160 times more potent than cortisol in the inhibition
  of granuloma test of immune function
 \begin_inset CommandInset citation
@@ -767,8 +774,9 @@ key "silber1959biology"
  These findings suggest that anti-inflammatory and hyperglycemic actions
  are intermediated by the same specific, Dexa-sensitive receptor, whereas
  electrolyte changes are caused by cortisol through a different pathway.
- To date, efforts to synthesize steroids with anti-inflammatory action that
- do not interfere with metabolism have failed.
+ Further supporting the idea of a unique Dexa receptor, efforts to synthesize
+ steroids with anti-inflammatory action that do not interfere with metabolism
+ have failed.
  Compounds such as A276575
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -960,13 +968,14 @@ key "alderson2005corticosteroids"
 \end_inset
 
 .
- A similar, paradoxical situation is seen in clinical research.
+ A similar, paradoxical situation is seen in ongoing clinical research.
  As of 2015, the patent-free status of the GCs discourages trials for new
  indications, while their de facto standard-of-care status makes them a
  common comparator in clinical trials.
  The National Cancer Institute sponsors 311 ongoing clinical studies employing
- Dexa, thus providing a plethora of data which may be misconstrued as support
- for the use of GCs.
+ Dexa, mainly in the standard-of-care arm, thus providing a plethora of
+ data which have been, and may still be, misconstrued as support for the
+ use of GCs.
  Every day practice may drift further apart for the officially sanctioned
  label, thus providing new opportunities for unjustifiable overdose.
 \end_layout
@@ -1177,8 +1186,8 @@ key "prague2013cushings"
 
 \begin_layout Standard
 Signs of iatrogenic CS are as varied as those of Cushing's disease.
- In a cohort of patients receiving chronic or high-dose (>20 mg/day prednisone)
- GC, the most common signs were development of ectopic adipose deposits
+ In a cohort of patients receiving chronic >0.33 mg / day and kg body weight
+ prednisone, the most common signs were development of ectopic adipose deposits
  (50%), hyperphagia (47%), and muscle cramps (32%) 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1232,9 +1241,9 @@ key "bowyer1985steroid"
 \end_inset
 
 .
- It is unclear whether the muscle deleterious effects follow the same ratio
- seen in the hyperglycemia-inducing studies, where Dexa is more than 20
- times stronger than XXXX
+ Based on other metabolic effects, it is likely that the catabolic potency
+ ratio is even more tilted towards Dexa than the referenced studies indicate,
+ but human pharmacodynamic studies are lacking.
 \end_layout
 
 \begin_layout Standard
@@ -1800,8 +1809,8 @@ key "ghosh2013teaching,nucci1996chloroquine"
 \begin_layout Standard
 Another putative parallel mechanism for GC-induced loss of muscle is downregulat
 ion of protein synthesis.
- A few human trials measured directly the effect of GC on protein synthesis
- in healthy volunteers, but most failed to reach conclusive findings.
+ Few human trials measured directly the effect of GC on protein synthesis
+ in healthy volunteers.
  Brillion and colleagues
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1809,11 +1818,23 @@ key "brillon1995effect"
 
 \end_inset
 
- found that a 78 mg cortisol infusion over 13 hours led to an increase in
+ found that a 80 mg cortisol infusion over 13 hours led to 8% increase in
  non-oxidative leucine uptake, indicating an upregulation of protein synthesis.
- However, using a 195 mg cortisol infusion in the same protocol failed to
+ However, using a 200 mg cortisol infusion in the same protocol failed to
  cause a detectable change in protein synthesis compared to placebo, suggesting
  hormesis may confound experiments.
+ Moreover, this finding was never replicated.
+ Löfberg and colleagues
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lofberg2002effects"
+
+\end_inset
+
+ found that three days of 65 mg / day prednisolone caused a non-significant
+ 21% increase in protein synthesis rate and a statistically-significant
+ 52% increase in the rate of protein degradation, based on the difference
+ between arterial and venous levels of tritiated phenyl alanine at leg level.
  Short and colleagues
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1832,30 +1853,16 @@ has no effect on [...] muscle protein metabolism or muscle function
 \end_inset
 
 .
- Despite eliciting the expected hyperglycemic response to GC, these studies
- may have been underpowered (sample size n = 6-7) or may be troubled by
- the use of a small dose.
+ Some of these studies may have been underpowered (sample size n = 6-7)
+ or may be troubled by the use of a small dose, but their validity is confirmed
+ by the fact that, in each case, the expected hyperglycemic response to
+ GC was observed.
+ 
 \end_layout
 
 \begin_layout Standard
-Löfberg and colleagues
-\begin_inset CommandInset citation
-LatexCommand cite
-key "lofberg2002effects"
-
-\end_inset
-
- measured the difference between arterial and venous levels of tritiated
- phenyl alanine at leg level.
- Three days of 65 mg / day prednisolone caused a non-significant 21% increase
- in protein synthesis rate and a statistically-significant 52% increase
- in the rate of protein degradation, indicating that protein degradation
- changes are a more suitable explanation for GC-induced muscle loss.
-\end_layout
-
-\begin_layout Standard
-Nevertheless, the hypothesis that GC cause muscle loss by inhibition of
- protein synthesis is still debated, due to a plethora of indirect evidence.
+The hypothesis that GC cause muscle loss by inhibition of protein synthesis
+ is still debated, due to a plethora of indirect evidence.
  In Löfberg's study, biopsies revealed a prednisolone-induced loss of muscle
  polyribosomes, interpreted as evidence for decrease in protein synthesis
  rate.
