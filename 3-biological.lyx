@@ -2280,7 +2280,15 @@ key "saad1993modulation"
 \end_layout
 
 \begin_layout Standard
-The main mechanism for rat GAML appears to be an increase in protein degradation.
+Adult rat GAML is almost exclusively the result of an increase in protein
+ degradation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity"
+
+\end_inset
+
+.
  Treatment with 1 mg / kg body weight Dexa, for 10 days, more than doubles
  the urinary 3-MH output
 \begin_inset CommandInset citation
@@ -2301,6 +2309,7 @@ key "wing1993glucocorticoids"
 .
  The effect is present even when the explants, rather than the animals,
  were treated with Dexa.
+ Darrdevet and colleagues showed that in old rats, the 
 \end_layout
 
 \begin_layout Standard
