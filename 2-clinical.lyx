@@ -1188,13 +1188,13 @@ key "prague2013cushings"
 Signs of iatrogenic CS are as varied as those of Cushing's disease.
  In a cohort of patients receiving for three months more than 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 
 \backslash
-SI{0.33}{
+SI{0.4}{
 \backslash
 milli
 \backslash
@@ -1213,9 +1213,8 @@ day}
 
 \end_inset
 
- >0.33 mg / day and kg body weight prednisone, the most common signs were
- development of ectopic adipose deposits (50%), hyperphagia (47%), and muscle
- cramps (32%) 
+ prednisone, the most common signs were development of ectopic adipose deposits
+ (50%), hyperphagia (47%), and muscle cramps (32%) 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "fardet2007corticosteroid-induced"
@@ -1253,14 +1252,68 @@ key "douglass1992myopathy"
 
 , indicating that muscle damage is mediated by GR.
  GCs do differ quantitatively in their ability to cause myopathy.
- Myopathy can be induced by a two-week regimen of 16 mg / day Dexa
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kostaras2014use"
+ Myopathy is invariably induced in two weeks by either 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.2}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
 
 \end_inset
 
-, or of 40 mg / day prednisone
+ Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "batchelor1997steroid"
+
+\end_inset
+
+, or by 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.5}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ prednisone
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bowyer1985steroid"
@@ -1270,7 +1323,7 @@ key "bowyer1985steroid"
 .
  Based on other metabolic effects, it is likely that the catabolic potency
  ratio is even more tilted towards Dexa than the referenced studies indicate,
- but human pharmacodynamic studies are lacking.
+ but more detailed human pharmacodynamic studies are lacking.
 \end_layout
 
 \begin_layout Standard
@@ -1414,9 +1467,35 @@ key "foye2014corticosteroid-induced"
 
 \begin_layout Standard
 In a comparative study of patients receiving GC therapy for asthma, half
- of the patients receiving > 40 mg / day prednisone exhibited a reduction
- in hip flexor strength of 2 SD or more, compared with health age- and sex-match
-ed controls
+ of the patients receiving more than 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.2}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ prednisone exhibited a reduction in hip flexor strength of 2 SD or more,
+ compared with health age- and sex-matched controls
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bowyer1985steroid"
@@ -1434,8 +1513,35 @@ key "batchelor1997steroid"
 \end_inset
 
 .
- In a small cohort, 6 months of 12 mg / day prednisone treatment was associated
- with a 20% reduction in thigh muscle force, compared to healthy controls
+ In a small cohort, 6 months of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.16}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ prednisone treatment was associated with a 20% reduction in thigh muscle
+ force, compared to healthy controls
 \begin_inset CommandInset citation
 LatexCommand cite
 key "horber1985thigh"
