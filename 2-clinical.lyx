@@ -1186,9 +1186,36 @@ key "prague2013cushings"
 
 \begin_layout Standard
 Signs of iatrogenic CS are as varied as those of Cushing's disease.
- In a cohort of patients receiving chronic >0.33 mg / day and kg body weight
- prednisone, the most common signs were development of ectopic adipose deposits
- (50%), hyperphagia (47%), and muscle cramps (32%) 
+ In a cohort of patients receiving for three months more than 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.33}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ >0.33 mg / day and kg body weight prednisone, the most common signs were
+ development of ectopic adipose deposits (50%), hyperphagia (47%), and muscle
+ cramps (32%) 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "fardet2007corticosteroid-induced"
