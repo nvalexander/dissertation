@@ -298,7 +298,7 @@ key "lowe1999stretch-induced"
 A large majority of the myofiber cytosol is the contractile apparatus, in
  the shape of bundles of protein filaments termed myofibrils.
  Within myofibrils, myosin and actin filaments alternate, held together
- by multiprotein complexes containing titin.
+ by multi-protein complexes containing titin.
  Myofibril proteins are about two thirds of the total myofiber protein
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -331,7 +331,8 @@ ted.
 \end_layout
 
 \begin_layout Standard
-Similar issues govern the use of 3MH as a marker for myofiber protein catabolism.
+Similar issues govern the use of 3MH as a marker for myofibril protein catabolis
+m.
  Given that the main correlate of urinary 3MH is muscle mass
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1934,8 +1935,8 @@ key "goldberg1969protein"
 \end_inset
 
 .
- Moreover, denervation increases urinary 3MH, indicating activation of catabolis
-m
+ Moreover, denervation increases urinary 3MH, indicating activation of myofibril
+ catabolism
 \begin_inset CommandInset citation
 LatexCommand citep
 key "furuno1990role"
@@ -2593,6 +2594,11 @@ IGF-IEa isoform
 
 \begin_layout Standard
 IGF-I expression is GH-independent before the age of 6 months (PMID: 11726733).
+\end_layout
+
+\begin_layout Standard
+Triamcinolone causes muscle loss which co-administration of GH does not
+ compensate.
 \end_layout
 
 \begin_layout Standard
