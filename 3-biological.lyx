@@ -2306,12 +2306,16 @@ key "bullock1972relative"
  In contrast, long-acting, specific GCs, such as Dexa, betamethasone, and
  triamcinolone, cause loss of body weight, and an even more rapid loss of
  muscle mass.
- GAML in rats is an organized process, lacking the features of necrosis
- or apoptosis.
-\end_layout
+ GAML in rats is an organized process, lacking the microscopic features
+ of necrosis
+\begin_inset CommandInset citation
+LatexCommand citep*
+key "nava1996effects"
 
-\begin_layout Standard
-In response to Dexa, rat muscle fibers undergo reductions in CSA, to an
+\end_inset
+
+.
+ In response to Dexa, rat muscle fibers undergo reductions in CSA, to an
  ampler degree in fast twitch fibers
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2320,11 +2324,7 @@ key "prezant1997gender-specific,baptista2013leucine"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-Dexa-induced loss of muscle mass is present, although less manifest, in
+ Dexa-induced loss of muscle mass is present, although less manifest, in
  female rats, possibly because, in males, hypercortisolism is compounded
  by a reduction in circulating T levels
 \begin_inset CommandInset citation
