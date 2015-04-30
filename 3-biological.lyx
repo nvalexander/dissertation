@@ -1961,7 +1961,7 @@ key "gomes2012upregulation"
 
 , and upregulates all the ubiquitin-proteasome pathway components, including
  ubiquitin, the E3 ligases MuRF1 and MAbx, and the proteasomal subunit macropain
- 
+ (also known as A1) 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "medina1995increase,bodine2001identification"
@@ -2455,7 +2455,7 @@ key "dardevet1995sensitivity"
 \end_inset
 
 .
- The proteasomal subunits  C2 are also upregulated by Dexa
+ The proteasomal subunits C2 are also upregulated by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity"
