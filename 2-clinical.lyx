@@ -1648,7 +1648,34 @@ key "rebuffe-scrive1988muscle"
 
 .
  Similar histological findings were made in renal transplant patients receiving
- 2 g prednisone over three months
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ prednisone over three months
 \begin_inset CommandInset citation
 LatexCommand citep
 key "topp2003alterations"
@@ -1750,9 +1777,31 @@ key "sprague1950physiological"
 \end_inset
 
 .
- As little as 1.5 mg cortisol infused over 8 hours increases by a quarter
- the rate of appearance of leucine into the bloodstream, suggestive of proteolys
-is upregulation
+ As little as 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ cortisol infused over 8 hours increases by a quarter the rate of appearance
+ of leucine into the bloodstream, suggestive of proteolysis upregulation
 \begin_inset CommandInset citation
 LatexCommand cite
 key "simmons1984increased"
@@ -1770,9 +1819,31 @@ key "brillon1995effect"
 \end_inset
 
 .
- More modern mass spectrometric methods revealed that a single dose of 75
- mg prednisolone cause increases in all blood amino acids, presumably due
- to mobilization from muscle sources
+ More modern mass spectrometric methods revealed that a single dose of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ prednisolone cause increases in all blood amino acids, presumably due to
+ mobilization from muscle sources
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ellero-simatos2012assessing"
@@ -1812,8 +1883,8 @@ key "khaleeli1983corticosteroid"
 \begin_layout Standard
 The last three decades brought a better understanding of protein degradative
  pathways and of muscle atrophy.
- Two proteolytic systems, the proteasome-ubiquitin system and the autophagosome
- (discussed in later sections), have been discovered and dissected.
+ Two major proteolytic systems, the proteasome-ubiquitin system and the
+ autophagosome (discussed in later sections), have been discovered and dissected.
  But only one published trial investigated the action of GC in human muscle
  biopsies, at a molecular level.
  It failed to find a significant change in mRNA of ubiquitin and the C3
