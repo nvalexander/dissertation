@@ -2408,16 +2408,6 @@ key "seene1988effect"
 \end_inset
 
 .
- The increase in proteolytic rate is unchanged when explants are treated
- with the lysosome inhibitor methylamine and the lysosome / calpain inhibitor
- E-64
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wing1993glucocorticoids"
-
-\end_inset
-
-.
  The upregulation of proteolysis occurs even when explants, rather than
  animals, are treated with Dexa, suggesting that GAML does not require extramusc
 ular inputs
@@ -2428,6 +2418,20 @@ key "wing1993glucocorticoids"
 \end_inset
 
 .
+ The increase in proteolytic rate is unchanged when explants are treated
+ with the lysosome inhibitor methylamine and the lysosome / calpain inhibitor
+ E-64.
+ On the other hand, the Dexa-stimulated increase in proteolysis is extinguished
+ when the explant is depleted of ATP by a combination of the decoupling
+ agent dintrophenol and the unlysable glucose homologue, 2-deoxyglucose
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tiao1996energy-ubiquitin-dependent"
+
+\end_inset
+
+.
+ Therefore, GAML is heavily based on the proteasome-ubiquitin system.
 \end_layout
 
 \begin_layout Standard
