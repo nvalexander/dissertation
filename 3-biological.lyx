@@ -2459,7 +2459,7 @@ key "dardevet1995sensitivity"
 As in human studies, the role of protein synthesis modulation during hypercortis
 olism is still debated.
  Dardevet and colleagues showed that, solely in old rats, chronic Dexa causes
- a decrease in protein synthesis
+ a decrease in protein synthesis, as indicated by tracer uptake
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity"
@@ -2467,6 +2467,26 @@ key "dardevet1995sensitivity"
 \end_inset
 
 .
+ In the first hours after receiving GCs, the rate of protein synthesis in
+ the muscle decreases, as indicated by reductions in incorporation of labeled
+ precursors and by a reduction in the proportion of polyribosomes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "peters1970biochemical,young1968sedimentation"
+
+\end_inset
+
+.
+ The proportion of polysomes recovers to basal level in less than 24 hours,
+ when the GC is short-acting prednisone
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bullock1972relative"
+
+\end_inset
+
+.
+ In contrast, polysome downregulation lasts more than two days after Dexa.
 \end_layout
 
 \begin_layout Standard
@@ -2492,29 +2512,6 @@ key "king1983glutamine"
 \end_layout
 
 \begin_layout Standard
-In the first hours after receiving GCs, the rate of protein synthesis in
- the muscle decreases, as indicated by reductions in incorporation of labeled
- precursors and by a reduction in the proportion of polyribosomes
-\begin_inset CommandInset citation
-LatexCommand citep
-key "peters1970biochemical,young1968sedimentation"
-
-\end_inset
-
-.
- The proportion of polysomes recovers to basal level in less than 24 hours,
- when the GC is short-acting prednisone
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bullock1972relative"
-
-\end_inset
-
-.
- In contrast, polysome downregulation lasts more than two days after Dexa.
-\end_layout
-
-\begin_layout Standard
 Six or 24 hours of 10-1000 nM Dexa determined increased release of radioactive
  tyrosine from rat L8 fully differentiated myotubes.
  In these cells, Dexa upregulated the expression of m-calpain and cathepsins
@@ -2522,18 +2519,6 @@ Six or 24 hours of 10-1000 nM Dexa determined increased release of radioactive
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hong1995effects"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Insulin or IGF-I, in concentrations close to the physiological levels, increase
- glucose uptake about 10-fold
-\begin_inset CommandInset citation
-LatexCommand citep
-key "weinstein1995glucocorticoid-induced"
 
 \end_inset
 
@@ -2586,6 +2571,18 @@ IGF-IEa isoform
 \end_layout
 
 \begin_layout Standard
+Insulin or IGF-I, in concentrations close to the physiological levels, increase
+ glucose uptake about 10-fold
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weinstein1995glucocorticoid-induced"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 IGF-I expression is GH-independent before the age of 6 months (PMID: 11726733).
 \end_layout
 
@@ -2598,7 +2595,7 @@ key "petrof1995growth"
 
 \end_inset
 
-.
+; or it does(PMID: 8937196)?
 \end_layout
 
 \begin_layout Standard
