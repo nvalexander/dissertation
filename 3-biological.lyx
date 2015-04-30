@@ -2361,15 +2361,9 @@ key "saad1993modulation"
 \end_layout
 
 \begin_layout Standard
-Adult rat GAML is the result of an increase in protein degradation
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dardevet1995sensitivity"
-
-\end_inset
-
-.
- Treatment with 
+The loss of muscle in the Dexa-treated adult rat is the result of an increase
+ in protein degradation.
+ In rats receiving 
 \begin_inset ERT
 status collapsed
 
@@ -2396,35 +2390,17 @@ day}
 
 \end_inset
 
- Dexa for six-days has a very limited effect on protein synthesis.
- Treatment with 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{1}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
+ Dexa for six days, epitrochlear muscle proteolysis rate increased by 50%,
+ while protein degradation was essentially unchanged
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity"
 
 \end_inset
 
- Dexa, for 10 days, more than doubles the urinary 3-MH output
+.
+ Dexa-stimulated proteolysis affects the contractile apparatus, as indicated
+ by the doubling of urinary 3-MH output
 \begin_inset CommandInset citation
 LatexCommand citep
 key "seene1988effect"
@@ -2432,8 +2408,9 @@ key "seene1988effect"
 \end_inset
 
 .
- Dexa increases tyrosine release from muscle explants, even when the lysosome
- inhibitor methylamine and the lysosome / calpain inhibitor E-64 was added
+ The increase in proteolytic rate is unchanged when explants are treated
+ with the lysosome inhibitor methylamine and the lysosome / calpain inhibitor
+ E-64
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wing1993glucocorticoids"
@@ -2441,9 +2418,16 @@ key "wing1993glucocorticoids"
 \end_inset
 
 .
- The lysosome-independent effect is present even when the explants, rather
- than the animals, were treated with Dexa.
- 
+ The upregulation of proteolysis occurs even when explants, rather than
+ animals, are treated with Dexa, suggesting that GAML does not require extramusc
+ular inputs
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wing1993glucocorticoids"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2552,8 +2536,7 @@ key "weinstein1995glucocorticoid-induced"
 \end_layout
 
 \begin_layout Standard
-PMID: 7544807: Dexa is synergistic with IGF-I in stimulating L6 myoblasts
- proliferation.
+PMID: 7544807: Dexa potentiates IGF-I in stimulating L6 myoblasts proliferation.
 \end_layout
 
 \begin_layout Section
@@ -2598,7 +2581,14 @@ IGF-I expression is GH-independent before the age of 6 months (PMID: 11726733).
 
 \begin_layout Standard
 Triamcinolone causes muscle loss which co-administration of GH does not
- compensate.
+ compensate
+\begin_inset CommandInset citation
+LatexCommand citep
+key "petrof1995growth"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
