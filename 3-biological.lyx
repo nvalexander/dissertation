@@ -2181,8 +2181,35 @@ Animal models of steroid myopathy
 \begin_layout Standard
 In the 75 years since the discovery of chronic steroid myopathy, scientists
  attempted, with variable success, to develop multiple animal models.
- In dogs, seven days of 0.44 mg / kg body weight X day Dexa cause increased
- nitrogen excretion, increased glutamine and alanine release from the hindlimb
+ In dogs, seven days of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.44}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ cause increased nitrogen excretion, increased glutamine and alanine release
+ from the hindlimb
 \begin_inset CommandInset citation
 LatexCommand citep
 key "muhlbacher1984effects"
@@ -2190,8 +2217,35 @@ key "muhlbacher1984effects"
 \end_inset
 
 .
- In rabbit, four days of 1 mg / kg body weight Dexa did not change muscle
- mass, despite the upregulation of some catabolic markers
+ In rabbit, four days of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa did not change muscle mass, despite the upregulation of some catabolic
+ markers
 \begin_inset CommandInset citation
 LatexCommand citep
 key "yeh1994effects"
@@ -2208,8 +2262,34 @@ key "yeh1994effects"
 
 \begin_layout Standard
 An extensive literature documents the effect of GC on rats.
- The effects of 7-day, 5 mg / kg body weight X day treatment allow the classific
-ation of GCs in two subsets
+ The effects of 7-day, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ treatment allow the classification of GCs in two subsets
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bullock1972relative"
@@ -2288,10 +2368,62 @@ key "dardevet1995sensitivity"
 \end_inset
 
 .
- Treatment with 0.5 mg / kg body weight Dexa for six-days has a very limited
- effect on protein synthesis.
- Treatment with 1 mg / kg body weight Dexa, for 10 days, more than doubles
- the urinary 3-MH output
+ Treatment with 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.5}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa for six-days has a very limited effect on protein synthesis.
+ Treatment with 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa, for 10 days, more than doubles the urinary 3-MH output
 \begin_inset CommandInset citation
 LatexCommand citep
 key "seene1988effect"
@@ -2308,16 +2440,43 @@ key "wing1993glucocorticoids"
 \end_inset
 
 .
- The effect is present even when the explants, rather than the animals,
- were treated with Dexa.
+ The lysosome-independent effect is present even when the explants, rather
+ than the animals, were treated with Dexa.
  
+\end_layout
+
+\begin_layout Standard
+Expression of the lysosome protease cathepsin D and of the calcium-dependent
+ protease m-calpain is trebled by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity"
+
+\end_inset
+
+.
+ The proteasomal subunits  C2 are also upregulated by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 As in human studies, the role of protein synthesis modulation during hypercortis
 olism is still debated.
  Dardevet and colleagues showed that, solely in old rats, chronic Dexa causes
- a decrease in protein synthesis.
+ a decrease in protein synthesis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
