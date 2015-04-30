@@ -2218,7 +2218,41 @@ key "muhlbacher1984effects"
 \end_inset
 
 .
- In rabbit, four days of 
+ In rabbits, fourteen days of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{3}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa diminished diaphragm's twitch and tetanic contraction force
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jiang1996effect"
+
+\end_inset
+
+, while our days of 
 \begin_inset ERT
 status collapsed
 
