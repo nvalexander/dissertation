@@ -2539,6 +2539,14 @@ C2C12 express MyoD in response to Dexa (PMID: 8744946).
 Models of anabolic alleviation of GAML
 \end_layout
 
+\begin_layout Standard
+In a model where C2C12 cells are treated with Dexa, they proliferate less
+ (rather unusually), downregulate protein synthesis, and upregulate protein
+ degradation (all by tracer).
+ (PMID: 8791198).
+ T has no significant effect on any of these.
+\end_layout
+
 \begin_layout Section
 Anabolic steroids regulation of muscle mass
 \end_layout
