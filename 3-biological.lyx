@@ -2416,11 +2416,15 @@ key "weinstein1995glucocorticoid-induced"
 .
  Dexa leads to a reduction in translocation of muscle-specific glucose transport
 er GLUT 4 to the membrane, overturning the opposite effect which is otherwise
- induced by hyperinsulinemia.
-\end_layout
+ induced by hyperinsulinemia
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dimitriadis1997effects"
 
-\begin_layout Standard
-Indicative of a disconnection between blood and muscle, autophosphorylated
+\end_inset
+
+.
+ Indicative of a disconnection between blood and muscle, autophosphorylated
  insulin receptor and phosphorylated IRS1 are unaltered, in absolute and
  relative terms
 \begin_inset CommandInset citation
