@@ -2349,6 +2349,23 @@ key "nava1996effects"
 \end_inset
 
 .
+ Although Dexa temporarily reduces food intake, possibly through stimulation
+ of leptin secretion
+\begin_inset CommandInset citation
+LatexCommand citep
+key "caldefie-chezet2001dexamethasone"
+
+\end_inset
+
+, pair-feeding experiments demonstrated that the GAML is not solely the
+ effect of changes in appetite
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nicastro2012effectsa"
+
+\end_inset
+
+.
  In response to Dexa, rat muscle fibers undergo reductions in CSA, to an
  ampler degree in fast twitch fibers
 \begin_inset CommandInset citation
@@ -2374,7 +2391,14 @@ key "prezant1997gender-specific"
 
 \begin_layout Standard
 The most poignant change induced by chronic Dexa at muscle level is the
- induction of insulin resistance, resulting in uncompensated hyperglycemia.
+ induction of insulin resistance, resulting in uncompensated hyperglycemia
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nicastro2012effectsa"
+
+\end_inset
+
+.
  Dexa-induced hyperglycemia stimulates insulin secretion
 \begin_inset CommandInset citation
 LatexCommand citep
