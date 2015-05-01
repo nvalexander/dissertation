@@ -2008,16 +2008,7 @@ key "tang2014mtorc1,bodine2001akt/mtor"
 \end_layout
 
 \begin_layout Standard
-A common approach to Akt-mediated signaling sees mTOR complex 1 as one of
- its downstream effectors (for example, 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhao2007foxo3,schiaffino2013mechanisms"
-
-\end_inset
-
-).
- Because the mTOR inhibitor rapamycin prevents fiber hypertrophy that normally
+Because the mTOR inhibitor rapamycin prevents fiber hypertrophy that normally
  follows in vivo injections with a plasmid coding constitutively active
  Akt
 \begin_inset CommandInset citation
@@ -2028,7 +2019,14 @@ key "bodine2001akt/mtor"
 
 , the scientific community assumed, since the beginning of the 2000's, that
  denervation-induced Akt inactivation leads to loss of downstream mTOR-mediated
- effects.
+ effects (for example, 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhao2007foxo3,schiaffino2013mechanisms"
+
+\end_inset
+
+).
  Recent studies contradicted this paradigm.
  In 2013, Quy and colleagues found that denervation increased Threonine-389
  phosphorylation and catalytic activity of p70-S6K, indicating that denervation
@@ -2064,16 +2062,16 @@ description "insulin receptor substrate"
 \begin_layout Standard
 Establishing the role for mTOR complex 1 in denervation-induced loss of
  muscle mass is crucial.
- In the previous conceptual frame, mTOR complex 1 supposed inactivation
- was thought to play a restrictive role on protein synthesis and to remove
- a restriction on autophagy.
+ In conceptual frame before Quy and Tang experiments, mTOR complex 1 was
+ thought as being inactivated by denervation, thus downregulating on protein
+ synthesis and removing a restriction on autophagy.
  This hypothesis was conceptually attractive, because it implied a co-operation
  between multiple anabolic and catabolic pathways, towards achieving muscle
  loss.
  In particular, denervation-induced autophagy appealed to the muscle biologists
  of the 2000's.
  For example, in a never-replicated experiment, one group claimed that the
- luysosomal inhibitor chloroquine prevents denervation-induced muscle loss
+ lysosomal inhibitor chloroquine prevents denervation-induced muscle loss
 \begin_inset CommandInset citation
 LatexCommand citep
 key "schwartz1990effects"
@@ -2097,8 +2095,9 @@ key "ju2010quantitation"
 \end_inset
 
 .
- However, the lysosomal inhibitors leupeptin, methylamine, and E64-c have
- minimal effects on the release of free tyrosine from denervated muscle
+ However, most experiments refuted the role of autophagy in GAML.
+ The lysosomal inhibitors leupeptin, methylamine, and E64-c have minimal
+ effects on the release of free tyrosine from denervated muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "furuno1990role"
@@ -2606,7 +2605,17 @@ key "hong1995effects"
 Dexa potentiates IGF-I in stimulating L6 myoblasts proliferation (PMID:
  7544807).
  According to PMID: 9083257, L6 myotubes do not change protein degradation
- rate hen treated with Dexa.
+ rate when treated with Dexa.
+ Dexa treatment of L6 
+\begin_inset Quotes eld
+\end_inset
+
+myotubes
+\begin_inset Quotes eld
+\end_inset
+
+ upregulates p85 regulatory of PI3 kinase, but decreases PI3 kinase catalytic
+ activity bound to 
 \end_layout
 
 \begin_layout Standard
