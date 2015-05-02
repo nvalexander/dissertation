@@ -2566,9 +2566,17 @@ key "savary1998effect"
 \end_inset
 
 .
- Tomas observed an increase in FSR in response to Dexa.
+ Tomas observed an increase in FSR in response to Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tomas1998anti-catabolic"
+
+\end_inset
+
+.
  However, Tomas failed to observe significant Dexa-elicited changes in protein
- degradation, suggesting that his study is .
+ degradation, suggesting that his study represents special conditions that
+ cannot be generalized to typical GAML.
 \end_layout
 
 \begin_layout Standard
@@ -2678,6 +2686,10 @@ C2C12 fusion is no affected by Dexa (PMID: 9011578).
 
 \begin_layout Standard
 C2C12 differentiation is stimulated by Dexa (PMID: 9674941).
+\end_layout
+
+\begin_layout Standard
+Dexa reduces C2C12 calcium influx by non-transcriptional means (PMID: 9756393).
 \end_layout
 
 \begin_layout Section
