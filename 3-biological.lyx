@@ -2547,8 +2547,8 @@ key "dardevet1995sensitivity"
 \begin_layout Standard
 As in human studies, the role of protein synthesis modulation during hypercortis
 olism is still debated.
- Dardevet and colleagues showed that, in adult rats, chronic Dexa causes
- a decrease in protein synthesis, as indicated by tracer uptake
+ Dardevet and colleagues showed that, in rat epitrochlearis muscle, chronic
+ Dexa causes a decrease in protein synthesis, as indicated by tracer uptake
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity"
@@ -2557,8 +2557,16 @@ key "dardevet1995sensitivity"
 
 .
  Using the same paradigm and the same dose of Dexa, but through a different
- estimate, the fractional synthesis rate, Dardevet observed a halving of
- protein synthesis rate in response to Dexa.
+ estimate, the fractional synthesis rate, and assaying other glycolytic
+ muscles, the same group observed a halving of protein synthesis rate in
+ response to Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "savary1998effect"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
