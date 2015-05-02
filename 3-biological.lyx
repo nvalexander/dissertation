@@ -2547,7 +2547,7 @@ key "dardevet1995sensitivity"
 \begin_layout Standard
 As in human studies, the role of protein synthesis modulation during hypercortis
 olism is still debated.
- Dardevet and colleagues showed that, solely in old rats, chronic Dexa causes
+ Dardevet and colleagues showed that, in adult rats, chronic Dexa causes
  a decrease in protein synthesis, as indicated by tracer uptake
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2556,7 +2556,13 @@ key "dardevet1995sensitivity"
 \end_inset
 
 .
- In the first hours after receiving GCs, the rate of protein synthesis in
+ Using the same paradigm and the same dose of Dexa, but through a different
+ estimate, the fractional synthesis rate, Dardevet observed a halving of
+ protein synthesis rate in response to Dexa.
+\end_layout
+
+\begin_layout Standard
+In the first hours after receiving GCs, the rate of protein synthesis in
  the muscle decreases, as indicated by reductions in incorporation of labeled
  precursors and by a reduction in the proportion of polyribosomes
 \begin_inset CommandInset citation
@@ -2630,7 +2636,8 @@ myotubes
  upregulates p85 regulatory of PI3 kinase, but decreases PI3 kinase catalytic
  activity bound to IRS-1, probably because p85 alpha confines p110 to the
  cytosol (PMID: 9054447).
- In L6 cells, Dexa downregulates total and phosphorylated IRS-1 (PMID: 9468291).
+ In L6 cells, Dexa downregulates total and phosphorylated IRS-1, and leaves
+ S6 kinase activity unchanged (PMID: 9468291).
 \end_layout
 
 \begin_layout Standard
