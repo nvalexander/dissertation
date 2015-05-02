@@ -2397,16 +2397,18 @@ The nitrogen imbalance induced by Dexa slows down by the third day, and
  is compensated around the seventh day of treatment
 \begin_inset CommandInset citation
 LatexCommand citep
-key "minet-quinard2000induction"
+key "minet-quinard2000induction,bowes1996effect"
 
 \end_inset
 
 .
- Commonly, GC experiments on rats take 5-10 days, which, for an animal weighing
- 300 times less and aging 20 times faster than humans, is assimilated with
- chronic exposure.
- The rats appear more resistant than humans to GAML, with the threshold
- estimated at 
+ Given that later time points are marred by feedback mechanisms and by animal
+ mortality, almost no published experiment on rats extended past 10 days.
+ For an animal weighing 300 times less and aging 20 times faster than humans,
+ these common 5-10 days experiments are comparable to chronic exposure in
+ humans.
+ The rats appear more resistant than humans to GAML, given that reported
+ experiments start at 
 \begin_inset ERT
 status collapsed
 
@@ -2414,9 +2416,9 @@ status collapsed
 
 
 \backslash
-SI{750}{
+SI{0.5}{
 \backslash
-micro
+milli
 \backslash
 gram
 \backslash
@@ -2433,17 +2435,7 @@ day}
 
 \end_inset
 
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "minet-quinard2000induction"
-
-\end_inset
-
-.
- On the other hand, high GC doses lead to animal mortality, meaning that
- the one week-long experiments may be preferred for practical reasons, regardles
-s of the relationship to acute or chronic GAML.
+ Dexa, more than twice the muscle-imparing dose in humans.
 \end_layout
 
 \begin_layout Standard
@@ -2540,8 +2532,8 @@ day}
 
 \end_inset
 
- Dexa for six days, epitrochlear muscle proteolysis rate increased by 50%,
- while protein degradation was essentially unchanged
+ Dexa for six days, epitrochlearis muscle proteolysis rate increased by
+ 50%, while protein degradation was essentially unchanged
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity"
@@ -2582,8 +2574,8 @@ key "tiao1996energy-ubiquitin-dependent"
 \end_inset
 
 .
- Therefore, explant models suggest that GAML is exclusively the result of
- upregulation of the proteasome-ubiquitin system.
+ Therefore, explant models suggest that GAML is, to a great extend, the
+ result of upregulation of the proteasome-ubiquitin system.
 \end_layout
 
 \begin_layout Standard
@@ -2647,7 +2639,7 @@ key "dardevet1995sensitivity,rieu2004glucocorticoid"
 
 .
  In another study, assaying other glycolytic muscles, the same dose of Dexa
- was reported as halving of translation
+ was reported as halving of translation rate
 \begin_inset CommandInset citation
 LatexCommand citep
 key "savary1998effect"
@@ -2664,11 +2656,9 @@ key "dardevet1999glucocorticoid-induced"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-Tomas observed an increase in FSR in response to Dexa
+ Tomas observed an increase in FSR in response to Dexa, in one of the very
+ few published experiments that failed to observe changes in protein degradation
+ rate
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tomas1998anti-catabolic"
@@ -2676,9 +2666,9 @@ key "tomas1998anti-catabolic"
 \end_inset
 
 .
- However, Tomas failed to observe significant Dexa-elicited changes in protein
- degradation, suggesting that his study represents special conditions that
- cannot be generalized to typical GAML.
+ Overall, changes in protein degradation are more reliably seen than those
+ in protein synthesis, suggesting that the latter may be the product of
+ special conditions or type I errors.
 \end_layout
 
 \begin_layout Standard
