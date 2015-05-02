@@ -1925,7 +1925,14 @@ key "macdonald2014denervation"
 \end_inset
 
 .
- In a seminal study, Goldberg demonstrated that denervation leads to increased
+ Fewer than one in 7,000 myofiber nuclei undergo apoptosis in this time,
+ indicating that denervation and the fast recovery that follows renervation
+ are more similar to the adult exercise remodeling paradigm, that to the
+ proliferation-dependent regulation of the infantile muscle.
+\end_layout
+
+\begin_layout Standard
+In a seminal study, Goldberg demonstrated that denervation leads to increased
  loss of prelabeled muscle protein, proving that denervation upregulates
  protein degradation
 \begin_inset CommandInset citation
@@ -2439,6 +2446,10 @@ day}
 \end_layout
 
 \begin_layout Standard
+Proliferative mechanisms app
+\end_layout
+
+\begin_layout Standard
 The most poignant change induced by chronic Dexa at muscle level is the
  induction of insulin resistance, resulting in uncompensated hyperglycemia
 \begin_inset CommandInset citation
@@ -2455,15 +2466,8 @@ key "saad1993modulation"
 
 \end_inset
 
-, but muscle's glucose uptake is paradoxically depressed
-\begin_inset CommandInset citation
-LatexCommand citep
-key "weinstein1995glucocorticoid-induced"
-
-\end_inset
-
-.
- Dexa leads to a reduction in translocation of the glucose transporter (
+, but muscle's glucose uptake is paradoxically depressed, due to an unexpected
+ reduction in recruitment of glucose transporter (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GLUT"
@@ -2471,26 +2475,16 @@ description "glucose transporter"
 
 \end_inset
 
-) 4 to the membrane, overturning the opposite effect which is otherwise
- induced by hyperinsulinemia
+) 4 to the membrane
 \begin_inset CommandInset citation
 LatexCommand citep
-key "dimitriadis1997effects"
+key "weinstein1995glucocorticoid-induced,dimitriadis1997effects"
 
 \end_inset
 
 .
- Muscle autophosphorylated insulin receptor and phosphorylated IRS1 are
- unaltered, in absolute and relative terms, by Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "saad1993modulation"
-
-\end_inset
-
-.
- Dexa co-administration blunts muscle response to insulin and IGF-I, at
- the levels of protein and glucose metabolism
+ Dexa co-administration blunts muscle anabolic and anti-catabolic response
+ to insulin and IGF-I, at the levels of protein and glucose metabolism
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
@@ -2498,7 +2492,32 @@ key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
 \end_inset
 
 .
- Taken together, these findings suggest that GCs activate a multifaceted
+ The disconnection between circulating insulin, an anabolic signal, and
+ the catabolic state in the sarcoplasm starts early, at the level of receptor.
+ Muscle loss induced by Dexa is not associated with changes in total or
+ phosphorylated insulin receptor and IRS1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "saad1993modulation,corporeau2006adipose"
+
+\end_inset
+
+.
+ Further downstream, Dexa has an inhibitory effect in some aspects, for
+ example by hindering the recruitment of PI3K to the membrane complex containing
+ insulin receptor and IRS1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "saad1993modulation,rojas2003regulation"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Taken together, these findings suggest that GCs activate a multifaceted
  anti-insulin program.
 \end_layout
 
