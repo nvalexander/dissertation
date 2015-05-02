@@ -2390,9 +2390,59 @@ key "prezant1997gender-specific"
 .
  In line with the section on human steroid myopathy, this section will focus
  on the effects of Dexa on male rats.
- Typical GC experiments on rats take 5-10 days, which, for an animal weighing
+\end_layout
+
+\begin_layout Standard
+The loss of muscle induced by Dexa slows down by the fifth day of treatment
+\begin_inset CommandInset citation
+LatexCommand citep
+key "minet-quinard2000induction"
+
+\end_inset
+
+.
+ Commonly, GC experiments on rats take 5-10 days, which, for an animal weighing
  300 times less and aging 20 times faster than humans, is assimilated with
  chronic exposure.
+ The rats appear more resistant than humans to GAML, with the threshold
+ estimated at 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{750}{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "minet-quinard2000induction"
+
+\end_inset
+
+.
+ On the other hand, high GC doses lead to animal mortality, meaning that
+ the one week-long experiments may be preferred for practical reasons, regardles
+s of the relationship to acute or chronic GAML.
 \end_layout
 
 \begin_layout Standard
