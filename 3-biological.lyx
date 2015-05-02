@@ -2489,7 +2489,7 @@ key "dimitriadis1997effects"
 
 .
  Muscle autophosphorylated insulin receptor and phosphorylated IRS1 are
- unaltered, in absolute and relative terms, Dexa
+ unaltered, in absolute and relative terms, by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "saad1993modulation"
@@ -2497,7 +2497,6 @@ key "saad1993modulation"
 \end_inset
 
 .
- Moreover, Dexa causes a decrease in IRS 1-associated PI3K.
  Dexa co-administration blunts muscle response to insulin and IGF-I, at
  the levels of protein and glucose metabolism
 \begin_inset CommandInset citation
@@ -2610,10 +2609,8 @@ key "dardevet1995sensitivity"
 \begin_layout Standard
 As in human studies, the role of protein synthesis modulation during hypercortis
 olism is still debated.
- The series of studies from Grizard laboratory is at once the most detalied
- account of protein synthesis response to Dexa.
- In its first study, this group showed that, in rat epitrochlearis muscle,
- 5 days of 
+ Some of the most exhaustive studies in this field came from Grizard laboratory.
+ In two studies using 
 \begin_inset ERT
 status collapsed
 
@@ -2640,17 +2637,17 @@ day}
 
 \end_inset
 
- Dexa had no effect on protein synthesis, as indicated by tracer uptake
+ Dexa, protein synthesis was unchanged in the epitrochlearis muscle, compared
+ to pair-fed animals
 \begin_inset CommandInset citation
 LatexCommand citep
-key "dardevet1995sensitivity"
+key "dardevet1995sensitivity,rieu2004glucocorticoid"
 
 \end_inset
 
 .
- Using the same paradigm and the same dose of Dexa, but assaying other glycolyti
-c muscles, and the FSR paradigm, the same group reported a halving of translatio
-n rate in response to Dexa, compared to pair-fed animals
+ In another study, assaying other glycolytic muscles, the same dose of Dexa
+ was reported as halving of translation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "savary1998effect"
@@ -2659,7 +2656,15 @@ key "savary1998effect"
 
 .
  In a later study, quadrupling the dose of Dexa lead to a significant, but
- less ample reduction in FSR.
+ less ample reduction in FSR
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1999glucocorticoid-induced"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2740,9 +2745,34 @@ key "hong1995effects"
 \end_layout
 
 \begin_layout Standard
-Dexa potentiates IGF-I in stimulating L6 myoblasts proliferation (PMID:
- 7544807).
- According to PMID: 9083257, L6 myotubes do not change protein degradation
+An equally voluminous and inconclusive literature describes the effect of
+ Dexa on the cell line L6.
+ Proliferation of L6 cells is stimulated by doses of 20-100 nM Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "florini1979serum-free,whitson1989dexamethasone"
+
+\end_inset
+
+.
+ Moreover, L6 potentiates the pro-proliferative effects of IGF-I on L6 myoblasts
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "giorgino1995dexamethasone"
+
+\end_inset
+
+.
+ This effect is 
+\end_layout
+
+\begin_layout Standard
+In vivo, cell proliferation is expected to play a minor role.
+\end_layout
+
+\begin_layout Standard
+According to PMID: 9083257, L6 myotubes do not change protein degradation
  rate when treated with Dexa.
  Dexa treatment of L6 
 \begin_inset Quotes eld
