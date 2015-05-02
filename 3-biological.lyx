@@ -1925,14 +1925,17 @@ key "macdonald2014denervation"
 \end_inset
 
 .
- Fewer than one in 7,000 myofiber nuclei undergo apoptosis in this time,
- indicating that denervation and the fast recovery that follows renervation
+ Fewer than one in 7,000 myofiber nuclei undergo apoptosis in this time
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bruusgaard2008vivo"
+
+\end_inset
+
+, indicating that denervation and the fast recovery that follows renervation
  are more similar to the adult exercise remodeling paradigm, that to the
  proliferation-dependent regulation of the infantile muscle.
-\end_layout
-
-\begin_layout Standard
-In a seminal study, Goldberg demonstrated that denervation leads to increased
+ In a seminal study, Goldberg demonstrated that denervation leads to increased
  loss of prelabeled muscle protein, proving that denervation upregulates
  protein degradation
 \begin_inset CommandInset citation
@@ -2446,7 +2449,17 @@ day}
 \end_layout
 
 \begin_layout Standard
-Proliferative mechanisms app
+Currently, it is unclear to what extent changes in satellite cells proliferation
+ contribute to GAML in rat.
+ However, in Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are
+ upregulated
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tepas1999gender"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
