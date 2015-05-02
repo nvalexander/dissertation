@@ -2498,7 +2498,15 @@ key "saad1993modulation"
 
 .
  Moreover, Dexa causes a decrease in IRS 1-associated PI3K.
- Dexa blunts muscle anabolic response to insulin and IGF-I.
+ Dexa co-administration blunts muscle response to insulin and IGF-I, at
+ the levels of protein and glucose metabolism
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
+
+\end_inset
+
+.
  Taken together, these findings suggest that GCs activate a multifaceted
  anti-insulin program.
 \end_layout
