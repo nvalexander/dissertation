@@ -2296,7 +2296,6 @@ key "yeh1994effects"
  as muscle force or mass.
  Moreover, the modern molecular correlates of muscle loss were not known,
  and could not have been investigated.
- 
 \end_layout
 
 \begin_layout Standard
@@ -2625,6 +2624,10 @@ key "king1983glutamine"
 \end_layout
 
 \begin_layout Standard
+Triamcinolone reduces 
+\end_layout
+
+\begin_layout Standard
 Six or 24 hours of 10-1000 nM Dexa determined increased release of radioactive
  tyrosine from rat L8 fully differentiated myotubes.
  In these cells, Dexa upregulated the expression of m-calpain and cathepsins
@@ -2659,6 +2662,21 @@ myotubes
 \end_layout
 
 \begin_layout Standard
+In L6 myotubes, protein degradation rate is increased by a fifth with 100
+ nM Dexa for 6 hours.
+ Of this increase, 80% is lost when proteasome inhibitors such as beta-lactone
+ or dinitrophenol are used.
+ In contrast, lysosomal inhibitors had no effect, an E-64 has minimal effect
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang1998dexamethasone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 C2C12 express MyoD in response to Dexa (PMID: 8744946).
  C2C12 cells do not express MyoD in response to Dexa (PMID: 9187537).
 \end_layout
@@ -2690,6 +2708,10 @@ C2C12 differentiation is stimulated by Dexa (PMID: 9674941).
 
 \begin_layout Standard
 Dexa reduces C2C12 calcium influx by non-transcriptional means (PMID: 9756393).
+\end_layout
+
+\begin_layout Standard
+Dexa reduces protein synthesis rate in cultured bovine myotubes (PMID: 9781494).
 \end_layout
 
 \begin_layout Section

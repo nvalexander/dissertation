@@ -1416,8 +1416,44 @@ description "GC-associated muscle loss"
 \end_layout
 
 \begin_layout Standard
-For exogenous CS, where GC excess can be better estimated, the most significant
- predictor of GAML is total dose
+In exogenous CS, GC excess can be better quantified.
+ In a population with neurological maladies receiving long-term Dexa, the
+ threshold for manifest steroid myopathy appears to be 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vecht1994dose-effect"
+
+\end_inset
+
+.
+ However, the most significant predictor of clinical GAML is total dose
 \begin_inset CommandInset citation
 LatexCommand cite
 key "batchelor1997steroid,shee1990risk"
