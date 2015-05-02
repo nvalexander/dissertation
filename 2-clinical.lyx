@@ -2039,16 +2039,18 @@ key "lofberg2002effects"
  21% increase in protein synthesis rate and a statistically-significant
  52% increase in the rate of protein degradation, based on the difference
  between arterial and venous levels of tritiated phenyl alanine at leg level.
- Short and colleagues
-\begin_inset CommandInset citation
-LatexCommand citep
-key "short2004effect,short2009short-term"
+ Short and colleagues employed fractional synthesis rate (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FSR"
+description "fractional synthesis rate"
 
 \end_inset
 
- measured labeled leucine and phenylalanine enrichment in muscle protein
- and difference between arterial and venous levels, at leg level.
- They concluded repeatedly that 35 mg / day prednisone for 6 days 
+), which describes the time rate of enrichment in muscle tracer, normalized
+ to the circulating tracer concentration.
+ They concluded repeatedly that, in leg muscles, 35 mg / day prednisone
+ for 6 days 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2056,7 +2058,14 @@ has no effect on [...] muscle protein metabolism or muscle function
 \begin_inset Quotes erd
 \end_inset
 
-.
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "short2004effect,short2009short-term"
+
+\end_inset
+
+ .
  Some of these studies may have been underpowered (sample size n = 6-7)
  or may be troubled by the use of a small dose, but their validity is confirmed
  by the fact that, in each case, the expected hyperglycemic response to
@@ -3440,8 +3449,7 @@ key "brodsky1996effects"
 \end_inset
 
 .
- Moreover, T causes an increase in fractional synthesis rate of myosin heavy
- chain (
+ Moreover, T causes an increase in FSR of myosin heavy chain (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "MyHC"
@@ -3579,7 +3587,7 @@ key "ferrando2002testosterone"
 
 .
  The cause of protein accretion is an increase in protein synthesis, as
- shown by an augmentation of mixed-muscle fractional synthesis rate
+ shown by an augmentation of mixed-muscle FSR
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sheffield-moore2011randomized"
@@ -3615,9 +3623,9 @@ key "ferrando2003differential"
  the goal of maintaining a physiological T level.
  Moderate T therapy caused an improvement in muscle mass, strength, and
  net protein balance.
- However, they failed to observe an improvement in protein fractional synthesis
- rate, and concluded that the net protein balance improvement must be caused
- by T-induced inhibition of protein degradation.
+ However, they failed to observe an improvement in protein FSR, and concluded
+ that the net protein balance improvement must be caused by T-induced inhibition
+ of protein degradation.
  The failure to detect protein synthesis rate changes indicates that, perhaps
  due to unusual treatments, this study yielded unusual outcomes, which cannot
  be extrapolated to other studies or populations.
