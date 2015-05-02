@@ -1996,8 +1996,8 @@ key "lee2012clinical"
 \end_inset
 
 .
- In two separate case reports, coadministration of prednisone and hydroxychloroq
-uine led to vacuolar myopathy, which could be caused by the choice of doses,
+ In two separate case reports, co-administration of prednisone and hydroxychloro
+quine led to vacuolar myopathy, which could be caused by the choice of doses,
  or could be indicative of true epistasis
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2006,7 +2006,7 @@ key "ghosh2013teaching,nucci1996chloroquine"
 \end_inset
 
 .
- Potential benefits of anti-lyzosomal co-therapy for the atrophying muscle
+ Potential benefits of anti-lysosomal co-therapy for the atrophying muscle
  remain the subject of speculation.
 \end_layout
 
@@ -2135,7 +2135,8 @@ key "mor1987myopathy"
  understudied.
  Human studies concord that GC-induced loss of muscle force is an objective
  finding caused by an increased proteolytic activity.
- There is limited evidence for a role of protein synthesis.
+ Indirect evidence indicate human GAML is associated with changes in protein
+ synthesis.
  In the absence of other proven mitigating interventions, current guidelines
  suggest GC discontinuation if myopathy develops.
  Animal models have been essential for the study of GC-induced muscle loss,
@@ -2247,7 +2248,7 @@ organotherapy
 \begin_inset Quotes erd
 \end_inset
 
-, which had been banished from the British Pharmacopeia in 1788 after failing
+, which had been banished from the British Pharmacopoeia in 1788 after failing
  the test of oral administration.
  Some organotherapies were shams or even harmful.
  Yet a few of them provided evidence that specific parts of the body store
