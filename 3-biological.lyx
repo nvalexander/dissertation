@@ -2610,8 +2610,37 @@ key "dardevet1995sensitivity"
 \begin_layout Standard
 As in human studies, the role of protein synthesis modulation during hypercortis
 olism is still debated.
- Dardevet and colleagues showed that, in rat epitrochlearis muscle, chronic
- Dexa causes a decrease in protein synthesis, as indicated by tracer uptake
+ The series of studies from Grizard laboratory is at once the most detalied
+ account of protein synthesis response to Dexa.
+ In its first study, this group showed that, in rat epitrochlearis muscle,
+ 5 days of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.5}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa had no effect on protein synthesis, as indicated by tracer uptake
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity"
@@ -2620,8 +2649,8 @@ key "dardevet1995sensitivity"
 
 .
  Using the same paradigm and the same dose of Dexa, but assaying other glycolyti
-c muscles, and the FSR paradigm, the same group observed a halving of translatio
-n rate in response to Dexa
+c muscles, and the FSR paradigm, the same group reported a halving of translatio
+n rate in response to Dexa, compared to pair-fed animals
 \begin_inset CommandInset citation
 LatexCommand citep
 key "savary1998effect"
@@ -2629,7 +2658,12 @@ key "savary1998effect"
 \end_inset
 
 .
- Tomas observed an increase in FSR in response to Dexa
+ In a later study, quadrupling the dose of Dexa lead to a significant, but
+ less ample reduction in FSR.
+\end_layout
+
+\begin_layout Standard
+Tomas observed an increase in FSR in response to Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tomas1998anti-catabolic"
