@@ -2393,7 +2393,8 @@ key "prezant1997gender-specific"
 \end_layout
 
 \begin_layout Standard
-The loss of muscle induced by Dexa slows down by the fifth day of treatment
+The nitrogen imbalance induced by Dexa slows down by the third day, and
+ is compensated around the seventh day of treatment
 \begin_inset CommandInset citation
 LatexCommand citep
 key "minet-quinard2000induction"
@@ -2563,8 +2564,9 @@ key "wing1993glucocorticoids"
  with the lysosome inhibitor methylamine and the lysosome / calpain inhibitor
  E-64.
  On the other hand, the Dexa-stimulated increase in proteolysis is extinguished
- when the explant is depleted of ATP by a combination of the decoupling
- agent dinitrophenol and the unlysable glucose homologue, 2-deoxyglucose
+ when the explant is depleted of ATP by a combination of the mitochondrial
+ decoupling agent dinitrophenol and the unlysable glucose homologue, 2-deoxygluc
+ose
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tiao1996energy-ubiquitin-dependent"
@@ -2677,7 +2679,7 @@ key "king1983glutamine"
 \end_layout
 
 \begin_layout Standard
-Triamcinolone reduces 
+Triamcinolone reduces IGF-I expression in diaphragm (PMID: 9872851).
 \end_layout
 
 \begin_layout Standard
