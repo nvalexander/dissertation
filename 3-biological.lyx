@@ -2617,9 +2617,9 @@ key "sarbassov2005phosphorylation"
 \end_inset
 
 .
- The few studies that investigated Dexa effect of rat muscle reported that,
- in basal conditions, Ser 473 phosphorylation is close to detection threshold,
- even in the control animals
+ The few studies that investigated chronic Dexa effect of rat muscle reported
+ that, in basal conditions, Ser 473 phosphorylation is close to detection
+ threshold, even in the control animals
 \begin_inset CommandInset citation
 LatexCommand citep
 key "buren2008insulin,rojas2003regulation"
@@ -2657,16 +2657,43 @@ description "glycogen synthase kinase 3"
 
 \end_inset
 
-).
- Moreover, in vivo experiments do not describe circumstances where Akt is
- activated in the absence of Ser 473 (reviewed in 
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jacinto2006sin1/mip1"
+
+\end_inset
+
+, suggesting that mTOR complex 2 modulates Akt specificity rather than its
+ activity.
+ In vivo experiments do not describe circumstances when Akt is activated
+ in the absence of Ser 473 (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "manning2007akt/pkb"
 
 \end_inset
 
-), suggesting that it may be 
+), suggesting that it may be a requirement for Thr 308 phosphorylation.
+ In the absence of better experiments, two competing hypotheses can explain
+ the concerted Dexa-imposed changes in these two posttranslational modifications
+: Ser 473 epistasis, or parallel PI3K-triggered pathways.
+ Both imply that Dexa-induced Akt modulation must involve Ser473.
+\end_layout
+
+\begin_layout Standard
+Among the targets of Akt, the only one which was studied in the context
+ of GAML is glycogen synthase kinase 3, which exhibits the same pattern
+ as Akt, that is, low basal phosphorylation and GC-induced reduction in
+ insulin sensitivity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "buren2008insulin"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
