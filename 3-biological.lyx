@@ -1935,7 +1935,12 @@ key "bruusgaard2008vivo"
 , indicating that denervation and the fast recovery that follows renervation
  are more similar to the adult exercise remodeling paradigm, that to the
  proliferation-dependent regulation of the infantile muscle.
- In a seminal study, Goldberg demonstrated that denervation leads to increased
+ Supporting the hypothesis on NMJ-independent trophic factors, denervation
+ did cause massive and rapid apoptosis among stromal cells.
+\end_layout
+
+\begin_layout Standard
+In a seminal study, Goldberg demonstrated that denervation leads to increased
  loss of prelabeled muscle protein, proving that denervation upregulates
  protein degradation
 \begin_inset CommandInset citation
@@ -2376,7 +2381,7 @@ key "caldefie-chezet2001dexamethasone"
  effect of changes in appetite
 \begin_inset CommandInset citation
 LatexCommand citep
-key "nicastro2012effectsa"
+key "dardevet1995sensitivity,nicastro2012effectsa"
 
 \end_inset
 
@@ -2401,7 +2406,7 @@ key "prezant1997gender-specific"
 
 .
  In line with the section on human steroid myopathy, this section will focus
- on the effects of Dexa on male rats.
+ on the effects of Dexa on male adult rats.
 \end_layout
 
 \begin_layout Standard
@@ -2417,10 +2422,10 @@ key "minet-quinard2000induction,bowes1996effect"
  Given that later time points are marred by feedback mechanisms and by animal
  mortality, almost no published experiment on rats extended past 10 days.
  For an animal weighing 300 times less and aging 20 times faster than humans,
- these common 5-10 days experiments are comparable to chronic exposure in
+ the common 5-10 days experiments are comparable to chronic exposure in
  humans.
- The rats appear more resistant than humans to GAML, given that reported
- experiments start at 
+ Rats appear more resistant than humans to GAML, given that reported experiments
+ start at 
 \begin_inset ERT
 status collapsed
 
@@ -2462,8 +2467,12 @@ key "tepas1999gender"
 .
  It is unclear whether myogenin plays any role in upregulating E3 ligases,
  as in denervation-induced atrophy.
- Similarly, there are no studies conclusively analyzing the role of satellite
- cells and nuclear density in GAML.
+ There are no studies conclusively analyzing the role of satellite cells
+ and nuclear density in GAML in situ, although, based on similarities with
+ denervation studies, it is likely that the lack of data reflects a lack
+ of effect.
+ Dong and colleagues report that Dexa reduces the number of satellite cells
+ in a regerating muscle, 
 \end_layout
 
 \begin_layout Standard
