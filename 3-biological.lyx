@@ -2512,16 +2512,16 @@ key "saad1993modulation"
 \end_inset
 
 .
- On the other, muscle's glucose uptake is paradoxically depressed
+ On the other, insulin is unable to trigger its typical anabolic program
+ in hypercortisolic muscle.
+ Despite hyperinsulinemia, Dexa reduces muscle glucose uptake
 \begin_inset CommandInset citation
 LatexCommand citep
 key "weinstein1995glucocorticoid-induced"
 
 \end_inset
 
-.
- A more mechanistic hypothesis ascribes the reduction in glucose uptake
- to an unexpected reduction in recruitment of glucose transporter (
+, through a reduction in recruitment of glucose transporter (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GLUT"
@@ -2536,20 +2536,16 @@ key "weinstein1995glucocorticoid-induced,dimitriadis1997effects"
 
 \end_inset
 
-, but, notably, Dexa increases intramuscular glycogen stores
+ and a reduction in glycogen synthase activity
 \begin_inset CommandInset citation
 LatexCommand citep
-key "ruzzin2005glucocorticoid-induced"
+key "ruzzin2005contraction"
 
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-Dexa co-administration blunts muscle anabolic and anti-catabolic response
- to insulin and IGF-I, at the levels of protein and glucose metabolism
+ Dexa co-administration blunts muscle anabolic and anti-catabolic response
+ to exogenous insulin or IGF-I, at the levels of protein and glucose metabolism
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
@@ -2557,9 +2553,8 @@ key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
 \end_inset
 
 .
- The disconnection between circulating insulin, an anabolic signal, and
- the catabolic state in the sarcoplasm starts with the early steps of the
- signaling pathway.
+ The disconnection between the anabolic insulin signal and the catabolic
+ state in the sarcoplasm starts with the early steps of the signaling pathway.
  Phosphorylated insulin receptor and IRS1 do not increase in absolute or
  stoichiometric terms
 \begin_inset CommandInset citation
