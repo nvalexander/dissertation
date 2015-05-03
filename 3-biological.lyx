@@ -2689,9 +2689,7 @@ tion.
 \end_layout
 
 \begin_layout Standard
-Among the targets of Akt, the only one which was studied in the context
- of GAML is GSK3-β.
- Chronic Dexa reduces GSK3-β phosphorylation at Ser 9, thus leading to its
+Chronic Dexa reduces GSK3-β phosphorylation at Ser 9, thus leading to its
  activation 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2734,8 +2732,36 @@ key "zhang2006s6k1,dai2002human,frame2001gsk3"
 \end_inset
 
 .
- In a different catabolic model, burned rat muscle, the use of cyclosporin
- A was did not change the rate of protein breakdown, suggesting that
+ The role of GSK3-β in muscle atrophy was briefly the subject of research
+ at the turn of the century, in the context of a hypothesized atrophic mechanism
+ involving calcineurin and nuclear factor of activated T-cells (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NFAT"
+description "nuclear factor of activated T-cells"
+
+\end_inset
+
+).
+ Since then, evidence that calcineurin is not involved in muscle anabolism
+ led to an unjustified neglect of GSK3-β
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sacheck2004igf-i"
+
+\end_inset
+
+.
+ Among that tens of substrates of GSK3-β, the subunit ε of the eukaryotic
+ initiation factor 2B (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "eIF2B"
+description "eukaryotic initiation factor 2B"
+
+\end_inset
+
+) may mediate an anti-anabolic effect.
 \end_layout
 
 \begin_layout Standard
