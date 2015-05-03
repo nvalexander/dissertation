@@ -2485,7 +2485,8 @@ key "dong2013myostatin"
 
 \begin_layout Standard
 The most poignant change induced by chronic Dexa at muscle level is the
- induction of insulin resistance, resulting in uncompensated hyperglycemia
+ induction of systemic insulin resistance, manifested as uncompensated hyperglyc
+emia
 \begin_inset CommandInset citation
 LatexCommand citep
 key "nicastro2012effectsa"
@@ -2493,21 +2494,34 @@ key "nicastro2012effectsa"
 \end_inset
 
 .
- Dexa-induced hyperglycemia stimulates insulin secretion
+ On one hand, Dexa induces catabolic actions that eventually converge to
+ hyperglycemia and consequent hyperinsulinemia, which together yield a higher
+ index of homeostatic model assessment - insulin resistance (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HOMA-IR"
+description "homeostatic model assessment - insulin resistance"
+
+\end_inset
+
+)
 \begin_inset CommandInset citation
 LatexCommand citep
 key "saad1993modulation"
 
 \end_inset
 
-, but muscle's glucose uptake is paradoxically depressed
+.
+ On the other, muscle's glucose uptake is paradoxically depressed
 \begin_inset CommandInset citation
 LatexCommand citep
 key "weinstein1995glucocorticoid-induced"
 
 \end_inset
 
-, due to an unexpected reduction in recruitment of glucose transporter (
+.
+ A more mechanistic hypothesis ascribes the reduction in glucose uptake
+ to an unexpected reduction in recruitment of glucose transporter (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GLUT"
@@ -2522,8 +2536,19 @@ key "weinstein1995glucocorticoid-induced,dimitriadis1997effects"
 
 \end_inset
 
+, but, notably, Dexa increases intramuscular glycogen stores
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ruzzin2005glucocorticoid-induced"
+
+\end_inset
+
 .
- Dexa co-administration blunts muscle anabolic and anti-catabolic response
+ 
+\end_layout
+
+\begin_layout Standard
+Dexa co-administration blunts muscle anabolic and anti-catabolic response
  to insulin and IGF-I, at the levels of protein and glucose metabolism
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2535,8 +2560,8 @@ key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
  The disconnection between circulating insulin, an anabolic signal, and
  the catabolic state in the sarcoplasm starts with the early steps of the
  signaling pathway.
- Muscle loss induced by Dexa is not associated with changes in total or
- phosphorylated insulin receptor and IRS1
+ Phosphorylated insulin receptor and IRS1 do not increase in absolute or
+ stoichiometric terms
 \begin_inset CommandInset citation
 LatexCommand citep
 key "saad1993modulation,corporeau2006adipose"
@@ -2656,7 +2681,23 @@ key "tepas1999gender"
 \end_layout
 
 \begin_layout Standard
+Dexa upregulates myostatin in the atrophying muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ma2003glucocorticoid-induced"
 
+\end_inset
+
+.
+ Dexa-induced muscle loss does not occur in transgenic mice lacking the
+ myostatin gene
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gilson2007myostatin"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
