@@ -2484,20 +2484,6 @@ key "dong2013myostatin"
 \end_layout
 
 \begin_layout Standard
-In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tepas1999gender"
-
-\end_inset
-
-.
- It is unclear whether myogenin plays any role in upregulating E3 ligases,
- as in denervation-induced atrophy.
- 
-\end_layout
-
-\begin_layout Standard
 The most poignant change induced by chronic Dexa at muscle level is the
  induction of insulin resistance, resulting in uncompensated hyperglycemia
 \begin_inset CommandInset citation
@@ -2514,8 +2500,14 @@ key "saad1993modulation"
 
 \end_inset
 
-, but muscle's glucose uptake is paradoxically depressed, due to an unexpected
- reduction in recruitment of glucose transporter (
+, but muscle's glucose uptake is paradoxically depressed
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weinstein1995glucocorticoid-induced"
+
+\end_inset
+
+, due to an unexpected reduction in recruitment of glucose transporter (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GLUT"
@@ -2541,7 +2533,9 @@ key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
 
 .
  The disconnection between circulating insulin, an anabolic signal, and
- the catabolic state in the sarcoplasm starts early, at the level of receptor.
+ the catabolic state in the sarcoplasm starts in the early steps of the
+ signaling pathway.
+ Dexa reduces muscle expression of IGF-I.
  Muscle loss induced by Dexa is not associated with changes in total or
  phosphorylated insulin receptor and IRS1
 \begin_inset CommandInset citation
@@ -2561,11 +2555,7 @@ key "saad1993modulation,rojas2003regulation"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-Taken together, these findings suggest that GCs activate a multifaceted
+ Taken together, these findings suggest that GCs activate a multifaceted
  anti-insulin program.
 \end_layout
 
@@ -2643,6 +2633,20 @@ key "tiao1996energy-ubiquitin-dependent"
 .
  Therefore, explant models suggest that GAML is, to a great extend, the
  result of upregulation of the proteasome-ubiquitin system.
+\end_layout
+
+\begin_layout Standard
+In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tepas1999gender"
+
+\end_inset
+
+.
+ It is unclear whether myogenin plays any role in upregulating E3 ligases,
+ as in denervation-induced atrophy.
+ 
 \end_layout
 
 \begin_layout Standard
