@@ -2533,14 +2533,21 @@ key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
 
 .
  The disconnection between circulating insulin, an anabolic signal, and
- the catabolic state in the sarcoplasm starts in the early steps of the
+ the catabolic state in the sarcoplasm starts with the early steps of the
  signaling pathway.
- Dexa reduces muscle expression of IGF-I.
  Muscle loss induced by Dexa is not associated with changes in total or
  phosphorylated insulin receptor and IRS1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "saad1993modulation,corporeau2006adipose"
+
+\end_inset
+
+.
+ Dexa reduces muscle expression of IGF-I
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gayan-ramirez1999acute"
 
 \end_inset
 
