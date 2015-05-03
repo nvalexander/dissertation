@@ -2617,9 +2617,16 @@ key "sarbassov2005phosphorylation"
 \end_inset
 
 .
- The few studies that investigated chronic Dexa effect of rat muscle reported
- that, in basal conditions, Ser 473 phosphorylation is close to detection
- threshold, even in the control animals
+ One study reported that chronic Dexa induced a reduction in Ser 473 phosphoryla
+tion
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fappi2014effects"
+
+\end_inset
+
+, but more commonly, in basal conditions, Ser 473 phosphorylation is essentially
+ undetectable in rat muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "buren2008insulin,rojas2003regulation"
@@ -2628,10 +2635,12 @@ key "buren2008insulin,rojas2003regulation"
 
 .
  Nevertheless, the same studies report that Ser 473 sensitivity to insulin
- is reduced by Dexa.
- The separation of roles between Ser 473 and Thr 308 phosphorylation is
- a subject of ongoing research, but in vitro manipulations indicate that
- the two sites synergize for maximal Akt activation
+ is reduced by Dexa, in a pattern similar to Thr 308.
+ It is unclear what brings about the coordination between Ser 473 and Thr
+ 308 phosphorylation in GAML, because the separation of roles between them
+ is a subject of ongoing research.
+ In vitro manipulations indicate that the two sites synergize for maximal
+ Akt activation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "alessi1996mechanism"
@@ -2639,9 +2648,9 @@ key "alessi1996mechanism"
 \end_inset
 
 .
- The absence of Ser 473 phosphorylation abolishes Akt activity on the substrates
- belonging to the FoxoO class, but does not change Akt ability to phosphorylate
- tuberin (Tuberous Sclerosis Complex 2; 
+ Mutagenic abolition of Ser 473 phosphorylation abrogates Akt activity on
+ substrates belonging to the FoxoO class, but does not change Akt ability
+ to phosphorylate tuberin (Tuberous Sclerosis Complex 2; 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "TSC2"
@@ -2664,28 +2673,32 @@ key "jacinto2006sin1/mip1"
 
 \end_inset
 
-, suggesting that mTOR complex 2 modulates Akt specificity rather than its
- activity.
- In vivo experiments do not describe circumstances when Akt is activated
- in the absence of Ser 473 (reviewed in 
+.
+ This suggests that mTOR complex 2 modulates Akt specificity rather than
+ its activity, although similar results would be seen if specificity does
+ not change, but FoxO substrates are relatively scarcer than tuberin / GSK3.
+ An alternative hypothesis is based on the fact that non-mutagenic in vivo
+ experiments do not describe circumstances when Akt is activated in the
+ absence of Ser 473 phosphorylation (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "manning2007akt/pkb"
 
 \end_inset
 
-), suggesting that it may be a requirement for Thr 308 phosphorylation.
- In the absence of better experiments, two competing hypotheses can explain
- the concerted Dexa-imposed changes in these two posttranslational modifications
-: Ser 473 epistasis, or parallel PI3K-triggered pathways.
+).
+ This suggests that in vivo Ser 473 may be a requirement for Thr 308 phosphoryla
+tion.
+ In the absence of better experiments, the concerted Dexa-imposed changes
+ in Ser 473 and Thr 308 may be ascribed to either Ser 473 epistasis, or
+ to parallel PI3K-triggered pathways.
  Both imply that Dexa-induced Akt modulation must involve Ser473.
 \end_layout
 
 \begin_layout Standard
 Among the targets of Akt, the only one which was studied in the context
- of GAML is glycogen synthase kinase 3, which exhibits the same pattern
- as Akt, that is, low basal phosphorylation and GC-induced reduction in
- insulin sensitivity
+ of GAML is GSK3, which exhibits the same pattern as Akt, that is, low basal
+ phosphorylation and GC-induced reduction in insulin sensitivity
 \begin_inset CommandInset citation
 LatexCommand citep
 key "buren2008insulin"
