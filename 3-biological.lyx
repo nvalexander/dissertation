@@ -2446,13 +2446,11 @@ day}
 \end_inset
 
  Dexa, more than twice the muscle-imparing dose in humans.
+ 
 \end_layout
 
 \begin_layout Standard
-Currently, it is unclear to what extent changes in satellite cells proliferation
- contribute to GAML in rat.
- However, in Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are
- upregulated
+In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tepas1999gender"
@@ -2460,6 +2458,10 @@ key "tepas1999gender"
 \end_inset
 
 .
+ It is unclear whether myogenin plays any role in upregulating E3 ligases,
+ as in denervation-induced atrophy.
+ Similarly, there are no studies conclusively analyzing the role of satellite
+ cells and nuclear density in GAML.
 \end_layout
 
 \begin_layout Standard
