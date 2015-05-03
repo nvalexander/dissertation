@@ -2596,9 +2596,20 @@ description "3-phosphoinositide-dependent protein kinase 1"
 
 \end_inset
 
-), and lower phosphorylation of the latter's substrate, Thr 308 on Akt.
+), and lower phosphorylation of the latter's substrate, Thr 308 on the activatio
+n loop of Akt.
  While Thr 308 phosphorylation is not detectable in rat muscle in basal
- state, its sensitivity to insulin is depressed by Dexa.
+ state, its sensitivity to insulin is depressed by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "buren2008insulin"
+
+\end_inset
+
+.
+ A similar situation is seen at the other phosphorylation site on Akt, Ser
+ 473, which is stimulated by growth factors, through mTOR complex 2 and
+ possibly through 3-phosphoinositides.
 \end_layout
 
 \begin_layout Standard
