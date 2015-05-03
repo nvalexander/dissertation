@@ -2697,8 +2697,8 @@ tion.
 
 \begin_layout Standard
 Among the targets of Akt, the only one which was studied in the context
- of GAML is GSK3, which exhibits the same pattern as Akt, that is, low basal
- phosphorylation and GC-induced reduction in insulin sensitivity
+ of GAML is GSK3-β, which exhibits the same pattern as Akt, that is, low
+ basal phosphorylation and GC-induced reduction in insulin sensitivity
 \begin_inset CommandInset citation
 LatexCommand citep
 key "buren2008insulin"
