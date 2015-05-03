@@ -2692,7 +2692,7 @@ tion.
 Among the targets of Akt, the only one which was studied in the context
  of GAML is GSK3-β.
  Chronic Dexa reduces GSK3-β phosphorylation at Ser 9, thus leading to its
- inactivation 
+ activation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "buren2008insulin"
@@ -2700,16 +2700,42 @@ key "buren2008insulin"
 \end_inset
 
 .
- In turn, glycogen synthase, released from its negative regulator, upregulates
- intramuscular glycogen deposits
+ In turn, phosphorylation of glycogen synthase at Ser 645, 649, 653, 657
+ is stimulated, leading to increased intramuscular glycogen deposits
 \begin_inset CommandInset citation
 LatexCommand citep
-key "ruzzin2005contraction"
+key "ruzzin2005contraction,buren2008insulin"
 
 \end_inset
 
 .
- The mediation of Dexa by GSK3-β was studied 
+ While inactivation of GSK3-β was attributed to latent Akt inhibition, the
+ Ser 9 site is also a target for ribosomal protein S6 kinase, 90kDa (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "p90-RSK"
+description "ribosomal protein S6 kinase, 90kDa"
+
+\end_inset
+
+), serum and glucocorticoid-inducible kinase-like kinase (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SGKL"
+description "serum and glucocorticoid-inducible kinase-like kinase"
+
+\end_inset
+
+), and p70-S6K
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhang2006s6k1,dai2002human,frame2001gsk3"
+
+\end_inset
+
+.
+ In a different catabolic model, burned rat muscle, the use of cyclosporin
+ A was did not change the rate of protein breakdown, suggesting that
 \end_layout
 
 \begin_layout Standard
