@@ -2536,13 +2536,6 @@ key "weinstein1995glucocorticoid-induced,dimitriadis1997effects"
 
 \end_inset
 
- and a reduction in glycogen synthase activity
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ruzzin2005contraction"
-
-\end_inset
-
 .
  Dexa co-administration blunts muscle anabolic and anti-catabolic response
  to exogenous insulin or IGF-I, at the levels of protein and glucose metabolism
@@ -2678,8 +2671,8 @@ key "jacinto2006sin1/mip1"
  its activity, although similar results would be seen if specificity does
  not change, but FoxO substrates are relatively scarcer than tuberin / GSK3.
  An alternative hypothesis is based on the fact that non-mutagenic in vivo
- experiments do not describe circumstances when Akt is activated in the
- absence of Ser 473 phosphorylation (reviewed in 
+ experiments failed to find circumstances when Akt is activated in the absence
+ of Ser 473 phosphorylation (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "manning2007akt/pkb"
@@ -2697,8 +2690,9 @@ tion.
 
 \begin_layout Standard
 Among the targets of Akt, the only one which was studied in the context
- of GAML is GSK3-β, which exhibits the same pattern as Akt, that is, low
- basal phosphorylation and GC-induced reduction in insulin sensitivity
+ of GAML is GSK3-β.
+ Chronic Dexa reduces GSK3-β phosphorylation at Ser 9, thus leading to its
+ inactivation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "buren2008insulin"
@@ -2706,7 +2700,16 @@ key "buren2008insulin"
 \end_inset
 
 .
- 
+ In turn, glycogen synthase, released from its negative regulator, upregulates
+ intramuscular glycogen deposits
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ruzzin2005contraction"
+
+\end_inset
+
+.
+ The mediation of Dexa by GSK3-β was studied 
 \end_layout
 
 \begin_layout Standard
