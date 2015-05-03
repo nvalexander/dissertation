@@ -2630,8 +2630,8 @@ key "buren2008insulin,rojas2003regulation"
  Nevertheless, the same studies report that Ser 473 sensitivity to insulin
  is reduced by Dexa.
  The separation of roles between Ser 473 and Thr 308 phosphorylation is
- a subject of ongoing research, but in vitro mutations showed that the two
- sites synergize for maximal Akt activation
+ a subject of ongoing research, but in vitro manipulations indicate that
+ the two sites synergize for maximal Akt activation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "alessi1996mechanism"
@@ -2639,8 +2639,34 @@ key "alessi1996mechanism"
 \end_inset
 
 .
+ The absence of Ser 473 phosphorylation abolishes Akt activity on the substrates
+ belonging to the FoxoO class, but does not change Akt ability to phosphorylate
+ tuberin (Tuberous Sclerosis Complex 2; 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TSC2"
+description "Tuberous Sclerosis Complex 2"
+
+\end_inset
+
+) and glycogen synthase kinase 3 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GSK3"
+description "glycogen synthase kinase 3"
+
+\end_inset
+
+).
  Moreover, in vivo experiments do not describe circumstances where Akt is
- activated in the absence of Ser 473 (reviewed in ), suggesting that
+ activated in the absence of Ser 473 (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "manning2007akt/pkb"
+
+\end_inset
+
+), suggesting that it may be 
 \end_layout
 
 \begin_layout Standard
