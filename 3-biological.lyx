@@ -2457,6 +2457,33 @@ day}
 \end_layout
 
 \begin_layout Standard
+There are no studies analyzing the role of satellite cells and nuclear density
+ in GAML in situ.
+ Dong and colleagues hypothesize a 
+\begin_inset Quotes eld
+\end_inset
+
+glucocorticoid-induced satellite cell dysfunction
+\begin_inset Quotes erd
+\end_inset
+
+, and report that Dexa reduces the number of satellite cells in a post-injury
+ regenerating muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dong2013myostatin"
+
+\end_inset
+
+.
+ One is intrigued to see that Dong et al.
+ had the ability to measure change in satellite cells upon Dexa treatment,
+ yet chose not to investigate or report it.
+ Based on similarity with denervation-induced atrophy, it is likely that
+ GAML is not caused by a satellite cell dysfunction.
+\end_layout
+
+\begin_layout Standard
 In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2467,12 +2494,7 @@ key "tepas1999gender"
 .
  It is unclear whether myogenin plays any role in upregulating E3 ligases,
  as in denervation-induced atrophy.
- There are no studies conclusively analyzing the role of satellite cells
- and nuclear density in GAML in situ, although, based on similarities with
- denervation studies, it is likely that the lack of data reflects a lack
- of effect.
- Dong and colleagues report that Dexa reduces the number of satellite cells
- in a regerating muscle, 
+ 
 \end_layout
 
 \begin_layout Standard
