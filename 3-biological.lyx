@@ -2744,14 +2744,13 @@ description "nuclear factor of activated T-cells"
 
 ).
  Since then, evidence that calcineurin is not involved in muscle anabolism
- led to an unjustified neglect of GSK3-β
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sacheck2004igf-i"
 
 \end_inset
 
-.
+ led to an unjustified neglect of GSK3-β.
  Among that tens of substrates of GSK3-β, the subunit ε of the eukaryotic
  initiation factor 2B (
 \begin_inset CommandInset nomenclature
@@ -2761,7 +2760,14 @@ description "eukaryotic initiation factor 2B"
 
 \end_inset
 
-) may mediate an anti-anabolic effect.
+) may mediate an anti-anabolic effect
+\begin_inset CommandInset citation
+LatexCommand citep
+key "welsh1993glycogen"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
