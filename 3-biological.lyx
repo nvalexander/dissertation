@@ -2618,11 +2618,29 @@ key "sarbassov2005phosphorylation"
 
 .
  The few studies that investigated Dexa effect of rat muscle reported that,
- in basal conditions, Ser 473 phosphorylation is undetectable even in the
- control animals.
+ in basal conditions, Ser 473 phosphorylation is close to detection threshold,
+ even in the control animals
+\begin_inset CommandInset citation
+LatexCommand citep
+key "buren2008insulin,rojas2003regulation"
+
+\end_inset
+
+.
  Nevertheless, the same studies report that Ser 473 sensitivity to insulin
  is reduced by Dexa.
- 
+ The separation of roles between Ser 473 and Thr 308 phosphorylation is
+ a subject of ongoing research, but in vitro mutations showed that the two
+ sites synergize for maximal Akt activation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "alessi1996mechanism"
+
+\end_inset
+
+.
+ Moreover, in vivo experiments do not describe circumstances where Akt is
+ activated in the absence of Ser 473 (reviewed in ), suggesting that
 \end_layout
 
 \begin_layout Standard
