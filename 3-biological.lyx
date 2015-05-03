@@ -2583,7 +2583,17 @@ key "saad1993modulation,rojas2003regulation"
 
 .
  In other systems, including muscle cell lines treated with Dexa in vitro,
- the depletion of membrane-bound PI3K lead 
+ the depletion of membrane-bound PI3K leads to reduced production of 3-phosphoin
+ositides, lower activation of 3-phosphoinositide-dependent protein kinase
+ 1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PDK1"
+description "3-phosphoinositide-dependent protein kinase 1"
+
+\end_inset
+
+), and lower phosphorylation of the latter;s substrate, Thr 308 on Akt.
 \end_layout
 
 \begin_layout Standard
