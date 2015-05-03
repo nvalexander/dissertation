@@ -2609,7 +2609,20 @@ key "buren2008insulin"
 .
  A similar situation is seen at the other phosphorylation site on Akt, Ser
  473, which is stimulated by growth factors, through mTOR complex 2 and
- possibly through 3-phosphoinositides.
+ possibly through 3-phosphoinositides
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sarbassov2005phosphorylation"
+
+\end_inset
+
+.
+ The few studies that investigated Dexa effect of rat muscle reported that,
+ in basal conditions, Ser 473 phosphorylation is undetectable even in the
+ control animals.
+ Nevertheless, the same studies report that Ser 473 sensitivity to insulin
+ is reduced by Dexa.
+ 
 \end_layout
 
 \begin_layout Standard
