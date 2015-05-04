@@ -2771,15 +2771,8 @@ key "welsh1993glycogen"
 \end_layout
 
 \begin_layout Standard
-Akt inactivation is expected to inactivate mTOR complex 1 activity, on the
- balance of phosphorylation of TSC2 and PRAS40 (
-\begin_inset CommandInset citation
-LatexCommand citep
-key "inoki2002tsc2"
-
-\end_inset
-
-;reviewed in 
+In other models, Akt inactivation leads to loss of phosphorylation on TSC2
+ and PRAS40 (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "guertin2007defining,laplante2009mtor"
@@ -2787,6 +2780,15 @@ key "guertin2007defining,laplante2009mtor"
 \end_inset
 
 ).
+ Typically, the effects of the former prevail, suggesting that Dexa should
+ lead to mTOR complex 1 inhibition
+\begin_inset CommandInset citation
+LatexCommand citep
+key "inoki2002tsc2"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
