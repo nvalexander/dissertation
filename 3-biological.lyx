@@ -3020,7 +3020,14 @@ key "wang1998dexamethasone"
 .
  Replicating in vivo findings, L6 and C2C12 cells respond to Dexa by downregulat
 ing phosphorylation of Foxo and upregulating expression of atrogenes, in
- the absence of detectable changes in Akt or p70-S6K phosphorylation.
+ the absence of detectable Akt phosphorylation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gwag2013inhibition,shah2000glucocorticoidsa"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -3059,8 +3066,8 @@ key "takahashi2002myogenic"
 \end_layout
 
 \begin_layout Standard
-In contrast, protein synthesis rate is affected to a lesser degree, and
- with higher variability, leading to contradictory reports.
+Protein synthesis rate is affected to a lesser degree, and with higher variabili
+ty, leading to contradictory reports.
  (In the most glaring example, the same group, using the same methods, finds
  that protein syntesis is 
 \begin_inset Quotes eld
