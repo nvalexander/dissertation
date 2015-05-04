@@ -3003,14 +3003,6 @@ key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 \end_inset
 
 .
- In conclusion, Dexa and insulin co-administration cause loss of IRS 1 and
- Akt phosphorylation, and, in contrast with the denervation model, inactivation
- of mTOR.
- The caveat is that, until 2013 and the experiments with knockout mice,
- the denervation model was thought to be based on mTOR inactivation too.
- Similar experiments using transgenic models are needed for the better understan
-ding of GAML.
- 
 \begin_inset Note Note
 status open
 
@@ -3125,12 +3117,12 @@ key "wang1998dexamethasone"
 \end_inset
 
 .
- Replicating in vivo findings, L6 and C2C12 cells respond to Dexa by downregulat
-ing phosphorylation of Foxo and upregulating expression of atrogenes, in
- the absence of detectable Akt phosphorylation
+ Replicating in vivo findings, L6 and C2C12 cells respond to Dexa by upregulatin
+g expression of atrogenes in a Foxo-dependent manner, and in the absence
+ of detectable Akt phosphorylation
 \begin_inset CommandInset citation
 LatexCommand citep
-key "gwag2013inhibition,shah2000glucocorticoidsa"
+key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
 
 \end_inset
 
@@ -3141,7 +3133,7 @@ key "gwag2013inhibition,shah2000glucocorticoidsa"
 In conclusion, the muscle response to GC is associated with molecular changes
  congruent with Akt / mTOR loss of sensitivity to trophic factors, although,
  interestingly, changes in Akt itself are not readily detectable.
- Based on p70-S6K differences, it appears that GC causes Akt-mediated mTOR
+ Based on p70-S6K divergence, it appears that GC causes Akt-mediated mTOR
  modulation, in contrast with denervation atrophy, where Akt is downstream
  of mTOR.
  However, all our knowledge about Akt pathway in GAML is derived from experiment
@@ -3166,7 +3158,7 @@ key "tepas1999gender"
  It is unclear whether myogenin plays any role in upregulating E3 ligases,
  as in early stages of denervation-induced atrophy.
  The upregulation of Foxo by Dexa brings many similarities between GAML
- and late stages of denervation-induced atrophy.
+ and the late stage of denervation-induced atrophy.
 \end_layout
 
 \begin_layout Standard
@@ -3296,7 +3288,8 @@ key "bai2013activin"
  sensitivity to insulin, which is expected to cause reductions in protein
  synthesis rate expected after feeding.
  Currently published studies did not account for such fluctuations.
- Perhaps for this reason, available data are inconclusive.
+ Often, animals are euthanized after being fasted.
+ Perhaps for this reason, available data on protein synthesis are inconclusive.
 \end_layout
 
 \begin_layout Standard
