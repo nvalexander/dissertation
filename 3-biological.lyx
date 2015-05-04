@@ -2978,6 +2978,33 @@ Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
 
 \end_layout
 
+\begin_layout Standard
+An equally voluminous literature documents the effect of Dexa on the rat
+ cell line L6.
+ Fully differentiated myotubes 
+\end_layout
+
+\begin_layout Standard
+Proliferation of L6 cells is stimulated by doses of 20-100 nM Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "florini1979serum-free,whitson1989dexamethasone"
+
+\end_inset
+
+.
+ Moreover, L6 potentiates the pro-proliferative effects of IGF-I on L6 myoblasts
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "giorgino1995dexamethasone"
+
+\end_inset
+
+.
+ Because in vivo, cell proliferation is expected to play a minor role.
+\end_layout
+
 \begin_layout Subsection
 Foxo transcriptional program in GAML
 \end_layout
@@ -3294,33 +3321,6 @@ key "hong1995effects"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-An equally voluminous and inconclusive literature describes the effect of
- Dexa on the cell line L6.
- Proliferation of L6 cells is stimulated by doses of 20-100 nM Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "florini1979serum-free,whitson1989dexamethasone"
-
-\end_inset
-
-.
- Moreover, L6 potentiates the pro-proliferative effects of IGF-I on L6 myoblasts
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "giorgino1995dexamethasone"
-
-\end_inset
-
-.
- This effect is 
-\end_layout
-
-\begin_layout Standard
-In vivo, cell proliferation is expected to play a minor role.
 \end_layout
 
 \begin_layout Standard
