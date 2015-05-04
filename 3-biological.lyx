@@ -2981,11 +2981,37 @@ Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
 \begin_layout Standard
 An equally voluminous literature documents the effect of Dexa on the rat
  cell line L6.
- Fully differentiated myotubes 
-\end_layout
+ Fully differentiated myotubes from L6 and C2C12 cell lines lose more than
+ a quarter of their diameter when treated with 100 nM Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "menconi2008dexamethasone"
 
-\begin_layout Standard
-Proliferation of L6 cells is stimulated by doses of 20-100 nM Dexa
+\end_inset
+
+.
+ The loss of volume is underlined by an 20% increase in protein degradation
+ rate, in the absence of changes in protein synthesis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang1998dexamethasone"
+
+\end_inset
+
+.
+ Four fifths of the Dexa-induced proteolysis augmentation is lost, when
+ proteasome inhibitors such as beta-lactone or ATP depleting agents, like
+ dinitrophenol, are co-administered.
+ In contrast, lysosomal inhibitors had no effect, an E-64 has minimal effect
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang1998dexamethasone"
+
+\end_inset
+
+.
+ However, proliferation of L6 myoblasts is stimulated by doses of 20 nM
+ Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "florini1979serum-free,whitson1989dexamethasone"
@@ -3002,7 +3028,11 @@ key "giorgino1995dexamethasone"
 \end_inset
 
 .
- Because in vivo, cell proliferation is expected to play a minor role.
+ Many in vitro studies on myogenic cell lines fail to deplete myoblasts,
+ and are therefore inaccurate models of proliferation-independent in vivo
+ GAML.
+ With this caveat, it appears that the above Dexa-induced repression of
+ Akt / mTOR pathways is even more evident in in vitro studies.
 \end_layout
 
 \begin_layout Subsection
@@ -3339,21 +3369,6 @@ myotubes
  cytosol (PMID: 9054447).
  In L6 cells, Dexa downregulates total and phosphorylated IRS-1, and leaves
  S6 kinase activity unchanged (PMID: 9468291).
-\end_layout
-
-\begin_layout Standard
-In L6 myotubes, protein degradation rate is increased by a fifth with 100
- nM Dexa for 6 hours.
- Of this increase, 80% is lost when proteasome inhibitors such as beta-lactone
- or dinitrophenol are used.
- In contrast, lysosomal inhibitors had no effect, an E-64 has minimal effect
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wang1998dexamethasone"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
