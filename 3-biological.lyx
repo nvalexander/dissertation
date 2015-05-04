@@ -2562,6 +2562,14 @@ key "dardevet1995sensitivity"
 \end_inset
 
 .
+ Proteasome chymotrypsin-like catalytic activity is doubled by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gilson2007myostatin"
+
+\end_inset
+
+.
  Therefore, explant models suggest that GAML is, to a wide extend, the result
  of upregulation of the proteasome-ubiquitin system.
  Recent research aims to establish if other proteolysis or protein synthesis
@@ -2990,8 +2998,8 @@ key "menconi2008dexamethasone"
 \end_inset
 
 .
- The loss of diameter is underlined by an 20% increase in protein degradation
- rate, in the absence of changes in protein synthesis rates
+ The loss of diameter is reliably underlined by an 20% increase in protein
+ degradation rate
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wang1998dexamethasone,menconi2008dexamethasone"
@@ -3010,8 +3018,17 @@ key "wang1998dexamethasone"
 \end_inset
 
 .
- However, proliferation of L6 myoblasts is stimulated by doses of 20 nM
- Dexa
+ Replicating in vivo findings, L6 and C2C12 cells respond to Dexa by downregulat
+ing phosphorylation of Foxo and upregulating expression of atrogenes, in
+ the absence of detectable changes in Akt or p70-S6K phosphorylation.
+ 
+\end_layout
+
+\begin_layout Standard
+In vitro models diverge from in vivo GAML.
+ As mentioned earlier, in the case of primary cells they are outright impossible
+, because primary cell survival is GC-dependent.
+ Proliferation of L6 myoblasts is stimulated by doses of 20 nM Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "florini1979serum-free,whitson1989dexamethasone"
@@ -3038,9 +3055,28 @@ key "takahashi2002myogenic"
  Many in vitro studies on myogenic cell lines fail to deplete myoblasts,
  and are therefore inaccurate models of proliferation-independent in vivo
  GAML.
- For example, studies measuring protein synthesis in a mixed population
- of differentiating and proliferating L6 cells observed a low amplitude
- decrease in protein synthesis rate
+ 
+\end_layout
+
+\begin_layout Standard
+In contrast, protein synthesis rate is affected to a lesser degree, and
+ with higher variability, leading to contradictory reports.
+ (In the most glaring example, the same group, using the same methods, finds
+ that protein syntesis is 
+\begin_inset Quotes eld
+\end_inset
+
+not altered
+\begin_inset Quotes erd
+\end_inset
+
+ by Dexa in one experiment, and decreased in another.)
+\end_layout
+
+\begin_layout Standard
+For example, studies measuring protein synthesis in a mixed population of
+ differentiating and proliferating L6 cells observed a low amplitude decrease
+ in protein synthesis rate
 \begin_inset CommandInset citation
 LatexCommand citep
 key "desler1996effects"
