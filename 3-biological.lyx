@@ -3082,7 +3082,9 @@ key "takahashi2002myogenic"
 \end_inset
 
 .
- Insulin sensitivity assays 
+ Therefore, it is likely that Dexa-induced loss of sensitivity to insulin
+ cannot be replicated in cell culture, especially when dividing cells are
+ still present.
 \end_layout
 
 \begin_layout Standard
@@ -3382,7 +3384,7 @@ key "shah2000glucocorticoidsa"
 
 .
  However, studies are similarly equivocal.
- In the most glaring example, the same group, using the same methods, finds
+ In the most glaring example, the same group, using the same methods, found
  that protein synthesis is 
 \begin_inset Quotes eld
 \end_inset
@@ -3411,7 +3413,14 @@ key "desler1996effects"
 .
  Even when detected, the amplitude of changes in protein synthesis is far
  lower than that on protein degradation, suggesting a secondary role for
- the latter.
+ the latter
+\begin_inset CommandInset citation
+LatexCommand citep
+key "aversa2012beta-hydroxy-beta-methylbutyrate,desler1996effects,jones2005vitro"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
