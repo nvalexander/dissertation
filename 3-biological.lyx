@@ -3127,6 +3127,15 @@ key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
 \end_inset
 
 .
+ In C2C12 myotubes, Dexa reduces p70-S6K Thr 389 phosphorylation and activity
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frost2009regulation"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3447,7 +3456,7 @@ key "bullock1972relative"
 \end_inset
 
 .
- In contrast, polysome downregulation lasts more than two days after Dexa.
+ In contrast, polysome downregulation lasts about two days after Dexa.
  But there are no accounts on polysome profile changes after longer GC exposure.
 \end_layout
 
