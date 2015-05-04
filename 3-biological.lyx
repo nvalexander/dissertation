@@ -2200,6 +2200,121 @@ Ubiquitin-proteasome system as a major effector in GAML
 \end_layout
 
 \begin_layout Standard
+In the 75 years since the discovery of chronic steroid myopathy, scientists
+ attempted, with variable success, to develop multiple animal models.
+ In dogs, seven days of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.44}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ cause increased nitrogen excretion, increased glutamine and alanine release
+ from the hindlimb
+\begin_inset CommandInset citation
+LatexCommand citep
+key "muhlbacher1984effects"
+
+\end_inset
+
+.
+ In rabbits, fourteen days of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{3}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa diminished diaphragm's twitch and tetanic contraction force
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jiang1996effect"
+
+\end_inset
+
+ Interestingly, four days of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa did not change muscle mass, despite the upregulation of some catabolic
+ markers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "yeh1994effects"
+
+\end_inset
+
+.
+ Early studies were marred by an absence of meaningful macroscopic outcomes,
+ such as muscle force or mass.
+ Moreover, the modern molecular correlates of muscle loss were not known,
+ and could not have been investigated.
+\end_layout
+
+\begin_layout Standard
 In the era of genome sequencing, where murine species became the most common
  model, studies of GAML focused on rats, because changes in muscle mas are
  more readily are more readily observed, compared to mice.
@@ -2458,10 +2573,44 @@ key "gilson2007myostatin"
 \end_layout
 
 \begin_layout Standard
+Unbiased microarray searches in mice muscles atrophying in various experimental
+ paradigms have repeatedly yielded two upregulated genes, termed atrogenes,
+ MAFbx and MuRF-1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gomes2001atrogin-1,bodine2001identification"
+
+\end_inset
+
+.
+ Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
+ system in GAML.
+ Recently, the role of MAFbx has been questioned, as unbiased searches in
+ rats failed to identify it as a target of Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wu2010redd1"
+
+\end_inset
+
+, and its genetic depletion did not reduce mouse GAML
+\begin_inset CommandInset citation
+LatexCommand citep
+key "baehr2011muscle"
+
+\end_inset
+
+.
+ While MuRF-1 knockout reduces GAML, it does not abolish it completely.
+\end_layout
+
+\begin_layout Standard
 Therefore, explant models suggest that GAML is, to a wide extend, the result
  of upregulation of the proteasome-ubiquitin system.
  Recent research aims to establish if other proteolysis or protein synthesis
  regulators contribute to GAML.
+ Alternatively, it may be the case that the proteasome-ubiquitin system
+ initiates GAML by neutralizing a few specific muscle protecting factors.
 \end_layout
 
 \begin_layout Section*
@@ -3031,34 +3180,51 @@ key "stitt2004igf-1/pi3k/akt"
 \end_inset
 
 .
- These have been discovered in unbiased microarray searches in mice
+ REDD
+\end_layout
+
+\begin_layout Standard
+Dexa upregulates a strong muscle negative regulator, myostatin, in the atrophyin
+g muscle
 \begin_inset CommandInset citation
 LatexCommand citep
-key "gomes2001atrogin-1,bodine2001identification"
+key "ma2003glucocorticoid-induced"
 
 \end_inset
 
 .
- Recently the role of MAFbx has been questioned, as unbiased searches in
- rats failed to identify it as a target of Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wu2010redd1"
+ In explanted myofibers, expression of a dominant negative form of activin
+ A receptor, type IIB (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ActRIIB"
+description "activin A receptor, type IIB"
 
 \end_inset
 
-, and its genetic depletion in mice had no effect on GAML
+), the receptor for myostatin, causes an increase in CSA, which is halved
+ by rapamycin
 \begin_inset CommandInset citation
 LatexCommand citep
-key "baehr2011muscle"
+key "sartori2009smad2"
 
 \end_inset
 
 .
- While MuRF-1 knockout reduces GAML, it does not abolish it completely.
- It is unclear whether these E3 ligases are the main effectors of GAML,
- or whether they are needed solely to act on specific targets whose ubiquitinati
-on and/or depletion, in turn, triggers bulk protein degradation.
+ In myostatin knockout mice, Dexa induces its transcriptional program, including
+ modulations of IGF-I, MuRF-1, MAFbx, FOXO3A, but Dexa-induced muscle loss
+ does not occur 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gilson2007myostatin"
+
+\end_inset
+
+.
+ Therefore, myostatin acts, at least in part, through mTOR-and FOXO-independent
+ pathways.
+ Although it is unclear to what degree GAML depends on myostatin-mediated,
+ mTOR-independent mechanisms, their existence cannot be discounted.
 \end_layout
 
 \begin_layout Section
@@ -3098,8 +3264,11 @@ key "bai2013activin"
  synthesis rate expected after feeding.
  Currently published studies did not account for such fluctuations.
  Perhaps for this reason, available data are inconclusive.
- As in human studies, the role of protein synthesis modulation during hypercorti
-solism is still debated.
+\end_layout
+
+\begin_layout Standard
+As in human studies, the role of protein synthesis modulation during hypercortis
+olism is still debated.
  In the first hours after receiving GCs, the rate of protein synthesis in
  the muscle decreases, as indicated by reductions in incorporation of labeled
  precursors and by a reduction in the proportion of polyribosomes
@@ -3120,7 +3289,11 @@ key "bullock1972relative"
 
 .
  In contrast, polysome downregulation lasts more than two days after Dexa.
- Some of the most exhaustive studies in this field came from Grizard laboratory.
+ 
+\end_layout
+
+\begin_layout Standard
+Some of the most exhaustive studies in this field came from Grizard laboratory.
  In two studies using 
 \begin_inset ERT
 status collapsed
@@ -3221,51 +3394,7 @@ key "desler1996effects"
 
 .
  While changes in phosphorylation of 4E-BP occur in cell culture, as they
- do in vivo, 
-\end_layout
-
-\begin_layout Standard
-Dexa upregulates a strong muscle negative regulator, myostatin in the atrophying
- muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ma2003glucocorticoid-induced"
-
-\end_inset
-
-.
- In explanted myofibers, expression of a dominant negative form of activin
- A receptor, type IIB (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "ActRIIB"
-description "activin A receptor, type IIB"
-
-\end_inset
-
-), the receptor for myostatin, causes an increase in CSA, which is halved
- by rapamycin
-\begin_inset CommandInset citation
-LatexCommand citep
-key "sartori2009smad2"
-
-\end_inset
-
-.
- In myostatin knockout mice, Dexa induces its transcriptional program, including
- modulations of IGF-I, MuRF-1, MAFbx, FOXO3A, but Dexa-induced muscle loss
- does not occur 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "gilson2007myostatin"
-
-\end_inset
-
-.
- Therefore, myostatin acts, at least in part, through mTOR-and FOXO-independent
- pathways.
- Although it is unclear to what degree GAML depends on myostatin-mediated,
- mTOR-independent mechanisms, their existence cannot be discounted.
+ do in vivo, the lack of 
 \end_layout
 
 \begin_layout Section*
@@ -3286,121 +3415,6 @@ key "dardevet1995sensitivity"
 
 \begin_layout Section
 Animal models of steroid myopathy
-\end_layout
-
-\begin_layout Standard
-In the 75 years since the discovery of chronic steroid myopathy, scientists
- attempted, with variable success, to develop multiple animal models.
- In dogs, seven days of 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{0.44}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- cause increased nitrogen excretion, increased glutamine and alanine release
- from the hindlimb
-\begin_inset CommandInset citation
-LatexCommand citep
-key "muhlbacher1984effects"
-
-\end_inset
-
-.
- In rabbits, fourteen days of 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{3}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- Dexa diminished diaphragm's twitch and tetanic contraction force
-\begin_inset CommandInset citation
-LatexCommand citep
-key "jiang1996effect"
-
-\end_inset
-
- Interestingly, four days of 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{1}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- Dexa did not change muscle mass, despite the upregulation of some catabolic
- markers
-\begin_inset CommandInset citation
-LatexCommand citep
-key "yeh1994effects"
-
-\end_inset
-
-.
- Early studies were marred by an absence of meaningful macroscopic outcomes,
- such as muscle force or mass.
- Moreover, the modern molecular correlates of muscle loss were not known,
- and could not have been investigated.
 \end_layout
 
 \begin_layout Standard
