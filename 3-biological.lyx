@@ -2513,7 +2513,7 @@ day}
 \end_inset
 
  Dexa for six days, epitrochlearis muscle proteolysis rate increased by
- 50%, while protein degradation was essentially unchanged
+ 50%, while protein synthesis was essentially unchanged
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity"
@@ -2554,12 +2554,22 @@ key "tiao1996energy-ubiquitin-dependent"
 \end_inset
 
 .
- Therefore, explant models suggest that GAML is, to a great extend, the
- result of upregulation of the proteasome-ubiquitin system.
+ The proteasomal subunits C2 are upregulated by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity"
+
+\end_inset
+
+.
+ Therefore, explant models suggest that GAML is, to a wide extend, the result
+ of upregulation of the proteasome-ubiquitin system.
+ Recent research aims to establish if other proteolysis or protein synthesis
+ regulators contribute to GAML.
 \end_layout
 
 \begin_layout Subsection
-Akt axis in GAML
+Akt / mTOR axis in GAML
 \end_layout
 
 \begin_layout Standard
@@ -2968,6 +2978,25 @@ Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
 
 \end_layout
 
+\begin_layout Subsection
+Foxo transcriptional program in GAML
+\end_layout
+
+\begin_layout Standard
+In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tepas1999gender"
+
+\end_inset
+
+.
+ It is unclear whether myogenin plays any role in upregulating E3 ligases,
+ as in early stages of denervation-induced atrophy.
+ The upregulation of Foxo by Dexa brings many similarities between GAML
+ and late stages of denervation-induced atrophy.
+\end_layout
+
 \begin_layout Standard
 Dexa modulates the Foxo transcription factors in two ways.
  First, inhibition of Akt by chronic Dexa cause a reduction in Foxo phosphorylat
@@ -3000,25 +3029,6 @@ key "tang2014mtorc1"
 , but it is unclear to what degree is GAML dependent on Foxo.
  In vitro studies indicate that, similar to denervation, activation of Foxo
  by Dexa induces their catabolic program.
-\end_layout
-
-\begin_layout Subsection
-Foxo transcriptional program in GAML
-\end_layout
-
-\begin_layout Standard
-In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tepas1999gender"
-
-\end_inset
-
-.
- It is unclear whether myogenin plays any role in upregulating E3 ligases,
- as in early stages of denervation-induced atrophy.
- The upregulation of Foxo by Dexa brings many similarities between GAML
- and late stages of denervation-induced atrophy.
 \end_layout
 
 \begin_layout Standard
@@ -3187,10 +3197,29 @@ key "tomas1998anti-catabolic"
 \end_layout
 
 \begin_layout Standard
-Dexa upregulates myostatin in the atrophying muscle
+Dexa upregulates a strong muscle negative regulator, myostatin in the atrophying
+ muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ma2003glucocorticoid-induced"
+
+\end_inset
+
+.
+ In explanted myofibers, expression of a dominant negative form of activin
+ A receptor, type IIB (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ActRIIB"
+description "activin A receptor, type IIB"
+
+\end_inset
+
+), the receptor for myostatin, causes an increase in CSA, which is halved
+ by rapamycin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sartori2009smad2"
 
 \end_inset
 
@@ -3205,34 +3234,19 @@ key "gilson2007myostatin"
 \end_inset
 
 .
- In cell cultures, myotube increase as a result of myostatin inhibition
- by 
+ Therefore, myostatin acts, at least in part, through mTOR-and FOXO-independent
+ pathways.
+ Although it is unclear to what degree GAML depends on myostatin-mediated,
+ mTOR-independent mechanisms, their existence cannot be discounted.
 \end_layout
 
 \begin_layout Standard
-In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tepas1999gender"
-
-\end_inset
-
-.
- It is unclear whether myogenin plays any role in upregulating E3 ligases,
- as in denervation-induced atrophy.
+Potential role of autophagy in GAML
 \end_layout
 
 \begin_layout Standard
 Expression of the lysosome protease cathepsin D and of the calcium-dependent
  protease m-calpain is trebled by Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dardevet1995sensitivity"
-
-\end_inset
-
-.
- The proteasomal subunits C2 are also upregulated by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity"
