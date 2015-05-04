@@ -3056,7 +3056,14 @@ key "wu2010redd1"
 
 \end_inset
 
-, presumably through a Foxo-binding sequence in its promoter.
+, presumably through a Foxo-binding sequence in its promoter
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bai2013activin"
+
+\end_inset
+
+.
  Second, as mentioned earlier, Dexa reduces 4E-BP phosphorylation sensitivity
  to insulin, which is expected to cause reductions in protein synthesis
  rate expected after feeding.
