@@ -3091,8 +3091,10 @@ key "takahashi2002myogenic"
 Many in vitro studies on myogenic cell lines fail to deplete myoblasts,
  and are therefore inaccurate models of proliferation-independent in vivo
  GAML.
- With this caveat, in vitro studies have been valuable in excluding third-party
- organs, such as the pancreas, from Dexa effect on muscle.
+ With this caveat, in vitro studies have been vital in excluding third-party
+ organs, such as the pancreas, from the analysis of GAML.
+ Some features of GAML are more readily observed, and have been initially
+ described in cell culture.
  Fully differentiated myotubes from L6 and C2C12 cell lines lose more than
  a quarter of their diameter when treated with 100 nM Dexa
 \begin_inset CommandInset citation
@@ -3142,8 +3144,10 @@ In conclusion, the muscle response to GC is associated with molecular changes
  Based on p70-S6K differences, it appears that GC causes Akt-mediated mTOR
  modulation, in contrast with denervation atrophy, where Akt is downstream
  of mTOR.
- However, experiments on transgenic mice may invalidate our model of GAML,
- as they did in denervation atrophy.
+ However, all our knowledge about Akt pathway in GAML is derived from experiment
+s with intrinsic anabolic interventions.
+ Experiments on transgenic mice, unpicking one putative mediator at a time,
+ may invalidate our model of GAML, as they did in denervation atrophy.
 \end_layout
 
 \begin_layout Section*
