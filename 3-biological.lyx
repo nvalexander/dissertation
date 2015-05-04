@@ -2624,6 +2624,14 @@ key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
 \end_inset
 
 .
+ Dexa reduces muscle expression of IGF-I
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gayan-ramirez1999acute"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2643,16 +2651,43 @@ key "saad1993modulation,corporeau2006adipose"
 \end_inset
 
 .
- Dexa reduces muscle expression of IGF-I
+ However, insulin's ability to cause IRS 1 and 2 phosphorylation is reduced
+ to less than a third, in mice treated for 5 days with 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
-key "gayan-ramirez1999acute"
+key "rojas2003regulation"
 
 \end_inset
 
 .
- Further downstream, Dexa has an inhibitory effect in some aspects, for
- example by hindering the recruitment of PI3K to the membrane complex containing
+ Dexa hinders the recruitment of PI3K to the membrane complex containing
  insulin receptor and IRS1
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2661,6 +2696,7 @@ key "saad1993modulation,rojas2003regulation"
 \end_inset
 
 .
+ These findings suggest that GCs activate a multifaceted anti-insulin program.
 \end_layout
 
 \begin_layout Standard
@@ -2887,8 +2923,7 @@ key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 \end_inset
 
 .
- Taken together, these findings suggest that GCs activate a multifaceted
- anti-insulin program, altering protein and glucose metabolism.
+ 
 \end_layout
 
 \begin_layout Standard
