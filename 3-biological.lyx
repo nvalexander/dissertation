@@ -3133,23 +3133,17 @@ key "gwag2013inhibition,shah2000glucocorticoidsa"
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Or you could give Dexa and insulin, like Jensen does, to see loss of sensitivity
- at Akt level.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 In conclusion, the muscle response to GC is associated with molecular changes
  congruent with Akt / mTOR loss of sensitivity to trophic factors, although,
  interestingly, changes in Akt itself are not readily detectable.
+ Based on p70-S6K differences, it appears that GC causes Akt-mediated mTOR
+ modulation, in contrast with denervation atrophy, where Akt is downstream
+ of mTOR.
+ However, experiments on transgenic mice may invalidate our model of GAML,
+ as they did in denervation atrophy.
 \end_layout
 
 \begin_layout Section*
