@@ -1985,8 +1985,8 @@ key "medina1995increase,bodine2001identification"
 \end_inset
 
 .
- The upregulation of the E3 ligases is induced by multiple independent mediators
-, including myogenin and Foxo transcription factors
+ The upregulation of the E3 ligases is induced by multiple independent transcrip
+tion factors, including myogenin and the Foxo class
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fjallstrom2014forkhead,moresi2010myogenin,tang2014mtorc1,macpherson2011myogenin"
@@ -2046,8 +2046,9 @@ key "zhao2007foxo3,schiaffino2013mechanisms"
  In 2013, Quy and colleagues found that denervation increased Threonine-389
  phosphorylation and catalytic activity of p70-S6K, indicating that denervation
  causes in fact activation of mTOR complex 1.
- In 2014, Tang and colleagues proved that rapamycin abolishes denervation-induce
-d loss of muscle mass
+ In 2014, Tang and colleagues proved that rapamycin, an inhibitor of mTOR
+ complex 1 which lacks intrinsic anabolic properties, abolishes denervation-indu
+ced loss of muscle mass
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tang2014mtorc1"
@@ -2066,8 +2067,8 @@ description "insulin receptor substrate"
 
 \end_inset
 
-) 1, suggesting that, in denervation, activated mTOR complex 1 inhibits
- Akt through a p70-S6K - IRS 1-mediated negative feedback loop.
+) 1, proving that, in denervation, activated mTOR complex 1 inhibits Akt
+ through a p70-S6K - IRS 1-mediated negative feedback loop.
  Quy found that mTOR complex 1 activation is lost upon proteasome inhibition
  with bortezomib.
  One can hypothesize the existence of an mTOR negative regulator which is
@@ -2930,8 +2931,21 @@ key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
  In conclusion, Dexa and insulin coadministration cause loss of IRS 1 and
  Akt phosphorylation, and, in contrast with the denervation model, inactivation
  of mTOR.
- It appears that GAML differs from denervation, although experiments on
- knockout mice might provide a better picture of the latter.
+ The caveat is that, until 2013 and the experiments with knockout mice,
+ the denervation model was thought to be based on mTOR inactivation too.
+ Similar experiments using transgenic models are needed for the better understan
+ding of GAML.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
