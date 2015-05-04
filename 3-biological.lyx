@@ -2996,17 +2996,29 @@ key "tang2014mtorc1"
 , but it is unclear to what degree is GAML dependent on Foxo.
  In vitro studies indicate that, similar to denervation, activation of Foxo
  by Dexa induces their catabolic program.
- Among the Foxo-induced genes, a special importance was given to the E3
- ligases associated with muscle loss, MAFbx and MuRF-1
+\end_layout
+
+\begin_layout Standard
+Among the Foxo-induced genes, a special importance was given to the E3 ligases
+ associated with muscle loss, MAFbx and MuRF-1
 \begin_inset CommandInset citation
 LatexCommand citep
-key "stitt2004igf-1/pi3k/akt,gomes2001atrogin-1,bodine2001identification"
+key "stitt2004igf-1/pi3k/akt"
 
 \end_inset
 
 .
- However, transgenic mouse studies indicate that MAFbx knockout has no effect
- on GAML
+ These have been discovered in unbiased microarray searches in mice
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gomes2001atrogin-1,bodine2001identification"
+
+\end_inset
+
+.
+ Recently the role of MAFbx has been questioned, as unbiased searches in
+ rats failed to identify it as a target of Dexa, and its genetic depletion
+ in mice had no effect on GAML
 \begin_inset CommandInset citation
 LatexCommand citep
 key "baehr2011muscle"
@@ -3030,16 +3042,28 @@ It may be that double knockout will lack any GAML.
 
 \begin_layout Standard
 Similarly, Dexa has a dual effect on 4E-BP, the inhibitor of protein synthesis
- that binds and inhibits eIF4B.
- First, Dexa induces 4E-BP expression.
-\end_layout
+ that binds and inhibits the eukaryotic initiation factor 4B (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "eIF4B"
+description "eukaryotic initiation factor 4B"
 
-\begin_layout Standard
-Dexa reduces 4E-BP phosphorylation sensitivity to insulin, which is expected
- to cause reductions in protein synthesis rate expected after feeding.
- Second, Dexa induces 4E-BP expression, Currently published studies did
- not account for such fluctuations.
- Perhaps for this reason, available data is inconclusive.
+\end_inset
+
+).
+ First, Dexa induces 4E-BP expression
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wu2010redd1"
+
+\end_inset
+
+.
+ Second, as mentioned earlier, Dexa reduces 4E-BP phosphorylation sensitivity
+ to insulin, which is expected to cause reductions in protein synthesis
+ rate expected after feeding.
+ Currently published studies did not account for such fluctuations.
+ Perhaps for this reason, available data are inconclusive.
  As in human studies, the role of protein synthesis modulation during hypercorti
 solism is still debated.
  In the first hours after receiving GCs, the rate of protein synthesis in
@@ -3128,12 +3152,8 @@ key "tomas1998anti-catabolic"
 
 .
  Overall, changes in protein degradation are more reliably seen than those
- in protein synthesis, suggesting that the latter may be the product of
- special conditions.
-\end_layout
-
-\begin_layout Standard
-While a 
+ in protein synthesis, suggesting that the latter may be observed only in
+ special conditions, such as immediately after feeding.
 \end_layout
 
 \begin_layout Standard
