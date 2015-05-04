@@ -2558,6 +2558,10 @@ key "tiao1996energy-ubiquitin-dependent"
  result of upregulation of the proteasome-ubiquitin system.
 \end_layout
 
+\begin_layout Subsection
+Akt axis in GAML
+\end_layout
+
 \begin_layout Standard
 The most comprehensive account on GC-induced changes on protein metabolic
  regulation came, surprisingly, from the study of associated glucose metabolism
@@ -2998,6 +3002,25 @@ key "tang2014mtorc1"
  by Dexa induces their catabolic program.
 \end_layout
 
+\begin_layout Subsection
+Foxo transcriptional program in GAML
+\end_layout
+
+\begin_layout Standard
+In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tepas1999gender"
+
+\end_inset
+
+.
+ It is unclear whether myogenin plays any role in upregulating E3 ligases,
+ as in early stages of denervation-induced atrophy.
+ The upregulation of Foxo by Dexa brings many similarities between GAML
+ and late stages of denervation-induced atrophy.
+\end_layout
+
 \begin_layout Standard
 Among the Foxo-induced genes, a special importance was given to the E3 ligases
  associated with muscle loss, MAFbx and MuRF-1
@@ -3066,9 +3089,9 @@ key "bai2013activin"
 .
  (The promoter has been shown in Drosophila, but the paper describing it
  in mouse cell culture has been withdrawn for unspecified reason.) Second,
- as mentioned earlier, Dexa reduces 4E-BP phosphorylation sensitivity to
- insulin, which is expected to cause reductions in protein synthesis rate
- expected after feeding.
+ as mentioned earlier, Dexa reduces mTOR-effected 4E-BP phosphorylation
+ sensitivity to insulin, which is expected to cause reductions in protein
+ synthesis rate expected after feeding.
  Currently published studies did not account for such fluctuations.
  Perhaps for this reason, available data are inconclusive.
  As in human studies, the role of protein synthesis modulation during hypercorti
@@ -3172,8 +3195,9 @@ key "ma2003glucocorticoid-induced"
 \end_inset
 
 .
- Dexa-induced muscle loss does not occur in transgenic mice lacking the
- myostatin gene
+ In myostatin knockout mice, Dexa induces its transcriptional program, including
+ modulations of IGF-I, MuRF-1, MAFbx, FOXO3A, but Dexa-induced muscle loss
+ does not occur 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gilson2007myostatin"
@@ -3181,7 +3205,8 @@ key "gilson2007myostatin"
 \end_inset
 
 .
- 
+ In cell cultures, myotube increase as a result of myostatin inhibition
+ by 
 \end_layout
 
 \begin_layout Standard
