@@ -2990,11 +2990,11 @@ key "menconi2008dexamethasone"
 \end_inset
 
 .
- The loss of volume is underlined by an 20% increase in protein degradation
- rate, in the absence of changes in protein synthesis
+ The loss of diameter is underlined by an 20% increase in protein degradation
+ rate, in the absence of changes in protein synthesis rates
 \begin_inset CommandInset citation
 LatexCommand citep
-key "wang1998dexamethasone"
+key "wang1998dexamethasone,menconi2008dexamethasone"
 
 \end_inset
 
@@ -3019,7 +3019,7 @@ key "florini1979serum-free,whitson1989dexamethasone"
 \end_inset
 
 .
- Moreover, L6 potentiates the pro-proliferative effects of IGF-I on L6 myoblasts
+ Moreover, Dexa synergizes with IGF-I to improve proliferation of L6 myoblasts
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3027,12 +3027,22 @@ key "giorgino1995dexamethasone"
 
 \end_inset
 
-.
+, and Akt phosphorylation on Ser 473 in C2C12 differentiating cells.
  Many in vitro studies on myogenic cell lines fail to deplete myoblasts,
  and are therefore inaccurate models of proliferation-independent in vivo
  GAML.
+ For example, studies measuring protein synthesis in a mixed population
+ of differentiating and proliferating L6 cells observed a low amplitude
+ decrease in protein synthesis rate
+\begin_inset CommandInset citation
+LatexCommand citep
+key "desler1996effects"
+
+\end_inset
+
+.
  With this caveat, it appears that the above Dexa-induced repression of
- Akt / mTOR pathways is even more evident in in vitro studies.
+ Akt / mTOR pathways is more evident in in vitro studies.
 \end_layout
 
 \begin_layout Subsection
