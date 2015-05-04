@@ -2482,9 +2482,87 @@ key "dong2013myostatin"
 \end_layout
 
 \begin_layout Standard
-The most poignant change induced by chronic Dexa at muscle level is the
- induction of systemic insulin resistance, manifested as uncompensated hyperglyc
-emia
+The loss of muscle in the Dexa-treated adult rat is the result of an increase
+ in protein degradation.
+ In rats receiving 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.5}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa for six days, epitrochlearis muscle proteolysis rate increased by
+ 50%, while protein degradation was essentially unchanged
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity"
+
+\end_inset
+
+.
+ Dexa-stimulated proteolysis affects the contractile apparatus, as indicated
+ by the doubling of urinary 3-MH output
+\begin_inset CommandInset citation
+LatexCommand citep
+key "seene1988effect"
+
+\end_inset
+
+.
+ The upregulation of proteolysis occurs even when explants, rather than
+ animals, are treated with Dexa, suggesting that GAML does not require extramusc
+ular inputs
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wing1993glucocorticoids"
+
+\end_inset
+
+.
+ The increase in proteolytic rate is unchanged when explants are treated
+ with the lysosome inhibitor methylamine and the lysosome / calpain inhibitor
+ E-64.
+ On the other hand, the Dexa-stimulated increase in proteolysis is abrogated
+ when the explant is depleted of ATP by a combination of the mitochondrial
+ decoupling agent dinitrophenol and the unlysable glucose homologue, 2-deoxygluc
+ose
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tiao1996energy-ubiquitin-dependent"
+
+\end_inset
+
+.
+ Therefore, explant models suggest that GAML is, to a great extend, the
+ result of upregulation of the proteasome-ubiquitin system.
+\end_layout
+
+\begin_layout Standard
+The most comprehensive account on GC-induced changes on protein metabolic
+ regulation came, surprisingly, from the study of associated glucose metabolism
+ changes.
+ Dexa causes systemic insulin resistance, manifested as uncompensated hyperglyce
+mia
 \begin_inset CommandInset citation
 LatexCommand citep
 key "nicastro2012effectsa"
@@ -2492,9 +2570,10 @@ key "nicastro2012effectsa"
 \end_inset
 
 .
- On one hand, Dexa induces catabolic actions that eventually converge to
- hyperglycemia and consequent hyperinsulinemia, which together yield a higher
- index of homeostatic model assessment - insulin resistance (
+ On one hand, Dexa induces concerted catabolic changes which eventually
+ converge to hyperglycemia, and consequent hyperinsulinemia.
+ Together, these yield a higher index of homeostatic model assessment -
+ insulin resistance (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HOMA-IR"
@@ -2510,9 +2589,9 @@ key "saad1993modulation"
 \end_inset
 
 .
- On the other, insulin is unable to trigger its typical anabolic program
- in hypercortisolic muscle.
- Despite hyperinsulinemia, Dexa reduces muscle glucose uptake
+ On the other, Dexa-induced hyperinsulinemia fails to trigger its typical
+ anabolic program in muscle.
+ For example, Dexa overrules insulin to reduce muscle glucose uptake
 \begin_inset CommandInset citation
 LatexCommand citep
 key "weinstein1995glucocorticoid-induced"
@@ -2801,82 +2880,6 @@ key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 .
  Taken together, these findings suggest that GCs activate a multifaceted
  anti-insulin program, altering protein and glucose metabolism.
-\end_layout
-
-\begin_layout Standard
-The loss of muscle in the Dexa-treated adult rat is the result of an increase
- in protein degradation.
- In rats receiving 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{0.5}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- Dexa for six days, epitrochlearis muscle proteolysis rate increased by
- 50%, while protein degradation was essentially unchanged
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dardevet1995sensitivity"
-
-\end_inset
-
-.
- Dexa-stimulated proteolysis affects the contractile apparatus, as indicated
- by the doubling of urinary 3-MH output
-\begin_inset CommandInset citation
-LatexCommand citep
-key "seene1988effect"
-
-\end_inset
-
-.
- The upregulation of proteolysis occurs even when explants, rather than
- animals, are treated with Dexa, suggesting that GAML does not require extramusc
-ular inputs
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wing1993glucocorticoids"
-
-\end_inset
-
-.
- The increase in proteolytic rate is unchanged when explants are treated
- with the lysosome inhibitor methylamine and the lysosome / calpain inhibitor
- E-64.
- On the other hand, the Dexa-stimulated increase in proteolysis is extinguished
- when the explant is depleted of ATP by a combination of the mitochondrial
- decoupling agent dinitrophenol and the unlysable glucose homologue, 2-deoxygluc
-ose
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tiao1996energy-ubiquitin-dependent"
-
-\end_inset
-
-.
- Therefore, explant models suggest that GAML is, to a great extend, the
- result of upregulation of the proteasome-ubiquitin system.
 \end_layout
 
 \begin_layout Standard
