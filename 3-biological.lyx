@@ -3267,32 +3267,6 @@ key "bai2013activin"
 \end_layout
 
 \begin_layout Standard
-As in human studies, the role of protein synthesis modulation during hypercortis
-olism is still debated.
- In the first hours after receiving GCs, the rate of protein synthesis in
- the muscle decreases, as indicated by reductions in incorporation of labeled
- precursors and by a reduction in the proportion of polyribosomes
-\begin_inset CommandInset citation
-LatexCommand citep
-key "peters1970biochemical,young1968sedimentation"
-
-\end_inset
-
-.
- The proportion of polysomes recovers to basal level in less than 24 hours,
- when the GC is short-acting prednisone
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bullock1972relative"
-
-\end_inset
-
-.
- In contrast, polysome downregulation lasts more than two days after Dexa.
- 
-\end_layout
-
-\begin_layout Standard
 Some of the most exhaustive studies in this field came from Grizard laboratory.
  In two studies using 
 \begin_inset ERT
@@ -3364,8 +3338,17 @@ key "tomas1998anti-catabolic"
 \end_layout
 
 \begin_layout Standard
-Protein synthesis rate is affected to a lesser degree, and with higher variabili
-ty, leading to contradictory reports.
+In cell cultures, Dexa inhibition of protein synthesis should be more readily
+ detectable, given that, in vitro, Dexa affects 4E-BP phosphorylation directly,
+ even in basal state
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shah2000glucocorticoidsa"
+
+\end_inset
+
+.
+ However, studies are similarly equivocal.
  In the most glaring example, the same group, using the same methods, finds
  that protein synthesis is 
 \begin_inset Quotes eld
@@ -3393,8 +3376,44 @@ key "desler1996effects"
 \end_inset
 
 .
- While changes in phosphorylation of 4E-BP occur in cell culture, as they
- do in vivo, the lack of 
+ 
+\end_layout
+
+\begin_layout Standard
+As in human studies, the role of protein synthesis modulation during hypercortis
+olism is still debated, because some acute effects are detectable.
+ In the first hours after receiving GCs, the rate of protein synthesis in
+ the muscle decreases, as indicated by reductions in incorporation of labeled
+ precursors
+\begin_inset CommandInset citation
+LatexCommand citep
+key "peters1970biochemical"
+
+\end_inset
+
+.
+ Other suggestive data come from indirect evidence, which corroborate with
+ the observed changes in 4E-BP1.
+ For example, acute GC administration causes a reduction in the proportion
+ of polyribosomes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "young1968sedimentation"
+
+\end_inset
+
+.
+ The proportion of polysomes recovers to basal level in less than 24 hours,
+ when the GC is short-acting prednisone
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bullock1972relative"
+
+\end_inset
+
+.
+ In contrast, polysome downregulation lasts more than two days after Dexa.
+ But there are no accounts on polysome profile changes after longer GC exposure.
 \end_layout
 
 \begin_layout Section*
