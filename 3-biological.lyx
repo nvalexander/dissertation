@@ -2195,123 +2195,8 @@ proteasome system.
  due to other etiologies, including the less-explored GAML.
 \end_layout
 
-\begin_layout Section
-Animal models of steroid myopathy
-\end_layout
-
-\begin_layout Standard
-In the 75 years since the discovery of chronic steroid myopathy, scientists
- attempted, with variable success, to develop multiple animal models.
- In dogs, seven days of 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{0.44}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- cause increased nitrogen excretion, increased glutamine and alanine release
- from the hindlimb
-\begin_inset CommandInset citation
-LatexCommand citep
-key "muhlbacher1984effects"
-
-\end_inset
-
-.
- In rabbits, fourteen days of 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{3}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- Dexa diminished diaphragm's twitch and tetanic contraction force
-\begin_inset CommandInset citation
-LatexCommand citep
-key "jiang1996effect"
-
-\end_inset
-
- Interestingly, four days of 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{1}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- Dexa did not change muscle mass, despite the upregulation of some catabolic
- markers
-\begin_inset CommandInset citation
-LatexCommand citep
-key "yeh1994effects"
-
-\end_inset
-
-.
- Early studies were marred by an absence of meaningful macroscopic outcomes,
- such as muscle force or mass.
- Moreover, the modern molecular correlates of muscle loss were not known,
- and could not have been investigated.
+\begin_layout Section*
+Ubiquitin-proteasome system as a major effector in GAML
 \end_layout
 
 \begin_layout Standard
@@ -2570,14 +2455,17 @@ key "gilson2007myostatin"
 \end_inset
 
 .
- Therefore, explant models suggest that GAML is, to a wide extend, the result
+\end_layout
+
+\begin_layout Standard
+Therefore, explant models suggest that GAML is, to a wide extend, the result
  of upregulation of the proteasome-ubiquitin system.
  Recent research aims to establish if other proteolysis or protein synthesis
  regulators contribute to GAML.
 \end_layout
 
-\begin_layout Subsection
-Akt / mTOR axis in GAML
+\begin_layout Section*
+GC-induced loss of sensitivity on the Akt / mTOR axis
 \end_layout
 
 \begin_layout Standard
@@ -3075,12 +2963,12 @@ Or you could give Dexa and insulin, like Jensen does, to see loss of sensitivity
 \end_layout
 
 \begin_layout Standard
-Based on in vivo and in vitro observations, a muscle-localized response
- to Dexa may be defined.
- GAML appears Akt / mTOR pathways is more evident in in vitro studies.
+In conclusion, the muscle response to GC is associated with molecular changes
+ congruent with Akt / mTOR loss of sensitivity to trophic factors, although,
+ interestingly, changes in Akt itself are not readily detectable.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section*
 Foxo transcriptional program in GAML
 \end_layout
 
@@ -3173,7 +3061,7 @@ key "baehr2011muscle"
 on and/or depletion, in turn, triggers bulk protein degradation.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Section
 Protein synthesis modulation in GAML
 \end_layout
 
@@ -3380,8 +3268,8 @@ key "gilson2007myostatin"
  mTOR-independent mechanisms, their existence cannot be discounted.
 \end_layout
 
-\begin_layout Subsection*
-Potential role of autophagy in GAML
+\begin_layout Section*
+Putative role of autophagy in GAML
 \end_layout
 
 \begin_layout Standard
@@ -3394,6 +3282,129 @@ key "dardevet1995sensitivity"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Animal models of steroid myopathy
+\end_layout
+
+\begin_layout Standard
+In the 75 years since the discovery of chronic steroid myopathy, scientists
+ attempted, with variable success, to develop multiple animal models.
+ In dogs, seven days of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.44}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ cause increased nitrogen excretion, increased glutamine and alanine release
+ from the hindlimb
+\begin_inset CommandInset citation
+LatexCommand citep
+key "muhlbacher1984effects"
+
+\end_inset
+
+.
+ In rabbits, fourteen days of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{3}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa diminished diaphragm's twitch and tetanic contraction force
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jiang1996effect"
+
+\end_inset
+
+ Interestingly, four days of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa did not change muscle mass, despite the upregulation of some catabolic
+ markers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "yeh1994effects"
+
+\end_inset
+
+.
+ Early studies were marred by an absence of meaningful macroscopic outcomes,
+ such as muscle force or mass.
+ Moreover, the modern molecular correlates of muscle loss were not known,
+ and could not have been investigated.
+\end_layout
+
+\begin_layout Standard
+Lol
 \end_layout
 
 \begin_layout Standard
