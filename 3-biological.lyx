@@ -3064,9 +3064,11 @@ key "bai2013activin"
 \end_inset
 
 .
- Second, as mentioned earlier, Dexa reduces 4E-BP phosphorylation sensitivity
- to insulin, which is expected to cause reductions in protein synthesis
- rate expected after feeding.
+ (The promoter has been shown in Drosophila, but the paper describing it
+ in mouse cell culture has been withdrawn for unspecified reason.) Second,
+ as mentioned earlier, Dexa reduces 4E-BP phosphorylation sensitivity to
+ insulin, which is expected to cause reductions in protein synthesis rate
+ expected after feeding.
  Currently published studies did not account for such fluctuations.
  Perhaps for this reason, available data are inconclusive.
  As in human studies, the role of protein synthesis modulation during hypercorti
@@ -3162,19 +3164,6 @@ key "tomas1998anti-catabolic"
 \end_layout
 
 \begin_layout Standard
-In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tepas1999gender"
-
-\end_inset
-
-.
- It is unclear whether myogenin plays any role in upregulating E3 ligases,
- as in denervation-induced atrophy.
-\end_layout
-
-\begin_layout Standard
 Dexa upregulates myostatin in the atrophying muscle
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3192,6 +3181,20 @@ key "gilson2007myostatin"
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Standard
+In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tepas1999gender"
+
+\end_inset
+
+.
+ It is unclear whether myogenin plays any role in upregulating E3 ligases,
+ as in denervation-induced atrophy.
 \end_layout
 
 \begin_layout Standard
