@@ -3027,7 +3027,14 @@ key "giorgino1995dexamethasone"
 
 \end_inset
 
-, and Akt phosphorylation on Ser 473 in C2C12 differentiating cells.
+, and Akt phosphorylation on Ser 473 in C2C12 differentiating cells
+\begin_inset CommandInset citation
+LatexCommand citep
+key "takahashi2002myogenic"
+
+\end_inset
+
+.
  Many in vitro studies on myogenic cell lines fail to deplete myoblasts,
  and are therefore inaccurate models of proliferation-independent in vivo
  GAML.
