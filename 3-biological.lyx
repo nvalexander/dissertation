@@ -2307,16 +2307,16 @@ key "yeh1994effects"
 \end_inset
 
 .
- Early studies were marred by an absence of good functional outcomes, such
- as muscle force or mass.
+ Early studies were marred by an absence of meaningful macroscopic outcomes,
+ such as muscle force or mass.
  Moreover, the modern molecular correlates of muscle loss were not known,
  and could not have been investigated.
 \end_layout
 
 \begin_layout Standard
 In the era of genome sequencing, where murine species became the most common
- model, studies of GAML focused on rats, rather than mice, because changes
- in muscle mas are more readily observed in the former.
+ model, studies of GAML focused on rats, because changes in muscle mas are
+ more readily are more readily observed, compared to mice.
  The effects of 7-day, 
 \begin_inset ERT
 status collapsed
@@ -2344,7 +2344,7 @@ day}
 
 \end_inset
 
- treatment allow the classification of GCs in two subsets
+ treatment on rats allow the classification of GCs in two subsets
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bullock1972relative"
@@ -2352,11 +2352,9 @@ key "bullock1972relative"
 \end_inset
 
 .
- The short-acting subset, including prednisolone and corticosterone, causes
- gains in body weight.
- The net gain in body weight is the result of increased adiposity and of
- MR-mediated water retention, combined with a net neutral effect on muscle
- mass.
+ Members of the short-acting subset, including prednisolone and corticosterone,
+ cause net gains in body weight, through increased adiposity, MR-mediated
+ water retention, and a net neutral effect on muscle mass.
  In contrast, long-acting, specific GCs, such as Dexa, betamethasone, and
  triamcinolone, cause loss of body weight, and an even more rapid loss of
  muscle mass.
@@ -2789,13 +2787,20 @@ key "inoki2002tsc2"
 \end_inset
 
 .
- Once again, the response to Dexa is not readily measurable, with no change
- in phosphorylation of mTOR complex 1 substrates 4E-BP and p70-S6K.
-\end_layout
+ Unlike Akt changes, phosphorylation of mTOR complex 1 substrates 4E-BP
+ and p70-S6K is measurable in rat muscles.
+ But again similar to Akt modulation, Dexa does not cause changes in their
+ basal levels, yet it reduces insulin's ability to induce phosphorylation
+ of 4E-BP and p70-S6K
+\begin_inset CommandInset citation
+LatexCommand citep
+key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 
-\begin_layout Standard
-Taken together, these findings suggest that GCs activate a multifaceted
- anti-insulin program.
+\end_inset
+
+.
+ Taken together, these findings suggest that GCs activate a multifaceted
+ anti-insulin program, altering protein and glucose metabolism.
 \end_layout
 
 \begin_layout Standard
