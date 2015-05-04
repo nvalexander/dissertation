@@ -2950,8 +2950,28 @@ Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
 
 \begin_layout Standard
 Dexa modulates the Foxo transcription factors in two ways.
- First, inhibition of Akt by Dexa cause a reduction in Foxo phosphorylation.
- Phosphorylated Foxo are 
+ First, inhibition of Akt by chronic Dexa cause a reduction in Foxo phosphorylat
+ion
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones2010effects"
+
+\end_inset
+
+.
+ Because phosphorylated Foxo are exported from nucleus and marked for ubiquitin-
+proteasome-mediated degradation, Dexa's net effect is one of Foxo activation.
+ Second, chronic Dexa nearly doubles Foxo expression
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wu2010redd1"
+
+\end_inset
+
+.
+ The combined knockout of the three Foxo genes led to abrogation of the
+ late, Akt- and Foxo-dependent, stage of denervation-induded atrophy, but
+ it is unclear to what degree is GAML dependent on Foxo.
 \end_layout
 
 \begin_layout Standard
