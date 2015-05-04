@@ -3029,6 +3029,7 @@ An equally voluminous literature documents the effect of Dexa on the rat
  In vitro models diverge from in vivo GAML.
  As mentioned earlier, in the case of primary cells they are outright impossible
 , because primary cell survival is GC-dependent.
+ Moreover, Dexa has a trophic effect for myogenic cell lines.
  Proliferation of L6 myoblasts is stimulated by doses of 20 nM Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3053,11 +3054,24 @@ key "takahashi2002myogenic"
 \end_inset
 
 .
- Many in vitro studies on myogenic cell lines fail to deplete myoblasts,
+ C2C12 differentiation is more efficient when Dexa is added to IGF-I
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pansters2013synergistic"
+
+\end_inset
+
+.
+ Conversely, IGF-I synergizes with Dexa to upregulate catabolic effectors
+ in 
+\end_layout
+
+\begin_layout Standard
+Many in vitro studies on myogenic cell lines fail to deplete myoblasts,
  and are therefore inaccurate models of proliferation-independent in vivo
  GAML.
- With this caveat, in vitro studies have been valuable in proving the independen
-ce of Dexa effect on muscle.
+ With this caveat, in vitro studies have been valuable in excluding third-party
+ organs, such as the pancreas, from Dexa effect on muscle.
  Fully differentiated myotubes from L6 and C2C12 cell lines lose more than
  a quarter of their diameter when treated with 100 nM Dexa
 \begin_inset CommandInset citation
@@ -3077,7 +3091,7 @@ key "wang1998dexamethasone,menconi2008dexamethasone"
 
 .
  Four fifths of the Dexa-induced proteolysis augmentation is lost, when
- proteasome inhibitors such as beta-lactone or ATP depleting agents, like
+ proteasome inhibitors, such as beta-lactone, or ATP depleting agents, like
  dinitrophenol, are co-administered.
  In contrast, lysosomal inhibitors had no effect, while E-64 has minimal
  effect
@@ -3376,7 +3390,9 @@ key "desler1996effects"
 \end_inset
 
 .
- 
+ Even when detected, the amplitude of changes in protein synthesis is far
+ lower than that on protein degradation, suggesting a secondary role for
+ the latter.
 \end_layout
 
 \begin_layout Standard
