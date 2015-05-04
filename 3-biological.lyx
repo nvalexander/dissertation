@@ -2944,7 +2944,7 @@ key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 \end_inset
 
 .
- In conclusion, Dexa and insulin coadministration cause loss of IRS 1 and
+ In conclusion, Dexa and insulin co-administration cause loss of IRS 1 and
  Akt phosphorylation, and, in contrast with the denervation model, inactivation
  of mTOR.
  The caveat is that, until 2013 and the experiments with knockout mice,
@@ -2995,14 +2995,50 @@ key "tang2014mtorc1"
 
 , but it is unclear to what degree is GAML dependent on Foxo.
  In vitro studies indicate that, similar to denervation, activation of Foxo
- by Dexa induces their catabolic program, including the two E3 ligases associate
-d with muscle loss, MAFbx and MuRF-1.
+ by Dexa induces their catabolic program.
+ Among the Foxo-induced genes, a special importance was given to the E3
+ ligases associated with muscle loss, MAFbx and MuRF-1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stitt2004igf-1/pi3k/akt,gomes2001atrogin-1,bodine2001identification"
+
+\end_inset
+
+.
+ However, transgenic mouse studies indicate that MAFbx knockout has no effect
+ on GAML
+\begin_inset CommandInset citation
+LatexCommand citep
+key "baehr2011muscle"
+
+\end_inset
+
+.
+ While MuRF-1 knockout reduces GAML, it does not abolish it completely.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+It may be that double knockout will lack any GAML.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Dexa's modulating effect on 4E-BP is expected to cause reductions in protein
- synthesis rate, but only after feeding.
- Currently published studies did not account for such fluctuations.
+Similarly, Dexa has a dual effect on 4E-BP, the inhibitor of protein synthesis
+ that binds and inhibits eIF4B.
+ First, Dexa induces 4E-BP expression.
+\end_layout
+
+\begin_layout Standard
+Dexa reduces 4E-BP phosphorylation sensitivity to insulin, which is expected
+ to cause reductions in protein synthesis rate expected after feeding.
+ Second, Dexa induces 4E-BP expression, Currently published studies did
+ not account for such fluctuations.
  Perhaps for this reason, available data is inconclusive.
  As in human studies, the role of protein synthesis modulation during hypercorti
 solism is still debated.
