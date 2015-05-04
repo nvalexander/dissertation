@@ -3046,15 +3046,8 @@ key "giorgino1995dexamethasone"
 
 \end_inset
 
-, and Akt phosphorylation on Ser 473 in C2C12 differentiating cells
-\begin_inset CommandInset citation
-LatexCommand citep
-key "takahashi2002myogenic"
-
-\end_inset
-
 .
- C2C12 differentiation is more efficient when Dexa is added to IGF-I
+ C2C12 fusion is more efficient when Dexa is added to IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
 key "pansters2013synergistic"
@@ -3062,8 +3055,34 @@ key "pansters2013synergistic"
 \end_inset
 
 .
- Conversely, IGF-I synergizes with Dexa to upregulate catabolic effectors
- in 
+ In differentiating C2C12 cells, IGF-I and Dexa synergize to upregulate
+ Dexa catabolic effectors, such as REgulated in Development and DNA damage
+ responses-1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "REDD1"
+description "regulated in development and DNA damage responses-1"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pansters2013synergistic"
+
+\end_inset
+
+.
+ The synergy is also amplifying some of IGF-I effects, such as Akt phosphorylati
+on on Ser 473
+\begin_inset CommandInset citation
+LatexCommand citep
+key "takahashi2002myogenic"
+
+\end_inset
+
+.
+ Insulin sensitivity assays 
 \end_layout
 
 \begin_layout Standard
