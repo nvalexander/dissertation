@@ -2591,7 +2591,7 @@ key "saad1993modulation"
 .
  On the other, Dexa-induced hyperinsulinemia fails to trigger its typical
  anabolic program in muscle.
- For example, Dexa overrules insulin to reduce muscle glucose uptake
+ For example, Dexa overrides insulin to reduce muscle glucose uptake
 \begin_inset CommandInset citation
 LatexCommand citep
 key "weinstein1995glucocorticoid-induced"
@@ -2615,7 +2615,8 @@ key "weinstein1995glucocorticoid-induced,dimitriadis1997effects"
 
 .
  Dexa co-administration blunts muscle anabolic and anti-catabolic response
- to exogenous insulin or IGF-I, at the levels of protein and glucose metabolism
+ to exogenous supplementation with either insulin or IGF-I, at the levels
+ of protein and glucose metabolism
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
@@ -2623,10 +2624,18 @@ key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+The effects of Dexa appear to be mediated by the insulin pathway in an indirect
+ way.
+ As described in the next paragraphs, Dexa causes no direct change on the
+ insulin pathway, yet, at almost every step, abrogates insulin's anabolic
+ and anti-catabolic program.
  The disconnection between the anabolic insulin signal and the catabolic
  state in the sarcoplasm starts with the early steps of the signaling pathway.
- Phosphorylated insulin receptor and IRS1 do not increase in absolute or
- stoichiometric terms
+ Dexa treatment does not change basal levels of autophosphorylated insulin
+ receptor and phosphorylated IRS1, in absolute or stoichiometric terms
 \begin_inset CommandInset citation
 LatexCommand citep
 key "saad1993modulation,corporeau2006adipose"
