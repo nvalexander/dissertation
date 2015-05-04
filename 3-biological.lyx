@@ -2807,7 +2807,9 @@ tion.
  In the absence of better experiments, the concerted Dexa-imposed changes
  in Ser 473 and Thr 308 may be ascribed to either Ser 473 epistasis, or
  to parallel PI3K-triggered pathways.
- Both imply that Dexa-induced Akt modulation must involve Ser473.
+ Both imply that Dexa-induced Akt modulation must involve Ser 473.
+ Since Ser 473 sensitivity to insulin is depressed by Dexa, Dexa may cause
+ intermittent suppression of Akt, especially after feeding.
 \end_layout
 
 \begin_layout Standard
@@ -2829,8 +2831,26 @@ key "ruzzin2005contraction,buren2008insulin"
 \end_inset
 
 .
- While inactivation of GSK3-β was attributed to latent Akt inhibition, the
- Ser 9 site is also a target for ribosomal protein S6 kinase, 90kDa (
+ Among that tens of substrates of GSK3-β, the subunit ε of the eukaryotic
+ initiation factor 2B (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "eIF2B"
+description "eukaryotic initiation factor 2B"
+
+\end_inset
+
+) may mediate an anti-anabolic effect
+\begin_inset CommandInset citation
+LatexCommand citep
+key "welsh1993glycogen"
+
+\end_inset
+
+.
+ While inactivation of GSK3-β is typically attributed to latent Akt inhibition,
+ the Ser 9 site is also a target for ribosomal protein S6 kinase, 90kDa
+ (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "p90-RSK"
@@ -2873,23 +2893,7 @@ key "sacheck2004igf-i"
 \end_inset
 
  led to an unjustified neglect of GSK3-β.
- Among that tens of substrates of GSK3-β, the subunit ε of the eukaryotic
- initiation factor 2B (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "eIF2B"
-description "eukaryotic initiation factor 2B"
-
-\end_inset
-
-) may mediate an anti-anabolic effect
-\begin_inset CommandInset citation
-LatexCommand citep
-key "welsh1993glycogen"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2923,68 +2927,40 @@ key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 \end_inset
 
 .
+ In conclusion, Dexa and insulin coadministration cause loss of IRS 1 and
+ Akt phosphorylation, and, in contrast with the denervation model, inactivation
+ of mTOR.
+ It appears that GAML differs from denervation, although experiments on
+ knockout mice might provide a better picture of the latter.
 \end_layout
 
 \begin_layout Standard
-The 
-\end_layout
-
-\begin_layout Standard
-In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
+Dexa's modulating effect on 4E-BP is expected to cause reductions in protein
+ synthesis rate, but only after feeding.
+ Currently published studies did not account for such fluctuations.
+ Perhaps for this reason, available data is inconclusive.
+ As in human studies, the role of protein synthesis modulation during hypercorti
+solism is still debated.
+ In the first hours after receiving GCs, the rate of protein synthesis in
+ the muscle decreases, as indicated by reductions in incorporation of labeled
+ precursors and by a reduction in the proportion of polyribosomes
 \begin_inset CommandInset citation
 LatexCommand citep
-key "tepas1999gender"
+key "peters1970biochemical,young1968sedimentation"
 
 \end_inset
 
 .
- It is unclear whether myogenin plays any role in upregulating E3 ligases,
- as in denervation-induced atrophy.
-\end_layout
-
-\begin_layout Standard
-Dexa upregulates myostatin in the atrophying muscle
+ The proportion of polysomes recovers to basal level in less than 24 hours,
+ when the GC is short-acting prednisone
 \begin_inset CommandInset citation
 LatexCommand citep
-key "ma2003glucocorticoid-induced"
+key "bullock1972relative"
 
 \end_inset
 
 .
- Dexa-induced muscle loss does not occur in transgenic mice lacking the
- myostatin gene
-\begin_inset CommandInset citation
-LatexCommand citep
-key "gilson2007myostatin"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Expression of the lysosome protease cathepsin D and of the calcium-dependent
- protease m-calpain is trebled by Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dardevet1995sensitivity"
-
-\end_inset
-
-.
- The proteasomal subunits C2 are also upregulated by Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dardevet1995sensitivity"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-As in human studies, the role of protein synthesis modulation during hypercortis
-olism is still debated.
+ In contrast, polysome downregulation lasts more than two days after Dexa.
  Some of the most exhaustive studies in this field came from Grizard laboratory.
  In two studies using 
 \begin_inset ERT
@@ -3052,30 +3028,64 @@ key "tomas1998anti-catabolic"
 .
  Overall, changes in protein degradation are more reliably seen than those
  in protein synthesis, suggesting that the latter may be the product of
- special conditions or type I errors.
+ special conditions.
 \end_layout
 
 \begin_layout Standard
-In the first hours after receiving GCs, the rate of protein synthesis in
- the muscle decreases, as indicated by reductions in incorporation of labeled
- precursors and by a reduction in the proportion of polyribosomes
+The 
+\end_layout
+
+\begin_layout Standard
+In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
 \begin_inset CommandInset citation
 LatexCommand citep
-key "peters1970biochemical,young1968sedimentation"
+key "tepas1999gender"
 
 \end_inset
 
 .
- The proportion of polysomes recovers to basal level in less than 24 hours,
- when the GC is short-acting prednisone
+ It is unclear whether myogenin plays any role in upregulating E3 ligases,
+ as in denervation-induced atrophy.
+\end_layout
+
+\begin_layout Standard
+Dexa upregulates myostatin in the atrophying muscle
 \begin_inset CommandInset citation
 LatexCommand citep
-key "bullock1972relative"
+key "ma2003glucocorticoid-induced"
 
 \end_inset
 
 .
- In contrast, polysome downregulation lasts more than two days after Dexa.
+ Dexa-induced muscle loss does not occur in transgenic mice lacking the
+ myostatin gene
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gilson2007myostatin"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Expression of the lysosome protease cathepsin D and of the calcium-dependent
+ protease m-calpain is trebled by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity"
+
+\end_inset
+
+.
+ The proteasomal subunits C2 are also upregulated by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
