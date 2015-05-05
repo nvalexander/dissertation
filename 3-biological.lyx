@@ -3134,11 +3134,11 @@ key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
 \end_inset
 
 .
- In C2C12 myotubes, Dexa reduces p70-S6K Thr 389 phosphorylation and activity
- 
+ Diverging from in vivo studies, L6 and C2C12 myotubes exhibit Dexa-induced
+ downregulation of p70-S6K Thr 389 phosphorylation and activity 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "frost2009regulation"
+key "frost2009regulation,wu2010redd1"
 
 \end_inset
 
@@ -3188,18 +3188,7 @@ key "tepas1999gender"
 
 \begin_layout Standard
 Dexa modulates the Foxo transcription factors in two ways.
- First, inhibition of Akt by chronic Dexa cause a reduction in Foxo phosphorylat
-ion
-\begin_inset CommandInset citation
-LatexCommand citep
-key "jones2010effects"
-
-\end_inset
-
-.
- Because phosphorylated Foxo are exported from nucleus and marked for ubiquitin-
-proteasome-mediated degradation, Dexa's net effect is one of Foxo activation.
- Second, chronic Dexa independently doubles Foxo expression
+ First, chronic Dexa doubles Foxo expression
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wu2010redd1"
@@ -3207,14 +3196,70 @@ key "wu2010redd1"
 \end_inset
 
 .
+ Second, and less, certain, Foxo transcription factors are thought to be
+ potentiated by Dexa through post-translational means.
+ Phosphorylated Foxo transcription factors are exported from nucleus, and
+ marked for ubiquitin-proteasome-mediated degradation.
+ It is believed that the Dexa-induced impairment of their kinase, Akt, contribut
+es to an increase in their activity in GAML.
+ Evidence for the latter mechanism is less convincing.
+ In rat levator ani, inhibition of Akt by chronic Dexa cause a reduction
+ in Foxo phosphorylation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones2010effects"
+
+\end_inset
+
+.
+ In CC12 myotubes, one group reported the replication of this finding
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sandri2004foxo"
+
+\end_inset
+
+, while another refuted it
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stitt2004igf-1/pi3k/akt"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Indirect evidence indicate that Fox transcription factors may play a role
+ in the common muscle atrophy program.
  The combined knockout of the three Foxo genes led to abrogation of the
- late, Akt- and Foxo-dependent, stage of denervation-induded atrophy
+ late, Akt- and Foxo-dependent, stage of denervation-induced atrophy
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tang2014mtorc1"
 
 \end_inset
 
+.
+ Transfection with dominant negative Foxo3A partially prevents diameter
+ reduction in disuse of rat soleus and Dexa-treated C2C12 myotubes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sandri2004foxo,senf2010foxo"
+
+\end_inset
+
+.
+ Moreover, loss 
+\end_layout
+
+\begin_layout Standard
+Because phosphorylated Foxo are exported from nucleus and marked for ubiquitin-p
+roteasome-mediated degradation, Dexa's net effect is one of Foxo activation.
+ Second, 
+\end_layout
+
+\begin_layout Standard
 , but it is unclear to what degree is GAML dependent on Foxo.
  In vitro studies indicate that, similar to denervation, activation of Foxo
  by Dexa induces their catabolic program.
