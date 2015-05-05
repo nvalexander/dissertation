@@ -2045,7 +2045,14 @@ key "zhao2007foxo3,schiaffino2013mechanisms"
  Recent studies contradicted this paradigm.
  In 2013, Quy and colleagues found that denervation increased Threonine-389
  phosphorylation and catalytic activity of p70-S6K, indicating that denervation
- causes in fact activation of mTOR complex 1.
+ causes in fact activation of mTOR complex 1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "quy2013proteasome-dependent"
+
+\end_inset
+
+.
  In 2014, Tang and colleagues proved that rapamycin, an inhibitor of mTOR
  complex 1 which lacks intrinsic anabolic properties, abolishes denervation-indu
 ced loss of muscle mass
@@ -3140,15 +3147,23 @@ key "frost2009regulation"
 
 \begin_layout Standard
 In conclusion, the muscle response to GC is associated with molecular changes
- congruent with Akt / mTOR loss of sensitivity to trophic factors, although,
- interestingly, changes in Akt itself are not readily detectable.
+ congruent with Akt / mTOR loss of sensitivity to trophic factors such as
+ insulin and IGF-I.
+ Interestingly, the pathway appears largely unaffected by Dexa in basal
+ conditions, when trophic factors are withheld.
+ It may be the case that mTOR-mediated mechanisms of GAML become relevant
+ during episodes of hyperinsulinemia, such as after feeding.
+ However, GC cause changes in muscle, especially at the level of glucose
+ metabolism, that are indicative of relative hypoinsulinemia.
+ Therefore, mTOR-independent mechanisms may play a more important role in
+ GAML.
  Based on p70-S6K divergence, it appears that GC causes Akt-mediated mTOR
  modulation, in contrast with denervation atrophy, where Akt is downstream
  of mTOR.
  However, all our knowledge about Akt pathway in GAML is derived from experiment
 s with intrinsic anabolic interventions.
  Experiments on transgenic mice, unpicking one putative mediator at a time,
- may invalidate our model of GAML, as they did in denervation atrophy.
+ may invalidate the current model of GAML, as they did in denervation atrophy.
 \end_layout
 
 \begin_layout Section*
@@ -3202,6 +3217,18 @@ key "tang2014mtorc1"
 , but it is unclear to what degree is GAML dependent on Foxo.
  In vitro studies indicate that, similar to denervation, activation of Foxo
  by Dexa induces their catabolic program.
+\end_layout
+
+\begin_layout Standard
+Protein synthesis changes induced by Dexa are as ample, in absolute terms,
+ when rapamycin is co-administered
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1999glucocorticoid-induced"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
