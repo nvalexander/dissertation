@@ -2998,18 +2998,43 @@ key "inoki2002tsc2"
 \end_inset
 
 .
- Unlike Akt changes, phosphorylation of mTOR complex 1 substrates 4E-BP
- and p70-S6K is measurable in rat muscles.
- But again similar to Akt modulation, Dexa does not cause changes in their
- basal levels, yet it reduces insulin's ability to induce phosphorylation
- of 4E-BP and p70-S6K
+ One group reported that Dexa-induced decrement in protein synthesis is
+ unmodified, in absolute terms, when mTOR complex 1 is inhibited by rapamycin
+ co-administration
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1999glucocorticoid-induced"
+
+\end_inset
+
+, suggesting that mTOR signaling is dispensable.
+ In a C2C12 microarray study, interference of IGF-I transcriptional program
+ with PI3K inhibitor was virtually identical to the interference induced
+ by rapamycin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "latres2005insulin-like"
+
+\end_inset
+
+, suggesting that, on the contrary, mTOR is indispensable for PI3K effects.
+ Most likely, both hypotheses are based on reductionist models that do not
+ reflect true in vivo phenomena.
+ Given its multifactorial nature, regulation of mTOR complex 1 cannot be
+ inferred from its direct investigation, but may be better estimated from
+ changes in its substrates.
+ Phosphorylation of mTOR complex 1 substrates 4E-BP and p70-S6K is measurable
+ in rat muscles, but, similar to Akt, do not change in response to Dexa
+ in basal conditions.
+ But Dexa reduces insulin's ability to induce phosphorylation of 4E-BP and
+ p70-S6K
 \begin_inset CommandInset citation
 LatexCommand citep
 key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 
 \end_inset
 
-.
+, demonstrating correlation with Akt changes.
 \begin_inset Note Note
 status open
 
@@ -3023,9 +3048,11 @@ Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
 \end_layout
 
 \begin_layout Standard
-An equally voluminous literature documents the effect of Dexa on the rat
- cell line L6.
- In vitro models diverge from in vivo GAML.
+Many published studies documents the effect of Dexa on the rat cell line
+ L6.
+ However, these and other myogenic cell lines have signifucant limitations,
+ which may cause divergence between in vitro models and the steroid myopathy
+ they aim to describe.
  As mentioned earlier, in the case of primary cells they are outright impossible
 , because primary cell survival is GC-dependent.
  Moreover, Dexa has a trophic effect for myogenic cell lines.
@@ -3187,6 +3214,38 @@ key "tepas1999gender"
 \end_layout
 
 \begin_layout Standard
+.
+ The combined knockout of the three Foxo genes led to abrogation of the
+ late, Akt- and Foxo-dependent, stage of denervation-induced atrophy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tang2014mtorc1"
+
+\end_inset
+
+.
+ Transfection with dominant negative Foxo3A partially prevents diameter
+ reduction in disuse of rat soleus and Dexa-treated C2C12 myotubes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sandri2004foxo,senf2010foxo"
+
+\end_inset
+
+.
+ Moreover, dominant negative Foxo3A transfection in rat soleus leads to
+ loss of atrogene upregulation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "senf2008hsp70"
+
+\end_inset
+
+.
+ Therefore, Foxo may provide an mTOR-independent pathway for GAML.
+\end_layout
+
+\begin_layout Standard
 Dexa modulates the Foxo transcription factors in two ways.
  First, chronic Dexa doubles Foxo expression
 \begin_inset CommandInset citation
@@ -3227,79 +3286,6 @@ key "stitt2004igf-1/pi3k/akt"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Indirect evidence indicate that Fox transcription factors may play a role
- in the common muscle atrophy program.
- The combined knockout of the three Foxo genes led to abrogation of the
- late, Akt- and Foxo-dependent, stage of denervation-induced atrophy
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tang2014mtorc1"
-
-\end_inset
-
-.
- Transfection with dominant negative Foxo3A partially prevents diameter
- reduction in disuse of rat soleus and Dexa-treated C2C12 myotubes
-\begin_inset CommandInset citation
-LatexCommand citep
-key "sandri2004foxo,senf2010foxo"
-
-\end_inset
-
-.
- Moreover, dominant negative Foxo3A transfection in rat soleus leads to
- loss of atrogene upregulation
-\begin_inset CommandInset citation
-LatexCommand citep
-key "senf2008hsp70"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Because phosphorylated Foxo are exported from nucleus and marked for ubiquitin-p
-roteasome-mediated degradation, Dexa's net effect is one of Foxo activation.
- Second, 
-\end_layout
-
-\begin_layout Standard
-, but it is unclear to what degree is GAML dependent on Foxo.
- In vitro studies indicate that, similar to denervation, activation of Foxo
- by Dexa induces their catabolic program.
-\end_layout
-
-\begin_layout Standard
-If GAML proceeds in accordance with canonical Akt hierarchy, Foxo and mTOR
- complex 1 are its two main downstream effectors.
- Multiple attempts at simplifying the model attempted to diminish the role
- of one or the other.
- For example, one group reported that Dexa-induced changes in protein synthesis
- are unmodified, in absolute terms, when mTOR complex 1 is inhibited by
- rapamycin co-administration
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dardevet1999glucocorticoid-induced"
-
-\end_inset
-
-, suggesting that the mTOR branch is dispensable.
- In a C2C12 microarray study, interference of IGF-I transcriptional program
- with PI3K inhibitor was virtually identical to the interference induced
- by rapamycin
-\begin_inset CommandInset citation
-LatexCommand citep
-key "latres2005insulin-like"
-
-\end_inset
-
-, suggesting that, on the contrary, mTOR is indispensable for PI3K effects.
- Neither of these studies reflects the main effector of GAML, which is proteasom
-e-dependent protein degradation.
 \end_layout
 
 \begin_layout Standard
