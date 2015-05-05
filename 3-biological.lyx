@@ -3250,7 +3250,15 @@ key "sandri2004foxo,senf2010foxo"
 \end_inset
 
 .
- Moreover, loss 
+ Moreover, dominant negative Foxo3A transfection in rat soleus leads to
+ loss of atrogene upregulation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "senf2008hsp70"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
