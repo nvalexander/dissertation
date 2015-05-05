@@ -3050,25 +3050,24 @@ Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
 \begin_layout Standard
 Many published studies documents the effect of Dexa on the rat cell line
  L6.
- However, these and other myogenic cell lines have signifucant limitations,
+ However, these and other myogenic cell lines have significant limitations,
  which may cause divergence between in vitro models and the steroid myopathy
  they aim to describe.
- As mentioned earlier, in the case of primary cells they are outright impossible
-, because primary cell survival is GC-dependent.
- Moreover, Dexa has a trophic effect for myogenic cell lines.
- Proliferation of L6 myoblasts is stimulated by doses of 20 nM Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "florini1979serum-free,whitson1989dexamethasone"
-
-\end_inset
-
-.
- Moreover, Dexa synergizes with IGF-I to improve proliferation of L6 myoblasts
- 
+ As mentioned earlier, in the case of primary cells, experiments with Dexa
+ are impossible, because primary cell survival is GC-dependent.
+ Moreover, Dexa has proliferative and trophic effects on myogenic cell lines.
+ Commonly tested doses of Dexa, in the range of tens of nM, have been shown
+ to synergize with IGF-I 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "giorgino1995dexamethasone"
+
+\end_inset
+
+ and even to act directly towards improved proliferation of L6 myoblasts
+\begin_inset CommandInset citation
+LatexCommand citep
+key "florini1979serum-free,whitson1989dexamethasone"
 
 \end_inset
 
@@ -3081,9 +3080,15 @@ key "pansters2013synergistic"
 \end_inset
 
 .
- In differentiating C2C12 cells, IGF-I and Dexa synergize to upregulate
- Dexa catabolic effectors, such as REgulated in Development and DNA damage
- responses-1 (
+ Until the end of the 1990s, Dexa was a common ingredient in myogenic culture
+ media.
+ Even now, standard proliferation media, containing 10% 
+\end_layout
+
+\begin_layout Standard
+In differentiating C2C12 cells, IGF-I and Dexa synergize to upregulate Dexa
+ catabolic effectors, such as REgulated in Development and DNA damage responses-
+1 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "REDD1"
