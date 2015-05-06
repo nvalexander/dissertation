@@ -3273,8 +3273,8 @@ key "lutzner2012foxo3"
 \end_inset
 
 .
- In vitro, Foxo induction by GR is dependent on the histone acetyl transferases
- p300 and CREB-binding protein (CBP), which is independently induced by
+ In vitro, Foxo induction by GR is facilitated by the histone acetyl transferase
+s p300 and CREB-binding protein, which are independently upregulated by
  Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3286,7 +3286,14 @@ key "alamdari2010sepsis"
  Second, Foxo transcription factors are thought to be potentiated by Dexa
  through post-translational means.
  Phosphorylated Foxo transcription factors are exported from nucleus, and
- marked for ubiquitin-proteasome-mediated degradation.
+ marked for ubiquitin-proteasome-mediated degradation (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "calnan2008foxo"
+
+\end_inset
+
+).
  It is believed that the Dexa-induced impairment of their kinase, Akt, contribut
 es to an increase in their activity in GAML.
  In rat levator ani, inhibition of Akt by chronic Dexa cause a reduction
@@ -3363,9 +3370,9 @@ key "sartori2009smad2"
 \end_inset
 
 .
- In myostatin knockout mice, Dexa induces its transcriptional program, including
- modulations of IGF-I, MuRF-1, MAFbx, FOXO3A, but Dexa-induced muscle loss
- does not occur 
+ In myostatin knockout mice, Dexa induces most of its transcriptional program,
+ including modulations of IGF-I, MuRF-1, MAFbx, FOXO3A, but Dexa-induced
+ muscle loss does not occur 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gilson2007myostatin"
