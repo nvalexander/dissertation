@@ -3295,7 +3295,8 @@ key "calnan2008foxo"
 
 ).
  It is believed that the Dexa-induced impairment of their kinase, Akt, contribut
-es to an increase in their activity in GAML.
+es to an increase in their activity in GAML, although the evidence for this
+ is weak.
  In rat levator ani, inhibition of Akt by chronic Dexa cause a reduction
  in Foxo phosphorylation
 \begin_inset CommandInset citation
@@ -3305,6 +3306,9 @@ key "jones2010effects"
 \end_inset
 
 .
+ Interestingly, this report is also one of the few describing changes in
+ Akt activity in reposnse to Dexa at basal levels, illustrating the peculiaritie
+s of levator ani.
  In CC12 myotubes, one group reported the replication of this finding
 \begin_inset CommandInset citation
 LatexCommand citep
