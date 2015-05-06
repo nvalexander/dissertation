@@ -1441,11 +1441,18 @@ description "IGF-I binding protein"
 
 \end_inset
 
+), which are secreted by muscle under IGF-I stimulation (
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tomas1992insulin-like"
+
+\end_inset
+
 ).
- The interaction with IGFBP may prevents IGF-I from interacting with receptor
- and may protect it from degradation.
+ The interaction with IGFBP may prevents IGF-I from interacting with receptor,
+ or it may extend its circulating half-life by protecting it from degradation.
  Depending on the isoform and location of IGFBP, the interaction may result
- in extinction or prolongation of the IGF-I signal.
+ in extinction or amplification of the IGF-I signal.
  IGFBPs levels are modulated by insulin and their affinity is modified through
  competition by insulin-like growth factor 2 (
 \begin_inset CommandInset nomenclature
@@ -1457,7 +1464,7 @@ description "insulin-like growth factor 2"
 
 ).
  The latter can also stimulate IGF-1R, thus providing its own anabolic and
- promyogenic signals
+ pro-myogenic signals
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wilson2003autocrine"
@@ -1474,35 +1481,35 @@ key "dechiara1991parental"
 
 , suggesting there might be distinct, unidentified receptors for this hormone
  family.
- 
 \end_layout
 
 \begin_layout Standard
 There is no consensus with regards to the ability of GH to stimulate muscular
- secretion of IGF-I, although most studies found an upregulation of its
- mRNA
+ secretion of IGF-I.
+ Multiple studies found an upregulation of its mRNA
 \begin_inset CommandInset citation
 LatexCommand citep
 key "imanaka2008growth,resmini2011identification"
 
 \end_inset
 
-.
- In addition to the indirect effect mediated by hepatic and the putative
- muscular IGF-I, GH has a direct effect on the muscle cells.
- Knockout of GH receptor impairs body growth further beyond IGF-1R knockout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lupu2001roles"
-
-\end_inset
-
-.
- Medium conditioned by C2C12 cells stimulated with GH does not elicit hypertroph
-y in other C2C12 myotubes
+, but protein data are lacking.
+ Medium conditioned by GH-stimulated C2C12 cells fails to elicit hypertrophy
+ in other C2C12 myotubes
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sotiropoulos2006growth"
+
+\end_inset
+
+, suggesting that, at best, IGF-I has an intracellular autocrine action.
+ In addition to the indirect effect mediated by hepatic and the putative
+ muscular IGF-I, GH has an IGF-I-independent effect on muscle.
+ For example, knockout of GH receptor impairs body growth further beyond
+ IGF-1R knockout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lupu2001roles"
 
 \end_inset
 
@@ -3082,13 +3089,12 @@ key "pansters2013synergistic"
 .
  Until the end of the 1990s, Dexa was a common ingredient in myogenic culture
  media.
- Even now, standard proliferation media, containing 10% 
-\end_layout
-
-\begin_layout Standard
-In differentiating C2C12 cells, IGF-I and Dexa synergize to upregulate Dexa
- catabolic effectors, such as REgulated in Development and DNA damage responses-
-1 (
+ Even contemporary standard proliferation media, containing 10% fetal bovine
+ serum, provide significant and unpredictable concentrations of GC, insulin,
+ and IGF-I, impairing their study at physiological concentrations.
+ In fusing C2C12 cells, IGF-I and Dexa synergize to upregulate Dexa catabolic
+ effectors, such as REgulated in Development and DNA damage responses-1
+ (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "REDD1"
@@ -3114,8 +3120,8 @@ key "takahashi2002myogenic"
 
 .
  Therefore, it is likely that Dexa-induced loss of sensitivity to insulin
- cannot be replicated in cell culture, especially when dividing cells are
- still present.
+ cannot be replicated in cell culture, especially when non-myotube cells
+ are still present.
 \end_layout
 
 \begin_layout Standard
@@ -3219,9 +3225,8 @@ key "tepas1999gender"
 \end_layout
 
 \begin_layout Standard
-.
- The combined knockout of the three Foxo genes led to abrogation of the
- late, Akt- and Foxo-dependent, stage of denervation-induced atrophy
+The combined knockout of the three Foxo genes led to abrogation of the late,
+ Akt- and Foxo-dependent, stage of denervation-induced atrophy
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tang2014mtorc1"
@@ -3251,7 +3256,7 @@ key "senf2008hsp70"
 \end_layout
 
 \begin_layout Standard
-Dexa modulates the Foxo transcription factors in two ways.
+Dexa modulates the Foxo transcription factors in multiple ways ways.
  First, chronic Dexa doubles Foxo expression
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3260,8 +3265,16 @@ key "wu2010redd1"
 \end_inset
 
 .
- Second, and less, certain, Foxo transcription factors are thought to be
- potentiated by Dexa through post-translational means.
+ On one hand, Foxo promoters contain GR-binding sites.
+\end_layout
+
+\begin_layout Standard
+, p300/CREB-binding protein (CBP), which is induced by Dexa 
+\end_layout
+
+\begin_layout Standard
+and less, certain, Foxo transcription factors are thought to be potentiated
+ by Dexa through post-translational means.
  Phosphorylated Foxo transcription factors are exported from nucleus, and
  marked for ubiquitin-proteasome-mediated degradation.
  It is believed that the Dexa-induced impairment of their kinase, Akt, contribut
