@@ -3265,21 +3265,30 @@ key "wu2010redd1"
 \end_inset
 
 .
- On one hand, Foxo promoters contain GR-binding sites.
-\end_layout
+ Foxo promoters contain GR-binding sites
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lutzner2012foxo3"
 
-\begin_layout Standard
-, p300/CREB-binding protein (CBP), which is induced by Dexa 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-and less, certain, Foxo transcription factors are thought to be potentiated
- by Dexa through post-translational means.
+.
+ In vitro, Foxo induction by GR is dependent on the histone acetyl transferases
+ p300 and CREB-binding protein (CBP), which is independently induced by
+ Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "alamdari2010sepsis"
+
+\end_inset
+
+.
+ Second, Foxo transcription factors are thought to be potentiated by Dexa
+ through post-translational means.
  Phosphorylated Foxo transcription factors are exported from nucleus, and
  marked for ubiquitin-proteasome-mediated degradation.
  It is believed that the Dexa-induced impairment of their kinase, Akt, contribut
 es to an increase in their activity in GAML.
- Evidence for the latter mechanism is less convincing.
  In rat levator ani, inhibition of Akt by chronic Dexa cause a reduction
  in Foxo phosphorylation
 \begin_inset CommandInset citation
@@ -3316,7 +3325,14 @@ key "stitt2004igf-1/pi3k/akt"
 \end_inset
 
 .
- REDD1
+\end_layout
+
+\begin_layout Standard
+REDD1
+\end_layout
+
+\begin_layout Standard
+LKB1
 \end_layout
 
 \begin_layout Standard
