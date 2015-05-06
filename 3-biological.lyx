@@ -3350,8 +3350,16 @@ key "sandri2004foxo,sandri2006pgc-1alpha"
 .
  These Foxo-responsive elements are in close proximity of SMAD3-binding
  elements, in a shared response element which facilitates synergistic interactio
-ns between the two classes of transcription factors.
- 
+ns between the two classes of transcription factors
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bollinger2014smad3"
+
+\end_inset
+
+.
+ Interestingly, SMAD3 mediates myostatin, a strong negative regulator of
+ muscle mass (discussed later).
 \end_layout
 
 \begin_layout Standard
@@ -3363,8 +3371,7 @@ LKB1
 \end_layout
 
 \begin_layout Standard
-Dexa upregulates a strong muscle negative regulator, myostatin, in the atrophyin
-g muscle
+Dexa upregulates myostatin in the atrophying muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ma2003glucocorticoid-induced"
