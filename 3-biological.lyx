@@ -3225,8 +3225,9 @@ key "tepas1999gender"
 \end_layout
 
 \begin_layout Standard
-The combined knockout of the three Foxo genes led to abrogation of the late,
- Akt- and Foxo-dependent, stage of denervation-induced atrophy
+Evidence for the role of Foxo during GAML is indirect.
+ The combined knockout of the three regulatable Foxo genes led to abrogation
+ of the late, Akt- and Foxo-dependent, stage of denervation-induced atrophy
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tang2014mtorc1"
@@ -3256,7 +3257,9 @@ key "senf2008hsp70"
 \end_layout
 
 \begin_layout Standard
-Dexa modulates the Foxo transcription factors in multiple ways ways.
+The importance of Foxo transcription factors is supported intuitively by
+ their role as integrators of multiple atrophy signaling pathways.
+ Dexa causes their upregulation by multiple mechanisms.
  First, chronic Dexa doubles Foxo expression
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3286,7 +3289,8 @@ key "alamdari2010sepsis"
  Second, Foxo transcription factors are thought to be potentiated by Dexa
  through post-translational means.
  Phosphorylated Foxo transcription factors are exported from nucleus, and
- marked for ubiquitin-proteasome-mediated degradation (reviewed in 
+ eventually marked for ubiquitin-proteasome-mediated degradation (reviewed
+ in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "calnan2008foxo"
@@ -3307,8 +3311,8 @@ key "jones2010effects"
 
 .
  Interestingly, this report is also one of the few describing changes in
- Akt activity in reposnse to Dexa at basal levels, illustrating the peculiaritie
-s of levator ani.
+ Akt activity in response to Dexa at basal levels, possibly illustrating
+ the peculiarities of male levator ani rather than a common mechanism.
  In CC12 myotubes, one group reported the replication of this finding
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3332,6 +3336,14 @@ Among the Foxo-induced genes, a special importance was given to the E3 ligases
 \begin_inset CommandInset citation
 LatexCommand citep
 key "stitt2004igf-1/pi3k/akt"
+
+\end_inset
+
+.
+ Both atrogenes contain FOXO-binding regions in their promoter
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sandri2004foxo,sandri2006pgc-1alpha"
 
 \end_inset
 
