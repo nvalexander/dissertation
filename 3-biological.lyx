@@ -1983,8 +1983,8 @@ key "gomes2012upregulation"
 \end_inset
 
 , and upregulates all the ubiquitin-proteasome pathway components, including
- ubiquitin, the E3 ligases MuRF1 and MAbx, and the proteasomal subunit macropain
- (also known as A1) 
+ ubiquitin, the E3 ligases MuRF1 and MAbx, and the proteasomal subunit A1
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "medina1995increase,bodine2001identification"
@@ -2574,7 +2574,7 @@ key "tiao1996energy-ubiquitin-dependent"
 \end_inset
 
 .
- Dexa upregulates proteasomal subunits such as C1, C2 
+ Dexa upregulates proteasomal subunits such as C1, C2, C4, C5 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity,combaret2004glucocorticoids"
@@ -3329,7 +3329,7 @@ key "jones2010effects"
  Interestingly, this report is also one of the few describing changes in
  Akt activity in response to Dexa at basal levels, possibly illustrating
  the peculiarities of male levator ani rather than a common mechanism.
- In CC12 myotubes, one group reported the replication of this finding
+ In C2C12 myotubes, one group reported the replication of this finding
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sandri2004foxo"
