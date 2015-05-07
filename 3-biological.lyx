@@ -3358,20 +3358,12 @@ key "bollinger2014smad3"
 \end_inset
 
 .
- Interestingly, SMAD3 mediates myostatin, a strong negative regulator of
- muscle mass (discussed later).
 \end_layout
 
 \begin_layout Standard
-REDD1
-\end_layout
-
-\begin_layout Standard
-LKB1
-\end_layout
-
-\begin_layout Standard
-Dexa upregulates myostatin in the atrophying muscle
+A similar juxtaposition of SMAD3 and FOX) responsive elements has been described
+ for the promoter of myostatin, a strong negative regulator of muscle mass.
+ Dexa upregulates myostatin in the atrophying muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ma2003glucocorticoid-induced"
@@ -3396,9 +3388,10 @@ key "zimmers2002induction"
 
 , suggesting that its effect is based on both the proliferation- and the
  hypertrophy-based pathways of muscle growth.
- Moreover, myostatin also acts through mTOR- and FOXO-independent pathways.
- In explanted myofibers, expression of a dominant negative form of activin
- A receptor, type IIB (
+ In adult animals, where hypertrophy is the dominant mechanism, myostatin
+ appears to act in an mTOR-independent manner.
+ In explanted adult mouse myofibers, expression of a dominant negative form
+ of activin A receptor, type IIB (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ActRIIB"
@@ -3425,8 +3418,16 @@ key "gilson2007myostatin"
 \end_inset
 
 .
- Although it is unclear to what degree GAML depends on myostatin-mediated,
- mTOR-independent mechanisms, their existence cannot be discounted.
+ It is unclear to what degree in vivo GAML depends on a FOXO-myostatin-mediated
+ axis.
+\end_layout
+
+\begin_layout Standard
+REDD1
+\end_layout
+
+\begin_layout Standard
+LKB1
 \end_layout
 
 \begin_layout Section
