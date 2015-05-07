@@ -2635,12 +2635,14 @@ key "tintignac2005degradation,lagirand-cantaloube2008initiation"
  well-expressed putative MuRF-1 substrates, myofibrilar components, including
  titin, nebulin, troponin-I, troponin-T, myosin light chain 2, and components
  of ATP-generating machinery, including NADH dehydrogenase 1a, NADH-ubiquinone
- oxidoreductase, pyruvate dehydrogenase, and ATP synthase beta-subunit .
-\end_layout
+ oxidoreductase, pyruvate dehydrogenase, and ATP synthase beta-subunit
+\begin_inset CommandInset citation
+LatexCommand citep
+key "witt2005murf-1"
 
-\begin_layout Standard
-, and they have not been confirmed in vivo.
- In contrast, MuRF-1.
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
