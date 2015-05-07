@@ -3361,8 +3361,15 @@ key "bollinger2014smad3"
 \end_layout
 
 \begin_layout Standard
-A similar juxtaposition of SMAD3 and FOX) responsive elements has been described
- for the promoter of myostatin, a strong negative regulator of muscle mass.
+A similar juxtaposition of SMAD3 and FOXO responsive elements has been described
+ for the promoter of myostatin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "allen2007regulation"
+
+\end_inset
+
+, a strong negative regulator of muscle mass.
  Dexa upregulates myostatin in the atrophying muscle
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3418,8 +3425,8 @@ key "gilson2007myostatin"
 \end_inset
 
 .
- It is unclear to what degree in vivo GAML depends on a FOXO-myostatin-mediated
- axis.
+ The FOXO-myostatin-mediated, mTOR-independent axis apears to play an important
+ role .
 \end_layout
 
 \begin_layout Standard
