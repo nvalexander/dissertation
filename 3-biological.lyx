@@ -3380,8 +3380,14 @@ key "ma2003glucocorticoid-induced"
 
 .
  While myostatin inhibition in utero leads to doubling of muscle mass in
- adult animals, its overexpression in adult animals causes a more moderate
- effect
+ adult animals
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcpherron1997regulation"
+
+\end_inset
+
+, its overexpression in adult animals causes a more moderate effect
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zimmers2002induction"
@@ -3390,11 +3396,8 @@ key "zimmers2002induction"
 
 , suggesting that its effect is based on both the proliferation- and the
  hypertrophy-based pathways of muscle growth.
- 
-\end_layout
-
-\begin_layout Standard
-In explanted myofibers, expression of a dominant negative form of activin
+ Moreover, myostatin also acts through mTOR- and FOXO-independent pathways.
+ In explanted myofibers, expression of a dominant negative form of activin
  A receptor, type IIB (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -3422,8 +3425,6 @@ key "gilson2007myostatin"
 \end_inset
 
 .
- Therefore, myostatin acts, at least in part, through mTOR-and FOXO-independent
- pathways.
  Although it is unclear to what degree GAML depends on myostatin-mediated,
  mTOR-independent mechanisms, their existence cannot be discounted.
 \end_layout
