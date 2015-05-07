@@ -2286,7 +2286,7 @@ key "jiang1996effect"
 
 \end_inset
 
- Interestingly, four days of 
+, while four days of 
 \begin_inset ERT
 status collapsed
 
@@ -2313,7 +2313,7 @@ day}
 
 \end_inset
 
- Dexa did not change muscle mass, despite the upregulation of some catabolic
+ did not change muscle mass, despite the upregulation of some catabolic
  markers
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3379,7 +3379,22 @@ key "ma2003glucocorticoid-induced"
 \end_inset
 
 .
- In explanted myofibers, expression of a dominant negative form of activin
+ While myostatin inhibition in utero leads to doubling of muscle mass in
+ adult animals, its overexpression in adult animals causes a more moderate
+ effect
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zimmers2002induction"
+
+\end_inset
+
+, suggesting that its effect is based on both the proliferation- and the
+ hypertrophy-based pathways of muscle growth.
+ 
+\end_layout
+
+\begin_layout Standard
+In explanted myofibers, expression of a dominant negative form of activin
  A receptor, type IIB (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
