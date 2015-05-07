@@ -2610,6 +2610,10 @@ key "waddell2008glucocorticoid"
 .
  However, the atrogenes are controlled indirectly, by FOXO and SMAD3, which
  integrate other metabolic and hormonal signals (discussed later).
+\end_layout
+
+\begin_layout Standard
+A division of roles between MAFbx and MuRF-1 has been described.
  The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
  initiation factor 3f (
 \begin_inset CommandInset nomenclature
@@ -2619,14 +2623,23 @@ description "eukaryotic initiation factor 3f"
 
 \end_inset
 
-)
+), identified in C2C12 (
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tintignac2005degradation,lagirand-cantaloube2008initiation"
 
 \end_inset
 
-.
+, reviewed in ).
+ In contrast, two-yeast hybrid experiments revealed two large classes of
+ well-expressed putative MuRF-1 substrates, myofibrilar components, including
+ titin, nebulin, troponin-I, troponin-T, myosin light chain 2, and components
+ of ATP-generating machinery, including NADH dehydrogenase 1a, NADH-ubiquinone
+ oxidoreductase, pyruvate dehydrogenase, and ATP synthase beta-subunit .
+\end_layout
+
+\begin_layout Standard
+, and they have not been confirmed in vivo.
  In contrast, MuRF-1.
 \end_layout
 
