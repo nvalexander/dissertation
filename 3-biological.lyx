@@ -2630,6 +2630,19 @@ key "baehr2011muscle"
 \end_layout
 
 \begin_layout Standard
+The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
+ initiation factor 3f (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "eIF3-f"
+description "eukaryotic initiation factor 3f"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
 Therefore, explant models suggest that GAML is, to a wide extend, the result
  of upregulation of the proteasome-ubiquitin system.
  Recent research aims to establish if other proteolysis or protein synthesis
