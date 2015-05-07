@@ -2574,10 +2574,10 @@ key "tiao1996energy-ubiquitin-dependent"
 \end_inset
 
 .
- Dexa upregulates proteasomal subunits such as C2 
+ Dexa upregulates proteasomal subunits such as C1, C2 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "dardevet1995sensitivity"
+key "dardevet1995sensitivity,combaret2004glucocorticoids"
 
 \end_inset
 
@@ -3443,10 +3443,6 @@ key "gilson2007myostatin"
 .
  The GR- and FOXO--mediated, myostatin-centered, mTOR-independent axis appears
  to play an important role in the proteolytic GAML.
-\end_layout
-
-\begin_layout Standard
-Dominant negative FOXO
 \end_layout
 
 \begin_layout Standard
