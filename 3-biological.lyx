@@ -906,14 +906,9 @@ key "gelfand1986removal"
 \end_inset
 
 .
- Glutamine is synthesized in muscle in order to carry to the liver, through
- the blood, the excess nitrogen yielded by amino acid release during protein
- degradation.
-\end_layout
-
-\begin_layout Standard
-The glutamine secretion is mainly a vehicle for shuttling excess nitrogen
- to the liver, where it is further converted to urea.
+ Glutamine is synthesized in muscle in order to release the excess nitrogen
+ yielded by amino acid release during protein degradation.
+ Muscle's glutamine is then converted by the liver to urea and excreted.
 \end_layout
 
 \begin_layout Standard
