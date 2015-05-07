@@ -2558,9 +2558,15 @@ key "wing1993glucocorticoids"
  with the lysosome inhibitor methylamine and the lysosome / calpain inhibitor
  E-64.
  On the other hand, the Dexa-stimulated increase in proteolysis is abrogated
- when the explant is depleted of ATP by a combination of the mitochondrial
- decoupling agent dinitrophenol and the unlysable glucose homologue, 2-deoxygluc
-ose
+ when the explant is treated the proteasome inhibitor MG132
+\begin_inset CommandInset citation
+LatexCommand citep
+key "combaret2004glucocorticoids"
+
+\end_inset
+
+, or depleted of ATP by a combination of the mitochondrial decoupling agent
+ dinitrophenol and the unlysable glucose homologue, 2-deoxyglucose
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tiao1996energy-ubiquitin-dependent"
@@ -2568,7 +2574,7 @@ key "tiao1996energy-ubiquitin-dependent"
 \end_inset
 
 .
- The proteasomal subunits C2 are upregulated by Dexa
+ Dexa upregulates proteasomal subunits such as C2 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity"
@@ -2599,6 +2605,16 @@ key "gomes2001atrogin-1,bodine2001identification"
 .
  Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
  system in GAML.
+ MuRF-1 promoter contains a GC response element
+\begin_inset CommandInset citation
+LatexCommand citep
+key "waddell2008glucocorticoid"
+
+\end_inset
+
+.
+ However, the atrogenes are controlled indirectly, by FOXO and SMAD3, which
+ integrate other metabolic and hormonal signals (discussed later).
  Recently, the role of MAFbx has been questioned, as unbiased searches in
  rats failed to identify it as a target of Dexa
 \begin_inset CommandInset citation
@@ -3253,7 +3269,7 @@ key "senf2008hsp70"
 \end_inset
 
 .
- Therefore, Foxo may provide an mTOR-independent pathway for GAML.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3425,8 +3441,12 @@ key "gilson2007myostatin"
 \end_inset
 
 .
- The GR- and FOXO--mediated, myostatin-centered, mTOR-independent axis apears
- to play an important role .
+ The GR- and FOXO--mediated, myostatin-centered, mTOR-independent axis appears
+ to play an important role in the proteolytic GAML.
+\end_layout
+
+\begin_layout Standard
+Dominant negative FOXO
 \end_layout
 
 \begin_layout Standard
