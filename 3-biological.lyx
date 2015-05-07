@@ -2610,7 +2610,28 @@ key "waddell2008glucocorticoid"
 .
  However, the atrogenes are controlled indirectly, by FOXO and SMAD3, which
  integrate other metabolic and hormonal signals (discussed later).
- Recently, the role of MAFbx has been questioned, as unbiased searches in
+ The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
+ initiation factor 3f (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "eIF3-f"
+description "eukaryotic initiation factor 3f"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tintignac2005degradation,lagirand-cantaloube2008initiation"
+
+\end_inset
+
+.
+ In contrast, MuRF-1.
+\end_layout
+
+\begin_layout Standard
+Recently, the role of MAFbx has been questioned, as unbiased searches in
  rats failed to identify it as a target of Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2627,19 +2648,6 @@ key "baehr2011muscle"
 
 .
  While MuRF-1 knockout reduces GAML, it does not abolish it completely.
-\end_layout
-
-\begin_layout Standard
-The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
- initiation factor 3f (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "eIF3-f"
-description "eukaryotic initiation factor 3f"
-
-\end_inset
-
-).
 \end_layout
 
 \begin_layout Standard
