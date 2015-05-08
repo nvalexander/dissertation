@@ -1125,12 +1125,9 @@ key "adebajo2002epidemiological"
 .
  In 2015, the Ivory Coast government made illegal skin bleaching products,
  due to worries about GC overdose side effects
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-ref needed
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "france-presse2015ivory"
 
 \end_inset
 
