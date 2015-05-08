@@ -2678,9 +2678,23 @@ key "moresi2010myogenin"
 
 \end_inset
 
- points to a more significant role for MAFbx in proliferation-dependent
- muscle changes, including atrophy models associated with myogenin induction,
- such as denervation.
+ points to a significant role for the latter in proliferation-dependent
+ muscle changes.
+ For example, MAFbx plays an important role in muscle hypertrophy of loading.
+ MAFbx is upregulated during hypertrophy from reloading
+\begin_inset CommandInset citation
+LatexCommand citep
+key "slimani2012worsening"
+
+\end_inset
+
+.
+ Conversely, hypertrophy of reloading is reduced in MAFbx.
+\end_layout
+
+\begin_layout Standard
+including atrophy models associated with myogenin induction, such as denervation.
+ I
 \end_layout
 
 \begin_layout Standard
