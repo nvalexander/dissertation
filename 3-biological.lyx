@@ -2600,7 +2600,11 @@ key "gomes2001atrogin-1,bodine2001identification"
 .
  Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
  system in GAML.
- A division of roles between MAFbx and MuRF1 has been described.
+ 
+\end_layout
+
+\begin_layout Standard
+A division of roles between MAFbx and MuRF1 has been described.
  The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
  initiation factor 3f (
 \begin_inset CommandInset nomenclature
@@ -2637,8 +2641,16 @@ key "witt2005murf-1"
 \end_inset
 
 .
- The loss of the latter, but not the former group, was observed in the MuRF1
- knockout mouse.
+ The loss of the latter, but not the former group, was confirmed in the
+ transgenic mouse overexpressing MuRF1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hirner2008murf1-dependent"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
