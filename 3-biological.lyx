@@ -2633,7 +2633,7 @@ key "baehr2011muscle"
 \end_inset
 
 .
- Interestingly, MAFbx is induced in muscle by during hypertrophy from reloading
+ MAFbx is induced in muscle by during hypertrophy from reloading
 \begin_inset CommandInset citation
 LatexCommand citep
 key "slimani2012worsening"
@@ -2658,11 +2658,27 @@ key "moresi2010myogenin"
 \end_inset
 
 .
+ Similar to MAFbx, a putative upregulation of myogenin in GAML has been
+ reported sporadically in RT-PCR studies
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tepas1999gender"
+
+\end_inset
+
+, but never confirmed in unbiased investigations
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wu2010redd1,furlow2013altered"
+
+\end_inset
+
+, suggesting that the myogenin-MAFbx is less reliably upregulated in GAML.
  It is unclear whether the functionally relevant activator of MAFbx is prolifera
 tion or myogenin, since it is difficult to separate the two.
- Nevertheless, atrophy models associated with myogenin induction, such as
- denervation, are more able reliably inducing a MAFbx response, compared
- to myogenin-independent atrophy, such as GAML.
+ Nevertheless, atrophy models strongly associated with myogenin induction,
+ such as denervation, are more able reliably inducing a MAFbx response,
+ compared to GAML.
 \end_layout
 
 \begin_layout Standard
@@ -2733,7 +2749,7 @@ key "waddell2008glucocorticoid"
  The atrogenes are controlled also indirectly, by FOXO and SMAD3, which
  integrate multiple GC-activated and GC-independent metabolic and hormonal
  signals (discussed in next sections).
- Among mediators of GC which induce atrogenes, 
+ Among mediators of GC which induce atrogenes, XXXXXXXXXXXXXXXX
 \end_layout
 
 \begin_layout Standard
@@ -3349,22 +3365,9 @@ Foxo transcriptional program in GAML
 \end_layout
 
 \begin_layout Standard
-In Dexa-treated atrophying muscle, myogenin, MyD, and myf-5 are upregulated
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tepas1999gender"
-
-\end_inset
-
-.
- It is unclear whether myogenin plays any role in upregulating E3 ligases,
- as in early stages of denervation-induced atrophy.
- The upregulation of Foxo by Dexa brings many similarities between GAML
- and the late stage of denervation-induced atrophy.
-\end_layout
-
-\begin_layout Standard
-Evidence for the role of Foxo during GAML is indirect.
+The upregulation of Foxo by Dexa brings many similarities between GAML and
+ the late stage of denervation-induced atrophy.
+ Evidence for the role of Foxo during GAML is indirect.
  The combined knockout of the three regulatable Foxo genes led to abrogation
  of the late, Akt- and Foxo-dependent, stage of denervation-induced atrophy
 \begin_inset CommandInset citation
@@ -3516,16 +3519,8 @@ Myostatin in GAML
 \end_layout
 
 \begin_layout Standard
-A similar juxtaposition of SMAD3 and FOXO responsive elements has been described
- for the promoter of myostatin
-\begin_inset CommandInset citation
-LatexCommand citep
-key "allen2007regulation"
-
-\end_inset
-
-, a strong negative regulator of muscle mass.
- Dexa upregulates myostatin in the atrophying muscle
+Dexa upregulates myostatin, a strong negative regulator of muscle mass,
+ in the atrophying muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ma2003glucocorticoid-induced"
@@ -3550,10 +3545,9 @@ key "zimmers2002induction"
 
 , suggesting that its effect is based on both the proliferation- and the
  hypertrophy-based pathways of muscle growth.
- In adult animals, where hypertrophy is the dominant mechanism, myostatin
- appears to act in an mTOR-independent manner.
- In explanted adult mouse myofibers, expression of a dominant negative form
- of activin A receptor, type IIB (
+ In explanted adult mouse myofibers, where proliferation has been minimized,
+ expression of a dominant negative form of activin A receptor, type IIB
+ (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ActRIIB"
@@ -3570,7 +3564,38 @@ key "sartori2009smad2"
 \end_inset
 
 .
- In myostatin knockout mice, Dexa induces most of its transcriptional program,
+ Therefore, proliferation-independent mechanisms of myostatin-induced atrophy
+ may include both mTOR-dependent and -independent pathways.
+\end_layout
+
+\begin_layout Standard
+In human myotubes differentiated from cultured myoblasts, myostatin treatments
+ lead to reductions in diameter and in Akt phosphorylation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "trendelenburg2009myostatin"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A juxtaposition of SMAD3 and FOXO responsive elements has been described
+ for the promoter of myostatin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "allen2007regulation"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In myostatin knockout mice, Dexa induces most of its transcriptional program,
  including modulations of IGF-I, MuRF1, MAFbx, FOXO3A, but Dexa-induced
  muscle loss does not occur 
 \begin_inset CommandInset citation
