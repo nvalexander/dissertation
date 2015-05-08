@@ -2650,7 +2650,13 @@ key "hirner2008murf1-dependent"
 \end_inset
 
 .
- 
+\end_layout
+
+\begin_layout Standard
+It may be the case that the MAFbx is an initiator in some muscle atrophy
+ models, by neutralizing a few specific muscle protecting factors.
+ While MuRF1 is a more plausible effector of bulk protein degradation, other
+ proteolytic mechanisms may be 
 \end_layout
 
 \begin_layout Standard
@@ -2692,8 +2698,7 @@ Therefore, explant models suggest that GAML is, to a wide extend, the result
  of upregulation of the proteasome-ubiquitin system.
  Recent research aims to establish if other proteolysis or protein synthesis
  regulators contribute to GAML.
- Alternatively, it may be the case that the proteasome-ubiquitin system
- initiates GAML by neutralizing a few specific muscle protecting factors.
+ 
 \end_layout
 
 \begin_layout Section
