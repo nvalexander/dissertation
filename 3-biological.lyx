@@ -3152,6 +3152,10 @@ key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 \end_inset
 
 , demonstrating correlation with Akt changes.
+ While Akt repression is consistent with the induction of the ubiquitin-proteaso
+me system via FOXO, its side effect, mTOR repression, is expected to lead
+ to simultaneous downregulation of protein syntesis.
+ 
 \begin_inset Note Note
 status open
 
@@ -3303,8 +3307,7 @@ In conclusion, the muscle response to GC is associated with molecular changes
  during episodes of hyperinsulinemia, such as after feeding.
  For continuous, diet-independent GAML to proceed, mTOR-independent are
  also required.
- While not a direct regulator of autophagy, mTOR repression is an expected
- side effect of 
+ 
 \end_layout
 
 \begin_layout Standard
