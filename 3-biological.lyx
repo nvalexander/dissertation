@@ -2630,7 +2630,14 @@ key "tintignac2005degradation,lagirand-cantaloube2008initiation"
 
 \end_inset
 
-, reviewed in ).
+, reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bodine2014skeletal"
+
+\end_inset
+
+).
  In contrast, two-yeast hybrid experiments revealed two large classes of
  well-expressed putative MuRF-1 substrates, myofibrilar components, including
  titin, nebulin, troponin-I, troponin-T, myosin light chain 2, and components
