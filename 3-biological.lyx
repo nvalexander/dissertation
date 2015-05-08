@@ -2626,17 +2626,6 @@ key "baehr2011muscle"
 \end_inset
 
 .
- These differences may stem from the fact that MuRF1 promoter contains a
- GC response element
-\begin_inset CommandInset citation
-LatexCommand citep
-key "waddell2008glucocorticoid"
-
-\end_inset
-
-, which MAFbx appears to lack.
- The atrogenes are controlled also indirectly, by FOXO and SMAD3, which
- integrate other metabolic and hormonal signals (discussed in next sections).
  Interestingly, MAFbx is induced in muscle by during hypertrophy from reloading
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2722,15 +2711,31 @@ key "hirner2008murf1-dependent"
 
 .
  MuRF1 is therefore a more plausible effector of bulk protein degradation.
- 
+\end_layout
+
+\begin_layout Standard
+Differences between atrogenes may also stem from the fact that MuRF1 promoter
+ contains a GC response element
+\begin_inset CommandInset citation
+LatexCommand citep
+key "waddell2008glucocorticoid"
+
+\end_inset
+
+, which MAFbx appears to lack.
+ The atrogenes are controlled also indirectly, by FOXO and SMAD3, which
+ integrate multiple GC-activated and GC-independent metabolic and hormonal
+ signals (discussed in next sections).
+ Among mediators of GC which induce atrogenes, 
 \end_layout
 
 \begin_layout Standard
 In conclusion, explant models suggest that GAML is, to a wide extend, the
  result of upregulation of the proteasome-ubiquitin system.
- Recent research aims to establish if other proteolysis or protein synthesis
- regulators contribute to GAML.
- 
+ Next sections will describe the various pathways that collaborate to stimulate
+ the ubiquitin-proteasome system.
+ Each of them has multiple effects, including activation of other proteolytic
+ and anti-translational pathways.
 \end_layout
 
 \begin_layout Section
@@ -2739,8 +2744,7 @@ GC-induced loss of sensitivity on the Akt / mTOR axis
 
 \begin_layout Standard
 The most comprehensive account on GC-induced changes on protein metabolic
- regulation came, surprisingly, from the study of associated glucose metabolism
- changes.
+ regulation came, surprisingly, from the study of glucose metabolism changes.
  Dexa causes systemic insulin resistance, manifested as uncompensated hyperglyce
 mia
 \begin_inset CommandInset citation
@@ -3299,6 +3303,8 @@ In conclusion, the muscle response to GC is associated with molecular changes
  during episodes of hyperinsulinemia, such as after feeding.
  For continuous, diet-independent GAML to proceed, mTOR-independent are
  also required.
+ While not a direct regulator of autophagy, mTOR repression is an expected
+ side effect of 
 \end_layout
 
 \begin_layout Standard
@@ -3467,6 +3473,22 @@ key "bollinger2014smad3"
 \end_layout
 
 \begin_layout Standard
+KLF-15 is a target of GR.
+\end_layout
+
+\begin_layout Standard
+REDD1
+\end_layout
+
+\begin_layout Standard
+LKB1
+\end_layout
+
+\begin_layout Standard
+Myostatin in GAML
+\end_layout
+
+\begin_layout Standard
 A similar juxtaposition of SMAD3 and FOXO responsive elements has been described
  for the promoter of myostatin
 \begin_inset CommandInset citation
@@ -3533,14 +3555,6 @@ key "gilson2007myostatin"
 .
  The GR- and FOXO--mediated, myostatin-centered, mTOR-independent axis appears
  to play an important role in the proteolytic GAML.
-\end_layout
-
-\begin_layout Standard
-REDD1
-\end_layout
-
-\begin_layout Standard
-LKB1
 \end_layout
 
 \begin_layout Section
@@ -3743,7 +3757,7 @@ key "bullock1972relative"
 \end_layout
 
 \begin_layout Section*
-Putative role of autophagy in GAML
+Autophagy in GAML
 \end_layout
 
 \begin_layout Standard
