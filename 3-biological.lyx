@@ -3169,8 +3169,8 @@ Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
 While Akt repression is consistent with the induction of the ubiquitin-proteasom
 e system via FOXO, its side effect, mTOR repression, is expected to lead
  to simultaneous downregulation of protein synthesis (discussed later).
- Recent discoveries found that mTOR complex 1 phosphorylates and thus inhibits
- UNC-51-like kinase 1 (
+ Discovery of novel mTOR complex 1 substrates such as UNC-51-like kinase
+ 1 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ULK1"
@@ -3178,7 +3178,15 @@ description "UNC-51-like kinase 1"
 
 \end_inset
 
-), 
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hosokawa2009nutrient-dependent"
+
+\end_inset
+
+ led to speculations about the role of mTOR in autophagy, including in GAML,
+ but in vivo evidence is lacking (also discussed in a later section).
 \end_layout
 
 \begin_layout Standard
