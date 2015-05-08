@@ -1191,7 +1191,7 @@ key "hanssen2013effect"
 
 .
  On the other hand, long-term exercise induces the expression of catabolic
- markers, such as the E3 ligases MAFbx and MuRF-1
+ markers, such as the E3 ligases MAFbx and MuRF1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "stefanetti2014regulation"
@@ -2590,7 +2590,7 @@ key "gilson2007myostatin"
 \begin_layout Standard
 Unbiased microarray searches in mice muscles atrophying in various experimental
  paradigms have repeatedly yielded two upregulated genes, termed atrogenes,
- MAFbx and MuRF-1
+ MAFbx and MuRF1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gomes2001atrogin-1,bodine2001identification"
@@ -2600,7 +2600,7 @@ key "gomes2001atrogin-1,bodine2001identification"
 .
  Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
  system in GAML.
- A division of roles between MAFbx and MuRF-1 has been described.
+ A division of roles between MAFbx and MuRF1 has been described.
  The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
  initiation factor 3f (
 \begin_inset CommandInset nomenclature
@@ -2626,7 +2626,7 @@ key "bodine2014skeletal"
 
 ).
  In contrast, two-yeast hybrid experiments revealed two large classes of
- well-expressed putative MuRF-1 substrates, myofibrilar components, including
+ well-expressed putative MuRF1 substrates, myofibrilar components, including
  titin, nebulin, troponin-I, troponin-T, myosin light chain 2, and components
  of ATP-generating machinery, including NADH dehydrogenase 1a, NADH-ubiquinone
  oxidoreductase, pyruvate dehydrogenase, and ATP synthase beta-subunit
@@ -2637,16 +2637,12 @@ key "witt2005murf-1"
 \end_inset
 
 .
- The loss of the latter, but not the former group, was observed in the MuRF-1
+ The loss of the latter, but not the former group, was observed in the MuRF1
  knockout mouse.
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-MuRF-1 promoter contains a GC response element
+MuRF1 promoter contains a GC response element
 \begin_inset CommandInset citation
 LatexCommand citep
 key "waddell2008glucocorticoid"
@@ -2676,7 +2672,7 @@ key "baehr2011muscle"
 \end_inset
 
 .
- While MuRF-1 knockout reduces GAML, it does not abolish it completely.
+ While MuRF1 knockout reduces GAML, it does not abolish it completely.
 \end_layout
 
 \begin_layout Standard
@@ -3393,7 +3389,7 @@ key "stitt2004igf-1/pi3k/akt"
 
 \begin_layout Standard
 Among the Foxo-induced genes, a special importance was given to the E3 ligases
- associated with muscle loss, MAFbx and MuRF-1
+ associated with muscle loss, MAFbx and MuRF1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "stitt2004igf-1/pi3k/akt"
@@ -3477,7 +3473,7 @@ key "sartori2009smad2"
 
 .
  In myostatin knockout mice, Dexa induces most of its transcriptional program,
- including modulations of IGF-I, MuRF-1, MAFbx, FOXO3A, but Dexa-induced
+ including modulations of IGF-I, MuRF1, MAFbx, FOXO3A, but Dexa-induced
  muscle loss does not occur 
 \begin_inset CommandInset citation
 LatexCommand citep

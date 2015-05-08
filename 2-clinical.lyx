@@ -1979,7 +1979,33 @@ key "lofberg2002effects"
 
 .
  The result is unsurprising, given that the control of the proteasome system
- may be exercised in other, unprobed ways, such as E3 ligases.
+ may be exercised in other, unprobed ways.
+ In animal models, the genes most correlated with muscle loss, including
+ GAML, are two ubiquitin ligases, muscle atrophy F-box (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MAFbx"
+description "muscle atrophy F-box"
+
+\end_inset
+
+) and muscle RING finger 1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MuRF1"
+description "muscle RING finger 1"
+
+\end_inset
+
+), but no published studies confirm or deny their modulation humans (reviewed
+ in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bodine2014skeletal"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
