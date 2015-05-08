@@ -2205,7 +2205,7 @@ proteasome system.
 \end_layout
 
 \begin_layout Section
-Ubiquitin-proteasome system as a major effector in GAML
+Animal models of GAML
 \end_layout
 
 \begin_layout Standard
@@ -2325,9 +2325,16 @@ key "yeh1994effects"
 
 \begin_layout Standard
 In the era of genome sequencing, where murine species became the most common
- model, studies of GAML focused on rats, because changes in muscle mas are
- more readily are more readily observed, compared to mice.
- The effects of 7-day, 
+ model, studies of GAML focused on rats, because changes in muscle mass
+ are more readily are more readily observed, compared to mice.
+\end_layout
+
+\begin_layout Section
+Ubiquitin-proteasome system as a major effector in GAML
+\end_layout
+
+\begin_layout Standard
+The effects of 7-day, 
 \begin_inset ERT
 status collapsed
 
@@ -3320,23 +3327,19 @@ key "frost2009regulation,wu2010redd1"
 
 \begin_layout Standard
 In conclusion, the muscle response to GC is associated with molecular changes
- congruent with Akt / mTOR loss of sensitivity to trophic factors such as
- insulin and IGF-I.
+ consistent with Akt / mTOR loss of sensitivity to trophic factors such
+ as insulin and IGF-I.
+ Based on p70-S6K divergence, it appears that GC causes Akt-mediated mTOR
+ modulation, in contrast with denervation atrophy, where Akt is downstream
+ of mTOR.
  Interestingly, the pathway appears largely unaffected by Dexa in basal
  conditions, when trophic factors are withheld.
  It may be the case that mTOR-mediated mechanisms of GAML become relevant
  during episodes of hyperinsulinemia, such as after feeding.
- For continuous, diet-independent GAML to proceed, mTOR-independent are
+ For always-on, feeding-independent GAML to proceed, mTOR-independent are
  also required.
- 
-\end_layout
-
-\begin_layout Standard
-Based on p70-S6K divergence, it appears that GC causes Akt-mediated mTOR
- modulation, in contrast with denervation atrophy, where Akt is downstream
- of mTOR.
- However, all our knowledge about Akt pathway in GAML is derived from experiment
-s with intrinsic anabolic interventions.
+ Because all our knowledge about Akt pathway in GAML is derived from experiments
+ with intrinsic anabolic interventions, it may not be correct.
  Experiments on transgenic mice, unpicking one putative mediator at a time,
  may invalidate the current model of GAML, as they did in denervation atrophy.
 \end_layout
@@ -3508,7 +3511,7 @@ REDD1
 LKB1
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
 Myostatin in GAML
 \end_layout
 
