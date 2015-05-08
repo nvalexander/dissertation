@@ -2588,8 +2588,8 @@ key "gilson2007myostatin"
 \end_layout
 
 \begin_layout Standard
-Unbiased searches in mice atrophying mouse muscles, included some undergoing
- GAML, revealed two upregulated genes, termed atrogenes, MAFbx and MuRF1
+Unbiased searches in atrophying mouse muscles revealed two upregulated genes,
+ termed atrogenes, MAFbx and MuRF1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bodine2001identification"
@@ -2599,7 +2599,17 @@ key "bodine2001identification"
 .
  Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
  system in GAML.
- Interestingly, a division of work between the two ligases has been described.
+ Interestingly, a division of work between the two ligases has been described,
+ with MuRF1 playing a more important role in GAML.
+ Some unbiased searches in rats failed to identify MAFbx as a target of
+ Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wu2010redd1"
+
+\end_inset
+
+.
  While genetic depletion of either atrogene leads to muscle sparing in the
  denervation model
 \begin_inset CommandInset citation
@@ -2625,6 +2635,9 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 , which MAFbx appears to lack.
+ The atrogenes are controlled also indirectly, by FOXO and SMAD3, which
+ integrate other metabolic and hormonal signals (discussed in next sections).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2658,8 +2671,16 @@ key "bodine2014skeletal"
  Because MAFbx neutralizes a translation initiation factor, it has been
  suggested that MAFbx relative importance is augmented in conditions where
  muscle loss relies more on loss of protein synthesis.
- Because myogenin induces MAFbx, the latter's role is stronger in atrophy
- models associated with myogenin induction, such as denervation.
+ Myogenin's ability to induce MAFbx expression
+\begin_inset CommandInset citation
+LatexCommand citep
+key "moresi2010myogenin"
+
+\end_inset
+
+ points to a more significant role for MAFbx in proliferation-dependent
+ muscle changes, including atrophy models associated with myogenin induction,
+ such as denervation.
 \end_layout
 
 \begin_layout Standard
@@ -2684,31 +2705,8 @@ key "hirner2008murf1-dependent"
 \end_inset
 
 .
- MAFbx genetic depletion does not 
-\end_layout
-
-\begin_layout Standard
-While MuRF1 is a more plausible effector of bulk protein degradation, other
- proteolytic mechanisms may be 
-\end_layout
-
-\begin_layout Standard
-However, the atrogenes are controlled indirectly, by FOXO and SMAD3, which
- integrate other metabolic and hormonal signals (discussed later).
+ MuRF1 is therefore a more plausible effector of bulk protein degradation.
  
-\end_layout
-
-\begin_layout Standard
-Recently, the role of MAFbx has been questioned, as unbiased searches in
- rats failed to identify it as a target of Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wu2010redd1"
-
-\end_inset
-
-, and its .
- While MuRF1 knockout reduces GAML, it does not abolish it completely.
 \end_layout
 
 \begin_layout Standard
