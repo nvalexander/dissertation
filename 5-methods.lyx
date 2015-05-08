@@ -128,9 +128,11 @@ Ethical procedures
 \end_layout
 
 \begin_layout Standard
-All animal procedures have been described in protocols submitted by the
- author to, and approved by, the Institutional Animal Care and Use Committees
- at the Boston University School of Medicine and Harvard Medical School.
+All animal procedures have been described in protocols drafted by the author.
+ The protocols were written in advance, submitted with Dr.
+ Carlo Serra as principal investigator, and approved by the Institutional
+ Animal Care and Use Committee at the Boston University School of Medicine
+ and Harvard Medical Area Standing Committee on Animals.
 \end_layout
 
 \begin_layout Section
@@ -184,6 +186,35 @@ liter}
 \end_inset
 
  (?) ethanol, which delivered .
+\end_layout
+
+\begin_layout Standard
+Mice were euthanized humanely by Euthasol® (pentobarbital sodium and phenytoin
+ sodium solution;
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{200}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ pentobarbital) intraperitoneal, followed by quick cervical dislocation.
+ Muscle and serum samples were collected after death.
 \end_layout
 
 \begin_layout Section
