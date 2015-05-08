@@ -2625,7 +2625,10 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 , which MAFbx appears to lack.
- Substrate specificity is also distinguishing the two ligases.
+\end_layout
+
+\begin_layout Standard
+Substrate specificity is also distinguishing the two ligases.
  The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
  initiation factor 3f (
 \begin_inset CommandInset nomenclature
@@ -2650,14 +2653,13 @@ key "bodine2014skeletal"
 \end_inset
 
 ).
- Therefore MAFbx may be a 
-\end_layout
-
-\begin_layout Standard
-It may be the case that the MAFbx is an initiator in some muscle atrophy
- models, by neutralizing a few specific muscle protecting factors.
- Alternatively, it has been suggested that MAFbx relative importance is
- augmented in conditions where muscle loss relies more 
+ This suggests that MAFbx may be an initiator, neutralizing a few specific
+ muscle protecting factors, belonging to multiple metabolic pathways.
+ Because MAFbx neutralizes a translation initiation factor, it has been
+ suggested that MAFbx relative importance is augmented in conditions where
+ muscle loss relies more on loss of protein synthesis.
+ Because myogenin induces MAFbx, the latter's role is stronger in atrophy
+ models associated with myogenin induction, such as denervation.
 \end_layout
 
 \begin_layout Standard
