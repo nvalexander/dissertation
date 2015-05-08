@@ -2600,20 +2600,7 @@ key "gomes2001atrogin-1,bodine2001identification"
 .
  Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
  system in GAML.
- MuRF-1 promoter contains a GC response element
-\begin_inset CommandInset citation
-LatexCommand citep
-key "waddell2008glucocorticoid"
-
-\end_inset
-
-.
- However, the atrogenes are controlled indirectly, by FOXO and SMAD3, which
- integrate other metabolic and hormonal signals (discussed later).
-\end_layout
-
-\begin_layout Standard
-A division of roles between MAFbx and MuRF-1 has been described.
+ A division of roles between MAFbx and MuRF-1 has been described.
  The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
  initiation factor 3f (
 \begin_inset CommandInset nomenclature
@@ -2650,6 +2637,26 @@ key "witt2005murf-1"
 \end_inset
 
 .
+ The loss of the latter, but not the former group, was observed in the MuRF-1
+ knockout mouse.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+MuRF-1 promoter contains a GC response element
+\begin_inset CommandInset citation
+LatexCommand citep
+key "waddell2008glucocorticoid"
+
+\end_inset
+
+, which MAFbx appears to lack.
+ However, the atrogenes are controlled indirectly, by FOXO and SMAD3, which
+ integrate other metabolic and hormonal signals (discussed later).
+ 
 \end_layout
 
 \begin_layout Standard
