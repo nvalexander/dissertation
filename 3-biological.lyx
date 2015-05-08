@@ -2588,24 +2588,32 @@ key "gilson2007myostatin"
 \end_layout
 
 \begin_layout Standard
-Unbiased microarray searches in mice muscles atrophying in various experimental
- paradigms have repeatedly yielded two upregulated genes, termed atrogenes,
- MAFbx and MuRF1
+Unbiased searches in mice atrophying mouse muscles, included some undergoing
+ GAML, revealed two upregulated genes, termed atrogenes, MAFbx and MuRF1
 \begin_inset CommandInset citation
 LatexCommand citep
-key "gomes2001atrogin-1,bodine2001identification"
+key "bodine2001identification"
 
 \end_inset
 
 .
  Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
  system in GAML.
+ A division of roles between MAFbx and MuRF1 has been described.
+ In part, they may stem from the fact that MuRF1 promoter contains a GC
+ response element
+\begin_inset CommandInset citation
+LatexCommand citep
+key "waddell2008glucocorticoid"
+
+\end_inset
+
+, which MAFbx appears to lack.
  
 \end_layout
 
 \begin_layout Standard
-A division of roles between MAFbx and MuRF1 has been described.
- The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
+The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
  initiation factor 3f (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -2660,15 +2668,7 @@ It may be the case that the MAFbx is an initiator in some muscle atrophy
 \end_layout
 
 \begin_layout Standard
-MuRF1 promoter contains a GC response element
-\begin_inset CommandInset citation
-LatexCommand citep
-key "waddell2008glucocorticoid"
-
-\end_inset
-
-, which MAFbx appears to lack.
- However, the atrogenes are controlled indirectly, by FOXO and SMAD3, which
+However, the atrogenes are controlled indirectly, by FOXO and SMAD3, which
  integrate other metabolic and hormonal signals (discussed later).
  
 \end_layout
