@@ -2599,7 +2599,16 @@ key "bodine2001identification"
 .
  Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
  system in GAML.
- However, genetic depletion of MAFbx had no effect on mouse GAML
+ Interestingly, a division of work between the two ligases has been described.
+ While genetic depletion of either atrogene leads to muscle sparing in the
+ denervation model
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bodine2001identification"
+
+\end_inset
+
+, only MuRF1 depletion spares muscle treated with Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "baehr2011muscle"
@@ -2607,9 +2616,8 @@ key "baehr2011muscle"
 \end_inset
 
 .
- A division of roles between MAFbx and MuRF1 has been described.
- In part, they may stem from the fact that MuRF1 promoter contains a GC
- response element
+ These differences may stem from the fact that MuRF1 promoter contains a
+ GC response element
 \begin_inset CommandInset citation
 LatexCommand citep
 key "waddell2008glucocorticoid"
@@ -2617,11 +2625,8 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 , which MAFbx appears to lack.
- In addition, substrate specificity 
-\end_layout
-
-\begin_layout Standard
-The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
+ Substrate specificity is also distinguishing the two ligases.
+ The only two known MAFbx ubiquitination substrates are MyoD and the eukaryotic
  initiation factor 3f (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -2645,9 +2650,18 @@ key "bodine2014skeletal"
 \end_inset
 
 ).
- It may be the case that the MAFbx is an initiator in some muscle atrophy
+ Therefore MAFbx may be a 
+\end_layout
+
+\begin_layout Standard
+It may be the case that the MAFbx is an initiator in some muscle atrophy
  models, by neutralizing a few specific muscle protecting factors.
- In contrast, two-yeast hybrid experiments revealed two large classes of
+ Alternatively, it has been suggested that MAFbx relative importance is
+ augmented in conditions where muscle loss relies more 
+\end_layout
+
+\begin_layout Standard
+In contrast, two-yeast hybrid experiments revealed two large classes of
  well-expressed putative MuRF1 substrates, myofibrilar components, including
  titin, nebulin, troponin-I, troponin-T, myosin light chain 2, and components
  of ATP-generating machinery, including NADH dehydrogenase 1a, NADH-ubiquinone
