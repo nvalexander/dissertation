@@ -2599,6 +2599,14 @@ key "bodine2001identification"
 .
  Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
  system in GAML.
+ However, genetic depletion of MAFbx had no effect on mouse GAML
+\begin_inset CommandInset citation
+LatexCommand citep
+key "baehr2011muscle"
+
+\end_inset
+
+.
  A division of roles between MAFbx and MuRF1 has been described.
  In part, they may stem from the fact that MuRF1 promoter contains a GC
  response element
@@ -2609,7 +2617,7 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 , which MAFbx appears to lack.
- 
+ In addition, substrate specificity 
 \end_layout
 
 \begin_layout Standard
@@ -2637,6 +2645,8 @@ key "bodine2014skeletal"
 \end_inset
 
 ).
+ It may be the case that the MAFbx is an initiator in some muscle atrophy
+ models, by neutralizing a few specific muscle protecting factors.
  In contrast, two-yeast hybrid experiments revealed two large classes of
  well-expressed putative MuRF1 substrates, myofibrilar components, including
  titin, nebulin, troponin-I, troponin-T, myosin light chain 2, and components
@@ -2658,12 +2668,11 @@ key "hirner2008murf1-dependent"
 \end_inset
 
 .
+ MAFbx genetic depletion does not 
 \end_layout
 
 \begin_layout Standard
-It may be the case that the MAFbx is an initiator in some muscle atrophy
- models, by neutralizing a few specific muscle protecting factors.
- While MuRF1 is a more plausible effector of bulk protein degradation, other
+While MuRF1 is a more plausible effector of bulk protein degradation, other
  proteolytic mechanisms may be 
 \end_layout
 
@@ -2682,14 +2691,7 @@ key "wu2010redd1"
 
 \end_inset
 
-, and its genetic depletion did not reduce mouse GAML
-\begin_inset CommandInset citation
-LatexCommand citep
-key "baehr2011muscle"
-
-\end_inset
-
-.
+, and its .
  While MuRF1 knockout reduces GAML, it does not abolish it completely.
 \end_layout
 
