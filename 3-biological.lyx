@@ -3152,9 +3152,6 @@ key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 \end_inset
 
 , demonstrating correlation with Akt changes.
- While Akt repression is consistent with the induction of the ubiquitin-proteaso
-me system via FOXO, its side effect, mTOR repression, is expected to lead
- to simultaneous downregulation of protein syntesis.
  
 \begin_inset Note Note
 status open
@@ -3166,6 +3163,22 @@ Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+While Akt repression is consistent with the induction of the ubiquitin-proteasom
+e system via FOXO, its side effect, mTOR repression, is expected to lead
+ to simultaneous downregulation of protein synthesis (discussed later).
+ Recent discoveries found that mTOR complex 1 phosphorylates and thus inhibits
+ UNC-51-like kinase 1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ULK1"
+description "UNC-51-like kinase 1"
+
+\end_inset
+
+), 
 \end_layout
 
 \begin_layout Standard
