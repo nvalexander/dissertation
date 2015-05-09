@@ -3672,7 +3672,14 @@ key "ma2003glucocorticoid-induced"
 \end_inset
 
 .
- Myostatin knockout mice do not develop GAML.
+ Myostatin knockout mice do not develop GAML
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gilson2007myostatin"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3692,8 +3699,8 @@ key "zimmers2002induction"
 
 \end_inset
 
-, suggesting that its effect is based on both the hyperplasia- and the hypertrop
-hy-based pathways of muscle growth.
+, suggesting that its effect is based on hyperplasia- and hypertrophy-based
+ pathways of muscle growth.
  In explanted adult mouse myofibers, where proliferation has been minimized,
  expression of a dominant negative form of activin A receptor, type IIB
  (
@@ -3715,6 +3722,8 @@ key "sartori2009smad2"
 .
  Therefore, proliferation-independent mechanisms of myostatin-induced atrophy
  may include both mTOR-dependent and -independent pathways.
+ The immense, multifactorial action of myostatin on muscle suggests that
+ its action overrides any atrophic stimulus
 \end_layout
 
 \begin_layout Standard
