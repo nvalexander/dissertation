@@ -3591,20 +3591,29 @@ key "trendelenburg2009myostatin"
 \end_inset
 
 .
- Both reports also describe a rather unusual Akt phosphorylation in basal
- state.
+ Both reports describe Akt inhibition, a finding facilitated by the fact
+ that their myostatin-free controls presented an unusual Akt phosphorylation
+ in basal state.
  The authors of the latter report explain their observations by demonstrating
  that myostatin reduces myoblast fusion and differentiation.
  In contrast, the investigators behind the former study perform an analysis
  of the mTOR pathway, which indicates loss of phosphorylation on tuberin
  and p70-S6K, and conclude that myostatin affects protein metabolism.
- As described in a previous section, activated tuberin is undetectable in
- muscle in basal state.
- Therefore, observations in tibialis may be ascribed to myostatin-induced
- modulations of the proliferative activity triggered by post-transfection
- muscle regeneration.
- Even if some atrophy models are explained by a myostatin - Akt axis, the
- simultaneous downregulation of atrogenes would distinguish them from GAML.
+ A simpler explanation would have taken into account the regeneration in
+ transfected muscle, which should have led to unusually high proliferative
+ rate.
+ Most of the changes would be consistent with the well-documented myostatin-indu
+ced impairment of muscle regeneration
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mccroskery2003myostatin,cohen2015genetic"
+
+\end_inset
+
+.
+ Even if some atrophy models may be explained by a myostatin - Akt axis,
+ the simultaneous downregulation of atrogenes and repression of Akt would
+ differentiate those models from GAML.
 \end_layout
 
 \begin_layout Standard
