@@ -3819,14 +3819,16 @@ description "eukaryotic initiation factor 4B"
 \end_inset
 
 ).
- First, Dexa induces 4E-BP expression
+ First, Dexa upregulates 4E-BP mRNA
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wu2010redd1"
 
 \end_inset
 
-, presumably through a Foxo-binding sequence in its promoter
+.
+ It was long believed the induction is direct, and based on a Foxo response
+ element in 4E-BP promoter
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bai2013activin"
@@ -3834,13 +3836,15 @@ key "bai2013activin"
 \end_inset
 
 .
- (The promoter has been shown in Drosophila, but the paper describing it
- in mouse cell culture has been withdrawn for unspecified reason.) Second,
- as mentioned earlier, Dexa reduces mTOR-effected 4E-BP phosphorylation
- sensitivity to insulin, which is expected to cause reductions in protein
- synthesis rate expected after feeding.
+ As of 2015, this mechanism is proven only in Drosophila, the only replication
+ in mouse cultured cells being recently withdrawn for unspecified reason.
+ Second, Dexa may regulate 4E-BP through post-translational phosphorylation.
+ As shown earlier, Dexa reduces mTOR-effected 4E-BP phosphorylation sensitivity
+ to insulin, which is expected to cause reductions in protein synthesis
+ rate mainly after feeding.
  Currently published studies did not account for such fluctuations.
- Often, animals are euthanized after being fasted.
+ Often, animals are euthanized after being fasted, thus minimizing observable
+ changes in 4E-BP phosphorylation.
  Perhaps for this reason, available data on protein synthesis are inconclusive.
 \end_layout
 
@@ -3910,9 +3914,7 @@ key "tomas1998anti-catabolic"
 \end_inset
 
 .
- Overall, changes in protein degradation are more reliably seen than those
- in protein synthesis, suggesting that the latter may be observed only in
- special conditions, such as immediately after feeding.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3967,8 +3969,11 @@ key "aversa2012beta-hydroxy-beta-methylbutyrate,desler1996effects,jones2005vitro
 \end_layout
 
 \begin_layout Standard
-As in human studies, the role of protein synthesis modulation during hypercortis
-olism is still debated, because some acute effects are detectable.
+Overall, gains in protein degradation are more reliably seen than losses
+ in protein synthesis, suggesting that the latter may be observed only in
+ special conditions, such as immediately after feeding.
+ As in human studies, the role of protein synthesis modulation during hypercorti
+solism is still debated, because some acute effects are detectable.
  In the first hours after receiving GCs, the rate of protein synthesis in
  the muscle decreases, as indicated by reductions in incorporation of labeled
  precursors
