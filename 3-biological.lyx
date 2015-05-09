@@ -2387,8 +2387,8 @@ key "pansters2013synergistic"
 \end_inset
 
 .
- Conversely, the synergy with Dexa amplifies some of IGF-I effects, such
- as Akt phosphorylation on Ser 473
+ Conversely, the synergy with Dexa amplifies some of insulin and IGF-I effects,
+ such as Akt phosphorylation on Ser 473
 \begin_inset CommandInset citation
 LatexCommand citep
 key "takahashi2002myogenic"
@@ -3400,6 +3400,15 @@ key "stitt2004igf-1/pi3k/akt"
 \end_inset
 
 ).
+ One reason could be the remarkable hyperplastic abilities of insulin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "conejo2001insulina"
+
+\end_inset
+
+, which may perturb experiments where proliferating myoblasts were not actively
+ eliminated.
  Diverging from in vivo studies, some studies showed that L6 and C2C12 myotubes
  exhibit Dexa-induced downregulation of p70-S6K Thr 389 phosphorylation
  and activity 
@@ -3424,7 +3433,8 @@ key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
 \begin_layout Standard
 While Akt repression is consistent with the induction of the ubiquitin-proteasom
 e system via FOXO, its side effect, mTOR repression, is expected to lead
- to simultaneous downregulation of protein synthesis (discussed later).
+ to simultaneous downregulation of protein synthesis via 4E-BP (discussed
+ later).
  Discovery of novel mTOR complex 1 substrates such as UNC-51-like kinase
  1 (
 \begin_inset CommandInset nomenclature
@@ -3443,23 +3453,6 @@ key "hosokawa2009nutrient-dependent"
 
  led to speculations about the role of mTOR in autophagy, including in GAML,
  but in vivo evidence is lacking (also discussed in a later section).
-\end_layout
-
-\begin_layout Standard
-It is likely that Dexa-induced loss of sensitivity to insulin cannot be
- replicated in cell culture, especially when non-myotube cells are still
- present.
- Replicating in vivo findings, L6 and C2C12 cells respond to Dexa by upregulatin
-g expression of atrogenes, in a Foxo-dependent manner, and in the absence
- of detectable Akt phosphorylation
-\begin_inset CommandInset citation
-LatexCommand citep
-key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
-
-\end_inset
-
-.
- 
 \end_layout
 
 \begin_layout Standard
@@ -3640,10 +3633,6 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-KLF-15 is a target of GR.
 \end_layout
 
 \begin_layout Standard
