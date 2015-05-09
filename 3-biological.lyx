@@ -2330,6 +2330,93 @@ In the era of genome sequencing, where murine species became the most common
  are more readily are more readily observed, compared to mice.
 \end_layout
 
+\begin_layout Standard
+Many published studies documents the effect of Dexa on the mouse cell line
+ C2C12 and the rat cell line L6.
+ However, these and other myogenic cell lines have significant limitations,
+ which may cause divergence between in vitro models and the steroid myopathy
+ they aim to describe.
+ As mentioned earlier, in the case of primary cells, experiments with Dexa
+ are outright impossible, because primary cell survival is GC-dependent.
+ Moreover, Dexa has hyperplastic and hypertrophic effects on myogenic cell
+ lines.
+ Commonly tested doses of Dexa, in the range of tens of nM, have been shown
+ to synergize with IGF-I 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "giorgino1995dexamethasone"
+
+\end_inset
+
+ and even to act directly towards improved proliferation of L6 myoblasts
+\begin_inset CommandInset citation
+LatexCommand citep
+key "florini1979serum-free,whitson1989dexamethasone"
+
+\end_inset
+
+.
+ C2C12 fusion is more efficient when Dexa is added to IGF-I
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pansters2013synergistic"
+
+\end_inset
+
+.
+ Until the end of the 1990s, Dexa was a common ingredient in myogenic culture
+ media.
+ Even contemporary standard proliferation media, containing 10% fetal bovine
+ serum, provide significant and unpredictable concentrations of GC, insulin,
+ and IGF-I, impairing their study at physiological concentrations.
+ In fusing C2C12 cells, IGF-I and Dexa synergize to amplify some Dexa catabolic
+ signals, such as the expression of REgulated in Development and DNA damage
+ responses-1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "REDD1"
+description "regulated in development and DNA damage responses-1"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pansters2013synergistic"
+
+\end_inset
+
+.
+ Conversely, the synergy with Dexa amplifies some of IGF-I effects, such
+ as Akt phosphorylation on Ser 473
+\begin_inset CommandInset citation
+LatexCommand citep
+key "takahashi2002myogenic"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Many in vitro studies on myogenic cell lines fail to deplete myoblasts,
+ and are therefore inaccurate models of proliferation-independent in vivo
+ GAML.
+ With this caveat, in vitro studies have been vital in excluding third-party
+ organs, such as the pancreas, from the analysis of GAML.
+ Some features of GAML are more readily observed, and have been initially
+ described in cell culture.
+ Fully differentiated myotubes from L6 and C2C12 cell lines lose more than
+ a quarter of their diameter when treated with 100 nM Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "menconi2008dexamethasone"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Ubiquitin-proteasome system as a major effector in GAML
 \end_layout
@@ -2593,6 +2680,31 @@ key "gilson2007myostatin"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+In cultured myotubes, the loss of diameter is reliably underlined by an
+ 20% increase in protein degradation rate
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang1998dexamethasone,menconi2008dexamethasone"
+
+\end_inset
+
+.
+ Four fifths of the Dexa-induced proteolysis augmentation is lost, when
+ proteasome inhibitors, such as beta-lactone, or ATP depleting agents, like
+ dinitrophenol, are co-administered.
+ In contrast, lysosomal inhibitors had no effect, while E-64 has minimal
+ effect
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang1998dexamethasone"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3214,114 +3326,13 @@ key "hosokawa2009nutrient-dependent"
 \end_layout
 
 \begin_layout Standard
-Many published studies documents the effect of Dexa on the rat cell line
- L6.
- However, these and other myogenic cell lines have significant limitations,
- which may cause divergence between in vitro models and the steroid myopathy
- they aim to describe.
- As mentioned earlier, in the case of primary cells, experiments with Dexa
- are impossible, because primary cell survival is GC-dependent.
- Moreover, Dexa has hyperplastic and hypertrophic effects on myogenic cell
- lines.
- Commonly tested doses of Dexa, in the range of tens of nM, have been shown
- to synergize with IGF-I 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "giorgino1995dexamethasone"
-
-\end_inset
-
- and even to act directly towards improved proliferation of L6 myoblasts
-\begin_inset CommandInset citation
-LatexCommand citep
-key "florini1979serum-free,whitson1989dexamethasone"
-
-\end_inset
-
-.
- C2C12 fusion is more efficient when Dexa is added to IGF-I
-\begin_inset CommandInset citation
-LatexCommand citep
-key "pansters2013synergistic"
-
-\end_inset
-
-.
- Until the end of the 1990s, Dexa was a common ingredient in myogenic culture
- media.
- Even contemporary standard proliferation media, containing 10% fetal bovine
- serum, provide significant and unpredictable concentrations of GC, insulin,
- and IGF-I, impairing their study at physiological concentrations.
- In fusing C2C12 cells, IGF-I and Dexa synergize to upregulate Dexa catabolic
- effectors, such as REgulated in Development and DNA damage responses-1
- (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "REDD1"
-description "regulated in development and DNA damage responses-1"
-
-\end_inset
-
-)
-\begin_inset CommandInset citation
-LatexCommand citep
-key "pansters2013synergistic"
-
-\end_inset
-
-.
- The synergy is also amplifying some of IGF-I effects, such as Akt phosphorylati
-on on Ser 473
-\begin_inset CommandInset citation
-LatexCommand citep
-key "takahashi2002myogenic"
-
-\end_inset
-
-.
- Therefore, it is likely that Dexa-induced loss of sensitivity to insulin
- cannot be replicated in cell culture, especially when non-myotube cells
- are still present.
+XXXX
 \end_layout
 
 \begin_layout Standard
-Many in vitro studies on myogenic cell lines fail to deplete myoblasts,
- and are therefore inaccurate models of proliferation-independent in vivo
- GAML.
- With this caveat, in vitro studies have been vital in excluding third-party
- organs, such as the pancreas, from the analysis of GAML.
- Some features of GAML are more readily observed, and have been initially
- described in cell culture.
- Fully differentiated myotubes from L6 and C2C12 cell lines lose more than
- a quarter of their diameter when treated with 100 nM Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "menconi2008dexamethasone"
-
-\end_inset
-
-.
- The loss of diameter is reliably underlined by an 20% increase in protein
- degradation rate
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wang1998dexamethasone,menconi2008dexamethasone"
-
-\end_inset
-
-.
- Four fifths of the Dexa-induced proteolysis augmentation is lost, when
- proteasome inhibitors, such as beta-lactone, or ATP depleting agents, like
- dinitrophenol, are co-administered.
- In contrast, lysosomal inhibitors had no effect, while E-64 has minimal
- effect
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wang1998dexamethasone"
-
-\end_inset
-
-.
+Therefore, it is likely that Dexa-induced loss of sensitivity to insulin
+ cannot be replicated in cell culture, especially when non-myotube cells
+ are still present.
  Replicating in vivo findings, L6 and C2C12 cells respond to Dexa by upregulatin
 g expression of atrogenes, in a Foxo-dependent manner, and in the absence
  of detectable Akt phosphorylation
