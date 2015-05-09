@@ -372,8 +372,10 @@ key "neal2012satellite"
 .
  Even earlier, de novo muscle development is remarkable for its accretion
  of new nuclei to the myofiber.
- Pre-adulthood muscle growth appears reliant on hyperplasia, and cell proliferat
-ion regulators are likely crucial in determination of muscle mass.
+ Pre-adulthood muscle growth appears reliant on hyperplasia, that is, cell
+ proliferation.
+ Cell proliferation regulators are crucial in determination of muscle mass
+ in before and soon after birth.
 \end_layout
 
 \begin_layout Standard
@@ -546,7 +548,7 @@ key "mitchell2002insulin-like"
 \end_inset
 
 .
- In addition to the pro-proliferative effect, IGF-I stimulates protein anabolism
+ In addition to the hyperplastic effect, IGF-I stimulates protein anabolism
  in prenatal muscle
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1246,9 +1248,8 @@ key "robertson1993role"
  Most of the studies of regeneration provide circumstantial evidence, such
  as improved healing in the presence of a presumed mediator, rather than
  impaired healing in its absence.
- Still unidentified molecules from crushed muscle are able to stimulate
- myoblast proliferation, above the levels caused by stimulation with known
- growth factors
+ Still unidentified molecules from crushed muscle are able to cause myoblast
+ hyperplasia, above the levels caused by stimulation with known growth factors
 \begin_inset CommandInset citation
 LatexCommand citep
 key "haugk1995regulation"
@@ -1291,8 +1292,8 @@ key "epstein1995pax3"
 \end_inset
 
 .
- Therefore, the C2C12 line are an incomplete model of muscle accretion through
- proliferative means.
+ Therefore, the C2C12 line are an incomplete model of hyperplastic muscle
+ accretion.
 \end_layout
 
 \begin_layout Standard
@@ -2674,8 +2675,8 @@ key "wu2010redd1,furlow2013altered"
 \end_inset
 
 , suggesting that the myogenin-MAFbx is less reliably upregulated in GAML.
- It is unclear whether the functionally relevant activator of MAFbx is prolifera
-tion or myogenin, since it is difficult to separate the two.
+ It is unclear whether the functionally relevant activator of MAFbx is hyperplas
+ia or myogenin, since it is difficult to separate the two.
  Nevertheless, atrophy models strongly associated with myogenin induction,
  such as denervation, are more able reliably inducing a MAFbx response,
  compared to GAML.
@@ -3220,7 +3221,8 @@ Many published studies documents the effect of Dexa on the rat cell line
  they aim to describe.
  As mentioned earlier, in the case of primary cells, experiments with Dexa
  are impossible, because primary cell survival is GC-dependent.
- Moreover, Dexa has proliferative and trophic effects on myogenic cell lines.
+ Moreover, Dexa has hyperplastic and hypertrophic effects on myogenic cell
+ lines.
  Commonly tested doses of Dexa, in the range of tens of nM, have been shown
  to synergize with IGF-I 
 \begin_inset CommandInset citation
@@ -3544,8 +3546,8 @@ key "zimmers2002induction"
 
 \end_inset
 
-, suggesting that its effect is based on both the proliferation- and the
- hypertrophy-based pathways of muscle growth.
+, suggesting that its effect is based on both the hyperplasia- and the hypertrop
+hy-based pathways of muscle growth.
  In explanted adult mouse myofibers, where proliferation has been minimized,
  expression of a dominant negative form of activin A receptor, type IIB
  (
@@ -3613,7 +3615,7 @@ key "mccroskery2003myostatin,cohen2015genetic"
 .
  Even if some atrophy models may be explained by a myostatin - Akt axis,
  the simultaneous downregulation of atrogenes and repression of Akt would
- differentiate those models from GAML.
+ distinguish those models from GAML.
 \end_layout
 
 \begin_layout Standard

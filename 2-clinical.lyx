@@ -4021,24 +4021,8 @@ key "mcpherron1997regulation,gonzalez-cadavid1998organization"
 
 \end_inset
 
-, or of the two E3 ligases typically associated with muscle loss, muscle
- atrophy F-box (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "MAFbx"
-description "muscle atrophy F-box"
-
-\end_inset
-
-) and muscle RING-finger protein-1 (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "MuRF1"
-description "muscle RING-finger protein-1"
-
-\end_inset
-
-)
+, or of the two E3 ligases typically associated with muscle loss, MAFbx
+ and MuRF1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bodine2001identification,gustafsson2010effects"
