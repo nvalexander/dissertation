@@ -2861,9 +2861,13 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 , which MAFbx appears to lack.
- The atrogenes are controlled also indirectly, by FOXO and SMAD3, which
- integrate multiple GC-activated and GC-independent metabolic and hormonal
- signals (discussed in dedicated sections).
+ Both atrogenes are 
+\end_layout
+
+\begin_layout Standard
+The atrogenes are controlled also indirectly, by FOXO and SMAD3, which integrate
+ multiple GC-activated and GC-independent metabolic and hormonal signals
+ (discussed in dedicated sections).
  Studies on cultured myotubes confirm that GC induce the two atrogenes directly,
  without a third-party organ mediation
 \begin_inset CommandInset citation
@@ -2876,20 +2880,40 @@ key "stitt2004igf-1/pi3k/akt"
  While no studies on triple FOXO knockout mouse have been published, similaritie
 s with the late phase of denervation atrophy suggest an essential role for
  FOXO in inducing atrogenes in GAML.
- Support for the GC - FOXO - atrogenes axis hypothesis is indirectly provided
- by the fact that, in cultured cells, transfection of constitutively active
- FOXO3a upregulates MAFbx
+ Support for the GC - FOXO - atrogenes axis hypothesis is furthered by experimen
+ts in cultured myotubes, where transfection of constitutively active FOXO3a
+ upregulates MAFbx
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sandri2004foxo"
 
 \end_inset
 
-, while
+, while knocking down FOXO1 causes a reduction in the atrogene response
+ to GC
+\begin_inset CommandInset citation
+LatexCommand citep
+key "smith2010sepsisa"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Among mediators of GC which induce atrogenes, XXXXXXXXXXXXXXXX
+The Krüppel-like factor-15 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "KLF-15"
+description "kruppel-like factor-15"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+TNF, XXXXXXXXXXXXXXXX
 \end_layout
 
 \begin_layout Standard
@@ -3569,6 +3593,18 @@ ns between the two classes of transcription factors
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bollinger2014smad3"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+MuRF1 promoter facilitates another synergistic interaction, between FOXO1
+ and GR
+\begin_inset CommandInset citation
+LatexCommand citep
+key "waddell2008glucocorticoid"
 
 \end_inset
 
