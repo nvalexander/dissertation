@@ -3528,8 +3528,9 @@ key "ma2003glucocorticoid-induced"
 \end_inset
 
 .
- While myostatin inhibition in utero leads to doubling of muscle mass in
- adult animals
+ The consequences of myostain overexpression are manifold and not yet understood.
+ For example, while myostatin inhibition in utero leads to doubling of muscle
+ mass in adult animals
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mcpherron1997regulation"
@@ -3569,8 +3570,23 @@ key "sartori2009smad2"
 \end_layout
 
 \begin_layout Standard
-In human myotubes differentiated from cultured myoblasts, myostatin treatments
- lead to reductions in diameter and in Akt phosphorylation
+A series of experiments describe Akt inhibition in response to myostatin
+ treatments.
+ In vitro electroporation with myostatin-coding plasmids leads to 10% loss
+ in muscle mass in the transfected muscle, in the absence of any changes
+ at the level of atrogenes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "amirouche2009down-regulation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For example, in human myotubes differentiated from cultured myoblasts, myostatin
+ treatments lead to reductions in diameter and in Akt phosphorylation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "trendelenburg2009myostatin"
@@ -3578,6 +3594,10 @@ key "trendelenburg2009myostatin"
 \end_inset
 
 .
+ However, the same report describes a decrease in MuRF1 and MFbx in response
+ to myostatin.
+ Its authors concludes that the investigated myotubes were exhibiting traits
+ of differentiation.
  
 \end_layout
 
