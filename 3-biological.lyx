@@ -2913,11 +2913,30 @@ key "shimizu2011crosstalk"
 .
  A complex, self-reinforcing network is centered on KLF-15, which is a direct
  target of GR, upregulates expression of FOXO transcription, and synergizes
- with the atter to upregulate atrogenes.
+ with the latter to upregulate atrogenes.
 \end_layout
 
 \begin_layout Standard
-TNF, XXXXXXXXXXXXXXXX
+In L6 myotubes treated with Dexa, acetylation of CCAAT-enhancer-binding
+ protein (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "C/EBP"
+description "CCAAT-enhancer-binding protein"
+
+\end_inset
+
+) β, C/EBP δ and p65 is increased, in a p300 dependent-manner
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chamberlain2012multiple"
+
+\end_inset
+
+.
+ Because atrogenes promoters contain putative binding sites for C/EBP transcript
+ion factors, they were hypothesized to be yet another mechanism by which
+ GC stimulate atrogenes.
 \end_layout
 
 \begin_layout Standard
