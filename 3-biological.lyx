@@ -3738,7 +3738,8 @@ key "allen2007regulation"
 \end_inset
 
 .
- 
+ These findings suggest that myostatin is at the forefront of the response
+ to Dexa.
 \end_layout
 
 \begin_layout Standard
@@ -3786,18 +3787,6 @@ key "mccroskery2003myostatin,cohen2015genetic"
  Even if some atrophy models may be explained by a myostatin - Akt axis,
  the simultaneous downregulation of atrogenes and repression of Akt would
  distinguish those models from GAML.
-\end_layout
-
-\begin_layout Standard
-A juxtaposition of SMAD3 and FOXO responsive elements has been described
- for the promoter of myostatin
-\begin_inset CommandInset citation
-LatexCommand citep
-key "allen2007regulation"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
