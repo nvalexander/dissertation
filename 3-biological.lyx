@@ -2342,7 +2342,7 @@ key "rohdewald1964uber"
 
 \end_inset
 
-, 
+, XXXX
 \end_layout
 
 \begin_layout Standard
@@ -3672,7 +3672,11 @@ key "ma2003glucocorticoid-induced"
 \end_inset
 
 .
- The consequences of myostain overexpression are manifold and not yet understood.
+ Myostatin knockout mice have 
+\end_layout
+
+\begin_layout Standard
+The consequences of myostain overexpression are manifold and not yet understood.
  For example, while myostatin inhibition in utero leads to doubling of muscle
  mass in adult animals
 \begin_inset CommandInset citation
