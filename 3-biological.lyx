@@ -2719,15 +2719,6 @@ key "bodine2001identification"
 \end_inset
 
 .
- Studies on cultured myotubes confirm that GC induce the two atrogenes directly,
- without a third-party organ mediation
-\begin_inset CommandInset citation
-LatexCommand citep
-key "stitt2004igf-1/pi3k/akt"
-
-\end_inset
-
-.
  Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
  system in GAML.
  Interestingly, a division of work between the two ligases has been described,
@@ -2872,8 +2863,33 @@ key "waddell2008glucocorticoid"
 , which MAFbx appears to lack.
  The atrogenes are controlled also indirectly, by FOXO and SMAD3, which
  integrate multiple GC-activated and GC-independent metabolic and hormonal
- signals (discussed in next sections).
- Among mediators of GC which induce atrogenes, XXXXXXXXXXXXXXXX
+ signals (discussed in dedicated sections).
+ Studies on cultured myotubes confirm that GC induce the two atrogenes directly,
+ without a third-party organ mediation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stitt2004igf-1/pi3k/akt"
+
+\end_inset
+
+.
+ While no studies on triple FOXO knockout mouse have been published, similaritie
+s with the late phase of denervation atrophy suggest an essential role for
+ FOXO in inducing atrogenes in GAML.
+ Support for the GC - FOXO - atrogenes axis hypothesis is indirectly provided
+ by the fact that, in cultured cells, transfection of constitutively active
+ FOXO3a upregulates MAFbx
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sandri2004foxo"
+
+\end_inset
+
+, while
+\end_layout
+
+\begin_layout Standard
+Among mediators of GC which induce atrogenes, XXXXXXXXXXXXXXXX
 \end_layout
 
 \begin_layout Standard
@@ -3315,6 +3331,16 @@ Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
 \begin_layout Standard
 As described earlier, cell culture models are not perfect replicas of the
  in vivo phenomena.
+ Whereas in vivo studies use insulin to elicit an Akt response whose modulation
+ by GC is measurable, in vitro studies commonly use IGF-I (for example,
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stitt2004igf-1/pi3k/akt"
+
+\end_inset
+
+).
  Diverging from in vivo studies, some studies showed that L6 and C2C12 myotubes
  exhibit Dexa-induced downregulation of p70-S6K Thr 389 phosphorylation
  and activity 
@@ -3334,16 +3360,6 @@ key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
 \end_inset
 
 .
- Whereas in vivo studies use insulin to elicit an Akt response whose modulation
- by GC is measurable, in vitro studies commonly use IGF-I (for example,
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "stitt2004igf-1/pi3k/akt"
-
-\end_inset
-
-).
 \end_layout
 
 \begin_layout Standard
@@ -3445,7 +3461,6 @@ key "senf2008hsp70"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -3456,6 +3471,14 @@ The importance of Foxo transcription factors is supported intuitively by
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wu2010redd1"
+
+\end_inset
+
+.
+ GR knockout reduces expression of FOXO1 and FOXO3a in muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "waddell2008glucocorticoid"
 
 \end_inset
 
