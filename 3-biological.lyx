@@ -3572,9 +3572,9 @@ key "sartori2009smad2"
 \begin_layout Standard
 A series of experiments describe Akt inhibition in response to myostatin
  treatments.
- In vitro electroporation with myostatin-coding plasmids leads to 10% loss
- in muscle mass in the transfected muscle, in the absence of any changes
- at the level of atrogenes
+ In vivo electroporation with myostatin-coding plasmids leads to 10% loss
+ in tibialis anterior mass in the transfected muscle, in the absence of
+ any changes at the level of atrogenes
 \begin_inset CommandInset citation
 LatexCommand citep
 key "amirouche2009down-regulation"
@@ -3582,11 +3582,8 @@ key "amirouche2009down-regulation"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-For example, in human myotubes differentiated from cultured myoblasts, myostatin
- treatments lead to reductions in diameter and in Akt phosphorylation
+ In vitro, human myotubes differentiated from cultured myoblasts, myostatin
+ treatments lead to reductions in diameter and atrogene downregulation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "trendelenburg2009myostatin"
@@ -3594,11 +3591,20 @@ key "trendelenburg2009myostatin"
 \end_inset
 
 .
- However, the same report describes a decrease in MuRF1 and MFbx in response
- to myostatin.
- Its authors concludes that the investigated myotubes were exhibiting traits
- of differentiation.
- 
+ Both reports also describe a rather unusual Akt phosphorylation in basal
+ state.
+ The authors of the latter report explain their observations by demonstrating
+ that myostatin reduces myoblast fusion and differentiation.
+ In contrast, the investigators behind the former study perform an analysis
+ of the mTOR pathway, which indicates loss of phosphorylation on tuberin
+ and p70-S6K, and conclude that myostatin affects protein metabolism.
+ As described in a previous section, activated tuberin is undetectable in
+ muscle in basal state.
+ Therefore, observations in tibialis may be ascribed to myostatin-induced
+ modulations of the proliferative activity triggered by post-transfection
+ muscle regeneration.
+ Even if myostatin overexpression were to cause significant inhibition of
+ basal Akt in some atrophy models, GAML differs in the atrogene response.
 \end_layout
 
 \begin_layout Standard
