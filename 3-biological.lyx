@@ -2335,7 +2335,14 @@ In the era of genome sequencing, where murine species became the most common
  until recently.
  In the last two decades, a new impetus to mouse models was brought by genome
  manipulations, more easily induced in mouse than in rat.
- Although the first published study of GAML in mice dates from 
+ Although the first published study of GAML in mice dates from 1964
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rohdewald1964uber"
+
+\end_inset
+
+, 
 \end_layout
 
 \begin_layout Standard
