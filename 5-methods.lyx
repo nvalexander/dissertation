@@ -235,7 +235,53 @@ celsius}
 \end_inset
 
 .
- 
+\end_layout
+
+\begin_layout Standard
+Muscles were crushed under liquid nitrogen, using a mortar and pestle pre-chille
+d in liquid nitrogen, and muscle powder was stored at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{-80}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
+ Small quantities of muscle powder (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SIrange{25}{30}{
+\backslash
+micro}{
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+) were lyzed for enzymatic activity assays, immunoblot, or quantitative
+ real-time polymerase chain reaction (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "qRT-PCR"
+description "quantitative real-time polymerase chain reaction"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section
