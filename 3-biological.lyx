@@ -2917,8 +2917,8 @@ key "shimizu2011crosstalk"
 \end_layout
 
 \begin_layout Standard
-In L6 myotubes treated with Dexa, acetylation of CCAAT-enhancer-binding
- protein (
+In L6 myotubes treated with Dexa, acetylation and nuclear translocation
+ of CCAAT-enhancer-binding protein (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "C/EBP"
@@ -2935,17 +2935,29 @@ key "chamberlain2012multiple"
 
 .
  Because atrogenes promoters contain putative binding sites for C/EBP transcript
-ion factors, they were hypothesized to be yet another mechanism by which
+ion factors, p300 was hypothesized to be yet another mechanism by which
  GC stimulate atrogenes.
+ Moreover.
+ the NF-κB, here acting through p65, is an effector of muscle atrophy in
+ many other models, including sepsis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schakman2012role"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 In conclusion, explant models suggest that GAML is, to a wide extend, the
  result of upregulation of the proteasome-ubiquitin system.
+ While two important E3 ligases have been identified, some other mechanisms,
+ including yet undiscovered E3 ligases, may participate in GAML.
  Next sections will describe the various pathways that collaborate to stimulate
  the ubiquitin-proteasome system.
- Each of them has multiple effects, including activation of other proteolytic
- and anti-translational pathways.
+ Each of them has proteasome-unrelated side effects, including activation
+ of other proteolytic and anti-translational pathways.
 \end_layout
 
 \begin_layout Section
@@ -3434,13 +3446,9 @@ key "hosokawa2009nutrient-dependent"
 \end_layout
 
 \begin_layout Standard
-XXXX
-\end_layout
-
-\begin_layout Standard
-Therefore, it is likely that Dexa-induced loss of sensitivity to insulin
- cannot be replicated in cell culture, especially when non-myotube cells
- are still present.
+It is likely that Dexa-induced loss of sensitivity to insulin cannot be
+ replicated in cell culture, especially when non-myotube cells are still
+ present.
  Replicating in vivo findings, L6 and C2C12 cells respond to Dexa by upregulatin
 g expression of atrogenes, in a Foxo-dependent manner, and in the absence
  of detectable Akt phosphorylation
