@@ -2693,8 +2693,10 @@ key "wang1998dexamethasone,menconi2008dexamethasone"
 
 .
  Four fifths of the Dexa-induced proteolysis augmentation is lost, when
- proteasome inhibitors, such as beta-lactone, or ATP depleting agents, like
- dinitrophenol, are co-administered.
+ dinitrophenol, or proteasome inhibitors, such as beta-lactone, are co-administe
+red.
+ The energy dependence reinforces the idea that GC-stimulated proteolysis
+ takes place in the proteasome.
  In contrast, lysosomal inhibitors had no effect, while E-64 has minimal
  effect
 \begin_inset CommandInset citation
@@ -2713,6 +2715,15 @@ Unbiased searches in atrophying mouse muscles revealed two upregulated genes,
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bodine2001identification"
+
+\end_inset
+
+.
+ Studies on cultured myotubes confirm that GC induce the two atrogenes directly,
+ without a third-party organ mediation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stitt2004igf-1/pi3k/akt"
 
 \end_inset
 
@@ -3302,6 +3313,40 @@ Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
 \end_layout
 
 \begin_layout Standard
+As described earlier, cell culture models are not perfect replicas of the
+ in vivo phenomena.
+ Diverging from in vivo studies, some studies showed that L6 and C2C12 myotubes
+ exhibit Dexa-induced downregulation of p70-S6K Thr 389 phosphorylation
+ and activity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frost2009regulation,wu2010redd1"
+
+\end_inset
+
+.
+ But even in cultured cells, Akt phosphorylation is not detectable in basal
+ states, preventing experimental detection of GC-induced Akt inhibition
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
+
+\end_inset
+
+.
+ Whereas in vivo studies use insulin to elicit an Akt response whose modulation
+ by GC is measurable, in vitro studies commonly use IGF-I (for example,
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stitt2004igf-1/pi3k/akt"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
 While Akt repression is consistent with the induction of the ubiquitin-proteasom
 e system via FOXO, its side effect, mTOR repression, is expected to lead
  to simultaneous downregulation of protein synthesis (discussed later).
@@ -3343,15 +3388,7 @@ key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
 \end_inset
 
 .
- Diverging from in vivo studies, L6 and C2C12 myotubes exhibit Dexa-induced
- downregulation of p70-S6K Thr 389 phosphorylation and activity 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "frost2009regulation,wu2010redd1"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
