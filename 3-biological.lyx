@@ -3663,23 +3663,14 @@ Myostatin in GAML
 \end_layout
 
 \begin_layout Standard
-Dexa upregulates myostatin, a strong negative regulator of muscle mass,
- in the atrophying muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ma2003glucocorticoid-induced"
-
-\end_inset
-
-.
- Myostatin knockout mice do not develop GAML
+Myostatin knockout mice do not develop GAML
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gilson2007myostatin"
 
 \end_inset
 
-.
+, suggesting that myostatin plays a crucial role in muscle atrophy.
 \end_layout
 
 \begin_layout Standard
@@ -3700,7 +3691,7 @@ key "zimmers2002induction"
 
 \end_inset
 
-, suggesting that its effect is based on hyperplasia- and hypertrophy-based
+, indicating that its effect is based on hyperplasia- and hypertrophy-based
  pathways of muscle growth.
  In explanted adult mouse myofibers, where proliferation has been minimized,
  expression of a dominant negative form of activin A receptor, type IIB
@@ -3727,6 +3718,27 @@ key "sartori2009smad2"
  it may override any atrophic stimulus, in non-specific ways.
  Recent molecular studies endeavored to establish whether GAML-associated
  myostatin modulation is physiologically relevant, or only a side effect.
+\end_layout
+
+\begin_layout Standard
+Dexa upregulates myostatin, a strong negative regulator of muscle mass,
+ in the atrophying muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ma2003glucocorticoid-induced"
+
+\end_inset
+
+.
+ Additionally, myostatin's promoter contains a FOXO responsive element
+\begin_inset CommandInset citation
+LatexCommand citep
+key "allen2007regulation"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
