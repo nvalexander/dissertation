@@ -2598,7 +2598,7 @@ key "dong2013myostatin"
  had the ability to measure change in satellite cells upon Dexa treatment,
  yet chose not to investigate or report it.
  Based on similarity with denervation-induced atrophy, it is likely that
- GAML is not caused by a satellite cell dysfunction.
+ adult GAML is not caused by a satellite cell dysfunction.
 \end_layout
 
 \begin_layout Standard
@@ -2659,6 +2659,11 @@ key "wing1993glucocorticoids"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+In vivo GAML is best correlated with an upregulation of the ubiquitin-proteasome
+ system.
  The increase in proteolytic rate is unchanged when explants are treated
  with the lysosome inhibitor methylamine and the lysosome / calpain inhibitor
  E-64.
@@ -2679,14 +2684,6 @@ key "tiao1996energy-ubiquitin-dependent"
 \end_inset
 
 .
- Dexa upregulates proteasomal subunits such as C1, C2, C4, C5 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dardevet1995sensitivity,combaret2004glucocorticoids"
-
-\end_inset
-
-.
  Proteasome chymotrypsin-like catalytic activity is doubled by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2695,6 +2692,15 @@ key "gilson2007myostatin"
 \end_inset
 
 .
+ Dexa upregulates proteasomal subunits such as C1, C2, C4, C5 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity,combaret2004glucocorticoids"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2721,7 +2727,41 @@ key "wang1998dexamethasone"
 \end_inset
 
 .
- 
+\end_layout
+
+\begin_layout Standard
+In L6 myotubes, Dexa causes increased expression of the ubiquitin gene UbC,
+ through a putative SV40 promoter-specific 1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Sp1"
+description "SV40 promoter-specific 1"
+
+\end_inset
+
+) response element
+\begin_inset CommandInset citation
+LatexCommand citep
+key "marinovic2002ubiquitin"
+
+\end_inset
+
+.
+ In vivo, upregulation of UbC was confirmed only for acute Dexa treatment
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wing1993glucocorticoids"
+
+\end_inset
+
+ and in diabetic rats
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zheng2010foxo3a"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -4191,17 +4231,6 @@ Animal models of steroid myopathy
 
 \begin_layout Standard
 Lol
-\end_layout
-
-\begin_layout Standard
-Ubiquitin expression is stimulated by hours of Dexa treatment
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wing1993glucocorticoids"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
