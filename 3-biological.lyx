@@ -3812,9 +3812,35 @@ Protein synthesis modulation in GAML
 As in human studies, the role of protein synthesis modulation during chronic
  hypercortisolism is still debated, because chronic Dexa effect is superimposed
  by acute effects.
- In the first hours after receiving GCs, the rate of protein synthesis in
- the muscle decreases, as indicated by reductions in incorporation of labeled
- precursors
+ A single 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ triamcinolone dose nearly halves incorporation of labeled precursors in
+ rat muscle protein at 8 hours, yet has no effect after 24 hours
 \begin_inset CommandInset citation
 LatexCommand citep
 key "peters1970biochemical"
@@ -3822,7 +3848,6 @@ key "peters1970biochemical"
 \end_inset
 
 .
- Variability in the 
 \end_layout
 
 \begin_layout Standard
@@ -3862,13 +3887,14 @@ key "bai2013activin"
  Currently published studies did not account for such fluctuations.
  Often, animals are euthanized after being fasted, thus minimizing observable
  changes in 4E-BP phosphorylation.
- Perhaps for this reason, multiple reports fail to observe Dexa-induced
- changes in protein synthesis.
 \end_layout
 
 \begin_layout Standard
-For example, some of the most exhaustive studies of protein metabolism in
- GAML came from Grizard laboratory.
+Variability in the time from feeding and treatment to biopsy is a significant
+ source of experimental noise, which must contribute to inconsistencies
+ in literature.
+ For example, some of the most exhaustive studies of protein metabolism
+ in GAML came from Grizard laboratory.
  In two studies, they found that protein synthesis rate was unchanged after
  
 \begin_inset ERT
@@ -3942,7 +3968,10 @@ key "menconi2008dexamethasone,aversa2012beta-hydroxy-beta-methylbutyrate"
 \end_inset
 
 .
- Even when detected, the amplitude of changes in protein synthesis in vitro
+\end_layout
+
+\begin_layout Standard
+Even when detected, the amplitude of changes in protein synthesis in vitro
 \begin_inset CommandInset citation
 LatexCommand citep
 key "aversa2012beta-hydroxy-beta-methylbutyrate,desler1996effects,jones2005vitro"
@@ -3956,15 +3985,22 @@ key "dardevet1998glucocorticoid"
 
 \end_inset
 
- is lower than that on protein degradation, suggesting a secondary role
- for the latter.
+ is lower than that on protein degradation.
+ In the MuRF1 knockout mouse, Dexa fails to change FSR
+\begin_inset CommandInset citation
+LatexCommand citep
+key "baehr2011muscle"
+
+\end_inset
+
+, suggesting a temporal order, with proteolytic processes preceding and
+ initiating changes in protein translation.
+ It is likely that anabolism adjustments in GAML play a secondary, complementary
+ role, to the activation of the ubiquitin-proteasome system.
 \end_layout
 
 \begin_layout Standard
-Due to putative dependence on feeding state and low amplitude, reductions
- in protein synthesis are more difficult to observe than changes in protein
- degradation during chronic GC treatments.
- However
+XXX
 \end_layout
 
 \begin_layout Standard
