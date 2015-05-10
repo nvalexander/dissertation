@@ -4044,7 +4044,14 @@ description "eukaryotic initiation factor 2"
 \end_inset
 
 ) at Ser 51 on its α subunit, leading to the formation of an inactivating
- complex with eIF2B.
+ complex with eIF2B
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gross1987evidence"
+
+\end_inset
+
+.
  The inactivation of eIF2B, the guanine exchange factor for eIF2, leads
  to general translation shutdown
 \begin_inset CommandInset citation
@@ -4073,7 +4080,18 @@ description "activating transcription factor 4"
 
 \end_inset
 
-).
+), which upregulates genes involved in amino acid synthesis, such as asparagine
+ synthetase
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gjymishka2009transcriptional"
+
+\end_inset
+
+.
+ Overall, the translational derepression pathway may be a plausible mechanism
+ for inhibiting protein synthesis, initiated by apparent depletion of free
+ amino acids, and leading to ATF4 upregulation.
 \end_layout
 
 \begin_layout Standard
