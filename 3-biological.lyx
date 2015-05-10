@@ -2326,8 +2326,9 @@ key "yeh1994effects"
 \end_layout
 
 \begin_layout Standard
-In cows, a Dexa implant causes macroscopic increase in muscle section, through
- augmentation of intramuscular fat
+In cows, GAML is undetectable at macroscopic level.
+ Any putative change in myofibers is compensated by bovines' unusually rich
+ intramuscular adipose component, further hypertrophied by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "corah1995effects"
@@ -2445,6 +2446,33 @@ key "menconi2008dexamethasone"
 .
 \end_layout
 
+\begin_layout Standard
+There are no studies analyzing the role of satellite cells and nuclear density
+ in GAML in situ.
+ Dong and colleagues hypothesize a 
+\begin_inset Quotes eld
+\end_inset
+
+glucocorticoid-induced satellite cell dysfunction
+\begin_inset Quotes erd
+\end_inset
+
+, and report that Dexa reduces the number of satellite cells in a post-injury
+ regenerating muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dong2013myostatin"
+
+\end_inset
+
+.
+ One is intrigued to see that Dong et al.
+ had the ability to measure change in satellite cells upon Dexa treatment,
+ yet chose not to investigate or report it.
+ Based on similarity with denervation-induced atrophy, it is likely that
+ adult GAML is not caused by a satellite cell dysfunction.
+\end_layout
+
 \begin_layout Section
 Ubiquitin-proteasome system as a major effector in GAML
 \end_layout
@@ -2536,8 +2564,9 @@ key "prezant1997gender-specific"
 \end_inset
 
 .
- In line with the section on human steroid myopathy, this section will focus
- on the effects of Dexa on male adult rats.
+ The next sections are informed by experiments with chronic Dexa on adult,
+ not aged, male rats, which are the best model from human male steroid myopathy.
+ The few exceptions, mainly transgenic mice, will be identified as such.
 \end_layout
 
 \begin_layout Standard
@@ -2585,33 +2614,6 @@ day}
 
  Dexa, more than twice the muscle-imparing dose in humans.
  
-\end_layout
-
-\begin_layout Standard
-There are no studies analyzing the role of satellite cells and nuclear density
- in GAML in situ.
- Dong and colleagues hypothesize a 
-\begin_inset Quotes eld
-\end_inset
-
-glucocorticoid-induced satellite cell dysfunction
-\begin_inset Quotes erd
-\end_inset
-
-, and report that Dexa reduces the number of satellite cells in a post-injury
- regenerating muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dong2013myostatin"
-
-\end_inset
-
-.
- One is intrigued to see that Dong et al.
- had the ability to measure change in satellite cells upon Dexa treatment,
- yet chose not to investigate or report it.
- Based on similarity with denervation-induced atrophy, it is likely that
- adult GAML is not caused by a satellite cell dysfunction.
 \end_layout
 
 \begin_layout Standard
