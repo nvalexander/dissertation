@@ -4009,7 +4009,8 @@ on of this thesis, for unspecified reason.
 \end_layout
 
 \begin_layout Standard
-A putative mechanism for 
+A putative mechanism for repression of protein synthesis in muscle atrophy
+ is mediated by MAFbx-initiated neutralization of eIF3-f.
 \end_layout
 
 \begin_layout Standard
@@ -4136,7 +4137,14 @@ key "ebert2012stress-induced"
 .
  ATF4 knockout mice exhibit a normal atrogene response, indicating that
  ATF4 is part of a novel atrophy pathway.
- 
+\end_layout
+
+\begin_layout Standard
+Multiple pathways that usually alter protein synthesis are modulated by
+ Dexa in a manner consistent with GAML.
+ While the overall effect is not negligible, its relative importance is
+ unclear, because experiments manipulating protein synthesis will yield
+ deleterious side effects.
 \end_layout
 
 \begin_layout Section*
