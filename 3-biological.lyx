@@ -4016,6 +4016,39 @@ key "bullock1972relative"
 \end_layout
 
 \begin_layout Standard
+Canonical control of protein synthesis includes translational derepression,
+ a cytsol-based mechanism for sensing amino acid starvation (reviewed in
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gallinetti2013amino"
+
+\end_inset
+
+).
+ Relative lack of amino acids enriches uncharged tRNA, which bind and activates
+ General Control Nonderepressible 2 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GCN2"
+description "General Control Nonderepressible 2"
+
+\end_inset
+
+).
+ Activated GCN2 phosphorylated eukaryotic initiation factor 2 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "eIF2"
+description "eukaryotic initiation factor 2"
+
+\end_inset
+
+) at Ser 51 on its α subunit, leading to the formation of an inactive complex
+ eIF2-eIF2B.
+\end_layout
+
+\begin_layout Standard
 By similarity, it is believed that mRNA for Activating transcription factor
  4 (
 \begin_inset CommandInset nomenclature
@@ -4029,18 +4062,11 @@ description "activating transcription factor 4"
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GCN4"
-description "General Control Nonderepressible"
+description "General Control Nonderepressible 4"
 
 \end_inset
 
-), is upregulated in states of amino acid starvation (reviewed in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "gallinetti2013amino"
-
-\end_inset
-
-).
+), is upregulated in states of amino acid starvation .
 \end_layout
 
 \begin_layout Section*
