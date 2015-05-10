@@ -2473,6 +2473,23 @@ key "dong2013myostatin"
  adult GAML is not caused by a satellite cell dysfunction.
 \end_layout
 
+\begin_layout Standard
+Similar indirect data exclude a neuronal component of GAML.
+ Dexa induces atrophy in cultured cells, in the absence of neurons or NMJs.
+ In rat muscle, chronic Dexa treatment upregulates expression of the NMJ
+ essential component, muscle-specific nicotinic acetylcholine receptor,
+ and resistance to NMJ-specific non-depolarizing muscle relaxants
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chen2014different"
+
+\end_inset
+
+.
+ If anything, GAML appears associated with an improved NMJ, in contrast
+ to denervation atrophy.
+\end_layout
+
 \begin_layout Section
 Ubiquitin-proteasome system as a major effector in GAML
 \end_layout
