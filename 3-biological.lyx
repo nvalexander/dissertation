@@ -3663,19 +3663,40 @@ Myostatin in GAML
 \end_layout
 
 \begin_layout Standard
-Myostatin knockout mice do not develop GAML
+Myostatin is a strong inducer of muscle atrophy.
+ In myostatin knockout mice, Dexa induces most of its transcriptional program,
+ including modulations of IGF-I, MuRF1, MAFbx, FOXO3A, but Dexa-induced
+ muscle loss does not occur 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gilson2007myostatin"
 
 \end_inset
 
-, suggesting that myostatin plays a crucial role in muscle atrophy.
+.
+ Dexa upregulates myostatin, a strong negative regulator of muscle mass,
+ in the atrophying muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ma2003glucocorticoid-induced"
+
+\end_inset
+
+.
+ Additionally, myostatin's promoter contains a FOXO responsive element
+\begin_inset CommandInset citation
+LatexCommand citep
+key "allen2007regulation"
+
+\end_inset
+
+.
+ These findings suggest that myostatin is at the forefront of the response
+ to Dexa.
 \end_layout
 
 \begin_layout Standard
-The consequences of myostatin overexpression are manifold and not completely
- understood.
+Myostatin's effects are manifold, and not completely understood.
  For example, while myostatin inhibition in utero leads to doubling of muscle
  mass in adult animals
 \begin_inset CommandInset citation
@@ -3718,28 +3739,6 @@ key "sartori2009smad2"
  it may override any atrophic stimulus, in non-specific ways.
  Recent molecular studies endeavored to establish whether GAML-associated
  myostatin modulation is physiologically relevant, or only a side effect.
-\end_layout
-
-\begin_layout Standard
-Dexa upregulates myostatin, a strong negative regulator of muscle mass,
- in the atrophying muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ma2003glucocorticoid-induced"
-
-\end_inset
-
-.
- Additionally, myostatin's promoter contains a FOXO responsive element
-\begin_inset CommandInset citation
-LatexCommand citep
-key "allen2007regulation"
-
-\end_inset
-
-.
- These findings suggest that myostatin is at the forefront of the response
- to Dexa.
 \end_layout
 
 \begin_layout Standard
@@ -3790,18 +3789,10 @@ key "mccroskery2003myostatin,cohen2015genetic"
 \end_layout
 
 \begin_layout Standard
-In myostatin knockout mice, Dexa induces most of its transcriptional program,
- including modulations of IGF-I, MuRF1, MAFbx, FOXO3A, but Dexa-induced
- muscle loss does not occur 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "gilson2007myostatin"
-
-\end_inset
-
-.
- The GR- and FOXO--mediated, myostatin-centered, mTOR-independent axis appears
- to play an important role in the proteolytic GAML.
+GAML appears to be mediated by a myostatin-centered, mTOR-independent pathway.
+ Its relative importance remains unclear, given that typical experiments,
+ with qualitative alterations of myostatin, yield non-specific anti-atrophic
+ effects.
 \end_layout
 
 \begin_layout Section
