@@ -2212,10 +2212,6 @@ Animal models of GAML
 \begin_layout Standard
 In the 75 years since the discovery of chronic steroid myopathy, scientists
  attempted, with variable success, to develop multiple animal models.
- Early studies were marred by an absence of meaningful macroscopic outcomes,
- such as muscle force or mass.
- Moreover, the modern molecular correlates of muscle loss were not known,
- and could not have been investigated.
  In dogs, seven days of 
 \begin_inset ERT
 status collapsed
@@ -2322,11 +2318,7 @@ key "yeh1994effects"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-In cows, GAML is undetectable at macroscopic level.
+ In cows, GAML is undetectable at macroscopic level.
  Any putative change in myofibers is compensated by bovines' unusually rich
  intramuscular adipose component, further hypertrophied by Dexa
 \begin_inset CommandInset citation
@@ -2336,6 +2328,10 @@ key "corah1995effects"
 \end_inset
 
 .
+ Early studies were marred by an absence of meaningful macroscopic outcomes,
+ such as muscle force or mass.
+ Moreover, the modern molecular correlates of muscle loss were not known,
+ and could not have been investigated.
 \end_layout
 
 \begin_layout Standard
@@ -2425,13 +2421,14 @@ key "takahashi2002myogenic"
 \end_inset
 
 .
+ Whenever possible, this section will refer to in vivo studies.
+ Evidence from in vitro studies on myogenic cell lines will be limited to
+ studies where multi-nucleate myotubes were obtained and myoblasts were
+ depleted.
 \end_layout
 
 \begin_layout Standard
-Many in vitro studies on myogenic cell lines fail to deplete myoblasts,
- and are therefore inaccurate models of proliferation-independent in vivo
- GAML.
- With this caveat, in vitro studies have been vital in excluding third-party
+With this caveat, in vitro studies have been vital in excluding third-party
  organs, such as the pancreas, from the analysis of GAML.
  Some features of GAML are more readily observed, and have been initially
  described in cell culture.
@@ -2470,11 +2467,11 @@ key "dong2013myostatin"
  had the ability to measure change in satellite cells upon Dexa treatment,
  yet chose not to investigate or report it.
  Based on similarity with denervation-induced atrophy, it is likely that
- adult GAML is not caused by a satellite cell dysfunction.
+ adult GAML is not caused by a proliferative dysfunction.
 \end_layout
 
 \begin_layout Standard
-Similar indirect data exclude a neuronal component of GAML.
+Similarly, indirect data exclude a neuronal component of GAML.
  Dexa induces atrophy in cultured cells, in the absence of neurons or NMJs.
  In rat muscle, chronic Dexa treatment upregulates expression of the NMJ
  essential component, muscle-specific nicotinic acetylcholine receptor,
@@ -2488,10 +2485,6 @@ key "chen2014different"
 .
  If anything, GAML appears associated with an improved NMJ, in contrast
  to denervation atrophy.
-\end_layout
-
-\begin_layout Section
-Ubiquitin-proteasome system as a major effector in GAML
 \end_layout
 
 \begin_layout Standard
@@ -2581,9 +2574,7 @@ key "prezant1997gender-specific"
 \end_inset
 
 .
- The next sections are informed by experiments with chronic Dexa on adult,
- not aged, male rats, which are the best model from human male steroid myopathy.
- The few exceptions, mainly transgenic mice, will be identified as such.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2630,7 +2621,17 @@ day}
 \end_inset
 
  Dexa, more than twice the muscle-imparing dose in humans.
- 
+\end_layout
+
+\begin_layout Standard
+The next sections are informed by experiments with chronic (5-10 days) Dexa
+ on adult (not aged) male rats, which are the best model from human male
+ steroid myopathy.
+ The few exceptions, mainly transgenic mice, will be identified as such.
+\end_layout
+
+\begin_layout Section
+Ubiquitin-proteasome system as a major effector in GAML
 \end_layout
 
 \begin_layout Standard
