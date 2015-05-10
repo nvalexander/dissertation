@@ -2212,6 +2212,10 @@ Animal models of GAML
 \begin_layout Standard
 In the 75 years since the discovery of chronic steroid myopathy, scientists
  attempted, with variable success, to develop multiple animal models.
+ Early studies were marred by an absence of meaningful macroscopic outcomes,
+ such as muscle force or mass.
+ Moreover, the modern molecular correlates of muscle loss were not known,
+ and could not have been investigated.
  In dogs, seven days of 
 \begin_inset ERT
 status collapsed
@@ -2318,10 +2322,19 @@ key "yeh1994effects"
 \end_inset
 
 .
- Early studies were marred by an absence of meaningful macroscopic outcomes,
- such as muscle force or mass.
- Moreover, the modern molecular correlates of muscle loss were not known,
- and could not have been investigated.
+ 
+\end_layout
+
+\begin_layout Standard
+In cows, a Dexa implant causes macroscopic increase in muscle section, through
+ augmentation of intramuscular fat
+\begin_inset CommandInset citation
+LatexCommand citep
+key "corah1995effects"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3649,6 +3662,28 @@ key "stitt2004igf-1/pi3k/akt"
 \end_layout
 
 \begin_layout Standard
+Excess nitrogen released by increased muscle proteolysis in GAML is converted
+ to glutamine for excretion.
+ Dexa increases muscle glutamine synthetase activity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "king1983glutamine"
+
+\end_inset
+
+.
+ Glutamine synthetase promoter contains a FOXO response element, and Foxo1
+ knockout mice do not upregulate muscle glutamine synthetase
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kamei2014foxo1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 Among the Foxo-induced genes, a special importance was given to the E3 ligases
  associated with muscle loss, MAFbx and MuRF1
 \begin_inset CommandInset citation
@@ -3676,10 +3711,7 @@ key "bollinger2014smad3"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-MuRF1 promoter facilitates another synergistic interaction, between FOXO1
+ MuRF1 promoter facilitates another synergistic interaction, between FOXO1
  and GR
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4227,17 +4259,6 @@ key "dardevet1995sensitivity"
 
 \begin_layout Section
 Animal models of steroid myopathy
-\end_layout
-
-\begin_layout Standard
-Dexa increases muscle glutamine synthetase activity
-\begin_inset CommandInset citation
-LatexCommand citep
-key "king1983glutamine"
-
-\end_inset
-
-, possibly as an adaptation to increased free amino acids.
 \end_layout
 
 \begin_layout Standard
