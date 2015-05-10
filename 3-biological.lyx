@@ -3805,7 +3805,7 @@ As in human studies, the role of protein synthesis modulation during chronic
  by acute effects.
  A single 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -3839,37 +3839,8 @@ key "peters1970biochemical"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Dexa has a dual effect on 4E-BP, the inhibitor of protein synthesis that
- binds and inhibits the eukaryotic initiation eIF4E.
- First, Dexa upregulates 4E-BP mRNA
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wu2010redd1"
-
-\end_inset
-
-.
- It was long believed the induction is direct, and based on a Foxo response
- element in 4E-BP promoter
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bai2013activin"
-
-\end_inset
-
-.
- As of 2015, this mechanism is proven only in Drosophila, the only replication
- in mouse cultured cells being recently withdrawn for unspecified reason.
- Second, Dexa may regulate 4E-BP through post-translational phosphorylation.
- As shown earlier, Dexa reduces mTOR-effected 4E-BP phosphorylation sensitivity
- to insulin, which is expected to cause reductions in protein synthesis
- rate mainly after feeding.
- Currently published studies did not account for such fluctuations.
- Often, animals are euthanized after being fasted, thus minimizing observable
- changes in 4E-BP phosphorylation.
+ Similar acute effects may be expected from feeding, which causes fluctuations
+ of insulin and possibly of the Akt / mTOR / 4E-BP axis in muscle.
 \end_layout
 
 \begin_layout Standard
@@ -3978,13 +3949,13 @@ key "baehr2011muscle"
 
 , suggesting a temporal order, with proteolytic processes preceding and
  initiating changes in protein translation.
- It is likely that anabolism adjustments in GAML play a secondary, complementary
- role, to the activation of the ubiquitin-proteasome system.
+ It is likely that anabolism adjustments in GAML play a complementary role
+ to the activation of the ubiquitin-proteasome system.
 \end_layout
 
 \begin_layout Standard
-Other suggestive data come from indirect evidence, which corroborate with
- the observed changes in 4E-BP1.
+Suggestive data for protein synthesis modulation in GAML come from various
+ molecular corelates.
  For example, acute GC administration causes a reduction in the proportion
  of polyribosomes
 \begin_inset CommandInset citation
@@ -4004,7 +3975,41 @@ key "bullock1972relative"
 
 .
  In contrast, polysome downregulation lasts about two days after Dexa.
- But there are no accounts on polysome profile changes after longer GC exposure.
+ No published accounts describe polysome profile changes after longer GC
+ exposure.
+\end_layout
+
+\begin_layout Standard
+Dexa has a dual effect on 4E-BP, the inhibitor of protein synthesis that
+ binds and inhibits the eukaryotic initiation eIF4E.
+ First, Dexa upregulates 4E-BP mRNA
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wu2010redd1"
+
+\end_inset
+
+.
+ It was long believed the induction is direct, and based on a Foxo response
+ element in 4E-BP promoter
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bai2013activin"
+
+\end_inset
+
+.
+ As of 2015, this response element is proven only in Drosophila.
+ The only replication in mouse cultured cells was withdrawn during the preparati
+on of this thesis, for unspecified reason.
+ Second, Dexa may regulate 4E-BP through post-translational phosphorylation.
+ As shown earlier, Dexa reduces mTOR-effected 4E-BP phosphorylation sensitivity
+ to insulin, which is expected to cause reductions in protein synthesis
+ rate mainly after feeding.
+\end_layout
+
+\begin_layout Standard
+A putative mechanism for 
 \end_layout
 
 \begin_layout Standard
@@ -4097,6 +4102,19 @@ key "gjymishka2009transcriptional"
 \begin_layout Standard
 The study of translational derepression in mammalians is still in its beginnings.
  Therefore, its role in muscle atrophy is unclear.
+ The only study that measured chronic Dexa effect on phosphorylation of
+ eIF2 reported negative results
+\begin_inset CommandInset citation
+LatexCommand citep
+key "liu2004glucocorticoids"
+
+\end_inset
+
+.
+ However, Dexa abrogated amino acid infusion ability to reduce eIF2 phosphorylat
+ion.
+ Although the effect did not propagate downstream to eIF2B, parallels between
+ Dexa effect on Akt / mTOR and eIF2 are obvious.
  Translational derepression and mTOR complex 1 interact in a complex manner.
  In C2C12 cells, ATF4 is induced by IGF-I in a rapamycin-dependent manner
 \begin_inset CommandInset citation
@@ -4118,8 +4136,7 @@ key "ebert2012stress-induced"
 .
  ATF4 knockout mice exhibit a normal atrogene response, indicating that
  ATF4 is part of a novel atrophy pathway.
- The role of translational derepression in GAML is not studied yet.
- However, in a mouse fibroblastic cell line, Dexa downregulates ATF4.
+ 
 \end_layout
 
 \begin_layout Section*
