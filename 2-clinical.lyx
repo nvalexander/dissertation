@@ -1990,7 +1990,7 @@ key "lofberg2002effects"
  The result is unsurprising, given that the control of the proteasome system
  may be exercised in other, unprobed ways.
  In animal models, the genes most correlated with muscle loss, including
- GAML, are two ubiquitin ligases, muscle atrophy F-box (
+ GAML, are two E3 ubiquitin ligases, muscle atrophy F-box (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "MAFbx"
