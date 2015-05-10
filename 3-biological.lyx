@@ -3991,10 +3991,6 @@ key "baehr2011muscle"
 \end_layout
 
 \begin_layout Standard
-XXX
-\end_layout
-
-\begin_layout Standard
 Other suggestive data come from indirect evidence, which corroborate with
  the observed changes in 4E-BP1.
  For example, acute GC administration causes a reduction in the proportion
@@ -4017,6 +4013,27 @@ key "bullock1972relative"
 .
  In contrast, polysome downregulation lasts about two days after Dexa.
  But there are no accounts on polysome profile changes after longer GC exposure.
+\end_layout
+
+\begin_layout Standard
+By similarity, it is believed that mRNA for Activating transcription factor
+ 4 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ATF4"
+description "activating transcription factor 4"
+
+\end_inset
+
+), the eukaryotic orthologue of General Control Nonderepressible 4 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GCN4"
+description "General Control Nonderepressible"
+
+\end_inset
+
+), is upregulated in states of amino acid starvation (reviewed in ).
 \end_layout
 
 \begin_layout Section*
