@@ -4033,7 +4033,14 @@ description "General Control Nonderepressible"
 
 \end_inset
 
-), is upregulated in states of amino acid starvation (reviewed in ).
+), is upregulated in states of amino acid starvation (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gallinetti2013amino"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section*
