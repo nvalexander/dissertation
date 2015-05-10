@@ -4095,6 +4095,26 @@ key "gjymishka2009transcriptional"
 \end_layout
 
 \begin_layout Standard
+Indeed, the ATF4 knockout mouse has normal weight, but exhibits some sparing
+ from muscle atrophy in response to starvation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ebert2012stress-induced"
+
+\end_inset
+
+.
+ However, in a mouse fibroblastic cell line, Dexa downregulates ATF4
+\begin_inset CommandInset citation
+LatexCommand citep
+key "adams2007role"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 In contrast, mTOR complex 1 activated by excess free amino acids, inactivates
  GCN2.
  
