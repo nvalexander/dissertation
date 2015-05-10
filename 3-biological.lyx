@@ -3809,6 +3809,23 @@ Protein synthesis modulation in GAML
 \end_layout
 
 \begin_layout Standard
+As in human studies, the role of protein synthesis modulation during chronic
+ hypercortisolism is still debated, because chronic Dexa effect is superimposed
+ by acute effects.
+ In the first hours after receiving GCs, the rate of protein synthesis in
+ the muscle decreases, as indicated by reductions in incorporation of labeled
+ precursors
+\begin_inset CommandInset citation
+LatexCommand citep
+key "peters1970biochemical"
+
+\end_inset
+
+.
+ Variability in the 
+\end_layout
+
+\begin_layout Standard
 Dexa has a dual effect on 4E-BP, the inhibitor of protein synthesis that
  binds and inhibits the eukaryotic initiation factor 4B (
 \begin_inset CommandInset nomenclature
@@ -3935,7 +3952,7 @@ key "aversa2012beta-hydroxy-beta-methylbutyrate,desler1996effects,jones2005vitro
  and in vivo
 \begin_inset CommandInset citation
 LatexCommand citep
-key "goldberg1969protein,dardevet1998glucocorticoid"
+key "dardevet1998glucocorticoid"
 
 \end_inset
 
@@ -3944,22 +3961,14 @@ key "goldberg1969protein,dardevet1998glucocorticoid"
 \end_layout
 
 \begin_layout Standard
-Overall, gains in protein degradation are more reliably seen than losses
- in protein synthesis, suggesting that the latter may be observed only in
- special conditions, such as immediately after feeding.
- As in human studies, the role of protein synthesis modulation during hypercorti
-solism is still debated, because some acute effects are detectable.
- In the first hours after receiving GCs, the rate of protein synthesis in
- the muscle decreases, as indicated by reductions in incorporation of labeled
- precursors
-\begin_inset CommandInset citation
-LatexCommand citep
-key "peters1970biochemical"
+Due to putative dependence on feeding state and low amplitude, reductions
+ in protein synthesis are more difficult to observe than changes in protein
+ degradation during chronic GC treatments.
+ However
+\end_layout
 
-\end_inset
-
-.
- Other suggestive data come from indirect evidence, which corroborate with
+\begin_layout Standard
+Other suggestive data come from indirect evidence, which corroborate with
  the observed changes in 4E-BP1.
  For example, acute GC administration causes a reduction in the proportion
  of polyribosomes
