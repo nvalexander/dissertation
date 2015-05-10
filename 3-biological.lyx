@@ -3949,8 +3949,6 @@ key "baehr2011muscle"
 
 , suggesting a temporal order, with proteolytic processes preceding and
  initiating changes in protein translation.
- It is likely that anabolism adjustments in GAML play a complementary role
- to the activation of the ubiquitin-proteasome system.
 \end_layout
 
 \begin_layout Standard
@@ -4009,10 +4007,29 @@ on of this thesis, for unspecified reason.
 \end_layout
 
 \begin_layout Standard
-A putative mechanism for repression of protein synthesis in muscle atrophy
- is mediated by MAFbx-initiated neutralization of eIF3-f.
- In C2C12 myotube, overexpression of eIF3-f causes hypertrophy, and eIF3-F
- knockout induces atrophy, but eIF3-f role in GAML has not been confirmed.
+In C2C12 myotubes, GAML may repress protein synthesis by MAFbx-initiated
+ neutralization of eIF3-f
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lagirand-cantaloube2008initiation"
+
+\end_inset
+
+.
+ Overexpression of eIF3-f causes hypertrophy, and eIF3-F knockout induces
+ atrophy, supporting the hypothesis that loss of an initiation factor causes
+ reductions in the rate of protein synthesis.
+ Moreover, further data from the same group shows that loss of eIF3-f impairs
+ the ability of mTOR to bind and phosphorylate p70-S6K, suggesting that
+ eIF3-f pro-anabolic action is more complex
+\begin_inset CommandInset citation
+LatexCommand citep
+key "csibi2010translation"
+
+\end_inset
+
+.
+ The role of eIF3-f in GAML has not been confirmed in vivo.
 \end_layout
 
 \begin_layout Standard
@@ -4144,9 +4161,12 @@ key "ebert2012stress-induced"
 \begin_layout Standard
 Multiple pathways that usually alter protein synthesis are modulated by
  Dexa in a manner consistent with GAML.
- While the overall effect is not negligible, its relative importance is
- unclear, because experiments manipulating protein synthesis will yield
- deleterious side effects.
+ Their mild alterations correlate with the moderate rate of loss in protein
+ synthesis rate.
+ While the overall effect is not negligible, its reduced amplitude and its
+ downstream relation to MuRF1 indicate that anabolism adjustments play a
+ complementary role to the activation of the ubiquitin-proteasome system
+ in GAML .
 \end_layout
 
 \begin_layout Section*
