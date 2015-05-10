@@ -3845,16 +3845,15 @@ key "bai2013activin"
  Currently published studies did not account for such fluctuations.
  Often, animals are euthanized after being fasted, thus minimizing observable
  changes in 4E-BP phosphorylation.
- Perhaps for this reason, frequent reports describe no change 
+ Perhaps for this reason, multiple reports fail to observe Dexa-induced
+ changes in protein synthesis.
 \end_layout
 
 \begin_layout Standard
-protein synthesis are inconclusive.
-\end_layout
-
-\begin_layout Standard
-Some of the most exhaustive studies in this field came from Grizard laboratory.
- In two studies using 
+For example, some of the most exhaustive studies of protein metabolism in
+ GAML came from Grizard laboratory.
+ In two studies, they found that protein synthesis rate was unchanged after
+ 
 \begin_inset ERT
 status collapsed
 
@@ -3881,8 +3880,7 @@ day}
 
 \end_inset
 
- Dexa, protein synthesis was unchanged in the epitrochlearis muscle, compared
- to pair-fed animals
+ Dexa for 6 days, compared to pair-fed animals, in the epitrochlearis muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity,rieu2004glucocorticoid"
@@ -3890,39 +3888,16 @@ key "dardevet1995sensitivity,rieu2004glucocorticoid"
 \end_inset
 
 .
- In another study, assaying other glycolytic muscles, the same dose of Dexa
- was reported as halving of translation rate
+ In two other studies, assaying other glycolytic muscles or quadrupling
+ the Dexa dose, led to observable reductions in protein FSR
 \begin_inset CommandInset citation
 LatexCommand citep
-key "savary1998effect"
+key "savary1998effect,dardevet1999glucocorticoid-induced"
 
 \end_inset
 
 .
- In a later study, quadrupling the dose of Dexa lead to a significant, but
- less ample reduction in FSR
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dardevet1999glucocorticoid-induced"
-
-\end_inset
-
-.
- Tomas observed an increase in FSR in response to Dexa, in one of the very
- few published experiments that failed to observe changes in protein degradation
- rate
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tomas1998anti-catabolic"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-In cell cultures, Dexa inhibition of protein synthesis should be more readily
+ In cell cultures, Dexa inhibition of protein synthesis should be more readily
  detectable, given that, in vitro, Dexa affects 4E-BP phosphorylation directly,
  even in basal state
 \begin_inset CommandInset citation
@@ -3950,26 +3925,22 @@ key "menconi2008dexamethasone,aversa2012beta-hydroxy-beta-methylbutyrate"
 \end_inset
 
 .
- Studies measuring protein synthesis in a mixed population of differentiating
- and proliferating L6 cells observed a low amplitude decrease in protein
- synthesis rate
-\begin_inset CommandInset citation
-LatexCommand citep
-key "desler1996effects"
-
-\end_inset
-
-.
- Even when detected, the amplitude of changes in protein synthesis is far
- lower than that on protein degradation, suggesting a secondary role for
- the latter
+ Even when detected, the amplitude of changes in protein synthesis in vitro
 \begin_inset CommandInset citation
 LatexCommand citep
 key "aversa2012beta-hydroxy-beta-methylbutyrate,desler1996effects,jones2005vitro"
 
 \end_inset
 
-.
+ and in vivo
+\begin_inset CommandInset citation
+LatexCommand citep
+key "goldberg1969protein,dardevet1998glucocorticoid"
+
+\end_inset
+
+ is lower than that on protein degradation, suggesting a secondary role
+ for the latter.
 \end_layout
 
 \begin_layout Standard
