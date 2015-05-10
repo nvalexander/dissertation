@@ -3843,15 +3843,7 @@ key "peters1970biochemical"
 
 \begin_layout Standard
 Dexa has a dual effect on 4E-BP, the inhibitor of protein synthesis that
- binds and inhibits the eukaryotic initiation factor 4B (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "eIF4B"
-description "eukaryotic initiation factor 4B"
-
-\end_inset
-
-).
+ binds and inhibits the eukaryotic initiation eIF4E.
  First, Dexa upregulates 4E-BP mRNA
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4036,7 +4028,13 @@ description "General Control Nonderepressible 2"
 \end_inset
 
 ).
- Activated GCN2 phosphorylated eukaryotic initiation factor 2 (
+ In contrast, mTOR complex 1 activated by excess free amino acids, inactivates
+ GCN2.
+ 
+\end_layout
+
+\begin_layout Standard
+Activated GCN2 phosphorylated eukaryotic initiation factor 2 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "eIF2"
@@ -4044,13 +4042,21 @@ description "eukaryotic initiation factor 2"
 
 \end_inset
 
-) at Ser 51 on its α subunit, leading to the formation of an inactive complex
- eIF2-eIF2B.
-\end_layout
+) at Ser 51 on its α subunit, leading to the formation of an inactiving
+ complex with eIF2B.
+ The inactivation of eIF2B, the guanine exchange factor for eIF2, leads
+ to general translation shutdown
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sood2000mammalian"
 
-\begin_layout Standard
-By similarity, it is believed that mRNA for Activating transcription factor
- 4 (
+\end_inset
+
+.
+ The lack of eIF2-GTP complexes leads to start codon skipping, which, for
+ multi-start mRNAs, determines extraordinary translation from downstream
+ start codons.
+ In eukaryotes, Activating transcription factor 4 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ATF4"
@@ -4058,15 +4064,7 @@ description "activating transcription factor 4"
 
 \end_inset
 
-), the eukaryotic orthologue of General Control Nonderepressible 4 (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "GCN4"
-description "General Control Nonderepressible 4"
-
-\end_inset
-
-), is upregulated in states of amino acid starvation .
+) is such a downstream gene, upregulated by amino acid starvation.
 \end_layout
 
 \begin_layout Section*
