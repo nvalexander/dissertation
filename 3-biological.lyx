@@ -4080,8 +4080,8 @@ description "activating transcription factor 4"
 
 \end_inset
 
-), which upregulates genes involved in amino acid synthesis, such as asparagine
- synthetase
+), which upregulates genes involved in transport of essential amino acids
+ and synthesis of non-essential amino acids, such as asparagine synthetase
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gjymishka2009transcriptional"
@@ -4089,14 +4089,26 @@ key "gjymishka2009transcriptional"
 \end_inset
 
 .
- Overall, the translational derepression pathway may be a plausible mechanism
- for inhibiting protein synthesis, initiated by apparent depletion of free
- amino acids, and leading to ATF4 upregulation.
+ Overall, the translational derepression pathway is mechanism for inhibiting
+ protein synthesis, initiated by apparent depletion of free amino acids,
+ and leading to ATF4 upregulation.
 \end_layout
 
 \begin_layout Standard
-Indeed, the ATF4 knockout mouse has normal weight, but exhibits some sparing
- from muscle atrophy in response to starvation
+The study of translational derepression in mammalians is still in its beginnings.
+ Therefore, its role in muscle atrophy is unclear.
+ Translational derepression and mTOR complex 1 interact in a complex manner.
+ In C2C12 cells, ATF4 is induced by IGF-I in a rapamycin-dependent manner
+\begin_inset CommandInset citation
+LatexCommand citep
+key "adams2007role"
+
+\end_inset
+
+, suggesting that mTOR exploits translational derepression to improve the
+ free amino acid pool in muscle.
+ On the other hand, the ATF4 knockout mouse has normal weight, but exhibits
+ some sparing from muscle atrophy in response to starvation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ebert2012stress-induced"
@@ -4106,20 +4118,8 @@ key "ebert2012stress-induced"
 .
  ATF4 knockout mice exhibit a normal atrogene response, indicating that
  ATF4 is part of a novel atrophy pathway.
- However, in a mouse fibroblastic cell line, Dexa downregulates ATF4
-\begin_inset CommandInset citation
-LatexCommand citep
-key "adams2007role"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-In contrast, mTOR complex 1 activated by excess free amino acids, inactivates
- GCN2.
- 
+ The role of translational derepression in GAML is not studied yet.
+ However, in a mouse fibroblastic cell line, Dexa downregulates ATF4.
 \end_layout
 
 \begin_layout Section*
