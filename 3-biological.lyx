@@ -4027,14 +4027,15 @@ description "General Control Nonderepressible 2"
 
 \end_inset
 
-).
- In contrast, mTOR complex 1 activated by excess free amino acids, inactivates
- GCN2.
- 
-\end_layout
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "berlanga1999characterization"
 
-\begin_layout Standard
-Activated GCN2 phosphorylated eukaryotic initiation factor 2 (
+\end_inset
+
+.
+ Activated GCN2 phosphorylates eukaryotic initiation factor 2 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "eIF2"
@@ -4042,7 +4043,7 @@ description "eukaryotic initiation factor 2"
 
 \end_inset
 
-) at Ser 51 on its α subunit, leading to the formation of an inactiving
+) at Ser 51 on its α subunit, leading to the formation of an inactivating
  complex with eIF2B.
  The inactivation of eIF2B, the guanine exchange factor for eIF2, leads
  to general translation shutdown
@@ -4054,9 +4055,17 @@ key "sood2000mammalian"
 
 .
  The lack of eIF2-GTP complexes leads to start codon skipping, which, for
- multi-start mRNAs, determines extraordinary translation from downstream
- start codons.
- In eukaryotes, Activating transcription factor 4 (
+ transcripts including multiple open reading frames (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ORF"
+description "open reading frame"
+
+\end_inset
+
+), determines extraordinary translation from downstream start ORFs.
+ In eukaryotes, a physiologically relevant downstream ORF is Activating
+ transcription factor 4 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ATF4"
@@ -4064,7 +4073,13 @@ description "activating transcription factor 4"
 
 \end_inset
 
-) is such a downstream gene, upregulated by amino acid starvation.
+).
+\end_layout
+
+\begin_layout Standard
+In contrast, mTOR complex 1 activated by excess free amino acids, inactivates
+ GCN2.
+ 
 \end_layout
 
 \begin_layout Section*
