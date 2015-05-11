@@ -3180,7 +3180,20 @@ key "weinstein1995glucocorticoid-induced"
  are diminished.
  Unsurprisingly, investigations of muscle in basal state have been prone
  to fail to observe changes in Akt-related signals.
- In contrast, Dexa co-administration blunts muscle anabolic and anti-catabolic
+ Moreover, studies on the Akt pathway are conceptually challenged by the
+ low basal activity.
+ In order to prove causality by downstream inhibition, one must reverse
+ that inhibition, and establish that the final effect is lost.
+ Chemical reversal of inhibition is rarely an option.
+ In the case of Akt, genetic reversal of inhibition, that is, overexpression
+ studies, hve very little chance of matching wildtype basal level.
+ Most often, overexpression of IGF-I, IGF-1R, Akt, or other mediators of
+ GAML overcompensates Dexa's effect, and cause overriding, possibly non-specific
+ and irrelevant hypertrophy.
+\end_layout
+
+\begin_layout Standard
+In contrast, Dexa co-administration blunts muscle anabolic and anti-catabolic
  response to exogenous supplementation with either insulin or IGF-I, at
  the levels of protein and glucose metabolism
 \begin_inset CommandInset citation
