@@ -2995,20 +2995,12 @@ key "stitt2004igf-1/pi3k/akt"
 .
  While no studies on triple FOXO knockout mouse have been published, similaritie
 s with the late phase of denervation atrophy suggest an essential role for
- FOXO in inducing atrogenes in GAMLInsulin or IGF-I, in concentrations close
- to the physiological levels, increase glucose uptake about 10-fold
-\begin_inset CommandInset citation
-LatexCommand citep
-key "weinstein1995glucocorticoid-induced"
+ FOXO in inducing atrogenes in GAML.
+\end_layout
 
-\end_inset
-
-.
- This indicates that, at basal states, muscle is very responsive to insulin
- and IGF-I, with significant opportunity for amplification of anabolic pathways.
- .
- Support for the GC - FOXO - atrogenes axis hypothesis is furthered by experimen
-ts in cultured myotubes, where transfection of constitutively active FOXO3a
+\begin_layout Standard
+Support for the GC - FOXO - atrogenes axis hypothesis is furthered by experiment
+s in cultured myotubes, where transfection of constitutively active FOXO3a
  upregulates MAFbx
 \begin_inset CommandInset citation
 LatexCommand citep
