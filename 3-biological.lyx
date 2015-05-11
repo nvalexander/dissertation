@@ -4282,6 +4282,18 @@ Animal models of steroid myopathy
 \end_layout
 
 \begin_layout Standard
+For example, levator ani contains at least 60 times more AR than other skeletal
+ muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bentvelsen1996regulation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 Triamcinolone reduces IGF-I expression in diaphragm (PMID: 9872851).
 \end_layout
 
