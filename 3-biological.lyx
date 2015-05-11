@@ -4277,6 +4277,13 @@ Autophagy in GAML
 \end_layout
 
 \begin_layout Standard
+Proteasome inhibition does not abolish ability of Dexa to stimulate proteolysis,
+ indicating that some other catabolic mechanisms must be involved.
+ Based on molecular markers, one of the most plausible candidates is the
+ autophagosome.
+\end_layout
+
+\begin_layout Standard
 Expression of the lysosome protease cathepsin D is trebled by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4285,7 +4292,20 @@ key "dardevet1995sensitivity"
 \end_inset
 
 .
- In L6 cells, expression of cathepsin B is upregulated by Dexa
+ 
+\end_layout
+
+\begin_layout Standard
+In L6 myotubes, 100 uM chloroquine or 200 mM E-64 reduce the rate at which
+ Dexa amplifies proteolytic tracer release
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang1998dexamethasone"
+
+\end_inset
+
+.
+ In L6 myotubes, expression of cathepsin B is upregulated by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wang1998dexamethasone"
