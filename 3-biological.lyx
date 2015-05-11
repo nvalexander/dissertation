@@ -2214,7 +2214,7 @@ In the 75 years since the discovery of chronic steroid myopathy, scientists
  attempted, with variable success, to develop multiple animal models.
  In dogs, seven days of 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2250,7 +2250,7 @@ key "muhlbacher1984effects"
 .
  In rabbits, fourteen days of 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2284,7 +2284,7 @@ key "jiang1996effect"
 
 , while four days of 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2433,7 +2433,24 @@ With this caveat, in vitro studies have been vital in excluding third-party
  Some features of GAML are more readily observed, and have been initially
  described in cell culture.
  Fully differentiated myotubes from L6 and C2C12 cell lines lose more than
- a quarter of their diameter when treated with 100 nM Dexa
+ a quarter of their diameter when treated with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "menconi2008dexamethasone"
@@ -2485,12 +2502,14 @@ key "chen2014different"
 .
  If anything, GAML appears associated with an improved NMJ, in contrast
  to denervation atrophy.
+ Nevertheless, one cannot exclude the non-synaptic component of muscle maintenan
+ce by the motoneuron.
 \end_layout
 
 \begin_layout Standard
 The effects of 7-day, 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2595,7 +2614,7 @@ key "minet-quinard2000induction,bowes1996effect"
  Rats appear more resistant than humans to GAML, given that reported experiments
  start at 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2639,7 +2658,7 @@ The loss of muscle in the Dexa-treated adult rat is the result of an increase
  in protein degradation.
  In rats receiving 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -3159,7 +3178,7 @@ key "saad1993modulation,corporeau2006adipose"
  However, insulin's ability to cause IRS 1 and 2 phosphorylation is reduced
  to less than a third, in mice treated for 5 days with 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -3908,7 +3927,7 @@ As in human studies, the role of protein synthesis modulation during chronic
  by acute effects.
  A single 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -3955,7 +3974,7 @@ Variability in the time from feeding and treatment to biopsy is a significant
  In two studies, they found that protein synthesis rate was unchanged after
  
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -4284,7 +4303,7 @@ Proteasome inhibition does not abolish ability of Dexa to stimulate proteolysis,
 \end_layout
 
 \begin_layout Standard
-Expression of the lysosome protease cathepsin D is trebled by Dexa
+Expression of the lysosome protease cathepsin D is doubled by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity"
