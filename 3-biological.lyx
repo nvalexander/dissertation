@@ -3073,7 +3073,7 @@ GC-induced loss of sensitivity on the Akt / mTOR axis
 
 \begin_layout Standard
 The most comprehensive account on GC-induced changes on protein metabolic
- regulation came, surprisingly, from the study of glucose metabolism changes.
+ regulation comes from the study of glucose metabolism changes.
  Dexa causes systemic insulin resistance, manifested as uncompensated hyperglyce
 mia
 \begin_inset CommandInset citation
@@ -3148,14 +3148,7 @@ key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
 \end_inset
 
 .
- Dexa reduces muscle expression of IGF-I
-\begin_inset CommandInset citation
-LatexCommand citep
-key "gayan-ramirez1999acute"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -4350,7 +4343,62 @@ key "dardevet1995sensitivity"
 \end_layout
 
 \begin_layout Section
-Animal models of steroid myopathy
+IGF-I in GAML
+\end_layout
+
+\begin_layout Standard
+Dexa reduces muscle expression of IGF-I
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gayan-ramirez1999acute"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Insulin or IGF-I, in concentrations close to the physiological levels, increase
+ glucose uptake about 10-fold
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weinstein1995glucocorticoid-induced"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+IGF-I expression is GH-independent before the age of 6 months (PMID: 11726733).
+\end_layout
+
+\begin_layout Standard
+Triamcinolone causes muscle loss which co-administration of GH does not
+ compensate
+\begin_inset CommandInset citation
+LatexCommand citep
+key "petrof1995growth"
+
+\end_inset
+
+; or it does(PMID: 8937196)?
+\end_layout
+
+\begin_layout Standard
+IGF-IEa isoform
+\end_layout
+
+\begin_layout Section
+Anabolic steroids regulation of muscle mass
+\end_layout
+
+\begin_layout Section
+Models of anabolic alleviation of GAML
+\end_layout
+
+\begin_layout Section
+BLA
 \end_layout
 
 \begin_layout Standard
@@ -4439,76 +4487,12 @@ Dexa reduces C2C12 calcium influx by non-transcriptional means (PMID: 9756393).
 Dexa reduces protein synthesis rate in cultured bovine myotubes (PMID: 9781494).
 \end_layout
 
-\begin_layout Section
-Models of anabolic alleviation of GAML
-\end_layout
-
 \begin_layout Standard
 In a model where C2C12 cells are treated with Dexa, they proliferate less
  (rather unusually), downregulate protein synthesis, and upregulate protein
  degradation (all by tracer).
  (PMID: 8791198).
  T has no significant effect on any of these.
-\end_layout
-
-\begin_layout Section
-Anabolic steroids regulation of muscle mass
-\end_layout
-
-\begin_layout Section
-Protein synthesis regulation
-\end_layout
-
-\begin_layout Section
-Protein degradation regulation
-\end_layout
-
-\begin_layout Subsection
-Atrophy-associated genes
-\end_layout
-
-\begin_layout Subsection
-Autophagy in glucocorticoid myopathy
-\end_layout
-
-\begin_layout Subsection
-Other proteolytic mechanisms in glucocorticoid myopathy
-\end_layout
-
-\begin_layout Section
-IGF-I role in muscle homeostasis
-\end_layout
-
-\begin_layout Standard
-IGF-IEa isoform
-\end_layout
-
-\begin_layout Standard
-Insulin or IGF-I, in concentrations close to the physiological levels, increase
- glucose uptake about 10-fold
-\begin_inset CommandInset citation
-LatexCommand citep
-key "weinstein1995glucocorticoid-induced"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-IGF-I expression is GH-independent before the age of 6 months (PMID: 11726733).
-\end_layout
-
-\begin_layout Standard
-Triamcinolone causes muscle loss which co-administration of GH does not
- compensate
-\begin_inset CommandInset citation
-LatexCommand citep
-key "petrof1995growth"
-
-\end_inset
-
-; or it does(PMID: 8937196)?
 \end_layout
 
 \begin_layout Standard
