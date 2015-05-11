@@ -4347,7 +4347,21 @@ IGF-I in GAML
 \end_layout
 
 \begin_layout Standard
-Dexa reduces muscle expression of IGF-I
+Insulin or IGF-I, in concentrations close to the physiological levels, increase
+ glucose uptake about 10-fold
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weinstein1995glucocorticoid-induced"
+
+\end_inset
+
+.
+ This indicates that, at basal states, muscle is very responsive to insulin
+ and IGF-I, with significant opportunity for amplification of anabolic pathways.
+ A major atrophic action of Dexa on muscle is desensitisation of the Akt/mTOR
+ axis, with loss of anabolism and gain in catabolism.
+ But Dexa further represses Akt signaling, as it reduces muscle expression
+ of IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gayan-ramirez1999acute"
@@ -4355,14 +4369,11 @@ key "gayan-ramirez1999acute"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Insulin or IGF-I, in concentrations close to the physiological levels, increase
- glucose uptake about 10-fold
+ Systemic coadministration of IGF-I reduces loss of muscle mass, fiber atrophy,
+ and 3MH release
 \begin_inset CommandInset citation
 LatexCommand citep
-key "weinstein1995glucocorticoid-induced"
+key "kanda1999preventive"
 
 \end_inset
 
