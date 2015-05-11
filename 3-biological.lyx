@@ -3092,7 +3092,9 @@ key "weinstein1995glucocorticoid-induced"
 
 \end_inset
 
-, through a reduction in recruitment of glucose transporter (
+.
+ Dexa's effect is not not dependent on expression and activity of glucohexokinas
+e, nor on glucose transporter (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GLUT"
@@ -3100,7 +3102,8 @@ description "glucose transporter"
 
 \end_inset
 
-) 4 to the membrane
+) 4 expression changes.
+ Dexa reduces recruitment of GLUT4 to the membrane
 \begin_inset CommandInset citation
 LatexCommand citep
 key "weinstein1995glucocorticoid-induced,dimitriadis1997effects"
@@ -3126,6 +3129,10 @@ key "gayan-ramirez1999acute"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Hexokinase
 \end_layout
 
 \begin_layout Standard
