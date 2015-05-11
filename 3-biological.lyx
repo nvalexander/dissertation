@@ -3298,9 +3298,27 @@ description "Growth factor receptor-bound protein 2"
 
 ).
  Dexa reduces insulin's ability to cause Shc phosphorylation and association
- with Grb2.
+ with Grb2
+\begin_inset CommandInset citation
+LatexCommand citep
+key "paez-espinosa1999insulin-induced"
+
+\end_inset
+
+.
  Paralleling the findings in sugar metabolism, Dexa has no detectable effect
  in basal state.
+ Further downstream, he complex including Shc and Grb2 binds and activates,
+ Son of sevenless homolog (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Sos"
+description "Son of sevenless homolog"
+
+\end_inset
+
+), the GTPase exchange factor for Ras.
+ Ras-GTP activates a cascade of kinases, including Raf, Mek, Erk, 
 \end_layout
 
 \begin_layout Standard
