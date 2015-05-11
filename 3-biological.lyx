@@ -1754,6 +1754,14 @@ Control of muscle mass through innervation
 \end_layout
 
 \begin_layout Standard
+Progress made in the last few years distinguish denervation atrophy as one
+ of the best studied models of muscle atrophy.
+ Current understanding and future directions for the study of GAML are guided,
+ to a large extend, by the data obtained in denervation experiments.
+ 
+\end_layout
+
+\begin_layout Standard
 Limb and trunk muscles are controlled by the lower (alpha) motoneuron, located
  in the ventral horn of the spinal cord.
  Their main point of contact is a chemical synapse, the neuro-muscular junction
@@ -3308,7 +3316,7 @@ key "paez-espinosa1999insulin-induced"
 .
  Paralleling the findings in sugar metabolism, Dexa has no detectable effect
  in basal state.
- Further downstream, he complex including Shc and Grb2 binds and activates,
+ Further downstream, the complex including Shc and Grb2 binds and activates
  Son of sevenless homolog (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -3318,7 +3326,20 @@ description "Son of sevenless homolog"
 \end_inset
 
 ), the GTPase exchange factor for Ras.
- Ras-GTP activates a cascade of kinases, including Raf, Mek, Erk, 
+ Ras-GTP activates a cascade of kinases, including Raf, Mek, and Erk, eventually
+ leading to cell proliferation.
+ A report describes that Dexa upregulates phosphorylation of Mek and Erk
+ in diabetic rats
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zheng2010foxo3a"
+
+\end_inset
+
+.
+ Together with the dearth of reports, and the limited role of hyperplasia
+ in adult muscle, available evidence suggests that Mek/Erk pathway does
+ not mediate GAML.
 \end_layout
 
 \begin_layout Standard
