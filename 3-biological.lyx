@@ -3262,8 +3262,45 @@ key "rojas2003regulation"
 
 \begin_layout Standard
 The notion that Dexa interferes with IGF-1R suggested that GAML also attenuates
- MAPK response.
- 
+ downstream mitogen-activated protein kinase (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MAPK"
+description "mitogen-activated protein kinase"
+
+\end_inset
+
+) response (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mendoza2011ras-erk"
+
+\end_inset
+
+).
+ Activated receptors for growth factors, such as IGF-1R, phosphorylate and
+ assemble a transduction complex, including Src homology 2 domain containing
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Shc"
+description "Src homology 2 domain containing"
+
+\end_inset
+
+) and Growth factor receptor-bound protein 2 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Grb2"
+description "Growth factor receptor-bound protein 2"
+
+\end_inset
+
+).
+ Dexa reduces insulin's ability to cause Shc phosphorylation and association
+ with Grb2.
+ Paralleling the findings in sugar metabolism, Dexa has no detectable effect
+ in basal state.
 \end_layout
 
 \begin_layout Standard
