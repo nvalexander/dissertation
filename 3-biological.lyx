@@ -4277,8 +4277,30 @@ Autophagy in GAML
 \end_layout
 
 \begin_layout Standard
-Expression of the lysosome protease cathepsin D and of the calcium-dependent
- protease m-calpain is trebled by Dexa
+Expression of the lysosome protease cathepsin D is trebled by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity"
+
+\end_inset
+
+.
+ In L6 cells, expression of cathepsin B is upregulated by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang1998dexamethasone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Calpains in GAML
+\end_layout
+
+\begin_layout Standard
+Expression of the calcium-dependent protease m-calpain is trebled by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity"
