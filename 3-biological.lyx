@@ -3618,12 +3618,18 @@ key "latres2005insulin-like"
  inferred from its direct investigation, but may be better estimated from
  changes in its substrates.
  In contrast to Akt, phosphorylation of mTOR complex 1 substrates 4E-BP
- and p70-S6K is measurable in rat muscles in basal state.
- Some reports describe a reduction of their phosphorylation in response
- to Dexa.
- More commonly, the reported pattern mirrors that of Akt, with no detectable
- Dexa effect on their basal phosphorylation, and a Dexa-induced loss of
- sensitivity to insulin.
+ and p70-S6K is measurable in rat muscles in basal state, with acute Dexa
+ causing a reduction of their phosphorylation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shah2000glucocorticoids,long2001dexamethasone"
+
+\end_inset
+
+.
+ Chronic Dexa changes 4E-BP and p70-S6K phosphorylation in a pattern that
+ mirrors Akt activation, with no detectable Dexa effect on their basal phosphory
+lation, and a Dexa-induced loss of sensitivity to insulin.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3738,8 +3744,8 @@ key "hosokawa2009nutrient-dependent"
 In conclusion, the muscle response to GC is associated with molecular changes
  consistent with Akt / mTOR loss of sensitivity to trophic factors such
  as insulin and IGF-I.
- Based on putative p70-S6K divergence, it appears that GC causes Akt-mediated
- mTOR modulation, in contrast with denervation atrophy, where Akt is downstream
+ Based on p70-S6K divergence, it appears that GC causes Akt-mediated mTOR
+ modulation, in contrast with denervation atrophy, where Akt is downstream
  of mTOR.
  Interestingly, the pathway appears largely unaffected by Dexa in basal
  conditions, when trophic factors are withheld.
