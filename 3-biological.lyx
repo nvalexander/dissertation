@@ -2999,7 +2999,7 @@ A sizable body of indirect evidence suggests that atrogenes are upregulated
  in GAML mainly through by FOXO transcription factors.
  These transcription factors are reliably upregulated by Dexa in muscle.
  In addition, Dexa inhibits their kinase, Akt, thus protecting them from
- ubiquitation and degradation.
+ ubiquitination and degradation.
  While no studies on triple FOXO knockout mouse have been published, similaritie
 s with the late phase of denervation atrophy suggest an essential role for
  FOXO in inducing atrogenes in GAML.
@@ -3096,8 +3096,8 @@ key "weinstein1995glucocorticoid-induced"
 \end_inset
 
 .
- Dexa does not alter expression and activity of glucohexokinase, and of
- glucose transporter (
+ Dexa does not alter expression and activity of hexokinase, and of glucose
+ transporter (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GLUT"
@@ -3672,7 +3672,7 @@ Based on the modulation of the substrates, it appears that mTOR complex
  activity
 \begin_inset CommandInset citation
 LatexCommand citep
-key "qin2010protection,williams2012dietary"
+key "williams2012dietary"
 
 \end_inset
 
