@@ -2402,7 +2402,14 @@ key "pansters2013synergistic"
 
 \begin_layout Standard
 Until the end of the 1990s, Dexa was a common ingredient in myogenic culture
- media.
+ media
+\begin_inset CommandInset citation
+LatexCommand citep
+key "takahashi2002myogenic"
+
+\end_inset
+
+.
  Even contemporary standard proliferation media, containing 10% fetal bovine
  serum, provide significant and unpredictable concentrations of GC, insulin,
  and IGF-I, impairing their study at physiological concentrations.
@@ -3045,8 +3052,8 @@ key "luo2001heat"
 \end_inset
 
 .
- On the other, in the same cell line, Dexa upregulates acetylation and nuclear
- translocation of the translational activator p65, in a p300 dependent-manner
+ On the other, in the same cell line, Dexa stimulates acetylation and nuclear
+ translocation of the translational activator p65
 \begin_inset CommandInset citation
 LatexCommand citep
 key "chamberlain2012multiple"
@@ -3066,7 +3073,7 @@ description "CCAAT-enhancer-binding protein"
 
 \end_inset
 
-) β and C/EBP δ
+) β and C/EBP δ, in a p300 dependent-manner
 \begin_inset CommandInset citation
 LatexCommand citep
 key "chamberlain2012multiple"
