@@ -3734,8 +3734,16 @@ key "weber2002glucocorticoid"
 \end_inset
 
 .
- Because in rat muscle, Dexa causes a decrease in AMPK phosphorylation and
- activity
+ Dexa induces a significant upregulation of intramuscular ATP
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dumas2005dexamethasone"
+
+\end_inset
+
+.
+ Possibly as a consequence of the energetic surplus, Dexa causes a decrease
+ in AMPK phosphorylation and activity
 \begin_inset CommandInset citation
 LatexCommand citep
 key "williams2012dietary"
