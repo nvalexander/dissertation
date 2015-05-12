@@ -3617,21 +3617,23 @@ key "latres2005insulin-like"
  Given its multifactorial nature, regulation of mTOR complex 1 cannot be
  inferred from its direct investigation, but may be better estimated from
  changes in its substrates.
- Phosphorylation of mTOR complex 1 substrates 4E-BP and p70-S6K is measurable
- in rat muscles, but, similar to Akt, do not change in response to Dexa
- in basal conditions.
- But Dexa reduces insulin's ability to induce phosphorylation of 4E-BP and
- p70-S6K
+ In contrast to Akt, phosphorylation of mTOR complex 1 substrates 4E-BP
+ and p70-S6K is measurable in rat muscles in basal state.
+ Some reports describe a reduction of their phosphorylation in response
+ to Dexa.
+ More commonly, the reported pattern mirrors that of Akt, with no detectable
+ Dexa effect on their basal phosphorylation, and a Dexa-induced loss of
+ sensitivity to insulin.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 
 \end_inset
 
-, demonstrating correlation with Akt changes.
- 
+.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
