@@ -3072,8 +3072,16 @@ key "chamberlain2012multiple"
 \end_layout
 
 \begin_layout Standard
-Dexa also upregulates acetylation and nuclear translocation of CCAAT-enhancer-bi
-nding protein (
+In cultured cells, Dexa upregulates the nuclear cofactor p300
+\begin_inset CommandInset citation
+LatexCommand citep
+key "yang2005dexamethasone"
+
+\end_inset
+
+.
+ Dexa also upregulates acetylation and nuclear translocation of CCAAT-enhancer-b
+inding protein (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "C/EBP"
@@ -3081,7 +3089,7 @@ description "CCAAT-enhancer-binding protein"
 
 \end_inset
 
-) β and C/EBP δ, in a p300 dependent-manner
+) β, in a p300 dependent-manner
 \begin_inset CommandInset citation
 LatexCommand citep
 key "chamberlain2012multiple"
@@ -4720,7 +4728,14 @@ key "li2004insulin-like"
 \end_inset
 
 .
- In C2C12 cells, IGF-I does not repress Dexa-induced upregulation of MuRF1.
+ In C2C12 cells, IGF-I does not repress Dexa-induced upregulation of MuRF1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sacheck2004igf-i"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
