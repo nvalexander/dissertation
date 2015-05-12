@@ -3622,7 +3622,7 @@ key "latres2005insulin-like"
  causing a reduction of their phosphorylation
 \begin_inset CommandInset citation
 LatexCommand citep
-key "shah2000glucocorticoids,long2001dexamethasone"
+key "shah2000glucocorticoids"
 
 \end_inset
 
@@ -3749,10 +3749,11 @@ In conclusion, the muscle response to GC is associated with molecular changes
  of mTOR.
  Interestingly, the pathway appears largely unaffected by Dexa in basal
  conditions, when trophic factors are withheld.
- Because all our knowledge about Akt pathway in GAML is derived from experiments
- with cell models or intrinsic anabolic interventions, it may not be correct.
+ Because the model of GAML centered on Akt is derived from experiments with
+ acute states, cell models, and intrinsic anabolic interventions, it is
+ perfectible.
  Experiments on transgenic mice, unpicking one putative mediator at a time,
- may invalidate the current model of GAML, as they did for denervation atrophy.
+ may still invalidate it, as they did for denervation atrophy.
 \end_layout
 
 \begin_layout Section
@@ -4612,6 +4613,17 @@ Co-administration of GH cannot reverse muscle loss from Dexa or triamcinolone
 \begin_inset CommandInset citation
 LatexCommand citep
 key "petrof1995growth,chrysis1999regulation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+IGF-I co-administration reverses Dexa-induced activation of glutamine synthetase
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kimura2001insulin-like"
 
 \end_inset
 
