@@ -4749,9 +4749,8 @@ key "sacheck2004igf-i"
 \end_layout
 
 \begin_layout Standard
-Studies with inhibitors in cell culture revealed that IGF-I protective effect
- against Dexa-induced upregulation of proteolysis is mediated by Akt and
- mTORC1
+IGF-I co-administration in cells treated with Dexa increases phosphorylation
+ of Akt, GSK-3β, p70-S6K and 4E-BP1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "li2005insulin-like"
@@ -4759,7 +4758,9 @@ key "li2005insulin-like"
 \end_inset
 
 .
- Interestingly, inhibition of GSK-3β is partly disabling IGF-I protection.
+ Studies with inhibitors in cell culture revealed that IGF-I protective
+ effect against Dexa-induced upregulation of proteolysis is mediated by
+ Akt and mTORC1.
 \end_layout
 
 \begin_layout Standard
@@ -4834,7 +4835,7 @@ Models of anabolic alleviation of GAML
 \end_layout
 
 \begin_layout Standard
-x
+SUNT la 827
 \end_layout
 
 \begin_layout Standard
