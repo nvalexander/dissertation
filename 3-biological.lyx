@@ -3159,7 +3159,7 @@ key "dimitriadis1997effects"
 
 \end_inset
 
-, but it inhibits GLUT4 recruitment to the cell membrane
+, but inhibits GLUT4 recruitment to the cell membrane
 \begin_inset CommandInset citation
 LatexCommand citep
 key "weinstein1995glucocorticoid-induced,dimitriadis1997effects"
@@ -4688,7 +4688,7 @@ key "kimura2001insulin-like"
 
 \end_inset
 
-.
+, of proteasome subunits C2 C3, C8.
 \end_layout
 
 \begin_layout Standard
