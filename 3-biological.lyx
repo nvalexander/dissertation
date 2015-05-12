@@ -3374,7 +3374,7 @@ key "buren2008insulin,rojas2003regulation"
 \end_inset
 
 .
- One study reported measurable Ser 473 phosphorylation in basal state
+ A few studies reported measurable Ser 473 phosphorylation in basal state
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fappi2014effects"
@@ -3382,9 +3382,8 @@ key "fappi2014effects"
 \end_inset
 
 .
- In addition to confirming loss of insulin sensitivity at Ser 473, that
- study reported a Dexa-induced reduction in Ser 473 Akt phosphorylation
- in basal state.
+ These rare studies report that Dexa suppresses Ser 473 Akt phosphorylation
+ even in the absence of an insulin stimulus.
 \end_layout
 
 \begin_layout Standard
@@ -3463,7 +3462,9 @@ key "jacinto2006sin1/mip1"
 \end_layout
 
 \begin_layout Standard
-Chronic Dexa reduces GSK3-β phosphorylation at Ser 9, thus leading to its
+More evidence for Dexa-induced inhibition of Akt comes from its substrates,
+ such as Ser 9 on GSK3-β.
+ Chronic Dexa reduces GSK3-β phosphorylation at Ser 9, thus leading to its
  activation 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3638,11 +3639,11 @@ key "conejo2001insulina"
 , which may perturb experiments where proliferating myoblasts were not actively
  eliminated.
  Diverging from in vivo studies, some studies showed that L6 and C2C12 myotubes
- exhibit Dexa-induced downregulation of p70-S6K Thr 389 phosphorylation
- and activity 
+ exhibit Dexa-induced downregulation of p70-S6K Thr 389 and 4B-EP phosphorylatio
+n and activities, even in the absence of an insulin or IGF-I stimulus 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "frost2009regulation,wu2010redd1"
+key "frost2009regulation,wu2010redd1,shah2000glucocorticoidsa"
 
 \end_inset
 
@@ -3656,6 +3657,26 @@ key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Based on the modulation of the substrates, it appears that mTOR complex
+ 1 kinase activity is reduced by Dexa with more efficacy during hyperinsulinemia
+, such as after feeding.
+ For always-on, feeding-independent GAML to proceed, mTOR-independent are
+ also required.
+ It has been hypothesized that Akt-independent mechanisms contribute to
+ mTOR suppression in GAML.
+ AMPK has been hypothesized as the other negative regulator of mTOR.
+ Because in rat muscle, Dexa causes a decrease in AMPK phosphorylation and
+ activity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qin2010protection,williams2012dietary"
+
+\end_inset
+
+, this hypothesis has been abandoned.
 \end_layout
 
 \begin_layout Standard
@@ -3679,27 +3700,25 @@ key "hosokawa2009nutrient-dependent"
 
 \end_inset
 
- led to speculations about the role of mTOR in autophagy, including in GAML,
- but in vivo evidence is lacking (also discussed in a later section).
+ led to speculations about additional contributions to the GAML phenotype
+ from autophagy.
+ In vivo evidence for mTOR-mediated autophagy upregulation in GAML is lacking
+ (discussed in a later section).
 \end_layout
 
 \begin_layout Standard
 In conclusion, the muscle response to GC is associated with molecular changes
  consistent with Akt / mTOR loss of sensitivity to trophic factors such
  as insulin and IGF-I.
- Based on p70-S6K divergence, it appears that GC causes Akt-mediated mTOR
- modulation, in contrast with denervation atrophy, where Akt is downstream
+ Based on putative p70-S6K divergence, it appears that GC causes Akt-mediated
+ mTOR modulation, in contrast with denervation atrophy, where Akt is downstream
  of mTOR.
  Interestingly, the pathway appears largely unaffected by Dexa in basal
  conditions, when trophic factors are withheld.
- It may be the case that mTOR-mediated mechanisms of GAML become relevant
- during episodes of hyperinsulinemia, such as after feeding.
- For always-on, feeding-independent GAML to proceed, mTOR-independent are
- also required.
  Because all our knowledge about Akt pathway in GAML is derived from experiments
- with intrinsic anabolic interventions, it may not be correct.
+ with cell models or intrinsic anabolic interventions, it may not be correct.
  Experiments on transgenic mice, unpicking one putative mediator at a time,
- may invalidate the current model of GAML, as they did in denervation atrophy.
+ may invalidate the current model of GAML, as they did for denervation atrophy.
 \end_layout
 
 \begin_layout Section
@@ -4571,17 +4590,6 @@ In rat gastrocnemius, Dexa causes a decrease in phosphorylated p38 MAPK
 \begin_inset CommandInset citation
 LatexCommand citep
 key "qin2010protection"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-In rat muscle, Dexa causes a decrease in AMPK phosphorylation and activity
-\begin_inset CommandInset citation
-LatexCommand citep
-key "qin2010protection,williams2012dietary"
 
 \end_inset
 
