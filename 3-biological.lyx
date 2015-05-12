@@ -4588,6 +4588,17 @@ key "qin2010protection"
 .
 \end_layout
 
+\begin_layout Standard
+Dexa reduces PGC-1alpha in rat muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qin2010protection,jesinkey2014atomoxetine"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Anabolic steroids regulation of muscle mass
 \end_layout
