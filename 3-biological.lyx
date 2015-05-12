@@ -2776,10 +2776,25 @@ key "wang1998dexamethasone,menconi2008dexamethasone"
 \end_inset
 
 .
- Four fifths of the Dexa-induced proteolysis augmentation is lost, when
- dinitrophenol, or proteasome inhibitors, such as beta-lactone, are co-administe
-red.
- The energy dependence reinforces the idea that GC-stimulated proteolysis
+ Between 78% and 95% of the Dexa-induced proteolysis augmentation is lost,
+ when proteasome inhibitors, such as beta-lactone or MG-132, are co-administered
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang1998dexamethasone,thompson1999stimulation"
+
+\end_inset
+
+.
+ Co-administration of dinitrophenol completely abolishes Dexa-induced proteolysi
+s
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang1998dexamethasone"
+
+\end_inset
+
+.
+ GAML dependence on ATP reinforces the idea that GC-stimulated proteolysis
  takes place in the proteasome.
  In contrast, lysosomal inhibitors had no effect, while E-64 has minimal
  effect
