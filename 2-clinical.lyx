@@ -3052,7 +3052,14 @@ Hypercortisolism-induced changes in endogenous androgens levels
 \end_layout
 
 \begin_layout Standard
-Muscle wasting is more common in males than in females with hypercortisolism.
+Muscle wasting is more common in males than in females with hypercortisolism
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pecorigiraldi2003gender-related"
+
+\end_inset
+
+.
  The interaction of GC with endogenous AAS distinguishes male from female
  hypercortisolism, to the point that the two syndromes are qualitatively
  different.
