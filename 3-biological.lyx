@@ -4691,8 +4691,14 @@ key "chrysis2002divergent"
 \end_inset
 
 .
- IN myotubes, IGF-I coadministration reversed the E3 ligase atrogenes' upregulat
-ion.
+ In C2C12 myotubes, IGF-I coadministration reversed MAFbx upregulation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sacheck2004igf-i"
+
+\end_inset
+
+.
  IGF-I co-administration reverses Dexa-induced activation of glutamine synthetas
 e
 \begin_inset CommandInset citation
@@ -4714,6 +4720,7 @@ key "li2004insulin-like"
 \end_inset
 
 .
+ In C2C12 cells, IGF-I does not repress Dexa-induced upregulation of MuRF1.
 \end_layout
 
 \begin_layout Standard
