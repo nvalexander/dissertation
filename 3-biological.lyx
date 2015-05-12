@@ -2785,8 +2785,8 @@ key "wang1998dexamethasone,thompson1999stimulation"
 \end_inset
 
 .
- Co-administration of dinitrophenol completely abolishes Dexa-induced proteolysi
-s
+ Co-administration of dinitrophenol essentially abolishes Dexa-induced proteolys
+is
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wang1998dexamethasone"
@@ -4574,7 +4574,10 @@ key "gayan-ramirez1999acute"
 \end_inset
 
 .
- Systemic coadministration of IGF-I reduces loss of muscle mass, fiber atrophy,
+\end_layout
+
+\begin_layout Standard
+Systemic coadministration of IGF-I reduces loss of muscle mass, fiber atrophy,
  and 3MH release
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4583,22 +4586,30 @@ key "kanda1999preventive"
 \end_inset
 
 .
+ Moreover, co-administration of IGF-I reverses upregulation of ubiquitin
+ expression
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chrysis1999regulation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Co-administration of GH cannot reverse muscle loss from Dexa or triamcinolone
+\begin_inset CommandInset citation
+LatexCommand citep
+key "petrof1995growth,chrysis1999regulation"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 IGF-I expression is GH-independent before the age of 6 months (PMID: 11726733).
-\end_layout
-
-\begin_layout Standard
-Triamcinolone causes muscle loss which co-administration of GH does not
- compensate
-\begin_inset CommandInset citation
-LatexCommand citep
-key "petrof1995growth"
-
-\end_inset
-
-; or it does(PMID: 8937196)?
 \end_layout
 
 \begin_layout Standard
