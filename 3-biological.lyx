@@ -4761,6 +4761,15 @@ key "li2005insulin-like"
  Studies with inhibitors in cell culture revealed that IGF-I protective
  effect against Dexa-induced upregulation of proteolysis is mediated by
  Akt and mTORC1.
+ From the similarity between muscle protection conferred by IGF-I and by
+ GSK-3β inhibitors, it was speculated that IGF-I acts by inhibiting GSK-3β
+\begin_inset CommandInset citation
+LatexCommand citep
+key "evenson2005gsk-3beta"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
