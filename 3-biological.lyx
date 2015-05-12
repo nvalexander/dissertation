@@ -3781,29 +3781,23 @@ key "sandri2004foxo,senf2010foxo"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
-Although expression response has been well documented, the hypothesized
- effect of Dexa on Foxo protein appears more elusive.
- In one study on mice gastrocnemii, Dexa does decrease the ratio phosphorylated:
-total for FOXO3a, but surprisingly, the response is not reflected in total
- FOXO3A.
- Another group reported a reduction of Foxo phosphorylation in rat levator
- ani by chronic Dexa
+A few groups reported reductions in Foxo phosphorylation by chronic Dexa
+ at basal state
 \begin_inset CommandInset citation
 LatexCommand citep
-key "jones2010effects"
+key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
 
 \end_inset
 
 .
- Interestingly, this report is also one of the few describing changes in
- Akt activity in response to Dexa at basal levels, possibly illustrating
- the peculiarities of male levator ani rather than a common mechanism.
+ Two out of the three referenced studies report an unusual activation of
+ Akt in basal state, indicating that these reports may be reflective of
+ special conditions (40 days treatment, or the use of male levator ani).
  In C2C12 myotubes, Foxo phosphorylation downregulation in response to Dexa
- was more readily detected
+ is more readily detected
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2007foxo3,sandri2004foxo"
