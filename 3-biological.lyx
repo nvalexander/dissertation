@@ -3682,6 +3682,15 @@ key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 \end_inset
 
 .
+ Conversely, insulin sensitivity at Akt, 4E-BP and p70-S6K is enhanced by
+ removal of endogenous GC, through adrenalectomy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "long2003adrenalectomy"
+
+\end_inset
+
+.
 \begin_inset Note Note
 status collapsed
 
@@ -4688,7 +4697,14 @@ key "kimura2001insulin-like"
 
 \end_inset
 
-, of proteasome subunits C2 C3, C8.
+, of proteasome subunits C2 C3, C8
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chrysis2002divergent"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
