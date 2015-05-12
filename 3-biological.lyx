@@ -3382,6 +3382,20 @@ key "wu2010redd1"
 \end_layout
 
 \begin_layout Standard
+Genetic manipulations established that Dexa's ability to repress p70-S6K
+ sensitivity to insulin requires GR
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shah2002activated"
+
+\end_inset
+
+.
+ Moreover, mutations that disable GR's trascriptional and DNA binding ability
+ abolish GR's ability to inhibit p70-S6K.
+\end_layout
+
+\begin_layout Standard
 NONTRANSCRIPTIONAL
 \end_layout
 
