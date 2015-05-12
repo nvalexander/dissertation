@@ -4642,19 +4642,28 @@ IGF-I in GAML
 \end_layout
 
 \begin_layout Standard
-Insulin or IGF-I, in concentrations close to the physiological levels, increase
- glucose uptake about 10-fold
+As described in the section on Akt / mTOR axis, most of the knowledge we
+ have about it is derived from studies of anabolism, where muscle, rather
+ than being analyzed in its basal state, is first stimulated with insulin
+ or IGF-I.
+ While, for the most part, these studies inform us about the molecular mechanism
+s of hypercortisolism, they also suggest that insulin or IGF-I may provide
+ a path to alleviation of GAML.
+ Systemic co-administration of IGF-I reduces loss of muscle mass, fiber
+ atrophy, and 3MH release
 \begin_inset CommandInset citation
 LatexCommand citep
-key "weinstein1995glucocorticoid-induced"
+key "kanda1999preventive"
 
 \end_inset
 
-.
- This indicates that, at basal states, muscle is very responsive to insulin
- and IGF-I, with significant opportunity for amplification of anabolic pathways.
- A major atrophic action of Dexa on muscle is desensitisation of the Akt/mTOR
- axis, with loss of anabolism and gain in catabolism.
+, thus providing a blueprint for the ideal anti-GAML therapy.
+\end_layout
+
+\begin_layout Standard
+A major atrophic action of Dexa on muscle is desensitisation of the Akt/mTOR
+ axis, with loss of anabolism and gain in catabolism, and mimicking a relative
+ IGF-I deficit.
  But Dexa further represses Akt signaling, as it reduces muscle expression
  of IGF-I
 \begin_inset CommandInset citation
@@ -4664,20 +4673,12 @@ key "gayan-ramirez1999acute"
 \end_inset
 
 .
+ Therefore, GAML is an absolute loss of IGF-I, which may be compensated
+ for by IGF-I supplementation.
 \end_layout
 
 \begin_layout Standard
-Systemic coadministration of IGF-I reduces loss of muscle mass, fiber atrophy,
- and 3MH release
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kanda1999preventive"
-
-\end_inset
-
-.
- Moreover, co-administration of IGF-I reverses upregulation of ubiquitin
- expression
+Co-administration of IGF-I reverses upregulation of ubiquitin expression
 \begin_inset CommandInset citation
 LatexCommand citep
 key "chrysis1999regulation"
