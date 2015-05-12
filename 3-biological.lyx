@@ -2993,14 +2993,21 @@ key "stitt2004igf-1/pi3k/akt"
 \end_inset
 
 .
- While no studies on triple FOXO knockout mouse have been published, similaritie
-s with the late phase of denervation atrophy suggest an essential role for
- FOXO in inducing atrogenes in GAML.
 \end_layout
 
 \begin_layout Standard
-Support for the GC - FOXO - atrogenes axis hypothesis is furthered by experiment
-s in cultured myotubes, where transfection of constitutively active FOXO3a
+A sizable body of indirect evidence suggests that atrogenes are upregulated
+ in GAML by FOXO transcription factors.
+ On one hand, Foxo are among the most reliably induced genes by Dexa.
+ 
+\end_layout
+
+\begin_layout Standard
+While no studies on triple FOXO knockout mouse have been published, similarities
+ with the late phase of denervation atrophy suggest an essential role for
+ FOXO in inducing atrogenes in GAML.
+ Support for the GC - FOXO - atrogenes axis hypothesis is furthered by experimen
+ts in cultured myotubes, where transfection of constitutively active FOXO3a
  upregulates MAFbx
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3017,7 +3024,10 @@ key "smith2010sepsisa"
 \end_inset
 
 .
- In both atrogenes' promoter, a Krüppel-like factor-15 (
+\end_layout
+
+\begin_layout Standard
+In both atrogenes' promoter, a Krüppel-like factor-15 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "KLF-15"
