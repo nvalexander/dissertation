@@ -4765,7 +4765,21 @@ Anabolic steroids regulation of muscle mass
 \end_layout
 
 \begin_layout Standard
-x
+As described in the clinical studies section, hypercortisolism reduces endogenou
+s T levels.
+ This change is less detectable in animals, where physiological ranges of
+ endogenous T have not been defined and appear to be absent.
+\end_layout
+
+\begin_layout Standard
+T interferes with the binding of Dexa to GR
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mayer1975interaction"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
