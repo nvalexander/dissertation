@@ -2792,6 +2792,15 @@ key "wang1998dexamethasone,thompson1999stimulation"
 \end_inset
 
 .
+ Demonstrating proteasome's primacy, MG-132 has this overriding effect even
+ co-administered as an addition to a cocktail of lysosome and calpain inhibitors
+\begin_inset CommandInset citation
+LatexCommand citep
+key "combaret2004glucocorticoids"
+
+\end_inset
+
+.
  Co-administration of dinitrophenol essentially abolishes Dexa-induced proteolys
 is
 \begin_inset CommandInset citation
@@ -3682,11 +3691,11 @@ key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 \end_inset
 
 .
- Conversely, insulin sensitivity at Akt, 4E-BP and p70-S6K is enhanced by
- removal of endogenous GC, through adrenalectomy
+ Conversely, insulin sensitivity at Akt, GSK3-β, 4E-BP and p70-S6K is enhanced
+ by removal of endogenous GC, through adrenalectomy
 \begin_inset CommandInset citation
 LatexCommand citep
-key "long2003adrenalectomy"
+key "long2003adrenalectomy,wu2004glucocorticoids"
 
 \end_inset
 
