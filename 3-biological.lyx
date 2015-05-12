@@ -3725,6 +3725,15 @@ Based on the modulation of the substrates, it appears that mTOR complex
  It has been hypothesized that Akt-independent mechanisms contribute to
  mTOR suppression in GAML.
  AMPK has been hypothesized as the other negative regulator of mTOR.
+ However, Dexa stimulates in vivo mitochondrial biogenesis, as indicated
+ by increased cytochrome c oxidase expression and activity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weber2002glucocorticoid"
+
+\end_inset
+
+.
  Because in rat muscle, Dexa causes a decrease in AMPK phosphorylation and
  activity
 \begin_inset CommandInset citation
