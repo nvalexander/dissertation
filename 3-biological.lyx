@@ -3780,6 +3780,14 @@ key "weber2002glucocorticoid"
 \end_inset
 
 .
+ Moreover, Dexa increases Na(+)-K(+)-ATPase expression and maximal activity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nordsborg2005dexamethasone"
+
+\end_inset
+
+.
  Dexa induces a significant upregulation of intramuscular ATP
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3797,6 +3805,8 @@ key "williams2012dietary"
 \end_inset
 
 , this hypothesis has been abandoned.
+ Moreover, this body of evidence shows that GAML does not include some mitochond
+rial dysfunction.
 \end_layout
 
 \begin_layout Standard
@@ -4736,6 +4746,20 @@ key "sacheck2004igf-i"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Studies with inhibitors in cell culture revealed that IGF-I protective effect
+ against Dexa-induced upregulation of proteolysis is mediated by Akt and
+ mTORC1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "li2005insulin-like"
+
+\end_inset
+
+.
+ Interestingly, inhibition of GSK-3β is partly disabling IGF-I protection.
 \end_layout
 
 \begin_layout Standard
