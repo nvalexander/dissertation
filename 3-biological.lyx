@@ -2605,7 +2605,6 @@ key "prezant1997gender-specific"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -3756,8 +3755,8 @@ key "waddell2008glucocorticoid"
 .
  Second, Foxo transcription factors are thought to be potentiated by Dexa
  through post-translational means.
- Phosphorylated Foxo transcription factors are exported from nucleus, and
- eventually marked for ubiquitin-proteasome-mediated degradation (reviewed
+ Phosphorylated Foxo transcription factors are exported from the nucleus,
+ and eventually marked for ubiquitin-proteasome-mediated degradation (reviewed
  in 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3771,16 +3770,8 @@ es to an increase in their activity in GAML.
 \end_layout
 
 \begin_layout Standard
-Manipulations of Foxo have supported their role in GAML.
- Transfection with dominant negative Foxo3A partially prevents diameter
- reduction in disuse of rat soleus and Dexa-treated C2C12 myotubes
-\begin_inset CommandInset citation
-LatexCommand citep
-key "sandri2004foxo,senf2010foxo"
-
-\end_inset
-
-.
+The net result of these mechanisms is that Dexa treatements reduce nuclear
+ Foxo.
 \end_layout
 
 \begin_layout Standard
@@ -3801,6 +3792,19 @@ key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2007foxo3,sandri2004foxo"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Manipulations of Foxo have supported their role in GAML.
+ Transfection with dominant negative Foxo3A partially prevents diameter
+ reduction in disuse of rat soleus and Dexa-treated C2C12 myotubes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sandri2004foxo,senf2010foxo"
 
 \end_inset
 
