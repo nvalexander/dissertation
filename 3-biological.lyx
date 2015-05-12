@@ -2997,55 +2997,15 @@ key "stitt2004igf-1/pi3k/akt"
 
 \begin_layout Standard
 A sizable body of indirect evidence suggests that atrogenes are upregulated
- in GAML by FOXO transcription factors.
- On one hand, Foxo are among the most reliably induced genes by Dexa.
- 
-\end_layout
-
-\begin_layout Standard
-While no studies on triple FOXO knockout mouse have been published, similarities
- with the late phase of denervation atrophy suggest an essential role for
+ in GAML mainly through by FOXO transcription factors.
+ These transcription factors are reliably upregulated by Dexa in muscle.
+ In addition, Dexa inhibits their kinase, Akt, thus protecting them from
+ ubiquitation and degradation.
+ While no studies on triple FOXO knockout mouse have been published, similaritie
+s with the late phase of denervation atrophy suggest an essential role for
  FOXO in inducing atrogenes in GAML.
- Support for the GC - FOXO - atrogenes axis hypothesis is furthered by experimen
-ts in cultured myotubes, where transfection of constitutively active FOXO3a
- upregulates MAFbx
-\begin_inset CommandInset citation
-LatexCommand citep
-key "sandri2004foxo"
-
-\end_inset
-
-, while knocking down FOXO1 causes a reduction in the atrogene response
- to GC
-\begin_inset CommandInset citation
-LatexCommand citep
-key "smith2010sepsisa"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-In both atrogenes' promoter, a Krüppel-like factor-15 (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "KLF-15"
-description "kruppel-like factor-15"
-
-\end_inset
-
-) response element is located, near the FOXO binding site
-\begin_inset CommandInset citation
-LatexCommand citep
-key "shimizu2011crosstalk"
-
-\end_inset
-
-.
- A complex, self-reinforcing network is centered on KLF-15, which is a direct
- target of GR, upregulates expression of FOXO transcription, and synergizes
- with the latter to upregulate atrogenes.
+ The role of Foxo in GAML and the mechanisms by which they are though to
+ induce atrogenes are discussed in more detail in a dedicated section.
 \end_layout
 
 \begin_layout Standard
@@ -3748,54 +3708,21 @@ Foxo transcriptional program in GAML
 \end_layout
 
 \begin_layout Standard
-The upregulation of Foxo by Dexa brings many similarities between GAML and
- the late stage of denervation-induced atrophy.
- Evidence for the role of Foxo during GAML is indirect.
- The combined knockout of the three regulatable Foxo genes led to abrogation
- of the late, Akt- and Foxo-dependent, stage of denervation-induced atrophy
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tang2014mtorc1"
-
-\end_inset
-
-.
- Transfection with dominant negative Foxo3A partially prevents diameter
- reduction in disuse of rat soleus and Dexa-treated C2C12 myotubes
-\begin_inset CommandInset citation
-LatexCommand citep
-key "sandri2004foxo,senf2010foxo"
-
-\end_inset
-
-.
- Moreover, dominant negative Foxo3A transfection in rat soleus leads to
- loss of atrogene upregulation
-\begin_inset CommandInset citation
-LatexCommand citep
-key "senf2008hsp70"
-
-\end_inset
-
-.
+The evidence for the role of Foxo in GAML is not direct and compelling as
+ that gathered in denervation atrophy.
+ Given the partial redundancy between the three regulatable Foxo transcription
+ factors, only a triple knockout will give the true measure of their relative
+ importance.
 \end_layout
 
 \begin_layout Standard
 The importance of Foxo transcription factors is supported intuitively by
  their role as integrators of multiple atrophy signaling pathways.
- Dexa causes their upregulation by multiple mechanisms.
+ Multiple mechanisms converge to induce Foxo upregulation in GAML.
  First, chronic Dexa doubles Foxo expression
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wu2010redd1"
-
-\end_inset
-
-.
- GR knockout reduces expression of FOXO1 and FOXO3a in muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "waddell2008glucocorticoid"
 
 \end_inset
 
@@ -3818,6 +3745,15 @@ key "alamdari2010sepsis"
 \end_inset
 
 .
+ As a consequence, GR knockout reduces expression of FOXO1 and FOXO3a in
+ muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "waddell2008glucocorticoid"
+
+\end_inset
+
+.
  Second, Foxo transcription factors are thought to be potentiated by Dexa
  through post-translational means.
  Phosphorylated Foxo transcription factors are exported from nucleus, and
@@ -3831,10 +3767,31 @@ key "calnan2008foxo"
 
 ).
  It is believed that the Dexa-induced impairment of their kinase, Akt, contribut
-es to an increase in their activity in GAML, although the evidence for this
- is weak.
- In rat levator ani, inhibition of Akt by chronic Dexa cause a reduction
- in Foxo phosphorylation
+es to an increase in their activity in GAML.
+\end_layout
+
+\begin_layout Standard
+Manipulations of Foxo have supported their role in GAML.
+ Transfection with dominant negative Foxo3A partially prevents diameter
+ reduction in disuse of rat soleus and Dexa-treated C2C12 myotubes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sandri2004foxo,senf2010foxo"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Although expression response has been well documented, the hypothesized
+ effect of Dexa on Foxo protein appears more elusive.
+ In one study on mice gastrocnemii, Dexa does decrease the ratio phosphorylated:
+total for FOXO3a, but surprisingly, the response is not reflected in total
+ FOXO3A.
+ Another group reported a reduction of Foxo phosphorylation in rat levator
+ ani by chronic Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "jones2010effects"
@@ -3845,17 +3802,11 @@ key "jones2010effects"
  Interestingly, this report is also one of the few describing changes in
  Akt activity in response to Dexa at basal levels, possibly illustrating
  the peculiarities of male levator ani rather than a common mechanism.
- In C2C12 myotubes, one group reported the replication of this finding
+ In C2C12 myotubes, Foxo phosphorylation downregulation in response to Dexa
+ was more readily detected
 \begin_inset CommandInset citation
 LatexCommand citep
-key "sandri2004foxo"
-
-\end_inset
-
-, while another refuted it
-\begin_inset CommandInset citation
-LatexCommand citep
-key "stitt2004igf-1/pi3k/akt"
+key "zhao2007foxo3,sandri2004foxo"
 
 \end_inset
 
@@ -3863,9 +3814,9 @@ key "stitt2004igf-1/pi3k/akt"
 \end_layout
 
 \begin_layout Standard
-Excess nitrogen released by increased muscle proteolysis in GAML is converted
- to glutamine for excretion.
- Dexa increases muscle glutamine synthetase activity
+More convincing evidence towards Foxo activation comes from the concordance
+ in its downstream effects.
+ For example, Dexa increases muscle glutamine synthetase activity
 \begin_inset CommandInset citation
 LatexCommand citep
 key "king1983glutamine"
@@ -3921,6 +3872,54 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 .
+ In both atrogenes' promoter, a Krüppel-like factor-15 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "KLF-15"
+description "kruppel-like factor-15"
+
+\end_inset
+
+) response element is located, near the FOXO binding site
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shimizu2011crosstalk"
+
+\end_inset
+
+.
+ A complex, self-reinforcing network is centered on KLF-15, which is a direct
+ target of GR, upregulates expression of FOXO transcription, and synergizes
+ with the latter to upregulate atrogenes.
+ Overall, atrogenes appear to be under a strong control of Foxo, favored
+ by concomitant activation of synergistic factors.
+ Indeed, dominant negative Foxo3A transfection in rat soleus leads to loss
+ of atrogene upregulation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "senf2008hsp70"
+
+\end_inset
+
+.
+ In cultured myotubes, where transfection of constitutively active FOXO3a
+ upregulates MAFbx
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sandri2004foxo"
+
+\end_inset
+
+, while knocking down FOXO1 causes a reduction in the atrogene response
+ to GC
+\begin_inset CommandInset citation
+LatexCommand citep
+key "smith2010sepsisa"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
