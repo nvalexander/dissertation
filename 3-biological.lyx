@@ -2623,7 +2623,7 @@ key "minet-quinard2000induction,bowes1996effect"
  the common 5-10 days experiments are comparable to chronic exposure in
  humans.
  Rats appear more resistant than humans to GAML, given that reported experiments
- start at 
+ start at about 
 \begin_inset ERT
 status open
 
@@ -3025,8 +3025,40 @@ s with the late phase of denervation atrophy suggest an essential role for
 \begin_layout Standard
 A series of less investigated, Foxo-independent factors may lend support
  to Dexa's upregulation of atrogenes.
- In L6 myotubes treated with Dexa, acetylation and nuclear translocation
- of CCAAT-enhancer-binding protein (
+ One of the most tempting hypotheses attributed a role to Dexa-induced NF-κB
+ modulation.
+ However, the few reports are contradictory.
+ On one hand, in L6 myotubes, Dexa was shown to inhibit NF-κB signals by
+ upregulating inhibitory κBα (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IκBα"
+description "inhibitory κBα"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luo2001heat"
+
+\end_inset
+
+.
+ On the other, in the same cell line, Dexa upregulates acetylation and nuclear
+ translocation of the translational activator p65, in a p300 dependent-manner
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chamberlain2012multiple"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dexa also upregulates acetylation and nuclear translocation of CCAAT-enhancer-bi
+nding protein (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "C/EBP"
@@ -3034,7 +3066,7 @@ description "CCAAT-enhancer-binding protein"
 
 \end_inset
 
-) β, C/EBP δ and p65 is increased, in a p300 dependent-manner
+) β and C/EBP δ
 \begin_inset CommandInset citation
 LatexCommand citep
 key "chamberlain2012multiple"
@@ -3045,15 +3077,6 @@ key "chamberlain2012multiple"
  Because atrogenes promoters contain putative binding sites for C/EBP transcript
 ion factors, p300 was hypothesized to be yet another mechanism by which
  GC stimulate atrogenes.
- Moreover, the NF-κB, here acting through p65, is an effector of muscle
- atrophy in many other models, including sepsis
-\begin_inset CommandInset citation
-LatexCommand citep
-key "schakman2012role"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
