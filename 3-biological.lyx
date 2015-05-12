@@ -971,16 +971,8 @@ key "cuthbertson2005anabolic"
 .
  In young, healthy controls, BCAA alone were able to increase the fractional
  synthesis rate for myofibrilar protein.
- At the same time, BCAA caused an increase in phosphorylation of mechanistic
- target of rapamycin (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "mTOR"
-description "Mechanistic Target of Rapamycin"
-
-\end_inset
-
-) at Serine 2448.
+ At the same time, BCAA caused an increase in phosphorylation of mTOR at
+ Serine 2448.
  This posttranslational modification is caused by the ribosomal protein
  S6 kinase, 70 kDa (
 \begin_inset CommandInset nomenclature
@@ -998,9 +990,16 @@ key "chiang2005phosphorylation"
 \end_inset
 
 .
- Interestingly, p70-S6K is a substrate of mTOR complex 1, with the latter
- considered an integrator of nutrients, energy, and growth factor signaling
- (reviewed in 
+ Interestingly, p70-S6K is a substrate of mTOR complex 1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "mTORC1"
+description "mTOR complex 1"
+
+\end_inset
+
+), with the latter considered an integrator of nutrients, energy, and growth
+ factor signaling (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "laplante2012mtor"
@@ -1010,8 +1009,8 @@ key "laplante2012mtor"
 ).
  Indeed, in the same muscle, p70-S6K was activated, as indicated by an increase
  in its Threonine-389 phosphorylated form.
- Another substrate of mTOR complex 1, eukaryotic translation initiation
- factor 4E (
+ Another substrate of mTORC1, eukaryotic translation initiation factor 4E
+ (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "eIF4E"
@@ -1028,9 +1027,9 @@ description "eIF4E binding protein"
 \end_inset
 
 ), was hyperphosphorylated.
- The action of mTOR complex 1 on 4E-BP is the canonical way in which the
- former stimulates protein synthesis, by abolishing the latter's ability
- to bind and inhibit the mandatory translation initiation factor eIF4E.
+ The action of mTORC1 on 4E-BP is the canonical way in which the former
+ stimulates protein synthesis, by abolishing the latter's ability to bind
+ and inhibit the mandatory translation initiation factor eIF4E.
  Many of these anabolic markers may be paradoxically elevated in acute,
  non-starving atrophy settings, where BCAA sudden release increases their
  circulating levels.
@@ -2056,7 +2055,7 @@ key "zhao2007foxo3,schiaffino2013mechanisms"
  Recent studies contradicted this paradigm.
  In 2013, Quy and colleagues found that denervation increased Threonine-389
  phosphorylation and catalytic activity of p70-S6K, indicating that denervation
- causes in fact activation of mTOR complex 1
+ causes in fact activation of mTORC1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "quy2013proteasome-dependent"
@@ -2064,9 +2063,9 @@ key "quy2013proteasome-dependent"
 \end_inset
 
 .
- In 2014, Tang and colleagues proved that rapamycin, an inhibitor of mTOR
- complex 1 which lacks intrinsic anabolic properties, abolishes denervation-indu
-ced loss of muscle mass
+ In 2014, Tang and colleagues proved that rapamycin, an inhibitor of mTORC1
+ which lacks intrinsic anabolic properties, abolishes denervation-induced
+ loss of muscle mass
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tang2014mtorc1"
@@ -2074,8 +2073,8 @@ key "tang2014mtorc1"
 \end_inset
 
 .
- These experiments prove that mTOR complex 1 should be activated for denervation
--associated muscle atrophy to proceed in its later stage.
+ These experiments prove that mTORC1 should be activated for denervation-associa
+ted muscle atrophy to proceed in its later stage.
  Tang showed that denervation causes phosphorylation of insulin receptor
  substrate (
 \begin_inset CommandInset nomenclature
@@ -2085,10 +2084,10 @@ description "insulin receptor substrate"
 
 \end_inset
 
-) 1, proving that, in denervation, activated mTOR complex 1 inhibits Akt
- through a p70-S6K - IRS 1-mediated negative feedback loop.
- Quy found that mTOR complex 1 activation is lost upon proteasome inhibition
- with bortezomib.
+) 1, proving that, in denervation, activated mTORC1 inhibits Akt through
+ a p70-S6K - IRS 1-mediated negative feedback loop.
+ Quy found that mTORC1 activation is lost upon proteasome inhibition with
+ bortezomib.
  One can hypothesize the existence of an mTOR negative regulator which is
  specifically targeted by the ubiquitin-proteasome system during denervation.
  However, the late timing of the Akt / mTOR involvement suggests that the
@@ -2099,11 +2098,11 @@ description "insulin receptor substrate"
 \end_layout
 
 \begin_layout Standard
-Establishing the role for mTOR complex 1 in denervation-induced loss of
- muscle mass is crucial.
- In conceptual frame before Quy and Tang experiments, mTOR complex 1 was
- thought as being inactivated by denervation, thus downregulating on protein
- synthesis and removing a restriction on autophagy.
+Establishing the role for mTORC1 in denervation-induced loss of muscle mass
+ is crucial.
+ In conceptual frame before Quy and Tang experiments, mTORC1 was thought
+ as being inactivated by denervation, thus downregulating on protein synthesis
+ and removing a restriction on autophagy.
  This hypothesis was conceptually attractive, because it implied a co-operation
  between multiple anabolic and catabolic pathways, towards achieving muscle
  loss.
@@ -3637,7 +3636,7 @@ key "guertin2007defining,laplante2009mtor"
 
 ).
  Typically, the effects of the former prevail, indicating that Dexa should
- inhibit mTOR complex 1
+ inhibit mTORC1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "inoki2002tsc2"
@@ -3646,8 +3645,8 @@ key "inoki2002tsc2"
 
 .
  One group reported that Dexa-induced decrement in protein synthesis is
- unmodified, in absolute terms, when mTOR complex 1 is inhibited by rapamycin
- co-administration
+ unmodified, in absolute terms, when mTORC1 is inhibited by rapamycin co-adminis
+tration
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1999glucocorticoid-induced"
@@ -3667,12 +3666,12 @@ key "latres2005insulin-like"
 , suggesting that, on the contrary, mTOR is indispensable for PI3K effects.
  Most likely, both hypotheses are based on reductionist models that do not
  reflect true in vivo phenomena.
- Given its multifactorial nature, regulation of mTOR complex 1 cannot be
- inferred from its direct investigation, but may be better estimated from
- changes in its substrates.
- In contrast to Akt, phosphorylation of mTOR complex 1 substrates 4E-BP
- and p70-S6K is measurable in rat muscles in basal state, with acute Dexa
- causing a reduction of their phosphorylation
+ Given its multifactorial nature, regulation of mTORC1 cannot be inferred
+ from its direct investigation, but may be better estimated from changes
+ in its substrates.
+ In contrast to Akt, phosphorylation of mTORC1 substrates 4E-BP and p70-S6K
+ is measurable in rat muscles in basal state, with acute Dexa causing a
+ reduction of their phosphorylation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shah2000glucocorticoids"
@@ -3756,9 +3755,9 @@ key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
 \end_layout
 
 \begin_layout Standard
-Based on the modulation of the substrates, it appears that mTOR complex
- 1 kinase activity is reduced by Dexa with more efficacy during hyperinsulinemia
-, such as after feeding.
+Based on the modulation of the substrates, it appears that mTORC1 kinase
+ activity is reduced by Dexa with more efficacy during hyperinsulinemia,
+ such as after feeding.
  For always-on, feeding-independent GAML to proceed, mTOR-independent are
  also required.
  It has been hypothesized that Akt-independent mechanisms contribute to
@@ -3797,8 +3796,7 @@ While Akt repression is consistent with the induction of the ubiquitin-proteasom
 e system via FOXO, its side effect, mTOR repression, is expected to lead
  to simultaneous downregulation of protein synthesis via 4E-BP (discussed
  later).
- Discovery of novel mTOR complex 1 substrates such as UNC-51-like kinase
- 1 (
+ Discovery of novel mTORC1 substrates such as UNC-51-like kinase 1 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ULK1"
@@ -4545,7 +4543,7 @@ key "liu2004glucocorticoids"
 ion.
  Although the effect did not propagate downstream to eIF2B, parallels between
  Dexa effect on Akt / mTOR and eIF2 are obvious.
- Translational derepression and mTOR complex 1 interact in a complex manner.
+ Translational derepression and mTORC1 interact in a complex manner.
  In C2C12 cells, ATF4 is induced by IGF-I in a rapamycin-dependent manner
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4685,7 +4683,7 @@ key "chrysis1999regulation"
 
 \end_inset
 
- and of proteasome subunits C2 C3, C8
+, of proteasome subunits C2 C3, C8
 \begin_inset CommandInset citation
 LatexCommand citep
 key "chrysis2002divergent"
@@ -4693,6 +4691,8 @@ key "chrysis2002divergent"
 \end_inset
 
 .
+ IN myotubes, IGF-I coadministration reversed the E3 ligase atrogenes' upregulat
+ion.
  IGF-I co-administration reverses Dexa-induced activation of glutamine synthetas
 e
 \begin_inset CommandInset citation

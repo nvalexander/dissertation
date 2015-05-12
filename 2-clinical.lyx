@@ -2224,12 +2224,19 @@ key "garrel1988effects"
 
 \begin_layout Standard
 At a molecular level, it appears that Dexa inhibits anabolic signals centered
- on the insulin / Akt axis.
- In humans, experiments with high insulin doses are avoided for safety reasons.
- Therefore, more evidence has been collected in animal models, and is discussed
- in a dedicated section.
- Dexa inhibits branched chain amino acids' ability to induce phosphorylation
- of eIF4E binding protein 1 (
+ on the Akt / mechanistic target of rapamycin (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "mTOR"
+description "Mechanistic Target of Rapamycin"
+
+\end_inset
+
+) axis.
+ More evidence has been collected in animal models, and is discussed in
+ a dedicated section.
+ One study on humans described how Dexa inhibits branched chain amino acids'
+ ability to induce phosphorylation of eIF4E binding protein 1 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "4E-BP1"
