@@ -3298,9 +3298,18 @@ key "zheng2010foxo3a"
 \end_inset
 
 .
+ Phosphorylation of p38, another MAPK, is not altered by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcclung2010p38"
+
+\end_inset
+
+.
  Together with the dearth of reports, and the limited role of hyperplasia
- in adult muscle, available evidence suggests that Mek/Erk pathway does
- not mediate GAML.
+ in adult muscle, available evidence suggests that MAPK cascades do not
+ mediate GAML.
+ 
 \end_layout
 
 \begin_layout Standard
