@@ -4675,6 +4675,34 @@ key "chrysis1999regulation"
 
 \end_inset
 
+ and of proteasome subunits C2 C3, C8
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chrysis2002divergent"
+
+\end_inset
+
+.
+ IGF-I co-administration reverses Dexa-induced activation of glutamine synthetas
+e
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kimura2001insulin-like"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+IGF-I co-administration represses down to a quarter lysosomal proteolysis
+ induced by GAML, and only to half calpain and proteasome components
+\begin_inset CommandInset citation
+LatexCommand citep
+key "li2004insulin-like"
+
+\end_inset
+
 .
 \end_layout
 
@@ -4683,24 +4711,6 @@ Co-administration of GH cannot reverse muscle loss from Dexa or triamcinolone
 \begin_inset CommandInset citation
 LatexCommand citep
 key "petrof1995growth,chrysis1999regulation"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-IGF-I co-administration reverses Dexa-induced activation of glutamine synthetase
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kimura2001insulin-like"
-
-\end_inset
-
-, of proteasome subunits C2 C3, C8
-\begin_inset CommandInset citation
-LatexCommand citep
-key "chrysis2002divergent"
 
 \end_inset
 
