@@ -4578,10 +4578,10 @@ key "qin2010protection"
 \end_layout
 
 \begin_layout Standard
-In rat gastrocnemius, Dexa causes a decrease in phosphorylated AMPK
+In rat muscle, Dexa causes a decrease in AMPK phosphorylation and activity
 \begin_inset CommandInset citation
 LatexCommand citep
-key "qin2010protection"
+key "qin2010protection,williams2012dietary"
 
 \end_inset
 
