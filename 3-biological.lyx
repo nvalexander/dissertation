@@ -2213,7 +2213,7 @@ proteasome system.
 \end_layout
 
 \begin_layout Section
-Animal models of GAML
+Animal models of glucocorticoid myopathy
 \end_layout
 
 \begin_layout Standard
@@ -2667,7 +2667,7 @@ The next sections are informed by experiments with chronic (5-10 days) Dexa
 \end_layout
 
 \begin_layout Section
-Ubiquitin-proteasome system as a major effector in GAML
+Glucocorticoid stimulation of ubiquitin-proteasome system
 \end_layout
 
 \begin_layout Standard
@@ -3115,7 +3115,7 @@ In conclusion, explant models suggest that GAML is, to a wide extend, the
 \end_layout
 
 \begin_layout Section
-GC-induced loss of sensitivity on the Akt / mTOR axis
+Glucocorticoid-induced loss of sensitivity on the Akt axis
 \end_layout
 
 \begin_layout Standard
@@ -3414,7 +3414,7 @@ key "shah2002activated"
 \end_inset
 
 .
- Moreover, mutations that disable GR's trascriptional and DNA binding ability
+ Moreover, mutations that disable GR's transcriptional and DNA binding ability
  abolish GR's ability to inhibit p70-S6K.
 \end_layout
 
@@ -3630,7 +3630,14 @@ key "sacheck2004igf-i"
 \end_inset
 
  led to an unjustified neglect of GSK3-β.
- 
+\end_layout
+
+\begin_layout Section
+Glucocorticoid inhibition of mTOR
+\end_layout
+
+\begin_layout Standard
+A pleiotropic effector of Akt is mTORC1.
 \end_layout
 
 \begin_layout Standard
@@ -3677,7 +3684,10 @@ key "latres2005insulin-like"
  Given its multifactorial nature, regulation of mTORC1 cannot be inferred
  from its direct investigation, but may be better estimated from changes
  in its substrates.
- In contrast to Akt, phosphorylation of mTORC1 substrates 4E-BP and p70-S6K
+\end_layout
+
+\begin_layout Standard
+In contrast to Akt, phosphorylation of mTORC1 substrates 4E-BP and p70-S6K
  is measurable in rat muscles in basal state, with acute Dexa causing a
  reduction of their phosphorylation
 \begin_inset CommandInset citation
@@ -3852,7 +3862,7 @@ In conclusion, the muscle response to GC is associated with molecular changes
 \end_layout
 
 \begin_layout Section
-Foxo transcriptional program in GAML
+Glucocorticoid activation of Foxo transcriptional program
 \end_layout
 
 \begin_layout Standard
@@ -4085,7 +4095,7 @@ LKB1
 \end_layout
 
 \begin_layout Section
-Myostatin in GAML
+Glucocorticoid activation of myostatin
 \end_layout
 
 \begin_layout Standard
@@ -4222,7 +4232,7 @@ GAML appears to be mediated by a myostatin-centered, mTOR-independent pathway.
 \end_layout
 
 \begin_layout Section
-Protein synthesis modulation in GAML
+Glucocorticoid modulation of protein synthesis
 \end_layout
 
 \begin_layout Standard
@@ -4596,7 +4606,7 @@ Multiple pathways that usually alter protein synthesis are modulated by
 \end_layout
 
 \begin_layout Section
-Autophagy in GAML
+The effects of glucocorticoids on autophagy
 \end_layout
 
 \begin_layout Standard
@@ -4639,7 +4649,7 @@ key "wang1998dexamethasone"
 \end_layout
 
 \begin_layout Section
-Calpains in GAML
+The effects of glucocorticoids on calpains
 \end_layout
 
 \begin_layout Standard
@@ -4651,10 +4661,19 @@ key "dardevet1995sensitivity"
 \end_inset
 
 .
+ Overexpression of calpastatin reduces by some degree the proteolytic response
+ to Dexa in C2C12 myoblasts
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fareed2006treatment"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
-IGF-I in GAML
+Alleviation of GAML by IGF-I
 \end_layout
 
 \begin_layout Standard
@@ -4840,7 +4859,7 @@ key "mayer1975interaction"
 \end_layout
 
 \begin_layout Section
-Models of anabolic alleviation of GAML
+Models of anabolic alleviation of glucocorticoid myopathy
 \end_layout
 
 \begin_layout Standard
