@@ -3770,13 +3770,20 @@ es to an increase in their activity in GAML.
 \end_layout
 
 \begin_layout Standard
-The net result of these mechanisms is that Dexa treatements reduce nuclear
- Foxo.
-\end_layout
+The net result of these mechanisms is that Dexa treatments reduce nuclear
+ Foxo
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qin2010protection"
 
-\begin_layout Standard
-A few groups reported reductions in Foxo phosphorylation by chronic Dexa
- at basal state
+\end_inset
+
+.
+ Given that phosphorylated Foxo is degraded and is elicited by a low-activity
+ Akt pathway, Foxo phosphorylation changes may be undetectable in basal
+ state.
+ Nevertheless, a few groups reported reductions in Foxo phosphorylation
+ by chronic Dexa at basal state
 \begin_inset CommandInset citation
 LatexCommand citep
 key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
@@ -4553,6 +4560,32 @@ key "petrof1995growth"
 
 \begin_layout Standard
 IGF-IEa isoform
+\end_layout
+
+\begin_layout Section
+Other pathways of GAML
+\end_layout
+
+\begin_layout Standard
+In rat gastrocnemius, Dexa causes a decrease in phosphorylated p38 MAPK
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qin2010protection"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In rat gastrocnemius, Dexa causes a decrease in phosphorylated AMPK
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qin2010protection"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
