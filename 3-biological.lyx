@@ -3461,6 +3461,7 @@ key "buren2008insulin,rojas2003regulation"
 
 .
  A few studies reported measurable Ser 473 phosphorylation in basal state
+ in vivo
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fappi2014effects"
@@ -3470,6 +3471,15 @@ key "fappi2014effects"
 .
  These rare studies report that Dexa suppresses Ser 473 Akt phosphorylation
  even in the absence of an insulin stimulus.
+ Even in cultured cells, Akt phosphorylation is not detectable in basal
+ states, preventing experimental detection of GC-induced Akt inhibition
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3802,8 +3812,18 @@ key "latres2005insulin-like"
 \end_layout
 
 \begin_layout Standard
-As described earlier, cell culture models are not perfect replicas of the
- in vivo phenomena.
+Diverging from in vivo studies, some studies showed that L6 and C2C12 myotubes
+ exhibit Dexa-induced downregulation of p70-S6K Thr 389 and 4B-EP phosphorylatio
+n and activities, even in the absence of an anabolic stimulus 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frost2009regulation,wu2010redd1,shah2000glucocorticoidsa"
+
+\end_inset
+
+.
+ It is unclear whether the difference between in vivo and in vitro studies
+ of mTORC1 substrates is caused by the use of different anabolic stimuli.
  Whereas in vivo studies use insulin to elicit an Akt response whose modulation
  by GC is measurable, in vitro studies commonly use IGF-I (for example,
  
@@ -3823,25 +3843,6 @@ key "conejo2001insulina"
 
 , which may perturb experiments where proliferating myoblasts were not actively
  eliminated.
- Diverging from in vivo studies, some studies showed that L6 and C2C12 myotubes
- exhibit Dexa-induced downregulation of p70-S6K Thr 389 and 4B-EP phosphorylatio
-n and activities, even in the absence of an insulin or IGF-I stimulus 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "frost2009regulation,wu2010redd1,shah2000glucocorticoidsa"
-
-\end_inset
-
-.
- But even in cultured cells, Akt phosphorylation is not detectable in basal
- states, preventing experimental detection of GC-induced Akt inhibition
-\begin_inset CommandInset citation
-LatexCommand citep
-key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -4109,10 +4110,6 @@ key "smith2010sepsisa"
 
 .
  
-\end_layout
-
-\begin_layout Standard
-REDD1
 \end_layout
 
 \begin_layout Standard
@@ -4888,7 +4885,7 @@ Models of anabolic alleviation of glucocorticoid myopathy
 \end_layout
 
 \begin_layout Standard
-SUNT la 827
+SUNT la 728
 \end_layout
 
 \begin_layout Standard
