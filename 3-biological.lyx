@@ -3637,139 +3637,39 @@ Glucocorticoid inhibition of mTOR
 \end_layout
 
 \begin_layout Standard
-A pleiotropic effector of Akt is mTORC1.
-\end_layout
-
-\begin_layout Standard
-In other models, Akt inactivation leads to loss of phosphorylation on TSC2
- and PRAS40 (reviewed in 
+One of the most effective pathways for Akt to induce its anabolic program
+ is through mTORC1 (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "guertin2007defining,laplante2009mtor"
+key "guertin2007defining,laplante2009mtor,inoki2002tsc2"
 
 \end_inset
 
 ).
- Typically, the effects of the former prevail, indicating that Dexa should
- inhibit mTORC1
+ Activated Akt phosphorylates TSC2, thus causing its cytosoling sequestration,
+ away from its transmembrane binding partner, hamartin (Tuberous Sclyerosis
+ Complex 1; 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TSC1"
+description "Tuberous Sclerosis Complex 1"
+
+\end_inset
+
+)
 \begin_inset CommandInset citation
 LatexCommand citep
-key "inoki2002tsc2"
+key "cai2006activity"
 
 \end_inset
 
 .
- One group reported that Dexa-induced decrement in protein synthesis is
- unmodified, in absolute terms, when mTORC1 is inhibited by rapamycin co-adminis
-tration
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dardevet1999glucocorticoid-induced"
-
-\end_inset
-
-, suggesting that mTOR signaling is dispensable.
- In a C2C12 microarray study, interference of IGF-I transcriptional program
- with PI3K inhibitor was virtually identical to the interference induced
- by rapamycin
-\begin_inset CommandInset citation
-LatexCommand citep
-key "latres2005insulin-like"
-
-\end_inset
-
-, suggesting that, on the contrary, mTOR is indispensable for PI3K effects.
- Most likely, both hypotheses are based on reductionist models that do not
- reflect true in vivo phenomena.
- Given its multifactorial nature, regulation of mTORC1 cannot be inferred
- from its direct investigation, but may be better estimated from changes
- in its substrates.
-\end_layout
-
-\begin_layout Standard
-In contrast to Akt, phosphorylation of mTORC1 substrates 4E-BP and p70-S6K
- is measurable in rat muscles in basal state, with acute Dexa causing a
- reduction of their phosphorylation
-\begin_inset CommandInset citation
-LatexCommand citep
-key "shah2000glucocorticoids"
-
-\end_inset
-
-.
- Chronic Dexa changes 4E-BP and p70-S6K phosphorylation in a pattern that
- mirrors Akt activation, with no detectable Dexa effect on their basal phosphory
-lation, and a Dexa-induced loss of sensitivity to insulin.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
-
-\end_inset
-
-.
- Conversely, insulin sensitivity at Akt, GSK3-β, 4E-BP and p70-S6K is enhanced
- by removal of endogenous GC, through adrenalectomy
-\begin_inset CommandInset citation
-LatexCommand citep
-key "long2003adrenalectomy,wu2004glucocorticoids"
-
-\end_inset
-
-.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-As described earlier, cell culture models are not perfect replicas of the
- in vivo phenomena.
- Whereas in vivo studies use insulin to elicit an Akt response whose modulation
- by GC is measurable, in vitro studies commonly use IGF-I (for example,
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "stitt2004igf-1/pi3k/akt"
-
-\end_inset
-
-).
- One reason could be the remarkable hyperplastic abilities of insulin
-\begin_inset CommandInset citation
-LatexCommand citep
-key "conejo2001insulina"
-
-\end_inset
-
-, which may perturb experiments where proliferating myoblasts were not actively
- eliminated.
- Diverging from in vivo studies, some studies showed that L6 and C2C12 myotubes
- exhibit Dexa-induced downregulation of p70-S6K Thr 389 and 4B-EP phosphorylatio
-n and activities, even in the absence of an insulin or IGF-I stimulus 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "frost2009regulation,wu2010redd1,shah2000glucocorticoidsa"
-
-\end_inset
-
-.
- But even in cultured cells, Akt phosphorylation is not detectable in basal
- states, preventing experimental detection of GC-induced Akt inhibition
-\begin_inset CommandInset citation
-LatexCommand citep
-key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
-
-\end_inset
-
-.
+ The destruction of TSC1-TSC2 complexes relieves the negative regulation
+ from Rheb, a small GTPase, that can induce activation of mTORC1, manifested
+ in amplified phosphorylation of substrates such as p70-S6K.
+ Therefore, Dexa-induced repression of Akt should inhibit mTORC.
+ In GAML, this mechanism has not been proven, beyond an increased formation
+ of TSC1-TSC2 complexes in response to Dexa in starved L6 myotubes.
 \end_layout
 
 \begin_layout Standard
@@ -3817,6 +3717,131 @@ key "williams2012dietary"
 , this hypothesis has been abandoned.
  Moreover, this body of evidence shows that GAML does not include some mitochond
 rial dysfunction.
+\end_layout
+
+\begin_layout Standard
+A more robust inactivation of mTORC1 is achieved by a parallel mechanism,
+ centered on REDD1.
+ REDD1 expression is upregulated in GAML
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang2006dexamethasone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+One way to asses mTORC1 activation is to observe its enzymatic activity.
+ In contrast to Akt, phosphorylation of mTORC1 substrates 4E-BP and p70-S6K
+ is measurable in rat muscles in basal state, with acute Dexa causing a
+ reduction of their phosphorylation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shah2000glucocorticoids"
+
+\end_inset
+
+.
+ Chronic Dexa changes 4E-BP and p70-S6K phosphorylation in a pattern that
+ mirrors Akt activation, with no detectable Dexa effect on their basal phosphory
+lation, and a Dexa-induced loss of sensitivity to insulin.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
+
+\end_inset
+
+.
+ Conversely, insulin sensitivity at 4E-BP and p70-S6K is enhanced by removal
+ of endogenous GC, through adrenalectomy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "long2003adrenalectomy,wu2004glucocorticoids"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another way to gauge the role of mTORC1 is to use its inhibitor, rapamycin.
+ One group reported that Dexa-induced decrement in protein synthesis is
+ unmodified, in absolute terms, upon rapamycin co-administration
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1999glucocorticoid-induced"
+
+\end_inset
+
+, suggesting that mTOR signaling is dispensable.
+ In a C2C12 microarray study, interference of IGF-I transcriptional program
+ with PI3K inhibitor was virtually identical to the interference induced
+ by rapamycin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "latres2005insulin-like"
+
+\end_inset
+
+, suggesting that, on the contrary, mTOR is indispensable for PI3K effects.
+ Most likely, both hypotheses are based on reductionist models that do not
+ reflect true in vivo phenomena.
+\end_layout
+
+\begin_layout Standard
+As described earlier, cell culture models are not perfect replicas of the
+ in vivo phenomena.
+ Whereas in vivo studies use insulin to elicit an Akt response whose modulation
+ by GC is measurable, in vitro studies commonly use IGF-I (for example,
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stitt2004igf-1/pi3k/akt"
+
+\end_inset
+
+).
+ One reason could be the remarkable hyperplastic abilities of insulin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "conejo2001insulina"
+
+\end_inset
+
+, which may perturb experiments where proliferating myoblasts were not actively
+ eliminated.
+ Diverging from in vivo studies, some studies showed that L6 and C2C12 myotubes
+ exhibit Dexa-induced downregulation of p70-S6K Thr 389 and 4B-EP phosphorylatio
+n and activities, even in the absence of an insulin or IGF-I stimulus 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frost2009regulation,wu2010redd1,shah2000glucocorticoidsa"
+
+\end_inset
+
+.
+ But even in cultured cells, Akt phosphorylation is not detectable in basal
+ states, preventing experimental detection of GC-induced Akt inhibition
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
