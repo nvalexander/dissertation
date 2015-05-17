@@ -5171,10 +5171,19 @@ The effects of glucocorticoids on autophagy
 \end_layout
 
 \begin_layout Standard
-Proteasome inhibition does not abolish ability of Dexa to stimulate proteolysis,
+Proteasome inhibition does not abolish completely Dexa-activated proteolysis,
  indicating that some other catabolic mechanisms must be involved.
- Based on molecular markers, one of the most plausible candidates is the
- autophagosome.
+ Based on newly discovered role of mTOR as a major modulator of autophagy,
+ the second most important effector of GAML was presumed to be autophagosome.
+ In vivo, Dexa doubles the lysosome proteases cathepsin L and D 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity,deval2001identification,nishimura2008effects"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -5190,15 +5199,7 @@ key "wang1998dexamethasone"
 \end_layout
 
 \begin_layout Standard
-In vivo, Dexa doubles the lysosome proteases cathepsin L and D 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dardevet1995sensitivity,deval2001identification,nishimura2008effects"
-
-\end_inset
-
-.
- In L6 myotubes, expression of cathepsin B is upregulated by Dexa
+In L6 myotubes, expression of cathepsin B is upregulated by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wang1998dexamethasone"
