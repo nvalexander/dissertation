@@ -5650,6 +5650,17 @@ key "frost2009regulation"
 \end_layout
 
 \begin_layout Standard
+IGF-I mRNA is reduced by Dexa in human muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "inder2010dexamethasone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 Myostatin knockout mice have lower circulating IGF-I and higher IGF-1R expressio
 n
 \begin_inset CommandInset citation
@@ -5750,7 +5761,7 @@ Models of anabolic alleviation of glucocorticoid myopathy
 \begin_layout Standard
 In vitro studies have described androgens ability to interfere with the
  binding of Dexa to GR.
- The kd for GR-Dexa association is below nanomolar range
+ The Kd for GR-Dexa association is below nanomolar range
 \begin_inset CommandInset citation
 LatexCommand citep
 key "levy1989glucocorticoid"
@@ -5794,6 +5805,17 @@ Need to get MORE SPECIFIC T concentrations.
 
  Therefore, barring allosteric effects, the direct competition between the
  two steroids is only of theoretical importance.
+\end_layout
+
+\begin_layout Standard
+Dexa reduces the expression of AR in skeletal muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "inder2010dexamethasone"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
