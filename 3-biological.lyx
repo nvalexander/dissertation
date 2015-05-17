@@ -4051,9 +4051,9 @@ key "deyoung2008hypoxia"
 
 \begin_layout Standard
 One way to asses mTORC1 activation is to observe its enzymatic activity.
- In contrast to Akt, phosphorylation of mTORC1 substrates 4E-BP and p70-S6K
- is measurable in rat muscles in basal state, with acute Dexa causing a
- reduction of their phosphorylation
+ In contrast to Akt, phosphorylation of mTORC1 substrates, 4E-BP (Thr 37/46)
+ and p70-S6K, is measurable in rat muscles in basal state, with acute Dexa
+ causing a reduction of their phosphorylation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shah2000glucocorticoids"
@@ -4173,7 +4173,7 @@ key "hosokawa2009nutrient-dependent"
 
  led to speculations about additional contributions to the GAML phenotype
  from autophagy.
- In vivo evidence for mTOR-mediated autophagy upregulation in GAML is lacking
+ In vivo evidence for mTOR-mediated autophagy upregulation in GAML is indirect
  (discussed in a later section).
 \end_layout
 
@@ -4996,7 +4996,7 @@ key "wu2010redd1"
 \end_inset
 
 .
- It was long believed the induction is direct, and based on a Foxo response
+ It was long believed 4E-BP induction is direct, and based on a Foxo response
  element in 4E-BP promoter
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5012,6 +5012,16 @@ on of this thesis, for unspecified reason.
  As shown earlier, Dexa reduces mTOR-effected 4E-BP phosphorylation sensitivity
  to insulin, which is expected to cause reductions in protein synthesis
  rate mainly after feeding.
+ The study of mTOR action is challenged by the existence of multiple phosphoryla
+tion sites, inability of antibodies to discern them, and inability of rapamycin
+ to inhibit mTORC1 action on 4E-BP1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "livingstone2012rapamycin-insensitive"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
