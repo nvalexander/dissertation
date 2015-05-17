@@ -4423,7 +4423,6 @@ key "menconi2010sepsis"
 .
  In cultured myotubes, PGC-1β overexpression and knockdown cause changes
  in the reverse direction for Foxo3a and atrogenes' mRNA.
- 
 \end_layout
 
 \begin_layout Standard
@@ -4780,6 +4779,32 @@ The typical experiments, using qualitative alterations of myostatin, may
 
 \begin_layout Section
 Glucocorticoid modulation of protein synthesis
+\end_layout
+
+\begin_layout Standard
+Goldberg's
+\begin_inset CommandInset citation
+LatexCommand citep
+key "goldberg1969protein"
+
+\end_inset
+
+ 1969 study on cortisone-induced atrophy of rat muscle brought one more
+ important theme for the field of GAML.
+ In that experiment, the specific activity, that is, the ratio between tracer
+ and total protein, was the same in GC-treated muscle as in control animals,
+ despite decreased muscle mass and decreased total tracer in the GC-treated
+ group.
+ Goldberg conjectured that an equal rate of protein synthesis in the two
+ groups would have caused a faster dilution of the tracer in the GC-treated
+ muscle.
+ Failing to find that was interpreted as evidence for decreased protein
+ synthesis in cortisone-treated muscle.
+ This was an elegant way of bypassing the denominator effect from the typical
+ experiments, where synthesis rate would be measured over hours, in muscles
+ that already underwent atrophy in the prior days.
+ In these cases, a loss in protein synthesis rate might be underestimated
+ or even factored out, after normalization to a lower muscle mass.
 \end_layout
 
 \begin_layout Standard
