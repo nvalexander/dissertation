@@ -2735,8 +2735,10 @@ Glucocorticoid stimulation of ubiquitin-proteasome system
 \end_layout
 
 \begin_layout Standard
-The 1969 Goldberg study on atrophy revealed that cortisone induced an even
- ampler and less specific upregulation of proteolysis than denervation
+The loss of muscle in the Dexa-treated adult rat is the result of an increase
+ in protein degradation.
+ The 1969 Goldberg study on atrophy revealed that cortisone induced an even
+ ampler upregulation of proteolysis than denervation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "goldberg1969protein"
@@ -2744,12 +2746,16 @@ key "goldberg1969protein"
 \end_inset
 
 .
+ His comparison of fast-twitch plantaris and slow-twitch soleus found that
+ the latter did not exhibit lower muscle mass, not increased proteolysis.
+ Goldberg found that cortisone increases in equal manner the degradation
+ of older and newer proteins, and of myofibril and sarcoplasmic proteins.
+ A search begun for an undiscriminating proteolytic machine stimulated by
+ GC.
 \end_layout
 
 \begin_layout Standard
-The loss of muscle in the Dexa-treated adult rat is the result of an increase
- in protein degradation.
- In rats receiving 
+In rats receiving 
 \begin_inset ERT
 status open
 
@@ -3108,7 +3114,16 @@ key "polge2011muscle"
 \end_inset
 
 .
- MuRF1 is therefore a more plausible effector of bulk protein degradation.
+ MuRF1 is therefore a more plausible effector of bulk protein degradation,
+ as it is a better fit for the 
+\begin_inset Quotes eld
+\end_inset
+
+undiscriminating
+\begin_inset Quotes erd
+\end_inset
+
+ proteolytic machine predicated by Goldberg.
 \end_layout
 
 \begin_layout Standard
