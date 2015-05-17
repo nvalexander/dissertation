@@ -2949,10 +2949,26 @@ key "zheng2010foxo3a"
 
 \begin_layout Standard
 One of the most tempting hypotheses attributed a role to NF-κB, a mediator
- of cancer cachexia (reviewed in ).
+ of cancer cachexia (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tisdale2008catabolic"
+
+\end_inset
+
+).
  However, the few reports are contradictory.
- On one hand, in L6 myotubes, Dexa was shown to inhibit NF-κB signals by
- upregulating inhibitory κBα (
+ In L6 myotubes, Dexa stimulates acetylation and nuclear translocation of
+ the translational activator p65
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chamberlain2012multiple"
+
+\end_inset
+
+, seemingly in consonance with cancer cachexia.
+ But in contradiction to such parallels, Dexa was shown to inhibit NF-κB
+ signals by upregulating inhibitory κBα (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "IκBα"
@@ -2968,11 +2984,11 @@ key "luo2001heat"
 \end_inset
 
 .
- On the other, in the same cell line, Dexa stimulates acetylation and nuclear
- translocation of the translational activator p65
+ Moreover, Dexa's inhibition of NF-κB was shown to be necessary for proteasomal
+ subunit C3 upregulation in the same L6 cells
 \begin_inset CommandInset citation
 LatexCommand citep
-key "chamberlain2012multiple"
+key "du2000glucocorticoids"
 
 \end_inset
 
@@ -3217,11 +3233,7 @@ key "sun2014traf6"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-In cultured cells, Dexa upregulates the nuclear cofactor p300
+ In cultured cells, Dexa upregulates the nuclear cofactor p300
 \begin_inset CommandInset citation
 LatexCommand citep
 key "yang2005dexamethasone"
@@ -5597,6 +5609,10 @@ key "frost2009regulation"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Myostatin knockout mice have lower circulating IGF-I.
 \end_layout
 
 \begin_layout Standard
