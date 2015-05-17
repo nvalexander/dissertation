@@ -4448,6 +4448,9 @@ key "menconi2010sepsis"
 .
  In cultured myotubes, PGC-1β overexpression and knockdown cause changes
  in the reverse direction for Foxo3a and atrogenes' mRNA.
+ It has been speculated that differences in PGC-1α levels make different
+ types of muscle fiber more or less sensitive to Dexa, but studies pre-date
+ the more subtle distinction now made between its various isoforms.
 \end_layout
 
 \begin_layout Standard
@@ -5612,7 +5615,8 @@ key "frost2009regulation"
 \end_layout
 
 \begin_layout Standard
-Myostatin knockout mice have lower circulating IGF-I.
+Myostatin knockout mice have lower circulating IGF-I and higher IGF-1R expressio
+n.
 \end_layout
 
 \begin_layout Standard
