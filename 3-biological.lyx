@@ -4818,6 +4818,22 @@ The study on human myotubes showed that exogenous myostatin downregulates
 \end_layout
 
 \begin_layout Standard
+Myostatin's action appears more relevant for processes where hyperplastic
+ processes are involved, such as muscle development and regeneration (reviewed
+ in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "carnac2007myostatin"
+
+\end_inset
+
+).
+ Normal adult muscle maintenance involve very little proliferation.
+ Therefore, loss of proliferation, the main effect of myostatin, may contribute
+ to, but not command adult GAML.
+\end_layout
+
+\begin_layout Standard
 The typical experiments, using qualitative alterations of myostatin, may
  override any endogenous mechanism, and yield non-specific anti-atrophic
  effects.
