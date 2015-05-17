@@ -4734,6 +4734,19 @@ key "allen2011posttranscriptional"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Glutamine supplementation reduces GAML and myostatin expression in muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "salehian2006effect"
+
+\end_inset
+
+.
+ This finding suggests that, in the context of GAML, myostatin may double
+ as a nutrient sensor.
  
 \end_layout
 
