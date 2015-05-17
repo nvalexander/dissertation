@@ -2318,41 +2318,40 @@ key "muhlbacher1984effects"
 \end_inset
 
 .
- In rabbits, fourteen days of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{3}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- Dexa diminished diaphragm's twitch and tetanic contraction force
+ In horses, the action of Dexa on glycogen regulating pathways was replicated,
+ but muscle mass was not measured
 \begin_inset CommandInset citation
 LatexCommand citep
-key "jiang1996effect"
+key "tiley2008effects"
 
 \end_inset
 
-, while four days of 
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A few species are particularly unsuitable for modeling GC myopathy.
+ In cows, GAML is undetectable at macroscopic level.
+ Any putative change in myofibers is compensated by bovines' unusually rich
+ intramuscular adipose component, further hypertrophied by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "corah1995effects"
+
+\end_inset
+
+.
+ In contrast to rodents, a putative mediator of GAML, myostatin, is downregulate
+d in bulls' muscle by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "carraro2009expression"
+
+\end_inset
+
+.
+ In rabbits, four days of 
 \begin_inset ERT
 status open
 
@@ -2379,8 +2378,8 @@ day}
 
 \end_inset
 
- did not change muscle mass, despite the upregulation of some catabolic
- markers
+ did not change muscle mass and reduced urinary 3MH, despite the upregulation
+ of some catabolic markers
 \begin_inset CommandInset citation
 LatexCommand citep
 key "yeh1994effects"
@@ -2388,41 +2387,17 @@ key "yeh1994effects"
 \end_inset
 
 .
- In horses, the action of Dexa on glycogen regulating pathways was replicated,
- but no muscle mass data are available
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tiley2008effects"
+ 
+\end_layout
 
-\end_inset
-
-.
- For large animals, cats, or dogs, practical and humane reasons prevailed,
+\begin_layout Standard
+For large animals, cats, or dogs, practical and humane reasons prevailed,
  meaning that data about muscle mass changes are often lacking.
  For many of these species, the genome was not known, and specific antibodies
  are not manufactured, meaning that signaling pathways could not be dissected.
  Especially in the early years, studies did not record most relevant outcomes,
  such as muscle mass and / or force, putting into question their validity.
-\end_layout
-
-\begin_layout Standard
-A few species are particularly unsuitable for modelling GAML.
- In cows, GAML is undetectable at macroscopic level.
- Any putative change in myofibers is compensated by bovines' unusually rich
- intramuscular adipose component, further hypertrophied by Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "corah1995effects"
-
-\end_inset
-
-.
- In contrast to rodents, a putative mediator of GAML, myostatin, is doownregulat
-ed in bulls' muscle by Dexa.
-\end_layout
-
-\begin_layout Standard
-In the era of genome sequencing, studies of GAML focused on mice and rats.
+ In the era of genome sequencing, studies of GAML focused on mice and rats.
  Muscle mass in mice is smaller, making dissection harder and changes closer
  to detection threshold, compared to rats.
  It is unclear whether mouse studies are further complicated by additional
@@ -5329,10 +5304,22 @@ key "kachaeva2012various"
 \end_inset
 
 ).
+ Transgenic mice overexpressing calpastatin have 30% lower loss of muscle
+ upon unloading
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tidball2002expression"
+
+\end_inset
+
+, proving that the calpain system is important in some atrophy models.
 \end_layout
 
 \begin_layout Standard
-Expression of the calcium-dependent protease m-calpain is trebled by Dexa
+There is limited evidence for calpains involvement in GAML, beyond the experimen
+ts from 1980's.
+ In vivo, expression of the calcium-dependent protease m-calpain is trebled
+ by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity"
