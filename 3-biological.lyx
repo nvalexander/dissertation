@@ -2948,6 +2948,38 @@ key "zheng2010foxo3a"
 \end_layout
 
 \begin_layout Standard
+One of the most tempting hypotheses attributed a role to NF-κB, a mediator
+ of cancer cachexia (reviewed in ).
+ However, the few reports are contradictory.
+ On one hand, in L6 myotubes, Dexa was shown to inhibit NF-κB signals by
+ upregulating inhibitory κBα (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IκBα"
+description "inhibitory κBα"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luo2001heat"
+
+\end_inset
+
+.
+ On the other, in the same cell line, Dexa stimulates acetylation and nuclear
+ translocation of the translational activator p65
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chamberlain2012multiple"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 Unbiased searches in atrophying mouse muscles revealed two upregulated genes,
  termed atrogenes, MAFbx and MuRF1
 \begin_inset CommandInset citation
@@ -3185,34 +3217,7 @@ key "sun2014traf6"
 \end_inset
 
 .
- One of the most tempting hypotheses attributed a role to NF-κB.
- However, the few reports are contradictory.
- On one hand, in L6 myotubes, Dexa was shown to inhibit NF-κB signals by
- upregulating inhibitory κBα (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "IκBα"
-description "inhibitory κBα"
-
-\end_inset
-
-)
-\begin_inset CommandInset citation
-LatexCommand citep
-key "luo2001heat"
-
-\end_inset
-
-.
- On the other, in the same cell line, Dexa stimulates acetylation and nuclear
- translocation of the translational activator p65
-\begin_inset CommandInset citation
-LatexCommand citep
-key "chamberlain2012multiple"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
