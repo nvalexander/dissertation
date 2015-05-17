@@ -4644,6 +4644,12 @@ key "smith2010sepsisa"
 .
 \end_layout
 
+\begin_layout Standard
+A majority of the effectors described in this chapter appear to be under
+ the control of Foxo pathway.
+ In addition to atrogenes, Foxo targets include 4E-BP1, 
+\end_layout
+
 \begin_layout Section
 Glucocorticoid activation of myostatin
 \end_layout
@@ -4818,13 +4824,21 @@ The study on human myotubes showed that exogenous myostatin downregulates
 \end_layout
 
 \begin_layout Standard
-Myostain is particularly adept at modulating the fusion of myoblast to myotubes.
+Myostatin is particularly adept at modulating the fusion of myoblast to
+ myotubes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nozaki2008improved"
+
+\end_inset
+
+.
  Myostatin's action appears more relevant for processes where myoblasts
  or satellite cells are involved, such as muscle development and regeneration
  (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "carnac2007myostatin"
+key "carnac2007myostatin,elliott2012central"
 
 \end_inset
 
@@ -5310,38 +5324,30 @@ Proteasome inhibition does not abolish completely Dexa-activated proteolysis,
  indicating that some other catabolic mechanisms must be involved.
  Based on newly discovered role of mTOR as a major modulator of autophagy,
  the second most important effector of GAML was presumed to be autophagosome.
- In vivo, Dexa doubles the lysosome proteases cathepsin L and D 
+ Moreover, in L6 myotubes, 100 uM chloroquine or 200 mM E-64 reduce the
+ rate at which Dexa amplifies proteolytic tracer release
 \begin_inset CommandInset citation
 LatexCommand citep
-key "dardevet1995sensitivity,deval2001identification,nishimura2008effects"
+key "wang1998dexamethasone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A series of molecular markers further support the idea that autophagy is
+ upregulated by Dexa.
+ In C2C12 myotubes, Dexa may induce the formation of double-membrane autophagic
+ vesicles, although evidence is limited to unquantified micrographs
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rossi2009cytosolic"
 
 \end_inset
 
 .
  
-\end_layout
-
-\begin_layout Standard
-In L6 myotubes, 100 uM chloroquine or 200 mM E-64 reduce the rate at which
- Dexa amplifies proteolytic tracer release
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wang1998dexamethasone"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-In L6 myotubes, expression of cathepsin B is upregulated by Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wang1998dexamethasone"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -5364,19 +5370,34 @@ key "rossi2009cytosolic"
 .
  LC3-II is a marker of the autophagosome prior to its fusion with lysosome
  that leads to the assembly of the autophagolysosome.
- Recently, the enrichment of LCII-B in GAML in vivo has been reported.
-\end_layout
-
-\begin_layout Standard
-In C2C12 myotubes, Dexa may induce the formation of double-membrane autophagic
- vesicles, although evidence is limited to unquantified micrographs
+ Recently, the enrichment of LCII-B in GAML in vivo has been reported
 \begin_inset CommandInset citation
 LatexCommand citep
-key "rossi2009cytosolic"
+key "yamamoto2010branched-chain"
 
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+In vivo, Dexa doubles the lysosome proteases cathepsin L and D 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity,deval2001identification,nishimura2008effects"
+
+\end_inset
+
+.
+ In L6 myotubes, expression of cathepsin B is upregulated by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang1998dexamethasone"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -5412,7 +5433,7 @@ key "zhao2007foxo3"
 \end_layout
 
 \begin_layout Section
-The effects of glucocorticoids on calpains
+The effects of glucocorticoids on other proteolytic systems
 \end_layout
 
 \begin_layout Standard
@@ -5495,6 +5516,19 @@ key "goll2003calpain"
 .
  Calpains are important for some atrophy models, but their role in GAML
  is understudied.
+\end_layout
+
+\begin_layout Standard
+Many unbiased studies found that a family of proteased, metallothioneins,
+ are upregulated in GAML
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lecker2004multiple"
+
+\end_inset
+
+.
+ However, they contribution to GAML has not been analyzed.
 \end_layout
 
 \begin_layout Section
@@ -5727,17 +5761,6 @@ IGF-IEa isoform
 
 \begin_layout Section
 Other pathways of GAML
-\end_layout
-
-\begin_layout Standard
-Metallothioneins are upregulated in GAML
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lecker2004multiple"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Section
