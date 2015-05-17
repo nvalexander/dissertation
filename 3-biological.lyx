@@ -4647,7 +4647,23 @@ key "smith2010sepsisa"
 \begin_layout Standard
 A majority of the effectors described in this chapter appear to be under
  the control of Foxo pathway.
- In addition to atrogenes, Foxo targets include 4E-BP1, 
+ In addition to atrogenes, Foxo targets include 4E-BP1, cathepsin L, and
+ the effector of denervation atrophy, Growth Arrest and DNA Damage 45 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Gadd45"
+description "Growth Arrest and DNA Damage 45"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bongers2013skeletal"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
