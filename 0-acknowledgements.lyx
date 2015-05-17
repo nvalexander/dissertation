@@ -2,8 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass ucthesisLyx
-\options DoubleSpaced, ChapterTitleNewPage
+\textclass report
 \use_default_options true
 \master thesis.lyx
 \begin_modules
@@ -15,8 +14,8 @@ knitr
 \inputencoding ascii
 \fontencoding T1
 \font_roman Georgia
-\font_sans default
-\font_typewriter default
+\font_sans Arial
+\font_typewriter Liberation Mono
 \font_math auto
 \font_default_family default
 \use_non_tex_fonts true
@@ -108,11 +107,7 @@ pagenumbering{roman}
 
 \end_layout
 
-\begin_layout Standard
-Keep calm and carry on.
-\end_layout
-
-\begin_layout Chapter*
+\begin_layout Section
 Acknowledgments
 \end_layout
 
@@ -153,6 +148,10 @@ I am dedicating this work those who were taken away untimely during these
 This work would not have existed, were it not for the kind financial support
  of the American nation, through the National Institute of Health and Boston
  University.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_body

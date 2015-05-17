@@ -1,16 +1,29 @@
-% BibTeX standard bibliography style `UCThesisBibStylePlain'
-% UCThesisBibStyle.bst 2013-01-04 jdreyer: References listed alphabetically
-% UCThesisBibStyle.bst 2012-05-14 jdreyer: Preserving all capitalization in title
-% UCThesisBibStyle.bst 2012-05-12 jdreyer: If author list greater than five display first three with et al.
-	% version 0.99a for BibTeX versions 0.99a or later, LaTeX version 2.09.
-	% Copyright (C) 1985, all rights reserved.
-	% Copying of this file is authorized only if either
-	% (1) you make absolutely no changes to your copy, including name, or
-	% (2) if you do make changes, you name it something other than
-	% btxbst.doc, plain.bst, unsrt.bst, alpha.bst, and abbrv.bst.
-	% This restriction helps ensure that all standard styles are identical.
-	% The file btxbst.doc has the documentation for this style.
-
+% nihunsrt.bst v1.0
+%
+% by Elana J Fertig (ejfertig@jhmi.edu)
+%
+% modified from unsrt.bst on 4 Sep 2012
+%
+% assumes PMC ids are stored in a field ``pmc'' in the bibtex
+% and that PMIDS are stored in the field ``pmid'' in the bibtex
+% as are the defaults when using Bibdesk to query PubMed.
+%
+% -------------------------------------------------------------------------------------
+% no guarantee is given that the format corresponds perfectly to 
+% nih grant standards, but most features should be ok
+% -------------------------------------------------------------------------------------
+%
+% version 0.99a for BibTeX versions 0.99a or later, LaTeX version 2.09.
+% Copyright (C) 1985, all rights reserved.
+% Copying of this file is authorized only if either
+% (1) you make absolutely no changes to your copy, including name, or
+% (2) if you do make changes, you name it something other than
+% btxbst.doc, plain.bst, unsrt.bst, alpha.bst, and abbrv.bst.
+% This restriction helps ensure that all standard styles are identical.
+% The file btxbst.doc has the documentation for this style.
+%
+%
+%
 ENTRY
   { address
     author
@@ -34,6 +47,8 @@ ENTRY
     type
     volume
     year
+    pmc
+    pmid
   }
   {}
   { label }
@@ -169,6 +184,28 @@ FUNCTION {new.sentence.checkb}
   if$
 }
 
+FUNCTION {format.pmid}
+% handle PubMed Central, pmcid values.
+{
+  pmid empty$
+     'skip$
+     { ". PMID: " *
+       pmid *} % pmcid is not empty
+     if$
+}
+
+
+FUNCTION {format.pmcid}
+% handle PubMed Central, pmcid values.
+{
+  pmc empty$
+     { format.pmid }
+     {  	". PMCID: " *
+     	pmc * } % pmcid is not empty
+     if$
+}
+
+
 FUNCTION {field.or.null}
 { duplicate$ empty$
     { pop$ "" }
@@ -191,18 +228,9 @@ FUNCTION {format.names}
   s num.names$ 'numnames :=
   numnames 'namesleft :=
     { namesleft #0 > }
-    { s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ 't :=
+    { s nameptr "{f.~}{vv~}{ll}{, jj}" format.name$ 't :=
       nameptr #1 >
-        {
-          nameptr #3
-          #1 + =
-          numnames #5
-          > and
-            { "others" 't :=
-              #1 'namesleft := }
-            'skip$
-          if$
-          namesleft #1 >
+	{ namesleft #1 >
 	    { ", " * t * }
 	    { numnames #2 >
 		{ "," * }
@@ -216,12 +244,14 @@ FUNCTION {format.names}
 	  if$
 	}
 	't
-      if$
-      nameptr #1 + 'nameptr :=
-      namesleft #1 - 'namesleft :=
-    }
+   if$
+     nameptr #1 + 'nameptr :=
+     namesleft #1 - 'namesleft :=
+   }
   while$
 }
+
+
 
 FUNCTION {format.authors}
 { author empty$
@@ -245,8 +275,7 @@ FUNCTION {format.editors}
 FUNCTION {format.title}
 { title empty$
     { "" }
-    { title }
-	%{ title "t" change.case$ }
+    {title}
   if$
 }
 
@@ -440,7 +469,6 @@ FUNCTION {empty.misc.check}
 { author empty$ title empty$ howpublished empty$
   month empty$ year empty$ note empty$
   and and and and and
-  key empty$ not and
     { "all relevant fields are empty in " cite$ * warning$ }
     'skip$
   if$
@@ -563,8 +591,9 @@ FUNCTION {article}
       format.pages output
     }
   if$
-  new.block
-  note output
+  new.block 
+ new.sentence
+  format.pmcid
   fin.entry
 }
 
@@ -917,151 +946,6 @@ MACRO {toplas} {"ACM Transactions on Programming Languages and Systems"}
 MACRO {tcs} {"Theoretical Computer Science"}
 
 READ
-
-FUNCTION {sortify}
-{ purify$
-  "l" change.case$
-}
-
-INTEGERS { len }
-
-FUNCTION {chop.word}
-{ 's :=
-  'len :=
-  s #1 len substring$ =
-    { s len #1 + global.max$ substring$ }
-    's
-  if$
-}
-
-FUNCTION {sort.format.names}
-{ 's :=
-  #1 'nameptr :=
-  ""
-  s num.names$ 'numnames :=
-  numnames 'namesleft :=
-    { namesleft #0 > }
-    { nameptr #1 >
-	{ "   " * }
-	'skip$
-      if$
-      s nameptr "{vv{ } }{ll{ }}{  ff{ }}{  jj{ }}" format.name$ 't :=
-      nameptr numnames = t "others" = and
-	{ "et al" * }
-	{ t sortify * }
-      if$
-      nameptr #1 + 'nameptr :=
-      namesleft #1 - 'namesleft :=
-    }
-  while$
-}
-
-FUNCTION {sort.format.title}
-{ 't :=
-  "A " #2
-    "An " #3
-      "The " #4 t chop.word
-    chop.word
-  chop.word
-  sortify
-  #1 global.max$ substring$
-}
-
-FUNCTION {author.sort}
-{ author empty$
-    { key empty$
-	{ "to sort, need author or key in " cite$ * warning$
-	  ""
-	}
-	{ key sortify }
-      if$
-    }
-    { author sort.format.names }
-  if$
-}
-
-FUNCTION {author.editor.sort}
-{ author empty$
-    { editor empty$
-	{ key empty$
-	    { "to sort, need author, editor, or key in " cite$ * warning$
-	      ""
-	    }
-	    { key sortify }
-	  if$
-	}
-	{ editor sort.format.names }
-      if$
-    }
-    { author sort.format.names }
-  if$
-}
-
-FUNCTION {author.organization.sort}
-{ author empty$
-    { organization empty$
-	{ key empty$
-	    { "to sort, need author, organization, or key in " cite$ * warning$
-	      ""
-	    }
-	    { key sortify }
-	  if$
-	}
-	{ "The " #4 organization chop.word sortify }
-      if$
-    }
-    { author sort.format.names }
-  if$
-}
-
-FUNCTION {editor.organization.sort}
-{ editor empty$
-    { organization empty$
-	{ key empty$
-	    { "to sort, need editor, organization, or key in " cite$ * warning$
-	      ""
-	    }
-	    { key sortify }
-	  if$
-	}
-	{ "The " #4 organization chop.word sortify }
-      if$
-    }
-    { editor sort.format.names }
-  if$
-}
-
-FUNCTION {presort}
-{ type$ "book" =
-  type$ "inbook" =
-  or
-    'author.editor.sort
-    { type$ "proceedings" =
-	'editor.organization.sort
-	{ type$ "manual" =
-	    'author.organization.sort
-	    'author.sort
-	  if$
-	}
-      if$
-    }
-  if$
-  "    "
-  *
-  year field.or.null sortify
-  *
-  "    "
-  *
-  title field.or.null
-  sort.format.title
-  *
-  #1 entry.max$ substring$
-  'sort.key$ :=
-}
-
-ITERATE {presort}
-
-SORT
 
 STRINGS { longest.label }
 

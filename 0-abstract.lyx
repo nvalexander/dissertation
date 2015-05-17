@@ -2,8 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass ucthesisLyx
-\options DoubleSpaced, ChapterTitleNewPage
+\textclass report
 \use_default_options true
 \master thesis.lyx
 \begin_modules
@@ -15,8 +14,8 @@ knitr
 \inputencoding ascii
 \fontencoding T1
 \font_roman Georgia
-\font_sans default
-\font_typewriter default
+\font_sans Arial
+\font_typewriter Liberation Mono
 \font_math auto
 \font_default_family default
 \use_non_tex_fonts true
@@ -92,7 +91,30 @@ knitr
 
 \begin_body
 
-\begin_layout Chapter*
+\begin_layout Standard
+\align center
+
+\series bold
+A MURINE MODEL OF GLUCOCORTICOID MYOPATHY ALLEVIATION USING ANDROGEN THERAPY
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+NICOLAE LUCIAN SANDOR
+\end_layout
+
+\begin_layout Standard
+\align center
+Boston University School/Division of Graduate Medical Sciences, 2015
+\end_layout
+
+\begin_layout Standard
+Major Professor: Monty Montano, PhD, Research Assistant Professor of Medicine
+\end_layout
+
+\begin_layout Section
 Abstract
 \end_layout
 
@@ -157,6 +179,10 @@ In conclusion, T protective action in GAML is mainly anti-catabolic, through
  T stimulates a potentially protective intramuscular IGF-I response.
  Different models are needed to determine the role of protein synthesis
  and of IGF-I in GAML.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_body

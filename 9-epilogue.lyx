@@ -2,8 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass ucthesisLyx
-\options DoubleSpaced, ChapterTitleNewPage
+\textclass report
 \use_default_options true
 \master thesis.lyx
 \begin_modules
@@ -15,8 +14,8 @@ knitr
 \inputencoding ascii
 \fontencoding T1
 \font_roman Georgia
-\font_sans default
-\font_typewriter default
+\font_sans Arial
+\font_typewriter Liberation Mono
 \font_math auto
 \font_default_family default
 \use_non_tex_fonts true
@@ -126,6 +125,8 @@ BS (Licentiat in Biofizica), Universitatea Bucuresti, 2005
 \end_layout
 
 \begin_layout Standard
+BM
+\backslash
 DM (Doctor in Medicina), Universitatea de Medicina si Farmacie Carol Davila
  Bucuresti, 2002
 \end_layout
@@ -143,7 +144,7 @@ Research experience
 \end_layout
 
 \begin_layout Standard
-Theme: Testosterone alleviating glucocorticoid-induced muscle loss.
+Subject: Testosterone alleviating glucocorticoid-induced muscle loss.
 \end_layout
 
 \begin_layout Itemize
@@ -154,7 +155,7 @@ Theme: Testosterone alleviating glucocorticoid-induced muscle loss.
 \end_layout
 
 \begin_layout Standard
-Theme: Interactions between translation initiation factors eIF1A and eIF5B
+Subject: Interactions between translation initiation factors eIF1A and eIF5B
 \end_layout
 
 \begin_layout Itemize
@@ -165,7 +166,7 @@ y, P.I.
 \end_layout
 
 \begin_layout Standard
-Theme: Brain mechanisms for statistical processing of visual scenes
+Subject: Brain mechanisms for statistical processing of visual scenes
 \end_layout
 
 \begin_layout Itemize
@@ -176,7 +177,7 @@ Summer 2004: Biology Department, Universitatea Bucuresti, P.I.
 \end_layout
 
 \begin_layout Standard
-Theme: The mediation of thermoception by ionic membrane channels
+Subject: The mediation of thermoception by ionic membrane channels
 \end_layout
 
 \begin_layout Itemize
@@ -188,7 +189,7 @@ Theme: The mediation of thermoception by ionic membrane channels
 \end_layout
 
 \begin_layout Standard
-Theme: The effect of non-ionizing radiation of the mobility of the cell
+Subject: The effect of non-ionizing radiation of the mobility of the cell
  membrane lipids
 \end_layout
 
@@ -265,26 +266,6 @@ Other scientific communications
  machinery.
  Poster presented at the 2013 Evans Center Days, Nov.
  2013, Boston, MA.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch childonly
-status open
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "thesis,thesis2"
-options "UCThesisBibStyleUnsrt"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

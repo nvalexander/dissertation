@@ -2,8 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass ucthesisLyx
-\options DoubleSpaced, ChapterTitleNewPage
+\textclass report
 \use_default_options true
 \master thesis.lyx
 \begin_modules
@@ -15,8 +14,8 @@ knitr
 \inputencoding ascii
 \fontencoding T1
 \font_roman Georgia
-\font_sans default
-\font_typewriter default
+\font_sans Arial
+\font_typewriter Liberation Mono
 \font_math auto
 \font_default_family default
 \use_non_tex_fonts true
@@ -99,11 +98,19 @@ LatexCommand tableofcontents
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset FloatList table
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -115,12 +122,17 @@ LatexCommand tableofcontents
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset nomencl_print
 LatexCommand printnomenclature
-set_width "auto"
+set_width "custom"
+width "2in"
 
 \end_inset
 
@@ -129,13 +141,13 @@ set_width "auto"
 
 \begin_layout Standard
 \begin_inset Branch childonly
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "thesis,thesis2"
-options "UCThesisBibStyleUnsrt"
+options "nihunsrt"
 
 \end_inset
 

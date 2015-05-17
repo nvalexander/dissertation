@@ -2,8 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass ucthesisLyx
-\options DoubleSpaced, ChapterTitleNewPage, LyXBibliographyStyle=UCThesisBibStyleUnsrt
+\textclass report
 \use_default_options true
 \master thesis.lyx
 \begin_modules
@@ -15,8 +14,8 @@ knitr
 \inputencoding ascii
 \fontencoding T1
 \font_roman Georgia
-\font_sans default
-\font_typewriter default
+\font_sans Arial
+\font_typewriter Liberation Mono
 \font_math auto
 \font_default_family default
 \use_non_tex_fonts true
@@ -107,6 +106,7 @@ todo
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "thesis,thesis2"
+options "nihunsrt"
 
 \end_inset
 

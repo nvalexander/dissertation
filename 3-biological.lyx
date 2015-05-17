@@ -2,8 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass ucthesisLyx
-\options DoubleSpaced, ChapterTitleNewPage
+\textclass report
 \use_default_options true
 \master thesis.lyx
 \begin_modules
@@ -15,8 +14,8 @@ knitr
 \inputencoding ascii
 \fontencoding T1
 \font_roman Georgia
-\font_sans default
-\font_typewriter default
+\font_sans Arial
+\font_typewriter Liberation Mono
 \font_math auto
 \font_default_family default
 \use_non_tex_fonts true
@@ -93,7 +92,7 @@ knitr
 \begin_body
 
 \begin_layout Chapter
-Biological premises
+BIOLOGICAL PREMISES
 \end_layout
 
 \begin_layout Section
@@ -774,8 +773,8 @@ key "berg2002each,wasserman2009four"
 \end_inset
 
 ).
- Because its ability to fatty acid is negligible, muscle is a consumer and
- a minor store, but not a generator, of fatty acids
+ Because its capacity to synthesize fatty acid is negligible, muscle is
+ a consumer and a minor store, but not a generator, of fatty acids
 \begin_inset Note Note
 status open
 
@@ -854,6 +853,73 @@ key "wang2003peroxisome-proliferator-activated"
 .
  Organ-level studies are impaired by the existence of nontrivial intramuscular
  adipose tissue.
+\end_layout
+
+\begin_layout Standard
+This work uses extensively the C2C12 cell line, an immortalized female mouse
+ muscle progenitor line obtained from a muscle recovering after mechanical
+ injury.
+ Treatment of confluent C2C12 cells with Dexa and 3-isobutyl-1-methylxanthine
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IBMX"
+description "3-isobutyl-1-methylxanthine"
+
+\end_inset
+
+) causes their differentiation into adipocytes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mancini2007fmip"
+
+\end_inset
+
+.
+ Some pre-adipocyte traits, such as upregulation of PPAR γ, Krüppel-like
+ factor-15 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "KLF-15"
+description "kruppel-like factor-15"
+
+\end_inset
+
+), and CCAAT-enhancer-binding protein (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "C/EBP"
+description "CCAAT-enhancer-binding protein"
+
+\end_inset
+
+) β and δ (
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mori2005role"
+
+\end_inset
+
+; reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cristancho2011forming"
+
+\end_inset
+
+), may surface in cell culture experiments where muscle differentiation
+ did not complete, and residual potential for adipogenesis remains (see,
+ for example, 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "itoigawa2010hypoxia"
+
+\end_inset
+
+).
+ An in vitro shift to a more adipose-like phenotype may be associated with
+ diminished cell fusion ability, lower protein synthesis and lower mitochondrial
+ content, which may be misinterpreted as muscle atrophy.
 \end_layout
 
 \begin_layout Standard
@@ -1008,7 +1074,7 @@ key "laplante2012mtor"
 
 ).
  Indeed, in the same muscle, p70-S6K was activated, as indicated by an increase
- in its Threonine-389 phosphorylated form.
+ in its Thr 389 phosphorylated form.
  Another substrate of mTORC1, eukaryotic translation initiation factor 4E
  (
 \begin_inset CommandInset nomenclature
@@ -1270,10 +1336,7 @@ TODO check if MRFs are changed in regeneration after injury.
 \end_layout
 
 \begin_layout Standard
-This work uses extensively the C2C12 cell line, an immortalized female mouse
- muscle progenitor line obtained from a muscle recovering after mechanical
- injury.
- Less than half of the C2C12 cells in their proliferating, undifferentiated
+Less than half of the C2C12 cells in their proliferating, undifferentiated
  form, express MyoD or Pax7
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1282,7 +1345,7 @@ key "olguin2004pax-7"
 \end_inset
 
 .
- Preliminary evidence suggest these myoblast-like cells do not express Pax3
+ Limited evidence suggest these myoblast-like cells do not express Pax3
  either
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1675,9 +1738,9 @@ key "vianna2006hypomorphic,rowe2011pgc-1beta"
 \end_inset
 
 .
- Even in the absence of VEGF, PGC-1 facilitates mitochondria biosynthesis,
- leading to oxidative fiber hypertrophy and improvements in endurance capacity
- 
+ Even in the absence of VEGF, PGC-1 coactivators facilitate mitochondria
+ biosynthesis, leading to oxidative fiber hypertrophy and improvements in
+ endurance capacity 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lin2002transcriptional"
@@ -2053,9 +2116,9 @@ key "zhao2007foxo3,schiaffino2013mechanisms"
 
 ).
  Recent studies contradicted this paradigm.
- In 2013, Quy and colleagues found that denervation increased Threonine-389
- phosphorylation and catalytic activity of p70-S6K, indicating that denervation
- causes in fact activation of mTORC1
+ In 2013, Quy and colleagues found that denervation increased Thr 389 phosphoryl
+ation and catalytic activity of p70-S6K, indicating that denervation causes
+ in fact activation of mTORC1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "quy2013proteasome-dependent"
@@ -2325,6 +2388,25 @@ key "yeh1994effects"
 \end_inset
 
 .
+ In horses, the action of Dexa on glycogen regulating pathways was replicated,
+ but no muscle mass data are available
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tiley2008effects"
+
+\end_inset
+
+.
+ For large animals, cats, or dogs, practical and humane reasons prevailed,
+ meaning that data about muscle mass changes are often lacking.
+ For many of these species, the genome was not known, and specific antibodies
+ are not manufactured, meaning that signaling pathways could not be dissected.
+ Especially in the early years, studies did not record most relevant outcomes,
+ such as muscle mass and / or force, putting into question their validity.
+\end_layout
+
+\begin_layout Standard
+A few species are particularly unsuitable for modelling GAML.
  In cows, GAML is undetectable at macroscopic level.
  Any putative change in myofibers is compensated by bovines' unusually rich
  intramuscular adipose component, further hypertrophied by Dexa
@@ -2335,15 +2417,10 @@ key "corah1995effects"
 \end_inset
 
 .
- Early studies were marred by an absence of meaningful macroscopic outcomes,
- such as muscle force or mass.
- Moreover, the modern molecular correlates of muscle loss were not known,
- and could not have been investigated.
 \end_layout
 
 \begin_layout Standard
-In the era of genome sequencing, where murine species became the most common
- model, studies of GAML focused on rats.
+In the era of genome sequencing, studies of GAML focused on mice and rats.
  Muscle mass in mice is smaller, making dissection harder and changes closer
  to detection threshold, compared to rats.
  It is unclear whether mouse studies are further complicated by additional
@@ -2356,14 +2433,59 @@ key "rohdewald1964uber"
 \end_inset
 
 .
- Nevertheless, rats were the preferred animal model of steroid myopathy
- until recently.
- In the last two decades, a new impetus to mouse models was brought by genome
- manipulations, more easily induced in mouse than in rat.
+ Nevertheless, rats were preferred to mice for modeling steroid myopathy.
+ In the last two decades, mice studies became more interesting, as genome
+ manipulations were more easily induced in mouse than in rat.
 \end_layout
 
 \begin_layout Standard
-Many published studies documents the effect of Dexa on the mouse cell line
+Myofiber-restricted knockout of GR abolishes GAML, while having no effect
+ on denervation atrophy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "watson2012cell-autonomous"
+
+\end_inset
+
+.
+ In rat muscle, chronic Dexa treatment upregulates expression of the NMJ
+ essential component, muscle-specific nicotinic acetylcholine receptor,
+ and resistance to NMJ-specific non-depolarizing muscle relaxants
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chen2014different"
+
+\end_inset
+
+.
+ If anything, GAML appears associated with an improved NMJ, suggesting that
+ GAML is not mediated by the motoneuron.
+ Similarly, there is no evidence of satellite cell dysfunction in GAML.
+ In one report, Dong and colleagues hypothesize a 
+\begin_inset Quotes eld
+\end_inset
+
+glucocorticoid-induced satellite cell dysfunction
+\begin_inset Quotes erd
+\end_inset
+
+, but describe solely that Dexa reduces the number of satellite cells in
+ a post-injury regenerating muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dong2013myostatin"
+
+\end_inset
+
+.
+ In conclusion, GAML is the direct effect of Dexa on myofibers.
+ 
+\end_layout
+
+\begin_layout Standard
+The perception that myotubes response to Dexa is a complete model of GAML
+ inspired many reductionist in vitro models.
+ Many published studies documents the effect of Dexa on the mouse cell line
  C2C12 and the rat cell line L6.
  However, these and other myogenic cell lines have significant limitations,
  which may cause divergence between in vitro models and the steroid myopathy
@@ -2396,7 +2518,6 @@ key "pansters2013synergistic"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -2439,6 +2560,8 @@ key "takahashi2002myogenic"
 \end_inset
 
 .
+ In addition to myotubes, C2C12 may differentiate into adipose or osteoblast
+ phenotypes.
  Whenever possible, this section will refer to in vivo studies.
  Evidence from in vitro studies on myogenic cell lines will be limited to
  studies where multi-nucleate myotubes were obtained and myoblasts were
@@ -2447,9 +2570,10 @@ key "takahashi2002myogenic"
 
 \begin_layout Standard
 With this caveat, in vitro studies have been vital in excluding third-party
- organs, such as the pancreas, from the analysis of GAML.
- Some features of GAML are more readily observed, and have been initially
- described in cell culture.
+ organs, such as the pancreas, from the analysis of GAML, at the time when
+ genome manipulations were not available.
+ Some molecular features of GAML have been initially described in cell culture,
+ and confirmed in vivo later.
  Fully differentiated myotubes from L6 and C2C12 cell lines lose more than
  a quarter of their diameter when treated with 
 \begin_inset ERT
@@ -2476,52 +2600,6 @@ key "menconi2008dexamethasone"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-There are no studies analyzing the role of satellite cells and nuclear density
- in GAML in situ.
- Dong and colleagues hypothesize a 
-\begin_inset Quotes eld
-\end_inset
-
-glucocorticoid-induced satellite cell dysfunction
-\begin_inset Quotes erd
-\end_inset
-
-, and report that Dexa reduces the number of satellite cells in a post-injury
- regenerating muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dong2013myostatin"
-
-\end_inset
-
-.
- One is intrigued to see that Dong et al.
- had the ability to measure change in satellite cells upon Dexa treatment,
- yet chose not to investigate or report it.
- Based on similarity with denervation-induced atrophy, it is likely that
- adult GAML is not caused by a proliferative dysfunction.
-\end_layout
-
-\begin_layout Standard
-Similarly, indirect data exclude a neuronal component of GAML.
- Dexa induces atrophy in cultured cells, in the absence of neurons or NMJs.
- In rat muscle, chronic Dexa treatment upregulates expression of the NMJ
- essential component, muscle-specific nicotinic acetylcholine receptor,
- and resistance to NMJ-specific non-depolarizing muscle relaxants
-\begin_inset CommandInset citation
-LatexCommand citep
-key "chen2014different"
-
-\end_inset
-
-.
- If anything, GAML appears associated with an improved NMJ, in contrast
- to denervation atrophy.
- Nevertheless, one cannot exclude the non-synaptic component of muscle maintenan
-ce by the motoneuron.
 \end_layout
 
 \begin_layout Standard
@@ -2566,8 +2644,16 @@ key "bullock1972relative"
  In contrast, long-acting, specific GCs, such as Dexa, betamethasone, and
  triamcinolone, cause loss of body weight, and an even more rapid loss of
  muscle mass.
- GAML in rats is an organized process, lacking the microscopic features
- of necrosis
+ The muscle mass loss is paralleled by reductions in maximal twitch and
+ tetanic force
+\begin_inset CommandInset citation
+LatexCommand citep
+key "alamdari2012loss"
+
+\end_inset
+
+.
+ GAML is an organized process, lacking the microscopic features of necrosis
 \begin_inset CommandInset citation
 LatexCommand citep*
 key "nava1996effects"
@@ -2592,8 +2678,8 @@ key "dardevet1995sensitivity,nicastro2012effectsa"
 \end_inset
 
 .
- In response to Dexa, rat muscle fibers undergo reductions in CSA, to an
- ampler degree in fast twitch fibers
+ In response to Dexa, rat myofibers undergo reductions in CSA, to an ampler
+ degree in fast twitch fibers
 \begin_inset CommandInset citation
 LatexCommand citep
 key "prezant1997gender-specific,baptista2013leucine"
@@ -2611,6 +2697,7 @@ key "prezant1997gender-specific"
 \end_inset
 
 .
+ Dexa slows the rate of growth in 
 \end_layout
 
 \begin_layout Standard
@@ -2868,18 +2955,12 @@ key "bodine2001identification"
 
 .
  Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
- system in GAML.
- Interestingly, a division of work between the two ligases has been described,
- with MuRF1 playing a more important role in GAML.
- Some unbiased searches in rats failed to identify MAFbx as a target of
- Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wu2010redd1"
+ system in muscle atrophy.
+\end_layout
 
-\end_inset
-
-.
+\begin_layout Standard
+In contrast to other muscle atrophy models, GAML is associated with stronger
+ reliance on MuRF1 than on MAFbx.
  While genetic depletion of either atrogene leads to muscle sparing in the
  denervation model
 \begin_inset CommandInset citation
@@ -2888,7 +2969,8 @@ key "bodine2001identification"
 
 \end_inset
 
-, only MuRF1 depletion spares muscle treated with Dexa
+, only MuRF1, but not MAFbx genetic depletion spares muscle treated with
+ Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "baehr2011muscle"
@@ -2896,7 +2978,43 @@ key "baehr2011muscle"
 \end_inset
 
 .
- MAFbx is induced in muscle by during hypertrophy from reloading
+ The incomplete sparing of the MuRF1 knockout may be caused by genetic redundanc
+y, but may also be explained by a need for a second, co-operating gene.
+\end_layout
+
+\begin_layout Standard
+While MuRF1 promoter includes a GC response element, no similar structure
+ was found on MAFbx promoter
+\begin_inset CommandInset citation
+LatexCommand citep
+key "waddell2008glucocorticoid,braun2015regulation"
+
+\end_inset
+
+.
+ Indicating a lower amplitude and / or higher variability in MAFbx, unbiased
+ searches in rat GAML failed to identify MAFbx as a target of Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wu2010redd1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The difference in amplitude of change may be related to the role that MAFbx
+ plays in muscle restructuration.
+ In C2C12 cells, MAFbx is upregulated by differentiation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nishimura2008effects"
+
+\end_inset
+
+.
+ MAFbx is induced in muscle during hypertrophy from reloading
 \begin_inset CommandInset citation
 LatexCommand citep
 key "slimani2012worsening"
@@ -2904,7 +3022,7 @@ key "slimani2012worsening"
 \end_inset
 
 .
- Conversely, hypertrophy of reloading is reduced in MAFbx
+ Moreover, MAFbx knockout abolishes hypertrophy of loading
 \begin_inset CommandInset citation
 LatexCommand citep
 key "baehr2014muscle"
@@ -2912,36 +3030,26 @@ key "baehr2014muscle"
 \end_inset
 
 .
- These changes have been linked to the fact that MAFbx promoter is activated
- by myogenin 
+ In contrast to denervation atrophy, it appears that remodeling in GAML
+ is minimal.
+ Supporting this distinction, denervation is a stronger upregulator myogenin
+ than Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mozaffar2007molecular"
+
+\end_inset
+
+.
+ Since MAFbx promoter is activated by myogenin 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "moresi2010myogenin"
 
 \end_inset
 
-.
- Similar to MAFbx, a putative upregulation of myogenin in GAML has been
- reported sporadically in RT-PCR studies
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tepas1999gender"
-
-\end_inset
-
-, but never confirmed in unbiased investigations
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wu2010redd1,furlow2013altered"
-
-\end_inset
-
-, suggesting that the myogenin-MAFbx is less reliably upregulated in GAML.
- It is unclear whether the functionally relevant activator of MAFbx is hyperplas
-ia or myogenin, since it is difficult to separate the two.
- Nevertheless, atrophy models strongly associated with myogenin induction,
- such as denervation, are more able reliably inducing a MAFbx response,
- compared to GAML.
+, the moderate myogenin response in GAML may explain a less ample MAFbx
+ upregulation.
 \end_layout
 
 \begin_layout Standard
@@ -2996,24 +3104,26 @@ key "hirner2008murf1-dependent"
 \end_inset
 
 .
+ In vitro, MuRF1 ubiquitinates myosin heavy chains
+\begin_inset CommandInset citation
+LatexCommand citep
+key "clarke2007e3"
+
+\end_inset
+
+ and actin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "polge2011muscle"
+
+\end_inset
+
+.
  MuRF1 is therefore a more plausible effector of bulk protein degradation.
 \end_layout
 
 \begin_layout Standard
-Differences between atrogenes may also stem from the fact that MuRF1 promoter
- contains a GC response element
-\begin_inset CommandInset citation
-LatexCommand citep
-key "waddell2008glucocorticoid"
-
-\end_inset
-
-, which MAFbx appears to lack.
- The atrogenes are controlled also indirectly, by Akt, via FOXO, and by
- myostatin, through SMAD3.
- Each of them integrate a GC-activated and multiple GC-independent metabolic
- and hormonal signals (discussed in dedicated sections).
- Studies on cultured myotubes confirm that GC induce the two atrogenes directly,
+Studies on cultured myotubes confirm that GC induce the two atrogenes directly,
  without a third-party organ mediation
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3022,26 +3132,48 @@ key "stitt2004igf-1/pi3k/akt"
 \end_inset
 
 .
-\end_layout
+ The sparing of MuRF1 knockout mice revelats its central role in GAML
+\begin_inset CommandInset citation
+LatexCommand citep
+key "baehr2011muscle"
 
-\begin_layout Standard
-A sizable body of indirect evidence suggests that atrogenes are upregulated
- in GAML mainly through by FOXO transcription factors.
+\end_inset
+
+.
+ A sizable body of indirect evidence suggests that the main positive regulator
+ of atrogenes in GAML are FOXO transcription factors.
  These transcription factors are reliably upregulated by Dexa in muscle.
  In addition, Dexa inhibits their kinase, Akt, thus protecting them from
  ubiquitination and degradation.
- While no studies on triple FOXO knockout mouse have been published, similaritie
-s with the late phase of denervation atrophy suggest an essential role for
- FOXO in inducing atrogenes in GAML.
- The role of Foxo in GAML and the mechanisms by which they are though to
- induce atrogenes are discussed in more detail in a dedicated section.
+ Atrogenes are also modulated by myostatin, through SMAD3 transcription
+ factor, and by AMP-activated protein kinase (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AMPK"
+description "AMP-activated protein kinase"
+
+\end_inset
+
+).
+ Transgenic mice with a defective GR still exhibit upregulated atrogenes
+ in denervation and fasting.
+ Therefore, atrogenes integrate a multitude of GC-activated and GC-independent
+ metabolic and hormonal signals (discussed in dedicated sections).
 \end_layout
 
 \begin_layout Standard
-A series of less investigated, Foxo-independent factors may lend support
- to Dexa's upregulation of atrogenes.
- One of the most tempting hypotheses attributed a role to Dexa-induced NF-κB
- modulation.
+A series of less investigated, Foxo-independent factors lend support to
+ Dexa's upregulation of atrogenes.
+ The E3 ligase TRAF6, whose expression is increased by Dexa, appears necessary
+ for GAML and atrogene upregulation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sun2014traf6"
+
+\end_inset
+
+.
+ One of the most tempting hypotheses attributed a role to NF-κB.
  However, the few reports are contradictory.
  On one hand, in L6 myotubes, Dexa was shown to inhibit NF-κB signals by
  upregulating inhibitory κBα (
@@ -3080,16 +3212,8 @@ key "yang2005dexamethasone"
 \end_inset
 
 .
- Dexa also upregulates acetylation and nuclear translocation of CCAAT-enhancer-b
-inding protein (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "C/EBP"
-description "CCAAT-enhancer-binding protein"
-
-\end_inset
-
-) β, in a p300 dependent-manner
+ Dexa also upregulates acetylation and nuclear translocation of C/EBP β,
+ in a p300 dependent-manner
 \begin_inset CommandInset citation
 LatexCommand citep
 key "chamberlain2012multiple"
@@ -3100,14 +3224,48 @@ key "chamberlain2012multiple"
  Because atrogenes promoters contain putative binding sites for C/EBP transcript
 ion factors, p300 was hypothesized to be yet another mechanism by which
  GC stimulate atrogenes.
+ Interestingly, p300 is a histone acetyltransferase (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HAT"
+description "histone acetyltransferase"
+
+\end_inset
+
+).
+ Dexa increases HAT activity and reduces HDAC activity in muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "alamdari2010sepsis"
+
+\end_inset
+
+.
+ Because HDAC 3 and 6 are repressed by Dexa and because trichostatin A,
+ an HDAC inhibitor, upregulates MAFbx, it has been hypothesized that Dexa
+ acts by increased histone acetylation.
+ The studies are interesting opening move in the field of epigenetics, and
+ should be followed up with identification of specific chromatin loci and
+ / or extranuclear proteins whose acetylation is modulated by Dexa.
+ The importance of histone acetylation in in vivo GAML is still to be determined.
 \end_layout
 
 \begin_layout Standard
 In conclusion, explant models suggest that GAML is, to a wide extend, the
  result of upregulation of the proteasome-ubiquitin system.
- While two important E3 ligases have been identified, some other mechanisms,
- including yet undiscovered E3 ligases, have a significant contribution
- to GAML.
+ While two important E3 ligases have been identified, the absence of specific
+ anti-MAFbx and anti-MuRF1 antibodies prevents the study of their protein
+ flux and their intracellular localization
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bodine2014skeletal"
+
+\end_inset
+
+.
+ Judging by the significant residual atrophy after depletion or inhibition
+ of the atrogenes, other mechanisms, within and outside the ubiquitin-proteasome
+ system, are co-opted by Dexa in GAML.
  Next sections will describe the various pathways that collaborate to stimulate
  the ubiquitin-proteasome system.
  Each of them has proteasome-unrelated side effects, including activation
@@ -3115,12 +3273,12 @@ In conclusion, explant models suggest that GAML is, to a wide extend, the
 \end_layout
 
 \begin_layout Section
-Glucocorticoid-induced loss of sensitivity on the Akt axis
+Glucocorticoid-induced loss of sensitivity on the IRS - Akt axis
 \end_layout
 
 \begin_layout Standard
-The most comprehensive account on GC-induced changes on protein metabolic
- regulation comes from the study of glucose metabolism changes.
+Surprisingly, the most comprehensive account on GC-induced changes on protein
+ metabolic regulation comes from the study of glucose metabolism changes.
  Dexa causes systemic insulin resistance, manifested as uncompensated hyperglyce
 mia
 \begin_inset CommandInset citation
@@ -3245,15 +3403,16 @@ key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
 \begin_layout Standard
 Dexa extinguishes the insulin signal very early.
  By itself, Dexa treatment does not change basal levels of autophosphorylated
- insulin receptor and phosphorylated IRS1, in absolute or stoichiometric
- terms
+ insulin receptor in absolute or stoichiometric terms
 \begin_inset CommandInset citation
 LatexCommand citep
-key "saad1993modulation,corporeau2006adipose"
+key "saad1993modulation,corporeau2006adipose,ishizuka1995effect"
 
 \end_inset
 
 .
+ Similarly, Dexa alone does not change the basal level of phosphorylated
+ IRS.
  However, in response to insulin, mice treated for 5 days with 
 \begin_inset ERT
 status open
@@ -3290,11 +3449,42 @@ key "rojas2003regulation"
 \end_inset
 
 .
+ The suppression of insulin sensitivity at IRS level has been attributed,
+ based on observational studies, to an improved protection of IRS by calmodulin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "li2000binding"
+
+\end_inset
+
+, to an inhibitory phosphorylation on another residue, possibly by PKC
+\begin_inset CommandInset citation
+LatexCommand citep
+key "morgan200911beta-hydroxysteroid,ishizuka1995effect"
+
+\end_inset
+
+, or to the upregulated phosphatase C1-Ten
+\begin_inset CommandInset citation
+LatexCommand citep
+key "koh2013c1-ten"
+
+\end_inset
+
+.
+ In C2C12 myotubes, Dexa may downregulate IRS through caveolin repression
+\begin_inset CommandInset citation
+LatexCommand citep
+key "son2015dexamethasone"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-The notion that Dexa interferes with IGF-1R suggested that GAML also attenuates
- downstream mitogen-activated protein kinase (
+The notion that Dexa interferes with IGF-I signaling suggested that GAML
+ also attenuates downstream mitogen-activated protein kinase (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "MAPK"
@@ -3361,10 +3551,10 @@ key "zheng2010foxo3a"
 \end_inset
 
 .
- Phosphorylation of p38, another MAPK, is not altered by Dexa
+ Measurements of changes in activation of another MAPK, p38, are contradictory
 \begin_inset CommandInset citation
 LatexCommand citep
-key "mcclung2010p38"
+key "qin2010protection,mcclung2010p38"
 
 \end_inset
 
@@ -3372,7 +3562,8 @@ key "mcclung2010p38"
  Together with the dearth of reports, and the limited role of hyperplasia
  in adult muscle, available evidence suggests that MAPK cascades do not
  mediate GAML.
- 
+ More to the point, absence of sizable changes in the MAPK cascades reinforces
+ the idea that insulin and IGF-I signaling is extinguished at IRS level.
 \end_layout
 
 \begin_layout Standard
@@ -3401,12 +3592,8 @@ key "wu2010redd1"
 \end_inset
 
 .
- These findings suggest that GCs activate a multifaceted anti-insulin program.
-\end_layout
-
-\begin_layout Standard
-Genetic manipulations established that Dexa's ability to repress p70-S6K
- sensitivity to insulin requires GR
+ Mutagenic studies suggest that GR's transcriptional and DNA binding domains
+ are required, in order for it to inhibit p70-S6K
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shah2002activated"
@@ -3414,19 +3601,36 @@ key "shah2002activated"
 \end_inset
 
 .
- Moreover, mutations that disable GR's transcriptional and DNA binding ability
- abolish GR's ability to inhibit p70-S6K.
+ In the current model, p70-S6K is downstream of IRS and PI3K, suggesting
+ that Dexa inhibitory action on the is a transcriptional effect.
+ However, a recent study found that, in transformed cells, activated GR
+ binds p85 in a competitive manner, thus displacing it from IRS1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hu2009endogenous"
+
+\end_inset
+
+.
+ This non-transcriptional effect has not been explored in GAML in vivo,
+ but is supported by the unusual persistence of IRS1-PI3K complexes during
+ diabetes in GR knockout mice muscle.
 \end_layout
 
 \begin_layout Standard
-NONTRANSCRIPTIONAL
-\end_layout
+The formation of a membrane complex including the transmembrane receptor,
+ IRS, p85 and, PI3K catalytic subunit, p110 (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "geering2007regulation"
 
-\begin_layout Standard
-In other systems, including muscle cell lines treated with Dexa in vitro,
- the depletion of membrane-bound PI3K leads to reduced production of 3-phosphoin
-ositides, reduced activation of 3-phosphoinositide-dependent protein kinase
- 1 (
+\end_inset
+
+).
+ The latter acts on the membrane lipids to synthesize 3-phosphoinositides.
+ In muscle cell lines treated with Dexa in vitro, the depletion of membrane-boun
+d PI3K and of 3-phosphoinositides leads to lower activation of 3-phosphoinositid
+e-dependent protein kinase 1 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PDK1"
@@ -3451,28 +3655,18 @@ key "buren2008insulin"
 In GAML, the other relevant Akt phosphorylation site, Ser 473, is paralleling
  the changes in Thr 308.
  In basal conditions, in rat muscle, Ser 473 phosphorylation is either undetecta
-ble or below the dynamic rage of immunoblot, yet Dexa lowers its ability
+ble or below the dynamic range of immunoblot, yet Dexa lowers its ability
  to respond to insulin
 \begin_inset CommandInset citation
 LatexCommand citep
-key "buren2008insulin,rojas2003regulation"
+key "buren2008insulin,rojas2003regulation,williams2012dietary,watson2012cell-autonomous"
 
 \end_inset
 
 .
- A few studies reported measurable Ser 473 phosphorylation in basal state
- in vivo
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fappi2014effects"
-
-\end_inset
-
-.
- These rare studies report that Dexa suppresses Ser 473 Akt phosphorylation
- even in the absence of an insulin stimulus.
- Even in cultured cells, Akt phosphorylation is not detectable in basal
- states, preventing experimental detection of GC-induced Akt inhibition
+ Even in cultured cells, Akt phosphorylation is too low to be quantified,
+ preventing experimental detection of GC-induced Akt inhibition in basal
+ state
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
@@ -3480,6 +3674,26 @@ key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
 \end_inset
 
 .
+ Less commonly, some studies report measurable Ser 473 phosphorylation in
+ basal state in vivo
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fappi2014effects,schakman2008role"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Our colleagues in China, Belgium and Brasil have better antibodies.
+\end_layout
+
+\end_inset
+
+ According to them, Dexa suppresses Ser 473 Akt phosphorylation even in
+ the absence of an insulin stimulus.
 \end_layout
 
 \begin_layout Standard
@@ -3504,8 +3718,8 @@ key "alessi1996mechanism"
 
 .
  The interdependence between Ser 473 and Thr 308 is illustrated by the fact
- that non-mutagenic in vivo experiments do not describe circumstances when
- Akt is activated while unphosphorlyated at Ser 473(reviewed in 
+ that non-mutagenic in vivo experiments rarely describe Akt activation without
+ phosphorylation at both residues (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "manning2007akt/pkb"
@@ -3513,14 +3727,8 @@ key "manning2007akt/pkb"
 \end_inset
 
 ).
- It may be the case that Ser 473 is a requirement for Thr 308 phosphorylation,
- which in turn implies that Akt activity is critically modulated by mTOR
- complex 2.
- Alternatively, it may be the case mTOR complex 2 is not a limiting factor
- in vivo.
- Moreover, one cannot ignore mTOR-independent phosphorylation at Ser 473.
- Because the action mTOR complex 2 on Ser 473 is a recent discovery, the
- role of the former in GAML is still unknown.
+ This correlation may be the result of an initial priming event, conditioning
+ a non-limiting second phosphorylation.
 \end_layout
 
 \begin_layout Standard
@@ -3554,7 +3762,7 @@ key "jacinto2006sin1/mip1"
  Nevertheless, similar results would be seen if Ser 473 alters solely Akt
  activity, but FoxO substrates are scarcer compared to tuberin and GSK3.
  In either case, because Foxo is at the core of atrogene regulation in muscle
- atrophy, Ser 473 status is of great interest for GAML studies.
+ atrophy, Ser 473 status has been of greater interest for GAML studies.
 \end_layout
 
 \begin_layout Standard
@@ -3569,17 +3777,18 @@ key "buren2008insulin"
 \end_inset
 
 .
- In turn, phosphorylation of glycogen synthase at Ser 645, 649, 653, 657
- is stimulated, leading to increased intramuscular glycogen deposits
+ The activation of GSK3-β in GAML is confirmed by increased phosphorylation
+ of its substrate glycogen synthase at Ser 645, 649, 653, 657, and decreases
+ intramuscular glycogen synthesis rate
 \begin_inset CommandInset citation
 LatexCommand citep
-key "ruzzin2005contraction,buren2008insulin"
+key "ruzzin2005contraction,coderre2007regulation,buren2008insulin"
 
 \end_inset
 
 .
- Among that tens of substrates of GSK3-β, the subunit ε of the eukaryotic
- initiation factor 2B (
+ Among the many substrates of GSK3-β, the subunit ε of the eukaryotic initiation
+ factor 2B (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "eIF2B"
@@ -3591,6 +3800,15 @@ description "eukaryotic initiation factor 2B"
 \begin_inset CommandInset citation
 LatexCommand citep
 key "welsh1993glycogen"
+
+\end_inset
+
+.
+ In cultured myotubes, GSK3-β knockdown reduces Dexa ability to upregulate
+ MAFbx
+\begin_inset CommandInset citation
+LatexCommand citep
+key "verhees2011glycogen"
 
 \end_inset
 
@@ -3642,6 +3860,18 @@ key "sacheck2004igf-i"
  led to an unjustified neglect of GSK3-β.
 \end_layout
 
+\begin_layout Standard
+In conclusion, the muscle response to GC is associated with signaling and
+ glucose metabolism changes consistent with IRS and Akt loss of sensitivity
+ to trophic factors such as insulin and IGF-I.
+ Interestingly, the pathway appears largely unaffected by Dexa in basal
+ conditions, when trophic factors are withheld.
+ Because the model of GAML centered on Akt is derived from experiments with
+ acute states, cell models, and intrinsic anabolic interventions, it is
+ perfectible.
+ The best studied downstream targets of Akt are mTOR and FOXO.
+\end_layout
+
 \begin_layout Section
 Glucocorticoid inhibition of mTOR
 \end_layout
@@ -3656,9 +3886,33 @@ key "guertin2007defining,laplante2009mtor,inoki2002tsc2"
 \end_inset
 
 ).
- Activated Akt phosphorylates TSC2, thus causing its cytosoling sequestration,
- away from its transmembrane binding partner, hamartin (Tuberous Sclyerosis
- Complex 1; 
+ Its modulation in GAML is clearly proven by changes in its downstream targets.
+ However, the mechanism by which mTOR is modulated by Dexa is not elucidated
+ yet.
+\end_layout
+
+\begin_layout Standard
+Cell models established that activated Akt phosphorylates and inhibits proline-r
+ich Akt substrate of 40-kDa (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PRAS40"
+description "proline-rich Akt substrate of 40-kDa"
+
+\end_inset
+
+), a negative regulator of mTORC1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sancak2007pras40"
+
+\end_inset
+
+.
+ Moreover, the same cell models showed that activated Akt phosphorylates
+ TSC2, thus causing its sequestration with a cytosol partner, 14-3-3, and
+ away from its transmembrane partner, hamartin (Tuberous Sclerosis Complex
+ 1; 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "TSC1"
@@ -3676,63 +3930,10 @@ key "cai2006activity"
 .
  The destruction of TSC1-TSC2 complexes relieves the negative regulation
  from Rheb, a small GTPase, that can induce activation of mTORC1, manifested
- in amplified phosphorylation of substrates such as p70-S6K.
- Therefore, Dexa-induced repression of Akt should inhibit mTORC.
- In GAML, this mechanism has not been proven, beyond an increased formation
- of TSC1-TSC2 complexes in response to Dexa in starved L6 myotubes.
-\end_layout
-
-\begin_layout Standard
-Based on the modulation of the substrates, it appears that mTORC1 kinase
- activity is reduced by Dexa with more efficacy during hyperinsulinemia,
- such as after feeding.
- For always-on, feeding-independent GAML to proceed, mTOR-independent are
- also required.
- It has been hypothesized that Akt-independent mechanisms contribute to
- mTOR suppression in GAML.
- AMPK has been hypothesized as the other negative regulator of mTOR.
- However, Dexa stimulates in vivo mitochondrial biogenesis, as indicated
- by increased cytochrome c oxidase expression and activity
-\begin_inset CommandInset citation
-LatexCommand citep
-key "weber2002glucocorticoid"
-
-\end_inset
-
-.
- Moreover, Dexa increases Na(+)-K(+)-ATPase expression and maximal activity
-\begin_inset CommandInset citation
-LatexCommand citep
-key "nordsborg2005dexamethasone"
-
-\end_inset
-
-.
- Dexa induces a significant upregulation of intramuscular ATP
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dumas2005dexamethasone"
-
-\end_inset
-
-.
- Possibly as a consequence of the energetic surplus, Dexa causes a decrease
- in AMPK phosphorylation and activity
-\begin_inset CommandInset citation
-LatexCommand citep
-key "williams2012dietary"
-
-\end_inset
-
-, this hypothesis has been abandoned.
- Moreover, this body of evidence shows that GAML does not include some mitochond
-rial dysfunction.
-\end_layout
-
-\begin_layout Standard
-A more robust inactivation of mTORC1 is achieved by a parallel mechanism,
- centered on REDD1.
- REDD1 expression is upregulated in GAML
+ in amplified phosphorylation of mTORC1 substrates such as p70-S6K.
+ Therefore, Dexa-induced repression of Akt should inhibit mTORC1.
+ However, the only confirmation of this mechanism comes from the observation
+ that, in L6 myotubes, Dexa stimulates the formation of TSC1-TSC2 complexes
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wang2006dexamethasone"
@@ -3740,6 +3941,108 @@ key "wang2006dexamethasone"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Based on upstream changes, the effect would be subtle, detectable only during
+ hyperinsulinemia.
+ For always-on, feeding-independent GAML to proceed, mTOR-independent are
+ also required.
+ It has been hypothesized that Akt-independent mechanisms contribute to
+ mTOR suppression in GAML.
+ A well-studied negative regulator of mTOR is the energy sensor AMPK
+\begin_inset CommandInset citation
+LatexCommand citep
+key "koh2008lkb1,canto2010amp-activated"
+
+\end_inset
+
+.
+ However, Dexa inhibits muscle AMPK phosphorylation and activity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "williams2012dietary"
+
+\end_inset
+
+, probably as a consequence of intramuscular ATP upregulation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dumas2005dexamethasone"
+
+\end_inset
+
+.
+ The surge in intramuscular ATP is caused by Dexa-induced improvements in
+ mitochondrial function, exemplified by upregulation of cytochrome c oxidase
+ expression and activity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weber2002glucocorticoid"
+
+\end_inset
+
+ and of Na(+)-K(+)-ATPase expression and maximal activity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nordsborg2005dexamethasone"
+
+\end_inset
+
+.
+ Chronic Dexa or corticosterone do not alter Liver Kinase B1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LKB1"
+description "Liver Kinase B1"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "williams2012dietary,nakken2010effects"
+
+\end_inset
+
+, the main AMPK kinase, indicating that energy sensing employs other, unknown
+ mediator.
+ This body of evidence shows that in GAML, mTOR suppression does not employ
+ AMPK.
+ Moreover, GAML does not involve mitochondrial dysfunction.
+\end_layout
+
+\begin_layout Standard
+Another putative mTORC1 inactivating mechanism is centered on the stress
+ sensor REDD1.
+ Dexa upregulates REDD1 expression in muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wu2010redd1"
+
+\end_inset
+
+.
+ Demonstrating its key role, genetic depletion of REDD1 abolishes GAML and
+ Dexa-induced myotube atrophy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang2006dexamethasone,britto2014redd1"
+
+\end_inset
+
+.
+ In cell culture, REDD1 interferes with 14-3-3 in order to release TSC2,
+ restore TSC1-TSC2 complexes, and eventually inhibit mTORC1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deyoung2008hypoxia"
+
+\end_inset
+
+.
+ Interestingly, a REDD1-based mechanism could explain the few observations
+ on mTORC1 changes just as well as a Akt-centered model would.
 \end_layout
 
 \begin_layout Standard
@@ -3756,8 +4059,7 @@ key "shah2000glucocorticoids"
 .
  Chronic Dexa changes 4E-BP and p70-S6K phosphorylation in a pattern that
  mirrors Akt activation, with no detectable Dexa effect on their basal phosphory
-lation, and a Dexa-induced loss of sensitivity to insulin.
- 
+lation, and a Dexa-induced loss of sensitivity to insulin
 \begin_inset CommandInset citation
 LatexCommand citep
 key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
@@ -3872,19 +4174,103 @@ key "hosokawa2009nutrient-dependent"
 \end_layout
 
 \begin_layout Standard
-In conclusion, the muscle response to GC is associated with molecular changes
- consistent with Akt / mTOR loss of sensitivity to trophic factors such
- as insulin and IGF-I.
- Based on p70-S6K divergence, it appears that GC causes Akt-mediated mTOR
+Based on p70-S6K divergence, it appears that GC causes Akt-mediated mTOR
  modulation, in contrast with denervation atrophy, where Akt is downstream
  of mTOR.
- Interestingly, the pathway appears largely unaffected by Dexa in basal
- conditions, when trophic factors are withheld.
- Because the model of GAML centered on Akt is derived from experiments with
- acute states, cell models, and intrinsic anabolic interventions, it is
- perfectible.
- Experiments on transgenic mice, unpicking one putative mediator at a time,
- may still invalidate it, as they did for denervation atrophy.
+ However, an unreplicated recent study opens the perspective for a paradigm-over
+turning situation.
+ In an acute study of Dexa on female rates, Britto and colleagues confirmed
+ most of the current model
+\begin_inset CommandInset citation
+LatexCommand citep
+key "britto2014redd1"
+
+\end_inset
+
+.
+ Dexa repressed mTORC1 activity, as indicated by lower phosphorylation of
+ its substrate 4E-BP1.
+ The repression of mTORC1 was correlated with an reduced inactivation of
+ the negative regulator PRAS40.
+ In contrast, and unexpectedly, acute Dexa increased TSC2 phosphorylation,
+ indicating that Dexa induces substrate selectivity changes in Akt.
+ As discussed earlier, such Akt selectivity are attributed to dissociation
+ between Ser 473 and Thr 308 phosphorylation state.
+ Indeed, Britto and colleagues found that, after acute Dexa, phosphorylation
+ at Ser 473 increases, while at Thr 308 it decreases.
+ This is a rare, although not unique, account of Akt hyperphosphorylation
+ in GAML.
+ In each case, these findings may be explained by the particular conditions
+ of the unique experiment.
+ Here, proteolysis was not unaltered, indicating that acute Dexa is not
+ a true model of GAML.
+\end_layout
+
+\begin_layout Standard
+Britto and colleagues refined their model by observing the effect of Dexa
+ in REDD1 knockout mice.
+ REDD1 depletion abolishes GAML, although atrogenes are still upregulated.
+ On the other hand, REDD1 depletion prevents Dexa's hypophosphorylating
+ action on 4E-BP1 and p70-S6K.
+ These findings place mTORC1 inhibition at the core of GAML.
+ Britto and colleagues propose a model of GAML where Ser 473 hyperphosphorylatio
+n is caused by an mTORC1 feedback loop being severed by Dexa.
+ Upstream of mTORC1, REDD1 knockout mice exhibit loss of phosphorylation
+ on PRAS40 and Akt on Thr 308.
+ While Akt remains upstream of mTOR and vital for GAML, Britto's model discards
+ phosphorylation of Akt at Ser 473 and of TSC2 from the rapid REDD1-dependent
+ response to Dexa.
+ Multiple studies in transformed cells confirm the role of Thr 308 in REDD1
+ repressive action on mTOR, while proposing different intermediaries (
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dennis2014redd1"
+
+\end_inset
+
+; reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "canal2014rtp801/redd1:"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+The most robust inducer of REDD1 is hypoxia, through HIF transcription factors
+\begin_inset CommandInset citation
+LatexCommand citep
+key "canal2014rtp801/redd1:"
+
+\end_inset
+
+.
+ As described in the dedicated section, HIF1a also induces VEGF, which in
+ turn has a myoprotective action.
+ But in GAML, VEGF is downregulated
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barel2010exercise"
+
+\end_inset
+
+, suggesting that HIF1a is not involved in REDD1 upregulation.
+ The mechanism by which Dexa stimulates REDD1 remains to be studied.
+ Candidates include ATF4 and NFAT, discussed in other sections of this chapter.
+\end_layout
+
+\begin_layout Standard
+While it is certain that GAML is correlated with mTORC1 downregulation,
+ it is still unclear how mTORC1 repression is achieved, and what is its
+ relative importance.
+ Based on the evidence published until now, the recent change of paradigm
+ which placed p70-S6K at the forefront of denervation atrophy appears unlikely
+ in GAML.
+ For now, our understanding of GAML places Akt firmly upstream of mTORC1.
+ Better transgenic models, a deeper understanding of mTOR pathways and more
+ in vitro / recombinant experiments are required for a definitive conclusion.
 \end_layout
 
 \begin_layout Section
@@ -3892,21 +4278,87 @@ Glucocorticoid activation of Foxo transcriptional program
 \end_layout
 
 \begin_layout Standard
-The evidence for the role of Foxo in GAML is not direct and compelling as
- that gathered in denervation atrophy.
+The evidence for the role of Foxo in GAML is not as direct and compelling
+ as that gathered in denervation atrophy.
  Given the partial redundancy between the three regulatable Foxo transcription
  factors, only a triple knockout will give the true measure of their relative
  importance.
+ Nevertheless, an impressive body of indirect evidence supports their involvemen
+t in GAML.
 \end_layout
 
 \begin_layout Standard
 The importance of Foxo transcription factors is supported intuitively by
  their role as integrators of multiple atrophy signaling pathways.
  Multiple mechanisms converge to induce Foxo upregulation in GAML.
- First, chronic Dexa doubles Foxo expression
+ 
+\end_layout
+
+\begin_layout Standard
+First, Foxo transcription factors are thought to be potentiated by Dexa
+ through post-translational means involving the earlier described Akt pathway
+ (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "calnan2008foxo"
+
+\end_inset
+
+).
+ Akt phosphorylates Foxo1 at Tyr 32 and Ser 253, thus creating binding sites
+ for 14-3-3.
+ Phosphorylated Foxo transcription factors are exported from the nucleus,
+ and eventually marked for ubiquitin-proteasome-mediated degradation.
+ It is believed that the Dexa-induced impairment of Akt contributes to an
+ increase in their activity in GAML.
+ Given that phosphorylated Foxo is degraded and is elicited by a low-activity
+ Akt pathway, Foxo phosphorylation changes may be undetectable in basal
+ state.
+ Nevertheless, a few groups reported reductions in Foxo phosphorylation
+ by chronic Dexa at basal state
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
+
+\end_inset
+
+.
+ Two out of the three referenced studies report an unusual activation of
+ Akt in basal state, indicating that they may be reflective of special condition
+s (40 days treatment, or the use of male levator ani).
+ In C2C12 myotubes, Foxo phosphorylation downregulation in response to Dexa
+ is more readily detected
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhao2007foxo3,sandri2004foxo"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Second, chronic Dexa doubles Foxo expression
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wu2010redd1"
+
+\end_inset
+
+.
+ Foxo1 promoter contains a GR response element
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qin2014identification"
+
+\end_inset
+
+.
+ In C2C12 myotubes, the response is biphasic, combining a short-lived ample
+ and rapid increase, with a gentler long term augmentation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nishimura2008effects"
 
 \end_inset
 
@@ -3938,24 +4390,76 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 .
- Second, Foxo transcription factors are thought to be potentiated by Dexa
- through post-translational means.
- Phosphorylated Foxo transcription factors are exported from the nucleus,
- and eventually marked for ubiquitin-proteasome-mediated degradation (reviewed
- in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "calnan2008foxo"
-
-\end_inset
-
-).
- It is believed that the Dexa-induced impairment of their kinase, Akt, contribut
-es to an increase in their activity in GAML.
 \end_layout
 
 \begin_layout Standard
-The net result of these mechanisms is that Dexa treatments reduce nuclear
+Third, PGC nuclear cofactors may facilitate the Dexa-induced Foxo surge.
+ Loss of sensitivity to insulin causes PGC-1 repression in muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ling2004multiple"
+
+\end_inset
+
+.
+ In particular, Dexa represses muscle PGC-1α
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qin2010protection,jesinkey2014atomoxetine"
+
+\end_inset
+
+ and PGC-1β
+\begin_inset CommandInset citation
+LatexCommand citep
+key "menconi2010sepsis"
+
+\end_inset
+
+.
+ In cultured myotubes, PGC-1β overexpression and knockdown cause changes
+ in the reverse direction for Foxo3a and atrogenes' mRNA.
+ 
+\end_layout
+
+\begin_layout Standard
+Fourth, miR-182, whose expression is inhibited by Dexa, is a negative regulator
+ of Foxo3
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hudson2014mir-182"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Finally, indirect evidence links Foxo1 to PPARβ/δ.
+ Dexa stimulates simultaneously PPARβ/δ DNA binding and Foxo1 acetylation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "castillero2013ppar/"
+
+\end_inset
+
+.
+ PPARβ/δ inhibition reduces GAML and, at the same time, prevents Dexa-stimulated
+ acetylation of Foxo1.
+ While the direct effects of this posttranscriptional modification is not
+ elucidated (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "daitoku2011regulation,nakae2008foxo"
+
+\end_inset
+
+), it was speculated that PPARβ/δ changes induce physiologically relevant
+ alterations in Foxo1.
+\end_layout
+
+\begin_layout Standard
+The net result of these mechanisms is that Dexa treatments upregulates nuclear
  Foxo
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3964,26 +4468,22 @@ key "qin2010protection"
 \end_inset
 
 .
- Given that phosphorylated Foxo is degraded and is elicited by a low-activity
- Akt pathway, Foxo phosphorylation changes may be undetectable in basal
- state.
- Nevertheless, a few groups reported reductions in Foxo phosphorylation
- by chronic Dexa at basal state
+ More convincing evidence towards Foxo activation comes from the concordance
+ in its downstream effects.
+ For example, Dexa increases muscle glutamine synthetase activity
 \begin_inset CommandInset citation
 LatexCommand citep
-key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
+key "king1983glutamine"
 
 \end_inset
 
 .
- Two out of the three referenced studies report an unusual activation of
- Akt in basal state, indicating that these reports may be reflective of
- special conditions (40 days treatment, or the use of male levator ani).
- In C2C12 myotubes, Foxo phosphorylation downregulation in response to Dexa
- is more readily detected
+ Glutamine synthetase promoter contains a FOXO response element.
+ Dexa-induced expression of muscle glutamine synthetase is absent in Foxo1
+ knockout
 \begin_inset CommandInset citation
 LatexCommand citep
-key "zhao2007foxo3,sandri2004foxo"
+key "kamei2014foxo1"
 
 \end_inset
 
@@ -4004,28 +4504,6 @@ key "sandri2004foxo,senf2010foxo"
 \end_layout
 
 \begin_layout Standard
-More convincing evidence towards Foxo activation comes from the concordance
- in its downstream effects.
- For example, Dexa increases muscle glutamine synthetase activity
-\begin_inset CommandInset citation
-LatexCommand citep
-key "king1983glutamine"
-
-\end_inset
-
-.
- Glutamine synthetase promoter contains a FOXO response element, and Foxo1
- knockout mice do not upregulate muscle glutamine synthetase
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kamei2014foxo1"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 Among the Foxo-induced genes, a special importance was given to the E3 ligases
  associated with muscle loss, MAFbx and MuRF1
 \begin_inset CommandInset citation
@@ -4038,7 +4516,7 @@ key "stitt2004igf-1/pi3k/akt"
  Both atrogenes contain FOXO-binding regions in their promoter
 \begin_inset CommandInset citation
 LatexCommand citep
-key "sandri2004foxo,sandri2006pgc-1alpha"
+key "sandri2004foxo,sandri2006pgc-1alpha,waddell2008glucocorticoid"
 
 \end_inset
 
@@ -4062,15 +4540,20 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 .
- In both atrogenes' promoter, a Krüppel-like factor-15 (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "KLF-15"
-description "kruppel-like factor-15"
+ A positive feedback loop links MuRF1 and FOXO1, as indicated by downregulation
+ of p85 and FOXO1 in late GAML in the MuRF1 knockout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "furlow2013altered"
 
 \end_inset
 
-) response element is located, near the FOXO binding site
+.
+\end_layout
+
+\begin_layout Standard
+In both atrogenes' promoter, a KLF-15 response element is located, near
+ the FOXO binding site
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shimizu2011crosstalk"
@@ -4109,11 +4592,6 @@ key "smith2010sepsisa"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-LKB1
 \end_layout
 
 \begin_layout Section
@@ -4121,7 +4599,15 @@ Glucocorticoid activation of myostatin
 \end_layout
 
 \begin_layout Standard
-Myostatin is a strong inducer of muscle atrophy.
+In rodents, Dexa upregulates myostatin, a strong negative regulator of muscle
+ mass, in the atrophying muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ma2003glucocorticoid-induced"
+
+\end_inset
+
+.
  In myostatin knockout mice, Dexa induces most of its transcriptional program,
  including modulations of IGF-I, MuRF1, MAFbx, FOXO3A, but Dexa-induced
  muscle loss does not occur 
@@ -4132,25 +4618,51 @@ key "gilson2007myostatin"
 \end_inset
 
 .
- Dexa upregulates myostatin, a strong negative regulator of muscle mass,
- in the atrophying muscle
+ These findings suggest that myostatin is an important mediator of Dexa.
+\end_layout
+
+\begin_layout Standard
+Myostatin's promoter contains GR response element
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ma2003glucocorticoid-induced"
 
 \end_inset
 
-.
- Additionally, myostatin's promoter contains a FOXO responsive element
+, a FOXO responsive element
 \begin_inset CommandInset citation
 LatexCommand citep
 key "allen2007regulation"
 
 \end_inset
 
+, and a CCAAT sequence
+\begin_inset CommandInset citation
+LatexCommand citep
+key "allen2010ccaat/enhancer"
+
+\end_inset
+
+, all known to be stimulated by Dexa.
+ Myostatin expression is also upregulated by the histone methyltransferase
+ SMYD 3, which in turn is upregulated in muscle by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "proserpio2013methyltransferase"
+
+\end_inset
+
 .
- These findings suggest that myostatin is at the forefront of the response
- to Dexa.
+ The stability of the myostatin transcript is improved by Dexa-exerted repressio
+n of its negative regulators, miR-27
+\begin_inset CommandInset citation
+LatexCommand citep
+key "allen2011posttranscriptional"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -4212,8 +4724,16 @@ key "amirouche2009down-regulation"
 \end_inset
 
 .
- In vitro, human myotubes differentiated from cultured myoblasts, myostatin
- treatments lead to reductions in diameter and atrogene downregulation 
+ The investigators behind this study performed an analysis of the mTOR pathway,
+ which found loss of phosphorylation on tuberin and p70-S6K, and concluded
+ that myostatin affects protein metabolism.
+ A simpler explanation would have taken into account the regeneration in
+ the scarred electroporated muscle, which should have contributed a high
+ number of proliferating cells.
+ Another provoking study investigated human myotubes differentiated from
+ cultured myoblasts.
+ In this model, myostatin treatments lead to reductions in diameter and
+ atrogene downregulation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "trendelenburg2009myostatin"
@@ -4221,19 +4741,14 @@ key "trendelenburg2009myostatin"
 \end_inset
 
 .
- Both reports describe Akt inhibition, a finding facilitated by the fact
- that their myostatin-free controls presented an unusual Akt phosphorylation
- in basal state.
  The authors of the latter report explain their observations by demonstrating
  that myostatin reduces myoblast fusion and differentiation.
- In contrast, the investigators behind the former study perform an analysis
- of the mTOR pathway, which indicates loss of phosphorylation on tuberin
- and p70-S6K, and conclude that myostatin affects protein metabolism.
- A simpler explanation would have taken into account the regeneration in
- transfected muscle, which should have led to unusually high proliferative
- rate.
- Most of the changes would be consistent with the well-documented myostatin-indu
-ced impairment of muscle regeneration
+ While interesting in context of muscle development and regeneration, such
+ experiments cannot replicate adult GAML.
+ Moreover, both reports describe even in the myostatin-free controls, an
+ unusual Akt phosphorylation.
+ Most of their observations would be consistent with the well-documented
+ myostatin-induced impairment of muscle regeneration
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mccroskery2003myostatin,cohen2015genetic"
@@ -4241,16 +4756,22 @@ key "mccroskery2003myostatin,cohen2015genetic"
 \end_inset
 
 .
- Even if some atrophy models may be explained by a myostatin - Akt axis,
- the simultaneous downregulation of atrogenes and repression of Akt would
- distinguish those models from GAML.
 \end_layout
 
 \begin_layout Standard
-GAML appears to be mediated by a myostatin-centered, mTOR-independent pathway.
- Its relative importance remains unclear, given that typical experiments,
- with qualitative alterations of myostatin, yield non-specific anti-atrophic
+The study on human myotubes showed that exogenous myostatin downregulates
+ muscle atrogenes.
+ In contrast, GAML is characterized by an upregulation of atrogenes.
+ Moreover, the upregulation of atrogenes in GAML is attributed, in part,
+ to Akt inhibition.
+ Therefore, a myostatin - Akt axis does not seem to underlie GAML.
+\end_layout
+
+\begin_layout Standard
+The typical experiments, using qualitative alterations of myostatin, may
+ override any endogenous mechanism, and yield non-specific anti-atrophic
  effects.
+ Myostatin's relative importance for GAML remains unclear.
 \end_layout
 
 \begin_layout Section
@@ -4465,6 +4986,36 @@ on of this thesis, for unspecified reason.
 \end_layout
 
 \begin_layout Standard
+Dexa upregulates mitogen-activated protein kinase–interacting kinase 2 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MNK2"
+description "mitogen-activated protein kinase–interacting kinase 2"
+
+\end_inset
+
+) expression
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hu2012mnk2"
+
+\end_inset
+
+.
+ Dexa reduces eIF4G Ser 1108 phosphorylation in wild type mice, but not
+ in MNK2 knockout mice.
+ This posttranslational modification correlates with nutrient availability,
+ but its role in GAML or in general is not known (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vary2007nutrient"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
 In C2C12 myotubes, GAML may repress protein synthesis by MAFbx-initiated
  neutralization of eIF3-f
 \begin_inset CommandInset citation
@@ -4492,7 +5043,7 @@ key "csibi2010translation"
 
 \begin_layout Standard
 Canonical control of protein synthesis includes translational derepression,
- a cytsol-based mechanism for sensing amino acid starvation (reviewed in
+ a cytosol-based mechanism for sensing amino acid starvation (reviewed in
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4572,14 +5123,24 @@ key "gjymishka2009transcriptional"
 \end_inset
 
 .
- Overall, the translational derepression pathway is mechanism for inhibiting
+ Overall, the translational derepression pathway is a mechanism for inhibiting
  protein synthesis, initiated by apparent depletion of free amino acids,
  and leading to ATF4 upregulation.
 \end_layout
 
 \begin_layout Standard
 The study of translational derepression in mammalians is still in its beginnings.
- Therefore, its role in muscle atrophy is unclear.
+ The ATF4 knockout mouse has normal weight, but exhibits some sparing from
+ muscle atrophy in response to starvation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ebert2012stress-induced"
+
+\end_inset
+
+.
+ ATF4 knockout mice exhibit a normal atrogene response to starvation, indicating
+ that ATF4 is part of a novel atrophy pathway.
  The only study that measured chronic Dexa effect on phosphorylation of
  eIF2 reported negative results
 \begin_inset CommandInset citation
@@ -4590,37 +5151,38 @@ key "liu2004glucocorticoids"
 
 .
  However, Dexa abrogated amino acid infusion ability to reduce eIF2 phosphorylat
-ion.
- Although the effect did not propagate downstream to eIF2B, parallels between
- Dexa effect on Akt / mTOR and eIF2 are obvious.
- Translational derepression and mTORC1 interact in a complex manner.
- In C2C12 cells, ATF4 is induced by IGF-I in a rapamycin-dependent manner
+ion, a situation reminiscent of Dexa's action on Akt.
+ In a fibroblastic cell line, Dexa upregulated ATF4 translation as long
+ as insulin was withheld from the medium
 \begin_inset CommandInset citation
 LatexCommand citep
 key "adams2007role"
 
 \end_inset
 
-, suggesting that mTOR exploits translational derepression to improve the
- free amino acid pool in muscle.
- On the other hand, the ATF4 knockout mouse has normal weight, but exhibits
- some sparing from muscle atrophy in response to starvation
+.
+\end_layout
+
+\begin_layout Standard
+Unexpectedly, in C2C12 myotubes, ATF4 protein levels are upregulated by
+ insulin in a rapamycin-dependent manner
 \begin_inset CommandInset citation
 LatexCommand citep
-key "ebert2012stress-induced"
+key "adams2007role"
 
 \end_inset
 
 .
- ATF4 knockout mice exhibit a normal atrogene response, indicating that
- ATF4 is part of a novel atrophy pathway.
+ A plausible explanation is that ATF4 is upregulated by apparent amino acid
+ deficits, including cases when mTOR-stimulated protein translation depletes
+ the free amino acid pool.
 \end_layout
 
 \begin_layout Standard
-Multiple pathways that usually alter protein synthesis are modulated by
- Dexa in a manner consistent with GAML.
- Their mild alterations correlate with the moderate rate of loss in protein
- synthesis rate.
+Changes in 4E-BP1 and perhaps some other pathways regulating protein synthesis
+ are induced by Dexa in a manner consistent with GAML.
+ The mild alterations of translation molecular markers correlate with the
+ moderate loss in protein synthesis rate.
  While the overall effect is not negligible, its reduced amplitude and its
  downstream relation to MuRF1 indicate that anabolism adjustments play a
  complementary role to the activation of the ubiquitin-proteasome system
@@ -4639,10 +5201,22 @@ Proteasome inhibition does not abolish ability of Dexa to stimulate proteolysis,
 \end_layout
 
 \begin_layout Standard
-Dexa doubles the lysosome proteases cathepsin L and D 
+In L6 myotubes, 100 uM chloroquine or 200 mM E-64 reduce the rate at which
+ Dexa amplifies proteolytic tracer release
 \begin_inset CommandInset citation
 LatexCommand citep
-key "dardevet1995sensitivity,deval2001identification"
+key "wang1998dexamethasone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In vivo, Dexa doubles the lysosome proteases cathepsin L and D 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity,deval2001identification,nishimura2008effects"
 
 \end_inset
 
@@ -4658,20 +5232,101 @@ key "wang1998dexamethasone"
 \end_layout
 
 \begin_layout Standard
-In L6 myotubes, 100 uM chloroquine or 200 mM E-64 reduce the rate at which
- Dexa amplifies proteolytic tracer release
+In C2C12 myotubes overexpressing microtubule-associated protein 1 light
+ chain 3 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LC3"
+description "microtubule-associated protein 1 light chain 3"
+
+\end_inset
+
+), the faster migrating form LC3-II is enriched after Dexa treatment
 \begin_inset CommandInset citation
 LatexCommand citep
-key "wang1998dexamethasone"
+key "rossi2009cytosolic"
 
 \end_inset
 
 .
- 
+ LC3-II is a marker of the autophagosome prior to its fusion with lysosome
+ that leads to the assembly of the autophagolysosome.
+ Recently, the enrichment of LCII-B in GAML in vivo has been reported.
+\end_layout
+
+\begin_layout Standard
+In C2C12 myotubes, Dexa may induce the formation of double-membrane autophagic
+ vesicles, although evidence is limited to unquantified micrographs
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rossi2009cytosolic"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Autophagy may be responsible with degrading specific proteins.
+ For example, Dexa-induced depletion of sialidase Neu2 is prevented by 3-MA
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rossi2009cytosolic"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In C2C12 myotubes, overexpression of a constitutively active FoxO3 or chemical
+ inhibition of Akt leads to increased 
+\begin_inset Quotes eld
+\end_inset
+
+lysosomal
+\begin_inset Quotes erd
+\end_inset
+
+ proteolysis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhao2007foxo3"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
 The effects of glucocorticoids on calpains
+\end_layout
+
+\begin_layout Standard
+In 1986, it was discovered that proteolysis in muscle is increased when
+ explants are soaked in 2.5 mM calcium
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rodemann1982stimulation,furuno1986activation"
+
+\end_inset
+
+.
+ The calcium-stimulated proteolysis subsides upon co-administration of leupeptin
+, a wide-spectrum protease inhibitor.
+ The discovery of a class of calcium-dependent proteases, called calpains,
+ suggested that they might be contributing to muscle atrophy.
+ The calpain system includes μ-calpain, which is activated by micromolar
+ concentrations of calcium, M-calpain, which is activated by millimolar
+ concentrations of calcium, and their inhibitor, calpastatin (reviewed in
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kachaeva2012various"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -4683,11 +5338,15 @@ key "dardevet1995sensitivity"
 \end_inset
 
 .
- Overexpression of calpastatin reduces by some degree the proteolytic response
- to Dexa in C2C12 myoblasts
+\end_layout
+
+\begin_layout Standard
+In L6 myotubes, Dexa promotes store-operated calcium entry, the mechanism
+ by which intracellular Ca concentration is increased when ER stores are
+ depleted
 \begin_inset CommandInset citation
 LatexCommand citep
-key "fareed2006treatment"
+key "itagaki2010dexamethasone"
 
 \end_inset
 
@@ -4699,13 +5358,25 @@ Alleviation of GAML by IGF-I
 \end_layout
 
 \begin_layout Standard
-As described in the section on Akt / mTOR axis, most of the knowledge we
+Upon finding that, in L6 myoblasts, Dexa-stimulated proteolysis is abated
+ by co-administration of insulin, Ballard hypothesized in 1983 that Dexa
+ acts indirectly, by depleting body's supply of IGF-I
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ballard1983effects"
+
+\end_inset
+
+.
+ While the use of non-fusing myoblasts is certain to introduce confounding
+ changes in proliferation, and the equivalence between IGF-I and insulin
+ lacks subtlety, his hypothesis captured the attention of many investigators.
+ As described in the sections on Akt and mTOR, most of the knowledge we
  have about it is derived from studies of anabolism, where muscle, rather
  than being analyzed in its basal state, is first stimulated with insulin
  or IGF-I.
- While, for the most part, these studies inform us about the molecular mechanism
-s of hypercortisolism, they also suggest that insulin or IGF-I may provide
- a path to alleviation of GAML.
+ Lately, the interpretation of such experiments shifted from mechanism-explainin
+g to a therapeutic paradigm.
  Systemic co-administration of IGF-I reduces loss of muscle mass, fiber
  atrophy, and 3MH release
 \begin_inset CommandInset citation
@@ -4730,8 +5401,23 @@ key "gayan-ramirez1999acute"
 \end_inset
 
 .
- Therefore, GAML is an absolute loss of IGF-I, which may be compensated
- for by IGF-I supplementation.
+ Therefore, GAML is an exacerbated absolute loss of IGF-I, a strong trophic
+ agent.
+ Intuitively, restoring IGF-I stimulation may contribute to GAML alleviation.
+\end_layout
+
+\begin_layout Standard
+Administration of IGF-I alone to L6 myotubes improves protein synthesis,
+ but has no effect on protein degradation.
+ Interestingly, in L6 myotubes treated with Dexa, IGF-I has an anti-proteolytic
+ effect
+\begin_inset CommandInset citation
+LatexCommand citep
+key "quinn2007muscle-specific"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -4750,16 +5436,18 @@ key "chrysis2002divergent"
 \end_inset
 
 .
- In C2C12 myotubes, IGF-I coadministration reversed MAFbx upregulation
+ In C2C12 myotubes, IGF-I coadministration reversed MAFbx and MuRF1 upregulation
 \begin_inset CommandInset citation
 LatexCommand citep
-key "sacheck2004igf-i"
+key "sacheck2004igf-i,waddell2008glucocorticoid"
 
 \end_inset
 
-.
- IGF-I co-administration reverses Dexa-induced activation of glutamine synthetas
-e
+, possibly through an associated downregulation of FOXO expression.
+\end_layout
+
+\begin_layout Standard
+IGF-I co-administration reverses Dexa-induced activation of glutamine synthetase
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kimura2001insulin-like"
@@ -4779,7 +5467,10 @@ key "li2004insulin-like"
 \end_inset
 
 .
- In C2C12 cells, IGF-I does not repress Dexa-induced upregulation of MuRF1
+\end_layout
+
+\begin_layout Standard
+In C2C12 cells, IGF-I does not repress Dexa-induced upregulation of MuRF1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sacheck2004igf-i"
@@ -4814,6 +5505,30 @@ key "evenson2005gsk-3beta"
 \end_layout
 
 \begin_layout Standard
+The putative mediator of muscle loss REDD1 is upregulated by IGF-I
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frost2009regulation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dexa-induced depletion of sialidase Neu2, attributed to autophagy, is prevented
+ by insulin co-administration
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rossi2009cytosolic"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
 Co-administration of GH cannot reverse muscle loss from Dexa or triamcinolone
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4837,21 +5552,10 @@ Other pathways of GAML
 \end_layout
 
 \begin_layout Standard
-In rat gastrocnemius, Dexa causes a decrease in phosphorylated p38 MAPK
+Metallothioneins are upregulated in GAML
 \begin_inset CommandInset citation
 LatexCommand citep
-key "qin2010protection"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Dexa reduces PGC-1alpha in rat muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "qin2010protection,jesinkey2014atomoxetine"
+key "lecker2004multiple"
 
 \end_inset
 
@@ -4870,10 +5574,12 @@ s T levels.
 \end_layout
 
 \begin_layout Standard
-T interferes with the binding of Dexa to GR
+The reverse may explain in part loss of muscle after male castration.
+ In skeletal muscle, glucocorticoid receptor mRNA and binding activity are
+ increased upon castration
 \begin_inset CommandInset citation
 LatexCommand citep
-key "mayer1975interaction"
+key "ye2014transcriptional,dubois1984perineal"
 
 \end_inset
 
@@ -4885,7 +5591,68 @@ Models of anabolic alleviation of glucocorticoid myopathy
 \end_layout
 
 \begin_layout Standard
-SUNT la 728
+In vitro studies have described androgens ability to interfere with the
+ binding of Dexa to GR.
+ The kd for GR-Dexa association is below nanomolar range
+\begin_inset CommandInset citation
+LatexCommand citep
+key "levy1989glucocorticoid"
+
+\end_inset
+
+.
+ In vitro Dexa doses used in muscle atrophy experiments range in the tens
+ of hundred nanomolar.
+ Similar concentrations are likely in the blood of mice injected with the
+ 0.5-1 g/kg doses described before.
+ At a concentration of 2 pM in rat skeletal muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dahlberg1981regulation"
+
+\end_inset
+
+, virtually all GR should be bound to Dexa.
+ On the other hand, Ki for T competing with Dexa for binding to muscle protein
+ extracts is 10 uM
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mayer1975interaction"
+
+\end_inset
+
+.
+ While the referenced report does not distinguish non-specific binding for
+ T, Ki is tens or hundreds of times higher than typical T concentrations
+ used in literature for biological reversal of GAML.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Need to get MORE SPECIFIC T concentrations.
+\end_layout
+
+\end_inset
+
+ Therefore, barring allosteric effects, the direct competition between the
+ two steroids is only of theoretical importance.
+\end_layout
+
+\begin_layout Standard
+T represses Dexa's activation of the MAFbx promoter
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhao2008testosterone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+YOU MUST SEE PMID: 19359918.
+ MY EXP BUT WITH RATS.
 \end_layout
 
 \begin_layout Standard
@@ -4896,7 +5663,7 @@ status open
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "thesis,thesis2"
-options "UCThesisBibStyleUnsrt"
+options "nihunsrt"
 
 \end_inset
 
