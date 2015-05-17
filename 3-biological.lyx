@@ -4818,9 +4818,10 @@ The study on human myotubes showed that exogenous myostatin downregulates
 \end_layout
 
 \begin_layout Standard
-Myostatin's action appears more relevant for processes where hyperplastic
- processes are involved, such as muscle development and regeneration (reviewed
- in 
+Myostain is particularly adept at modulating the fusion of myoblast to myotubes.
+ Myostatin's action appears more relevant for processes where myoblasts
+ or satellite cells are involved, such as muscle development and regeneration
+ (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "carnac2007myostatin"
@@ -4828,9 +4829,10 @@ key "carnac2007myostatin"
 \end_inset
 
 ).
- Normal adult muscle maintenance involve very little proliferation.
- Therefore, loss of proliferation, a major effect of myostatin, may contribute
- to, but not command adult GAML.
+ But normal adult muscle maintenance involve to a small degree satellite
+ cells.
+ Loss of their contribution to muscle maintenance, which is supposedly a
+ major effect of myostatin, may contribute to, but not command adult GAML.
  In contrast, there is no evidence that myostatin upregulates catabolic
  processes within GAML.
  Even in other models of atrophy, such as microgravity, myostatin upregulation
