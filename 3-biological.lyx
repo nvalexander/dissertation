@@ -2735,6 +2735,18 @@ Glucocorticoid stimulation of ubiquitin-proteasome system
 \end_layout
 
 \begin_layout Standard
+The 1969 Goldberg study on atrophy revealed that cortisone induced an even
+ ampler and less specific upregulation of proteolysis than denervation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "goldberg1969protein"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 The loss of muscle in the Dexa-treated adult rat is the result of an increase
  in protein degradation.
  In rats receiving 
