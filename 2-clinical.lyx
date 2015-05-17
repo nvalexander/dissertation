@@ -2733,7 +2733,14 @@ key "sprague1950observations"
 
 .
  Some of the aforementioned researchers publish similar case reports, sharing
- the small sample size and the use of surrogate outcomes.
+ the small sample size and the use of surrogate outcomes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "keutmann1948metabolic"
+
+\end_inset
+
+.
  These shortcomings do not prevent each investigator from subjective claims
  of improvements in physical function.
 \end_layout
