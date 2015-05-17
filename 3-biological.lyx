@@ -5294,7 +5294,7 @@ key "rodemann1982stimulation,furuno1986activation"
  The discovery of a class of calcium-dependent proteases, called calpains,
  suggested that they might be contributing to muscle atrophy.
  The calpain system includes μ-calpain, which is activated by micromolar
- concentrations of calcium, M-calpain, which is activated by millimolar
+ concentrations of calcium, m-calpain, which is activated by millimolar
  concentrations of calcium, and their inhibitor, calpastatin (reviewed in
  
 \begin_inset CommandInset citation
@@ -5327,10 +5327,15 @@ key "dardevet1995sensitivity"
 \end_inset
 
 .
-\end_layout
+ In L6 myotubes, calpastatin overexpresion halves Dexa-induced proteolysis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fareed2006treatment"
 
-\begin_layout Standard
-In L6 myotubes, Dexa promotes store-operated calcium entry, the mechanism
+\end_inset
+
+.
+ Still in L6 myotubes, Dexa promotes store-operated calcium entry, the mechanism
  by which intracellular Ca concentration is increased when ER stores are
  depleted
 \begin_inset CommandInset citation
@@ -5340,6 +5345,20 @@ key "itagaki2010dexamethasone"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+It has been speculated that activations of calpains is an initial step in
+ GAML, allowing myofibril protein to interact with MuRF1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "goll2003calpain"
+
+\end_inset
+
+.
+ Calpains are important for some atrophy models, but their role in GAML
+ is understudied.
 \end_layout
 
 \begin_layout Section
