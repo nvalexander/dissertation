@@ -4343,18 +4343,6 @@ key "calnan2008foxo"
  Given that phosphorylated Foxo is degraded and is elicited by a low-activity
  Akt pathway, Foxo phosphorylation changes may be undetectable in basal
  state.
- Nevertheless, a few groups reported reductions in Foxo phosphorylation
- by chronic Dexa at basal state
-\begin_inset CommandInset citation
-LatexCommand citep
-key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
-
-\end_inset
-
-.
- Two out of the three referenced studies report an unusual activation of
- Akt in basal state, indicating that they may be reflective of special condition
-s (40 days treatment, or the use of male levator ani).
  In C2C12 myotubes, Foxo phosphorylation downregulation in response to Dexa
  is more readily detected
 \begin_inset CommandInset citation
@@ -4364,6 +4352,18 @@ key "zhao2007foxo3,sandri2004foxo"
 \end_inset
 
 .
+ A few groups reported reductions in Foxo phosphorylation by chronic Dexa
+ at basal state in vivo
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
+
+\end_inset
+
+.
+ Two out of the three referenced studies also report an unusual activation
+ of Akt in basal state, indicating that they may be reflective of special
+ conditions (40 days treatment, the use of male levator ani, and so on).
 \end_layout
 
 \begin_layout Standard
@@ -4610,9 +4610,10 @@ key "shimizu2011crosstalk"
 \end_inset
 
 .
- A complex, self-reinforcing network is centered on KLF-15, which is a direct
- target of GR, upregulates expression of FOXO transcription, and synergizes
- with the latter to upregulate atrogenes.
+ KLF-15 is a direct transcriptional target of GR, and interferes with mTOR
+ signaling.
+ A complex network is centered on KLF-15, which upregulates expression of
+ FOXO transcription fcators, and synergizes with them to upregulate atrogenes.
  Overall, atrogenes appear to be under a strong control of Foxo, favored
  by concomitant activation of synergistic factors.
  Indeed, dominant negative Foxo3A transfection in rat soleus leads to loss
