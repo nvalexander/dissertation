@@ -4449,16 +4449,20 @@ key "menconi2010sepsis"
  In cultured myotubes, PGC-1β overexpression and knockdown cause changes
  in the reverse direction for Foxo3a and atrogenes' mRNA.
  It has been speculated that differences in PGC-1α levels make different
- types of muscle fiber more or less sensitive to Dexa, but studies pre-date
- the more subtle distinction now made between its various isoforms.
-\end_layout
-
-\begin_layout Standard
-Fourth, miR-182, whose expression is inhibited by Dexa, is a negative regulator
- of Foxo3
+ types of muscle fiber more or less sensitive to Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
-key "hudson2014mir-182"
+key "schiaffino2013mechanisms"
+
+\end_inset
+
+.
+ A whole higher level of regulation of PGC-1α is yet to be studied.
+ PGC-1α splicing appears to dictate its role, with isoform 1 and not 4 beinginvo
+lved in muscle hypertrophy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ruas2012pgc-1alpha"
 
 \end_inset
 
@@ -4466,7 +4470,7 @@ key "hudson2014mir-182"
 \end_layout
 
 \begin_layout Standard
-Finally, indirect evidence links Foxo1 to PPARβ/δ.
+Fourth, indirect evidence links Foxo1 to PPARβ/δ.
  Dexa stimulates simultaneously PPARβ/δ DNA binding and Foxo1 acetylation
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4487,6 +4491,20 @@ key "daitoku2011regulation,nakae2008foxo"
 
 ), it was speculated that PPARβ/δ changes induce physiologically relevant
  alterations in Foxo1.
+\end_layout
+
+\begin_layout Standard
+Finally, miR-182, whose expression is inhibited by Dexa, is a negative regulator
+ of Foxo3
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hudson2014mir-182"
+
+\end_inset
+
+.
+ Other mechanisms, such as AMPK, have been hypothesized, based on the latter's
+ ability to upregulate atrogenes.
 \end_layout
 
 \begin_layout Standard
@@ -5616,7 +5634,25 @@ key "frost2009regulation"
 
 \begin_layout Standard
 Myostatin knockout mice have lower circulating IGF-I and higher IGF-1R expressio
-n.
+n
+\begin_inset CommandInset citation
+LatexCommand citep
+key "williams2011endocrine"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Muscle growth and recovery is in part restrained by rapamycin 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pallafacchina2002protein,bodine2001akt/mtor"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
