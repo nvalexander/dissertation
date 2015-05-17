@@ -4829,15 +4829,23 @@ key "carnac2007myostatin"
 
 ).
  Normal adult muscle maintenance involve very little proliferation.
- Therefore, loss of proliferation, the main effect of myostatin, may contribute
+ Therefore, loss of proliferation, a major effect of myostatin, may contribute
  to, but not command adult GAML.
-\end_layout
+ In contrast, there is no evidence that myostatin upregulates catabolic
+ processes within GAML.
+ Even in other models of atrophy, such as microgravity, myostatin upregulation
+ occurs while 3MH excretion is unchanged
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lalani2000myostatin"
 
-\begin_layout Standard
-The typical experiments, using qualitative alterations of myostatin, may
+\end_inset
+
+.
+ Myostatin's relative importance for GAML remains unclear.
+ The typical experiments, using qualitative alterations of myostatin, may
  override any endogenous mechanism, and yield non-specific anti-atrophic
  effects.
- Myostatin's relative importance for GAML remains unclear.
 \end_layout
 
 \begin_layout Section
