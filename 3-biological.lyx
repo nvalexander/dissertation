@@ -2387,7 +2387,15 @@ key "yeh1994effects"
 \end_inset
 
 .
- 
+ Another article describes GAML in rabbits, and attributes it to, unusually,
+ lysosome upregulation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "clark1981role"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
