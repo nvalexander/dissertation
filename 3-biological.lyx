@@ -5441,12 +5441,42 @@ description "green fluorescent protein"
 ) have been developed, and are regularly used for tracking autophagosomes.
  There are no reports of this model being used in the study of GAML.
  Alternatively, endogenous LC3 is tracked through immunofluorescence microscopy.
- Multiple reports descrie an accumulation of punctate LC3-containing structures
- in L6 myotubes treated with Dexa for 6 hours.
+ Multiple reports describe an accumulation of punctate LC3-containing structures
+ in L6 myotubes treated with Dexa for 6 hours
+\begin_inset CommandInset citation
+LatexCommand citep
+key "giron2015beta-hydroxy-beta-methylbutyrate"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Its faster migrating form, termed LC3-II, has been 
+Another way of tracking LC3 is based on immunoblot.
+ The autophagosome-associated form of LC3, termed LC3-II, is faster migrating
+ during electrophoresis.
+ Various indices, such as absolute amount of LC3-II or the ratio between
+ LC3 electrophoretic forms, are used for estimating the number of autophagosomes
+ (reviewed in XXX).
+ LC3-II is enriched in C2C12 myotubes overexpressing LC3
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rossi2009cytosolic"
+
+\end_inset
+
+ and in L6 myotubes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "giron2015beta-hydroxy-beta-methylbutyrate"
+
+\end_inset
+
+.
+ Similar to the microscopy experiments, these reports use acute Dexa treatments.
+ Moreover, a time course reveals that in L6 myotubes, LC3-II peaks at 6
+ hours and is extinguished at 24 hours after Dexa administration.
 \end_layout
 
 \begin_layout Standard
@@ -5459,14 +5489,7 @@ description "microtubule-associated protein 1 light chain 3"
 
 \end_inset
 
-), the faster migrating form LC3-II is enriched after Dexa treatment
-\begin_inset CommandInset citation
-LatexCommand citep
-key "rossi2009cytosolic"
-
-\end_inset
-
-.
+), the faster migrating form LC3-II is enriched after Dexa treatment.
  LC3-II is a marker of the autophagosome prior to its fusion with lysosome
  that leads to the assembly of the autophagolysosome.
  Its accumulation 
