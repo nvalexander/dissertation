@@ -3746,12 +3746,11 @@ key "fappi2014effects,schakman2008role"
 lation in basal state.
  No mechanistic explanation was provided for basal state changes at Ser
  473, meaning that their relevance remains debatable.
- Moreover, studies with REDD1 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Our colleagues in China, Belgium and Brasil have better antibodies.
+Our colleagues in China, Belgium and Brazil have better antibodies.
 \end_layout
 
 \end_inset
@@ -4366,50 +4365,7 @@ The importance of Foxo transcription factors is supported intuitively by
 \end_layout
 
 \begin_layout Standard
-First, Foxo transcription factors are thought to be potentiated by Dexa
- through post-translational means involving the earlier described Akt pathway
- (reviewed in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "calnan2008foxo"
-
-\end_inset
-
-).
- Akt phosphorylates Foxo1 at Tyr 32 and Ser 253, thus creating binding sites
- for 14-3-3.
- Phosphorylated Foxo transcription factors are exported from the nucleus,
- and eventually marked for ubiquitin-proteasome-mediated degradation.
- It is believed that the Dexa-induced impairment of Akt contributes to an
- increase in their activity in GAML.
- Given that phosphorylated Foxo is degraded and is elicited by a low-activity
- Akt pathway, Foxo phosphorylation changes may be undetectable in basal
- state.
- In C2C12 myotubes, Foxo phosphorylation downregulation in response to Dexa
- is more readily detected
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhao2007foxo3,sandri2004foxo"
-
-\end_inset
-
-.
- A few groups reported reductions in Foxo phosphorylation by chronic Dexa
- at basal state in vivo
-\begin_inset CommandInset citation
-LatexCommand citep
-key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
-
-\end_inset
-
-.
- Two out of the three referenced studies also report an unusual activation
- of Akt in basal state, indicating that they may be reflective of special
- conditions (40 days treatment, the use of male levator ani, and so on).
-\end_layout
-
-\begin_layout Standard
-Second, chronic Dexa doubles Foxo expression
+First, chronic Dexa doubles Foxo expression
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wu2010redd1"
@@ -4461,6 +4417,52 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Second, Foxo transcription factors are thought to be potentiated by Dexa
+ through post-translational means involving the earlier described Akt pathway
+ (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "calnan2008foxo"
+
+\end_inset
+
+).
+ Akt phosphorylates Foxo1 at Tyr 32 and Ser 253, thus creating binding sites
+ for 14-3-3.
+ Phosphorylated Foxo transcription factors are exported from the nucleus,
+ and eventually marked for ubiquitin-proteasome-mediated degradation.
+ It is believed that the Dexa-induced impairment of Akt contributes to an
+ increase in their activity in GAML.
+ Given that phosphorylated Foxo is degraded and is elicited by a low-activity
+ Akt pathway, Foxo phosphorylation changes may be undetectable in basal
+ state.
+ In C2C12 myotubes, Foxo phosphorylation downregulation in response to Dexa
+ is more readily detected
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhao2007foxo3,sandri2004foxo"
+
+\end_inset
+
+.
+ A few groups reported reductions in Foxo phosphorylation by chronic Dexa
+ at basal state in vivo
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
+
+\end_inset
+
+.
+ Two out of the three referenced studies also report an unusual activation
+ of Akt in basal state, indicating that they may be reflective of special
+ conditions (40 days treatment, the use of male levator ani, and so on).
+ As mentioned in previous sections, an ongoing debate surrounds the effect
+ of Dexa on Akt Ser 473, which alters its ability to phosphorylate FOXO.
+ As with mTORC1, the Akt pathway may be more relevant in fed state.
 \end_layout
 
 \begin_layout Standard
