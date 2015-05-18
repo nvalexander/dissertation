@@ -5077,7 +5077,7 @@ key "baehr2011muscle"
 
 \begin_layout Standard
 Suggestive data for protein synthesis modulation in GAML come from various
- molecular corelates.
+ molecular correlates.
  For example, acute GC administration causes a reduction in the proportion
  of polyribosomes
 \begin_inset CommandInset citation
@@ -5870,6 +5870,17 @@ Dexa reduces the expression of AR in skeletal muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "inder2010dexamethasone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+T re-establishes the percentage of ribosomes that are involved in translation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bullock1968effects"
 
 \end_inset
 
