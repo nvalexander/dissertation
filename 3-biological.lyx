@@ -3588,9 +3588,8 @@ key "qin2010protection,mcclung2010p38"
 \end_inset
 
 .
- Together with the dearth of reports, and the limited role of hyperplasia
- in adult muscle, available evidence suggests that MAPK cascades do not
- mediate GAML.
+ Together with the limited role of hyperplasia in adult muscle, available
+ evidence suggests that MAPK cascades do not mediate GAML.
  More to the point, absence of sizable changes in the MAPK cascades reinforces
  the idea that insulin and IGF-I signaling is extinguished at IRS level.
 \end_layout
@@ -3990,7 +3989,7 @@ key "koh2008lkb1,canto2010amp-activated"
  However, Dexa inhibits muscle AMPK phosphorylation and activity
 \begin_inset CommandInset citation
 LatexCommand citep
-key "williams2012dietary"
+key "williams2012dietary,amaral2010opposite"
 
 \end_inset
 
@@ -4070,6 +4069,14 @@ key "deyoung2008hypoxia"
 \end_inset
 
 .
+ Moreover, REDD1 is in epistasis with AMPK
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sofer2005regulation"
+
+\end_inset
+
+, at times overriding its action on mTOR.
  Interestingly, a REDD1-based mechanism could explain the few observations
  on mTORC1 changes just as well as a Akt-centered model would.
 \end_layout
@@ -5432,7 +5439,38 @@ key "wang1998dexamethasone"
 \end_inset
 
 .
- 
+\end_layout
+
+\begin_layout Standard
+In vivo, acute Dexa causes upregulation of Bnip3 mRNA, LC3-II protein, and
+ phosphorylation of ULK1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "britto2014redd1"
+
+\end_inset
+
+.
+ Acute Dexa in vivo downregulates p62
+\begin_inset CommandInset citation
+LatexCommand citep
+key "britto2014redd1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In C2C12, acute Dexa upregulates expression of lysosomal markers such as
+ Atg12, LC3
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hudson2014mir-182"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
