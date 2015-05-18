@@ -5772,6 +5772,9 @@ key "kanda1999preventive"
 A major atrophic action of Dexa on muscle is desensitisation of the Akt/mTOR
  axis, with loss of anabolism and gain in catabolism, and mimicking a relative
  IGF-I deficit.
+ The mechanisms by which Dexa extinguishes IGF-I and insulin signaling is
+ based on interferences at the IRS1, PI3K, and Akt levels (described in
+ dedicated sections).
  But Dexa further represses Akt signaling, as it reduces muscle expression
  of IGF-I
 \begin_inset CommandInset citation
@@ -5788,9 +5791,16 @@ key "gayan-ramirez1999acute"
 
 \begin_layout Standard
 Administration of IGF-I alone to L6 myotubes improves protein synthesis,
- but has no effect on protein degradation.
- Interestingly, in L6 myotubes treated with Dexa, IGF-I has an anti-proteolytic
- effect
+ but has no effect on protein degradation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "quinn2007muscle-specific"
+
+\end_inset
+
+.
+ In contrast, in L6 myotubes treated with Dexa, co-administration of IGF-I
+ has an anti-proteolytic effect
 \begin_inset CommandInset citation
 LatexCommand citep
 key "quinn2007muscle-specific"
