@@ -4103,8 +4103,8 @@ key "sofer2005regulation"
 \begin_layout Standard
 One way to asses mTORC1 activation is to observe its enzymatic activity.
  In contrast to Akt, phosphorylation of mTORC1 substrates, 4E-BP (Thr 37/46)
- and p70-S6K, is measurable in rat muscles in basal state, with acute Dexa
- causing a reduction of their phosphorylation
+ and p70-S6K (Thr 389), is measurable in rat muscles in basal state, with
+ acute Dexa causing a reduction of their phosphorylation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shah2000glucocorticoids"
@@ -5872,11 +5872,11 @@ key "sacheck2004igf-i"
 \end_layout
 
 \begin_layout Standard
-IGF-I co-administration in cells treated with Dexa increases phosphorylation
- of Akt, GSK-3β, p70-S6K and 4E-BP1
+In L6 myotubes, IGF-I co-administration in cells treated with Dexa restores
+ phosphorylation of Akt, GSK-3β, p70-S6K and 4E-BP1
 \begin_inset CommandInset citation
 LatexCommand citep
-key "li2005insulin-like"
+key "li2005insulin-like,shah2000translational"
 
 \end_inset
 
