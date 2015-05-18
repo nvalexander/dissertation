@@ -5832,8 +5832,8 @@ key "quinn2007muscle-specific"
 \end_inset
 
 .
- In contrast, in L6 myotubes treated with Dexa, co-administration of IGF-I
- has an anti-proteolytic effect
+ Nevertheless, myotubes treated with Dexa, co-administration of IGF-I has
+ an anti-proteolytic effect
 \begin_inset CommandInset citation
 LatexCommand citep
 key "quinn2007muscle-specific"
@@ -5850,8 +5850,7 @@ key "li2004insulin-like"
 \end_inset
 
 .
- In C2C12 myotubes, IGF-I co-administration reverses MAFbx and MuRF1 upregulatio
-n
+ IGF-I co-administration reverses MAFbx and MuRF1 upregulation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sacheck2004igf-i,waddell2008glucocorticoid"
@@ -5869,12 +5868,10 @@ key "stitt2004igf-1/pi3k/akt"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-In L6 myotubes, IGF-I co-administration in cells treated with Dexa causes
- anabolism-correlated increases in phosphorylation of Akt, GSK-3β, p70-S6K
- and 4E-BP1
+ The IGF-I induced FOxo phosphorylation is consonant with upstream modulations
+ of the Akt axis.
+ First, IGF-I co-administration in cells treated with Dexa causes myoprotective
+ increases in phosphorylation of Akt, GSK-3β, p70-S6K and 4E-BP1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "li2005insulin-like,shah2000translational"
@@ -5882,10 +5879,19 @@ key "li2005insulin-like,shah2000translational"
 \end_inset
 
 .
- Studies with inhibitors in cell culture revealed that IGF-I protective
- effect against Dexa-induced upregulation of proteolysis is mediated by
- Akt and mTORC1.
- From the similarity between muscle protection conferred by IGF-I and by
+ Second, studies with chemical inhibitors revealed that IGF-I protective
+ effect is mediated by Akt and PI3K
+\begin_inset CommandInset citation
+LatexCommand citep
+key "li2005insulin-like"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+From the similarity between muscle protection conferred by IGF-I and by
  GSK-3β inhibitors, it was speculated that IGF-I acts by inhibiting GSK-3β
 \begin_inset CommandInset citation
 LatexCommand citep
