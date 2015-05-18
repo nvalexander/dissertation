@@ -2408,8 +2408,15 @@ For large animals, cats, or dogs, practical and humane reasons prevailed,
  In the era of genome sequencing, studies of GAML focused on mice and rats.
  Muscle mass in mice is smaller, making dissection harder and changes closer
  to detection threshold, compared to rats.
- It is unclear whether mouse studies are further complicated by additional
- resistance to GAML compared to rats.
+ In terms of glucose metabolism, mice are more GC-resistant than rats
+\begin_inset CommandInset citation
+LatexCommand citep
+key "protzek2014augmented"
+
+\end_inset
+
+.
+ It is unclear whether this resistance extends to protein metabolism.
  The first study of mouse GAML was published in 1964
 \begin_inset CommandInset citation
 LatexCommand citep
