@@ -5797,7 +5797,7 @@ key "kimura2001insulin-like"
 \end_layout
 
 \begin_layout Standard
-Co-administration of IGF-I reverses upregulation of ubiquitin and of proteasome
+Co-administration of IGF-I reverses upregulation of ubiquitin, and of proteasome
  subunits C2 C3, C8
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5876,6 +5876,13 @@ key "stitt2004igf-1/pi3k/akt"
 
 \end_inset
 
+ and reducing its ability to bind MuRF1 promoter
+\begin_inset CommandInset citation
+LatexCommand citep
+key "waddell2008glucocorticoid"
+
+\end_inset
+
 .
  The IGF-I induced FOxo phosphorylation is consonant with upstream modulations
  of the Akt axis.
@@ -5904,7 +5911,7 @@ From the similarity between muscle protection conferred by IGF-I and by
  GSK-3β inhibitors, it was speculated that IGF-I acts by inhibiting GSK-3β
 \begin_inset CommandInset citation
 LatexCommand citep
-key "evenson2005gsk-3beta"
+key "evenson2005gsk-3beta,schakman2008role"
 
 \end_inset
 
@@ -5912,7 +5919,7 @@ key "evenson2005gsk-3beta"
 \end_layout
 
 \begin_layout Standard
-Muscle accretion is not completely conditioned by availability IGF-I.
+Muscle accretion is not completely conditioned by availability of IGF-I.
  Myostatin knockout mice have double muscle size, yet lower circulating
  IGF-I levels, compared to wild type
 \begin_inset CommandInset citation
@@ -5937,33 +5944,11 @@ key "pallafacchina2002protein,bodine2001akt/mtor"
 Based on the current evidence, it appears that IGF-I alleviating action
  is not completely overlapping with the wide spectrum of atrophic actions
  of Dexa.
- Indeed, the putative mediator of muscle loss REDD1 is upregulated by IGF-I
+ Indeed, the putative mediator of muscle loss REDD1 is upregulated by acute
+ insulin or IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
 key "frost2009regulation"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Dexa-induced depletion of sialidase Neu2, attributed to autophagy, is prevented
- by insulin co-administration
-\begin_inset CommandInset citation
-LatexCommand citep
-key "rossi2009cytosolic"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Dexa downregulates the IGF-I-stimulated secretion of IGF-BP from L6 myotubes
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mccusker1988insulin-like"
 
 \end_inset
 
