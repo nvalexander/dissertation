@@ -4844,8 +4844,14 @@ key "mccroskery2003myostatin,cohen2015genetic"
 \end_layout
 
 \begin_layout Standard
-The study on human myotubes showed that exogenous myostatin downregulates
- muscle atrogenes.
+The study on human myotubes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "trendelenburg2009myostatin"
+
+\end_inset
+
+ showed that exogenous myostatin downregulates muscle atrogenes.
  In contrast, GAML is characterized by an upregulation of atrogenes.
  Moreover, the upregulation of atrogenes in GAML is attributed, in part,
  to Akt inhibition.
