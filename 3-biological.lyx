@@ -5785,11 +5785,26 @@ key "kimura2001insulin-like"
 \end_inset
 
 .
- In vivo, Dexa further represses Akt signaling, as it reduces muscle expression
+\end_layout
+
+\begin_layout Standard
+Co-administration of IGF-I reverses upregulation of ubiquitin and of proteasome
+ subunits C2 C3, C8
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chrysis2002divergent,chrysis1999regulation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In vivo, Dexa further represses Akt signaling, as it reduces muscle expression
  of IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
-key "gayan-ramirez1999acute"
+key "gayan-ramirez1999acute,inder2010dexamethasone"
 
 \end_inset
 
@@ -5803,12 +5818,13 @@ key "mccusker1988insulin-like"
 .
  Therefore, GAML manifests as an absolute loss of IGF-I exacerbated by a
  downstream inhibition.
- Intuitively, IGF-I supplementation may contribute to GAML alleviation.
-\end_layout
-
-\begin_layout Standard
-Administration of IGF-I alone to L6 myotubes improves protein synthesis,
- but has no effect on protein degradation
+ Intuitively, IGF-I supplementation may provide GAML alleviation.
+ Despite the positive results seen in rodents (described above), very few
+ studies analyzed molecular mechanisms by which IGF-I works in vivo.
+ A series of studies dissected the molecular mechanisms by which IGF-I could
+ alleviate cultured myotube atrophy.
+ There, IGF-I alone improves protein synthesis, but has no effect on protein
+ degradation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "quinn2007muscle-specific"
@@ -5834,15 +5850,6 @@ key "li2004insulin-like"
 \end_inset
 
 .
- Co-administration of IGF-I reverses upregulation of ubiquitin and of proteasome
- subunits C2 C3, C8
-\begin_inset CommandInset citation
-LatexCommand citep
-key "chrysis2002divergent,chrysis1999regulation"
-
-\end_inset
-
-.
  In C2C12 myotubes, IGF-I co-administration reverses MAFbx and MuRF1 upregulatio
 n
 \begin_inset CommandInset citation
@@ -5852,17 +5859,8 @@ key "sacheck2004igf-i,waddell2008glucocorticoid"
 \end_inset
 
 , in a Foxo dependent manner.
-\end_layout
-
-\begin_layout Standard
-In C2C12 cells, IGF-I does not repress Dexa-induced upregulation of MuRF1
-\begin_inset CommandInset citation
-LatexCommand citep
-key "sacheck2004igf-i"
-
-\end_inset
-
-.
+ While Dexa upregulates protein levels of Foxo transcription factors, IGF-I
+ appear to counter them by increasing their phosphorylation.
 \end_layout
 
 \begin_layout Standard
@@ -5895,17 +5893,6 @@ The putative mediator of muscle loss REDD1 is upregulated by IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
 key "frost2009regulation"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-IGF-I mRNA is reduced by Dexa in human muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "inder2010dexamethasone"
 
 \end_inset
 
