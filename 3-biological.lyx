@@ -5912,19 +5912,9 @@ key "evenson2005gsk-3beta"
 \end_layout
 
 \begin_layout Standard
-The putative mediator of muscle loss REDD1 is upregulated by IGF-I
-\begin_inset CommandInset citation
-LatexCommand citep
-key "frost2009regulation"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Myostatin knockout mice have lower circulating IGF-I and higher IGF-1R expressio
-n
+Muscle accretion is not completely conditioned by availability IGF-I.
+ Myostatin knockout mice have double muscle size, yet lower circulating
+ IGF-I levels, compared to wild type
 \begin_inset CommandInset citation
 LatexCommand citep
 key "williams2011endocrine"
@@ -5932,13 +5922,25 @@ key "williams2011endocrine"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Muscle growth and recovery is in part restrained by rapamycin 
+ Muscle growth and recovery is halved by rapamycin, indicating that other
+ anabolic mediators are as important as the Akt / mTOR pathway 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "pallafacchina2002protein,bodine2001akt/mtor"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Based on the current evidence, it appears that IGF-I alleviating action
+ is not completely overlapping with the wide spectrum of atrophic actions
+ of Dexa.
+ Indeed, the putative mediator of muscle loss REDD1 is upregulated by IGF-I
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frost2009regulation"
 
 \end_inset
 
