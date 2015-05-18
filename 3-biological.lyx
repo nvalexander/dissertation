@@ -5476,27 +5476,29 @@ key "giron2015beta-hydroxy-beta-methylbutyrate"
 .
  Similar to the microscopy experiments, these reports use acute Dexa treatments.
  Moreover, a time course reveals that in L6 myotubes, LC3-II peaks at 6
- hours and is extinguished at 24 hours after Dexa administration.
-\end_layout
-
-\begin_layout Standard
-In C2C12 myotubes overexpressing microtubule-associated protein 1 light
- chain 3 (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "LC3"
-description "microtubule-associated protein 1 light chain 3"
+ hours and is extinguished at 24 hours after Dexa administration
+\begin_inset CommandInset citation
+LatexCommand citep
+key "troncoso2014dexamethasone-induced"
 
 \end_inset
 
-), the faster migrating form LC3-II is enriched after Dexa treatment.
- LC3-II is a marker of the autophagosome prior to its fusion with lysosome
- that leads to the assembly of the autophagolysosome.
- Its accumulation 
+.
+ It appears that in vitro Dexa causes a rapid accumulation of autophagosomes,
+ which are dismantled at a lower pace, as they fuse with lysosomes, and
+ their content is cleared by proteolysis.
 \end_layout
 
 \begin_layout Standard
-Recently, the enrichment of LCII-B in GAML in vivo has been reported
+In vivo, acute Dexa causes accumulation of LC3-II protein
+\begin_inset CommandInset citation
+LatexCommand citep
+key "britto2014redd1"
+
+\end_inset
+
+.
+ Recently, the enrichment of LCII-B after chronic Dexa has been reported
 \begin_inset CommandInset citation
 LatexCommand citep
 key "yamamoto2010branched-chain"
@@ -5504,11 +5506,27 @@ key "yamamoto2010branched-chain"
 \end_inset
 
 .
+ The latter report may be reflecting a short interval between last Dexa
+ dose and sample collection.
 \end_layout
 
 \begin_layout Standard
-In vivo, acute Dexa causes upregulation of Bnip3 mRNA, LC3-II protein, and
- phosphorylation of ULK1
+In contrast with the limited body of evidence we have for autophagy upregulation
+, there is a significant amount of literature describing what would drive
+ autophagy up in GAML.
+ In C2C12 myotubes, overexpression of a constitutively active FoxO3 or chemical
+ inhibition of Akt leads to increased lysosomal proteolysis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhao2007foxo3"
+
+\end_inset
+
+.
+ As mentioned earlier, mTORC1 is a negative regulator of autophagy, whose
+ inhibition in GAML is hypothesized to stimulate autophagy.
+ Indeed, acute Dexa administration reduces ULK1 phosphorylation at Ser 575,
+ the mTOR-specific, inhibitory site
 \begin_inset CommandInset citation
 LatexCommand citep
 key "britto2014redd1"
@@ -5516,7 +5534,13 @@ key "britto2014redd1"
 \end_inset
 
 .
- Acute Dexa in vivo downregulates p62
+\end_layout
+
+\begin_layout Standard
+Other lines of evidence provide indirect support for autophagy upregulation
+ in GAML.
+ Acute Dexa downregulates p62, one of the shortest-lived markers on the
+ autophagosome, thus suggesting that autophagic flux is upregulated
 \begin_inset CommandInset citation
 LatexCommand citep
 key "britto2014redd1"
@@ -5524,11 +5548,24 @@ key "britto2014redd1"
 \end_inset
 
 .
-\end_layout
+ Acute Dexa increases expression of the mitophagy effector Bnip3
+\begin_inset CommandInset citation
+LatexCommand citep
+key "britto2014redd1"
 
-\begin_layout Standard
-In C2C12, acute Dexa upregulates expression of lysosomal markers such as
- Atg12, LC3
+\end_inset
+
+.
+ In C2C12, acute Dexa upregulates expression of lysosomal markers such as
+ autophagy-related 12 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Atg12"
+description "autophagy-related 12"
+
+\end_inset
+
+)
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hudson2014mir-182"
@@ -5539,7 +5576,11 @@ key "hudson2014mir-182"
 \end_layout
 
 \begin_layout Standard
-Autophagy may be responsible with degrading specific proteins.
+Given the spatial segregation between lysosomes internal and outer space,
+ autophagy must rely on a selective mechanism for any protein that it is
+ processing.
+ Therefore, it is likely that autophagy acts only on a few specific, perhaps
+ limiting, proteins.
  For example, Dexa-induced depletion of sialidase Neu2 is prevented by 3-MA
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5551,23 +5592,9 @@ key "rossi2009cytosolic"
 \end_layout
 
 \begin_layout Standard
-In C2C12 myotubes, overexpression of a constitutively active FoxO3 or chemical
- inhibition of Akt leads to increased 
-\begin_inset Quotes eld
-\end_inset
-
-lysosomal
-\begin_inset Quotes erd
-\end_inset
-
- proteolysis
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhao2007foxo3"
-
-\end_inset
-
-.
+Autophagy may play a significant role in triggering and regulating GAML.
+ Given its limited amplitude in vivo, it is less likely that autophagy is
+ responsible with bulk protein elimination.
 \end_layout
 
 \begin_layout Section
