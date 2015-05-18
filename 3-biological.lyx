@@ -3699,11 +3699,10 @@ key "buren2008insulin"
 \end_layout
 
 \begin_layout Standard
-In GAML, the other relevant Akt phosphorylation site, Ser 473, is paralleling
- the changes in Thr 308.
- In basal conditions, in rat muscle, Ser 473 phosphorylation is either undetecta
-ble or below the dynamic range of immunoblot, yet Dexa lowers its ability
- to respond to insulin
+In other systems, the other relevant Akt phosphorylation site, Ser 473,
+ is paralleling the changes in Thr 308.
+ Even in GAML, Dexa lowers insulin's ability to upregulate Ser 473 phosphorylati
+on
 \begin_inset CommandInset citation
 LatexCommand citep
 key "buren2008insulin,rojas2003regulation,williams2012dietary,watson2012cell-autonomous"
@@ -3711,9 +3710,20 @@ key "buren2008insulin,rojas2003regulation,williams2012dietary,watson2012cell-aut
 \end_inset
 
 .
- Even in cultured cells, Akt phosphorylation is too low to be quantified,
- preventing experimental detection of GC-induced Akt inhibition in basal
- state
+ However, the effect of Dexa on Ser 473 phosphorylation in basal state is
+ debated.
+ Until about a decade ago, Akt phoshporylation was identified by changes
+ in electrophoretic mobility.
+ With that method, in basal conditions, in rat muscle, Ser 473 phosphorylation
+ is either undetectable or below the dynamic range of immunoblot
+\begin_inset CommandInset citation
+LatexCommand citep
+key "buren2008insulin,rojas2003regulation,williams2012dietary,watson2012cell-autonomous"
+
+\end_inset
+
+.
+ Even in cultured cells, Akt phosphorylation is too low to be quantified
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
@@ -3721,8 +3731,10 @@ key "shah2000glucocorticoidsa,stitt2004igf-1/pi3k/akt,gwag2013inhibition"
 \end_inset
 
 .
- Less commonly, some studies report measurable Ser 473 phosphorylation in
- basal state in vivo
+ To establish whether Dexa has an effect on Ser 473, one had to use the
+ insulin or IGF-I challenge.
+ Lately, the use of phospho-specific antibodies brought about a series of
+ reports where Ser 473 phosphorylation appeared measurable
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fappi2014effects,schakman2008role"
@@ -3730,16 +3742,11 @@ key "fappi2014effects,schakman2008role"
 \end_inset
 
 .
- There is a certain historical trend towards reporting Ser 473 phosphorylation
- in recent years, despite, or perhaps, due to the switch of phosphorylation
- identification techniques, from changes in electrophoretic mobility to
- the use of phospho-specific antibodies.
- Even in these cases, Dexa suppresses Ser 473 phosphorylation caused by
- an insulin stimulus.
  These reports also describe that Dexa achieves a reduction in Ser 473 phosphory
 lation in basal state.
  No mechanistic explanation was provided for basal state changes at Ser
  473, meaning that their relevance remains debatable.
+ Moreover, studies with REDD1 
 \begin_inset Note Note
 status open
 
