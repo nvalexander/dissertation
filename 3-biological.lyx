@@ -5758,11 +5758,20 @@ key "ewton1981effects,elsner1998regulation"
  we know about Dexa alone.
  Lately, the interpretation of such experiments shifted from mechanism-explainin
 g to a therapeutic paradigm.
- In Dexa-treated rodents, co-administration of IGF-I reduces loss of muscle
+ In mice, electroporation of IGF-I plasmid in tibialis protected solely
+ the transformed fibers from Dexa-induced atrophy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schakman2005insulin-like"
+
+\end_inset
+
+.
+ In Dexa-treated rats, co-administration of IGF-I reduces loss of muscle
  mass, fiber atrophy, and 3MH release
 \begin_inset CommandInset citation
 LatexCommand citep
-key "kanda1999preventive,schakman2005insulin-like"
+key "kanda1999preventive"
 
 \end_inset
 
