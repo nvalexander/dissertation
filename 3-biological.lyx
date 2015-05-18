@@ -3587,6 +3587,17 @@ key "zheng2010foxo3a"
 \end_inset
 
 .
+ Others describe increased Erk phosphorylation in L6 myotubes during acute
+ Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "giron2015beta-hydroxy-beta-methylbutyrate"
+
+\end_inset
+
+.
+ Nevertheless, no reports describe such changes in wild-type animals, which
+ still undergo GAML.
  Measurements of changes in activation of another MAPK, p38, are contradictory
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5551,7 +5562,7 @@ key "britto2014redd1"
  Acute Dexa increases expression of the mitophagy effector Bnip3
 \begin_inset CommandInset citation
 LatexCommand citep
-key "britto2014redd1"
+key "britto2014redd1,giron2015beta-hydroxy-beta-methylbutyrate"
 
 \end_inset
 
@@ -5593,6 +5604,8 @@ key "rossi2009cytosolic"
 
 \begin_layout Standard
 Autophagy may play a significant role in triggering and regulating GAML.
+ Current evidence, based on transgenics and cell culture, is far from satisfacto
+ry.
  Given its limited amplitude in vivo, it is less likely that autophagy is
  responsible with bulk protein elimination.
 \end_layout
