@@ -3622,24 +3622,8 @@ key "saad1993modulation,rojas2003regulation"
 \end_inset
 
 .
- It has been speculated that PI3K catalytic subunits are sequestered in
- the cytosol by an glut of its regulatory unit, p85
-\begin_inset CommandInset citation
-LatexCommand citep
-key "saad1993modulation,singleton2000dexamethasone"
-
-\end_inset
-
-, whose expression is upregulated by Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wu2010redd1"
-
-\end_inset
-
-.
- Mutagenic studies suggest that GR's transcriptional and DNA binding domains
- are required, in order for it to inhibit p70-S6K
+ Mutagenic studies demonstrate that GR's transcriptional and DNA binding
+ domains are required, in order for it to inhibit p70-S6K
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shah2002activated"
@@ -3648,9 +3632,26 @@ key "shah2002activated"
 
 .
  In the current model, p70-S6K is downstream of IRS and PI3K, suggesting
- that Dexa inhibitory action on the is a transcriptional effect.
- However, a recent study found that, in transformed cells, activated GR
- binds p85 in a competitive manner, thus displacing it from IRS1
+ that Dexa inhibitory action is a transcriptional effect.
+ Two mechanisms have been found in cell culture models.
+ One asserts that PI3K catalytic subunits are sequestered in the cytosol
+ by an glut of its regulatory unit, p85 α
+\begin_inset CommandInset citation
+LatexCommand citep
+key "saad1993modulation,giorgino1997specific,singleton2000dexamethasone"
+
+\end_inset
+
+, whose expression is upregulated in vivo by Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wu2010redd1"
+
+\end_inset
+
+.
+ The other contends that activated GR binds p85 in a competitive manner,
+ thus displacing it from IRS1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hu2009endogenous"
@@ -5744,7 +5745,7 @@ key "ballard1983effects"
  synergy between IGF-I and GC
 \begin_inset CommandInset citation
 LatexCommand citep
-key "ewton1981effects"
+key "ewton1981effects,elsner1998regulation"
 
 \end_inset
 
@@ -5773,8 +5774,8 @@ A major atrophic action of Dexa on muscle is desensitisation of the Akt/mTOR
  axis, with loss of anabolism and gain in catabolism, and mimicking a relative
  IGF-I deficit.
  The mechanisms by which Dexa extinguishes IGF-I and insulin signaling is
- based on interferences at the IRS1, PI3K, and Akt levels (described in
- dedicated sections).
+ based on interferences at the IRS1, PI3K, and Akt levels, through transcription
+al targets such as p85α and REDD1 (described in dedicated sections).
  But Dexa further represses Akt signaling, as it reduces muscle expression
  of IGF-I
 \begin_inset CommandInset citation
