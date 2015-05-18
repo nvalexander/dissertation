@@ -5396,7 +5396,57 @@ key "rossi2009cytosolic"
 \end_inset
 
 .
- 
+\end_layout
+
+\begin_layout Standard
+Dexa reliably upregulates the family of lysosome proteases known as cathepsins.
+ In vivo, Dexa doubles the lysosome proteases cathepsin L and D 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1995sensitivity,deval2001identification,nishimura2008effects"
+
+\end_inset
+
+.
+ In L6 myotubes, Dexa upregulates cathepsin B
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wang1998dexamethasone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A new modality for investigating autophagy hinges on one of the longest-living
+ markers on its surface, microtubule-associated protein 1 light chain 3
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LC3"
+description "microtubule-associated protein 1 light chain 3"
+
+\end_inset
+
+).
+ Transgenic mice with LC3 fused to green fluorescent protein (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GFP"
+description "green fluorescent protein"
+
+\end_inset
+
+) have been developed, and are regularly used for tracking autophagosomes.
+ There are no reports of this model being used in the study of GAML.
+ Alternatively, endogenous LC3 is tracked through immunofluorescence microscopy.
+ Multiple reports descrie an accumulation of punctate LC3-containing structures
+ in L6 myotubes treated with Dexa for 6 hours.
+\end_layout
+
+\begin_layout Standard
+Its faster migrating form, termed LC3-II, has been 
 \end_layout
 
 \begin_layout Standard
@@ -5419,29 +5469,14 @@ key "rossi2009cytosolic"
 .
  LC3-II is a marker of the autophagosome prior to its fusion with lysosome
  that leads to the assembly of the autophagolysosome.
- Recently, the enrichment of LCII-B in GAML in vivo has been reported
-\begin_inset CommandInset citation
-LatexCommand citep
-key "yamamoto2010branched-chain"
-
-\end_inset
-
-.
+ Its accumulation 
 \end_layout
 
 \begin_layout Standard
-In vivo, Dexa doubles the lysosome proteases cathepsin L and D 
+Recently, the enrichment of LCII-B in GAML in vivo has been reported
 \begin_inset CommandInset citation
 LatexCommand citep
-key "dardevet1995sensitivity,deval2001identification,nishimura2008effects"
-
-\end_inset
-
-.
- In L6 myotubes, expression of cathepsin B is upregulated by Dexa
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wang1998dexamethasone"
+key "yamamoto2010branched-chain"
 
 \end_inset
 
