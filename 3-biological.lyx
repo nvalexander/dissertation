@@ -3730,6 +3730,16 @@ key "fappi2014effects,schakman2008role"
 \end_inset
 
 .
+ There is a certain historical trend towards reporting Ser 473 phosphorylation
+ in recent years, despite, or perhaps, due to the switch of phosphorylation
+ identification techniques, from changes in electrophoretic mobility to
+ the use of phospho-specific antibodies.
+ Even in these cases, Dexa suppresses Ser 473 phosphorylation caused by
+ an insulin stimulus.
+ These reports also describe that Dexa achieves a reduction in Ser 473 phosphory
+lation in basal state.
+ No mechanistic explanation was provided for basal state changes at Ser
+ 473, meaning that their relevance remains debatable.
 \begin_inset Note Note
 status open
 
@@ -3739,8 +3749,7 @@ Our colleagues in China, Belgium and Brasil have better antibodies.
 
 \end_inset
 
- According to them, Dexa suppresses Ser 473 Akt phosphorylation even in
- the absence of an insulin stimulus.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -5953,6 +5962,9 @@ key "frost2009regulation"
 \end_inset
 
 .
+ It is unclear whether such REDD1 upregulation in an anabolic context may
+ refute the role of REDD1 in muscle loss, or whether, on the contrary, it
+ explains the incomplete reversal of GAML by IGF-I.
 \end_layout
 
 \begin_layout Standard
