@@ -4502,8 +4502,8 @@ key "schiaffino2013mechanisms"
 
 .
  A whole higher level of regulation of PGC-1α is yet to be studied.
- PGC-1α splicing appears to dictate its role, with isoform 1 and not 4 beinginvo
-lved in muscle hypertrophy
+ PGC-1α splicing appears to dictate its role, with isoform 1 and not 4 being
+ involved in muscle hypertrophy
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ruas2012pgc-1alpha"
@@ -4657,7 +4657,7 @@ key "shimizu2011crosstalk"
  KLF-15 is a direct transcriptional target of GR, and interferes with mTOR
  signaling.
  A complex network is centered on KLF-15, which upregulates expression of
- FOXO transcription fcators, and synergizes with them to upregulate atrogenes.
+ FOXO transcription factors, and synergizes with them to upregulate atrogenes.
  Overall, atrogenes appear to be under a strong control of Foxo, favored
  by concomitant activation of synergistic factors.
  Indeed, dominant negative Foxo3A transfection in rat soleus leads to loss
@@ -5835,10 +5835,10 @@ key "gayan-ramirez1999acute,inder2010dexamethasone"
 
 \end_inset
 
-, and possibly through interference with IGF-BP secretion
+, and possibly through interference with IGFBP secretion
 \begin_inset CommandInset citation
 LatexCommand citep
-key "mccusker1988insulin-like"
+key "mccusker1988insulin-like,wu2010redd1"
 
 \end_inset
 
