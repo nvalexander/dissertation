@@ -5094,8 +5094,21 @@ key "dardevet1998glucocorticoid"
 
 \end_inset
 
- is lower than that on protein degradation.
- In the MuRF1 knockout mouse, Dexa fails to change FSR
+ is lower than that on protein degradation, when Dexa is given at the dose
+ that causes muscle loss.
+ In contrast, doses of Dexa below the apparent EC50 are unable to change
+ protein degradation rate, while  still lowering protein synthesis rate
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tomas1992insulin-like"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the MuRF1 knockout mouse, Dexa fails to change FSR
 \begin_inset CommandInset citation
 LatexCommand citep
 key "baehr2011muscle"
