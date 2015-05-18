@@ -5638,7 +5638,7 @@ key "rossi2009cytosolic"
 Autophagy may play a significant role in triggering and regulating GAML.
  Current evidence, based on transgenics and cell culture, is far from satisfacto
 ry.
- Given its limited amplitude in vivo, it is less likely that autophagy is
+ Given its limited amplitude in vivo, it is improbable that autophagy is
  responsible with bulk protein elimination.
 \end_layout
 
@@ -5741,8 +5741,15 @@ key "lecker2004multiple"
  However, they contribution to GAML has not been analyzed.
 \end_layout
 
+\begin_layout Standard
+With the advent of new genome technology, enzymatic and functional studies
+ that brought the proteasome in the center of GAML have been abandoned.
+ The example of calpains illustrates how non-transcriptional events can
+ contribute to GAML, and testifies to a blind spot in GAML research.
+\end_layout
+
 \begin_layout Section
-Alleviation of GAML by IGF-I
+Alleviation of glucocorticoid myopathy by IGF-I
 \end_layout
 
 \begin_layout Standard
@@ -5797,14 +5804,18 @@ key "kanda1999preventive"
 \end_layout
 
 \begin_layout Standard
-A major atrophic action of Dexa on muscle is desensitisation of the Akt/mTOR
- axis, with loss of anabolism and gain in catabolism, and mimicking a relative
- IGF-I deficit.
- The mechanisms by which Dexa extinguishes IGF-I and insulin signaling is
- based on interferences at the IRS1, PI3K, and Akt levels, through transcription
-al targets such as p85α and REDD1 (described in dedicated sections).
- Dexa antagonizes IGF-I on diverse downstream effects, including glutamine
- and glycogen synthesis
+Co-administration of IGF-I reverses upregulation of ubiquitin, and of proteasome
+ subunits C2 C3, C8
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chrysis2002divergent,chrysis1999regulation"
+
+\end_inset
+
+, thus blunting one of the major effectors of GAML, the ubiquitin-proteasome
+ system.
+ But Dexa antagonizes IGF-I on many other downstream effects, such as glutamine
+ synthesis
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kimura2001insulin-like"
@@ -5815,30 +5826,17 @@ key "kimura2001insulin-like"
 \end_layout
 
 \begin_layout Standard
-Co-administration of IGF-I reverses upregulation of ubiquitin, and of proteasome
- subunits C2 C3, C8
-\begin_inset CommandInset citation
-LatexCommand citep
-key "chrysis2002divergent,chrysis1999regulation"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-In vivo, Dexa further represses Akt signaling, as it reduces muscle expression
- of IGF-I
+In vivo, Dexa reduces muscle expression of IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gayan-ramirez1999acute,inder2010dexamethasone"
 
 \end_inset
 
-, and possibly through interference with IGFBP secretion
+, and possibly interferes by altering IGFBP secretion
 \begin_inset CommandInset citation
 LatexCommand citep
-key "mccusker1988insulin-like,wu2010redd1"
+key "wu2010redd1"
 
 \end_inset
 
@@ -5846,10 +5844,22 @@ key "mccusker1988insulin-like,wu2010redd1"
  Therefore, GAML manifests as an absolute loss of IGF-I exacerbated by a
  downstream inhibition.
  Intuitively, IGF-I supplementation may provide GAML alleviation.
- Despite the positive results seen in rodents (described above), very few
+\end_layout
+
+\begin_layout Standard
+Despite the positive results seen in rodents (described above), very few
  studies analyzed molecular mechanisms by which IGF-I works in vivo.
- A series of studies dissected the molecular mechanisms by which IGF-I could
- alleviate cultured myotube atrophy.
+ Because co-administration of GH cannot reverse muscle loss from Dexa or
+ triamcinolone
+\begin_inset CommandInset citation
+LatexCommand citep
+key "petrof1995growth,chrysis1999regulation"
+
+\end_inset
+
+, it is likely that, similar to Dexa, IGF-I action on muscle is cell-autonomous.
+ Therefore, a series of studies dissected the molecular mechanisms by which
+ IGF-I could alleviate cultured myotube atrophy.
  There, IGF-I alone improves protein synthesis, but has no effect on protein
  degradation
 \begin_inset CommandInset citation
@@ -5886,7 +5896,7 @@ key "sacheck2004igf-i,waddell2008glucocorticoid"
 
 , in a Foxo dependent manner.
  During co-administration, Dexa is still able to upregulate protein levels
- of Foxo transcription factors, but IGF-I appears to counter them, by increasing
+ of Foxo transcription factors, but IGF-I appears to counter them by increasing
  their phosphorylation
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5977,50 +5987,16 @@ key "frost2009regulation"
 \end_layout
 
 \begin_layout Standard
-Co-administration of GH cannot reverse muscle loss from Dexa or triamcinolone
-\begin_inset CommandInset citation
-LatexCommand citep
-key "petrof1995growth,chrysis1999regulation"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-IGF-I expression is GH-independent before the age of 6 months (PMID: 11726733).
-\end_layout
-
-\begin_layout Standard
-IGF-IEa isoform
+As our understanding of GAML improved, studies on its alleviation by IGF-I
+ are lagging.
+ A large number of publications focus on the balance of GC and IGF-I on
+ Akt in cultured cells.
+ Given the reduced number of co-administration in vivo studies, our understandin
+g of how IGF-I could alleviate glucocorticoid myopathy is incomplete.
 \end_layout
 
 \begin_layout Section
-Anabolic steroids regulation of muscle mass
-\end_layout
-
-\begin_layout Standard
-As described in the clinical studies section, hypercortisolism reduces endogenou
-s T levels.
- This change is less detectable in animals, where physiological ranges of
- endogenous T have not been defined and appear to be absent.
-\end_layout
-
-\begin_layout Standard
-The reverse may explain in part loss of muscle after male castration.
- In skeletal muscle, glucocorticoid receptor mRNA and binding activity are
- increased upon castration
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ye2014transcriptional,dubois1984perineal"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-Models of anabolic alleviation of glucocorticoid myopathy
+Alleviation of glucocorticoid myopathy by anabolic steroids
 \end_layout
 
 \begin_layout Standard
@@ -6099,6 +6075,26 @@ T represses Dexa's activation of the MAFbx promoter
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2008testosterone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As described in the clinical studies section, hypercortisolism reduces endogenou
+s T levels.
+ This change is less detectable in animals, where physiological ranges of
+ endogenous T have not been defined and appear to be absent.
+\end_layout
+
+\begin_layout Standard
+The reverse may explain in part loss of muscle after male castration.
+ In skeletal muscle, glucocorticoid receptor mRNA and binding activity are
+ increased upon castration
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ye2014transcriptional,dubois1984perineal"
 
 \end_inset
 
