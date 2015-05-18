@@ -5859,8 +5859,16 @@ key "sacheck2004igf-i,waddell2008glucocorticoid"
 \end_inset
 
 , in a Foxo dependent manner.
- While Dexa upregulates protein levels of Foxo transcription factors, IGF-I
- appear to counter them by increasing their phosphorylation.
+ During co-administration, Dexa is still able to upregulate protein levels
+ of Foxo transcription factors, but IGF-I appears to counter them, by increasing
+ their phosphorylation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stitt2004igf-1/pi3k/akt"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
