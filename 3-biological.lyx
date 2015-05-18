@@ -5776,7 +5776,16 @@ A major atrophic action of Dexa on muscle is desensitisation of the Akt/mTOR
  The mechanisms by which Dexa extinguishes IGF-I and insulin signaling is
  based on interferences at the IRS1, PI3K, and Akt levels, through transcription
 al targets such as p85α and REDD1 (described in dedicated sections).
- But Dexa further represses Akt signaling, as it reduces muscle expression
+ Dexa antagonizes IGF-I on diverse downstream effects, including glutamine
+ and glycogen synthesis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kimura2001insulin-like"
+
+\end_inset
+
+.
+ In vivo, Dexa further represses Akt signaling, as it reduces muscle expression
  of IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5784,10 +5793,17 @@ key "gayan-ramirez1999acute"
 
 \end_inset
 
+, and possibly through interference with IGF-BP secretion
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mccusker1988insulin-like"
+
+\end_inset
+
 .
- Therefore, GAML is an exacerbated absolute loss of IGF-I, a strong trophic
- agent.
- Intuitively, restoring IGF-I stimulation may contribute to GAML alleviation.
+ Therefore, GAML manifests as an absolute loss of IGF-I exacerbated by a
+ downstream inhibition.
+ Intuitively, IGF-I supplementation may contribute to GAML alleviation.
 \end_layout
 
 \begin_layout Standard
@@ -5818,43 +5834,24 @@ key "li2004insulin-like"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Co-administration of IGF-I reverses upregulation of ubiquitin expression
+ Co-administration of IGF-I reverses upregulation of ubiquitin and of proteasome
+ subunits C2 C3, C8
 \begin_inset CommandInset citation
 LatexCommand citep
-key "chrysis1999regulation"
-
-\end_inset
-
-, of proteasome subunits C2 C3, C8
-\begin_inset CommandInset citation
-LatexCommand citep
-key "chrysis2002divergent"
+key "chrysis2002divergent,chrysis1999regulation"
 
 \end_inset
 
 .
- In C2C12 myotubes, IGF-I coadministration reversed MAFbx and MuRF1 upregulation
+ In C2C12 myotubes, IGF-I co-administration reverses MAFbx and MuRF1 upregulatio
+n
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sacheck2004igf-i,waddell2008glucocorticoid"
 
 \end_inset
 
-, possibly through an associated downregulation of FOXO expression.
-\end_layout
-
-\begin_layout Standard
-IGF-I co-administration reverses Dexa-induced activation of glutamine synthetase
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kimura2001insulin-like"
-
-\end_inset
-
-.
+, in a Foxo dependent manner.
 \end_layout
 
 \begin_layout Standard
