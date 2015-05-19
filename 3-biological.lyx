@@ -6353,14 +6353,14 @@ key "yin2009regulation"
 
 \end_inset
 
-.
+ on rat gastrocnemius.
  With these doses, T reliably reverses losses in body weight, muscle mass,
  and fiber CSA, induced by Dexa.
  At these doses, T co-administration exhibits a slight trend towards inferiority
  to basal levels.
  Molecular pathways largely confirm an Akt centered disruption of GAML.
- Gastrocnemius IGF-I expression is repressed by Dexa, and returned to basal
- level by T co-administration.
+ Muscle IGF-I expression is repressed by Dexa, and returned to basal level
+ by T co-administration.
  Akt phosphorylation at Ser 473 follows a similar pattern, with T addition
  restoring what Dexa downregulates.
  Moreover, p70-S6K phosphorylation at Thr 389 and atrogenes correlate with
@@ -6432,12 +6432,13 @@ key "jones2010effects"
 
 \end_inset
 
-.
- This study is focused on the anabolic-androgenic split, and therefore investiga
-tes levator ani, in addition to extraperitoneal muscles.
- At these doeses, T co-administration upregulates it beyond basal levels
- in levator ani, while it still lags below basal levels in extraperitoneal
+ on rat muscles.
+ This study is focused on the anabolic-androgenic split, and therefore compares
+ levator to extraperitoneal muscles.
+ At these doses, T co-administration restores levator ani, but not other
  muscles.
+ In levator ani, T co-administration upregulates IGF-I beyond basal levels,
+ while in extraperitoneal muscles, IGF-I is only partially restored.
  Possibly as a consequence, T addition reduces atrogene expression to a
  larger extend in levator ani.
  In levator ani and C2C12 myotubes, T reverses losses of Akt (Ser 473),
