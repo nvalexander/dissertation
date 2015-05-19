@@ -6447,59 +6447,7 @@ key "jones2010effects"
 
 \begin_layout Standard
 The series of studies from Cardozo laboratory is the most informative.
- This was also the first group to show that T reverses GAML in vivo in rat
- gastrocnemius
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhao2008testosterone"
-
-\end_inset
-
-.
- They ascribed this alleviation to a reduction in proteolysis and atrogenes
- expression.
- In preliminary studies on L6 and C2C12 myotubes overexpressing AR, they
- found that T co-administration reverses transcriptional upregulation of
- REDD1 and MAFbx
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhao2008expression,wu2010redd1"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Arguably, the most important contribution they made is a microarray study
- of 7-day 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{700}{
-\backslash
-micro
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- Dexa and/or plus 
+ This was also the first group to show that 
 \begin_inset ERT
 status open
 
@@ -6526,25 +6474,83 @@ day}
 
 \end_inset
 
- T
+ T reverses losses in rat gastrocnemius induced by simultaneous 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{700}{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhao2008testosterone"
+
+\end_inset
+
+.
+ They ascribed this alleviation to a reduction in proteolysis and atrogenes
+ expression.
+ In preliminary studies on L6 and C2C12 myotubes overexpressing AR, they
+ found that T co-administration reverses transcriptional upregulation of
+ REDD1 and MAFbx
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhao2008expression,wu2010redd1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Arguably, the most important contribution they made is the first microarray
+ study on alleviation of GAML with T
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wu2010redd1"
 
 \end_inset
 
-.
- In addition to the later microarray studies on cows and mice, this is in
- fact the 
-\end_layout
-
-\begin_layout Standard
-Many of the genes found in the unbiased approach are consistent with the
+, using gastrocnemia treated as above.
+ This is also the first published microarray study of GAML, generating many
+ hypotheses still untested.
+ Many of the genes found in the unbiased approach are consistent with the
  above mentioned changes in Akt signaling, including transcriptional reversal
  at the levels of IGFBP, FOXO1, p85, 4E-BP1.
  The overlap is not perfect, with important presumptive effectors, including
  IGF-I and MAFbx, failing to pass amplitude and statistical significance
  thresholds.
+ The reversal of GAML is also correlated with a repression of REDD1 to basal
+ levels, suggesting that mTOR is also restored by T.
+ 
+\end_layout
+
+\begin_layout Standard
+A challenging finding is that Dexa upregulates IRS1, whereas T represses
+ it back to basal levels.
+ For interference at IRS1 level, the opposite was expected, with Dexa downregula
+ting IRS1.
 \end_layout
 
 \begin_layout Standard
