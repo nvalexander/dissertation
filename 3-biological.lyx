@@ -2870,8 +2870,25 @@ key "dardevet1995sensitivity,combaret2004glucocorticoids"
 \end_layout
 
 \begin_layout Standard
-In cultured myotubes, the loss of diameter is reliably underlined by an
- 20% increase in protein degradation rate
+In cultured myotubes treated with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SIrange{100}{1000}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ D, the loss of diameter is reliably underlined by an 20% increase in protein
+ degradation rate
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wang1998dexamethasone,menconi2008dexamethasone"
@@ -5088,8 +5105,8 @@ key "shah2000glucocorticoidsa"
 
 .
  However, studies are similarly equivocal.
- In the most glaring example, the same group, using the same methods, found
- that protein synthesis is 
+ In the most glaring example, the same group, using the same methods and
+ working on the same L6 line, found that protein synthesis is 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6429,20 +6446,20 @@ tes levator ani, in addition to extraperitoneal muscles.
 
 \begin_layout Standard
 The series of studies from Cardozo laboratory is the most informative.
- This group was the first to confirm that T restored MAFbx to its basal
- lavel after Dexa upregulation in C2C12
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhao2008expression"
-
-\end_inset
-
-.
  This was also the first group to show that T reverses GAML in vivo, in
  rat gastrocnemius, through a reduction in proteolysis and atrogenes expression
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2008testosterone"
+
+\end_inset
+
+.
+ In preliminary studies on L6 and C2C12 myotubes overexpressing AR, they
+ foudn that T reverses transcriptional upregulation of REDD1 and MAFbx
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhao2008expression,wu2010redd1"
 
 \end_inset
 
