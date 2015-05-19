@@ -4492,7 +4492,15 @@ key "menconi2010sepsis"
 .
  In cultured myotubes, PGC-1β overexpression and knockdown cause changes
  in the reverse direction for Foxo3a and atrogenes' mRNA.
- It has been speculated that differences in PGC-1α levels make different
+ Because PGC-1α overexpression drives conversion of fast to slow twitch
+ fibers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lin2002transcriptional"
+
+\end_inset
+
+, it has been speculated that differences in PGC-1α levels make different
  types of muscle fiber more or less sensitive to Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4501,9 +4509,10 @@ key "schiaffino2013mechanisms"
 \end_inset
 
 .
- A whole higher level of regulation of PGC-1α is yet to be studied.
- PGC-1α splicing appears to dictate its role, with isoform 1 and not 4 being
- involved in muscle hypertrophy
+ A whole higher level of regulation of is yet to be studied, with PGC-1α
+ splicing dictating its role more.
+ For example, isoform 1, and not 4, of PGC-1α is correlated with muscle
+ hypertrophy
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ruas2012pgc-1alpha"
@@ -4525,7 +4534,7 @@ key "castillero2013ppar/"
 .
  PPARβ/δ inhibition reduces GAML and, at the same time, prevents Dexa-stimulated
  acetylation of Foxo1.
- While the direct effects of this posttranscriptional modification is not
+ While the direct effects of this post-transcriptional modification is not
  elucidated (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
