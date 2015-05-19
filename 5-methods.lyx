@@ -744,7 +744,7 @@ Quantitative real-time polymerase chain reaction
 
 \begin_layout Standard
 For each animal and muscle, 25 mg powdered muscle was homogenized briefly
- in 1 mL Trizol.
+ in 1 mL Trizol (Life Technologies).
  The suspension was incubated 5 minutes at room temperature, then supplemented
  with 200 uL chloroform.
  The tube was shaken vigorously for 15 seconds, then incubated 3 minutes
@@ -804,7 +804,18 @@ Specific cDNA amounts were measured with an 7500 Fast Real-Time PCR cycler
 \end_layout
 
 \begin_layout Standard
-After averaging duplicates for each unknown, the 
+Duplicates were averaged for each unknown.
+ Next, from the cycle count required to reach the threshold DNA concentration
+ for the specific cDNA of interest, the cycle count for a housekeeping gene
+ was subtracted, thus providing a relative measurement of expression for
+ the gene of interest within the transcriptome of that animal.
+ These measurements were further re-based, by subtracting from each the
+ average measurement in the V group.
+ (This double-rebasing method is also referred to as the 'ΔΔCt'.)
+\end_layout
+
+\begin_layout Standard
+Primers used are:
 \end_layout
 
 \begin_layout Section
@@ -812,7 +823,21 @@ Cell culture studies
 \end_layout
 
 \begin_layout Standard
-C2C12 cells were obtained from 
+C2C12 cells were obtained from ATCC (Manassas, Virginia).
+ They were grown on solid substrate, on cell culture coated plates, in atmospher
+ic air, supplemented to 5% CO2, at 37°C.
+ The liquid growth medium was 0.2-0.5 mL/cm2 DMEM supplemented with 100‰ v/v
+ fetal bovine serum (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FBS"
+description "fetal bovine serum"
+
+\end_inset
+
+) and penicillin/streptomycin, changed every other day.
+ Cells were propagated in an undifferentiated state, by splitting 1:40 at
+ ⅔ confluence.
 \end_layout
 
 \begin_layout Section
