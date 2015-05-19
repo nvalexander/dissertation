@@ -2735,14 +2735,49 @@ day}
 \end_inset
 
  Dexa, more than twice the muscle-imparing dose in humans.
+ Illustrating the higher resistance to Dexa, published mouse experiments
+ used higher doses (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SIrange{3}{10}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "furlow2013altered,son2015dexamethasone"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
 The next sections are informed by experiments with chronic (5-10 days) Dexa
- on adult (not aged) male rats, which are the best model from human male
+ on adult (not aged) male rodents, which are the best model from human male
  steroid myopathy.
- The few exceptions, mainly transgenic mice and acute treatments, will be
- identified as such.
+ The few exceptions will be identified as such.
 \end_layout
 
 \begin_layout Section
