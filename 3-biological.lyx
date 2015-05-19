@@ -6036,7 +6036,7 @@ key "courrier1952relations"
 \end_layout
 
 \begin_layout Standard
-Another, related, theoretic question was the nature of the nuclear receptor.
+A related theoretic question was the nature of the nuclear receptor.
  At the time when it was not clear how many species of nuclear receptors
  there are, precise measurements tried to find putative interference between
  the various steroids, with Dexa and T among the most studied compounds.
@@ -6115,8 +6115,8 @@ key "ferguson1995effects,vanbalkom1998anabolic,eason2003use"
 \begin_layout Standard
 The mechanism by which AAS accomplishes muscle protection remains unclear
  to date.
- One early study found T re-establishes the percentage of ribosomes that
- are involved in translation
+ One early study found that, in vivo, T re-establishes the percentage of
+ ribosomes that are involved in translation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bullock1968effects"
@@ -6124,16 +6124,59 @@ key "bullock1968effects"
 \end_inset
 
 .
- Two later studies on L6 and another on C2C12 myotubes stated that AAS cannot
- reverse the downregulation of protein synthesis induced by Dexa in L6
+ Two later studies on L6 myotubes stated that AAS cannot reverse the downregulat
+ion of protein synthesis induced by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
-key "ballard1983effects,roeder1986influence,desler1996effects"
+key "ballard1983effects,roeder1986influence"
 
 \end_inset
 
 .
- The study on C2C12 myotubes also rejected an action of T on protein degradation.
+ A study on C2C12 myotubes also rejected an action of T on protein metabolism,
+ despite a trend for improved protein synthesis and reduced protein degradation
+ when 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ T is added to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "desler1996effects"
+
+\end_inset
+
+.
  Given the limited number of attempts, the failure of in vitro systems to
  replicate in vivo benefits may be ascribed to reduced sensitivity rather
  than to fundamental shortcomings of the in vitro model.
