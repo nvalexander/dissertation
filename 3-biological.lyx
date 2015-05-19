@@ -6540,18 +6540,15 @@ key "wu2010redd1"
  of IGFBP, IRS1, FOXO1, p85, and 4E-BP1.
  These changes point to a pleiotropic program through which AAS re-establish
  signaling on the Akt axis.
- The reversal of GAML is also correlated with a repression of REDD1 to basal
- levels, suggesting that mTOR is also restored by T.
-\end_layout
-
-\begin_layout Standard
-The overlap is not perfect, with important presumptive effectors, including
+ The overlap is not perfect, with important presumptive effectors, including
  IGF-I and MAFbx, failing to pass amplitude and statistical significance
  thresholds.
 \end_layout
 
 \begin_layout Standard
 The microarray study also describes a series of IGF-I-independent effectors.
+ The reversal of GAML is also correlated with a repression of REDD1 to basal
+ levels, suggesting that mTOR is also restored by T.
  Changes in B-cell leukemia/lymphoma 3 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -6562,14 +6559,36 @@ description "B-cell leukemia/lymphoma 3"
 
 ) and IκB indicate that GAML relies on NF-κB, and T is deactivating that
  pathway too.
- Dexa upregulates CD36, the fatty acid translocase, while T returns it to
- basal level, suggesting that GAML and its reversal have oposite effects
- on muscle's ability to use lipids as fuel.
+ T also reversed the surge of MuRF1, proteasomal subunit D8, cathepsin L,
+ LC3, calpain 2, C/EBP β and δ, LC3, metallothionein 1, exhibiting a wide-spectr
+um anti-atrophic action.
 \end_layout
 
 \begin_layout Standard
-Other pathways which appear to be changed in opposite directions by GC and
- AAS include CD36, more commonly associated with 
+Dexa upregulates CD36, the fatty acid translocase
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcfarlan2012vivo"
+
+\end_inset
+
+, while T returns it to basal level, suggesting that GAML and its reversal
+ have opposite effects on muscle's ability to use lipids as fuel.
+ 
+\end_layout
+
+\begin_layout Standard
+Perhaps the most challenging finding is that T reverses the upregulation
+ of the stress sensor Growth arrest and DNA damage 45 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Gadd45"
+description "growth arrest and DNA damage 45"
+
+\end_inset
+
+) β.
+ Recently, it has been shown that Gadd45β is an autophagy blocker.
 \end_layout
 
 \begin_layout Standard
