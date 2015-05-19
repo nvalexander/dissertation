@@ -605,7 +605,68 @@ description "sodium dodecylsulfate"
 \end_layout
 
 \begin_layout Standard
-Total protein content was measured 
+Total protein content was measured with a BCA proprietary kit (Thermo Scientific
+ Pierce, Rockford, Illinois).
+ First, a 50:1 combination of reagents VW A and B was prepared.
+ Next, 200 uL VW reagent mix was combined with 2 uL unknown solution in
+ a 96-well plate well.
+ This was done in duplicates for each sample, and for a series of standards
+ of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SIrange{.5}{10}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ bovine serum albumine (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "BSA"
+description "bovine serum albumine"
+
+\end_inset
+
+) prepared with the same lysis buffer as the unknowns.
+ The plate was incubated 30 minutes at 37 C.
+ Light absorbance was measured with a Saphire multi-well plate reader (Tecan,
+ Männedorf, Switzerland) with absorption at 562 nm.
+ The standard curve was fitted to a quadratic equation.
+ Typically extracts were diluted to the lowest total protein concentration,
+ using the same lysis bufer that was used to extract them.
+\end_layout
+
+\begin_layout Standard
+The lysates were resolved by polyacrylamide gel electrophoresis (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PAGE"
+description "polyacrylamide gel electrophoresis"
+
+\end_inset
+
+).
+ The gels were cast in the morning of the electrophoresis.
+ The stacking section was a 5% acrylamide gel, with 125 mM Tris pH 6.8.
+ The separating section has a variable concentration of acrylamide (12%
+ for low molecular weight unknowns, 8% for others), and 400 mM Tris pH 8.8.
+ Both sections included 1 g/L SDS, and polymerized by the addition of 1
+ g/L ammonium persulfate and 0.4-1‰ v/v tetramethylethylenediamine.
+\end_layout
+
+\begin_layout Standard
+In order to settle and migrate, lysates were mixed with PAGE sample buffer.
 \end_layout
 
 \begin_layout Section
