@@ -158,7 +158,7 @@ status open
 
 
 \backslash
-SI{200}{
+SI{100}{
 \backslash
 micro
 \backslash
@@ -184,7 +184,61 @@ liter}
 
 \end_inset
 
- (?) ethanol, which delivered .
+ USP-grade ethanol, which delivered either (A) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{28}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ T propionate, or (B) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa, or (C) both T and Dexa in te above doses, or (D) neither drug.
 \end_layout
 
 \begin_layout Standard
@@ -281,7 +335,7 @@ description "quantitative real-time polymerase chain reaction"
 
 \end_inset
 
-).
+), as described in dedicated sections.
 \end_layout
 
 \begin_layout Section
