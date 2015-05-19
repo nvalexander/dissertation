@@ -6008,19 +6008,19 @@ key "courrier1952relations"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-For a long time, the idea behind the combination rarely that of preventing
+ For a long time, the idea behind the combination rarely that of preventing
  GM.
  Most often, it was hoped that the combination of AAS and GC, having androgenic,
  but no anabolic potency, would show the way towards splitting the anabolic
  from the androgenic principle in T.
- Another, similarly theoretic question, was the nature of the nuclear receptor.
+\end_layout
+
+\begin_layout Standard
+Another, similarly theoretic question, was the nature of the nuclear receptor.
  At the time when it was not clear how many species of nuclear receptors
  there are, precise measurements tried to find putative interference between
- the various steroids.
- In vitro studies have described androgens ability to interfere with the
+ the various steroids, with Dexa and T among the most studied compounds.
+ In vitro studies have quantified androgens ability to interfere with the
  binding of Dexa to GR.
  The Kd for GR-Dexa association is below nanomolar range
 \begin_inset CommandInset citation
@@ -6064,8 +6064,28 @@ Need to get MORE SPECIFIC T concentrations.
 
 \end_inset
 
+ T binding affinity to Dexa binding sites in rat muscle cytosol is less
+ than 100 times lower than Dexa's affinity
+\begin_inset CommandInset citation
+LatexCommand citep
+key "snochowski1980characterization"
+
+\end_inset
+
+.
  Therefore, barring allosteric effects, the direct competition between the
  two steroids remains only of theoretical importance.
+\end_layout
+
+\begin_layout Standard
+T is not required for IGF-I upregulation after exercise
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kvorning2007suppression"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
