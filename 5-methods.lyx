@@ -777,45 +777,24 @@ To obtain cDNA using Accuscript 1st Strand cDNA synthesis kit, 320 ng total
  RT”) proprietary stock.
  For negative control purposes, the same mixture was prepared, while withholding
  the RT Buffer and the RT stock.
- This no-RT tube provides a measurement of the leaked DNA.
+ This no-RT tube provided a measurement of the leaked DNA, which, in the
+ course of this work, was negligible.
+ Reverse transcription was performed by incubating 10 minutes at 25°C, then
+ 60 minutes at 42°C.
+ Reverse transcription was terminated by incubating 15 minutes at 70°C.
+ The product was stored at -20°C between measurements.
 \end_layout
 
 \begin_layout Standard
-Add: 2 μL DTT 100 mM 1 μL reverse transcriptase (“AccuScript RT”) 0.5 μL
- RNase Block ribonuclease inhibitor, 40 U/μL.
- In the control tube, do not add AccuScript RT.
- Incubate 10 minutes at 25°C.
- Incubate 60 minutes at 42°C, to synthesize cDNA.
- Incubating 15 minutes at 70ºC, to terminate.
- Store the product at -20°C, or proceed with the next step.
- To obtain cDNA using Applied Biosystems MultiScribe, combine: 2 μL reaction
- buffer 10X (“RT buffer”) 2 μL random primers 0.8 μL dNTP 100 mM, that is,
- 25X 1 μL reverse transcriptase (“AccuScript RT”) 1 μL RNase inhibitor,
- 40 U/μL 3.2 μL water 10 μL RNA.
- Incubate 10 minutes at 25°C, then 120 minutes at 37°C, then 65 minutes
- at 85°C.
- For Applied Biosystems 7500 Fast Real-Time PCR system, 96-well plates can
- be used.
- For filling these, an useful mastermix is, containing, per well: 1 μL sense
- primer (10 μM) 1 μL antisense primer (10 μM) 4 μL water 7 μL SybrGreen
- 2X.
- Rules for RT-PCR primer design: 20-22 bases in length (18-24) 100-120 bp
- amplicon (up to 150) span one large intron (at least 700-800 bp) Tmelt
- between 55 and 60 C (add 4 deg for each G_C and 2 for each A_T, then subtract
- 5) last 2 bases should be G or C in the last 5 bases, no more than 3 GC
- avoid long repeats of the same base avoid hairpins.
- Next, to each well is added 1 μL cDNA.
- The RT PCR cycler Appled Biosystems 7500 Fast Real-time PCR System incubates
- samples 2 minutes at 50°C, then 10 minutes at 95°C.
- Then 40 cycles are run, comprising 15 seconds at 95°C and one minute at
- 60°C.
- These are combined in the well.
- Duplicate wells are used.
- As controls, each plate should contain: one well per gene where cDNA is
- replaced by water (No Template Control; NTC) one well per plate, where
- cDNA is replaced by 1 μL from the tube used as control (RT-free) in cDNA
- synthesis (NoRT).
- 
+Specific cDNA amounts were measured with an 7500 Fast Real-Time PCR cycler
+ (Applied Biosystems), using 96-well plates.
+ Each unknown was measured in duplicates.
+ Each well contained 1 uL total cDNA, 10 pmol each sense and anti-sense
+ primer (listed later), and proprietary SybrGreen 2X.
+ The qRT-PCR cycler incubates samples 2 minutes at 50°C, then 10 minutes
+ at 95°C.
+ Then, 40 cycles are run, comprising 15 seconds at 95°C and one minute at
+ 60°C, with measurements of DNA after each cycle.
 \end_layout
 
 \begin_layout Section
