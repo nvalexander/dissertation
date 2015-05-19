@@ -6199,9 +6199,76 @@ key "rigamonti2009muscle,wu2012nandrolone"
 
 \begin_layout Standard
 The other effector of GAML is the Akt axis.
- In the era of immunoblot, three laboratories published studies of co-administra
-tion of AAS and GC.
+ In the era of immunoblot, only three laboratories published studies of
+ co-administration of AAS and GC.
  All three converged towards describing an reversal of Akt pathway inhibition.
+\end_layout
+
+\begin_layout Standard
+Dalton laboratory account describes the effect of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa and/or plus 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ T
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones2010effects"
+
+\end_inset
+
+.
+ With these doses, T reliably reverses losses in muscle mass induced by
+ Dexa.
 \end_layout
 
 \begin_layout Standard
