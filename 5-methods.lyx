@@ -795,6 +795,12 @@ Specific cDNA amounts were measured with an 7500 Fast Real-Time PCR cycler
  at 95°C.
  Then, 40 cycles are run, comprising 15 seconds at 95°C and one minute at
  60°C, with measurements of DNA after each cycle.
+ The amount of specific cDNA is estimated from the number of cycles required
+ to reach a DNA threshold, automatically chosen by the Applied Biosystems
+ software at midway between the lag phase and the end plateau DNA concentrations.
+ Moreover, the Applied Biosystems software is able to interpolate the number
+ of cycles, thus providing, for each well, a non-integer number of cycles
+ that will yield the threshold DNA concentration.
 \end_layout
 
 \begin_layout Section
@@ -807,7 +813,7 @@ Immunofluorescence microscopy
 
 \begin_layout Standard
 Images were acquired with an Eclipse TE2000-E fluorescence microscope (Nikon
- Instruments Inc., Melville, NY).
+ Instruments, Melville, New York).
 \end_layout
 
 \begin_layout Section
