@@ -6578,8 +6578,8 @@ key "mcfarlan2012vivo"
 \end_layout
 
 \begin_layout Standard
-Perhaps the most challenging finding is that T reverses the upregulation
- of the stress sensor Growth arrest and DNA damage 45 (
+T reverses the upregulation of the stress sensor Growth arrest and DNA damage
+ 45 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Gadd45"
@@ -6588,7 +6588,33 @@ description "growth arrest and DNA damage 45"
 \end_inset
 
 ) β.
- Recently, it has been shown that Gadd45β is an autophagy blocker.
+ Recently, it has been shown that Gadd45β is an autophagy blocker
+\begin_inset CommandInset citation
+LatexCommand citep
+key "keil2013phosphorylation"
+
+\end_inset
+
+.
+ This suggests that in 7-day treated muscle autophagy must be downregulated,
+ and goes against many other molecular markers that indicate the opposite.
+ The example of Gadd45 illustrates the issues GAML research is confronted
+ with.
+ On one hand we have macroscopic certainties, such the loss of muscle mass
+ following GC therapy, and its alleviation by T co-administration.
+ On the other, we have invariable molecular correlates of Dexa treatment,
+ such as augmented proteolysis, increased Foxo transcriptional activity,
+ reduced insulin sensitivity at Akt and mTORC1 level, and upregulation of
+ MuRF1 and REDD1.
+ Most of these have been proven to mediate the macroscopic loss of muscle,
+ but none is essential.
+ The hierarchy of molecular events in GAML is unclear, and lags behing progresse
+s made in the study of denervation atrophy.
+ Transgenic whole-body experiments are needed.
+ But most of our knowledge about GAML is derived from rats.
+ We know little about mouse GAML.
+ Moreover, there is no published account of molecular mechanisms leading
+ to GAML alleviation by AAS in mice.
 \end_layout
 
 \begin_layout Standard
