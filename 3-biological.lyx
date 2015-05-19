@@ -6476,6 +6476,24 @@ key "wu2010redd1"
 \end_layout
 
 \begin_layout Standard
+The microarray study also describes a series of IGF-I-independent effectors.
+ Changes in B-cell leukemia/lymphoma 3 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Bcl3"
+description "B-cell leukemia/lymphoma 3"
+
+\end_inset
+
+) and IκB indicate that GAML relies on NF-κB, and T is deactivating that
+ pathway too.
+\end_layout
+
+\begin_layout Standard
+REDD1
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch childonly
 status open
 
