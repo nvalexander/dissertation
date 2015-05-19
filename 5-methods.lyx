@@ -803,8 +803,16 @@ Specific cDNA amounts were measured with an 7500 Fast Real-Time PCR cycler
  that will yield the threshold DNA concentration.
 \end_layout
 
+\begin_layout Standard
+After averaging duplicates for each unknown, the 
+\end_layout
+
 \begin_layout Section
 Cell culture studies
+\end_layout
+
+\begin_layout Standard
+C2C12 cells were obtained from 
 \end_layout
 
 \begin_layout Section
@@ -828,7 +836,7 @@ Metabolic measurements at organism level
 Measurement of muscle protein synthesis and degradation
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
 Statistics
 \end_layout
 
@@ -844,7 +852,9 @@ Results are presented as means ± standard error of the mean.
  Dunn's test.
  In a plot, means with the same letter are not significantly different from
  each other.
- A 
+ Tests were considered statistically significant when the null hypothesis
+ could not be rejected at any level of significance greater than or equal
+ to 0.05.
 \end_layout
 
 \begin_layout Standard
