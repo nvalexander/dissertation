@@ -6205,7 +6205,7 @@ The other effector of GAML is the Akt axis.
 \end_layout
 
 \begin_layout Standard
-Sheng laboratory describes the effect of 
+Sheng laboratory describes the effect of 10-day 
 \begin_inset ERT
 status open
 
@@ -6232,7 +6232,7 @@ day}
 
 \end_inset
 
- Dexa and/or plus 
+ Dexa and/or 13-day 
 \begin_inset ERT
 status open
 
@@ -6284,7 +6284,7 @@ key "yin2009regulation"
 \end_layout
 
 \begin_layout Standard
-Dalton laboratory account describes the effect of 
+Dalton laboratory account describes the effect of 8-day 
 \begin_inset ERT
 status open
 
@@ -6311,7 +6311,7 @@ day}
 
 \end_inset
 
- Dexa and/or plus 
+ Dexa and/or 
 \begin_inset ERT
 status open
 
@@ -6377,6 +6377,62 @@ key "zhao2008testosterone"
 \end_inset
 
 .
+ However, the most important contribution they made is a microarray study
+ of 7-day 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{700}{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa and/or plus 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{28}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ T.
 \end_layout
 
 \begin_layout Standard
