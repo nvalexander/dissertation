@@ -6447,8 +6447,8 @@ key "jones2010effects"
 
 \begin_layout Standard
 The series of studies from Cardozo laboratory is the most informative.
- This was also the first group to show that T reverses GAML in vivo, in
- rat gastrocnemius, through a reduction in proteolysis and atrogenes expression
+ This was also the first group to show that T reverses GAML in vivo in rat
+ gastrocnemius
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2008testosterone"
@@ -6456,8 +6456,11 @@ key "zhao2008testosterone"
 \end_inset
 
 .
+ They ascribed this alleviation to a reduction in proteolysis and atrogenes
+ expression.
  In preliminary studies on L6 and C2C12 myotubes overexpressing AR, they
- foudn that T reverses transcriptional upregulation of REDD1 and MAFbx
+ found that T co-administration reverses transcriptional upregulation of
+ REDD1 and MAFbx
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2008expression,wu2010redd1"
@@ -6465,7 +6468,10 @@ key "zhao2008expression,wu2010redd1"
 \end_inset
 
 .
- However, the most important contribution they made is a microarray study
+\end_layout
+
+\begin_layout Standard
+Arguably, the most important contribution they made is a microarray study
  of 7-day 
 \begin_inset ERT
 status open
@@ -6528,7 +6534,12 @@ key "wu2010redd1"
 \end_inset
 
 .
- Many of the genes found in the unbiased approach are consistent with the
+ In addition to the later microarray studies on cows and mice, this is in
+ fact the 
+\end_layout
+
+\begin_layout Standard
+Many of the genes found in the unbiased approach are consistent with the
  above mentioned changes in Akt signaling, including transcriptional reversal
  at the levels of IGFBP, FOXO1, p85, 4E-BP1.
  The overlap is not perfect, with important presumptive effectors, including
