@@ -6353,15 +6353,26 @@ tes levator ani, in addition to extraperitoneal muscles.
  muscles.
  Possibly as a consequence, T addition reduces atrogene expression to a
  larger extend in levator ani.
- In levator ani, T reverses losses of Akt (Ser 473), GSK-3β (Ser 9), FOXO3a
- (Ser 253), and p70-S6K (Thr389) phosphorylation.
+ In levator ani and C2C12 myotubes, T reverses losses of Akt (Ser 473),
+ GSK-3β (Ser 9), FOXO3a (Ser 253), and p70-S6K (Thr389) phosphorylation.
 \end_layout
 
 \begin_layout Standard
-T is not required for IGF-I upregulation after exercise
+The series of studies from Cardozo laboratory is the most informative.
+ This group was the first to confirm that T restored MAFbx to its basal
+ lavel after Dexa upregulation in C2C12
 \begin_inset CommandInset citation
 LatexCommand citep
-key "kvorning2007suppression"
+key "zhao2008expression"
+
+\end_inset
+
+.
+ This was also the first group to show that T reverses GAML in vivo, in
+ rat gastrocnemius, through a reduction in proteolysis and atrogenes expression
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhao2008testosterone"
 
 \end_inset
 
@@ -6369,10 +6380,10 @@ key "kvorning2007suppression"
 \end_layout
 
 \begin_layout Standard
-T represses Dexa's activation of the MAFbx promoter
+T is not required for IGF-I upregulation after exercise
 \begin_inset CommandInset citation
 LatexCommand citep
-key "zhao2008testosterone"
+key "kvorning2007suppression"
 
 \end_inset
 
