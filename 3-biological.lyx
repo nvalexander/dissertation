@@ -6134,6 +6134,34 @@ key "prezant1997gender-specific"
 \end_layout
 
 \begin_layout Standard
+Myostatin promoter contains putative androgen responsive elements
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ma2003glucocorticoid-induced"
+
+\end_inset
+
+.
+ In intact animals, T does not alter myostatin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rigamonti2009muscle"
+
+\end_inset
+
+.
+ In contrast, in spinal cord injury, the AAS nandrolone partly alleviates
+ muscle atrophy and diminishes myostatin expression
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wu2012nandrolone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 The reverse may explain in part loss of muscle after male castration.
  In skeletal muscle, glucocorticoid receptor mRNA and binding activity are
  increased upon castration
