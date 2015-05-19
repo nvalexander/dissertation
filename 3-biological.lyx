@@ -6269,14 +6269,18 @@ key "yin2009regulation"
 .
  With these doses, T reliably reverses losses in body weight, muscle mass,
  and fiber CSA, induced by Dexa.
- Gastrocnemius IGF-I expression is repressed by Dexa, upregulated by T,
- and roughly return to basal level by co-administration.
+ At these doses, T co-administration exhibits a slight trend towards inferiority
+ to basal levels.
+ Molecular pathways largely confirm an Akt centered disruption of GAML.
+ Gastrocnemius IGF-I expression is repressed by Dexa, and returned to basal
+ level by T co-administration.
  Akt phosphorylation at Ser 473 follows a similar pattern, with T addition
  restoring what Dexa downregulates.
- Moreover, p70-S6K phosphorylation at Thr 389 and atrogens correlate with
- Akt phosphorylation changes, suggesting that T acts upstream of mTOR and
+ Moreover, p70-S6K phosphorylation at Thr 389 and atrogenes correlate with
+ Akt phosphorylation changes, indicating that T acts upstream of mTOR and
  Foxo.
- 
+ The only divergence from the above pattern is at GSK-3β level, where Dexa
+ has no effect.
 \end_layout
 
 \begin_layout Standard
@@ -6342,16 +6346,15 @@ key "jones2010effects"
 \end_inset
 
 .
- While Dexa downregulates IGF-I, T co-administration upregulates it beyond
- basal levels in levator ani.
- In other muscles, IGF-I downregulation is merely partially reversed.
- Possibly as a consequence, T addition reduces atrogene expression to basal
- levels, although more reliably in extraperineal muscles.
- In levator ani, T reverses losses of FOXO and Akt phosphorylation.
-\end_layout
-
-\begin_layout Standard
-Shen laboratory account confirms most of 
+ This study is focused on the anabolic-androgenic split, and therefore investiga
+tes levator ani, in addition to extraperitoneal muscles.
+ At these doeses, T co-administration upregulates it beyond basal levels
+ in levator ani, while it still lags below basal levels in extraperitoneal
+ muscles.
+ Possibly as a consequence, T addition reduces atrogene expression to a
+ larger extend in levator ani.
+ In levator ani, T reverses losses of FOXO3a (Ser 253) and Akt (Ser 473)
+ phosphorylation.
 \end_layout
 
 \begin_layout Standard
