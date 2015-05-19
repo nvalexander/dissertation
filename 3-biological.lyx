@@ -6536,21 +6536,18 @@ key "wu2010redd1"
  This is also the first published microarray study of GAML, generating many
  hypotheses still untested.
  Many of the genes found in the unbiased approach are consistent with the
- above mentioned changes in Akt signaling, including transcriptional reversal
- at the levels of IGFBP, FOXO1, p85, 4E-BP1.
- The overlap is not perfect, with important presumptive effectors, including
- IGF-I and MAFbx, failing to pass amplitude and statistical significance
- thresholds.
+ above description of GAML, including transcriptional reversal at the levels
+ of IGFBP, IRS1, FOXO1, p85, and 4E-BP1.
+ These changes point to a pleiotropic program through which AAS re-establish
+ signaling on the Akt axis.
  The reversal of GAML is also correlated with a repression of REDD1 to basal
  levels, suggesting that mTOR is also restored by T.
- 
 \end_layout
 
 \begin_layout Standard
-A challenging finding is that Dexa upregulates IRS1, whereas T represses
- it back to basal levels.
- For interference at IRS1 level, the opposite was expected, with Dexa downregula
-ting IRS1.
+The overlap is not perfect, with important presumptive effectors, including
+ IGF-I and MAFbx, failing to pass amplitude and statistical significance
+ thresholds.
 \end_layout
 
 \begin_layout Standard
@@ -6565,10 +6562,6 @@ description "B-cell leukemia/lymphoma 3"
 
 ) and IκB indicate that GAML relies on NF-κB, and T is deactivating that
  pathway too.
-\end_layout
-
-\begin_layout Standard
-REDD1
 \end_layout
 
 \begin_layout Standard
