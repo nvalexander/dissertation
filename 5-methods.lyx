@@ -771,17 +771,17 @@ Total RNA concentration was measured with an ND-1000 spectrophotometer (Nanodrop
 To obtain cDNA using Accuscript 1st Strand cDNA synthesis kit, 320 ng total
  RNA was combined with 300 ng random primers, 20 nmol of each triphosphate
  nucleotide, and the proprietary AccuScript RT Buffer 10×.
+ After incubation 5 minutes at 65°C, and cooling towards room temperature
+ another 5 minutes, the RNA mix was supplemented with 2 nmol DTT, 20 units
+ RNase Block ribonuclease inhibitor, and 1 μL reverse transcriptase (“AccuScript
+ RT”) proprietary stock.
  For negative control purposes, the same mixture was prepared, while withholding
- the RT Buffer.
+ the RT Buffer and the RT stock.
  This no-RT tube provides a measurement of the leaked DNA.
 \end_layout
 
 \begin_layout Standard
-In addition to the planned samples, prepare this mixture in another tube,
- for control.
- Incubate 5 minutes at 65°C.
- Cool towards room temperature another 5 minutes.
- Add: 2 μL DTT 100 mM 1 μL reverse transcriptase (“AccuScript RT”) 0.5 μL
+Add: 2 μL DTT 100 mM 1 μL reverse transcriptase (“AccuScript RT”) 0.5 μL
  RNase Block ribonuclease inhibitor, 40 U/μL.
  In the control tube, do not add AccuScript RT.
  Incubate 10 minutes at 25°C.
