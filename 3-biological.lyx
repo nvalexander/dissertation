@@ -5484,7 +5484,7 @@ description "green fluorescent protein"
 ) have been developed, and are regularly used for tracking autophagosomes.
  There are no reports of this model being used in the study of GAML.
  Alternatively, endogenous LC3 is tracked through immunofluorescence microscopy.
- Multiple reports describe an accumulation of punctate LC3-containing structures
+ Some reports describe an accumulation of punctate LC3-containing structures
  in L6 myotubes treated with Dexa for 6 hours
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5493,10 +5493,7 @@ key "giron2015beta-hydroxy-beta-methylbutyrate"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Another way of tracking LC3 is based on immunoblot.
+ Another way of tracking LC3 is based on immunoblot.
  The autophagosome-associated form of LC3, termed LC3-II, is faster migrating
  during electrophoresis.
  Various indices, such as absolute amount of LC3-II or the ratio between
@@ -5549,8 +5546,8 @@ key "yamamoto2010branched-chain"
 \end_inset
 
 .
- The latter report may be reflecting a short interval between last Dexa
- dose and sample collection.
+ The latter report is uncommon, and may be reflecting a short interval between
+ last Dexa dose and sample collection.
 \end_layout
 
 \begin_layout Standard
