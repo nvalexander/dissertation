@@ -2681,7 +2681,7 @@ key "prezant1997gender-specific,baptista2013leucine"
 .
  Dexa-induced loss of muscle mass is present, although less manifest, in
  female rats, possibly because, in males, hypercortisolism is compounded
- by a reduction in circulating T levels
+ by a reduction in circulating Testo levels
 \begin_inset CommandInset citation
 LatexCommand citep
 key "prezant1997gender-specific"
@@ -6069,7 +6069,7 @@ key "crawford2003randomized"
 
 .
  The idea of alleviating the CS by AAS therapy came two years after the
- discovery of an affordable source of T.
+ discovery of an affordable source of Testo.
  In the case of exogenous hypercortisolism, the same idea surfaced less
  than a year after the discovery of GC.
  Two years later, Courier and Marois report the first replication of the
@@ -6084,14 +6084,14 @@ key "courrier1952relations"
  For a long time, during the second dark age of steroids, the combination
  of AAS and GC, with androgenic, but without anabolic potency, was investigated
  in the hope that it would show the way towards splitting the anabolic from
- the androgenic principle in T.
+ the androgenic principle in Testo.
 \end_layout
 
 \begin_layout Standard
 A related theoretic question was the nature of the nuclear receptor.
  At the time when it was not clear how many species of nuclear receptors
  there are, precise measurements tried to find putative interference between
- the various steroids, with Dexa and T among the most studied compounds.
+ the various steroids, with Dexa and Testo among the most studied compounds.
  In vitro studies have quantified androgens ability to interfere with the
  binding of Dexa to GR.
  The Kd for GR-Dexa association is below nanomolar range
@@ -6114,8 +6114,8 @@ key "dahlberg1981regulation"
 \end_inset
 
 , virtually all GR should be bound to Dexa.
- On the other hand, Ki for T competing with Dexa for binding to muscle protein
- extracts is 10 uM
+ On the other hand, Ki for Testo competing with Dexa for binding to muscle
+ protein extracts is 10 uM
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mayer1975interaction"
@@ -6124,19 +6124,9 @@ key "mayer1975interaction"
 
 .
  While the referenced report does not distinguish non-specific binding for
- T, Ki is tens or hundreds of times higher than typical T concentrations
+ T, Ki is tens or hundreds of times higher than typical Testo concentrations
  used in literature for biological reversal of GAML.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Need to get MORE SPECIFIC T concentrations.
-\end_layout
-
-\end_inset
-
- T binding affinity to Dexa binding sites in rat muscle cytosol is less
+ Testo binding affinity to Dexa binding sites in rat muscle cytosol is less
  than 100 times lower than Dexa's affinity
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -6167,8 +6157,8 @@ key "ferguson1995effects,vanbalkom1998anabolic,eason2003use"
 \begin_layout Standard
 The mechanism by which AAS accomplishes muscle protection remains unclear
  to date.
- One early study found that, in vivo, T re-establishes the percentage of
- ribosomes that are involved in translation
+ One early study found that, in vivo, Testo re-establishes the percentage
+ of ribosomes that are involved in translation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bullock1968effects"
@@ -6185,9 +6175,9 @@ key "ballard1983effects,roeder1986influence"
 \end_inset
 
 .
- A study on C2C12 myotubes also rejected an action of T on protein metabolism,
- despite a trend for improved protein synthesis and reduced protein degradation
- when 
+ A study on C2C12 myotubes also rejected an action of Testo on protein metabolis
+m, despite a trend for improved protein synthesis and reduced protein degradatio
+n when 
 \begin_inset ERT
 status open
 
@@ -6204,7 +6194,7 @@ molar}
 
 \end_inset
 
- T is added to 
+ Testo is added to 
 \begin_inset ERT
 status open
 
@@ -6254,8 +6244,8 @@ key "inder2010dexamethasone"
 \end_inset
 
 .
- Hypercortisolism reduces endogenous T levels in male rats, thus leading
- to ampler loss of muscle than in females, which experience T upregulation
+ Hypercortisolism reduces endogenous Testo levels in male rats, thus leading
+ to ampler loss of muscle than in females, which experience Testo upregulation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "prezant1997gender-specific"
@@ -6269,7 +6259,7 @@ key "prezant1997gender-specific"
 
 \begin_layout Standard
 In the absence of direct interference, studies sought downstream effectors
- at which T could prevent Dexa's program.
+ at which Testo could prevent Dexa's program.
  Myostatin promoter contains putative androgen responsive elements
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -6279,7 +6269,7 @@ key "ma2003glucocorticoid-induced"
 
 .
  In intact animals and even in atrophic muscle after spinal cord injury,
- T does not alter myostatin
+ Testo does not alter myostatin
 \begin_inset CommandInset citation
 LatexCommand citep
 key "rigamonti2009muscle,wu2012nandrolone"
@@ -6289,7 +6279,7 @@ key "rigamonti2009muscle,wu2012nandrolone"
 .
  Myostatin changes in co-administration of AAS and GC has not been investigated.
  Given myostatin's limited role in GAML, it is unlikely myostatin repression
- could contribute to the ample alleviation provided by T.
+ could contribute to the ample alleviation provided by Testo.
 \end_layout
 
 \begin_layout Standard
@@ -6303,7 +6293,7 @@ key "urban1995testosterone,lewis2002role"
 \end_inset
 
 .
- However, T is dispensable for IGF-I upregulation during exercise-induced
+ However, Testo is dispensable for IGF-I upregulation during exercise-induced
  muscle hypertrophy
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -6389,18 +6379,18 @@ key "yin2009regulation"
 \end_inset
 
  on rat gastrocnemius.
- With these doses, T reliably reverses losses in body weight, muscle mass,
- and fiber CSA, induced by Dexa.
- At these doses, T co-administration exhibits a slight trend towards inferiority
- to basal levels.
+ With these doses, Testo reliably reverses losses in body weight, muscle
+ mass, and fiber CSA, induced by Dexa.
+ At these doses, Testo co-administration exhibits a slight trend towards
+ inferiority to basal levels.
  Molecular pathways largely confirm an Akt centered disruption of GAML.
  Muscle IGF-I expression is repressed by Dexa, and returned to basal level
- by T co-administration.
- Akt phosphorylation at Ser 473 follows a similar pattern, with T addition
+ by Testo co-administration.
+ Akt phosphorylation at Ser 473 follows a similar pattern, with Testo addition
  restoring what Dexa downregulates.
  Moreover, p70-S6K phosphorylation at Thr 389 and atrogenes correlate with
- Akt phosphorylation changes, indicating that T acts upstream of mTOR and
- Foxo.
+ Akt phosphorylation changes, indicating that Testo acts upstream of mTOR
+ and Foxo.
  The only divergence from the above pattern is at GSK-3β level, where Dexa
  has no effect.
 \end_layout
@@ -6470,13 +6460,13 @@ key "jones2010effects"
  on rat muscles.
  This study is focused on the anabolic-androgenic split, and therefore compares
  levator to extraperitoneal muscles.
- At these doses, T co-administration restores levator ani, but not other
+ At these doses, Testo co-administration restores levator ani, but not other
  muscles.
- In levator ani, T co-administration upregulates IGF-I beyond basal levels,
- while in extraperitoneal muscles, IGF-I is only partially restored.
- Possibly as a consequence, T addition reduces atrogene expression to a
- larger extend in levator ani.
- In levator ani and C2C12 myotubes, T reverses losses of Akt (Ser 473),
+ In levator ani, Testo co-administration upregulates IGF-I beyond basal
+ levels, while in extraperitoneal muscles, IGF-I is only partially restored.
+ Possibly as a consequence, Testo addition reduces atrogene expression to
+ a larger extend in levator ani.
+ In levator ani and C2C12 myotubes, Testo reverses losses of Akt (Ser 473),
  GSK-3β (Ser 9), FOXO3a (Ser 253), and p70-S6K (Thr389) phosphorylation.
 \end_layout
 
@@ -6509,7 +6499,7 @@ day}
 
 \end_inset
 
- T reverses losses in rat gastrocnemius induced by simultaneous 
+ Testo reverses losses in rat gastrocnemius induced by simultaneous 
 \begin_inset ERT
 status open
 
@@ -6547,8 +6537,8 @@ key "zhao2008testosterone"
  They ascribed this alleviation to a reduction in proteolysis and atrogenes
  expression.
  In preliminary studies on L6 and C2C12 myotubes overexpressing AR, they
- found that T co-administration reverses transcriptional upregulation of
- REDD1 and MAFbx
+ found that Testo co-administration reverses transcriptional upregulation
+ of REDD1 and MAFbx
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2008expression,wu2010redd1"
@@ -6583,7 +6573,7 @@ key "wu2010redd1"
 \begin_layout Standard
 The microarray study also describes a series of IGF-I-independent effectors.
  The reversal of GAML is also correlated with a repression of REDD1 to basal
- levels, suggesting that mTOR is also restored by T.
+ levels, suggesting that mTOR is also restored by Testo.
  Changes in B-cell leukemia/lymphoma 3 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -6592,11 +6582,11 @@ description "B-cell leukemia/lymphoma 3"
 
 \end_inset
 
-) and IκB indicate that GAML relies on NF-κB, and T is deactivating that
- pathway too.
- T also reversed the surge of MuRF1, proteasomal subunit D8, cathepsin L,
- LC3, calpain 2, C/EBP β and δ, LC3, metallothionein 1, exhibiting a wide-spectr
-um anti-atrophic action.
+) and IκB indicate that GAML relies on NF-κB, and Testo is deactivating
+ that pathway too.
+ Testo also reversed the surge of MuRF1, proteasomal subunit D8, cathepsin
+ L, LC3, calpain 2, C/EBP β and δ, LC3, metallothionein 1, exhibiting a
+ wide-spectrum anti-atrophic action.
 \end_layout
 
 \begin_layout Standard
@@ -6607,14 +6597,14 @@ key "mcfarlan2012vivo"
 
 \end_inset
 
-, while T returns it to basal level, suggesting that GAML and its reversal
+, while Testo returns it to basal level, suggesting that GAML and its reversal
  have opposite effects on muscle's ability to use lipids as fuel.
  
 \end_layout
 
 \begin_layout Standard
-T reverses the upregulation of the stress sensor Growth arrest and DNA damage
- 45 (
+Testo reverses the upregulation of the stress sensor Growth arrest and DNA
+ damage 45 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Gadd45"
@@ -6636,7 +6626,7 @@ key "keil2013phosphorylation"
  The example of Gadd45 illustrates the issues GAML research is confronted
  with.
  On one hand we have macroscopic certainties, such the loss of muscle mass
- following GC therapy, and its alleviation by T co-administration.
+ following GC therapy, and its alleviation by Testo co-administration.
  On the other, we have invariable molecular correlates of Dexa treatment,
  such as augmented proteolysis, increased Foxo transcriptional activity,
  reduced insulin sensitivity at Akt and mTORC1 level, and upregulation of

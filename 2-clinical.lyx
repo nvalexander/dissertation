@@ -2512,7 +2512,7 @@ key "david1935uber"
  Laqueur names his discovery testosterone (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "T"
+symbol "Testo"
 description "testosterone"
 
 \end_inset
@@ -2529,7 +2529,7 @@ key "hoberman1995history"
 \end_inset
 
 ).
- At the University of Chicago, Kenyon tests T on four eunuchoid patients
+ At the University of Chicago, Kenyon tests Testo on four eunuchoid patients
  of testicular and pituitary etiology.
  Daily injections of 25 mg testosterone propionate (
 \begin_inset CommandInset nomenclature
@@ -2546,10 +2546,10 @@ key "kenyon1938effect"
 
 \end_inset
 
- after less than two weeks, thus establishing the efficacy of T replacement
- therapy in men with pathological decreases in circulating T.
+ after less than two weeks, thus establishing the efficacy of Testo replacement
+ therapy in men with pathological decreases in circulating Testo.
  With few, narrow exceptions, this population was and remains the only generally
- accepted, FDA-approved indication for T therapy
+ accepted, FDA-approved indication for Testo therapy
 \begin_inset CommandInset citation
 LatexCommand cite
 key "auxiliumpharmaceuticalsinc.2014testim,endopharmaceuticalssolutionsinc.2014delatestryl,unimed2004androgel"
@@ -2557,14 +2557,14 @@ key "auxiliumpharmaceuticalsinc.2014testim,endopharmaceuticalssolutionsinc.2014d
 \end_inset
 
 .
- Recent T preparations are still recommended for some breast cancers, but
- this indication is limited to a few, unpredictable, cases.
+ Recent Testo preparations are still recommended for some breast cancers,
+ but this indication is limited to a few, unpredictable, cases.
 \end_layout
 
 \begin_layout Standard
 Due to manufacturing costs, limited commercial target, and governments'
- lack of interest, T therapy traversed a very long experimental stage, which
- could easily be called 
+ lack of interest, Testo therapy traversed a very long experimental stage,
+ which could easily be called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2574,9 +2574,9 @@ the second dark age of androgens
 
 .
  Only in 1953, FDA gives its first approval for an androgenic therapy, a
- T enanthate injection.
- Then, as now, FDA's approval was based on T ability to restore normal levels
- of androgens, rather than other, more functional or curative, outcome
+ Testo enanthate injection.
+ Then, as now, FDA's approval was based on Testo ability to restore normal
+ levels of androgens, rather than other, more functional or curative, outcome
 \begin_inset CommandInset citation
 LatexCommand cite
 key "endopharmaceuticalssolutionsinc.2014delatestryl"
@@ -2638,20 +2638,20 @@ key "mommers2008male"
  sample size (n = 12), lack of blinding, and early stopping in the placebo
  arm.
  Nevertheless, these trials are, in many cases, the only source of information
- about the action of T in the normogonadal population.
+ about the action of Testo in the normogonadal population.
  For example, early trials of oral methyltestosterone revealed its hepatic
  toxicity, with the effect that, 50 years later, the development of oral
  androgenic therapies is still discouraged.
 \end_layout
 
 \begin_layout Standard
-The second dark age of T were times of limited knowledge, and even more
+The second dark age of Testo were times of limited knowledge, and even more
  limited adherence to the principles of clinical research.
  Yet in these years, androgenic steroids first gained their reputation as
  ergogens.
- Kenyon noted in his studies on eunuchoid men that T injections helped them
- gain weight through protein accretion, as demonstrated by a reduction in
- urinary nitrogen.
+ Kenyon noted in his studies on eunuchoid men that Testo injections helped
+ them gain weight through protein accretion, as demonstrated by a reduction
+ in urinary nitrogen.
  Other trials evidenced benefits from androgenic therapy in muscle-depleting
  conditions, including thyrotoxic myopathy
 \begin_inset CommandInset citation
@@ -2677,8 +2677,8 @@ key "kenyon1940comparative"
 \end_inset
 
 .
- Interestingly, in 1942, Samuels and colleagues state that T does not change
- grip strength in healthy males
+ Interestingly, in 1942, Samuels and colleagues state that Testo does not
+ change grip strength in healthy males
 \begin_inset CommandInset citation
 LatexCommand cite
 key "samuels1942influence"
@@ -2708,8 +2708,8 @@ key "cowart1987steroids"
 
 \begin_layout Standard
 As exemplified by the ergogenic hypothesis, benefits of androgen therapy
- on men with T deficiency have been extrapolated by clinicians and theoreticians
- to other muscle-depleting conditions, and even to healthy humans.
+ on men with Testo deficiency have been extrapolated by clinicians and theoretic
+ians to other muscle-depleting conditions, and even to healthy humans.
  Naturally, one of the conditions associated with loss of muscle mass that
  clinicians hoped to improve was hypercortisolism.
  In 1941, Albright shows that the newly-discovered Tp, in 25 mg daily injections
@@ -3104,7 +3104,7 @@ key "volpato2014prevalence,ramos1998muscle"
 \begin_layout Standard
 A series of trials observed the effect of short-term (hours or days) hypercortis
 olism in healthy volunteers.
- Experimental acute hypercortisolism represses circulating levels of T,
+ Experimental acute hypercortisolism represses circulating levels of Testo,
  in a reversible manner, in males and, to a lesser degree, in females 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3172,7 +3172,7 @@ key "barbetta2001androgen,cunningham1994dissociation"
 
 \begin_layout Standard
 In males, chronic hypercortisolism is also associated with hypoandrogenism.
- Long term prednisone therapy reduces circulating T levels
+ Long term prednisone therapy reduces circulating Testo levels
 \begin_inset CommandInset citation
 LatexCommand citep
 key "martens1994decreased"
@@ -3228,9 +3228,9 @@ key "lado-abeal1998menstrual"
 
 .
  Finally, a small study found that male asthma patients receiving long-term
- prednisone have lower circulating T levels despite increases in LH and
- FSH, and concluded that prednisone has an direct inhibitory action on the
- testes
+ prednisone have lower circulating Testo levels despite increases in LH
+ and FSH, and concluded that prednisone has an direct inhibitory action
+ on the testes
 \begin_inset CommandInset citation
 LatexCommand citep
 key "reid1985plasma"
@@ -3327,7 +3327,7 @@ key "judd1974endocrine"
 
 \end_inset
 
-, where T is an intermediate product in the synthesis of estrogens (reviewed
+, where Testo is an intermediate product in the synthesis of estrogens (reviewed
  in 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3354,8 +3354,8 @@ key "yen1971effect"
 \end_inset
 
 , with the possible exception of ovulation.
- In the direct link, LH must stimulate ovarian T synthesis, but a reverse
- link, where T directly inhibits LH, is absent in women
+ In the direct link, LH must stimulate ovarian Testo synthesis, but a reverse
+ link, where Testo directly inhibits LH, is absent in women
 \begin_inset CommandInset citation
 LatexCommand citep
 key "couzinet1989effects,abdel-rahman2014androgen"
@@ -3364,8 +3364,8 @@ key "couzinet1989effects,abdel-rahman2014androgen"
 
 .
  Although measurement methods and normal ranges are still to be perfected,
- it appears that circulating T level in women are reflecting the menstruation-re
-lated cyclical interplay of estrogen and LH, rather than being independently
+ it appears that circulating Testo level in women are reflecting the menstruatio
+n-related cyclical interplay of estrogen and LH, rather than being independently
  controlled
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3515,7 +3515,7 @@ key "inder2010dexamethasone"
 
 \end_inset
 
-, it may be possible that GCs interfere with T signals in a tissue-specific
+, it may be possible that GCs interfere with Testo signals in a tissue-specific
  manner.
 \end_layout
 
@@ -3532,7 +3532,7 @@ Understanding causality in the case of simultaneous muscle loss and hirsutism
 \begin_layout Standard
 Interestingly, the Crawford and colleagues trial observed muscle protection
  by AAS as adjuvant to GC therapy although, at enrollment, these men had
- circulating T levels in the lower normal range
+ circulating Testo levels in the lower normal range
 \begin_inset CommandInset citation
 LatexCommand citep
 key "crawford2003randomized"
@@ -3565,7 +3565,7 @@ g conditions.
 
 \begin_layout Standard
 Most commonly, studies of AAS on muscle are carried on men with lower than
- normal circulating T and / or associated symptoms, also called hypogonadal.
+ normal circulating Testo and / or associated symptoms, also called hypogonadal.
  In male primary hypogonadism, rates of cortisol synthesis and degradation
  are typically normal
 \begin_inset CommandInset citation
@@ -3600,7 +3600,7 @@ key "brodsky1996effects"
 \end_inset
 
 .
- Moreover, T causes an increase in FSR of myosin heavy chain (
+ Moreover, Testo causes an increase in FSR of myosin heavy chain (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "MyHC"
@@ -3613,7 +3613,7 @@ description "myosin heavy chain"
 
 \begin_layout Standard
 The referenced studies also measured leucine flux, a proxy for protein degradati
-on, but failed to detect significant changes as a result to T therapy.
+on, but failed to detect significant changes as a result to Testo therapy.
  The absence of a detectable change in leucine flux may be attributed to
  a true lack of effect on catabolism, or may be an artifact caused by the
  use of whole-body, rather than isolated muscle, methods.
@@ -3635,8 +3635,8 @@ key "smith2002changes,boxer2005effect"
 \end_inset
 
 .
- In the former, most of the muscle losses are reversed if exogenous T is
- co-administered.
+ In the former, most of the muscle losses are reversed if exogenous Testo
+ is co-administered.
  Chemical castration causes decreases in both protein synthesis and degradation
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3645,7 +3645,7 @@ key "mauras1998testosterone"
 \end_inset
 
 , suggesting that, in some cases, such as restoration of physiological levels,
- T supplementation may be followed by a paradoxical increase in protein
+ Testo supplementation may be followed by a paradoxical increase in protein
  degradation.
 \end_layout
 
@@ -3659,9 +3659,9 @@ key "finkelstein2013gonadal"
 \end_inset
 
 .
- Aromatase converts T in estradiol.
- The continuing muscle protection when T cannot be converted to estrogens
- demonstrates that muscle protection is an intrinsic ability of T.
+ Aromatase converts Testo in estradiol.
+ The continuing muscle protection when Testo cannot be converted to estrogens
+ demonstrates that muscle protection is an intrinsic ability of Testo.
  A more plausible mediator is the anabolic hormone insulin-like growth factor
  I (
 \begin_inset CommandInset nomenclature
@@ -3682,7 +3682,7 @@ key "mauras1998testosterone"
 \end_layout
 
 \begin_layout Standard
-Another well-studies group comprises older men, whose T levels and muscle
+Another well-studies group comprises older men, whose Testo levels and muscle
  mass are naturally declining
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3691,11 +3691,11 @@ key "rosenberg1989summary,feldman2002age"
 \end_inset
 
 .
- An argument has been made about benefits of T replacement therapy in this
- population.
+ An argument has been made about benefits of Testo replacement therapy in
+ this population.
  Multiple clinical studies tested this hypothesis.
- In older men with low bioavailable T, muscle mass and strength is improved
- by 200 mg T every other week
+ In older men with low bioavailable Testo, muscle mass and strength is improved
+ by 200 mg Testo every other week
 \begin_inset CommandInset citation
 LatexCommand citep
 key "morley1993effects,sih1997testosterone"
@@ -3728,8 +3728,8 @@ key "sinha-hikim2006effects"
 \end_layout
 
 \begin_layout Standard
-T causes improvement in the net balance between protein synthesis and degradatio
-n at muscle level
+Testo causes improvement in the net balance between protein synthesis and
+ degradation at muscle level
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ferrando2002testosterone"
@@ -3770,10 +3770,10 @@ key "ferrando2003differential"
 .
  However, their study differs in key aspects from the other studies and
  the medical practice.
- They tested a variable, moderate dose of T on normogonadal older men, with
- the goal of maintaining a physiological T level.
- Moderate T therapy caused an improvement in muscle mass, strength, and
- net protein balance.
+ They tested a variable, moderate dose of Testo on normogonadal older men,
+ with the goal of maintaining a physiological Testo level.
+ Moderate Testo therapy caused an improvement in muscle mass, strength,
+ and net protein balance.
  However, they failed to observe an improvement in protein FSR, and concluded
  that the net protein balance improvement must be caused by T-induced inhibition
  of protein degradation.
@@ -3787,7 +3787,7 @@ In support of their hypothesis, Ferrando and colleagues showed a significant
  decrease in the rate of phenylalanine disappearance at muscle level and
  in the proteasomal enzymatic activity.
  However, the data they provide show that, on the contrary, proteasomal
- activity is not reduced by T therapy.
+ activity is not reduced by Testo therapy.
  Digitizing their plot indicates that six-months of placebo changed the
  normalized lactastatin-sensitive proteasome activity from 
 \begin_inset Flex S/R expression
@@ -3813,7 +3813,7 @@ format(PMID12519877data["placebo without inhibitor 6 months","V3"] - PMID1251987
 
 \end_inset
 
- relative units, whereas six months of T changed it from 
+ relative units, whereas six months of Testo changed it from 
 \begin_inset Flex S/R expression
 status open
 
@@ -3839,7 +3839,7 @@ ata["testo with inhibitor 6 months","V3"], digits = 2)
 
  relative units, a likely non-significant set of changes.
  The same group found a similar pattern of anticatabolic action, in a short-term
- trial of T on men with severe burns, once again doubled by an apparent
+ trial of Testo on men with severe burns, once again doubled by an apparent
  absence of the pro-anabolic component
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3848,12 +3848,12 @@ key "ferrando2001testosterone"
 \end_inset
 
 .
- It may be possible that the protective action of T changes qualitatively,
+ It may be possible that the protective action of Testo changes qualitatively,
  depending on the cumulative dose.
- Alternatively, the anticatabolic action may be more salient when T supplementat
-ion is given to the normogonadal.
- The hypothesis that T inhibits protein degradation remains tempting, but
- better studies are needed.
+ Alternatively, the anticatabolic action may be more salient when Testo
+ supplementation is given to the normogonadal.
+ The hypothesis that Testo inhibits protein degradation remains tempting,
+ but better studies are needed.
 \end_layout
 
 \begin_layout Standard
@@ -3876,7 +3876,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Changes in proteasome enzymatic activity following 6 months of T therapy
+Changes in proteasome enzymatic activity following 6 months of Testo therapy
  (reproduced from 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3902,7 +3902,8 @@ key "ferrando2003differential"
 \end_layout
 
 \begin_layout Standard
-In older men, T upregulated intramuscular and circulating levels of IGF-I
+In older men, Testo upregulated intramuscular and circulating levels of
+ IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ferrando2002testosterone,huang2005effects"
@@ -3910,9 +3911,10 @@ key "ferrando2002testosterone,huang2005effects"
 \end_inset
 
 .
- The protection of muscle force provided by T to the older hypogonadal men
- is not hindered by co-administration of finasteride, an inhibitor of 5α-reducta
-se which causes the transformation of T to 5α-dihydrotestosterone (
+ The protection of muscle force provided by Testo to the older hypogonadal
+ men is not hindered by co-administration of finasteride, an inhibitor of
+ 5α-reductase which causes the transformation of Testo to 5α-dihydrotestosterone
+ (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DHT"
@@ -3929,8 +3931,8 @@ key "borst2014musculoskeletal"
 
 .
  Similar lack of effect was seen with dutasteride, a less specific inhibitor
- of 5α-reductase, added to exogenous T, in a younger, possibly less hypoandrogen
-ic cohort
+ of 5α-reductase, added to exogenous Testo, in a younger, possibly less
+ hypoandrogenic cohort
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bhasin2012effect"
@@ -3940,8 +3942,8 @@ key "bhasin2012effect"
 .
  In human males, conversion to DHT is not required or T's regulation of
  muscle mass.
- Possibly more relevant, T upregulates IGF-I in the muscle and in the serum
- of the older men
+ Possibly more relevant, Testo upregulates IGF-I in the muscle and in the
+ serum of the older men
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ferrando2002testosterone,huang2005effects"
@@ -3953,7 +3955,7 @@ key "ferrando2002testosterone,huang2005effects"
 
 \begin_layout Standard
 While women's endogenous AAS levels are lower than men's, it is unclear
- if benefits of T therapy outweigh the deleterious effects
+ if benefits of Testo therapy outweigh the deleterious effects
 \begin_inset CommandInset citation
 LatexCommand citep
 key "traish2009testosterone,wierman2014androgen"
@@ -3961,14 +3963,14 @@ key "traish2009testosterone,wierman2014androgen"
 \end_inset
 
 .
- There is no FDA-approved T preparation for women.
- Therefore the action of T in women losing muscle is yet to be investigated.
+ There is no FDA-approved Testo preparation for women.
+ Therefore the action of Testo in women losing muscle is yet to be investigated.
 \end_layout
 
 \begin_layout Standard
-The best molecular observations on the action of T on muscle loss have been
- obtained from studies of HIV-positive men, who have significantly lower
- circulating T levels
+The best molecular observations on the action of Testo on muscle loss have
+ been obtained from studies of HIV-positive men, who have significantly
+ lower circulating Testo levels
 \begin_inset CommandInset citation
 LatexCommand citep
 key "croxson1989changes"
@@ -3997,12 +3999,12 @@ key "montano2007transcriptional"
 \end_inset
 
 .
- Immunoblot confirmatory studies indicated that T caused the upregulation
+ Immunoblot confirmatory studies indicated that Testo caused the upregulation
  of a key component of the IGF-I signaling pathway, the protein kinase B,
  also known as Akt, in its Serine-473 phosphorylated, that is, activated
  form.
- Other genes upregulated by T are muscle development regulators, such as
- the myocyte enhancer factor 2A (
+ Other genes upregulated by Testo are muscle development regulators, such
+ as the myocyte enhancer factor 2A (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "MEF2A"
@@ -4011,8 +4013,8 @@ description "myocyte enhancer factor 2A"
 \end_inset
 
 ) and a host of macrophage-associated markers.
- In addition, T stimulated expression of genes from other pathways, including
- transcription factor 4 (
+ In addition, Testo stimulated expression of genes from other pathways,
+ including transcription factor 4 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "TCF4"
@@ -4079,7 +4081,7 @@ key "macdonald2007nandrolone,yurci2011effects"
 \end_inset
 
 .
- In men with COPD, 100 mg T enanthate injected weekly led to improvements
+ In men with COPD, 100 mg Testo enanthate injected weekly led to improvements
  in muscle mass and strength, potentially augmenting quality of life
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4098,18 +4100,18 @@ key "lewis2007skeletal"
 \end_inset
 
 .
- In these men, MyHC upregulated by T in these men was of isoform 3, also
- known as embryonic MyHC.
- This is also one of the two MyHC isoforms upregulated by T in the HIV-positive
- men.
+ In these men, MyHC upregulated by Testo in these men was of isoform 3,
+ also known as embryonic MyHC.
+ This is also one of the two MyHC isoforms upregulated by Testo in the HIV-posit
+ive men.
  In the COPD cohort, embryonic MyHC was found in thinnest fibers, possibly
  marking them as newly formed.
 \end_layout
 
 \begin_layout Standard
 A cross-sectional study split a cohort of males with heart failure, without
- cachexia and with normal circulating cortisol, T and ACTH levels in two
- halves based on their cortisol level.
+ cachexia and with normal circulating cortisol, Testo and ACTH levels in
+ two halves based on their cortisol level.
  
 \begin_inset Note Greyedout
 status open
@@ -4146,7 +4148,7 @@ key "xu2013testosterone,basaria2010adverse"
 
 \end_inset
 
-, which will discourage the use of T in heart failure.
+, which will discourage the use of Testo in heart failure.
  In fact, many of the aforementioned conditions where AAS was used are marred
  by higher cardiovascular risks and frailty, pressing the need for alternative,
  equally efficient, anabolic adjuvants.

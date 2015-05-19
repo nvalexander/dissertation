@@ -211,7 +211,15 @@ day}
 
 \end_inset
 
- T propionate, or (B) 
+ Testo propionate (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "T"
+description "testosterone-only group"
+
+\end_inset
+
+), or (B) 
 \begin_inset ERT
 status open
 
@@ -238,7 +246,23 @@ day}
 
 \end_inset
 
- Dexa, or (C) both T and Dexa in te above doses, or (D) neither drug.
+ Dexa (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "D"
+description "dexamethasone-only group"
+
+\end_inset
+
+), or (C) both T and Dexa in te above doses (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DT"
+description "dexamethasone and testosterone group"
+
+\end_inset
+
+), or (D) neither drug.
  This latter group will be designated Vehicle (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -251,83 +275,11 @@ description "Vehicle-only"
 \end_layout
 
 \begin_layout Standard
-Before the first injection and 24 hours after the last injection
-\end_layout
-
-\begin_layout Standard
-Their lean and fat body mass will be measured by
-\end_layout
-
-\begin_layout Standard
-nuclear magnetic resonance, before their first injection and 2 hours after
- the last injection.
- We employ a 
-\end_layout
-
-\begin_layout Standard
-quantitative magnetic resonance body composition analyzer that utilizes
- the resonance energy of hydrogen 
-\end_layout
-
-\begin_layout Standard
-nuclei in a magnetic field, in order to compute the density of the tissue.
- Nuclear magnetic resonance is non-
-\end_layout
-
-\begin_layout Standard
-invasive method of animal imaging, already approved by HMA IACUC on other
- protocols.
- Mice are secured 
-\end_layout
-
-\begin_layout Standard
-inside a transparent plexiglass tube, during imaging.
- Each mouse is inserted inside the tube, gently pushed at 
-\end_layout
-
-\begin_layout Standard
-the end of the tube, and the tube is closed by inserting a second, smaller
- tube inside.
- The mouse is secured in 
-\end_layout
-
-\begin_layout Standard
-between the two tubes in a way that he can’t move his limbs or twist its
- body during the imaging procedure 
-\end_layout
-
-\begin_layout Standard
-(about 90 seconds).
- Breathing is unimpaired, and facilitated by the existence of multiple airing
- holes in the 
-\end_layout
-
-\begin_layout Standard
-tube.
- Imaging analysis starts after the tube with the mouse is inserted in a
- specific hole of the machine.
- Mice 
-\end_layout
-
-\begin_layout Standard
-are not sedated and do not receive anesthesia.
- Acclimation is not necessary for this procedure.
- The NMR 
-\end_layout
-
-\begin_layout Standard
-machine (Echo-MRI, whole body composition analyzer, Echo Medical Systems,
- Texas) is currently located in 
-\end_layout
-
-\begin_layout Standard
-the Thorn animal facility.
- Plastic tubes will be cleaned with MB-10 solution before start testing
- and at the end of 
-\end_layout
-
-\begin_layout Standard
-the procedure.
+Before the first injection and 24 hours after the last injection, mice lean
+ and fat body mass was measured by nuclear magnetic resonance, using a Echo-MRI
+ whole body composition analyzer (Echo Medical Systems, Houston, Texas).
+ In this procedure, mice are restrained inside a transparent plexiglass
+ tube for 90 seconds, without sedation or anesthesia.
 \end_layout
 
 \begin_layout Standard
