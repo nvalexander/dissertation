@@ -6089,11 +6089,12 @@ key "snochowski1980characterization"
 \begin_layout Standard
 The experiments in the 1980's and 1990's tested the interaction of AAS and
  GC on the diaphragm.
- These studies established that myoprotection provided by AAS manifests
+ While these studies could not have measured the yet-undiscovered mediators
+ of GAML, they established that myoprotection provided by AAS manifests
  in both muscle mass and force
 \begin_inset CommandInset citation
 LatexCommand citep
-key "eason2003use"
+key "ferguson1995effects,vanbalkom1998anabolic,eason2003use"
 
 \end_inset
 
