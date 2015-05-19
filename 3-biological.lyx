@@ -5997,6 +5997,12 @@ Alleviation of glucocorticoid myopathy by anabolic steroids
 \end_layout
 
 \begin_layout Standard
+The idea of alleviating the GC-induced catabolic state with AAS came less
+ than a year after the discovery of GC.
+ As 
+\end_layout
+
+\begin_layout Standard
 In vitro studies have described androgens ability to interfere with the
  binding of Dexa to GR.
  The Kd for GR-Dexa association is below nanomolar range
@@ -6079,10 +6085,15 @@ key "zhao2008testosterone"
 \end_layout
 
 \begin_layout Standard
-As described in the clinical studies section, hypercortisolism reduces endogenou
-s T levels.
- This change is less detectable in animals, where physiological ranges of
- endogenous T have not been defined and appear to be absent.
+Hypercortisolism reduces endogenous T levels in male rats, thus leading
+ to ampler loss of muscle than in females, which experience T upregulation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "prezant1997gender-specific"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
