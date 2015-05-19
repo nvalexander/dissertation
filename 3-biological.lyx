@@ -6113,18 +6113,18 @@ key "ferguson1995effects,vanbalkom1998anabolic,eason2003use"
 \end_layout
 
 \begin_layout Standard
-T is not required for IGF-I upregulation after exercise
+In the era of modern molecular biology, a few studies investigated the intercati
+n of AAS and GC by measuring the changes in one when the other is altered.
+ An interaction at the level of receptors cannot be excluded.
+ In skeletal muscle, GR mRNA and binding activity are increased upon castration
 \begin_inset CommandInset citation
 LatexCommand citep
-key "kvorning2007suppression"
+key "ye2014transcriptional,dubois1984perineal"
 
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-Dexa reduces the expression of AR in skeletal muscle
+, suggesting a way by which castration causes muscle atrophy.
+ Conversely, Dexa reduces the expression of AR in skeletal muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "inder2010dexamethasone"
@@ -6132,32 +6132,7 @@ key "inder2010dexamethasone"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-T re-establishes the percentage of ribosomes that are involved in translation
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bullock1968effects"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-T represses Dexa's activation of the MAFbx promoter
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhao2008testosterone"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Hypercortisolism reduces endogenous T levels in male rats, thus leading
+ Hypercortisolism reduces endogenous T levels in male rats, thus leading
  to ampler loss of muscle than in females, which experience T upregulation
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -6166,6 +6141,8 @@ key "prezant1997gender-specific"
 \end_inset
 
 .
+ Sexual dimorphism in animal models confirm that males stand to benefit
+ more from AAS therapy in GAML.
 \end_layout
 
 \begin_layout Standard
@@ -6192,12 +6169,14 @@ key "rigamonti2009muscle,wu2012nandrolone"
 \end_layout
 
 \begin_layout Standard
-The reverse may explain in part loss of muscle after male castration.
- In skeletal muscle, glucocorticoid receptor mRNA and binding activity are
- increased upon castration
+The other effector of GAML is the Akt axis.
+\end_layout
+
+\begin_layout Standard
+T is not required for IGF-I upregulation after exercise
 \begin_inset CommandInset citation
 LatexCommand citep
-key "ye2014transcriptional,dubois1984perineal"
+key "kvorning2007suppression"
 
 \end_inset
 
@@ -6205,8 +6184,25 @@ key "ye2014transcriptional,dubois1984perineal"
 \end_layout
 
 \begin_layout Standard
-YOU MUST SEE PMID: 19359918.
- MY EXP BUT WITH RATS.
+T re-establishes the percentage of ribosomes that are involved in translation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bullock1968effects"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+T represses Dexa's activation of the MAFbx promoter
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhao2008testosterone"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
