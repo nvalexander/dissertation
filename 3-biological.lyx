@@ -6205,6 +6205,71 @@ The other effector of GAML is the Akt axis.
 \end_layout
 
 \begin_layout Standard
+Sheng laboratory describes the effect of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa and/or plus 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ T
+\begin_inset CommandInset citation
+LatexCommand citep
+key "yin2009regulation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 Dalton laboratory account describes the effect of 
 \begin_inset ERT
 status open
@@ -6213,7 +6278,7 @@ status open
 
 
 \backslash
-SI{20}{
+SI{600}{
 \backslash
 micro
 \backslash
@@ -6267,8 +6332,18 @@ key "jones2010effects"
 \end_inset
 
 .
- With these doses, T reliably reverses losses in muscle mass induced by
- Dexa.
+ With these doses, T reliably reverses losses in muscle and body mass induced
+ by Dexa.
+ While Dexa downregulates IGF-I, T co-administration upregulates it beyond
+ basal levels in levator ani.
+ In other muscles, IGF-I downregulation is merely partially reversed.
+ Possibly as a consequence, T addition reduces atrogene expression to basal
+ levels, although more reliably in extraperineal muscles.
+ In levator ani, T reverses losses of FOXO and Akt phosphorylation.
+\end_layout
+
+\begin_layout Standard
+Shen laboratory account confirms most of 
 \end_layout
 
 \begin_layout Standard
