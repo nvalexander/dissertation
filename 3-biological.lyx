@@ -92,7 +92,7 @@ knitr
 \begin_body
 
 \begin_layout Chapter
-BIOLOGICAL PREMISES
+Biological premises
 \end_layout
 
 \begin_layout Section
@@ -6113,7 +6113,9 @@ key "ferguson1995effects,vanbalkom1998anabolic,eason2003use"
 \end_layout
 
 \begin_layout Standard
-One early study found T re-establishes the percentage of ribosomes that
+The mechanism by which AAS accomplishes muscle protection remains unclear
+ to date.
+ One early study found T re-establishes the percentage of ribosomes that
  are involved in translation
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -6122,21 +6124,21 @@ key "bullock1968effects"
 \end_inset
 
 .
- Two later studies on L6 myotubes stated that AAS cannot reverse the downregulat
-ion of protein synthesis induced by Dexa in L6
+ Two later studies on L6 and another on C2C12 myotubes stated that AAS cannot
+ reverse the downregulation of protein synthesis induced by Dexa in L6
 \begin_inset CommandInset citation
 LatexCommand citep
-key "ballard1983effects,roeder1986influence"
+key "ballard1983effects,roeder1986influence,desler1996effects"
 
 \end_inset
 
 .
+ The effects of T on protein degradation remain unexplored.
 \end_layout
 
 \begin_layout Standard
-In the era of modern molecular biology, a few studies investigated the interacti
-on of AAS and GC, by measuring the changes in one signal when the other
- is altered.
+A few studies investigated the interaction of AAS and GC, by measuring the
+ changes in one signal when the other is altered.
  An interaction at the level of receptors cannot be excluded.
  In skeletal muscle, GR mRNA and binding activity are increased upon castration
 \begin_inset CommandInset citation
@@ -6168,7 +6170,9 @@ key "prezant1997gender-specific"
 \end_layout
 
 \begin_layout Standard
-Myostatin promoter contains putative androgen responsive elements
+In the absence of direct interference, studies sought downstream effectors
+ at which T could prevent Dexa's program.
+ Myostatin promoter contains putative androgen responsive elements
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ma2003glucocorticoid-induced"
@@ -6192,6 +6196,10 @@ key "rigamonti2009muscle,wu2012nandrolone"
 
 \begin_layout Standard
 The other effector of GAML is the Akt axis.
+ In the era of immunoblot, three laboratories published studies of co-administra
+tion of AAS and GC.
+ All three converged towards describing an reversal of Akt pathway inhibition.
+ 
 \end_layout
 
 \begin_layout Standard
