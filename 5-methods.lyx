@@ -403,6 +403,75 @@ Measurement of muscle protein synthesis and degradation
 Enzymatic assays
 \end_layout
 
+\begin_layout Standard
+Chymotrypsin-like proteasome enzymatic activity was measured using the 20S
+ Proteasome Activity Assay kit (Chemicon International, Temecula, California).
+ For each animal and muscle, 25 mg powdered muscle (30 mg) was extracted
+ with 8 mL/g tissue of lysis buffer containing 150 mM NaCl, 50 mM HEPES
+ (pH 7.4), 5 mM EDTA, and 1% Triton X-100, by slowly rotating the tubes at
+ 4°C for 30 minutes, with vortexing every 10 minutes.
+ The extract was clarified by centrifugation at at 10,000 g, 10 minutes,
+ 4°C.
+ The clarified extract was collected and stored at 4°C for an hour, while
+ its total protein concentration was determined using the BCA method (discussed
+ in a dedicated section).
+ Next, the clarified extract were diluted to match the lowest total protein
+ concentration with lysis buffer.
+ Per kit manufacturer instructions, 80 uL extract (depending on muscle,
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SIrange{300}{600}{
+\backslash
+micro
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ total protein) were mixed, in 96-well plate wells, with 10 uL proprietary
+ assay buffer and 10 uL fluorogenic proteasome substrate, Suc-LLVY-7-amino-4-met
+hylcoumarin, 500 uM stock.
+ This was done in duplicates for each sample, and for a negative control
+ consisting only of lysis bufer.
+ The plate was sealed and incubated at 37°C for 30 minutes.
+ Next, fluorescence measured with a Saphire multi-well plate reader (Tecan,
+ Männedorf, Switzerland) with excitation at 380 nm and emission at 460 nm.
+ Background fluorescence, including substrate, was subtracted from sample
+ measurements.
+ Preliminary tests with manufacturer's positive control and muscle lysate
+ indicated that 30 minutes fluorescence measured with optimal gain is proportion
+al with the rate of fluorescence change and with the volume of sample.
+ Thus, more detailed kinetics were not needed.
+\end_layout
+
+\begin_layout Standard
+Lysosome enzymatic activity was measured in roughly similar protocol, using
+ Cathepsin L Activity Fluorometric Assay kit (Abcam)
+\end_layout
+
+\begin_layout Standard
+was used to quantify lysosome activity.
+ Frozen samples (20–30 mg) were pulverized as above and then lysed in the
+ lysis buffer pro- vided by the manufacturer.
+ Samples were incubated at 4°C for 30 minutes, mixed every 10 minutes, and
+ then cen- trifugedat4°Cfor10minutesat10000 rpm.
+ Protein concentration of the sol- uble fraction was determined as above.
+ The cathepsin L activity was measured at37°C,usingthepreferredcathepsinL
+ substrate sequence FR conjugated with the amino-4-trifluoromethyl coumarin
+ (0.2mM final concentration) provided with the kit.
+ For both assays, the fluorescence was monitored for 2 hours at 380/460
+ nm (20S proteasome) and at 400/505 nm (cathepsin L) in a 96-well plate,
+ using a microplate reader (Tecan).
+ 
+\end_layout
+
 \begin_layout Section
 Gene expression
 \end_layout
