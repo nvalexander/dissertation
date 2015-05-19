@@ -2689,7 +2689,6 @@ key "prezant1997gender-specific"
 \end_inset
 
 .
- Dexa slows the rate of growth in 
 \end_layout
 
 \begin_layout Standard
@@ -2703,7 +2702,7 @@ key "minet-quinard2000induction,bowes1996effect"
 
 .
  Given that later time points are marred by feedback mechanisms and by animal
- mortality, almost no published experiment on rats extended past 10 days.
+ mortality, almost no published experiment on rats extends past two weeks.
  For an animal weighing 300 times less and aging 20 times faster than humans,
  the common 5-10 days experiments are comparable to chronic exposure in
  humans.
@@ -2742,7 +2741,8 @@ day}
 The next sections are informed by experiments with chronic (5-10 days) Dexa
  on adult (not aged) male rats, which are the best model from human male
  steroid myopathy.
- The few exceptions, mainly transgenic mice, will be identified as such.
+ The few exceptions, mainly transgenic mice and acute treatments, will be
+ identified as such.
 \end_layout
 
 \begin_layout Section
@@ -6075,6 +6075,11 @@ key "snochowski1980characterization"
 .
  Therefore, barring allosteric effects, the direct competition between the
  two steroids remains only of theoretical importance.
+\end_layout
+
+\begin_layout Standard
+The third question that co-administration studies tried to solve was whether
+ T myoprotective action has fiber type specificity.
 \end_layout
 
 \begin_layout Standard
