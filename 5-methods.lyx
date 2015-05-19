@@ -662,11 +662,26 @@ description "polyacrylamide gel electrophoresis"
  The separating section has a variable concentration of acrylamide (12%
  for low molecular weight unknowns, 8% for others), and 400 mM Tris pH 8.8.
  Both sections included 1 g/L SDS, and polymerized by the addition of 1
- g/L ammonium persulfate and 0.4-1‰ v/v tetramethylethylenediamine.
+ g/L ammonium persulfate and 0.4‰ v/v tetramethylethylenediamine.
+ In order to settle and migrate, lysates were mixed 1:1 with PAGE sample
+ buffer, which contained 30 mM Tris pH 6.8, 10 g/L SDS, 100‰ v/v glycerol,
+ 0.05 g/L bromophenol blue, and 350 mM DTT.
+ The mixture of sample and sample bufer was incubated for 5 minutes at 95°C,
+ then loaded on the gel, with equal volumes and masses of total protein
+ in each well.
+ Electrophoresis was performed in a Bio-rad Miniprotean Tetra cell, at constant
+ 80 volts, using an electrode buffer with 14.4 g/L glycine, 3 g/L Tris base,
+ 10 g/L SDS.
 \end_layout
 
 \begin_layout Standard
-In order to settle and migrate, lysates were mixed with PAGE sample buffer.
+From the gel, resolved proteins were transfered to nitrocellulose membranes
+ using a Bio-rad Mini-trans blot casette, at 8 V/cm constant overnight at
+ 4°C.
+ The Towbin transfer buffer had 200‰ v:v methanol, 25 mM Tris pH 8.3, 192
+ mM glycine.
+ Quality of transfer was assessed by temporary Ponceau staining (20‰ Ponceau
+ S in 300‰ trichloroacetic acid and 300‰ sulfosalicylic acid).
 \end_layout
 
 \begin_layout Section
