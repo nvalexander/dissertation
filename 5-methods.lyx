@@ -680,8 +680,52 @@ From the gel, resolved proteins were transfered to nitrocellulose membranes
  4°C.
  The Towbin transfer buffer had 200‰ v:v methanol, 25 mM Tris pH 8.3, 192
  mM glycine.
- Quality of transfer was assessed by temporary Ponceau staining (20‰ Ponceau
+\end_layout
+
+\begin_layout Standard
+Quality of transfer was assessed by temporary Ponceau staining (20‰ Ponceau
  S in 300‰ trichloroacetic acid and 300‰ sulfosalicylic acid).
+ At this time, using indications from the molecular weight standards, the
+ membrane was sectioned, thus allowing probing with multiple antibodies.
+\end_layout
+
+\begin_layout Standard
+Ponceau was removed by washing twice, with shaking 5 minutes at room temperature
+, in TBST (130 mM sodium chloride, 20 mM Tris pH 7.5, 1‰ v/v Tween-20).
+ The membranes were blocked by shaking for one hour in blocking solution
+ (TBST with 5% fat-free instant milk) at room temperature.
+ Next, membranes were probed by shaking overnight at 4 C in TBST with 50
+ g/L BSA and primary antibodies of choice (listed later).
+ Next day, the membranes were washed in TBST, twice briefly and three times
+ with 5 minutes shaking at room temperature.
+ The washed membranes were then probed by shaking at room temperature for
+ an hour in a solution with TBST, 5% fat-free instant milk, and the secondary
+ antibody of choice (listed later).
+ The membranes were washed as before.
+ 
+\end_layout
+
+\begin_layout Standard
+Next, the membranes were probed with proprietary Amersham ECL Western Blotting
+ Detection Reagent (GE Healthcare).
+ Briefly, the two reagent components were warmed to room temperature, mixed
+ 1:1, and layered on the nitrocellulose membrane.
+ The membrane was incubated for 1 minute, then excess liquid was drained.
+ The membrane was placed in the film cassette.
+ In a dark room, under red light, a photographic film was placed on the
+ nitrocellulose membrane.
+ Exposure was between 10 seconds and 5 minutes, depending on the strength
+ of the signal.
+ After developing the first image, longer or shorter exposures were used,
+ as needed.
+\end_layout
+
+\begin_layout Standard
+At times, antibodies were stripped by incubation with shaking for 45 minutes
+ at 50°C in a tight container with pre-warmed stripping buffer (20 g/L SDS,
+ 60 mM Tris pH 6.8, 100 mM beta-mercaptoethanol).
+ Stripped membranes were rinse with water, washed with TBST, re-blocked,
+ and re-probed.
 \end_layout
 
 \begin_layout Section
