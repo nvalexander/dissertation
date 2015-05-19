@@ -829,6 +829,25 @@ Measurement of muscle protein synthesis and degradation
 \end_layout
 
 \begin_layout Standard
+Statistics
+\end_layout
+
+\begin_layout Standard
+Results are presented as means ± standard error of the mean.
+ In plots, points represent means, while error bars are standard error of
+ the mean.
+ Experiments with more than two groups were analyzed by Kruskal-Wallis test
+ for overall non-parametric analysis of variance.
+ If the test was not significant, no mention of significance was made in
+ text or figures.
+ If the test was significant, groups were compared in pairs using post-hoc
+ Dunn's test.
+ In a plot, means with the same letter are not significantly different from
+ each other.
+ A 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch childonly
 status open
 
