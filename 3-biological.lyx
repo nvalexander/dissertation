@@ -6199,6 +6199,33 @@ key "rigamonti2009muscle,wu2012nandrolone"
 
 \begin_layout Standard
 The other effector of GAML is the Akt axis.
+ Further suggesting a role for Akt, multiple models of hypertrophy in humans
+ and rodents correlate with increased muscle IGF-I expression
+\begin_inset CommandInset citation
+LatexCommand citep
+key "urban1995testosterone,lewis2002role"
+
+\end_inset
+
+.
+ However, T is dispensable for IGF-I upregulation during exercise-induced
+ muscle hypertrophy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kvorning2007suppression"
+
+\end_inset
+
+.
+ Conversely, IGF-I signaling deprivation only halves T-induced muscle restoratio
+n after castration-induced atrophy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "serra2013effects"
+
+\end_inset
+
+.
  In the era of immunoblot, only three laboratories published studies of
  co-administration of AAS and GC.
  All three converged towards describing an reversal of Akt pathway inhibition.
@@ -6432,18 +6459,20 @@ day}
 
 \end_inset
 
- T.
-\end_layout
-
-\begin_layout Standard
-T is not required for IGF-I upregulation after exercise
+ T
 \begin_inset CommandInset citation
 LatexCommand citep
-key "kvorning2007suppression"
+key "wu2010redd1"
 
 \end_inset
 
 .
+ Many of the genes found in the unbiased approach are consistent with the
+ above mentioned changes in Akt signaling, including transcriptional reversal
+ at the levels of IGFBP, FOXO1, p85, 4E-BP1.
+ The overlap is not perfect, with important presumptive effectors, including
+ IGF-I and MAFbx, failing to pass amplitude and statistical significance
+ thresholds.
 \end_layout
 
 \begin_layout Standard
