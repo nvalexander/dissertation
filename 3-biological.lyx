@@ -6156,23 +6156,18 @@ key "ma2003glucocorticoid-induced"
 \end_inset
 
 .
- In intact animals, T does not alter myostatin
+ In intact animals and even in atrophic muscle after spinal cord injury,
+ T does not alter myostatin
 \begin_inset CommandInset citation
 LatexCommand citep
-key "rigamonti2009muscle"
+key "rigamonti2009muscle,wu2012nandrolone"
 
 \end_inset
 
 .
- In contrast, in spinal cord injury, the AAS nandrolone partly alleviates
- muscle atrophy and diminishes myostatin expression
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wu2012nandrolone"
-
-\end_inset
-
-.
+ Myostatin changes in co-administration of AAS and GC has not been investigated.
+ Given myostatin's limited role in GAML, it is unlikely myostatin repression
+ could contribute to the ample alleviation provided by T.
 \end_layout
 
 \begin_layout Standard
