@@ -6006,7 +6006,19 @@ Alleviation of glucocorticoid myopathy by anabolic steroids
 \end_layout
 
 \begin_layout Standard
-The idea of alleviating the GC-induced catabolic state with AAS came less
+Human studies demonstrated that AAS addition to chronic Dexa benefits male
+ adult patients, by reducing their loss of muscle and improving their quality
+ of lifes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "crawford2003randomized"
+
+\end_inset
+
+.
+ The idea of alleviating the CS by AAS therapy came two years after the
+ discovery of an affordable source of T.
+ In the case of exogenous hypercortisolism, the same idea surfaced less
  than a year after the discovery of GC.
  Two years later, Courier and Marois report the first replication of the
  myoprotective effect in rats
@@ -6017,15 +6029,14 @@ key "courrier1952relations"
 \end_inset
 
 .
- For a long time, the idea behind the combination rarely that of preventing
- GM.
- Most often, it was hoped that the combination of AAS and GC, having androgenic,
- but no anabolic potency, would show the way towards splitting the anabolic
- from the androgenic principle in T.
+ For a long time, during the second dark age of steroids, the combination
+ of AAS and GC, with androgenic, but without anabolic potency, was investigated
+ in the hope that it would show the way towards splitting the anabolic from
+ the androgenic principle in T.
 \end_layout
 
 \begin_layout Standard
-Another, similarly theoretic question, was the nature of the nuclear receptor.
+Another, related, theoretic question was the nature of the nuclear receptor.
  At the time when it was not clear how many species of nuclear receptors
  there are, precise measurements tried to find putative interference between
  the various steroids, with Dexa and T among the most studied compounds.
