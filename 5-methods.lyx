@@ -387,14 +387,38 @@ Enzymatic assays
 Chymotrypsin-like proteasome enzymatic activity was measured using the 20S
  Proteasome Activity Assay kit (Chemicon International, Temecula, California).
  For each animal and muscle, 25 mg powdered muscle was extracted with 8
- mL/g tissue of lysis buffer containing 150 mM sodium chloride, 50 mM HEPES
- (pH 7.4), 5 mM EDTA, and 1% Triton X-100, by slowly rotating the tubes at
- 4°C for 30 minutes, with vortexing every 10 minutes.
+ mL/g tissue of lysis buffer containing 150 mM sodium chloride, 50 mM 4-(2-hydro
+xyethyl)-1-piperazineethanesulfonate 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HEPES"
+description "4-(2-hydroxyethyl)-1-piperazineethanesulfonate"
+
+\end_inset
+
+ (pH 7.4), 5 mM sodium ethylenediaminetetraacetate (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "EDTA"
+description "ethylenediaminetetraacetate"
+
+\end_inset
+
+), and 1% Triton X-100, by nutation at 4°C for 30 minutes, with vortexing
+ every 10 minutes.
  The extract was clarified by centrifugation at at 10,000 g, 10 minutes,
  4°C.
  The clarified extract was collected and stored at 4°C for an hour, while
- its total protein concentration was determined using the BCA method (discussed
- in a dedicated section).
+ its total protein concentration was determined using the bicinchoninic
+ acid (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "BCA"
+description "bicinchoninic acid"
+
+\end_inset
+
+) method (detailed in the immunoblot section).
  Next, the clarified extract were diluted to match the lowest total protein
  concentration with lysis buffer.
  Per kit manufacturer instructions, 80 uL clarified extract (depending on
@@ -416,8 +440,8 @@ gram}
 \end_inset
 
  total protein) were mixed, in 96-well plate wells, with 10 uL proprietary
- assay buffer and 10 uL fluorogenic proteasome substrate, Suc-LLVY-7-amino-4-met
-hylcoumarin, 500 uM stock.
+ assay buffer and 10 uL fluorogenic proteasome substrate, Succynyl-Leu-Leu-Val-T
+yr-7-amino-4-methylcoumarin, 500 uM stock.
  This was done in duplicates for each sample, and for a negative control
  (
 \begin_inset Quotes eld
@@ -446,7 +470,7 @@ Lysosome enzymatic activity was measured in a similar protocol, using Cathepsin
  L Activity Fluorometric Assay kit (Abcam plc, Cambridge, England).
  For each animal and muscle, 25 mg powdered muscle was extracted with 8
  mL/g tissue of proprietary lysis buffer, clarified, stored, and assayed
- for total protein, in the same manner as in the previous paragraph.
+ for total protein, in the same manner as for the proteasome activity assay.
  Extracts were diluted to the lowest total protein concentration, using
  the same lysis bufer that was used to extract them.
  Per kit manufacturer instructions, 48 uL clarified extract (depending on
@@ -491,9 +515,17 @@ background
 Calpain enzymatic activity was measured in a similar protocol, using Cathepsin
  L Activity Fluorometric Assay kit (Promega, Madison, Wisconsin).
  For each animal and muscle, 25 mg powdered muscle was extracted with 8
- mL/g tissue of lysis buffer containing 150 mM NaCl, 10 mM HEPES (pH 7.4),
- 10 mM DTT, 1 mM EDTA, and 1% Triton X-100, as described for proteasome
- activity assay.
+ mL/g tissue of lysis buffer containing 150 mM sodium chloride, 10 mM HEPES
+ pH 7.4, 10 mM dithiothreitol (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DTT"
+description "dithiothreitol"
+
+\end_inset
+
+), 1 mM EDTA, and 1% Triton X-100, as described for proteasome activity
+ assay.
  Extracts were clarified, stored, and assayed for total protein concentration,
  as described for the proteasome activity assay.
  Extracts were diluted to the lowest total protein concentration, using
@@ -518,7 +550,8 @@ gram}
 
  total protein) were mixed, in 96-well plate wells, with 50 uL proprietary
  assay buffer, containing lyophilized luciferase, ATP, 80 uM pro-luminescent
- calpain substrate, Suc-LLVY-aminoluciferase, and 8 uM CaCl2.
+ calpain substrate, Suc-Leu-Leu-Val-Tyr-aminoluciferase, and 8 uM calcium
+ chloride.
  This was done in duplicates for each sample, and for a negative control
  (
 \begin_inset Quotes eld
@@ -544,9 +577,17 @@ Immunoblot
 
 \begin_layout Standard
 For each animal and muscle, 25 mg powdered muscle was extracted with 4 mL/g
- tissue of RIPA buffer, containing 100‰ v/v glycerol, 10‰ v/v NP-40, 10
- g/L w/v NaDOC, 150 mM NaCl, 20 mM Tris pH 7.5, 1 g/L sodium dodecylsulfate
- (
+ tissue of radioimmunoprecipitation assay (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RIPA"
+description "radioimmunoprecipitation assay"
+
+\end_inset
+
+) buffer, containing 150 mM sodium chloride, 20 mM Tris pH 7.5, 100‰ v/v
+ glycerol, 10‰ v/v NP-40, 10 g/L w/v sodium deoxycholate, 1 g/L sodium dodecylsu
+lfate (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SDS"
@@ -554,13 +595,25 @@ description "sodium dodecylsulfate"
 
 \end_inset
 
-), 1 mM EDTA, 1 mM EGTA, 10 mg/L leupeptin, 10 mg/L pepstatin, 10 mg/L aprotinin
-, 1 mM PMSF, 1 mM NaVO4, 5 mM NaF.
- Cell culture studies
+), 1 mM EDTA, 1 mM sodium ethyleneglycol tetraacetate, 10 mg/L leupeptin,
+ 10 mg/L pepstatin, 10 mg/L aprotinin, 1 mM phenylmethanesulfonylfluoride,
+ 1 mM sodium orthovanadate, 5 mM sodium fluoride.
+ The mixture was nutated at 4C for 30 minutes, with vortexing every 10 minutes.
+ The suspensions are clarified by centrifugation at 12,000g, 15 minutes,
+ at 4C.
+ The supernatant is collected, aliquoted, and stored for months at -80C.
+\end_layout
+
+\begin_layout Standard
+Total protein content was measured 
 \end_layout
 
 \begin_layout Section
-Quantitative PCR
+Cell culture studies
+\end_layout
+
+\begin_layout Section
+Qquantitative real-time polymerase chain reaction
 \end_layout
 
 \begin_layout Section
