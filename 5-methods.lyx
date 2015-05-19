@@ -826,8 +826,17 @@ Cell culture studies
 C2C12 cells were obtained from ATCC (Manassas, Virginia).
  They were grown on solid substrate, on cell culture coated plates, in atmospher
 ic air, supplemented to 5% CO2, at 37°C.
- The liquid growth medium was 0.2-0.5 mL/cm2 DMEM supplemented with 100‰ v/v
- fetal bovine serum (
+ The liquid growth medium was 0.2-0.5 mL/cm2 pyruvate-free Dulbecco's Modified
+ Eagle Medium (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DMEM"
+description "Dulbecco's Modified Eagle Medium"
+
+\end_inset
+
+; VWR International, Radnor, Pennsylvania), supplemented with 100‰ v/v fetal
+ bovine serum (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "FBS"
@@ -835,9 +844,12 @@ description "fetal bovine serum"
 
 \end_inset
 
-) and penicillin/streptomycin, changed every other day.
+), 100 units/mL penicillin, and 100 mg/L streptomycin, changed every other
+ day.
  Cells were propagated in an undifferentiated state, by splitting 1:40 at
  ⅔ confluence.
+ At seeding, cells were tested fro viability with trypan blue, counted on
+ a hemocytometer, and were re-seeded at about 5,000 cells/cm2.
 \end_layout
 
 \begin_layout Section
