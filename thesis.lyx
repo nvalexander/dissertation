@@ -113,11 +113,6 @@ codedir <- normalizePath(file.path(opts_knit$get("root.dir")))
 
 \begin_layout Plain Layout
 
-datadir <- normalizePath(file.path(opts_knit$get("root.dir"),"data"))
-\end_layout
-
-\begin_layout Plain Layout
-
 source(file.path(codedir, "thesis.R"))
 \end_layout
 

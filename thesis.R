@@ -7,6 +7,13 @@ library(methods)
 library(xtable)
 options(bitmapType="cairo")
 
+codedirpath <- dirname(
+  tryCatch(normalizePath(parent.frame(2)$ofile),  # works when using source
+           error=function(e) # works when using R CMD
+             normalizePath(unlist(strsplit(commandArgs()[grep('^--file=',
+                                                              commandArgs())], '='))[2]))
+)
+
 potentialConditionColumnNames <- c(
   "condition",
   "treatment"
@@ -1212,5 +1219,5 @@ loadPMID12519877 <- function(datadirpath){
   return(df1)
 }
 
-datadir <- normalizePath(file.path(opts_knit$get("root.dir"),"data"))
+datadir <- normalizePath(file.path(codedirpath, "data"))
 PMID12519877data <- loadPMID12519877(datadir)
