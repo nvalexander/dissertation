@@ -13172,11 +13172,10 @@ Dexa induces muscle atrophy reversible by AAS co-administration
 \end_layout
 
 \begin_layout Standard
-When mice were treated with the same Dexa doses that were reported to induce
- muscle atrophy in rats, the effect size was smaller that the experimental
- error (data not shown).
- Given that previous studies describe muscle atrophy in mice, I resorted
- to a higher dose.
+Mice treated with the Dexa doses that were reported to induce muscle atrophy
+ in rats did not exhibit significant muscle loss (data not shown).
+ Higher doses of Dexa were used until effect size became stronger than experimen
+tal error.
 \end_layout
 
 \begin_layout Standard
@@ -13234,7 +13233,7 @@ todo
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "thesis,thesis2"
+bibfiles "thesis"
 options "bibtotoc,nihunsrt"
 
 \end_inset
