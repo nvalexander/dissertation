@@ -1185,8 +1185,42 @@ Immunofluorescence microscopy
 \end_layout
 
 \begin_layout Standard
-Images were acquired with an Eclipse TE2000-E fluorescence microscope (Nikon
- Instruments, Melville, New York).
+After the experimental treatments, the adherent cells were washed twice,
+ on ice, with ice-cold PBS.
+ The cells were covered with cold 1:1 v:v ethanol:acetone, and incubated
+ at -20C for 20 minutes.
+ This process both fixated and permeabilized the cells.
+ The liquid was removed, and the cells were rinsed with PBS.
+\end_layout
+
+\begin_layout Standard
+On the first day of staining, PBS was removed, and cells were washed briefly
+ twice with PBS.
+ For blocking purposes, cells were incubated for 40 minutes at room temperature
+ under 1% BSA in PBS.
+ The blocking liquid was then replaced with the primary antibody solution,
+ that is, the same blocking solution, supplemented with 1:20 hybridoma cell
+ culture medium containing the anti-myosin heavy chain antibody MF-20.
+ Cells were probed with the primary antibody overnight at 4C.
+\end_layout
+
+\begin_layout Standard
+Next day, the cells were incubated twice 5 minutes each with the blocking
+ solution, to wash unbound primary antibody.
+ Cells were then probed with the secondary antibody, that is, blocking solution
+ supplemented with 1:500 anti-mouse antibody conjugated with rhodamine,
+ and with 1 mg/L DAPI.
+ The cells were incubated 1h at room temperature in the dark, then briefly
+ washed 4 times with PBS.
+ Cells covered in PBS were store at 4C or observed with an Eclipse TE2000-E
+ fluorescence microscope (Nikon Instruments, Melville, New York).
+\end_layout
+
+\begin_layout Standard
+Cell contours were obtained using Magnetic Lasso in Adobe Photoshop CS4.
+ The outlines were pasted in another file, that was read in Matlab 13.
+ An automated script determined multiple estimates of the diameter, and
+ calculated an average diameter for each fiber.
 \end_layout
 
 \begin_layout Section
@@ -1571,6 +1605,8 @@ liter}
  scintillation counter (PerkinElmer) for 3 minutes per sample.
  Counts per minute were converted to disintegrations per minute using a
  standard curve generated using the same solvents as the samples.
+ From the same pellet suspension, aliquots were used to measure total protein
+ concentration by BCA method, as described in the immunoblot section.
 \end_layout
 
 \begin_layout Section
