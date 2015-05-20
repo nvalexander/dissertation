@@ -893,7 +893,35 @@ description "horse serum"
 ), which was charcoal / dextran stripped of hormones (Gemini Bio-Products).
  After two days in differentiation medium, myotubes form, while myoblast
  become quiescent.
- The medium was then changed very day for five more days.
+ The medium was then changed every day for five more days, leading to nearly
+ complete elimination of undifferentiated and mononuclear cells.
+\end_layout
+
+\begin_layout Standard
+Dexa and Testo were delivered from 400X stocks in ethanol, at various concentrat
+ions, as indicated at each experiment in the results section.
+\end_layout
+
+\begin_layout Standard
+Protein synthesis was inhibited with 100 µM cycloheximide from 360X water-based
+ stock, or 5 µM puromycin dihydrochloride from 500X water-based stock.
+ Proteasomal activity was inhibited in cell culture with 5 µM MG132 from
+ a 80X working stock in differentiation medium, which in turn is derived
+ from a 8,000X DMSO-based stock.
+ Lysosomal activity was inhibited with 25 µM chloroquine from a 2,000X water-bas
+ed stock.
+ Calpain and cathepsin activity was inhibited by 10 µM E-64, from a 100X
+ water-based stock.
+ IGF-1R was inhibited by 50 nM picropodophyllin (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PPP"
+description "picropodophyllin"
+
+\end_inset
+
+), from a 200X working stock in differentiation medium, which in turn is
+ derived from a 1,000X DMSO-based stock.
 \end_layout
 
 \begin_layout Section
