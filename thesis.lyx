@@ -108,7 +108,7 @@ preamble, echo = FALSE, warning = FALSE, message = FALSE
 
 \begin_layout Plain Layout
 
-codedir <- normalizePath(file.path(opts_knit$get("root.dir"),"code"))
+codedir <- normalizePath(file.path(opts_knit$get("root.dir")))
 \end_layout
 
 \begin_layout Plain Layout
@@ -118,17 +118,7 @@ datadir <- normalizePath(file.path(opts_knit$get("root.dir"),"data"))
 
 \begin_layout Plain Layout
 
-source(file.path(codedir, "commonfuncs.R"))
-\end_layout
-
-\begin_layout Plain Layout
-
-source(file.path(codedir, "PMID12519877.R"))
-\end_layout
-
-\begin_layout Plain Layout
-
-PMID12519877data <- loadPMID12519877(datadir)
+source(file.path(codedir, "thesis.R"))
 \end_layout
 
 \begin_layout Plain Layout

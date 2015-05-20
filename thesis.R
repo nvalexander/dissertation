@@ -1205,3 +1205,12 @@ appendChangesColumn <- function(inputdf,
   }
   return(outputdf)
 }
+
+loadPMID12519877 <- function(datadirpath){
+  df1 <- read.csv(file.path(datadirpath, "PMID12519877", "proteasomeactivity.csv"), header = FALSE, colClasses = c(NA, "NULL", NA))
+  row.names(df1) <- df1$V1
+  return(df1)
+}
+
+datadir <- normalizePath(file.path(opts_knit$get("root.dir"),"data"))
+PMID12519877data <- loadPMID12519877(datadir)
