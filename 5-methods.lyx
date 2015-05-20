@@ -144,7 +144,22 @@ Male, 6-8 week old (young adult), C57Bl/6J mice were purchased from The
  Mice were acclimated for 3-7 days between delivery and initiation of the
  experimental interventions.
  Before and during the experiments, mice were maintained in a temperature-contro
-lled facility, at 21°C, with 12 hour light / 12 dark cycles.
+lled facility, at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{21}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+, with 12 hour light / 12 dark cycles.
  Mice were offered water and chow (Purina, Richmond, Indiana) ad libitum.
 \end_layout
 
@@ -184,7 +199,7 @@ liter}
 
 \end_inset
 
- USP-grade ethanol, which delivered either (A) 
+ grade ethanol, which delivered either (A) 
 \begin_inset ERT
 status open
 
@@ -275,11 +290,41 @@ description "Vehicle-only"
 \end_layout
 
 \begin_layout Standard
-Before the first injection and 24 hours after the last injection, mice lean
- and fat body mass was measured by nuclear magnetic resonance, using a Echo-MRI
- whole body composition analyzer (Echo Medical Systems, Houston, Texas).
+Before the first injection and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{24}{
+\backslash
+hour}
+\end_layout
+
+\end_inset
+
+ after the last injection, mice lean and fat body mass was measured by nuclear
+ magnetic resonance, using a Echo-MRI whole body composition analyzer (Echo
+ Medical Systems, Houston, Texas).
  In this procedure, mice are restrained inside a transparent plexiglass
- tube for 90 seconds, without sedation or anesthesia.
+ tube for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{90}{
+\backslash
+second}
+\end_layout
+
+\end_inset
+
+, without sedation or anesthesia.
 \end_layout
 
 \begin_layout Standard
@@ -309,8 +354,37 @@ gram}
 
  pentobarbital) intraperitoneal, followed by quick cervical dislocation.
  Blood was collected immediately after death through thoracotomy and cardiac
- puncture, incubated 15 minutes at room temperature, centrifugated 15 minutes,
- at 10,000 RCF, 4°C.
+ puncture, incubated 15 minutes at room temperature, centrifugated 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+, at 10,000 RCF, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
  Levator ani, gastrocnemius (a mixed muscle; see PMID: 8847313, PMID: 10090572,
  PMID: 22013216), tibialis anterior, quadriceps, and triceps brachii muscles
  were collected, weighted in wet state, flash-frozen by submersion in liquid
@@ -386,9 +460,26 @@ Enzymatic assays
 \begin_layout Standard
 Chymotrypsin-like proteasome enzymatic activity was measured using the 20S
  Proteasome Activity Assay kit (Chemicon International, Temecula, California).
- For each animal and muscle, 25 mg powdered muscle was extracted with 8
- mL/g tissue of lysis buffer containing 150 mM sodium chloride, 50 mM 4-(2-hydro
-xyethyl)-1-piperazineethanesulfonate 
+ For each animal and muscle, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+milli
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ powdered muscle was extracted with 8 mL/g tissue of lysis buffer containing
+ 150 mM sodium chloride, 50 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonate
+ 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HEPES"
@@ -404,12 +495,99 @@ description "ethylenediaminetetraacetate"
 
 \end_inset
 
-), and 1% Triton X-100, by nutation at 4°C for 30 minutes, with vortexing
- every 10 minutes.
- The extract was clarified by centrifugation at at 10,000 g, 10 minutes,
- 4°C.
- The clarified extract was collected and stored at 4°C for an hour, while
- its total protein concentration was determined using the bicinchoninic
+), and 1% Triton X-100, by nutation at 4°C for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{30}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+, with vortexing every 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+.
+ The extract was clarified by centrifugation at at 10,000 g, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ .
+ The clarified extract was collected and stored at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{-20}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+hour}
+\end_layout
+
+\end_inset
+
+, while its total protein concentration was determined using the bicinchoninic
  acid (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -452,7 +630,22 @@ background
 \end_inset
 
 ), containing lysis bufer instead of muscle extract.
- The plate was sealed and incubated at 37°C for 30 minutes.
+ The plate was sealed and incubated at 37°C for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{30}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+.
  Next, fluorescence was measured with a Saphire multi-well plate reader
  (Tecan, Männedorf, Switzerland) with excitation at 380 nm and emission
  at 460 nm.
@@ -504,7 +697,22 @@ background
 \end_inset
 
 ), containing lysis bufer instead of muscle extract.
- The plate was sealed and incubated at 37°C for 30 minutes.
+ The plate was sealed and incubated at 37°C for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{30}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+.
  Fluorescence was measured with excitation at 400 nm and emission at 505
  nm.
  Background fluorescence, including substrate, was subtracted from sample
@@ -562,9 +770,24 @@ background
 \end_inset
 
 ), containing lysis bufer instead of muscle extract.
- After 10 minutes of incubation at room temperature, steady state is reached,
- with a constant rate of free aminoluciferase production, which is immediately
- converted to free luciferin by the excess luciferase.
+ After 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ of incubation at room temperature, steady state is reached, with a constant
+ rate of free aminoluciferase production, which is immediately converted
+ to free luciferin by the excess luciferase.
  Luminescence was measured with a GeniosPro multi-well plate reader (Tecan,
  Männedorf, Switzerland) set at one sample per second.
  Background luminescence, including substrate, was subtracted from sample
@@ -576,8 +799,25 @@ Immunoblot
 \end_layout
 
 \begin_layout Standard
-For each animal and muscle, 25 mg powdered muscle was extracted with 4 mL/g
- tissue of radioimmunoprecipitation assay (
+For each animal and muscle, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+milli
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ powdered muscle was extracted with 4 mL/g tissue of radioimmunoprecipitation
+ assay (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "RIPA"
@@ -669,9 +909,9 @@ description "polyacrylamide gel electrophoresis"
  The mixture of sample and sample bufer was incubated for 5 minutes at 95°C,
  then loaded on the gel, with equal volumes and masses of total protein
  in each well.
- Electrophoresis was performed in a Bio-rad Miniprotean Tetra cell, at constant
- 80 volts, using an electrode buffer with 14.4 g/L glycine, 3 g/L Tris base,
- 10 g/L SDS.
+ Electrophoresis was performed in a Miniprotean Tetra cell (Bio-rad, Hercules,
+ California), at constant 80 volts, using an electrode buffer with 14.4 g/L
+ glycine, 3 g/L Tris base, 10 g/L SDS.
 \end_layout
 
 \begin_layout Standard
@@ -743,8 +983,24 @@ Quantitative real-time polymerase chain reaction
 \end_layout
 
 \begin_layout Standard
-For each animal and muscle, 25 mg powdered muscle was homogenized briefly
- in 1 mL Trizol (Life Technologies).
+For each animal and muscle, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+milli
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ powdered muscle was homogenized briefly in 1 mL Trizol (Life Technologies).
  The suspension was incubated 5 minutes at room temperature, then supplemented
  with 200 uL chloroform.
  The tube was shaken vigorously for 15 seconds, then incubated 3 minutes
@@ -787,7 +1043,7 @@ To obtain cDNA using Accuscript 1st Strand cDNA synthesis kit, 320 ng total
 
 \begin_layout Standard
 Specific cDNA amounts were measured with an 7500 Fast Real-Time PCR cycler
- (Applied Biosystems), using 96-well plates.
+ (Applied Biosystems, Foster City, California), using 96-well plates.
  Each unknown was measured in duplicates.
  Each well contained 1 uL total cDNA, 10 pmol each sense and anti-sense
  primer (listed later), and proprietary SybrGreen 2X.
@@ -938,7 +1194,8 @@ Measurement of muscle protein synthesis and degradation
 \end_layout
 
 \begin_layout Standard
-Cells were labelled with 
+Cells were labeled by incubation in differentiation medium supplemented
+ with 
 \begin_inset ERT
 status collapsed
 
@@ -959,8 +1216,9 @@ liter}
 
 \end_inset
 
- radioactive phenylalanine, starting at the times and for the durations
- specified at each experiment in the results section.
+ radioactive phenylalanine (PerkinElmer, Shelton, Connecticut), starting
+ at the times and for the durations specified at each experiment in the
+ results section.
  Cells were rinsed with PBS twice, then incubated with 
 \begin_inset ERT
 status collapsed
@@ -1022,17 +1280,69 @@ ce{CO2}
 \end_inset
 
 , to better remove extracelullar tracer.
- For chase experiments, PBS was then replaced with differentiation medium,
- for the durations specified at each experiment.
+ For chase experiments, PBS was then replaced with non-radioactive differentiati
+on medium, for the durations specified at each experiment.
  Chase experiments ended with a double rinse with PBS.
 \end_layout
 
 \begin_layout Standard
-Cells and media were collected separately, and each was fractionated with
+In all cases, cells and media were collected separately, and each was fractionat
+ed with trichloroacetic acid (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TCA"
+description "trichloroacetic acid"
+
+\end_inset
+
+).
+ Medium was removed from the plate, then supplemented with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{6}{
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ TCA, to a final 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.6}{
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
  TCA.
- Medium was removed from the plate, then supplemented with 100% TCA, until
- it reached 10% TCA.
- Cells were covered with 10% TCA.
+ Cells were covered with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.6}{
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ TCA.
  Both media and cells were then incubated overnight at 
 \begin_inset ERT
 status collapsed
@@ -1050,11 +1360,38 @@ degreeCelsius}
 
 .
  Next day, cells were scraped.
- The cell culture wells were rinsed with TCA, 
+ The cell culture wells were further scraped and rinsed with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.6}{
+\backslash
+molar}
 \end_layout
 
-\begin_layout Standard
-Protein suspensions were centrifugated at 15,000 RCF, 
+\end_inset
+
+ TCA.
+ Protein suspensions were centrifugated at 15,000 RCF, for 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+, at 
 \begin_inset ERT
 status collapsed
 
@@ -1070,7 +1407,22 @@ degreeCelsius}
 \end_inset
 
 .
- Pellets were washed with 10% TCA, and acetone, with incubation at 
+ Pellets were washed with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.6}{
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ TCA, and acetone, by resuspension, incubation at 
 \begin_inset ERT
 status collapsed
 
@@ -1085,8 +1437,7 @@ degreeCelsius}
 
 \end_inset
 
- and centrifugation as above.
- All three supernatants were pooled, and 
+ for 
 \begin_inset ERT
 status collapsed
 
@@ -1094,34 +1445,15 @@ status collapsed
 
 
 \backslash
-SI{100}{
+SI{15}{
 \backslash
-micro
-\backslash
-liter}
+minute}
 \end_layout
 
 \end_inset
 
- of the combination was mixed with 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{5}{
-\backslash
-milli
-\backslash
-liter}
-\end_layout
-
-\end_inset
-
- Econolite scintillation fluid, then counted in a liquid scintillation counter
- for 3 minutes per sample.
+, and centrifugation as above.
+ All three supernatants were pooled.
  Pellets were dissolved in 
 \begin_inset ERT
 status open
@@ -1137,7 +1469,7 @@ molar}
 
 \end_inset
 
- NaOH / 0.1 % Triton, with sonication 
+ NaOH / 1‰ v/v Triton, with sonication 
 \begin_inset ERT
 status collapsed
 
@@ -1198,13 +1530,10 @@ degreeCelsius}
 \end_inset
 
 .
- Counts per minute were converted to disintegrations per minute using a
- standard curve generated using the same solvents as the samples.
 \end_layout
 
 \begin_layout Standard
-After the last radioactive medium, cells were rinsed with PBS, incubated
- with 
+From the supernatant or from the resuspended pellet, 
 \begin_inset ERT
 status collapsed
 
@@ -1212,59 +1541,36 @@ status collapsed
 
 
 \backslash
-SI{2}{
+SI{100}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ was mixed with 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
 \backslash
 milli
 \backslash
-meter}
+liter}
 \end_layout
 
 \end_inset
 
- PBS for 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{15}{
-\backslash
-minute}
-\end_layout
-
-\end_inset
-
- at 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{37}{
-\backslash
-degreeCelsius}
-\end_layout
-
-\end_inset
-
-, 5% 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-ce{CO2}
-\end_layout
-
-\end_inset
-
-.
+ Econo-lite scintillation fluid, then counted in a TriCarb 3100TR liquid
+ scintillation counter (PerkinElmer) for 3 minutes per sample.
+ Counts per minute were converted to disintegrations per minute using a
+ standard curve generated using the same solvents as the samples.
 \end_layout
 
 \begin_layout Section
