@@ -3094,15 +3094,24 @@ description "Mechanistic Target of Rapamycin"
  More evidence has been collected in animal models, and is discussed in
  a dedicated section.
  One study on humans described how Dexa inhibits branched chain amino acids'
- ability to induce phosphorylation of eIF4E binding protein 1 (
+ ability to induce phosphorylation of eukaryotic translation initiation
+ factor 4E (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "4E-BP1"
-description "eIF4E binding protein 1"
+symbol "eIF4E"
+description "eukaryotic translation initiation factor 4E"
 
 \end_inset
 
-) and p70-S6K
+) binding protein (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "4E-BP"
+description "eIF4E binding protein"
+
+\end_inset
+
+), isoform 1, and p70-S6K
 \begin_inset CommandInset citation
 LatexCommand cite
 key "liu2004glucocorticoids"
@@ -4881,15 +4890,8 @@ description "adenosine monophosphate kinase"
 
 \end_inset
 
-), and the guanine nucleotide exchange factor Son of Sevenless (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "SOS"
-description "Son of Sevenless"
-
-\end_inset
-
-), involved in the mitogen-activated protein kinase (
+), and the guanine nucleotide exchange factor Sos, involved in the mitogen-activ
+ated protein kinase (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "MAPK"
@@ -5438,15 +5440,15 @@ key "bergstrom2001molecular"
 
 \end_inset
 
-, of a fourth MRF, the myogenic regulatory factor (
+, of a fourth MRF, the myogenic regulatory factor 4 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "Mrf"
-description "myogenic regulatory factor"
+symbol "Mrf4"
+description "myogenic regulatory factor 4"
 
 \end_inset
 
-) 4
+)
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hasty1993muscle"
@@ -6007,24 +6009,7 @@ key "laplante2012mtor"
 ).
  Indeed, in the same muscle, p70-S6K was activated, as indicated by an increase
  in its Thr 389 phosphorylated form.
- Another substrate of mTORC1, eukaryotic translation initiation factor 4E
- (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "eIF4E"
-description "eukaryotic translation initiation factor 4E"
-
-\end_inset
-
-) binding protein (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "4E-BP"
-description "eIF4E binding protein"
-
-\end_inset
-
-), was hyperphosphorylated.
+ Another substrate of mTORC1, 4E-BP, was hyperphosphorylated.
  The action of mTORC1 on 4E-BP is the canonical way in which the former
  stimulates protein synthesis, by abolishing the latter's ability to bind
  and inhibit the mandatory translation initiation factor eIF4E.
@@ -6705,16 +6690,7 @@ key "seetharam1995unique"
 
 \end_inset
 
-, and, indirectly, of regulatory subunits of phosphatidylinositol 3-kinases
- (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "PI3K"
-description "phosphatidylinositol 3-kinase"
-
-\end_inset
-
-)
+, and, indirectly, of regulatory subunits of PI3K
 \begin_inset CommandInset citation
 LatexCommand cite
 key "gerber1998vascular"
@@ -8197,15 +8173,7 @@ key "baehr2011muscle"
  In addition, Dexa inhibits their kinase, Akt, thus protecting them from
  ubiquitination and degradation.
  Atrogenes are also modulated by myostatin, through SMAD3 transcription
- factor, and by AMP-activated protein kinase (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "AMPK"
-description "AMP-activated protein kinase"
-
-\end_inset
-
-).
+ factor, and by AMPK.
  Transgenic mice with a defective GR still exhibit upregulated atrogenes
  in denervation and fasting.
  Therefore, atrogenes integrate a multitude of GC-activated and GC-independent
@@ -8504,15 +8472,7 @@ key "son2015dexamethasone"
 
 \begin_layout Standard
 The notion that Dexa interferes with IGF-I signaling suggested that GAML
- also attenuates downstream mitogen-activated protein kinase (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "MAPK"
-description "mitogen-activated protein kinase"
-
-\end_inset
-
-) response (reviewed in 
+ also attenuates downstream MAPK response (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mendoza2011ras-erk"
@@ -11535,16 +11495,7 @@ key "mcfarlan2012vivo"
 \end_layout
 
 \begin_layout Standard
-Testo reverses the upregulation of the stress sensor Growth arrest and DNA
- damage 45 (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Gadd45"
-description "growth arrest and DNA damage 45"
-
-\end_inset
-
-) β.
+Testo reverses the upregulation of the stress sensor Gadd45, isoform β.
  Recently, it has been shown that Gadd45β is an autophagy blocker
 \begin_inset CommandInset citation
 LatexCommand citep
