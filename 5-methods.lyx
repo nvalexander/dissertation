@@ -879,8 +879,8 @@ description "phosphate buffered saline"
 \end_layout
 
 \begin_layout Standard
-For experiments, cells were differentiated into myoutubes by seeding at
- higher desnity (about 5,000 cells/cm2).
+For experiments, cells were differentiated into myotubes by seeding at higher
+ density (about 5,000 cells/cm2).
  Next day, when cells were nearly confluent, the medium was changed to different
 iation medium, that is, DMEM supplemented with 2% horse serum (
 \begin_inset CommandInset nomenclature
@@ -890,7 +890,10 @@ description "horse serum"
 
 \end_inset
 
-), which was charcoal / dextran stripped of hormones.
+), which was charcoal / dextran stripped of hormones (Gemini Bio-Products).
+ After two days in differentiation medium, myotubes form, while myoblast
+ become quiescent.
+ The medium was then changed very day for five more days.
 \end_layout
 
 \begin_layout Section
