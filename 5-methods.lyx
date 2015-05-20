@@ -934,15 +934,337 @@ Images were acquired with an Eclipse TE2000-E fluorescence microscope (Nikon
 \end_layout
 
 \begin_layout Section
-In vivo studies
-\end_layout
-
-\begin_layout Section
-Metabolic measurements at organism level
-\end_layout
-
-\begin_layout Section
 Measurement of muscle protein synthesis and degradation
+\end_layout
+
+\begin_layout Standard
+Cells were labelled with 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.2}{
+\backslash
+milli
+\backslash
+curie
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ radioactive phenylalanine, starting at the times and for the durations
+ specified at each experiment in the results section.
+ Cells were rinsed with PBS twice, then incubated with 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2}{
+\backslash
+milli
+\backslash
+meter}
+\end_layout
+
+\end_inset
+
+ PBS for 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{37}{
+\backslash
+degreeCelsius}
+\end_layout
+
+\end_inset
+
+, 5% 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{CO2}
+\end_layout
+
+\end_inset
+
+, to better remove extracelullar tracer.
+ For chase experiments, PBS was then replaced with differentiation medium,
+ for the durations specified at each experiment.
+ Chase experiments ended with a double rinse with PBS.
+\end_layout
+
+\begin_layout Standard
+Cells and media were collected separately, and each was fractionated with
+ TCA.
+ Medium was removed from the plate, then supplemented with 100% TCA, until
+ it reached 10% TCA.
+ Cells were covered with 10% TCA.
+ Both media and cells were then incubated overnight at 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+degreeCelsius}
+\end_layout
+
+\end_inset
+
+.
+ Next day, cells were scraped.
+ The cell culture wells were rinsed with TCA, 
+\end_layout
+
+\begin_layout Standard
+Protein suspensions were centrifugated at 15,000 RCF, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+degreeCelsius}
+\end_layout
+
+\end_inset
+
+.
+ Pellets were washed with 10% TCA, and acetone, with incubation at 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+degreeCelsius}
+\end_layout
+
+\end_inset
+
+ and centrifugation as above.
+ All three supernatants were pooled, and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ of the combination was mixed with 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+milli
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ Econolite scintillation fluid, then counted in a liquid scintillation counter
+ for 3 minutes per sample.
+ Pellets were dissolved in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ NaOH / 0.1 % Triton, with sonication 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+degreeCelsius}
+\end_layout
+
+\end_inset
+
+, followed by incubation 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+degreeCelsius}
+\end_layout
+
+\end_inset
+
+.
+ Counts per minute were converted to disintegrations per minute using a
+ standard curve generated using the same solvents as the samples.
+\end_layout
+
+\begin_layout Standard
+After the last radioactive medium, cells were rinsed with PBS, incubated
+ with 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2}{
+\backslash
+milli
+\backslash
+meter}
+\end_layout
+
+\end_inset
+
+ PBS for 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{37}{
+\backslash
+degreeCelsius}
+\end_layout
+
+\end_inset
+
+, 5% 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{CO2}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section

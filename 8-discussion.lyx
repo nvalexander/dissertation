@@ -103,6 +103,1039 @@ todo
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+For example, levator ani contains at least 60 times more AR than other skeletal
+ muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bentvelsen1996regulation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+Triamcinolone reduces IGF-I expression in diaphragm (PMID: 9872851).
+\end_layout
+
+\begin_layout Plain Layout
+Six or 24 hours of 10-1000 nM Dexa determined increased release of radioactive
+ tyrosine from rat L8 fully differentiated myotubes.
+ In these cells, Dexa upregulated the expression of m-calpain and cathepsins
+ D and B
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hong1995effects"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+According to PMID: 9083257, L6 myotubes do not change protein degradation
+ rate when treated with Dexa.
+ Dexa treatment of L6 
+\begin_inset Quotes eld
+\end_inset
+
+myotubes
+\begin_inset Quotes eld
+\end_inset
+
+ upregulates p85 regulatory of PI3 kinase, but decreases PI3 kinase catalytic
+ activity bound to IRS-1, probably because p85 alpha confines p110 to the
+ cytosol (PMID: 9054447).
+ In L6 cells, Dexa downregulates total and phosphorylated IRS-1, and leaves
+ S6 kinase activity unchanged (PMID: 9468291).
+\end_layout
+
+\begin_layout Plain Layout
+C2C12 express MyoD in response to Dexa (PMID: 8744946).
+ C2C12 cells do not express MyoD in response to Dexa (PMID: 9187537).
+\end_layout
+
+\begin_layout Plain Layout
+C2C12 express IGFBP-2 in response to Dexa or to IGF-I (PMID: 8691100).
+\end_layout
+
+\begin_layout Plain Layout
+C2C12 increase protein synthesis in response to IGF-I when they divide,
+ but do not respond any longer when 
+\begin_inset Quotes eld
+\end_inset
+
+fusing
+\begin_inset Quotes erd
+\end_inset
+
+ (PMID: 9042337).
+\end_layout
+
+\begin_layout Plain Layout
+C2C12 fusion is no affected by Dexa (PMID: 9011578).
+\end_layout
+
+\begin_layout Plain Layout
+C2C12 differentiation is stimulated by Dexa (PMID: 9674941).
+\end_layout
+
+\begin_layout Plain Layout
+Dexa reduces C2C12 calcium influx by non-transcriptional means (PMID: 9756393).
+\end_layout
+
+\begin_layout Plain Layout
+Dexa reduces protein synthesis rate in cultured bovine myotubes (PMID: 9781494).
+\end_layout
+
+\begin_layout Plain Layout
+In a model where C2C12 cells are treated with Dexa, they proliferate less
+ (rather unusually), downregulate protein synthesis, and upregulate protein
+ degradation (all by tracer).
+ (PMID: 8791198).
+ T has no significant effect on any of these.
+\end_layout
+
+\begin_layout Plain Layout
+Possibly useful:
+\end_layout
+
+\begin_layout Plain Layout
+PMID 61389 in 1976 clams that athletes taking some AAS get higher cortisol.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+PMID 3110538 claims exercise increases cortisol.
+ PMID 8371654 adds that detraining lowers cortisol.
+\end_layout
+
+\begin_layout Plain Layout
+PMID 9153447: oxandrolone is as good as prednisone in Duchenne muscular
+ dystrophy.
+\end_layout
+
+\begin_layout Plain Layout
+In chronic heart failure, PMID 9316530 says cortisol / DHEA ratio has a
+ negative correlation with BMI.
+\end_layout
+
+\begin_layout Plain Layout
+Minetto (PMID 20139231) says muscle force is increased with Dexa in healthy
+ subjects, and electromyography finds less fatigability.
+\end_layout
+
+\begin_layout Plain Layout
+PMID 22606232: ketoconazole inhibits endogenous cortisol, but has no effect
+ on muscle protein synthesis or degradation
+\end_layout
+
+\begin_layout Plain Layout
+PMID 22936724: dexamethasone stimulates myogenesis in C2C12 and human
+\end_layout
+
+\begin_layout Plain Layout
+22936724 is a trial of testosterone and GC; GC reduce endogenous T; GC +T
+ is better anabolic than T alone for anabolism
+\end_layout
+
+\begin_layout Plain Layout
+PMC1474207 says Dexa increase Na, K ATPase activity in some muscle
+\end_layout
+
+\begin_layout Plain Layout
+PMID 621843: The abuse of doximetasone, a synthetic GC, is also associated
+ with hirsutism.
+\end_layout
+
+\begin_layout Plain Layout
+PMC4039250 says that fiber type distribution does not change with age
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Not read:
+\end_layout
+
+\begin_layout Plain Layout
+contrasts "two-way anova"
+\end_layout
+
+\begin_layout Plain Layout
+Fisher's protected least significant difference or Scheffe's F
+\end_layout
+
+\begin_layout Plain Layout
+The Ras-Raf-MEK-ERK pathway affects fiber type composition without significant
+ effects on muscle fiber size, whereas activation of the PI3K/AKT pathway
+ induces muscle hypertrophy by regulation of GSK and mTOR kinases.
+ (PMID: 21747283)
+\end_layout
+
+\begin_layout Plain Layout
+Sandri et al.
+ demonstrated that IGF-1 acts through AKT and FoxO1 to suppress atrogin-1
+ transcription and that the mTOR/S6K, GSK and NFκB pathways are not important
+ in regulating atrogin-1 expression.
+ (PMID: 21747283)
+\end_layout
+
+\begin_layout Plain Layout
+the ability of IGF-1 to prevent ang II-induced wasting was mediated by an
+ AKT- and a FoxO-1-dependent signaling pathway that resulted in inhibition
+ of atrogin-1 but not of MuRF-1 expression (PMID: 21747283)
+\end_layout
+
+\begin_layout Plain Layout
+Glucocorticoids have been shown to be required for stimulation of the ubiquitin-
+proteasome pathway in diabetes, fasting and metabolic acidosis, and we have
+ shown that ang II infusion increases glucocorticoid levels and that RU486,
+ a glucocorticoid receptor antagonist, significantly blocked the ang II-induced
+ weight loss.(PMID: 21747283)
+\end_layout
+
+\begin_layout Plain Layout
+However muscle also has a characteristic pattern of amino acid metabolism:
+ the branched-chain amino acids leucine, isoleucine and valine are rapidly
+ degraded as are other nonessential amino acids, including alanine, glutamate
+ and aspartate.
+ However unlike other tissues, muscle does not degrade the carbon skeletons
+ of several other amino acids such as phenylalanine and tyrosine.
+ Leucine is an important energy source for muscle tissue particularly during
+ fasting, and under these conditions leucine inhibits oxidation of glucose.
+ In muscle the breakdown of branched-chain amino acids is accelerated after
+ injury or during fasting, and yields amino groups, which are used for synthesis
+ of alanine (from pyruvate) and glutamine (from glutamate).
+ The de novo synthesis of alanine and glutamine is coupled to degradation
+ of the branched-chain amino acids, and alanine and glutamine are normally
+ exported from muscle in much larger amounts than predicted simply from
+ their occurrence in muscle protein.
+ Alanine is avidly taken up by the liver and used for gluconeogenesis, but
+ glutamine is an important energy source for cells such as leucocytes and
+\end_layout
+
+\begin_layout Plain Layout
+ﬁbroblasts and is also metabolised extensively by both the gut and kidney.
+ Glutamate is central to all transamination reactions in muscle, and is
+ one of the most abundant amino acids in proteins and in the free amino
+ acid pool in skeletal muscle, but is present at a low concentration in
+ plasma.
+\end_layout
+
+\begin_layout Plain Layout
+In one study of eight underweight patients with emphysema and muscle wasting,
+ reduced plasma concentrations of glutamine, glutamate and alanine were
+ reported [32].
+\end_layout
+
+\begin_layout Plain Layout
+In humans, the techniques commonly used to estimate total protein turnover,
+ or synthesis or degradation rates, include 3-methylhistidine (3-MH) excretion,
+ amino acid balance studies and tracer studies employing infusion of stable
+ isotopes of amino acids (13C, 2H or 15N).
+ 3-MH, acquires its methyl group after translation, is not re-utilised for
+ protein synthesis or metabolised after release during proteolysis, and
+ is excreted in the urine.
+ As w90% of 3-MH residues are in
+\end_layout
+
+\begin_layout Plain Layout
+actin and myosin in skeletal muscle, timed urinary excretion can be used
+ to estimate whole body skeletal muscle proteolysis.
+ 3-MH can also be measured in blood draining from a limb to give an indication
+ of proteolysis in the limb muscle.
+\end_layout
+
+\begin_layout Plain Layout
+In COPD, muscle wasting doesn’t change 3-MH → not caused by increased proteolysi
+s.
+ Same in hypoxia: proteolysis cannot increase because it actually requires
+ energy.
+\end_layout
+
+\begin_layout Plain Layout
+Muscle wasting causes: lack of IGF / insuline / T; hypoxemia / acidosis;
+ inflammatory citokines (?); steroid treatment (gluco?).
+\end_layout
+
+\begin_layout Plain Layout
+(DOI: 10.1183/09031936.03.00004608)
+\end_layout
+
+\begin_layout Plain Layout
+eIF4G (Fig.
+ 12) is a large scaffolding protein, responsible for the assembly of the
+ cap-binding
+\end_layout
+
+\begin_layout Plain Layout
+complex and recruitment of the 43S IC to the 5k-cap of mRNA.
+ It has binding sites for eIF4E,
+\end_layout
+
+\begin_layout Plain Layout
+eIF4A (one in yeast, two in human), PABP, mRNA and other factors.
+ Human eIF4G also binds
+\end_layout
+
+\begin_layout Plain Layout
+to eIF3 whereas yeast eIF4G has not been found to bind eIF3, but was reported
+ to bind eIF1 and
+\end_layout
+
+\begin_layout Plain Layout
+eIF5.
+ (Marintchev)
+\end_layout
+
+\begin_layout Plain Layout
+Several studies have examined the effect of myostatin excess or deficiency
+ on expression of
+\end_layout
+
+\begin_layout Plain Layout
+atrogin-1 and MuRF1.
+ Both of these E3 ubiquitin ligases were thought to be critical determinants
+\end_layout
+
+\begin_layout Plain Layout
+of muscle protein degradation, but there is more evidence that atrogin-1
+ interferes with protein
+\end_layout
+
+\begin_layout Plain Layout
+synthesis via degradation of the translation factor eIF3f (3, 22).
+\end_layout
+
+\begin_layout Plain Layout
+2010: The insulin-like growth factor-1 can block the transcriptional upregulatio
+n of MuRF1 and MAFbx via the phosphatidylinositol-3 kinase/Akt/Foxo pathway.
+ MuRF1's substrates include several components of the sarcomeric thick filament,
+ including myosin heavy chain.
+ Thus, by blocking MuRF1, insulin-like growth factor-1 prevents the breakdown
+ of the thick filament, particularly myosin heavy chain, which is asymmetrically
+ lost in settings of cortisol-linked skeletal muscle atrophy.
+ Insulin-like growth factor-1/phosphatidylinositol-3 kinase/Akt signaling
+ also dominantly inhibits the effects of myostatin, which is a member of
+ the transforming growth factor-[beta] family of proteins.
+ Deletion or inhibition of myostatin causes a significant increase in skeletal
+ muscle size.
+ Recently, myostatin has been shown to act both by inhibiting gene activation
+ associated with differentiation, even when applied to postdifferentiated
+ myotubes, and by blocking the phosphatidylinositol-3 kinase/Akt pathway.
+\end_layout
+
+\begin_layout Plain Layout
+While inactivation of myostatin leads to muscle growth in vivo, excess levels
+ of myostatin induces cachectic-like muscle wasting.
+ Molecular analyses reveal that excess levels of myostatin induce Atrogin-1
+ expression by reducing Akt phosphorylation and thereby increasing FoxO1
+ activity.
+\end_layout
+
+\begin_layout Plain Layout
+myostatin administration may induce the expression of Foxo1 and the subsequent
+ up-regulation of the atrophy-inducing genes MuRF1 and MAFbx.
+\end_layout
+
+\begin_layout Plain Layout
+Approximately 50% of cancer patients exhibit muscle
+\end_layout
+
+\begin_layout Plain Layout
+wasting [73] that is primarily derived from protein
+\end_layout
+
+\begin_layout Plain Layout
+hypercatabolism with little alteration in protein synthesis
+\end_layout
+
+\begin_layout Plain Layout
+[6].
+ In a cancer cachexia model where rats were injected
+\end_layout
+
+\begin_layout Plain Layout
+with Yoshida AH-130 ascites heptoma cells, skeletal
+\end_layout
+
+\begin_layout Plain Layout
+muscle mass and IGF-1 mRNAwere reduced while MAFbx
+\end_layout
+
+\begin_layout Plain Layout
+and MuRF1 mRNA levels were elevated [18].
+ Treatment
+\end_layout
+
+\begin_layout Plain Layout
+with a combination of pentoxifylline (TNFα inhibitor) and
+\end_layout
+
+\begin_layout Plain Layout
+formoterol (β2-adrenergic agonist) protected against muscle
+\end_layout
+
+\begin_layout Plain Layout
+wasting as well as reducing MuRF1, but not MAFbx,
+\end_layout
+
+\begin_layout Plain Layout
+mRNA levels.
+\end_layout
+
+\begin_layout Plain Layout
+FoxO1 does not directly increase MAFbx or MuRF1
+\end_layout
+
+\begin_layout Plain Layout
+levels but instead blocks the IGF-1 inhibition of their upregulation
+\end_layout
+
+\begin_layout Plain Layout
+[105].
+ FoxO3a binds directly to the MAFbx promoter.
+\end_layout
+
+\begin_layout Plain Layout
+Ectopic overexpression of the eIF3a, eIF3b, eIF3c, eIF3h and eIF3i subunits
+ leads to transformation of cultured NIH-3T3 cells.
+ This probably occurs through the stimulation of global protein synthesis,
+ as well as increased translation efficiency of specific mRNAs that are
+ normally poorly translated, including cyclin D1 (Ccnd1), Myc, ornithine
+ decarboxylase 1 (Odc1) and fibroblast growth factor 2 (Fgf2)
+\end_layout
+
+\begin_layout Plain Layout
+The eIF4E–4E-BP complex might remain bound to the m7GpppN cap (as shown),
+ possibly aiding the inhibition of cap-dependent mRNA translation owing
+ to blockade of the mRNA 5′ end.
+ Increased levels of hypophosphorylated 4E-BPs, in conjunction with elevated
+ levels of eIF4G, can then function as a switch, as observed in certain
+ locally advanced cancers, impairing the initiation of translation on purely
+ cap-dependent mRNAs but enhancing translation of dual mechanism mRNAs that
+ also contain an internal ribosome entry site (IRES) to which eIF4G may
+ bind directly.
+ These mRNAs include vascular endothelial growth factor A (VEGFA), fibroblast
+ growth factor 2 (FGF2), BCL2 and hypoxia-inducible factor 1α (HIF1A).
+ This switch is activated by hypoxia and other stresses to preserve tumour
+ cell viability and promote tumour angiogenesis.
+\end_layout
+
+\begin_layout Plain Layout
+Ectopic expression of eIF2Bε in the TA muscle rescued the sepsis-induced
+ deficit in GEF activity and muscle protein synthesis.
+ (doi: 10.​1152/​ajpendo.​00151.​2010)
+\end_layout
+
+\begin_layout Plain Layout
+Muscle protein synthesis decreased 26% after exercise and was associated
+ with a fourfold increase in the amount of eIF4E present in the inactive
+ eIF4E ⋅ 4E-BP1 complex and a concomitant 71% decrease in the association
+ of eIF4E with eIF4G.
+ Refeeding the complete meal, but not the carbohydrate meal, increased muscle
+ protein synthesis equal to controls, despite similar plasma concentrations
+ of insulin.
+ Additionally, eIF4E ⋅ 4E-BP1 association was inversely related and eIF4E
+ ⋅ eIF4G association was positively correlated to muscle protein synthesis.
+ ( http://ajpcell.physiology.org/content/274/2/C406.full )
+\end_layout
+
+\begin_layout Plain Layout
+IGF-I/IGFBP-3 ameliorates alterations in protein synthesis, eIF4E availability,
+ and myostatin in alcohol-fed rats
+\end_layout
+
+\begin_layout Plain Layout
+Alcohol decreased protein synthesis in WT mice, a change associated with
+ less 4EBP1 phosphorylation, eIF4E-eIF4G binding, and raptor-4EBP1 binding,
+ but greater mTOR-raptor complex formation.
+ However, the content of eIF2α was not altered in muscle from alcohol-fed
+ rats (Table 2).
+ Furthermore, administration of IGF-I/IGFBP-3 did not alter the content
+ eIF2α in either control or alcohol-fed rats.
+ eIF-2α also undergoes reversible phosphorylation, and the extent of eIF2α
+ phosphorylation is inversely proportional to changes in protein synthesis
+ (33).
+ However, there was also no change in the phosphorylation status of eIF2α
+ in response to either alcohol feeding or the binary complex.
+ These data suggest that effects of the binary complex on protein synthesis
+ are independent of changes in eIF2α protein and phosphorylation state.
+\end_layout
+
+\begin_layout Plain Layout
+Simvastatin represses protein synthesis in the muscle-derived C2C12 cell
+ line with a concomitant reduction in eukaryotic initiation factor 2B
+\end_layout
+
+\begin_layout Plain Layout
+Women have less muscle than men but lose it more slowly during aging.
+ To discover potential underlying mechanism(s) for this we evaluated the
+ muscle protein synthesis process in postabsorptive conditions and during
+ feeding in twenty-nine 65–80 year old men (n = 13) and women (n = 16).
+ We discovered that the basal concentration of phosphorylated eEF2Thr56
+ was ~40% less (P<0.05) and the basal rate of MPS was ~30% greater (P = 0.02)
+ in women than in men; the basal concentrations of muscle phosphorylated
+ AktThr308, p70s6kThr389, eIF4ESer209, and eIF4E-BP1Thr37/46 were not different
+ between the sexes.
+ Feeding increased (P<0.05) AktThr308 and p70s6kThr389 phosphorylation to
+ the same extent in men and women but increased (P<0.05) the phosphorylation
+ of eIF4ESer209 and eIF4E-BP1Thr37/46 in men only.
+ Accordingly, feeding increased MPS in men (P<0.01) but not in women.
+\end_layout
+
+\begin_layout Plain Layout
+eIF3i has been reported as TRIP-1, a phosphorylation substrate of the transforma
+tion growth factor-β type II (TGF-βII) receptor, that acts as a negative
+ modulator of TGF-β pathway [131] L.
+ Choy and R.
+ Derynck, The type II transforming growth factor (TGF)-beta receptor-interacting
+ protein TRIP-1 acts as a modulator of the TGF-beta response,
+\end_layout
+
+\begin_layout Plain Layout
+Guinea pig maseter and temporal muscle are rescued by testosterone after
+ castration (Kochiakian, 1948).
+\end_layout
+
+\begin_layout Plain Layout
+Semimembranous muscle: “adult rabbit fast-twitch semimembranosus accessorius
+ (SMa; approximately 100% type II fibres) and the slow-twitch semimembranosus
+ proprius (SMp; 100% type I fibre) “
+\end_layout
+
+\begin_layout Plain Layout
+1.
+ Brenet F, Socci ND, Sonenberg N, Holland EC.
+ Akt phosphorylation of La regulates specific mRNA translation in glial
+ progenitors.
+ Oncogene.
+ 2009;28(1):128-139.
+\end_layout
+
+\begin_layout Plain Layout
+Perfomed immunoblot for La on various fractions.
+ Used A254 and Northern for 28S, 18S to confirm fractions.
+ No pooling.
+\end_layout
+
+\begin_layout Plain Layout
+Polyribosome profiling in glial progenitors
+\end_layout
+
+\begin_layout Plain Layout
+N-tva/Z and N-tva/RA cells were incubated for 10 min with 0.1 mg/ml of cyclohexim
+ide at 37°C and lysed in 2 ml of lysis buffer containing 125 mM NaCl, 100
+ mM sucrose, 50 mM HEPES, 2 mM potassium acetate, and 40 U/ml of an RNase-inhibi
+tor, RNasin (Promega).
+ The homogenate was first centrifuged for 5 min at 4000 × g, and the supernatant
+ was centrifuged again for 10 min at 14,000 × g.
+ The resulting postmitochondrial supernatanst was then lysed in a buffer
+ containing 50 mM Tris/HCl, pH 7.5, 1% NP40, 50 mM NaCl, 4 mM MgCl2, 45 µg/ml
+ cycloheximide.
+ The lysate was layered on top of 1.5 ml of 15% sucrose and centrifuged for
+ 10 min at 400,000 × g.
+ The resulting pellet was resuspended in 500 µl of a buffer containing 20
+ mM Tris/HCl, pH 7.5, 10 mM MgCl2, 100 mM NH4Cl, 2 mM KAc, 225 µg/ml cycloheximid
+e.
+ The resulting sample was carefully layered onto a 15 to 40% linear sucrose
+ gradient made in 20 mM Tris/HCl, pH 9.0, 80 mM NaCl, 3 mM MgCl2, and 0.02%
+ b-mercaptoethanol.
+ Gradients were centrifuged for 90 min at 41,000 rpm and fractions were
+ collected at a rate of 1 ml per min.
+ RNAs were extracted from 500µl of each fraction with Trizol (Invitrogen)
+ according to the manufacturer instructions and the ribosomal subunits,
+ monosomes, and polysomes were detected at a wavelength of 254 nm using
+ a spectrophotometer.
+ Proteins from the others 500µl of each fraction were TCA-precipitated overnight
+ and analyzed by 10% SDS-PAGE and western blot.
+ For EDTA treatment, EDTA was added to a final concentration of 30 mM before
+ loading on the gradient.
+\end_layout
+
+\begin_layout Plain Layout
+2.
+ Genolet R, Araud T, Maillard L, Jaquier-Gubler P, Curran J.
+ An approach to analyse the specific impact of rapamycin on mRNA-ribosome
+ association.
+ BMC Med Genomics.
+ 2008;1:33.
+\end_layout
+
+\begin_layout Plain Layout
+Lung fibroblasts.
+ Compares light and heavy polysomes (2-4 ribosomes vs.
+ 5+ ribosomes) in microarray.
+ Used A254 to confirm fractions.
+\end_layout
+
+\begin_layout Plain Layout
+MRC-5 cells (Coriell Cell Repository) were cultured in Minimal Essential
+ Medium (Gibco) supplemented with 1 mM sodium pyruvate (Sigma), 0.1 mM non-essent
+ial amino acids, 10% foetal calf serum (Brunschwig), 1% penicillin/streptomycin,
+ in a humidified atmosphere containing 5% CO2.
+ For polysome analysis, cells in the growing phase (60% confluence) were
+ hypertonically shocked by shifting to medium containing 300 mM NaCl for
+ 50 min.
+ They were then placed in normal isotonic medium for 30 min.
+ When rapamycin was used, 100 nM rapamycin (LC laboratories) or 0.01% DMSO
+ (the negative control) was added during the hypertonic shock, 20 min before
+ the transfer back to isotonic conditions.
+\end_layout
+
+\begin_layout Plain Layout
+After treatment, cells were scraped into the culture medium and pelleted
+ for 4 min at 100 g.
+ The pellets, consisting of 5 × 106 cells, were lysed for 15 min on ice
+ in 400 μL of 100 mM KCl, 50 mM Tris-Cl pH 7.4, 1.5 mM MgCl2, 1 mM DTT, 1
+ mg/mL heparin, 1.5 % NP40, 100 μM cycloheximide, 1% aprotinin, 1 mM AEBSF
+ and 100 U/mL of RNasin.
+ Nuclei were pelleted by centrifugation in a microfuge, 10 min at 12000
+ rpm.
+ The supernatant was loaded onto a 20–60% sucrose gradient (in 100 mM KCL,
+ 5 mM MgCl2, 20 mM HEPES pH 7.4 and 2 mM DTT).
+ Extracts were fractionated for 3 h 30 min at 35,000 rpm at 4°C in a Beckman
+ SW41 rotor, and the gradients were recovered in 3 fractions [monosome,
+ light polysome (2 to 5 ribosomes) and heavy polysome (> 5 ribosomes)] using
+ a Brandel gradient fractionator equipped with an ISCO UA-6 flow cell set
+ to 254 nm.
+ RNA was isolated from the light and heavy polysome fractions by adding
+ an equal volume of TriZol (Invitrogen).
+ Samples were mixed and incubate for 15 min.
+ on ice, then 0.3 volumes of chloroform was added.
+ After centrifugation, the upper phase was collected and the RNA precipitated
+ with 0.7 volumes of isopropanol.
+ The pellet of RNA was re-suspended in water.
+ Prior to microarray analysis the pooled RNA fractions were further purified
+ using the Qiagen RNeasy kit.
+ The total yield of RNA in each pooled fraction was ~2 μg.
+ RNA quality was checked on an Agilent 2100 bioanalyser.
+\end_layout
+
+\begin_layout Plain Layout
+3.
+ Lü X, de la Peña L, Barker C, Camphausen K, Tofilon PJ.
+ Radiation-Induced Changes in Gene Expression Involve Recruitment of Existing
+ Messenger RNAs to and away from Polysomes.
+ Cancer Research.
+ 2006;66(2):1052 -1061.
+\end_layout
+
+\begin_layout Plain Layout
+4.
+ Kumaraswamy S, Chinnaiyan P, Shankavaram UT, et al.
+ Radiation-induced gene translation profiles reveal tumor type and cancer-specif
+ic components.
+ Cancer Res.
+ 2008;68(10):3819-3826.
+\end_layout
+
+\begin_layout Plain Layout
+Brain tumor cell lines.
+ Microarray between exprimental condtions using solely polyribosomal mRNA
+ (with pooling).
+ Westernes and Northerns between fractions (no pooling).
+ Used A254 and Northern for 28S, 18S to confirm fractions.
+ One 150 mm2 plate per condition, apparently.
+\end_layout
+
+\begin_layout Plain Layout
+Cells were grown to ∼80% confluence in 150-mm2 tissue culture dishes and
+ incubated in 100 μg of cycloheximide/mL for 15 minutes before collection.
+ Cytoplasmic RNA was obtained by lysing cells in 1 mL of polysome buffer
+ [10 mmol/L Tris-HCl (pH 8), 140 mmol/L NaCl, 1.5 mmol/L MgCl2, 0.5% NP40,
+ 10 mmol/L DTT, 100 μg/mL cycloheximide, 500 μg/mL heparin, 1 mmol/L phenylmetha
+nesulfonyl fluoride, and 500 units/mL RNasin (Promega, Madison, WI)].
+ After 10 minutes on ice, lysates were centrifuged (10,000 × g for 10 minutes),
+ and the resulting cytosolic supernatant was layered onto a 10% to 50% sucrose
+ gradient.
+ Gradients were then centrifuged at 35,000 × g for 3 hours at 4°C and 1-mL
+ fractions collected using an ISCO Density Gradient Fractionation System
+ (ISCO, Lincoln, NE) with continuous monitoring based on A254.
+ The RNA in each fraction was extracted using TRIZOL and used for Northern
+ analysis, or fractions 5 to 11 (corresponding to polysome-bound RNA) were
+ pooled and subjected to microarray analysis as described above.
+\end_layout
+
+\begin_layout Plain Layout
+5.
+ Cridge AG, Castelli LM, Smirnova JB, et al.
+ Identifying eIF4E-binding protein translationally-controlled transcripts
+ reveals links to mRNAs bound by specific PUF proteins.
+ Nucleic Acids Res.
+ 2010;38(22):8039-8050.
+\end_layout
+
+\begin_layout Plain Layout
+6.
+ Smirnova JB, Selley JN, Sanchez-Cabo F, et al.
+ Global Gene Expression Profiling Reveals Widespread yet Distinctive Translation
+al Responses to Different Eukaryotic Translation Initiation Factor 2B-Targeting
+ Stress Pathways.
+ Mol.
+ Cell.
+ Biol.
+ 2005;25(21):9340-9349.
+\end_layout
+
+\begin_layout Plain Layout
+Yeast.
+ Compares monosomal-to-polysomal mRNA ratios between experimental conditions
+ by microarray.
+ Pooling for monosomal includes 40S.
+ Pooling for polysomal excludes oligopolysomes (not 2, nor 3 ribosomes /
+ mRNA).
+ Microarray confirmed by qPCR, and functinal confirmation by protein level
+ (densitommetric immunoblot).
+\end_layout
+
+\begin_layout Plain Layout
+Cell extracts were prepared essentially as described previously (3).
+ Briefly, after incubation with cycloheximide (100 µg/ml at 4°C), cells
+ were pelleted and washed twice in 50 ml of ice-cold lysis buffer (3).
+ The cell pellets were resuspended in 500 µl of lysis buffer and rapidly
+ frozen in liquid nitrogen.
+ Lysates were prepared by grinding the cell pellets under liquid nitrogen.
+ The ground yeast was thawed on ice and cleared by successive centrifugation
+ steps (5,000 x g for 5 min at 4°C in a clinical centrifuge, and then 16,000
+ x g for 30 min at 4°C in an Eppendorf microcentrifuge).
+ Sixty A260 units were layered onto 35-ml 15 to 50% sucrose gradients.
+ The gradients were sedimented via centrifugation at 16,900 rpm for 13 h
+ in a Beckman ultracentrifuge.
+ The gradients were collected as described previously (3) and fractionated
+ into 15 2.2-ml aliquots.
+\end_layout
+
+\begin_layout Plain Layout
+7.
+ Hittel D, Storey KB.
+ The translation state of differentially expressed mRNAs in the hibernating
+ 13-lined ground squirrel (Spermophilus tridecemlineatus).
+ Archives of Biochemistry and Biophysics.
+ 2002;401(2):244-254.
+\end_layout
+
+\begin_layout Plain Layout
+10 fractions without pooling, analyzed by Northern for 18S and some genes
+ of interest.
+ No A254.
+\end_layout
+
+\begin_layout Plain Layout
+Samples (500 mg) of frozen kidney or BAT were pulverized under liquid N2
+ by mortar and pestle and then homogenized in 5 ml of polysome lysis buffer
+ [25 mM Tris–HCl, pH 7.6, 25 mM NaCl, 10 mM MgCl2, 250 mM sucrose, 100 μg/ml
+ cyclohexamide, 5 U/ml RNAse inhibitor (Promega)] using 10 strokes of a
+ Douce homogenizer.
+ The homogenate was centrifuged at 16,000g at 4 °C for 15 min.
+ The supernatant was removed and was mixed with 0.1 vol of detergent (5%
+ w/v sodium deoxycholate, 5% v/v Triton X-100).
+ Aliquots (1 ml) of the supernatant were layered on a 5-ml continuous sucrose
+ gradient, 0.5 to 1.5 M, prepared in 300 mM NaCl, 10 mM Tris–HCl, pH 7.6, 10
+ mM MgCl2, 100 μg/ml cyclohexamide, and 5 U/ml RNase inhibitor.
+ The gradients were centrifuged at 4 °C for 2 h at 40,000 rpm in a SW41
+ rotor.
+ Gradients were drained into 10 fractions of 500 μl each and immediately
+ frozen at −70 °C.
+\end_layout
+
+\begin_layout Plain Layout
+8.
+ Kolle G, Ho M, Zhou Q, et al.
+ Identification of Human Embryonic Stem Cell Surface Markers by Combined
+ Membrane‐Polysome Translation State Array Analysis and Immunotranscriptional
+ Profiling.
+ STEM CELLS.
+ 2009;27(10):2446-2456.
+\end_layout
+
+\begin_layout Plain Layout
+The atrophic effect of testosterone (T) deprivation and the opposite, rescuing,
+ effect of T administration on muscle mass are induced by a multitude of
+ cellular mediators, in accordance with T’s pleiotropic nature.
+ Earlier findings show that at least part of its effect is at the level
+ of protein translation1.
+ We hypothesize that T regulates protein translation, in both non-specific
+ (cap-dependent initiation, elongation factors, ribosomal recycling) and
+ specific manners (internal ribosome entry site).
+\end_layout
+
+\begin_layout Plain Layout
+The effects of T are typically observed only at organism level, at which
+ a distinction between these concurrent regulatory pathways is difficult
+ to make.
+ In order to determine changes in the non-specific regulation of translation,
+ we will determine changes of pattern in the proteins that associate with
+ polysomes in vivo, as an effect of testosterone deprivation and/or testosterone
+ treatment.
+\end_layout
+
+\begin_layout Plain Layout
+A required initial step is the isolation of translating mRNAs (polysomes)
+ and of ribosome-free mRNAs.
+ We will obtain specimens of levator ani, a slow-twitching muscle, from
+ male mice that underwent castration, with or without T treatment.
+ The castration effects will be observed at 14 days after surgery or sham
+ intervention, while testosterone’s effect will be observed after 7 days
+ of treatment.
+ The muscle polysomes will be isolated from levator ani, obtained by necropsy
+ from 3 animals for each experimental condition.
+ The resulting sample size is comparable to that used in similar earlier
+ experiments, 50 mg2.
+ Cells will be lysed in the presence of 0.1 g/L cycloheximide (blocks peptide
+ elongation, locking the translating ribosomes in place), 1 g/L heparin
+ or other RNAse inhibitor (Protector), 0.5 mM DTT (maintains cytosol-like
+ reductive environment), 5 mM Mg2+ (stabilizes mRNA structures), in addition
+ to regular lysis buffer, and lysed by the standard procedure (incubation
+ with Triton).
+ The lysate will be precleared by gentle centrifugation, as 12000g, recommended
+ by Arava3, might lead to microsomal loss, favoring mRNA for soluble proteins.
+ The sucrose gradient will be obtained as described3, comprising the interval
+ 10-50% sucrose.
+\end_layout
+
+\begin_layout Plain Layout
+For further analysis, we will pool the fractions as follows: the first fractions
+, lighter than 40S subunits, will constitute the ribosome-free mRNAs pool;
+ the latter group of peaks, after 80S, will include translated mRNAs pool.
+ The distinction between monoribosomal mRNA’s and polyribosomal mRNA’s is
+ of reduced theoretical importance, and will be technically challenging,
+ according to Arava3.
+ Also, the 43S sub-peak, consisting of mRNA’s that are stalled at initiation,
+ will be difficult to purify, and relatively difficult to use in a comparison,
+ because the counterpart, the translating mRNA pool, will also contain similarly
+ stalled ribosomes.
+ A comparison between 43S (or 48S) initiating complexes and translating
+ ribosomes would be possible by using larger specimens, by using a less
+ steep gradient, e.g.
+ 10-30%, or by using an apparatus similar to that presented by Esposito
+ et al.4
+\end_layout
+
+\begin_layout Plain Layout
+At this time, we should be able to confirm earlier observations, by determining
+ differences in the ratio translated-to-untranslated mRNA, which can be
+ quantified by qPCR in the two pools with olygo-T primers.
+\end_layout
+
+\begin_layout Plain Layout
+To determine non-specific regulatory mechanisms acting on protein translation
+ as an effect of T treatment, we will compare the proteins in the translating
+ mRNA’s fraction between treatments.
+ We will approach the problem in two ways, without and with a priori knowledge.
+ In the former approach, we will perform mass spectroscopy studies on the
+ proteins of the translating ribosome pool, in which case we expect to find
+ quantitative and/or qualitative (PTM) differences in the presence and absence
+ of T.
+ In the latter approach, we will quantify by immunoblot and densitometry
+ the following proteins:
+\end_layout
+
+\begin_layout Plain Layout
+● total rpS6 (required for ribosome count), and phosphorylated S235.S236-rpS6
+ (might or might not correlate with S6 kinases activation)
+\end_layout
+
+\begin_layout Plain Layout
+● total eIF2α and phosphorylated S51-eIF2α
+\end_layout
+
+\begin_layout Plain Layout
+● eIF3f (core component of eIF3, regulated by atrogin)
+\end_layout
+
+\begin_layout Plain Layout
+● eIF3j (not a core component, regulatory, stabilizes eIF3 on 40S)
+\end_layout
+
+\begin_layout Plain Layout
+● total eIF4B and phosphorylated S422-eIF4B (controlled by S6K)
+\end_layout
+
+\begin_layout Plain Layout
+● total eIF4E and phosphorylated S209-eIF4E (controlled by Mnk)
+\end_layout
+
+\begin_layout Plain Layout
+● eIF4G
+\end_layout
+
+\begin_layout Plain Layout
+● Mnk1 (kinase for eIF4E, also binding partner for it and eIF4G)
+\end_layout
+
+\begin_layout Plain Layout
+● PABP
+\end_layout
+
+\begin_layout Plain Layout
+● Hsc70
+\end_layout
+
+\begin_layout Plain Layout
+● and any T-modulated protein found by microarray.
+\end_layout
+
+\begin_layout Plain Layout
+To determine effect of T on translation of specific mRNAs, the same two
+ approaches can be taken.
+ The approach without a priori knowledge will consist in the microarray
+ analysis comparing translating-to-untranslated ratios of mRNA between presence
+ and absence of T.
+ The informed approach will involve the same type of comparisons by qPCR
+ or densitometric Northern blot for the mRNAs that were found to be regulated
+ by T in the microarray and/or any protein which is known to be regulated
+ by T (e.g., atrogin).
+\end_layout
+
+\begin_layout Plain Layout
+Bibliography:
+\end_layout
+
+\begin_layout Plain Layout
+1.
+ Boissonneault, G., Gagnon, J., Ho-Kim, M.A., Rogers, P.A.
+ & Tremblay, R.R.
+ Depressed translational activity in the androgen sensitive levator ani
+ muscle of the rat.
+ J.
+ Steroid Biochem 32, 507-513 (1989).
+\end_layout
+
+\begin_layout Plain Layout
+2.
+ Wernerman, J., von der Decken, A.
+ & Vinnars, E.
+ Polyribosome concentration in human skeletal muscle after starvation and
+ parenteral or enteral refeeding.
+ Metab.
+ Clin.
+ Exp 35, 447-451 (1986).
+\end_layout
+
+\begin_layout Plain Layout
+3.
+ Arava, Y.
+ Isolation of Polysomal RNA for Microarray Analysis.
+ Functional Genomics 224, 79-88 (2003).
+\end_layout
+
+\begin_layout Plain Layout
+4.
+ Esposito, A.M.
+ et al.
+ Eukaryotic Polyribosome Profile Analysis.
+ JoVE (2010).doi:10.3791/1948
+\end_layout
+
+\begin_layout Plain Layout
+Other ideas:
+\end_layout
+
+\begin_layout Plain Layout
+* Treat cells with cycloheximide for 10 minutes at room temperature before
+ lysis.
+\end_layout
+
+\begin_layout Plain Layout
+* Use DEP (aka DEPC aka diethylpyrocarbonate) to inhibit RNases.
+\end_layout
+
+\begin_layout Plain Layout
+* Determine actively translated mRNA by using puromycin, as it disturbs
+ the actively translating ribosomes.
+ Only the loss in heavy polysomal fraction from cycloheximide treatment
+ to puromycin treatment is the real thing.
+\end_layout
+
+\begin_layout Plain Layout
+* Calculate number of ribosomes per fraction through the A254 curve, counting
+ the peaks.
+ For the fractions where resolution is not good (many ribosomes per messenger),
+ a logarithmic extrapolation can be used (see Arava, 2002).
+ The extrapolation may be confirmed by cleavage of specific genes followed
+ by northern for the ribosomes on that region (unclear, but mentioned by
+ Arava, 2002).
+ Use qPCR for the messenger of interest to determine the amount of messenger
+ per fraction.
+ Arava suggests using the peak fraction as indicative of number of ribosomes
+ per messenger, while Lacsina (2011) uses the qPCR results from each fraction
+ and calculates an weighted average of ribosomes per specific messenger.
+ From these two numbers, one get number of ribosomes per mRNA molecule.
+ Using ORF size, one can calculate average distance between ribosomes on
+ specific mRNAs.
+\end_layout
+
+\begin_layout Plain Layout
+* Best way to show eIF4E is under the control of 4E-BP (or not) is by pulling
+ it down from cell lysate using methyl-7-GTP.
+ The pulled down protein will be bound to 4EBP or eIF4G, visible by immunoblot.
+\end_layout
+
+\begin_layout Plain Layout
+* Repressed mRNA’s might be under the control of miRNA.
+ Database search?
+\end_layout
+
+\begin_layout Plain Layout
+Dexamethasone on C2C12: 53 articles
+\end_layout
+
+\begin_layout Plain Layout
+PMID 22613845: 100 nM Dex for up to 1.5 during differentiation - no outcome
+ of interest, but alters MyoD level.
+\end_layout
+
+\begin_layout Plain Layout
+PMID 22750276: 100 nM Dex for 2 d post-differentiation doubles MAFbx mRNA
+ in C2C12, with seemingly additive effect of 10 mg/L IGF-I (serum replaced
+ by BSA)
+\end_layout
+
+\begin_layout Plain Layout
+PMID 21764995: 1 uM for 2 d post diff (although the 20% protein loss is
+ seemingly in the first 24h).
+\end_layout
+
+\begin_layout Plain Layout
+PMID 21745490: 10 uM with no effect on adipoR and data not shown.
+\end_layout
+
+\begin_layout Plain Layout
+PMID 21389279: 1 uM for 6h after 6 days of differentiation reduce phosphorylated
+ Foxo and activate a Foxo reporter.
+\end_layout
+
+\begin_layout Plain Layout
+PMID 19631210: 10 uM for 1d post-differentiation eliminate myogenin protein.
+\end_layout
+
+\begin_layout Plain Layout
+Dexamethasone on mouse muscle:
+\end_layout
+
+\begin_layout Plain Layout
+http://www.ncbi.nlm.nih.gov/pubmed/22354783
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "thesis,thesis2"
