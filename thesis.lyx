@@ -11732,9 +11732,12 @@ description "Vehicle-only"
 \end_inset
 
 ).
- Testo propionate, Dexa, and ethanol were from Sigma-Aldrich (St.
+ Testo propionate and Dexa were from Sigma-Aldrich (St.
  Louis, Missouri).
  Resreach-grade corn oil was purchased from MP Biomedicals (Solon, Ohio).
+ Unless specified, chemical reagents used in this work were from Fisher
+ (Pittsburgh, Pennsylvania), including pharmaceutical-greade ethanol used
+ here.
 \end_layout
 
 \begin_layout Standard
@@ -12078,7 +12081,22 @@ background
 \end_inset
 
 ), containing lysis bufer instead of muscle extract.
- The plate was sealed and incubated at 37°C for 
+ The plate was sealed and incubated at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{37}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ for 
 \begin_inset ERT
 status open
 
@@ -12145,7 +12163,22 @@ background
 \end_inset
 
 ), containing lysis bufer instead of muscle extract.
- The plate was sealed and incubated at 37°C for 
+ The plate was sealed and incubated at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{37}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ for 
 \begin_inset ERT
 status open
 
@@ -12182,8 +12215,13 @@ description "dithiothreitol"
 
 ), 1 mM EDTA, and 1% Triton X-100, as described for proteasome activity
  assay.
- Extracts were clarified, stored, and assayed for total protein concentration,
- as described for the proteasome activity assay.
+ Extracts were clarified, and stored, as described for the proteasome activity
+ assay.
+ Total protein was measured by Bradford assay.
+ Briefly, one microliter sample was mixed with 300 uL Coomasie Plus (Life
+ Technologies, Carlsbad, California) in duplicate wells of a 96-well plate,
+ incubated 10 minutes at room temperature, and measured spectrophotometrically
+ for absorption at 595 nm.
  Extracts were diluted to the lowest total protein concentration, using
  the same lysis bufer that was used to extract them.
  Per kit manufacturer instructions, 50 uL clarified extract (depending on
@@ -12237,13 +12275,26 @@ minute}
  rate of free aminoluciferase production, which is immediately converted
  to free luciferin by the excess luciferase.
  Luminescence was measured with a GeniosPro multi-well plate reader (Tecan,
- Männedorf, Switzerland) set at one sample per second.
- Background luminescence, including substrate, was subtracted from sample
- measurements.
+ Männedorf, Switzerland) set at to integrate signal over 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+milli
+\backslash
+second}
 \end_layout
 
-\begin_layout Standard
-Unless specified, chemical reagents were from Fisher (Pittsburgh, Pennsylvania).
+\end_inset
+
+.
+ Background luminescence, including substrate, was subtracted from sample
+ measurements.
 \end_layout
 
 \begin_layout Section
@@ -12535,7 +12586,22 @@ Cell culture studies
 \begin_layout Standard
 C2C12 cells were obtained from ATCC (Manassas, Virginia).
  They were grown on solid substrate, on cell culture coated plates, in atmospher
-ic air, supplemented to 5% CO2, at 37°C.
+ic air, supplemented to 5% CO2, at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{37}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
  The liquid growth medium was 0.2-0.5 mL/cm2 growth medium, that is, pyruvate-free
  Dulbecco's Modified Eagle Medium (
 \begin_inset CommandInset nomenclature
@@ -12685,7 +12751,7 @@ Measurement of muscle protein synthesis and degradation
 Cells were labeled by incubation in differentiation medium supplemented
  with 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12709,7 +12775,7 @@ liter}
  results section.
  Cells were rinsed with PBS twice, then incubated with 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12726,7 +12792,7 @@ meter}
 
  PBS for 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12741,7 +12807,7 @@ minute}
 
  at 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12749,14 +12815,14 @@ status collapsed
 \backslash
 SI{37}{
 \backslash
-degreeCelsius}
+celsius}
 \end_layout
 
 \end_inset
 
 , 5% 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12833,7 +12899,7 @@ molar}
  TCA.
  Both media and cells were then incubated overnight at 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12841,7 +12907,7 @@ status collapsed
 \backslash
 SI{4}{
 \backslash
-degreeCelsius}
+celsius}
 \end_layout
 
 \end_inset
@@ -12866,7 +12932,7 @@ molar}
  TCA.
  Protein suspensions were centrifugated at 15,000 RCF, for 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12881,7 +12947,7 @@ minute}
 
 , at 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12889,7 +12955,7 @@ status collapsed
 \backslash
 SI{4}{
 \backslash
-degreeCelsius}
+celsius}
 \end_layout
 
 \end_inset
@@ -12912,7 +12978,7 @@ molar}
 
  TCA, and acetone, by resuspension, incubation at 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12920,14 +12986,14 @@ status collapsed
 \backslash
 SI{4}{
 \backslash
-degreeCelsius}
+celsius}
 \end_layout
 
 \end_inset
 
  for 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12959,7 +13025,7 @@ molar}
 
  NaOH / 1‰ v/v Triton, with sonication 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12974,7 +13040,7 @@ minute}
 
  at 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12982,14 +13048,14 @@ status collapsed
 \backslash
 SI{50}{
 \backslash
-degreeCelsius}
+celsius}
 \end_layout
 
 \end_inset
 
 , followed by incubation 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -13023,7 +13089,7 @@ degreeCelsius}
 \begin_layout Standard
 From the supernatant or from the resuspended pellet, 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -13040,7 +13106,7 @@ liter}
 
  was mixed with 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
