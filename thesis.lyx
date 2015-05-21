@@ -90,7 +90,7 @@ knitr
 
 \begin_layout Standard
 \begin_inset Flex Chunk
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -779,8 +779,11 @@ linebreak
 \end_inset
 
 
-\emph on
+\end_layout
 
+\begin_layout Standard
+
+\emph on
 \begin_inset Quotes erd
 \end_inset
 
