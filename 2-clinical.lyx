@@ -1,0 +1,4192 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\master thesis.lyx
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package auto
+\inputencoding ascii
+\fontencoding T1
+\font_roman default
+\font_sans Arial
+\font_typewriter Liberation Mono
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format pdf5
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 2
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style 
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\branch childonly
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5in
+\topmargin 1.5in
+\rightmargin 1in
+\bottommargin 1.5in
+\secnumdepth 0
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+preamble, echo = FALSE, warning = FALSE, message = FALSE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+codedir <- normalizePath(file.path(opts_knit$get("root.dir"),"code"))
+\end_layout
+
+\begin_layout Plain Layout
+
+datadir <- normalizePath(file.path(opts_knit$get("root.dir"),"data"))
+\end_layout
+
+\begin_layout Plain Layout
+
+source(file.path(codedir, "commonfuncs.R"))
+\end_layout
+
+\begin_layout Plain Layout
+
+source(file.path(codedir, "PMID12519877.R"))
+\end_layout
+
+\begin_layout Plain Layout
+
+PMID12519877data <- loadPMID12519877(datadir)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Clinical questions and evidence
+\end_layout
+
+\begin_layout Section
+Cushing's syndrome
+\end_layout
+
+\begin_layout Standard
+Through the detailed case series written by Harvey Cushing
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cushing1912pituitary"
+
+\end_inset
+
+, the scientific and medical community became aware of an otherwise rare
+ disease, which bears his name.
+ Unlike the earlier and better-studied deficiencies of the thyroid and pancreas,
+ pituitary defects were more variable in manifestation and therefore harder
+ to unify in a single clinical entity.
+ Even when macroscopic hypertrophy of pituitary were localized to a gland
+ subdomain, it was unclear whether observed pathology could be attributed
+ to a hypersecretion from the hypertrophied sector, or to a deficiency in
+ the neighboring compressed structures.
+ Similarly, pituitary extracts caused multiple, and even opposite effects,
+ in animal models
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schafer1899physiological"
+
+\end_inset
+
+, suggestive of a mixture of hormones.
+\end_layout
+
+\begin_layout Standard
+Among 50 cases described by Cushing, about five stood out due to the involvement
+ of other glands.
+ In each of them, and, to a lesser extent, in a few more cases, 
+\begin_inset Quotes eld
+\end_inset
+
+hyperadrenalism
+\begin_inset Quotes erd
+\end_inset
+
+ was blamed for asthenia, hyperpigmentation of skin, low blood pressure,
+ and hypoglycemia.
+ Histopathology tests localized the adrenal abnormalities to the zona fasciculat
+a of the cortex.
+ Cushing wrote that some of these abnormalities, reflect current adrenal
+ hypoactivity, caused by exhaustion after preceding intense stimulation
+ and hyperactivity.
+\end_layout
+
+\begin_layout Standard
+Twenty years later, Cushing narrowed the focus in an updated case series
+ of combined pituitary-adrenal pathology
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cushing1932basophil"
+
+\end_inset
+
+.
+ Cushing noted that basophile adenomata of the pituitary and hypertrophy
+ of the adrenal glands often coexisted.
+ Based on the curative effect of pituitary surgery, he hypothesized that
+ the adrenal defect is secondary to the pituitary abnormality.
+ In turn, he inferred that the adrenal changes mediate the disease phenotype,
+ which includes obesity with ectopic adipose deposits, kyphosis, amenorrhoea
+ / impotence, hypertrichosis, lineae atrophicae, fatigability and weakness.
+ Among these disease manifestations, muscle impairment was a serious, if
+ variable, component.
+ Cushing considered intense muscle loss the cause of death for one of these
+ cases.
+\end_layout
+
+\begin_layout Standard
+Cushing's work did little to elucidate mechanisms leading to the phenotype.
+ The variability in pituitary changes between the cases he described meant
+ that many scientists rejected his hypothesis of pituitary primacy.
+ A group at the Mayo Clinic was actively pursuing the opposite hypothesis,
+ with the adrenal as the primary site of impairment in adrenal-pituitary
+ combined afflictions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kepler1949cushings"
+
+\end_inset
+
+.
+ On the clinical side, it was noted that some of Cushing's patients lacked
+ observable pituitary changes.
+ Moreover, some of the Mayo patients were cured by adrenal surgery.
+ From a theoretical perspective, the adrenal hypothesis was more tempting
+ because the adrenal deficiency (termed Addison's disease) and its reversal
+ by administration of adrenal cortex extracts were better known than pituitary
+ pathology
+\begin_inset CommandInset citation
+LatexCommand cite
+key "thorn1939treatment"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Today, we know that the truth was more nuanced.
+ Oversecretion of the adrenal cortex hormones cortisol and / or corticosterone
+ is termed hypercortisolism.
+ One or more clinical signs listed by Cushing (see above) suggest to the
+ practitioner the activation of the hypothalamic - pituitary - adrenal (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HPA"
+description "hypothalamic - pituitary - adrenal"
+
+\end_inset
+
+) axis.
+ If concomitant hypercortisolism is confirmed by an increase of urine free
+ cortisol measurements, or by the effacement of the evening trough in circulatin
+g cortisol, there is suspicion for Cushing's syndrome (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CS"
+description "Cushing's syndrome"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nieman2008diagnosis"
+
+\end_inset
+
+.
+ Some hypercortisolism cases, termed pseudo-Cushing's syndrome, are ascribed
+ to causes outside the HPA axis, such as in depression, morbid obesity,
+ uncontrolled diabetes mellitus, and sleep apnea (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nieman2002diagnostic"
+
+\end_inset
+
+).
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+In theory, pseudo-Cushing responds to suppression tests by low dose Dexa,
+ while true CS does not.
+ In practice, specificity is very low and sensitivity is 95%, so latest
+ guidelines are recommending against suppression tests.
+ Tumors may be less responsive in Dexa suppression and in ACTH stimulation
+ tests than hyperplasias per PMID: 4342889
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+True CS cases are further classified based on the role of the adrenal-stimulatin
+g pituitary hormone corticotropin (adrenocorticotropic hormone; 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ACTH"
+description "adrenocorticotropic hormone;"
+
+\end_inset
+
+).
+ In some CS patients, hypercortisolism is paralleled by an increase in ACTH.
+ Their adrenals are usually responsive to further ACTH stimulation tests,
+ indicating that previously intact adrenals underwent hyperplasia in response
+ to a pathological overstimulation with ACTH.
+ When attributed to the pituitary, such ACTH oversecretion, followed by
+ secondary hypercortisolism, is termed Cushing's disease (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kirk2000cushings"
+
+\end_inset
+
+).
+ Cushing's disease remains a staple of physiology textbooks, because it
+ provides an excellent didactic example of a hormone hierarchy.
+\end_layout
+
+\begin_layout Standard
+The remainder of CS cases consists of hypercortisolism in spite of low ACTH.
+ In primary hypercortisolism, ACTH is typically suppressed by negative feedback.
+ Adrenal neoplasms are are the most frequent cause of primary hypercortisolism.
+ Ectopic or diffuse unregulated sources of ACTH or cortisol may cause hypercorti
+solism.
+ In recent decades, overdose with synthetic derivatives of cortisol became
+ the most important cause of low-intensity CS (discussed in the next section).
+\end_layout
+
+\begin_layout Standard
+Despite being caused by a diverse set of HPA pathologies, CS is quite invaiable
+ in its ability to cause muscle impairment.
+\end_layout
+
+\begin_layout Section
+Glucocorticoid therapy
+\end_layout
+
+\begin_layout Standard
+A series of serendipitous decisions brought impressive knowledge about CS
+ of non-pituitary etiology (reviewed in
+\begin_inset CommandInset citation
+LatexCommand cite
+key "glyn1998discovery"
+
+\end_inset
+
+).
+ First, during World War II, US intelligence learned that Germans were importing
+ large quantities of adrenal glands from neutral Argentina.
+ This reignited US government interest in corticoadrenal research, despite
+ the lackluster results with earlier adrenal extracts.
+ At the end of the war, only a few grams of pure adrenal steroids were manufactu
+red, from endogenous sources and at a high cost.
+ The second opportunity was in the allocation of those scarce steroids.
+ One of them, cortisone, made by Merck, was shared by a few clinical researchers
+, including Phillip Hench.
+ Hench's request was based on his previous work on rheumatoid arthritis.
+ He observed that rheumatoid arthritis was alleviated in jaundice, and hypothesi
+zed the existence of a steroidal 
+\begin_inset Quotes eld
+\end_inset
+
+anti-rheumatoid factor
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Third, Hench's choice of dose and route elicited an extraordinary reversal
+ in arthritic pain and dysfunction.
+ In 1949, after treating only five patients
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hench1964reversibility"
+
+\end_inset
+
+, impressive improvements in those cases triggered redirected corticosteroid
+ research.
+\end_layout
+
+\begin_layout Standard
+Previous work did describe multiple effects for adrenal extracts, but little
+ was known about purer preparations, such as cortisone.
+ In fact, adrenal research was discouraged prior to cortisone purification,
+ because less pure extracts combined antagonistic hormones in variable doses,
+ leading to the impression that they lack a defined pharmacological effect.
+ However, even with purified cortisone, Hench saw a very diverse set of
+ consequences for cortisone administration
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sprague1950observations"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+First, cortisone's action on metabolism was accessible even to the less
+ sophisticated clinical measurements used 60 years ago.
+ Patients receiving cortisone gained weight.
+ Chronic cortisone therapy led to accumulation of adipose tissue, often
+ in ectopic locations, such as the interscapular 
+\begin_inset Quotes eld
+\end_inset
+
+buffalo hump
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Cortisone also induced hyperglycemia which can induce glycosuria.
+ For this reason, cortisone, and its endogenous and synthetic analogs, are
+ grouped in the glucocorticoid (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GC"
+description "glucocorticoid"
+
+\end_inset
+
+) family.
+\end_layout
+
+\begin_layout Standard
+Hench and collaborators hypothesized that cortisone's protective action
+ is not limited to rheumatoid arthritis.
+ In his 1950 Nobel lecture, Hench envisaged a role for alleviation of most
+ inflammatory diseases.
+ GCs share the ability to reduce inflammation (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "clark2007anti-inflammatory,coutinho2011anti-inflammatory"
+
+\end_inset
+
+).
+ Some of these anti-inflammatory effects, such as reduction in the number
+ of circulating white blood cells, are ample and robust.
+ The cellular and molecular anti-inflammatory mechanisms are still subject
+ of active research.
+\end_layout
+
+\begin_layout Standard
+The knowledge gap around the anti-inflammatory actions of GCs is in part
+ caused by the immunology progress.
+ Still, some questions remain open, and illustrate the convoluted ways in
+ which GC signals are relayed in the cell.
+ For example, GCs are often acting in a manner shared with all steroids,
+ by binding and activating the glucocorticoid receptor (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GR"
+description "glucocorticoid receptor"
+
+\end_inset
+
+).
+ Activated GR translocates from cytosol to the nucleus, where it dimerizes
+ on specific DNA sequences, termed glucocorticoid responsive-elements (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GRE"
+description "glucocorticoid responsive-elements"
+
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "truss1990contacts"
+
+\end_inset
+
+.
+ The classical effect of the GRE-GR interaction is increased transcription
+ for neighboring target genes (transactivation), as it is the case in polymorpho
+nucleate cells with interleukin 1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IL-1"
+description "interleukin 1"
+
+\end_inset
+
+) receptor type II (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IL-1RII"
+description "interleukin 1 receptor type II"
+
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "re1994type"
+
+\end_inset
+
+, a decoy inhibitor of the pro-inflammatory IL-1.
+ In other circumstances, the activated receptor inhibits transcription directly
+ (transrepression), or by interfering with transcription factors.
+ For example, in human T lymphocytes, GCs inhibit the transcription factor
+ activator protein 1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AP-1"
+description "activator protein 1"
+
+\end_inset
+
+), thus causing a reduction in their ability to synthesize pro-inflammatory
+ interleukin 2 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IL-2"
+description "interleukin 2"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "paliogianni1993negative"
+
+\end_inset
+
+.
+ GCs employ nongenomic mechanisms, such as mRNA stability and enzymatic
+ activity modulations.
+ In airway epithelia, GCs reduce the half-life of the mRNA for interleukin
+ 8 (IL-8), the major chemoattractant for neutrophils
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chang2001mechanism"
+
+\end_inset
+
+.
+ Within minutes, GC administration induces vasodilation, through direct,
+ non-genomic activation of phosphatidylinositol 3-kinase (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PI3K"
+description "phosphatidylinositol 3-kinase"
+
+\end_inset
+
+) leading to activation of endothelial nitric oxide synthase (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "eNOS"
+description "endothelial nitric oxide synthase"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hafezi-moghadam2002acute"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Some GC effects may be limited to a range of doses, durations, and frequencies
+ of administration.
+ Moreover, the example of adrenalectomized rats re-supplemented with corticoster
+one, their most abundant endogenous GC, illustrates how, at times, the same
+ GC can induce or repress the same cellular response, depending on the dose.
+ A 5 mg / kg physiological dose enhances the immune skin delayed-type hypersensi
+tivity, while a pharmacological 40 mg / kg dose yields the more typical
+ GC immunosuppressive behavior 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dhabhar1999enhancing"
+
+\end_inset
+
+.
+ This behavior, suggestive of a U (or inverted U) shaped response curve,
+ is called hormesis or biphasic response, and poses great challenges, both
+ to the investigative scientist and to the clinician attempting to establish
+ a therapeutic regimen.
+\end_layout
+
+\begin_layout Standard
+In 1950, endogenous GCs corticosterone and cortisol, were synthesized at
+ Merck
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wendler1950synthesis"
+
+\end_inset
+
+, thus lowering the price and creating the opportunity for large-scale trials.
+ The Empire Rheumatism Council organized a randomized trial comparing cortisone
+ with acetylsalycilate, and concluded that there is no benefit in cortisone
+\begin_inset CommandInset citation
+LatexCommand cite
+key "theempirerheumatismcouncilsub-committee1957multi-centre"
+
+\end_inset
+
+.
+ While participants receiving cortisone claimed an improvement in subjective
+ well-being, they were afflicted more often with deleterious side effects,
+ including edema and hypertension.
+ In retrospect, a comparison between two palliative symptomatic therapies
+ using cure-indicating outcomes was likely misinformative,
+\end_layout
+
+\begin_layout Standard
+By the time this trial was reported, the chemists were providing more effective
+ and safe synthetic GCs (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sarett1959aspects"
+
+\end_inset
+
+).
+ While synthesizing esters with a longer half-life, Scherring chemists introduce
+d a double bond in the A ring of cortisone, thus discovering prednisone,
+ the first widely used oral GC
+\begin_inset CommandInset citation
+LatexCommand cite
+key "herzog195511-oxygenated"
+
+\end_inset
+
+.
+ In addition to an improved ability to induce hyperglycemia, prednisone
+ lost some of the cortisone's ability to cause edema.
+ NIH researchers synthesized and characterized prednisone's active metabolite,
+ prednisolone
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bunim1955metabolic"
+
+\end_inset
+
+.
+ In a trial of prednisolone versus acetylsalycilate in rheumatoid arthritis,
+ the GC provided better functional protection to the articulations
+\begin_inset CommandInset citation
+LatexCommand cite
+key "medicalresearchcouncil1960comparison"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+At Squibb, insertion of a halogen atom was found to abolish GCs ability
+ to induce hyperglycemia
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fried1955synthesis,fried1953synthesis"
+
+\end_inset
+
+.
+ In 1958, Merck chemists led by Arth modified cortisol with the unsaturated
+ A ring (Δ
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+), the fluoride addition at position 9α, and with a methyl group on the
+ 16α position to obtain dexamethasone (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Dexa"
+description "dexamethasone"
+
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "arth195816-methylated,arth195816-methylateda"
+
+\end_inset
+
+.
+ Dexa is the most effective and specific therapeutic synthetic GC to date,
+ with 170 times higher ability to inhibit the immune reaction to subcutaneous
+ foreign bodies (granuloma) compared to cortisol.
+\end_layout
+
+\begin_layout Standard
+Dexa is completely unable to cause edema and electrolyte imbalance.
+ Nevertheless, Dexa is 52 times more potent in suppressing endogenous GC
+ secretion, and 35 times more potent in causing hyperglycemia
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frawley1959effects,meikle1977potency"
+
+\end_inset
+
+.
+ In animals, Dexa is 160 times more potent than cortisol in the inhibition
+ of granuloma test of immune function
+\begin_inset CommandInset citation
+LatexCommand citep
+key "silber1959biology"
+
+\end_inset
+
+.
+ These findings suggest that anti-inflammatory and hyperglycemic actions
+ are intermediated by the same specific, Dexa-sensitive receptor, whereas
+ electrolyte changes are caused by cortisol through a different pathway.
+ Further supporting the idea of a unique Dexa receptor, efforts to synthesize
+ steroids with anti-inflammatory action that do not interfere with metabolism
+ have failed.
+ Compounds such as A276575
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lin2002trans-activation"
+
+\end_inset
+
+ and RU 24858
+\begin_inset CommandInset citation
+LatexCommand cite
+key "belvisi2001therapeutic"
+
+\end_inset
+
+ did not reach the human studies stage.
+ Mapracorat
+\begin_inset CommandInset citation
+LatexCommand cite
+key "baiula2014mapracorat"
+
+\end_inset
+
+ did nor progress beyond phase II clinical trials.
+ Therefore, clinicians prescribing GCs in these five decades had to balance
+ therapeutic benefit with metabolic side-effects.
+\end_layout
+
+\begin_layout Standard
+Edema is an example of non-specific GC effect, caused by a less typical
+ interaction of the hormone with the mineralocorticoid receptor (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MR"
+description "mineralocorticoid receptor"
+
+\end_inset
+
+).
+ The GC family spans tens of active principles and thousands of formulations,
+ from weak GCs with lower specificity, such as cortisone, to strong, specific
+ GCs, such as Dexa.
+ The list of Food and Drug Administration (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FDA"
+description "Food and Drug Administration"
+
+\end_inset
+
+)-approved indications for cortisone, Dexa, and prednisone is often changed,
+ as better, more specific drugs are developed, and more precautions are
+ added
+\begin_inset CommandInset citation
+LatexCommand cite
+key "merckco.inc.2004dexamethasone,pharmaciaandupjohnandcompany2007prednisone,west-wardpharmaceuticalcorp.2008hydrocortisone"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The trivial case for using GC therapy is in hormone replacement, such as
+ in adrenocortical insufficiency (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "johannsson2015adrenal"
+
+\end_inset
+
+).
+ GC therapy is suitable for acute immune or allergic conditions, such as
+ seasonal rhinitis (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "johannsson2015adrenal"
+
+\end_inset
+
+).
+ GCs are relatively safe in topical applications in dermatological conditions
+ (pemphigus, psoriasis, most types of dermatitis; reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brazzini2002new"
+
+\end_inset
+
+).
+ Similarly, GCs are commonly used in eye inflammatory conditions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "christoforidis2012systemic,gordon1950effects"
+
+\end_inset
+
+, such as diffuse posterior uveitis and optical neuritis.
+\end_layout
+
+\begin_layout Standard
+As envisaged by Hench in his Nobel Lecture, GCs do not address disease causes
+ and are recommended for temporary respite.
+ For many autoimmune diseases, there are more specific therapeutic alternatives,
+ often addressing the cause of disease.
+ In addition to the glucose metabolism disturbance, long term GC administration
+ causes osteoporosis and muscle loss.
+ On the balance of benefits and drawbacks, GCs are recommended for life-threaten
+ing or impairing immune reactions, such as in polymyositis (reviewed in
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "marie2011therapy"
+
+\end_inset
+
+), severe sarcoidosis (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dempsey2009sarcoidosis"
+
+\end_inset
+
+), and disseminated pulmonary tuberculosis.
+ Based on their ability to lower white blood cell count, GC are an important
+ adjuvant in the palliative and even etiologic treatment of leukemias and
+ lymphomas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "crump2014randomized,pui2006treatment,stewart2015carfilzomib"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Even in chronic diseases, GCs are recommended for short-term alleviation
+ of exacerbations.
+ Short-term GC therapy is recommended for rheumatoid arthritis, gouty arthritis,
+ psoriatic arthritis, ankylosing spondylitis, asthma
+\begin_inset CommandInset citation
+LatexCommand cite
+key "keeney2014dexamethasone,qureshi2001comparative"
+
+\end_inset
+
+, ulcerative colitis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "crotty1992drug,rosenberg1990high-dose"
+
+\end_inset
+
+, and idiopathic nephrotic syndrome
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haack1999glucocorticoid"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+GCs have been used off-label in many other diseases.
+ Most commonly, GCs are perceived by physicians as a fall-back therapeutic
+ alternative for cerebral hypertensive conditions, despite sparse evidence
+ for efficacy in specific conditions.
+ Small trials suggest GCs reduce vasogenic cerebral edema
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kotsarini2010systematic"
+
+\end_inset
+
+ and prevent acute mountain sickness
+\begin_inset CommandInset citation
+LatexCommand cite
+key "levine1989dexamethasone"
+
+\end_inset
+
+, while systematic reviews suggest they might in fact worsen outcomes for
+ acute brain trauma victims
+\begin_inset CommandInset citation
+LatexCommand cite
+key "alderson2005corticosteroids"
+
+\end_inset
+
+.
+ A similar, paradoxical situation is seen in ongoing clinical research.
+ As of 2015, the patent-free status of the GCs discourages trials for new
+ indications, while their de facto standard-of-care status makes them a
+ common comparator in clinical trials.
+ The National Cancer Institute sponsors 311 ongoing clinical studies employing
+ Dexa, mainly in the standard-of-care arm, thus providing a plethora of
+ data which have been, and may still be, misconstrued as support for the
+ use of GCs.
+ Every day practice may drift further apart for the officially sanctioned
+ label, thus providing new opportunities for unjustifiable overdose.
+\end_layout
+
+\begin_layout Standard
+Due their widespread use, GCs are likely to cause covert iatrogenic CS in
+ a large population, impairing muscle and quality of life to a certain and
+ understudied degree.
+\end_layout
+
+\begin_layout Section
+Hypercortisolism-induced muscle loss
+\end_layout
+
+\begin_layout Standard
+Primary and secondary endogenous hypercortisolism are rare diseases (1-2
+ cases per million and year each
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lindholm2001incidence"
+
+\end_inset
+
+), despite a recent boost from incidental findings during imaging tests
+ for other needs.
+ The symptomatology is non-specific, meaning that, even today in the developed
+ world, an average of 6 years pass from signs onset until diagnosis is made
+ and treatment is initiated
+\begin_inset CommandInset citation
+LatexCommand cite
+key "psaras2011demographic"
+
+\end_inset
+
+.
+ It is a life-threatening disease, with untreated patients having a median
+ survival rate of 5 years after diagnosis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "plotz1952natural"
+
+\end_inset
+
+.
+ Some of the changes occurring in Cushing's disease are irreversible, especially
+ at the level of brain, bone, adipose tissue, and liver levels (reviewed
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "valassi2012clinical"
+
+\end_inset
+
+).
+ Even after surgical adjustments of the hyperactive pituitary, the quality
+ of life for CS patients lags behind that of the unaffected population.
+ 
+\end_layout
+
+\begin_layout Standard
+At presentation, about two thirds of Cushing's syndrome cases present with
+ muscular complaints, with similar incidence among pituitary and adrenal
+ conditions
+\begin_inset CommandInset citation
+LatexCommand citep
+key "valassi2011european"
+
+\end_inset
+
+.
+ Among patients suspected of endogenous CS, one fifth are referred to the
+ endocrinologist due to muscle weakness
+\begin_inset CommandInset citation
+LatexCommand cite
+key "muller2006diagnosis"
+
+\end_inset
+
+.
+ Two-fifths of those whose endogenous hypercortisolism is successfully corrected
+ by surgery still complain of fatigue
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lindsay2006long-term"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+On the other hand, therapy-induced (iatrogenic) CS is common.
+ The glut of GC indications and off-label uses makes them some of the most
+ used drugs in the developed countries.
+ Every year, about 1% of the Americans and British receive some form of
+ GC
+\begin_inset CommandInset citation
+LatexCommand cite
+key "skversky2011association,vanstaa2000use"
+
+\end_inset
+
+.
+ GCs are likely even more often prescribed in the developing world, due
+ to affordability and lack of alternatives, poor access to health care not
+ withstanding.
+ Dexa and cortisol are the only drugs listed five times in the World Health
+ Organization's List of Essential Medicines
+\begin_inset CommandInset citation
+LatexCommand cite
+key "worldhealthorganization2013who"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In most cases, the cause of iatrogenic CS can be identified by careful history
+ taking and medication reviews.
+ However, an increasing number of cases are not as easily diagnosed, because
+ the excess GC is not from prescribed medicine.
+ In United States, FDA approved in 1979 over-the-counter sale of 0.5% hydrocortis
+one cream for itching and minor skin inflammation.
+ In 1990, 1% hydrocortisone creams were also permitted
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ravis2007topical"
+
+\end_inset
+
+.
+ Where regulated, over-the-counter GC creams rarely cause CS on their own,
+ but may lower the threshold for CS in patients who are also prescribed
+ oral GC.
+ Unregulated, mislabeled, overdosing GC creams sold as skin bleaching products
+ pose a great CS risk to patients from ethnic groups with darker skin.
+ Half of the respondents in a Nigeria poll admitted using GC-based skin
+ bleaching products
+\begin_inset CommandInset citation
+LatexCommand citep
+key "adebajo2002epidemiological"
+
+\end_inset
+
+.
+ In 2015, the Ivory Coast government made illegal skin bleaching products,
+ due to worries about GC overdose side effects
+\begin_inset CommandInset citation
+LatexCommand citep
+key "france-presse2015ivory"
+
+\end_inset
+
+.
+ The side-effects of skin bleaching are well recognized by the sub-Saharan
+ medical community.
+ Paradoxically, CS caused by bleaching products may be less identifiable
+ to practitioners who care for the African diaspora in the developed world,
+ where bleaching is more frequent, due to improved financial access and
+ social pressures
+\begin_inset CommandInset citation
+LatexCommand cite
+key "olumide2008complications,rozen2012cosmetic"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Other, less frequent causes of iatrogenic CS, include the interaction between
+ low dose GC therapy and cytochrome P450 3A4 inhibitors, such as the antiretrovi
+ral ritonavir
+\begin_inset CommandInset citation
+LatexCommand cite
+key "foisy2008adrenal"
+
+\end_inset
+
+.
+ Other steroid drugs may interact with GR and cause CS when overdosed, as
+ it is the case with the synthetic progestin megestrol acetate
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mann1997glucocorticoidlike"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Due to its insidious and erratic symptomatology, iatrogenic CS is often
+ diagnosed years after onset or completely unrecognized
+\begin_inset CommandInset citation
+LatexCommand cite
+key "psaras2011demographic"
+
+\end_inset
+
+.
+ The incidence of iatrogenic CS is difficult to estimate, because there
+ is no reporting requirement.
+ In the developed world, iatrogenic CS could be as frequent as 1 case per
+ thousand and year
+\begin_inset CommandInset citation
+LatexCommand cite
+key "prague2013cushings"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Signs of iatrogenic CS are as varied as those of Cushing's disease.
+ In a cohort of patients receiving for three months more than 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.4}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ prednisone, the most common signs were development of ectopic adipose deposits
+ (50%), hyperphagia (47%), and muscle cramps (32%) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fardet2007corticosteroid-induced"
+
+\end_inset
+
+.
+ In the same cohort, 15% complained of muscle weakness.
+ Patients stated that the most distressing signs of hypercortisolism were,
+ in order, body shape changes, neuropsychiatric disorders, muscle cramps,
+ and hand tremor.
+ Mastaglia estimated that, in 1982, the most common cause of iatrogenic
+ muscle weakness was caused by GC
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mastaglia1982adverse"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+There are differences between GC-induced cardiovascular changes, depending
+ on the nature of the GC.
+ Endogenous GC, such as cortisol, have hypertensive effects, while some
+ synthetic GCs, Dexa included, lack such non-specific MR-dependent action.
+ Nevertheless, excess exogenous and endogenous GC cause essentially the
+ same disabling effects on muscle
+\begin_inset CommandInset citation
+LatexCommand cite
+key "douglass1992myopathy"
+
+\end_inset
+
+, indicating that muscle damage is mediated by GR.
+ GCs do differ quantitatively in their ability to cause myopathy.
+ Myopathy is invariably induced in two weeks by either 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.2}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "batchelor1997steroid"
+
+\end_inset
+
+, or by 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.5}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ prednisone
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bowyer1985steroid"
+
+\end_inset
+
+.
+ Based on other metabolic effects, it is likely that the catabolic potency
+ ratio is even more tilted towards Dexa than the referenced studies indicate,
+ but more detailed human pharmacodynamic studies are lacking.
+\end_layout
+
+\begin_layout Standard
+In their 1958 case series, Muller and Kugelberg were the first to describe
+ muscle changes associated with long-term Cushing's disease
+\begin_inset CommandInset citation
+LatexCommand cite
+key "muller1959myopathy"
+
+\end_inset
+
+.
+ In their mixed, primary and secondary, endogenous hypercortisolic cohort,
+ they found that complaints of muscle weakness were primarily focused on
+ the thigh.
+ Objective loss of muscle force was correlated with histopathological changes
+ indicative of a muscle fiber defect, such as degenerated fibers, at times
+ hyalinized or with loss of striation, muscle replacement with fat and connectiv
+e tissue, and rare hypertrophic fibers.
+ Through electromyography, they established that the number of motor units
+ is unaffected.
+ Together with lack of changes in reflexes, their work negated a neurological
+ component of CS.
+ Muller and Kugelberg noted faster extinction of the action potential, which
+ may be caused by a reduction in the number of fibers, or by fiber atrophy
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rodriguez-carreno2012motor"
+
+\end_inset
+
+.
+ Based on the evidence that GC is a muscle fiber disease, they coined the
+ phrase 
+\begin_inset Quotes eld
+\end_inset
+
+steroid myopathy
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Similar electromyographic changes are induced by long-term GC therapy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dropcho1991steroid-induced"
+
+\end_inset
+
+, making some authors reserve the term 
+\begin_inset Quotes eld
+\end_inset
+
+steroid myopathy
+\begin_inset Quotes erd
+\end_inset
+
+ to muscle complaints of iatrogenic etiology.
+ In 1966, D'Agostino and Chiga, confirming histological fiber changes in
+ a rabbit model of iatrogenic CS, formulated the more precise, yet less
+ commonly used 
+\begin_inset Quotes eld
+\end_inset
+
+glucocorticoid myopathy
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dagostino1966cortisone"
+
+\end_inset
+
+.
+ Owing to the fact that steroid myopathy is not a standalone disease or
+ syndrome, terminology has never been standardized.
+ In the present work, where an experimental and objective angle is taken,
+ through the use of an animal model, the condition of interest will be termed
+ GC-associated muscle loss (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GAML"
+description "GC-associated muscle loss"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+In exogenous CS, GC excess can be better quantified.
+ In a population with neurological maladies receiving long-term Dexa, the
+ threshold for manifest steroid myopathy appears to be 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vecht1994dose-effect"
+
+\end_inset
+
+.
+ However, the most significant predictor of clinical GAML is total dose
+\begin_inset CommandInset citation
+LatexCommand cite
+key "batchelor1997steroid,shee1990risk"
+
+\end_inset
+
+.
+ When GAML develops, the amplitude of electromyographic changes (that is,
+ the reduction in action potential duration) is proportional with the total
+ GC dose
+\begin_inset CommandInset citation
+LatexCommand cite
+key "coomes1965corticosteroid"
+
+\end_inset
+
+.
+ These findings imply that steroid myopathy can be induced in shorter periods,
+ if the GC dose is extremely high.
+ Foye and colleagues drew a distinction between 
+\begin_inset Quotes eld
+\end_inset
+
+classical
+\begin_inset Quotes erd
+\end_inset
+
+ chronic steroid myopathy, induced 
+\begin_inset Quotes eld
+\end_inset
+
+within weeks to years
+\begin_inset Quotes erd
+\end_inset
+
+, and acute steroid myopathy, induced in 5-7 days of high-dose GC
+\begin_inset CommandInset citation
+LatexCommand cite
+key "foye2014corticosteroid-induced"
+
+\end_inset
+
+.
+ However, their description of the two forms of GAML is almost identical,
+ suggesting that the two clinical entities are overlapping to a great extend.
+\end_layout
+
+\begin_layout Standard
+In a comparative study of patients receiving GC therapy for asthma, half
+ of the patients receiving more than 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.2}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ prednisone exhibited a reduction in hip flexor strength of 2 SD or more,
+ compared with health age- and sex-matched controls
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bowyer1985steroid"
+
+\end_inset
+
+.
+ In a study of adults with brain or spine cancer, 60% of the participants
+ experienced loss of iliopsoas muscle force in response to GC therapy for
+ cerebral edema
+\begin_inset CommandInset citation
+LatexCommand cite
+key "batchelor1997steroid"
+
+\end_inset
+
+.
+ In a small cohort, 6 months of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.16}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ prednisone treatment was associated with a 20% reduction in thigh muscle
+ force, compared to healthy controls
+\begin_inset CommandInset citation
+LatexCommand cite
+key "horber1985thigh"
+
+\end_inset
+
+.
+ In a post-hoc analysis of a chronic obstructive pulmonary disease (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "COPD"
+description "chronic obstructive pulmonary disease"
+
+\end_inset
+
+) trial, the placebo arm was stratified in GC-treated and GC-naive groups
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pansters2013synergistic"
+
+\end_inset
+
+.
+ The maximal inspiratory mouth pressure, a proxy measurement for respiratory
+ muscle strength, was significantly better maintained over the 8 weeks of
+ the trial in the GC-naive, compared to GC-treated participants.
+ Such findings suggest that GC-induced weakness is caused by an objective
+ muscle disorder, and negate the alternative, neuropsychiatric etiology.
+\end_layout
+
+\begin_layout Standard
+Another investigative direction in the study of GC-induced muscle weakness
+ focused on muscle mass and volume.
+ Although correlated, muscle force and muscle mass are not completely reflecting
+ each other.
+ The most accessible proxy measurements of muscle mass, such as mid upper-arm
+ or thigh circumference, are not sensitive enough in monitoring GC-induced
+ muscle loss, even after subtracting skin fold, because GC stimulate intramuscul
+ar adipose deposits
+\begin_inset CommandInset citation
+LatexCommand cite
+key "horber1987impact"
+
+\end_inset
+
+.
+ The advent of modern imaging allowed non-invasive muscle measurements.
+ Chronic prednisone administration causes a 20% reduction in mid-thigh muscle
+ area measured by computed tomography, and a 36% increase in the ratio of
+ fat-to-muscle areas (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CT"
+description "computed tomography"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "horber1985evidence"
+
+\end_inset
+
+.
+ Psoas muscle area and density, measured by computed tomography, are inversely
+ correlated with GC levels indicated by 24-hour urine cortisol (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "24HUC"
+description "24-hour urine cortisol"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "miller2011quantitative"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In an early study of chronic hypercortisolism, it was found that all types
+ of fibers are affected by GC
+\begin_inset CommandInset citation
+LatexCommand citep
+key "khaleeli1983corticosteroid"
+
+\end_inset
+
+.
+ In more recent ones, a type-specific effect was found.
+ Women with CS have an increased proportion of type IIx (fast twitch, glycolytic
+) and a lower proportion of type I (slow twitch, oxidative) fibers in their
+ vastus lateralis muscles
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rebuffe-scrive1988muscle"
+
+\end_inset
+
+.
+ Similar histological findings were made in renal transplant patients receiving
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ prednisone over three months
+\begin_inset CommandInset citation
+LatexCommand citep
+key "topp2003alterations"
+
+\end_inset
+
+.
+ In the latter, GC caused an increase in the cross-sectional area (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CSA"
+description "cross-sectional area"
+
+\end_inset
+
+) of the type I and IIa (slow twitch, oxidative / glycolytic) fibers.
+ Gains in the ratio fast-to-slow twitch fibers are associated with insulin
+ resistance
+\begin_inset CommandInset citation
+LatexCommand citep
+key "simoneau1995skeletal"
+
+\end_inset
+
+.
+ Diameter increases in spite of loss of function and protein content have
+ been explained by a disorganized intracellular structure.
+ A more practical consequence of these findings is the dereliction of CSA
+ measurements in GAML.
+ 
+\end_layout
+
+\begin_layout Standard
+A set of muscle mononucleate cells, expressing the paired-box transcription
+ factor Pax7, are presumed to support muscle development and regeneration,
+ and are termed satellite cells (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "legrand2007skeletal"
+
+\end_inset
+
+).
+ There are no definitive studies describing the effect of GC in human satellite
+ cells.
+ Some or all satellite cells may be activated to proliferate, thus becoming
+ myoblasts.
+ Many in vitro assays use dividing cells from human muscle, at times assumed
+ to be myoblasts.
+ These human 
+\begin_inset Quotes eld
+\end_inset
+
+myoblasts
+\begin_inset Quotes erd
+\end_inset
+
+ do not proliferate in the absence of at least 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ (
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ham1988improved"
+
+\end_inset
+
+, and personal observation; data not shown).
+ For comparison, maximum normal concentrations of endogenous cortisol in
+ humans is 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.78}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "griffing2014serum"
+
+\end_inset
+
+, that is, tens of times less potent.
+ Therefore, it is impossible to conceive an experiment where these human
+ myoblasts are subjected to meaningful manipulations of GC concentration.
+ Moreover, it appears that GCs are vital for human muscle development and
+ maintenance.
+ This implies that cell lines which do not require GC, such as those surviving
+ in serum-free media, may be less accurate models of muscle.
+\end_layout
+
+\begin_layout Standard
+There are no published cases of increase in circulating myoglobin or creatin
+ kinase in response to GC monotherapy, or as a consequence of Cushing's
+ disease.
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+There are some mentions of the opposite in Uptodate, but the rumor has no
+ literature to support it.
+ Not even anecdotal.
+\end_layout
+
+\end_inset
+
+ The absence of such intramuscular protein from the blood flow suggests
+ GC do not cause rhabdomyolysis, that is, loss of muscle through uncontrolled
+ rapid membrane leakage.
+\end_layout
+
+\begin_layout Standard
+From its first trial, GC therapy ability to induce a negative nitrogen balance,
+ through an ample increase in urinary creatine and creatinine, was interpreted
+ as evidence for stimulation of tissue protein breakdown
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sprague1950physiological"
+
+\end_inset
+
+.
+ As little as 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ cortisol infused over 8 hours increases by a quarter the rate of appearance
+ of leucine into the bloodstream, suggestive of proteolysis upregulation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "simmons1984increased"
+
+\end_inset
+
+.
+ Leucine's rate of appearance is even higher when the GC-induced hyperinsulinemi
+a is prevented, indicating that whole-body experiments do not capture the
+ amplitude of the GC-induced proteolysis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brillon1995effect"
+
+\end_inset
+
+.
+ More modern mass spectrometric methods revealed that a single dose of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ prednisolone cause increases in all blood amino acids, presumably due to
+ mobilization from muscle sources
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ellero-simatos2012assessing"
+
+\end_inset
+
+.
+ The same acute treatment causes an increase in 3-methylhistidine (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "3MH"
+description "3-methylhistidine"
+
+\end_inset
+
+), a degradation product specific to muscle actin and myosin
+\begin_inset CommandInset citation
+LatexCommand cite
+key "elia1981clinical"
+
+\end_inset
+
+.
+ Similar increases in 3MH are seen with control diet in chronic GC excess
+ of endogenous or exogenous nature
+\begin_inset CommandInset citation
+LatexCommand citep
+key "khaleeli1983corticosteroid"
+
+\end_inset
+
+.
+ These findings demonstrate that GC-induced loss of muscle mass is mediated
+ by stimulation of protein degradation.
+\end_layout
+
+\begin_layout Standard
+The last three decades brought a better understanding of protein degradative
+ pathways and of muscle atrophy.
+ Two major proteolytic systems, the proteasome-ubiquitin system and the
+ autophagosome (discussed in later sections), have been discovered and dissected.
+ But only one published trial investigated the action of GC in human muscle
+ biopsies, at a molecular level.
+ It failed to find a significant change in mRNA of ubiquitin and the C3
+ subunit of the proteasome
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lofberg2002effects"
+
+\end_inset
+
+.
+ The result is unsurprising, given that the control of the proteasome system
+ may be exercised in other, unprobed ways.
+ In animal models, the genes most correlated with muscle loss, including
+ GAML, are two E3 ubiquitin ligases, muscle atrophy F-box (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MAFbx"
+description "muscle atrophy F-box"
+
+\end_inset
+
+) and muscle RING finger 1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MuRF1"
+description "muscle RING finger 1"
+
+\end_inset
+
+), but no published studies confirm or refute their modulation in humans
+ (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bodine2014skeletal"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Recently, pharmacological inhibition of the proteasome become widely available.
+ The first proteasome inhibitor, bortezomib, is recommended by the FDA for
+ multiple myeloma and mantle cell lymphoma
+\begin_inset CommandInset citation
+LatexCommand cite
+key "milleniumpharmaceuticalsinc.2014velcade"
+
+\end_inset
+
+.
+ The second generation, irreversible proteasome blocker carfilzomib is also
+ approved for advanced myeloma therapy
+\begin_inset CommandInset citation
+LatexCommand cite
+key "onyxpharmaceuticalsinc.2012kyprolis"
+
+\end_inset
+
+.
+ In the light of data from the animal models of muscle loss, these drugs
+ should have been useful in cachexia, but, to date, no human trials investigated
+ their ability to prevent muscle atrophy.
+ 
+\end_layout
+
+\begin_layout Standard
+There are no trials comparing GC with the combination (GC + bortezomib).
+ However, an indirect comparison can be made.
+ In a trial for multiple myeloma, fatigue was a complaint of 32% of the
+ participants receiving 40 mg Dexa, compared to 42% for bortezomib
+\begin_inset CommandInset citation
+LatexCommand cite
+key "richardson2007safety"
+
+\end_inset
+
+.
+ In another trial, addition of 20 mg Dexa to bortezomib lowered the rate
+ of fatigue from 57% to 25%
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jagannath2006bortezomib"
+
+\end_inset
+
+.
+ Taking into account the large variability between trials and the use of
+ a atypical population, the comparison is of marginal use, but it does not
+ appear that the combination (Dexa + bortezomib) is more muscle protective
+ than Dexa alone.
+ Clinical studies directly addressing this comparison in patients prescribed
+ high-dose GC are recommended, given that the most commonly accepted hypothesis
+ centers on the proteasome as main effector of GC-induced muscle loss.
+ It is still more likely to find that bortezomib provides muscle protection.
+ Proving a beneficial action of bortezomib in co-administration with GC
+ will have major practice implications.
+ Even proving the opposite, that bortezomib has no protective action, will
+ be very valuable in better understanding and eventually preventing GC-induced
+ muscle loss.
+\end_layout
+
+\begin_layout Standard
+The inhibition of the other proteolytic system, the autophagosome, is also
+ the focus of clinical studies.
+ Starting with the inexpensive antimalarials chloroquine and hydroxychloroquine,
+ autophagosome inhibitors are now the focus of phase II clinical studies
+ in many cancers
+\begin_inset CommandInset citation
+LatexCommand cite
+key "amaravadi2011principles"
+
+\end_inset
+
+.
+ Interestingly, hydroxychloroquine is also recommended for rheumatoid arthritis,
+ where it may be prescribed for up to six months
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sanofiaventisusllc2006plaquenil"
+
+\end_inset
+
+.
+ Chronic hydroxychloroquine therapy is known to induce muscle weakness and
+ sporadic myopathy, through a distinct, vacuolar mechanism.
+ The hydroxychloroquine-induced myopathy is associated with an increase
+ in autophagosomal markers in muscle, demonstrating autophagosome's importance
+ in muscle regulation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lee2012clinical"
+
+\end_inset
+
+.
+ In two separate case reports, co-administration of prednisone and hydroxychloro
+quine led to vacuolar myopathy, which could be caused by the choice of doses,
+ or could be indicative of true epistasis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ghosh2013teaching,nucci1996chloroquine"
+
+\end_inset
+
+.
+ Potential benefits of anti-lysosomal co-therapy for the atrophying muscle
+ remain the subject of speculation.
+\end_layout
+
+\begin_layout Standard
+Another putative parallel mechanism for GC-induced loss of muscle is downregulat
+ion of protein synthesis.
+ Few human trials measured directly the effect of GC on protein synthesis
+ in healthy volunteers.
+ Brillion and colleagues
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brillon1995effect"
+
+\end_inset
+
+ found that a 80 mg cortisol infusion over 13 hours led to 8% increase in
+ non-oxidative leucine uptake, indicating an upregulation of protein synthesis.
+ However, using a 200 mg cortisol infusion in the same protocol failed to
+ cause a detectable change in protein synthesis compared to placebo, suggesting
+ hormesis may confound experiments.
+ Moreover, this finding was never replicated.
+ Löfberg and colleagues
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lofberg2002effects"
+
+\end_inset
+
+ found that three days of 65 mg / day prednisolone caused a non-significant
+ 21% increase in protein synthesis rate and a statistically-significant
+ 52% increase in the rate of protein degradation, based on the difference
+ between arterial and venous levels of tritiated phenyl alanine at leg level.
+ Short and colleagues employed fractional synthesis rate (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FSR"
+description "fractional synthesis rate"
+
+\end_inset
+
+), which describes the time rate of enrichment in muscle tracer, normalized
+ to the circulating tracer concentration.
+ They concluded repeatedly that, in leg muscles, 35 mg / day prednisone
+ for 6 days 
+\begin_inset Quotes eld
+\end_inset
+
+has no effect on [...] muscle protein metabolism or muscle function
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "short2004effect,short2009short-term"
+
+\end_inset
+
+ .
+ Some of these studies may have been underpowered (sample size n = 6-7)
+ or may be troubled by the use of a small dose, but their validity is confirmed
+ by the fact that, in each case, the expected hyperglycemic response to
+ GC was observed.
+ 
+\end_layout
+
+\begin_layout Standard
+The hypothesis that GC cause muscle loss by inhibition of protein synthesis
+ is still debated, due to a plethora of indirect evidence.
+ In Löfberg's study, biopsies revealed a prednisolone-induced loss of muscle
+ polyribosomes, interpreted as evidence for decrease in protein synthesis
+ rate.
+ Even in studies where GC failed to elicit reductions in protein synthesis,
+ they inhibited translation-stimulating signals in muscle from anabolic
+ factors such as insulin
+\begin_inset CommandInset citation
+LatexCommand cite
+key "louard1994glucocorticoids"
+
+\end_inset
+
+, branched chain amino acids
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2001branched"
+
+\end_inset
+
+, and exercise
+\begin_inset CommandInset citation
+LatexCommand cite
+key "garrel1988effects"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+At a molecular level, it appears that Dexa inhibits anabolic signals centered
+ on the Akt / mechanistic target of rapamycin (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "mTOR"
+description "Mechanistic Target of Rapamycin"
+
+\end_inset
+
+) axis.
+ More evidence has been collected in animal models, and is discussed in
+ a dedicated section.
+ One study on humans described how Dexa inhibits branched chain amino acids'
+ ability to induce phosphorylation of eIF4E binding protein 1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "4E-BP1"
+description "eIF4E binding protein 1"
+
+\end_inset
+
+) and p70-S6K
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2004glucocorticoids"
+
+\end_inset
+
+.
+ Dexa lacked similar action on another translation regulators, eIF2α.
+\end_layout
+
+\begin_layout Standard
+In addition to GC excess, muscle weakness is caused by GC withdrawal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "amatruda1960study"
+
+\end_inset
+
+, and by GC deficiency, illustrated by the Addisonian crisis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mor1987myopathy"
+
+\end_inset
+
+.
+ In both hyercortisolism and hypocortisolism, effects on human muscle remain
+ understudied.
+ Human studies concord that GC-induced loss of muscle force is an objective
+ finding caused by an increased proteolytic activity.
+ Indirect evidence indicate human GAML is associated with changes in protein
+ synthesis.
+ In the absence of other proven mitigating interventions, current guidelines
+ suggest GC discontinuation if myopathy develops.
+ Animal models have been essential for the study of GC-induced muscle loss,
+ although they have been confounded by hormesis (discussed in future sections).
+\end_layout
+
+\begin_layout Standard
+In conclusion, CS of various etiologies leads to an increase in muscle protein
+ catabolism, and a reduction in muscle protein synthesis.
+\end_layout
+
+\begin_layout Section
+Muscle protection with androgen therapy
+\end_layout
+
+\begin_layout Standard
+A series of historical circumstances brought anabolic androgenic steroids
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AAS"
+description "anabolic androgenic steroids"
+
+\end_inset
+
+) in the attention of clinicians treating hypercortisolism in muscle.
+ The same circumstances meant that utility of AAS therapy in steroid myopathy
+ has never been fully explored.
+\end_layout
+
+\begin_layout Standard
+Male hormones have been considered an efficacious anabolic therapy long
+ before they were purified and tested.
+ The effects of male castration, such as reductions in aggressiveness and
+ muscle force, were discovered independently by many human civilizations,
+ starting more than three thousand years ago.
+ Castration is omnipresent in ancient mythology, and, more mundanely, in
+ primitive farming.
+ For almost as long, people perceived testis ingestion as a reversal of
+ castration, thought to improve muscle force.
+ Such perceptions were caused by the placebo effect alone, given that this
+ testis active principle is almost completely degraded by liver.
+\end_layout
+
+\begin_layout Standard
+Testis extract benefits received more attention starting around 1889, when
+ Brown-Séquard published his theory about rejuvenating abilities of sperm.
+ He thought that loss of sperm during aging or masturbation causes degradation
+ in muscle and brain performance, and hypothesized that chemicals from sperm
+ may pass into blood where they have 
+\begin_inset Quotes eld
+\end_inset
+
+a most-essential use in giving strength to the nervous system and to other
+ parts.
+\begin_inset Quotes erd
+\end_inset
+
+ Consequently, he injected himself with a combination of sperm and testis
+ extracts, which led to self-reported improvements in physical and intellectual
+ abilities
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brown-sequard1889note"
+
+\end_inset
+
+.
+ He describes how, at the age of 72, a single injection enables him stand
+ for hours, or write longer scientific papers.
+ Later on, he describes how testis extracts appeared to alleviate 
+\begin_inset Quotes eld
+\end_inset
+
+serious affections of any kind
+\begin_inset Quotes erd
+\end_inset
+
+, including cachexia, pulmonary tuberculosis, cancer and leprosy ulcers
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brown-sequard1893new"
+
+\end_inset
+
+.
+ Because the active principle in testis is made as needed, rather than stored
+ in high-concentration depots, it is now obvious that these observations
+ were the product of preconception.
+\end_layout
+
+\begin_layout Standard
+The cultural context in which Brown-Séquard worked introduced multiple biases
+ in his experiments and conclusions.
+ His mistaken theses were constrained into rather low-quality experiments,
+ which luckily provided useful, testable, and eventually proven scientific
+ hypotheses.
+ First, the logical conclusion for Brown-Séquard's theory would have been
+ endorsement for semen therapy.
+ Instead, due to the semen taboo, Brown-Séquard and his disciples resorted
+ to surrogate interventions, such as vasectomy, believed to preserve sperm
+ in the body, and injections with testis extracts.
+ The introduction of injections gave a new lease of life to the therapeutic
+ use of organ extracts, called 
+\begin_inset Quotes eld
+\end_inset
+
+organotherapy
+\begin_inset Quotes erd
+\end_inset
+
+, which had been banished from the British Pharmacopoeia in 1788 after failing
+ the test of oral administration.
+ Some organotherapies were shams or even harmful.
+ Yet a few of them provided evidence that specific parts of the body store
+ or release into the blood stream chemicals, which subsequently induce changes
+ in other specific parts of the body.
+ This conjecture led the discovery of endocrine glands and the establishment
+ of endocrinology as a science.
+ In fact, androgen organotherapy provided the pattern to GC discovery.
+\end_layout
+
+\begin_layout Standard
+Second, the Victorian era is an age of body rediscovery.
+ Georgian pastimes, such as cock fighting, horse racing, or cricket, are
+ replaced by more muscular sports, such as football, rugby, gymnastics,
+ and swimming.
+ Body building becomes fashionable, with the first professional competition
+ selling out Royal Albert Hall in 1901.
+ Brown-Séquard's promise of muscle without effort makes testis organotherapy
+ a widespread, well-earning business.
+ When Voronoff is barred from practicing in Paris and judged as fraudulent
+ by the Royal Society of Medicine, he takes his testis transplant business
+ to Algiers, where he receives patients from all over the world (reviewed
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nieschlag2014testosterone"
+
+\end_inset
+
+).
+ Private sponsorship led to investment in androgen research, but with a
+ focus on commercial rather than clinical efficacy.
+\end_layout
+
+\begin_layout Standard
+Finally, Brown-Séquard's era tolerated unscientific theories, which ignored
+ the physical and intellectual ability of women.
+ Brown-Séquard claimed that ovary extracts provide some benefits, but with
+ 
+\begin_inset Quotes eld
+\end_inset
+
+less power
+\begin_inset Quotes erd
+\end_inset
+
+ than testis extracts
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brown-sequard1893new"
+
+\end_inset
+
+.
+ Such conclusions stemmed from cultural biases rather than comparative experimen
+ts.
+ In 1849, Berthold showed that, through testis implants, roosters regain
+ male characteristics they lost through castration, such as aggressiveness,
+ libido, and larger combs
+\begin_inset CommandInset citation
+LatexCommand cite
+key "berthold1849transplantation"
+
+\end_inset
+
+.
+ With maintenance of secondary sex characteristics as its sole ability,
+ Berthold's secreted agent was therefore androgenic.
+ In contrast, Brown-Séquard claimed that his extract increases muscle force,
+ without mentioning any virilizing side effects.
+ Moreover, in 1935, Kochakian proved that urine-extracted 
+\begin_inset Quotes eld
+\end_inset
+
+male hormone
+\begin_inset Quotes erd
+\end_inset
+
+ stimulates muscle accretion in castrated dogs, that is, that it is anabolic
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kochakian1935effect"
+
+\end_inset
+
+.
+ While ultimately proven correct, the idea that 
+\begin_inset Quotes eld
+\end_inset
+
+male hormones
+\begin_inset Quotes erd
+\end_inset
+
+ were simultaneously androgenic, anabolic, and ergogenic was based on a
+ cultural construct that confounded manliness and physical force, rather
+ than the product of evidence.
+\end_layout
+
+\begin_layout Standard
+The belief in an male-secreted ergogenic substance inspired many commercial
+ enterprises to sponsor research in male endocrinology, through the decades
+ where the evidence was confined to changes in the combs of roosters.
+ These dark ages end in 1927, McGee and Koch extract a lipophilic virilizing
+ mixture from rooster testis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gallagher1929testicular,mcgee1928development"
+
+\end_inset
+
+.
+ A pure and even more androgenic chemical is extracted in 1935 from bull
+ testis by Laqueur, working for Organon
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david1935uber"
+
+\end_inset
+
+.
+ Laqueur names his discovery testosterone (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Testo"
+description "testosterone"
+
+\end_inset
+
+).
+ Three months later, Butenandt and Ruzicka, sponsored by Schering and Ciba
+ respectively, announced the development of manufacturing methods for synthetic
+ testosterone, an achievement that brought them the 1939 Nobel Chemistry
+ Prize (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hoberman1995history"
+
+\end_inset
+
+).
+ At the University of Chicago, Kenyon tests Testo on four eunuchoid patients
+ of testicular and pituitary etiology.
+ Daily injections of 25 mg testosterone propionate (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Tp"
+description "testosterone propionate"
+
+\end_inset
+
+) cause an doubling in prostate and penis size
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kenyon1938effect"
+
+\end_inset
+
+ after less than two weeks, thus establishing the efficacy of Testo replacement
+ therapy in men with pathological decreases in circulating Testo.
+ With few, narrow exceptions, this population was and remains the only generally
+ accepted, FDA-approved indication for Testo therapy
+\begin_inset CommandInset citation
+LatexCommand cite
+key "auxiliumpharmaceuticalsinc.2014testim,endopharmaceuticalssolutionsinc.2014delatestryl,unimed2004androgel"
+
+\end_inset
+
+.
+ Recent Testo preparations are still recommended for some breast cancers,
+ but this indication is limited to a few, unpredictable, cases.
+\end_layout
+
+\begin_layout Standard
+Due to manufacturing costs, limited commercial target, and governments'
+ lack of interest, Testo therapy traversed a very long experimental stage,
+ which could easily be called 
+\begin_inset Quotes eld
+\end_inset
+
+the second dark age of androgens
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Only in 1953, FDA gives its first approval for an androgenic therapy, a
+ Testo enanthate injection.
+ Then, as now, FDA's approval was based on Testo ability to restore normal
+ levels of androgens, rather than other, more functional or curative, outcome
+\begin_inset CommandInset citation
+LatexCommand cite
+key "endopharmaceuticalssolutionsinc.2014delatestryl"
+
+\end_inset
+
+.
+ But in 18 years of life as experimental drugs, androgenic steroids have
+ been trialled in diverse diseases, including male functional impotence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "spence1940testosterone"
+
+\end_inset
+
+, unwanted lactation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kurzrok1938inhibition"
+
+\end_inset
+
+, uterine bleeding and dysmenorrhea
+\begin_inset CommandInset citation
+LatexCommand cite
+key "black1942use"
+
+\end_inset
+
+, or osteoporosis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "reifenstein1947metabolic"
+
+\end_inset
+
+.
+ These early studies share the extremely small sample size, and the scarcity
+ of controls, blinding, and objective outcomes.
+ For example, a study found that 14-35 injections of Tp (cumulative dose
+ 255-455 mg) caused an improvement of acne in half of the male participants
+\begin_inset CommandInset citation
+LatexCommand cite
+key "molitch1938treatment"
+
+\end_inset
+
+.
+ Such findings are at odds with more modern trials, where weekly i.m.
+ androgen injection lead to an increase in absolute risk of acne by 15%,
+ in healthy males
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mommers2008male"
+
+\end_inset
+
+, and are possibly explained by the variability in the androgen arm, small
+ sample size (n = 12), lack of blinding, and early stopping in the placebo
+ arm.
+ Nevertheless, these trials are, in many cases, the only source of information
+ about the action of Testo in the normogonadal population.
+ For example, early trials of oral methyltestosterone revealed its hepatic
+ toxicity, with the effect that, 50 years later, the development of oral
+ androgenic therapies is still discouraged.
+\end_layout
+
+\begin_layout Standard
+The second dark age of Testo were times of limited knowledge, and even more
+ limited adherence to the principles of clinical research.
+ Yet in these years, androgenic steroids first gained their reputation as
+ ergogens.
+ Kenyon noted in his studies on eunuchoid men that Testo injections helped
+ them gain weight through protein accretion, as demonstrated by a reduction
+ in urinary nitrogen.
+ Other trials evidenced benefits from androgenic therapy in muscle-depleting
+ conditions, including thyrotoxic myopathy
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kinsell1944effect"
+
+\end_inset
+
+ and muscular dystrophy
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hesser1940muscle"
+
+\end_inset
+
+.
+ By 1940, Kenyon confirmed that Tp caused nitrogen retention, caused by
+ increased protein accretion, even in healthy men and women
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kenyon1940comparative"
+
+\end_inset
+
+.
+ Interestingly, in 1942, Samuels and colleagues state that Testo does not
+ change grip strength in healthy males
+\begin_inset CommandInset citation
+LatexCommand cite
+key "samuels1942influence"
+
+\end_inset
+
+.
+ According to a meta-analysis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "elashoff1991effects"
+
+\end_inset
+
+ and my literature search, no other test of androgens' effect on muscle
+ strength is published until 1968.
+ Despite the lack of evidence, androgens are used as ergogens in healthy
+ people, starting with Olympic athletes around 1954
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cowart1987steroids"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As exemplified by the ergogenic hypothesis, benefits of androgen therapy
+ on men with Testo deficiency have been extrapolated by clinicians and theoretic
+ians to other muscle-depleting conditions, and even to healthy humans.
+ Naturally, one of the conditions associated with loss of muscle mass that
+ clinicians hoped to improve was hypercortisolism.
+ In 1941, Albright shows that the newly-discovered Tp, in 25 mg daily injections
+, was better than estradiol benzoate, progesterone, or vitamin D in restoring
+ nitrogen balance in three cases of Cushing's disease
+\begin_inset CommandInset citation
+LatexCommand cite
+key "albright1941cushings"
+
+\end_inset
+
+.
+ Similarly, in 1950, the Mayo Clinic team who discovered cortisone remarked
+ that, in one case, 25 mg Tp daily injections reduced urinary nitrogen losses
+ caused by 200 mg cortisone administration
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sprague1950observations"
+
+\end_inset
+
+.
+ Some of the aforementioned researchers publish similar case reports, sharing
+ the small sample size and the use of surrogate outcomes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "keutmann1948metabolic"
+
+\end_inset
+
+.
+ These shortcomings do not prevent each investigator from subjective claims
+ of improvements in physical function.
+\end_layout
+
+\begin_layout Standard
+During the 1950's, AAS became part of the standard of care for endogenous
+ hypercortisolism during the gap between diagnosis and curative surgery.
+ However, this gap narrowed to a few weeks, due to improvements in differential
+ diagnosis.
+ Development of accurate cortisol assays allowed the measurement of its
+ changes in response to Dexa, thus discriminating conditions where feedback
+ mechanisms fail (mainly endocrine neoplasms) from cortisol-stimulating
+ non-endocrine conditions.
+ ACTH assays differentiate ACTH-independent cases (typically adrenal tumors)
+ from the ACTH-dependent ones (usually localized in the pituitary).
+ Modern imaging, including computed tomography of the adrenal and magnetic
+ resonance imaging of the pituitary, identify the target of surgery.
+ AAS therapy is now confined to inoperable cases, including unidentified
+ ectopic sources of ACTH or cortisone.
+ Even these cases benefit from more targeted interventions (see
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Pharmacological-unoperable-Cushing-disease"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="20col%">
+<column alignment="left" valignment="top" width="60col%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Class
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medications
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ACTH inhibitors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Subtype 5 somatostatin receptor agonists: pasireotide (FDA-approved)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "colao201212-month"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Dopamine D2 receptor blockers: cabergoline
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11-β hydroxylase inhibitors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Metyrapone, mitotane, ketoconazole.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inhibitor of 3 β-hydroxysteroid dehydrogenase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trilostane (EMA-approved, FDA-withdrawn)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "komanicky1978treatment"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inhibitor of the cholesterol side-chain cleavage enzyme
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aminoglutethimide
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GR antagonist
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mifepristone (FDA-approved)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nieman1985successful"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Pharmacological-unoperable-Cushing-disease"
+
+\end_inset
+
+Pharmacological agents used in Cushing's disease of unidentified ectopic,
+ or diffuse localization (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "newell-price2006cushings,molitch2014current"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similarly, the opportunities for AAS as adjuvant to GC therapy are very
+ limited.
+ Many of the diseases previously treated by high-dose GC are now treated
+ with more specific drugs.
+ As practitioners became more accustomed with the risks of GC therapy, doses
+ and durations were reduced.
+ With the exception of life-threatening conditions, typical GC prescriptions
+ switched to lower-potency compounds, such as prednisone or even cortisol.
+ In particular, practitioners became well aware of the issues of GC withdrawal
+ syndrome, where adrenal atrophy is aggravated by some other, still undiscovered
+, component
+\begin_inset CommandInset citation
+LatexCommand cite
+key "amatruda1960study"
+
+\end_inset
+
+.
+ By mid-1970's, it became common advice that 
+\begin_inset Quotes eld
+\end_inset
+
+prescriptions for [glucocorticoid] steroids should not be refillable
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bergner1976rational"
+
+\end_inset
+
+.
+ By the time modern trials with AAS began, the incidence of overt hypercortisoli
+sm have been greatly reduced.
+ Despite a potential epidemic of covert hypercortisolism, with deleterious
+ effects of life quality and expectancy, the interest for studies on hypercortis
+olism has largely waned.
+ Clinical studies investigating the benefits of AAS in hyepercortisolism
+ are scarce and small-scale.
+ For example, there are no significant-size clinical studies analyzing the
+ effect of AAS on the muscle strength of the endogenous CS patient.
+\end_layout
+
+\begin_layout Standard
+An unblinded trial observed AAS-induced increases in lean body mass and
+ apendicular muscle mass, in men already receiving an average of 6 mg prednisone
+ a day over 9 years
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ragnarsson2013effect"
+
+\end_inset
+
+.
+ Another, randomized, blinded, placebo-controlled trial by Crawford and
+ colleagues tested the benefits of testosterone or nandrolone decanoate
+ as an adjuvant to chronic GC therapy for diverse pathologies
+\begin_inset CommandInset citation
+LatexCommand citep
+key "crawford2003randomized"
+
+\end_inset
+
+.
+ The exposure to GC was an average of 12 mg prednisone a day, over more
+ than 8 years, and was already causing osteopenia, hyperlipidemia, hypercholeste
+rolemia, and a reduction in quality of life compared to historical controls
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vanschoor2006development"
+
+\end_inset
+
+.
+ Such side effects could arguably be considered evidence for mild iatrogenic
+ CS.
+ After six months of 200 mg testosterone injections every other week, the
+ AAS group had higher bone density, muscle mass and strength, and a better
+ quality of life, compared to the placebo group.
+ To date, Crawford's study is the best evidence for effectiveness of AAS
+ as adjuvant in GC therapy.
+\end_layout
+
+\begin_layout Standard
+In a subset of CS patients, androgen administration improves muscle mass,
+ and, presumably, quality of life.
+\end_layout
+
+\begin_layout Section
+Hypercortisolism-induced changes in endogenous androgens levels
+\end_layout
+
+\begin_layout Standard
+Muscle wasting is more common in males than in females with hypercortisolism
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pecorigiraldi2003gender-related"
+
+\end_inset
+
+.
+ The interaction of GC with endogenous AAS distinguishes male from female
+ hypercortisolism, to the point that the two syndromes are qualitatively
+ different.
+\end_layout
+
+\begin_layout Standard
+The period when AAS were frequently used as therapy of CS or as adjuvant
+ to high-dose GC pre-dates modern molecular biology and genomics.
+ Therefore, there are no published human trials to describe in molecular
+ terms the interaction of GCs and AAS at muscle level.
+ Most of our knowledge is derived from animal models (discussed later).
+ On the other hand, clinical observational studies of circulating biomarkers
+ remain common, and reveal an interesting interaction between the two classes
+ of steroids.
+ More specifically, in many cases, hypercortisolism suppresses endogenous
+ AAS.
+ Because loss of endogenous AAS, also termed hypoandrogenism, is associated
+ with loss of muscle mass and strength
+\begin_inset CommandInset citation
+LatexCommand citep
+key "volpato2014prevalence,ramos1998muscle"
+
+\end_inset
+
+, an AAS replacement strategy in hypoandrogenic hypercortisolism may be
+ beneficial for the muscle.
+\end_layout
+
+\begin_layout Standard
+A series of trials observed the effect of short-term (hours or days) hypercortis
+olism in healthy volunteers.
+ Experimental acute hypercortisolism represses circulating levels of Testo,
+ in a reversible manner, in males and, to a lesser degree, in females 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cumming1983acute,fassnacht2003adrenal"
+
+\end_inset
+
+.
+ The mechanisms through which hypercortisolism causes hypoandrogenism are
+ still to be elucidated.
+ Some studies suggest that acute hypercortisolism downregulates the pituitary-se
+creted, T-upregulating, luteinizing hormone (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LH"
+description "luteinizing hormone"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kamischke1998testosterone,cortes-gallegos1975effect,kuhn1986fonction"
+
+\end_inset
+
+.
+ Others counter that GC induce hypoandrogenism even when LH is unchanged
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schaison1979study"
+
+\end_inset
+
+.
+ Another hypothesis is that the negative feedback loop repressing ACTH in
+ hypercortisolism has a side effect of androgen suppression
+\begin_inset CommandInset citation
+LatexCommand cite
+key "yehuda2004acth"
+
+\end_inset
+
+.
+ A few groups have even hypothesized the existence of another, still unknown
+ hormone, synthesized from ACTH precursor, pro-opiomelanocortin (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "POMC"
+description "pro-opiomelanocortin"
+
+\end_inset
+
+), with the ability to stimulate androstenedione synthesis and secretion
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barbetta2001androgen,cunningham1994dissociation"
+
+\end_inset
+
+.
+ Certainly, GC-induced repression of POMC should also repress this unknown
+ androgen-stimulating hormone, but its existence was never proven.
+\end_layout
+
+\begin_layout Standard
+In males, chronic hypercortisolism is also associated with hypoandrogenism.
+ Long term prednisone therapy reduces circulating Testo levels
+\begin_inset CommandInset citation
+LatexCommand citep
+key "martens1994decreased"
+
+\end_inset
+
+.
+ Similar observations have been made in endogenous CS, where exposure is
+ longer and, depending on etiology, ACTH is increased or decreased compared
+ to normal.
+ Some studies found that, in CS, LH and another gonad-stimulating pituitary
+ hormone, follicle stimulating hormone (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FSH"
+description "follicle stimulating hormone"
+
+\end_inset
+
+) are lower than normal
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luton1977reversible"
+
+\end_inset
+
+.
+ This has been explained as a CS-associated pituitary defect, with loss
+ of LH response to stimulation by its hypothalamic regulator, gonadotropin-relea
+sing hormone (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GnRH"
+description "gonadotropin-releasing hormone"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luton1977reversible,boccuzzi1975effect"
+
+\end_inset
+
+.
+ Alternatively, others concluded that hypercortisolism impairs hypothalamic
+ GnRH secretion
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lado-abeal1998menstrual"
+
+\end_inset
+
+.
+ Finally, a small study found that male asthma patients receiving long-term
+ prednisone have lower circulating Testo levels despite increases in LH
+ and FSH, and concluded that prednisone has an direct inhibitory action
+ on the testes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "reid1985plasma"
+
+\end_inset
+
+.
+ Despite disagreeing on the mechanism, all these studies agree that chronic
+ hypercortisolism represses testicular androgen secretion.
+\end_layout
+
+\begin_layout Standard
+AAS therapy does not change circulating cortisol levels
+\begin_inset CommandInset citation
+LatexCommand citep
+key "baume2006effect"
+
+\end_inset
+
+, suggesting that a reverse effect probably does not exist.
+ Similarly, it is possible that the direct effect of GC on AAS is only an
+ artifact caused by pathological and pharmacological doses.
+\end_layout
+
+\begin_layout Standard
+In both sexes, the most concentrated circulating steroids are dehydroepiandroste
+rone (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DHEA"
+description "dehydroepiandrosterone"
+
+\end_inset
+
+) and its ester, DHEA sulfate (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DHEAS"
+description "dehydroepiandrosterone sulfate"
+
+\end_inset
+
+), which originate from the adrenal and, to a lesser degree, from gonads.
+ Their most important role appears to be that of precursors for synthesis,
+ in glands and peripheral tissue, of androgens and estrogens.
+ DHEA has some affinity for the AR, which suggested it may be an AAS.
+ Recent studies indicate that, in human female tissue, DHEA may in fact
+ be a partial agonist, hindering the action of T
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chen2005direct"
+
+\end_inset
+
+.
+ DHEA and DHEAS, now termed adrenal androgen precursors (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AAP"
+description "adrenal androgen precursor"
+
+\end_inset
+
+), are upregulated by ACTH, through increased synthesis of DHEA in the adrenal
+ and rapid bidirectional interconversion
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones1970steroid,vaitukaitis1969role"
+
+\end_inset
+
+.
+ Therefore, Cushing's disease and other conditions associated with increases
+ in ACTH will present with increases in AAPs, while primary hypercortisolism
+ will be associated with ACTH repression and consequent AAP decrease
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kouyama2011clinicopathological,monteleone2006impaired,barbetta2001androgen,yamaji1984serum"
+
+\end_inset
+
+.
+ Both types of hypercortisolism manifest GAML, despite opposite effects
+ on AAPs, suggesting that AAPs changes are not mediating GAML.
+\end_layout
+
+\begin_layout Standard
+In adult women, the regulation of AAS is more complex.
+ During reproductive age and a few years afterwards, the main source of
+ androgenic stimulation is the ovary
+\begin_inset CommandInset citation
+LatexCommand citep
+key "judd1974endocrine"
+
+\end_inset
+
+, where Testo is an intermediate product in the synthesis of estrogens (reviewed
+ in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "burger2002androgen"
+
+\end_inset
+
+).
+ A feedback loop links LH and estrogens levels, with LH stimulating synthesis
+ and secretion of estrogens from the developing and atretic follicles
+\begin_inset CommandInset citation
+LatexCommand citep
+key "miller2001androgen"
+
+\end_inset
+
+.
+ The reverse link is more complex, with estrogens inhibiting LH for most
+ of the menstrual cycle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "yen1971effect"
+
+\end_inset
+
+, with the possible exception of ovulation.
+ In the direct link, LH must stimulate ovarian Testo synthesis, but a reverse
+ link, where Testo directly inhibits LH, is absent in women
+\begin_inset CommandInset citation
+LatexCommand citep
+key "couzinet1989effects,abdel-rahman2014androgen"
+
+\end_inset
+
+.
+ Although measurement methods and normal ranges are still to be perfected,
+ it appears that circulating Testo level in women are reflecting the menstruatio
+n-related cyclical interplay of estrogen and LH, rather than being independently
+ controlled
+\begin_inset CommandInset citation
+LatexCommand citep
+key "salonia2008menstrual,guerrero1976studies"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This sexual dimorphism differentiates male and female AAS response to chronic
+ hypercortisolism.
+ Women with CS have lower muscle mass compared to general population 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wajchenberg1995estimation"
+
+\end_inset
+
+.
+ Decreased libido, a sign of hypoandrogenism in both genders, is reported
+ by 40% of female CS patients
+\begin_inset CommandInset citation
+LatexCommand citep
+key "valassi2011european"
+
+\end_inset
+
+.
+ But, in contrast to males, females with CS have normal or even increased
+ AAS synthesis and levels, compared to healthy controls 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vierhapper2000production,luisi1978plasma"
+
+\end_inset
+
+.
+ Four fifths of women with CS have menstrual irregularities, which has been
+ attributed to hyperandrogenism, direct cortisol action, or depletion of
+ LH or estradiol
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lado-abeal1998menstrual"
+
+\end_inset
+
+.
+ More than 75% of CS cases present with hirsutism, that is, male-patterned
+ body and face hair growth in female patients, and a clear sign of hyperandrogen
+ism
+\begin_inset CommandInset citation
+LatexCommand citep
+key "newell-price2006cushings,valassi2011european"
+
+\end_inset
+
+.
+ Women with CS-related hirsutism have androgen levels higher than healthy
+ controls
+\begin_inset CommandInset citation
+LatexCommand citep
+key "smals1977plasma"
+
+\end_inset
+
+.
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Per PMID 5922193, urinary androgens in female CS are repressed by Dexa.
+ That could be a biphasic response.
+\end_layout
+
+\end_inset
+
+ Other signs of hyperandrogenism, such as voice changes or acne, are rare
+ in female CS.
+\end_layout
+
+\begin_layout Standard
+In infants, tumors causing CS are exceedingly rare.
+ In pediatric Cushing's disease and adrenocortical carcinoma, AAP circulating
+ levels are usually normal for the age
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hauffa1984dissociation,wajchenberg2000adrenocortical"
+
+\end_inset
+
+.
+ Virilization signs such as change in voice, penile or clitoridian overgrowth,
+ and hirsutism are common 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tyler1972laboratory"
+
+\end_inset
+
+.
+ Published studies do not describe muscle changes in these children, possibly
+ due to difficulties in assessment.
+\end_layout
+
+\begin_layout Standard
+In adult female and in pediatric CS, virilization, muscle catabolism, and
+ circulating androgens changes are not correlated.
+ These examples suggest that relative hyperandrogenism in some tissues may
+ be paralleled by relative hypoandrogenism in others.
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+PMID 14329633 implies Cushing causes polycytemia, which would be another
+ sign of hyperandrogenism.
+ Some old textbooks also clam the same.
+ There is no evidence in that paper nor anywhere else.
+ PMID 10409572 shows acute Dexa in healthy men has no effect on hematocrit.
+ Nieman reviews do not mention any RBC effect in CS either.
+\end_layout
+
+\end_inset
+
+For example, it may be possible that, in some tissues, excess GC activates
+ the androgen receptor (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AR"
+description "androgen receptor"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "arora2013glucocorticoid"
+
+\end_inset
+
+, the nuclear receptor specific for AAS at physiological concentrations.
+ Because short-term Dexa inhibits AR expression in women's muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "inder2010dexamethasone"
+
+\end_inset
+
+, it may be possible that GCs interfere with Testo signals in a tissue-specific
+ manner.
+\end_layout
+
+\begin_layout Standard
+Understanding causality in the case of simultaneous muscle loss and hirsutism
+ is complicated by dose- and compound-dependent crossconversion of GCs to
+ AAS and interference of GCs in AAS synthesis and degradation.
+ It is unclear to what degree muscle loss in CS is influenced by the changes
+ in endogenous AAP and AAS.
+ Based on endogenous levels, it appears that AAS therapy may benefit men,
+ but not women and children, with CS.
+\end_layout
+
+\begin_layout Standard
+Interestingly, the Crawford and colleagues trial observed muscle protection
+ by AAS as adjuvant to GC therapy although, at enrollment, these men had
+ circulating Testo levels in the lower normal range
+\begin_inset CommandInset citation
+LatexCommand citep
+key "crawford2003randomized"
+
+\end_inset
+
+.
+ This confirms that GC deleterious effects are not solely caused by hypoandrogen
+ism.
+\end_layout
+
+\begin_layout Standard
+Hypercortisolism is associated with hypoandrogenism solely in adult males.
+ Androgen therapy for muscle protection in CS is predicted to benefit them
+ more than other populations.
+\end_layout
+
+\begin_layout Section
+Molecular mechanisms of androgenic myoprotection in humans
+\end_layout
+
+\begin_layout Standard
+GAML is a phenomenon well-studied, with its molecular mechanisms dissected
+ in human studies.
+ In contrast, the effect of AAS in GAML was studied in a few case reports,
+ marred by the absence of objective physical outcomes and of molecular analysis.
+ More information can be gleaned from the effect of AAS in other muscle-depletin
+g conditions.
+\end_layout
+
+\begin_layout Standard
+Most commonly, studies of AAS on muscle are carried on men with lower than
+ normal circulating Testo and / or associated symptoms, also called hypogonadal.
+ In male primary hypogonadism, rates of cortisol synthesis and degradation
+ are typically normal
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vierhapper2004production"
+
+\end_inset
+
+.
+ In this population, AAS therapy, even with low, 
+\begin_inset Quotes eld
+\end_inset
+
+replacement
+\begin_inset Quotes erd
+\end_inset
+
+ doses, causes an increase in muscle mass and force
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bhasin1997testosterone,brodsky1996effects"
+
+\end_inset
+
+.
+ The gain in muscle mass is caused mainly by an increase in protein synthesis,
+ as evidenced by increased nonoxidative uptake of labeled leucine
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brodsky1996effects"
+
+\end_inset
+
+.
+ Moreover, Testo causes an increase in FSR of myosin heavy chain (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MyHC"
+description "myosin heavy chain"
+
+\end_inset
+
+), indicating that protein accretion is localized in the myotubes.
+\end_layout
+
+\begin_layout Standard
+The referenced studies also measured leucine flux, a proxy for protein degradati
+on, but failed to detect significant changes as a result to Testo therapy.
+ The absence of a detectable change in leucine flux may be attributed to
+ a true lack of effect on catabolism, or may be an artifact caused by the
+ use of whole-body, rather than isolated muscle, methods.
+\end_layout
+
+\begin_layout Standard
+Typical naturally-occurring male hypogonadism is usually associated with
+ pleiotropic pathology, such as Klinefelter's syndrome, where deficient
+ androgen synthesis may be complicated by other peripheral defects.
+ For this reason, some studies were conducted in males with iatrogenic hypogonad
+ism, induced by administration of GnRH agonists, such as goserelin or leuprolide
+, which disrupts and eventually abolishes LH secretion.
+ Leuprolide-induced hypoandrogenism causes loss of muscle mass in healthy
+ volunteers and in prostate cancer patients
+\begin_inset CommandInset citation
+LatexCommand citep
+key "smith2002changes,boxer2005effect"
+
+\end_inset
+
+.
+ In the former, most of the muscle losses are reversed if exogenous Testo
+ is co-administered.
+ Chemical castration causes decreases in both protein synthesis and degradation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mauras1998testosterone"
+
+\end_inset
+
+, suggesting that, in some cases, such as restoration of physiological levels,
+ Testo supplementation may be followed by a paradoxical increase in protein
+ degradation.
+\end_layout
+
+\begin_layout Standard
+The protective action of AAS therapy in iatrogenic hypoandrogenism is not
+ affected by co-administration of an aromatase inhibitor such as anastrozole
+\begin_inset CommandInset citation
+LatexCommand citep
+key "finkelstein2013gonadal"
+
+\end_inset
+
+.
+ Aromatase converts Testo in estradiol.
+ The continuing muscle protection when Testo cannot be converted to estrogens
+ demonstrates that muscle protection is an intrinsic ability of Testo.
+ A more plausible mediator is the anabolic hormone insulin-like growth factor
+ I (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IGF-I"
+description "insulin-like growth factor I"
+
+\end_inset
+
+), whose muscle expression is decreased by iatrogenic hypogonadism
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mauras1998testosterone"
+
+\end_inset
+
+, and by short-term, high-dose Dexa.
+\end_layout
+
+\begin_layout Standard
+Another well-studies group comprises older men, whose Testo levels and muscle
+ mass are naturally declining
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rosenberg1989summary,feldman2002age"
+
+\end_inset
+
+.
+ An argument has been made about benefits of Testo replacement therapy in
+ this population.
+ Multiple clinical studies tested this hypothesis.
+ In older men with low bioavailable Testo, muscle mass and strength is improved
+ by 200 mg Testo every other week
+\begin_inset CommandInset citation
+LatexCommand citep
+key "morley1993effects,sih1997testosterone"
+
+\end_inset
+
+.
+ As in hypogonadal men, muscle recovery can be localized to the contractile
+ cells, as indicated by increases in the CSA of fast- and slow-twitching
+ fibers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sinha-hikim2006effects"
+
+\end_inset
+
+.
+ No evidence of fiber type switching or fiber type-specific effects in response
+ to AAS therapy has been seen.
+ Instead, histological studies reveal that elderly treated with AAS have
+ significantly more satellite cells
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sinha-hikim2006effects"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Testo causes improvement in the net balance between protein synthesis and
+ degradation at muscle level
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferrando2002testosterone"
+
+\end_inset
+
+.
+ The cause of protein accretion is an increase in protein synthesis, as
+ shown by an augmentation of mixed-muscle FSR
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sheffield-moore2011randomized"
+
+\end_inset
+
+.
+ Interestingly, some of this newly accrued protein is extracellular matrix,
+ as indicated by the upregulation of circulating N-terminal propeptide of
+ type III procollagen
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bhasin2009n-terminal"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ferrando and colleagues made the case for an anti-catabolic action of AAS
+ in older men
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferrando2003differential"
+
+\end_inset
+
+.
+ However, their study differs in key aspects from the other studies and
+ the medical practice.
+ They tested a variable, moderate dose of Testo on normogonadal older men,
+ with the goal of maintaining a physiological Testo level.
+ Moderate Testo therapy caused an improvement in muscle mass, strength,
+ and net protein balance.
+ However, they failed to observe an improvement in protein FSR, and concluded
+ that the net protein balance improvement must be caused by T-induced inhibition
+ of protein degradation.
+ The failure to detect protein synthesis rate changes indicates that, perhaps
+ due to unusual treatments, this study yielded unusual outcomes, which cannot
+ be extrapolated to other studies or populations.
+\end_layout
+
+\begin_layout Standard
+In support of their hypothesis, Ferrando and colleagues showed a significant
+ decrease in the rate of phenylalanine disappearance at muscle level and
+ in the proteasomal enzymatic activity.
+ However, the data they provide show that, on the contrary, proteasomal
+ activity is not reduced by Testo therapy.
+ Digitizing their plot indicates that six-months of placebo changed the
+ normalized lactastatin-sensitive proteasome activity from 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+format(PMID12519877data["placebo without inhibitor baseline","V3"] - PMID1251987
+7data["placebo with inhibitor baseline","V3"], digits = 2)
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+format(PMID12519877data["placebo without inhibitor 6 months","V3"] - PMID1251987
+7data["placebo with inhibitor 6 months","V3"], digits = 2)
+\end_layout
+
+\end_inset
+
+ relative units, whereas six months of Testo changed it from 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+format(PMID12519877data["testo without inhibitor baseline","V3"] - PMID12519877d
+ata["testo with inhibitor baseline","V3"], digits = 2)
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+format(PMID12519877data["testo without inhibitor 6 months","V3"] - PMID12519877d
+ata["testo with inhibitor 6 months","V3"], digits = 2)
+\end_layout
+
+\end_inset
+
+ relative units, a likely non-significant set of changes.
+ The same group found a similar pattern of anticatabolic action, in a short-term
+ trial of Testo on men with severe burns, once again doubled by an apparent
+ absence of the pro-anabolic component
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferrando2001testosterone"
+
+\end_inset
+
+.
+ It may be possible that the protective action of Testo changes qualitatively,
+ depending on the cumulative dose.
+ Alternatively, the anticatabolic action may be more salient when Testo
+ supplementation is given to the normogonadal.
+ The hypothesis that Testo inhibits protein degradation remains tempting,
+ but better studies are needed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename data/PMID12519877/proteasomeactivity.jpg
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Changes in proteasome enzymatic activity following 6 months of Testo therapy
+ (reproduced from 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferrando2003differential"
+
+\end_inset
+
+ with permission).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In older men, Testo upregulated intramuscular and circulating levels of
+ IGF-I
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferrando2002testosterone,huang2005effects"
+
+\end_inset
+
+.
+ The protection of muscle force provided by Testo to the older hypogonadal
+ men is not hindered by co-administration of finasteride, an inhibitor of
+ 5α-reductase which causes the transformation of Testo to 5α-dihydrotestosterone
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DHT"
+description "dihydrotestosterone"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "borst2014musculoskeletal"
+
+\end_inset
+
+.
+ Similar lack of effect was seen with dutasteride, a less specific inhibitor
+ of 5α-reductase, added to exogenous Testo, in a younger, possibly less
+ hypoandrogenic cohort
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bhasin2012effect"
+
+\end_inset
+
+.
+ In human males, conversion to DHT is not required or T's regulation of
+ muscle mass.
+ Possibly more relevant, Testo upregulates IGF-I in the muscle and in the
+ serum of the older men
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferrando2002testosterone,huang2005effects"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+While women's endogenous AAS levels are lower than men's, it is unclear
+ if benefits of Testo therapy outweigh the deleterious effects
+\begin_inset CommandInset citation
+LatexCommand citep
+key "traish2009testosterone,wierman2014androgen"
+
+\end_inset
+
+.
+ There is no FDA-approved Testo preparation for women.
+ Therefore the action of Testo in women losing muscle is yet to be investigated.
+\end_layout
+
+\begin_layout Standard
+The best molecular observations on the action of Testo on muscle loss have
+ been obtained from studies of HIV-positive men, who have significantly
+ lower circulating Testo levels
+\begin_inset CommandInset citation
+LatexCommand citep
+key "croxson1989changes"
+
+\end_inset
+
+.
+ Some of the drugs used in HIV-AIDS, the anticachectic megestrol and the
+ protease inhibitor ritonavir, may cause hypercortisolism, making it even
+ more informative about the action of AAS in CS.
+ AAS delays loss of muscle mass in AIDS wasting syndrome, leading to better
+ quality of life
+\begin_inset CommandInset citation
+LatexCommand citep
+key "grinspoon1998effects"
+
+\end_inset
+
+.
+ Microarray analysis indicated that T-treated muscle upregulated, as expected,
+ expression of genes from the IGF-I- and AR-stimulated signaling pathways
+\begin_inset CommandInset citation
+LatexCommand citep
+key "montano2007transcriptional"
+
+\end_inset
+
+.
+ Immunoblot confirmatory studies indicated that Testo caused the upregulation
+ of a key component of the IGF-I signaling pathway, the protein kinase B,
+ also known as Akt, in its Serine-473 phosphorylated, that is, activated
+ form.
+ Other genes upregulated by Testo are muscle development regulators, such
+ as the myocyte enhancer factor 2A (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MEF2A"
+description "myocyte enhancer factor 2A"
+
+\end_inset
+
+) and a host of macrophage-associated markers.
+ In addition, Testo stimulated expression of genes from other pathways,
+ including transcription factor 4 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TCF4"
+description "transcription factor 4"
+
+\end_inset
+
+) from the Wnt / β-catenin pathway, AMP kinase (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AMPK"
+description "adenosine monophosphate kinase"
+
+\end_inset
+
+), and the guanine nucleotide exchange factor Son of Sevenless (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SOS"
+description "Son of Sevenless"
+
+\end_inset
+
+), involved in the mitogen-activated protein kinase (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MAPK"
+description "mitogen-activated protein kinases"
+
+\end_inset
+
+) pathway.
+ However, in the same study, at protein level, MAPK did not appear to be
+ modulated by AAS therapy.
+ The referenced microarray study failed to find a change in expression of
+ the major muscle regulator myostatin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcpherron1997regulation,gonzalez-cadavid1998organization"
+
+\end_inset
+
+, or of the two E3 ligases typically associated with muscle loss, MAFbx
+ and MuRF1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bodine2001identification,gustafsson2010effects"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The histological and molecular findings from hypogonadal and HIV-positive
+ males receiving AAS have been confirmed in many other pathologies that
+ cause loss of muscle.
+ AAS therapy improves muscle mass and strength in males with chronic kidney
+ disease and liver cirrhosis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "macdonald2007nandrolone,yurci2011effects"
+
+\end_inset
+
+.
+ In men with COPD, 100 mg Testo enanthate injected weekly led to improvements
+ in muscle mass and strength, potentially augmenting quality of life
+\begin_inset CommandInset citation
+LatexCommand citep
+key "casaburi2004effects"
+
+\end_inset
+
+.
+ These improvements are caused by an increase in fiber CSA, regardless of
+ fiber type, and by an upregulation of the IGF-I mRNA isoform known as mechanogr
+owth factor or IGF-IEc
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lewis2007skeletal"
+
+\end_inset
+
+.
+ In these men, MyHC upregulated by Testo in these men was of isoform 3,
+ also known as embryonic MyHC.
+ This is also one of the two MyHC isoforms upregulated by Testo in the HIV-posit
+ive men.
+ In the COPD cohort, embryonic MyHC was found in thinnest fibers, possibly
+ marking them as newly formed.
+\end_layout
+
+\begin_layout Standard
+A cross-sectional study split a cohort of males with heart failure, without
+ cachexia and with normal circulating cortisol, Testo and ACTH levels in
+ two halves based on their cortisol level.
+ 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+I am rebranding CHF as HF, following the recent guidelines from PMID 16160202.
+\end_layout
+
+\end_inset
+
+ The subgroup with lower circulating cortisol achieved a higher peak work
+ rate, suggestive of GC-induced muscle damage
+\begin_inset CommandInset citation
+LatexCommand citep
+key "agapitou2013hormonal"
+
+\end_inset
+
+.
+ Some randomized trial showed that heart failure patients improve their
+ muscle force with AAS therapy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mirdamadi2014beneficial,stout2012testosterone"
+
+\end_inset
+
+.
+ However, a series of recent studies found deleterious cardiovascular effects
+ of AAS
+\begin_inset CommandInset citation
+LatexCommand citep
+key "xu2013testosterone,basaria2010adverse"
+
+\end_inset
+
+, which will discourage the use of Testo in heart failure.
+ In fact, many of the aforementioned conditions where AAS was used are marred
+ by higher cardiovascular risks and frailty, pressing the need for alternative,
+ equally efficient, anabolic adjuvants.
+ To this end, a deeper understanding of AAS therapy at molecular level is
+ required.
+\end_layout
+
+\begin_layout Standard
+In various conditions that cause muscle loss, AAS benefits share a pattern
+ including improved muscle mass and strength, fiber hypertrophy, tissue
+ remodeling, and increased protein synthesis.
+ In some conditions, AAS-driven muscle rehabilitation is associated with
+ an increase in satellite cells and / or an inhibition of protein degradation.
+ Putative molecular mediators known from animal models have not been confirmed
+ in humans, with the invariant exception of the upregulation of IGF-I.
+ Better clinical studies are required.
+ Animal models and in vitro studies sketch the road ahead.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch childonly
+status open
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "thesis,thesis2"
+options "nihunsrt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,744 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\master thesis.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman Georgia
+\font_sans Arial
+\font_typewriter Liberation Mono
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5in
+\topmargin 1.5in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{gobble}
+\end_layout
+
+\end_inset
+
+ BOSTON UNIVERSITY
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ DIVISION OF GRADUATE MEDICAL SCIENCES
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ Dissertation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+A MURINE MODEL OF GLUCOCORTICOID MYOPATHY 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+
+\series bold
+ALLEVIATION USING ANDROGEN THERAPY
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ by
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+NICOLAE LUCIAN SANDOR
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ B.M./M.D., Universitatea de Medicina si Farmacie Carol Davila, 2002
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ B.S., Universitatea Bucuresti, 2005
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ Submitted in partial fulfillment of the
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ requirements for the degree of
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ Doctor of Philosophy
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ 2015
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{} 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak  
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak  
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features rotate="0" tabularvalignment="middle" tabularwidth="100col%">
+<column alignment="center" valignment="top" width="3in">
+<column alignment="left" valignment="top" width="30col%">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+© 2015
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ NICOLAE LUCIAN SANDOR
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ All rights reserved
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+Approved by
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features rotate="0" tabularvalignment="middle" tabularwidth="100col%">
+<column alignment="left" valignment="top" width="25col%">
+<column alignment="left" valignment="top" width="75col%">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+First Reader
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+___________________________________________
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monty Montano, Ph.D.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Assistant Professor of Medicine
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Second Reader
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+___________________________________________
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Shalender Bhasin, MD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Professor of Medicine
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{} 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak 
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+
+\emph on
+
+\begin_inset Quotes erd
+\end_inset
+
+Se questa non piace, non voglio più scrivere di musica.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

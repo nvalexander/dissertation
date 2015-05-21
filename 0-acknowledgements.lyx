@@ -1,0 +1,158 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\master thesis.lyx
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package auto
+\inputencoding ascii
+\fontencoding T1
+\font_roman Georgia
+\font_sans Arial
+\font_typewriter Liberation Mono
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format pdf5
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 2
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style 
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\branch childonly
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5in
+\topmargin 1.5in
+\rightmargin 1in
+\bottommargin 1.5in
+\secnumdepth 0
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Acknowledgments
+\end_layout
+
+\begin_layout Standard
+I am deeply indebted to the members of my committee, Profs.
+ Caroline Apovian, Shalender Bhasin, Isabel Dominguez, Konstantin Kandror,
+ Monty Montano, and Carlo Serra, who helped me focus my rather diffuse initial
+ plan.
+ It was a privilege to receive insights from so many angles of expertise.
+ I am grateful to the leaders of the graduate programs at Boston University
+ School of Medicine, Profs.
+ William Cruikshank, David Atkinson, and Mary Jo Murnane.
+ I am also obliged to Mary Kathleen Deloge, who helped me deal with limiting
+ conditions.
+ I am also thanking my past mentors, Profs.
+ Vasile Munteanu, Alex Babes, Gordon Reid, Anne Treisman, and Assen Marintchev.
+\end_layout
+
+\begin_layout Standard
+Congratulations are due to my spouse who, all these years, took an unreasonably
+ positive view, managed many of the household businesses, and published
+ as many papers as me.
+\end_layout
+
+\begin_layout Standard
+I am dedicating this work those who were taken away untimely during these
+ years.
+ My mother spent her life in the most important frontline, as an EMT.
+ My first lab mate, the prodigious Iurie Barbu, MD, died before his defense.
+ We spent long weekend afternoons, manually switching polarizers in the
+ Cotroceni lab, and dark winter nights, moonlighting in the pediatric ER
+ at the Alexandrescu Hospital.
+ This world is poorer without them.
+\end_layout
+
+\begin_layout Standard
+This work would not have existed, were it not for the kind financial support
+ of the American nation, through the National Institute of Health and Boston
+ University.
+ Accipio.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

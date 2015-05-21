@@ -1,0 +1,290 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\master thesis.lyx
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package auto
+\inputencoding ascii
+\fontencoding T1
+\font_roman Georgia
+\font_sans Arial
+\font_typewriter Liberation Mono
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format pdf5
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 2
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style 
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\branch childonly
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5in
+\topmargin 1.5in
+\rightmargin 1in
+\bottommargin 1.5in
+\secnumdepth 0
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Curriculum vitae
+\end_layout
+
+\begin_layout Section*
+Nicolae Lucian Sandor
+\end_layout
+
+\begin_layout Subparagraph*
+Education
+\end_layout
+
+\begin_layout Itemize
+PhD candidate, Boston University School of Medicine, expected graduation
+ 2015
+\end_layout
+
+\begin_layout Itemize
+BS (Licentiat in Biofizica), Universitatea Bucuresti, 2005
+\end_layout
+
+\begin_layout Itemize
+BM
+\backslash
+DM (Doctor in Medicina), Universitatea de Medicina si Farmacie Carol Davila
+ Bucuresti, 2002
+\end_layout
+
+\begin_layout Subparagraph*
+Research experience
+\end_layout
+
+\begin_layout Itemize
+2012-2015: Department of Medicine, Boston University School of Medicine,
+ P.I.
+ Dr.
+ Shalender Bhasin, under the supervision of Dr.
+ Carlo Serra
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Subject: Testosterone alleviating glucocorticoid-induced muscle loss.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+2009-2012: Department of Biophysics, Boston University School of Medicine,
+ P.I.
+ Dr.
+ Assen Marintchev
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Subject: Interactions between translation initiation factors eIF1A and eIF5B
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+2005-2008: Center for the Study of Brain, Mind and Behavior, Princeton Universit
+y, P.I.
+ Dr.
+ Anne Treisman, FRS
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Subject: Brain mechanisms for statistical processing of visual scenes
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Summer 2004: Biology Department, Universitatea Bucuresti, P.I.
+ Dr.
+ Gordon Reid, under the supervision of Dr.
+ Iurie Barbu
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Subject: The mediation of thermoception by ionic membrane channels
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+2001-2002: Biophysics Department, Universitatea de Medicina si Farmacie
+ Carol Davila Bucuresti, P.I.
+ Dr.
+ Dan Eremia, under the supervision of Dr.
+ Eva Katona, 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Subject: The effect of non-ionizing radiation of the mobility of the cell
+ membrane lipids
+\end_layout
+
+\end_deeper
+\begin_layout Subparagraph*
+Peer-reviewed publications
+\end_layout
+
+\begin_layout Enumerate
+Serra C, Tangherlini F, Rudy S, Lee D, Toraldo G, Sandor NL, Zhang A, Jasuja
+ R, Bhasin S.
+ 
+\emph on
+Testosterone improves the regeneration of old and young mouse skeletal muscle
+\emph default
+.
+ J Gerontol A Biol Sci Med Sci.
+ 2013 Jan;68(1).
+\end_layout
+
+\begin_layout Enumerate
+Serra C, Sandor NL, Jang H, Lee D, Toraldo G, Guarneri T, Wong S, Zhang
+ A, Guo W, Jasuja R, Bhasin S.
+ 
+\emph on
+The effects of testosterone deprivation and supplementation on proteasomal
+ and autophagy activity in the skeletal muscle of the male mouse: differential
+ effects on high-androgen responder and low-androgen responder muscle groups
+\emph default
+.
+ Endocrinology.
+ 2013 Dec;154(12).
+\end_layout
+
+\begin_layout Enumerate
+Guo W, Bachman E, Vogel J, Li M, Peng L, Pencina K, Serra C, Sandor NL,
+ Jasuja R, Montano M, Basaria S, Gassmann M, Bhasin S.
+ 
+\emph on
+The effects of short-term and long-term testosterone supplementation on
+ blood viscosity and erythrocyte deformability in healthy adult mice
+\emph default
+.
+ Endocrinology.
+ 2015 Mar 16;en20141784.
+ PMID: 25774550.
+\end_layout
+
+\begin_layout Subparagraph*
+Other scientific communications
+\end_layout
+
+\begin_layout Enumerate
+Sandor NL, Hendrickson E, Sandor D, Wagner G, Pestova TV, Marintchev A.
+ 
+\emph on
+Interplay between intra- and intermolecular interactions involving human
+ eIF1A and eIF5B
+\emph default
+.
+ Abstract presented at the 2010 Meeting of Translational Control, Sept.
+ 2010, Cold Spring Harbor, NY.
+\end_layout
+
+\begin_layout Enumerate
+Sandor NL, Lee D, Toraldo G, Zhang A, Jasuja R, Bhasin S, Serra C.
+ 
+\emph on
+The role of testosterone on the control of muscle protein synthesis and
+ degradation
+\emph default
+.
+ Abstract presented at the 2011 Evans Center Days, Nov.
+ 2011, Boston, MA.
+\end_layout
+
+\begin_layout Enumerate
+Serra C, Lee D, Sandor NL, Toraldo G, Jang H, Jasuja R, Bhasin S.
+ 
+\emph on
+Characterization of the neuromuscular junction in castrated male mice
+\emph default
+.
+ Poster presented at ENDO2013, The Endocrine Society's 95th Annual Meeting
+ & Expo, 2013, San Francisco, CA.
+\end_layout
+
+\begin_layout Enumerate
+Sandor NL, Jasuja R, Serra C, Bhasin S.
+ 
+\emph on
+Testosterone alleviates glucocorticoid myopathy by inhibiting the proteolytic
+ machinery
+\emph default
+.
+ Poster presented at the 2013 Evans Center Days, Nov.
+ 2013, Boston, MA.
+\end_layout
+
+\end_body
+\end_document
