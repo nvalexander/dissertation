@@ -829,7 +829,7 @@ I am deeply indebted to the members of my committee, Profs.
  School of Medicine, Profs.
  William Cruikshank, David Atkinson, and Mary Jo Murnane.
  I am commending the assistance I received from Drs.
- Wen Guo and Mikhail Zakharov.
+ Wen Guo, Mikhail Zakharov, and Michael Panichas.
  I am also obliged to Mary Kathleen Deloge, who helped me deal with limiting
  conditions.
  I am also thanking my past mentors, Profs.
@@ -902,12 +902,12 @@ Glucocorticoids (GC) are used widely for the treatment of a large number
 
 \begin_layout Standard
 Here, I established a mouse model of GAML.
- Young adult male mice receiving 0.25 mg/kg/day dexamethasone (D) s.c.
+ Young adult male mice receiving 0.25 mg/day dexamethasone (D) s.c.
  daily, for a week, lost 3% of their body weight.
  Through NMR lean body mass quantification and muscle dissection, a loss
  of more than 10% of their muscle mass was lost.
  More than half of the muscle loss was reversed by co-administration of
- 0.7 mg/kg/day testosterone (T).
+ 0.7 mg/day testosterone (T).
  This is the first mouse model of GAML alleviation by T.
 \end_layout
 
@@ -11630,7 +11630,7 @@ celsius}
 
 \begin_layout Standard
 Every morning, for 1-7 days, mice were weighted, then injected subcutaneously
- every morning 
+ every morning, between 9 and 11 AM, 
 \begin_inset ERT
 status open
 
@@ -11638,7 +11638,7 @@ status open
 
 
 \backslash
-SI{100}{
+SI{200}{
 \backslash
 micro
 \backslash
@@ -11672,21 +11672,11 @@ status open
 
 
 \backslash
-SI{28}{
+SI{0.7}{
 \backslash
 milli
 \backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
+gram}
 \end_layout
 
 \end_inset
@@ -11707,21 +11697,11 @@ status open
 
 
 \backslash
-SI{10}{
+SI{0.25}{
 \backslash
 milli
 \backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
+gram}
 \end_layout
 
 \end_inset
@@ -11754,6 +11734,7 @@ description "Vehicle-only"
 ).
  Testo propionate, Dexa, and ethanol were from Sigma-Aldrich (St.
  Louis, Missouri).
+ Resreach-grade corn oil was purchased from MP Biomedicals (Solon, Ohio).
 \end_layout
 
 \begin_layout Standard
@@ -11819,7 +11800,8 @@ gram}
 
 \end_inset
 
- pentobarbital) intraperitoneal, followed by quick cervical dislocation.
+ pentobarbital; Diamond Animal Health, Des Moines, Iowa) intraperitoneal,
+ followed by quick cervical dislocation.
  Blood was collected immediately after death through thoracotomy and cardiac
  puncture, incubated 15 minutes at room temperature, centrifugated 
 \begin_inset ERT
@@ -11852,10 +11834,9 @@ celsius}
 \end_inset
 
 .
- Levator ani, gastrocnemius (a mixed muscle; see PMID: 8847313, PMID: 10090572,
- PMID: 22013216), tibialis anterior, quadriceps, and triceps brachii muscles
- were collected, weighted in wet state, flash-frozen by submersion in liquid
- nitrogen, and stored at 
+ Levator ani, gastrocnemius, tibialis anterior, quadriceps, and triceps
+ brachii muscles were collected, weighted in wet state, flash-frozen by
+ submersion in liquid nitrogen, and stored at 
 \begin_inset ERT
 status open
 
@@ -12261,6 +12242,10 @@ minute}
  measurements.
 \end_layout
 
+\begin_layout Standard
+Unless specified, chemical reagents were from Fisher (Pittsburgh, Pennsylvania).
+\end_layout
+
 \begin_layout Section
 Immunoblot
 \end_layout
@@ -12429,8 +12414,8 @@ Next, the membranes were probed with proprietary Amersham ECL Western Blotting
 \begin_layout Standard
 Photographic films were digitized using a FluorChem-SP Imaging System (Alpha
  Innotech, San Leandro, California), using automatic exposure.
- Band densitometry was performed with the Image Studio application (Li-Cor,
- Lincoln, Nebraska).
+ Band densitometry was performed with the Image Studio Lite application
+ (Li-Cor, Lincoln, Nebraska).
 \end_layout
 
 \begin_layout Standard
@@ -12450,7 +12435,9 @@ Quantitative real-time polymerase chain reaction
 \end_layout
 
 \begin_layout Standard
-For each animal and muscle, 
+Total RNA was purified by a combination of phenol-chlorophorm fractionation
+ and spin column chromatography.
+ For each animal and muscle, 
 \begin_inset ERT
 status open
 
@@ -13539,6 +13526,15 @@ PMID 621843: The abuse of doximetasone, a synthetic GC, is also associated
 
 \begin_layout Plain Layout
 PMC4039250 says that fiber type distribution does not change with age
+\end_layout
+
+\begin_layout Plain Layout
+SEE MUSCLE TYPE (a mixed muscle; see PMID: 8847313, PMID: 10090572, PMID:
+ 22013216)
+\end_layout
+
+\begin_layout Plain Layout
+You swore to re-read Troncose, Chu201, Baehr.
 \end_layout
 
 \end_inset
