@@ -11734,7 +11734,7 @@ description "dexamethasone-only group"
 
 \end_inset
 
-), or (C) both T and Dexa in te above doses (
+), or (C) both T and Dexa in the above doses (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DT"
@@ -11752,6 +11752,8 @@ description "Vehicle-only"
 \end_inset
 
 ).
+ Testo propionate, Dexa, and ethanol were from Sigma-Aldrich (St.
+ Louis, Missouri).
 \end_layout
 
 \begin_layout Standard
@@ -12536,7 +12538,7 @@ Duplicates were averaged for each unknown.
 \end_layout
 
 \begin_layout Standard
-Primers used are:
+Primers used were:
 \end_layout
 
 \begin_layout Section
@@ -12683,7 +12685,7 @@ Next day, the cells were incubated twice 5 minutes each with the blocking
 
 \begin_layout Standard
 Cell contours were obtained using Magnetic Lasso in Adobe Photoshop CS4.
- The outlines were pasted in another file, that was read in Matlab 13.
+ The outlines were pasted in another file, that was read in Matlab 8.
  An automated script determined multiple estimates of the diameter, and
  calculated an average diameter for each fiber.
 \end_layout
@@ -13079,7 +13081,8 @@ Statistics
 \end_layout
 
 \begin_layout Standard
-Results are presented as means ± standard error of the mean.
+Statistics and plots were generated in R 3.2 with ggplot2, knitr, and Lyx.
+ Results are presented as means ± standard error of the mean.
  In plots, points represent means, while error bars are standard error of
  the mean.
  Experiments with more than two groups were analyzed by Kruskal-Wallis test
