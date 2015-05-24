@@ -10452,8 +10452,8 @@ key "giron2015beta-hydroxy-beta-methylbutyrate"
  Another way of tracking LC3 is based on immunoblot.
  A lipidated form of LC3, termed LC3-II, migrates faster than its precursor,
  LC3-I, during electrophoresis.
- Various indices, such as absolute amount of LC3-II or the ratio between
- LC3 electrophoretic forms, are used for estimating the number of autophagosomes
+ Various indices, such as the amount of LC3-II, or the ratio between LC3
+ electrophoretic forms, are used for estimating the number of autophagosomes
  (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
