@@ -7100,7 +7100,15 @@ key "mammucari2007foxo3"
 \end_inset
 
 , while a third group claimed that denervation causes buildup of the autophagoso
-mal marker LC3-II 
+mal marker, microtubule-associated protein 1 light chain 3 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LC3"
+description "microtubule-associated protein 1 light chain 3"
+
+\end_inset
+
+) 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ju2010quantitation"
@@ -7118,8 +7126,15 @@ key "furuno1990role"
 \end_inset
 
 .
- GFP-LC3 transgenic mice exhibited a loss of autophagosomes in denervated
- muscles
+ Transgenic mice expressing LC3 fused with green fluorescent protein (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GFP"
+description "green fluorescent protein"
+
+\end_inset
+
+) exhibit a loss of autophagosomes in denervated muscles
 \begin_inset CommandInset citation
 LatexCommand citep
 key "quy2013proteasome-dependent"
@@ -10420,25 +10435,9 @@ key "wang1998dexamethasone"
 
 \begin_layout Standard
 A new modality for investigating autophagy hinges on one of the longest-living
- markers on its surface, microtubule-associated protein 1 light chain 3
- (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "LC3"
-description "microtubule-associated protein 1 light chain 3"
-
-\end_inset
-
-).
- Transgenic mice with LC3 fused to green fluorescent protein (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "GFP"
-description "green fluorescent protein"
-
-\end_inset
-
-) have been developed, and are regularly used for tracking autophagosomes.
+ markers on its surface, LC3.
+ Transgenic mice with expressing LC3-GFP have been developed, and are regularly
+ used for tracking autophagosomes.
  There are no reports of this model being used in the study of GAML.
  Alternatively, endogenous LC3 is tracked through immunofluorescence microscopy.
  Some reports describe an accumulation of punctate LC3-containing structures
@@ -10451,11 +10450,18 @@ key "giron2015beta-hydroxy-beta-methylbutyrate"
 
 .
  Another way of tracking LC3 is based on immunoblot.
- The autophagosome-associated form of LC3, termed LC3-II, is faster migrating
- during electrophoresis.
+ A lipidated form of LC3, termed LC3-II, migrates faster than its precursor,
+ LC3-I, during electrophoresis.
  Various indices, such as absolute amount of LC3-II or the ratio between
  LC3 electrophoretic forms, are used for estimating the number of autophagosomes
- (reviewed in XXX).
+ (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mizushima2007how"
+
+\end_inset
+
+).
  LC3-II is enriched in C2C12 myotubes overexpressing LC3
 \begin_inset CommandInset citation
 LatexCommand citep
