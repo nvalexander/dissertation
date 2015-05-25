@@ -1238,7 +1238,7 @@ myoutput <-""
   
 for (i in 4:length(mycolnamessevendays)) {
   myoutput <- paste0(myoutput, 
-                     "# ", mycolnamessevendays[i])
+                     "# ", mycolnamessevendays[[i]])
   myoutput <- paste(myoutput, 
                     pandoc.table.return(aggregate(mydatasevendays[,i], list(mydatasevendays$V2), mean, na.rm = TRUE), style = "rmarkdown"))
   kw <- kruskal.test(as.formula(paste(colnames(mycolnamessevendays)[i], "~V2")), data = mydatasevendays)
@@ -1249,4 +1249,3 @@ for (i in 4:length(mycolnamessevendays)) {
   myoutput <- paste(myoutput,
                     pandoc.table.return(dunnsreport, style = "rmarkdown"))
 }
-cat(myoutput)
