@@ -1,10 +1,13 @@
 rm(list = ls(all = TRUE))
-install.packages("ggplot2")
-install.packages("stringr")
-install.packages("plyr")
+install.packages("ggplot2") # also found in Ubuntu repo
+install.packages("stringr") # also found in Ubuntu repo
+install.packages("plyr") # also found in Ubuntu repo
+install.packages("gridExtra") # also found in Ubuntu repo
+install.packages("xtable")  # also found in Ubuntu repo
 install.packages("grid")
-install.packages("gridExtra")
 install.packages("methods")
-install.packages("xtable")
 install.packages("knitr")
 install.packages("dunn.test")
+install.packages("htmltools")
+install.packages("caTools")
+install.packages("rmarkdown")
