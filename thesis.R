@@ -31,6 +31,9 @@ potentialBaselineConditionNames <- c(
   "V"
 )
 
+contrastsfour <- c("D vs DT", "T vs DT", "D vs T", "V vs DT", "V vs D", "V vs T")
+contraststhree <- c("D vs DT", "V vs DT", "V vs D")
+
 nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 meaningfulpalette <- c("#444444", "#dd0000", "#00dd00", "#0000dd", "#888800", "#880088", "#008888", "#dddddd")
 
@@ -1232,5 +1235,7 @@ mycolnames <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = 
 for (i in 4:length(mycolnames)) {
   print(mycolnames[i])
   pandoc.table(aggregate(mydata[,i], list(mydata$V2), mean, na.rm = TRUE), style = "rmarkdown")
-  pandoc.table(dunn.test(mydata[,i], mydata$V2, method = "bonferroni"), style = "rmarkdown")
+  dunns <- dunn.test(mydata[,i], mydata$V2, method = "bonferroni")
+  dunnsreport <- data.frame(contrastsfour, dunns$P)
+  pandoc.table(, style = "rmarkdown")
 }
