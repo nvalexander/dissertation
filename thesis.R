@@ -1231,6 +1231,6 @@ mydata <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE,
 mycolnames <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
 for (i in 4:length(mycolnames)) {
   print(mycolnames[i])
-  pandoc.table(aggregate(mydata[,i], list(mydata$V2), mean, na.rm = TRUE))
-  dunn.test(mydata[,i], mydata$V2, method = "bonferroni")
+  pandoc.table(aggregate(mydata[,i], list(mydata$V2), mean, na.rm = TRUE), style = "rmarkdown")
+  pandoc.table(dunn.test(mydata[,i], mydata$V2, method = "bonferroni"), style = "rmarkdown")
 }
