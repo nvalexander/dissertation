@@ -13,9 +13,11 @@ codedirpath <- dirname(
              normalizePath(unlist(strsplit(commandArgs()[grep('^--file=',
                                                               commandArgs())], '='))[2]))
 )
+datadir <- normalizePath(file.path(codedirpath, "data"))
 
 potentialConditionColumnNames <- c(
   "condition",
+  "TreatmentShort",
   "treatment"
   )
 
@@ -1219,5 +1221,4 @@ loadPMID12519877 <- function(datadirpath){
   return(df1)
 }
 
-datadir <- normalizePath(file.path(codedirpath, "data"))
 PMID12519877data <- loadPMID12519877(datadir)
