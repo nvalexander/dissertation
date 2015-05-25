@@ -5,6 +5,9 @@ library(grid)
 library(gridExtra)
 library(methods)
 library(xtable)
+library(knitr)
+library(dunn.test)
+
 options(bitmapType="cairo")
 
 codedirpath <- dirname(
