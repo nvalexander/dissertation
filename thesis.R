@@ -1237,5 +1237,5 @@ for (i in 4:length(mycolnames)) {
   pandoc.table(aggregate(mydata[,i], list(mydata$V2), mean, na.rm = TRUE), style = "rmarkdown")
   dunns <- dunn.test(mydata[,i], mydata$V2, method = "bonferroni")
   dunnsreport <- data.frame(contrastsfour, dunns$P)
-  pandoc.table(, style = "rmarkdown")
+  pandoc.table(dunnsreport, style = "rmarkdown")
 }
