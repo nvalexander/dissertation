@@ -1,4 +1,3 @@
-rm(list = ls(all = TRUE))
 install.packages("ggplot2") # also found in Ubuntu repo
 install.packages("stringr") # also found in Ubuntu repo
 install.packages("plyr") # also found in Ubuntu repo

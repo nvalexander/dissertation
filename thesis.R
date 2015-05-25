@@ -1,3 +1,4 @@
+rm(list = ls(all = TRUE))
 library(ggplot2)
 library(stringr)
 library(plyr)
@@ -1230,14 +1231,14 @@ loadPMID12519877 <- function(datadirpath){
 
 PMID12519877data <- loadPMID12519877(datadir)
 
-mydata <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
-mycolnames <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
-suppressMessages()
-for (i in 4:length(mycolnames)) {
-  print(mycolnames[i])
-  pandoc.table(aggregate(mydata[,i], list(mydata$V2), mean, na.rm = TRUE), style = "rmarkdown")
-  kw <- kruskal.test(as.formula(paste(colnames(mycolnames)[i], "~V2")), data = mydata)
-  dunns <- dunn.test(mydata[,i], mydata$V2, method = "bonferroni")
+mydatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
+mycolnamessevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
+
+for (i in 4:length(mycolnamessevendays)) {
+  print(mycolnamessevendays[i])
+  pandoc.table(aggregate(mydatasevendays[,i], list(mydatasevendays$V2), mean, na.rm = TRUE), style = "rmarkdown")
+  kw <- kruskal.test(as.formula(paste(colnames(mycolnamessevendays)[i], "~V2")), data = mydatasevendays)
+  dunns <- dunn.test(mydatasevendays[,i], mydatasevendays$V2, method = "bonferroni")
   print(kw$p.value)
   dunnsreport <- data.frame(contrastsfour, dunns$P)
   pandoc.table(dunnsreport, style = "rmarkdown")
