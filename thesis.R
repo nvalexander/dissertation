@@ -1234,12 +1234,19 @@ PMID12519877data <- loadPMID12519877(datadir)
 mydatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
 mycolnamessevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
 
+myoutput <-""
+  
 for (i in 4:length(mycolnamessevendays)) {
-  print(mycolnamessevendays[i])
-  pandoc.table(aggregate(mydatasevendays[,i], list(mydatasevendays$V2), mean, na.rm = TRUE), style = "rmarkdown")
-  kw <- invisible(kruskal.test(as.formula(paste(colnames(mycolnamessevendays)[i], "~V2")), data = mydatasevendays))
-  print(kw$p.value)
-  dunns <- invisible(dunn.test(mydatasevendays[,i], mydatasevendays$V2, method = "bonferroni"))
+  myoutput <- paste0(myoutput, 
+                     "# ", mycolnamessevendays[i])
+  myoutput <- paste(myoutput, 
+                    pandoc.table.return(aggregate(mydatasevendays[,i], list(mydatasevendays$V2), mean, na.rm = TRUE), style = "rmarkdown"))
+  kw <- kruskal.test(as.formula(paste(colnames(mycolnamessevendays)[i], "~V2")), data = mydatasevendays)
+  myoutput <- paste(myoutput, 
+                    paste0("Kruskal-Wallis p value is ", kw$p.value))
+  dunns <- dunn.test(mydatasevendays[,i], mydatasevendays$V2, method = "bonferroni")
   dunnsreport <- data.frame(contrastsfour, dunns$P)
-  pandoc.table(dunnsreport, style = "rmarkdown")
+  myoutput <- paste(myoutput,
+                    pandoc.table.return(dunnsreport, style = "rmarkdown"))
 }
+cat(myoutput)
