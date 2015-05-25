@@ -5,7 +5,7 @@ output: html_document
 
 This report describes data from 2012.08.23 experiment (7 days of D and / or T).
 
-```{r, echo=TRUE, results='asis'}
+```{r, echo=FALSE, message=FALSE, results='asis'}
 source('../thesis.R')
 pandoc.table(aggregate(mydata[,i], list(mydata$V2), mean, na.rm = TRUE))
 ```
