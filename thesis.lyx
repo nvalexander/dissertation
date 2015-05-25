@@ -90,7 +90,7 @@ knitr
 
 \begin_layout Standard
 \begin_inset Flex Chunk
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -13139,7 +13139,14 @@ Statistics
 \end_layout
 
 \begin_layout Standard
-Statistics and plots were generated in R 3.2 with ggplot2, knitr, and Lyx.
+Statistics and plots were generated in R 3.2 with ggplot2, knitr, and Lyx
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stodden2014implementing"
+
+\end_inset
+
+.
  Results are presented as means ± standard error of the mean.
  In plots, points represent means, while error bars are standard error of
  the mean.
