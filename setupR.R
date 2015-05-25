@@ -1,3 +1,4 @@
+rm(list = ls(all = TRUE))
 install.packages("ggplot2")
 install.packages("stringr")
 install.packages("plyr")
