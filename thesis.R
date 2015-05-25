@@ -1237,9 +1237,9 @@ mycolnamessevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), 
 for (i in 4:length(mycolnamessevendays)) {
   print(mycolnamessevendays[i])
   pandoc.table(aggregate(mydatasevendays[,i], list(mydatasevendays$V2), mean, na.rm = TRUE), style = "rmarkdown")
-  kw <- kruskal.test(as.formula(paste(colnames(mycolnamessevendays)[i], "~V2")), data = mydatasevendays)
-  dunns <- dunn.test(mydatasevendays[,i], mydatasevendays$V2, method = "bonferroni")
+  kw <- invisible(kruskal.test(as.formula(paste(colnames(mycolnamessevendays)[i], "~V2")), data = mydatasevendays))
   print(kw$p.value)
+  dunns <- invisible(dunn.test(mydatasevendays[,i], mydatasevendays$V2, method = "bonferroni"))
   dunnsreport <- data.frame(contrastsfour, dunns$P)
   pandoc.table(dunnsreport, style = "rmarkdown")
 }
