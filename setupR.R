@@ -3,7 +3,7 @@ install.packages("stringr") # also found in Ubuntu repo
 install.packages("plyr") # also found in Ubuntu repo
 install.packages("gridExtra") # also found in Ubuntu repo
 install.packages("xtable") # also found in Ubuntu repo
-install.packages("reshape") # also found in Ubuntu repo
+install.packages("reshape2") # also found in Ubuntu repo
 install.packages("grid")
 install.packages("methods")
 install.packages("knitr")

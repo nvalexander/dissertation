@@ -9,7 +9,8 @@ library(xtable)
 library(knitr)
 library(dunn.test)
 library(pander)
-library(reshape)
+library(reshape2)
+library(data.table)
 options(bitmapType="cairo")
 
 codedirpath <- dirname(
@@ -47,7 +48,7 @@ nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2
 meaningfulpalette <- c("#444444", "#dd0000", "#00dd00", "#0000dd", "#888800", "#880088", "#008888", "#dddddd")
 
 SEM <- function(x) {
-  return( sqrt(var(x, na.rm = TRUE) / length(na.omit(x))) )
+  return( sqrt(var(x, na.rm = TRUE) / truecount(x)) )
 }
 
 longdescription <- function(x) {
@@ -56,11 +57,11 @@ longdescription <- function(x) {
     " (", 
     signif(SEM(x), digits = 3),
     "; n = ", 
-    length(na.omit(x)), ")"))
+    truecount(x), ")"))
 }
 
 CI95 <- function(x) {
-  return( qt(.975, df = (length(na.omit(x)) - 1)) * SEM(x) )
+  return( qt(.975, df = (truecount(x) - 1)) * SEM(x) )
 }
 
 semInterval <- function(x) {
@@ -75,7 +76,7 @@ semInterval <- function(x) {
   return(lims)
 }
 
-truelength <- function(x) {
+truecount <- function(x) {
   return( length(na.omit(x)) )
 }
 
