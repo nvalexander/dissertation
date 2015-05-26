@@ -1256,6 +1256,7 @@ reportstats <- function(invivodata, invivocolnames){
                                 labels = c("Vehicle", "Dexa", "Dexa + Testo"))
   
   for (i in 4:length(invivocolnames)) {
+    cat(i)
     myoutput <- paste0(myoutput, 
                        "# ", invivocolnames[[i]])
     myoutput <- paste(myoutput, 
