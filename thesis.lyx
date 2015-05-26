@@ -13246,16 +13246,6 @@ day}
  than experimental error.
  In contrast, Testo doses that could reverse GAML were found to be similar
  to those effective in rats.
- Upon finding the effective Dexa dose, a time course of body weight (Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Body-weight-changes"
-
-\end_inset
-
-) revealed that GAML onset is rapid, becoming apparent in the first day.
- 
 \end_layout
 
 \begin_layout Standard
@@ -13563,6 +13553,56 @@ name "fig:Body-weight-changes"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Upon finding the effective Dexa dose, a time course of body weight (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Body-weight-changes"
+
+\end_inset
+
+) revealed that GAML onset, and its reversal are rapid, becoming apparent
+ in the first day (Kruskal-Wallis p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+signif(kruskal.test(body.weight.gain.after.1.days..percent.~treatment, data = invivodatas
+evendays)$p.value, digits = 3)
+\end_layout
+
+\end_inset
+
+).
+ Specifically, mice receiving vehicle alone gained 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+signif( mean(subset(invivodatasevendays, treatment == "V")$body.weight.gain.after.1.d
+ays..percent., na.rm = TRUE), digits = 3)
+\end_layout
+
+\end_inset
+
+ (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+signif( SEM(subset(invivodatasevendays, treatment == "V")$body.weight.gain.after.1.da
+ys..percent., na.rm = TRUE), digits = 3)
+\end_layout
+
+\end_inset
+
+) per cent in body weight
 \end_layout
 
 \begin_layout Standard
