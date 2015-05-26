@@ -207,7 +207,68 @@ plotbodyweights <- function(){
     ylab("body weight gain (% of pre-treatment)") +
     scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
     stdplottimecourse
-  return(topplot)
+  
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", timeseriescolumns[1:4])]
+  body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
+  shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
+  shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
+  colnames(shortdf)[2] <- "day"
+  setattr(shortdf$day, "levels", 1:4)
+  bottomleftplot <- ggplot(shortdf) + 
+    aes_string(x = colnames(shortdf)[2],
+               y = colnames(shortdf)[3],
+               group = colnames(shortdf)[1]) +
+    stat_summary(geom = "point",
+                 size = 3,
+                 fun.y = mean,
+                 position = position_dodge(.05),
+                 aes_string(shape = colnames(shortdf)[1])) +
+    stat_summary(geom = "line", 
+                 size = .5, 
+                 fun.y = mean, 
+                 position = position_dodge(.05)) + 
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.2,
+                 show_guide = FALSE,
+                 position=position_dodge(.05))+
+    expand_limits(y = 0) +
+    ylab("body weight gain (% of pre-treatment)") +
+    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
+    stdplottimecourse
+    
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", timeseriescolumns[1:1])]
+  print(shortdf)
+  body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
+  shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
+  shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
+  colnames(shortdf)[2] <- "day"
+  setattr(shortdf$day, "levels", 1:2)
+  bottomrightplot <- ggplot(shortdf) + 
+    aes_string(x = colnames(shortdf)[2],
+               y = colnames(shortdf)[3],
+               group = colnames(shortdf)[1]) +
+    stat_summary(geom = "point",
+                 size = 3,
+                 fun.y = mean,
+                 position = position_dodge(.05),
+                 aes_string(shape = colnames(shortdf)[1])) +
+    stat_summary(geom = "line", 
+                 size = .5, 
+                 fun.y = mean, 
+                 position = position_dodge(.05)) + 
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.2,
+                 show_guide = FALSE,
+                 position=position_dodge(.05))+
+    expand_limits(y = 0) +
+    ylab("body weight gain (% of pre-treatment)") +
+    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
+    stdplottimecourse 
+  
+  return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, topplot, ncol=2, widths = c(2,1) ), 
+                       ncol=1)  )
 }
 
 
