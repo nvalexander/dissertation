@@ -100,7 +100,7 @@ PMID12519877data <- loadPMID12519877(datadir)
 
 reportstats <- function(invivodata, invivocolnames){
   myoutput <- ""
-  invivodatasubset <- subset(invivodata, ((treatment == "D") | (treatment == "V") | (treatment == "C")) )
+  invivodatasubset <- invivodata[invivodatasevendays$treatment %in% c("V", "D", "C"), ]
   invivodata$treatment <- factor(invivodata$treatment, 
                           levels = c("V", "D", "T", "C"), 
                           labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
