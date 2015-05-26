@@ -13634,8 +13634,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasevendays$body.weight.gain.after.1.days..percent., invivodatasu
-bset$treatment, method = "bonferroni")$P.adjusted)
+sig3( dunn.test(invivodatasubset$body.weight.gain.after.1.days..percent., invivodatasubse
+t$treatment, method = "bonferroni")$P.adjusted)
 \end_layout
 
 \end_inset

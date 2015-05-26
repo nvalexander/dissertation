@@ -19,7 +19,17 @@ codedirpath <- dirname(
              normalizePath(unlist(strsplit(commandArgs()[grep('^--file=',
                                                               commandArgs())], '='))[2]))
 )
+
+
 codedirpath <- "/media/dump/writingswork/draftthesis"
+
+condsVDC <- c("V", "D", "C")
+condsVDTC <- c("V", "D", "T", "C")
+conditionsVDC <- c("Veh", "Dexa", "Dexa + Testo")
+conditionsVDTC <- c("Veh", "Dexa", "Testo", "Dexa + Testo")
+contrastsfour <- c("D vs DT", "T vs DT", "D vs T", "V vs DT", "V vs D", "V vs T")
+contraststhree <- c("D vs DT", "V vs DT", "V vs D")
+
 datadir <- normalizePath(file.path(codedirpath, "data"))
 invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
 invivocolnameonedays <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, sep = ",", nrows = 1)
@@ -37,39 +47,26 @@ invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), he
 invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
 
 
-invivodatasubsetonedays <- invivodataonedays[invivodataonedays$treatment %in% c("V", "D", "C"), ]
+invivodatasubsetonedays <- invivodataonedays[invivodataonedays$treatment %in% condsVDC, ]
 invivodataonedays$treatment <- factor(invivodataonedays$treatment, 
-                               levels = c("V", "D", "T", "C"), 
-                               labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
+                               levels =condsVDTC)
 invivodatasubsetonedays$treatment <- factor(invivodatasubsetonedays$treatment, 
-                                     levels = c("V", "D", "C"), 
-                                     labels = c("Vehicle", "Dexa", "Dexa + Testo"))
+                                     levels = condsVDC)
 
-invivodatasubsetthreedays <- invivodatathreedays[invivodatathreedays$treatment %in% c("V", "D", "C"), ]
+invivodatasubsetthreedays <- invivodatathreedays[invivodatathreedays$treatment %in% condsVDC, ]
 invivodatathreedays$treatment <- factor(invivodatathreedays$treatment, 
-                                      levels = c("V", "D", "T", "C"), 
-                                      labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
+                                      levels =condsVDTC)
 invivodatasubsetthreedays$treatment <- factor(invivodatasubsetthreedays$treatment, 
-                                            levels = c("V", "D", "C"), 
-                                            labels = c("Vehicle", "Dexa", "Dexa + Testo"))
+                                            levels = condsVDC)
 
-invivodatasubsetsevendays <- invivodatasevendays[invivodatasevendays$treatment %in% c("V", "D", "C"), ]
+invivodatasubsetsevendays <- invivodatasevendays[invivodatasevendays$treatment %in% condsVDC, ]
 invivodatasevendays$treatment <- factor(invivodatasevendays$treatment, 
-                                      levels = c("V", "D", "T", "C"), 
-                                      labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
+                                      levels =condsVDTC)
 invivodatasubsetsevendays$treatment <- factor(invivodatasubsetsevendays$treatment, 
-                                            levels = c("V", "D", "C"), 
-                                            labels = c("Vehicle", "Dexa", "Dexa + Testo"))
+                                            levels = condsVDC)
 
 
 textSize <- 11
-condsVDC <- c("V", "D", "C")
-condsVDTC <- c("V", "D", "T", "C")
-conditionsVDC <- c("Veh", "Dexa", "Dexa + Testo")
-conditionsVDTC <- c("Veh", "Dexa", "Testo", "Dexa + Testo")
-contrastsfour <- c("D vs DT", "T vs DT", "D vs T", "V vs DT", "V vs D", "V vs T")
-contraststhree <- c("D vs DT", "V vs DT", "V vs D")
-
 nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 meaningfulpalette <- c("#444444", "#dd0000", "#00dd00", "#0000dd", "#888800", "#880088", "#008888", "#dddddd")
 stdplottimecourse <- theme_bw() + 
@@ -138,13 +135,9 @@ PMID12519877data <- loadPMID12519877(datadir)
 
 reportstats <- function(invivodata, invivocolnames){
   myoutput <- ""
-  invivodatasubset <- invivodata[invivodata$treatment %in% c("V", "D", "C"), ]
-  invivodata$treatment <- factor(invivodata$treatment, 
-                          levels = c("V", "D", "T", "C"), 
-                          labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
+  invivodatasubset <- invivodata[invivodata$treatment %in% condsVDC, ]
   invivodatasubset$treatment <- factor(invivodatasubset$treatment, 
-                                levels = c("V", "D", "C"), 
-                                labels = c("Vehicle", "Dexa", "Dexa + Testo"))
+                                levels = condsVDC)
   
   for (i in 1:length(invivocolnames)) {
     if (invivocolnames[[i]] %in% c("animal", "TreatmentLong", "treatment")) next
