@@ -23,12 +23,12 @@ codedirpath <- dirname(
 
 codedirpath <- "/media/dump/writingswork/draftthesis"
 
-condsVDC <- c("V", "D", "C")
 condsVDTC <- c("V", "D", "T", "C")
+contrastsfour <- c("V vs D", "V vs T", "D vs T", "V vs DT", "D vs DT", "T vs DT")
+condsVDC <- c("V", "D", "C")
+contraststhree <- c("V vs D", "V vs DT", "D vs DT")
 conditionsVDC <- c("Veh", "Dexa", "Dexa + Testo")
 conditionsVDTC <- c("Veh", "Dexa", "Testo", "Dexa + Testo")
-contrastsfour <- c("D vs DT", "T vs DT", "D vs T", "V vs DT", "V vs D", "V vs T")
-contraststhree <- c("D vs DT", "V vs DT", "V vs D")
 
 datadir <- normalizePath(file.path(codedirpath, "data"))
 invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
@@ -49,19 +49,19 @@ invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"
 
 invivodatasubsetonedays <- invivodataonedays[invivodataonedays$treatment %in% condsVDC, ]
 invivodataonedays$treatment <- factor(invivodataonedays$treatment, 
-                               levels =condsVDTC)
+                               levels = condsVDTC)
 invivodatasubsetonedays$treatment <- factor(invivodatasubsetonedays$treatment, 
                                      levels = condsVDC)
 
 invivodatasubsetthreedays <- invivodatathreedays[invivodatathreedays$treatment %in% condsVDC, ]
 invivodatathreedays$treatment <- factor(invivodatathreedays$treatment, 
-                                      levels =condsVDTC)
+                                      levels = condsVDTC)
 invivodatasubsetthreedays$treatment <- factor(invivodatasubsetthreedays$treatment, 
                                             levels = condsVDC)
 
 invivodatasubsetsevendays <- invivodatasevendays[invivodatasevendays$treatment %in% condsVDC, ]
 invivodatasevendays$treatment <- factor(invivodatasevendays$treatment, 
-                                      levels =condsVDTC)
+                                      levels = condsVDTC)
 invivodatasubsetsevendays$treatment <- factor(invivodatasubsetsevendays$treatment, 
                                             levels = condsVDC)
 
@@ -153,9 +153,7 @@ reportstats <- function(invivodata, invivocolnames){
     myoutput <- paste(myoutput, 
                       paste0("Kruskal-Wallis p value for the four-way comparison is ", signif(kw$p.value, digits = 3)))
     dunns <- dunn.test(invivodata[,i], invivodata$treatment, method = "bonferroni")
-    dunnsreport <- data.frame(contrastsfour, dunns$P.adjusted)[c(5, 1), ]
-    # in the above structure, first is D vs V; second is T vs V, third is T vs D
-    # fourth is C vs V; fifth is C vs D; sixth is C vs T
+    dunnsreport <- data.frame(contrastsfour, dunns$P.adjusted)[c(1, 5, 2), ]
     myoutput <- paste(myoutput,
                       pandoc.table.return(dunnsreport, style = "rmarkdown"))
     kw <- kruskal.test(as.formula(paste(colnames(invivodata)[i], "~treatment")), data = invivodatasubset)
@@ -163,8 +161,6 @@ reportstats <- function(invivodata, invivocolnames){
                       paste0("Kruskal-Wallis p value for the three-way comparison is ", signif(kw$p.value, digits = 3)))
     dunns <- dunn.test(invivodatasubset[,i], invivodatasubset$treatment, method = "bonferroni")
     dunnsreport <- data.frame(contraststhree, dunns$P.adjusted)[c(1, 3), ]
-    # in the above structure, first is D vs V
-    # second is C vs V; third is C vs D
     dunnsreport <- setNames(cbind(dunnsreport, c(ifelse(meanV > meanD, 'V > D' , 'V < D'), ifelse(meanD > meanC, 'D > DT' , 'D < DT'))),
                             c("Comparison", "P value", "Direction"))
     myoutput <- paste(myoutput,
@@ -174,7 +170,7 @@ reportstats <- function(invivodata, invivocolnames){
   return(myoutput)
 }
 
-plotbodyweights <- function(){
+plotbodyweightcourse <- function(){
   timeseriescolumns <- c("body.weight.gain.after.1.days..percent.",
                          "body.weight.gain.after.2.days..percent.",
                          "body.weight.gain.after.3.days..percent.",
@@ -274,5 +270,6 @@ plotbodyweights <- function(){
                        ncol=1)  )
 }
 
-
-#cat(myoutput)
+plotbodyweightcourse <- function(){
+  print("lol")
+}

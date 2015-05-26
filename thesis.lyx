@@ -13323,7 +13323,7 @@ print(plotbodyweights())
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Body weight changes during 
+Body weight at sacrifice, during 
 \begin_inset ERT
 status open
 
@@ -13377,10 +13377,10 @@ day}
 
 \end_inset
 
- Testo.
+ Testo treatments.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Body-weight-changes"
+name "fig:Body-weight-at"
 
 \end_inset
 
@@ -13403,7 +13403,7 @@ Upon finding the Dexa dose effective in inducing muscle atrophy, I analyzed
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Body-weight-changes"
+reference "fig:Body-weight-at"
 
 \end_inset
 
@@ -13439,37 +13439,11 @@ er.7.days..g., na.rm = TRUE) / 7)
  grams every day during the treatment.
  A similar trend has been seen in the other repetitions of the experiment,
  as well as in other published studies on young rodents.
- A sizable contribution to this growth was due to the 200 uL vehicle injected
- every day.
- Once this artifact is taken into account, it becomes apparent that 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{10}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- Dexa leads to loss of body weight compared to vehicle alone, with seven-day
- weight gain in Dexa-treated group (
+ A sizable contribution to this growth was broght by the 200 uL vehicle
+ injected every day.
+ Once this artifact is taken into account, it becomes apparent that Dexa
+ leads to actual loss of body weight, compared to vehicle alone.
+ Seven-day weight gain in Dexa-treated group (
 \begin_inset Flex S/R expression
 status open
 
@@ -13493,8 +13467,8 @@ r.7.days..percent.))
 
 \end_inset
 
-% of initial body weight) significantly smaller than that of the vehicle-treated
- group (
+% of initial body weight) was significantly smaller than that of the vehicle-tre
+ated group (
 \begin_inset Flex S/R expression
 status open
 
@@ -13531,35 +13505,8 @@ sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.7.days..percent
 \end_inset
 
 ).
- Conversely, co-administration of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{28}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- Testo brought back the body weight gain over seven days to levels similar
- to those in vehicle-treated animals (
+ Conversely, co-administration of Testo brought back the body weight gain
+ over seven days to levels similar to those in vehicle-treated animals (
 \begin_inset Flex S/R expression
 status open
 
@@ -13626,7 +13573,7 @@ bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
 
 \begin_layout Plain Layout
 
-print(plotbodyweights())    
+print(plotbodyweightcourse())    
 \end_layout
 
 \begin_layout Plain Layout
