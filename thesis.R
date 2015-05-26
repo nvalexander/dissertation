@@ -20,8 +20,16 @@ codedirpath <- dirname(
 datadir <- normalizePath(file.path(codedirpath, "data"))
 invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, skip = 1)
 invivocolnameonedays <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, sep = ",", nrows = 1)
+levels(invivodataonedays$V2)[levels(invivodataonedays$V2)=="A"] <- "C"
+levels(invivodataonedays$V2)[levels(invivodataonedays$V2)=="E"] <- "D"
+levels(invivodataonedays$V2)[levels(invivodataonedays$V2)=="W"] <- "V"
+levels(invivodataonedays$V2)[levels(invivodataonedays$V2)=="S"] <- "T"
 invivodatathreedays <- read.csv(file.path(datadir, "2012.12.12.3daysTD.csv"), header = FALSE, skip = 1)
 invivocolnamethreedays <- read.table(file.path(datadir, "2012.12.12.3daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
+levels(invivodatathreedays$V2)[levels(invivodatathreedays$V2)=="B"] <- "C"
+levels(invivodatathreedays$V2)[levels(invivodatathreedays$V2)=="G"] <- "D"
+levels(invivodatathreedays$V2)[levels(invivodatathreedays$V2)=="X"] <- "V"
+levels(invivodatathreedays$V2)[levels(invivodatathreedays$V2)=="U"] <- "T"
 invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
 invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
 
@@ -1237,40 +1245,38 @@ loadPMID12519877 <- function(datadirpath){
 
 PMID12519877data <- loadPMID12519877(datadir)
 
-
-myoutput <-""
-
-
-invivocolnames <- invivocolnamesevendays
-invivodata <- invivodatasevendays
-invivodatasubset <- subset(invivodata, ((V2 == "D") | (V2 == "V") | (V2 == "C")) )
-invivodata$V2 <- factor(invivodata$V2, 
-                        levels = c("V", "D", "T", "C"), 
-                        labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
-invivodatasubset$V2 <- factor(invivodatasubset$V2, 
-                              levels = c("V", "D", "C"), 
-                              labels = c("Vehicle", "Dexa", "Dexa + Testo"))
-
-for (i in 4:length(invivocolnames)) {
-  myoutput <- paste0(myoutput, 
-                     "# ", invivocolnames[[i]])
-  myoutput <- paste(myoutput, 
-                    pandoc.table.return(aggregate(invivodata[,i], list(invivodata$V2), mean, na.rm = TRUE), style = "rmarkdown"))
-  kw <- kruskal.test(as.formula(paste(colnames(invivocolnames)[i], "~V2")), data = invivodata)
-  myoutput <- paste(myoutput, 
-                    paste0("Kruskal-Wallis p value for the four-way comparison is ", signif(kw$p.value, digits = 3)))
-  dunns <- dunn.test(invivodata[,i], invivodata$V2, method = "bonferroni")
-  dunnsreport <- data.frame(contrastsfour, dunns$P)
-  myoutput <- paste(myoutput,
-                    pandoc.table.return(dunnsreport, style = "rmarkdown"))
-  kw <- kruskal.test(as.formula(paste(colnames(invivodatasubset)[i], "~V2")), data = invivodatasubset)
-  myoutput <- paste(myoutput, 
-                    paste0("Kruskal-Wallis p value for the three-way comparison is ", signif(kw$p.value, digits = 3)))
-  dunns <- dunn.test(invivodatasubset[,i], invivodatasubset$V2, method = "bonferroni")
-  dunnsreport <- data.frame(contraststhree, dunns$P)
-  myoutput <- paste(myoutput,
-                    pandoc.table.return(dunnsreport, style = "rmarkdown"))
+reportstats <- function(invivodata, invivocolnames){
+  myoutput <- ""
+  invivodatasubset <- subset(invivodata, ((V2 == "D") | (V2 == "V") | (V2 == "C")) )
+  invivodata$V2 <- factor(invivodata$V2, 
+                          levels = c("V", "D", "T", "C"), 
+                          labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
+  invivodatasubset$V2 <- factor(invivodatasubset$V2, 
+                                levels = c("V", "D", "C"), 
+                                labels = c("Vehicle", "Dexa", "Dexa + Testo"))
   
+  for (i in 4:length(invivocolnames)) {
+    myoutput <- paste0(myoutput, 
+                       "# ", invivocolnames[[i]])
+    myoutput <- paste(myoutput, 
+                      pandoc.table.return(aggregate(invivodata[,i], list(invivodata$V2), mean, na.rm = TRUE), style = "rmarkdown"))
+    kw <- kruskal.test(as.formula(paste(colnames(invivocolnames)[i], "~V2")), data = invivodata)
+    myoutput <- paste(myoutput, 
+                      paste0("Kruskal-Wallis p value for the four-way comparison is ", signif(kw$p.value, digits = 3)))
+    dunns <- dunn.test(invivodata[,i], invivodata$V2, method = "bonferroni")
+    dunnsreport <- data.frame(contrastsfour, dunns$P)
+    myoutput <- paste(myoutput,
+                      pandoc.table.return(dunnsreport, style = "rmarkdown"))
+    kw <- kruskal.test(as.formula(paste(colnames(invivodatasubset)[i], "~V2")), data = invivodatasubset)
+    myoutput <- paste(myoutput, 
+                      paste0("Kruskal-Wallis p value for the three-way comparison is ", signif(kw$p.value, digits = 3)))
+    dunns <- dunn.test(invivodatasubset[,i], invivodatasubset$V2, method = "bonferroni")
+    dunnsreport <- data.frame(contraststhree, dunns$P)
+    myoutput <- paste(myoutput,
+                      pandoc.table.return(dunnsreport, style = "rmarkdown"))
+    
+  }
+  return(myoutput)
 }
 
 #cat(myoutput)

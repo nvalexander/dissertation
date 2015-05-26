@@ -7,9 +7,10 @@ This report describes data from 2012.08.23 experiment (7 days of D and / or T).
 
 ```{r, echo=FALSE, message=FALSE, results='hide'}
 source('../thesis.R')
+report <- reportstats(invivodatasevendays, invivocolnamesevendays)
 ```
 
 ```{r, echo=FALSE, message=FALSE, results='asis'}
-cat(myoutput)
+cat(report)
 ```
 
