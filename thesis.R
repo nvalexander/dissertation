@@ -18,20 +18,21 @@ codedirpath <- dirname(
                                                               commandArgs())], '='))[2]))
 )
 datadir <- normalizePath(file.path(codedirpath, "data"))
-invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, skip = 1)
+invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
 invivocolnameonedays <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, sep = ",", nrows = 1)
 levels(invivodataonedays$V2)[levels(invivodataonedays$V2)=="A"] <- "C"
 levels(invivodataonedays$V2)[levels(invivodataonedays$V2)=="E"] <- "D"
 levels(invivodataonedays$V2)[levels(invivodataonedays$V2)=="W"] <- "V"
 levels(invivodataonedays$V2)[levels(invivodataonedays$V2)=="S"] <- "T"
-invivodatathreedays <- read.csv(file.path(datadir, "2012.12.12.3daysTD.csv"), header = FALSE, skip = 1)
+invivodatathreedays <- read.csv(file.path(datadir, "2012.12.12.3daysTD.csv"), header = TRUE)
 invivocolnamethreedays <- read.table(file.path(datadir, "2012.12.12.3daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
 levels(invivodatathreedays$V2)[levels(invivodatathreedays$V2)=="B"] <- "C"
 levels(invivodatathreedays$V2)[levels(invivodatathreedays$V2)=="G"] <- "D"
 levels(invivodatathreedays$V2)[levels(invivodatathreedays$V2)=="X"] <- "V"
 levels(invivodatathreedays$V2)[levels(invivodatathreedays$V2)=="U"] <- "T"
-invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
+invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = TRUE)
 invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
+
 
 
 potentialConditionColumnNames <- c(
@@ -1247,16 +1248,16 @@ PMID12519877data <- loadPMID12519877(datadir)
 
 reportstats <- function(invivodata, invivocolnames){
   myoutput <- ""
-  invivodatasubset <- subset(invivodata, ((V2 == "D") | (V2 == "V") | (V2 == "C")) )
-  invivodata$V2 <- factor(invivodata$V2, 
+  invivodatasubset <- subset(invivodata, ((treatment == "D") | (treatment == "V") | (treatment == "C")) )
+  invivodata$treatment <- factor(invivodata$treatment, 
                           levels = c("V", "D", "T", "C"), 
                           labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
-  invivodatasubset$V2 <- factor(invivodatasubset$V2, 
+  invivodatasubset$treatment <- factor(invivodatasubset$treatment, 
                                 levels = c("V", "D", "C"), 
                                 labels = c("Vehicle", "Dexa", "Dexa + Testo"))
   
-  for (i in 4:length(invivocolnames)) {
-    cat(i)
+  for (i in 1:length(invivocolnames)) {
+    if ((invivocolnames[[i]] == "animal") | (invivocolnames[[i]] == "TreatmentLong") | (invivocolnames[[i]] == "treatment")) next
     myoutput <- paste0(myoutput, 
                        "# ", invivocolnames[[i]])
     myoutput <- paste(myoutput, 
