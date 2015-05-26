@@ -25,8 +25,14 @@ codedirpath <- "/media/dump/writingswork/draftthesis"
 
 condsVDTC <- c("V", "D", "T", "C")
 contrastsfour <- c("V vs D", "V vs T", "D vs T", "V vs DT", "D vs DT", "T vs DT")
+VvsDfourways <- match("V vs D", contrastsfour)[[1]]
+VvsTfourways <- match("V vs T", contrastsfour)[[1]]
+DvsCfourways <- match("D vs DT", contrastsfour)[[1]]
 condsVDC <- c("V", "D", "C")
 contraststhree <- c("V vs D", "V vs DT", "D vs DT")
+VvsDthreeways <- match("V vs D", contraststhree)[[1]]
+DvsCthreeways <- match("D vs DT", contraststhree)[[1]]
+VvsCthreeways <- match("V vs DT", contraststhree)[[1]]
 conditionsVDC <- c("Veh", "Dexa", "Dexa + Testo")
 conditionsVDTC <- c("Veh", "Dexa", "Testo", "Dexa + Testo")
 
@@ -153,14 +159,14 @@ reportstats <- function(invivodata, invivocolnames){
     myoutput <- paste(myoutput, 
                       paste0("Kruskal-Wallis p value for the four-way comparison is ", signif(kw$p.value, digits = 3)))
     dunns <- dunn.test(invivodata[,i], invivodata$treatment, method = "bonferroni")
-    dunnsreport <- data.frame(contrastsfour, dunns$P.adjusted)[c(1, 5, 2), ]
+    dunnsreport <- data.frame(contrastsfour, dunns$P.adjusted)[c(VvsDfourways, DvsCfourways, VvsTfourways), ]
     myoutput <- paste(myoutput,
                       pandoc.table.return(dunnsreport, style = "rmarkdown"))
     kw <- kruskal.test(as.formula(paste(colnames(invivodata)[i], "~treatment")), data = invivodatasubset)
     myoutput <- paste(myoutput, 
                       paste0("Kruskal-Wallis p value for the three-way comparison is ", signif(kw$p.value, digits = 3)))
     dunns <- dunn.test(invivodatasubset[,i], invivodatasubset$treatment, method = "bonferroni")
-    dunnsreport <- data.frame(contraststhree, dunns$P.adjusted)[c(1, 3), ]
+    dunnsreport <- data.frame(contraststhree, dunns$P.adjusted)[c(VvsDthreeways, DvsCthreeways), ]
     dunnsreport <- setNames(cbind(dunnsreport, c(ifelse(meanV > meanD, 'V > D' , 'V < D'), ifelse(meanD > meanC, 'D > DT' , 'D < DT'))),
                             c("Comparison", "P value", "Direction"))
     myoutput <- paste(myoutput,
@@ -271,5 +277,7 @@ plotbodyweightcourse <- function(){
 }
 
 plotbodyweightcourse <- function(){
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
+  
   print("lol")
 }
