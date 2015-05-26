@@ -13265,7 +13265,7 @@ status open
 
 \begin_layout Plain Layout
 bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
- out.height = "3in", fig.width = 6, fig.height = 3
+ out.height = "8in", fig.width = 6, fig.height = 8
 \end_layout
 
 \end_inset
