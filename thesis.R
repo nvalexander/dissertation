@@ -33,8 +33,8 @@ contraststhree <- c("V vs D", "V vs DT", "D vs DT")
 VvsDthreeways <- match("V vs D", contraststhree)[[1]]
 DvsCthreeways <- match("D vs DT", contraststhree)[[1]]
 VvsCthreeways <- match("V vs DT", contraststhree)[[1]]
-conditionsVDC <- c("Veh", "Dexa", "Dexa\n+ Testo")
-conditionsVDTC <- c("Veh", "Dexa", "Testo", "Dexa\n+ Testo")
+conditionsVDC <- c("Veh", "Dexa", "Comb")
+conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
 
 datadir <- normalizePath(file.path(codedirpath, "data"))
 invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)

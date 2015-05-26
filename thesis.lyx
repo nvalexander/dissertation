@@ -13303,7 +13303,7 @@ bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
 
 \begin_layout Plain Layout
 
-print(plotbodyweights())
+plotbodyweights()
 \end_layout
 
 \begin_layout Plain Layout
