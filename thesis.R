@@ -109,10 +109,10 @@ reportstats <- function(invivodata, invivocolnames){
                                 labels = c("Vehicle", "Dexa", "Dexa + Testo"))
   
   for (i in 1:length(invivocolnames)) {
-    if ((invivocolnames[[i]] == "animal") | (invivocolnames[[i]] == "TreatmentLong") | (invivocolnames[[i]] == "treatment")) next
-    meanV <- mean(subset(invivodatasevendays, treatment == "V")[,i])
-    meanD <- mean(subset(invivodatasevendays, treatment == "D")[,i])
-    meanC <- mean(subset(invivodatasevendays, treatment == "C")[,i])
+    if (invivocolnames[[i]] %in% c("animal", "TreatmentLong", "treatment")) next
+    meanV <- mean(subset(invivodatasevendays, treatment == "V")[,i], na.rm = TRUE)
+    meanD <- mean(subset(invivodatasevendays, treatment == "D")[,i], na.rm = TRUE)
+    meanC <- mean(subset(invivodatasevendays, treatment == "C")[,i], na.rm = TRUE)
     myoutput <- paste0(myoutput, 
                        "# ", invivocolnames[[i]])
     myoutput <- paste(myoutput, 
