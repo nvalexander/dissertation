@@ -84,10 +84,22 @@ stdplottimecourse <- theme_bw() +
         axis.line = element_line(colour = "black"),
         axis.title.x = element_text( size = textSize),
         axis.title.y = element_text( size = textSize),
-        axis.text.x = element_text( size = textSize * .7 ),
-        axis.text.y = element_text( size = textSize * .5 ),
+        axis.text.x = element_text( size = textSize * 1 ),
+        axis.text.y = element_text( size = textSize * 1 ),
         legend.title = element_blank())
 
+stdbarplot <- 
+  theme_bw() +
+  theme(text = element_text(size = textSize, color = "black"),
+        panel.grid.major.x = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(color = "black"),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_blank(),
+        axis.title.y = element_text( size = textSize),
+        axis.text.x = element_text( size = textSize * 1 ),
+        axis.text.y = element_text( size = textSize * 1 ))
 
 SEM <- function(x) {
   return( sqrt(var(x, na.rm = TRUE) / truecount(x)) )
@@ -277,11 +289,13 @@ plotbodyweightcourse <- function(){
                        ncol=1)  )
 }
 
-plotbodyweightcourse <- function(){
+plotbodyweights <- function(){
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
   leftplot <- ggplot(shortdf) +
-    aes_string( x = colnames(shortdf)[1], y = colnames(shortdf)[2], fill = colnames(shortdf)[1]) +
-    stat_summary(fun.y = mean, geom = "bar") +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, geom = "bar", colour = "black") +
     stat_summary(geom = 'errorbar',
                  fun.data = 'semInterval',
                  width = 0.1,
@@ -289,17 +303,7 @@ plotbodyweightcourse <- function(){
     ylab("body weight (g)") +
     scale_x_discrete(labels = conditionsVDC) +
     expand_limits(y = 0) +
-    theme_bw() +
     scale_fill_manual( values = greypalette ) +
-    theme(text = element_text(size = textSize, color = "black"),
-          panel.grid.major.x = element_blank(),
-          panel.border = element_blank(),
-          panel.background = element_blank(),
-          axis.line = element_line(color = "black"),
-          axis.ticks.x = element_blank(),
-          axis.title.x = element_blank(),
-          axis.title.y = element_text( size = textSize),
-          axis.text.x = element_text( size = textSize * .8 ),
-          axis.text.y = element_text( size = textSize * .5 ))
-  print(leftplot)
+    stdbarplot
+  return(leftplot)
 }
