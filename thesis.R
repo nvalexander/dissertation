@@ -1244,14 +1244,14 @@ for (i in 4:length(mycolnamessevendays)) {
                     pandoc.table.return(aggregate(mydatasevendays[,i], list(mydatasevendays$V2), mean, na.rm = TRUE), style = "rmarkdown"))
   kw <- kruskal.test(as.formula(paste(colnames(mycolnamessevendays)[i], "~V2")), data = mydatasevendays)
   myoutput <- paste(myoutput, 
-                    paste0("Kruskal-Wallis p value for the four-way comparison is ", kw$p.value))
+                    paste0("Kruskal-Wallis p value for the four-way comparison is ", signif(kw$p.value, digits = 3)))
   dunns <- dunn.test(mydatasevendays[,i], mydatasevendays$V2, method = "bonferroni")
   dunnsreport <- data.frame(contrastsfour, dunns$P)
   myoutput <- paste(myoutput,
                     pandoc.table.return(dunnsreport, style = "rmarkdown"))
   kw <- kruskal.test(as.formula(paste(colnames(mydatasevendayssubset)[i], "~V2")), data = mydatasevendayssubset)
   myoutput <- paste(myoutput, 
-                    paste0("Kruskal-Wallis p value for the three-way comparison is ", kw$p.value))
+                    paste0("Kruskal-Wallis p value for the three-way comparison is ", signif(kw$p.value, digits = 3)))
   dunns <- dunn.test(mydatasevendayssubset[,i], mydatasevendayssubset$V2, method = "bonferroni")
   dunnsreport <- data.frame(contraststhree, dunns$P)
   myoutput <- paste(myoutput,
