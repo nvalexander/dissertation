@@ -13099,7 +13099,7 @@ minute}
 
  at 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -13215,8 +13215,38 @@ Dexa induces muscle atrophy reversible by AAS co-administration
 Mice treated with the Dexa doses that were reported to induce muscle atrophy
  in rats did not exhibit significant muscle loss based on muscle dissection
  and NMR (data not shown).
- Higher doses of Dexa were used until effect size became stronger than experimen
-tal error (Fig.
+ Higher doses of Dexa, up to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa, were used until effect size on wet muscle weight became stronger
+ than experimental error.
+ In contrast, Testo doses that could reverse GAML were found to be similar
+ to those effective in rats.
+ Upon finding the effective Dexa dose, a time course of body weight (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13224,7 +13254,8 @@ reference "fig:Body-weight-changes"
 
 \end_inset
 
-).
+) revealed that GAML onset is rapid, becoming apparent in the first day.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -13300,7 +13331,13 @@ shortdf <- invivodatasevendays[ invivodatasevendays$treatment %in% condsVDC,
 
 \begin_layout Plain Layout
 
-shortdf <-
+body.weight.gain.after.0.days..percent.
+ <- rep(0, dim(shortdf)[1])
+\end_layout
+
+\begin_layout Plain Layout
+
+shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
 \end_layout
 
 \begin_layout Plain Layout
@@ -13315,7 +13352,7 @@ colnames(shortdf)[2] <- "day"
 
 \begin_layout Plain Layout
 
-setattr(shortdf$day, "levels", 1:8)
+setattr(shortdf$day, "levels", 0:8)
 \end_layout
 
 \begin_layout Plain Layout
@@ -13477,7 +13514,7 @@ day}
 
 \end_inset
 
- D and / or 
+ Dexa and / or 
 \begin_inset ERT
 status open
 
@@ -13504,7 +13541,7 @@ day}
 
 \end_inset
 
- T.
+ Testo.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Body-weight-changes"
@@ -13529,7 +13566,6 @@ name "fig:Body-weight-changes"
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing single
 \begin_inset Newpage pagebreak
 \end_inset
 
