@@ -53,7 +53,7 @@ invivodatasubsetthreedays$treatment <- factor(invivodatasubsetthreedays$treatmen
                                             levels = c("V", "D", "C"), 
                                             labels = c("Vehicle", "Dexa", "Dexa + Testo"))
 
-invivodatasubsetsevendays <- invivocolnamesevendays[invivodatasevendays$treatment %in% c("V", "D", "C"), ]
+invivodatasubsetsevendays <- invivodatasevendays[invivodatasevendays$treatment %in% c("V", "D", "C"), ]
 invivodatasevendays$treatment <- factor(invivodatasevendays$treatment, 
                                       levels = c("V", "D", "T", "C"), 
                                       labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
