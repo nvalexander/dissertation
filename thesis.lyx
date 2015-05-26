@@ -13310,7 +13310,7 @@ colnames(shortdf)[2] <- "day"
 
 \begin_layout Plain Layout
 
-colnames(shortdf)[3] <- "bodyweight"
+setattr(shortdf$day, "levels", 1:8)
 \end_layout
 
 \begin_layout Plain Layout
