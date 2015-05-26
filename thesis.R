@@ -1276,14 +1276,14 @@ reportstats <- function(invivodata, invivocolnames){
     myoutput <- paste(myoutput, 
                       paste0("Kruskal-Wallis p value for the four-way comparison is ", signif(kw$p.value, digits = 3)))
     dunns <- dunn.test(invivodata[,i], invivodata$treatment, method = "bonferroni")
-    dunnsreport <- data.frame(contrastsfour, dunns$P)[, c(5, 1)]
+    dunnsreport <- data.frame(contrastsfour, dunns$P)[c(5, 1), ]
     myoutput <- paste(myoutput,
                       pandoc.table.return(dunnsreport, style = "rmarkdown"))
     kw <- kruskal.test(as.formula(paste(colnames(invivodata)[i], "~treatment")), data = invivodatasubset)
     myoutput <- paste(myoutput, 
                       paste0("Kruskal-Wallis p value for the three-way comparison is ", signif(kw$p.value, digits = 3)))
     dunns <- dunn.test(invivodatasubset[,i], invivodatasubset$treatment, method = "bonferroni")
-    dunnsreport <- data.frame(contraststhree, dunns$P)[, c(3, 1)]
+    dunnsreport <- data.frame(contraststhree, dunns$P)[c(3, 1), ]
     myoutput <- paste(myoutput,
                       pandoc.table.return(dunnsreport, style = "rmarkdown"))
     
