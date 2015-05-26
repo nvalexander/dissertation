@@ -13340,7 +13340,7 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    size = 2, 
+    size = 1, 
 \end_layout
 
 \begin_layout Plain Layout
@@ -13355,7 +13355,7 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    aes_string(color = colnames(shortdf)[1]) )) +
+    aes_string(color = colnames(shortdf)[1]) ) +
 \end_layout
 
 \begin_layout Plain Layout
@@ -13380,7 +13380,7 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    position=position_dodge(.9))+
+    position=position_dodge(.1))+
 \end_layout
 
 \begin_layout Plain Layout
@@ -13395,7 +13395,7 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    ylab("body weight gain (% of pre-treatment") +
+    ylab("body weight gain (% of pre-treatment)") +
 \end_layout
 
 \begin_layout Plain Layout
@@ -13446,7 +13446,7 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-      axis.text.y = element_text( size = textSize * .5 ))
+      axis.text.y = element_text( size = textSize * .5 )))
 \end_layout
 
 \begin_layout Plain Layout
