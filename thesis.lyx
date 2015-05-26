@@ -13239,13 +13239,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename artwork/animal-experiment-timecourse.pdf
-	width 6in
-
-\end_inset
-
-
+lol
 \end_layout
 
 \begin_layout Plain Layout
@@ -13364,7 +13358,7 @@ bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
 
 \begin_layout Plain Layout
 
-plotbodyweights()
+fonts()
 \end_layout
 
 \begin_layout Plain Layout
@@ -13557,7 +13551,7 @@ status open
 
 sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.7.days..percent.,
  invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[VvsDthre
-eway]])
+eways]])
 \end_layout
 
 \end_inset
@@ -13605,7 +13599,7 @@ status open
 
 sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.7.days..percent.,
  invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthre
-eway]])
+eways]])
 \end_layout
 
 \end_inset
@@ -13640,7 +13634,7 @@ bodyweightcourse, echo = FALSE, warning = FALSE, message = FALSE, out.width
 
 \begin_layout Plain Layout
 
-print(plotbodyweightcourse()) 
+fonts() 
 \end_layout
 
 \begin_layout Plain Layout
