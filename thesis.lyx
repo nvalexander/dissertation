@@ -13215,7 +13215,9 @@ Dexa induces muscle atrophy reversible by AAS co-administration
 Mice treated with the Dexa doses that were reported to induce muscle atrophy
  in rats did not exhibit significant muscle loss based on muscle dissection
  and NMR (data not shown).
- Higher doses of Dexa, up to 
+ Higher doses of Dexa were used.
+ Effect size on wet muscle weight became stronger than experimental error
+ at a dose of 
 \begin_inset ERT
 status open
 
@@ -13242,10 +13244,36 @@ day}
 
 \end_inset
 
- Dexa, were used until effect size on wet muscle weight became stronger
- than experimental error.
+ Dexa.
  In contrast, Testo doses that could reverse GAML were found to be similar
- to those effective in rats.
+ to those effective in rats (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{28}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ ).
 \end_layout
 
 \begin_layout Standard
@@ -13399,6 +13427,161 @@ er.7.days..g., na.rm = TRUE) / 7)
  as well as in other published studies on young rodents.
  A sizable contribution to this growth was due to the 200 uL vehicle injected
  every day.
+ Once this artifact is taken into account, it becomes apparent that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa leads to loss of body weight compared to vehicle alone, with seven-day
+ weight gain in Dexa-treated group (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( mean(subset(invivodatasubsetsevendays, treatment == "D")$body.weight.gain.aft
+er.7.days..percent., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+ ± 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( SEM(subset(invivodatasubsetsevendays, treatment == "D")$body.weight.gain.afte
+r.7.days..percent.))
+\end_layout
+
+\end_inset
+
+%) significantly smaller than that of the vehicle-treated group (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( mean(subset(invivodatasubsetsevendays, treatment == "V")$body.weight.gain.aft
+er.7.days..percent., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+ ± 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( SEM(subset(invivodatasubsetsevendays, treatment == "V")$body.weight.gain.afte
+r.7.days..percent.))
+\end_layout
+
+\end_inset
+
+%; Dunn's test p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.7.days..percent.,
+ invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[1]])
+\end_layout
+
+\end_inset
+
+).
+ Conversely, co-administration of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{28}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Testo brought back the body weight gain over seven days to levels similar
+ to those in vehicle-treated animals (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( mean(subset(invivodatasubsetsevendays, treatment == "C")$body.weight.gain.aft
+er.7.days..percent., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+ ± 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( SEM(subset(invivodatasubsetsevendays, treatment == "C")$body.weight.gain.afte
+r.7.days..percent.))
+\end_layout
+
+\end_inset
+
+%; Dunn's test vs.
+ Dexa alone, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.7.days..percent.,
+ invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[3]])
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
