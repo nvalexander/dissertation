@@ -1,0 +1,16 @@
+---
+title: "2012.12.12"
+output: html_document
+---
+
+This report describes data from 2012.12.12 experiment (3 days of D and / or T).
+
+```{r, echo=FALSE, message=FALSE, results='hide'}
+source('../thesis.R')
+report <- reportstats(invivodatathreedays, invivocolnamethreedays)
+```
+
+```{r, echo=FALSE, message=FALSE, results='asis'}
+cat(report)
+```
+
