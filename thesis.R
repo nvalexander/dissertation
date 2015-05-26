@@ -19,6 +19,20 @@ codedirpath <- dirname(
                                                               commandArgs())], '='))[2]))
 )
 datadir <- normalizePath(file.path(codedirpath, "data"))
+invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
+invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
+invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
+invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
+invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
+invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
+
+invivodatasevendays$V2 <- factor(invivodatasevendays$V2, 
+                                 levels = c("V", "D", "T", "C"), 
+                                 labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
+invivodatasevendayssubset <- subset(invivodatasevendays, ((V2 == "D") | (V2 == "V") | (V2 == "C")) )
+invivodatasevendayssubset$V2 <- factor(invivodatasevendayssubset$V2, 
+                                   levels = c("V", "D", "C"), 
+                                   labels = c("Vehicle", "Dexa", "Dexa + Testo"))
 
 potentialConditionColumnNames <- c(
   "condition",
@@ -1231,15 +1245,6 @@ loadPMID12519877 <- function(datadirpath){
 
 PMID12519877data <- loadPMID12519877(datadir)
 
-mydatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
-mycolnamessevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
-mycolnamessevendays$V2 <- factor(mycolnamessevendays$V2, 
-                                 levels = c("V", "D", "T", "C"), 
-                                 labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
-mydatasevendayssubset <- subset(mydatasevendays, ((V2 == "D") | (V2 == "V") | (V2 == "C")) )
-mydatasevendayssubset$V2 <- factor(mydatasevendayssubset$V2, 
-                                 levels = c("V", "D", "C"), 
-                                 labels = c("Vehicle", "Dexa", "Dexa + Testo"))
 
 myoutput <-""
   
