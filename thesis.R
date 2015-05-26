@@ -35,8 +35,11 @@ levels(invivodatathreedays$treatment)[levels(invivodatathreedays$treatment)=="U"
 invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = TRUE)
 invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
 
-conditionsVDC <- c("V", "D", "C")
-conditionsVDTC <- c("V", "D", "T", "C")
+textSize <- 11
+condsVDC <- c("V", "D", "C")
+condsVDTC <- c("V", "D", "T", "C")
+conditionsVDC <- c("Veh", "Dexa", "Dexa + Testo")
+conditionsVDTC <- c("Veh", "Dexa", "Testo", "Dexa + Testo")
 contrastsfour <- c("D vs DT", "T vs DT", "D vs T", "V vs DT", "V vs D", "V vs T")
 contraststhree <- c("D vs DT", "V vs DT", "V vs D")
 
