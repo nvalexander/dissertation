@@ -13254,7 +13254,9 @@ bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
 
 \begin_layout Plain Layout
 
-plot(cars)
+timeseries <- c("day.1.body.weight..g.", "day.2.body.weight..g.", "day.3.body.weight..g.",
+ "day.4.body.weight..g.", "day.5.body.weight..g.", "day.6.body.weight..g.", "day.7.body.weight..g.".
+ "day.8.body.weight..g.")
 \end_layout
 
 \begin_layout Plain Layout
