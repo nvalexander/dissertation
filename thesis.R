@@ -18,6 +18,7 @@ codedirpath <- dirname(
              normalizePath(unlist(strsplit(commandArgs()[grep('^--file=',
                                                               commandArgs())], '='))[2]))
 )
+
 datadir <- normalizePath(file.path(codedirpath, "data"))
 invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
 invivocolnameonedays <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, sep = ",", nrows = 1)
@@ -34,18 +35,8 @@ levels(invivodatathreedays$treatment)[levels(invivodatathreedays$treatment)=="U"
 invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = TRUE)
 invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
 
-potentialConditionColumnNames <- c(
-  "condition",
-  "TreatmentShort",
-  "treatment"
-  )
-
-potentialBaselineConditionNames <- c(
-  "placebo",
-  "vehicle",
-  "V"
-)
-
+conditionsVDC <- c("V", "D", "C")
+conditionsVDTC <- c("V", "D", "T", "C")
 contrastsfour <- c("D vs DT", "T vs DT", "D vs T", "V vs DT", "V vs D", "V vs T")
 contraststhree <- c("D vs DT", "V vs DT", "V vs D")
 

@@ -13254,34 +13254,137 @@ bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
 
 \begin_layout Plain Layout
 
-timeseriescolumns <- c("day.1.body.weight..g.", "day.2.body.weight..g.", "day.3.body.weight..g.",
- "day.4.body.weight..g.", "day.5.body.weight..g.", "day.6.body.weight..g.", "day.7.body.weight..g.".
- "day.8.body.weight..g.")
+timeseriescolumns <- c("body.weight.gain.after.1.days..percent.",
 \end_layout
 
 \begin_layout Plain Layout
 
-timeseriescolumns <- c("body.weight.gain.after.1.days..percent.", "body.weight.gain.after.2.d
-ays..percent.", "body.weight.gain.after.3.days..percent.", "body.weight.gain.after.4.days..percent.
-", "body.weight.gain.after.5.days..percent.", "body.weight.gain.after.6.days..percent.",
- "body.weight.gain.after.7.days..percent.", "body.weight.gain.after.8.days..percent.")
+                        "body.weight.gain.after.2.days..percent.",
 \end_layout
 
 \begin_layout Plain Layout
 
-conditionsVDC <- c("V", "D", "C")
+                        "body.weight.gain.after.3.days..percent.",
 \end_layout
 
 \begin_layout Plain Layout
 
-shortdf <- melt(invivodatasevendays[ invivodatasevendays$treatment %in%
- conds, colnames(invivodatasevendays) %in% c("treatment", myseries)], id
- = c("treatment"), value.name = "bodyweight")
+                        "body.weight.gain.after.4.days..percent.",
 \end_layout
 
 \begin_layout Plain Layout
 
-levels(shortdf)
+                        "body.weight.gain.after.5.days..percent.",
+\end_layout
+
+\begin_layout Plain Layout
+
+                        "body.weight.gain.after.6.days..percent.",
+\end_layout
+
+\begin_layout Plain Layout
+
+                        "body.weight.gain.after.7.days..percent.",
+\end_layout
+
+\begin_layout Plain Layout
+
+                        "body.weight.gain.after.8.days..percent.")
+\end_layout
+
+\begin_layout Plain Layout
+
+shortdf <- invivodatasevendays[ invivodatasevendays$treatment %in% condsVDC,
+ colnames(invivodatasevendays) %in% c("treatment", timeseriescolumns)]
+\end_layout
+
+\begin_layout Plain Layout
+
+shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
+\end_layout
+
+\begin_layout Plain Layout
+
+colnames(shortdf)[2] <- "day"
+\end_layout
+
+\begin_layout Plain Layout
+
+colnames(shortdf)[3] <- "bodyweight"
+\end_layout
+
+\begin_layout Plain Layout
+
+print(ggplot(shortdf) + 
+\end_layout
+
+\begin_layout Plain Layout
+
+  aes_string(x = colnames(shortdf)[2],
+\end_layout
+
+\begin_layout Plain Layout
+
+    y = colnames(shortdf)[3],
+\end_layout
+
+\begin_layout Plain Layout
+
+    group = colnames(shortdf)[1]) +
+\end_layout
+
+\begin_layout Plain Layout
+
+  stat_summary(geom = "line", 
+\end_layout
+
+\begin_layout Plain Layout
+
+    size = 2, 
+\end_layout
+
+\begin_layout Plain Layout
+
+    fun.y = mean, 
+\end_layout
+
+\begin_layout Plain Layout
+
+    position = position_dodge(.2),
+\end_layout
+
+\begin_layout Plain Layout
+
+    aes_string(color = colnames(shortdf)[1]) )) +
+\end_layout
+
+\begin_layout Plain Layout
+
+  stat_summary(geom = 'errorbar',
+\end_layout
+
+\begin_layout Plain Layout
+
+    fun.data = 'semInterval',
+\end_layout
+
+\begin_layout Plain Layout
+
+    width = 0.1,
+\end_layout
+
+\begin_layout Plain Layout
+
+    show_guide = FALSE,
+\end_layout
+
+\begin_layout Plain Layout
+
+    position=position_dodge(.9))
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
