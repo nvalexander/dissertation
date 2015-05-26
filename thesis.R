@@ -77,7 +77,7 @@ nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2
 meaningfulpalette <- c("#444444", "#dd0000", "#00dd00", "#0000dd", "#888800", "#880088", "#008888", "#dddddd")
 greypalette <- c("#ffffff", "#000000", "#aaaaaa", "#0000dd", "#00dd00", "#dd0000", "#008888", "#888800")
 stdplottimecourse <- theme_bw() + 
-  theme(text = element_text(size = textSize, color = "black"),
+  theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
         panel.grid.major.x = element_blank(),
         panel.border = element_blank(),
         panel.background = element_blank(),
@@ -90,7 +90,7 @@ stdplottimecourse <- theme_bw() +
 
 stdbarplot <- 
   theme_bw() +
-  theme(text = element_text(size = textSize, color = "black"),
+  theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
         panel.grid.major.x = element_blank(),
         panel.border = element_blank(),
         panel.background = element_blank(),
@@ -221,10 +221,10 @@ plotbodyweightcourse <- function(){
                  fun.data = 'semInterval',
                  width = 0.2,
                  show_guide = FALSE,
-                 position=position_dodge(.05))+
-    expand_limits(y = 0) +
+                 position=position_dodge(.05)) +
+    coord_cartesian(ylim = c(-5, 8)) + 
     ylab("body weight gain (% of pre-treatment)") +
-    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
+    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
     stdplottimecourse
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", timeseriescolumns[1:4])]
@@ -250,8 +250,8 @@ plotbodyweightcourse <- function(){
                  fun.data = 'semInterval',
                  width = 0.2,
                  show_guide = FALSE,
-                 position=position_dodge(.05))+
-    expand_limits(y = 0) +
+                 position=position_dodge(.05)) +
+    coord_cartesian(ylim = c(0, 8)) + 
     ylab("body weight gain (% of pre-treatment)") +
     scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
     stdplottimecourse
@@ -279,18 +279,19 @@ plotbodyweightcourse <- function(){
                  fun.data = 'semInterval',
                  width = 0.2,
                  show_guide = FALSE,
-                 position=position_dodge(.05))+
-    expand_limits(y = 0) +
+                 position=position_dodge(.05)) +
+    coord_cartesian(ylim = c(0, 8)) + 
     ylab("body weight gain (% of pre-treatment)") +
-    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
+    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
     stdplottimecourse 
   
-  return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, ncol=2, widths = c(2,1) ), 
+  return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, ncol=2, widths = c(1.5,1) ), 
                        ncol=1)  )
 }
 
 plotbodyweights <- function(){
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
+  print(shortdf)
   leftplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
                 y = colnames(shortdf)[2], 
@@ -305,11 +306,12 @@ plotbodyweights <- function(){
                  show_guide = FALSE) +
     ylab("body weight (g) after one day") +
     scale_x_discrete(labels = conditionsVDC) +
-    scale_y_continuous(limits = c(0, 27)) + 
+    coord_cartesian(ylim = c(0, 27)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
+  print(shortdf)
   midplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
                 y = colnames(shortdf)[2], 
@@ -323,11 +325,12 @@ plotbodyweights <- function(){
                  width = 0.1) +
     ylab("body weight (g) after three days") +
     scale_x_discrete(labels = conditionsVDC) +
-    scale_y_continuous(limits = c(0, 27)) + 
+    coord_cartesian(ylim = c(0, 27)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
+  print(shortdf)
   rightplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
                 y = colnames(shortdf)[2], 
@@ -342,7 +345,7 @@ plotbodyweights <- function(){
                  show_guide = FALSE) +
     ylab("body weight (g) after seven days") +
     scale_x_discrete(labels = conditionsVDC) +
-    scale_y_continuous(limits = c(0, 27)) + 
+    coord_cartesian(ylim = c(0, 27)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
