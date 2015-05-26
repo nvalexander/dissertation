@@ -291,7 +291,6 @@ plotbodyweightcourse <- function(){
 
 plotbodyweights <- function(){
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
-  print(shortdf)
   leftplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
                 y = colnames(shortdf)[2], 
@@ -311,7 +310,6 @@ plotbodyweights <- function(){
     stdbarplot
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
-  print(shortdf)
   midplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
                 y = colnames(shortdf)[2], 
@@ -330,7 +328,6 @@ plotbodyweights <- function(){
     stdbarplot
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
-  print(shortdf)
   rightplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
                 y = colnames(shortdf)[2], 
