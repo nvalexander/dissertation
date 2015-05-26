@@ -13254,9 +13254,34 @@ bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
 
 \begin_layout Plain Layout
 
-timeseries <- c("day.1.body.weight..g.", "day.2.body.weight..g.", "day.3.body.weight..g.",
+timeseriescolumns <- c("day.1.body.weight..g.", "day.2.body.weight..g.", "day.3.body.weight..g.",
  "day.4.body.weight..g.", "day.5.body.weight..g.", "day.6.body.weight..g.", "day.7.body.weight..g.".
  "day.8.body.weight..g.")
+\end_layout
+
+\begin_layout Plain Layout
+
+timeseriescolumns <- c("body.weight.gain.after.1.days..percent.", "body.weight.gain.after.2.d
+ays..percent.", "body.weight.gain.after.3.days..percent.", "body.weight.gain.after.4.days..percent.
+", "body.weight.gain.after.5.days..percent.", "body.weight.gain.after.6.days..percent.",
+ "body.weight.gain.after.7.days..percent.", "body.weight.gain.after.8.days..percent.")
+\end_layout
+
+\begin_layout Plain Layout
+
+conditionsVDC <- c("V", "D", "C")
+\end_layout
+
+\begin_layout Plain Layout
+
+shortdf <- melt(invivodatasevendays[ invivodatasevendays$treatment %in%
+ conds, colnames(invivodatasevendays) %in% c("treatment", myseries)], id
+ = c("treatment"), value.name = "bodyweight")
+\end_layout
+
+\begin_layout Plain Layout
+
+levels(shortdf)
 \end_layout
 
 \begin_layout Plain Layout
