@@ -13315,8 +13315,8 @@ timeseriescolumns <- c("body.weight.gain.after.1.days..percent.",
 
 \begin_layout Plain Layout
 
-shortdf <- invivodatasevendays[ invivodatasevendays$treatment %in% condsVDC,
- colnames(invivodatasevendays) %in% c("treatment", timeseriescolumns)]
+shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays)
+ %in% c("treatment", timeseriescolumns)]
 \end_layout
 
 \begin_layout Plain Layout
@@ -13571,8 +13571,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(kruskal.test(body.weight.gain.after.1.days..percent.~treatment, data = invivodatasev
-endays)$p.value)
+sig3(kruskal.test(body.weight.gain.after.1.days..percent.~treatment, data = invivodatasub
+setsevendays)$p.value)
 \end_layout
 
 \end_inset
@@ -13584,8 +13584,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( mean(subset(invivodatasevendays, treatment == "V")$body.weight.gain.after.1.day
-s..percent., na.rm = TRUE))
+sig3( mean(subset(invivodatasubsetsevendays, treatment == "V")$body.weight.gain.aft
+er.1.days..percent., na.rm = TRUE))
 \end_layout
 
 \end_inset
@@ -13596,8 +13596,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasevendays, treatment == "V")$body.weight.gain.after.1.days..
-percent.))
+sig3( SEM(subset(invivodatasubsetsevendays, treatment == "V")$body.weight.gain.afte
+r.1.days..percent.))
 \end_layout
 
 \end_inset
@@ -13610,8 +13610,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( -mean(subset(invivodatasevendays, treatment == "D")$body.weight.gain.after.1.da
-ys..percent., na.rm = TRUE))
+sig3( -mean(subset(invivodatasubsetsevendays, treatment == "D")$body.weight.gain.af
+ter.1.days..percent., na.rm = TRUE))
 \end_layout
 
 \end_inset
@@ -13622,8 +13622,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasevendays, treatment == "D")$body.weight.gain.after.1.days..
-percent.))
+sig3( SEM(subset(invivodatasubsetsevendays, treatment == "D")$body.weight.gain.afte
+r.1.days..percent.))
 \end_layout
 
 \end_inset
@@ -13634,8 +13634,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubset$body.weight.gain.after.1.days..percent., invivodatasubse
-t$treatment, method = "bonferroni")$P.adjusted)
+sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.1.days..percent.,
+ invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[3]])
 \end_layout
 
 \end_inset
