@@ -9,6 +9,7 @@ library(xtable)
 library(knitr)
 library(dunn.test)
 library(pander)
+library(reshape)
 options(bitmapType="cairo")
 
 codedirpath <- dirname(
