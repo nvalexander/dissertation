@@ -4671,8 +4671,8 @@ status open
 
 \begin_layout Plain Layout
 
-format(PMID12519877data["placebo without inhibitor baseline","V3"] - PMID1251987
-7data["placebo with inhibitor baseline","V3"], digits = 2)
+sig3(PMID12519877data["placebo without inhibitor baseline","V3"] - PMID12519877d
+ata["placebo with inhibitor baseline","V3"])
 \end_layout
 
 \end_inset
@@ -4683,8 +4683,8 @@ status open
 
 \begin_layout Plain Layout
 
-format(PMID12519877data["placebo without inhibitor 6 months","V3"] - PMID1251987
-7data["placebo with inhibitor 6 months","V3"], digits = 2)
+sig3(PMID12519877data["placebo without inhibitor 6 months","V3"] - PMID12519877d
+ata["placebo with inhibitor 6 months","V3"])
 \end_layout
 
 \end_inset
@@ -4695,8 +4695,8 @@ status open
 
 \begin_layout Plain Layout
 
-format(PMID12519877data["testo without inhibitor baseline","V3"] - PMID12519877d
-ata["testo with inhibitor baseline","V3"], digits = 2)
+sig3(PMID12519877data["testo without inhibitor baseline","V3"] - PMID12519877dat
+a["testo with inhibitor baseline","V3"])
 \end_layout
 
 \end_inset
@@ -4707,8 +4707,8 @@ status open
 
 \begin_layout Plain Layout
 
-format(PMID12519877data["testo without inhibitor 6 months","V3"] - PMID12519877d
-ata["testo with inhibitor 6 months","V3"], digits = 2)
+sig3(PMID12519877data["testo without inhibitor 6 months","V3"] - PMID12519877dat
+a["testo with inhibitor 6 months","V3"])
 \end_layout
 
 \end_inset
@@ -13571,8 +13571,8 @@ status open
 
 \begin_layout Plain Layout
 
-signif(kruskal.test(body.weight.gain.after.1.days..percent.~treatment, data = invivodatas
-evendays)$p.value, digits = 3)
+sig3(kruskal.test(body.weight.gain.after.1.days..percent.~treatment, data = invivodatasev
+endays)$p.value)
 \end_layout
 
 \end_inset
@@ -13584,25 +13584,51 @@ status open
 
 \begin_layout Plain Layout
 
-signif( mean(subset(invivodatasevendays, treatment == "V")$body.weight.gain.after.1.d
-ays..percent., na.rm = TRUE), digits = 3)
+sig3( mean(subset(invivodatasevendays, treatment == "V")$body.weight.gain.after.1.day
+s..percent., na.rm = TRUE))
 \end_layout
 
 \end_inset
 
- (
+ ± 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-signif( SEM(subset(invivodatasevendays, treatment == "V")$body.weight.gain.after.1.da
-ys..percent., na.rm = TRUE), digits = 3)
+sig3( SEM(subset(invivodatasevendays, treatment == "V")$body.weight.gain.after.1.days..
+percent.))
 \end_layout
 
 \end_inset
 
-) per cent in body weight
+ per cent in body weight, due to to the significant mass of non-resorbable
+ corn oil.
+ In comparison, mice receiving Dexa lost 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( -mean(subset(invivodatasevendays, treatment == "D")$body.weight.gain.after.1.da
+ys..percent., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+ ± 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( SEM(subset(invivodatasevendays, treatment == "D")$body.weight.gain.after.1.days..
+percent.))
+\end_layout
+
+\end_inset
+
+ (Dunn's test p = 
 \end_layout
 
 \begin_layout Standard

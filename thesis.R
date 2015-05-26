@@ -56,7 +56,7 @@ stdplottimecourse <- theme_bw() +
         axis.title.y = element_text( size = textSize),
         axis.text.x = element_text( size = textSize * .7 ),
         axis.text.y = element_text( size = textSize * .5 ),
-        legend.title=element_blank())
+        legend.title = element_blank())
 
 
 SEM <- function(x) {
@@ -74,6 +74,10 @@ longdescription <- function(x) {
 
 CI95 <- function(x) {
   return( qt(.975, df = (truecount(x) - 1)) * SEM(x) )
+}
+
+sig3 <- function(x) {
+  return(signif(x, digits = 3))
 }
 
 semInterval <- function(x) {
