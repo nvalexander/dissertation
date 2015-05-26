@@ -19,7 +19,7 @@ codedirpath <- dirname(
              normalizePath(unlist(strsplit(commandArgs()[grep('^--file=',
                                                               commandArgs())], '='))[2]))
 )
-
+codedirpath <- "/media/dump/writingswork/draftthesis"
 datadir <- normalizePath(file.path(codedirpath, "data"))
 invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
 invivocolnameonedays <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, sep = ",", nrows = 1)
@@ -35,6 +35,32 @@ levels(invivodatathreedays$treatment)[levels(invivodatathreedays$treatment)=="X"
 levels(invivodatathreedays$treatment)[levels(invivodatathreedays$treatment)=="U"] <- "T"
 invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = TRUE)
 invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
+
+
+invivodatasubsetonedays <- invivodataonedays[invivodataonedays$treatment %in% c("V", "D", "C"), ]
+invivodataonedays$treatment <- factor(invivodataonedays$treatment, 
+                               levels = c("V", "D", "T", "C"), 
+                               labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
+invivodatasubsetonedays$treatment <- factor(invivodatasubsetonedays$treatment, 
+                                     levels = c("V", "D", "C"), 
+                                     labels = c("Vehicle", "Dexa", "Dexa + Testo"))
+
+invivodatasubsetthreedays <- invivodatathreedays[invivodatathreedays$treatment %in% c("V", "D", "C"), ]
+invivodatathreedays$treatment <- factor(invivodatathreedays$treatment, 
+                                      levels = c("V", "D", "T", "C"), 
+                                      labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
+invivodatasubsetthreedays$treatment <- factor(invivodatasubsetthreedays$treatment, 
+                                            levels = c("V", "D", "C"), 
+                                            labels = c("Vehicle", "Dexa", "Dexa + Testo"))
+
+invivodatasubsetsevendays <- invivocolnamesevendays[invivodatasevendays$treatment %in% c("V", "D", "C"), ]
+invivodatasevendays$treatment <- factor(invivodatasevendays$treatment, 
+                                      levels = c("V", "D", "T", "C"), 
+                                      labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
+invivodatasubsetsevendays$treatment <- factor(invivodatasubsetsevendays$treatment, 
+                                            levels = c("V", "D", "C"), 
+                                            labels = c("Vehicle", "Dexa", "Dexa + Testo"))
+
 
 textSize <- 11
 condsVDC <- c("V", "D", "C")
@@ -112,7 +138,7 @@ PMID12519877data <- loadPMID12519877(datadir)
 
 reportstats <- function(invivodata, invivocolnames){
   myoutput <- ""
-  invivodatasubset <- invivodata[invivodatasevendays$treatment %in% c("V", "D", "C"), ]
+  invivodatasubset <- invivodata[invivodata$treatment %in% c("V", "D", "C"), ]
   invivodata$treatment <- factor(invivodata$treatment, 
                           levels = c("V", "D", "T", "C"), 
                           labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
@@ -122,9 +148,9 @@ reportstats <- function(invivodata, invivocolnames){
   
   for (i in 1:length(invivocolnames)) {
     if (invivocolnames[[i]] %in% c("animal", "TreatmentLong", "treatment")) next
-    meanV <- mean(subset(invivodatasevendays, treatment == "V")[,i], na.rm = TRUE)
-    meanD <- mean(subset(invivodatasevendays, treatment == "D")[,i], na.rm = TRUE)
-    meanC <- mean(subset(invivodatasevendays, treatment == "C")[,i], na.rm = TRUE)
+    meanV <- mean(subset(invivodata, treatment == "V")[,i], na.rm = TRUE)
+    meanD <- mean(subset(invivodata, treatment == "D")[,i], na.rm = TRUE)
+    meanC <- mean(subset(invivodata, treatment == "C")[,i], na.rm = TRUE)
     myoutput <- paste0(myoutput, 
                        "# ", invivocolnames[[i]])
     myoutput <- paste(myoutput, 

@@ -13629,6 +13629,18 @@ percent.))
 \end_inset
 
  (Dunn's test p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasevendays$body.weight.gain.after.1.days..percent., invivodatasu
+bset$treatment, method = "bonferroni")$P.adjusted)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
