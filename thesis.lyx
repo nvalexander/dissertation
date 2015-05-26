@@ -13256,6 +13256,77 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Flex Chunk
+status collapsed
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "3.5in",
+ out.height = "4in", fig.width = 3.5, fig.height = 4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(plotbodyweights())    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Chunk
+status collapsed
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "2.5in",
+ out.height = "4in", fig.width = 2.5, fig.height = 4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(plotbodyweights())    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
 status open
 
 \begin_layout Plain Layout
@@ -13265,7 +13336,7 @@ status open
 
 \begin_layout Plain Layout
 bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
- out.height = "8in", fig.width = 6, fig.height = 8
+ out.height = "4in", fig.width = 6, fig.height = 4
 \end_layout
 
 \end_inset

@@ -207,41 +207,7 @@ plotbodyweights <- function(){
     ylab("body weight gain (% of pre-treatment)") +
     scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
     stdplottimecourse
-  timeseriescolumn <- c("day.1.body.weight..g." 
-                        , "day.2.body.weight..g." 
-                        , "day.3.body.weight..g." 
-                        , "day.4.body.weight..g." 
-                        , "day.5.body.weight..g." 
-                        , "day.6.body.weight..g." 
-                        , "day.7.body.weight..g." 
-                        , "day.8.body.weight..g." )
-  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", timeseriescolumns)]
-  shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
-  colnames(shortdf)[2] <- "day"
-  setattr(shortdf$day, "levels", 1:8)
-  bottomplot <- ggplot(shortdf) + 
-    aes_string(x = colnames(shortdf)[2],
-               y = colnames(shortdf)[3],
-               group = colnames(shortdf)[1]) +
-    stat_summary(geom = "point",
-                 size = 3,
-                 fun.y = mean,
-                 position = position_dodge(.05),
-                 aes_string(shape = colnames(shortdf)[1])) +
-    stat_summary(geom = "line", 
-                 size = .5, 
-                 fun.y = mean, 
-                 position = position_dodge(.05)) + 
-    stat_summary(geom = 'errorbar',
-                 fun.data = 'semInterval',
-                 width = 0.2,
-                 show_guide = FALSE,
-                 position=position_dodge(.05))+
-    expand_limits(y = 0) +
-    ylab("body weight gain (% of pre-treatment)") +
-    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
-    stdplottimecourse
-  return(arrange(topplot, bottomplot, cols = 1))
+  return(topplot)
 }
 
 
