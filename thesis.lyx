@@ -13293,7 +13293,7 @@ status open
 
 \begin_layout Plain Layout
 bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
- out.height = "8in", fig.width = 6, fig.height = 8
+ out.height = "3.5in", fig.width = 6, fig.height =3.5
 \end_layout
 
 \end_inset
@@ -13303,11 +13303,7 @@ bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
 
 \begin_layout Plain Layout
 
-print(plotbodyweights())    
-\end_layout
-
-\begin_layout Plain Layout
-
+print(plotbodyweights())
 \end_layout
 
 \begin_layout Plain Layout
@@ -13439,7 +13435,7 @@ er.7.days..g., na.rm = TRUE) / 7)
  grams every day during the treatment.
  A similar trend has been seen in the other repetitions of the experiment,
  as well as in other published studies on young rodents.
- A sizable contribution to this growth was broght by the 200 uL vehicle
+ A sizable contribution to this growth was brought by the 200 uL vehicle
  injected every day.
  Once this artifact is taken into account, it becomes apparent that Dexa
  leads to actual loss of body weight, compared to vehicle alone.
@@ -13562,8 +13558,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
- out.height = "8in", fig.width = 6, fig.height = 8
+bodyweightcourse, echo = FALSE, warning = FALSE, message = FALSE, out.width
+ = "6in", out.height = "8in", fig.width = 6, fig.height = 8
 \end_layout
 
 \end_inset
@@ -13573,11 +13569,7 @@ bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
 
 \begin_layout Plain Layout
 
-print(plotbodyweightcourse())    
-\end_layout
-
-\begin_layout Plain Layout
-
+print(plotbodyweightcourse()) 
 \end_layout
 
 \begin_layout Plain Layout

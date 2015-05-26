@@ -33,8 +33,8 @@ contraststhree <- c("V vs D", "V vs DT", "D vs DT")
 VvsDthreeways <- match("V vs D", contraststhree)[[1]]
 DvsCthreeways <- match("D vs DT", contraststhree)[[1]]
 VvsCthreeways <- match("V vs DT", contraststhree)[[1]]
-conditionsVDC <- c("Veh", "Dexa", "Dexa + Testo")
-conditionsVDTC <- c("Veh", "Dexa", "Testo", "Dexa + Testo")
+conditionsVDC <- c("Veh", "Dexa", "Dexa\n+ Testo")
+conditionsVDTC <- c("Veh", "Dexa", "Testo", "Dexa\n+ Testo")
 
 datadir <- normalizePath(file.path(codedirpath, "data"))
 invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
@@ -303,9 +303,9 @@ plotbodyweights <- function(){
                  fun.data = 'semInterval',
                  width = 0.1,
                  show_guide = FALSE) +
-    ylab("body weight (g)") +
+    ylab("body weight (g) after one day") +
     scale_x_discrete(labels = conditionsVDC) +
-    expand_limits(y = 0, ymax = 25) +
+    scale_y_continuous(limits = c(0, 27)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
@@ -321,9 +321,9 @@ plotbodyweights <- function(){
     stat_summary(geom = 'errorbar',
                  fun.data = 'semInterval',
                  width = 0.1) +
-    ylab("body weight (g)") +
+    ylab("body weight (g) after three days") +
     scale_x_discrete(labels = conditionsVDC) +
-    expand_limits(y = 0, ymax = 25) +
+    scale_y_continuous(limits = c(0, 27)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
@@ -340,9 +340,9 @@ plotbodyweights <- function(){
                  fun.data = 'semInterval',
                  width = 0.1,
                  show_guide = FALSE) +
-    ylab("body weight (g)") +
+    ylab("body weight (g) after seven days") +
     scale_x_discrete(labels = conditionsVDC) +
-    scale_y_continuous(limits = c(0, 25)) + 
+    scale_y_continuous(limits = c(0, 27)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
