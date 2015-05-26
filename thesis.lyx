@@ -13315,52 +13315,52 @@ setattr(shortdf$day, "levels", 1:8)
 
 \begin_layout Plain Layout
 
-stdparams <- theme_bw() + 
+stdplot3times <- theme_bw() + 
 \end_layout
 
 \begin_layout Plain Layout
 
-      theme(text = element_text(size = textSize, color = "black"),
+  theme(text = element_text(size = textSize, color = "black"),
 \end_layout
 
 \begin_layout Plain Layout
 
-      panel.grid.major.x = element_blank(),
+  panel.grid.major.x = element_blank(),
 \end_layout
 
 \begin_layout Plain Layout
 
-      panel.border = element_blank(),
+  panel.border = element_blank(),
 \end_layout
 
 \begin_layout Plain Layout
 
-      panel.background = element_blank(),
+  panel.background = element_blank(),
 \end_layout
 
 \begin_layout Plain Layout
 
-      axis.line = element_line(colour = "black"),
+  axis.line = element_line(colour = "black"),
 \end_layout
 
 \begin_layout Plain Layout
 
-      axis.title.x = element_text( size = textSize),
+  axis.title.x = element_text( size = textSize),
 \end_layout
 
 \begin_layout Plain Layout
 
-      axis.title.y = element_text( size = textSize),
+  axis.title.y = element_text( size = textSize),
 \end_layout
 
 \begin_layout Plain Layout
 
-      axis.text.x = element_text( size = textSize * .7 ),
+  axis.text.x = element_text( size = textSize * .7 ),
 \end_layout
 
 \begin_layout Plain Layout
 
-      axis.text.y = element_text( size = textSize * .5 ))
+  axis.text.y = element_text( size = textSize * .5 ))
 \end_layout
 
 \begin_layout Plain Layout
@@ -13400,12 +13400,37 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    position = position_dodge(.2),
+    position = position_dodge(.05),
 \end_layout
 
 \begin_layout Plain Layout
 
-    aes_string(color = colnames(shortdf)[1]) ) +
+    aes_string(linetype = colnames(shortdf)[1])) + 
+\end_layout
+
+\begin_layout Plain Layout
+
+  stat_summary(geom = "point",
+\end_layout
+
+\begin_layout Plain Layout
+
+    size = 5,
+\end_layout
+
+\begin_layout Plain Layout
+
+    fun.y = mean,
+\end_layout
+
+\begin_layout Plain Layout
+
+    position = position_dodge(.05),
+\end_layout
+
+\begin_layout Plain Layout
+
+    aes_string(shape = colnames(shortdf)[1]))+
 \end_layout
 
 \begin_layout Plain Layout
@@ -13420,7 +13445,7 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    width = 0.1,
+    width = 0.2,
 \end_layout
 
 \begin_layout Plain Layout
@@ -13430,7 +13455,7 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    position=position_dodge(.1))+
+    position=position_dodge(.05))+
 \end_layout
 
 \begin_layout Plain Layout
@@ -13445,13 +13470,18 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    scale_fill_manual( values = meaningfulpalette, name = conditionsVDC)
- +
+    scale_linetype_manual(values=c("solid","dotted","dashed"), name = conditions
+VDC) + 
 \end_layout
 
 \begin_layout Plain Layout
 
-stdparams)
+    scale_shape_manual(values=c(16,4,1)) +
+\end_layout
+
+\begin_layout Plain Layout
+
+    stdplot3times)
 \end_layout
 
 \begin_layout Plain Layout
