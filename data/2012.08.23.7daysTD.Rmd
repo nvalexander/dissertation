@@ -12,3 +12,4 @@ source('../thesis.R')
 ```{r, echo=FALSE, message=FALSE, results='asis'}
 cat(myoutput)
 ```
+
