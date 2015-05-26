@@ -11762,8 +11762,16 @@ hour}
 \end_inset
 
  after the last injection, mice lean and fat body mass was measured by nuclear
- magnetic resonance, using a Echo-MRI whole body composition analyzer (Echo
- Medical Systems, Houston, Texas).
+ magnetic resonance (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NMR"
+description "nuclear magnetic resonance"
+
+\end_inset
+
+), using a Echo-MRI whole body composition analyzer (Echo Medical Systems,
+ Houston, Texas).
  In this procedure, mice are restrained inside a transparent plexiglass
  tube for 
 \begin_inset ERT
@@ -13150,8 +13158,16 @@ key "stodden2014implementing"
  Results are presented as means ± standard error of the mean.
  In plots, points represent means, while error bars are standard error of
  the mean.
- Experiments with more than two groups were analyzed by Kruskal-Wallis test
- for overall non-parametric analysis of variance.
+ Experiments with more than two groups were analyzed by analysis of variance
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ANOVA"
+description "analysis of variance"
+
+\end_inset
+
+) or Kruskal-Wallis test for overall non-parametric analysis of variance.
  If the test was not significant, no mention of significance was made in
  text or figures.
  If the test was significant, groups were compared in pairs using post-hoc
@@ -13181,9 +13197,205 @@ Dexa induces muscle atrophy reversible by AAS co-administration
 
 \begin_layout Standard
 Mice treated with the Dexa doses that were reported to induce muscle atrophy
- in rats did not exhibit significant muscle loss (data not shown).
+ in rats did not exhibit significant muscle loss based on muscle dissection
+ and NMR (data not shown).
  Higher doses of Dexa were used until effect size became stronger than experimen
-tal error.
+tal error ().
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+partitioncoef, echo = FALSE, warning = FALSE, message = FALSE, out.width
+ = "6in", out.height = "3in", fig.width = 6, fig.height = 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+zerodaydataset <- mydf[mydf$day %in% c("0"),]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotslist<-list()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotslist[[length(plotslist) + 1]] <- plotColumn(zerodaydataset,
+\end_layout
+
+\begin_layout Plain Layout
+
+  analyzedColName = "ratio_of_Ci_TCA_soluble_over_TCA_insoluble", 
+\end_layout
+
+\begin_layout Plain Layout
+
+  conditionColumnName = "condition", 
+\end_layout
+
+\begin_layout Plain Layout
+
+  conditionSet = c("0 days, 0 nM Dexa",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "0 days, 100 nM Dexa",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "0 days, 1000 nM Dexa")  )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotslist[[length(plotslist) + 1]] <- plotColumn(onedaydataset,
+\end_layout
+
+\begin_layout Plain Layout
+
+  analyzedColName = "ratio_of_Ci_TCA_soluble_over_TCA_insoluble", 
+\end_layout
+
+\begin_layout Plain Layout
+
+  conditionColumnName = "condition", 
+\end_layout
+
+\begin_layout Plain Layout
+
+  conditionSet = c("1 days, 0 nM Dexa",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "1 days, 100 nM Dexa",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "1 days, 1000 nM Dexa") )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotslist[[length(plotslist) + 1]] <- plotColumn(twodaydataset,
+\end_layout
+
+\begin_layout Plain Layout
+
+  analyzedColName = "ratio_of_Ci_TCA_soluble_over_TCA_insoluble", 
+\end_layout
+
+\begin_layout Plain Layout
+
+  conditionColumnName = "condition", 
+\end_layout
+
+\begin_layout Plain Layout
+
+  conditionSet = c("2 days, 0 nM Dexa",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "2 days, 100 nM Dexa",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "2 days, 1000 nM Dexa")  )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print( arrangeGrob( plotslist[[1]],  
+\end_layout
+
+\begin_layout Plain Layout
+
+                    plotslist[[2]], 
+\end_layout
+
+\begin_layout Plain Layout
+
+                    plotslist[[3]],
+\end_layout
+
+\begin_layout Plain Layout
+
+                    ncol = 3 ) )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Body weight changes during 10 mg/day.kg D and / or 28 mg/day.kg T.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
