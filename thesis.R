@@ -11,6 +11,8 @@ library(dunn.test)
 library(pander)
 library(reshape2)
 library(data.table)
+library(extrafont)
+#font_import(prompt = FALSE)
 options(bitmapType="cairo")
 
 codedirpath <- dirname(
@@ -285,7 +287,7 @@ plotbodyweightcourse <- function(){
     scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
     stdplottimecourse 
   
-  return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, ncol=2, widths = c(1.5,1) ), 
+  return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, ncol=2, widths = c(1.25,1) ), 
                        ncol=1)  )
 }
 
