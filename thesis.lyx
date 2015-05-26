@@ -13270,7 +13270,61 @@ plot(cars)
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Body weight changes during 10 mg/day.kg D and / or 28 mg/day.kg T.
+Body weight changes during 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ D and / or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{28}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ T.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Body-weight-changes"
