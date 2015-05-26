@@ -234,11 +234,10 @@ plotbodyweights <- function(){
                  position=position_dodge(.05))+
     expand_limits(y = 0) +
     ylab("body weight gain (% of pre-treatment)") +
-    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
+    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
     stdplottimecourse
     
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", timeseriescolumns[1:1])]
-  print(shortdf)
   body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
   shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
   shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
@@ -264,10 +263,10 @@ plotbodyweights <- function(){
                  position=position_dodge(.05))+
     expand_limits(y = 0) +
     ylab("body weight gain (% of pre-treatment)") +
-    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
+    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
     stdplottimecourse 
   
-  return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, topplot, ncol=2, widths = c(2,1) ), 
+  return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, ncol=2, widths = c(2,1) ), 
                        ncol=1)  )
 }
 

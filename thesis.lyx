@@ -13256,7 +13256,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Flex Chunk
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -13264,8 +13264,8 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "3.5in",
- out.height = "4in", fig.width = 3.5, fig.height = 4
+bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
+ out.height = "8in", fig.width = 6, fig.height = 8
 \end_layout
 
 \end_inset
@@ -13364,10 +13364,6 @@ name "fig:Body-weight-changes"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -13383,9 +13379,26 @@ reference "fig:Body-weight-changes"
 
 \end_inset
 
-) during the seven days treatment.
+ top) during the seven days treatment.
  Instead of the expected flat course of body weight over the seven days
- of treatment with vehicle alone, there was a trend for growth
+ of treatment with vehicle alone, there was a trend for growth, with vehicle
+ treated mice gaining an apparent 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( mean(subset(invivodatasubsetsevendays, treatment == "V")$body.weight.gain.aft
+er.7.days..g., na.rm = TRUE) / 7)
+\end_layout
+
+\end_inset
+
+ grams every day during the treatment.
+ A similar trend has been seen in the other repetitions of the experiment,
+ as well as in other published studies on young rodents.
+ A sizable contribution to this growth was due to the 200 uL vehicle injected
+ every day.
 \end_layout
 
 \begin_layout Standard
