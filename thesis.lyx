@@ -13300,6 +13300,11 @@ shortdf <- invivodatasevendays[ invivodatasevendays$treatment %in% condsVDC,
 
 \begin_layout Plain Layout
 
+shortdf <-
+\end_layout
+
+\begin_layout Plain Layout
+
 shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
 \end_layout
 
@@ -13335,31 +13340,6 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-  stat_summary(geom = "line", 
-\end_layout
-
-\begin_layout Plain Layout
-
-    size = 1, 
-\end_layout
-
-\begin_layout Plain Layout
-
-    fun.y = mean, 
-\end_layout
-
-\begin_layout Plain Layout
-
-    position = position_dodge(.05),
-\end_layout
-
-\begin_layout Plain Layout
-
-    aes_string(linetype = colnames(shortdf)[1])) + 
-\end_layout
-
-\begin_layout Plain Layout
-
   stat_summary(geom = "point",
 \end_layout
 
@@ -13380,7 +13360,27 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    aes_string(shape = colnames(shortdf)[1]))+
+    aes_string(shape = colnames(shortdf)[1])) +
+\end_layout
+
+\begin_layout Plain Layout
+
+  stat_summary(geom = "line", 
+\end_layout
+
+\begin_layout Plain Layout
+
+    size = .5, 
+\end_layout
+
+\begin_layout Plain Layout
+
+    fun.y = mean, 
+\end_layout
+
+\begin_layout Plain Layout
+
+    position = position_dodge(.05)) + 
 \end_layout
 
 \begin_layout Plain Layout
@@ -13420,13 +13420,7 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    scale_linetype_manual(values = c("solid","dotted","dashed"), labels
- = conditionsVDC) + 
-\end_layout
-
-\begin_layout Plain Layout
-
-    scale_shape_manual(values = c(16,4,1)) +
+    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
 \end_layout
 
 \begin_layout Plain Layout
