@@ -13315,6 +13315,56 @@ setattr(shortdf$day, "levels", 1:8)
 
 \begin_layout Plain Layout
 
+stdparams <- theme_bw() + 
+\end_layout
+
+\begin_layout Plain Layout
+
+      theme(text = element_text(size = textSize, color = "black"),
+\end_layout
+
+\begin_layout Plain Layout
+
+      panel.grid.major.x = element_blank(),
+\end_layout
+
+\begin_layout Plain Layout
+
+      panel.border = element_blank(),
+\end_layout
+
+\begin_layout Plain Layout
+
+      panel.background = element_blank(),
+\end_layout
+
+\begin_layout Plain Layout
+
+      axis.line = element_line(colour = "black"),
+\end_layout
+
+\begin_layout Plain Layout
+
+      axis.title.x = element_text( size = textSize),
+\end_layout
+
+\begin_layout Plain Layout
+
+      axis.title.y = element_text( size = textSize),
+\end_layout
+
+\begin_layout Plain Layout
+
+      axis.text.x = element_text( size = textSize * .7 ),
+\end_layout
+
+\begin_layout Plain Layout
+
+      axis.text.y = element_text( size = textSize * .5 ))
+\end_layout
+
+\begin_layout Plain Layout
+
 print(ggplot(shortdf) + 
 \end_layout
 
@@ -13390,11 +13440,6 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    theme_bw() +
-\end_layout
-
-\begin_layout Plain Layout
-
     ylab("body weight gain (% of pre-treatment)") +
 \end_layout
 
@@ -13406,47 +13451,12 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    theme(text = element_text(size = textSize, color = "black"),
+stdparams)
 \end_layout
 
 \begin_layout Plain Layout
 
-      panel.grid.major.x = element_blank(),
-\end_layout
-
-\begin_layout Plain Layout
-
-      panel.border = element_blank(),
-\end_layout
-
-\begin_layout Plain Layout
-
-      panel.background = element_blank(),
-\end_layout
-
-\begin_layout Plain Layout
-
-      axis.line = element_line(colour = "black"),
-\end_layout
-
-\begin_layout Plain Layout
-
-      axis.title.x = element_text( size = textSize),
-\end_layout
-
-\begin_layout Plain Layout
-
-      axis.title.y = element_text( size = textSize),
-\end_layout
-
-\begin_layout Plain Layout
-
-      axis.text.x = element_text( size = textSize * .7 ),           
-\end_layout
-
-\begin_layout Plain Layout
-
-      axis.text.y = element_text( size = textSize * .5 )))
+    
 \end_layout
 
 \begin_layout Plain Layout

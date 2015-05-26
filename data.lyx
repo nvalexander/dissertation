@@ -6,6 +6,7 @@
 \begin_preamble
 \input{preamble}
 \end_preamble
+\options latin9,utf8
 \use_default_options true
 \begin_modules
 knitr
