@@ -13399,7 +13399,7 @@ name "fig:Body-weight-changes"
 
 \begin_layout Standard
 Upon finding the Dexa dose effective in inducing muscle atrophy, I analyzed
- the time course of body weight (Fig.
+ the body weight at sacrifice (last data point in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13407,10 +13407,24 @@ reference "fig:Body-weight-changes"
 
 \end_inset
 
- top) during the seven days treatment.
- Instead of the expected flat course of body weight over the seven days
- of treatment with vehicle alone, there was a trend for growth, with vehicle
- treated mice gaining an apparent 
+, top).
+ The three treatments (vehicle, Dexa, or the combination Dexa + Testo) were
+ significantly different (Kruskal-Wallis p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(kruskal.test(day.8.body.weight..g.
+ ~treatment, data = invivodatasubsetsevendays)$p.value)
+\end_layout
+
+\end_inset
+
+).
+ However, instead of the expected unchanged body weight over the seven days
+ of treatment with vehicle alone, there was a trend for growth, with an
+ apparent gain of 
 \begin_inset Flex S/R expression
 status open
 
@@ -13479,7 +13493,8 @@ r.7.days..percent.))
 
 \end_inset
 
-%) significantly smaller than that of the vehicle-treated group (
+% of initial body weight) significantly smaller than that of the vehicle-treated
+ group (
 \begin_inset Flex S/R expression
 status open
 
@@ -13582,6 +13597,120 @@ sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.7.days..percent
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
+ out.height = "8in", fig.width = 6, fig.height = 8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(plotbodyweights())    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Body weight changes during 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa and / or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{28}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Testo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -13701,7 +13830,7 @@ sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.1.days..percent
 
 \end_inset
 
-
+).
 \begin_inset Newpage pagebreak
 \end_inset
 
