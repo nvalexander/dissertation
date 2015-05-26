@@ -170,4 +170,45 @@ reportstats <- function(invivodata, invivocolnames){
   return(myoutput)
 }
 
+plotbodyweights <- function(){
+  timeseriescolumns <- c("body.weight.gain.after.1.days..percent.",
+                         "body.weight.gain.after.2.days..percent.",
+                         "body.weight.gain.after.3.days..percent.",
+                         "body.weight.gain.after.4.days..percent.",
+                         "body.weight.gain.after.5.days..percent.",
+                         "body.weight.gain.after.6.days..percent.",
+                         "body.weight.gain.after.7.days..percent.",
+                         "body.weight.gain.after.8.days..percent.")
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", timeseriescolumns)]
+  body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
+  shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
+  shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
+  colnames(shortdf)[2] <- "day"
+  setattr(shortdf$day, "levels", 0:8)
+  topplot <- ggplot(shortdf) + 
+    aes_string(x = colnames(shortdf)[2],
+               y = colnames(shortdf)[3],
+               group = colnames(shortdf)[1]) +
+    stat_summary(geom = "point",
+                 size = 3,
+                 fun.y = mean,
+                 position = position_dodge(.05),
+                 aes_string(shape = colnames(shortdf)[1])) +
+    stat_summary(geom = "line", 
+                 size = .5, 
+                 fun.y = mean, 
+                 position = position_dodge(.05)) + 
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.2,
+                 show_guide = FALSE,
+                 position=position_dodge(.05))+
+    expand_limits(y = 0) +
+    ylab("body weight gain (% of pre-treatment)") +
+    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
+    stdplottimecourse
+  return(topplot)
+}
+
+
 #cat(myoutput)

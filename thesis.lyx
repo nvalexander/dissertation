@@ -13275,189 +13275,7 @@ bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
 
 \begin_layout Plain Layout
 
-timeseriescolumns <- c("body.weight.gain.after.1.days..percent.",
-\end_layout
-
-\begin_layout Plain Layout
-
-                        "body.weight.gain.after.2.days..percent.",
-\end_layout
-
-\begin_layout Plain Layout
-
-                        "body.weight.gain.after.3.days..percent.",
-\end_layout
-
-\begin_layout Plain Layout
-
-                        "body.weight.gain.after.4.days..percent.",
-\end_layout
-
-\begin_layout Plain Layout
-
-                        "body.weight.gain.after.5.days..percent.",
-\end_layout
-
-\begin_layout Plain Layout
-
-                        "body.weight.gain.after.6.days..percent.",
-\end_layout
-
-\begin_layout Plain Layout
-
-                        "body.weight.gain.after.7.days..percent.",
-\end_layout
-
-\begin_layout Plain Layout
-
-                        "body.weight.gain.after.8.days..percent.")
-\end_layout
-
-\begin_layout Plain Layout
-
-shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays)
- %in% c("treatment", timeseriescolumns)]
-\end_layout
-
-\begin_layout Plain Layout
-
-body.weight.gain.after.0.days..percent.
- <- rep(0, dim(shortdf)[1])
-\end_layout
-
-\begin_layout Plain Layout
-
-shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
-\end_layout
-
-\begin_layout Plain Layout
-
-shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
-\end_layout
-
-\begin_layout Plain Layout
-
-colnames(shortdf)[2] <- "day"
-\end_layout
-
-\begin_layout Plain Layout
-
-setattr(shortdf$day, "levels", 0:8)
-\end_layout
-
-\begin_layout Plain Layout
-
-print(ggplot(shortdf) + 
-\end_layout
-
-\begin_layout Plain Layout
-
-  aes_string(x = colnames(shortdf)[2],
-\end_layout
-
-\begin_layout Plain Layout
-
-    y = colnames(shortdf)[3],
-\end_layout
-
-\begin_layout Plain Layout
-
-    group = colnames(shortdf)[1]) +
-\end_layout
-
-\begin_layout Plain Layout
-
-  stat_summary(geom = "point",
-\end_layout
-
-\begin_layout Plain Layout
-
-    size = 3,
-\end_layout
-
-\begin_layout Plain Layout
-
-    fun.y = mean,
-\end_layout
-
-\begin_layout Plain Layout
-
-    position = position_dodge(.05),
-\end_layout
-
-\begin_layout Plain Layout
-
-    aes_string(shape = colnames(shortdf)[1])) +
-\end_layout
-
-\begin_layout Plain Layout
-
-  stat_summary(geom = "line", 
-\end_layout
-
-\begin_layout Plain Layout
-
-    size = .5, 
-\end_layout
-
-\begin_layout Plain Layout
-
-    fun.y = mean, 
-\end_layout
-
-\begin_layout Plain Layout
-
-    position = position_dodge(.05)) + 
-\end_layout
-
-\begin_layout Plain Layout
-
-  stat_summary(geom = 'errorbar',
-\end_layout
-
-\begin_layout Plain Layout
-
-    fun.data = 'semInterval',
-\end_layout
-
-\begin_layout Plain Layout
-
-    width = 0.2,
-\end_layout
-
-\begin_layout Plain Layout
-
-    show_guide = FALSE,
-\end_layout
-
-\begin_layout Plain Layout
-
-    position=position_dodge(.05))+
-\end_layout
-
-\begin_layout Plain Layout
-
-    expand_limits(y = 0) +
-\end_layout
-
-\begin_layout Plain Layout
-
-    ylab("body weight gain (% of pre-treatment)") +
-\end_layout
-
-\begin_layout Plain Layout
-
-    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
-\end_layout
-
-\begin_layout Plain Layout
-
-    stdplottimecourse)
-\end_layout
-
-\begin_layout Plain Layout
-
-    
+print(plotbodyweights())    
 \end_layout
 
 \begin_layout Plain Layout
@@ -13556,7 +13374,8 @@ name "fig:Body-weight-changes"
 \end_layout
 
 \begin_layout Standard
-Upon finding the effective Dexa dose, a time course of body weight (Fig.
+Upon finding the Dexa dose effective in inducing muscle atrophy, I analyzed
+ the time course of body weight (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13564,8 +13383,14 @@ reference "fig:Body-weight-changes"
 
 \end_inset
 
-) revealed that GAML onset, and its reversal are rapid, becoming apparent
- in the first day (Kruskal-Wallis p = 
+) during the seven days treatment.
+ Instead of the expected flat course of body weight over the seven days
+ of treatment with vehicle alone, there was a trend for growth
+\end_layout
+
+\begin_layout Standard
+GAML onset, and its reversal are rapid, becoming apparent in the first day
+ (Kruskal-Wallis p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -13640,10 +13465,7 @@ sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.1.days..percent
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+).
 \begin_inset Newpage pagebreak
 \end_inset
 
