@@ -57,6 +57,10 @@ SEM <- function(x) {
   return( sqrt(var(x, na.rm = TRUE) / length(na.omit(x))) )
 }
 
+longdescription <- function(x) {
+  return(paste0(mean(x), "(", SEM(x), "; n = ", length(na.omit(x))))
+}
+
 CI95 <- function(x) {
   return( qt(.975, df = (length(na.omit(x)) - 1)) * SEM(x) )
 }
@@ -1261,7 +1265,7 @@ reportstats <- function(invivodata, invivocolnames){
     myoutput <- paste0(myoutput, 
                        "# ", invivocolnames[[i]])
     myoutput <- paste(myoutput, 
-                      pandoc.table.return(aggregate(invivodata[,i], list(invivodata$treatment), mean, na.rm = TRUE), style = "rmarkdown"))
+                      pandoc.table.return(aggregate(invivodata[,i], list(invivodata$treatment), longdescription, na.rm = TRUE), style = "rmarkdown"))
     kw <- kruskal.test(as.formula(paste(colnames(invivodata)[i], "~treatment")), data = invivodata)
     myoutput <- paste(myoutput, 
                       paste0("Kruskal-Wallis p value for the four-way comparison is ", signif(kw$p.value, digits = 3)))
