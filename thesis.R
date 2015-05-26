@@ -9,7 +9,6 @@ library(xtable)
 library(knitr)
 library(dunn.test)
 library(pander)
-
 options(bitmapType="cairo")
 
 codedirpath <- dirname(
@@ -19,13 +18,12 @@ codedirpath <- dirname(
                                                               commandArgs())], '='))[2]))
 )
 datadir <- normalizePath(file.path(codedirpath, "data"))
+invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, skip = 1)
+invivocolnameonedays <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, sep = ",", nrows = 1)
+invivodatathreedays <- read.csv(file.path(datadir, "2012.12.12.3daysTD.csv"), header = FALSE, skip = 1)
+invivocolnamethreedays <- read.table(file.path(datadir, "2012.12.12.3daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
 invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
 invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
-invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
-invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
-invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, skip = 1)
-invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
-
 invivodatasevendays$V2 <- factor(invivodatasevendays$V2, 
                                  levels = c("V", "D", "T", "C"), 
                                  labels = c("Vehicle", "Dexa", "Testo", "Dexa + Testo"))
@@ -33,6 +31,7 @@ invivodatasevendayssubset <- subset(invivodatasevendays, ((V2 == "D") | (V2 == "
 invivodatasevendayssubset$V2 <- factor(invivodatasevendayssubset$V2, 
                                    levels = c("V", "D", "C"), 
                                    labels = c("Vehicle", "Dexa", "Dexa + Testo"))
+
 
 potentialConditionColumnNames <- c(
   "condition",
