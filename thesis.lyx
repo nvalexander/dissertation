@@ -13212,6 +13212,67 @@ Dexa induces muscle atrophy reversible by AAS co-administration
 \end_layout
 
 \begin_layout Standard
+No published study on mice describes a dose of Dexa that is proven to induce
+ muscle atrophy.
+ I attempted to repeat the daily injections protocol described by Jones
+ as effective on rats
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones2010effects"
+
+\end_inset
+
+ (Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Experimental-protocol-for"
+
+\end_inset
+
+ ) .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/animal-experiment-timecourse.pdf
+	width 6in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Experimental protocol for in vivo studies described in this section.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Experimental-protocol-for"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Mice treated with the Dexa doses that were reported to induce muscle atrophy
  in rats did not exhibit significant muscle loss based on muscle dissection
  and NMR (data not shown).
@@ -13319,7 +13380,7 @@ plotbodyweights()
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Body weight at sacrifice, during 
+Body weight at sacrifice, following 
 \begin_inset ERT
 status open
 
@@ -13395,7 +13456,7 @@ name "fig:Body-weight-at"
 
 \begin_layout Standard
 Upon finding the Dexa dose effective in inducing muscle atrophy, I analyzed
- the body weight at sacrifice (last data point in Fig.
+ the body weight at sacrifice (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13403,7 +13464,7 @@ reference "fig:Body-weight-at"
 
 \end_inset
 
-, top).
+, right).
  The three treatments (vehicle, Dexa, or the combination Dexa + Testo) were
  significantly different (Kruskal-Wallis p = 
 \begin_inset Flex S/R expression
@@ -13495,14 +13556,23 @@ status open
 \begin_layout Plain Layout
 
 sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.7.days..percent.,
- invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[1]])
+ invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[VvsDthre
+eway]])
 \end_layout
 
 \end_inset
 
 ).
- Conversely, co-administration of Testo brought back the body weight gain
- over seven days to levels similar to those in vehicle-treated animals (
+ Conversely, co-administration of Testo, hereafter termed 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Comb"
+description "combination of Dexa and Testo"
+
+\end_inset
+
+, brought back the body weight gain over seven days to levels similar to
+ those in vehicle-treated animals (
 \begin_inset Flex S/R expression
 status open
 
@@ -13534,7 +13604,8 @@ status open
 \begin_layout Plain Layout
 
 sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.7.days..percent.,
- invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[3]])
+ invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthre
+eway]])
 \end_layout
 
 \end_inset
@@ -13585,61 +13656,7 @@ print(plotbodyweightcourse())
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Body weight changes during 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{10}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- Dexa and / or 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{28}{
-\backslash
-milli
-\backslash
-gram
-\backslash
-per
-\backslash
-kilo
-\backslash
-gram
-\backslash
-per
-\backslash
-day}
-\end_layout
-
-\end_inset
-
- Testo.
+Time course of body weight Dexa and / or Testo treatments.
 \end_layout
 
 \end_inset
@@ -13653,8 +13670,8 @@ day}
 \end_layout
 
 \begin_layout Standard
-GAML onset, and its reversal are rapid, becoming apparent in the first day
- (Kruskal-Wallis p = 
+Body weight changes were rapid, becoming apparent in the first day (Kruskal-Wall
+is p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -13770,6 +13787,10 @@ sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.1.days..percent
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+I hypothesized that body weight and muscle atrophy 
 \begin_inset Newpage pagebreak
 \end_inset
 
