@@ -13315,56 +13315,6 @@ setattr(shortdf$day, "levels", 1:8)
 
 \begin_layout Plain Layout
 
-stdplot3times <- theme_bw() + 
-\end_layout
-
-\begin_layout Plain Layout
-
-  theme(text = element_text(size = textSize, color = "black"),
-\end_layout
-
-\begin_layout Plain Layout
-
-  panel.grid.major.x = element_blank(),
-\end_layout
-
-\begin_layout Plain Layout
-
-  panel.border = element_blank(),
-\end_layout
-
-\begin_layout Plain Layout
-
-  panel.background = element_blank(),
-\end_layout
-
-\begin_layout Plain Layout
-
-  axis.line = element_line(colour = "black"),
-\end_layout
-
-\begin_layout Plain Layout
-
-  axis.title.x = element_text( size = textSize),
-\end_layout
-
-\begin_layout Plain Layout
-
-  axis.title.y = element_text( size = textSize),
-\end_layout
-
-\begin_layout Plain Layout
-
-  axis.text.x = element_text( size = textSize * .7 ),
-\end_layout
-
-\begin_layout Plain Layout
-
-  axis.text.y = element_text( size = textSize * .5 ))
-\end_layout
-
-\begin_layout Plain Layout
-
 print(ggplot(shortdf) + 
 \end_layout
 
@@ -13415,7 +13365,7 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    size = 5,
+    size = 3,
 \end_layout
 
 \begin_layout Plain Layout
@@ -13470,18 +13420,18 @@ print(ggplot(shortdf) +
 
 \begin_layout Plain Layout
 
-    scale_linetype_manual(values=c("solid","dotted","dashed"), name = conditions
-VDC) + 
+    scale_linetype_manual(values = c("solid","dotted","dashed"), labels
+ = conditionsVDC) + 
 \end_layout
 
 \begin_layout Plain Layout
 
-    scale_shape_manual(values=c(16,4,1)) +
+    scale_shape_manual(values = c(16,4,1)) +
 \end_layout
 
 \begin_layout Plain Layout
 
-    stdplot3times)
+    stdplottimecourse)
 \end_layout
 
 \begin_layout Plain Layout

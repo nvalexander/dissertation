@@ -46,6 +46,18 @@ contraststhree <- c("D vs DT", "V vs DT", "V vs D")
 
 nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 meaningfulpalette <- c("#444444", "#dd0000", "#00dd00", "#0000dd", "#888800", "#880088", "#008888", "#dddddd")
+stdplottimecourse <- theme_bw() + 
+  theme(text = element_text(size = textSize, color = "black"),
+        panel.grid.major.x = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(colour = "black"),
+        axis.title.x = element_text( size = textSize),
+        axis.title.y = element_text( size = textSize),
+        axis.text.x = element_text( size = textSize * .7 ),
+        axis.text.y = element_text( size = textSize * .5 ),
+        legend.title=element_blank())
+
 
 SEM <- function(x) {
   return( sqrt(var(x, na.rm = TRUE) / truecount(x)) )
