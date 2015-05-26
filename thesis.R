@@ -75,6 +75,7 @@ invivodatasubsetsevendays$treatment <- factor(invivodatasubsetsevendays$treatmen
 textSize <- 11
 nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 meaningfulpalette <- c("#444444", "#dd0000", "#00dd00", "#0000dd", "#888800", "#880088", "#008888", "#dddddd")
+greypalette <- c("#ffffff", "#000000", "#aaaaaa", "#0000dd", "#00dd00", "#dd0000", "#008888", "#888800")
 stdplottimecourse <- theme_bw() + 
   theme(text = element_text(size = textSize, color = "black"),
         panel.grid.major.x = element_blank(),
@@ -278,6 +279,27 @@ plotbodyweightcourse <- function(){
 
 plotbodyweightcourse <- function(){
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
-  
-  print("lol")
+  leftplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], y = colnames(shortdf)[2], fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, geom = "bar") +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1,
+                 show_guide = FALSE) +
+    ylab("body weight (g)") +
+    scale_x_discrete(labels = conditionsVDC) +
+    expand_limits(y = 0) +
+    theme_bw() +
+    scale_fill_manual( values = greypalette ) +
+    theme(text = element_text(size = textSize, color = "black"),
+          panel.grid.major.x = element_blank(),
+          panel.border = element_blank(),
+          panel.background = element_blank(),
+          axis.line = element_line(color = "black"),
+          axis.ticks.x = element_blank(),
+          axis.title.x = element_blank(),
+          axis.title.y = element_text( size = textSize),
+          axis.text.x = element_text( size = textSize * .8 ),
+          axis.text.y = element_text( size = textSize * .5 ))
+  print(leftplot)
 }
