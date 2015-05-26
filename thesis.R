@@ -290,20 +290,61 @@ plotbodyweightcourse <- function(){
 }
 
 plotbodyweights <- function(){
-  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   leftplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
                 y = colnames(shortdf)[2], 
                 fill = colnames(shortdf)[1]) +
-    stat_summary(fun.y = mean, geom = "bar", colour = "black") +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
     stat_summary(geom = 'errorbar',
                  fun.data = 'semInterval',
                  width = 0.1,
                  show_guide = FALSE) +
     ylab("body weight (g)") +
     scale_x_discrete(labels = conditionsVDC) +
-    expand_limits(y = 0) +
-    scale_fill_manual( values = greypalette ) +
+    expand_limits(y = 0, ymax = 25) +
+    scale_fill_manual(values = greypalette) +
     stdbarplot
-  return(leftplot)
+  
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
+  midplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1) +
+    ylab("body weight (g)") +
+    scale_x_discrete(labels = conditionsVDC) +
+    expand_limits(y = 0, ymax = 25) +
+    scale_fill_manual(values = greypalette) +
+    stdbarplot
+  
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
+  rightplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1,
+                 show_guide = FALSE) +
+    ylab("body weight (g)") +
+    scale_x_discrete(labels = conditionsVDC) +
+    scale_y_continuous(limits = c(0, 25)) + 
+    scale_fill_manual(values = greypalette) +
+    stdbarplot
+  
+  return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
 }
