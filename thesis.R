@@ -189,8 +189,10 @@ reportstats <- function(invivodata, invivocolnames){
     myoutput <- paste(myoutput, 
                       paste0("Kruskal-Wallis p value for the three-way comparison is ", signif(kw$p.value, digits = 3)))
     dunns <- dunn.test(invivodatasubset[,i], invivodatasubset$treatment, method = "bonferroni")
-    dunnsreport <- data.frame(contraststhree, dunns$P.adjusted)[c(VvsDthreeways, DvsCthreeways), ]
-    dunnsreport <- setNames(cbind(dunnsreport, c(ifelse(meanV > meanD, 'V > D' , 'V < D'), ifelse(meanD > meanC, 'D > DT' , 'D < DT'))),
+    dunnsreport <- data.frame(contraststhree, dunns$P.adjusted)[c(VvsDthreeways, DvsCthreeways, VvsCthreeways), ]
+    dunnsreport <- setNames(cbind(dunnsreport, c(ifelse(meanV > meanD, 'V > D' , 'V < D'), 
+                                                 ifelse(meanD > meanC, 'D > DT' , 'D < DT'), 
+                                                 ifelse(meanV > meanC, 'V > DT' , 'V < DT'))),
                             c("Comparison", "P value", "Direction"))
     myoutput <- paste(myoutput,
                       pandoc.table.return(dunnsreport, style = "rmarkdown"))
@@ -319,10 +321,10 @@ plotbodyweightsatsacrifice <- function(){
   ylimit <- c(0, 30)
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
-  leftplot <- threecolumnplot(shortdf, paste0(ylabel, "after one day"), ylimit, c("a", "a", "a"))
+  leftplot <- threecolumnplot(shortdf, paste0(ylabel, "after one day"), ylimit, c("a", "b", "a,b"))
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
-  midplot <-  threecolumnplot(shortdf, paste0(ylabel, "after three day"), ylimit, c("a", "a", "a"))
+  midplot <-  threecolumnplot(shortdf, paste0(ylabel, "after three day"), ylimit, c("a,b", "a", "b"))
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
   rightplot <-  threecolumnplot(shortdf, paste0(ylabel, "after seven day"), ylimit, c("a", "a", "a"))
