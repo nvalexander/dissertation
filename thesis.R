@@ -486,14 +486,13 @@ plotmuscleweights <- function(){
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", levatorcolumn)]
   levatorthreeplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
-    theme(axis.text.x=element_blank()) +
-    ggtitle("three days")
+    theme(axis.text.x=element_blank()) 
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", levatorcolumn)]
   levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
     theme(axis.text.x=element_blank()) +
-    ggtitle("seven days")
+    ggtitle("seven days")+ theme(plot.title = element_text(vjust=0))
   
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]
