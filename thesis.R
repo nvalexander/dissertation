@@ -38,7 +38,7 @@ DvsCthreeways <- match("D vs DT", contraststhree)[[1]]
 VvsCthreeways <- match("V vs DT", contraststhree)[[1]]
 conditionsVDC <- c("Veh", "Dexa", "Comb")
 conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
-unistar <- sprintf('\u00D7')
+unistar <- sprintf('\u2736')
 unidagger <- sprintf('\u2020')
 
 datadir <- normalizePath(file.path(codedirpath, "data"))
@@ -210,7 +210,7 @@ plotbodyweightcourse <- function(){
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", timeseriescolumns)]
   body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
   statsstars <- c("", "", "",
-                  "", paste0(unidagger, " ", unistar),"",
+                  "", paste0(unidagger, unistar),"",
                   "", unidagger,"",
                   "", unidagger,"",
                   "", unidagger,"",
