@@ -202,6 +202,14 @@ plotbodyweightcourse <- function(){
                          "body.weight.gain.after.8.days..percent.")
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", timeseriescolumns)]
   body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
+  statsstars <- c("", "", "",
+                  "", "\n\n*\n+","",
+                  "", "\n\n*\n+","",
+                  "", "\n\n*\n+","",
+                  "", "\n\n*\n+","",
+                  "", "\n\n*\n+","",
+                  "", "\n\n*\n+","",
+                  "", "\n\n*\n+","")
   shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
   shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
   colnames(shortdf)[2] <- "day"
@@ -219,12 +227,17 @@ plotbodyweightcourse <- function(){
                  size = .5, 
                  fun.y = mean, 
                  position = position_dodge(.05)) + 
+    stat_summary(geom = "text", 
+                 size = textSize * .3, 
+                 fun.y = mean, 
+                 hjust = .25,
+                 vjust = .5,
+                 label = statsstars) + 
     stat_summary(geom = 'errorbar',
                  fun.data = 'semInterval',
                  width = 0.2,
                  show_guide = FALSE,
                  position=position_dodge(.05)) +
-    geom_text(aes(label = c('test')), hjust = 0, just = 0)+
     coord_cartesian(ylim = c(-7, 10)) + 
     ylab("body weight gain (% of pre-treatment)") +
     scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
