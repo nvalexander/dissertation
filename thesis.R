@@ -483,23 +483,23 @@ plotmuscleweights <- function(){
   tricepscolumn <- "triceps..permille."
   tibialiscolumn <- "tibialis..permille."
   
-  levatorlabel <- paste0("levator (", sprintf('\u2030'), " BW)")
+  levatorlabel <- paste0("levator ani (", sprintf('\u2030'), " BW)")
   quadricepslabel <- paste0("quadriceps (", sprintf('\u2030'), " BW)")
   gastrocnemiuslabel <- paste0("gastrocnemius (", sprintf('\u2030'), " BW)")
-  tricepslabel <- paste0("triceps (", sprintf('\u2030'), " BW)")
-  tibialislabel <- paste0("tibialis (", sprintf('\u2030'), " BW)")
+  tricepslabel <- paste0("triceps br. (", sprintf('\u2030'), " BW)")
+  tibialislabel <- paste0("tibialis ant. (", sprintf('\u2030'), " BW)")
   
   levatorylim <- c(0, 4)
-  quadricepsylim <- c(0, 8)
-  gastrocnemiusylim <- c(0, 100)
-  tricepsylim <- c(0, 100)
-  tibialisylim <- c(0, 100)
+  quadricepsylim <- c(0, 10)
+  gastrocnemiusylim <- c(0, 7)
+  tricepsylim <- c(0, 6)
+  tibialisylim <- c(0, 3)
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", levatorcolumn)]
   levatoroneplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a"))+
     theme(axis.text.x=element_blank())+ 
-    geom_text(aes(2, 5, 
+    geom_text(aes(2, 4, 
                   label="one day", 
                   vjust = 1, 
                   hjust = .5,
@@ -511,7 +511,7 @@ plotmuscleweights <- function(){
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", levatorcolumn)]
   levatorthreeplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a"))+
     theme(axis.text.x=element_blank())+ 
-    geom_text(aes(2, 5, 
+    geom_text(aes(2, 4, 
                   label="three days", 
                   vjust = 1, 
                   hjust = .5,
@@ -523,7 +523,7 @@ plotmuscleweights <- function(){
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", levatorcolumn)]
   levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a"))+
     theme(axis.text.x=element_blank())+ 
-    geom_text(aes(2, 5, 
+    geom_text(aes(2, 4, 
                   label="seven days", 
                   vjust = 1, 
                   hjust = .5,
@@ -546,8 +546,60 @@ plotmuscleweights <- function(){
   quadricepssevenplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, c("a", "a", "a"))+
     theme(axis.text.x=element_blank())
   
+  #7
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", gastrocnemiuscolumn)]
+  gastrocnemiusoneplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())
+  
+  #8
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", gastrocnemiuscolumn)]
+  gastrocnemiusthreeplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())
+  
+  #9
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", gastrocnemiuscolumn)]
+  gastrocnemiussevenplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())
+  
+  #10
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", tricepscolumn)]
+  tricepsoneplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())
+  
+  #11
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", tricepscolumn)]
+  tricepsthreeplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())
+  
+  #13
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", tricepscolumn)]
+  tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())
+  
+  #14
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", tibialiscolumn)]
+  tibialisoneplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())+
+    scale_x_discrete(labels = threeemptystrings)
+  
+  #15
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", tibialiscolumn)]
+  tibialisthreeplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())+
+    scale_x_discrete(labels = threeemptystrings)
+  
+  #12
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", tibialiscolumn)]
+  tibialissevenplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())+
+    scale_x_discrete(labels = conditionsVDC)
+  
+  
   
   return(grid.arrange(levatoroneplot, levatorthreeplot, levatorsevenplot,
                       quadricepsoneplot, quadricepsthreeplot, quadricepssevenplot,
+                      gastrocnemiusoneplot, gastrocnemiusthreeplot, gastrocnemiussevenplot,
+                      tricepsoneplot, tricepsthreeplot, tricepssevenplot,
+                      tibialisoneplot, tibialisthreeplot, tibialissevenplot,
                       ncol=3))
 }

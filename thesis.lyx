@@ -13918,6 +13918,9 @@ alue)
  This uniform loss of water negates a scenario in which the observations
  could be ascribed to increased water retention due to non-specific action
  of either steroid with MR.
+ In all cases, the losses of total water track the loss of lean body mass,
+ indicating that muscle atrophy, rather than renal dysfunction, underlies
+ the loss of water.
  Fat mass analysis indicated that in the vehicle-alone treated group, the
  rate of apparent fat gain was essentially equal with the mass of injected
  vehicle accrued over the seven days.
@@ -14093,7 +14096,7 @@ s$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 
 \end_inset
 
-)
+).
 \end_layout
 
 \begin_layout Standard
@@ -14147,6 +14150,74 @@ name "fig:Changes-in-water,"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Dissection of individual muscles confirmed that Dexa achieved widespread
+ muscle atrophy.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "8.5in", fig.width = 6, fig.height = 8.5,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotmuscleweights()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Effects of Dexa and / or Testo treatments on individual muscle weights (normaliz
+ed to body weight).
+\end_layout
+
+\end_inset
+
+Efects of Dexa and / or Testo treatments on the wet weight of levator ani,
+ quadriceps, gastrocnemius, triceps brachii, and tibialis anterior muscles.
 \end_layout
 
 \end_inset
