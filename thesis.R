@@ -372,3 +372,124 @@ plotbodyweights <- function(){
   
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
 }
+
+
+plotleanfatbody <- function(){
+  leancolumn <- "lean.mass.gain..percent."
+  fatcolumn <- "lean.mass.gain..percent."
+  leanlabel <- "lean mass gain (%)"
+  fatlabel <- "lean mass gain (%)"
+  
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
+  topleftplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1,
+                 show_guide = FALSE) +
+    ylab(paste0(leanlabel, "after one day")) +
+    scale_x_discrete(labels = conditionsVDC) +
+#    coord_cartesian(ylim = c(0, 27)) + 
+    scale_fill_manual(values = greypalette) +
+    stdbarplot
+  
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
+  topmidplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1) +
+    ylab(paste0(leanlabel, " after three days")) +
+    scale_x_discrete(labels = conditionsVDC) +
+    scale_fill_manual(values = greypalette) +
+    stdbarplot
+  
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", leancolumn)]
+  toprightplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1,
+                 show_guide = FALSE) +
+    ylab(paste0(leanlabel, " after seven days")) +
+    scale_x_discrete(labels = conditionsVDC) +
+    scale_fill_manual(values = greypalette) +
+    stdbarplot
+
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", fatcolumn)]
+  bottomleftplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1,
+                 show_guide = FALSE) +
+    ylab(paste0(fatlabel, "after one day")) +
+    scale_x_discrete(labels = conditionsVDC) +
+    #    coord_cartesian(ylim = c(0, 27)) + 
+    scale_fill_manual(values = greypalette) +
+    stdbarplot
+  
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", fatcolumn)]
+  bottommidplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1) +
+    ylab(paste0(fatlabel, " after three days")) +
+    scale_x_discrete(labels = conditionsVDC) +
+    scale_fill_manual(values = greypalette) +
+    stdbarplot
+  
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", fatcolumn)]
+  bottomrightplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1,
+                 show_guide = FALSE) +
+    ylab(paste0(fatlabel, " after seven days")) +
+    scale_x_discrete(labels = conditionsVDC) +
+    scale_fill_manual(values = greypalette) +
+    stdbarplot
+
+  return(grid.arrange(topleftplot, topmidplot, toprightplot, 
+                      bottomleftplot, bottommidplot, bottomrightplot, 
+                      ncol=3))
+}
+
