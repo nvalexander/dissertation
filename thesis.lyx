@@ -13953,7 +13953,7 @@ $treatment, method = "bonferroni")$P.adjusted[[VvsCthreeways]])
 \end_inset
 
 ).
- Testo co-administration had little effect on lipid metabolism (Dunn's test,
+ Testo co-administration had little effect on lipid accretion (Dunn's test,
  Dexa vs.
  combination, p = 
 \begin_inset Flex S/R expression
@@ -14080,7 +14080,7 @@ sig3( SEM(subset(invivodatasubsetsevendays, treatment == "V")$lean.mass.gain..g.
 
 \end_inset
 
- grams per day; Dunn's test, Dexa vs.
+ grams per day lost; Dunn's test, Dexa vs.
  combination, p = 
 \begin_inset Flex S/R expression
 status open
