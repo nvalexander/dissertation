@@ -409,40 +409,22 @@ plotleanfat <- function(){
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   wateroneplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a")) +
-    theme(axis.text.x = element_blank())+ 
-    geom_text(aes(2, 5, 
-                  label="one days", 
-                  vjust = 1, 
-                  hjust = .5,
-                  family = "Liberation Sans Narrow",
-                  show_guide = FALSE),
-              size = textSize * .3)
+    theme(axis.text.x = element_blank()) +
+    ggtitle("one day")
   
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   waterthreeplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a"))+
-    theme(axis.text.x = element_blank()) + 
-    geom_text(aes(2, 5, 
-                  label="three days", 
-                  vjust = 1, 
-                  hjust = .5,
-                  family = "Liberation Sans Narrow",
-                  show_guide = FALSE),
-              size = textSize * .3)
+    theme(axis.text.x = element_blank()) +
+    ggtitle("three days")
   
   #9
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   watersevenplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a")) +
-    theme(axis.text.x = element_blank()) + 
-    geom_text(aes(2, 5, 
-                  label="seven days", 
-                  vjust = 1, 
-                  hjust = .5,
-                  family = "Liberation Sans Narrow",
-                  show_guide = FALSE),
-              size = textSize * .3)
+    theme(axis.text.x = element_blank()) +
+    ggtitle("seven days")
 
   return(grid.arrange(
     wateroneplot, waterthreeplot, watersevenplot,
@@ -498,38 +480,20 @@ plotmuscleweights <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", levatorcolumn)]
   levatoroneplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
-    theme(axis.text.x=element_blank())+ 
-    geom_text(aes(2, 4, 
-                  label="one day", 
-                  vjust = 1, 
-                  hjust = .5,
-                  family = "Liberation Sans Narrow",
-                  show_guide = FALSE),
-              size = textSize * .3)
+    theme(axis.text.x=element_blank()) +
+    ggtitle("one day")
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", levatorcolumn)]
   levatorthreeplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
-    theme(axis.text.x=element_blank())+ 
-    geom_text(aes(2, 4, 
-                  label="three days", 
-                  vjust = 1, 
-                  hjust = .5,
-                  family = "Liberation Sans Narrow",
-                  show_guide = FALSE),
-              size = textSize * .3)
+    theme(axis.text.x=element_blank()) +
+    ggtitle("three days")
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", levatorcolumn)]
   levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
-    theme(axis.text.x=element_blank())+ 
-    geom_text(aes(2, 4, 
-                  label="seven days", 
-                  vjust = 1, 
-                  hjust = .5,
-                  family = "Liberation Sans Narrow",
-                  show_guide = FALSE),
-              size = textSize * .3)
+    theme(axis.text.x=element_blank()) +
+    ggtitle("seven days")
   
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]
