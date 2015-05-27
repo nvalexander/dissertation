@@ -140,8 +140,12 @@ semInterval <- function(x) {
   return(lims)
 }
 
-statstringyposition <-function(x){
-  return(ifelse(mean(x, na.rm = TRUE) < 0, semInterval(x)[[2]], semInterval(x)[[1]]))
+statstringyunderbar <-function(x){
+  return(semInterval(x)[[1]])
+}
+
+statstringyoverbar <-function(x){
+  return(semInterval(x)[[1]])
 }
 
 truecount <- function(x) {
@@ -240,7 +244,7 @@ plotbodyweightcourse <- function(){
     stat_summary(geom = "text", 
                  size = textSize * .4,
                  aes(family = "serif"),
-                 fun.y = statstringyposition, 
+                 fun.y = statstringyunderbar, 
                  hjust = -.2,
                  vjust = .25,
                  label = statsstars) + 
@@ -345,7 +349,7 @@ plotleanfat <- function(){
   waterlabel <- "water mass loss (g)\n"
   leanylim <- c(0, 4)
   fatylim <- c(0, 4)
-  waterylim <- c(0, 4)
+  waterylim <- c(0, 5)
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
@@ -411,7 +415,7 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings, statsbel
     stat_summary(geom = "text", 
                  size = textSize * .4,
                  aes(family = "Liberation Sans Narrow"),
-                 fun.y = statstringyposition, 
+                 fun.y = statstringyoverbar, 
                  hjust = .5,
                  vjust = -.6,
                  label = statstrings) +

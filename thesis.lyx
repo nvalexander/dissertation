@@ -13891,7 +13891,23 @@ reference "fig:Time-course-of"
 \end_layout
 
 \begin_layout Standard
-NMR indicated that mice receiving DexA
+Body composition analysis indicated that all animals included in these experimen
+ts progressively lost total water.
+ There was no difference between water loss in the three experimental groups
+ (Fig.
+ ; Kruskal-Wallis for seven day mass of water lost, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(kruskal.test(total.water.gain..g.~treatment, data = invivodatasubsetsevendays)$p.v
+alue)
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
