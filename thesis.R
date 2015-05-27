@@ -16,32 +16,14 @@ library(Cairo)
 #font_import(prompt = FALSE)
 options(bitmapType="cairo")
 
+# DATA loading and mangling
 codedirpath <- dirname(
   tryCatch(normalizePath(parent.frame(2)$ofile),  # works when using source
            error=function(e) # works when using R CMD
              normalizePath(unlist(strsplit(commandArgs()[grep('^--file=',
                                                               commandArgs())], '='))[2]))
 )
-
-
 codedirpath <- "/media/dump/writingswork/draftthesis"
-
-condsVDTC <- c("V", "D", "T", "C")
-contrastsfour <- c("V vs D", "V vs T", "D vs T", "V vs DT", "D vs DT", "T vs DT")
-VvsDfourways <- match("V vs D", contrastsfour)[[1]]
-VvsTfourways <- match("V vs T", contrastsfour)[[1]]
-DvsCfourways <- match("D vs DT", contrastsfour)[[1]]
-condsVDC <- c("V", "D", "C")
-contraststhree <- c("V vs D", "V vs DT", "D vs DT")
-VvsDthreeways <- match("V vs D", contraststhree)[[1]]
-DvsCthreeways <- match("D vs DT", contraststhree)[[1]]
-VvsCthreeways <- match("V vs DT", contraststhree)[[1]]
-conditionsVDC <- c("Veh", "Dexa", "Comb")
-conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
-unistar <- sprintf('\u2736')
-unidagger <- sprintf('\u2020')
-threeemptystrings <- c("", "", "")
-
 datadir <- normalizePath(file.path(codedirpath, "data"))
 invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
 invivocolnameonedays <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, sep = ",", nrows = 1)
@@ -57,59 +39,43 @@ levels(invivodatathreedays$treatment)[levels(invivodatathreedays$treatment)=="X"
 levels(invivodatathreedays$treatment)[levels(invivodatathreedays$treatment)=="U"] <- "T"
 invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = TRUE)
 invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
-
-
+#re-leveling
+condsVDC <- c("V", "D", "C")
+conditionsVDC <- c("Veh", "Dexa", "Comb")
+condsVDTC <- c("V", "D", "T", "C")
+conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
+contrastsfour <- c("V vs D", "V vs T", "D vs T", "V vs DT", "D vs DT", "T vs DT")
+VvsDfourways <- match("V vs D", contrastsfour)[[1]]
+VvsTfourways <- match("V vs T", contrastsfour)[[1]]
+DvsCfourways <- match("D vs DT", contrastsfour)[[1]]
+contraststhree <- c("V vs D", "V vs DT", "D vs DT")
+VvsDthreeways <- match("V vs D", contraststhree)[[1]]
+DvsCthreeways <- match("D vs DT", contraststhree)[[1]]
+VvsCthreeways <- match("V vs DT", contraststhree)[[1]]
 invivodatasubsetonedays <- invivodataonedays[invivodataonedays$treatment %in% condsVDC, ]
 invivodataonedays$treatment <- factor(invivodataonedays$treatment, 
-                               levels = condsVDTC)
+                                      levels = condsVDTC)
 invivodatasubsetonedays$treatment <- factor(invivodatasubsetonedays$treatment, 
-                                     levels = condsVDC)
+                                            levels = condsVDC)
 
 invivodatasubsetthreedays <- invivodatathreedays[invivodatathreedays$treatment %in% condsVDC, ]
 invivodatathreedays$treatment <- factor(invivodatathreedays$treatment, 
-                                      levels = condsVDTC)
+                                        levels = condsVDTC)
 invivodatasubsetthreedays$treatment <- factor(invivodatasubsetthreedays$treatment, 
-                                            levels = condsVDC)
+                                              levels = condsVDC)
 
 invivodatasubsetsevendays <- invivodatasevendays[invivodatasevendays$treatment %in% condsVDC, ]
 invivodatasevendays$treatment <- factor(invivodatasevendays$treatment, 
-                                      levels = condsVDTC)
+                                        levels = condsVDTC)
 invivodatasubsetsevendays$treatment <- factor(invivodatasubsetsevendays$treatment, 
-                                            levels = condsVDC)
+                                              levels = condsVDC)
+#literal constants
+unistar <- sprintf('\u2736')
+unidagger <- sprintf('\u2020')
+threeemptystrings <- c("", "", "")
+threeidenticalgroups <- c("a", "a", "a")
 
-
-textSize <- 11
-nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
-meaningfulpalette <- c("#444444", "#dd0000", "#00dd00", "#0000dd", "#888800", "#880088", "#008888", "#dddddd")
-greypalette <- c("#ffffff", "#222222", "#999999", "#0000dd", "#00dd00", "#dd0000", "#008888", "#888800")
-stdplottimecourse <- theme_bw() + 
-  theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
-        panel.grid.major.x = element_blank(),
-        panel.border = element_blank(),
-        panel.background = element_blank(),
-        axis.line = element_line(colour = "black"),
-        axis.title.x = element_text( size = textSize),
-        axis.title.y = element_text( size = textSize),
-        axis.text.x = element_text( size = textSize * 1 ),
-        axis.text.y = element_text( size = textSize * 1 ),
-        legend.title = element_blank())
-
-stdbarplot <- 
-  theme_bw() +
-  theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
-        panel.grid.major.x = element_blank(),
-        panel.grid.minor.x = element_blank(),
-        panel.grid.major.y = element_blank(),
-        panel.grid.minor.y = element_blank(),
-        panel.border = element_blank(),
-        panel.background = element_blank(),
-        axis.line = element_line(color = "black"),
-        axis.ticks.x = element_blank(),
-        axis.title.x = element_blank(),
-        axis.title.y = element_text( size = textSize),
-        axis.text.x = element_text( size = textSize * 1 ),
-        axis.text.y = element_text( size = textSize * 1 ))
-
+#helper maths functions
 SEM <- function(x) {
   return( sqrt(var(x, na.rm = TRUE) / truecount(x)) )
 }
@@ -161,14 +127,74 @@ hview <- function(htmllines) {
   rstudio::viewer(htmlFile)
 }
 
+#GENERIC PLOTTING
+textSize <- 11
+nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+meaningfulpalette <- c("#444444", "#dd0000", "#00dd00", "#0000dd", "#888800", "#880088", "#008888", "#dddddd")
+greypalette <- c("#ffffff", "#222222", "#999999", "#0000dd", "#00dd00", "#dd0000", "#008888", "#888800")
+
+stdplottimecourse <- theme_bw() + 
+  theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
+        panel.grid.major.x = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(colour = "black"),
+        axis.title.x = element_text( size = textSize),
+        axis.title.y = element_text( size = textSize),
+        axis.text.x = element_text( size = textSize * 1 ),
+        axis.text.y = element_text( size = textSize * 1 ),
+        legend.title = element_blank())
+
+stdbarplot <- 
+  theme_bw() +
+  theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(color = "black"),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_blank(),
+        axis.title.y = element_text( size = textSize),
+        axis.text.x = element_text( size = textSize * 1 ),
+        axis.text.y = element_text( size = textSize * 1 ))
+
+threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){ 
+  return(ggplot(skinnydataset) +
+           aes_string( x = colnames(skinnydataset)[1], 
+                       y = colnames(skinnydataset)[2], 
+                       fill = colnames(skinnydataset)[1]) +
+           stat_summary(fun.y = mean, 
+                        geom = "bar", 
+                        colour = "black",
+                        show_guide = FALSE) +
+           stat_summary(geom = 'errorbar',
+                        fun.data = 'semInterval',
+                        width = 0.1) +
+           stat_summary(geom = "text", 
+                        size = textSize * .4,
+                        aes(family = "Liberation Sans Narrow"),
+                        fun.y = statstringyoverbar, 
+                        hjust = .5,
+                        vjust = -.6,
+                        label = statstrings) +
+           ylab(ylabel) +
+           coord_cartesian(ylim = ylimit) + 
+           scale_fill_manual(values = greypalette) +
+           stdbarplot)
+}
+
+#PMID12519877
 loadPMID12519877 <- function(datadirpath){
   df1 <- read.csv(file.path(datadirpath, "PMID12519877", "proteasomeactivity.csv"), header = FALSE, colClasses = c(NA, "NULL", NA))
   row.names(df1) <- df1$V1
   return(df1)
 }
-
 PMID12519877data <- loadPMID12519877(datadir)
 
+#MASS-REPORTING of IN VIVO DATA
 reportstats <- function(invivodata, invivocolnames){
   myoutput <- ""
   invivodatasubset <- invivodata[invivodata$treatment %in% condsVDC, ]
@@ -208,6 +234,38 @@ reportstats <- function(invivodata, invivocolnames){
   return(myoutput)
 }
 
+#FIRST PLOT - body weights at sacrifice
+plotbodyweightsatsacrifice <- function(){
+  ylabel <- "body weight (g) "
+  ylimit <- c(0, 32)
+  #1
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
+  leftplot <- threecolumnplot(shortdf, ylabel, ylimit, c("a", "b", "a,b")) +
+    annotate(geom = "text", label = "one day", x = 2, y = 32,
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow") +
+    scale_x_discrete(labels = conditionsVDC) 
+  #2
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
+  midplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a,b", "a", "b")) + 
+    annotate(geom = "text", label = "three days", x = 2, y = 32,
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow") +
+    scale_x_discrete(labels = threeemptystrings)
+  #3
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
+  rightplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a", "a", "a")) + 
+    annotate(geom = "text", label = "seven days", x = 2, y = 32,
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow") +
+    scale_x_discrete(labels = threeemptystrings)
+  return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
+}
+
+#SECOND PLOT - body weight time courses
 plotbodyweightcourse <- function(){
   timeseriescolumns <- c("body.weight.gain.after.1.days..percent.",
                          "body.weight.gain.after.2.days..percent.",
@@ -323,38 +381,7 @@ plotbodyweightcourse <- function(){
                        ncol=1)  )
 }
 
-plotbodyweightsatsacrifice <- function(){
-  ylabel <- "body weight (g) "
-  ylimit <- c(0, 32)
-  
-  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
-  leftplot <- threecolumnplot(shortdf, ylabel, ylimit, c("a", "b", "a,b")) +
-    annotate(geom = "text", label = "one day", x = 2, y = 32,
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow") +
-    scale_x_discrete(labels = conditionsVDC) 
-
-  
-  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
-  midplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a,b", "a", "b")) + 
-    annotate(geom = "text", label = "three days", x = 2, y = 32,
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow") +
-    scale_x_discrete(labels = threeemptystrings)
-  
-  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
-  rightplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a", "a", "a")) + 
-    annotate(geom = "text", label = "seven days", x = 2, y = 32,
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow") +
-    scale_x_discrete(labels = threeemptystrings)
-  
-  return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
-}
-
+# THIRD PLOT - body mass composition
 plotleanfat <- function(){
   leancolumn <- "lean.mass.gain..g."
   fatcolumn <- "fat.mass.gain..g."
@@ -365,44 +392,53 @@ plotleanfat <- function(){
   leanylim <- c(0, 4)
   fatylim <- c(0, 4)
   waterylim <- c(0, 5)
+  leanonestat <- threeidenticalgroups
+  leanthreestat <- c("a", "b", "a,b")
+  leansevenstat <- c("a", "b", "a,b")
+  fatonestat <- threeidenticalgroups
+  fatthreestat <- c("a", "a,b", "b")
+  fatsevenstat <- c("a", "a,b", "b")
+  wateronestat <- threeidenticalgroups
+  waterthreestat <- threeidenticalgroups
+  watersevenstat <- threeidenticalgroups
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  leanoneplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "a", "a")) +
+  leanoneplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanonestat) +
     scale_x_discrete(labels = threeemptystrings)
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  leanthreeplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "b", "a,b")) +
+  leanthreeplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanthreestat) +
     scale_x_discrete(labels = threeemptystrings)
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  leansevenplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "b", "a,b")) +
+  leansevenplot <- threecolumnplot(shortdf, leanlabel, leanylim, leansevenstat) +
     scale_x_discrete(labels = conditionsVDC)
 
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", fatcolumn)]
-  fatoneplot <- threecolumnplot(shortdf, fatlabel, fatylim, c("a", "a", "a"))+
+  fatoneplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatonestat)+
     theme(axis.text.x=element_blank())
   
   #5
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", fatcolumn)]
-  fatthreeplot <- threecolumnplot(shortdf, fatlabel, fatylim, c("a", "a,b", "b"))+
+  fatthreeplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatthreestat)+
     theme(axis.text.x=element_blank())
   
   #6
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", fatcolumn)]
-  fatsevenplot <- threecolumnplot(shortdf, fatlabel, fatylim, c("a", "a,b", "b"))+
+  fatsevenplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatsevenstat)+
     theme(axis.text.x=element_blank())
   
   #7
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  wateroneplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a")) +
+  wateroneplot <- threecolumnplot(shortdf, waterlabel, waterylim, wateronestat) +
     theme(axis.text.x = element_blank()) +
     annotate(geom = "text", label = "one day", x = 2, y = waterylim[[2]],
              vjust = 1, hjust = 0.5,  
@@ -412,7 +448,7 @@ plotleanfat <- function(){
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  waterthreeplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a"))+
+  waterthreeplot <- threecolumnplot(shortdf, waterlabel, waterylim, waterthreestat)+
     theme(axis.text.x = element_blank()) +
     annotate(geom = "text", label = "three days", x = 2, y = waterylim[[2]],
              vjust = 1, hjust = 0.5,  
@@ -422,7 +458,7 @@ plotleanfat <- function(){
   #9
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  watersevenplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a")) +
+  watersevenplot <- threecolumnplot(shortdf, waterlabel, waterylim, watersevenstat) +
     theme(axis.text.x = element_blank()) +
     annotate(geom = "text", label = "seven days", x = 2, y = waterylim[[2]],
              vjust = 1, hjust = 0.5,  
@@ -436,30 +472,6 @@ plotleanfat <- function(){
     ncol=3))
 }
 
-threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){ 
-  return(ggplot(skinnydataset) +
-    aes_string( x = colnames(skinnydataset)[1], 
-                y = colnames(skinnydataset)[2], 
-                fill = colnames(skinnydataset)[1]) +
-    stat_summary(fun.y = mean, 
-                 geom = "bar", 
-                 colour = "black",
-                 show_guide = FALSE) +
-    stat_summary(geom = 'errorbar',
-                 fun.data = 'semInterval',
-                 width = 0.1) +
-    stat_summary(geom = "text", 
-                 size = textSize * .4,
-                 aes(family = "Liberation Sans Narrow"),
-                 fun.y = statstringyoverbar, 
-                 hjust = .5,
-                 vjust = -.6,
-                 label = statstrings) +
-    ylab(ylabel) +
-    coord_cartesian(ylim = ylimit) + 
-    scale_fill_manual(values = greypalette) +
-    stdbarplot)
-}
 
 plotmuscleweights <- function(){
   levatorcolumn <- "levator..mg."
