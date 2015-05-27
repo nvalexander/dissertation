@@ -326,17 +326,15 @@ plotbodyweightsatsacrifice <- function(){
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   leftplot <- threecolumnplot(shortdf, ylabel, ylimit, c("a", "b", "a,b")) + 
-    scale_x_discrete(labels = conditionsVDC)+
-    geom_text(aes(2, 28, label="one day",show_guide = F))
+    geom_text(aes(2, 28, label="one day",show_guide = F)) +
+    guides(fill = guide_legend(override.aes = list(color = greypalette), shape=c(16,16,16)))
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
   midplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a,b", "a", "b"))+ 
-    scale_x_discrete(labels = conditionsVDC)+
     geom_text(aes(2, 28, label="three days",show_guide = F))
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
   rightplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a", "a", "a"))+ 
-    scale_x_discrete(labels = conditionsVDC)+
     geom_text(aes(2, 28, label="seven days",show_guide = F))
   
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
