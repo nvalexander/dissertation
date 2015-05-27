@@ -13354,8 +13354,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-bodyweight, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
- out.height = "3.5in", fig.width = 6, fig.height =3.5
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "2.5in", fig.width = 6, fig.height =2.5
 \end_layout
 
 \end_inset
@@ -13648,8 +13648,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-bodyweightcourse, echo = FALSE, warning = FALSE, message = FALSE, out.width
- = "6in", out.height = "8in", fig.width = 6, fig.height = 8,dev='cairo_pdf'
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "8in", fig.width = 6, fig.height = 8,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -13867,7 +13867,63 @@ reference "fig:Time-course-of"
 \end_layout
 
 \begin_layout Standard
-Before and after treatment, 
+Before and after treatment,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "8in", fig.width = 6, fig.height = 8,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotleanfat()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gains in water, lean, and fat body mass, after Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newpage pagebreak
 \end_inset
 
