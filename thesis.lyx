@@ -14170,9 +14170,6 @@ reference "fig:Effects-of-Dexa"
 \end_inset
 
 ).
- Before analysis, muscle wet mass was normalized to the animal's body weight.
- This normalization did not change the nature of the findings, which are
- generally confirmed when absolute muscle mass is analyzed instead..
  Despite the small sample size (n=5-6), the atrophying effect of Dexa became
  apparent on gastrocnemia starting with day 1 (Dunn's test, p = 
 \begin_inset Flex S/R expression
@@ -14180,8 +14177,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetonedays$gastrocnemius..permille., invivodatasubseton
-edays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(invivodatasubsetonedays$gastrocnemius..g., invivodatasubsetonedays$t
+reatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -14192,8 +14189,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$triceps..permille., invivodatasubsetsevend
-ays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(invivodatasubsetsevendays$triceps..g., invivodatasubsetsevendays$tre
+atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -14204,72 +14201,71 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$quadriceps..permille., invivodatasubsetsev
-endays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(invivodatasubsetsevendays$quadriceps..g., invivodatasubsetsevendays$
+treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
 
 ) at day 7.
- In terms of responsiveness, the five measured muscles range from extremely
+ In terms of responsiveness, the five measured muscles ranged from extremely
  responsive, such as quadriceps  (
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$quadriceps..per
-mille., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
- "D")$quadriceps..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays,
- treatment == "V")$quadriceps..permille., na.rm = TRUE))
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$quadriceps..g.,
+ na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$quadric
+eps..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
+ "V")$quadriceps..g., na.rm = TRUE))
 \end_layout
 
 \end_inset
 
-% loss in percentage of body weight), triceps (
+% muscle weight loss ), triceps (
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$triceps..permil
-le., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$tric
-eps..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
- == "V")$triceps..permille., na.rm = TRUE))
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$triceps..g.,
+ na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$triceps..
+g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment == "V")$tric
+eps..g., na.rm = TRUE))
 \end_layout
 
 \end_inset
 
-% loss in percentage of body weight) and gastrocnemius (
+% muscle weight loss) and gastrocnemius (
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
 sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$gastrocnemius..
-permille., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
- == "D")$gastrocnemius..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetseve
-ndays, treatment == "V")$gastrocnemius..permille., na.rm = TRUE))
+g., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$gastr
+ocnemius..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
+ == "V")$gastrocnemius..g., na.rm = TRUE))
 \end_layout
 
 \end_inset
 
-% loss in percentage of body weight), to the refractory tibialis anterior
- (
+%muscle weight loss), to the refractory tibialis anterior (
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$tibialis..permi
-lle., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
- "D")$tibialis..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays,
- treatment == "V")$tibialis..permille., na.rm = TRUE))
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$tibialis..g.,
+ na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$tibiali
+s..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
+ "V")$tibialis..g., na.rm = TRUE))
 \end_layout
 
 \end_inset
 
-% loss in percentage of body weight).
+% muscle weight loss).
  For each muscle and time point, the average muscle weight in the Dexa group
  was smaller than the average weight of the controls.
 \end_layout
@@ -14366,22 +14362,22 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$quadriceps..per
-mille., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
- "D")$quadriceps..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays,
- treatment == "D")$quadriceps..permille., na.rm = TRUE))
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$quadriceps..g.,
+ na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$quadric
+eps..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
+ "D")$quadriceps..g., na.rm = TRUE))
 \end_layout
 
 \end_inset
 
-% restoration in percentage of body weight; Dunn's test, p = 
+% restoration in muscle weight; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$quadriceps..permille., invivodatasubsetsev
-endays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+sig3( dunn.test(invivodatasubsetsevendays$quadriceps..g., invivodatasubsetsevendays$
+treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \end_inset
@@ -14392,22 +14388,22 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$levator..permil
-le., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$leva
-tor..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
- == "D")$levator..permille., na.rm = TRUE))
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$levator..ge.,
+ na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$levator..
+g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment == "D")$leva
+tor..g., na.rm = TRUE))
 \end_layout
 
 \end_inset
 
-% restoration in percentage of body weight; Dunn's test, p = 
+% restoration in muscle weight; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$levator..permille., invivodatasubsetsevend
-ays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+sig3( dunn.test(invivodatasubsetsevendays$levator..g., invivodatasubsetsevendays$tre
+atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \end_inset
@@ -14419,21 +14415,21 @@ status open
 \begin_layout Plain Layout
 
 sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$gastrocnemius..
-permille., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
- == "D")$gastrocnemius..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetseve
-ndays, treatment == "D")$gastrocnemius..permille., na.rm = TRUE))
+g., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$gastr
+ocnemius..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$gastrocnemius..g., na.rm = TRUE))
 \end_layout
 
 \end_inset
 
-% restoration in percentage of body weight; Dunn's test, p = 
+% restoration in muscle weight; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$gastrocnemius..permille., invivodatasubset
-sevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+sig3( dunn.test(invivodatasubsetsevendays$gastrocnemius..g., invivodatasubsetsevenda
+ys$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \end_inset
@@ -14445,15 +14441,15 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "D")$tibialis..permi
-lle., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
- "C")$tibialis..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays,
- treatment == "D")$tibialis..permille., na.rm = TRUE))
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "D")$tibialis..g.,
+ na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "C")$tibiali
+s..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
+ "D")$tibialis..g., na.rm = TRUE))
 \end_layout
 
 \end_inset
 
-% further loss in percentage of body weight.
+% further loss in muscleweight.
  A similar trend indicating Testo's inability to rescue tibialis mass is
  also present in the three-day data .
  
