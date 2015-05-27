@@ -136,6 +136,10 @@ semInterval <- function(x) {
   return(lims)
 }
 
+belowSEM <-function(x){
+  return(semInterval(x)[[2]])
+}
+
 truecount <- function(x) {
   return( length(na.omit(x)) )
 }
@@ -203,13 +207,13 @@ plotbodyweightcourse <- function(){
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", timeseriescolumns)]
   body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
   statsstars <- c("", "", "",
-                  "", "\n\n*\n+","",
-                  "", "\n\n*\n+","",
-                  "", "\n\n*\n+","",
-                  "", "\n\n*\n+","",
-                  "", "\n\n*\n+","",
-                  "", "\n\n*\n+","",
-                  "", "\n\n*\n+","")
+                  "", "*+","",
+                  "", "a","",
+                  "", "ab","",
+                  "", "*+","",
+                  "", "a,b","",
+                  "", "X+","",
+                  "", "*+","")
   shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
   shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
   colnames(shortdf)[2] <- "day"
@@ -228,10 +232,10 @@ plotbodyweightcourse <- function(){
                  fun.y = mean, 
                  position = position_dodge(.05)) + 
     stat_summary(geom = "text", 
-                 size = textSize * .3, 
-                 fun.y = mean, 
-                 hjust = .25,
-                 vjust = .5,
+                 size = textSize * .6, 
+                 fun.y = belowSEM, 
+                 hjust = 0,
+                 vjust = .25,
                  label = statsstars) + 
     stat_summary(geom = 'errorbar',
                  fun.data = 'semInterval',
