@@ -161,6 +161,13 @@ stdbarplot <-
         axis.title.y = element_text( size = textSize),
         axis.text.x = element_text( size = textSize * 1 ))
 
+anotatedtitle <- function(text, x, y) {
+  return(annotate(geom = "text", label = text, x = x, y = y,
+           vjust = 1, hjust = 0.5,  
+           size = .45 * textSize, 
+           family = "Liberation Sans Narrow"))
+}
+
 threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){ 
   return(ggplot(skinnydataset) +
            aes_string( x = colnames(skinnydataset)[1], 
@@ -244,27 +251,16 @@ plotbodyweightsatsacrifice <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   onedaysweightplot <- threecolumnplot(shortdf, ylabel, ylimit, onedaysstat) +
-    annotate(geom = "text", label = "one day", x = 2, y = 32,
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow") +
-    scale_x_discrete(labels = conditionsVDC) 
+    anotatedtitle("one day", 2, ylimit[[2]])
+    # + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC) 
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
-  threedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, threedaysstat) + 
-    annotate(geom = "text", label = "three days", x = 2, y = 32,
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow") +
-    scale_x_discrete(labels = threeemptystrings)
+  threedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, threedaysstat) +
+    anotatedtitle("three days", 2, ylimit[[2]])
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
-  sevedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, sevendaysstat) + 
-    annotate(geom = "text", label = "seven days", x = 2, y = 32,
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow") +
-    scale_x_discrete(labels = threeemptystrings)
+  sevedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, sevendaysstat) +
+    anotatedtitle("seven days", 2, ylimit[[2]])
   return(grid.arrange(onedaysweightplot, threedaysweightplot, sevedaysweightplot, ncol=3))
 }
 
