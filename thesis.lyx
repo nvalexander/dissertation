@@ -14226,7 +14226,7 @@ mille., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
 
 \end_inset
 
-% change in percentage of body weight), triceps (
+% loss in percentage of body weight), triceps (
 \begin_inset Flex S/R expression
 status open
 
@@ -14240,7 +14240,7 @@ eps..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatmen
 
 \end_inset
 
-% change in percentage of body weight) and gastrocnemius (
+% loss in percentage of body weight) and gastrocnemius (
 \begin_inset Flex S/R expression
 status open
 
@@ -14254,7 +14254,7 @@ ndays, treatment == "V")$gastrocnemius..permille., na.rm = TRUE))
 
 \end_inset
 
-% change in percentage of body weight), to the refractory tibialis anterior
+% loss in percentage of body weight), to the refractory tibialis anterior
  (
 \begin_inset Flex S/R expression
 status open
@@ -14269,7 +14269,7 @@ lle., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
 
 \end_inset
 
-% change in percentage of body weight).
+% loss in percentage of body weight).
  For each muscle and time point, the average muscle weight in the Dexa group
  was smaller than the average weight of the controls.
 \end_layout
@@ -14277,8 +14277,101 @@ lle., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
 \begin_layout Standard
 Four out of five muscles measured were partly restored to their basal weight
  upon Testo co-administration.
- In a hierarchy of response amplitude, gastrocnemius is the most responsive
- to both drugs, whereas effect on tibialis are marginal.
+ In a hierarchy of response amplitude to Testo co-administration, quadriceps
+ (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$quadriceps..per
+mille., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
+ "D")$quadriceps..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays,
+ treatment == "D")$quadriceps..permille., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+% restoration in percentage of body weight; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$quadriceps..permille., invivodatasubsetsev
+endays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+), levator (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$levator..permil
+le., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$leva
+tor..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$levator..permille., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+% restoration in percentage of body weight; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$levator..permille., invivodatasubsetsevend
+ays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+), and gastrocnemius (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$gastrocnemius..
+permille., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$gastrocnemius..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetseve
+ndays, treatment == "D")$gastrocnemius..permille., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+% restoration in percentage of body weight; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$gastrocnemius..permille., invivodatasubset
+sevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+) appear the most responsive.
+ In opposition, tibialis response to Testo co-administration is a 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "D")$tibialis..permi
+lle., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
+ "C")$tibialis..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays,
+ treatment == "D")$tibialis..permille., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+% further loss in percentage of body weight.
 \end_layout
 
 \begin_layout Standard
