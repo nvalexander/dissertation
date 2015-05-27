@@ -13355,7 +13355,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2.5in", fig.width = 6, fig.height =2.5
+ = "2in", fig.width = 6, fig.height =2
 \end_layout
 
 \end_inset
@@ -13669,7 +13669,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "8in", fig.width = 6, fig.height = 8,dev='cairo_pdf'
+ = "6in", fig.width = 6, fig.height = 6,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -14056,10 +14056,7 @@ s$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 ).
  When Testo was co-administered, the loss of lean body mass persisted, but
- there was a trend towards a lower loss rate
- (
-\lang english
-
+ there was a trend towards a lower loss rate (
 \begin_inset Flex S/R expression
 status open
 

@@ -326,36 +326,18 @@ plotbodyweightsatsacrifice <- function(){
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   leftplot <- threecolumnplot(shortdf, ylabel, ylimit, c("a", "b", "a,b")) + 
-    geom_text(aes(2, 32, 
-                  label="one day", 
-                  vjust = 1, 
-                  hjust = .5,
-                  family = "Liberation Sans Narrow",
-                  show_guide = FALSE),
-              size = textSize * .3) +
+    ggtitle("one day") +
     scale_x_discrete(labels = conditionsVDC) 
 
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
   midplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a,b", "a", "b")) + 
-    geom_text(aes(2, 32, 
-                  label="three days", 
-                  vjust = 1, 
-                  hjust = .5,
-                  family = "Liberation Sans Narrow",
-                  show_guide = FALSE),
-              size = textSize * .3)+
+    ggtitle("three days") +
     scale_x_discrete(labels = threeemptystrings)
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
   rightplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a", "a", "a")) + 
-    geom_text(aes(2, 32, 
-                  label="seven days", 
-                  vjust = 1, 
-                  hjust = .5,
-                  family = "Liberation Sans Narrow",
-                  show_guide = FALSE),
-              size = textSize * .3)+
+    ggtitle("seven days") +
     scale_x_discrete(labels = threeemptystrings)
   
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
@@ -375,19 +357,19 @@ plotleanfat <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  leanoneplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "a", "a"))+
+  leanoneplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "a", "a")) +
     scale_x_discrete(labels = threeemptystrings)
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  leanthreeplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "b", "a,b"))+
+  leanthreeplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "b", "a,b")) +
     scale_x_discrete(labels = threeemptystrings)
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  leansevenplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "b", "a,b"))+
+  leansevenplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "b", "a,b")) +
     scale_x_discrete(labels = conditionsVDC)
 
   #4
@@ -486,13 +468,14 @@ plotmuscleweights <- function(){
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", levatorcolumn)]
   levatorthreeplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
-    theme(axis.text.x=element_blank()) 
+    theme(axis.text.x=element_blank()) +
+    ggtitle("three days")
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", levatorcolumn)]
   levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
     theme(axis.text.x=element_blank()) +
-    theme(plot.title = element_text(vjust=-1)) + labs(title="seven days")
+    labs(title="seven days")
   
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]
@@ -531,33 +514,30 @@ plotmuscleweights <- function(){
   
   #11
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", tricepscolumn)]
-  tricepsthreeplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, c("a", "a", "a"))+
+  tricepsthreeplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, c("a", "a", "a")) +
+    theme(axis.text.x=element_blank())
+  
+  #12
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", tricepscolumn)]
+  tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, c("a", "b", "a,b")) +
     theme(axis.text.x=element_blank())
   
   #13
-  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", tricepscolumn)]
-  tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, c("a", "b", "a,b"))+
-    theme(axis.text.x=element_blank())
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", tibialiscolumn)]
+  tibialisoneplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, c("a", "a", "a")) +
+    theme(axis.text.x=element_blank()) +
+    scale_x_discrete(labels = threeemptystrings)
   
   #14
-  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", tibialiscolumn)]
-  tibialisoneplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, c("a", "a", "a"))+
-    theme(axis.text.x=element_blank())+
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", tibialiscolumn)]
+  tibialisthreeplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, c("a", "a", "a")) +
+    theme(axis.text.x=element_blank()) +
     scale_x_discrete(labels = threeemptystrings)
   
   #15
-  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", tibialiscolumn)]
-  tibialisthreeplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, c("a", "a", "a"))+
-    theme(axis.text.x=element_blank())+
-    scale_x_discrete(labels = threeemptystrings)
-  
-  #12
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", tibialiscolumn)]
-  tibialissevenplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, c("a", "a", "a"))+
-    theme(axis.text.x=element_blank())+
+  tibialissevenplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, c("a", "a", "a")) +
     scale_x_discrete(labels = conditionsVDC)
-  
-  
   
   return(grid.arrange(levatoroneplot, levatorthreeplot, levatorsevenplot,
                       quadricepsoneplot, quadricepsthreeplot, quadricepssevenplot,
