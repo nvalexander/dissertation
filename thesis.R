@@ -316,7 +316,7 @@ plotbodyweightcourse <- function(){
 
 plotbodyweightsatsacrifice <- function(){
   ylabel <- "body weight (g) "
-  ylimit <- c(0, 27)
+  ylimit <- c(0, 30)
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   leftplot <- threecolumnplot(shortdf, paste0(ylabel, "after one day"), ylimit, c("a", "a", "a"))
@@ -348,7 +348,7 @@ plotleanfat <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  topleftplot <- threecolumnplot(shortdf, paste0(leanlabel, " after one day"), leanylim, c("lol","lol", "lol2"))
+  topleftplot <- threecolumnplot(shortdf, paste0(leanlabel, " after one day"), leanylim, c("a", "a", "a"))
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
@@ -362,7 +362,7 @@ plotleanfat <- function(){
 
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", fatcolumn)]
-  midleftplot <- threecolumnplot(shortdf, paste0(fatlabel, " after one days"), fatylim, threeemptystrings)
+  midleftplot <- threecolumnplot(shortdf, paste0(fatlabel, " after one days"), fatylim, c("a", "a", "a"))
   
   #5
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", fatcolumn)]
@@ -375,7 +375,7 @@ plotleanfat <- function(){
   #7
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  bottomleftplot <- threecolumnplot(shortdf, paste0(waterlabel, " after one days"), waterylim, threeemptystrings)
+  bottomleftplot <- threecolumnplot(shortdf, paste0(waterlabel, " after one days"), waterylim, c("a", "a", "a"))
   
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
@@ -408,10 +408,10 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings, statsbel
                  show_guide = FALSE) +
     stat_summary(geom = "text", 
                  size = textSize * .4,
-                 aes(family = "serif"),
+                 aes(family = "Liberation Sans Narrow"),
                  fun.y = statstringyposition, 
                  hjust = .5,
-                 vjust = -1,
+                 vjust = -.8,
                  label = statstrings) +
     ylab(ylabel) +
     scale_x_discrete(labels = conditionsVDC) +

@@ -13381,6 +13381,15 @@ plotbodyweightsatsacrifice()
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Body weight at sacrifice, following Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
 Body weight at sacrifice, following 
 \begin_inset ERT
 status open
@@ -13436,6 +13445,8 @@ day}
 \end_inset
 
  Testo treatments.
+ Treatments designated by the same letter do not differ significantly from
+ each other.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Body-weight-at"
@@ -13520,8 +13531,7 @@ er.7.days..g., na.rm = TRUE) / 7)
 
 \begin_layout Standard
 To factor out variability between animals at experiment start, changes in
- body and body component weights were analyzed after normalization to initial
- body weight (Fig.
+ body weight were analyzed after normalization to initial body weight (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
