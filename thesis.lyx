@@ -11582,34 +11582,7 @@ Methods
 \end_layout
 
 \begin_layout Section
-Literature review
-\end_layout
-
-\begin_layout Standard
-The introduction section was based on review of all literature indexed by
- PubMed.
- Search expressions included `testosterone OR androgens`, `dexamethasone
- OR betamethasone OR triamcinolone OR prednisone OR prednisolone OR hydrocortiso
-ne OR cortisone OR triamcinolone OR fludrocortisone`, `Cushing`, `ribosome
- OR polysome OR lysosome OR autophagosome OR proteasome OR ligase OR cathepsin
- OR FOXO OR IGF1 OR calpain OR mTOR OR AMPK OR Akt`and combinations thereof.
- Relevant primary data were summarized.
-\end_layout
-
-\begin_layout Standard
-Literature plots were digitized with WebPlotDigitizer, a web application
- created by Ankit Rohatgi
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ankitrohatgi2015webplotdigitizer"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-Ethical procedures
+Ethical considerations
 \end_layout
 
 \begin_layout Standard
@@ -13195,6 +13168,33 @@ description "analysis of variance"
  to 0.05.
 \end_layout
 
+\begin_layout Section
+Literature review
+\end_layout
+
+\begin_layout Standard
+The introduction section was based on review of all literature indexed by
+ PubMed.
+ Search expressions included `testosterone OR androgens`, `dexamethasone
+ OR betamethasone OR triamcinolone OR prednisone OR prednisolone OR hydrocortiso
+ne OR cortisone OR triamcinolone OR fludrocortisone`, `Cushing`, `ribosome
+ OR polysome OR lysosome OR autophagosome OR proteasome OR ligase OR cathepsin
+ OR FOXO OR IGF1 OR calpain OR mTOR OR AMPK OR Akt`and combinations thereof.
+ Relevant primary data were summarized.
+\end_layout
+
+\begin_layout Standard
+Literature plots were digitized with WebPlotDigitizer, a web application
+ created by Ankit Rohatgi
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ankitrohatgi2015webplotdigitizer"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \paragraph_spacing single
 \begin_inset Newpage pagebreak
@@ -13208,7 +13208,7 @@ In vivo experiments
 \end_layout
 
 \begin_layout Section
-Dexa induces muscle atrophy reversible by AAS co-administration
+Testosterone reverses dexamethasone-induced muscle atrophy
 \end_layout
 
 \begin_layout Standard
@@ -14507,7 +14507,12 @@ reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_inset
 
 .
- 
+ Because tibialis is not manifesting GAML at macroscopic level, molecular
+ analysis will not include it.
+\end_layout
+
+\begin_layout Standard
+Dexa induces the 
 \begin_inset Newpage pagebreak
 \end_inset
 
