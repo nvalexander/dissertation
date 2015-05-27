@@ -14480,7 +14480,33 @@ reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 
 ).
  A similar trend indicating Testo's inability to rescue tibialis mass is
- also present in the three-day data .
+ also present in the three-day data (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetthreedays, treatment == "D")$tibialis..mg.,
+ na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment == "C")$tibiali
+s..mg., na.rm = TRUE)) / mean(subset(invivodatasubsetthreedays, treatment ==
+ "D")$tibialis..mg., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+ loss; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$tibialis..mg., invivodatasubsetthreedays$t
+reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+.
  
 \begin_inset Newpage pagebreak
 \end_inset
