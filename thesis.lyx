@@ -13365,7 +13365,7 @@ echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
 
 \begin_layout Plain Layout
 
-plotbodyweights()
+plotbodyweightsatsacrifice()
 \end_layout
 
 \begin_layout Plain Layout

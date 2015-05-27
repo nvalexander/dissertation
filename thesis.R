@@ -313,7 +313,7 @@ plotbodyweightcourse <- function(){
                        ncol=1)  )
 }
 
-plotbodyweights <- function(){
+plotbodyweightsatsacrifice <- function(){
   ylabel <- "body weight (g) "
   ylimit <- c(0, 27)
   
