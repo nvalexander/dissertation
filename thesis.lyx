@@ -14113,7 +14113,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "7n", fig.width = 6, fig.height = 7,dev='cairo_pdf'
+ = "7in", fig.width = 6, fig.height = 7,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -14177,8 +14177,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetonedays$gastrocnemius..g., invivodatasubsetonedays$t
-reatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(invivodatasubsetonedays$gastrocnemius..mg., invivodatasubsetonedays$
+treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -14189,8 +14189,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$triceps..g., invivodatasubsetsevendays$tre
-atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(invivodatasubsetsevendays$triceps..mg., invivodatasubsetsevendays$tr
+eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -14201,8 +14201,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$quadriceps..g., invivodatasubsetsevendays$
-treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(invivodatasubsetsevendays$quadriceps..mg., invivodatasubsetsevendays
+$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -14215,10 +14215,10 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$quadriceps..g.,
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$quadriceps..mg.,
  na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$quadric
-eps..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
- "V")$quadriceps..g., na.rm = TRUE))
+eps..mg., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
+ == "V")$quadriceps..mg., na.rm = TRUE))
 \end_layout
 
 \end_inset
@@ -14229,10 +14229,10 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$triceps..g.,
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$triceps..mg.,
  na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$triceps..
-g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment == "V")$tric
-eps..g., na.rm = TRUE))
+mg., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
+ "V")$triceps..mg., na.rm = TRUE))
 \end_layout
 
 \end_inset
@@ -14244,9 +14244,9 @@ status open
 \begin_layout Plain Layout
 
 sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$gastrocnemius..
-g., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$gastr
-ocnemius..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
- == "V")$gastrocnemius..g., na.rm = TRUE))
+mg., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$gast
+rocnemius..mg., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
+ == "V")$gastrocnemius..mg., na.rm = TRUE))
 \end_layout
 
 \end_inset
@@ -14257,10 +14257,10 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$tibialis..g.,
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$tibialis..mg.,
  na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$tibiali
-s..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
- "V")$tibialis..g., na.rm = TRUE))
+s..mg., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
+ "V")$tibialis..mg., na.rm = TRUE))
 \end_layout
 
 \end_inset
@@ -14345,8 +14345,8 @@ name "fig:Effects-of-Dexa"
 \end_layout
 
 \begin_layout Standard
-Four out of five muscles measured were partly restored to their basal weight
- upon Testo co-administration (Fig.
+Upon Testo co-administration, four out of five muscles measured were exhibited
+ a trend towards restoration to their basal weight (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -14355,17 +14355,17 @@ reference "fig:Effects-of-Dexa"
 \end_inset
 
 ).
- In a hierarchy of response amplitude to Testo co-administration, quadriceps
- (
+ The amplitude of restorative response to Testo co-administration was strongest
+ in quadriceps (
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$quadriceps..g.,
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$quadriceps..mg.,
  na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$quadric
-eps..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
- "D")$quadriceps..g., na.rm = TRUE))
+eps..mg., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$quadriceps..mg., na.rm = TRUE))
 \end_layout
 
 \end_inset
@@ -14376,22 +14376,22 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$quadriceps..g., invivodatasubsetsevendays$
-treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+sig3( dunn.test(invivodatasubsetsevendays$quadriceps..mg., invivodatasubsetsevendays
+$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \end_inset
 
-), levator (
+), followed by levator (
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$levator..ge.,
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$levator..mg.,
  na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$levator..
-g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment == "D")$leva
-tor..g., na.rm = TRUE))
+mg., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
+ "D")$levator..mg., na.rm = TRUE))
 \end_layout
 
 \end_inset
@@ -14402,8 +14402,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$levator..g., invivodatasubsetsevendays$tre
-atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+sig3( dunn.test(invivodatasubsetsevendays$levator..mg., invivodatasubsetsevendays$tr
+eatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \end_inset
@@ -14415,9 +14415,9 @@ status open
 \begin_layout Plain Layout
 
 sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "C")$gastrocnemius..
-g., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$gastr
-ocnemius..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
- == "D")$gastrocnemius..g., na.rm = TRUE))
+mg., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$gast
+rocnemius..mg., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$gastrocnemius..mg., na.rm = TRUE))
 \end_layout
 
 \end_inset
@@ -14428,8 +14428,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$gastrocnemius..g., invivodatasubsetsevenda
-ys$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+sig3( dunn.test(invivodatasubsetsevendays$gastrocnemius..mg., invivodatasubsetsevend
+ays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \end_inset
@@ -14441,10 +14441,10 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "D")$tibialis..g.,
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "D")$tibialis..mg.,
  na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "C")$tibiali
-s..g., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
- "D")$tibialis..g., na.rm = TRUE))
+s..mg., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
+ "D")$tibialis..mg., na.rm = TRUE))
 \end_layout
 
 \end_inset
