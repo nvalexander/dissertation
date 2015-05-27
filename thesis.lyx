@@ -13466,8 +13466,11 @@ reference "fig:Body-weight-at"
 \end_inset
 
 , right).
- The three treatments (vehicle, Dexa, or the combination Dexa + Testo) were
- significantly different (Kruskal-Wallis p = 
+ There was no difference between groups in terms of absolute weight, due
+ to to the large variability of the initial body weight.
+ The difference became apparent when percent change in body weight was compared.
+ In this case, the three treatments (vehicle, Dexa, or the combination Dexa
+ + Testo) were significantly different (Kruskal-Wallis p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -13499,9 +13502,24 @@ er.7.days..g., na.rm = TRUE) / 7)
  as well as in other published studies on young rodents.
  A sizable contribution to this growth was brought by the 200 uL vehicle
  injected every day.
- Once this artifact is taken into account, it becomes apparent that Dexa
- leads to actual loss of body weight, compared to vehicle alone.
- Seven-day weight gain in Dexa-treated group (
+ Once this artifact is taken into account, the fact that Dexa appeared to
+ gain 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( mean(subset(invivodatasubsetsevendays, treatment == "D")$body.weight.gain.aft
+er.7.days..g., na.rm = TRUE) / 7)
+\end_layout
+
+\end_inset
+
+ grams per day becomes indicative of an actual massive loss of body weight.
+\end_layout
+
+\begin_layout Standard
+Seven-day weight gain in Dexa-treated group (
 \begin_inset Flex S/R expression
 status open
 
@@ -13662,6 +13680,13 @@ Time course of body weight Dexa and / or Testo treatments.
  (p <0.05).
  Daggers indicate statistically significant differences between Dexa and
  Comb (p <0.05).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Time-course-of"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -13675,8 +13700,15 @@ Time course of body weight Dexa and / or Testo treatments.
 \end_layout
 
 \begin_layout Standard
-Body weight changes were rapid, becoming apparent in the first day (Kruskal-Wall
-is p = 
+Body weight changes exhibited a rapid onset (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Time-course-of"
+
+\end_inset
+
+; Kruskal-Wallis for first day percent change in body weight, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -13713,8 +13745,8 @@ r.1.days..percent.))
 
 \end_inset
 
- per cent in body weight, due to to the significant mass of non-resorbable
- corn oil.
+ per cent in body weight in the 24 hours, due to to the significant mass
+ of non-resorbable corn oil.
  In contrast, mice receiving Dexa lost 
 \begin_inset Flex S/R expression
 status open
@@ -13753,8 +13785,8 @@ eways]])
 \end_inset
 
 ).
- In contrast, mice receiving a combination of Dexa and Testo were essentially
- indistinguishable from those receiving vehicle alone, having gained 
+ Mice receiving a combination of Dexa and Testo were essentially indistinguishab
+le from those receiving vehicle alone, having gained 
 \begin_inset Flex S/R expression
 status open
 
@@ -13802,8 +13834,24 @@ Based on the whole time course, I hypothesized that body weight changes
  and molecular changes preceding the seven-day end of experiment.
  Accordingly, I repeated the above experiment on different cohorts of mice,
  which were sacrificed after only 1 or 3 days of treatment.
- Accordingly, absolute and relative changes in body weight for these groups
- of mice were less ample than those seen with 7 days of treatment.
+ Absolute and relative changes in body weight for these groups of mice were
+ less ample than those seen with 7 days of treatment (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Body-weight-at"
+
+\end_inset
+
+, left and middle; Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Time-course-of"
+
+\end_inset
+
+, bottom).
  
 \begin_inset Newpage pagebreak
 \end_inset
