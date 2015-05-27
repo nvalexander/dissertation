@@ -331,15 +331,18 @@ plotbodyweightsatsacrifice <- function(){
 
 
 plotleanfat <- function(){
-  leancolumn <- "lean.mass.gain..percent.of.BW."
-  fatcolumn <- "fat.mass.gain..percent.of.BW."
-  watercolumn <- "total.water.mass.gain..percent.of.BW."
-  leanlabel <- "lean mass gain (g)"
-  fatlabel <- "fat mass gain (g)"
-  waterlabel <- "water mass gain (g)"
-  leanylim <- c(-4, 1)
+#   leancolumn <- "lean.mass.gain..percent.of.BW."
+#   fatcolumn <- "fat.mass.gain..percent.of.BW."
+#   watercolumn <- "total.water.gain..percent.of.BW."
+  leancolumn <- "lean.mass.gain..g."
+  fatcolumn <- "fat.mass.gain..g."
+  watercolumn <- "total.water.gain..g."
+  leanlabel <- "lean mass gain (g)\n"
+  fatlabel <- "fat mass gain (g)\n"
+  waterlabel <- "water mass gain (g)\n"
+  leanylim <- c(-4, 0)
   fatylim <- c(0, 4)
-  waterylim <- c(-4, 2)
+  waterylim <- c(-4, 0)
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
