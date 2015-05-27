@@ -125,7 +125,7 @@ CI95 <- function(x) {
 }
 
 sig3 <- function(x) {
-  return(signif(x, digits = 3))
+  return(format(x, digits = 3))
 }
 
 semInterval <- function(x) {
