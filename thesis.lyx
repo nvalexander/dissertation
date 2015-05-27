@@ -13902,7 +13902,7 @@ reference "fig:Changes-in-water,"
 
 \end_inset
 
-; Kruskal-Wallis for seven day mass of water lost, p = 
+, top; Kruskal-Wallis for seven day mass of water lost, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -13918,7 +13918,77 @@ alue)
  This uniform loss of water negates a scenario in which the observations
  could be ascribed to increased water retention due to non-specific action
  of either steroid with MR.
- The 
+ Fat mass analysis indicated that in the vehicle-alone treated group, the
+ rate of apparent fat gain was essentially equal with the mass of injected
+ vehicle accrued over the seven days.
+ This demonstrates that experiments manipulations, in the absence of pharmacolog
+ical treatments, have no effect on lipid metabolism.
+ Dexa-treated groups accrued more fat (Dunn's test, vehicle vs.
+ Dexa, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$fat.mass.gain..g., invivodatasubsetsevendays
+$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+; Dunn's test, vehicle vs.
+ combination, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$fat.mass.gain..g., invivodatasubsetsevendays
+$treatment, method = "bonferroni")$P.adjusted[[VvsCthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ Testo co-administration had little effect on lipid metabolism(Dunn's test,
+ Dexa vs.
+ combination, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$fat.mass.gain..g., invivodatasubsetsevendays
+$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Even ampler changes were induced by the two drugs on lean body mass (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Changes-in-water,"
+
+\end_inset
+
+, bottom; Kruskal-Wallis for seven day lost lean mass , p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+signif(kruskal.test(lean.mass.gain..g.~treatment, data = invivodatasubsetsevendays)$p.v
+alue, digits = 2)
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
