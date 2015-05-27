@@ -393,10 +393,11 @@ plotleanfat <- function(){
   shortdf[,2] <- shortdf[, 2] * (-1)
   bottomrightplot <- threecolumnplot(shortdf, paste0(waterlabel, " after seven days"), waterylim, c("a", "a", "a"))
 
-  return(grid.arrange(topleftplot, topmidplot, toprightplot, 
-                      midleftplot, midmidplot, midrightplot,
-                      bottomleftplot, bottommidplot, bottomrightplot, 
-                      ncol=3))
+  return(grid.arrange(
+    bottomleftplot, bottommidplot, bottomrightplot,
+    midleftplot, midmidplot, midrightplot,
+    topleftplot, topmidplot, toprightplot, 
+    ncol=3))
 }
 
 threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings, statsbelow){ 

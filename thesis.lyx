@@ -13895,7 +13895,14 @@ Body composition analysis indicated that all animals included in these experimen
 ts progressively lost total water.
  There was no difference between water loss in the three experimental groups
  (Fig.
- ; Kruskal-Wallis for seven day mass of water lost, p = 
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Changes-in-water,"
+
+\end_inset
+
+; Kruskal-Wallis for seven day mass of water lost, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -13908,6 +13915,10 @@ alue)
 \end_inset
 
 ).
+ This uniform loss of water negates a scenario in which the observations
+ could be ascribed to increased water retention due to non-specific action
+ of either steroid with MR.
+ The 
 \end_layout
 
 \begin_layout Standard
@@ -13954,6 +13965,13 @@ plotleanfat()
 
 \begin_layout Plain Layout
 Changes in water, lean, and fat body mass, after Dexa and / or Testo treatments.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Changes-in-water,"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
