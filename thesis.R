@@ -224,6 +224,7 @@ plotbodyweightcourse <- function(){
                  width = 0.2,
                  show_guide = FALSE,
                  position=position_dodge(.05)) +
+    geom_text(aes(label = c('test')), hjust = 0, just = 0)+
     coord_cartesian(ylim = c(-7, 10)) + 
     ylab("body weight gain (% of pre-treatment)") +
     scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
