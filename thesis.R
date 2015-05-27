@@ -322,17 +322,17 @@ plotbodyweightcourse <- function(){
 
 plotbodyweightsatsacrifice <- function(){
   ylabel <- "body weight (g) "
-  ylimit <- c(0, 30)
+  ylimit <- c(0, 35)
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   leftplot <- threecolumnplot(shortdf, ylabel, ylimit, c("a", "b", "a,b")) + 
-    geom_text(aes(3.5, 29, 
-                  label="one day",
-                  show_guide = FALSE, 
+    geom_text(aes(3.5, 35, 
+                  label="one day", 
                   vjust = 1, 
                   hjust = 1,
-                  size = textSize * .5,
-                  family = "Liberation Sans Narrow")) +
+                  family = "Liberation Sans Narrow",
+                  show_guide = FALSE),
+              size = textSize * .4) +
     stat_summary(fun.y = mean, 
                  geom = "bar", 
                  colour = "black",
@@ -343,12 +343,24 @@ plotbodyweightsatsacrifice <- function(){
 
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
-  midplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a,b", "a", "b"))+ 
-    geom_text(aes(3.5, 29, label="three days", show_guide = FALSE, vjust = 1, hjust = 1))
+  midplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a,b", "a", "b")) + 
+    geom_text(aes(3.5, 35, 
+                  label="three day", 
+                  vjust = 1, 
+                  hjust = 1,
+                  family = "Liberation Sans Narrow",
+                  show_guide = FALSE),
+              size = textSize * .4)
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
-  rightplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a", "a", "a"))+ 
-    geom_text(aes(3.5, 29, label="seven days", show_guide = FALSE, vjust = 1, hjust = 1))
+  rightplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a", "a", "a")) + 
+    geom_text(aes(3.5, 35, 
+                  label="seven day", 
+                  vjust = 1, 
+                  hjust = 1,
+                  family = "Liberation Sans Narrow",
+                  show_guide = FALSE),
+              size = textSize * .4)
   
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
 }
