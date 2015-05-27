@@ -40,6 +40,7 @@ conditionsVDC <- c("Veh", "Dexa", "Comb")
 conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
 unistar <- sprintf('\u2736')
 unidagger <- sprintf('\u2020')
+threeemptystrings <- c("", "", "")
 
 datadir <- normalizePath(file.path(codedirpath, "data"))
 invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
@@ -318,13 +319,13 @@ plotbodyweightsatsacrifice <- function(){
   ylimit <- c(0, 27)
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
-  leftplot <- threecolumnplot(shortdf, paste0(ylabel, "after one day"), ylimit)
+  leftplot <- threecolumnplot(shortdf, paste0(ylabel, "after one day"), ylimit, threeemptystrings)
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
-  midplot <-  threecolumnplot(shortdf, paste0(ylabel, "after three day"), ylimit)
+  midplot <-  threecolumnplot(shortdf, paste0(ylabel, "after three day"), ylimit, threeemptystrings)
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
-  rightplot <-  threecolumnplot(shortdf, paste0(ylabel, "after seven day"), ylimit)
+  rightplot <-  threecolumnplot(shortdf, paste0(ylabel, "after seven day"), ylimit, threeemptystrings)
   
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
 }
@@ -386,7 +387,7 @@ plotleanfat <- function(){
                       ncol=3))
 }
 
-threecolumnplot <- function(skinnydataset, ylabel, ylimit){ 
+threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){ 
   return(ggplot(skinnydataset) +
     aes_string( x = colnames(skinnydataset)[1], 
                 y = colnames(skinnydataset)[2], 
@@ -399,6 +400,13 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit){
                  fun.data = 'semInterval',
                  width = 0.1,
                  show_guide = FALSE) +
+    stat_summary(geom = "text", 
+                 size = textSize * .4,
+                 aes(family = "serif"),
+                 fun.y = belowSEM, 
+                 hjust = -.2,
+                 vjust = .25,
+                 label = statstrings) +
     ylab(ylabel) +
     scale_x_discrete(labels = conditionsVDC) +
     coord_cartesian(ylim = ylimit) + 
