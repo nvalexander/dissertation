@@ -14173,6 +14173,8 @@ reference "fig:Effects-of-Dexa"
 \end_inset
 
 ).
+ Before analysis, muscle wet mass was normalized to the animal's body weight.
+ This normalization did not change the nature of the findings.
  Despite the small sample size (n=5-6), the atrophying effect of Dexa became
  apparent on gastrocnemia starting with day 1 (Dunn's test, p = 
 \begin_inset Flex S/R expression
@@ -14275,8 +14277,90 @@ lle., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "8.5in", fig.width = 6, fig.height = 8.5,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotmuscleweights()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Effects of Dexa and / or Testo treatments on individual muscle weights (normaliz
+ed to body weight).
+\end_layout
+
+\end_inset
+
+Effects of Dexa and / or Testo treatments on the wet weight of levator ani,
+ quadriceps, gastrocnemius, triceps brachii, and tibialis anterior muscles.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Effects-of-Dexa"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Four out of five muscles measured were partly restored to their basal weight
- upon Testo co-administration.
+ upon Testo co-administration (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Effects-of-Dexa"
+
+\end_inset
+
+).
  In a hierarchy of response amplitude to Testo co-administration, quadriceps
  (
 \begin_inset Flex S/R expression
@@ -14372,80 +14456,6 @@ lle., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
 \end_inset
 
 % further loss in percentage of body weight.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Flex Chunk
-status open
-
-\begin_layout Plain Layout
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "8.5in", fig.width = 6, fig.height = 8.5,dev='cairo_pdf'
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-plotmuscleweights()
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Effects of Dexa and / or Testo treatments on individual muscle weights (normaliz
-ed to body weight).
-\end_layout
-
-\end_inset
-
-Effects of Dexa and / or Testo treatments on the wet weight of levator ani,
- quadriceps, gastrocnemius, triceps brachii, and tibialis anterior muscles.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Effects-of-Dexa"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset Newpage pagebreak
 \end_inset
 
