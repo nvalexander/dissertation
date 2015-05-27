@@ -375,10 +375,11 @@ plotbodyweights <- function(){
 
 
 plotleanfatbody <- function(){
-  leancolumn <- "lean.mass.gain..percent."
-  fatcolumn <- "lean.mass.gain..percent."
-  leanlabel <- "lean mass gain (%)"
-  fatlabel <- "lean mass gain (%)"
+  leancolumn <- "lean.mass.gain..g."
+  fatcolumn <- "fat.mass.gain..g."
+  leanlabel <- "lean mass gain (g)"
+  fatlabel <- "fat mass gain (g)"
+  fatylim <- c(-4, 1)
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
   topleftplot <- ggplot(shortdf) +
@@ -393,9 +394,9 @@ plotleanfatbody <- function(){
                  fun.data = 'semInterval',
                  width = 0.1,
                  show_guide = FALSE) +
-    ylab(paste0(leanlabel, "after one day")) +
+    ylab(paste0(leanlabel, " after one day")) +
     scale_x_discrete(labels = conditionsVDC) +
-#    coord_cartesian(ylim = c(0, 27)) + 
+    coord_cartesian(ylim = c(-8, 3)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
@@ -413,6 +414,7 @@ plotleanfatbody <- function(){
                  width = 0.1) +
     ylab(paste0(leanlabel, " after three days")) +
     scale_x_discrete(labels = conditionsVDC) +
+    coord_cartesian(ylim = c(-8, 3)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
@@ -431,6 +433,7 @@ plotleanfatbody <- function(){
                  show_guide = FALSE) +
     ylab(paste0(leanlabel, " after seven days")) +
     scale_x_discrete(labels = conditionsVDC) +
+    coord_cartesian(ylim = c(-8, 3)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
 
@@ -447,9 +450,9 @@ plotleanfatbody <- function(){
                  fun.data = 'semInterval',
                  width = 0.1,
                  show_guide = FALSE) +
-    ylab(paste0(fatlabel, "after one day")) +
+    ylab(paste0(fatlabel, " after one day")) +
     scale_x_discrete(labels = conditionsVDC) +
-    #    coord_cartesian(ylim = c(0, 27)) + 
+    coord_cartesian(ylim = c(0, 60)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
@@ -467,6 +470,7 @@ plotleanfatbody <- function(){
                  width = 0.1) +
     ylab(paste0(fatlabel, " after three days")) +
     scale_x_discrete(labels = conditionsVDC) +
+    coord_cartesian(ylim = c(0, 60)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
@@ -485,6 +489,7 @@ plotleanfatbody <- function(){
                  show_guide = FALSE) +
     ylab(paste0(fatlabel, " after seven days")) +
     scale_x_discrete(labels = conditionsVDC) +
+    coord_cartesian(ylim = c(0, 60)) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
 
