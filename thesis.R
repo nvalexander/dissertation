@@ -209,13 +209,13 @@ plotbodyweightcourse <- function(){
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", timeseriescolumns)]
   body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
   statsstars <- c("", "", "",
-                  "", unistar,"",
-                  "", unidagger,"",
                   "", paste0(unidagger, unistar),"",
-                  "", "*+","",
-                  "", "a,b","",
-                  "", "X+","",
-                  "", "*+","")
+                  "", unidagger,"",
+                  "", unidagger,"",
+                  "", unidagger,"",
+                  "", unidagger,"",
+                  "", unidagger,"",
+                  "", paste0(unidagger, unistar),"")
   shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
   shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
   colnames(shortdf)[2] <- "day"
