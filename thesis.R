@@ -475,30 +475,29 @@ plotmuscleweights <- function(){
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", levatorcolumn)]
   levatoroneplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
     theme(axis.text.x=element_blank()) +
-    ggtitle("one day")
+    annotate(geom = "text", x = 2, y = levatorylim[[2]], label = "one day", vjust = 1, hjust = 0.5,  size = .4* textSize)
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", levatorcolumn)]
   levatorthreeplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
-    theme(axis.text.x=element_blank()) +
-    ggtitle("three days") +
-    annotate(geom = "text", x=6, y=0.9, label="this is a wrong color")
+    theme(axis.text.x = element_blank()) +
+    annotate(geom = "text", x = 2, y = levatorylim[[2]], label = "three days", vjust = 1, hjust = 0.5,  size = .5* textSize)
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", levatorcolumn)]
   levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "b", "a,b")) +
-    theme(axis.text.x=element_blank()) +
-    labs(title="seven days")
+    theme(axis.text.x = element_blank()) +
+    annotate(geom = "text", x = 2, y = levatorylim[[2]], label = "seven days", vjust = 1, hjust = 0.5,  size = .6* textSize)
   
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]
   quadricepsoneplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, c("a", "a", "a")) +
-    theme(axis.text.x=element_blank())
+    theme(axis.text.x = element_blank())
   
   #5
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", quadricepscolumn)]
   quadricepsthreeplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, c("a", "a", "a")) +
-    theme(axis.text.x=element_blank())
+    theme(axis.text.x = element_blank())
   
   #6
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", quadricepscolumn)]
