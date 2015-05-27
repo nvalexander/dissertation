@@ -98,6 +98,9 @@ stdbarplot <-
   theme_bw() +
   theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
         panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank(),
         panel.border = element_blank(),
         panel.background = element_blank(),
         axis.line = element_line(color = "black"),
@@ -325,19 +328,28 @@ plotbodyweightsatsacrifice <- function(){
   ylimit <- c(0, 32)
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
-  leftplot <- threecolumnplot(shortdf, ylabel, ylimit, c("a", "b", "a,b")) + 
-    ggtitle("one day") +
+  leftplot <- threecolumnplot(shortdf, ylabel, ylimit, c("a", "b", "a,b")) +
+    annotate(geom = "text", label = "one day", x = 2, y = 32,
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow") +
     scale_x_discrete(labels = conditionsVDC) 
 
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
   midplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a,b", "a", "b")) + 
-    ggtitle("three days") +
+    annotate(geom = "text", label = "three days", x = 2, y = 32,
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow") +
     scale_x_discrete(labels = threeemptystrings)
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
   rightplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a", "a", "a")) + 
-    ggtitle("seven days") +
+    annotate(geom = "text", label = "seven days", x = 2, y = 32,
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow") +
     scale_x_discrete(labels = threeemptystrings)
   
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
@@ -392,21 +404,30 @@ plotleanfat <- function(){
   shortdf[,2] <- shortdf[, 2] * (-1)
   wateroneplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a")) +
     theme(axis.text.x = element_blank()) +
-    ggtitle("one day")
+    annotate(geom = "text", label = "one day", x = 2, y = waterylim[[2]],
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow")
   
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   waterthreeplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a"))+
     theme(axis.text.x = element_blank()) +
-    ggtitle("three days")
+    annotate(geom = "text", label = "three days", x = 2, y = waterylim[[2]],
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow")
   
   #9
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   watersevenplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a")) +
     theme(axis.text.x = element_blank()) +
-    ggtitle("seven days")
+    annotate(geom = "text", label = "seven days", x = 2, y = waterylim[[2]],
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow")
 
   return(grid.arrange(
     wateroneplot, waterthreeplot, watersevenplot,
