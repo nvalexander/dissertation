@@ -475,19 +475,28 @@ plotmuscleweights <- function(){
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", levatorcolumn)]
   levatoroneplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
     theme(axis.text.x=element_blank()) +
-    annotate(geom = "text", x = 2, y = levatorylim[[2]], label = "one day", vjust = 1, hjust = 0.5,  size = .4* textSize)
+    annotate(geom = "text", label = "one day", x = 2, y = levatorylim[[2]], 
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow")
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", levatorcolumn)]
   levatorthreeplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
     theme(axis.text.x = element_blank()) +
-    annotate(geom = "text", x = 2, y = levatorylim[[2]], label = "three days", vjust = 1, hjust = 0.5,  size = .5* textSize)
+    annotate(geom = "text", label = "three days", x = 2, y = levatorylim[[2]], 
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow")
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", levatorcolumn)]
   levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "b", "a,b")) +
     theme(axis.text.x = element_blank()) +
-    annotate(geom = "text", x = 2, y = levatorylim[[2]], label = "seven days", vjust = 1, hjust = 0.5,  size = .6* textSize)
+    annotate(geom = "text", label = "seven days", x = 2, y = levatorylim[[2]],
+             vjust = 1, hjust = 0.5,  
+             size = .45 * textSize, 
+             family = "Liberation Sans Narrow")
   
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]
