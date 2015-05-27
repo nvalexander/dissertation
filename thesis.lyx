@@ -14449,7 +14449,10 @@ ays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_inset
 
 ) appear the most responsive.
- In opposition, tibialis response to Testo co-administration is a 
+\end_layout
+
+\begin_layout Standard
+Testo co-administration led to an additional 
 \begin_inset Flex S/R expression
 status open
 
@@ -14463,7 +14466,19 @@ s..mg., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment ==
 
 \end_inset
 
-% further loss in muscleweight.
+% loss in muscle weight at seventh day (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$tibialis..mg., invivodatasubsetsevendays$t
+reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+).
  A similar trend indicating Testo's inability to rescue tibialis mass is
  also present in the three-day data .
  

@@ -465,11 +465,11 @@ plotmuscleweights <- function(){
   tricepslabel <- paste0("triceps br. (g)")
   tibialislabel <- paste0("tibialis ant. (g)")
   
-  levatorylim <- c(0, 80)
-  quadricepsylim <- c(0, 200)
-  gastrocnemiusylim <- c(0, 160)
+  levatorylim <- c(0, 100)
+  quadricepsylim <- c(0, 225)
+  gastrocnemiusylim <- c(0, 180)
   tricepsylim <- c(0, 150)
-  tibialisylim <- c(0, 80)
+  tibialisylim <- c(0, 75)
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", levatorcolumn)]
@@ -537,13 +537,11 @@ plotmuscleweights <- function(){
   #13
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", tibialiscolumn)]
   tibialisoneplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, c("a", "a", "a")) +
-    theme(axis.text.x=element_blank()) +
     scale_x_discrete(labels = threeemptystrings)
   
   #14
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", tibialiscolumn)]
   tibialisthreeplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, c("a", "a", "a")) +
-    theme(axis.text.x=element_blank()) +
     scale_x_discrete(labels = threeemptystrings)
   
   #15
