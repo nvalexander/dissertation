@@ -355,12 +355,12 @@ plotleanfat <- function(){
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  topmidplot <- threecolumnplot(shortdf, paste0(leanlabel, " after three days"), leanylim, threeemptystrings)
+  topmidplot <- threecolumnplot(shortdf, paste0(leanlabel, " after three days"), leanylim, c("a", "b", "a,b"))
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  toprightplot <- threecolumnplot(shortdf, paste0(leanlabel, " after seven days"), leanylim, threeemptystrings)
+  toprightplot <- threecolumnplot(shortdf, paste0(leanlabel, " after seven days"), leanylim, c("a", "b", "a,b"))
 
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", fatcolumn)]
@@ -368,11 +368,11 @@ plotleanfat <- function(){
   
   #5
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", fatcolumn)]
-  midmidplot <- threecolumnplot(shortdf, paste0(fatlabel, " after three days"), fatylim, threeemptystrings)
+  midmidplot <- threecolumnplot(shortdf, paste0(fatlabel, " after three days"), fatylim, c("a", "a,b", "b"))
   
   #6
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", fatcolumn)]
-  midrightplot <- threecolumnplot(shortdf, paste0(fatlabel, " after seven days"), fatylim, threeemptystrings)
+  midrightplot <- threecolumnplot(shortdf, paste0(fatlabel, " after seven days"), fatylim, c("a", "a,b", "b"))
   
   #7
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", watercolumn)]
@@ -382,12 +382,12 @@ plotleanfat <- function(){
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  bottommidplot <- threecolumnplot(shortdf, paste0(waterlabel, " after three days"), waterylim, threeemptystrings)
+  bottommidplot <- threecolumnplot(shortdf, paste0(waterlabel, " after three days"), waterylim, c("a", "a", "a"))
   
   #9
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  bottomrightplot <- threecolumnplot(shortdf, paste0(waterlabel, " after seven days"), waterylim, threeemptystrings)
+  bottomrightplot <- threecolumnplot(shortdf, paste0(waterlabel, " after seven days"), waterylim, c("a", "a", "a"))
 
   return(grid.arrange(topleftplot, topmidplot, toprightplot, 
                       midleftplot, midmidplot, midrightplot,
@@ -413,7 +413,7 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings, statsbel
                  aes(family = "Liberation Sans Narrow"),
                  fun.y = statstringyposition, 
                  hjust = .5,
-                 vjust = -.8,
+                 vjust = -.6,
                  label = statstrings) +
     ylab(ylabel) +
     scale_x_discrete(labels = conditionsVDC) +
