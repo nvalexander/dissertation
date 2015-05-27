@@ -14161,8 +14161,58 @@ name "fig:Changes-in-water,"
 
 Dissection of individual muscles confirmed that Dexa achieved widespread
  muscle atrophy.
- Despite the small sample size (n=5-6), the atrophying efect of Dexa became
- apparent on 
+ Despite the small sample size (n=5-6), the atrophying effect of Dexa became
+ apparent on gastrocnemia starting with day 1 (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetonedays$gastrocnemius..permille., invivodatasubsetse
+vendays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and on triceps 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$triceps..permille., invivodatasubsetsevend
+ays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+) and quadriceps 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$quadriceps..permille., invivodatasubsetsev
+endays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+) at day 7.
+ Moreover, for each muscle and time point, the average muscle weight in
+ the Dexa group was smaller than the average weight of the controls (Fig,
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Effects-of-Dexa"
+
+\end_inset
+
+).
+ Similarly, four out of five muscles measured were partly restored to their
+ basal weight upon Testo co-administration.
+ In a hierarchy of response amplitude, gastrocnemius is the most responsive
+ to both drugs, whereas effect on tibialis are marginal.
 \end_layout
 
 \begin_layout Standard
@@ -14218,8 +14268,15 @@ ed to body weight).
 
 \end_inset
 
-Efects of Dexa and / or Testo treatments on the wet weight of levator ani,
+Effects of Dexa and / or Testo treatments on the wet weight of levator ani,
  quadriceps, gastrocnemius, triceps brachii, and tibialis anterior muscles.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Effects-of-Dexa"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
