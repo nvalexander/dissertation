@@ -377,10 +377,14 @@ plotbodyweights <- function(){
 plotleanfatbody <- function(){
   leancolumn <- "lean.mass.gain..g."
   fatcolumn <- "fat.mass.gain..g."
+  watercolumn <- "total.water.before..g."
   leanlabel <- "lean mass gain (g)"
   fatlabel <- "fat mass gain (g)"
-  fatylim <- c(-4, 1)
+  waterlabel <- "water mass gain (g)"
+  leanylim <- c(-4, 1)
+  fatylim <- c(0, 4)
   
+  #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
   topleftplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
@@ -396,10 +400,11 @@ plotleanfatbody <- function(){
                  show_guide = FALSE) +
     ylab(paste0(leanlabel, " after one day")) +
     scale_x_discrete(labels = conditionsVDC) +
-    coord_cartesian(ylim = c(-8, 3)) + 
+    coord_cartesian(ylim = leanylim) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
+  #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
   topmidplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
@@ -414,10 +419,11 @@ plotleanfatbody <- function(){
                  width = 0.1) +
     ylab(paste0(leanlabel, " after three days")) +
     scale_x_discrete(labels = conditionsVDC) +
-    coord_cartesian(ylim = c(-8, 3)) + 
+    coord_cartesian(ylim = leanylim) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
+  #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", leancolumn)]
   toprightplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
@@ -433,12 +439,13 @@ plotleanfatbody <- function(){
                  show_guide = FALSE) +
     ylab(paste0(leanlabel, " after seven days")) +
     scale_x_discrete(labels = conditionsVDC) +
-    coord_cartesian(ylim = c(-8, 3)) + 
+    coord_cartesian(ylim = leanylim) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
 
+  #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", fatcolumn)]
-  bottomleftplot <- ggplot(shortdf) +
+  midleftplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
                 y = colnames(shortdf)[2], 
                 fill = colnames(shortdf)[1]) +
@@ -452,12 +459,13 @@ plotleanfatbody <- function(){
                  show_guide = FALSE) +
     ylab(paste0(fatlabel, " after one day")) +
     scale_x_discrete(labels = conditionsVDC) +
-    coord_cartesian(ylim = c(0, 60)) + 
+    coord_cartesian(ylim = fatylim) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
+  #5
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", fatcolumn)]
-  bottommidplot <- ggplot(shortdf) +
+  midmidplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
                 y = colnames(shortdf)[2], 
                 fill = colnames(shortdf)[1]) +
@@ -470,12 +478,13 @@ plotleanfatbody <- function(){
                  width = 0.1) +
     ylab(paste0(fatlabel, " after three days")) +
     scale_x_discrete(labels = conditionsVDC) +
-    coord_cartesian(ylim = c(0, 60)) + 
+    coord_cartesian(ylim = fatylim) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
   
+  #6
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", fatcolumn)]
-  bottomrightplot <- ggplot(shortdf) +
+  midrightplot <- ggplot(shortdf) +
     aes_string( x = colnames(shortdf)[1], 
                 y = colnames(shortdf)[2], 
                 fill = colnames(shortdf)[1]) +
@@ -489,11 +498,71 @@ plotleanfatbody <- function(){
                  show_guide = FALSE) +
     ylab(paste0(fatlabel, " after seven days")) +
     scale_x_discrete(labels = conditionsVDC) +
-    coord_cartesian(ylim = c(0, 60)) + 
+    coord_cartesian(ylim = fatylim) + 
+    scale_fill_manual(values = greypalette) +
+    stdbarplot
+  
+  #7
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", watercolumn)]
+  bottomleftplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1,
+                 show_guide = FALSE) +
+    ylab(paste0(waterlabel, " after one day")) +
+    scale_x_discrete(labels = conditionsVDC) +
+    coord_cartesian(ylim = waterylim) + 
+    scale_fill_manual(values = greypalette) +
+    stdbarplot
+  
+  #8
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
+  bottommidplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1) +
+    ylab(paste0(waterlabel, " after three days")) +
+    scale_x_discrete(labels = conditionsVDC) +
+    coord_cartesian(ylim = waterylim) + 
+    scale_fill_manual(values = greypalette) +
+    stdbarplot
+  
+  #9
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", watercolumn)]
+  bottomrightplot <- ggplot(shortdf) +
+    aes_string( x = colnames(shortdf)[1], 
+                y = colnames(shortdf)[2], 
+                fill = colnames(shortdf)[1]) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = FALSE) +
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.1,
+                 show_guide = FALSE) +
+    ylab(paste0(waterlabel, " after seven days")) +
+    scale_x_discrete(labels = conditionsVDC) +
+    coord_cartesian(ylim = waterylim) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot
 
   return(grid.arrange(topleftplot, topmidplot, toprightplot, 
+                      midleftplot, midmidplot, midrightplot,
                       bottomleftplot, bottommidplot, bottomrightplot, 
                       ncol=3))
 }
