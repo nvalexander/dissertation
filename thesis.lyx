@@ -14159,8 +14159,20 @@ name "fig:Changes-in-water,"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 Dissection of individual muscles confirmed that Dexa achieved widespread
- muscle atrophy.
+ muscle atrophy (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Effects-of-Dexa"
+
+\end_inset
+
+).
  Despite the small sample size (n=5-6), the atrophying effect of Dexa became
  apparent on gastrocnemia starting with day 1 (Dunn's test, p = 
 \begin_inset Flex S/R expression
@@ -14168,13 +14180,13 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetonedays$gastrocnemius..permille., invivodatasubsetse
-vendays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(invivodatasubsetonedays$gastrocnemius..permille., invivodatasubseton
+edays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
 
-), and on triceps 
+), and on triceps (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -14186,7 +14198,7 @@ ays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-) and quadriceps 
+) and quadriceps (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -14199,18 +14211,72 @@ endays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ) at day 7.
- Moreover, for each muscle and time point, the average muscle weight in
- the Dexa group was smaller than the average weight of the controls (Fig,
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Effects-of-Dexa"
+ In terms of responsiveness, the five measured muscles range from extremely
+ responsive, such as quadriceps  (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$quadriceps..per
+mille., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
+ "D")$quadriceps..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays,
+ treatment == "V")$quadriceps..permille., na.rm = TRUE))
+\end_layout
 
 \end_inset
 
-).
- Similarly, four out of five muscles measured were partly restored to their
- basal weight upon Testo co-administration.
+% change in percentage of body weight), triceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$triceps..permil
+le., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$tric
+eps..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
+ == "V")$triceps..permille., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+% change in percentage of body weight) and gastrocnemius (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$gastrocnemius..
+permille., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$gastrocnemius..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetseve
+ndays, treatment == "V")$gastrocnemius..permille., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+% change in percentage of body weight), to the refractory tibialis anterior
+ (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$tibialis..permi
+lle., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
+ "D")$tibialis..permille., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays,
+ treatment == "V")$tibialis..permille., na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+% change in percentage of body weight).
+ For each muscle and time point, the average muscle weight in the Dexa group
+ was smaller than the average weight of the controls.
+\end_layout
+
+\begin_layout Standard
+Four out of five muscles measured were partly restored to their basal weight
+ upon Testo co-administration.
  In a hierarchy of response amplitude, gastrocnemius is the most responsive
  to both drugs, whereas effect on tibialis are marginal.
 \end_layout
