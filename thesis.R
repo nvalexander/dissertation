@@ -141,8 +141,8 @@ stdplottimecourse <- theme_bw() +
         axis.line = element_line(colour = "black"),
         axis.title.x = element_text( size = textSize),
         axis.title.y = element_text( size = textSize),
-        axis.text.x = element_text( size = textSize * 1 ),
-        axis.text.y = element_text( size = textSize * 1 ),
+        axis.text.x = element_text( size = textSize ),
+        axis.text.y = element_text( size = textSize ),
         legend.title = element_blank())
 
 stdbarplot <- 
@@ -157,9 +157,9 @@ stdbarplot <-
         axis.line = element_line(color = "black"),
         axis.ticks.x = element_blank(),
         axis.title.x = element_blank(),
+        axis.text.x= element_blank(),
         axis.title.y = element_text( size = textSize),
-        axis.text.x = element_text( size = textSize * 1 ),
-        axis.text.y = element_text( size = textSize * 1 ))
+        axis.text.x = element_text( size = textSize * 1 ))
 
 threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){ 
   return(ggplot(skinnydataset) +
@@ -236,11 +236,14 @@ reportstats <- function(invivodata, invivocolnames){
 
 #FIRST PLOT - body weights at sacrifice
 plotbodyweightsatsacrifice <- function(){
-  ylabel <- "body weight (g) "
+  ylabel <- "body weight (g)"
   ylimit <- c(0, 32)
+  onedaysstat <- c("a", "b", "a,b")
+  threedaysstat <- c("a,b", "a", "b")
+  sevendaysstat <- threeidenticalgroups
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
-  leftplot <- threecolumnplot(shortdf, ylabel, ylimit, c("a", "b", "a,b")) +
+  onedaysweightplot <- threecolumnplot(shortdf, ylabel, ylimit, onedaysstat) +
     annotate(geom = "text", label = "one day", x = 2, y = 32,
              vjust = 1, hjust = 0.5,  
              size = .45 * textSize, 
@@ -248,7 +251,7 @@ plotbodyweightsatsacrifice <- function(){
     scale_x_discrete(labels = conditionsVDC) 
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
-  midplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a,b", "a", "b")) + 
+  threedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, threedaysstat) + 
     annotate(geom = "text", label = "three days", x = 2, y = 32,
              vjust = 1, hjust = 0.5,  
              size = .45 * textSize, 
@@ -256,13 +259,13 @@ plotbodyweightsatsacrifice <- function(){
     scale_x_discrete(labels = threeemptystrings)
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
-  rightplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a", "a", "a")) + 
+  sevedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, sevendaysstat) + 
     annotate(geom = "text", label = "seven days", x = 2, y = 32,
              vjust = 1, hjust = 0.5,  
              size = .45 * textSize, 
              family = "Liberation Sans Narrow") +
     scale_x_discrete(labels = threeemptystrings)
-  return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
+  return(grid.arrange(onedaysweightplot, threedaysweightplot, sevedaysweightplot, ncol=3))
 }
 
 #SECOND PLOT - body weight time courses
@@ -432,8 +435,7 @@ plotleanfat <- function(){
   
   #6
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", fatcolumn)]
-  fatsevenplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatsevenstat)+
-    theme(axis.text.x=element_blank())
+  fatsevenplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatsevenstat)
   
   #7
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", watercolumn)]
