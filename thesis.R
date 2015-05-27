@@ -326,16 +326,21 @@ plotbodyweightsatsacrifice <- function(){
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   leftplot <- threecolumnplot(shortdf, ylabel, ylimit, c("a", "b", "a,b")) + 
-    geom_text(aes(2, 28, label="one day",show_guide = F)) +
-    guides(fill = guide_legend(override.aes = list(color = greypalette), shape=c(16,16,16)))
+    geom_text(aes(2, 28, label="one day", show_guide = FALSE)) +
+    stat_summary(fun.y = mean, 
+                 geom = "bar", 
+                 colour = "black",
+                 show_guide = TRUE,
+                 labels = conditionsVDC)  +
+    scale_x_discrete(labels = conditionsVDC)
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
   midplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a,b", "a", "b"))+ 
-    geom_text(aes(2, 28, label="three days",show_guide = F))
+    geom_text(aes(2, 28, label="three days", show_guide = FALSE))
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
   rightplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a", "a", "a"))+ 
-    geom_text(aes(2, 28, label="seven days",show_guide = F))
+    geom_text(aes(2, 28, label="seven days", show_guide = FALSE))
   
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
 }
@@ -419,7 +424,7 @@ plotleanfat <- function(){
     ncol=3))
 }
 
-threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings, statsbelow){ 
+threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){ 
   return(ggplot(skinnydataset) +
     aes_string( x = colnames(skinnydataset)[1], 
                 y = colnames(skinnydataset)[2], 
@@ -430,8 +435,7 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings, statsbel
                  show_guide = FALSE) +
     stat_summary(geom = 'errorbar',
                  fun.data = 'semInterval',
-                 width = 0.1,
-                 show_guide = FALSE) +
+                 width = 0.1) +
     stat_summary(geom = "text", 
                  size = textSize * .4,
                  aes(family = "Liberation Sans Narrow"),
