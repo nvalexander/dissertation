@@ -13519,7 +13519,18 @@ er.7.days..g., na.rm = TRUE) / 7)
 \end_layout
 
 \begin_layout Standard
-Seven-day weight gain in Dexa-treated group (
+To factor out variability between animals at experiment start, changes in
+ body and body component weights were analyzed after normalization to initial
+ body weight (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Time-course-of"
+
+\end_inset
+
+).
+ Seven-day weight gain in Dexa-treated group (
 \begin_inset Flex S/R expression
 status open
 
@@ -13913,7 +13924,20 @@ plotleanfat()
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
 Gains in water, lean, and fat body mass, after Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+ Gains in water, lean, and fat body mass, after Dexa and / or Testo treatments.
+ Stars indicate statistically significant differences between Veh and Dexa
+ (p <0.05).
+ Daggers indicate statistically significant differences between Dexa and
+ Comb (p <0.05).
 \end_layout
 
 \end_inset

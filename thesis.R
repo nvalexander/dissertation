@@ -331,9 +331,9 @@ plotbodyweightsatsacrifice <- function(){
 
 
 plotleanfat <- function(){
-  leancolumn <- "lean.mass.gain..g."
-  fatcolumn <- "fat.mass.gain..g."
-  watercolumn <- "total.water.gain..g."
+  leancolumn <- "lean.mass.gain..percent.of.BW."
+  fatcolumn <- "fat.mass.gain..percent.of.BW."
+  watercolumn <- "total.water.mass.gain..percent.of.BW."
   leanlabel <- "lean mass gain (g)"
   fatlabel <- "fat mass gain (g)"
   waterlabel <- "water mass gain (g)"
