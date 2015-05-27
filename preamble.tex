@@ -27,6 +27,9 @@
 \raggedright
 \raggedbottom
 \setlength{\parindent}{.3in}
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
 \renewcommand{\nomname}{Abbreviations}
 \def\nompreamble{\addcontentsline{toc}{section}{\nomname}\markboth{\nomname}{\nomname}}
 \let\nomenclOrig\nomenclature

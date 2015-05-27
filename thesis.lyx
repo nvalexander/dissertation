@@ -13253,7 +13253,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Experimental protocol for in vivo studies described in this section.
+Experimental protocol for the in vivo studies.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Experimental-protocol-for"
@@ -13675,6 +13675,15 @@ plotbodyweightcourse()
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Time course of body weight Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
 Time course of body weight Dexa and / or Testo treatments.
  Stars indicate statistically significant differences between Veh and Dexa
  (p <0.05).
