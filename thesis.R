@@ -497,7 +497,7 @@ plotmuscleweights <- function(){
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", levatorcolumn)]
-  levatoroneplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a"))+
+  levatoroneplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
     theme(axis.text.x=element_blank())+ 
     geom_text(aes(2, 4, 
                   label="one day", 
@@ -509,7 +509,7 @@ plotmuscleweights <- function(){
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", levatorcolumn)]
-  levatorthreeplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a"))+
+  levatorthreeplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
     theme(axis.text.x=element_blank())+ 
     geom_text(aes(2, 4, 
                   label="three days", 
@@ -521,7 +521,7 @@ plotmuscleweights <- function(){
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", levatorcolumn)]
-  levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a"))+
+  levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a")) +
     theme(axis.text.x=element_blank())+ 
     geom_text(aes(2, 4, 
                   label="seven days", 
@@ -533,32 +533,32 @@ plotmuscleweights <- function(){
   
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]
-  quadricepsoneplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, c("a", "a", "a"))+
+  quadricepsoneplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, c("a", "a", "a")) +
     theme(axis.text.x=element_blank())
   
   #5
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", quadricepscolumn)]
-  quadricepsthreeplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, c("a", "a", "a"))+
+  quadricepsthreeplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, c("a", "a", "a")) +
     theme(axis.text.x=element_blank())
   
   #6
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", quadricepscolumn)]
-  quadricepssevenplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, c("a", "b", "a,b"))+
+  quadricepssevenplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, c("a", "b", "a,b")) +
     theme(axis.text.x=element_blank())
   
   #7
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", gastrocnemiuscolumn)]
-  gastrocnemiusoneplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, c("a", "a", "a"))+
+  gastrocnemiusoneplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, c("a", "b", "a,b")) +
     theme(axis.text.x=element_blank())
   
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", gastrocnemiuscolumn)]
-  gastrocnemiusthreeplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, c("a", "a", "a"))+
+  gastrocnemiusthreeplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, c("a", "b", "a,b")) +
     theme(axis.text.x=element_blank())
   
   #9
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", gastrocnemiuscolumn)]
-  gastrocnemiussevenplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, c("a", "a", "a"))+
+  gastrocnemiussevenplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, c("a", "b", "a,b")) +
     theme(axis.text.x=element_blank())
   
   #10
@@ -573,7 +573,7 @@ plotmuscleweights <- function(){
   
   #13
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", tricepscolumn)]
-  tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, c("a", "a", "a"))+
+  tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, c("a", "b", "a,b"))+
     theme(axis.text.x=element_blank())
   
   #14
