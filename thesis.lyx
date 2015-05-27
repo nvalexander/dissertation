@@ -13995,7 +13995,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( -mean(subset(invivodatasubsetsevendays, treatment == "D")$lean.mass.gain..g.,
+sig3( -mean(subset(invivodatasubsetsevendays, treatment == "V")$lean.mass.gain..g.,
  na.rm = TRUE) / 7 )
 \end_layout
 
@@ -14007,7 +14007,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasubsetsevendays, treatment == "D")$lean.mass.gain..g.)
+sig3( SEM(subset(invivodatasubsetsevendays, treatment == "V")$lean.mass.gain..g.)
  / 7)
 \end_layout
 
@@ -14052,7 +14052,48 @@ s$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
- 
+ When Testo was co-administered, the loss of lean body mass persisted, but
+ there was a trend towards a lower loss rate
+ (
+\lang english
+
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( -mean(subset(invivodatasubsetsevendays, treatment == "C")$lean.mass.gain..g.,
+ na.rm = TRUE) / 7 )
+\end_layout
+
+\end_inset
+
+ ± 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( SEM(subset(invivodatasubsetsevendays, treatment == "V")$lean.mass.gain..g.)
+ / 7)
+\end_layout
+
+\end_inset
+
+ grams per day; Dunn's test, Dexa vs.
+ combination, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$lean.mass.gain..g., invivodatasubsetsevenday
+s$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Standard
