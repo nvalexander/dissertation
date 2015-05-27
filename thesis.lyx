@@ -13468,7 +13468,9 @@ name "fig:Body-weight-at"
 
 \begin_layout Standard
 Upon finding the Dexa dose effective in inducing muscle atrophy, I analyzed
- the body weight at sacrifice (Fig.
+ the body weight at sacrifice.
+ There was no difference between groups in terms of absolute weight, due
+ to to the large variability of the initial body weight (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13477,9 +13479,16 @@ reference "fig:Body-weight-at"
 \end_inset
 
 , right).
- There was no difference between groups in terms of absolute weight, due
- to to the large variability of the initial body weight.
- The difference became apparent when percent change in body weight was compared.
+ The difference became apparent when percent change in body weight was compared(
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Time-course-of"
+
+\end_inset
+
+, top, last time point).
  In this case, the three treatments (vehicle, Dexa, or the combination Dexa
  + Testo) were significantly different (Kruskal-Wallis p = 
 \begin_inset Flex S/R expression
@@ -13494,9 +13503,9 @@ sig3(kruskal.test(day.8.body.weight..g.
 \end_inset
 
 ).
- However, instead of the expected unchanged body weight over the seven days
- of treatment with vehicle alone, there was a trend for growth, with an
- apparent gain of 
+ Instead of the expected unchanged body weight over the seven days of treatment
+ with vehicle alone, there was a trend for growth, with an apparent gain
+ of 
 \begin_inset Flex S/R expression
 status open
 
@@ -13513,8 +13522,7 @@ er.7.days..g., na.rm = TRUE) / 7)
  as well as in other published studies on young rodents.
  A sizable contribution to this growth was brought by the 200 uL vehicle
  injected every day.
- Once this artifact is taken into account, the fact that Dexa appeared to
- gain 
+ Once this artifact is taken into account, the gain of a negligible 
 \begin_inset Flex S/R expression
 status open
 
@@ -13526,21 +13534,12 @@ er.7.days..g., na.rm = TRUE) / 7)
 
 \end_inset
 
- grams per day becomes indicative of an actual massive loss of body weight.
+ grams per day in the Dexa-treated group is in fact indicative of an actual
+ massive loss of body weight.
 \end_layout
 
 \begin_layout Standard
-To factor out variability between animals at experiment start, changes in
- body weight were analyzed after normalization to initial body weight (Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Time-course-of"
-
-\end_inset
-
-).
- Seven-day weight gain in Dexa-treated group (
+Seven-day weight gain in Dexa-treated group (
 \begin_inset Flex S/R expression
 status open
 
@@ -13730,7 +13729,8 @@ name "fig:Time-course-of"
 \end_layout
 
 \begin_layout Standard
-Body weight changes exhibited a rapid onset (Fig.
+The time course of body weight changes revealed that both drugs' action
+ had a rapid onset (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13775,8 +13775,8 @@ r.1.days..percent.))
 
 \end_inset
 
- per cent in body weight in the 24 hours, due to to the significant mass
- of non-resorbable corn oil.
+% body weight in the 24 hours, due to the significant mass of non-resorbable
+ corn oil.
  In contrast, mice receiving Dexa lost 
 \begin_inset Flex S/R expression
 status open
@@ -13801,7 +13801,7 @@ r.1.days..percent.))
 
 \end_inset
 
- (Dunn's test p = 
+% body weight (Dunn's test p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -13840,7 +13840,7 @@ r.1.days..percent.))
 
 \end_inset
 
-.
+% body weight.
  This demonstrated an advantage of the combination treatment over Dexa alone
  (Dunn's test p = 
 \begin_inset Flex S/R expression
@@ -13864,8 +13864,8 @@ Based on the whole time course, I hypothesized that body weight changes
  and molecular changes preceding the seven-day end of experiment.
  Accordingly, I repeated the above experiment on different cohorts of mice,
  which were sacrificed after only 1 or 3 days of treatment.
- Absolute and relative changes in body weight for these groups of mice were
- less ample than those seen with 7 days of treatment (Fig.
+ Once more, absolute changes in body weight could not be correlated with
+ the muscle changes (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13873,7 +13873,10 @@ reference "fig:Body-weight-at"
 
 \end_inset
 
-, left and middle; Fig.
+, left and middle).
+ When normalized, relative changes in body weight for these groups of mice
+ were less ample than those seen with 7 days of treatment, to the point
+ that they were not statistically significant (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13882,13 +13885,13 @@ reference "fig:Time-course-of"
 \end_inset
 
 , bottom).
- These shorter treatments provided insight into the development of atrophy,
- but because they were run as independent experiments, no statistical analysis
- will be performed across the three durations.
+ These shorter treatments provided insight into the molecular development
+ of atrophy, but, because they were run as independent experiments, they
+ will not be analyzed in conjunction.
 \end_layout
 
 \begin_layout Standard
-Before and after treatment,
+NMR indicated that mice receiving DexA
 \end_layout
 
 \begin_layout Standard
