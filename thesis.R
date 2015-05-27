@@ -322,40 +322,40 @@ plotbodyweightcourse <- function(){
 
 plotbodyweightsatsacrifice <- function(){
   ylabel <- "body weight (g) "
-  ylimit <- c(0, 35)
+  ylimit <- c(0, 32)
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   leftplot <- threecolumnplot(shortdf, ylabel, ylimit, c("a", "b", "a,b")) + 
-    geom_text(aes(3.5, 35, 
+    geom_text(aes(2, 32, 
                   label="one day", 
                   vjust = 1, 
-                  hjust = 1,
+                  hjust = .5,
                   family = "Liberation Sans Narrow",
                   show_guide = FALSE),
-              size = textSize * .27) +
+              size = textSize * .3) +
     scale_x_discrete(labels = conditionsVDC) 
 
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
   midplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a,b", "a", "b")) + 
-    geom_text(aes(3.5, 35, 
+    geom_text(aes(2, 32, 
                   label="three days", 
                   vjust = 1, 
-                  hjust = 1,
+                  hjust = .5,
                   family = "Liberation Sans Narrow",
                   show_guide = FALSE),
-              size = textSize * .27)+
+              size = textSize * .3)+
     scale_x_discrete(labels = threeemptystrings)
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
   rightplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a", "a", "a")) + 
-    geom_text(aes(3.5, 35, 
+    geom_text(aes(2, 32, 
                   label="seven days", 
                   vjust = 1, 
-                  hjust = 1,
+                  hjust = .5,
                   family = "Liberation Sans Narrow",
                   show_guide = FALSE),
-              size = textSize * .27)+
+              size = textSize * .3)+
     scale_x_discrete(labels = threeemptystrings)
   
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
@@ -372,9 +372,9 @@ plotleanfat <- function(){
   leancolumn <- "lean.mass.gain..g."
   fatcolumn <- "fat.mass.gain..g."
   watercolumn <- "total.water.gain..g."
-  leanlabel <- "lean mass loss (g)\n"
-  fatlabel <- "fat mass gain (g)\n"
-  waterlabel <- "water mass loss (g)\n"
+  leanlabel <- "lean mass loss (g)"
+  fatlabel <- "fat mass gain (g)"
+  waterlabel <- "water loss (g)"
   leanylim <- c(0, 4)
   fatylim <- c(0, 4)
   waterylim <- c(0, 5)
@@ -382,56 +382,74 @@ plotleanfat <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  topleftplot <- threecolumnplot(shortdf, paste0(leanlabel, " after one day"), leanylim, c("a", "a", "a"))+
+  topleftplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "a", "a"))+
     scale_x_discrete(labels = threeemptystrings)
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  topmidplot <- threecolumnplot(shortdf, paste0(leanlabel, " after three days"), leanylim, c("a", "b", "a,b"))+
+  topmidplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "b", "a,b"))+
     scale_x_discrete(labels = threeemptystrings)
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  toprightplot <- threecolumnplot(shortdf, paste0(leanlabel, " after seven days"), leanylim, c("a", "b", "a,b"))+
+  toprightplot <- threecolumnplot(shortdf, leanlabel, leanylim, c("a", "b", "a,b"))+
     scale_x_discrete(labels = conditionsVDC)
 
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", fatcolumn)]
-  midleftplot <- threecolumnplot(shortdf, paste0(fatlabel, " after one days"), fatylim, c("a", "a", "a"))+
+  midleftplot <- threecolumnplot(shortdf, fatlabel, fatylim, c("a", "a", "a"))+
     theme(axis.text.x=element_blank())
   
   #5
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", fatcolumn)]
-  midmidplot <- threecolumnplot(shortdf, paste0(fatlabel, " after three days"), fatylim, c("a", "a,b", "b"))+
+  midmidplot <- threecolumnplot(shortdf, fatlabel, fatylim, c("a", "a,b", "b"))+
     theme(axis.text.x=element_blank())
   
   #6
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", fatcolumn)]
-  midrightplot <- threecolumnplot(shortdf, paste0(fatlabel, " after seven days"), fatylim, c("a", "a,b", "b"))+
+  midrightplot <- threecolumnplot(shortdf, fatlabel, fatylim, c("a", "a,b", "b"))+
     theme(axis.text.x=element_blank())
   
   #7
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  bottomleftplot <- threecolumnplot(shortdf, paste0(waterlabel, " after one days"), waterylim, c("a", "a", "a")) +
-    theme(axis.text.x = element_blank()) +
-    geom_text(aes(2, 4.7, label = "one day", show_guide = FALSE))
+  bottomleftplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a")) +
+    theme(axis.text.x = element_blank())+ 
+    geom_text(aes(2, 5, 
+                  label="one days", 
+                  vjust = 1, 
+                  hjust = .5,
+                  family = "Liberation Sans Narrow",
+                  show_guide = FALSE),
+              size = textSize * .3)
   
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  bottommidplot <- threecolumnplot(shortdf, paste0(waterlabel, " after three days"), waterylim, c("a", "a", "a"))+
-    theme(axis.text.x = element_blank()) +
-    geom_text(aes(2, 4.7, label = "three days", show_guide = FALSE))
+  bottommidplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a"))+
+    theme(axis.text.x = element_blank()) + 
+    geom_text(aes(2, 5, 
+                  label="three days", 
+                  vjust = 1, 
+                  hjust = .5,
+                  family = "Liberation Sans Narrow",
+                  show_guide = FALSE),
+              size = textSize * .3)
   
   #9
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  bottomrightplot <- threecolumnplot(shortdf, paste0(waterlabel, " after seven days"), waterylim, c("a", "a", "a")) +
-    theme(axis.text.x = element_blank()) +
-    geom_text(aes(2, 4.7, label = "seven days", show_guide = FALSE))
+  bottomrightplot <- threecolumnplot(shortdf, waterlabel, waterylim, c("a", "a", "a")) +
+    theme(axis.text.x = element_blank()) + 
+    geom_text(aes(2, 5, 
+                  label="seven days", 
+                  vjust = 1, 
+                  hjust = .5,
+                  family = "Liberation Sans Narrow",
+                  show_guide = FALSE),
+              size = textSize * .3)
 
   return(grid.arrange(
     bottomleftplot, bottommidplot, bottomrightplot,
