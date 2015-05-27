@@ -38,7 +38,7 @@ DvsCthreeways <- match("D vs DT", contraststhree)[[1]]
 VvsCthreeways <- match("V vs DT", contraststhree)[[1]]
 conditionsVDC <- c("Veh", "Dexa", "Comb")
 conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
-unistar <- sprintf('\u066D')
+unistar <- sprintf('\u2600')
 unidagger <- sprintf('\u2020')
 
 datadir <- normalizePath(file.path(codedirpath, "data"))
