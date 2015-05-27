@@ -140,8 +140,8 @@ semInterval <- function(x) {
   return(lims)
 }
 
-belowSEM <-function(x){
-  return(semInterval(x)[[2]])
+statstringyposition <-function(x){
+  return(ifelse(mean(x, na.rm = TRUE) < 0, semInterval(x)[[2]], semInterval(x)[[1]]))
 }
 
 truecount <- function(x) {
@@ -238,7 +238,7 @@ plotbodyweightcourse <- function(){
     stat_summary(geom = "text", 
                  size = textSize * .4,
                  aes(family = "serif"),
-                 fun.y = belowSEM, 
+                 fun.y = statstringyposition, 
                  hjust = -.2,
                  vjust = .25,
                  label = statsstars) + 
@@ -319,13 +319,13 @@ plotbodyweightsatsacrifice <- function(){
   ylimit <- c(0, 27)
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
-  leftplot <- threecolumnplot(shortdf, paste0(ylabel, "after one day"), ylimit, threeemptystrings)
+  leftplot <- threecolumnplot(shortdf, paste0(ylabel, "after one day"), ylimit, c("a", "a", "a"))
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
-  midplot <-  threecolumnplot(shortdf, paste0(ylabel, "after three day"), ylimit, threeemptystrings)
+  midplot <-  threecolumnplot(shortdf, paste0(ylabel, "after three day"), ylimit, c("a", "a", "a"))
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
-  rightplot <-  threecolumnplot(shortdf, paste0(ylabel, "after seven day"), ylimit, threeemptystrings)
+  rightplot <-  threecolumnplot(shortdf, paste0(ylabel, "after seven day"), ylimit, c("a", "a", "a"))
   
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
 }
@@ -338,48 +338,54 @@ plotleanfat <- function(){
   leancolumn <- "lean.mass.gain..g."
   fatcolumn <- "fat.mass.gain..g."
   watercolumn <- "total.water.gain..g."
-  leanlabel <- "lean mass gain (g)\n"
+  leanlabel <- "lean mass loss (g)\n"
   fatlabel <- "fat mass gain (g)\n"
-  waterlabel <- "water mass gain (g)\n"
-  leanylim <- c(-4, 0)
+  waterlabel <- "water mass loss (g)\n"
+  leanylim <- c(0, 4)
   fatylim <- c(0, 4)
-  waterylim <- c(-4, 0)
+  waterylim <- c(0, 4)
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
-  topleftplot <- threecolumnplot(shortdf, paste0(leanlabel, " after one day"), leanylim)
+  shortdf[,2] <- shortdf[, 2] * (-1)
+  topleftplot <- threecolumnplot(shortdf, paste0(leanlabel, " after one day"), leanylim, c("lol","lol", "lol2"))
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
-  topmidplot <- threecolumnplot(shortdf, paste0(leanlabel, " after three days"), leanylim)
+  shortdf[,2] <- shortdf[, 2] * (-1)
+  topmidplot <- threecolumnplot(shortdf, paste0(leanlabel, " after three days"), leanylim, threeemptystrings)
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", leancolumn)]
-  toprightplot <- threecolumnplot(shortdf, paste0(leanlabel, " after seven days"), leanylim)
+  shortdf[,2] <- shortdf[, 2] * (-1)
+  toprightplot <- threecolumnplot(shortdf, paste0(leanlabel, " after seven days"), leanylim, threeemptystrings)
 
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", fatcolumn)]
-  midleftplot <- threecolumnplot(shortdf, paste0(fatlabel, " after one days"), fatylim)
+  midleftplot <- threecolumnplot(shortdf, paste0(fatlabel, " after one days"), fatylim, threeemptystrings)
   
   #5
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", fatcolumn)]
-  midmidplot <- threecolumnplot(shortdf, paste0(fatlabel, " after three days"), fatylim)
+  midmidplot <- threecolumnplot(shortdf, paste0(fatlabel, " after three days"), fatylim, threeemptystrings)
   
   #6
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", fatcolumn)]
-  midrightplot <- threecolumnplot(shortdf, paste0(fatlabel, " after seven days"), fatylim)
+  midrightplot <- threecolumnplot(shortdf, paste0(fatlabel, " after seven days"), fatylim, threeemptystrings)
   
   #7
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", watercolumn)]
-  bottomleftplot <- threecolumnplot(shortdf, paste0(waterlabel, " after one days"), waterylim)
+  shortdf[,2] <- shortdf[, 2] * (-1)
+  bottomleftplot <- threecolumnplot(shortdf, paste0(waterlabel, " after one days"), waterylim, threeemptystrings)
   
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
-  bottommidplot <- threecolumnplot(shortdf, paste0(waterlabel, " after three days"), waterylim)
+  shortdf[,2] <- shortdf[, 2] * (-1)
+  bottommidplot <- threecolumnplot(shortdf, paste0(waterlabel, " after three days"), waterylim, threeemptystrings)
   
   #9
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", watercolumn)]
-  bottomrightplot <- threecolumnplot(shortdf, paste0(waterlabel, " after seven days"), waterylim)
+  shortdf[,2] <- shortdf[, 2] * (-1)
+  bottomrightplot <- threecolumnplot(shortdf, paste0(waterlabel, " after seven days"), waterylim, threeemptystrings)
 
   return(grid.arrange(topleftplot, topmidplot, toprightplot, 
                       midleftplot, midmidplot, midrightplot,
@@ -387,7 +393,7 @@ plotleanfat <- function(){
                       ncol=3))
 }
 
-threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){ 
+threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings, statsbelow){ 
   return(ggplot(skinnydataset) +
     aes_string( x = colnames(skinnydataset)[1], 
                 y = colnames(skinnydataset)[2], 
@@ -403,9 +409,9 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
     stat_summary(geom = "text", 
                  size = textSize * .4,
                  aes(family = "serif"),
-                 fun.y = belowSEM, 
-                 hjust = -.2,
-                 vjust = .25,
+                 fun.y = statstringyposition, 
+                 hjust = .5,
+                 vjust = -1,
                  label = statstrings) +
     ylab(ylabel) +
     scale_x_discrete(labels = conditionsVDC) +
