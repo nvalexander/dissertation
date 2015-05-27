@@ -326,21 +326,29 @@ plotbodyweightsatsacrifice <- function(){
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   leftplot <- threecolumnplot(shortdf, ylabel, ylimit, c("a", "b", "a,b")) + 
-    geom_text(aes(2, 28, label="one day", show_guide = FALSE)) +
+    geom_text(aes(3.5, 29, 
+                  label="one day",
+                  show_guide = FALSE, 
+                  vjust = 1, 
+                  hjust = 1,
+                  size = textSize * .5,
+                  family = "Liberation Sans Narrow")) +
     stat_summary(fun.y = mean, 
                  geom = "bar", 
                  colour = "black",
                  show_guide = TRUE,
                  labels = conditionsVDC)  +
-    scale_x_discrete(labels = conditionsVDC)
+    scale_x_discrete(labels = conditionsVDC)  + 
+    theme(legend.position=c(0, 1.05), legend.justification=c(0,1))
+
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
   midplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a,b", "a", "b"))+ 
-    geom_text(aes(2, 28, label="three days", show_guide = FALSE))
+    geom_text(aes(3.5, 29, label="three days", show_guide = FALSE, vjust = 1, hjust = 1))
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
   rightplot <-  threecolumnplot(shortdf, ylabel, ylimit, c("a", "a", "a"))+ 
-    geom_text(aes(2, 28, label="seven days", show_guide = FALSE))
+    geom_text(aes(3.5, 29, label="seven days", show_guide = FALSE, vjust = 1, hjust = 1))
   
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
 }
