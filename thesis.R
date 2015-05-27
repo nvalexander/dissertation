@@ -325,17 +325,23 @@ plotbodyweightsatsacrifice <- function(){
   ylimit <- c(0, 30)
   
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
-  leftplot <- threecolumnplot(shortdf, paste0(ylabel, "after one day"), ylimit, c("a", "b", "a,b"))
+  leftplot <- threecolumnplot(shortdf, paste0(ylabel, "after one day"), ylimit, c("a", "b", "a,b")) + 
+    scale_x_discrete(labels = conditionsVDC)
   
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
-  midplot <-  threecolumnplot(shortdf, paste0(ylabel, "after three day"), ylimit, c("a,b", "a", "b"))
+  midplot <-  threecolumnplot(shortdf, paste0(ylabel, "after three day"), ylimit, c("a,b", "a", "b"))+ 
+    scale_x_discrete(labels = conditionsVDC)
   
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
-  rightplot <-  threecolumnplot(shortdf, paste0(ylabel, "after seven day"), ylimit, c("a", "a", "a"))
+  rightplot <-  threecolumnplot(shortdf, paste0(ylabel, "after seven day"), ylimit, c("a", "a", "a"))+ 
+    scale_x_discrete(labels = conditionsVDC)
   
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
 }
 
+plotmuscleweights <- function(){
+  
+}
 
 plotleanfat <- function(){
 #   leancolumn <- "lean.mass.gain..percent.of.BW."
@@ -354,44 +360,53 @@ plotleanfat <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  topleftplot <- threecolumnplot(shortdf, paste0(leanlabel, " after one day"), leanylim, c("a", "a", "a"))
+  topleftplot <- threecolumnplot(shortdf, paste0(leanlabel, " after one day"), leanylim, c("a", "a", "a")) +
+    theme(axis.text.x=element_blank())
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  topmidplot <- threecolumnplot(shortdf, paste0(leanlabel, " after three days"), leanylim, c("a", "b", "a,b"))
+  topmidplot <- threecolumnplot(shortdf, paste0(leanlabel, " after three days"), leanylim, c("a", "b", "a,b"))+
+    theme(axis.text.x=element_blank())
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  toprightplot <- threecolumnplot(shortdf, paste0(leanlabel, " after seven days"), leanylim, c("a", "b", "a,b"))
+  toprightplot <- threecolumnplot(shortdf, paste0(leanlabel, " after seven days"), leanylim, c("a", "b", "a,b"))+
+    theme(axis.text.x=element_blank())
 
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", fatcolumn)]
-  midleftplot <- threecolumnplot(shortdf, paste0(fatlabel, " after one days"), fatylim, c("a", "a", "a"))
+  midleftplot <- threecolumnplot(shortdf, paste0(fatlabel, " after one days"), fatylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())
   
   #5
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", fatcolumn)]
-  midmidplot <- threecolumnplot(shortdf, paste0(fatlabel, " after three days"), fatylim, c("a", "a,b", "b"))
+  midmidplot <- threecolumnplot(shortdf, paste0(fatlabel, " after three days"), fatylim, c("a", "a,b", "b"))+
+    theme(axis.text.x=element_blank())
   
   #6
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", fatcolumn)]
-  midrightplot <- threecolumnplot(shortdf, paste0(fatlabel, " after seven days"), fatylim, c("a", "a,b", "b"))
+  midrightplot <- threecolumnplot(shortdf, paste0(fatlabel, " after seven days"), fatylim, c("a", "a,b", "b"))+
+    theme(axis.text.x=element_blank())
   
   #7
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  bottomleftplot <- threecolumnplot(shortdf, paste0(waterlabel, " after one days"), waterylim, c("a", "a", "a"))
+  bottomleftplot <- threecolumnplot(shortdf, paste0(waterlabel, " after one days"), waterylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())
   
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  bottommidplot <- threecolumnplot(shortdf, paste0(waterlabel, " after three days"), waterylim, c("a", "a", "a"))
+  bottommidplot <- threecolumnplot(shortdf, paste0(waterlabel, " after three days"), waterylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())
   
   #9
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  bottomrightplot <- threecolumnplot(shortdf, paste0(waterlabel, " after seven days"), waterylim, c("a", "a", "a"))
+  bottomrightplot <- threecolumnplot(shortdf, paste0(waterlabel, " after seven days"), waterylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())
 
   return(grid.arrange(
     bottomleftplot, bottommidplot, bottomrightplot,
@@ -421,7 +436,6 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings, statsbel
                  vjust = -.6,
                  label = statstrings) +
     ylab(ylabel) +
-    scale_x_discrete(labels = conditionsVDC) +
     coord_cartesian(ylim = ylimit) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot)
