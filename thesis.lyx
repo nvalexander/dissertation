@@ -13631,7 +13631,7 @@ status open
 
 \begin_layout Plain Layout
 bodyweightcourse, echo = FALSE, warning = FALSE, message = FALSE, out.width
- = "6in", out.height = "8in", fig.width = 6, fig.height = 8
+ = "6in", out.height = "8in", fig.width = 6, fig.height = 8,dev='CairoPDF'
 \end_layout
 
 \end_inset
