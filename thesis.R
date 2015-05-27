@@ -361,14 +361,7 @@ plotbodyweightsatsacrifice <- function(){
   return(grid.arrange(leftplot, midplot, rightplot, ncol=3))
 }
 
-plotmuscleweights <- function(){
-  
-}
-
 plotleanfat <- function(){
-#   leancolumn <- "lean.mass.gain..percent.of.BW."
-#   fatcolumn <- "fat.mass.gain..percent.of.BW."
-#   watercolumn <- "total.water.gain..percent.of.BW."
   leancolumn <- "lean.mass.gain..g."
   fatcolumn <- "fat.mass.gain..g."
   watercolumn <- "total.water.gain..g."
@@ -481,4 +474,31 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
     coord_cartesian(ylim = ylimit) + 
     scale_fill_manual(values = greypalette) +
     stdbarplot)
+}
+
+plotmuscleweights <- function(){
+  levatorcolumn <- "levator..permille."
+  quadricepscolumn <- "quadriceps..permille."
+  gastrocnemiuscolumn <- "gastrocnemius..permille."
+  tricepscolumn <- "triceps..permille."
+  tibialiscolumn <- "tibialis..permille."
+  
+  levatorlabel <- paste0("levator (", sprintf('\u2030'), " BW")
+  quadricepslabel <- paste0("quadriceps (", sprintf('\u2030'), " BW")
+  gastrocnemiuslabel <- paste0("gastrocnemius (", sprintf('\u2030'), " BW")
+  tricepslabel <- paste0("triceps (", sprintf('\u2030'), " BW")
+  tibialislabel <- paste0("tibialis (", sprintf('\u2030'), " BW")
+  
+  levatorylim <- c(0, 10)
+  quadricepsylim <- c(0, 200)
+  gastrocnemiusylim <- c(0, 100)
+  tricepsylim <- c(0, 100)
+  tibialisylim <- c(0, 100)
+  
+  #1
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", levatorcolumn)]
+  levatoroneplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, c("a", "a", "a"))+
+    theme(axis.text.x=element_blank())
+  
+  return(levatoroneplot)
 }
