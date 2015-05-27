@@ -14170,8 +14170,8 @@ reference "fig:Effects-of-Dexa"
 \end_inset
 
 ).
- Despite the small sample size (n=5-6), the atrophying effect of Dexa becames
- staistically signidficant at day 3 on gastrocnemia (Dunn's test, p = 
+ Despite the small sample size (n=5-6), the atrophying effect of Dexa became
+ statistically significant at day 3 on gastrocnemia (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -14183,7 +14183,9 @@ treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-), and on triceps (Dunn's test, p = 
+).
+ At day 7, statistical significance is also achieved in triceps (Dunn's
+ test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -14207,8 +14209,8 @@ $treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-) at day 7.
- In terms of responsiveness, the five measured muscles ranged from extremely
+).
+ In terms of amplitudes, the five measured muscles ranged from extremely
  responsive, such as quadriceps  (
 \begin_inset Flex S/R expression
 status open
