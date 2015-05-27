@@ -13953,7 +13953,7 @@ $treatment, method = "bonferroni")$P.adjusted[[VvsCthreeways]])
 \end_inset
 
 ).
- Testo co-administration had little effect on lipid metabolism(Dunn's test,
+ Testo co-administration had little effect on lipid metabolism (Dunn's test,
  Dexa vs.
  combination, p = 
 \begin_inset Flex S/R expression
@@ -14184,8 +14184,8 @@ treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
- At day 7, statistical significance is also achieved in triceps (Dunn's
- test, p = 
+ At day 7, statistical significance is also achieved in triceps brachii
+ (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -14197,7 +14197,7 @@ eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-) and quadriceps (Dunn's test, p = 
+), quadriceps (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -14205,6 +14205,18 @@ status open
 
 sig3( dunn.test(invivodatasubsetsevendays$quadriceps..mg., invivodatasubsetsevendays
 $treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and levator ani (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$levator..mg., invivodatasubsetsevendays$tr
+eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -14225,7 +14237,7 @@ eps..mg., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
 
 \end_inset
 
-% muscle weight loss ), triceps (
+% muscle weight loss), triceps (
 \begin_inset Flex S/R expression
 status open
 
