@@ -13658,6 +13658,10 @@ plotbodyweightcourse()
 
 \begin_layout Plain Layout
 Time course of body weight Dexa and / or Testo treatments.
+ Stars indicate statistically significant differences between Veh and Dexa
+ (p <0.05).
+ Daggers indicate statistically significant differences between Dexa and
+ Comb (p <0.05).
 \end_layout
 
 \end_inset
@@ -13793,7 +13797,14 @@ eways]])
 \end_layout
 
 \begin_layout Standard
-I hypothesized that body weight and muscle atrophy 
+Based on the whole time course, I hypothesized that body weight changes
+ and muscle atrophy occur in a gradual manner, with significant metabolic
+ and molecular changes preceding the seven-day end of experiment.
+ Accordingly, I repeated the above experiment on different cohorts of mice,
+ which were sacrificed after only 1 or 3 days of treatment.
+ Accordingly, absolute and relative changes in body weight for these groups
+ of mice were less ample than those seen with 7 days of treatment.
+ 
 \begin_inset Newpage pagebreak
 \end_inset
 
