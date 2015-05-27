@@ -441,23 +441,35 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
 }
 
 plotmuscleweights <- function(){
-  levatorcolumn <- "levator..permille."
-  quadricepscolumn <- "quadriceps..permille."
-  gastrocnemiuscolumn <- "gastrocnemius..permille."
-  tricepscolumn <- "triceps..permille."
-  tibialiscolumn <- "tibialis..permille."
+  levatorcolumn <- "levator..mg."
+  quadricepscolumn <- "quadriceps..mg."
+  gastrocnemiuscolumn <- "gastrocnemius..mg."
+  tricepscolumn <- "triceps..mg."
+  tibialiscolumn <- "tibialis..mg."
   
-  levatorlabel <- paste0("levator ani (", sprintf('\u2030'), " BW)")
-  quadricepslabel <- paste0("quadriceps (", sprintf('\u2030'), " BW)")
-  gastrocnemiuslabel <- paste0("gastrocnemius (", sprintf('\u2030'), " BW)")
-  tricepslabel <- paste0("triceps br. (", sprintf('\u2030'), " BW)")
-  tibialislabel <- paste0("tibialis ant. (", sprintf('\u2030'), " BW)")
+#   levatorlabel <- paste0("levator ani (", sprintf('\u2030'), " BW)")
+#   quadricepslabel <- paste0("quadriceps (", sprintf('\u2030'), " BW)")
+#   gastrocnemiuslabel <- paste0("gastrocnemius (", sprintf('\u2030'), " BW)")
+#   tricepslabel <- paste0("triceps br. (", sprintf('\u2030'), " BW)")
+#   tibialislabel <- paste0("tibialis ant. (", sprintf('\u2030'), " BW)")
+#   
+#   levatorylim <- c(0, 4)
+#   quadricepsylim <- c(0, 10)
+#   gastrocnemiusylim <- c(0, 7)
+#   tricepsylim <- c(0, 6)
+#   tibialisylim <- c(0, 3)
+#   
+  levatorlabel <- paste0("levator ani (g)")
+  quadricepslabel <- paste0("quadriceps (g)")
+  gastrocnemiuslabel <- paste0("gastrocnemius (g)")
+  tricepslabel <- paste0("triceps br. (g)")
+  tibialislabel <- paste0("tibialis ant. (g)")
   
-  levatorylim <- c(0, 4)
-  quadricepsylim <- c(0, 10)
-  gastrocnemiusylim <- c(0, 7)
-  tricepsylim <- c(0, 6)
-  tibialisylim <- c(0, 3)
+  levatorylim <- c(0, 80)
+  quadricepsylim <- c(0, 200)
+  gastrocnemiusylim <- c(0, 160)
+  tricepsylim <- c(0, 150)
+  tibialisylim <- c(0, 80)
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", levatorcolumn)]

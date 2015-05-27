@@ -13355,7 +13355,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2in", fig.width = 6, fig.height =2
+ = "2.5in", fig.width = 6, fig.height =2.5
 \end_layout
 
 \end_inset
@@ -14113,7 +14113,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "8in", fig.width = 6, fig.height = 8,dev='cairo_pdf'
+ = "7n", fig.width = 6, fig.height = 7,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -14171,7 +14171,8 @@ reference "fig:Effects-of-Dexa"
 
 ).
  Before analysis, muscle wet mass was normalized to the animal's body weight.
- This normalization did not change the nature of the findings.
+ This normalization did not change the nature of the findings, which are
+ generally confirmed when absolute muscle mass is analyzed instead..
  Despite the small sample size (n=5-6), the atrophying effect of Dexa became
  apparent on gastrocnemia starting with day 1 (Dunn's test, p = 
 \begin_inset Flex S/R expression
@@ -14453,6 +14454,9 @@ lle., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment ==
 \end_inset
 
 % further loss in percentage of body weight.
+ A similar trend indicating Testo's inability to rescue tibialis mass is
+ also present in the three-day data .
+ 
 \begin_inset Newpage pagebreak
 \end_inset
 
