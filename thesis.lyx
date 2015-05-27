@@ -13989,6 +13989,70 @@ ue)
 \end_inset
 
 ).
+ Vehicle alone has no effect on lean body mass (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( -mean(subset(invivodatasubsetsevendays, treatment == "D")$lean.mass.gain..g.,
+ na.rm = TRUE) / 7 )
+\end_layout
+
+\end_inset
+
+ ± 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( SEM(subset(invivodatasubsetsevendays, treatment == "D")$lean.mass.gain..g.)
+ / 7)
+\end_layout
+
+\end_inset
+
+ grams per day loss over seven days).
+ The massive loss of lean body mass (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( -mean(subset(invivodatasubsetsevendays, treatment == "D")$lean.mass.gain..g.,
+ na.rm = TRUE) / 7 )
+\end_layout
+
+\end_inset
+
+ ± 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( SEM(subset(invivodatasubsetsevendays, treatment == "D")$lean.mass.gain..g.)
+ / 7)
+\end_layout
+
+\end_inset
+
+ grams per day) becomes significantly different from control by the third
+ day (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$lean.mass.gain..g., invivodatasubsetsevenday
+s$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ 
 \end_layout
 
 \begin_layout Standard
