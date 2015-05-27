@@ -80,7 +80,7 @@ invivodatasubsetsevendays$treatment <- factor(invivodatasubsetsevendays$treatmen
 textSize <- 11
 nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 meaningfulpalette <- c("#444444", "#dd0000", "#00dd00", "#0000dd", "#888800", "#880088", "#008888", "#dddddd")
-greypalette <- c("#ffffff", "#000000", "#aaaaaa", "#0000dd", "#00dd00", "#dd0000", "#008888", "#888800")
+greypalette <- c("#ffffff", "#222222", "#999999", "#0000dd", "#00dd00", "#dd0000", "#008888", "#888800")
 stdplottimecourse <- theme_bw() + 
   theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
         panel.grid.major.x = element_blank(),
@@ -377,12 +377,13 @@ plotbodyweights <- function(){
 plotleanfatbody <- function(){
   leancolumn <- "lean.mass.gain..g."
   fatcolumn <- "fat.mass.gain..g."
-  watercolumn <- "total.water.before..g."
+  watercolumn <- "total.water.gain..g."
   leanlabel <- "lean mass gain (g)"
   fatlabel <- "fat mass gain (g)"
   waterlabel <- "water mass gain (g)"
   leanylim <- c(-4, 1)
   fatylim <- c(0, 4)
+  waterylim <- c(-4, 2)
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
