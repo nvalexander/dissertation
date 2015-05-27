@@ -531,7 +531,7 @@ plotmuscleweights <- function(){
   
   #12
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", tricepscolumn)]
-  tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, c("a", "b", "a,b")) +
+  tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, c("a", "b", "b")) +
     theme(axis.text.x=element_blank())
   
   #13
