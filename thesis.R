@@ -195,7 +195,7 @@ stdbarplot <-
         axis.text.x= element_blank(),
         axis.title.y = element_text( size = textSize))
 
-stdpcrplot <- stdbarplot + coord_trans(ytrans = "log10") + scale_y_continuous(labels = percent, breaks = 2^(-5:5)))
+stdpcrplot <- stdbarplot  + scale_y_continuous(labels = percent, breaks = 2^(-5:5))
 
 anotatedtitle <- function(text, x, y) {
   return(annotate(geom = "text", label = text, x = x, y = y,
@@ -235,29 +235,36 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   #this function expects a dataframe with two columns, first designating the treatments
   # second column described Ct(GOI)-Ct(housekeeping gene)
   foldchangearray <- skinnydataset
-  foldchangearray[,2] <- 2^(foldchangearray[,2] * -1)
-  return(ggplot(skinnydataset) +
-           aes_string( x = colnames(skinnydataset)[1], 
-                       y = colnames(skinnydataset)[2], 
-                       fill = colnames(skinnydataset)[1]) +
-           stat_summary(fun.y = mean, 
-                        geom = "bar", 
+  foldchangearray[,2] <- 2 ^ (foldchangearray[,2] * -1)
+  return(ggplot(foldchangearray) +
+           aes_string( x = colnames(foldchangearray)[1], 
+                       y = colnames(foldchangearray)[2], 
+                       group = colnames(foldchangearray)[1]) +
+           stat_summary(geom = "point",
+                        size = 3,
                         colour = "black",
-                        show_guide = FALSE) +
-           stat_summary(geom = 'errorbar',
-                        fun.data = 'semInterval',
-                        width = 0.1) +
+                        fun.y = harmonicmean,
+                        show_guide = FALSE,
+                        aes_string(shape = colnames(shortdf)[1])) +
+           stat_summary(geom = "line", 
+                        size = .5, 
+                        fun.y = harmonicmean) + 
            stat_summary(geom = "text", 
                         size = textSize * .4,
                         aes(family = "Liberation Sans Narrow"),
-                        fun.y = statstringyoverbar, 
+                        fun.y = statstringyunderbar, 
                         hjust = .5,
                         vjust = -.6,
-                        label = statstrings) +
-           ylab(ylabel) +
+                        label = statsstars) + 
+           stat_summary(geom = 'errorbar',
+                        fun.data = 'harmonicSEMinterval',
+                        width = 0.1,
+                        show_guide = FALSE,
+                        position=position_dodge(.05)) +
            coord_cartesian(ylim = ylimit) + 
-           scale_fill_manual(values = greypalette) +
-           stdbarplot)
+           ylab(ylabel) +
+           scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
+           stdpcrplot)
 }
 
 #PMID12519877
@@ -744,8 +751,7 @@ plotproteasomeactivity <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
-  quadricepsoneplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsonestat) +
-    anotatedtitle("one day", 2, quadricepsylim[[2]]) +
-    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-  
-  
+  quadricepsoneplot <- threegeneplot(shortdf, quadricepslabel, quadricepsylim, quadricepsonestat) +
+    anotatedtitle("one day", 2, quadricepsylim[[2]]) 
+  return(quadricepsoneplot)
+}
