@@ -127,6 +127,15 @@ hview <- function(htmllines) {
   rstudio::viewer(htmlFile)
 }
 
+rescaledtovehicleasone <- function(x){
+  #this function expects a two-column data frame
+  #one column must be "treatments", and include some "V"
+  #the other column will be rescaled so that the average of V becomes 1
+  y <- x
+  y[,2] <- y[,2] / mean(subset(y, treatment == "V")[,2], na.rm = TRUE)
+  return(y)
+}
+
 #GENERIC PLOTTING
 textSize <- 11
 nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
@@ -463,26 +472,14 @@ plotleanfat <- function(){
     ncol=3))
 }
 
-
+# FOURTH PLOT SHOWS five muscles across three time points
 plotmuscleweights <- function(){
   levatorcolumn <- "levator..mg."
   quadricepscolumn <- "quadriceps..mg."
   gastrocnemiuscolumn <- "gastrocnemius..mg."
   tricepscolumn <- "triceps..mg."
   tibialiscolumn <- "tibialis..mg."
-  
-#   levatorlabel <- paste0("levator ani (", sprintf('\u2030'), " BW)")
-#   quadricepslabel <- paste0("quadriceps (", sprintf('\u2030'), " BW)")
-#   gastrocnemiuslabel <- paste0("gastrocnemius (", sprintf('\u2030'), " BW)")
-#   tricepslabel <- paste0("triceps br. (", sprintf('\u2030'), " BW)")
-#   tibialislabel <- paste0("tibialis ant. (", sprintf('\u2030'), " BW)")
-#   
-#   levatorylim <- c(0, 4)
-#   quadricepsylim <- c(0, 10)
-#   gastrocnemiusylim <- c(0, 7)
-#   tricepsylim <- c(0, 6)
-#   tibialisylim <- c(0, 3)
-#   
+
   levatorlabel <- paste0("levator ani (g)")
   quadricepslabel <- paste0("quadriceps (g)")
   gastrocnemiuslabel <- paste0("gastrocnemius (g)")
@@ -510,7 +507,6 @@ plotmuscleweights <- function(){
   tibialisonestat <- threeidenticalgroups
   tibialisthreestat <- threeidenticalgroups
   tibialissevenstat <- threeidenticalgroups
-
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", levatorcolumn)]
@@ -598,42 +594,16 @@ plotmuscleweights <- function(){
                       ncol=3))
 }
 
-
-
+# FIFTH plot shows proteasome activity in three muscles at three time points
 plotproteasomeactivity <- function(){
-  levatorcolumn <- "levator..mg."
-  quadricepscolumn <- "quadriceps..mg."
-  gastrocnemiuscolumn <- "gastrocnemius..mg."
-  tricepscolumn <- "triceps..mg."
-  tibialiscolumn <- "tibialis..mg."
+  quadricepscolumn <- "quadriceps.proteasome.activity..rel.u.."
+  gastrocnemiuscolumn <- "gastrocnemius.proteasome.activity..rel.u.."
+  tricepscolumn <- "triceps.proteasome.activity..rel.u.."
   
-  #   levatorlabel <- paste0("levator ani (", sprintf('\u2030'), " BW)")
-  #   quadricepslabel <- paste0("quadriceps (", sprintf('\u2030'), " BW)")
-  #   gastrocnemiuslabel <- paste0("gastrocnemius (", sprintf('\u2030'), " BW)")
-  #   tricepslabel <- paste0("triceps br. (", sprintf('\u2030'), " BW)")
-  #   tibialislabel <- paste0("tibialis ant. (", sprintf('\u2030'), " BW)")
-  #   
-  #   levatorylim <- c(0, 4)
-  #   quadricepsylim <- c(0, 10)
-  #   gastrocnemiusylim <- c(0, 7)
-  #   tricepsylim <- c(0, 6)
-  #   tibialisylim <- c(0, 3)
-  #   
-  levatorlabel <- paste0("levator ani (g)")
-  quadricepslabel <- paste0("quadriceps (g)")
-  gastrocnemiuslabel <- paste0("gastrocnemius (g)")
-  tricepslabel <- paste0("triceps br. (g)")
-  tibialislabel <- paste0("tibialis ant. (g)")
+  quadricepslabel <- "quadriceps\nproteasome activity(rel.u.)"
+  gastrocnemiuslabel <- "gastrocnemius\nproteasome activity(rel.u.)"
+  tricepslabel <- "triceps\nproteasome activity(rel.u.)"
   
-  levatorylim <- c(0, 100)
-  quadricepsylim <- c(0, 225)
-  gastrocnemiusylim <- c(0, 180)
-  tricepsylim <- c(0, 150)
-  tibialisylim <- c(0, 75)
-  
-  levatoronestat <- threeidenticalgroups
-  levatorthreestat <- threeidenticalgroups
-  levatorsevenstat <- c("a", "b", "a,b")
   quadricepsonestat <- threeidenticalgroups
   quadricepsthreestat <- threeidenticalgroups
   quadricepssevenstat <- c("a", "b", "a,b")
@@ -642,14 +612,13 @@ plotproteasomeactivity <- function(){
   gastrocnemiussevenstat <- c("a", "b", "a,b")
   tricepsonestat <- threeidenticalgroups
   tricepsthreestat <- threeidenticalgroups
-  tricepssevenstat <- c("a", "b", "b")
-  tibialisonestat <- threeidenticalgroups
-  tibialisthreestat <- threeidenticalgroups
-  tibialissevenstat <- threeidenticalgroups
-  
+  tricepssevenstat <- c("a", "b", "b")  
   
   #1
-  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", levatorcolumn)]
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]
+  shortdf <- rescaledtovehicleasone(shortdf)
+  
+  
   levatoroneplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, levatoronestat) +
     anotatedtitle("one day", 2, levatorylim[[2]]) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
