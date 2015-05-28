@@ -14792,11 +14792,8 @@ bsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 
 \begin_layout Standard
 A similar pattern, although with lower intensity, was seen in MAFbx gene
- regulation by the two drugs.
-\end_layout
-
-\begin_layout Standard
-MAFbx was upregulated by Dexa at day 1 in gastrocnemius (
+ regulation by the two steroids.
+ MAFbx was reliably upregulated by Dexa at day 1 in gastrocnemius (
 \begin_inset Flex S/R expression
 status open
 
@@ -14847,33 +14844,8 @@ etonedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
- The effect was even more consistent at day 3, with MAFbx transcript in
- gastrocnemius being 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "V")$gastrocnemius.C
-t.Fbxo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
- == "D")$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
-\end_layout
-
-\end_inset
-
- fold amplified (Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(invivodatasubsetthreedays$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., invivodat
-asubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
-\end_layout
-
-\end_inset
-
-), and in quadriceps 
+ At day 3, only the quadriceps MAFbx response was still present to a significant
+ degree (
 \begin_inset Flex S/R expression
 status open
 
@@ -14886,7 +14858,7 @@ xo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatm
 
 \end_inset
 
- fold amplified (Dunn's test, p = 
+ fold amplification; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -14899,24 +14871,11 @@ bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
- The effect was insignificant statistically, and in amplitude, by the seventh
- day of Dexa administration.
-\end_layout
-
-\begin_layout Standard
-Testo co-adminstration had an inhibitory effect on MAFbx, with a later onset.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-DISCUSSION:temporal dissociation of the two drugs in MuRF.
-\end_layout
-
-\end_inset
-
- No significant effect of Testo co-administration was seen in day 1.
- In day 3, MAFbx was repressed by Testo in gastrocnemius (
+ The effect became insignificant statistically across muscle groups by the
+ seventh day of Dexa administration.
+ Testo co-administration had no statistically significant effect on MAFbx
+ at day 1.
+ By day 3, MAFbx was repressed by Testo in gastrocnemius (
 \begin_inset Flex S/R expression
 status open
 
