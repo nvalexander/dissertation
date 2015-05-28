@@ -13454,7 +13454,7 @@ day}
 
  Testo treatments.
  Treatments designated by the same letter do not differ significantly from
- each other.
+ each other (n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Body-weight-at"
@@ -13712,7 +13712,7 @@ Time course of body weight Dexa and / or Testo treatments.
 
 \end_inset
 
-Time course of body weight Dexa and / or Testo treatments.
+Time course of body weight Dexa and / or Testo treatments (n=5-6).
  Stars indicate statistically significant differences between Veh and Dexa
  (p <0.05).
  Daggers indicate statistically significant differences between Dexa and
@@ -14147,7 +14147,17 @@ plotleanfat()
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Changes in water, lean, and fat body mass, after Dexa and / or Testo treatments.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in water, lean, and fat body mass, after Dexa and / or Testo treatments
+\end_layout
+
+\end_inset
+
+Changes in water, lean, and fat body mass, after Dexa and / or Testo treatments
+ (n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Changes-in-water,"
@@ -14346,7 +14356,8 @@ ed to body weight).
 \end_inset
 
 Effects of Dexa and / or Testo treatments on the wet weight of levator ani,
- quadriceps, gastrocnemius, triceps brachii, and tibialis anterior muscles.
+ quadriceps, gastrocnemius, triceps brachii, and tibialis anterior muscles
+ (n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Effects-of-Dexa"
@@ -14874,7 +14885,7 @@ bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
  The effect became insignificant statistically across muscle groups by the
  seventh day of Dexa administration.
  Testo co-administration had no statistically significant effect on MAFbx
- at day 1.
+ at days 1 and 7.
  By day 3, MAFbx was repressed by Testo in gastrocnemius (
 \begin_inset Flex S/R expression
 status open
@@ -14926,58 +14937,6 @@ bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_inset
 
 ).
- Testo repression of MAFbx strengthened in the day 7 samples, with transcripts
- reduced in gastrocnemius (
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( 2^(mean(subset(invivodatasubsetsevendays, treatment == "C")$gastrocnemius.C
-t.Fbxo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
- == "D")$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
-\end_layout
-
-\end_inset
-
- fold reduction; Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(invivodatasubsetsevendays$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., invivodat
-asubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
-\end_layout
-
-\end_inset
-
-) and in quadriceps(
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( 2^(mean(subset(invivodatasubsetsevendays, treatment == "C")$quadriceps.Ct.Fb
-xo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
- == "D")$quadriceps.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
-\end_layout
-
-\end_inset
-
- fold reduction; Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(invivodatasubsetsevendays$quadriceps.Ct.Fbxo32....Ct.Gapdh., invivodatasu
-bsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
-\end_layout
-
-\end_inset
-
-).
 \end_layout
 
 \begin_layout Standard
@@ -15019,8 +14978,18 @@ plotatrogenes()
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
 Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
- Dexa and / or Testo treatments.
+ Dexa and / or Testo treatments
+\end_layout
+
+\end_inset
+
+Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
+ Dexa and / or Testo treatments (n=3-5).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Changes-in-atrogenes"
