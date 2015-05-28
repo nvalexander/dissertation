@@ -204,7 +204,34 @@ anotatedtitle <- function(text, x, y) {
            family = "Liberation Sans Narrow"))
 }
 
-threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){ 
+threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
+  #this function expects a dataframe with two columns, first designating the treatments
+  return(ggplot(skinnydataset) +
+           aes_string( x = colnames(skinnydataset)[1], 
+                       y = colnames(skinnydataset)[2], 
+                       fill = colnames(skinnydataset)[1]) +
+           stat_summary(fun.y = mean, 
+                        geom = "bar", 
+                        colour = "black",
+                        show_guide = FALSE) +
+           stat_summary(geom = 'errorbar',
+                        fun.data = 'semInterval',
+                        width = 0.1) +
+           stat_summary(geom = "text", 
+                        size = textSize * .4,
+                        aes(family = "Liberation Sans Narrow"),
+                        fun.y = statstringyoverbar, 
+                        hjust = .5,
+                        vjust = -.6,
+                        label = statstrings) +
+           ylab(ylabel) +
+           coord_cartesian(ylim = ylimit) + 
+           scale_fill_manual(values = greypalette) +
+           stdbarplot)
+}
+
+
+threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   return(ggplot(skinnydataset) +
            aes_string( x = colnames(skinnydataset)[1], 
                        y = colnames(skinnydataset)[2], 
@@ -622,7 +649,7 @@ plotproteasomeactivity <- function(){
   quadricepsylim <- c(0, 1.8)
   gastrocnemiusylim <- c(0, 2)
   tricepsylim <- c(0, 3)
-  
+  #FIXTHESE
   quadricepsonestat <- threeidenticalgroups
   quadricepsthreestat <- threeidenticalgroups
   quadricepssevenstat <- c("a", "b", "a,b")
@@ -689,3 +716,32 @@ plotproteasomeactivity <- function(){
                       #gastrocnemiusoneplot, gastrocnemiusthreeplot, gastrocnemiussevenplot,
                       ncol=3))
 }
+
+
+# SIXTH plot shows atrogenes in two muscles at three time points
+plotproteasomeactivity <- function(){
+  quadricepscolumn <- "quadriceps.Ct.Fbxo32...Ct.Gapdh."
+  gastrocnemiuscolumn <- "gastrocnemius.proteasome.activity..rel.u.."
+  
+  quadricepslabel <- "quadriceps Fbxo32 mRNA"
+  gastrocnemiuslabel <- "gastrocnemius Fbxo32 mRNA"
+  
+  quadricepsylim <- c(0.05, 1.8)
+  gastrocnemiusylim <- c(0.05, 2)
+  
+  #FIXTHESE
+  quadricepsonestat <- threeidenticalgroups
+  quadricepsthreestat <- threeidenticalgroups
+  quadricepssevenstat <- c("a", "b", "a,b")
+  gastrocnemiusonestat <- threeidenticalgroups
+  gastrocnemiusthreestat <- c("a", "b", "a,b")
+  gastrocnemiussevenstat <- c("a", "b", "a,b")
+  
+  #1
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]
+  shortdf <- rescaledtovehicleaszero(shortdf)
+  quadricepsoneplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsonestat) +
+    anotatedtitle("one day", 2, quadricepsylim[[2]]) +
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
+  
+  
