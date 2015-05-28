@@ -683,13 +683,13 @@ plotproteasomeactivity <- function(){
   
   quadricepsonestat <- threeidenticalgroups
   quadricepsthreestat <- threeidenticalgroups
-  quadricepssevenstat <- c("a", "b", "a,b")
+  quadricepssevenstat <- threeidenticalgroups
   gastrocnemiusonestat <- c("a,b", "a", "b")
-  gastrocnemiusthreestat <- c("a", "b", "a,b")
-  gastrocnemiussevenstat <- c("a", "b", "a,b")
+  gastrocnemiusthreestat <- c("a", "b", "b")
+  gastrocnemiussevenstat <- threeidenticalgroups
   tricepsonestat <- threeidenticalgroups
   tricepsthreestat <- threeidenticalgroups
-  tricepssevenstat <- c("a", "b", "b")  
+  tricepssevenstat <- threeidenticalgroups  
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]

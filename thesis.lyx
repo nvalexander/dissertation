@@ -15014,6 +15014,9 @@ The other component of the ubiquitin-proteasome system is the proteasome
  itself.
  Especially in cases where E3 ligases are upregulated, it may be the case
  that availability of proteasomes is limiting.
+ While there was no significant change at days 1 and 7, day 3 samples exhibited
+ changes in proteasome catalytic activity that correlated with the phenotype.
+ Dexa upregulated proteasome chymotrypsin-like enzymatic activity
 \end_layout
 
 \begin_layout Standard
@@ -15055,7 +15058,18 @@ plotproteasomeactivity()
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Proteasome
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in proteasome enzymatic activity following Dexa and / or Testo treatment
+s.
+\end_layout
+
+\end_inset
+
+Changes in proteasome chymotrypsin-like enzymatic activity following Dexa
+ and / or Testo treatments (n=3-5).
 \end_layout
 
 \end_inset
