@@ -244,7 +244,7 @@ reportstats <- function(invivodata, invivocolnames){
 #FIRST PLOT - body weights at sacrifice
 plotbodyweightsatsacrifice <- function(){
   ylabel <- "body weight (g)"
-  ylimit <- c(0, 32)
+  ylimit <- c(0, 35)
   onedaysstat <- c("a", "b", "a,b")
   threedaysstat <- c("a,b", "a", "b")
   sevendaysstat <- threeidenticalgroups
@@ -252,8 +252,6 @@ plotbodyweightsatsacrifice <- function(){
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   onedaysweightplot <- threecolumnplot(shortdf, ylabel, ylimit, onedaysstat) +
     anotatedtitle("one day", 2, ylimit[[2]]) # + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-  meanslayer <- onedaysweightplot$layers[[1]]
-  meanslayer$show_guide <- TRUE
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
   threedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, threedaysstat) +
@@ -437,6 +435,13 @@ plotleanfat <- function(){
   shortdf[,2] <- shortdf[, 2] * (-1)
   wateroneplot <- threecolumnplot(shortdf, waterlabel, waterylim, wateronestat) +
     anotatedtitle("one day", 2, waterylim[[2]])
+  #THIS FORCES THE DISPLAY OF A LEGEND
+  meanslayer <- wateroneplot$layers[[1]]
+  meanslayer$show_guide <- TRUE
+  wateroneplot <- wateroneplot + 
+    scale_fill_manual(values = greypalette, labels = conditionsVDC) + 
+    guides(fill = guide_legend(title = NULL, override.aes = list(colour = NULL))) + 
+    theme(legend.position = c(0, 1), legend.justification = c(0,1))
   
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
