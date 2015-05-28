@@ -13147,6 +13147,7 @@ key "stodden2014implementing"
  Results are presented as means ± standard error of the mean.
  In plots, points represent means, while error bars are standard error of
  the mean.
+ In both cases, error bars include only biological variability.
  Experiments with more than two groups were analyzed by analysis of variance
  (
 \begin_inset CommandInset nomenclature
@@ -13157,10 +13158,8 @@ description "analysis of variance"
 \end_inset
 
 ) or Kruskal-Wallis test for overall non-parametric analysis of variance.
- If the test was not significant, no mention of significance was made in
- text or figures.
- If the test was significant, groups were compared in pairs using post-hoc
- Dunn's test with Bonferroni correction for multiple comparison.
+ Groups were compared in pairs using post-hoc Dunn's test with Bonferroni
+ correction for multiple comparisons.
  In a plot, means with the same letter are not significantly different from
  each other.
  Tests were considered statistically significant when the null hypothesis
@@ -14507,12 +14506,20 @@ reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_inset
 
 .
+ The small amplitude and the complete absence of statistical significance
+ suggest that observations describe lack of Testo effect, rather than a
+ true atrophic effect.
+ ANTIATROPHIc - for discussion.
  Because tibialis is not manifesting GAML at macroscopic level, molecular
  analysis will not include it.
 \end_layout
 
 \begin_layout Standard
-Dexa induces the 
+AAS reverses glucocorticoid-induced activation of the ubiquitin-proteasome
+ system
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
