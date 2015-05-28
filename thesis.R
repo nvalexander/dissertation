@@ -237,36 +237,66 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
 threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   #this function expects a dataframe with two columns, first designating the treatments
   # second column described Ct(GOI)-Ct(housekeeping gene)
-  foldchangearray <- skinnydataset[complete.cases(skinnydataset),]
-  foldchangearray[,2] <- 2 ^ (foldchangearray[,2] * -1)
-  return(ggplot(foldchangearray) +
-           aes_string( x = colnames(foldchangearray)[1], 
-                       y = colnames(foldchangearray)[2], 
-                       group = colnames(foldchangearray)[1]) +
+  completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
+  return(ggplot(completecasesdataset) +
+           aes_string( x = colnames(completecasesdataset)[1], 
+                       y = colnames(completecasesdataset)[2], 
+                       group = colnames(completecasesdataset)[1]) +
            stat_summary(geom = "point",
                         size = 3,
                         colour = "black",
-                        fun.y = harmonicmean,
+                        fun.y = mean,
                         show_guide = FALSE,
-                        aes_string(shape = colnames(foldchangearray)[1])) +
+                        aes_string(shape = colnames(completecasesdataset)[1])) +
            stat_summary(geom = "text", 
                         size = textSize * .4,
                         aes(family = "Liberation Sans Narrow"),
-                        fun.y = statstringyoversembar, 
+                        fun.y = statstringyoverbar, 
                         hjust = .5,
                         vjust = -.6,
                         label = statstrings) + 
            stat_summary(geom = 'errorbar',
-                        fun.data = 'harmonicSEMinterval',
+                        fun.data = 'semInterval',
                         width = 0.1,
                         show_guide = FALSE,
                         position=position_dodge(.05)) +
            ylab(ylabel) +
-           scale_y_continuous(breaks = 2^(-10:10), labels = prettyNum(2^(-10:10))) +
-           coord_trans(ytrans = "log10", limy = ylimit) +
+           scale_y_continuous(breaks = (-10:10), labels = prettyNum(2^(-10:10))) +
            scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
-           stdbarplot )
+           stdbarplot)
 }
+
+
+#   foldchangearray <- skinnydataset[complete.cases(skinnydataset),]
+#   foldchangearray[,2] <- 2 ^ (foldchangearray[,2] * -1)
+#   return(ggplot(foldchangearray) +
+#            aes_string( x = colnames(foldchangearray)[1], 
+#                        y = colnames(foldchangearray)[2], 
+#                        group = colnames(foldchangearray)[1]) +
+#            stat_summary(geom = "point",
+#                         size = 3,
+#                         colour = "black",
+#                         fun.y = harmonicmean,
+#                         show_guide = FALSE,
+#                         aes_string(shape = colnames(foldchangearray)[1])) +
+#            stat_summary(geom = "text", 
+#                         size = textSize * .4,
+#                         aes(family = "Liberation Sans Narrow"),
+#                         fun.y = statstringyoversembar, 
+#                         hjust = .5,
+#                         vjust = -.6,
+#                         label = statstrings) + 
+#            stat_summary(geom = 'errorbar',
+#                         fun.data = 'harmonicSEMinterval',
+#                         width = 0.1,
+#                         show_guide = FALSE,
+#                         position=position_dodge(.05)) +
+#            ylab(ylabel) +
+#            scale_y_continuous(breaks = 2^(-10:10), labels = prettyNum(2^(-10:10))) +
+#            coord_trans(ytrans = "log10", limy = ylimit) +
+#            scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
+#            stdbarplot )
+
 
 #PMID12519877
 loadPMID12519877 <- function(datadirpath){
