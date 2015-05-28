@@ -14554,9 +14554,9 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(mean(subset(invivodatasubsetonedays, treatment == "D")$gastrocnemius.Ct.T
+sig3( 2^(mean(subset(invivodatasubsetonedays, treatment == "V")$gastrocnemius.Ct.T
 rim63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetonedays, treatment
- == "C")$gastrocnemius.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+ == "D")$gastrocnemius.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
 \end_layout
 
 \end_inset
@@ -14573,7 +14573,32 @@ ubsetonedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-) and quadriceps.
+) and quadriceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetonedays, treatment == "V")$quadriceps.Ct.Trim
+63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetonedays, treatment
+ == "D")$quadriceps.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold amplification; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetonedays$quadriceps.Ct.Trim63....Ct.Gapdh., invivodatasubs
+etonedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
