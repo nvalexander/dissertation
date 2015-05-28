@@ -14881,16 +14881,17 @@ status open
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="3.5in">
+<column alignment="center" valignment="top" width="2.5in">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename artwork/murfblot/murfblot.pdf
-	lyxscale 30
+	lyxscale 50
+	width 3.5in
 
 \end_inset
 
@@ -14899,7 +14900,7 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -14908,13 +14909,13 @@ status open
 
 \begin_layout Plain Layout
 
-<<out.width = "2.5in", out.height = "2.5in", fig.width = 2.5, fig.height = 2.5,
- dev='cairo_pdf'>>=
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "2.2in", out.height
+ = "2.2in", fig.width = 2.2, fig.height = 2.2, dev='cairo_pdf'>>=
 \end_layout
 
 \begin_layout Plain Layout
 
-print("Hello World")
+print(ggplot(mtcars, aes(mpg, hp)) + geom_point())
 \end_layout
 
 \begin_layout Plain Layout
