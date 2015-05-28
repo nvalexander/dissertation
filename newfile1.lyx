@@ -80,17 +80,17 @@ status open
 
 \begin_layout Plain Layout
 \noindent
-\begin_inset Box Frameless
+\begin_inset Box Boxed
 position "t"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
 width "3.5in"
 special "none"
-height "1in"
-height_special "totalheight"
+height "2.5in"
+height_special "none"
 status open
 
 \begin_layout Plain Layout
@@ -105,17 +105,17 @@ status open
 \end_inset
 
 
-\begin_inset Box Frameless
+\begin_inset Box Boxed
 position "t"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
 width "2.5in"
 special "none"
-height "1in"
-height_special "totalheight"
+height "2.5in"
+height_special "none"
 status open
 
 \begin_layout Plain Layout
