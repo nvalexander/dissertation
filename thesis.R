@@ -241,7 +241,7 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   return(ggplot(foldchangearray) +
            aes_string( x = colnames(foldchangearray)[1], 
                        y = colnames(foldchangearray)[2], 
-                       group = colnames(foldchangearray)[1]) +
+                       fill = colnames(foldchangearray)[1]) +
            stat_summary(geom = "point",
                         size = 3,
                         colour = "black",
@@ -263,11 +263,11 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
                         width = 0.1,
                         show_guide = FALSE,
                         position=position_dodge(.05)) +
-           coord_cartesian(ylim = ylimit) + 
-           ylab(ylabel) +
            scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
-           coord_trans(ytrans = "log10") + 
-           scale_y_continuous(labels = percent, breaks = 2^(-5:5)) +
+           coord_trans(ytrans = "log10", limy = ylimit) +
+           ylab(ylabel) +
+           ylim(ylimit) + 
+           scale_y_continuous(labels = percent, breaks = 2^(-10:10)) +
            stdbarplot )
 }
 
