@@ -100,8 +100,8 @@ sig3 <- function(x) {
 
 semInterval <- function(x) {
   lims <- c(
-    mean(x, na.rm = TRUE) + SEM(x),
-    mean(x, na.rm = TRUE) - SEM(x)
+    mean(x, na.rm = TRUE) - SEM(x),
+    mean(x, na.rm = TRUE) + SEM(x)
     )
   names(lims) <- c(
     'ymin',
@@ -120,6 +120,21 @@ statstringyoverbar <-function(x){
 
 truecount <- function(x) {
   return( length(na.omit(x)) )
+}
+
+harmonicmean <- function(x){
+  y <- log(x, 2)
+  return(2 ^ mean(y, na.rm = TRUE))
+}
+
+harmonicSEM <-function(x) {
+  y <- log(x, 2)
+  return(2 ^ SEM(y))
+}
+
+harmonicSEMinterval <- function(x) {
+  y <- log(x, 2)
+  return(2 ^ semInterval(y))
 }
 
 hview <- function(htmllines) {
@@ -179,6 +194,8 @@ stdbarplot <-
         axis.title.x = element_blank(),
         axis.text.x= element_blank(),
         axis.title.y = element_text( size = textSize))
+
+stdpcrplot <- stdbarplot + coord_trans(ytrans = "log10") + scale_y_continuous(labels = percent, breaks = 2^(-5:5)))
 
 anotatedtitle <- function(text, x, y) {
   return(annotate(geom = "text", label = text, x = x, y = y,
