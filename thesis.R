@@ -122,21 +122,6 @@ truecount <- function(x) {
   return( length(na.omit(x)) )
 }
 
-harmonicmean <- function(x){
-  y <- log(x, 2)
-  return(2 ^ mean(y, na.rm = TRUE))
-}
-
-harmonicSEM <-function(x) {
-  y <- log(x, 2)
-  return(2 ^ SEM(y))
-}
-
-harmonicSEMinterval <- function(x) {
-  y <- log(x, 2)
-  return(2 ^ semInterval(y))
-}
-
 statstringyoversembar <-function(x){
   return(max(harmonicSEMinterval(x)))
 }
@@ -238,6 +223,7 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   #this function expects a dataframe with two columns, first designating the treatments
   # second column described Ct(GOI)-Ct(housekeeping gene)
   completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
+  completecasesdataset[,2] <- completecasesdataset[,2] * (-1)
   return(ggplot(completecasesdataset) +
            aes_string( x = colnames(completecasesdataset)[1], 
                        y = colnames(completecasesdataset)[2], 
@@ -262,6 +248,7 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
                         position=position_dodge(.05)) +
            ylab(ylabel) +
            scale_y_continuous(breaks = (-10:10), labels = prettyNum(2^(-10:10))) +
+           coord_cartesian(ylim = ylimit) +
            scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
            stdbarplot)
 }
@@ -774,18 +761,18 @@ plotatrogenes <- function(){
   quadricepsMurflabel <- "quadriceps\nTrim63 mRNA"
   gastrocnemiusMurflabel <- "gastrocnemius\nTrim63 mRNA"
   
-  quadricepsoneMafbxylim <- c(0.5, 300)
-  quadricepsthreeMafbxylim <- c(0.4, 50)
-  quadricepssevenMafbxylim <- c(0.4, 6)
-  gastrocnemiusoneMafbxylim <- c(0.4, 6)
-  gastrocnemiusthreeMafbxylim <- c(0.4, 50)
-  gastrocnemiussevenMafbxylim <- c(0.4, 6)
-  quadricepsoneMurfylim <- c(0.5, 300)
-  quadricepsthreeMurfylim <- c(0.4, 50)
-  quadricepssevenMurfylim <- c(0.4, 6)
-  gastrocnemiusoneMurfylim <- c(0.4, 6)
-  gastrocnemiusthreeMurfylim <- c(0.4, 50)
-  gastrocnemiussevenMurfylim <- c(0.4, 6)
+  quadricepsoneMafbxylim <- c(-1, 8.5)
+  quadricepsthreeMafbxylim <- c(-1, 6)
+  quadricepssevenMafbxylim <- c(-1, 2)
+  gastrocnemiusoneMafbxylim <- c(-1, 2.5)
+  gastrocnemiusthreeMafbxylim <- c(-1, 6)
+  gastrocnemiussevenMafbxylim <- c(-1, 2)
+  quadricepsoneMurfylim <- c(-1, 8.5)
+  quadricepsthreeMurfylim <- c(-1, 6)
+  quadricepssevenMurfylim <- c(-1, 2)
+  gastrocnemiusoneMurfylim <- c(-1, 2.5)
+  gastrocnemiusthreeMurfylim <- c(-1, 6)
+  gastrocnemiussevenMurfylim <- c(-1, 2)
   
   gastrocnemiusoneMafbxstat <- c("a", "a,b", "b")
   gastrocnemiusoneMurfstat <- threeidenticalgroups
