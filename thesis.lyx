@@ -14514,13 +14514,27 @@ reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
  analysis will not include it.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section*
 AAS reverses glucocorticoid-induced activation of the ubiquitin-proteasome
  system
 \end_layout
 
 \begin_layout Standard
-lol
+The rapid loss of muscle mass induced by Dexa in mice exceed the rate of
+ protein turnover in normal adult rodent muscle (about 3% per day
+\begin_inset CommandInset citation
+LatexCommand citep
+key "millward1975skeletal-muscle"
+
+\end_inset
+
+).
+ Therefore, Dexa's action cannot rely exclusively on translational shutdown.
+ I attempted to establish which protein degratative pathways could be mediating
+ the atrophic effect of dexamethasone.
+ Based by the studies on rats and the microarra studies, I hypothesized
+ that Dexa must stimulate the proteasome-ubiquitin system.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -14636,6 +14650,7 @@ Proteasome
 \end_layout
 
 \begin_layout Standard
+lol
 \begin_inset Newpage pagebreak
 \end_inset
 
