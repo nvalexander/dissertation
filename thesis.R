@@ -480,27 +480,28 @@ plotleanfat <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  leanoneplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanonestat)
+  leanoneplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanonestat) +
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #THIS FORCES THE DISPLAY OF A LEGEND
-  meanslayer <- leanoneplot$layers[[1]]
-  meanslayer$show_guide <- TRUE
-  leanoneplot <- leanoneplot + 
-    scale_fill_manual(values = greypalette, labels = conditionsVDC) + 
-    guides(fill = guide_legend(title = NULL, override.aes = list(colour = NULL))) + 
-    theme(legend.position = c(0, 1), legend.justification = c(0,1))
-  
+#   meanslayer <- leanoneplot$layers[[1]]
+#   meanslayer$show_guide <- TRUE
+#   leanoneplot <- leanoneplot + 
+#     scale_fill_manual(values = greypalette, labels = conditionsVDC) + 
+#     guides(fill = guide_legend(title = NULL, override.aes = list(colour = NULL))) + 
+#     theme(legend.position = c(0, 1), legend.justification = c(0,1))
+#   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   leanthreeplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanthreestat) +
-    scale_x_discrete(labels = threeemptystrings)
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   leansevenplot <- threecolumnplot(shortdf, leanlabel, leanylim, leansevenstat) +
-    scale_x_discrete(labels = conditionsVDC)
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", fatcolumn)]
