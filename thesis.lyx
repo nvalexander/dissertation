@@ -14543,7 +14543,7 @@ ANTIATROPHIc - for discussion.
  analysis will not include it.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 AAS reverses glucocorticoid-induced activation of the ubiquitin-proteasome
  system
 \end_layout
@@ -14561,11 +14561,15 @@ key "millward1975skeletal-muscle"
  Therefore, Dexa's action cannot rely exclusively on translational shutdown.
  I attempted to establish which protein degradative pathways could be mediating
  the atrophic effect of dexamethasone.
- Based by the studies on rats and the microarray studies, I hypothesized
- that Dexa must stimulate the proteasome-ubiquitin system.
- In normal circumstances, the rate-limiting factor in proteasome-mediated
- protein degradation is the conjugation with ubiquitin, catalyzed by E3
- ligases.
+ Experiments on rats suggest that Dexa causes protein degradation by stimulating
+ the proteasome-ubiquitin-related transcriptional program, whereas Testo
+ represses it.
+\end_layout
+
+\begin_layout Standard
+In normal circumstances, the rate-limiting factor in proteasome-mediated
+ protein degradation is target protein conjugation with ubiquitin, catalyzed
+ by E3 ligases.
  In mice treated with Dexa, the E3 ligase more commonly associated with
  loss of muscle mass, MuRF-1 (Fig.
  
@@ -15026,13 +15030,13 @@ status open
 sig3(100*(mean(subset(invivodatasubsetthreedays, treatment == "D")$quadriceps.pro
 teasome.activity..rel.u.., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays,
  treatment == "V")$quadriceps.proteasome.activity..rel.u.., na.rm = TRUE)) / mean(subset
-(invivodatasubsetsevendays, treatment == "V")$quadriceps.proteasome.activity..rel.u..,
+(invivodatasubsetthreedays, treatment == "V")$quadriceps.proteasome.activity..rel.u..,
  na.rm = TRUE))
 \end_layout
 
 \end_inset
 
-% reduction; Dunn's test, p = 
+% increase; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -15054,13 +15058,13 @@ status open
 sig3(100*(mean(subset(invivodatasubsetthreedays, treatment == "D")$triceps.protea
 some.activity..rel.u.., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays,
  treatment == "V")$triceps.proteasome.activity..rel.u.., na.rm = TRUE)) / mean(subset(in
-vivodatasubsetsevendays, treatment == "V")$quadriceps.proteasome.activity..rel.u..,
+vivodatasubsetthreedays, treatment == "V")$triceps.proteasome.activity..rel.u..,
  na.rm = TRUE))
 \end_layout
 
 \end_inset
 
-% reduction; Dunn's test, p = 
+% increase; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -15074,6 +15078,64 @@ eways]])
 \end_inset
 
 ).
+ This component of atrophy was also inhibited by Testo, whose co-administration
+ reduced proteasome activity in quadriceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetthreedays, treatment == "D")$quadriceps.pro
+teasome.activity..rel.u.., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays,
+ treatment == "C")$quadriceps.proteasome.activity..rel.u.., na.rm = TRUE)) / mean(subset
+(invivodatasubsetthreedays, treatment == "D")$quadriceps.proteasome.activity..rel.u..,
+ na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+% reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$quadriceps.proteasome.activity..rel.u..,
+ invivodatasubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthre
+eways]])
+\end_layout
+
+\end_inset
+
+) and triceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetthreedays, treatment == "D")$triceps.protea
+some.activity..rel.u.., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays,
+ treatment == "C")$triceps.proteasome.activity..rel.u.., na.rm = TRUE)) / mean(subset(in
+vivodatasubsetthreedays, treatment == "D")$triceps.proteasome.activity..rel.u..,
+ na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+% reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$triceps.proteasome.activity..rel.u..,
+ invivodatasubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthre
+eways]])
+\end_layout
+
+\end_inset
+
+) at day 3.
 \end_layout
 
 \begin_layout Standard
