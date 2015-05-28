@@ -680,11 +680,11 @@ plotproteasomeactivity <- function(){
   quadricepsylim <- c(0, 1.8)
   gastrocnemiusylim <- c(0, 2)
   tricepsylim <- c(0, 3)
-  #FIXTHESE
+  
   quadricepsonestat <- threeidenticalgroups
   quadricepsthreestat <- threeidenticalgroups
   quadricepssevenstat <- c("a", "b", "a,b")
-  gastrocnemiusonestat <- threeidenticalgroups
+  gastrocnemiusonestat <- c("a,b", "a", "b")
   gastrocnemiusthreestat <- c("a", "b", "a,b")
   gastrocnemiussevenstat <- c("a", "b", "a,b")
   tricepsonestat <- threeidenticalgroups
@@ -863,6 +863,8 @@ plotatrogenes <- function(){
 
 plotmurf <- function(){
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "quadriceps.MuRF1.protein..normalized.to.GAPDH.")]
+  
+  shortdf <- 
   shortdf <- rescaledtovehicleasunity(shortdf)
   murfplot <- threecolumnplot(shortdf, "MuRF-1 protein\n(normalized to GAPDH)", c(0,1.5), c("a", "a", "a"))
   return(murfplot)

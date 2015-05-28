@@ -15010,6 +15010,13 @@ bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \begin_layout Standard
+The other component of the ubiquitin-proteasome system is the proteasome
+ itself.
+ Especially in cases where E3 ligases are upregulated, it may be the case
+ that availability of proteasomes is limiting.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -15062,7 +15069,16 @@ Proteasome
 \end_layout
 
 \begin_layout Standard
-lol
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Odc is upregulated at day 1 by T.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newpage pagebreak
 \end_inset
 
