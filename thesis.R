@@ -13,6 +13,7 @@ library(reshape2)
 library(data.table)
 library(extrafont)
 library(Cairo)
+library(scales)
 #font_import(prompt = FALSE)
 options(bitmapType="cairo")
 
