@@ -677,37 +677,37 @@ plotproteasomeactivity <- function(){
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   quadricepsoneplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsonestat) +
-    anotatedtitle("one day", 2, quadricepsylim[[2]]) +
-    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
+    anotatedtitle("one day", 2, quadricepsylim[[2]]) 
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", quadricepscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   quadricepsthreeplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsthreestat) +
-    anotatedtitle("three days", 2, quadricepsylim[[2]]) +
-    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
+    anotatedtitle("three days", 2, quadricepsylim[[2]])
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", quadricepscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   quadricepssevenplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepssevenstat) +
-    anotatedtitle("seven days", 2, quadricepsylim[[2]]) +
-    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
+    anotatedtitle("seven days", 2, quadricepsylim[[2]]) 
   
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", gastrocnemiuscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
-  gastrocnemiusoneplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusonestat) 
+  gastrocnemiusoneplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusonestat) +
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #5
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", gastrocnemiuscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
-  gastrocnemiusthreeplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusthreestat)
+  gastrocnemiusthreeplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusthreestat)+
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #6
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", gastrocnemiuscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
-  gastrocnemiussevenplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiussevenstat)
+  gastrocnemiussevenplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiussevenstat)+
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #7
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", tricepscolumn)]
@@ -743,17 +743,17 @@ plotatrogenes <- function(){
   quadricepsMurflabel <- "quadriceps\nTrim63 mRNA"
   gastrocnemiusMurflabel <- "gastrocnemius\nTrim63 mRNA"
   
-  quadricepsoneMafbxylim <- c(0.5, 250)
-  quadricepsthreeMafbxylim <- c(0.5, 20)
-  quadricepssevenMafbxylim <- c(0.5, 5)
+  quadricepsoneMafbxylim <- c(0.5, 300)
+  quadricepsthreeMafbxylim <- c(0.4, 50)
+  quadricepssevenMafbxylim <- c(0.4, 6)
   gastrocnemiusoneMafbxylim <- c(0.4, 6)
-  gastrocnemiusthreeMafbxylim <- c(0.4, 6)
+  gastrocnemiusthreeMafbxylim <- c(0.4, 50)
   gastrocnemiussevenMafbxylim <- c(0.4, 6)
-  quadricepsoneMurfylim <- c(0.5, 250)
-  quadricepsthreeMurfylim <- c(0.5, 20)
-  quadricepssevenMurfylim <- c(0.5, 5)
+  quadricepsoneMurfylim <- c(0.5, 300)
+  quadricepsthreeMurfylim <- c(0.4, 50)
+  quadricepssevenMurfylim <- c(0.4, 6)
   gastrocnemiusoneMurfylim <- c(0.4, 6)
-  gastrocnemiusthreeMurfylim <- c(0.4, 6)
+  gastrocnemiusthreeMurfylim <- c(0.4, 50)
   gastrocnemiussevenMurfylim <- c(0.4, 6)
   
   #FIXTHESE
@@ -774,19 +774,19 @@ plotatrogenes <- function(){
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepsMafbxcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   quadricepsoneMafbxplot <- threegeneplot(shortdf, quadricepsMafbxlabel, quadricepsoneMafbxylim, quadricepsoneMafbxstat) +
-    anotatedtitle("one day", 2, quadricepsoneMafbxylim[[2]]) 
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", quadricepsMafbxcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   quadricepsthreeMafbxplot <- threegeneplot(shortdf, quadricepsMafbxlabel, quadricepsthreeMafbxylim, quadricepsoneMafbxstat) +
-    anotatedtitle("three days", 2, quadricepsthreeMafbxylim[[2]]) 
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", quadricepsMafbxcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   quadricepssevenMafbxplot <- threegeneplot(shortdf, quadricepsMafbxlabel, quadricepssevenMafbxylim, quadricepsoneMafbxstat) +
-    anotatedtitle("seven days", 2, quadricepssevenMafbxylim[[2]])
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", gastrocnemiusMafbxcolumn)]
@@ -822,21 +822,24 @@ plotatrogenes <- function(){
   #10
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", gastrocnemiusMurfcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
-  gastrocnemiusoneMurfplot <- threegeneplot(shortdf, gastrocnemiusMurflabel, gastrocnemiusoneMurfylim, gastrocnemiusoneMurfstat)
+  gastrocnemiusoneMurfplot <- threegeneplot(shortdf, gastrocnemiusMurflabel, gastrocnemiusoneMurfylim, gastrocnemiusoneMurfstat) +
+    anotatedtitle("one day", 2, gastrocnemiusoneMurfylim[[2]])
   
   #11
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", gastrocnemiusMurfcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
-  gastrocnemiusthreeMurfplot <- threegeneplot(shortdf, gastrocnemiusMurflabel, gastrocnemiusthreeMurfylim, gastrocnemiusoneMurfstat)
+  gastrocnemiusthreeMurfplot <- threegeneplot(shortdf, gastrocnemiusMurflabel, gastrocnemiusthreeMurfylim, gastrocnemiusoneMurfstat) +
+    anotatedtitle("three days", 2, gastrocnemiusthreeMurfylim[[2]])
   
   #12
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", gastrocnemiusMurfcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
-  gastrocnemiussevenMurfplot <- threegeneplot(shortdf, gastrocnemiusMurflabel, gastrocnemiussevenMurfylim, gastrocnemiusoneMurfstat) 
+  gastrocnemiussevenMurfplot <- threegeneplot(shortdf, gastrocnemiusMurflabel, gastrocnemiussevenMurfylim, gastrocnemiusoneMurfstat) +
+    anotatedtitle("seven days", 2, quadricepssevenMafbxylim[[2]])
   
-  return(grid.arrange(quadricepsoneMafbxplot, quadricepsthreeMafbxplot, quadricepssevenMafbxplot,
-                      gastrocnemiusoneMafbxplot, gastrocnemiusthreeMafbxplot, gastrocnemiussevenMafbxplot,
+  return(grid.arrange(gastrocnemiusoneMurfplot, gastrocnemiusthreeMurfplot, gastrocnemiussevenMurfplot,
                       quadricepsoneMurfplot, quadricepsthreeMurfplot, quadricepssevenMurfplot,
-                      gastrocnemiusoneMurfplot, gastrocnemiusthreeMurfplot, gastrocnemiussevenMurfplot,
+                      gastrocnemiusoneMafbxplot, gastrocnemiusthreeMafbxplot, gastrocnemiussevenMafbxplot,
+                      quadricepsoneMafbxplot, quadricepsthreeMafbxplot, quadricepssevenMafbxplot,
                       ncol=3))
 }
