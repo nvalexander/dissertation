@@ -244,22 +244,23 @@ reportstats <- function(invivodata, invivocolnames){
 #FIRST PLOT - body weights at sacrifice
 plotbodyweightsatsacrifice <- function(){
   ylabel <- "body weight (g)"
-  ylimit <- c(0, 35)
+  ylimit <- c(0, 32)
   onedaysstat <- c("a", "b", "a,b")
   threedaysstat <- c("a,b", "a", "b")
   sevendaysstat <- threeidenticalgroups
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   onedaysweightplot <- threecolumnplot(shortdf, ylabel, ylimit, onedaysstat) +
-    anotatedtitle("one day", 2, ylimit[[2]]) # + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
+    anotatedtitle("one day", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
   threedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, threedaysstat) +
-    anotatedtitle("three days", 2, ylimit[[2]])
+    anotatedtitle("three days", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", "day.8.body.weight..g.")]
   sevedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, sevendaysstat) +
-    anotatedtitle("seven days", 2, ylimit[[2]])
+    anotatedtitle("seven days", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
+  
   return(grid.arrange(onedaysweightplot, threedaysweightplot, sevedaysweightplot, ncol=3))
 }
 
@@ -403,8 +404,15 @@ plotleanfat <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  leanoneplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanonestat) +
-    scale_x_discrete(labels = threeemptystrings) + scale_x_discrete(labels = conditionsVDC) 
+  leanoneplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanonestat)
+  
+  #THIS FORCES THE DISPLAY OF A LEGEND
+  meanslayer <- leanoneplot$layers[[1]]
+  meanslayer$show_guide <- TRUE
+  leanoneplot <- leanoneplot + 
+    scale_fill_manual(values = greypalette, labels = conditionsVDC) + 
+    guides(fill = guide_legend(title = NULL, override.aes = list(colour = NULL))) + 
+    theme(legend.position = c(0, 1), legend.justification = c(0,1))
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
@@ -417,7 +425,7 @@ plotleanfat <- function(){
   shortdf[,2] <- shortdf[, 2] * (-1)
   leansevenplot <- threecolumnplot(shortdf, leanlabel, leanylim, leansevenstat) +
     scale_x_discrete(labels = conditionsVDC)
-
+  
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", fatcolumn)]
   fatoneplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatonestat)
@@ -435,13 +443,6 @@ plotleanfat <- function(){
   shortdf[,2] <- shortdf[, 2] * (-1)
   wateroneplot <- threecolumnplot(shortdf, waterlabel, waterylim, wateronestat) +
     anotatedtitle("one day", 2, waterylim[[2]])
-  #THIS FORCES THE DISPLAY OF A LEGEND
-  meanslayer <- wateroneplot$layers[[1]]
-  meanslayer$show_guide <- TRUE
-  wateroneplot <- wateroneplot + 
-    scale_fill_manual(values = greypalette, labels = conditionsVDC) + 
-    guides(fill = guide_legend(title = NULL, override.aes = list(colour = NULL))) + 
-    theme(legend.position = c(0, 1), legend.justification = c(0,1))
   
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
@@ -514,29 +515,20 @@ plotmuscleweights <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", levatorcolumn)]
   levatoroneplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, levatoronestat) +
-    theme(axis.text.x=element_blank()) +
-    annotate(geom = "text", label = "one day", x = 2, y = levatorylim[[2]], 
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow")
+    anotatedtitle("one day", 2, levatorylim[[2]]) +
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", levatorcolumn)]
   levatorthreeplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, levatorthreestat) +
-    theme(axis.text.x = element_blank()) +
-    annotate(geom = "text", label = "three days", x = 2, y = levatorylim[[2]], 
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow")
+    anotatedtitle("three days", 2, levatorylim[[2]]) +
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
   
   #3
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", levatorcolumn)]
-  levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, levatorsevenstat) +
-    theme(axis.text.x = element_blank()) +
-    annotate(geom = "text", label = "seven days", x = 2, y = levatorylim[[2]],
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow")
+  levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, levatorsevenstat)  +
+    anotatedtitle("seven days", 2, levatorylim[[2]]) +
+    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
   
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepscolumn)]
