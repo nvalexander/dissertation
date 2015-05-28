@@ -14918,13 +14918,23 @@ height_special "none"
 status open
 
 \begin_layout Plain Layout
-
-\begin_inset Flex Chunk
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-print(ggplot(mtcars, aes(mpg, hp)) + geom_point())
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "2.5in", out.height
+ = "2.5in", fig.width = 2.5, fig.height = 2.5, dev='cairo_pdf'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plotmurf()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
 \end_layout
 
 \begin_layout Plain Layout
@@ -14945,7 +14955,20 @@ print(ggplot(mtcars, aes(mpg, hp)) + geom_point())
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-test
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in MuRF-1 protein levels in quadriceps muscle following 3 days of
+ Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+Changes in MuRF-1 protein levels in quadriceps muscle following 3 days of
+ Dexa and / or Testo treatments.
+ (Left) Representative images of MuRF-1 and parallel GAPDH immunoblots.
+ (Right) Densitometric analysis.
 \end_layout
 
 \end_inset
