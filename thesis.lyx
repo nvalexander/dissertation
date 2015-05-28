@@ -2860,7 +2860,7 @@ description "muscle atrophy F-box"
 
 \end_inset
 
-) and muscle RING finger 1 (
+; gene known as Fbxo32) and muscle RING finger 1 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "MuRF1"
@@ -2868,8 +2868,8 @@ description "muscle RING finger 1"
 
 \end_inset
 
-), but no published studies confirm or refute their modulation in humans
- (reviewed in 
+; gene known as Trim63), but no published studies confirm or refute their
+ modulation in humans (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bodine2014skeletal"
@@ -14547,7 +14547,33 @@ key "millward1975skeletal-muscle"
  protein degradation is the conjugation with ubiquitin, catalyzed by E3
  ligases.
  In mice treated with Dexa, the E3 ligase more commonly associated with
- loss of muscle mass, MuRF-1, was upregulated by Dexa.
+ loss of muscle mass, MuRF-1, was upregulated by Dexa at day 1 in gastrocnemius
+ (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetonedays, treatment == "D")$gastrocnemius.Ct.T
+rim63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetonedays, treatment
+ == "C")$gastrocnemius.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold amplification; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetonedays$gastrocnemius.Ct.Trim63....Ct.Gapdh., invivodatas
+ubsetonedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+) and quadriceps.
 \end_layout
 
 \begin_layout Standard
@@ -14589,7 +14615,8 @@ plotatrogenes()
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Changes in atrogenes expression following Dexa and / or Testo treatments.
+Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
+ Dexa and / or Testo treatments.
 \end_layout
 
 \end_inset
