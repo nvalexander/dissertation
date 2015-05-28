@@ -605,6 +605,8 @@ plotproteasomeactivity <- function(){
   tricepslabel <- "triceps proteasome\nactivity (rel.u.)"
   
   quadricepsylim <- c(0, 1.6)
+  gastrocnemiusylim <- c(0, 1.6)
+  tricepsylim <- c(0, 1.6)
   
   quadricepsonestat <- threeidenticalgroups
   quadricepsthreestat <- threeidenticalgroups
@@ -637,7 +639,39 @@ plotproteasomeactivity <- function(){
     anotatedtitle("seven days", 2, quadricepsylim[[2]]) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
   
-  return(grid.arrange(
+  #4
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", gastrocnemiuscolumn)]
+  shortdf <- rescaledtovehicleasone(shortdf)
+  gastrocnemiusoneplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusonestat) 
+  
+  #5
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", gastrocnemiuscolumn)]
+  shortdf <- rescaledtovehicleasone(shortdf)
+  gastrocnemiusthreeplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusthreestat)
+  
+  #6
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", gastrocnemiuscolumn)]
+  shortdf <- rescaledtovehicleasone(shortdf)
+  gastrocnemiussevenplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiussevenstat)
+  
+  #7
+  shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", tricepscolumn)]
+  shortdf <- rescaledtovehicleasone(shortdf)
+  tricepsoneplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepsonestat) 
+  
+  #8
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", tricepscolumn)]
+  shortdf <- rescaledtovehicleasone(shortdf)
+  tricepsthreeplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepsthreestat)
+  
+  #9
+  shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", tricepscolumn)]
+  shortdf <- rescaledtovehicleasone(shortdf)
+  tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepssevenstat)
+  
+  
+  return(grid.arrange(gastrocnemiusoneplot, gastrocnemiusthreeplot, gastrocnemiussevenplot,
                       quadricepsoneplot, quadricepsthreeplot, quadricepssevenplot,
+                      tricepsoneplot, tricepsthreeplot, tricepssevenplot,
                       ncol=3))
 }
