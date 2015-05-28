@@ -757,18 +757,18 @@ plotatrogenes <- function(){
   gastrocnemiussevenMurfylim <- c(0.4, 6)
   
   #FIXTHESE
-  quadricepsoneMafbxstat <- threeidenticalgroups
-  quadricepsthreeMafbxstat <- threeidenticalgroups
-  quadricepssevenMafbxstat <- c("a", "b", "a,b")
-  gastrocnemiusoneMafbxstat <- threeidenticalgroups
-  gastrocnemiusthreeMafbxstat <- c("a", "b", "a,b")
-  gastrocnemiussevenMafbxstat <- c("a", "b", "a,b")
-  quadricepsoneMurfstat <- threeidenticalgroups
-  quadricepsthreeMurfstat <- threeidenticalgroups
-  quadricepssevenMurfstat <- c("a", "b", "a,b")
+  quadricepsoneMafbxstat <- c("a", "b", "a,b")
+  quadricepsthreeMafbxstat <- c("a,b", "a", "b")
+  quadricepssevenMafbxstat <- threeidenticalgroups
+  gastrocnemiusoneMafbxstat <- c("a", "a,b", "b")
+  gastrocnemiusthreeMafbxstat <- threeidenticalgroups
+  gastrocnemiussevenMafbxstat <- threeidenticalgroups
+  quadricepsoneMurfstat <- c("a", "b", "a,b")
+  quadricepsthreeMurfstat <- c("a,b", "a", "b")
+  quadricepssevenMurfstat <- c("a", "a,b", "b")
   gastrocnemiusoneMurfstat <- threeidenticalgroups
   gastrocnemiusthreeMurfstat <- c("a", "b", "a,b")
-  gastrocnemiussevenMurfstat <- c("a", "b", "a,b")
+  gastrocnemiussevenMurfstat <- threeidenticalgroups
   
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", quadricepsMafbxcolumn)]
