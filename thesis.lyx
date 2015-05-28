@@ -14918,23 +14918,13 @@ height_special "none"
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
+
+\begin_inset Flex Chunk
 status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "2.2in", out.height
- = "2.2in", fig.width = 2.2, fig.height = 2.2, dev='cairo_pdf'>>=
-\end_layout
-
-\begin_layout Plain Layout
-
 print(ggplot(mtcars, aes(mpg, hp)) + geom_point())
-\end_layout
-
-\begin_layout Plain Layout
-
-@
 \end_layout
 
 \begin_layout Plain Layout
