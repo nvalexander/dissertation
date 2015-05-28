@@ -12558,9 +12558,17 @@ Specific cDNA amounts were measured with an 7500 Fast Real-Time PCR cycler
  at 95°C.
  Then, 40 cycles are run, comprising 15 seconds at 95°C and one minute at
  60°C, with measurements of DNA after each cycle.
- The amount of specific cDNA is estimated from the number of cycles required
- to reach a DNA threshold, automatically chosen by the Applied Biosystems
- software at midway between the lag phase and the end plateau DNA concentrations.
+ The amount of specific cDNA is estimated from the number of cycles (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Ct"
+description "cycle threshold"
+
+\end_inset
+
+; cycle threshold) required to reach a DNA concentration threshold, automaticall
+y chosen by the Applied Biosystems software at midway between the lag phase
+ and the end plateau DNA concentrations.
  Moreover, the Applied Biosystems software is able to interpolate the number
  of cycles, thus providing, for each well, a non-integer number of cycles
  that will yield the threshold DNA concentration.
@@ -12572,8 +12580,9 @@ Duplicates were averaged for each unknown.
  for the specific cDNA of interest, the cycle count for a housekeeping gene
  was subtracted, thus providing a relative measurement of expression for
  the gene of interest within the transcriptome of that animal.
- These measurements were further re-based, by subtracting from each the
- average measurement in the V group.
+ Statistics were computed on these differences, also known as ΔCt.
+ To enable comparisons, these ΔCt measurements were further re-based, by
+ subtracting from each the average measurement in the V group.
  (This double-rebasing method is also referred to as the 'ΔΔCt'.)
 \end_layout
 
@@ -14493,7 +14502,7 @@ s..mg., na.rm = TRUE)) / mean(subset(invivodatasubsetthreedays, treatment ==
 
 \end_inset
 
- loss; Dunn's test, p = 
+% loss; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -14532,9 +14541,13 @@ key "millward1975skeletal-muscle"
  Therefore, Dexa's action cannot rely exclusively on translational shutdown.
  I attempted to establish which protein degratative pathways could be mediating
  the atrophic effect of dexamethasone.
- Based by the studies on rats and the microarra studies, I hypothesized
+ Based by the studies on rats and the microarray studies, I hypothesized
  that Dexa must stimulate the proteasome-ubiquitin system.
- 
+ In normal circumstances, the rate-limiting factor in proteasome-mediated
+ protein degradation is the conjugation with ubiquitin, catalyzed by E3
+ ligases.
+ In mice treated with Dexa, the E3 ligase more commonly associated with
+ loss of muscle mass, MuRF-1, was upregulated by Dexa.
 \end_layout
 
 \begin_layout Standard
@@ -14576,7 +14589,7 @@ plotatrogenes()
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Atrogenes
+Changes in atrogenes expression following Dexa and / or Testo treatments.
 \end_layout
 
 \end_inset
