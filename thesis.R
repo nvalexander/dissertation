@@ -251,7 +251,9 @@ plotbodyweightsatsacrifice <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   onedaysweightplot <- threecolumnplot(shortdf, ylabel, ylimit, onedaysstat) +
-    anotatedtitle("one day", 2, ylimit[[2]]) # + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC) 
+    anotatedtitle("one day", 2, ylimit[[2]]) # + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
+  meanslayer <- onedaysweightplot$layers[[1]]
+  meanslayer$show_guide <- TRUE
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
   threedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, threedaysstat) +
