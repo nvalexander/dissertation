@@ -13677,7 +13677,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "6in", fig.width = 6, fig.height = 6,dev='cairo_pdf'
+ = "6in", fig.width = 6, fig.height = 6, dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -14121,7 +14121,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "7in", fig.width = 6, fig.height = 7,dev='cairo_pdf'
+ = "7in", fig.width = 6, fig.height = 7, dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -14319,7 +14319,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "8.5in", fig.width = 6, fig.height = 8.5,dev='cairo_pdf'
+ = "8.5in", fig.width = 6, fig.height = 8.5, dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -14818,7 +14818,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "8.5in", fig.width = 6, fig.height = 8.5,dev='cairo_pdf'
+ = "8.5in", fig.width = 6, fig.height = 8.5, dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -14903,22 +14903,23 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Flex Chunk
-status collapsed
-
-\begin_layout Plain Layout
-
-\begin_inset Argument 1
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "2.5in", out.height
- = "2.5in", fig.width = 2.5, fig.height = 2.5,dev='cairo_pdf'
+
+<<out.width = "2.5in", out.height = "2.5in", fig.width = 2.5, fig.height = 2.5,
+ dev='cairo_pdf'>>=
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
-ggplot(mtcars, aes(mpg, hp)) + geom_point()
+print("Hello World")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
 \end_layout
 
 \begin_layout Plain Layout
@@ -14958,6 +14959,10 @@ test
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 A similar pattern, although with lower intensity, was seen in MAFbx gene
  regulation by the two steroids.
  MAFbx was reliably upregulated by Dexa at day 1 in gastrocnemius (
