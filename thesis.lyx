@@ -14934,8 +14934,8 @@ status open
 \begin_layout Plain Layout
 
 sig3( 2^(mean(subset(invivodatasubsetsevendays, treatment == "C")$gastrocnemius.C
-t.Trim63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
- == "D")$gastrocnemius.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+t.Fbxo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
 \end_layout
 
 \end_inset
@@ -14946,7 +14946,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$gastrocnemius.Ct.Trim63....Ct.Gapdh., invivodat
+sig3( dunn.test(invivodatasubsetsevendays$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., invivodat
 asubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
@@ -14958,9 +14958,9 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(mean(subset(invivodatasubsetsevendays, treatment == "C")$quadriceps.Ct.Tr
-im63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
- == "D")$quadriceps.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+sig3( 2^(mean(subset(invivodatasubsetsevendays, treatment == "C")$quadriceps.Ct.Fb
+xo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$quadriceps.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
 \end_layout
 
 \end_inset
@@ -14971,7 +14971,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$quadriceps.Ct.Trim63....Ct.Gapdh., invivodatasu
+sig3( dunn.test(invivodatasubsetsevendays$quadriceps.Ct.Fbxo32....Ct.Gapdh., invivodatasu
 bsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 

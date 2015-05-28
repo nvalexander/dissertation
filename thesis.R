@@ -762,17 +762,17 @@ plotatrogenes <- function(){
   gastrocnemiusMurflabel <- "gastrocnemius\nTrim63 mRNA"
   
   quadricepsoneMafbxylim <- c(-1, 8.5)
-  quadricepsthreeMafbxylim <- c(-1, 6)
-  quadricepssevenMafbxylim <- c(-1, 2)
+  quadricepsthreeMafbxylim <- c(-1, 5.4)
+  quadricepssevenMafbxylim <- c(-2, 2)
   gastrocnemiusoneMafbxylim <- c(-1, 2.5)
-  gastrocnemiusthreeMafbxylim <- c(-1, 6)
-  gastrocnemiussevenMafbxylim <- c(-1, 2)
+  gastrocnemiusthreeMafbxylim <- c(-1, 5.4)
+  gastrocnemiussevenMafbxylim <- c(-2, 2)
   quadricepsoneMurfylim <- c(-1, 8.5)
-  quadricepsthreeMurfylim <- c(-1, 6)
-  quadricepssevenMurfylim <- c(-1, 2)
+  quadricepsthreeMurfylim <- c(-1, 5.4)
+  quadricepssevenMurfylim <- c(-2, 2)
   gastrocnemiusoneMurfylim <- c(-1, 2.5)
-  gastrocnemiusthreeMurfylim <- c(-1, 6)
-  gastrocnemiussevenMurfylim <- c(-1, 2)
+  gastrocnemiusthreeMurfylim <- c(-1, 5.4)
+  gastrocnemiussevenMurfylim <- c(-2, 2)
   
   gastrocnemiusoneMafbxstat <- c("a", "a,b", "b")
   gastrocnemiusoneMurfstat <- threeidenticalgroups
