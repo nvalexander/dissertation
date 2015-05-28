@@ -241,16 +241,13 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   return(ggplot(foldchangearray) +
            aes_string( x = colnames(foldchangearray)[1], 
                        y = colnames(foldchangearray)[2], 
-                       fill = colnames(foldchangearray)[1]) +
+                       group = colnames(foldchangearray)[1]) +
            stat_summary(geom = "point",
                         size = 3,
                         colour = "black",
                         fun.y = harmonicmean,
                         show_guide = FALSE,
                         aes_string(shape = colnames(foldchangearray)[1])) +
-           stat_summary(geom = "line", 
-                        size = .5, 
-                        fun.y = harmonicmean) + 
            stat_summary(geom = "text", 
                         size = textSize * .4,
                         aes(family = "Liberation Sans Narrow"),
@@ -263,11 +260,10 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
                         width = 0.1,
                         show_guide = FALSE,
                         position=position_dodge(.05)) +
-           scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
            coord_trans(ytrans = "log10", limy = ylimit) +
            ylab(ylabel) +
-           ylim(ylimit) + 
-           scale_y_continuous(labels = percent, breaks = 2^(-10:10)) +
+           scale_y_continuous(breaks = 2^(-10:10)) +
+           scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
            stdbarplot )
 }
 
@@ -294,7 +290,8 @@ reportstats <- function(invivodata, invivocolnames){
     myoutput <- paste0(myoutput, 
                        "# ", invivocolnames[[i]])
     myoutput <- paste(myoutput, 
-                      pandoc.table.return(setNames(aggregate(invivodata[,i], list(invivodata$treatment), longdescription), c("Treatment", "Average (SD; n)")),
+                      pandoc.table.return(setNames(aggregate(invivodata[,i], list(invivodata$treatment), longdescription), 
+                                                   c("Treatment", "Average (SD; n)")),
                                           style = "rmarkdown"))
     kw <- kruskal.test(as.formula(paste(colnames(invivodata)[i], "~treatment")), data = invivodata)
     myoutput <- paste(myoutput, 
@@ -741,8 +738,8 @@ plotatrogenes <- function(){
   quadricepslabel <- "quadriceps Fbxo32 mRNA"
   gastrocnemiuslabel <- "gastrocnemius Fbxo32 mRNA"
   
-  quadricepsylim <- c(0.05, 1.8)
-  gastrocnemiusylim <- c(0.05, 2)
+  quadricepsylim <- c(0.05, 200)
+  gastrocnemiusylim <- c(0.5, 200)
   
   #FIXTHESE
   quadricepsonestat <- threeidenticalgroups
