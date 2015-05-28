@@ -756,7 +756,6 @@ plotatrogenes <- function(){
   gastrocnemiusthreeMurfylim <- c(0.4, 50)
   gastrocnemiussevenMurfylim <- c(0.4, 6)
   
-  #FIXTHESE
   quadricepsoneMafbxstat <- c("a", "b", "a,b")
   quadricepsthreeMafbxstat <- c("a,b", "a", "b")
   quadricepssevenMafbxstat <- threeidenticalgroups
