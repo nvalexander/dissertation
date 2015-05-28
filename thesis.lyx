@@ -14802,6 +14802,162 @@ bsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "8.5in", fig.width = 6, fig.height = 8.5,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotatrogenes()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
+ Dexa and / or Testo treatments
+\end_layout
+
+\end_inset
+
+Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
+ Dexa and / or Testo treatments (n=3-5).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Changes-in-atrogenes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/murfblot/murfblot.pdf
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status collapsed
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "2.5in", out.height
+ = "2.5in", fig.width = 2.5, fig.height = 2.5,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+ggplot(mtcars, aes(mpg, hp)) + geom_point()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 A similar pattern, although with lower intensity, was seen in MAFbx gene
  regulation by the two steroids.
  MAFbx was reliably upregulated by Dexa at day 1 in gastrocnemius (
@@ -14937,80 +15093,6 @@ bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_inset
 
 ).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Flex Chunk
-status open
-
-\begin_layout Plain Layout
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "8.5in", fig.width = 6, fig.height = 8.5,dev='cairo_pdf'
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-plotatrogenes()
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
- Dexa and / or Testo treatments
-\end_layout
-
-\end_inset
-
-Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
- Dexa and / or Testo treatments (n=3-5).
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Changes-in-atrogenes"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-lol
 \end_layout
 
 \begin_layout Standard
