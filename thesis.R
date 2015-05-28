@@ -860,3 +860,10 @@ plotatrogenes <- function(){
                       quadricepsoneMafbxplot, quadricepsthreeMafbxplot, quadricepssevenMafbxplot,
                       ncol=3))
 }
+
+plotmurf <- function(){
+  shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "quadriceps.MuRF1.protein..normalized.to.GAPDH.")]
+  shortdf <- rescaledtovehicleasunity(shortdf)
+  murfplot <- threecolumnplot(shortdf, "MuRF-1 protein\n(normalized to GAPDH)", c(0,1.5), c("a", "a", "a"))
+  return(murfplot)
+}
