@@ -733,8 +733,8 @@ plotproteasomeactivity <- function(){
 
 # SIXTH plot shows atrogenes in two muscles at three time points
 plotatrogenes <- function(){
-  quadricepscolumn <- "quadriceps.Ct.Trim63....Ct.Gapdh."
-  gastrocnemiuscolumn <- "gastrocnemius.Ct.Trim63....Ct.Gapdh."
+  quadricepscolumn <- "quadriceps.Ct.Fbxo32....Ct.Gapdh."
+  gastrocnemiuscolumn <- "gastrocnemius.Ct.Fbxo32....Ct.Gapdh."
   
   quadricepslabel <- "quadriceps Fbxo32 mRNA"
   gastrocnemiuslabel <- "gastrocnemius Fbxo32 mRNA"
