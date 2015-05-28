@@ -14851,7 +14851,8 @@ Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
 \end_inset
 
 Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
- Dexa and / or Testo treatments (n=3-5).
+ Dexa and / or Testo treatments, in quadriceps and gastrocnemius muscles
+ (n=3-5).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Changes-in-atrogenes"
@@ -15012,11 +15013,67 @@ bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \begin_layout Standard
 The other component of the ubiquitin-proteasome system is the proteasome
  itself.
- Especially in cases where E3 ligases are upregulated, it may be the case
- that availability of proteasomes is limiting.
- While there was no significant change at days 1 and 7, day 3 samples exhibited
- changes in proteasome catalytic activity that correlated with the phenotype.
- Dexa upregulated proteasome chymotrypsin-like enzymatic activity
+ In cases where E3 ligases are upregulated, it may be the case that availability
+ of proteasomes is limiting the ubiquitin-proteasome system.
+ However, in day 3 samples, where atrogene upregulation was at its peak,
+ Dexa upregulated proteasome chymotrypsin-like enzymatic activity in quadriceps
+ (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetthreedays, treatment == "D")$quadriceps.pro
+teasome.activity..rel.u.., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays,
+ treatment == "V")$quadriceps.proteasome.activity..rel.u.., na.rm = TRUE)) / mean(subset
+(invivodatasubsetsevendays, treatment == "V")$quadriceps.proteasome.activity..rel.u..,
+ na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+% reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$quadriceps.proteasome.activity..rel.u..,
+ invivodatasubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthre
+eways]])
+\end_layout
+
+\end_inset
+
+) and triceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100*(mean(subset(invivodatasubsetthreedays, treatment == "D")$triceps.protea
+some.activity..rel.u.., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays,
+ treatment == "V")$triceps.proteasome.activity..rel.u.., na.rm = TRUE)) / mean(subset(in
+vivodatasubsetsevendays, treatment == "V")$quadriceps.proteasome.activity..rel.u..,
+ na.rm = TRUE))
+\end_layout
+
+\end_inset
+
+% reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$triceps.proteasome.activity..rel.u..,
+ invivodatasubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthre
+eways]])
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -15069,7 +15126,7 @@ s.
 \end_inset
 
 Changes in proteasome chymotrypsin-like enzymatic activity following Dexa
- and / or Testo treatments (n=3-5).
+ and / or Testo treatments, in quadriceps and triceps muscles (n=3-5).
 \end_layout
 
 \end_inset
