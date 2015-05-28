@@ -79,9 +79,18 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "3.5in"
+special "none"
+height "1in"
+height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
@@ -91,24 +100,25 @@ status open
 \end_inset
 
 
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
 
 
-\end_layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "2.5in"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset ERT
 status open
 
@@ -146,7 +156,9 @@ print(ggplot(mtcars, aes(mpg, hp)) + geom_point())
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
