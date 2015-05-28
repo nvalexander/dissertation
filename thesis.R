@@ -136,6 +136,7 @@ greypalette <- c("#ffffff", "#222222", "#999999", "#0000dd", "#00dd00", "#dd0000
 stdplottimecourse <- theme_bw() + 
   theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
         panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
         panel.border = element_blank(),
         panel.background = element_blank(),
         axis.line = element_line(colour = "black"),
