@@ -669,7 +669,6 @@ plotproteasomeactivity <- function(){
   shortdf <- rescaledtovehicleasone(shortdf)
   tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepssevenstat)
   
-  
   return(grid.arrange(gastrocnemiusoneplot, gastrocnemiusthreeplot, gastrocnemiussevenplot,
                       quadricepsoneplot, quadricepsthreeplot, quadricepssevenplot,
                       tricepsoneplot, tricepsthreeplot, tricepssevenplot,
