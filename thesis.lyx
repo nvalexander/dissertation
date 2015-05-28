@@ -14520,6 +14520,122 @@ AAS reverses glucocorticoid-induced activation of the ubiquitin-proteasome
 \end_layout
 
 \begin_layout Standard
+lol
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "8.5in", fig.width = 6, fig.height = 8.5,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotatrogenes()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Atrogenes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lol
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "5in", fig.width = 6, fig.height =5,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotproteasomeactivity()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Proteasome
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 

@@ -738,10 +738,10 @@ plotatrogenes <- function(){
   quadricepsMurfcolumn <- "quadriceps.Ct.Trim63....Ct.Gapdh."
   gastrocnemiusMurfcolumn <- "gastrocnemius.Ct.Trim63....Ct.Gapdh."
   
-  quadricepsMafbxlabel <- "quadriceps Fbxo32 mRNA"
-  gastrocnemiusMafbxlabel <- "gastrocnemius Fbxo32 mRNA"
-  quadricepsMurflabel <- "quadriceps Trim63 mRNA"
-  gastrocnemiusMurflabel <- "gastrocnemius Trim63 mRNA"
+  quadricepsMafbxlabel <- "quadriceps\nFbxo32 mRNA"
+  gastrocnemiusMafbxlabel <- "gastrocnemius\nFbxo32 mRNA"
+  quadricepsMurflabel <- "quadriceps\nTrim63 mRNA"
+  gastrocnemiusMurflabel <- "gastrocnemius\nTrim63 mRNA"
   
   quadricepsMafbxylim <- c(0.05, 200)
   gastrocnemiusMafbxylim <- c(0.5, 200)
