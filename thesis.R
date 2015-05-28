@@ -604,9 +604,9 @@ plotproteasomeactivity <- function(){
   gastrocnemiuslabel <- "gastrocnemius proteasome\nactivity (rel.u.)"
   tricepslabel <- "triceps proteasome\nactivity (rel.u.)"
   
-  quadricepsylim <- c(0, 1.6)
-  gastrocnemiusylim <- c(0, 1.6)
-  tricepsylim <- c(0, 1.6)
+  quadricepsylim <- c(0, 1.8)
+  gastrocnemiusylim <- c(0, 2)
+  tricepsylim <- c(0, 3)
   
   quadricepsonestat <- threeidenticalgroups
   quadricepsthreestat <- threeidenticalgroups
@@ -669,8 +669,8 @@ plotproteasomeactivity <- function(){
   shortdf <- rescaledtovehicleasone(shortdf)
   tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepssevenstat)
   
-  return(grid.arrange(gastrocnemiusoneplot, gastrocnemiusthreeplot, gastrocnemiussevenplot,
-                      quadricepsoneplot, quadricepsthreeplot, quadricepssevenplot,
+  return(grid.arrange(quadricepsoneplot, quadricepsthreeplot, quadricepssevenplot,
                       tricepsoneplot, tricepsthreeplot, tricepssevenplot,
+                      #gastrocnemiusoneplot, gastrocnemiusthreeplot, gastrocnemiussevenplot,
                       ncol=3))
 }
