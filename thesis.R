@@ -111,11 +111,11 @@ semInterval <- function(x) {
 }
 
 statstringyunderbar <-function(x){
-  return(semInterval(x)[[1]])
+  return(min(semInterval(x)))
 }
 
 statstringyoverbar <-function(x){
-  return(semInterval(x)[[1]])
+  return(max(semInterval(x)))
 }
 
 truecount <- function(x) {
@@ -135,6 +135,10 @@ harmonicSEM <-function(x) {
 harmonicSEMinterval <- function(x) {
   y <- log(x, 2)
   return(2 ^ semInterval(y))
+}
+
+statstringyoversembar <-function(x){
+  return(max(harmonicSEMinterval(x)))
 }
 
 hview <- function(htmllines) {
@@ -195,8 +199,6 @@ stdbarplot <-
         axis.text.x= element_blank(),
         axis.title.y = element_text( size = textSize))
 
-stdpcrplot <- stdbarplot  + scale_y_continuous(labels = percent, breaks = 2^(-5:5))
-
 anotatedtitle <- function(text, x, y) {
   return(annotate(geom = "text", label = text, x = x, y = y,
            vjust = 1, hjust = 0.5,  
@@ -245,17 +247,17 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
                         colour = "black",
                         fun.y = harmonicmean,
                         show_guide = FALSE,
-                        aes_string(shape = colnames(shortdf)[1])) +
+                        aes_string(shape = colnames(foldchangearray)[1])) +
            stat_summary(geom = "line", 
                         size = .5, 
                         fun.y = harmonicmean) + 
            stat_summary(geom = "text", 
                         size = textSize * .4,
                         aes(family = "Liberation Sans Narrow"),
-                        fun.y = statstringyunderbar, 
+                        fun.y = statstringyoversembar, 
                         hjust = .5,
                         vjust = -.6,
-                        label = statsstars) + 
+                        label = statstrings) + 
            stat_summary(geom = 'errorbar',
                         fun.data = 'harmonicSEMinterval',
                         width = 0.1,
@@ -264,7 +266,9 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
            coord_cartesian(ylim = ylimit) + 
            ylab(ylabel) +
            scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
-           stdpcrplot)
+           coord_trans(ytrans = "log10") + 
+           scale_y_continuous(labels = percent, breaks = 2^(-5:5)) +
+           stdbarplot )
 }
 
 #PMID12519877
@@ -730,7 +734,7 @@ plotproteasomeactivity <- function(){
 
 
 # SIXTH plot shows atrogenes in two muscles at three time points
-plotproteasomeactivity <- function(){
+plotatrogenes <- function(){
   quadricepscolumn <- "quadriceps.Ct.Fbxo32...Ct.Gapdh."
   gastrocnemiuscolumn <- "gastrocnemius.proteasome.activity..rel.u.."
   
