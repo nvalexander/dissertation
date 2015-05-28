@@ -14881,16 +14881,15 @@ status open
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features rotate="0" tabularvalignment="top">
-<column alignment="center" valignment="top" width="3.5in">
+<column alignment="left" valignment="top" width="3.5in">
 <column alignment="right" valignment="top" width="2.5in">
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename artwork/murfblot/murfblot.pdf
-	lyxscale 50
 	width 3.5in
 
 \end_inset
@@ -14904,7 +14903,32 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-x
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "2.2in", out.height
+ = "2.2in", fig.width = 2.2, fig.height = 2.2, dev='cairo_pdf'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+print(ggplot(mtcars, aes(mpg, hp)) + geom_point())
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
