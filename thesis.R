@@ -158,8 +158,7 @@ stdbarplot <-
         axis.ticks.x = element_blank(),
         axis.title.x = element_blank(),
         axis.text.x= element_blank(),
-        axis.title.y = element_text( size = textSize),
-        axis.text.x = element_text( size = textSize * 1 ))
+        axis.title.y = element_text( size = textSize))
 
 anotatedtitle <- function(text, x, y) {
   return(annotate(geom = "text", label = text, x = x, y = y,
@@ -251,8 +250,7 @@ plotbodyweightsatsacrifice <- function(){
   #1
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", "day.2.body.weight..g.")]
   onedaysweightplot <- threecolumnplot(shortdf, ylabel, ylimit, onedaysstat) +
-    anotatedtitle("one day", 2, ylimit[[2]])
-    # + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC) 
+    anotatedtitle("one day", 2, ylimit[[2]]) # + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC) 
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", "day.4.body.weight..g.")]
   threedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, threedaysstat) +
@@ -405,7 +403,7 @@ plotleanfat <- function(){
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   leanoneplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanonestat) +
-    scale_x_discrete(labels = threeemptystrings)
+    scale_x_discrete(labels = threeemptystrings) + scale_x_discrete(labels = conditionsVDC) 
   
   #2
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", leancolumn)]
@@ -421,13 +419,11 @@ plotleanfat <- function(){
 
   #4
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", fatcolumn)]
-  fatoneplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatonestat)+
-    theme(axis.text.x=element_blank())
+  fatoneplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatonestat)
   
   #5
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", fatcolumn)]
-  fatthreeplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatthreestat)+
-    theme(axis.text.x=element_blank())
+  fatthreeplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatthreestat)
   
   #6
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", fatcolumn)]
@@ -437,31 +433,19 @@ plotleanfat <- function(){
   shortdf <- invivodatasubsetonedays[, colnames(invivodatasubsetonedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   wateroneplot <- threecolumnplot(shortdf, waterlabel, waterylim, wateronestat) +
-    theme(axis.text.x = element_blank()) +
-    annotate(geom = "text", label = "one day", x = 2, y = waterylim[[2]],
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow")
+    anotatedtitle("one day", 2, waterylim[[2]])
   
   #8
   shortdf <- invivodatasubsetthreedays[, colnames(invivodatasubsetthreedays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
-  waterthreeplot <- threecolumnplot(shortdf, waterlabel, waterylim, waterthreestat)+
-    theme(axis.text.x = element_blank()) +
-    annotate(geom = "text", label = "three days", x = 2, y = waterylim[[2]],
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow")
+  waterthreeplot <- threecolumnplot(shortdf, waterlabel, waterylim, waterthreestat) +
+    anotatedtitle("three days", 2, waterylim[[2]])
   
   #9
   shortdf <- invivodatasubsetsevendays[, colnames(invivodatasubsetsevendays) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   watersevenplot <- threecolumnplot(shortdf, waterlabel, waterylim, watersevenstat) +
-    theme(axis.text.x = element_blank()) +
-    annotate(geom = "text", label = "seven days", x = 2, y = waterylim[[2]],
-             vjust = 1, hjust = 0.5,  
-             size = .45 * textSize, 
-             family = "Liberation Sans Narrow")
+    anotatedtitle("seven days", 2, waterylim[[2]])
 
   return(grid.arrange(
     wateroneplot, waterthreeplot, watersevenplot,
