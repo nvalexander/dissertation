@@ -26,19 +26,19 @@ codedirpath <- dirname(
 codedirpath <- "/media/dump/writingswork/draftthesis"
 datadir <- normalizePath(file.path(codedirpath, "data"))
 invivodataonedays <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
-invivocolnameonedays <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, sep = ",", nrows = 1)
+invivocolnameonedays <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), header = FALSE, sep = ",", nrows = 1, stringsAsFactors = FALSE)
 levels(invivodataonedays$treatment)[levels(invivodataonedays$treatment)=="A"] <- "C"
 levels(invivodataonedays$treatment)[levels(invivodataonedays$treatment)=="E"] <- "D"
 levels(invivodataonedays$treatment)[levels(invivodataonedays$treatment)=="W"] <- "V"
 levels(invivodataonedays$treatment)[levels(invivodataonedays$treatment)=="S"] <- "T"
 invivodatathreedays <- read.csv(file.path(datadir, "2012.12.12.3daysTD.csv"), header = TRUE)
-invivocolnamethreedays <- read.table(file.path(datadir, "2012.12.12.3daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
+invivocolnamethreedays <- read.table(file.path(datadir, "2012.12.12.3daysTD.csv"), header = FALSE, sep = ",", nrows = 1, stringsAsFactors = FALSE)
 levels(invivodatathreedays$treatment)[levels(invivodatathreedays$treatment)=="B"] <- "C"
 levels(invivodatathreedays$treatment)[levels(invivodatathreedays$treatment)=="G"] <- "D"
 levels(invivodatathreedays$treatment)[levels(invivodatathreedays$treatment)=="X"] <- "V"
 levels(invivodatathreedays$treatment)[levels(invivodatathreedays$treatment)=="U"] <- "T"
 invivodatasevendays <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = TRUE)
-invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1)
+invivocolnamesevendays <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), header = FALSE, sep = ",", nrows = 1, stringsAsFactors = FALSE)
 #re-leveling
 condsVDC <- c("V", "D", "C")
 conditionsVDC <- c("Veh", "Dexa", "Comb")
