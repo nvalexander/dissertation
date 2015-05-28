@@ -232,6 +232,10 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
 
 
 threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
+  #this function expects a dataframe with two columns, first designating the treatments
+  # second column described Ct(GOI)-Ct(housekeeping gene)
+  foldchangearray <- skinnydataset
+  foldchangearray[,2] <- 2^(foldchangearray[,2] * -1)
   return(ggplot(skinnydataset) +
            aes_string( x = colnames(skinnydataset)[1], 
                        y = colnames(skinnydataset)[2], 
