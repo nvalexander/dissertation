@@ -14543,6 +14543,70 @@ ANTIATROPHIc - for discussion.
  analysis will not include it.
 \end_layout
 
+\begin_layout Standard
+In conclusion, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa injection read to rapid onset of muscle atrophy.
+ Based on the time course of total body weight, the loss of muscle subsides
+ by the end of the first week.
+ Some muscles are more responsive than others, with tibialis a notable refractor
+y exception.
+ In contrast, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{28}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+per
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Testo co-administration reduced the loss of muscle throughout the seven
+ days course.
+\end_layout
+
 \begin_layout Section
 AAS reverses glucocorticoid-induced activation of the ubiquitin-proteasome
  system
@@ -15199,6 +15263,31 @@ Changes in proteasome chymotrypsin-like enzymatic activity following Dexa
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Overall, the good correlation with the macroscopic loss of muscle suggests
+ that the proteasome-ubiquitin system is an effector GAML and of its alleviation
+ by AAS.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Proteasome subunit expression at day 3 seems unchanged by D and T.
+ I thought it was different.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Autophagy markers during Dexa and Testo co-administration
+\end_layout
+
+\begin_layout Standard
+lol
 \end_layout
 
 \begin_layout Standard
