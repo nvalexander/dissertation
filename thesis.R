@@ -208,10 +208,11 @@ anotatedtitle <- function(text, x, y) {
 
 threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   #this function expects a dataframe with two columns, first designating the treatments
-  return(ggplot(skinnydataset) +
-           aes_string( x = colnames(skinnydataset)[1], 
-                       y = colnames(skinnydataset)[2], 
-                       fill = colnames(skinnydataset)[1]) +
+  completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
+  return(ggplot(completecasesdataset) +
+           aes_string( x = colnames(completecasesdataset)[1], 
+                       y = colnames(completecasesdataset)[2], 
+                       fill = colnames(completecasesdataset)[1]) +
            stat_summary(fun.y = mean, 
                         geom = "bar", 
                         colour = "black",
@@ -236,7 +237,7 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
 threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   #this function expects a dataframe with two columns, first designating the treatments
   # second column described Ct(GOI)-Ct(housekeeping gene)
-  foldchangearray <- skinnydataset
+  foldchangearray <- skinnydataset[complete.cases(skinnydataset),]
   foldchangearray[,2] <- 2 ^ (foldchangearray[,2] * -1)
   return(ggplot(foldchangearray) +
            aes_string( x = colnames(foldchangearray)[1], 
@@ -260,9 +261,9 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
                         width = 0.1,
                         show_guide = FALSE,
                         position=position_dodge(.05)) +
-           coord_trans(ytrans = "log10", limy = ylimit) +
            ylab(ylabel) +
            scale_y_continuous(breaks = 2^(-10:10)) +
+           coord_trans(ytrans = "log10", limy = ylimit) +
            scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
            stdbarplot )
 }
