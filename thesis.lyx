@@ -14518,7 +14518,16 @@ reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
  The small amplitude and the complete absence of statistical significance
  suggest that observations describe lack of Testo effect, rather than a
  true atrophic effect.
- ANTIATROPHIc - for discussion.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANTIATROPHIc - for discussion.
+\end_layout
+
+\end_inset
+
  Because tibialis is not manifesting GAML at macroscopic level, molecular
  analysis will not include it.
 \end_layout
@@ -14539,7 +14548,7 @@ key "millward1975skeletal-muscle"
 
 ).
  Therefore, Dexa's action cannot rely exclusively on translational shutdown.
- I attempted to establish which protein degratative pathways could be mediating
+ I attempted to establish which protein degradative pathways could be mediating
  the atrophic effect of dexamethasone.
  Based by the studies on rats and the microarray studies, I hypothesized
  that Dexa must stimulate the proteasome-ubiquitin system.
@@ -14547,8 +14556,15 @@ key "millward1975skeletal-muscle"
  protein degradation is the conjugation with ubiquitin, catalyzed by E3
  ligases.
  In mice treated with Dexa, the E3 ligase more commonly associated with
- loss of muscle mass, MuRF-1, was upregulated by Dexa at day 1 in gastrocnemius
- (
+ loss of muscle mass, MuRF-1 (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Changes-in-atrogenes"
+
+\end_inset
+
+, top), was upregulated by Dexa at day 1 in gastrocnemius (
 \begin_inset Flex S/R expression
 status open
 
@@ -14599,6 +14615,410 @@ etonedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
+ The effect was even more consistent at day 3, with MuRF-1 transcript in
+ gastrocnemius being 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "V")$gastrocnemius.C
+t.Trim63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
+ == "D")$gastrocnemius.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold amplified (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$gastrocnemius.Ct.Trim63....Ct.Gapdh., invivodat
+asubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and in quadriceps 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "V")$quadriceps.Ct.Tr
+im63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
+ == "D")$quadriceps.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold amplified (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$quadriceps.Ct.Trim63....Ct.Gapdh., invivodatasu
+bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ The effect was insignificant statistically, and in amplitude, by the seventh
+ day of Dexa administration.
+\end_layout
+
+\begin_layout Standard
+Testo co-adminstration had an inhibitory effect on MuRF-1, with a later
+ onset.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+DISCUSSION:temporal dissociation of the two drugs in MuRF.
+\end_layout
+
+\end_inset
+
+ No significant effect of Testo co-administration was seen in day 1.
+ In day 3, MuRF-1 was repressed by Testo in gastrocnemius (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "C")$gastrocnemius.C
+t.Trim63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
+ == "D")$gastrocnemius.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$gastrocnemius.Ct.Trim63....Ct.Gapdh., invivodat
+asubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+) and in quadriceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "C")$quadriceps.Ct.Tr
+im63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
+ == "D")$quadriceps.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$quadriceps.Ct.Trim63....Ct.Gapdh., invivodatasu
+bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ Testo repression of MuRF-1 strengthened in the day 7 samples, with transcripts
+ reduced in gastrocnemius (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetsevendays, treatment == "C")$gastrocnemius.C
+t.Trim63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$gastrocnemius.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$gastrocnemius.Ct.Trim63....Ct.Gapdh., invivodat
+asubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+) and in quadriceps(
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetsevendays, treatment == "C")$quadriceps.Ct.Tr
+im63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$quadriceps.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$quadriceps.Ct.Trim63....Ct.Gapdh., invivodatasu
+bsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+A similar pattern, although with lower intensity, was seen in MAFbx gene
+ regulation by the two drugs.
+\end_layout
+
+\begin_layout Standard
+MAFbx was upregulated by Dexa at day 1 in gastrocnemius (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetonedays, treatment == "V")$gastrocnemius.Ct.F
+bxo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetonedays, treatment
+ == "D")$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold amplification; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetonedays$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., invivodatas
+ubsetonedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+) and quadriceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetonedays, treatment == "V")$quadriceps.Ct.Fbxo
+32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetonedays, treatment
+ == "D")$quadriceps.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold amplification; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetonedays$quadriceps.Ct.Fbxo32....Ct.Gapdh., invivodatasubs
+etonedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ The effect was even more consistent at day 3, with MAFbx transcript in
+ gastrocnemius being 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "V")$gastrocnemius.C
+t.Fbxo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
+ == "D")$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold amplified (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., invivodat
+asubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and in quadriceps 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "V")$quadriceps.Ct.Fb
+xo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
+ == "D")$quadriceps.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold amplified (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$quadriceps.Ct.Fbxo32....Ct.Gapdh., invivodatasu
+bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ The effect was insignificant statistically, and in amplitude, by the seventh
+ day of Dexa administration.
+\end_layout
+
+\begin_layout Standard
+Testo co-adminstration had an inhibitory effect on MAFbx, with a later onset.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+DISCUSSION:temporal dissociation of the two drugs in MuRF.
+\end_layout
+
+\end_inset
+
+ No significant effect of Testo co-administration was seen in day 1.
+ In day 3, MAFbx was repressed by Testo in gastrocnemius (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "C")$gastrocnemius.C
+t.Fbxo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
+ == "D")$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., invivodat
+asubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+) and in quadriceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "C")$quadriceps.Ct.Fb
+xo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
+ == "D")$quadriceps.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetthreedays$quadriceps.Ct.Fbxo32....Ct.Gapdh., invivodatasu
+bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ Testo repression of MAFbx strengthened in the day 7 samples, with transcripts
+ reduced in gastrocnemius (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetsevendays, treatment == "C")$gastrocnemius.C
+t.Trim63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$gastrocnemius.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$gastrocnemius.Ct.Trim63....Ct.Gapdh., invivodat
+asubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+) and in quadriceps(
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(mean(subset(invivodatasubsetsevendays, treatment == "C")$quadriceps.Ct.Tr
+im63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
+ == "D")$quadriceps.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+\end_layout
+
+\end_inset
+
+ fold reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(invivodatasubsetsevendays$quadriceps.Ct.Trim63....Ct.Gapdh., invivodatasu
+bsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -14642,14 +15062,17 @@ plotatrogenes()
 \begin_layout Plain Layout
 Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
  Dexa and / or Testo treatments.
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Changes-in-atrogenes"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
