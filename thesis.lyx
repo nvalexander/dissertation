@@ -15453,8 +15453,8 @@ status open
 \begin_layout Plain Layout
 
 sig3( 100*(truemean(InvivoOnedayV$triceps.cathepsin.activity..rel.u..) - truemean(Inviv
-oOnedayD$quadriceps.triceps.activity..rel.u..))/ truemean(InvivoOnedayV$quadriceps.trice
-ps.activity..rel.u..))
+oOnedayD$triceps.cathepsin.activity..rel.u..))/ truemean(InvivoOnedayV$triceps.cathepsin.
+activity..rel.u..))
 \end_layout
 
 \end_inset
@@ -15530,8 +15530,8 @@ status open
 \begin_layout Plain Layout
 
 sig3( 100*(truemean(InvivoThreedayV$triceps.cathepsin.activity..rel.u..) - truemean(Inv
-ivoThreedayD$quadriceps.triceps.activity..rel.u..))/ truemean(InvivoThreedayV$quadricep
-s.triceps.activity..rel.u..))
+ivoThreedayD$triceps.cathepsin.activity..rel.u..))/ truemean(InvivoThreedayV$triceps.cat
+hepsin.activity..rel.u..))
 \end_layout
 
 \end_inset
@@ -15695,6 +15695,14 @@ name "fig:Changes-in-cathepsin"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Downregulation of lysosome enzymatic actvity during Dexa treatment indicates
+ that autophagy is not responsibe with degradation of bulk protein during
+ GAML.
+ The invariable cathepsin L activation associated with Dexa indicate that
+ it might play a regulatory role in controlling bulk protein digestion.
 \end_layout
 
 \begin_layout Standard
