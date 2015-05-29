@@ -15384,8 +15384,91 @@ Autophagy markers during Dexa and Testo co-administration
 \begin_layout Standard
 Rat microarray studies indicated that a series of genes related to autophagy
  are upregulated by Dexa and downregulated by Testo.
- I tested the hypothesis that autophagy mediates protein degradation in
- GAML by measuring lysosomal enzymatic activity in muscle lysates (Fig.
+ However, these findings have never been tested in vivo in mice.
+ Having established a model of GAML, I investigated whether the autophagy
+ markers are correlated with muscle loss.
+ A panel of three genes indicated that Dexa-induced gastrocnemius atrophy
+ is associated with a reduction in autophagy-related mRNA for beclin / Becn1,
+ cathepsin L / Ctsl, and LC3 / Map1lc3b
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Changes-in-autophagy-related"
+
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "4in", fig.width = 6, fig.height = 4,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotgastrocnemiusautophagy()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in autophagy-related genes following Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+Changes in autophagy-related genes following Dexa and / or Testo treatments,
+ in quadriceps and triceps muscles (n=4-6).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Changes-in-autophagy-related"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I tested the hypothesis that autophagy mediates protein degradation in GAML
+ by measuring lysosomal enzymatic activity in muscle lysates (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -15698,11 +15781,13 @@ name "fig:Changes-in-cathepsin"
 \end_layout
 
 \begin_layout Standard
-Downregulation of lysosome enzymatic actvity during Dexa treatment indicates
- that autophagy is not responsibe with degradation of bulk protein during
- GAML.
- The invariable cathepsin L activation associated with Dexa indicate that
- it might play a regulatory role in controlling bulk protein digestion.
+Atrophy was expected to be enhanced by autophagy upregulation.
+ The unexpected finding of autophagy downregulation may replicate 
+\end_layout
+
+\begin_layout Standard
+It is possible that in GAML, autophagy inhibition removes a break on bulk
+ protein 
 \end_layout
 
 \begin_layout Standard
