@@ -15797,7 +15797,7 @@ CVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 
 ).
  Testo co-adminstration had no statistically significant effect on cathepsin
- L enzymatic activity, athough a trend of reversal to baseline can be seen
+ L enzymatic activity, although a trend of reversal to baseline can be seen
  in day 1 and 3 samples.
 \begin_inset Note Note
 status open
@@ -16067,7 +16067,7 @@ name "fig:LC3-hyperlipidated"
 
 \begin_layout Standard
 The trend towards increased absolute LC3-II in gastrocnemius is reversed
- by Testo co-administration (
+ by a trend towards basal levels upon Testo co-administration (
 \begin_inset Flex S/R expression
 status open
 
@@ -16092,7 +16092,13 @@ ndayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 
 \end_inset
 
-.
+).
+\end_layout
+
+\begin_layout Standard
+While evidence is indirect, the bulk of data suggests that GAML is correlated
+ with rampant autophagy downregulation, while AAS co-administration has
+ a limited effect on autophagy.
 \end_layout
 
 \begin_layout Section
@@ -16112,8 +16118,19 @@ reference "fig:Foxo-expression"
 \end_inset
 
 ).
- In quadriceps at day 1, the activation included Foxo1 (Dunn's test, p =
- 
+ In quadriceps at day 1, the activation included Foxo1 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoOnedayV$quadriceps.Ct.Foxo1....Ct.Gapdh.) - truemean(InvivoOneda
+yD$quadriceps.Ct.Foxo1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold upregulation; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16125,7 +16142,19 @@ nt, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-), Foxo3a (Dunn's test, p = 
+), Foxo3a (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoOnedayV$quadriceps.Ct.Foxo3a....Ct.Gapdh.) - truemean(InvivoOned
+ayD$quadriceps.Ct.Foxo3a....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold upregulation; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16137,7 +16166,19 @@ ent, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-), and Foxo4 (Dunn's test, p = 
+), and Foxo4 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoOnedayV$quadriceps.Ct.Foxo4....Ct.Gapdh.) - truemean(InvivoOneda
+yD$quadriceps.Ct.Foxo4....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold upregulation; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
