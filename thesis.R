@@ -474,15 +474,30 @@ plotleanfat <- function(){
     shortdf1 <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])]
     shortdf3 <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])]
     shortdf7 <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])]
-    if (columnnames[[i]] != "fat mass gain (g)") {
+    if (columnnames[[i]] != "fat.mass.gain..g.") {
       shortdf1[,2] <- shortdf1[, 2] * (-1)
       shortdf3[,2] <- shortdf3[, 2] * (-1)
       shortdf7[,2] <- shortdf7[, 2] * (-1)
     }
-    plotslist <- c(plotslist,
-                  threecolumnplot(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]]),
-                  threecolumnplot(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]]),
-                  threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]]))
+    plotslist[[i*3-2]] <- threecolumnplot(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <-threecolumnplot(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
+    if (columnnames[[i]] != "total.water.gain..g.") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[i]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[i]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[i]][[2]])
+    }
+    if (columnnames[[i]] != "lean.mass.gain..g.") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+    }
   }
   return(grid.arrange(plotslist[[7]], plotslist[[8]], plotslist[[9]], # water
                       plotslist[[4]], plotslist[[5]], plotslist[[6]], # fat
