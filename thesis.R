@@ -240,6 +240,14 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
            stdbarplot)
 }
 
+#   #THIS FORCES THE DISPLAY OF A LEGEND
+# #   meanslayer <- leanoneplot$layers[[1]]
+# #   meanslayer$show_guide <- TRUE
+# #   leanoneplot <- leanoneplot + 
+# #     scale_fill_manual(values = greypalette, labels = conditionsVDC) + 
+# #     guides(fill = guide_legend(title = NULL, override.aes = list(colour = NULL))) + 
+# #     theme(legend.position = c(0, 1), legend.justification = c(0,1))
+
 
 threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   # this function expects a dataframe with two columns, first designating the treatments
@@ -395,7 +403,6 @@ plotbodyweightsatsacrifice <- function(){
         theme(axis.text.x = element_text(color = "black")) +
         scale_x_discrete(labels = threeemptystrings),
       ncol=3))
-
 }
 
 #SECOND PLOT - body weight time courses
@@ -454,18 +461,19 @@ plotbodyweightcourse <- function(){
 
 # THIRD PLOT - body mass composition
 plotleanfat <- function(){
-  columnnames <- c("lean.mass.gain..g.", "fat.mass.gain..g.", "total.water.gain..g.")
-  ylabels <- c("lean mass loss (g)", "fat mass gain (g)", "water loss (g)")
+  #alphabetical order
+  columnnames <- c("fat.mass.gain..g.", "lean.mass.gain..g.", "total.water.gain..g.")
+  ylabels <- c("fat mass gain (g)", "lean mass loss (g)", "water loss (g)")
   ylims <- list(c(0, 4), c(0, 4), c(0, 5))
   statstrings <- list(
-    #lean1, 3, 7:
-    threeidenticalgroups, 
-    c("a", "b", "a,b"),
-    c("a", "b", "a,b"),
     #fat1, 3, 7:
     threeidenticalgroups,
     c("a", "a,b", "b"),
     c("a", "a,b", "b"),
+    #lean1, 3, 7:
+    threeidenticalgroups, 
+    c("a", "b", "a,b"),
+    c("a", "b", "a,b"),
     #water1, 3, 7:
     threeidenticalgroups,
     threeidenticalgroups,
@@ -500,22 +508,17 @@ plotleanfat <- function(){
         scale_x_discrete(labels = conditionsVDC)
     }
   }
-  return(grid.arrange(plotslist[[7]], plotslist[[8]], plotslist[[9]], # water
-                      plotslist[[4]], plotslist[[5]], plotslist[[6]], # fat
-                      plotslist[[1]], plotslist[[2]], plotslist[[3]], # lean
-                      ncol = 3))
-   
-#   #THIS FORCES THE DISPLAY OF A LEGEND
-# #   meanslayer <- leanoneplot$layers[[1]]
-# #   meanslayer$show_guide <- TRUE
-# #   leanoneplot <- leanoneplot + 
-# #     scale_fill_manual(values = greypalette, labels = conditionsVDC) + 
-# #     guides(fill = guide_legend(title = NULL, override.aes = list(colour = NULL))) + 
-# #     theme(legend.position = c(0, 1), legend.justification = c(0,1))
+  return(grid.arrange(
+    plotslist[[7]], plotslist[[8]], plotslist[[9]], # water
+    plotslist[[1]], plotslist[[2]], plotslist[[3]], # fat
+    plotslist[[4]], plotslist[[5]], plotslist[[6]], # lean
+    ncol = 3))
 }
+
 
 # FOURTH PLOT SHOWS five muscles across three time points
 plotmuscleweights <- function(){
+  #alphabetical order
   columnnames <- c("gastrocnemius..mg.",
                    "levator..mg.",
                    "quadriceps..mg.",
@@ -578,202 +581,75 @@ plotmuscleweights <- function(){
         scale_x_discrete(labels = conditionsVDC)
     }
   }
-  return(grid.arrange(plotslist[[4]], plotslist[[5]], plotslist[[6]], # levator
-                      plotslist[[7]], plotslist[[8]], plotslist[[9]], # quadriceps
-                      plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius
-                      plotslist[[13]], plotslist[[14]], plotslist[[15]], # triceps
-                      plotslist[[10]], plotslist[[11]], plotslist[[12]], # tibialis
-                      ncol = 3))
-    
-  
-  
-  levatorcolumn <- "levator..mg."
-  quadricepscolumn <- "quadriceps..mg."
-  gastrocnemiuscolumn <- "gastrocnemius..mg."
-  tricepscolumn <- "triceps..mg."
-  tibialiscolumn <- "tibialis..mg."
-
-  levatorlabel <- paste0("levator ani (g)")
-  quadricepslabel <- paste0("quadriceps (g)")
-  gastrocnemiuslabel <- paste0("gastrocnemius (g)")
-  tricepslabel <- paste0("triceps br. (g)")
-  tibialislabel <- paste0("tibialis ant. (g)")
-  
-  levatorylim <- c(0, 100)
-  quadricepsylim <- c(0, 225)
-  gastrocnemiusylim <- c(0, 180)
-  tricepsylim <- c(0, 150)
-  tibialisylim <- c(0, 75)
-
-  levatoronestat <- threeidenticalgroups
-  levatorthreestat <- threeidenticalgroups
-  levatorsevenstat <- c("a", "b", "a,b")
-  quadricepsonestat <- threeidenticalgroups
-  quadricepsthreestat <- threeidenticalgroups
-  quadricepssevenstat <- c("a", "b", "a,b")
-  gastrocnemiusonestat <- threeidenticalgroups
-  gastrocnemiusthreestat <- c("a", "b", "a,b")
-  gastrocnemiussevenstat <- c("a", "b", "a,b")
-  tricepsonestat <- threeidenticalgroups
-  tricepsthreestat <- threeidenticalgroups
-  tricepssevenstat <- c("a", "b", "b")
-  tibialisonestat <- threeidenticalgroups
-  tibialisthreestat <- threeidenticalgroups
-  tibialissevenstat <- threeidenticalgroups
-  
-  #1
-  shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", levatorcolumn)]
-  levatoroneplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, levatoronestat) +
-    anotatedtitle("one day", 2, levatorylim[[2]]) 
-  
-  #2
-  shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", levatorcolumn)]
-  levatorthreeplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, levatorthreestat) +
-    anotatedtitle("three days", 2, levatorylim[[2]])
-  
-  #3
-  shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", levatorcolumn)]
-  levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, levatorsevenstat)  +
-    anotatedtitle("seven days", 2, levatorylim[[2]]) 
-  
-  #4
-  shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", quadricepscolumn)]
-  quadricepsoneplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsonestat)
-  
-  #5
-  shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", quadricepscolumn)]
-  quadricepsthreeplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsthreestat)
-  
-  #6
-  shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", quadricepscolumn)]
-  quadricepssevenplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepssevenstat) 
-  
-  #7
-  shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", gastrocnemiuscolumn)]
-  gastrocnemiusoneplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusonestat) 
-  
-  #8
-  shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", gastrocnemiuscolumn)]
-  gastrocnemiusthreeplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusthreestat) 
-  
-  #9
-  shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", gastrocnemiuscolumn)]
-  gastrocnemiussevenplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiussevenstat)
-  
-  #10
-  shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", tricepscolumn)]
-  tricepsoneplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepsonestat)
-  
-  #11
-  shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", tricepscolumn)]
-  tricepsthreeplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepsthreestat) 
-  
-  #12
-  shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", tricepscolumn)]
-  tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepssevenstat)
-  
-  #13
-  shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", tibialiscolumn)]
-  tibialisoneplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, tibialisonestat) +
-    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-  
-  #14
-  shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", tibialiscolumn)]
-  tibialisthreeplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, tibialisthreestat) +
-    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-  
-  #15
-  shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", tibialiscolumn)]
-  tibialissevenplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, tibialissevenstat) +
-    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-  
-  return(grid.arrange(levatoroneplot, levatorthreeplot, levatorsevenplot,
-                      quadricepsoneplot, quadricepsthreeplot, quadricepssevenplot,
-                      gastrocnemiusoneplot, gastrocnemiusthreeplot, gastrocnemiussevenplot,
-                      tricepsoneplot, tricepsthreeplot, tricepssevenplot,
-                      tibialisoneplot, tibialisthreeplot, tibialissevenplot,
-                      ncol=3))
+  return(grid.arrange(
+    plotslist[[4]], plotslist[[5]], plotslist[[6]], # levator
+    plotslist[[7]], plotslist[[8]], plotslist[[9]], # quadriceps
+    plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius
+    plotslist[[13]], plotslist[[14]], plotslist[[15]], # triceps
+    plotslist[[10]], plotslist[[11]], plotslist[[12]], # tibialis
+    ncol = 3))
 }
 
 # FIFTH plot shows proteasome activity in three muscles at three time points
 plotproteasomeactivity <- function(){
-  quadricepscolumn <- "quadriceps.proteasome.activity..rel.u.."
-  gastrocnemiuscolumn <- "gastrocnemius.proteasome.activity..rel.u.."
-  tricepscolumn <- "triceps.proteasome.activity..rel.u.."
   
-  quadricepslabel <- "quadriceps proteasome\nactivity (rel.u.)"
-  gastrocnemiuslabel <- "gastrocnemius proteasome\nactivity (rel.u.)"
-  tricepslabel <- "triceps proteasome\nactivity (rel.u.)"
+  #alphabetical order
+  columnnames <- c("gastrocnemius.proteasome.activity..rel.u..",
+                   "quadriceps.proteasome.activity..rel.u..",
+                   "triceps.proteasome.activity..rel.u..")
+  ylabels <- c("gastrocnemius proteasome\nactivity (rel.u.)",
+               "quadriceps proteasome\nactivity (rel.u.)",
+               "triceps proteasome\nactivity (rel.u.)")
+  ylims <- list(c(0, 2),
+                c(0, 1.8), 
+                c(0, 3))
+  statstrings <- list(
+    #gastrocnemius 1, 3, 7:
+    c("a,b", "a", "b"),
+    c("a", "b", "b"),
+    threeidenticalgroups,
+    #quadriceps:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups,
+    #triceps:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups)
   
-  quadricepsylim <- c(0, 1.8)
-  gastrocnemiusylim <- c(0, 2)
-  tricepsylim <- c(0, 3)
-  
-  quadricepsonestat <- threeidenticalgroups
-  quadricepsthreestat <- threeidenticalgroups
-  quadricepssevenstat <- threeidenticalgroups
-  gastrocnemiusonestat <- c("a,b", "a", "b")
-  gastrocnemiusthreestat <- c("a", "b", "b")
-  gastrocnemiussevenstat <- threeidenticalgroups
-  tricepsonestat <- threeidenticalgroups
-  tricepsthreestat <- threeidenticalgroups
-  tricepssevenstat <- threeidenticalgroups  
-  
-  #1
-  shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", quadricepscolumn)]
-  shortdf <- rescaledtovehicleasunity(shortdf)
-  quadricepsoneplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsonestat) +
-    anotatedtitle("one day", 2, quadricepsylim[[2]]) 
-  
-  #2
-  shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", quadricepscolumn)]
-  shortdf <- rescaledtovehicleasunity(shortdf)
-  quadricepsthreeplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsthreestat) +
-    anotatedtitle("three days", 2, quadricepsylim[[2]])
-  
-  #3
-  shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", quadricepscolumn)]
-  shortdf <- rescaledtovehicleasunity(shortdf)
-  quadricepssevenplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepssevenstat) +
-    anotatedtitle("seven days", 2, quadricepsylim[[2]]) 
-  
-  #4
-  shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", gastrocnemiuscolumn)]
-  shortdf <- rescaledtovehicleasunity(shortdf)
-  gastrocnemiusoneplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusonestat) +
-    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-  
-  #5
-  shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", gastrocnemiuscolumn)]
-  shortdf <- rescaledtovehicleasunity(shortdf)
-  gastrocnemiusthreeplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusthreestat)+
-    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-  
-  #6
-  shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", gastrocnemiuscolumn)]
-  shortdf <- rescaledtovehicleasunity(shortdf)
-  gastrocnemiussevenplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiussevenstat)+
-    theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-  
-  #7
-  shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", tricepscolumn)]
-  shortdf <- rescaledtovehicleasunity(shortdf)
-  tricepsoneplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepsonestat) 
-  
-  #8
-  shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", tricepscolumn)]
-  shortdf <- rescaledtovehicleasunity(shortdf)
-  tricepsthreeplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepsthreestat)
-  
-  #9
-  shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", tricepscolumn)]
-  shortdf <- rescaledtovehicleasunity(shortdf)
-  tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepssevenstat)
-  
-  return(grid.arrange(quadricepsoneplot, quadricepsthreeplot, quadricepssevenplot,
-                      tricepsoneplot, tricepsthreeplot, tricepssevenplot,
-                      #gastrocnemiusoneplot, gastrocnemiusthreeplot, gastrocnemiussevenplot,
-                      ncol=3))
+  plotslist <- list()
+  for (i in 1:3){
+    shortdf1 <- rescaledtovehicleasunity(
+      InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf3 <- rescaledtovehicleasunity(
+      InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf7 <- rescaledtovehicleasunity(
+      InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
+    plotslist[[i*3-2]] <- threecolumnplot(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <- threecolumnplot(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
+    if (columnnames[[i]] == "quadriceps.proteasome.activity..rel.u..") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[i]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[i]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[i]][[2]])
+    }
+    if (columnnames[[i]] == "triceps.proteasome.activity..rel.u..") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+    }
+  }
+  return(grid.arrange(
+    #plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius
+    plotslist[[4]], plotslist[[5]], plotslist[[6]], # quadriceps
+    plotslist[[7]], plotslist[[8]], plotslist[[9]], # triceps
+    ncol = 3))
 }
 
 

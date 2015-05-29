@@ -13485,8 +13485,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(kruskal.test(day.8.body.weight..g.
- ~ treatment, data = InvivoSevendayCVD)$p.value)
+sig3( kruskal.test(day.8.body.weight..g.
+ ~ treatment, data = InvivoSevendayCVD)$p.value )
 \end_layout
 
 \end_inset
@@ -13517,8 +13517,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(kruskal.test(body.weight.gain.after.7.days..percent.
- ~ treatment, data = InvivoSevendayCVD)$p.value)
+sig3( kruskal.test(body.weight.gain.after.7.days..percent.
+ ~ treatment, data = InvivoSevendayCVD)$p.value )
 \end_layout
 
 \end_inset
@@ -13532,7 +13532,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( truemean(InvivoSevendayV$body.weight.gain.after.7.days..g.) / 7)
+sig3( truemean(InvivoSevendayV$body.weight.gain.after.7.days..g.
+ ) / 7)
 \end_layout
 
 \end_inset
@@ -13548,7 +13549,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( truemean(InvivoSevendayD$body.weight.gain.after.7.days..g.) / 7)
+sig3( truemean(InvivoSevendayD$body.weight.gain.after.7.days..g.
+ ) / 7)
 \end_layout
 
 \end_inset
@@ -13564,7 +13566,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( truemean(InvivoSevendayD$body.weight.gain.after.7.days..percent.))
+sig3( truemean(InvivoSevendayD$body.weight.gain.after.7.days..percent.) )
 \end_layout
 
 \end_inset
@@ -13575,7 +13577,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(InvivoSevendayD$body.weight.gain.after.7.days..percent.))
+sig3( SEM(InvivoSevendayD$body.weight.gain.after.7.days..percent.) )
 \end_layout
 
 \end_inset
@@ -13587,7 +13589,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( truemean(InvivoSevendayV$body.weight.gain.after.7.days..percent.))
+sig3( truemean(InvivoSevendayV$body.weight.gain.after.7.days..percent.) )
 \end_layout
 
 \end_inset
@@ -13632,7 +13634,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( truemean(InvivoSevendayC$body.weight.gain.after.7.days..percent.))
+sig3( truemean(InvivoSevendayC$body.weight.gain.after.7.days..percent.) )
 \end_layout
 
 \end_inset
@@ -13643,7 +13645,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(InvivoSevendayC$body.weight.gain.after.7.days..percent.))
+sig3( SEM(InvivoSevendayC$body.weight.gain.after.7.days..percent.) )
 \end_layout
 
 \end_inset
@@ -13656,7 +13658,7 @@ status open
 \begin_layout Plain Layout
 
 sig3( dunn.test(InvivoSevendayCVD$body.weight.gain.after.7.days..percent., InvivoSevenday
-CVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+CVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_layout
 
 \end_inset
@@ -13741,7 +13743,7 @@ name "fig:Time-course-of"
 \end_layout
 
 \begin_layout Standard
-The time course of body weight changes revealed that both drugs' action
+The time course of body weight changes suggested that both drugs' action
  had a rapid onset (Fig.
  
 \begin_inset CommandInset ref
@@ -13756,21 +13758,20 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(kruskal.test(body.weight.gain.after.1.days..percent.~treatment, data = invivodatasub
-setsevendays)$p.value)
+sig3( kruskal.test(body.weight.gain.after.1.days..percent.
+ ~ treatment, data = InvivoSevendayCVD)$p.value )
 \end_layout
 
 \end_inset
 
 ).
- Specifically, mice receiving vehicle alone gained 
+ Specifically, mice receiving vehicle alone gained
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( mean(subset(invivodatasubsetsevendays, treatment == "V")$body.weight.gain.aft
-er.1.days..percent., na.rm = TRUE))
+sig3( truemean(InvivoSevendayV$body.weight.gain.after.1.days..percent.) )
 \end_layout
 
 \end_inset
@@ -13781,22 +13782,19 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasubsetsevendays, treatment == "V")$body.weight.gain.afte
-r.1.days..percent.))
+sig3( SEM(InvivoSevendayV$body.weight.gain.after.1.days..percent.) )
 \end_layout
 
 \end_inset
 
-% body weight in the 24 hours, due to the significant mass of non-resorbable
- corn oil.
+% body weight in the 24 hours, due to accretion of non-resorbable vehicle.
  In contrast, mice receiving Dexa lost 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( -mean(subset(invivodatasubsetsevendays, treatment == "D")$body.weight.gain.af
-ter.1.days..percent., na.rm = TRUE))
+sig3( -truemean(InvivoSevendayV$body.weight.gain.after.1.days..percent.) )
 \end_layout
 
 \end_inset
@@ -13807,8 +13805,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasubsetsevendays, treatment == "D")$body.weight.gain.afte
-r.1.days..percent.))
+sig3( SEM(InvivoSevendayV$body.weight.gain.after.1.days..percent.) )
 \end_layout
 
 \end_inset
@@ -13819,9 +13816,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.1.days..percent.,
- invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[VvsDthre
-eways]])
+sig3( dunn.test(InvivoSevendayCVD$body.weight.gain.after.1.days..percent., InvivoSevenday
+CVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 \end_layout
 
 \end_inset
@@ -13834,8 +13830,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( mean(subset(invivodatasubsetsevendays, treatment == "C")$body.weight.gain.aft
-er.1.days..percent., na.rm = TRUE))
+sig3( truemean(InvivoSevendayC$body.weight.gain.after.1.days..percent.) )
 \end_layout
 
 \end_inset
@@ -13846,8 +13841,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasubsetsevendays, treatment == "C")$body.weight.gain.afte
-r.1.days..percent.))
+sig3( SEM(InvivoSevendayC$body.weight.gain.after.1.days..percent.) )
 \end_layout
 
 \end_inset
@@ -13860,9 +13854,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.1.days..percent.,
- invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthre
-eways]])
+sig3( dunn.test(InvivoSevendayCVD$body.weight.gain.after.1.days..percent., InvivoSevenday
+CVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_layout
 
 \end_inset
@@ -13888,7 +13881,8 @@ reference "fig:Body-weight-at"
 , left and middle).
  When normalized, relative changes in body weight for these groups of mice
  were less ample than those seen with 7 days of treatment, to the point
- that they were not statistically significant (Fig.
+ that most parameters (body weight, lean body mass, individual muscles mass)
+ were not changed in a statistically significant manner (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13920,8 +13914,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(kruskal.test(total.water.gain..g.~treatment, data = invivodatasubsetsevendays)$p.v
-alue)
+sig3( kruskal.test(total.water.gain..g.
+ ~ treatment, data = InvivoSevendayCVD)$p.value )
 \end_layout
 
 \end_inset
@@ -13938,43 +13932,66 @@ alue)
  vehicle accrued over the seven days.
  This demonstrates that experiments manipulations, in the absence of pharmacolog
 ical treatments, have no effect on lipid metabolism.
- Dexa-treated groups accrued more fat (Dunn's test, vehicle vs.
- Dexa, p = 
+ Dexa-treated mice accrued an additional 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$fat.mass.gain..g., invivodatasubsetsevendays
-$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( truemean(InvivoSevendayD$fat.mass.gain..g.) - truemean(InvivoSevendayV$fat.mass.g
+ain..g.) )
 \end_layout
 
 \end_inset
 
-; Dunn's test, vehicle vs.
- combination, p = 
+ g fat, compared to vehicle (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$fat.mass.gain..g., invivodatasubsetsevendays
-$treatment, method = "bonferroni")$P.adjusted[[VvsCthreeways]])
+sig3( dunn.test(InvivoSevendayCVD$fat.mass.gain..g., InvivoSevendayCVD$treatment,
+ method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+.
+ Similarly, mice treated with the combination accrued 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( truemean(InvivoSevendayC$fat.mass.gain..g.) - truemean(InvivoSevendayV$fat.mass.g
+ain..g.) )
+\end_layout
+
+\end_inset
+
+ g additional fat, compared to vehicle (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$fat.mass.gain..g., InvivoSevendayCVD$treatment,
+ method = "bonferroni")$P.adjusted[[VvsCthreeways]] )
 \end_layout
 
 \end_inset
 
 ).
- Testo co-administration had little effect on lipid accretion (Dunn's test,
- Dexa vs.
+ Therefore, Testo co-administration had no effect on lipid accretion (Dunn's
+ test, Dexa vs.
  combination, p = 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$fat.mass.gain..g., invivodatasubsetsevendays
-$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+sig3( dunn.test(InvivoSevendayCVD$fat.mass.gain..g., InvivoSevendayCVD$treatment,
+ method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_layout
 
 \end_inset
@@ -13983,7 +14000,7 @@ $treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \begin_layout Standard
-Even ampler changes were induced by the two drugs on lean body mass (Fig.
+Ampler changes were induced by the two drugs on lean body mass (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13997,8 +14014,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(kruskal.test(lean.mass.gain..g.~treatment, data = invivodatasubsetsevendays)$p.val
-ue)
+sig3( kruskal.test(lean.mass.gain..g.
+ ~ treatment, data = InvivoSevendayCVD)$p.value )
 \end_layout
 
 \end_inset
@@ -14010,8 +14027,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( -mean(subset(invivodatasubsetsevendays, treatment == "V")$lean.mass.gain..g.,
- na.rm = TRUE) / 7 )
+sig3( -truemean(InvivoSevendayV$lean.mass.gain..g.) )
 \end_layout
 
 \end_inset
@@ -14022,21 +14038,31 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasubsetsevendays, treatment == "V")$lean.mass.gain..g.)
- / 7)
+sig3( SEM(InvivoSevendayV$lean.mass.gain..g.) )
 \end_layout
 
 \end_inset
 
- grams per day loss over seven days).
- The massive loss of lean body mass (
+ grams lost over seven days, that is, 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( -mean(subset(invivodatasubsetsevendays, treatment == "D")$lean.mass.gain..g.,
- na.rm = TRUE) / 7 )
+sig3( -truemean(InvivoSevendayV$lean.mass.gain..g.) * 100 / truemean(InvivoSevendayV$
+lean.mass.before..g.) ) 
+\end_layout
+
+\end_inset
+
+ of the total lean body mass).
+ Dexa alone induce a massive loss of lean body mass (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( -truemean(InvivoSevendayD$lean.mass.gain..g.) )
 \end_layout
 
 \end_inset
@@ -14047,21 +14073,19 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasubsetsevendays, treatment == "D")$lean.mass.gain..g.)
- / 7)
+sig3( SEM(InvivoSevendayD$lean.mass.gain..g.) )
 \end_layout
 
 \end_inset
 
- grams per day) becomes significantly different from control by the third
- day (Dunn's test, p = 
+ grams lost over seven days; Dunn's test p = 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$lean.mass.gain..g., invivodatasubsetsevenday
-s$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(InvivoSevendayCVD$lean.mass.gain..g., InvivoSevendayCVD$treatment,
+ method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 \end_layout
 
 \end_inset
@@ -14074,8 +14098,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( -mean(subset(invivodatasubsetsevendays, treatment == "C")$lean.mass.gain..g.,
- na.rm = TRUE) / 7 )
+sig3( -truemean(InvivoSevendayC$lean.mass.gain..g.) )
 \end_layout
 
 \end_inset
@@ -14086,26 +14109,113 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasubsetsevendays, treatment == "V")$lean.mass.gain..g.)
- / 7)
+sig3( SEM(InvivoSevendayC$lean.mass.gain..g.) )
 \end_layout
 
 \end_inset
 
- grams per day lost; Dunn's test, Dexa vs.
- combination, p = 
+ grams lost over seven days; Dunn's test vs Dexa, p = 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$lean.mass.gain..g., invivodatasubsetsevenday
-s$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+sig3( dunn.test(InvivoSevendayCVD$lean.mass.gain..g., InvivoSevendayCVD$treatment,
+ method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_layout
 
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+The loss of lean body mass induced by Dexa was apparent even in the 3-day
+ experiment (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( truemean(InvivoThreedayD$lean.mass.gain..g.) )
+\end_layout
+
+\end_inset
+
+ ± 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( SEM(InvivoThreedayD$lean.mass.gain..g.) )
+\end_layout
+
+\end_inset
+
+ grams lost over three days; Dunn's test vs.
+ vehicle, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$lean.mass.gain..g., InvivoThreedayCVD$treatment,
+ method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+).
+ Interestingly, in that experiment, Testo protective effect was very small
+ and not statistically significant (combination, (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( truemean(InvivoThreedayC$lean.mass.gain..g.) )
+\end_layout
+
+\end_inset
+
+ ± 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( SEM(InvivoThreedayC$lean.mass.gain..g.) )
+\end_layout
+
+\end_inset
+
+ grams lost over three days; Dunn's test vs.
+ Dexa, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$lean.mass.gain..g., InvivoThreedayCVD$treatment,
+ method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
+\end_layout
+
+\end_inset
+
+).
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Is it delayed or only less significant, as it is half of the Dexa effect,
+ which is also still in its infancy?
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
