@@ -15388,12 +15388,84 @@ Rat microarray studies indicated that a series of genes related to autophagy
  Having established a model of GAML, I investigated whether the autophagy
  markers are correlated with muscle loss.
  A panel of three genes indicated that Dexa-induced gastrocnemius atrophy
- is associated with a reduction in autophagy-related mRNA for beclin / Becn1,
- cathepsin L / Ctsl, and LC3 / Map1lc3b (Fig.
+ is associated with a reduction in autophagy-related transcription (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Changes-in-autophagy-related"
+
+\end_inset
+
+) The repression is ampler in day 3 samples, with mRNA for beclin / Becn1
+ reduced 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayC$gastrocnemius.Ct.Becn1....Ct.Gapdh.) - truemean(Invivo
+ThreedayD$gastrocnemius.Ct.Becn1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$gastrocnemius.Ct.Becn1....Ct.Gapdh., InvivoThreedayCVD$
+treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), cathepsin L / Ctsl reduced 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayC$gastrocnemius.Ct.Ctsl....Ct.Gapdh.) - truemean(InvivoT
+hreedayD$gastrocnemius.Ct.Ctsl....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$gastrocnemius.Ct.Ctsl....Ct.Gapdh., InvivoThreedayCVD$t
+reatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and LC3 / Map1lc3b reduced 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayC$gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.) - truemean(Inv
+ivoThreedayD$gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$gastrocnemius.Ct.Map1lc3b....Ct.Gapdh., InvivoThreedayC
+VD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
 
 \end_inset
 
