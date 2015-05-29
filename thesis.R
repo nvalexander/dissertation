@@ -592,7 +592,6 @@ plotmuscleweights <- function(){
 
 # FIFTH plot shows proteasome activity in three muscles at three time points
 plotproteasomeactivity <- function(){
-  
   #alphabetical order
   columnnames <- c("gastrocnemius.proteasome.activity..rel.u..",
                    "quadriceps.proteasome.activity..rel.u..",
@@ -653,8 +652,37 @@ plotproteasomeactivity <- function(){
 }
 
 
+plotmurf <- function(){
+  shortdf <- rescaledtovehicleasunity(
+    InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "quadriceps.MuRF1.protein..normalized.to.GAPDH.")])
+  murfplot <- threecolumnplot(shortdf, "MuRF-1 protein\n(normalized to GAPDH)", c(0,1.5), c("a", "a", "a"))
+  return(murfplot)
+}
+
+
 # SIXTH plot shows atrogenes in two muscles at three time points
 plotatrogenes <- function(){
+  #alphabetical order
+  columnnames <- c(
+    "gastrocnemius.Ct.Fbxo32....Ct.Gapdh.",
+    "quadriceps.Ct.Fbxo32....Ct.Gapdh.",
+    "gastrocnemius.Ct.Trim63....Ct.Gapdh.",
+    "quadriceps.Ct.Trim63....Ct.Gapdh.",)
+  ylabels <- c(
+    "gastrocnemius\nFbxo32 mRNA",
+    "quadriceps\nFbxo32 mRNA",
+    "gastrocnemius\nTrim63 mRNA",
+    "quadriceps\nTrim63 mRNA")
+  ylims <- list(
+    # gastrocnemius - Fbxo32: 1, 3,7:
+    
+  )
+    
+  ylims <- list(c(0, 2),
+                c(0, 1.8), 
+                c(0, 3))
+  statstrings <- list(
+    
   quadricepsMafbxcolumn <- "quadriceps.Ct.Fbxo32....Ct.Gapdh."
   gastrocnemiusMafbxcolumn <- "gastrocnemius.Ct.Fbxo32....Ct.Gapdh."
   quadricepsMurfcolumn <- "quadriceps.Ct.Trim63....Ct.Gapdh."
@@ -763,13 +791,4 @@ plotatrogenes <- function(){
                       gastrocnemiusoneMafbxplot, gastrocnemiusthreeMafbxplot, gastrocnemiussevenMafbxplot,
                       quadricepsoneMafbxplot, quadricepsthreeMafbxplot, quadricepssevenMafbxplot,
                       ncol=3))
-}
-
-plotmurf <- function(){
-  shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "quadriceps.MuRF1.protein..normalized.to.GAPDH.")]
-  
-  shortdf <- 
-  shortdf <- rescaledtovehicleasunity(shortdf)
-  murfplot <- threecolumnplot(shortdf, "MuRF-1 protein\n(normalized to GAPDH)", c(0,1.5), c("a", "a", "a"))
-  return(murfplot)
 }
