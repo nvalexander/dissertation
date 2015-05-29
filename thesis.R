@@ -26,28 +26,28 @@ codedirpath <- dirname(
 )
 codedirpath <- "/media/dump/writingswork/draftthesis"
 datadir <- normalizePath(file.path(codedirpath, "data"))
-Invivo_OneDay <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
-Invivo_OneDay_NiceNames <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), 
+InvivoOneday <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
+InvivoOnedayNicenames <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), 
   header = FALSE, 
   sep = ",", 
   nrows = 1, 
   stringsAsFactors = FALSE)
-levels(Invivo_OneDay$treatment)[levels(Invivo_OneDay$treatment)=="A"] <- "C"
-levels(Invivo_OneDay$treatment)[levels(Invivo_OneDay$treatment)=="E"] <- "D"
-levels(Invivo_OneDay$treatment)[levels(Invivo_OneDay$treatment)=="W"] <- "V"
-levels(Invivo_OneDay$treatment)[levels(Invivo_OneDay$treatment)=="S"] <- "T"
-Invivo_ThreeDay <- read.csv(file.path(datadir, "2012.12.12.3daysTD.csv"), header = TRUE)
-Invivo_ThreeDay_NiceNames <- read.table(file.path(datadir, "2012.12.12.3daysTD.csv"), 
+levels(InvivoOneday$treatment)[levels(InvivoOneday$treatment)=="A"] <- "C"
+levels(InvivoOneday$treatment)[levels(InvivoOneday$treatment)=="E"] <- "D"
+levels(InvivoOneday$treatment)[levels(InvivoOneday$treatment)=="W"] <- "V"
+levels(InvivoOneday$treatment)[levels(InvivoOneday$treatment)=="S"] <- "T"
+InvivoThreeday <- read.csv(file.path(datadir, "2012.12.12.3daysTD.csv"), header = TRUE)
+InvivoThreedayNicenames <- read.table(file.path(datadir, "2012.12.12.3daysTD.csv"), 
   header = FALSE, 
   sep = ",", 
   nrows = 1, 
   stringsAsFactors = FALSE)
-levels(Invivo_ThreeDay$treatment)[levels(Invivo_ThreeDay$treatment)=="B"] <- "C"
-levels(Invivo_ThreeDay$treatment)[levels(Invivo_ThreeDay$treatment)=="G"] <- "D"
-levels(Invivo_ThreeDay$treatment)[levels(Invivo_ThreeDay$treatment)=="X"] <- "V"
-levels(Invivo_ThreeDay$treatment)[levels(Invivo_ThreeDay$treatment)=="U"] <- "T"
-Invivo_SevenDay <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = TRUE)
-Invivo_SevenDay_NiceNames <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), 
+levels(InvivoThreeday$treatment)[levels(InvivoThreeday$treatment)=="B"] <- "C"
+levels(InvivoThreeday$treatment)[levels(InvivoThreeday$treatment)=="G"] <- "D"
+levels(InvivoThreeday$treatment)[levels(InvivoThreeday$treatment)=="X"] <- "V"
+levels(InvivoThreeday$treatment)[levels(InvivoThreeday$treatment)=="U"] <- "T"
+InvivoSevenday <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = TRUE)
+InvivoSevendayNicenames <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), 
   header = FALSE, 
   sep = ",", 
   nrows = 1, 
@@ -65,22 +65,22 @@ contraststhree <- c("V vs D", "V vs DT", "D vs DT")
 VvsDthreeways <- match("V vs D", contraststhree)[[1]]
 DvsCthreeways <- match("D vs DT", contraststhree)[[1]]
 VvsCthreeways <- match("V vs DT", contraststhree)[[1]]
-Invivo_OneDay_Threeconds <- Invivo_OneDay[Invivo_OneDay$treatment %in% condsVDC, ]
-Invivo_OneDay$treatment <- factor(Invivo_OneDay$treatment, 
+InvivoOnedayThreeconds <- InvivoOneday[InvivoOneday$treatment %in% condsVDC, ]
+InvivoOneday$treatment <- factor(InvivoOneday$treatment, 
                                       levels = condsVDTC)
-Invivo_OneDay_Threeconds$treatment <- factor(Invivo_OneDay_Threeconds$treatment, 
+InvivoOnedayThreeconds$treatment <- factor(InvivoOnedayThreeconds$treatment, 
                                             levels = condsVDC)
 
-Invivo_ThreeDay_Threeconds <- Invivo_ThreeDay[Invivo_ThreeDay$treatment %in% condsVDC, ]
-Invivo_ThreeDay$treatment <- factor(Invivo_ThreeDay$treatment, 
+InvivoThreedayThreeconds <- InvivoThreeday[InvivoThreeday$treatment %in% condsVDC, ]
+InvivoThreeday$treatment <- factor(InvivoThreeday$treatment, 
                                         levels = condsVDTC)
-Invivo_ThreeDay_Threeconds$treatment <- factor(Invivo_ThreeDay_Threeconds$treatment, 
+InvivoThreedayThreeconds$treatment <- factor(InvivoThreedayThreeconds$treatment, 
                                               levels = condsVDC)
 
-Invivo_SevenDay_Threeconds <- Invivo_SevenDay[Invivo_SevenDay$treatment %in% condsVDC, ]
-Invivo_SevenDay$treatment <- factor(Invivo_SevenDay$treatment, 
+InvivoSevendayThreeconds <- InvivoSevenday[InvivoSevenday$treatment %in% condsVDC, ]
+InvivoSevenday$treatment <- factor(InvivoSevenday$treatment, 
                                         levels = condsVDTC)
-Invivo_SevenDay_Threeconds$treatment <- factor(Invivo_SevenDay_Threeconds$treatment, 
+InvivoSevendayThreeconds$treatment <- factor(InvivoSevendayThreeconds$treatment, 
                                               levels = condsVDC)
                                               
 #literal constants
@@ -355,15 +355,15 @@ plotbodyweightsatsacrifice <- function(){
   threedaysstat <- c("a,b", "a", "b")
   sevendaysstat <- threeidenticalgroups
   #1
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", "day.2.body.weight..g.")]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", "day.2.body.weight..g.")]
   onedaysweightplot <- threecolumnplot(shortdf, ylabel, ylimit, onedaysstat) +
     anotatedtitle("one day", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   #2
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", "day.4.body.weight..g.")]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", "day.4.body.weight..g.")]
   threedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, threedaysstat) +
     anotatedtitle("three days", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
   #3
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", "day.8.body.weight..g.")]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", "day.8.body.weight..g.")]
   sevedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, sevendaysstat) +
     anotatedtitle("seven days", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
   
@@ -380,7 +380,7 @@ plotbodyweightcourse <- function(){
                          "body.weight.gain.after.6.days..percent.",
                          "body.weight.gain.after.7.days..percent.",
                          "body.weight.gain.after.8.days..percent.")
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", timeseriescolumns)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", timeseriescolumns)]
   body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
   statsstars <- c("", "", "",
                   "", paste0(unidagger, unistar),"",
@@ -424,7 +424,7 @@ plotbodyweightcourse <- function(){
     scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
     stdplottimecourse
   
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", timeseriescolumns[1:4])]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", timeseriescolumns[1:4])]
   body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
   shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
   shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
@@ -453,7 +453,7 @@ plotbodyweightcourse <- function(){
     scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
     stdplottimecourse
     
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", timeseriescolumns[1:1])]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", timeseriescolumns[1:1])]
   body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
   shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
   shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
@@ -508,7 +508,7 @@ plotleanfat <- function(){
   watersevenstat <- threeidenticalgroups
   
   #1
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", leancolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   leanoneplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanonestat) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
@@ -522,43 +522,43 @@ plotleanfat <- function(){
 #     theme(legend.position = c(0, 1), legend.justification = c(0,1))
 #   
   #2
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", leancolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   leanthreeplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanthreestat) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #3
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", leancolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", leancolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   leansevenplot <- threecolumnplot(shortdf, leanlabel, leanylim, leansevenstat) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #4
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", fatcolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", fatcolumn)]
   fatoneplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatonestat)
   
   #5
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", fatcolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", fatcolumn)]
   fatthreeplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatthreestat)
   
   #6
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", fatcolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", fatcolumn)]
   fatsevenplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatsevenstat)
   
   #7
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", watercolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   wateroneplot <- threecolumnplot(shortdf, waterlabel, waterylim, wateronestat) +
     anotatedtitle("one day", 2, waterylim[[2]])
   
   #8
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", watercolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   waterthreeplot <- threecolumnplot(shortdf, waterlabel, waterylim, waterthreestat) +
     anotatedtitle("three days", 2, waterylim[[2]])
   
   #9
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", watercolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", watercolumn)]
   shortdf[,2] <- shortdf[, 2] * (-1)
   watersevenplot <- threecolumnplot(shortdf, waterlabel, waterylim, watersevenstat) +
     anotatedtitle("seven days", 2, waterylim[[2]])
@@ -607,68 +607,68 @@ plotmuscleweights <- function(){
   tibialissevenstat <- threeidenticalgroups
   
   #1
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", levatorcolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", levatorcolumn)]
   levatoroneplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, levatoronestat) +
     anotatedtitle("one day", 2, levatorylim[[2]]) 
   
   #2
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", levatorcolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", levatorcolumn)]
   levatorthreeplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, levatorthreestat) +
     anotatedtitle("three days", 2, levatorylim[[2]])
   
   #3
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", levatorcolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", levatorcolumn)]
   levatorsevenplot <- threecolumnplot(shortdf, levatorlabel, levatorylim, levatorsevenstat)  +
     anotatedtitle("seven days", 2, levatorylim[[2]]) 
   
   #4
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", quadricepscolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", quadricepscolumn)]
   quadricepsoneplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsonestat)
   
   #5
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", quadricepscolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", quadricepscolumn)]
   quadricepsthreeplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsthreestat)
   
   #6
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", quadricepscolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", quadricepscolumn)]
   quadricepssevenplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepssevenstat) 
   
   #7
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", gastrocnemiuscolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", gastrocnemiuscolumn)]
   gastrocnemiusoneplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusonestat) 
   
   #8
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", gastrocnemiuscolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", gastrocnemiuscolumn)]
   gastrocnemiusthreeplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusthreestat) 
   
   #9
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", gastrocnemiuscolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", gastrocnemiuscolumn)]
   gastrocnemiussevenplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiussevenstat)
   
   #10
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", tricepscolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", tricepscolumn)]
   tricepsoneplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepsonestat)
   
   #11
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", tricepscolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", tricepscolumn)]
   tricepsthreeplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepsthreestat) 
   
   #12
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", tricepscolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", tricepscolumn)]
   tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepssevenstat)
   
   #13
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", tibialiscolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", tibialiscolumn)]
   tibialisoneplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, tibialisonestat) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #14
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", tibialiscolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", tibialiscolumn)]
   tibialisthreeplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, tibialisthreestat) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #15
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", tibialiscolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", tibialiscolumn)]
   tibialissevenplot <- threecolumnplot(shortdf, tibialislabel, tibialisylim, tibialissevenstat) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
@@ -705,53 +705,53 @@ plotproteasomeactivity <- function(){
   tricepssevenstat <- threeidenticalgroups  
   
   #1
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", quadricepscolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", quadricepscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   quadricepsoneplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsonestat) +
     anotatedtitle("one day", 2, quadricepsylim[[2]]) 
   
   #2
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", quadricepscolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", quadricepscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   quadricepsthreeplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepsthreestat) +
     anotatedtitle("three days", 2, quadricepsylim[[2]])
   
   #3
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", quadricepscolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", quadricepscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   quadricepssevenplot <- threecolumnplot(shortdf, quadricepslabel, quadricepsylim, quadricepssevenstat) +
     anotatedtitle("seven days", 2, quadricepsylim[[2]]) 
   
   #4
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", gastrocnemiuscolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", gastrocnemiuscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   gastrocnemiusoneplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusonestat) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #5
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", gastrocnemiuscolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", gastrocnemiuscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   gastrocnemiusthreeplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiusthreestat)+
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #6
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", gastrocnemiuscolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", gastrocnemiuscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   gastrocnemiussevenplot <- threecolumnplot(shortdf, gastrocnemiuslabel, gastrocnemiusylim, gastrocnemiussevenstat)+
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #7
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", tricepscolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", tricepscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   tricepsoneplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepsonestat) 
   
   #8
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", tricepscolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", tricepscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   tricepsthreeplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepsthreestat)
   
   #9
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", tricepscolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", tricepscolumn)]
   shortdf <- rescaledtovehicleasunity(shortdf)
   tricepssevenplot <- threecolumnplot(shortdf, tricepslabel, tricepsylim, tricepssevenstat)
   
@@ -801,68 +801,68 @@ plotatrogenes <- function(){
   quadricepssevenMurfstat <- c("a", "a,b", "b")
   
   #1
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", quadricepsMafbxcolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", quadricepsMafbxcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   quadricepsoneMafbxplot <- threegeneplot(shortdf, quadricepsMafbxlabel, quadricepsoneMafbxylim, quadricepsoneMafbxstat) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #2
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", quadricepsMafbxcolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", quadricepsMafbxcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   quadricepsthreeMafbxplot <- threegeneplot(shortdf, quadricepsMafbxlabel, quadricepsthreeMafbxylim, quadricepsthreeMafbxstat) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #3
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", quadricepsMafbxcolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", quadricepsMafbxcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   quadricepssevenMafbxplot <- threegeneplot(shortdf, quadricepsMafbxlabel, quadricepssevenMafbxylim, quadricepssevenMafbxstat) +
     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
   
   #4
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", gastrocnemiusMafbxcolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", gastrocnemiusMafbxcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   gastrocnemiusoneMafbxplot <- threegeneplot(shortdf, gastrocnemiusMafbxlabel, gastrocnemiusoneMafbxylim, gastrocnemiusoneMafbxstat)
   
   #5
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", gastrocnemiusMafbxcolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", gastrocnemiusMafbxcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   gastrocnemiusthreeMafbxplot <- threegeneplot(shortdf, gastrocnemiusMafbxlabel, gastrocnemiusthreeMafbxylim, gastrocnemiusthreeMafbxstat)
   
   #6
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", gastrocnemiusMafbxcolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", gastrocnemiusMafbxcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   gastrocnemiussevenMafbxplot <- threegeneplot(shortdf, gastrocnemiusMafbxlabel, gastrocnemiussevenMafbxylim, gastrocnemiussevenMafbxstat) 
   
   #Murf
   #7
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", quadricepsMurfcolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", quadricepsMurfcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   quadricepsoneMurfplot <- threegeneplot(shortdf, quadricepsMurflabel, quadricepsoneMurfylim, quadricepsoneMurfstat)
   
   #8
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", quadricepsMurfcolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", quadricepsMurfcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   quadricepsthreeMurfplot <- threegeneplot(shortdf, quadricepsMurflabel, quadricepsthreeMurfylim, quadricepsthreeMurfstat) 
   
   #9
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", quadricepsMurfcolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", quadricepsMurfcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   quadricepssevenMurfplot <- threegeneplot(shortdf, quadricepsMurflabel, quadricepssevenMurfylim, quadricepssevenMurfstat)
   
   #10
-  shortdf <- Invivo_OneDay_Threeconds[, colnames(Invivo_OneDay_Threeconds) %in% c("treatment", gastrocnemiusMurfcolumn)]
+  shortdf <- InvivoOnedayThreeconds[, colnames(InvivoOnedayThreeconds) %in% c("treatment", gastrocnemiusMurfcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   gastrocnemiusoneMurfplot <- threegeneplot(shortdf, gastrocnemiusMurflabel, gastrocnemiusoneMurfylim, gastrocnemiusoneMurfstat) +
     anotatedtitle("one day", 2, gastrocnemiusoneMurfylim[[2]])
   
   #11
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", gastrocnemiusMurfcolumn)]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", gastrocnemiusMurfcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   gastrocnemiusthreeMurfplot <- threegeneplot(shortdf, gastrocnemiusMurflabel, gastrocnemiusthreeMurfylim, gastrocnemiusthreeMurfstat) +
     anotatedtitle("three days", 2, gastrocnemiusthreeMurfylim[[2]])
   
   #12
-  shortdf <- Invivo_SevenDay_Threeconds[, colnames(Invivo_SevenDay_Threeconds) %in% c("treatment", gastrocnemiusMurfcolumn)]
+  shortdf <- InvivoSevendayThreeconds[, colnames(InvivoSevendayThreeconds) %in% c("treatment", gastrocnemiusMurfcolumn)]
   shortdf <- rescaledtovehicleaszero(shortdf)
   gastrocnemiussevenMurfplot <- threegeneplot(shortdf, gastrocnemiusMurflabel, gastrocnemiussevenMurfylim, gastrocnemiussevenMurfstat) +
     anotatedtitle("seven days", 2, quadricepssevenMafbxylim[[2]])
@@ -875,7 +875,7 @@ plotatrogenes <- function(){
 }
 
 plotmurf <- function(){
-  shortdf <- Invivo_ThreeDay_Threeconds[, colnames(Invivo_ThreeDay_Threeconds) %in% c("treatment", "quadriceps.MuRF1.protein..normalized.to.GAPDH.")]
+  shortdf <- InvivoThreedayThreeconds[, colnames(InvivoThreedayThreeconds) %in% c("treatment", "quadriceps.MuRF1.protein..normalized.to.GAPDH.")]
   
   shortdf <- 
   shortdf <- rescaledtovehicleasunity(shortdf)
