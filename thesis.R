@@ -85,7 +85,7 @@ InvivoSevendayCVD$treatment <- factor(InvivoSevendayCVD$treatment,
 InvivoOnedayV <- InvivoOneday[InvivoOneday$treatment == "V", ]
 InvivoOnedayD <- InvivoOneday[InvivoOneday$treatment == "D", ]
 InvivoOnedayC <- InvivoOneday[InvivoOneday$treatment == "C", ]
-InvivoThreedayT <- InvivoThreeday[InvivoThreeday$treatment == "T", ]
+InvivoOnedayT <- InvivoOneday[InvivoOneday$treatment == "T", ]
 InvivoThreedayV <- InvivoThreeday[InvivoThreeday$treatment == "V", ]
 InvivoThreedayD <- InvivoThreeday[InvivoThreeday$treatment == "D", ]
 InvivoThreedayC <- InvivoThreeday[InvivoThreeday$treatment == "C", ]

@@ -14309,8 +14309,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetonedays$gastrocnemius..mg., invivodatasubsetonedays$
-treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(InvivoThreedayCVD$gastrocnemius..mg., InvivoThreedayCVD$treatment,
+ method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 \end_layout
 
 \end_inset
@@ -14323,8 +14323,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$triceps..mg., invivodatasubsetsevendays$tr
-eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(InvivoSevendayCVD$triceps..mg., invivodatasubsetsevendays$treatment,
+ method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -14335,8 +14335,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$quadriceps..mg., invivodatasubsetsevendays
-$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(InvivoSevendayCVD$quadriceps..mg., invivodatasubsetsevendays$treatme
+nt, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -14347,8 +14347,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$levator..mg., invivodatasubsetsevendays$tr
-eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(InvivoSevendayCVD$levator..mg., invivodatasubsetsevendays$treatment,
+ method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -14361,10 +14361,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetsevendays, treatment == "V")$quadriceps..mg.,
- na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment == "D")$quadric
-eps..mg., na.rm = TRUE)) / mean(subset(invivodatasubsetsevendays, treatment
- == "V")$quadriceps..mg., na.rm = TRUE))
+sig3( 100*(truemean(InvivoSevendayV$quadriceps..mg.) - truemean(InvivoSevendayD$qua
+driceps..mg.)) / truemean(InvivoSevendayV$quadriceps..mg.) )
 \end_layout
 
 \end_inset
