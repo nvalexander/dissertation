@@ -16191,7 +16191,19 @@ nt, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
- In day 3 samples, Foxo1 (Dunn's test, p = 
+ In day 3 samples, activation persisted, with Foxo1 upregulated 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayV$quadriceps.Ct.Foxo1....Ct.Gapdh.) - truemean(InvivoThr
+eedayD$quadriceps.Ct.Foxo1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16203,7 +16215,19 @@ atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-), Foxo3a (Dunn's test, p = 
+), Foxo3a upregulated 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayV$quadriceps.Ct.Foxo3a....Ct.Gapdh.) - truemean(InvivoTh
+reedayD$quadriceps.Ct.Foxo3a....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16215,7 +16239,19 @@ eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-), and Foxo4 (Dunn's test, p = 
+), and Foxo4 upregulated 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayV$quadriceps.Ct.Foxo4....Ct.Gapdh.) - truemean(InvivoThr
+eedayD$quadriceps.Ct.Foxo4....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
