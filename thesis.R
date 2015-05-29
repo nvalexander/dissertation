@@ -737,9 +737,69 @@ plotatrogenes <- function(){
     ncol = 3))
 }
 
-#SEVENTH
 
-# SIXTH plot shows atrogenes in two muscles at three time points
+# SEVENTH plot shows cathepsin activity in three muscles at three time points
+plotcathepsinactivity <- function(){
+  #alphabetical order
+  columnnames <- c("gastrocnemius.cathepsin.activity..rel.u..",
+                   "quadriceps.cathepsin.activity..rel.u..",
+                   "triceps.cathepsin.activity..rel.u..")
+  ylabels <- c("gastrocnemius cathepsin\nactivity (rel.u.)",
+               "quadriceps cathepsin\nactivity (rel.u.)",
+               "triceps cathepsin\nactivity (rel.u.)")
+  ylims <- list(c(0, 1.3),
+                c(0, 1.3), 
+                c(0, 1.3))
+  statstrings <- list(
+    #gastrocnemius 1, 3, 7:
+    c("a,b", "a", "b"),
+    c("a", "b", "b"),
+    threeidenticalgroups,
+    #quadriceps:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups,
+    #triceps:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups)
+  
+  plotslist <- list()
+  for (i in 1:3){
+    shortdf1 <- rescaledtovehicleasunity(
+      InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf3 <- rescaledtovehicleasunity(
+      InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf7 <- rescaledtovehicleasunity(
+      InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
+    plotslist[[i*3-2]] <- threecolumnplot(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <- threecolumnplot(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
+    if (columnnames[[i]] == "gastrocnemius.cathepsin.activity..rel.u..") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[i]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[i]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[i]][[2]])
+    }
+    if (columnnames[[i]] == "triceps.cathepsin.activity..rel.u..") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+    }
+  }
+  return(grid.arrange(
+    plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius
+    plotslist[[4]], plotslist[[5]], plotslist[[6]], # quadriceps
+    plotslist[[7]], plotslist[[8]], plotslist[[9]], # triceps
+    ncol = 3))
+}
+
+#EIGHTH plot shows gastrocnemius genes associated with autophagy - three genes
 plotgastrocnemiusautophagy <- function(){
   #alphabetical order
   columnnames <- c(
@@ -757,7 +817,7 @@ plotgastrocnemiusautophagy <- function(){
     c(-3, 2.5), c(-3, 2.5), c(-3, 2.5),
     # Map1lc3b: 1, 3, 7:
     c(-3.5, 2.5), c(-3.5, 2.5), c(-3.5, 2.5))
-  
+  #FIX THSI
   statstrings <- list(
     # Becn1: 1, 3, 7:
     c("a", "a,b", "b"),
@@ -806,4 +866,5 @@ plotgastrocnemiusautophagy <- function(){
     plotslist[[7]], plotslist[[8]], plotslist[[9]], # Map1lc3b
     ncol = 3))
 }
+
 
