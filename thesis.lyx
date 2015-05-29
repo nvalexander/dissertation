@@ -15919,12 +15919,12 @@ status open
 \begin_layout Plain Layout
 
 sig3( 100*(truemean(InvivoSevendayD$gastrocnemius.LC3.II...LC.I) - truemean(InvivoSeve
-ndayV$gastrocnemius.LC3.II...LC.I))/ truemean(InvivoSevendayV$ggastrocnemius.LC3.II...LC.I))
+ndayV$gastrocnemius.LC3.II...LC.I))/ truemean(InvivoSevendayV$gastrocnemius.LC3.II...LC.I))
 \end_layout
 
 \end_inset
 
-% increase, when normalized to GAPDH; Dunn's test, p = 
+% increase; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16033,8 +16033,8 @@ Changes in LC3 lipidation status following Dexa and / or Testo treatments.
 
 \end_inset
 
-Changes in hyperlipidated LC3 isoform following Dexa and / or Testo treatment
- in gastrocnemius muscles (n=4)
+Changes in hyperlipidated (fast-migrating) LC3 isoform following Dexa and
+ / or Testo treatment in gastrocnemius muscles (n=4)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Changes-in-hyperlipidated"
