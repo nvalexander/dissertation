@@ -16100,10 +16100,10 @@ Foxo pathway response to dexamethasone and testosterone
 \end_layout
 
 \begin_layout Standard
-Previous studies showed that the atrogene response is crucially regulated
- by Foxo transcription factors.
- In this study, a similar strong effect was induced during the early stages
- of  (Fig.
+Previous studies on C2C12 cultured cells showed that the atrogene response
+ is crucially regulated by Foxo transcription factors.
+ In this study, Foxo transcription factors were strongly induced during
+ the early stages of GAML (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -16112,7 +16112,81 @@ reference "fig:Foxo-expression"
 \end_inset
 
 ).
- 
+ In gastrocnemius at day 1, the activation included Foxo1 (Dunn's test,
+ p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoOnedayCVD$quadriceps.Ct.Foxo1....Ct.Gapdh., InvivoOnedayCVD$treatme
+nt, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), Foxo3a (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoOnedayCVD$quadriceps.Ct.Foxo3a....Ct.Gapdh., InvivoOnedayCVD$treatm
+ent, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and Foxo4 (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoOnedayCVD$quadriceps.Ct.Foxo4....Ct.Gapdh., InvivoOnedayCVD$treatme
+nt, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ In day 3 samples, Foxo1 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Foxo1....Ct.Gapdh., InvivoThreedayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), Foxo1 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Foxo3a....Ct.Gapdh., InvivoThreedayCVD$tr
+eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and Foxo4 Foxo1 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Foxo4....Ct.Gapdh., InvivoThreedayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+) were still upregulated.
 \end_layout
 
 \begin_layout Standard
