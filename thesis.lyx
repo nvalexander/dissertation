@@ -13363,7 +13363,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2.25in", fig.width = 6, fig.height =2.25, dev="cairo_pdf"
+ = "2in", fig.width = 6, fig.height = 2, dev="cairo_pdf"
 \end_layout
 
 \end_inset
@@ -13683,7 +13683,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "6in", fig.width = 6, fig.height = 6, dev="cairo_pdf"
+ = "5in", fig.width = 6, fig.height = 5, dev="cairo_pdf"
 \end_layout
 
 \end_inset
@@ -14235,7 +14235,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "6in", fig.width = 6, fig.height = 6, dev='cairo_pdf'
+ = "4.5in", fig.width = 6, fig.height = 4.5, dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -14936,19 +14936,14 @@ $treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 
 \end_inset
 
-) 
-\end_layout
-
-\begin_layout Standard
-and in quadriceps(
+) and in quadriceps (
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(mean(subset(invivodatasubsetsevendays, treatment == "C")$quadriceps.Ct.Tr
-im63....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetsevendays, treatment
- == "D")$quadriceps.Ct.Trim63....Ct.Gapdh., na.rm = TRUE)))
+sig3( 2^(truemean(InvivoSevendayC$quadriceps.Ct.Trim63....Ct.Gapdh.) - truemean(InvivoSe
+vendayD$quadriceps.Ct.Trim63....Ct.Gapdh.)))
 \end_layout
 
 \end_inset
@@ -14959,8 +14954,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$quadriceps.Ct.Trim63....Ct.Gapdh., invivodatasu
-bsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Trim63....Ct.Gapdh., InvivoSevendayCVD$tr
+eatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \end_inset
@@ -15048,9 +15043,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(mean(subset(invivodatasubsetonedays, treatment == "V")$gastrocnemius.Ct.F
-bxo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetonedays, treatment
- == "D")$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
+sig3( 2^(truemean(InvivoOnedayV$gastrocnemius.Ct.Fbxo32....Ct.Gapdh.) - truemean(InvivoO
+nedayD$gastrocnemius.Ct.Fbxo32....Ct.Gapdh.)))
 \end_layout
 
 \end_inset
@@ -15061,8 +15055,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetonedays$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., invivodatas
-ubsetonedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(InvivoOnedayCVD$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., InvivoOnedayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -15073,9 +15067,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(mean(subset(invivodatasubsetonedays, treatment == "V")$quadriceps.Ct.Fbxo
-32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetonedays, treatment
- == "D")$quadriceps.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
+sig3( 2^(truemean(InvivoOnedayV$quadriceps.Ct.Fbxo32....Ct.Gapdh.) - truemean(InvivoOned
+ayD$quadriceps.Ct.Fbxo32....Ct.Gapdh.)))
 \end_layout
 
 \end_inset
@@ -15086,8 +15079,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetonedays$quadriceps.Ct.Fbxo32....Ct.Gapdh., invivodatasubs
-etonedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(InvivoOnedayCVD$quadriceps.Ct.Fbxo32....Ct.Gapdh., InvivoOnedayCVD$treatm
+ent, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -15100,9 +15093,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "V")$quadriceps.Ct.Fb
-xo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
- == "D")$quadriceps.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
+sig3( 2^(truemean(InvivoThreedayV$quadriceps.Ct.Fbxo32....Ct.Gapdh.) - truemean(InvivoTh
+reedayD$quadriceps.Ct.Fbxo32....Ct.Gapdh.)))
 \end_layout
 
 \end_inset
@@ -15113,8 +15105,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetthreedays$quadriceps.Ct.Fbxo32....Ct.Gapdh., invivodatasu
-bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Fbxo32....Ct.Gapdh., InvivoThreedayCVD$tr
+eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -15122,7 +15114,10 @@ bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 ).
  The effect became insignificant statistically across muscle groups by the
  seventh day of Dexa administration.
- Testo co-administration had no statistically significant effect on MAFbx
+\end_layout
+
+\begin_layout Standard
+Testo co-administration had no statistically significant effect on MAFbx
  at days 1 and 7.
  By day 3, MAFbx was repressed by Testo in gastrocnemius (
 \begin_inset Flex S/R expression
@@ -15130,21 +15125,20 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "C")$gastrocnemius.C
-t.Fbxo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
- == "D")$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
+sig3( 2^(truemean(InvivoThreedayC$gastrocnemius.Ct.Fbxo32....Ct.Gapdh.) - truemean(Inviv
+oThreedayD$gastrocnemius.Ct.Fbxo32....Ct.Gapdh.)))
 \end_layout
 
 \end_inset
 
- fold reduction; Dunn's test, p = 
+ fold amplification; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetthreedays$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., invivodat
-asubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+sig3( dunn.test(InvivoThreedayCVD$gastrocnemius.Ct.Fbxo32....Ct.Gapdh., InvivoThreedayCVD
+$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \end_inset
@@ -15155,21 +15149,20 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(mean(subset(invivodatasubsetthreedays, treatment == "C")$quadriceps.Ct.Fb
-xo32....Ct.Gapdh., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays, treatment
- == "D")$quadriceps.Ct.Fbxo32....Ct.Gapdh., na.rm = TRUE)))
+sig3( 2^(truemean(InvivoThreedayC$quadriceps.Ct.Fbxo32....Ct.Gapdh.) - truemean(InvivoTh
+reedayD$quadriceps.Ct.Fbxo32....Ct.Gapdh.)))
 \end_layout
 
 \end_inset
 
- fold reduction; Dunn's test, p = 
+ fold amplification; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetthreedays$quadriceps.Ct.Fbxo32....Ct.Gapdh., invivodatasu
-bsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Fbxo32....Ct.Gapdh., InvivoThreedayCVD$tr
+eatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_layout
 
 \end_inset
@@ -15190,11 +15183,9 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetthreedays, treatment == "D")$quadriceps.pro
-teasome.activity..rel.u.., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays,
- treatment == "V")$quadriceps.proteasome.activity..rel.u.., na.rm = TRUE)) / mean(subset
-(invivodatasubsetthreedays, treatment == "V")$quadriceps.proteasome.activity..rel.u..,
- na.rm = TRUE))
+sig3( 100*(truemean(InvivoThreedayD$quadriceps.proteasome.activity..rel.u..) -
+ truemean(InvivoThreedayV$quadriceps.proteasome.activity..rel.u..))/ truemean(InvivoThr
+eedayV$quadriceps.proteasome.activity..rel.u..))
 \end_layout
 
 \end_inset
@@ -15205,9 +15196,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetthreedays$quadriceps.proteasome.activity..rel.u..,
- invivodatasubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthre
-eways]])
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.proteasome.activity..rel.u.., InvivoThreeda
+yCVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 \end_layout
 
 \end_inset
@@ -15218,11 +15208,9 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetthreedays, treatment == "D")$triceps.protea
-some.activity..rel.u.., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays,
- treatment == "V")$triceps.proteasome.activity..rel.u.., na.rm = TRUE)) / mean(subset(in
-vivodatasubsetthreedays, treatment == "V")$triceps.proteasome.activity..rel.u..,
- na.rm = TRUE))
+sig3( 100*(truemean(InvivoThreedayD$triceps.proteasome.activity..rel.u..) - truemean(In
+vivoThreedayV$triceps.proteasome.activity..rel.u..))/ truemean(InvivoThreedayV$quadrice
+ps.proteasome.activity..rel.u..))
 \end_layout
 
 \end_inset
@@ -15233,9 +15221,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetthreedays$triceps.proteasome.activity..rel.u..,
- invivodatasubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[VvsDthre
-eways]])
+sig3( dunn.test(InvivoThreedayCVD$triceps.proteasome.activity..rel.u.., InvivoThreedayCV
+D$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 \end_layout
 
 \end_inset
@@ -15248,11 +15235,9 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetthreedays, treatment == "D")$quadriceps.pro
-teasome.activity..rel.u.., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays,
- treatment == "C")$quadriceps.proteasome.activity..rel.u.., na.rm = TRUE)) / mean(subset
-(invivodatasubsetthreedays, treatment == "D")$quadriceps.proteasome.activity..rel.u..,
- na.rm = TRUE))
+sig3( 100*(truemean(InvivoThreedayD$quadriceps.proteasome.activity..rel.u..) -
+ truemean(InvivoThreedayC$quadriceps.proteasome.activity..rel.u..))/ truemean(InvivoThr
+eedayD$quadriceps.proteasome.activity..rel.u..))
 \end_layout
 
 \end_inset
@@ -15263,9 +15248,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetthreedays$quadriceps.proteasome.activity..rel.u..,
- invivodatasubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthre
-eways]])
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.proteasome.activity..rel.u.., InvivoThreeda
+yCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_layout
 
 \end_inset
@@ -15276,11 +15260,9 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100*(mean(subset(invivodatasubsetthreedays, treatment == "D")$triceps.protea
-some.activity..rel.u.., na.rm = TRUE) - mean(subset(invivodatasubsetthreedays,
- treatment == "C")$triceps.proteasome.activity..rel.u.., na.rm = TRUE)) / mean(subset(in
-vivodatasubsetthreedays, treatment == "D")$triceps.proteasome.activity..rel.u..,
- na.rm = TRUE))
+sig3( 100*(truemean(InvivoThreedayD$triceps.proteasome.activity..rel.u..) - truemean(In
+vivoThreedayC$triceps.proteasome.activity..rel.u..))/ truemean(InvivoThreedayD$triceps.p
+roteasome.activity..rel.u..))
 \end_layout
 
 \end_inset
@@ -15291,9 +15273,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetthreedays$triceps.proteasome.activity..rel.u..,
- invivodatasubsetthreedays$treatment, method = "bonferroni")$P.adjusted[[DvsCthre
-eways]])
+sig3( dunn.test(InvivoThreedayCVD$triceps.proteasome.activity..rel.u.., InvivoThreedayCV
+D$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_layout
 
 \end_inset
@@ -15318,7 +15299,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "5in", fig.width = 6, fig.height =5,dev='cairo_pdf'
+ = "4in", fig.width = 6, fig.height = 4,dev='cairo_pdf'
 \end_layout
 
 \end_inset
