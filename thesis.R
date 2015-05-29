@@ -675,13 +675,13 @@ plotatrogenes <- function(){
     "quadriceps\nTrim63 mRNA")
   ylims <- list(
     # gastrocnemius - Fbxo32 / Mafbx: 1, 3, 7:
-    c(-1, 2.5), c(-1, 5.4), c(-2, 2),
+    c(-1, 2.5), c(-1.5, 5.4), c(-2, 2),
     # quadriceps - Fbxo32 / Mafbx: 1, 3, 7:
-    c(-1, 8.5), c(-1, 5.4), c(-2, 2),
+    c(-1, 8.5), c(-1.5, 5.4), c(-2, 2),
     # gastrocnemius - Trim63 / Murf1: 1, 3, 7:
-    c(-1, 2.5), c(-1, 5.4), c(-2, 2),
+    c(-1, 2.5), c(-1.5, 5.4), c(-2, 2),
     # quadriceps - Trim63 / Murf1: 1, 3, 7:
-    c(-1, 8.5), c(-1, 5.4), c(-2, 2))
+    c(-1, 8.5), c(-1.5, 5.4), c(-2, 2))
     
   statstrings <- list(
     # gastrocnemius - Fbxo32 / Mafbx: 1, 3, 7:
