@@ -206,11 +206,27 @@ stdbarplot <-
         axis.text.x= element_blank(),
         axis.title.y = element_text( size = textSize))
 
-anotatedtitle <- function(text, x, y) {
+annotationastitle <- function(text, x, y) {
   return(annotate(geom = "text", label = text, x = x, y = y,
            vjust = 1, hjust = 0.5,  
            size = .45 * textSize, 
            family = "Liberation Sans Narrow"))
+}
+
+annotationasaxis <- function(texts, xs, y) {
+  return(
+    annotate(geom = "text", label = texts[[1]], x = xs[[1]], y = y,
+             vjust = 1, hjust = 0.5,  
+             size = .2 * textSize, 
+             family = "Liberation Sans Narrow") +
+      annotate(geom = "text", label = texts[[2]], x = xs[[2]], y = y,
+               vjust = 1, hjust = 0.5,  
+               size = .2 * textSize, 
+               family = "Liberation Sans Narrow") +
+      annotate(geom = "text", label = texts[[3]], x = xs[[3]], y = y,
+               vjust = 1, hjust = 0.5,  
+               size = .2 * textSize, 
+               family = "Liberation Sans Narrow"))
 }
 
 threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
@@ -385,21 +401,21 @@ plotbodyweightsatsacrifice <- function(){
                       ylabel, 
                       ylimit, 
                       onedayweightstat) +
-        anotatedtitle("one day", 2, ylimit[[2]]) + 
+        annotationastitle("one day", 2, ylimit[[2]]) + 
         theme(axis.text.x = element_text(color = "black")) + 
         scale_x_discrete(labels = conditionsVDC),
       threecolumnplot(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "day.4.body.weight..g.")], 
                       ylabel, 
                       ylimit, 
                       threedayweightstat) +
-        anotatedtitle("three days", 2, ylimit[[2]]) + 
+        annotationastitle("three days", 2, ylimit[[2]]) + 
         theme(axis.text.x = element_text(color = "black")) +
         scale_x_discrete(labels = threeemptystrings),
       threecolumnplot(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "day.8.body.weight..g.")], 
                       ylabel, 
                       ylimit, 
                       sevendayweightstat) +
-        anotatedtitle("seven days", 2, ylimit[[2]]) + 
+        annotationastitle("seven days", 2, ylimit[[2]]) + 
         theme(axis.text.x = element_text(color = "black")) +
         scale_x_discrete(labels = threeemptystrings),
       ncol=3))
@@ -493,11 +509,11 @@ plotleanfat <- function(){
     plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
     if (columnnames[[i]] == "total.water.gain..g.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
-        anotatedtitle("one day", 2, ylims[[i]][[2]])
+        annotationastitle("one day", 2, ylims[[i]][[2]])
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
-        anotatedtitle("three days", 2, ylims[[i]][[2]])
+        annotationastitle("three days", 2, ylims[[i]][[2]])
       plotslist[[i*3]] <- plotslist[[i*3]] + 
-        anotatedtitle("seven days", 2, ylims[[i]][[2]])
+        annotationastitle("seven days", 2, ylims[[i]][[2]])
     }
     if (columnnames[[i]] == "lean.mass.gain..g.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -569,11 +585,11 @@ plotmuscleweights <- function(){
     plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
     if (columnnames[[i]] == "levator..mg.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] +
-        anotatedtitle("one day", 2, ylims[[i]][[2]])
+        annotationastitle("one day", 2, ylims[[i]][[2]])
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
-        anotatedtitle("three days", 2, ylims[[i]][[2]])
+        annotationastitle("three days", 2, ylims[[i]][[2]])
       plotslist[[i*3]] <- plotslist[[i*3]] + 
-        anotatedtitle("seven days", 2, ylims[[i]][[2]])
+        annotationastitle("seven days", 2, ylims[[i]][[2]])
     }
     if (columnnames[[i]] == "tibialis..mg.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -635,11 +651,11 @@ plotproteasomeactivity <- function(){
     plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
     if (columnnames[[i]] == "quadriceps.proteasome.activity..rel.u..") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
-        anotatedtitle("one day", 2, ylims[[i]][[2]])
+        annotationastitle("one day", 2, ylims[[i]][[2]])
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] +
-        anotatedtitle("three days", 2, ylims[[i]][[2]])
+        annotationastitle("three days", 2, ylims[[i]][[2]])
       plotslist[[i*3]] <- plotslist[[i*3]] +
-        anotatedtitle("seven days", 2, ylims[[i]][[2]])
+        annotationastitle("seven days", 2, ylims[[i]][[2]])
     }
     if (columnnames[[i]] == "triceps.proteasome.activity..rel.u..") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -723,11 +739,11 @@ plotatrogenes <- function(){
     plotslist[[i*3]] <- threegeneplot(shortdf7, ylabels[[i]], ylims[[(i*3)]], statstrings[[(i*3)]])
     if (columnnames[[i]] == "gastrocnemius.Ct.Trim63....Ct.Gapdh.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
-        anotatedtitle("one day", 2, ylims[[(i*3-2)]][[2]])
+        annotationastitle("one day", 2, ylims[[(i*3-2)]][[2]])
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
-        anotatedtitle("three days", 2, ylims[[(i*3-1)]][[2]])
+        annotationastitle("three days", 2, ylims[[(i*3-1)]][[2]])
       plotslist[[i*3]] <- plotslist[[i*3]] + 
-        anotatedtitle("seven days", 2, ylims[[(i*3)]][[2]])
+        annotationastitle("seven days", 2, ylims[[(i*3)]][[2]])
     }
     if (columnnames[[i]] == "quadriceps.Ct.Fbxo32....Ct.Gapdh.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -787,11 +803,11 @@ plotcathepsinactivity <- function(){
     plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims, statstrings[[(i*3)]])
     if (columnnames[[i]] == "gastrocnemius.cathepsin.activity..rel.u..") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
-        anotatedtitle("one day", 2, ylims[[2]])
+        annotationastitle("one day", 2, ylims[[2]])
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
-        anotatedtitle("three days", 2, ylims[[2]])
+        annotationastitle("three days", 2, ylims[[2]])
       plotslist[[i*3]] <- plotslist[[i*3]] + 
-        anotatedtitle("seven days", 2, ylims[[2]])
+        annotationastitle("seven days", 2, ylims[[2]])
     }
     if (columnnames[[i]] == "triceps.cathepsin.activity..rel.u..") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -856,9 +872,9 @@ plotgastrocnemiusautophagy <- function(){
     plotslist[[i*3-1]] <- threegeneplot(shortdf3, ylabels[[i]], ylims[[(i*3-1)]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threegeneplot(shortdf7, ylabels[[i]], ylims[[(i*3)]], statstrings[[(i*3)]])
     if (columnnames[[i]] == "gastrocnemius.Ct.Becn1....Ct.Gapdh.") {
-      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[(i*3-2)]][[2]])
-      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[(i*3-1)]][[2]])
-      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[(i*3)]][[2]])
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + annotationastitle("one day", 2, ylims[[(i*3-2)]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + annotationastitle("three days", 2, ylims[[(i*3-1)]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + annotationastitle("seven days", 2, ylims[[(i*3)]][[2]])
     }
     if (columnnames[[i]] == "gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -969,9 +985,9 @@ plotfoxogene <- function(){
     plotslist[[i*3]] <- threegeneplot(shortdf7, ylabels[[i]], ylims[[(i*3)]], statstrings[[(i*3)]])
   }
   
-  plotslist[[1]] <- plotslist[[1]] + anotatedtitle("one day", 2, ylims[[1]][[2]])
-  plotslist[[2]] <- plotslist[[2]] + anotatedtitle("three days", 2, ylims[[2]][[2]])
-  plotslist[[3]] <- plotslist[[3]] + anotatedtitle("seven days", 2, ylims[[3]][[2]])
+  plotslist[[1]] <- plotslist[[1]] + annotationastitle("one day", 2, ylims[[1]][[2]])
+  plotslist[[2]] <- plotslist[[2]] + annotationastitle("three days", 2, ylims[[2]][[2]])
+  plotslist[[3]] <- plotslist[[3]] + annotationastitle("seven days", 2, ylims[[3]][[2]])
   
   plotslist[[7]] <- plotslist[[7]] + 
     theme(axis.text.x = element_text(color = "black")) + 
