@@ -13363,7 +13363,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2in", fig.width = 6, fig.height = 2, dev="cairo_pdf"
+ = "3in", fig.width = 6, fig.height = 3, dev="cairo_pdf"
 \end_layout
 
 \end_inset
@@ -14235,7 +14235,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "4.5in", fig.width = 6, fig.height = 4.5, dev='cairo_pdf'
+ = "5in", fig.width = 6, fig.height = 5, dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -15227,6 +15227,14 @@ D$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 
 \end_inset
 
+; Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Changes-in-proteasome-1"
+
+\end_inset
+
 ).
  This component of atrophy was also inhibited by Testo, whose co-administration
  reduced proteasome activity in quadriceps (
@@ -15333,6 +15341,13 @@ s.
 
 Changes in proteasome chymotrypsin-like enzymatic activity following Dexa
  and / or Testo treatments, in quadriceps and triceps muscles (n=4-6).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Changes-in-proteasome-1"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -15370,7 +15385,15 @@ Autophagy markers during Dexa and Testo co-administration
 Rat microarray studies indicated that a series of genes related to autophagy
  are upregulated by Dexa and downregulated by Testo.
  I tested the hypothesis that autophagy mediates protein degradation in
- GAML by measuring cathepsin enzymatic activity in muscle lysates.
+ GAML by measuring cathepsin enzymatic activity in muscle lysates (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Changes-in-cathepsin"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -15390,7 +15413,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "4in", fig.width = 6, fig.height = 4,dev='cairo_pdf'
+ = "5in", fig.width = 6, fig.height = 5,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -15423,6 +15446,13 @@ Changes in cathepsin enzymatic activity following Dexa and / or Testo treatments
 
 Changes in cathepsin L enzymatic activity following Dexa and / or Testo
  treatments, in quadriceps and triceps muscles (n=4-6).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Changes-in-cathepsin"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

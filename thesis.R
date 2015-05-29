@@ -747,7 +747,7 @@ plotcathepsinactivity <- function(){
   ylabels <- c("gastrocnemius cathepsin\nactivity (rel.u.)",
                "quadriceps cathepsin\nactivity (rel.u.)",
                "triceps cathepsin\nactivity (rel.u.)")
-  ylims <- c(0, 1.3)
+  ylims <- c(0, 1.4)
   statstrings <- list(
     #gastrocnemius 1, 3, 7:
     c("a", "b", "a,b"),
