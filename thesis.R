@@ -747,22 +747,20 @@ plotcathepsinactivity <- function(){
   ylabels <- c("gastrocnemius cathepsin\nactivity (rel.u.)",
                "quadriceps cathepsin\nactivity (rel.u.)",
                "triceps cathepsin\nactivity (rel.u.)")
-  ylims <- list(c(0, 1.3),
-                c(0, 1.3), 
-                c(0, 1.3))
+  ylims <- c(0, 1.3)
   statstrings <- list(
     #gastrocnemius 1, 3, 7:
-    c("a,b", "a", "b"),
+    c("a", "b", "a,b"),
+    threeidenticalgroups,
     c("a", "b", "b"),
-    threeidenticalgroups,
     #quadriceps:
-    threeidenticalgroups,
-    threeidenticalgroups,
-    threeidenticalgroups,
+    c("a", "b", "a"),
+    c("a", "b", "a,b"),
+    c("a", "b", "b"),
     #triceps:
-    threeidenticalgroups,
-    threeidenticalgroups,
-    threeidenticalgroups)
+    c("a", "b", "a,b"),
+    c("a", "b", "a,b"),
+    c("a", "b", "b"))
   
   plotslist <- list()
   for (i in 1:3){
@@ -772,13 +770,13 @@ plotcathepsinactivity <- function(){
       InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])])
     shortdf7 <- rescaledtovehicleasunity(
       InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
-    plotslist[[i*3-2]] <- threecolumnplot(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
-    plotslist[[i*3-1]] <- threecolumnplot(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
-    plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
+    plotslist[[i*3-2]] <- threecolumnplot(shortdf1, ylabels[[i]], ylims, statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <- threecolumnplot(shortdf3, ylabels[[i]], ylims, statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims, statstrings[[(i*3)]])
     if (columnnames[[i]] == "gastrocnemius.cathepsin.activity..rel.u..") {
-      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[i]][[2]])
-      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[i]][[2]])
-      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[i]][[2]])
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[2]])
     }
     if (columnnames[[i]] == "triceps.cathepsin.activity..rel.u..") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 

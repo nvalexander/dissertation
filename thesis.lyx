@@ -15369,9 +15369,70 @@ Autophagy markers during Dexa and Testo co-administration
 \begin_layout Standard
 Rat microarray studies indicated that a series of genes related to autophagy
  are upregulated by Dexa and downregulated by Testo.
- However, these studies investigated solely the transcriptional outcome
- after seven days.
- I 
+ I tested the hypothesis that autophagy mediates protein degradation in
+ GAML by measuring cathepsin enzymatic activity in muscle lysates.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "4in", fig.width = 6, fig.height = 4,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotcathepsinactivity()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in cathepsin enzymatic activity following Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+Changes in cathepsin L enzymatic activity following Dexa and / or Testo
+ treatments, in quadriceps and triceps muscles (n=4-6).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
