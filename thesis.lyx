@@ -16095,12 +16095,87 @@ ndayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 .
 \end_layout
 
-\begin_layout Standard
-Foxo mediates dexamethasone and testosterone actions on muscle
+\begin_layout Section
+Foxo mediates dexamethasone and testosterone effects on muscle
 \end_layout
 
 \begin_layout Standard
+Previous studies showed that the atrogene response is crucially regulated
+ by Foxo transcription factors.
+ In this study, a similar strong effect was induced by Dexa at days 1 and
+ 3 (Fig.
+ ).
+\end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "5.5in", fig.width = 6, fig.height = 5.5,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotfoxogene()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in the expression of Foxo transcription factors following Dexa and
+ / or Testo treatments.
+\end_layout
+
+\end_inset
+
+Changes in the expression of Foxo transcription factors following Dexa and
+ / or Testo treatments in quadriceps muscles (n=4).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lol
 \end_layout
 
 \begin_layout Standard
