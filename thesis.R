@@ -492,9 +492,12 @@ plotleanfat <- function(){
     plotslist[[i*3-1]] <- threecolumnplot(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
     if (columnnames[[i]] == "total.water.gain..g.") {
-      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[i]][[2]])
-      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[i]][[2]])
-      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[i]][[2]])
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        anotatedtitle("one day", 2, ylims[[i]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        anotatedtitle("three days", 2, ylims[[i]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        anotatedtitle("seven days", 2, ylims[[i]][[2]])
     }
     if (columnnames[[i]] == "lean.mass.gain..g.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -565,9 +568,12 @@ plotmuscleweights <- function(){
     plotslist[[i*3-1]] <- threecolumnplot(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
     if (columnnames[[i]] == "levator..mg.") {
-      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[i]][[2]])
-      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[i]][[2]])
-      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[i]][[2]])
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] +
+        anotatedtitle("one day", 2, ylims[[i]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        anotatedtitle("three days", 2, ylims[[i]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        anotatedtitle("seven days", 2, ylims[[i]][[2]])
     }
     if (columnnames[[i]] == "tibialis..mg.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -628,9 +634,12 @@ plotproteasomeactivity <- function(){
     plotslist[[i*3-1]] <- threecolumnplot(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
     if (columnnames[[i]] == "quadriceps.proteasome.activity..rel.u..") {
-      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[i]][[2]])
-      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[i]][[2]])
-      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[i]][[2]])
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        anotatedtitle("one day", 2, ylims[[i]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] +
+        anotatedtitle("three days", 2, ylims[[i]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] +
+        anotatedtitle("seven days", 2, ylims[[i]][[2]])
     }
     if (columnnames[[i]] == "triceps.proteasome.activity..rel.u..") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -713,9 +722,12 @@ plotatrogenes <- function(){
     plotslist[[i*3-1]] <- threegeneplot(shortdf3, ylabels[[i]], ylims[[(i*3-1)]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threegeneplot(shortdf7, ylabels[[i]], ylims[[(i*3)]], statstrings[[(i*3)]])
     if (columnnames[[i]] == "gastrocnemius.Ct.Trim63....Ct.Gapdh.") {
-      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[(i*3-2)]][[2]])
-      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[(i*3-1)]][[2]])
-      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[(i*3)]][[2]])
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        anotatedtitle("one day", 2, ylims[[(i*3-2)]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        anotatedtitle("three days", 2, ylims[[(i*3-1)]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        anotatedtitle("seven days", 2, ylims[[(i*3)]][[2]])
     }
     if (columnnames[[i]] == "quadriceps.Ct.Fbxo32....Ct.Gapdh.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -774,9 +786,12 @@ plotcathepsinactivity <- function(){
     plotslist[[i*3-1]] <- threecolumnplot(shortdf3, ylabels[[i]], ylims, statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims, statstrings[[(i*3)]])
     if (columnnames[[i]] == "gastrocnemius.cathepsin.activity..rel.u..") {
-      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[2]])
-      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[2]])
-      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[2]])
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        anotatedtitle("one day", 2, ylims[[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        anotatedtitle("three days", 2, ylims[[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + a
+      notatedtitle("seven days", 2, ylims[[2]])
     }
     if (columnnames[[i]] == "triceps.cathepsin.activity..rel.u..") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -865,3 +880,39 @@ plotgastrocnemiusautophagy <- function(){
 }
 
 
+#NINTH plot shows densitometry of LC3
+plotlcprotein <- function(){
+  #alphabetical order
+  columnnames <- c(
+    "levator.LC3.II..normalized.to.GAPDH.",
+    "levator.LC3.II...LC.I",
+    "gastrocnemius.LC3.II..normalized.to.GAPDH.",
+    "gastrocnemius.LC3.II...LC.I")
+  ylabels <- c(
+    "LC3-II protein normalized to GAPDH",
+    "LC3-II protein normalized to LC3-I",
+    "LC3-II protein normalized to GAPDH",
+    "LC3-II protein normalized to LC3-I")
+  ylims <- list(
+    # Becn1: 1, 3, 7:
+    c(-3.5, 3), c(-3.5, 3), c(-3.5, 3),
+    # Ctsl: 1, 3, 7:
+    c(-3, 2.5), c(-3, 2.5), c(-3, 2.5),
+    # Map1lc3b: 1, 3, 7:
+    c(-3.5, 2.5), c(-3.5, 2.5), c(-3.5, 2.5))
+  statstrings <- list(
+    # Becn1: 1, 3, 7:
+    threeidenticalgroups,
+    c("a", "b", "a,b"),
+    c("a", "a,b", "b"),
+    # Ctsl: 1, 3, 7:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups,
+    # Map1lc3b: 1, 3, 7:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups)
+  
+  plotslist <- list()
+  for (i in 1:3){

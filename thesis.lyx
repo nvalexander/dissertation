@@ -15894,7 +15894,7 @@ use_parbox 0
 use_makebox 0
 width "3in"
 special "none"
-height "4in"
+height "5in"
 height_special "none"
 status open
 
@@ -15902,6 +15902,17 @@ status open
 \begin_inset Graphics
 	filename artwork/lc3-levator/lc3-levator.pdf
 	lyxscale 40
+	width 3in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/3by1placeholder.pdf
+	lyxscale 50
 	width 3in
 
 \end_inset
@@ -15923,13 +15934,68 @@ status open
 \end_inset
 
 
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "3in"
+special "none"
+height "5in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "3in", out.height
+ = "5in", fig.width = 3, fig.height = 5>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+print(ggplot(mtcars, aes(mpg, hp)) + geom_point())
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-LC3
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in LC3 lipidation status following Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+Changes in LC3 lpidation status following Dexa and / or Testo treatments,
+ in quadriceps and triceps muscles (n=4-6).
 \end_layout
 
 \end_inset
