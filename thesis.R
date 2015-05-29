@@ -810,7 +810,7 @@ plotgastrocnemiusautophagy <- function(){
     "Map1lc3b mRNA")
   ylims <- list(
     # Becn1: 1, 3, 7:
-    c(-3.5, 2.5), c(-3.5, 2.5), c(-3.5, 2.5),
+    c(-3.5, 3), c(-3.5, 3), c(-3.5, 3),
     # Ctsl: 1, 3, 7:
     c(-3, 2.5), c(-3, 2.5), c(-3, 2.5),
     # Map1lc3b: 1, 3, 7:
