@@ -13478,7 +13478,20 @@ name "fig:Body-weight-at"
 Upon finding the Dexa dose effective in inducing muscle atrophy, I analyzed
  the body weight at sacrifice.
  There was no difference between groups in terms of absolute weight, due
- to to the large variability of the initial body weight (Fig.
+ to to the large variability of the initial body weight (Kruskal-Wallis
+ p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(kruskal.test(day.8.body.weight..g.
+ ~ treatment, data = InvivoSevendayCVD)$p.value)
+\end_layout
+
+\end_inset
+
+) (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13504,8 +13517,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(kruskal.test(day.8.body.weight..g.
- ~treatment, data = invivodatasubsetsevendays)$p.value)
+sig3(kruskal.test(body.weight.gain.after.7.days..percent.
+ ~ treatment, data = InvivoSevendayCVD)$p.value)
 \end_layout
 
 \end_inset
@@ -13519,8 +13532,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( mean(subset(invivodatasubsetsevendays, treatment == "V")$body.weight.gain.aft
-er.7.days..g., na.rm = TRUE) / 7)
+sig3( truemean(InvivoSevendayV$body.weight.gain.after.7.days..g.) / 7)
 \end_layout
 
 \end_inset
@@ -13530,14 +13542,13 @@ er.7.days..g., na.rm = TRUE) / 7)
  as well as in other published studies on young rodents.
  A sizable contribution to this growth was brought by the 200 uL vehicle
  injected every day.
- Once this artifact is taken into account, the gain of a negligible 
+ Once this artifact is taken into account, the gain of a negligible
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( mean(subset(invivodatasubsetsevendays, treatment == "D")$body.weight.gain.aft
-er.7.days..g., na.rm = TRUE) / 7)
+sig3( truemean(InvivoSevendayD$body.weight.gain.after.7.days..g.) / 7)
 \end_layout
 
 \end_inset
@@ -14572,6 +14583,8 @@ day}
 \end_inset
 
  Dexa injection read to rapid onset of muscle atrophy.
+ Similar to humans with hypercortisolism, total body weight had limited
+ use in assessing atrophy progression.
  Based on the time course of lean body mass and individual muscle changes,
  the atrophy develops throughout the first week, indicating that this murine
  model replicates chronic GC exposure.
