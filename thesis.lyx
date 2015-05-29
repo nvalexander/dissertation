@@ -16096,14 +16096,14 @@ ndayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_layout
 
 \begin_layout Section
-Foxo pathway repsonse to dexamethasone and testosterone 
+Foxo pathway response to dexamethasone and testosterone 
 \end_layout
 
 \begin_layout Standard
 Previous studies showed that the atrogene response is crucially regulated
  by Foxo transcription factors.
- In this study, a similar strong effect was induced by Dexa at days 1 and
- 3 (Fig.
+ In this study, a similar strong effect was induced during the early stages
+ of  (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -16112,6 +16112,7 @@ reference "fig:Foxo-expression"
 \end_inset
 
 ).
+ 
 \end_layout
 
 \begin_layout Standard
