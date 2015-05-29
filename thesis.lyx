@@ -16112,8 +16112,8 @@ reference "fig:Foxo-expression"
 \end_inset
 
 ).
- In gastrocnemius at day 1, the activation included Foxo1 (Dunn's test,
- p = 
+ In quadriceps at day 1, the activation included Foxo1 (Dunn's test, p =
+ 
 \begin_inset Flex S/R expression
 status open
 
@@ -16186,7 +16186,45 @@ atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-) were still upregulated.
+) were still upregulated, altough to a lesser degree.
+ In the samples from day 7, Dexa treatment was associated with a downregulation
+ of Foxo1 (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo1....Ct.Gapdh., InvivoSevendayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), Foxo3a (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo3a....Ct.Gapdh., InvivoSevendayCVD$tr
+eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and Foxo4 (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo4....Ct.Gapdh., InvivoSevendayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard

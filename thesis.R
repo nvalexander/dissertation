@@ -960,17 +960,17 @@ plotfoxogene <- function(){
     c(-4,2))
   statstrings <- list(
     # quadriceps Foxo1 - days 1, 3, 7:
-    threeidenticalgroups,
-    threeidenticalgroups,
-    threeidenticalgroups,
+    c("a", "b", "a,b"),
+    c("a", "b", "a,b"),
+    c("a", "a,b", "b"),
     # quadriceps Foxo3a - days 1, 3, 7:
+    c("a", "b", "a,b"),
     threeidenticalgroups,
-    threeidenticalgroups,
-    threeidenticalgroups,
+    c("a", "b", "a,b"),
     # quadriceps Foxo4 - days 1, 3, 7:
+    c("a", "b", "a,b"),
     threeidenticalgroups,
-    threeidenticalgroups,
-    threeidenticalgroups)
+    c("a", "b", "a,b"))
   
   plotslist <- list()
   for (i in 1:3){
