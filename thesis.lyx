@@ -13564,8 +13564,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( mean(subset(invivodatasubsetsevendays, treatment == "D")$body.weight.gain.aft
-er.7.days..percent., na.rm = TRUE))
+sig3( truemean(InvivoSevendayD$body.weight.gain.after.7.days..percent.))
 \end_layout
 
 \end_inset
@@ -13576,8 +13575,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasubsetsevendays, treatment == "D")$body.weight.gain.afte
-r.7.days..percent.))
+sig3( SEM(InvivoSevendayD$body.weight.gain.after.7.days..percent.))
 \end_layout
 
 \end_inset
@@ -13589,8 +13587,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( mean(subset(invivodatasubsetsevendays, treatment == "V")$body.weight.gain.aft
-er.7.days..percent., na.rm = TRUE))
+sig3( truemean(InvivoSevendayV$body.weight.gain.after.7.days..percent.))
 \end_layout
 
 \end_inset
@@ -13601,8 +13598,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasubsetsevendays, treatment == "V")$body.weight.gain.afte
-r.7.days..percent.))
+sig3( SEM(InvivoSevendayV$body.weight.gain.after.7.days..percent.))
 \end_layout
 
 \end_inset
@@ -13613,15 +13609,15 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.7.days..percent.,
- invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[VvsDthre
-eways]])
+sig3( dunn.test(InvivoSevendayCVD$body.weight.gain.after.7.days..percent., InvivoSevenday
+CVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
 
 ).
- Conversely, co-administration of Testo, hereafter termed 
+ Conversely, co-administration of Testo, hereafter and in plots abbreviated
+ 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Comb"
@@ -13636,8 +13632,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( mean(subset(invivodatasubsetsevendays, treatment == "C")$body.weight.gain.aft
-er.7.days..percent., na.rm = TRUE))
+sig3( truemean(InvivoSevendayC$body.weight.gain.after.7.days..percent.))
 \end_layout
 
 \end_inset
@@ -13648,8 +13643,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( SEM(subset(invivodatasubsetsevendays, treatment == "C")$body.weight.gain.afte
-r.7.days..percent.))
+sig3( SEM(InvivoSevendayC$body.weight.gain.after.7.days..percent.))
 \end_layout
 
 \end_inset
@@ -13661,9 +13655,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( dunn.test(invivodatasubsetsevendays$body.weight.gain.after.7.days..percent.,
- invivodatasubsetsevendays$treatment, method = "bonferroni")$P.adjusted[[DvsCthre
-eways]])
+sig3( dunn.test(InvivoSevendayCVD$body.weight.gain.after.7.days..percent., InvivoSevenday
+CVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \end_inset
