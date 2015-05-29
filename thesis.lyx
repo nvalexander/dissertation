@@ -16150,7 +16150,7 @@ nt, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
- In day 3 samples, Foxo1 
+ In day 3 samples, Foxo1 (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16162,7 +16162,7 @@ atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-), Foxo1 
+), Foxo3a (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16174,7 +16174,7 @@ eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-), and Foxo4 Foxo1 
+), and Foxo4 (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
