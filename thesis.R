@@ -815,19 +815,18 @@ plotgastrocnemiusautophagy <- function(){
     c(-3, 2.5), c(-3, 2.5), c(-3, 2.5),
     # Map1lc3b: 1, 3, 7:
     c(-3.5, 2.5), c(-3.5, 2.5), c(-3.5, 2.5))
-  #FIX THSI
   statstrings <- list(
     # Becn1: 1, 3, 7:
-    c("a", "a,b", "b"),
     threeidenticalgroups,
-    threeidenticalgroups,
-    # Ctsl: 1, 3, 7:
     c("a", "b", "a,b"),
-    c("a,b", "a", "b"),
+    c("a", "a,b", "b"),
+    # Ctsl: 1, 3, 7:
+    threeidenticalgroups,
+    threeidenticalgroups,
     threeidenticalgroups,
     # Map1lc3b: 1, 3, 7:
     threeidenticalgroups,
-    c("a", "b", "a,b"),
+    threeidenticalgroups,
     threeidenticalgroups)
   
   plotslist <- list()
