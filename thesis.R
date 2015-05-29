@@ -736,3 +736,74 @@ plotatrogenes <- function(){
     plotslist[[4]], plotslist[[5]], plotslist[[6]], # quadriceps MAFbx
     ncol = 3))
 }
+
+#SEVENTH
+
+# SIXTH plot shows atrogenes in two muscles at three time points
+plotgastrocnemiusautophagy <- function(){
+  #alphabetical order
+  columnnames <- c(
+    "gastrocnemius.Ct.Becn1....Ct.Gapdh.",
+    "gastrocnemius.Ct.Ctsl....Ct.Gapdh.",
+    "gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.")
+  ylabels <- c(
+    "Becn1 mRNA",
+    "Ctsl mRNA",
+    "Map1lc3b mRNA")
+  ylims <- list(
+    # Becn1: 1, 3, 7:
+    c(-3.5, 2.5), c(-3.5, 2.5), c(-3.5, 2.5),
+    # Ctsl: 1, 3, 7:
+    c(-3, 2.5), c(-3, 2.5), c(-3, 2.5),
+    # Map1lc3b: 1, 3, 7:
+    c(-3.5, 2.5), c(-3.5, 2.5), c(-3.5, 2.5))
+  
+  statstrings <- list(
+    # Becn1: 1, 3, 7:
+    c("a", "a,b", "b"),
+    threeidenticalgroups,
+    threeidenticalgroups,
+    # Ctsl: 1, 3, 7:
+    c("a", "b", "a,b"),
+    c("a,b", "a", "b"),
+    threeidenticalgroups,
+    # Map1lc3b: 1, 3, 7:
+    threeidenticalgroups,
+    c("a", "b", "a,b"),
+    threeidenticalgroups)
+  
+  plotslist <- list()
+  for (i in 1:3){
+    shortdf1 <- rescaledtovehicleaszero(
+      InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf3 <- rescaledtovehicleaszero(
+      InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf7 <- rescaledtovehicleaszero(
+      InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
+    plotslist[[i*3-2]] <- threegeneplot(shortdf1, ylabels[[i]], ylims[[(i*3-2)]], statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <- threegeneplot(shortdf3, ylabels[[i]], ylims[[(i*3-1)]], statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threegeneplot(shortdf7, ylabels[[i]], ylims[[(i*3)]], statstrings[[(i*3)]])
+    if (columnnames[[i]] == "gastrocnemius.Ct.Becn1....Ct.Gapdh.") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[(i*3-2)]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[(i*3-1)]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[(i*3)]][[2]])
+    }
+    if (columnnames[[i]] == "gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+    }
+  }
+  return(grid.arrange(
+    plotslist[[1]], plotslist[[2]], plotslist[[3]], # Becn1
+    plotslist[[4]], plotslist[[5]], plotslist[[6]], # Ctsl
+    plotslist[[7]], plotslist[[8]], plotslist[[9]], # Map1lc3b
+    ncol = 3))
+}
+
