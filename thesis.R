@@ -242,7 +242,7 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
 
 
 threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
-  #this function expects a dataframe with two columns, first designating the treatments
+  # this function expects a dataframe with two columns, first designating the treatments
   # second column described Ct(GOI)-Ct(housekeeping gene)
   completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
   completecasesdataset[,2] <- completecasesdataset[,2] * (-1)
@@ -273,6 +273,46 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
            coord_cartesian(ylim = ylimit) +
            scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
            stdbarplot)
+}
+
+plotthreetimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
+  # This function expects a dataframe with three columns
+  # - first column designates the treatments
+  # - second column describes the time at which it was measured
+  # - the name of the second column will become X axis label
+  # - third column describes the actual numbers to plot.
+  # statsstring can be a long vector of strings, showing: 
+  # time1treatment1, time1treatment2, time1treatemnt3, time2treatement1 etc.
+  completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
+  return(ggplot(completecasesdataset) + 
+    aes_string(x = colnames(completecasesdataset)[2],
+               y = colnames(completecasesdataset)[3],
+               group = colnames(completecasesdataset)[1]) +
+    stat_summary(geom = "point",
+                 size = 3,
+                 fun.y = truemean,
+                 position = position_dodge(.05),
+                 aes_string(shape = colnames(completecasesdataset)[1])) +
+    stat_summary(geom = "line", 
+                 size = .5, 
+                 fun.y = truemean, 
+                 position = position_dodge(.05)) + 
+    stat_summary(geom = "text", 
+                 size = textSize * .4,
+                 aes(family = "serif"),
+                 fun.y = statstringyunderbar, 
+                 hjust = -.2,
+                 vjust = .25,
+                 label = statsstars) + 
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.2,
+                 show_guide = FALSE,
+                 position=position_dodge(.05)) +
+    coord_cartesian(ylimit) + 
+    ylab(ylabel) +
+    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
+    stdplottimecourse)  
 }
 
 #PMID12519877
@@ -382,6 +422,10 @@ plotbodyweightcourse <- function(){
   shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
   colnames(shortdf)[2] <- "day"
   setattr(shortdf$day, "levels", 1:8)
+#   topplot <- plotthreetimecourses(shortdf, 
+#                                   c(-7, 10), 
+#                                   "body weight gain (% of pre-treatment)", 
+#                                   statsstars)
   topplot <- ggplot(shortdf) + 
     aes_string(x = colnames(shortdf)[2],
                y = colnames(shortdf)[3],
