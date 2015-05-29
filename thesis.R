@@ -790,8 +790,8 @@ plotcathepsinactivity <- function(){
         anotatedtitle("one day", 2, ylims[[2]])
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
         anotatedtitle("three days", 2, ylims[[2]])
-      plotslist[[i*3]] <- plotslist[[i*3]] + a
-      notatedtitle("seven days", 2, ylims[[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        anotatedtitle("seven days", 2, ylims[[2]])
     }
     if (columnnames[[i]] == "triceps.cathepsin.activity..rel.u..") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
@@ -913,8 +913,8 @@ plotlcprotein <- function(){
   }
   
   return(grid.arrange(
-    plotslist[[1]],
-    plotslist[[2]], 
+    #plotslist[[1]],
+    #plotslist[[2]], 
     plotslist[[3]],
     plotslist[[4]],
     ncol = 2))

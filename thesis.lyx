@@ -15894,31 +15894,9 @@ use_parbox 0
 use_makebox 0
 width "3in"
 special "none"
-height "5in"
+height "2in"
 height_special "none"
 status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename artwork/lc3-levator/lc3-levator.pdf
-	lyxscale 40
-	width 3in
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename artwork/3by1placeholder.pdf
-	lyxscale 50
-	width 3in
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -15943,7 +15921,7 @@ use_parbox 0
 use_makebox 0
 width "3in"
 special "none"
-height "5in"
+height "2in"
 height_special "none"
 status open
 
@@ -15959,7 +15937,7 @@ status open
 
 \begin_layout Plain Layout
 
-print(ggplot(mtcars, aes(mpg, hp)) + geom_point())
+plotlcprotein()
 \end_layout
 
 \begin_layout Plain Layout
@@ -15994,8 +15972,8 @@ Changes in LC3 lipidation status following Dexa and / or Testo treatments.
 
 \end_inset
 
-Changes in LC3 lpidation status following Dexa and / or Testo treatments,
- in quadriceps and triceps muscles (n=4-6).
+Changes in hyperlipidated LC3 isoform following Dexa and / or Testo treatment
+ in gastrocnemius muscles (n=4-6).
 \end_layout
 
 \end_inset
