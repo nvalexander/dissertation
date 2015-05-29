@@ -15403,7 +15403,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoThreedayC$gastrocnemius.Ct.Becn1....Ct.Gapdh.) - truemean(Invivo
+sig3( 2^(truemean(InvivoThreedayV$gastrocnemius.Ct.Becn1....Ct.Gapdh.) - truemean(Invivo
 ThreedayD$gastrocnemius.Ct.Becn1....Ct.Gapdh.)))
 \end_layout
 
@@ -15427,7 +15427,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoThreedayC$gastrocnemius.Ct.Ctsl....Ct.Gapdh.) - truemean(InvivoT
+sig3( 2^(truemean(InvivoThreedayV$gastrocnemius.Ct.Ctsl....Ct.Gapdh.) - truemean(InvivoT
 hreedayD$gastrocnemius.Ct.Ctsl....Ct.Gapdh.)))
 \end_layout
 
@@ -15451,7 +15451,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoThreedayC$gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.) - truemean(Inv
+sig3( 2^(truemean(InvivoThreedayV$gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.) - truemean(Inv
 ivoThreedayD$gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.)))
 \end_layout
 
