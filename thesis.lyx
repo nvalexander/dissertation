@@ -14234,8 +14234,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "5in", fig.width = 6, fig.height = 5, dev='cairo_pdf'
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6.5in", out.height
+ = "5in", fig.width = 6.5, fig.height = 5, dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -15385,11 +15385,243 @@ Autophagy markers during Dexa and Testo co-administration
 Rat microarray studies indicated that a series of genes related to autophagy
  are upregulated by Dexa and downregulated by Testo.
  I tested the hypothesis that autophagy mediates protein degradation in
- GAML by measuring cathepsin enzymatic activity in muscle lysates (Fig.
+ GAML by measuring lysosomal enzymatic activity in muscle lysates (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Changes-in-cathepsin"
+
+\end_inset
+
+).
+ Unexpectedly, cathepsin L enzymatic activity was reduced in all the assayed
+ muscle.
+ At day 1, cathepsin L activty was suppressed by Dexa in gastrocnemius (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoOnedayV$gastrocnemius.cathepsin.activity..rel.u..) -
+ truemean(InvivoOnedayD$gastrocnemius.cathepsin.activity..rel.u..))/ truemean(InvivoOne
+dayV$gastrocnemius.cathepsin.activity..rel.u..))
+\end_layout
+
+\end_inset
+
+% reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoOnedayCVD$gastrocnemius.cathepsin.activity..rel.u.., InvivoOnedayC
+VD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+), quadriceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoOnedayV$quadriceps.cathepsin.activity..rel.u..) - truemean(In
+vivoOnedayD$quadriceps.cathepsin.activity..rel.u..))/ truemean(InvivoOnedayV$quadriceps.
+cathepsin.activity..rel.u..))
+\end_layout
+
+\end_inset
+
+% reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoOnedayCVD$quadriceps.cathepsin.activity..rel.u.., InvivoOnedayCVD$
+treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+), and triceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoOnedayV$triceps.cathepsin.activity..rel.u..) - truemean(Inviv
+oOnedayD$quadriceps.triceps.activity..rel.u..))/ truemean(InvivoOnedayV$quadriceps.trice
+ps.activity..rel.u..))
+\end_layout
+
+\end_inset
+
+% reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoOnedayCVD$triceps.cathepsin.activity..rel.u.., InvivoOnedayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+).
+ At day 3, cathepsin L activty was further suppressed by Dexa in gastrocnemius
+ (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoThreedayV$gastrocnemius.cathepsin.activity..rel.u..)
+ - truemean(InvivoThreedayD$gastrocnemius.cathepsin.activity..rel.u..))/ truemean(Inviv
+oThreedayV$gastrocnemius.cathepsin.activity..rel.u..))
+\end_layout
+
+\end_inset
+
+% reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$gastrocnemius.cathepsin.activity..rel.u.., InvivoThree
+dayCVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+), quadriceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoThreedayV$quadriceps.cathepsin.activity..rel.u..) - truemean(
+InvivoThreedayD$quadriceps.cathepsin.activity..rel.u..))/ truemean(InvivoThreedayV$quad
+riceps.cathepsin.activity..rel.u..))
+\end_layout
+
+\end_inset
+
+% reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.cathepsin.activity..rel.u.., InvivoThreeday
+CVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+), and triceps (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoThreedayV$triceps.cathepsin.activity..rel.u..) - truemean(Inv
+ivoThreedayD$quadriceps.triceps.activity..rel.u..))/ truemean(InvivoThreedayV$quadricep
+s.triceps.activity..rel.u..))
+\end_layout
+
+\end_inset
+
+% reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$triceps.cathepsin.activity..rel.u.., InvivoThreedayCVD
+$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+).
+ In day 7 samples, Dexa-induced repression of cathepsin L activty reached
+ 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayV$gastrocnemius.cathepsin.activity..rel.u..)
+ - truemean(InvivoSevendayD$gastrocnemius.cathepsin.activity..rel.u..))/ truemean(Inviv
+oSevendayV$gastrocnemius.cathepsin.activity..rel.u..))
+\end_layout
+
+\end_inset
+
+% in gastrocnemius (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.cathepsin.activity..rel.u.., InvivoSeven
+dayCVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+), 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayV$triceps.cathepsin.activity..rel.u..) - truemean(Inv
+ivoSevendayD$triceps.cathepsin.activity..rel.u..))/ truemean(InvivoSevendayV$triceps.cat
+hepsin.activity..rel.u..))
+\end_layout
+
+\end_inset
+
+% in triceps (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$triceps.cathepsin.activity..rel.u.., InvivoSevendayCVD
+$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+), and 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayV$quadriceps.cathepsin.activity..rel.u..) - truemean(
+InvivoSevendayD$quadriceps.cathepsin.activity..rel.u..))/ truemean(InvivoSevendayV$quad
+riceps.cathepsin.activity..rel.u..))
+\end_layout
+
+\end_inset
+
+% in quadriceps (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$quadriceps.cathepsin.activity..rel.u.., InvivoSevenday
+CVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
 
 \end_inset
 
@@ -15413,7 +15645,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "5in", fig.width = 6, fig.height = 5,dev='cairo_pdf'
+ = "6in", fig.width = 6, fig.height = 6,dev='cairo_pdf'
 \end_layout
 
 \end_inset
