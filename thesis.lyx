@@ -15879,6 +15879,74 @@ In literature, another line of evidence for the putative upregulation of
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "3in"
+special "none"
+height "4in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/lc3-levator/lc3-levator.pdf
+	lyxscale 40
+	width 3in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/lc3-gastroc/lc3-gastroc.pdf
+	lyxscale 40
+	width 3in
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+LC3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
