@@ -16191,7 +16191,7 @@ nt, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
- In day 3 samples, activation persisted, with Foxo1 upregulated 
+ In day 3 samples, activation was less ample, with Foxo1 upregulated 
 \begin_inset Flex S/R expression
 status open
 
@@ -16263,7 +16263,7 @@ atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-) were still upregulated, altough to a lesser degree.
+).
  In the samples from day 7, Dexa treatment was associated with a downregulation
  of Foxo1 (Dunn's test, p = 
 \begin_inset Flex S/R expression
@@ -16321,7 +16321,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "5.5in", fig.width = 6, fig.height = 5.5,dev='cairo_pdf'
+ = "6in", fig.width = 6, fig.height = 6,dev='cairo_pdf'
 \end_layout
 
 \end_inset
