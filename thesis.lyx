@@ -15403,8 +15403,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoThreedayV$gastrocnemius.Ct.Becn1....Ct.Gapdh.) - truemean(Invivo
-ThreedayD$gastrocnemius.Ct.Becn1....Ct.Gapdh.)))
+sig3( 2^(truemean(InvivoThreedayD$gastrocnemius.Ct.Becn1....Ct.Gapdh.) - truemean(Invivo
+ThreedayV$gastrocnemius.Ct.Becn1....Ct.Gapdh.)))
 \end_layout
 
 \end_inset
@@ -15427,8 +15427,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoThreedayV$gastrocnemius.Ct.Ctsl....Ct.Gapdh.) - truemean(InvivoT
-hreedayD$gastrocnemius.Ct.Ctsl....Ct.Gapdh.)))
+sig3( 2^(truemean(InvivoThreedayD$gastrocnemius.Ct.Ctsl....Ct.Gapdh.) - truemean(InvivoT
+hreedayV$gastrocnemius.Ct.Ctsl....Ct.Gapdh.)))
 \end_layout
 
 \end_inset
@@ -15451,8 +15451,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoThreedayV$gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.) - truemean(Inv
-ivoThreedayD$gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.)))
+sig3( 2^(truemean(InvivoThreedayD$gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.) - truemean(Inv
+ivoThreedayV$gastrocnemius.Ct.Map1lc3b....Ct.Gapdh.)))
 \end_layout
 
 \end_inset
@@ -15470,7 +15470,11 @@ VD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
- 
+ Across muscle groups and time points, Testo co-adminstration lacked detectable
+ effect.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -15551,7 +15555,7 @@ reference "fig:Changes-in-cathepsin"
 
 ).
  Unexpectedly, cathepsin L enzymatic activity was reduced in all the assayed
- muscle.
+ muscle, in a progressive manner.
  At day 1, cathepsin L activty was suppressed by Dexa in gastrocnemius (
 \begin_inset Flex S/R expression
 status open
@@ -15782,6 +15786,19 @@ CVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 \end_inset
 
 ).
+ Testo co-adminstration had no specific effect on cathepsin L enzymatic
+ activity.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Loss of cathepsin activity is ampler than the loss of muscle mass indicating
+ an active process of inhibition.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -15851,16 +15868,6 @@ name "fig:Changes-in-cathepsin"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Atrophy was expected to be enhanced by autophagy upregulation.
- The unexpected finding of autophagy downregulation may replicate 
-\end_layout
-
-\begin_layout Standard
-It is possible that in GAML, autophagy inhibition removes a break on bulk
- protein 
 \end_layout
 
 \begin_layout Standard
