@@ -4660,7 +4660,7 @@ In support of their hypothesis, Ferrando and colleagues showed a significant
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Changes-in-proteasome"
+reference "fig:Proteasome-Ferrando"
 
 \end_inset
 
@@ -4764,7 +4764,7 @@ key "ferrando2003differential"
  with permission).
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Changes-in-proteasome"
+name "fig:Proteasome-Ferrando"
 
 \end_inset
 
@@ -13233,7 +13233,7 @@ key "jones2010effects"
  (Fig.
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Experimental-protocol-for"
+reference "fig:In-vivo-experimental-protocol"
 
 \end_inset
 
@@ -13264,7 +13264,7 @@ status open
 Experimental protocol for the in vivo studies.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Experimental-protocol-for"
+name "fig:In-vivo-experimental-protocol"
 
 \end_inset
 
@@ -13457,7 +13457,7 @@ day}
  each other (n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Body-weight-at"
+name "fig:Body-weight-at-sacrifice"
 
 \end_inset
 
@@ -13495,7 +13495,7 @@ sig3( kruskal.test(day.8.body.weight..g.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Body-weight-at"
+reference "fig:Body-weight-at-sacrifice"
 
 \end_inset
 
@@ -13505,7 +13505,7 @@ Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Time-course-of"
+reference "fig:Time-course-of-body-weight"
 
 \end_inset
 
@@ -13725,7 +13725,7 @@ Time course of body weight Dexa and / or Testo treatments (n=5-6).
  Comb (p <0.05).
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Time-course-of"
+name "fig:Time-course-of-body-weight"
 
 \end_inset
 
@@ -13748,7 +13748,7 @@ The time course of body weight changes suggested that both drugs' action
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Time-course-of"
+reference "fig:Time-course-of-body-weight"
 
 \end_inset
 
@@ -13874,7 +13874,7 @@ Based on the whole time course, I hypothesized that body weight changes
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Body-weight-at"
+reference "fig:Body-weight-at-sacrifice"
 
 \end_inset
 
@@ -13886,7 +13886,7 @@ reference "fig:Body-weight-at"
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Time-course-of"
+reference "fig:Time-course-of-body-weight"
 
 \end_inset
 
@@ -13904,7 +13904,7 @@ ts progressively lost total water.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Changes-in-water,"
+reference "fig:Changes-in-water-lean-and-fat"
 
 \end_inset
 
@@ -14004,7 +14004,7 @@ Ampler changes were induced by the two drugs on lean body mass (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Changes-in-water,"
+reference "fig:Changes-in-water-lean-and-fat"
 
 \end_inset
 
@@ -14274,7 +14274,7 @@ Changes in water, lean, and fat body mass, after Dexa and / or Testo treatments
  (n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Changes-in-water,"
+name "fig:Changes-in-water-lean-and-fat"
 
 \end_inset
 
@@ -14297,7 +14297,7 @@ Dissection of individual muscles confirmed that Dexa achieved widespread
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Effects-of-Dexa"
+reference "fig:Muscles-weights"
 
 \end_inset
 
@@ -14466,7 +14466,7 @@ Effects of Dexa and / or Testo treatments on the wet weight of levator ani,
  (n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Effects-of-Dexa"
+name "fig:Muscles-weights"
 
 \end_inset
 
@@ -14489,7 +14489,7 @@ Upon Testo co-administration, four out of five muscles measured were exhibited
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Effects-of-Dexa"
+reference "fig:Muscles-weights"
 
 \end_inset
 
@@ -14741,7 +14741,7 @@ In normal circumstances, the rate-limiting factor in proteasome-mediated
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Changes-in-atrogenes"
+reference "fig:Atrogenes-expression"
 
 \end_inset
 
@@ -15017,7 +15017,7 @@ Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
  (n=3-5).
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Changes-in-atrogenes"
+name "fig:Atrogenes-expression"
 
 \end_inset
 
@@ -15231,7 +15231,7 @@ D$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Changes-in-proteasome-1"
+reference "fig:Proteasome-enzymatic-activity"
 
 \end_inset
 
@@ -15343,7 +15343,7 @@ Changes in proteasome chymotrypsin-like enzymatic activity following Dexa
  and / or Testo treatments, in quadriceps and triceps muscles (n=4-6).
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Changes-in-proteasome-1"
+name "fig:Proteasome-enzymatic-activity"
 
 \end_inset
 
@@ -15402,7 +15402,7 @@ Rat microarray studies indicated that a series of genes related to autophagy
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Changes-in-autophagy-related"
+reference "fig:Autophagy-related-genes"
 
 \end_inset
 
@@ -15536,7 +15536,7 @@ Changes in autophagy-related genes following Dexa and / or Testo treatments,
  in quadriceps and triceps muscles (n=3-4).
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Changes-in-autophagy-related"
+name "fig:Autophagy-related-genes"
 
 \end_inset
 
@@ -15559,7 +15559,7 @@ I tested the hypothesis that autophagy mediates protein degradation in GAML
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Changes-in-cathepsin"
+reference "fig:Cathepsin-enzymatic-activity"
 
 \end_inset
 
@@ -15864,7 +15864,7 @@ Changes in cathepsin L enzymatic activity following Dexa and / or Testo
  treatments, in quadriceps and triceps muscles (n=4-6).
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Changes-in-cathepsin"
+name "fig:Cathepsin-enzymatic-activity"
 
 \end_inset
 
@@ -15890,7 +15890,7 @@ In literature, another line of evidence for the putative upregulation of
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Changes-in-hyperlipidated"
+reference "fig:LC3-hyperlipidated"
 
 \end_inset
 
@@ -16048,7 +16048,7 @@ Changes in hyperlipidated (fast-migrating) LC3 isoform following Dexa and
  / or Testo treatment in gastrocnemius muscles (n=4)
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Changes-in-hyperlipidated"
+name "fig:LC3-hyperlipidated"
 
 \end_inset
 
@@ -16096,7 +16096,7 @@ ndayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_layout
 
 \begin_layout Section
-Foxo mediates dexamethasone and testosterone effects on muscle
+Foxo pathway repsonse to dexamethasone and testosterone 
 \end_layout
 
 \begin_layout Standard
@@ -16104,7 +16104,14 @@ Previous studies showed that the atrogene response is crucially regulated
  by Foxo transcription factors.
  In this study, a similar strong effect was induced by Dexa at days 1 and
  3 (Fig.
- ).
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Foxo-expression"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -16158,6 +16165,13 @@ Changes in the expression of Foxo transcription factors following Dexa and
 
 Changes in the expression of Foxo transcription factors following Dexa and
  / or Testo treatments in quadriceps muscles (n=4).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Foxo-expression"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
