@@ -303,13 +303,13 @@ plotthreetimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
                  fun.y = statstringyunderbar, 
                  hjust = -.2,
                  vjust = .25,
-                 label = statsstars) + 
+                 label = statsstring) + 
     stat_summary(geom = 'errorbar',
                  fun.data = 'semInterval',
                  width = 0.2,
                  show_guide = FALSE,
                  position=position_dodge(.05)) +
-    coord_cartesian(ylimit) + 
+    coord_cartesian(ylim = ylimit) + 
     ylab(ylabel) +
     scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
     stdplottimecourse)  
@@ -422,39 +422,10 @@ plotbodyweightcourse <- function(){
   shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
   colnames(shortdf)[2] <- "day"
   setattr(shortdf$day, "levels", 1:8)
-#   topplot <- plotthreetimecourses(shortdf, 
-#                                   c(-7, 10), 
-#                                   "body weight gain (% of pre-treatment)", 
-#                                   statsstars)
-  topplot <- ggplot(shortdf) + 
-    aes_string(x = colnames(shortdf)[2],
-               y = colnames(shortdf)[3],
-               group = colnames(shortdf)[1]) +
-    stat_summary(geom = "point",
-                 size = 3,
-                 fun.y = mean,
-                 position = position_dodge(.05),
-                 aes_string(shape = colnames(shortdf)[1])) +
-    stat_summary(geom = "line", 
-                 size = .5, 
-                 fun.y = mean, 
-                 position = position_dodge(.05)) + 
-    stat_summary(geom = "text", 
-                 size = textSize * .4,
-                 aes(family = "serif"),
-                 fun.y = statstringyunderbar, 
-                 hjust = -.2,
-                 vjust = .25,
-                 label = statsstars) + 
-    stat_summary(geom = 'errorbar',
-                 fun.data = 'semInterval',
-                 width = 0.2,
-                 show_guide = FALSE,
-                 position=position_dodge(.05)) +
-    coord_cartesian(ylim = c(-7, 10)) + 
-    ylab("body weight gain (% of pre-treatment)") +
-    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
-    stdplottimecourse
+  topplot <- plotthreetimecourses(shortdf, 
+                                  c(-7, 10), 
+                                  "body weight gain (% of pre-treatment)", 
+                                  statsstars)
   
   shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", timeseriescolumns[1:4])]
   body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
@@ -462,64 +433,28 @@ plotbodyweightcourse <- function(){
   shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
   colnames(shortdf)[2] <- "day"
   setattr(shortdf$day, "levels", 1:4)
-  bottomleftplot <- ggplot(shortdf) + 
-    aes_string(x = colnames(shortdf)[2],
-               y = colnames(shortdf)[3],
-               group = colnames(shortdf)[1]) +
-    stat_summary(geom = "point",
-                 size = 3,
-                 fun.y = mean,
-                 position = position_dodge(.05),
-                 aes_string(shape = colnames(shortdf)[1])) +
-    stat_summary(geom = "line", 
-                 size = .5, 
-                 fun.y = mean, 
-                 position = position_dodge(.05)) + 
-    stat_summary(geom = 'errorbar',
-                 fun.data = 'semInterval',
-                 width = 0.2,
-                 show_guide = FALSE,
-                 position=position_dodge(.05)) +
-    coord_cartesian(ylim = c(-7, 10)) + 
-    ylab("body weight gain (% of pre-treatment)") +
-    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
-    stdplottimecourse
-    
+  bottomleftplot <- plotthreetimecourses(shortdf, 
+                                  c(-7, 10), 
+                                  "body weight gain (% of pre-treatment)", 
+                                  rep("", 12))
+  
   shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", timeseriescolumns[1:1])]
   body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
   shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
   shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
   colnames(shortdf)[2] <- "day"
   setattr(shortdf$day, "levels", 1:2)
-  bottomrightplot <- ggplot(shortdf) + 
-    aes_string(x = colnames(shortdf)[2],
-               y = colnames(shortdf)[3],
-               group = colnames(shortdf)[1]) +
-    stat_summary(geom = "point",
-                 size = 3,
-                 fun.y = mean,
-                 position = position_dodge(.05),
-                 aes_string(shape = colnames(shortdf)[1])) +
-    stat_summary(geom = "line", 
-                 size = .5, 
-                 fun.y = mean, 
-                 position = position_dodge(.05)) + 
-    stat_summary(geom = 'errorbar',
-                 fun.data = 'semInterval',
-                 width = 0.2,
-                 show_guide = FALSE,
-                 position=position_dodge(.05)) +
-    coord_cartesian(ylim = c(-7, 10)) + 
-    ylab("body weight gain (% of pre-treatment)") +
-    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
-    stdplottimecourse 
-  
+  bottomrightplot <- plotthreetimecourses(shortdf, 
+                                          c(-7, 10), 
+                                          "body weight gain (% of pre-treatment)", 
+                                          rep("", 6))
   return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, ncol=2, widths = c(1.25,1) ), 
                        ncol=1)  )
 }
 
 # THIRD PLOT - body mass composition
 plotleanfat <- function(){
+  
   leancolumn <- "lean.mass.gain..g."
   fatcolumn <- "fat.mass.gain..g."
   watercolumn <- "total.water.gain..g."
