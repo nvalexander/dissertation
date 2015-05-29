@@ -15895,8 +15895,8 @@ reference "fig:Changes-in-hyperlipidated"
 \end_inset
 
 ).
- In gastrocnemius at day 7, Dexa treatement enriches LC3-II in absolute
- terms (
+ In gastrocnemius at day 7, there was a trend towards enrichment of LC3-II
+ in absolute terms upon Dexa treatement (
 \begin_inset Flex S/R expression
 status open
 
@@ -16093,6 +16093,10 @@ ndayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Foxo
 \begin_inset Newpage pagebreak
 \end_inset
 
