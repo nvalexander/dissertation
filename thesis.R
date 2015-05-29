@@ -482,12 +482,12 @@ plotleanfat <- function(){
     plotslist[[i*3-2]] <- threecolumnplot(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
     plotslist[[i*3-1]] <-threecolumnplot(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threecolumnplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
-    if (columnnames[[i]] != "total.water.gain..g.") {
+    if (columnnames[[i]] == "total.water.gain..g.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + anotatedtitle("one day", 2, ylims[[i]][[2]])
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + anotatedtitle("three days", 2, ylims[[i]][[2]])
       plotslist[[i*3]] <- plotslist[[i*3]] + anotatedtitle("seven days", 2, ylims[[i]][[2]])
     }
-    if (columnnames[[i]] != "lean.mass.gain..g.") {
+    if (columnnames[[i]] == "lean.mass.gain..g.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
         theme(axis.text.x = element_text(color = "black")) + 
         scale_x_discrete(labels = conditionsVDC)
@@ -503,32 +503,7 @@ plotleanfat <- function(){
                       plotslist[[4]], plotslist[[5]], plotslist[[6]], # fat
                       plotslist[[1]], plotslist[[2]], plotslist[[3]], # lean
                       ncol = 3))
-#     
-#   leancolumn <- "lean.mass.gain..g."
-#   fatcolumn <- "fat.mass.gain..g."
-#   watercolumn <- "total.water.gain..g."
-#   leanlabel <- "lean mass loss (g)"
-#   fatlabel <- "fat mass gain (g)"
-#   waterlabel <- "water loss (g)"
-#   leanylim <- c(0, 4)
-#   fatylim <- c(0, 4)
-#   waterylim <- c(0, 5)
-#   leanonestat <- threeidenticalgroups
-#   leanthreestat <- c("a", "b", "a,b")
-#   leansevenstat <- c("a", "b", "a,b")
-#   fatonestat <- threeidenticalgroups
-#   fatthreestat <- c("a", "a,b", "b")
-#   fatsevenstat <- c("a", "a,b", "b")
-#   wateronestat <- threeidenticalgroups
-#   waterthreestat <- threeidenticalgroups
-#   watersevenstat <- threeidenticalgroups
-#   
-#   #1
-#   shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", leancolumn)]
-#   shortdf[,2] <- shortdf[, 2] * (-1)
-#   leanoneplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanonestat) +
-#     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-#   
+   
 #   #THIS FORCES THE DISPLAY OF A LEGEND
 # #   meanslayer <- leanoneplot$layers[[1]]
 # #   meanslayer$show_guide <- TRUE
@@ -536,54 +511,6 @@ plotleanfat <- function(){
 # #     scale_fill_manual(values = greypalette, labels = conditionsVDC) + 
 # #     guides(fill = guide_legend(title = NULL, override.aes = list(colour = NULL))) + 
 # #     theme(legend.position = c(0, 1), legend.justification = c(0,1))
-# #   
-#   #2
-#   shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", leancolumn)]
-#   shortdf[,2] <- shortdf[, 2] * (-1)
-#   leanthreeplot <- threecolumnplot(shortdf, leanlabel, leanylim, leanthreestat) +
-#     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-#   
-#   #3
-#   shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", leancolumn)]
-#   shortdf[,2] <- shortdf[, 2] * (-1)
-#   leansevenplot <- threecolumnplot(shortdf, leanlabel, leanylim, leansevenstat) +
-#     theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-#   
-#   #4
-#   shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", fatcolumn)]
-#   fatoneplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatonestat)
-#   
-#   #5
-#   shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", fatcolumn)]
-#   fatthreeplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatthreestat)
-#   
-#   #6
-#   shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", fatcolumn)]
-#   fatsevenplot <- threecolumnplot(shortdf, fatlabel, fatylim, fatsevenstat)
-#   
-#   #7
-#   shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", watercolumn)]
-#   shortdf[,2] <- shortdf[, 2] * (-1)
-#   wateroneplot <- threecolumnplot(shortdf, waterlabel, waterylim, wateronestat) +
-#     anotatedtitle("one day", 2, waterylim[[2]])
-#   
-#   #8
-#   shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", watercolumn)]
-#   shortdf[,2] <- shortdf[, 2] * (-1)
-#   waterthreeplot <- threecolumnplot(shortdf, waterlabel, waterylim, waterthreestat) +
-#     anotatedtitle("three days", 2, waterylim[[2]])
-#   
-#   #9
-#   shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", watercolumn)]
-#   shortdf[,2] <- shortdf[, 2] * (-1)
-#   watersevenplot <- threecolumnplot(shortdf, waterlabel, waterylim, watersevenstat) +
-#     anotatedtitle("seven days", 2, waterylim[[2]])
-# 
-#   return(grid.arrange(
-#     wateroneplot, waterthreeplot, watersevenplot,
-#     fatoneplot, fatthreeplot, fatsevenplot,
-#     leanoneplot, leanthreeplot, leansevenplot, 
-#     ncol=3))
 }
 
 # FOURTH PLOT SHOWS five muscles across three time points
