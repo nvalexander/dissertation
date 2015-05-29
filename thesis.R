@@ -894,25 +894,28 @@ plotlcprotein <- function(){
     "LC3-II protein normalized to GAPDH",
     "LC3-II protein normalized to LC3-I")
   ylims <- list(
-    # Becn1: 1, 3, 7:
-    c(-3.5, 3), c(-3.5, 3), c(-3.5, 3),
-    # Ctsl: 1, 3, 7:
-    c(-3, 2.5), c(-3, 2.5), c(-3, 2.5),
-    # Map1lc3b: 1, 3, 7:
-    c(-3.5, 2.5), c(-3.5, 2.5), c(-3.5, 2.5))
+    c(0,8),
+    c(0,20),
+    c(0,3),
+    c(0,3)
+  )
   statstrings <- list(
-    # Becn1: 1, 3, 7:
     threeidenticalgroups,
-    c("a", "b", "a,b"),
-    c("a", "a,b", "b"),
-    # Ctsl: 1, 3, 7:
-    threeidenticalgroups,
-    threeidenticalgroups,
-    threeidenticalgroups,
-    # Map1lc3b: 1, 3, 7:
     threeidenticalgroups,
     threeidenticalgroups,
     threeidenticalgroups)
   
   plotslist <- list()
-  for (i in 1:3){
+  for (i in 1:4){
+    shortdf1 <- rescaledtovehicleasunity(
+      InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
+    plotslist[[i]] <- threecolumnplot(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[i]])
+  }
+  
+  return(grid.arrange(
+    plotslist[[1]],
+    plotslist[[2]], 
+    plotslist[[3]],
+    plotslist[[4]],
+    ncol = 2))
+}
