@@ -15523,7 +15523,7 @@ Changes in autophagy-related genes following Dexa and / or Testo treatments.
 \end_inset
 
 Changes in autophagy-related genes following Dexa and / or Testo treatments,
- in quadriceps and triceps muscles (n=4-6).
+ in quadriceps and triceps muscles (n=3-4).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Changes-in-autophagy-related"
@@ -15818,7 +15818,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "6in", fig.width = 6, fig.height = 6,dev='cairo_pdf'
+ = "5.5in", fig.width = 6, fig.height = 5.5,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -15921,7 +15921,7 @@ use_parbox 0
 use_makebox 0
 width "3in"
 special "none"
-height "2in"
+height "2.2in"
 height_special "none"
 status open
 
@@ -15932,7 +15932,7 @@ status open
 \begin_layout Plain Layout
 
 <<echo = FALSE, warning = FALSE, message = FALSE, out.width = "3in", out.height
- = "5in", fig.width = 3, fig.height = 5>>=
+ = "2.in", fig.width = 3, fig.height = 2.3>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -15973,7 +15973,7 @@ Changes in LC3 lipidation status following Dexa and / or Testo treatments.
 \end_inset
 
 Changes in hyperlipidated LC3 isoform following Dexa and / or Testo treatment
- in gastrocnemius muscles (n=4-6).
+ in gastrocnemius muscles (n=4).
 \end_layout
 
 \end_inset
