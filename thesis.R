@@ -882,7 +882,6 @@ plotgastrocnemiusautophagy <- function(){
 
 #NINTH plot shows densitometry of LC3
 plotlcprotein <- function(){
-  #alphabetical order
   columnnames <- c(
     "levator.LC3.II..normalized.to.GAPDH.",
     "levator.LC3.II...LC.I",
@@ -918,4 +917,79 @@ plotlcprotein <- function(){
     plotslist[[3]],
     plotslist[[4]],
     ncol = 2))
+}
+
+#TENTH plot
+plotfoxogene <- function(){
+  columnnames <- c(
+    "gastrocnemius.Ct.Foxo1....Ct.Gapdh.",
+    "quadriceps.Ct.Foxo1....Ct.Gapdh.",
+    "gastrocnemius.Ct.Foxo3a....Ct.Gapdh.",
+    "quadriceps.Ct.Foxo3a....Ct.Gapdh.",
+    "gastrocnemius.Ct.Foxo4....Ct.Gapdh.",
+    "quadriceps.Ct.Foxo4....Ct.Gapdh.")
+  ylabels <- c(
+    "gastrocnemius Foxo1 mRNA",
+    "quadriceps Foxo1 mRNA",
+    "gastrocnemius Foxo3a mRNA",
+    "quadriceps Foxo3a mRNA",
+    "gastrocnemius Foxo4 mRNA",
+    "quadriceps Foxo4 mRNA")
+  ylims <- list(
+    c(-3,3),
+    c(-3,3),
+    c(-3,3),
+    c(-3,3),
+    c(-3,3),
+    c(-3,3))
+  statstrings <- list(
+    # gastrocnemius Foxo1 - days 1, 3, 7:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups,
+    # quadriceps Foxo1 - days 1, 3, 7:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups,
+    # gastrocnemius Foxo3a - days 1, 3, 7:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups,
+    # gastrocnemius Foxo3a - days 1, 3, 7:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups,
+    # quadriceps Foxo4 - days 1, 3, 7:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups,
+    # quadriceps Foxo4 - days 1, 3, 7:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups)
+  
+  plotslist <- list()
+  for (i in 1:6){
+    shortdf1 <- rescaledtovehicleaszero(
+      InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])])
+    print(shortdf1)
+    shortdf3 <- rescaledtovehicleaszero(
+      InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])])
+    print(shortdf3)
+    shortdf7 <- rescaledtovehicleaszero(
+      InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
+    print(shortdf7)
+    plotslist[[i*3-2]] <- threegeneplot(shortdf1, ylabels[[i]], ylims[[(i*3-2)]], statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <- threegeneplot(shortdf3, ylabels[[i]], ylims[[(i*3-1)]], statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threegeneplot(shortdf7, ylabels[[i]], ylims[[(i*3)]], statstrings[[(i*3)]])
+  }
+  
+  return(grid.arrange(
+    plotslist[[1]], plotslist[[2]], plotslist[[3]],
+    plotslist[[4]], plotslist[[5]], plotslist[[6]],
+    plotslist[[7]], plotslist[[8]], plotslist[[9]],
+    plotslist[[10]], plotslist[[11]], plotslist[[12]],
+    plotslist[[13]], plotslist[[14]], plotslist[[15]],
+    plotslist[[16]], plotslist[[17]], plotslist[[18]],
+    ncol = 3))
 }
