@@ -15786,8 +15786,9 @@ CVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 \end_inset
 
 ).
- Testo co-adminstration had no specific effect on cathepsin L enzymatic
- activity.
+ Testo co-adminstration had no statistically significant effect on cathepsin
+ L enzymatic activity, athough a trend of reversal to baseline can be seen
+ in day 1 and 3 samples.
 \begin_inset Note Note
 status open
 
@@ -15873,9 +15874,69 @@ name "fig:Changes-in-cathepsin"
 \begin_layout Standard
 In literature, another line of evidence for the putative upregulation of
  autophagy during GAML was the increase in lipidated, fast migrating LC3
- protein.
+ protein (also known as LC3-II).
  In murine muscle, detecting this form has been difficult, because it is
- significantly less frequent than its slower migrated counterpart.
+ significantly less frequent than its slower migrated counterpart (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Changes-in-hyperlipidated"
+
+\end_inset
+
+).
+ In gastrocnemius, Dexa treatement enriches LC3-II in absolute terms (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayD$gastrocnemius.LC3.II..normalized.to.GAPDH.)
+ - truemean(InvivoSevendayV$gastrocnemius.LC3.II..normalized.to.GAPDH.))/ truemean(Invi
+voSevendayV$gastrocnemius.LC3.II..normalized.to.GAPDH.))
+\end_layout
+
+\end_inset
+
+% increase, when normalized to GAPDH; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.LC3.II..normalized.to.GAPDH., InvivoSeve
+ndayCVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+).
+ However, LC3-II changes become negligible, when LC3-II is normalized to
+ its precursor, LC3-I (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayD$gastrocnemius.LC3.II...LC.I) - truemean(InvivoSeve
+ndayV$gastrocnemius.LC3.II...LC.I))/ truemean(InvivoSevendayV$ggastrocnemius.LC3.II...LC.I))
+\end_layout
+
+\end_inset
+
+% increase, when normalized to GAPDH; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.LC3.II...LC.I, InvivoSevendayCVD$treatm
+ent, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -15973,15 +16034,18 @@ Changes in LC3 lipidation status following Dexa and / or Testo treatments.
 \end_inset
 
 Changes in hyperlipidated LC3 isoform following Dexa and / or Testo treatment
- in gastrocnemius muscles (n=4).
+ in gastrocnemius muscles (n=4)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Changes-in-hyperlipidated"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
