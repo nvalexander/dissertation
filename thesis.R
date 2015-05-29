@@ -936,12 +936,12 @@ plotfoxogene <- function(){
     "gastrocnemius Foxo4 mRNA",
     "quadriceps Foxo4 mRNA")
   ylims <- list(
-    c(-3,3),
-    c(-3,3),
-    c(-3,3),
-    c(-3,3),
-    c(-3,3),
-    c(-3,3))
+    c(-10,10),
+    c(-10,10),
+    c(-10,10),
+    c(-10,10),
+    c(-10,10),
+    c(-10,10))
   statstrings <- list(
     # gastrocnemius Foxo1 - days 1, 3, 7:
     threeidenticalgroups,
@@ -979,17 +979,17 @@ plotfoxogene <- function(){
     shortdf7 <- rescaledtovehicleaszero(
       InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
     print(shortdf7)
-    plotslist[[i*3-2]] <- threegeneplot(shortdf1, ylabels[[i]], ylims[[(i*3-2)]], statstrings[[(i*3-2)]])
-    plotslist[[i*3-1]] <- threegeneplot(shortdf3, ylabels[[i]], ylims[[(i*3-1)]], statstrings[[(i*3-1)]])
-    plotslist[[i*3]] <- threegeneplot(shortdf7, ylabels[[i]], ylims[[(i*3)]], statstrings[[(i*3)]])
+    plotslist[[i*3-2]] <- threegeneplot(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <- threegeneplot(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threegeneplot(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
   }
   
   return(grid.arrange(
-    plotslist[[1]], plotslist[[2]], plotslist[[3]],
+    #plotslist[[1]], plotslist[[2]], plotslist[[3]],
     plotslist[[4]], plotslist[[5]], plotslist[[6]],
-    plotslist[[7]], plotslist[[8]], plotslist[[9]],
+    #plotslist[[7]], plotslist[[8]], plotslist[[9]],
     plotslist[[10]], plotslist[[11]], plotslist[[12]],
-    plotslist[[13]], plotslist[[14]], plotslist[[15]],
+    #plotslist[[13]], plotslist[[14]], plotslist[[15]],
     plotslist[[16]], plotslist[[17]], plotslist[[18]],
     ncol = 3))
 }
