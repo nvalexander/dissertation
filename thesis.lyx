@@ -14710,8 +14710,8 @@ day}
 \end_layout
 
 \begin_layout Section
-AAS reverses glucocorticoid-induced activation of the ubiquitin-proteasome
- system
+Testosterone reverses glucocorticoid-induced activation of the ubiquitin-proteas
+ome system
 \end_layout
 
 \begin_layout Standard
@@ -15388,7 +15388,7 @@ Odc is upregulated at day 1 by T.
 \end_layout
 
 \begin_layout Section
-Autophagy markers during Dexa and Testo co-administration
+Autophagy markers during dexamethasone and testosterone treatments
 \end_layout
 
 \begin_layout Standard
@@ -16096,7 +16096,14 @@ ndayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_layout
 
 \begin_layout Standard
-Foxo
+Foxo mediates dexamethasone and testosterone actions on muscle
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
