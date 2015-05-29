@@ -355,21 +355,7 @@ plotbodyweightsatsacrifice <- function(){
         theme(axis.text.x = element_text(color = "black")) +
         scale_x_discrete(labels = threeemptystrings),
       ncol=3))
-  
-#   #1
-#   shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "day.2.body.weight..g.")]
-#   onedaysweightplot <- threecolumnplot(shortdf, ylabel, ylimit, onedaysstat) +
-#     anotatedtitle("one day", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-#   #2
-#   shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "day.4.body.weight..g.")]
-#   threedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, threedaysstat) +
-#     anotatedtitle("three days", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
-#   #3
-#   shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "day.8.body.weight..g.")]
-#   sevedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, sevendaysstat) +
-#     anotatedtitle("seven days", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
-#   
-#   return(grid.arrange(onedaysweightplot, threedaysweightplot, sevedaysweightplot, ncol=3))
+
 }
 
 #SECOND PLOT - body weight time courses
