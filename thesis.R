@@ -108,9 +108,9 @@ SEM <- function(x) {
 
 longdescription <- function(x) {
   return(paste0(
-    signif(mean(x, na.rm = TRUE), digits = 3), 
+    format(truemean(x), digits = 3), 
     " (", 
-    signif(SEM(x), digits = 3),
+    format(SEM(x), digits = 3),
     "; n = ", 
     truecount(x), ")"))
 }
@@ -144,8 +144,8 @@ truecount <- function(x) {
   return( length(na.omit(x)) )
 }
 
-statstringyoversembar <-function(x){
-  return(max(harmonicSEMinterval(x)))
+truemean <- function(x) {
+  return( mean(x, na.rm = TRUE) )
 }
 
 hview <- function(htmllines) {
@@ -166,7 +166,7 @@ rescaledtovehicleasunity <- function(x){
 rescaledtovehicleaszero <- function(x){
   #this function expects a two-column data frame
   #one column must be "treatments", and include some "V"
-  #the other column will be rescaled by additin so that the average of V becomes 0
+  #the other column will be rescaled by addition so that the average of V becomes 0
   y <- x
   y[,2] <- y[,2] - mean(subset(y, treatment == "V")[,2], na.rm = TRUE)
   return(y)
@@ -275,38 +275,6 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
            stdbarplot)
 }
 
-
-#   foldchangearray <- skinnydataset[complete.cases(skinnydataset),]
-#   foldchangearray[,2] <- 2 ^ (foldchangearray[,2] * -1)
-#   return(ggplot(foldchangearray) +
-#            aes_string( x = colnames(foldchangearray)[1], 
-#                        y = colnames(foldchangearray)[2], 
-#                        group = colnames(foldchangearray)[1]) +
-#            stat_summary(geom = "point",
-#                         size = 3,
-#                         colour = "black",
-#                         fun.y = harmonicmean,
-#                         show_guide = FALSE,
-#                         aes_string(shape = colnames(foldchangearray)[1])) +
-#            stat_summary(geom = "text", 
-#                         size = textSize * .4,
-#                         aes(family = "Liberation Sans Narrow"),
-#                         fun.y = statstringyoversembar, 
-#                         hjust = .5,
-#                         vjust = -.6,
-#                         label = statstrings) + 
-#            stat_summary(geom = 'errorbar',
-#                         fun.data = 'harmonicSEMinterval',
-#                         width = 0.1,
-#                         show_guide = FALSE,
-#                         position=position_dodge(.05)) +
-#            ylab(ylabel) +
-#            scale_y_continuous(breaks = 2^(-10:10), labels = prettyNum(2^(-10:10))) +
-#            coord_trans(ytrans = "log10", limy = ylimit) +
-#            scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
-#            stdbarplot )
-
-
 #PMID12519877
 loadPMID12519877 <- function(datadirpath){
   df1 <- read.csv(file.path(datadirpath, "PMID12519877", "proteasomeactivity.csv"), header = FALSE, colClasses = c(NA, "NULL", NA))
@@ -324,27 +292,27 @@ reportstats <- function(invivodata, invivocolnames){
   
   for (i in 1:length(invivocolnames)) {
     if (invivocolnames[[i]] %in% c("animal", "TreatmentLong", "treatment")) next
-    meanV <- mean(subset(invivodata, treatment == "V")[,i], na.rm = TRUE)
-    meanD <- mean(subset(invivodata, treatment == "D")[,i], na.rm = TRUE)
-    meanC <- mean(subset(invivodata, treatment == "C")[,i], na.rm = TRUE)
     myoutput <- paste0(myoutput, 
                        "# ", invivocolnames[[i]])
     myoutput <- paste(myoutput, 
                       pandoc.table.return(setNames(aggregate(invivodata[,i], list(invivodata$treatment), longdescription), 
                                                    c("Treatment", "Average (SD; n)")),
                                           style = "rmarkdown"))
-    kw <- kruskal.test(as.formula(paste(colnames(invivodata)[i], "~treatment")), data = invivodata)
+    kwfour <- kruskal.test(as.formula(paste(colnames(invivodata)[i], "~treatment")), data = invivodata)
     myoutput <- paste(myoutput, 
-                      paste0("Kruskal-Wallis p value for the four-way comparison is ", signif(kw$p.value, digits = 3)))
-    dunns <- dunn.test(invivodata[,i], invivodata$treatment, method = "bonferroni")
-    dunnsreport <- data.frame(contrastsfour, dunns$P.adjusted)[c(VvsDfourways, DvsCfourways, VvsTfourways), ]
+                      paste0("Kruskal-Wallis p value for the four-way comparison is ", signif(kwfour$p.value, digits = 3)))
+    dunnsfour <- dunn.test(invivodata[,i], invivodata$treatment, method = "bonferroni")
+    dunnsreport <- data.frame(contrastsfour, dunnsfour$P.adjusted)[c(VvsDfourways, DvsCfourways, VvsTfourways), ]
     myoutput <- paste(myoutput,
                       pandoc.table.return(dunnsreport, style = "rmarkdown"))
-    kw <- kruskal.test(as.formula(paste(colnames(invivodata)[i], "~treatment")), data = invivodatasubset)
+    kwthree <- kruskal.test(as.formula(paste(colnames(invivodata)[i], "~treatment")), data = invivodatasubset)
     myoutput <- paste(myoutput, 
-                      paste0("Kruskal-Wallis p value for the three-way comparison is ", signif(kw$p.value, digits = 3)))
-    dunns <- dunn.test(invivodatasubset[,i], invivodatasubset$treatment, method = "bonferroni")
-    dunnsreport <- data.frame(contraststhree, dunns$P.adjusted)[c(VvsDthreeways, DvsCthreeways, VvsCthreeways), ]
+                      paste0("Kruskal-Wallis p value for the three-way comparison is ", signif(kwthree$p.value, digits = 3)))
+    dunnsthree <- dunn.test(invivodatasubset[,i], invivodatasubset$treatment, method = "bonferroni")
+    dunnsreport <- data.frame(contraststhree, dunnsthree$P.adjusted)[c(VvsDthreeways, DvsCthreeways, VvsCthreeways), ]
+    meanV <- truemean(subset(invivodata, treatment == "V")[,i])
+    meanD <- truemean(subset(invivodata, treatment == "D")[,i])
+    meanC <- truemean(subset(invivodata, treatment == "C")[,i])
     dunnsreport <- setNames(cbind(dunnsreport, c(ifelse(meanV > meanD, 'V > D' , 'V < D'), 
                                                  ifelse(meanD > meanC, 'D > DT' , 'D < DT'), 
                                                  ifelse(meanV > meanC, 'V > DT' , 'V < DT'))),
@@ -360,23 +328,48 @@ reportstats <- function(invivodata, invivocolnames){
 plotbodyweightsatsacrifice <- function(){
   ylabel <- "body weight (g)"
   ylimit <- c(0, 32)
-  onedaysstat <- c("a", "b", "a,b")
-  threedaysstat <- c("a,b", "a", "b")
-  sevendaysstat <- threeidenticalgroups
-  #1
-  shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "day.2.body.weight..g.")]
-  onedaysweightplot <- threecolumnplot(shortdf, ylabel, ylimit, onedaysstat) +
-    anotatedtitle("one day", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
-  #2
-  shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "day.4.body.weight..g.")]
-  threedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, threedaysstat) +
-    anotatedtitle("three days", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
-  #3
-  shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "day.8.body.weight..g.")]
-  sevedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, sevendaysstat) +
-    anotatedtitle("seven days", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
+  onedayweightstat <- c("a", "b", "a,b")
+  threedayweightstat <- c("a,b", "a", "b")
+  sevendayweightstat <- threeidenticalgroups
+  return(
+    grid.arrange(
+      threecolumnplot(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "day.2.body.weight..g.")], 
+                      ylabel, 
+                      ylimit, 
+                      onedayweightstat) +
+        anotatedtitle("one day", 2, ylimit[[2]]) + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC),
+      threecolumnplot(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "day.4.body.weight..g.")], 
+                      ylabel, 
+                      ylimit, 
+                      threedayweightstat) +
+        anotatedtitle("three days", 2, ylimit[[2]]) + 
+        theme(axis.text.x = element_text(color = "black")) +
+        scale_x_discrete(labels = threeemptystrings),
+      threecolumnplot(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "day.8.body.weight..g.")], 
+                      ylabel, 
+                      ylimit, 
+                      sevendayweightstat) +
+        anotatedtitle("seven days", 2, ylimit[[2]]) + 
+        theme(axis.text.x = element_text(color = "black")) +
+        scale_x_discrete(labels = threeemptystrings),
+      ncol=3))
   
-  return(grid.arrange(onedaysweightplot, threedaysweightplot, sevedaysweightplot, ncol=3))
+#   #1
+#   shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "day.2.body.weight..g.")]
+#   onedaysweightplot <- threecolumnplot(shortdf, ylabel, ylimit, onedaysstat) +
+#     anotatedtitle("one day", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = conditionsVDC)
+#   #2
+#   shortdf <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "day.4.body.weight..g.")]
+#   threedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, threedaysstat) +
+#     anotatedtitle("three days", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
+#   #3
+#   shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "day.8.body.weight..g.")]
+#   sevedaysweightplot <-  threecolumnplot(shortdf, ylabel, ylimit, sevendaysstat) +
+#     anotatedtitle("seven days", 2, ylimit[[2]]) + theme(axis.text.x = element_text(color = "black")) + scale_x_discrete(labels = threeemptystrings)
+#   
+#   return(grid.arrange(onedaysweightplot, threedaysweightplot, sevedaysweightplot, ncol=3))
 }
 
 #SECOND PLOT - body weight time courses
