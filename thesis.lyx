@@ -15375,6 +15375,16 @@ Proteasome subunit expression at day 3 seems unchanged by D and T.
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Odc is upregulated at day 1 by T.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -15885,7 +15895,8 @@ reference "fig:Changes-in-hyperlipidated"
 \end_inset
 
 ).
- In gastrocnemius, Dexa treatement enriches LC3-II in absolute terms (
+ In gastrocnemius at day 7, Dexa treatement enriches LC3-II in absolute
+ terms (
 \begin_inset Flex S/R expression
 status open
 
@@ -16055,16 +16066,33 @@ name "fig:Changes-in-hyperlipidated"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+The trend towards increased absolute LC3-II in gastrocnemius is reversed
+ by Testo co-administration (
+\begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
-Odc is upregulated at day 1 by T.
+
+sig3( 100*(truemean(InvivoSevendayD$gastrocnemius.LC3.II..normalized.to.GAPDH.)
+ - truemean(InvivoSevendayC$gastrocnemius.LC3.II..normalized.to.GAPDH.))/ truemean(Invi
+voSevendayD$gastrocnemius.LC3.II..normalized.to.GAPDH.))
 \end_layout
 
 \end_inset
 
+% decrease, when normalized to GAPDH; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
 
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.LC3.II..normalized.to.GAPDH., InvivoSeve
+ndayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
+\end_layout
+
+\end_inset
+
+.
 \begin_inset Newpage pagebreak
 \end_inset
 
