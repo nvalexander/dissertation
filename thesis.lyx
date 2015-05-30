@@ -16915,8 +16915,8 @@ Changes in the expression of Foxo3a and Klf15 transcription factors following
 
 \end_inset
 
-Changes in the expression of 7 days of Foxo3a and Klf15 transcription factors
- following Dexa and / or Testo treatments in quadriceps muscles (n=4, normalized
+Changes in the expression of Foxo3a and Klf15 transcription factors, following
+ 7 days of Dexa and / or Testo treatments in quadriceps muscles (n=4, normalized
  to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
@@ -17413,11 +17413,197 @@ sig3( dunn.test(InvivoSevendayCVD$levator.phospho.Akt.Ser473..normalized.to.GAPD
 
 \begin_layout Standard
 The other relevant phosphorylation on Akt , Thr 308, is controlled by REDD1.
- I investigated the effects of the two steroids on REDD1 / Ddit4 transcription.
+ I investigated the effects of the two steroids on REDD1 / Ddit4 transcription
+ (fig.
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Redd1-expression"
+
+\end_inset
+
+).
+ Dexa upregulated Redd1 expression in samples collected at days 1 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoOnedayV$quadriceps.Ct.Ddit1....Ct.Gapdh.) - truemean(InvivoOneda
+yD$quadriceps.Ct.Ddit1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoOnedayCVD$quadriceps.Ct.Ddit1....Ct.Gapdh., InvivoOnedayCVD$treatme
+nt, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), 3 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayV$quadriceps.Ct.Ddit1....Ct.Gapdh.) - truemean(InvivoThr
+eedayD$quadriceps.Ct.Ddit1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Ddit1....Ct.Gapdh., InvivoThreedayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and 7 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoSevendayV$quadriceps.Ct.Ddit1....Ct.Gapdh.) - truemean(InvivoSev
+endayD$quadriceps.Ct.Ddit1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Ddit1....Ct.Gapdh., InvivoSevendayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ Confirming the rat microarray studies, at day 7, Testo co-administration
+ induced a sizable repression of REDD1 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoSevendayC$quadriceps.Ct.Ddit1....Ct.Gapdh.) - truemean(InvivoSev
+endayD$quadriceps.Ct.Ddit1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Ddit1....Ct.Gapdh., InvivoSevendayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[CvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "5in", fig.width = 6, fig.height = 5,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotredd()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in the expression of Redd1 following Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+Changes in the expression Redd1 transcription factors, following 7 days
+ of Dexa and / or Testo treatments in gastrocnemius muscles (n=4, normalized
+ to GAPDH).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Redd1-expression"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+IGF-I changes during dexamethasone and testosterone administration
+\end_layout
+
+\begin_layout Standard
+As explained in the review section, IGF-I was one of the few genes whose
+ expression was changed in opposite ways by Dexa and Testo in rat microarrays.
+ I tested the hypothesis that Dexa and Testo alter IGF-I expression in mice,
+ in vivo.
+ 
 \begin_inset Newpage pagebreak
 \end_inset
 
