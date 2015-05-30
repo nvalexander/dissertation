@@ -16096,14 +16096,103 @@ ndayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "2in", fig.width = 6, fig.height = 2,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotcalpainactivity()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Calpain enzymatic activity following Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+μ-calpain enzymatic activity following Dexa and / or Testo treatments, in
+ gastrocnemius muscles (n=3-6).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Calpain-enzymatic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 While evidence is indirect, the bulk of data suggests that GAML is correlated
  with rampant autophagy downregulation, while AAS co-administration has
  a limited effect on autophagy.
  Immunoblots and enzymatic assays indicated a similar disconnection between
- the calpain / calpastatin system and the macroscopic atrophy phenotype
- (data not shown).
+ the calpain / calpastatin system and the AAS-induced muscle sparing (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Calpain-enzymatic"
+
+\end_inset
+
+).
  The ubiquitin - proteasome system emerges as the main effector of GAML
  and the main target of its alleviation by AAS.
+\end_layout
+
+\begin_layout Section
+Protein synthesis modulation during Dexa-induced muscle atrophy
+\end_layout
+
+\begin_layout Standard
+In order to discrn possible changes in protein synthesis, I investigated
+ a series of its regulators.
 \end_layout
 
 \begin_layout Section
@@ -16404,10 +16493,6 @@ atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_inset
 
 ).
-\end_layout
-
-\begin_layout Standard
-Redd1
 \end_layout
 
 \begin_layout Standard
