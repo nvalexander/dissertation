@@ -16264,8 +16264,8 @@ atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
- In the samples from day 7, Dexa treatment was associated with a downregulation
- of Foxo1 (Dunn's test, p = 
+ In the samples from day 7, Dexa treatment was associated with a non-significant
+ downregulation of Foxo1 (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16320,8 +16320,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "6in", fig.width = 6, fig.height = 6,dev='cairo_pdf'
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6.5in", out.height
+ = "6in", fig.width = 6, fig.height = 6.5,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -16379,7 +16379,158 @@ name "fig:Foxo-expression"
 \end_layout
 
 \begin_layout Standard
-lol
+In contrast, Testo upregulated Foxo transcription factor at later stages
+ of GAML.
+ 
+\end_layout
+
+\begin_layout Standard
+In day 3 samples, Testo co-administration repressed Foxo1 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayC$quadriceps.Ct.Foxo1....Ct.Gapdh.) - truemean(InvivoThr
+eedayD$quadriceps.Ct.Foxo1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Foxo1....Ct.Gapdh., InvivoThreedayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+), Foxo3a 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayC$quadriceps.Ct.Foxo3a....Ct.Gapdh.) - truemean(InvivoTh
+reedayD$quadriceps.Ct.Foxo3a....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Foxo3a....Ct.Gapdh., InvivoThreedayCVD$tr
+eatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+), and Foxo4 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayC$quadriceps.Ct.Foxo4....Ct.Gapdh.) - truemean(InvivoThr
+eedayD$quadriceps.Ct.Foxo4....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Foxo4....Ct.Gapdh., InvivoThreedayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ The trend was present in day 7 samples too, with Foxo1 repressed 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoSevendayC$quadriceps.Ct.Foxo1....Ct.Gapdh.) - truemean(InvivoSev
+endayD$quadriceps.Ct.Foxo1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo1....Ct.Gapdh., InvivoSevendayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+), Foxo3a repressed 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoSevendayC$quadriceps.Ct.Foxo3a....Ct.Gapdh.) - truemean(InvivoSe
+vendayD$quadriceps.Ct.Foxo3a....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo3a....Ct.Gapdh., InvivoSevendayCVD$tr
+eatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+), and Foxo4 repressed 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoSevendayC$quadriceps.Ct.Foxo4....Ct.Gapdh.) - truemean(InvivoSev
+endayD$quadriceps.Ct.Foxo4....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo4....Ct.Gapdh., InvivoSevendayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+) by Testo co-administration.
 \end_layout
 
 \begin_layout Standard
