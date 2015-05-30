@@ -17070,7 +17070,7 @@ atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 A alternative way to achieve Foxo modulation is through their neutralization
  by Akt.
  As described in the literature review section, activation of Akt is dependent
- on its phoshporylation on two residues.
+ on its phosphorylation on two residues, Ser 473 and Thr 308.
 \end_layout
 
 \begin_layout Standard

@@ -1073,12 +1073,12 @@ plotfourebp <- function(){
   phosphofourebpdf <- rescaledtovehicleasunity(
     InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.4EBP..normalized.to.GAPDH.")])
   return(grid.arrange(
-    threecolumnplot(phosphofourebpdf, "phospho 4EBP\n(normalized to GAPDH)", c(0,2), threeidenticalgroups) + 
-           theme(axis.text.x = element_text(color = "black")) + 
-           scale_x_discrete(labels = conditionsVDC),
     threecolumnplot(totalfourebpdf, "total4EBP\n(normalized to GAPDH)", c(0,2), threeidenticalgroups) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
+    threecolumnplot(phosphofourebpdf, "phospho 4EBP\n(normalized to GAPDH)", c(0,2), threeidenticalgroups) + 
+           theme(axis.text.x = element_text(color = "black")) + 
+           scale_x_discrete(labels = conditionsVDC),
     ncol = 2))
 }
 
