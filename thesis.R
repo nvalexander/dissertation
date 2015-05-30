@@ -948,15 +948,15 @@ plotfoxogene <- function(){
   ylims <- list(
     # quadriceps Foxo1 - days 1, 3, 7:
     c(-1,10),
-    c(-1.5,3.5),
+    c(-1.5,3.75),
     c(-4,2),
     # quadriceps Foxo3 - days 1, 3, 7:
     c(-1,10),
-    c(-1.5,3.5),
+    c(-1.5,3.75),
     c(-4,2),
     # quadriceps Foxo4 - days 1, 3, 7:
     c(-1,10),
-    c(-1.5,3.5),
+    c(-1.5,3.75),
     c(-4,2))
   statstrings <- list(
     # quadriceps Foxo1 - days 1, 3, 7:
