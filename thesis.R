@@ -940,7 +940,7 @@ plotcalpainactivity <- function(){
   #alphabetical order
   columnname <- "gastrocnemius.calpain.activity..rel.u.."
   ylabel <- "gastrocnemius calpain\nactivity (rel.u.)"
-  ylims <- c(0, 1.5)
+  ylims <- c(0, 2)
   statstrings <- list(
     #gastrocnemius 1, 3, 7:
     c("a", "b", "b"),
