@@ -5,6 +5,10 @@ install.packages("gridExtra") # also found in Ubuntu repo
 install.packages("xtable") # also found in Ubuntu repo
 install.packages("reshape2") # also found in Ubuntu repo
 install.packages("cairoDevice") # also found in Ubuntu repo
+install.packages("RCurl") # also found in Ubuntu repo
+install.packages("RJSONIO") # also found in Ubuntu repo
+install.packages("rstudioapi")
+install.packages("packrat")
 install.packages("grid")
 install.packages("methods")
 install.packages("knitr")

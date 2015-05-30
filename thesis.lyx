@@ -16381,11 +16381,7 @@ name "fig:Foxo-expression"
 \begin_layout Standard
 In contrast, Testo upregulated Foxo transcription factor at later stages
  of GAML.
- 
-\end_layout
-
-\begin_layout Standard
-In day 3 samples, Testo co-administration repressed Foxo1 
+ In day 3 samples, Testo co-administration repressed Foxo1 
 \begin_inset Flex S/R expression
 status open
 
@@ -16531,6 +16527,11 @@ atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_inset
 
 ) by Testo co-administration.
+\end_layout
+
+\begin_layout Standard
+The changes in Foxo transcription factors were mirrored by similar changes
+ in their positive regulator Klf15.
 \end_layout
 
 \begin_layout Standard
