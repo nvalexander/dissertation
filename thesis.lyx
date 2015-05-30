@@ -16155,13 +16155,13 @@ plotcalpainactivity()
 status open
 
 \begin_layout Plain Layout
-Calpain enzymatic activity following Dexa and / or Testo treatments.
+Calpain enzymatic activity during Dexa and / or Testo treatments.
 \end_layout
 
 \end_inset
 
-μ-calpain enzymatic activity following Dexa and / or Testo treatments, in
- gastrocnemius muscles (n=3-6).
+μ-calpain enzymatic activity, during 7 days of Dexa and / or Testo treatments,
+ in gastrocnemius muscles (n=3-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Calpain-enzymatic"
@@ -16330,13 +16330,14 @@ ploteiftwo()
 status open
 
 \begin_layout Plain Layout
-Phosphorylated eIF2α following Dexa and / or Testo treatments.
+Levels of phosphorylated eIF2α following Dexa and / or Testo treatments.
 \end_layout
 
 \end_inset
 
-Phosphorylated eIF2α (Ser 51) following Dexa and / or Testo treatment in
- gastrocnemius muscles (normalized to simultaneously resolved GAPDH; n=4)
+Levels of phosphorylated eIF2α (Ser 51) following Dexa and / or Testo treatment
+ in gastrocnemius muscles (normalized to simultaneously resolved GAPDH;
+ n=4)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Phosphorylated-eif2"
@@ -16909,13 +16910,13 @@ plotfoxogene()
 status open
 
 \begin_layout Plain Layout
-Changes in the expression of Foxo3a and Klf15 transcription factors following
+Changes in the expression of Foxo3a and Klf15 transcription factors during
  Dexa and / or Testo treatments.
 \end_layout
 
 \end_inset
 
-Changes in the expression of Foxo3a and Klf15 transcription factors, following
+Changes in the expression of Foxo3a and Klf15 transcription factors, during
  7 days of Dexa and / or Testo treatments in quadriceps muscles (n=4, normalized
  to GAPDH).
 \begin_inset CommandInset label
@@ -17567,14 +17568,13 @@ plotredd()
 status open
 
 \begin_layout Plain Layout
-Changes in the expression of Redd1 following Dexa and / or Testo treatments.
+Changes in the expression of Redd1 during Dexa and / or Testo treatments.
 \end_layout
 
 \end_inset
 
-Changes in the expression Redd1 transcription factors, following 7 days
- of Dexa and / or Testo treatments in gastrocnemius muscles (n=4, normalized
- to GAPDH).
+Changes in Redd1 transcripts, during 7 days of Dexa and / or Testo treatments
+ in gastrocnemius muscles (n=4, normalized to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Redd1-expression"
@@ -17602,7 +17602,83 @@ IGF-I changes during dexamethasone and testosterone administration
 As explained in the review section, IGF-I was one of the few genes whose
  expression was changed in opposite ways by Dexa and Testo in rat microarrays.
  I tested the hypothesis that Dexa and Testo alter IGF-I expression in mice,
- in vivo.
+ in vivo (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Igf1-expression"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "5in", fig.width = 6, fig.height = 5,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotIgf()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in the expression of IGF-I during Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+Changes in the expression of IGF-I, during 7 days of Dexa and / or Testo
+ treatments in gastrocnemius muscles (n=4, normalized to GAPDH).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Igf1-expression"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
  
 \begin_inset Newpage pagebreak
 \end_inset
