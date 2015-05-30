@@ -13189,6 +13189,7 @@ ne OR cortisone OR triamcinolone OR fludrocortisone`, `Cushing`, `ribosome
  OR polysome OR lysosome OR autophagosome OR proteasome OR ligase OR cathepsin
  OR FOXO OR IGF1 OR calpain OR mTOR OR AMPK OR Akt`and combinations thereof.
  Relevant primary data were summarized.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -16169,9 +16170,11 @@ name "fig:Calpain-enzymatic"
 \end_layout
 
 \begin_layout Standard
-While evidence is indirect, the bulk of data suggests that GAML is correlated
- with rampant autophagy downregulation, while AAS co-administration has
- a limited effect on autophagy.
+Findings like the upregulation of LC3-II may have suggested to other authors
+ that GAML relies on autophagy.
+ However, the overall evidence suggests that GAML is correlated with rampant
+ autophagy downregulation, while AAS co-administration has a limited effect
+ on autophagy.
  Immunoblots and enzymatic assays indicated a similar disconnection between
  the calpain / calpastatin system and the AAS-induced muscle sparing (Fig.
  
@@ -16191,7 +16194,7 @@ Protein synthesis modulation during Dexa-induced muscle atrophy
 \end_layout
 
 \begin_layout Standard
-In order to discrn possible changes in protein synthesis, I investigated
+In order to discern possible changes in protein synthesis, I investigated
  a series of its regulators.
 \end_layout
 
