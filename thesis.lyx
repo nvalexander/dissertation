@@ -16678,20 +16678,22 @@ name "fig:4EBP"
 \end_layout
 
 \begin_layout Standard
-Testo co-administration reduced total 4EBP (
+After 7 days of Testo co-administration, total 4EBP was further increased
+ (
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( 100*(truemean(InvivoSevendayD$gastrocnemius.4EBP.protein..normalized.to.GAPDH.)
- - truemean(InvivoSevendayC$gastrocnemius.4EBP.protein..normalized.to.GAPDH.))/
+sig3( 100*(truemean(InvivoSevendayC$gastrocnemius.4EBP.protein..normalized.to.GAPDH.)
+ - truemean(InvivoSevendayD$gastrocnemius.4EBP.protein..normalized.to.GAPDH.))/
  truemean(InvivoSevendayD$gastrocnemius.4EBP.protein..normalized.to.GAPDH.))
 \end_layout
 
 \end_inset
 
-% increase, when normalized to GAPDH; Dunn's test, p = 
+% increase, when normalized to GAPDH, compared to Dexa alone; Dunn's test,
+ p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16713,7 +16715,8 @@ reference "fig:4EBP"
 \end_inset
 
 , right).
- Dexa also downregulated phosphorylated 4EBP (
+ At the same time, Testo co-administration was associated with lower phosphoryla
+ted 4EBP (
 \begin_inset Flex S/R expression
 status open
 
