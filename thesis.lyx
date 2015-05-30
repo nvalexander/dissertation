@@ -14626,10 +14626,7 @@ sig3( dunn.test(InvivoThreedayCVD$tibialis..mg., InvivoThreedayCVD$treatment,
 
 \end_inset
 
-
-)
-\lang english
-.
+).
  The small amplitude and the complete absence of statistical significance
  suggest that observations describe lack of Testo effect, rather than a
  true atrophic effect.
@@ -16486,7 +16483,141 @@ name "fig:eif3f"
 \end_layout
 
 \begin_layout Standard
-Ano
+Finally, Dexa was hypothesized to achieve protein synthesis inhibition by
+ stimulating the negative regulator 4E-BP.
+ In Dexa-treated mice, gastrocnemius 4EBP protein levels were upregulated
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4EBP"
+
+\end_inset
+
+, right).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "2in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/4eBP/4eBP.pdf
+	lyxscale 50
+	width 6in
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "2.2in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "2.in", fig.width = 6, fig.height = 2.3>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plotfourebp()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Levels of total and phosphorylated 4E-BP following Dexa and / or Testo treatment
+s.
+\end_layout
+
+\end_inset
+
+Levels of total and phosphorylated 4E-BP following Dexa and / or Testo treatment
+ in gastrocnemius muscles (normalized to GAPDH; n=4)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:4EBP"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lo
 \end_layout
 
 \begin_layout Section
