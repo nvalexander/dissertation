@@ -1131,3 +1131,14 @@ plotIgf <- function(){
     threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Igf1....Ct.Gapdh.")]), "gastrocnemius.Ct.Igf1....Ct.Gapdh.", c(-3,4),threeemptystrings),
     ncol = 3))
 }
+
+plotredd <- function(){
+  return(grid.arrange(
+#     threegeneplot(rescaledtovehicleaszero(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), "quadriceps.Ct.Ddit4....Ct.Gapdh.", c(-.5,10),threeemptystrings),
+#     threegeneplot(rescaledtovehicleaszero(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), "quadriceps.Ct.Ddit4....Ct.Gapdh.", c(-.5,8),threeemptystrings),
+#     threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), "quadriceps.Ct.Ddit4....Ct.Gapdh.", c(-1,8),threeemptystrings),
+    threegeneplot(rescaledtovehicleaszero(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,6),threeemptystrings),
+    threegeneplot(rescaledtovehicleaszero(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,6),threeemptystrings),
+    threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,6),threeemptystrings),
+    ncol = 3))
+}
