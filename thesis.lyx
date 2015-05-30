@@ -12674,7 +12674,31 @@ Reverse:
 \begin_inset Text
 
 \begin_layout Plain Layout
+Igf1 (IGF-IEa)
+\end_layout
 
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Forward: GCTTGCTCACCTTTACCAGC
+\end_layout
+
+\begin_layout Plain Layout
+ReverseAAATGTACTTCCTTCTGGGTCT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Foxo1
 \end_layout
 
 \end_inset
@@ -12694,7 +12718,7 @@ Reverse:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Foxo3a
 \end_layout
 
 \end_inset
@@ -12714,7 +12738,7 @@ Reverse:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Foxo4
 \end_layout
 
 \end_inset
@@ -12734,27 +12758,7 @@ Reverse:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+Ddit4
 \end_layout
 
 \end_inset
