@@ -12638,7 +12638,7 @@ Primers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Trim63
 \end_layout
 
 \end_inset
@@ -12662,7 +12662,7 @@ Reverse:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Fbxo32
 \end_layout
 
 \end_inset
@@ -12671,7 +12671,11 @@ Reverse:
 \begin_inset Text
 
 \begin_layout Plain Layout
+Forward:
+\end_layout
 
+\begin_layout Plain Layout
+Reverse:
 \end_layout
 
 \end_inset
@@ -17922,7 +17926,130 @@ name "fig:Igf1-expression"
 
 \end_inset
 
- 
+ In gastrocnemius, Dexa downregulated IGF-I expression in samples collected
+ at days 1 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoOnedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoOne
+dayV$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoOnedayCVD$gastrocnemius.Ct.Igf1....Ct.Gapdh., InvivoOnedayCVD$treat
+ment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), 3 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoT
+hreedayV$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$gastrocnemius.Ct.Igf1....Ct.Gapdh., InvivoThreedayCVD$t
+reatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and 7 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoSevendayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoS
+evendayV$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.Ct.Igf1....Ct.Gapdh., InvivoSevendayCVD$t
+reatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ Dexa-induced downregulation of IGF-I was also detected in quadriceps at
+ days 3 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayD$quadriceps.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoThre
+edayV$quadriceps.Ct.Igf1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Igf1....Ct.Gapdh., InvivoThreedayCVD$trea
+tment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and 7 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoSevendayD$quadriceps.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoSeve
+ndayV$quadriceps.Ct.Igf1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Igf1....Ct.Gapdh., InvivoSevendayCVD$trea
+tment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
 \begin_inset Newpage pagebreak
 \end_inset
 
