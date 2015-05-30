@@ -16195,7 +16195,141 @@ Protein synthesis modulation during Dexa-induced muscle atrophy
 
 \begin_layout Standard
 In order to discern possible changes in protein synthesis, I investigated
- a series of its regulators.
+ a series of its translation regulators.
+ A commonly documented manner of translational shutdown upon various conditios
+ such as endoplasmic reticulum stress is phosphorlyation of the initiation
+ factor eIF2α by a diverse set of kinases.
+ In agreement with published studies, there was no statistically significant
+ change in the gastrocnemius of mice treated with Dexa (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Phosphorylated-eif2"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "3in"
+special "none"
+height "2in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/eif2blot/phosphoeif2-blot.pdf
+	width 3in
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "3in"
+special "none"
+height "2.2in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "3in", out.height
+ = "2.in", fig.width = 3, fig.height = 2.3>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+ploteiftwo()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in phosphorylated eIF2α following Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+Changes in phosphorylated eIF2α (Ser 51) following Dexa and / or Testo treatment
+ in gastrocnemius muscles (n=4)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Phosphorylated-eif2"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another regulator of proteins synthesis that was shown to play a role in
+ muscle atrophy upon starvation is eIF3-F.
+ In levator muscles of mice treated with Dexa,  did not alter eIF3-F .
 \end_layout
 
 \begin_layout Section
