@@ -1134,11 +1134,11 @@ plotIgf <- function(){
 
 plotredd <- function(){
   return(grid.arrange(
-#     threegeneplot(rescaledtovehicleaszero(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), "quadriceps.Ct.Ddit4....Ct.Gapdh.", c(-.5,10),threeemptystrings),
-#     threegeneplot(rescaledtovehicleaszero(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), "quadriceps.Ct.Ddit4....Ct.Gapdh.", c(-.5,8),threeemptystrings),
+#     threegeneplot(rescaledtovehicleaszero(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), "quadriceps.Ct.Ddit4....Ct.Gapdh.", c(-.5,10),c("a", "b", "a,b")),
+#     threegeneplot(rescaledtovehicleaszero(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), "quadriceps.Ct.Ddit4....Ct.Gapdh.", c(-.5,8),c("a", "b", "a,b")),
 #     threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), "quadriceps.Ct.Ddit4....Ct.Gapdh.", c(-1,8),threeemptystrings),
-    threegeneplot(rescaledtovehicleaszero(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,6),threeemptystrings),
-    threegeneplot(rescaledtovehicleaszero(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,6),threeemptystrings),
+    threegeneplot(rescaledtovehicleaszero(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,6), c("a", "b", "b")),
+    threegeneplot(rescaledtovehicleaszero(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,6),c("a", "a,b", "b")),
     threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,6),threeemptystrings),
     ncol = 3))
 }

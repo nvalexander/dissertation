@@ -11566,7 +11566,19 @@ Hypotheses
 \end_layout
 
 \begin_layout Standard
-x
+1.
+ Testosterone alleviates Dexa-induced muscle atrophy in mice.
+\end_layout
+
+\begin_layout Standard
+2.
+ Testosterone's myoprotective action is based on inhibiting proteolytic
+ and anti-translational effects of Dexa.
+\end_layout
+
+\begin_layout Standard
+3.
+ Testosterone's myoprotective action is mediated by IGF-I.
 \end_layout
 
 \begin_layout Standard
@@ -17397,6 +17409,10 @@ sig3( dunn.test(InvivoSevendayCVD$levator.phospho.Akt.Ser473..normalized.to.GAPD
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+The other 
 \end_layout
 
 \begin_layout Standard
