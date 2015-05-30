@@ -938,52 +938,52 @@ plotlcprotein <- function(){
 #TENTH plot
 plotfoxogene <- function(){
   columnnames <- c(
-    "quadriceps.Ct.Foxo1....Ct.Gapdh.",
+#     "quadriceps.Ct.Foxo1....Ct.Gapdh.",
     "quadriceps.Ct.Foxo3a....Ct.Gapdh.",
-    "quadriceps.Ct.Foxo4....Ct.Gapdh.",
+#     "quadriceps.Ct.Foxo4....Ct.Gapdh.",
     "quadriceps.Ct.Klf15....Ct.Gapdh.")
   ylabels <- c(
-    "Foxo1 mRNA",
+#     "Foxo1 mRNA",
     "Foxo3a mRNA",
-    "Foxo4 mRNA",
+#     "Foxo4 mRNA",
     "Klf15 mRNA")
   ylims <- list(
-    # quadriceps Foxo1 - days 1, 3, 7:
-    c(-1,10),
-    c(-1.5,3.75),
-    c(-4,2),
+#     # quadriceps Foxo1 - days 1, 3, 7:
+#     c(-1,10),
+#     c(-1.5,3.75),
+#     c(-4,2),
     # quadriceps Foxo3 - days 1, 3, 7:
     c(-1,10),
     c(-1.5,3.75),
     c(-4,2),
-    # quadriceps Foxo4 - days 1, 3, 7:
-    c(-1,10),
-    c(-1.5,3.75),
-    c(-4,2),
+#     # quadriceps Foxo4 - days 1, 3, 7:
+#     c(-1,10),
+#     c(-1.5,3.75),
+#     c(-4,2),
     # quadriceps Klf15 - days 1, 3, 7:
     c(-1,6),
     c(-1,3.75),
     c(-4,2))
   statstrings <- list(
-    # quadriceps Foxo1 - days 1, 3, 7:
-    c("a", "b", "a,b"),
-    c("a", "b", "a,b"),
-    c("a", "a,b", "b"),
+#     # quadriceps Foxo1 - days 1, 3, 7:
+#     c("a", "b", "a,b"),
+#     c("a", "b", "a,b"),
+#     c("a", "a,b", "b"),
     # quadriceps Foxo3a - days 1, 3, 7:
     c("a", "b", "a,b"),
     threeidenticalgroups,
     c("a", "b", "a,b"),
-    # quadriceps Foxo4 - days 1, 3, 7:
-    c("a", "b", "a,b"),
-    threeidenticalgroups,
-    c("a", "b", "a,b"),
+#     # quadriceps Foxo4 - days 1, 3, 7:
+#     c("a", "b", "a,b"),
+#     threeidenticalgroups,
+#     c("a", "b", "a,b"),
     # quadriceps Klf15 - days 1, 3, 7:
     c("a", "b", "a,b"),
     c("a,b", "a", "b"),
     c("a", "a,b", "b"))
   
   plotslist <- list()
-  for (i in 1:4){
+  for (i in 1:2){
     shortdf1 <- rescaledtovehicleaszero(
       InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])])
     shortdf3 <- rescaledtovehicleaszero(
@@ -999,20 +999,18 @@ plotfoxogene <- function(){
   plotslist[[2]] <- plotslist[[2]] + annotationastitle("three days", 2, ylims[[2]][[2]])
   plotslist[[3]] <- plotslist[[3]] + annotationastitle("seven days", 2, ylims[[3]][[2]])
   
-  plotslist[[10]] <- plotslist[[10]] + 
+  plotslist[[4]] <- plotslist[[4]] + 
     theme(axis.text.x = element_text(color = "black")) + 
     scale_x_discrete(labels = conditionsVDC)
-  plotslist[[11]] <- plotslist[[11]] + 
+  plotslist[[85]] <- plotslist[[5]] + 
     theme(axis.text.x = element_text(color = "black")) + 
     scale_x_discrete(labels = conditionsVDC)
-  plotslist[[12]] <- plotslist[[12]] + 
+  plotslist[[6]] <- plotslist[[6]] + 
     theme(axis.text.x = element_text(color = "black")) + 
     scale_x_discrete(labels = conditionsVDC)
   
   return(grid.arrange(
     plotslist[[1]], plotslist[[2]], plotslist[[3]],
     plotslist[[4]], plotslist[[5]], plotslist[[6]],
-    plotslist[[7]], plotslist[[8]], plotslist[[9]],
-    plotslist[[10]], plotslist[[11]], plotslist[[12]],
     ncol = 3))
 }

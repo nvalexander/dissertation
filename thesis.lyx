@@ -16131,31 +16131,7 @@ reference "fig:Foxo-expression"
 \end_inset
 
 ).
- In quadriceps at day 1, the activation included Foxo1 (
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( 2^(truemean(InvivoOnedayV$quadriceps.Ct.Foxo1....Ct.Gapdh.) - truemean(InvivoOneda
-yD$quadriceps.Ct.Foxo1....Ct.Gapdh.)))
-\end_layout
-
-\end_inset
-
--fold upregulation; Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(InvivoOnedayCVD$quadriceps.Ct.Foxo1....Ct.Gapdh., InvivoOnedayCVD$treatme
-nt, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
-\end_layout
-
-\end_inset
-
-), Foxo3a (
+ In quadriceps at day 1, Foxo3a was (
 \begin_inset Flex S/R expression
 status open
 
@@ -16167,7 +16143,7 @@ ayD$quadriceps.Ct.Foxo3a....Ct.Gapdh.)))
 
 \end_inset
 
--fold upregulation; Dunn's test, p = 
+-fold upregulated (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16179,56 +16155,8 @@ ent, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-), and Foxo4 (
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( 2^(truemean(InvivoOnedayV$quadriceps.Ct.Foxo4....Ct.Gapdh.) - truemean(InvivoOneda
-yD$quadriceps.Ct.Foxo4....Ct.Gapdh.)))
-\end_layout
-
-\end_inset
-
--fold upregulation; Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(InvivoOnedayCVD$quadriceps.Ct.Foxo4....Ct.Gapdh., InvivoOnedayCVD$treatme
-nt, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
-\end_layout
-
-\end_inset
-
 ).
- In day 3 samples, activation was less ample, with Foxo1 upregulated 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( 2^(truemean(InvivoThreedayV$quadriceps.Ct.Foxo1....Ct.Gapdh.) - truemean(InvivoThr
-eedayD$quadriceps.Ct.Foxo1....Ct.Gapdh.)))
-\end_layout
-
-\end_inset
-
--fold (Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Foxo1....Ct.Gapdh., InvivoThreedayCVD$tre
-atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
-\end_layout
-
-\end_inset
-
-), Foxo3a upregulated 
+ In day 3 samples, Foxo3a activation was less ample (
 \begin_inset Flex S/R expression
 status open
 
@@ -16240,7 +16168,7 @@ reedayD$quadriceps.Ct.Foxo3a....Ct.Gapdh.)))
 
 \end_inset
 
--fold (Dunn's test, p = 
+-fold; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16252,45 +16180,9 @@ eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 
 \end_inset
 
-), and Foxo4 upregulated 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( 2^(truemean(InvivoThreedayV$quadriceps.Ct.Foxo4....Ct.Gapdh.) - truemean(InvivoThr
-eedayD$quadriceps.Ct.Foxo4....Ct.Gapdh.)))
-\end_layout
-
-\end_inset
-
--fold (Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Foxo4....Ct.Gapdh., InvivoThreedayCVD$tre
-atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
-\end_layout
-
-\end_inset
-
 ).
  In the samples from day 7, Dexa treatment was associated with a non-significant
- downregulation of Foxo1 (Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo1....Ct.Gapdh., InvivoSevendayCVD$tre
-atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
-\end_layout
-
-\end_inset
-
-), Foxo3a (Dunn's test, p = 
+ downregulation of Foxo3a (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16298,18 +16190,6 @@ status open
 
 sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo3a....Ct.Gapdh., InvivoSevendayCVD$tr
 eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
-\end_layout
-
-\end_inset
-
-), and Foxo4 (Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo4....Ct.Gapdh., InvivoSevendayCVD$tre
-atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \end_inset
@@ -16334,7 +16214,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "8.5in", fig.width = 6, fig.height = 8.5,dev='cairo_pdf'
+ = "5in", fig.width = 6, fig.height = 5,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -16394,31 +16274,7 @@ name "fig:Foxo-expression"
 \begin_layout Standard
 In contrast, Testo upregulated Foxo transcription factor at later stages
  of GAML.
- In day 3 samples, Testo co-administration repressed Foxo1 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( 2^(truemean(InvivoThreedayC$quadriceps.Ct.Foxo1....Ct.Gapdh.) - truemean(InvivoThr
-eedayD$quadriceps.Ct.Foxo1....Ct.Gapdh.)))
-\end_layout
-
-\end_inset
-
--fold (Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Foxo1....Ct.Gapdh., InvivoThreedayCVD$tre
-atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
-\end_layout
-
-\end_inset
-
-), Foxo3a 
+ In day 3 samples, Testo co-administration repressed Foxo3a 
 \begin_inset Flex S/R expression
 status open
 
@@ -16442,56 +16298,8 @@ eatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 
 \end_inset
 
-), and Foxo4 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( 2^(truemean(InvivoThreedayC$quadriceps.Ct.Foxo4....Ct.Gapdh.) - truemean(InvivoThr
-eedayD$quadriceps.Ct.Foxo4....Ct.Gapdh.)))
-\end_layout
-
-\end_inset
-
--fold (Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Foxo4....Ct.Gapdh., InvivoThreedayCVD$tre
-atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
-\end_layout
-
-\end_inset
-
 ).
- The trend was present in day 7 samples too, with Foxo1 repressed 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( 2^(truemean(InvivoSevendayC$quadriceps.Ct.Foxo1....Ct.Gapdh.) - truemean(InvivoSev
-endayD$quadriceps.Ct.Foxo1....Ct.Gapdh.)))
-\end_layout
-
-\end_inset
-
--fold (Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo1....Ct.Gapdh., InvivoSevendayCVD$tre
-atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
-\end_layout
-
-\end_inset
-
-), Foxo3a repressed 
+ The trend was present in day 7 samples too, with Foxo3a repressed 
 \begin_inset Flex S/R expression
 status open
 
@@ -16511,30 +16319,6 @@ status open
 
 sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo3a....Ct.Gapdh., InvivoSevendayCVD$tr
 eatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
-\end_layout
-
-\end_inset
-
-), and Foxo4 repressed 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( 2^(truemean(InvivoSevendayC$quadriceps.Ct.Foxo4....Ct.Gapdh.) - truemean(InvivoSev
-endayD$quadriceps.Ct.Foxo4....Ct.Gapdh.)))
-\end_layout
-
-\end_inset
-
--fold (Dunn's test, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3( dunn.test(InvivoSevendayCVD$quadriceps.Ct.Foxo4....Ct.Gapdh., InvivoSevendayCVD$tre
-atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \end_inset
