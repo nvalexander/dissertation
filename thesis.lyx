@@ -16523,7 +16523,7 @@ reference "fig:4EBP"
 
 \end_inset
 
-, right).
+, left).
  However, Dexa also stimulated phosphorylated, that is, inactive 4EBP (
 \begin_inset Flex S/R expression
 status open
@@ -16558,7 +16558,7 @@ reference "fig:4EBP"
 
 \end_inset
 
-, left).
+, right).
 \end_layout
 
 \begin_layout Standard
@@ -17076,6 +17076,16 @@ A alternative way to achieve Foxo modulation is through their neutralization
  As described in the literature review section, activation of Akt is dependent
  on its phosphorylation on two residues, Ser 473 and Thr 308.
  I investigated the effect of the two steroids on Ser 473 phosphorylation.
+ After 7 days, neither drug changed the level of total Akt in levator, nor
+ gastrocnemius (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Akt-phosphorylation"
+
+\end_inset
+
+, left).
 \end_layout
 
 \begin_layout Standard
@@ -17271,6 +17281,11 @@ name "fig:Akt-phosphorylation"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+At Dexa repressed phosphorylation of a large degree.
+ 
 \end_layout
 
 \begin_layout Standard
