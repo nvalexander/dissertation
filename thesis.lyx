@@ -14672,7 +14672,7 @@ day}
 
 \end_inset
 
- Dexa injection read to rapid onset of muscle atrophy.
+ Dexa injection led to rapid onset of muscle atrophy.
  Similar to humans with hypercortisolism, total body weight had limited
  use in assessing atrophy progression.
  Based on the time course of lean body mass and individual muscle changes,
@@ -14709,6 +14709,9 @@ day}
 
  Testo co-administration reduced the loss of muscle throughout the seven
  days course.
+ While rat experiments have described a series of pathways by which Dexa
+ can achieve muscle atrophy, it was unclear which of these, if any, is reversed
+ by Testo co-administration.
 \end_layout
 
 \begin_layout Section
@@ -16678,8 +16681,8 @@ name "fig:4EBP"
 \end_layout
 
 \begin_layout Standard
-After 7 days of Testo co-administration, total 4EBP was further increased
- (
+After 7 days of Testo co-administration, levels of total 4EBP were essentially
+ identical to those yielded by Dexa alone (
 \begin_inset Flex S/R expression
 status open
 
@@ -16692,8 +16695,7 @@ sig3( 100*(truemean(InvivoSevendayC$gastrocnemius.4EBP.protein..normalized.to.GA
 
 \end_inset
 
-% increase, when normalized to GAPDH, compared to Dexa alone; Dunn's test,
- p = 
+% diference; Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16751,6 +16753,14 @@ reference "fig:4EBP"
 \end_inset
 
 , left).
+ While it is difficult to estimate how amplitude of change in unphosphorylated,
+ that is, active 4EBP, the combination of increase in total 4EBP and decrease
+ in inactivated 4EBP is unlikely to facilitate muscle recovery.
+\end_layout
+
+\begin_layout Standard
+Overall, regulators of protein synthesis appear largely unchanged by Dexa
+ and Testo at later stages of their administration.
 \end_layout
 
 \begin_layout Section
@@ -16887,14 +16897,15 @@ plotfoxogene()
 status open
 
 \begin_layout Plain Layout
-Changes in the expression of Foxo transcription factors following Dexa and
- / or Testo treatments.
+Changes in the expression of Foxo3a and Klf15 transcription factors following
+ Dexa and / or Testo treatments.
 \end_layout
 
 \end_inset
 
-Changes in the expression of Foxo transcription factors following Dexa and
- / or Testo treatments in quadriceps muscles (n=4, normalized to GAPDH).
+Changes in the expression of Foxo3a and Klf15 transcription factors following
+ Dexa and / or Testo treatments in quadriceps muscles (n=4, normalized to
+ GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Foxo-expression"
@@ -16919,7 +16930,7 @@ name "fig:Foxo-expression"
 \end_layout
 
 \begin_layout Standard
-In contrast, Testo upregulated Foxo transcription factor at later stages
+In contrast, Testo downregulated Foxo transcription factors at later stages
  of GAML.
  In day 3 samples, Testo co-administration repressed Foxo3a 
 \begin_inset Flex S/R expression
@@ -16971,6 +16982,8 @@ eatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_inset
 
 ) by Testo co-administration.
+ Similar patterns of modulation were seen in Foxo1 and Foxo4 transcripts
+ (data not shown).
 \end_layout
 
 \begin_layout Standard
@@ -17051,6 +17064,13 @@ atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+A alternative way to achieve Foxo modulation is through their neutralization
+ by Akt.
+ As described in the literature review section, activation of Akt is dependent
+ on its phoshporylation on two residues.
 \end_layout
 
 \begin_layout Standard
