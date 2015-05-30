@@ -16615,7 +16615,7 @@ status open
 \begin_layout Plain Layout
 
 <<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2.in", fig.width = 6, fig.height = 2.3>>=
+ = "2.3in", fig.width = 6, fig.height = 2.3>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -16678,7 +16678,76 @@ name "fig:4EBP"
 \end_layout
 
 \begin_layout Standard
-lo
+Testo co-administration reduced total 4EBP (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayD$gastrocnemius.4EBP.protein..normalized.to.GAPDH.)
+ - truemean(InvivoSevendayC$gastrocnemius.4EBP.protein..normalized.to.GAPDH.))/
+ truemean(InvivoSevendayD$gastrocnemius.4EBP.protein..normalized.to.GAPDH.))
+\end_layout
+
+\end_inset
+
+% increase, when normalized to GAPDH; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.4EBP.protein..normalized.to.GAPDH.,
+ InvivoSevendayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]]
+ )
+\end_layout
+
+\end_inset
+
+; Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4EBP"
+
+\end_inset
+
+, right).
+ Dexa also downregulated phosphorylated 4EBP (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayD$gastrocnemius.phospho.4EBP..normalized.to.GAPDH.)
+ - truemean(InvivoSevendayC$gastrocnemius.phospho.4EBP..normalized.to.GAPDH.))/
+ truemean(InvivoSevendayD$gastrocnemius.phospho.4EBP..normalized.to.GAPDH.))
+\end_layout
+
+\end_inset
+
+% increase, when normalized to GAPDH; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.phospho.4EBP..normalized.to.GAPDH.,
+ InvivoSevendayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]]
+ )
+\end_layout
+
+\end_inset
+
+; Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4EBP"
+
+\end_inset
+
+, left).
 \end_layout
 
 \begin_layout Section
