@@ -13803,7 +13803,7 @@ sig3( truemean(InvivoSevendayV$body.weight.gain.after.7.days..g.
  as well as in other published studies on young rodents.
  A sizable contribution to this growth was brought by the 200 uL vehicle
  injected every day.
- Once this artifact is taken into account, the gain of a negligible
+ Once this artifact is taken into account, the gain of a negligible 
 \begin_inset Flex S/R expression
 status open
 
@@ -14025,7 +14025,7 @@ sig3( kruskal.test(body.weight.gain.after.1.days..percent.
 \end_inset
 
 ).
- Specifically, mice receiving vehicle alone gained
+ Specifically, mice receiving vehicle alone gained 
 \begin_inset Flex S/R expression
 status open
 
@@ -14054,7 +14054,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( -truemean(InvivoSevendayV$body.weight.gain.after.1.days..percent.) )
+sig3( -truemean(InvivoSevendayD$body.weight.gain.after.1.days..percent.) )
 \end_layout
 
 \end_inset
@@ -14401,7 +14401,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( truemean(InvivoThreedayD$lean.mass.gain..g.) )
+sig3( -truemean(InvivoThreedayD$lean.mass.gain..g.) )
 \end_layout
 
 \end_inset
@@ -14432,13 +14432,13 @@ sig3( dunn.test(InvivoThreedayCVD$lean.mass.gain..g., InvivoThreedayCVD$treatmen
 
 ).
  Interestingly, in that experiment, Testo protective effect was very small
- and not statistically significant (combination, (
+ and not statistically significant (
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( truemean(InvivoThreedayC$lean.mass.gain..g.) )
+sig3( -truemean(InvivoThreedayC$lean.mass.gain..g.) )
 \end_layout
 
 \end_inset
@@ -14765,7 +14765,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 100*(truemean(InvivoSevendayD$quadriceps..mg.) - truemean(InvivoSevendayC$qua
+sig3( 100*(truemean(InvivoSevendayC$quadriceps..mg.) - truemean(InvivoSevendayD$qua
 driceps..mg.)) / truemean(InvivoSevendayD$quadriceps..mg.) )
 \end_layout
 
@@ -14789,7 +14789,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 100*(truemean(InvivoSevendayD$levator..mg.) - truemean(InvivoSevendayC$levato
+sig3( 100*(truemean(InvivoSevendayC$levator..mg.) - truemean(InvivoSevendayD$levato
 r..mg.)) / truemean(InvivoSevendayD$levator..mg.) )
 \end_layout
 
@@ -14813,7 +14813,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 100*(truemean(InvivoSevendayD$gastrocnemius..mg.) - truemean(InvivoSevendayC$
+sig3( 100*(truemean(InvivoSevendayC$gastrocnemius..mg.) - truemean(InvivoSevendayD$
 gastrocnemius..mg.)) / truemean(InvivoSevendayD$gastrocnemius..mg.) )
 \end_layout
 
@@ -14841,7 +14841,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 100*(truemean(InvivoSevendayC$tibialis..mg.) - truemean(InvivoSevendayD$tibia
+sig3( 100*(truemean(InvivoSevendayD$tibialis..mg.) - truemean(InvivoSevendayC$tibia
 lis..mg.)) / truemean(InvivoSevendayC$tibialis..mg.) )
 \end_layout
 
@@ -14867,7 +14867,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 100*(truemean(InvivoThreedayC$tibialis..mg.) - truemean(InvivoThreedayD$tibia
+sig3( 100*(truemean(InvivoThreedayD$tibialis..mg.) - truemean(InvivoThreedayC$tibia
 lis..mg.)) / truemean(InvivoThreedayC$tibialis..mg.) )
 \end_layout
 
