@@ -16672,8 +16672,8 @@ s.
 
 \end_inset
 
-Levels of total and phosphorylated 4E-BP following Dexa and / or Testo treatment
- in gastrocnemius muscles (normalized to GAPDH; n=4)
+Levels of total (left) and phosphorylated (right) 4E-BP following Dexa and
+ / or Testo treatment in gastrocnemius muscles (normalized to GAPDH; n=4)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:4EBP"
@@ -16916,9 +16916,9 @@ Changes in the expression of Foxo3a and Klf15 transcription factors during
 
 \end_inset
 
-Changes in the expression of Foxo3a and Klf15 transcription factors, during
- 7 days of Dexa and / or Testo treatments in quadriceps muscles (n=4, normalized
- to GAPDH).
+Changes in the expression of Foxo3a (top) and Klf15 (bottom) transcription
+ factors, during 7 days of Dexa and / or Testo treatments in quadriceps
+ muscles (n=4, normalized to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Foxo-expression"
@@ -17154,7 +17154,7 @@ status open
 
 \begin_layout Plain Layout
 
-	
+	plotgastrocnemiusakt()
 \end_layout
 
 \begin_layout Plain Layout
@@ -17267,8 +17267,8 @@ Levels of total and phosphorylated Akt following Dexa and / or Testo treatments.
 \end_inset
 
 Levels of total and phosphorylated Akt following 7 days of Dexa and / or
- Testo treatment in gastrocnemius and levator muscles (normalized to GAPDH;
- n=4)
+ Testo treatment in gastrocnemius (top) and levator (bottom) muscles (normalized
+ to GAPDH; n=4)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Akt-phosphorylation"
@@ -17542,7 +17542,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "5in", fig.width = 6, fig.height = 5,dev='cairo_pdf'
+ = "2.2in", fig.width = 6, fig.height = 2.2,dev='cairo_pdf'
 \end_layout
 
 \end_inset
