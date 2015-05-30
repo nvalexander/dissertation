@@ -1087,7 +1087,7 @@ plotlevatorakt <- function(){
     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.Akt.protein..normalized.to.GAPDH.")]), "levator total Akt", c(0,2),threeemptystrings) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
-    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "levator phospho-Ser473 Akt", c(0,2),threeemptystrings) + 
+    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "levator phospho-Ser473 Akt", c(0,2),c("a", "a,b", "b")) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.Akt.Ser473...total.Akt")]), "levator phospho/total Akt", c(0,2),threeemptystrings) + 
@@ -1095,7 +1095,6 @@ plotlevatorakt <- function(){
       scale_x_discrete(labels = conditionsVDC),
     ncol = 3))
 }
-
 
 plotgastrocnemiusakt <- function(){
   return(grid.arrange(
@@ -1105,7 +1104,7 @@ plotgastrocnemiusakt <- function(){
     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "gastrocnemius phospho-Ser473 Akt", c(0,2),threeemptystrings) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
-    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473...total.Akt")]), "gastrocnemius phospho/total Akt", c(0,2),threeemptystrings) + 
+    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473...total.Akt")]), "gastrocnemius phospho/total Akt", c(0,2), c("a", "a,b", "b")) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
     ncol = 3))

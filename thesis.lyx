@@ -17075,17 +17075,9 @@ A alternative way to achieve Foxo modulation is through their neutralization
  by Akt.
  As described in the literature review section, activation of Akt is dependent
  on its phosphorylation on two residues, Ser 473 and Thr 308.
- I investigated the effect of the two steroids on Ser 473 phosphorylation.
- After 7 days, neither drug changed the level of total Akt in levator, nor
- gastrocnemius (Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Akt-phosphorylation"
-
-\end_inset
-
-, left).
+ I investigated the effect of the two steroids on Ser 473 phosphorylation,
+ as this was hypothesized to be the main regulator of Foxo specificity at
+ the time of the experiment.
 \end_layout
 
 \begin_layout Standard
@@ -17284,8 +17276,127 @@ name "fig:Akt-phosphorylation"
 \end_layout
 
 \begin_layout Standard
-At Dexa repressed phosphorylation of a large degree.
+After 7 days, neither drug changed the level of total Akt in levator, nor
+ gastrocnemius (Fig.
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Akt-phosphorylation"
+
+\end_inset
+
+, left).
+ At the same time, Dexa repressed phosphorylation of a large degree in gastrocne
+mius (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayV$gastrocnemius.phospho.Akt.Ser473..normalized.to.GAP
+DH.) - truemean(InvivoSevendayD$gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.))/
+ truemean(InvivoSevendayV$gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.))
+\end_layout
+
+\end_inset
+
+% reduction in absolute densitometry of phospho-Ser473 Akt, when normalized
+ to GAPDH; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.,
+ InvivoSevendayCVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]]
+ )
+\end_layout
+
+\end_inset
+
+), and levator ani (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayV$levator.phospho.Akt.Ser473..normalized.to.GAPDH.)
+ - truemean(InvivoSevendayD$levator.phospho.Akt.Ser473..normalized.to.GAPDH.))/
+ truemean(InvivoSevendayV$levator.phospho.Akt.Ser473..normalized.to.GAPDH.))
+\end_layout
+
+\end_inset
+
+% reduction; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$levator.phospho.Akt.Ser473..normalized.to.GAPDH.,
+ InvivoSevendayCVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]]
+ )
+\end_layout
+
+\end_inset
+
+).
+ However, Testo co-administration had no significant effect on phoshpo-Ser473
+ Akt in gastrocnemius (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayC$gastrocnemius.phospho.Akt.Ser473..normalized.to.GAP
+DH.) - truemean(InvivoSevendayD$gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.))/
+ truemean(InvivoSevendayC$gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.))
+\end_layout
+
+\end_inset
+
+% increase, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.,
+ InvivoSevendayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]]
+ )
+\end_layout
+
+\end_inset
+
+).
+ Interestingly, Testo co-administration repressed phospho-Ser473 in levator
+ ani, a extremely AAS-sensitive muscle (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayD$levator.phospho.Akt.Ser473..normalized.to.GAPDH.)
+ - truemean(InvivoSevendayC$levator.phospho.Akt.Ser473..normalized.to.GAPDH.))/
+ truemean(InvivoSevendayD$levator.phospho.Akt.Ser473..normalized.to.GAPDH.))
+\end_layout
+
+\end_inset
+
+% decrease; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$levator.phospho.Akt.Ser473..normalized.to.GAPDH.,
+ InvivoSevendayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]]
+ )
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
