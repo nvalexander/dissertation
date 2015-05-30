@@ -16486,7 +16486,33 @@ name "fig:eif3f"
 Finally, Dexa was hypothesized to achieve protein synthesis inhibition by
  stimulating the negative regulator 4E-BP.
  In Dexa-treated mice, gastrocnemius 4EBP protein levels were upregulated
- (Fig.
+ (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayD$gastrocnemius.4EBP.protein..normalized.to.GAPDH.)
+ - truemean(InvivoSevendayV$gastrocnemius.4EBP.protein..normalized.to.GAPDH.))/
+ truemean(InvivoSevendayV$gastrocnemius.4EBP.protein..normalized.to.GAPDH.))
+\end_layout
+
+\end_inset
+
+% increase, when normalized to GAPDH; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.4EBP.protein..normalized.to.GAPDH.,
+ InvivoSevendayCVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]]
+ )
+\end_layout
+
+\end_inset
+
+; Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -16495,6 +16521,41 @@ reference "fig:4EBP"
 \end_inset
 
 , right).
+ However, Dexa also stimulated phosphorylated, that is, inactive 4EBP (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100*(truemean(InvivoSevendayD$gastrocnemius.phospho.4EBP..normalized.to.GAPDH.)
+ - truemean(InvivoSevendayV$gastrocnemius.phospho.4EBP..normalized.to.GAPDH.))/
+ truemean(InvivoSevendayV$gastrocnemius.phospho.4EBP..normalized.to.GAPDH.))
+\end_layout
+
+\end_inset
+
+% increase, when normalized to GAPDH; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.phospho.4EBP..normalized.to.GAPDH.,
+ InvivoSevendayCVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]]
+ )
+\end_layout
+
+\end_inset
+
+; Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4EBP"
+
+\end_inset
+
+, left).
 \end_layout
 
 \begin_layout Standard
