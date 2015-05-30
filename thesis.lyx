@@ -16218,7 +16218,7 @@ sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.phospho.eIF2alpha..normalized.to
 
 \end_inset
 
-)Fig.
+; Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -16324,7 +16324,7 @@ Phosphorylated eIF2α following Dexa and / or Testo treatments.
 \end_inset
 
 Phosphorylated eIF2α (Ser 51) following Dexa and / or Testo treatment in
- gastrocnemius muscles (n=4)
+ gastrocnemius muscles (normalized to simultaneously resolved GAPDH; n=4)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Phosphorylated-eif2"
@@ -16347,8 +16347,28 @@ name "fig:Phosphorylated-eif2"
 \begin_layout Standard
 Another regulator of proteins synthesis that was shown to play a role in
  muscle atrophy upon starvation is eIF3-F.
- In levator muscles of mice treated with Dexa, thee was no statistically
- significant change in the levels of eIF3-F.
+ In levator muscles of mice treated with Dexa, there was no statistically
+ significant change in the levels of eIF3-F (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$levator.eIF3f.protein..normalized.to.GAPDH., InvivoSev
+endayCVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
+\end_layout
+
+\end_inset
+
+; Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:eif3f"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -16409,7 +16429,7 @@ status open
 
 \begin_layout Plain Layout
 
-ploteiftwo()
+ploteifthree()
 \end_layout
 
 \begin_layout Plain Layout
@@ -16445,7 +16465,7 @@ Levels of eIF3-F following Dexa and / or Testo treatments.
 \end_inset
 
 Levels of eIF3-F following Dexa and / or Testo treatment in levator ani
- muscles (n=4)
+ muscles (normalized to simultaneously resolved GAPDH; n=4)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:eif3f"
@@ -16465,8 +16485,12 @@ name "fig:eif3f"
 
 \end_layout
 
+\begin_layout Standard
+Ano
+\end_layout
+
 \begin_layout Section
-Foxo pathway response to dexamethasone and testosterone 
+Foxo pathway response to dexamethasone and testosterone
 \end_layout
 
 \begin_layout Standard
@@ -16490,7 +16514,7 @@ reference "fig:Foxo-expression"
 \end_inset
 
 ).
- In quadriceps at day 1, Foxo3a was (
+ In quadriceps at day 1, Foxo3a was 
 \begin_inset Flex S/R expression
 status open
 
