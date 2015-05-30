@@ -935,7 +935,43 @@ plotlcprotein <- function(){
     ncol = 2))
 }
 
-#TENTH plot
+# TENTH plot shows cathepsin activity in three muscles at three time points
+plotcalpainactivity <- function(){
+  #alphabetical order
+  columnname <- "gastrocnemius.calpain.activity..rel.u.."
+  ylabel <- "gastrocnemius calpain\nactivity (rel.u.)"
+  ylims <- c(0, 1.5)
+  statstrings <- list(
+    #gastrocnemius 1, 3, 7:
+    c("a", "b", "b"),
+    threeidenticalgroups,
+    threeidenticalgroups)
+  plotslist <- list()
+  shortdf1 <- rescaledtovehicleasunity(
+    InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnname)])
+  shortdf3 <- rescaledtovehicleasunity(
+    InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnname)])
+  shortdf7 <- rescaledtovehicleasunity(
+    InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnname)])
+  plotslist[[1]] <- threecolumnplot(shortdf1, ylabel, ylims, statstrings[[1]])+ 
+    theme(axis.text.x = element_text(color = "black")) + 
+    scale_x_discrete(labels = conditionsVDC) + 
+    annotationastitle("one day", 2, ylims)
+  plotslist[[2]] <- threecolumnplot(shortdf3, ylabel, ylims, statstrings[[2]])+ 
+    theme(axis.text.x = element_text(color = "black")) + 
+    scale_x_discrete(labels = conditionsVDC) + 
+    annotationastitle("three days", 2, ylims)
+  plotslist[[3]] <- threecolumnplot(shortdf7, ylabel, ylims, statstrings[[3]])+ 
+    theme(axis.text.x = element_text(color = "black")) + 
+    scale_x_discrete(labels = conditionsVDC) + 
+    annotationastitle("seven days", 2, ylims)
+  return(grid.arrange(
+    plotslist[[1]], plotslist[[2]], plotslist[[3]], 
+    ncol = 3))
+}
+
+
+#ELEVENTH plot
 plotfoxogene <- function(){
   columnnames <- c(
 #     "quadriceps.Ct.Foxo1....Ct.Gapdh.",
