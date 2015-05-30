@@ -8691,7 +8691,7 @@ key "buren2008insulin,rojas2003regulation,williams2012dietary,watson2012cell-aut
 .
  However, the effect of Dexa on Ser 473 phosphorylation in basal state is
  debated.
- Until about a decade ago, Akt phoshporylation was identified by changes
+ Until about a decade ago, Akt phosphorylation was identified by changes
  in electrophoretic mobility.
  With that method, in basal conditions, in rat muscle, Ser 473 phosphorylation
  is either undetectable or below the dynamic range of immunoblot
@@ -9243,8 +9243,8 @@ key "britto2014redd1"
  the negative regulator PRAS40.
  In contrast, and unexpectedly, acute Dexa increased TSC2 phosphorylation,
  indicating that Dexa induces substrate selectivity changes in Akt.
- As discussed earlier, such Akt selectivity are attributed to dissociation
- between Ser 473 and Thr 308 phosphorylation state.
+ As discussed earlier, such Akt selectivity alterations are attributed to
+ dissociation between Ser 473 and Thr 308 phosphorylation state.
  Indeed, Britto and colleagues found that, after acute Dexa, phosphorylation
  at Ser 473 increases, while at Thr 308 it decreases.
  This is a rare, although not unique, account of Akt hyperphosphorylation
@@ -9264,8 +9264,8 @@ Britto and colleagues refined their model by observing the effect of Dexa
  These findings place mTORC1 inhibition at the core of GAML.
  Britto and colleagues propose a model of GAML where Ser 473 hyperphosphorylatio
 n is caused by an mTORC1 feedback loop being severed by Dexa.
- Upstream of mTORC1, REDD1 knockout mice exhibit loss of phosphorylation
- on PRAS40 and Akt on Thr 308.
+ Upstream of mTORC1, REDD1 knockout mice lost hypophosphorylation on PRAS40
+ and of Akt on Thr 308.
  While Akt remains upstream of mTOR and vital for GAML, Britto's model discards
  phosphorylation of Akt at Ser 473 and of TSC2 from the rapid REDD1-dependent
  response to Dexa.
@@ -17353,7 +17353,7 @@ sig3( dunn.test(InvivoSevendayCVD$levator.phospho.Akt.Ser473..normalized.to.GAPD
 \end_inset
 
 ).
- However, Testo co-administration had no significant effect on phoshpo-Ser473
+ However, Testo co-administration had no significant effect on phospho-Ser473
  Akt in gastrocnemius (
 \begin_inset Flex S/R expression
 status open
@@ -17412,7 +17412,9 @@ sig3( dunn.test(InvivoSevendayCVD$levator.phospho.Akt.Ser473..normalized.to.GAPD
 \end_layout
 
 \begin_layout Standard
-The other 
+The other relevant phosphorylation on Akt , Thr 308, is controlled by REDD1.
+ I investigated the effects of the two steroids on REDD1 / Ddit4 transcription.
+ 
 \end_layout
 
 \begin_layout Standard
