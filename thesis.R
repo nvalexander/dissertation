@@ -1082,18 +1082,33 @@ plotfourebp <- function(){
     ncol = 2))
 }
 
-plotAkt <- function(){
+plotlevatorakt <- function(){
   return(grid.arrange(
-    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "tibialis.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "tibialis.phospho.Akt.Ser473", c(0,2),threeemptystrings),
-    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "tibialis.Akt.protein..normalized.to.GAPDH.")]), "tibialis.Akt.protein", c(0,2),threeemptystrings),
-    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "tibialis.phospho.Akt.Ser473...total.Akt")]), "tibialis.phospho/total.Akt", c(0,2),threeemptystrings),
-    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "levator.phospho.Akt.Ser473", c(0,2),threeemptystrings),
-    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.Akt.protein..normalized.to.GAPDH.")]), "levator.Akt.protein.", c(0,2),threeemptystrings),
-    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.Akt.Ser473...total.Akt")]), "levator.phosph/total.Akt", c(0,2),threeemptystrings),
-    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "gastrocnemius.phospho.Akt.Ser473", c(0,2),threeemptystrings),
-    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Akt.protein..normalized.to.GAPDH.")]), "gastrocnemius.Akt.protein", c(0,2),threeemptystrings),
-threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473...total.Akt")]), "gastrocnemius.phospho/total.Akt", c(0,2),threeemptystrings),
-ncol = 3))
+    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.Akt.protein..normalized.to.GAPDH.")]), "levator total Akt", c(0,2),threeemptystrings) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC),
+    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "levator phospho-Ser473 Akt", c(0,2),threeemptystrings) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC),
+    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.Akt.Ser473...total.Akt")]), "levator phospho/total Akt", c(0,2),threeemptystrings) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC),
+    ncol = 3))
+}
+
+
+plotgastrocnemiusakt <- function(){
+  return(grid.arrange(
+    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Akt.protein..normalized.to.GAPDH.")]), "gastrocnemius total Akt", c(0,2),threeemptystrings) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC),
+    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "gastrocnemius phospho-Ser473 Akt", c(0,2),threeemptystrings) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC),
+    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473...total.Akt")]), "gastrocnemius phospho/total Akt", c(0,2),threeemptystrings) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC),
+    ncol = 3))
 }
 
 plotIgfr <-function(){

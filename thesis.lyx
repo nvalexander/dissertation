@@ -16903,9 +16903,9 @@ Changes in the expression of Foxo3a and Klf15 transcription factors following
 
 \end_inset
 
-Changes in the expression of Foxo3a and Klf15 transcription factors following
- Dexa and / or Testo treatments in quadriceps muscles (n=4, normalized to
- GAPDH).
+Changes in the expression of 7 days of Foxo3a and Klf15 transcription factors
+ following Dexa and / or Testo treatments in quadriceps muscles (n=4, normalized
+ to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Foxo-expression"
@@ -17066,11 +17066,211 @@ atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 ).
 \end_layout
 
+\begin_layout Section
+Akt pathway response to dexamethasone and testosterone
+\end_layout
+
 \begin_layout Standard
 A alternative way to achieve Foxo modulation is through their neutralization
  by Akt.
  As described in the literature review section, activation of Akt is dependent
  on its phosphorylation on two residues, Ser 473 and Thr 308.
+ I investigated the effect of the two steroids on Ser 473 phosphorylation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "2in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/Akt/Akt-gastroc.pdf
+	width 6in
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "2.2in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "2.3in", fig.width = 6, fig.height = 2.3>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plotgastrocnemiusakt()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "2in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/Akt/Akt-levator.pdf
+	width 6in
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "2.2in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "2.3in", fig.width = 6, fig.height = 2.3>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plotlevatorakt()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Levels of total and phosphorylated Akt following Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+Levels of total and phosphorylated Akt following 7 days of Dexa and / or
+ Testo treatment in gastrocnemius and levator muscles (normalized to GAPDH;
+ n=4)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Akt-phosphorylation"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
