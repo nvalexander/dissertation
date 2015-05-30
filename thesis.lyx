@@ -16099,6 +16099,11 @@ ndayCVD$treatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]] )
 While evidence is indirect, the bulk of data suggests that GAML is correlated
  with rampant autophagy downregulation, while AAS co-administration has
  a limited effect on autophagy.
+ Immunoblots and enzymatic assays indicated a similar disconnection between
+ the calpain / calpastatin system and the macroscopic atrophy phenotype
+ (data not shown).
+ The ubiquitin - proteasome system emerges as the main effector of GAML
+ and the main target of its alleviation by AAS.
 \end_layout
 
 \begin_layout Section
@@ -16108,8 +16113,16 @@ Foxo pathway response to dexamethasone and testosterone
 \begin_layout Standard
 Previous studies on C2C12 cultured cells showed that the atrogene response
  is crucially regulated by Foxo transcription factors.
- In this study, Foxo transcription factors were strongly induced during
- the early stages of GAML (Fig.
+ The review section describes a series of at least five means by which Dexa
+ is thought to stimulate Foxo transcriptional program.
+ Most of them converge on upregulation of Foxo transcripts.
+ I set to test the hypothesis that muscle Foxo expression is modulated by
+ Dexa and Testo in muscle.
+\end_layout
+
+\begin_layout Standard
+In this study, Foxo transcription factors were strongly induced during the
+ early stages of GAML (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -16607,6 +16620,10 @@ atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
