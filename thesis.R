@@ -1066,3 +1066,18 @@ ploteifthree <- function(){
            theme(axis.text.x = element_text(color = "black")) + 
            scale_x_discrete(labels = conditionsVDC))
 }
+
+plotfourebp <- function(){
+  totalfourebpdf <- rescaledtovehicleasunity(
+    InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.4EBP.protein..normalized.to.GAPDH.")])
+  phosphofourebpdf <- rescaledtovehicleasunity(
+    InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.4EBP..normalized.to.GAPDH.")])
+  return(grid.arrange(
+    threecolumnplot(phosphofourebpdf, "phospho 4EBP\n(normalized to GAPDH)", c(0,1.5), threeidenticalgroups) + 
+           theme(axis.text.x = element_text(color = "black")) + 
+           scale_x_discrete(labels = conditionsVDC),
+    threecolumnplot(totalfourebpdf, "total4EBP\n(normalized to GAPDH)", c(0,1.5), threeidenticalgroups) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC),
+    ncol = 2))
+}
