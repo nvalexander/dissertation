@@ -943,10 +943,10 @@ plotfoxogene <- function(){
     "quadriceps.Ct.Foxo4....Ct.Gapdh.",
     "quadriceps.Ct.Klf15....Ct.Gapdh.")
   ylabels <- c(
-    "quadriceps Foxo1 mRNA",
-    "quadriceps Foxo3a mRNA",
-    "quadriceps Foxo4 mRNA",
-    "quadriceps Klf15 mRNA")
+    "Foxo1 mRNA",
+    "Foxo3a mRNA",
+    "Foxo4 mRNA",
+    "Klf15 mRNA")
   ylims <- list(
     # quadriceps Foxo1 - days 1, 3, 7:
     c(-1,10),
@@ -979,8 +979,8 @@ plotfoxogene <- function(){
     c("a", "b", "a,b"),
     # quadriceps Klf15 - days 1, 3, 7:
     c("a", "b", "a,b"),
-    threeidenticalgroups,
-    c("a", "b", "a,b"))
+    c("a,b", "a", "b"),
+    c("a", "a,b", "b"))
   
   plotslist <- list()
   for (i in 1:4){
