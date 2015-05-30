@@ -15014,7 +15014,7 @@ Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
 
 Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
  Dexa and / or Testo treatments, in quadriceps and gastrocnemius muscles
- (n=3-5).
+ (n=3-5, normalized to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Atrogenes-expression"
@@ -15533,7 +15533,7 @@ Changes in autophagy-related genes following Dexa and / or Testo treatments.
 \end_inset
 
 Changes in autophagy-related genes following Dexa and / or Testo treatments,
- in quadriceps and triceps muscles (n=3-4).
+ in quadriceps and triceps muscles (n=3-4, normalized to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Autophagy-related-genes"
@@ -16354,7 +16354,7 @@ Changes in the expression of Foxo transcription factors following Dexa and
 \end_inset
 
 Changes in the expression of Foxo transcription factors following Dexa and
- / or Testo treatments in quadriceps muscles (n=4).
+ / or Testo treatments in quadriceps muscles (n=4, normalized to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Foxo-expression"
@@ -16532,6 +16532,85 @@ atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \begin_layout Standard
 The changes in Foxo transcription factors were mirrored by similar changes
  in their positive regulator Klf15.
+ Dexa stimulated Klf15 expression at day 1 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoOnedayV$quadriceps.Ct.Klf15....Ct.Gapdh.) - truemean(InvivoOneda
+yD$quadriceps.Ct.Klf15....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold upregulation; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoOnedayCVD$quadriceps.Ct.Klf15....Ct.Gapdh., InvivoOnedayCVD$treatme
+nt, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+), and day 3 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayV$quadriceps.Ct.Klf15....Ct.Gapdh.) - truemean(InvivoThr
+eedayD$quadriceps.Ct.Klf15....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold upregulation; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Klf15....Ct.Gapdh., InvivoThreedayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ Testo co-administration reversed Klf15 changes, with the strongest repression,
+ 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayC$quadriceps.Ct.Klf15....Ct.Gapdh.) - truemean(InvivoThr
+eedayD$quadriceps.Ct.Klf15....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold, in day 3 samples (Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$quadriceps.Ct.Klf15....Ct.Gapdh., InvivoThreedayCVD$tre
+atment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Redd1
 \end_layout
 
 \begin_layout Standard
