@@ -18050,6 +18050,98 @@ tment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+Testo reliably reversed this change.
+ In gastrocnemius, Dexa downregulated IGF-I expression in samples collected
+ at days 1 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoOnedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoOne
+dayC$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoOnedayCVD$gastrocnemius.Ct.Igf1....Ct.Gapdh., InvivoOnedayCVD$treat
+ment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+), 3 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoThreedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoT
+hreedayC$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoThreedayCVD$gastrocnemius.Ct.Igf1....Ct.Gapdh., InvivoThreedayCVD$t
+reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+), and 7 (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 2^(truemean(InvivoSevendayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoS
+evendayC$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+\end_layout
+
+\end_inset
+
+-fold; Dunn's test, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.Ct.Igf1....Ct.Gapdh., InvivoSevendayCVD$t
+reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
+\end_layout
+
+\end_inset
+
+).
+ A similar trend was seen in quadriceps, but the amplitude was smaller,
+ perhaps owing to the fact that Dexa-induced changed in IGF-I were smaller.
+\end_layout
+
+\begin_layout Standard
+Throughout this section, the molecular correlates of GAML, as found in rats,
+ were confirmed in this novel mouse model.
+ However, few of the effects of Dexa were reversed by Testo.
+ Among the putative mechanisms of alleviation of GAML, there is good evidence
+ for the repression of the proteasome - ubiquitin system and for restoration
+ of intramuscular IGF-I.
+ In the next section, I describe my efforts to better understand these myoprotec
+tive mechanisms, in an in vitro model.
+ 
 \begin_inset Newpage pagebreak
 \end_inset
 
