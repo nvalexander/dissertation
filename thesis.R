@@ -1050,3 +1050,11 @@ plotfoxogene <- function(){
     plotslist[[4]], plotslist[[5]], plotslist[[6]],
     ncol = 3))
 }
+
+ploteiftwo <- function(){
+    shortdf7 <- rescaledtovehicleasunity(
+      InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.eIF2alpha..normalized.to.GAPDH.")])
+    return(threecolumnplot(shortdf7, "phospho-eIF2alpha\n(normalized to GAPDH)", c(0,1.5), threeidenticalgroups)+ 
+             theme(axis.text.x = element_text(color = "black")) + 
+             scale_x_discrete(labels = conditionsVDC))
+}
