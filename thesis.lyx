@@ -13224,9 +13224,14 @@ ce{CO2}
 
 \begin_layout Standard
 For chase experiments, PBS was then replaced with non-radioactive differentiatio
-n medium, supplemented with 10 mM phenyl alanine, for the durations specified
- at each experiment.
+n medium, for the durations specified at each experiment.
  Chase experiments ended with a double rinse with PBS.
+ Preliminary studies revealed that supplementation of differentiation medium
+ with 10 mM phenyl alanine made no difference to the rate of tracer release,
+ compared to differentiation medium alone (data not shown).
+ This is plausible, because differentiation medium already contains 0.4 mM
+ phenyl alanine, and suggested that additional osmotic stress could be avoided
+ at no cost to sensitivity of the method.
 \end_layout
 
 \begin_layout Standard
@@ -13553,22 +13558,7 @@ molar}
 \begin_layout Standard
 From the same protein pellet suspension, aliquots were used to measure total
  protein concentration by BCA method, as described in the immunoblot section,
- but with standards prepared in the same solvent as unknowns (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{1}{
-\backslash
-molar}
-\end_layout
-
-\end_inset
-
- NaOH / 1‰ v/v Triton).
+ but with standards prepared in the same solvent as the unknowns.
 \end_layout
 
 \begin_layout Section
@@ -18334,6 +18324,7 @@ In mouse explanted myofibers and C2C12 cultured myotubes, muscle atrophy
  present in vitro.
  I hypothesized that the muscle changes observed in vivo could be replicated
  in C2C12 cells.
+ 
 \end_layout
 
 \begin_layout Standard
