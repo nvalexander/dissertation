@@ -12707,11 +12707,11 @@ Foxo1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Forward:
+Forward: CACCCTGTCGCAGATCTAG
 \end_layout
 
 \begin_layout Plain Layout
-Reverse:
+Reverse: CGAATAAACTTGCTGTGAAGG
 \end_layout
 
 \end_inset
@@ -12731,11 +12731,11 @@ Foxo3a
 \begin_inset Text
 
 \begin_layout Plain Layout
-Forward:
+Forward: GACAAACGGCTCACTTTGCC
 \end_layout
 
 \begin_layout Plain Layout
-Reverse:
+Reverse: GACAGGTTGTTGTGCCGGATGG
 \end_layout
 
 \end_inset
@@ -12755,11 +12755,11 @@ Foxo4
 \begin_inset Text
 
 \begin_layout Plain Layout
-Forward:
+Forward: 
 \end_layout
 
 \begin_layout Plain Layout
-Reverse:
+Reverse: 
 \end_layout
 
 \end_inset
@@ -12827,11 +12827,11 @@ Becn1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Forward:
+Forward: CCACAGCCCAGGCGAAACC
 \end_layout
 
 \begin_layout Plain Layout
-Reverse:
+Reverse: GATGAATCTTCGAGAGACACC
 \end_layout
 
 \end_inset
@@ -12875,11 +12875,11 @@ Klf15
 \begin_inset Text
 
 \begin_layout Plain Layout
-Forward:
+Forward: ACAGGCGAGAAGCCCTTGC
 \end_layout
 
 \begin_layout Plain Layout
-Reverse:
+Reverse: CTCGCACACGGGACACTGG
 \end_layout
 
 \end_inset
@@ -12903,7 +12903,7 @@ Forward: GCTCACTGGCATGGCCTTCCG
 \end_layout
 
 \begin_layout Plain Layout
-Reverse: 
+Reverse: GTAGGCCATGAGGTCCACA
 \end_layout
 
 \end_inset
