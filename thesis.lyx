@@ -18324,7 +18324,21 @@ In mouse explanted myofibers and C2C12 cultured myotubes, muscle atrophy
  present in vitro.
  I hypothesized that the muscle changes observed in vivo could be replicated
  in C2C12 cells.
- 
+ Indeed, fully differentiated C2C12 myotubes treated for 48 hours with 50
+ uM Dexa lost 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3 (100 * (mean(InvitroCelldiams$Mean[InvitroCelldiams$Treatment=="V"])
+ - mean(InvitroCelldiams$Mean[InvitroCelldiams$Treatment=="D"])) /mean(InvitroCe
+lldiams$Mean[InvitroCelldiams$Treatment=="V"]))
+\end_layout
+
+\end_inset
+
+% in diameter ().
 \end_layout
 
 \begin_layout Standard
