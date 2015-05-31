@@ -12479,7 +12479,7 @@ At times, antibodies were stripped by incubation with shaking for 45 minutes
 \end_layout
 
 \begin_layout Standard
-Primary antibodies used were:
+Primary antibodies used were: anti-GAPDH (Pierce), anti-LC3
 \end_layout
 
 \begin_layout Section
@@ -12597,7 +12597,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="13" columns="2">
+<lyxtabular version="3" rows="14" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="1in">
 <column alignment="left" valignment="top" width="4in">
@@ -12755,11 +12755,11 @@ Foxo4
 \begin_inset Text
 
 \begin_layout Plain Layout
-Forward: 
+Forward: GCCCTACTTTCAAGGACAAGG
 \end_layout
 
 \begin_layout Plain Layout
-Reverse: 
+Reverse: CATCCACCAGAGCTCTTC
 \end_layout
 
 \end_inset
@@ -12779,11 +12779,11 @@ Ddit4
 \begin_inset Text
 
 \begin_layout Plain Layout
-Forward:
+Forward: CTGCGAGTCCCCTGGACAGC
 \end_layout
 
 \begin_layout Plain Layout
-Reverse:
+Reverse: CACTGAGCAGCTCAAAGTCG
 \end_layout
 
 \end_inset
@@ -12851,11 +12851,35 @@ Map1lc3b
 \begin_inset Text
 
 \begin_layout Plain Layout
-Forward:
+Forward: GGAAGATGTCCGGCTATCC
 \end_layout
 
 \begin_layout Plain Layout
-Reverse:
+Reverse: CTCATGTTCACGTGGTCAGG
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ctsl
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Forward: AACCGCTGATGCTTAAGATCC
+\end_layout
+
+\begin_layout Plain Layout
+Reverse: CACTCAGTGAGATCAGTTTGC
 \end_layout
 
 \end_inset
