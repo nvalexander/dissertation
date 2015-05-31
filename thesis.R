@@ -53,8 +53,6 @@ InvivoSevendayNicenames <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv
   nrows = 1, 
   stringsAsFactors = FALSE)
 #re-leveling
-condsVDCC <- c("V", "D", "DT", "DU")
-conditionsVDCC <- c("Veh", "50 µM Dexa", "50 µM Dexa\n+ 300 nM T", "50 µM Dexa\n+ 1000 nM T")
 condsVDC <- c("V", "D", "C")
 conditionsVDC <- c("Veh", "Dexa", "Comb")
 condsVDTC <- c("V", "D", "T", "C")
@@ -1156,13 +1154,34 @@ plotredd <- function(){
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC)+
       annotationastitle("three days", 2, 7.5),
-    threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,7.5),threeemptystrings)+ 
+    threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,7.5),threeemptystrings) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC)+
       annotationastitle("seven days", 2, 7.5),
     ncol = 3))
 }
 
+# In vitro cell diameters
+# wrangling data
+condsVDCC <- c("V", "D", "C", "B")
+conditionsVDCcells <- c("Veh", "50 µM Dexa", "50 µM Dexa\n+ 300 nM T", "50 µM Dexa\n+ 1000 nM T")
 InvitroCelldiams <- read.csv(file.path(datadir, "2012.08.26.celldiameters.csv"), header = TRUE)
-InvitroCelldiams$treatment <- factor(InvitroCelldiams$Treatment, 
+levels(InvitroCelldiams$treatment)[levels(InvitroCelldiams$treatment)=="DT"] <- "C"
+levels(InvitroCelldiams$treatment)[levels(InvitroCelldiams$treatment)=="DU"] <- "B"
+InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment, 
                                       levels = condsVDCC)
+InvitroCelldiamsCVD <-InvitroCelldiams[InvitroCelldiams$treatment %in% condsVDC , ]
+InvitroCelldiams$Treatment <- factor(InvitroCelldiams$treatment, 
+                                 levels = condsVDCC)
+InvitroCelldiams$Treatment <- factor(InvitroCelldiams$treatment, 
+                                    levels = condsVDC)
+
+plotcelldiams <- function() {
+  return(threecolumnplot(rescaledtovehicleasunity(
+      InvitroCelldiamsCVD[, colnames(InvitroCelldiamsCVD) %in% c("treatment", "mean")]), 
+    "mean diameter", 
+    c(0, 1.2), 
+    c("a", "b", "c")) + 
+           theme(axis.text.x = element_text(color = "black")) + 
+           scale_x_discrete(labels = conditionsVDC))
+}

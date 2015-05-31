@@ -13123,7 +13123,8 @@ Next day, the cells were incubated twice 5 minutes each with the blocking
 
 \begin_layout Standard
 Cell contours were obtained using Magnetic Lasso in Adobe Photoshop CS4.
- The outlines were pasted in another file, that was read in Matlab 8.
+ All the cell outlines that could be recognized by Photoshop from two randomly
+ chosen fields were pasted in another file, that was read in Matlab 8.
  An automated script determined multiple estimates of the diameter, and
  calculated an average diameter for each fiber.
 \end_layout
@@ -18339,6 +18340,190 @@ lldiams$Mean[InvitroCelldiams$Treatment=="V"]))
 \end_inset
 
 % in diameter ().
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "3in"
+special "none"
+height "2.3in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/diameters/Rhodamine_vv-1_001_cr.bmp
+	width 3in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(Veh)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "3in"
+special "none"
+height "2.3in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/diameters/Rhodamine_dd-1_001_cr.bmp
+	width 3in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(Dexa)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "3in"
+special "none"
+height "2.3in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/diameters/Rhodamine_xx-2_001_cr2.bmp
+	width 3in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(Dexa + Testo)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "2.2in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "3in", out.height
+ = "2.3in", fig.width = 3, fig.height = 2.3>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+	plotcelldiams()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in C2C12 myotube diameter following Dexa and / or Testo treatments.
+\end_layout
+
+\end_inset
+
+ Changes in C2C12 myotube diameter following Dexa and / or Testo treatments.
+ Micrographs are representative for cells receiving vehicle (top left),
+ 50 uM Dexa (top right), or 50 uM Dexa and 300 nM Testo.
+ Bottom right image compares average myotube diameters for the three treatments
+ (n=510-740).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:myotube-diameters"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
