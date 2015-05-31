@@ -12985,8 +12985,8 @@ celsius}
 \end_inset
 
 .
- The liquid growth medium was 0.2-0.5 mL/cm2 growth medium, that is, pyruvate-free
- Dulbecco's Modified Eagle Medium (
+ During proliferation, cells were maintained under 0.5 mL/cm2 growth medium,
+ that is, Dulbecco's Modified Eagle Medium (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DMEM"
@@ -13005,6 +13005,8 @@ description "fetal bovine serum"
 
 ), 100 units/mL penicillin, and 100 mg/L streptomycin, changed every other
  day.
+ DMEM contained 400 µM phenylalanine (Phe), 4500 mg/L glucose, 4 mM glutamine,
+ and lacked pyruvate .
 \end_layout
 
 \begin_layout Standard
