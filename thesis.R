@@ -53,6 +53,8 @@ InvivoSevendayNicenames <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv
   nrows = 1, 
   stringsAsFactors = FALSE)
 #re-leveling
+condsVDCC <- c("V", "D", "DT", "DU")
+conditionsVDCC <- c("Veh", "50 µM Dexa", "50 µM Dexa\n+ 300 nM T", "50 µM Dexa\n+ 1000 nM T")
 condsVDC <- c("V", "D", "C")
 conditionsVDC <- c("Veh", "Dexa", "Comb")
 condsVDTC <- c("V", "D", "T", "C")
@@ -1160,3 +1162,7 @@ plotredd <- function(){
       annotationastitle("seven days", 2, 7.5),
     ncol = 3))
 }
+
+InvitroCelldiams <- read.csv(file.path(datadir, "2012.08.26.celldiameters.csv"), header = TRUE)
+InvitroCelldiams$treatment <- factor(InvitroCelldiams$Treatment, 
+                                      levels = condsVDCC)
