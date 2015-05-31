@@ -13005,7 +13005,7 @@ description "fetal bovine serum"
 
 ), 100 units/mL penicillin, and 100 mg/L streptomycin, changed every other
  day.
- DMEM contained 400 µM phenylalanine (Phe), 4500 mg/L glucose, 4 mM glutamine,
+ DMEM contained 400 µM phenyl alanine, 4500 mg/L glucose, 4 mM glutamine,
  and lacked pyruvate.
 \end_layout
 
@@ -13155,10 +13155,11 @@ liter}
 
 \end_inset
 
- radioactive phenylalanine (PerkinElmer, Shelton, Connecticut), starting
- at the times and for the durations specified at each experiment in the
- results section.
- Cells were rinsed with PBS twice, then incubated with 
+ radioactive (³H-[ring]) phenylalanine (126 Ci/mmol; PerkinElmer, Shelton,
+ Connecticut), starting at the times and for the durations specified at
+ each experiment in the results section.
+ For removal of non-specific tracer at the end of labeling stage, cells
+ were rinsed with PBS twice, then incubated with 
 \begin_inset ERT
 status open
 
@@ -13218,9 +13219,13 @@ ce{CO2}
 
 \end_inset
 
-, to better remove extracelullar tracer.
- For chase experiments, PBS was then replaced with non-radioactive differentiati
-on medium, for the durations specified at each experiment.
+.
+\end_layout
+
+\begin_layout Standard
+For chase experiments, PBS was then replaced with non-radioactive differentiatio
+n medium, supplemented with 10 mM phenyl alanine, for the durations specified
+ at each experiment.
  Chase experiments ended with a double rinse with PBS.
 \end_layout
 
@@ -13290,7 +13295,7 @@ status open
 
 
 \backslash
-SI{4}{
+SI{-20}{
 \backslash
 celsius}
 \end_layout
@@ -13298,7 +13303,23 @@ celsius}
 \end_inset
 
 .
- Next day, cells were scraped.
+ Next day, cells and media were thawed at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ over two hours.
+ Cells were scraped.
  The cell culture wells were further scraped and rinsed with 
 \begin_inset ERT
 status open
@@ -13361,7 +13382,7 @@ molar}
 
 \end_inset
 
- TCA, and acetone, by resuspension, incubation at 
+ TCA, by resuspension, incubation at 
 \begin_inset ERT
 status open
 
@@ -13392,7 +13413,8 @@ minute}
 \end_inset
 
 , and centrifugation as above.
- All three supernatants were pooled.
+ Next, pellets were washed once more with acetone, by the same procedure.
+ All two TCA-based supernatants and the acetone supernatant were pooled.
  Pellets were dissolved in 
 \begin_inset ERT
 status open
@@ -13509,9 +13531,44 @@ liter}
  Econo-lite scintillation fluid, then counted in a TriCarb 3100TR liquid
  scintillation counter (PerkinElmer) for 3 minutes per sample.
  Counts per minute were converted to disintegrations per minute using a
- standard curve generated using the same solvents as the samples.
- From the same pellet suspension, aliquots were used to measure total protein
- concentration by BCA method, as described in the immunoblot section.
+ standard curve generated using 1-80 µCi/L labeled phenyl alanine dissolved
+ in the same solvents as the samples (2:1 TCA:acetone, or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ NaOH / 1‰ v/v Triton).
+\end_layout
+
+\begin_layout Standard
+From the same protein pellet suspension, aliquots were used to measure total
+ protein concentration by BCA method, as described in the immunoblot section,
+ but with standards prepared in the same solvent as unknowns (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ NaOH / 1‰ v/v Triton).
 \end_layout
 
 \begin_layout Section
@@ -18272,10 +18329,11 @@ Testosterone alleviates dexamethasone-induced atrophy of cultured cells
 \end_layout
 
 \begin_layout Standard
-Studies on L6 cultured myotubes and myofibers collected from mice revealed
- that muscle atrophy is a cell-autonomous phenomenon, with all its essential
- manifestations present in vitro.
- 
+In mouse explanted myofibers and C2C12 cultured myotubes, muscle atrophy
+ is a cell-autonomous phenomenon, with all its essential manifestations
+ present in vitro.
+ I hypothesized that the muscle changes observed in vivo could be replicated
+ in C2C12 cells.
 \end_layout
 
 \begin_layout Standard
