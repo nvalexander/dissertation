@@ -12597,7 +12597,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="2">
+<lyxtabular version="3" rows="13" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="1in">
 <column alignment="left" valignment="top" width="4in">
@@ -12635,11 +12635,11 @@ Trim63
 \begin_inset Text
 
 \begin_layout Plain Layout
-Forward:
+Forward: TCTCTCAGCTGGAGGACTCC
 \end_layout
 
 \begin_layout Plain Layout
-Reverse:
+Reverse: CTGTACTGGAGGATCAGAGC
 \end_layout
 
 \end_inset
@@ -12659,11 +12659,11 @@ Fbxo32
 \begin_inset Text
 
 \begin_layout Plain Layout
-Forward:
+Forward: GGGAAGCTTTCAACAGATTGG
 \end_layout
 
 \begin_layout Plain Layout
-Reverse:
+Reverse: AATGTTCATGAAGTTCTTTTGGG
 \end_layout
 
 \end_inset
@@ -12687,7 +12687,7 @@ Forward: GCTTGCTCACCTTTACCAGC
 \end_layout
 
 \begin_layout Plain Layout
-ReverseAAATGTACTTCCTTCTGGGTCT
+Reverse:AAATGTACTTCCTTCTGGGTCT
 \end_layout
 
 \end_inset
@@ -12707,7 +12707,11 @@ Foxo1
 \begin_inset Text
 
 \begin_layout Plain Layout
+Forward:
+\end_layout
 
+\begin_layout Plain Layout
+Reverse:
 \end_layout
 
 \end_inset
@@ -12727,7 +12731,11 @@ Foxo3a
 \begin_inset Text
 
 \begin_layout Plain Layout
+Forward:
+\end_layout
 
+\begin_layout Plain Layout
+Reverse:
 \end_layout
 
 \end_inset
@@ -12747,7 +12755,11 @@ Foxo4
 \begin_inset Text
 
 \begin_layout Plain Layout
+Forward:
+\end_layout
 
+\begin_layout Plain Layout
+Reverse:
 \end_layout
 
 \end_inset
@@ -12767,7 +12779,11 @@ Ddit4
 \begin_inset Text
 
 \begin_layout Plain Layout
+Forward:
+\end_layout
 
+\begin_layout Plain Layout
+Reverse:
 \end_layout
 
 \end_inset
@@ -12778,7 +12794,7 @@ Ddit4
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Igf1r
 \end_layout
 
 \end_inset
@@ -12787,7 +12803,83 @@ Ddit4
 \begin_inset Text
 
 \begin_layout Plain Layout
+Forward: GGGCTGACTGGTGGATGC
+\end_layout
 
+\begin_layout Plain Layout
+Reverse: CGCTGGGCACGGATAGAGC
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Becn1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Forward:
+\end_layout
+
+\begin_layout Plain Layout
+Reverse:
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Map1lc3b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Forward:
+\end_layout
+
+\begin_layout Plain Layout
+Reverse:
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Klf15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Forward:
+\end_layout
+
+\begin_layout Plain Layout
+Reverse:
 \end_layout
 
 \end_inset
@@ -12798,16 +12890,20 @@ Ddit4
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Gapdh
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+Forward: GCTCACTGGCATGGCCTTCCG
+\end_layout
 
+\begin_layout Plain Layout
+Reverse: 
 \end_layout
 
 \end_inset
