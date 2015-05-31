@@ -18332,9 +18332,9 @@ status open
 
 \begin_layout Plain Layout
 
-sig3 (100 * (mean(InvitroCelldiams$Mean[InvitroCelldiams$Treatment=="V"])
- - mean(InvitroCelldiams$Mean[InvitroCelldiams$Treatment=="D"])) /mean(InvitroCe
-lldiams$Mean[InvitroCelldiams$Treatment=="V"]))
+sig3 (100 * (mean(InvitroCelldiams$mean[InvitroCelldiams$treatment=="V"])
+ - mean(InvitroCelldiams$mean[InvitroCelldiams$treatment=="D"])) /mean(InvitroCe
+lldiams$mean[InvitroCelldiams$treatment=="V"]))
 \end_layout
 
 \end_inset
@@ -18513,7 +18513,7 @@ name "fig:myotube-diameters"
 
 \end_inset
 
-.
+
 \end_layout
 
 \end_inset
