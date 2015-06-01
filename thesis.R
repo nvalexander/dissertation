@@ -1283,6 +1283,7 @@ pvaluesTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq 
 pvaluesTreatmentAndDateDonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsD[DegradationInCellsD != "3", ]))[[1]]$`Pr(>F)`
 pvaluesTreatmentAndDateConlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsC[DegradationInCellsC != "3", ]))[[1]]$`Pr(>F)`
 pvaluesTreatmentAndDateAonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsA[DegradationInCellsA != "3", ]))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateNormalizedToFirst <- summary(aov( cell_protein_density_microgram_per_cmsq_normalized_to_first_day ~ TimeDays + treatment, data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
 
 plotproteinsynthesis <- function() {
   unnormalizeddata <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "activity_in_cell_protein_extract_picoCi")]
