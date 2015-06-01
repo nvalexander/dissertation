@@ -1163,15 +1163,15 @@ plotredd <- function(){
 
 # In vitro cell diameters
 # wrangling data
-condsVDCC <- c("V", "D", "C", "B") # B is combination with higher Testo than C
+condsVDCB <- c("V", "D", "C", "B") # B is combination with higher Testo than C
 InvitroCelldiams <- read.csv(file.path(datadir, "2012.08.26.celldiameters.csv"), header = TRUE)
 levels(InvitroCelldiams$treatment)[levels(InvitroCelldiams$treatment)=="DT"] <- "C"
 levels(InvitroCelldiams$treatment)[levels(InvitroCelldiams$treatment)=="DU"] <- "B"
 InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment, 
-                                      levels = condsVDCC)
+                                      levels = condsVDCB)
 InvitroCelldiamsCVD <-InvitroCelldiams[InvitroCelldiams$treatment %in% condsVDC , ]
 InvitroCelldiams$Treatment <- factor(InvitroCelldiams$treatment, 
-                                 levels = condsVDCC)
+                                 levels = condsVDCB)
 InvitroCelldiams$Treatment <- factor(InvitroCelldiams$treatment, 
                                     levels = condsVDC)
 
@@ -1187,28 +1187,29 @@ plotcelldiams <- function() {
 
 #protein synthesis and accretion in C2C12
 SynthesisInCells <- read.csv(file.path(datadir, "2014.06.30.protein.synthesis.csv"), header = TRUE)
-conditionsVDCcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM T", "1 µM Dexa\n+ 500 nM T")
 colnames(SynthesisInCells)[colnames(SynthesisInCells)=="Condition"] = "treatment"
-
-for (i in levels(synth$treatment)) {
-  synth$normalizedgramsprotpersqcm[synth$treatment == as.character(i)]  <- 
-    synth$normalizedgramsprotpersqcm[synth$treatment == as.character(i)] / 
-    mean(synth$cell_protein_density_microgram_per_cmsq[
-      (synth$TimeDays == 0 & synth$treatment == as.character(i))])
+condsVDCA <- c("V", "DD", "DDT", "DDTT") # A is combination with higher Testo than C
+conditionsVDCAcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM T", "1 µM Dexa\n+ 500 nM T")
+for (i in levels(SynthesisInCells$treatment)) {
+  SynthesisInCells$normalizedgramsprotpersqcm[SynthesisInCells$treatment == as.character(i)]  <- 
+    SynthesisInCells$normalizedgramsprotpersqcm[SynthesisInCells$treatment == as.character(i)] / 
+    mean(SynthesisInCells$cell_protein_density_microgram_per_cmsq[
+      (SynthesisInCells$TimeDays == 0 & SynthesisInCells$treatment == as.character(i))])
 }
 
+SynthesisInCellsVDCA <- SynthesisInCells[(synth$treatment %in% condsVDCA), ]
+
 plottotalprotein <- function(){
-  briefdataset <- synth[condi]
   return(grid.arrange(
-    ggplot(completecasesdataset) + 
-      aes_string(x = colnames(completecasesdataset)[2],
-                 y = colnames(completecasesdataset)[3],
-                 group = colnames(completecasesdataset)[1]) +
+    ggplot(SynthesisInCellsVDCB) + 
+      aes_string(x = "TimeDays",
+                 y = "cell_protein_density_microgram_per_cmsq",
+                 group = "treatment") +
       stat_summary(geom = "point",
                    size = 3,
                    fun.y = truemean,
                    position = position_dodge(.05),
-                   aes_string(shape = colnames(completecasesdataset)[1])) +
+                   aes_string(shape = "treatment")) +
       stat_summary(geom = "line", 
                    size = .5, 
                    fun.y = truemean, 
@@ -1219,7 +1220,7 @@ plottotalprotein <- function(){
                    fun.y = statstringyunderbar, 
                    hjust = -.2,
                    vjust = .25,
-                   label = statsstring) + 
+                   label = "statsstring") + 
       stat_summary(geom = 'errorbar',
                    fun.data = 'semInterval',
                    width = 0.2,
@@ -1227,7 +1228,6 @@ plottotalprotein <- function(){
                    position=position_dodge(.05)) +
       coord_cartesian(ylim = ylimit) + 
       ylab(ylabel) +
-      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
-      stdplottimecourse
-  )
+      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCBcells, guide = FALSE) +
+      stdplottimecourse)
 }
