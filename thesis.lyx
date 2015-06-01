@@ -18381,7 +18381,7 @@ status open
 \begin_layout Plain Layout
 
 sig3( data.frame(TukeyHSD(x=aov(mean ~ treatment, data = InvitroCelldiamsCVD),
- 'treatment', conf.level=0.95)$treatment)[["C-DT", "p.adj"]] )
+ 'treatment', conf.level=0.95)$treatment)[["DT-D", "p.adj"]] )
 \end_layout
 
 \end_inset
@@ -18629,7 +18629,7 @@ reference "fig:protein-mass-cells"
 
 \end_inset
 
-, top).
+, top), or when data is analyzed only across days 1-3.
  In the first two days, there were no relevant changes in total protein
  content in cells treated with vehicle.
  Total protein concentration was 
@@ -18668,7 +18668,18 @@ onInCellsV$TimeDays == "2")]))
 
 \end_inset
 
- ug/cm2 in the third.
+ ug/cm2 in the third (ANOVA p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(pvaluesTreatmentAndDateVonlyOneToThree[[1]])
+\end_layout
+
+\end_inset
+
+).
  In contrast, Dexa-treated cells lost protein, sliding from (
 \begin_inset Flex S/R expression
 status open
@@ -19019,7 +19030,8 @@ name "fig:protein-synthesis-cells"
 \end_layout
 
 \begin_layout Standard
-Data has been analyzed as amounts of tracer take into protein in each well
+Data has been analyzed as the amount of protein-bound intracellular tracer,
+ normalized to the mass of cell protein, thus obtaining specific activity
  (Fig.
  
 \begin_inset CommandInset ref
@@ -19028,9 +19040,8 @@ reference "fig:protein-synthesis-cells"
 
 \end_inset
 
-, middle).
- Alternatively, the amount of tracer was normalized to the mass of total
- protein in that well, thus obtaining specific activity (Fig.
+, bottom).
+ When analyzed as amount of protein-bound intracellular tracer (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -19038,10 +19049,9 @@ reference "fig:protein-synthesis-cells"
 
 \end_inset
 
-, middle).
- The two approaches led to the same qualitative observations with regards
- to rate of protein synthesis.
- First, there was significant effect of time on the rate of protein synthesis
+, middle), without normalization, the same qualitative observations could
+ be made.
+ There was a significant effect of time on the rate of protein synthesis
  (ANOVA treatment x time, p = 
 \begin_inset Flex S/R expression
 status open
@@ -19058,8 +19068,8 @@ sig3(pvaluesTreatmentAndDateActivityPerWell[[1]])
  4.
  This trend adds to the notion that C2C12 fully differentiated myotubes
  quickly lose their viability.
- Second, when all the samples were analyzed together, treatment had no significa
-nt effect (ANOVA treatment x time, p = 
+ When all the samples were analyzed together, treatment had no significant
+ effect (ANOVA treatment x time, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -19093,7 +19103,10 @@ _cell_protein) )
 \end_inset
 
 %.
- Within the limits of this model, protein synthesis changes do not appear
+\end_layout
+
+\begin_layout Standard
+Within the limits of this model, protein synthesis changes do not appear
  to mediate Dexa-induced loss of protein, nor its alleviation by Testo.
 \end_layout
 
@@ -19119,7 +19132,7 @@ reference "fig:protein-degradation-cells"
  The media with new steroids was refreshed every 24 hours.
  The tracer was added three days before the addition of steroids, and was
  maintained in the media until 6 hours before lysis.
- As explained earlier, the rate of incorporation of tracer slows down beofre
+ As explained earlier, the rate of incorporation of tracer slows down before
  the first 24 hours, and therefore it may be assumed that, with some approximati
 on, the proportion of tracer to tracee is approximately equal between culture
  medium and the pool of rapid-turnover intracellular protein.
