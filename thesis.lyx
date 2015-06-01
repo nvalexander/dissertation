@@ -18346,7 +18346,7 @@ lldiams$mean[InvitroCelldiams$treatment=="V"]))
 \end_inset
 
 % in diameter (Tukey's HSD, p = 
-\begin_inset Flex Chunk
+\begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
@@ -18361,7 +18361,7 @@ sig3( data.frame(TukeyHSD(x=aov(mean ~ treatment, data = InvitroCelldiamsCVD),
  Co-administration of 300 nM Testo re-established basal diameters (Tukey's
  HSD vs.
  Dexa alone, p = 
-\begin_inset Flex Chunk
+\begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
