@@ -330,7 +330,7 @@ plotthreetimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
     stdplottimecourse)  
 }
 
-plotfourtimecourses -> function(skinnydataset, ylimit, ylabel, statsstring){
+plotfourtimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
   # This function expects a dataframe with three columns
   # - first column designates the treatments
   # - second column describes the time at which it was measured
@@ -364,7 +364,7 @@ plotfourtimecourses -> function(skinnydataset, ylimit, ylabel, statsstring){
                         width = 0.2,
                         show_guide = FALSE,
                         position=position_dodge(.1)) +
-           coord_cartesian(ylim = ylimits) + 
+           coord_cartesian(ylim = ylimit) + 
            ylab(ylabel) +
            scale_x_continuous(labels = c("1", "2", "3", "4")) +
            xlab("day") +
@@ -1253,69 +1253,24 @@ plottotalprotein <- function(){
   unnormalizeddata <- DegradationInCellsVDCA[, colnames(DegradationInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq")]
   normalizeddata <- DegradationInCellsVDCA[, colnames(DegradationInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq_normalized_to_first_day")]
   return(grid.arrange(
-    ggplot(unnormalizeddata) + 
-      aes_string(x = colnames(unnormalizeddata)[2],
-                 y = colnames(unnormalizeddata)[3],
-                 group = colnames(unnormalizeddata)[1]) +
-      stat_summary(geom = "point",
-                   size = 3,
-                   fun.y = truemean,
-                   position = position_dodge(.1),
-                   aes_string(shape = "treatment", show_guide = FALSE)) +
-      stat_summary(geom = "line", 
-                   size = .5, 
-                   fun.y = truemean, 
-                   position = position_dodge(.1), show_guide = FALSE) + 
-      #     stat_summary(geom = "text", 
-      #                  size = textSize * .4,
-      #                  aes(family = "serif"),
-      #                  fun.y = statstringyunderbar, 
-      #                  hjust = -.2,
-      #                  vjust = .25,
-      #                  label = statsstring) + 
-      stat_summary(geom = 'errorbar',
-                   fun.data = 'semInterval',
-                   width = 0.2,
-                   show_guide = FALSE,
-                   position=position_dodge(.1)) +
-      coord_cartesian(ylim = c(65, 90)) + 
-      ylab("total protein density\n(ug per cm.sq.)") +
-      scale_x_continuous(labels = c("1", "2", "3", "4")) +
-      xlab("day") +
+    plotfourtimecourses(unnormalizeddata,  
+                        c(65, 90), 
+                        "total protein density\n(ug per cm.sq.)",
+                        c("", "", "", "",
+                          "", "", "", "",
+                          "", "", "", "",
+                          "", "", "", "") ) + 
       scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
-      stdplottimecourse +
       theme(legend.position = c(0, 0), legend.justification = c(0, 0), legend.direction = "horizontal"),
-    ggplot(normalizeddata) + 
-      aes_string(x = colnames(normalizeddata)[2],
-                 y = colnames(normalizeddata)[3],
-                 group = colnames(normalizeddata)[1]) +
-      stat_summary(geom = "point",
-                   size = 3,
-                   fun.y = truemean,
-                   position = position_dodge(.1),
-                   aes_string(shape = "treatment", show_guide = TRUE)) +
-      stat_summary(geom = "line", 
-                   size = .5, 
-                   fun.y = truemean, 
-                   position = position_dodge(.1)) + 
-      #     stat_summary(geom = "text", 
-      #                  size = textSize * .4,
-      #                  aes(family = "serif"),
-      #                  fun.y = statstringyunderbar, 
-      #                  hjust = -.2,
-      #                  vjust = .25,
-      #                  label = statsstring) + 
-      stat_summary(geom = 'errorbar',
-                   fun.data = 'semInterval',
-                   width = 0.2,
-                   show_guide = FALSE,
-                   position=position_dodge(.1)) +
-      coord_cartesian(ylim = c(0.83, 1.13)) + 
-      ylab("total protein density\n(normalized to initial time point)") + 
-      scale_x_continuous(labels = c("1", "2", "3", "4")) +
-      xlab("day") +
+    plotfourtimecourses(normalizeddata,  
+                        c(0.83, 1.13), 
+                        "total protein density\n(normalized to initial time point)",
+                        c("", "", "", "",
+                          "", "", "", "",
+                          "", "", "", "",
+                          "", "", "", "")) +
       scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, guide = "none") +
-      stdplottimecourse,
+      scale_y_continuous(breaks = ((18:22*.05)), labels = percent),
     ncol=1))
 }
 
