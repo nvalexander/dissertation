@@ -330,6 +330,47 @@ plotthreetimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
     stdplottimecourse)  
 }
 
+plotfourtimecourses -> function(skinnydataset, ylimit, ylabel, statsstring){
+  # This function expects a dataframe with three columns
+  # - first column designates the treatments
+  # - second column describes the time at which it was measured
+  # - the name of the second column will become X axis label
+  # - third column describes the actual numbers to plot.
+  # statsstring can be a long vector of strings, showing: 
+  # time1treatment1, time1treatment2, time1treatemnt3, time2treatement1 etc.
+  completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
+  return(ggplot(completecasesdataset) + 
+           aes_string(x = colnames(completecasesdataset)[2],
+                      y = colnames(completecasesdataset)[3],
+                      group = colnames(completecasesdataset)[1]) +
+           stat_summary(geom = "point",
+                        size = 3,
+                        fun.y = truemean,
+                        position = position_dodge(.1),
+                        aes_string(shape = "treatment", show_guide = FALSE)) +
+           stat_summary(geom = "line", 
+                        size = .5, 
+                        fun.y = truemean, 
+                        position = position_dodge(.1), show_guide = FALSE) + 
+           #     stat_summary(geom = "text", 
+           #                  size = textSize * .4,
+           #                  aes(family = "serif"),
+           #                  fun.y = statstringyunderbar, 
+           #                  hjust = -.2,
+           #                  vjust = .25,
+           #                  label = statsstring) + 
+           stat_summary(geom = 'errorbar',
+                        fun.data = 'semInterval',
+                        width = 0.2,
+                        show_guide = FALSE,
+                        position=position_dodge(.1)) +
+           coord_cartesian(ylim = ylimits) + 
+           ylab(ylabel) +
+           scale_x_continuous(labels = c("1", "2", "3", "4")) +
+           xlab("day") +
+           scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
+           stdplottimecourse)
+}
 
 #PMID12519877
 loadPMID12519877 <- function(datadirpath){
