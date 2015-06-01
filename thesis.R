@@ -473,7 +473,7 @@ plotbodyweightcourse <- function(){
                                           rep("", 6))
   topplot$layers[[1]]$show_guide = FALSE
   bottomleftplot$layers[[1]]$show_guide = FALSE
-  return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, ncol=2, widths = c(1.25,1) ), 
+  return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, ncol=2, widths = c(1.1,1) ), 
                        ncol=1)  )
 }
 
