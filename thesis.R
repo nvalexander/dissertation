@@ -1216,11 +1216,11 @@ plottotalprotein <- function(){
                    size = 3,
                    fun.y = truemean,
                    position = position_dodge(.1),
-                   aes_string(shape = "treatment", show_guide = TRUE)) +
+                   aes_string(shape = "treatment", show_guide = FALSE)) +
       stat_summary(geom = "line", 
                    size = .5, 
                    fun.y = truemean, 
-                   position = position_dodge(.1)) + 
+                   position = position_dodge(.1), show_guide = FALSE) + 
       #     stat_summary(geom = "text", 
       #                  size = textSize * .4,
       #                  aes(family = "serif"),
@@ -1235,8 +1235,9 @@ plottotalprotein <- function(){
                    position=position_dodge(.1)) +
       coord_cartesian(ylim = c(70, 90)) + 
       ylab("total protein density\n(ug per cm.sq.)") +
-      xlab("hours") +
-      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, show_guide = FALSE) +
+      scale_x_continuous(labels = c("1", "2", "3", "4")) +
+      xlab("day") +
+      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, guide = "none") +
       stdplottimecourse,
     ggplot(normalizeddata) + 
       aes_string(x = colnames(normalizeddata)[2],
@@ -1264,8 +1265,9 @@ plottotalprotein <- function(){
                    show_guide = FALSE,
                    position=position_dodge(.1)) +
       coord_cartesian(ylim = c(0.85, 1.13)) + 
-      ylab("total protein density\n(normalized to first day)") +
-      xlab("hours") +
+      ylab("total protein density\n(normalized to initial time point)") + 
+      scale_x_continuous(labels = c("1", "2", "3", "4")) +
+      xlab("day") +
       scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
       stdplottimecourse,
     ncol=2, 
