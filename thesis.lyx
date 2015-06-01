@@ -18972,7 +18972,7 @@ status open
 
 \end_inset
 
-are more salient 
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -18994,16 +18994,64 @@ name "fig:protein-synthesis-cells"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+Data has been analyzed as amounts of tracer take into protein in each well
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:protein-synthesis-cells"
+
+\end_inset
+
+, middle).
+ Alternatively, the amount of tracer was normalized to the mass of total
+ protein in that well, thus obtaining specific activity (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:protein-synthesis-cells"
+
+\end_inset
+
+, middle).
+ The two approaches led to the same qualitative observations with regards
+ to rate of protein synthesis.
+ First, there was significant effect of time on the rate of protein synthesis
+ (ANOVA treatment x time, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(pvaluesTreatmentAndDateActivityPerWell[[1]])
+\end_layout
+
+\end_inset
+
+ for time variable).
+ The time variable was significant due to a downward trend form days 2 through
+ 4.
+ This trend adds to the notion that C2C12 fully differentiated myotubes
+ quickly lose their viability.
+ Second, when all the samples were analyzed together, treatment had no significa
+nt effect (ANOVA treatment x time, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(pvaluesTreatmentAndDateActivityPerWell[[2]])
+\end_layout
+
+\end_inset
+
+ for treatment variable).
 \begin_inset Newpage pagebreak
 \end_inset
 
