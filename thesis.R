@@ -1289,21 +1289,23 @@ plotproteinsynthesis <- function() {
   normalizeddata <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "femtomol_radio_Phe_per_g_cell_protein")]
   return(grid.arrange(
     plotthreetimecourses(unnormalizeddata,  
-                        c(0, 1600), 
+                        c(1100, 1600), 
                         "activity in cell protein\nextract (pCi/well)",
                         c("", "", "", "",
                           "", "", "", "",
                           "", "", "", "") ) + 
       scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCsynthcells) +
       theme(legend.position = c(0, 0), legend.justification = c(0, 0), legend.direction = "horizontal") +
+      scale_x_continuous(labels = c("1", "2", "3", "4")) +
       xlab("day"),
     plotthreetimecourses(normalizeddata,  
-                        c(0, 11), 
+                        c(7, 11), 
                         "tracer enrichment in cell\nprotein (fmol/g)",
                         c("", "", "", "",
                           "", "", "", "",
                           "", "", "", "")) +
       scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCsynthcells, guide = "none")+
+      scale_x_continuous(labels = c("1", "2", "3", "4")) +
       xlab("day"),
     ncol=1))
 }

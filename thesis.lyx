@@ -18801,9 +18801,9 @@ s.
 
 \end_inset
 
-Changes in C2C12 myotube protein content following Dexa and / or Testo treatment
-s (Left) Absolute total protein density.
- (Right) The same data, after normalization to the average of the initial
+Changes in C2C12 myotube total protein content following Dexa and / or Testo
+ treatments (Top) Absolute total protein density.
+ (Bottom) The same data, after normalization to the average of the initial
  time point for each condition (n=6).
 \begin_inset CommandInset label
 LatexCommand label
@@ -18827,6 +18827,8 @@ name "fig:protein-mass-cells"
 \begin_layout Standard
 The above described trends are more salient when data is represented after
  normalization to the initial time point.
+ Overall, the changes in cell diameter and total protein content are consonant
+ with protein metabolism changes observed in vitro.
 \end_layout
 
 \begin_layout Section
@@ -18849,6 +18851,8 @@ reference "fig:protein-synthesis-cells"
 \end_inset
 
 , top).
+ In each case, cells were differentiated over seven days, then treated with
+ (A) vehicle, (B) 1 uM Dexa, or (C) 1 uM Dexa and 500 nM Testo.
 \end_layout
 
 \begin_layout Standard
