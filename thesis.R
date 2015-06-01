@@ -21,49 +21,69 @@ options(bitmapType="cairo")
 codedirpath <- dirname(
   tryCatch(normalizePath(parent.frame(2)$ofile),  # works when using source
            error=function(e) # works when using R CMD
-             normalizePath(unlist(strsplit(commandArgs()[grep('^--file=',
-                                                              commandArgs())], '='))[2]))
+             normalizePath(unlist(strsplit(commandArgs()[
+               grep('^--file=', commandArgs())], '='))[2]))
 )
 codedirpath <- "/media/dump/writingswork/draftthesis"
 datadir <- normalizePath(file.path(codedirpath, "data"))
-InvivoOneday <- read.csv(file.path(datadir, "2012.12.09.1dayTD.csv"), header = TRUE)
-InvivoOnedayNicenames <- read.table(file.path(datadir, "2012.12.09.1dayTD.csv"), 
-                                    header = FALSE, 
-                                    sep = ",", 
-                                    nrows = 1, 
-                                    stringsAsFactors = FALSE)
-InvivoThreeday <- read.csv(file.path(datadir, "2012.12.12.3daysTD.csv"), header = TRUE)
-InvivoThreedayNicenames <- read.table(file.path(datadir, "2012.12.12.3daysTD.csv"), 
-                                      header = FALSE, 
-                                      sep = ",", 
-                                      nrows = 1, 
-                                      stringsAsFactors = FALSE)
-InvivoSevenday <- read.csv(file.path(datadir, "2012.08.23.7daysTD.csv"), header = TRUE)
-InvivoSevendayNicenames <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv"), 
-                                      header = FALSE, 
-                                      sep = ",", 
-                                      nrows = 1, 
-                                      stringsAsFactors = FALSE)
-InvitroCelldiams <- read.csv(file.path(datadir, "2012.08.26.celldiameters.csv"), header = TRUE)
-SynthesisInCells <- read.csv(file.path(datadir, "2014.06.30.protein.synthesis.csv"), header = TRUE)
+InvivoOneday <- read.csv(file.path(
+  datadir, "2012.12.09.1dayTD.csv"), 
+  header = TRUE)
+InvivoOnedayNicenames <- read.table(
+  file.path(datadir, "2012.12.09.1dayTD.csv"), 
+  header = FALSE,  sep = ",", 
+  nrows = 1, 
+  stringsAsFactors = FALSE)
+InvivoThreeday <- read.csv(
+  file.path(datadir, "2012.12.12.3daysTD.csv"), 
+  header = TRUE)
+InvivoThreedayNicenames <- read.table(
+  file.path(datadir, "2012.12.12.3daysTD.csv"), 
+  header = FALSE, 
+  sep = ",", 
+  nrows = 1, 
+  stringsAsFactors = FALSE)
+InvivoSevenday <- read.csv(
+  file.path(datadir, "2012.08.23.7daysTD.csv"), 
+  header = TRUE)
+InvivoSevendayNicenames <- read.table(
+  file.path(datadir, "2012.08.23.7daysTD.csv"), 
+  header = FALSE, 
+  sep = ",", 
+  nrows = 1, 
+  stringsAsFactors = FALSE)
+InvitroCelldiams <- read.csv(
+  file.path(datadir, "2012.08.26.celldiameters.csv"), 
+  header = TRUE)
+SynthesisInCells <- read.csv(
+  file.path(datadir, "2014.06.30.protein.synthesis.csv"), 
+  header = TRUE)
 colnames(SynthesisInCells)[colnames(SynthesisInCells)=="Condition"] = "treatment"
 SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day <- NA
 SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_vehicle <- NA
-DegradationInCells <- read.csv(file.path(datadir, "2014.06.30.protein.degradation.csv"), header = TRUE)
+DegradationInCells <- read.csv(
+  file.path(datadir, "2014.06.30.protein.degradation.csv"), 
+  header = TRUE)
 colnames(DegradationInCells)[colnames(DegradationInCells)=="Condition"] = "treatment"
 
 #column additions
 for (i in levels(SynthesisInCells$treatment)) {
-  SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day[SynthesisInCells$treatment == as.character(i)]  <- 
-    SynthesisInCells$cell_protein_density_microgram_per_cmsq[SynthesisInCells$treatment == as.character(i)] / 
+  SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day[
+    SynthesisInCells$treatment == as.character(i)]  <- 
+    SynthesisInCells$cell_protein_density_microgram_per_cmsq[
+      SynthesisInCells$treatment == as.character(i)] / 
     mean(SynthesisInCells$cell_protein_density_microgram_per_cmsq[
-      (SynthesisInCells$TimeDays == 0 & SynthesisInCells$treatment == as.character(i))])
+      (SynthesisInCells$TimeDays == 0 & 
+         SynthesisInCells$treatment == as.character(i))])
 }
 for (i in 0:3) {
-  SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_vehicle[SynthesisInCells$TimeDays == as.character(i)]  <- 
-    SynthesisInCells$cell_protein_density_microgram_per_cmsq[SynthesisInCells$TimeDays == as.character(i)] / 
+  SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_vehicle[
+    SynthesisInCells$TimeDays == as.character(i)]  <- 
+    SynthesisInCells$cell_protein_density_microgram_per_cmsq[
+      SynthesisInCells$TimeDays == as.character(i)] / 
     mean(SynthesisInCells$cell_protein_density_microgram_per_cmsq[
-      (SynthesisInCells$TimeDays == as.character(i) & SynthesisInCells$treatment == "V")])
+      (SynthesisInCells$TimeDays == as.character(i) & 
+         SynthesisInCells$treatment == "V")])
 }
 
 #renaming of conditions
@@ -80,13 +100,17 @@ levels(InvivoThreeday$treatment)[levels(InvivoThreeday$treatment)=="U"] <- "T"
 condsVDC <- c("V", "D", "C")
 condsVDTC <- c("V", "D", "T", "C")
 condsVDCdiameters <- c("V", "D", "DT")
-condsVDCmetabolism <- c("V", "DD", "DDTT")
 condsVDCBdiameters <- c("V", "D", "DT", "DU") # DU is higher testosterone in cell diameter
-condsVDCAmetabolism <- c("V", "DD", "DDT", "DDTT") 
+condsVDCmetabolism <- c("V", "DD", "DDTT")
+condsVDCAmetabolism <- c("V", "DD", "DDT", "DDTT")
 conditionsVDC <- c("Veh", "Dexa", "Comb")
 conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
 conditionsVDCmetabolism <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 500 nM T")
-conditionsVDCAcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM T", "1 µM Dexa\n+ 500 nM T")
+conditionsVDCAmetabolism <- c(
+  "Veh", 
+  "1 µM Dexa", 
+  "1 µM Dexa\n+ 100 nM T", 
+  "1 µM Dexa\n+ 500 nM T")
 contraststhree <- c("V vs D", "V vs DT", "D vs DT")
 contrastsfour <- c("V vs D", "V vs T", "D vs T", "V vs DT", "D vs DT", "T vs DT")
 VvsDthreeways <- match("V vs D", contraststhree)[[1]]
@@ -96,56 +120,73 @@ VvsDfourways <- match("V vs D", contrastsfour)[[1]]
 VvsTfourways <- match("V vs T", contrastsfour)[[1]]
 DvsCfourways <- match("D vs DT", contrastsfour)[[1]]
 #re-leveling
-InvivoOneday$treatment <- factor(InvivoOneday$treatment, 
-                                 levels = condsVDTC)
-InvivoThreeday$treatment <- factor(InvivoThreeday$treatment, 
-                                   levels = condsVDTC)
-InvivoSevenday$treatment <- factor(InvivoSevenday$treatment, 
-                                   levels = condsVDTC)
-InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment, 
-                                     levels = condsVDCBdiameters)
+InvivoOneday$treatment <- factor(
+  InvivoOneday$treatment,
+  levels = condsVDTC)
+InvivoThreeday$treatment <- factor(
+  InvivoThreeday$treatment,
+  levels = condsVDTC)
+InvivoSevenday$treatment <- factor(
+  InvivoSevenday$treatment,
+  levels = condsVDTC)
+InvitroCelldiams$treatment <- factor(
+  InvitroCelldiams$treatment,
+  levels = condsVDCBdiameters)
 #subsetting for convenience
 InvivoOnedayCVD <- InvivoOneday[InvivoOneday$treatment %in% condsVDC, ]
-InvivoOnedayCVD$treatment <- factor(InvivoOnedayCVD$treatment, 
-                                            levels = condsVDC)
+InvivoOnedayCVD$treatment <- factor(
+  InvivoOnedayCVD$treatment, 
+  levels = condsVDC)
 InvivoOnedayV <- InvivoOneday[InvivoOneday$treatment == "V", ]
 InvivoOnedayD <- InvivoOneday[InvivoOneday$treatment == "D", ]
 InvivoOnedayC <- InvivoOneday[InvivoOneday$treatment == "C", ]
 InvivoOnedayT <- InvivoOneday[InvivoOneday$treatment == "T", ]
 InvivoThreedayCVD <- InvivoThreeday[InvivoThreeday$treatment %in% condsVDC, ]
-InvivoThreedayCVD$treatment <- factor(InvivoThreedayCVD$treatment, 
-                                              levels = condsVDC)
+InvivoThreedayCVD$treatment <- factor(
+  InvivoThreedayCVD$treatment,
+  levels = condsVDC)
 InvivoThreedayV <- InvivoThreeday[InvivoThreeday$treatment == "V", ]
 InvivoThreedayD <- InvivoThreeday[InvivoThreeday$treatment == "D", ]
 InvivoThreedayC <- InvivoThreeday[InvivoThreeday$treatment == "C", ]
 InvivoThreedayT <- InvivoThreeday[InvivoThreeday$treatment == "T", ]
 InvivoSevendayCVD <- InvivoSevenday[InvivoSevenday$treatment %in% condsVDC, ]
-InvivoSevendayCVD$treatment <- factor(InvivoSevendayCVD$treatment, 
-                                      levels = condsVDC)
+InvivoSevendayCVD$treatment <- factor(
+  InvivoSevendayCVD$treatment,
+  levels = condsVDC)
 InvivoSevendayV <- InvivoSevenday[InvivoSevenday$treatment == "V", ]
 InvivoSevendayD <- InvivoSevenday[InvivoSevenday$treatment == "D", ]
 InvivoSevendayC <- InvivoSevenday[InvivoSevenday$treatment == "C", ]
 InvivoSevendayT <- InvivoSevenday[InvivoSevenday$treatment == "T", ]
-InvitroCelldiamsCVD <-InvitroCelldiams[InvitroCelldiams$treatment %in% condsVDCdiameters , ]
-InvitroCelldiamsCVD$treatment <- factor(InvitroCelldiamsCVD$treatment, 
-                                     levels = condsVDCdiameters)
-SynthesisInCellsVDC <- SynthesisInCells[(SynthesisInCells$treatment %in% condsVDCmetabolism), ]
-SynthesisInCellsVDC$treatment <- factor(SynthesisInCellsVDC$treatment, 
-                                        levels = condsVDCmetabolism)
-SynthesisInCellsVDCA <- SynthesisInCells[(SynthesisInCells$treatment %in% condsVDCAmetabolism), ]
-SynthesisInCellsVDCA$treatment <- factor(SynthesisInCellsVDCA$treatment, 
-                                           levels = condsVDCAmetabolism)
+InvitroCelldiamsCVD <-InvitroCelldiams[
+  InvitroCelldiams$treatment %in% condsVDCdiameters , ]
+InvitroCelldiamsCVD$treatment <- factor(
+  InvitroCelldiamsCVD$treatment,
+  levels = condsVDCdiameters)
+SynthesisInCellsVDC <- SynthesisInCells[(
+  SynthesisInCells$treatment %in% condsVDCmetabolism), ]
+SynthesisInCellsVDC$treatment <- factor(
+  SynthesisInCellsVDC$treatment, 
+  levels = condsVDCmetabolism)
+SynthesisInCellsVDCA <- SynthesisInCells[(
+  SynthesisInCells$treatment %in% condsVDCAmetabolism), ]
+SynthesisInCellsVDCA$treatment <- factor(
+  SynthesisInCellsVDCA$treatment,
+  levels = condsVDCAmetabolism)
 SynthesisInCellsV <- SynthesisInCells[(SynthesisInCells$treatment == "V"), ]
 SynthesisInCellsD <- SynthesisInCells[(SynthesisInCells$treatment == "DD"), ]
 SynthesisInCellsC <- SynthesisInCells[(SynthesisInCells$treatment == "DDT"), ]
 SynthesisInCellsA <- SynthesisInCells[(SynthesisInCells$treatment == "DDTT"), ]
 SynthesisInCellsQ <- SynthesisInCells[(SynthesisInCells$treatment == "DDTTP"), ]
-DegradationInCellsVDC <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCmetabolism), ]
-DegradationInCellsVDC$treatment <- factor(DegradationInCellsVDC$treatment, 
-                                          levels = condsVDCmetabolism)
-DegradationInCellsVDCA <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCAmetabolism), ]
-DegradationInCellsVDCA$treatment <- factor(DegradationInCellsVDCA$treatment, 
-                                         levels = condsVDCAmetabolism)
+DegradationInCellsVDC <- DegradationInCells[(
+  DegradationInCells$treatment %in% condsVDCmetabolism), ]
+DegradationInCellsVDC$treatment <- factor(
+  DegradationInCellsVDC$treatment,
+  levels = condsVDCmetabolism)
+DegradationInCellsVDCA <- DegradationInCells[(
+  DegradationInCells$treatment %in% condsVDCAmetabolism), ]
+DegradationInCellsVDCA$treatment <- factor(
+  DegradationInCellsVDCA$treatment, 
+  levels = condsVDCAmetabolism)
 DegradationInCellsV <- DegradationInCells[(DegradationInCells$treatment == "V"), ]
 DegradationInCellsD <- DegradationInCells[(DegradationInCells$treatment == "DD"), ]
 DegradationInCellsC <- DegradationInCells[(DegradationInCells$treatment == "DDT"), ]
@@ -1234,17 +1275,35 @@ plotIgf <- function(){
 
 plotredd <- function(){
   return(grid.arrange(
-    threegeneplot(rescaledtovehicleaszero(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,7.5), c("a", "b", "b"))+ 
+    threegeneplot(
+      rescaledtovehicleaszero(
+        InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% 
+                          c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), 
+      "gastrocnemius Ddit4 mRNA", 
+      c(-.9,7.5), 
+      c("a", "b", "b")) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC) +
       annotationastitle("one day", 2, 7.5),
-    threegeneplot(rescaledtovehicleaszero(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,7.5),c("a", "a,b", "b"))+ 
+    threegeneplot(
+      rescaledtovehicleaszero(
+        InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% 
+                            c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]),
+      "gastrocnemius Ddit4 mRNA", 
+      c(-.9,7.5),
+      c("a", "a,b", "b")) + 
       theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDC)+
+      scale_x_discrete(labels = conditionsVDC) +
       annotationastitle("three days", 2, 7.5),
-    threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,7.5),threeemptystrings) + 
+    threegeneplot(
+      rescaledtovehicleaszero(
+        InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% 
+                            c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]),
+      "gastrocnemius Ddit4 mRNA", 
+      c(-.9,7.5),
+      threeemptystrings) + 
       theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDC)+
+      scale_x_discrete(labels = conditionsVDC) +
       annotationastitle("seven days", 2, 7.5),
     ncol = 3))
 }
@@ -1252,88 +1311,168 @@ plotredd <- function(){
 # In vitro cell diameters
 plotcelldiams <- function() {
   return(threecolumnplot(rescaledtovehicleasunity(
-      InvitroCelldiamsCVD[, colnames(InvitroCelldiamsCVD) %in% c("treatment", "mean")]), 
-    "mean diameter", 
-    c(0, 1.2), 
-    c("a", "b", "a")) + 
-           theme(axis.text.x = element_text(color = "black")) + 
-           scale_x_discrete(labels = conditionsVDC))
+      InvitroCelldiamsCVD[, colnames(InvitroCelldiamsCVD) %in% 
+                            c("treatment", "mean")]), 
+      "mean diameter", 
+      c(0, 1.2), 
+      c("a", "b", "a")) + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC))
 }
 
 #protein synthesis and accretion in C2C12
 plottotalprotein <- function(){
-  unnormalizeddata <- SynthesisInCellsVDCA[, colnames(SynthesisInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq")]
-  normalizeddata <- SynthesisInCellsVDCA[, colnames(SynthesisInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq_normalized_to_first_day")]
+  unnormalizeddata <- 
+    SynthesisInCellsVDCA[, 
+                         colnames(SynthesisInCellsVDCA) %in% c(
+                           "treatment", 
+                           "TimeDays", 
+                           "cell_protein_density_microgram_per_cmsq")]
+  normalizeddata <- 
+    SynthesisInCellsVDCA[, 
+                         colnames(SynthesisInCellsVDCA) %in% c(
+                           "treatment", 
+                           "TimeDays", 
+                           "cell_protein_density_microgram_per_cmsq_normalized_to_first_day")]
   return(grid.arrange(
-    plotfourtimecourses(unnormalizeddata,  
-                        c(65, 90), 
-                        "total protein density\n(µg / cm2)",
-                        conditionsVDCAcells,
-                        c("", "", "", "",
-                          "", "", "", "",
-                          "", "", "", "",
-                          "", "", "", "") ) + 
-      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
-      theme(legend.position = c(0, 0), legend.justification = c(0, 0), legend.direction = "horizontal"),
-    plotfourtimecourses(normalizeddata,  
-                        c(0.83, 1.13), 
-                        "total protein density\n(normalized to initial time point)",
-                        conditionsVDCAcells,
-                        c("", "", "", "",
-                          "", "", "", "",
-                          "", "", "", "",
-                          "", "", "", "")) +
-      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, guide = "none") +
+    plotfourtimecourses(
+      unnormalizeddata,  
+      c(65, 90), 
+      "total protein density\n(µg / cm2)",
+      conditionsVDCAcells,
+      c("", "", "", "",
+        "", "", "", "",
+        "", "", "", "",
+        "", "", "", "") ) + 
+      scale_shape_manual(
+        values = c(16, 4, 1, 13), 
+        labels = conditionsVDCAcells) +
+      theme(
+        legend.position = c(0, 0), 
+        legend.justification = c(0, 0), 
+        legend.direction = "horizontal"),
+    plotfourtimecourses(
+      normalizeddata,  
+      c(0.83, 1.13), 
+      "total protein density\n(normalized to initial time point)",
+      conditionsVDCAcells,
+      c("", "", "", "",
+        "", "", "", "",
+        "", "", "", "",
+        "", "", "", "")) +
+      scale_shape_manual(
+        values = c(16, 4, 1, 13), 
+        labels = conditionsVDCAcells, 
+        guide = "none") +
       scale_y_continuous(breaks = ((18:22*.05)), labels = percent),
     ncol=1))
 }
 
-anovaProteinDensityTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
-anovaProteinDensityTreatmentAndDateVonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsV[SynthesisInCellsV$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-anovaProteinDensityTreatmentAndDateDonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsD[SynthesisInCellsD$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-anovaProteinDensityTreatmentAndDateConlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsC[SynthesisInCellsC$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-anovaProteinDensityTreatmentAndDateAonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsA[SynthesisInCellsA$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-anovaProteinDensityTreatmentAndDateNormalizedToFirst <- summary(aov( cell_protein_density_microgram_per_cmsq_normalized_to_first_day ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDate <- 
+  summary(
+    aov( 
+      cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, 
+      data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDateVonlyOneToThree <- 
+  summary(
+    aov( 
+      cell_protein_density_microgram_per_cmsq ~ TimeDays, 
+      data = SynthesisInCellsV[SynthesisInCellsV$TimeDays != "3", ]))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDateDonlyOneToThree <-
+  summary(
+    aov(
+      cell_protein_density_microgram_per_cmsq ~ TimeDays, 
+      data = SynthesisInCellsD[SynthesisInCellsD$TimeDays != "3", ]))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDateConlyOneToThree <- 
+  summary(
+    aov( 
+      cell_protein_density_microgram_per_cmsq ~ TimeDays, 
+      data = SynthesisInCellsC[SynthesisInCellsC$TimeDays != "3", ]))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDateAonlyOneToThree <-
+  summary(
+    aov(
+      cell_protein_density_microgram_per_cmsq ~ TimeDays,
+      data = SynthesisInCellsA[SynthesisInCellsA$TimeDays != "3", ]))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDateNormalizedToFirst <- 
+  summary(
+    aov(
+      cell_protein_density_microgram_per_cmsq_normalized_to_first_day ~ TimeDays + treatment, 
+      data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
 
-anovaSynthesisTreatmentAndDateActivityPerWell <- summary(aov( activity_in_cell_protein_extract_picoCi ~ TimeDays + treatment, data = SynthesisInCellsVDC))[[1]]$`Pr(>F)`
+anovaSynthesisTreatmentAndDateActivityPerWell <- 
+  summary(
+    aov(
+      activity_in_cell_protein_extract_picoCi ~ TimeDays + treatment, 
+      data = SynthesisInCellsVDC))[[1]]$`Pr(>F)`
 
 plotproteinsynthesis <- function() {
-  unnormalizeddata <- SynthesisInCellsVDC[, colnames(SynthesisInCellsVDC) %in% c("treatment", "TimeDays", "activity_in_cell_protein_extract_picoCi")]
-  normalizeddata <- SynthesisInCellsVDC[, colnames(SynthesisInCellsVDC) %in% c("treatment", "TimeDays", "femtomol_radio_Phe_per_g_cell_protein")]
+  unnormalizeddata <- 
+    SynthesisInCellsVDC[, 
+                        colnames(SynthesisInCellsVDC) %in% c(
+                          "treatment", 
+                          "TimeDays", 
+                          "activity_in_cell_protein_extract_picoCi")]
+  normalizeddata <- SynthesisInCellsVDC[, 
+                                        colnames(SynthesisInCellsVDC) %in% c(
+                                          "treatment", 
+                                          "TimeDays", 
+                                          "femtomol_radio_Phe_per_g_cell_protein")]
   return(grid.arrange(
-    plotthreetimecourses(unnormalizeddata,  
-                        c(1100, 1600), 
-                        "activity in cell protein\nextract (pCi/well)",
-                        c("", "", "", "",
-                          "", "", "", "",
-                          "", "", "", "") ) + 
-      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCmetabolism) +
-      theme(legend.position = c(0, 0), legend.justification = c(0, 0), legend.direction = "horizontal") +
+    plotthreetimecourses(
+      unnormalizeddata,  
+      c(1100, 1600), 
+      "activity in cell protein\nextract (pCi/well)",
+      c("", "", "", "",
+        "", "", "", "",
+        "", "", "", "") ) + 
+      scale_shape_manual(
+        values = c(16, 4, 1), 
+        labels = conditionsVDCmetabolism) +
+      theme(legend.position = c(0, 0), 
+            legend.justification = c(0, 0), 
+            legend.direction = "horizontal") +
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
       xlab("day"),
-    plotthreetimecourses(normalizeddata,  
-                        c(7, 11), 
-                        "tracer enrichment in cell\nprotein (fmol/g)",
-                        c("", "", "", "",
-                          "", "", "", "",
-                          "", "", "", "")) +
-      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCmetabolism, guide = "none")+
+    plotthreetimecourses(
+      normalizeddata,  
+      c(7, 11), 
+      "tracer enrichment in cell\nprotein (fmol/g)",
+      c("", "", "", "",
+        "", "", "", "",
+        "", "", "", "")) +
+      scale_shape_manual(
+        values = c(16, 4, 1), 
+        labels = conditionsVDCmetabolism,
+        guide = "none")+
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
       xlab("day"),
     ncol=1))
 }
 
-pvaluesDegradationTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
+pvaluesDegradationTreatmentAndDate <- 
+  summary(
+    aov( 
+      cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, 
+      data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
 
 plotproteindegradation <- function(){
-   fourlevelsDT <-c("V", "DD", "DDT", "DDTT")
-   fourlevelslong <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM Testo", "1 µM Dexa\n+ 500 nM Testo")
-   degradationfourcourses <- DegradationInCells[ (DegradationInCells$treatment %in% fourlevelsDT ), colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
-   degradationfourcourses24 <- degradationfourcourses[
-     (degradationfourcourses$TimeDays == "1")  ,
-     colnames(degradationfourcourses) %in% c("treatment", "curie_ratio_protein_depleted_medium_over_cell_protein")]
-   degradationfourcourses24$treatment <- factor(degradationfourcourses24$treatment, 
-                                         levels = fourlevelsDT)
+   degradationfourcourses <- 
+     DegradationInCells[ 
+       (DegradationInCells$treatment %in% fourlevelsDT ), 
+       colnames(DegradationInCellsVDC) %in% c(
+         "treatment", 
+         "TimeDays", 
+         "curie_ratio_protein_depleted_medium_over_cell_protein")]
+   degradationfourcourses24 <- 
+     degradationfourcourses[
+       (degradationfourcourses$TimeDays == "1")  ,
+       colnames(degradationfourcourses) %in% c(
+         "treatment", 
+         "curie_ratio_protein_depleted_medium_over_cell_protein")]
+   degradationfourcourses24$treatment <- 
+     factor(
+       degradationfourcourses24$treatment, 
+       levels = fourlevelsDT)
   return(grid.arrange(
     ggplot(degradationfourcourses) + 
       aes_string(x = colnames(degradationfourcourses)[2],
