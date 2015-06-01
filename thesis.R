@@ -81,9 +81,9 @@ conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
 contraststhree <- c("V vs D", "V vs DT", "D vs DT")
 contrastsfour <- c("V vs D", "V vs T", "D vs T", "V vs DT", "D vs DT", "T vs DT")
 condsVDCA <- c("V", "DD", "DDT", "DDTT") # A is combination with higher Testo than C
-condsVDCQ <- c("V", "DD", "DDTT", "DDTTP") # Q is Dexa, Testo, and PPP
+condsVDCsynth <- c("V", "DD", "DDTT")
 conditionsVDCAcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM T", "1 µM Dexa\n+ 500 nM T")
-conditionsVDCQcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 500 nM T", "1 µM Dexa\n+ 500 nM T\n+ 50 nM PPP")
+conditionsVDCsynthcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 500 nM T")
 condsVDCB <- c("V", "D", "C", "B") # B is combination with higher Testo than C
 VvsDthreeways <- match("V vs D", contraststhree)[[1]]
 DvsCthreeways <- match("D vs DT", contraststhree)[[1]]
@@ -130,9 +130,9 @@ InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment,
 DegradationInCellsVDCA <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCA), ]
 DegradationInCellsVDCA$treatment <- factor(DegradationInCellsVDCA$treatment, 
                                            levels = condsVDCA)
-DegradationInCellsVDCQ <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCQ), ]
-DegradationInCellsVDCQ$treatment <- factor(DegradationInCellsVDCQ$treatment, 
-                                           levels = condsVDCQ)
+DegradationInCellsVDC <- DegradationInCells[(DegradationInCells$treatment %in% condsVDC), ]
+DegradationInCellsVDC$treatment <- factor(DegradationInCellsVDC$treatment, 
+                                           levels = condsVDCsynth)
 DegradationInCellsV <- DegradationInCells[(DegradationInCells$treatment == "V"), ]
 DegradationInCellsD <- DegradationInCells[(DegradationInCells$treatment == "DD"), ]
 DegradationInCellsC <- DegradationInCells[(DegradationInCells$treatment == "DDT"), ]
@@ -1289,20 +1289,20 @@ plotproteinsynthesis <- function() {
   unnormalizeddata <- DegradationInCellsVDCQ[, colnames(DegradationInCellsVDCQ) %in% c("treatment", "TimeDays", "activity_in_cell_protein_extract_picoCi")]
   normalizeddata <- DegradationInCellsVDCQ[, colnames(DegradationInCellsVDCQ) %in% c("treatment", "TimeDays", "femtomol_radio_Phe_per_g_cell_protein")]
   return(grid.arrange(
-    plotfourtimecourses(unnormalizeddata,  
+    plotthreetimecourses(unnormalizeddata,  
                         c(0, 1600), 
                         "activity in cell protein\nextract (pCi/well)",
-                        conditionsVDCAcells,
+                        conditionsVDCQcells,
                         c("", "", "", "",
                           "", "", "", "",
                           "", "", "", "",
                           "", "", "", "") ) + 
       scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
       theme(legend.position = c(0, 0), legend.justification = c(0, 0), legend.direction = "horizontal"),
-    plotfourtimecourses(normalizeddata,  
+    plotthreetimecourses(normalizeddata,  
                         c(0, 11), 
                         "tracer enrichment in cell\nprotein (fmol/g)",
-                        conditionsVDCAcells,
+                        conditionsVDCQcells,
                         c("", "", "", "",
                           "", "", "", "",
                           "", "", "", "",
