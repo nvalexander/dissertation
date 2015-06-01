@@ -18565,10 +18565,24 @@ In another experiment, I tested the ability of Testo to preserve protein
  content in C2C12 cells.
  In order to determine the time course of protein content, cells were treated
  with (A) vehicle, (B) 1 uM Dexa, (C) 1 uM Dexa and 100 nM Testo, or (D)
- 1 uM Dexa and %00 nM Testo.
+ 1 uM Dexa and 500 nM Testo.
  The choice of pharmacological treatment had a statistically significant
- effect on total protein concentration.
- 
+ effect on total protein concentration (time X treatment ANOVA, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment
+, data = DegradationInCells))[[1]]$`Pr(>F)`[[2]])
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
