@@ -18564,21 +18564,8 @@ In another experiment, I tested the ability of Testo to preserve protein
  content in C2C12 cells.
  In order to determine the time course of protein content, cells were treated
  with (A) vehicle, (B) 1 uM Dexa, (C) 1 uM Dexa and 100 nM Testo, or (D)
- 1 uM Dexa and 500 nM Testo, for up to three days, in increments of 24 hours.
- When analyzed in absolute terms, the choice of pharmacological treatment
- appeared to lack statistically significant effect on total protein concentratio
-n (time X treatment ANOVA, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3(pvaluesTreatmentAndDate[[2]])
-\end_layout
-
-\end_inset
-
-; Fig 
+ 1 uM Dexa and 500 nM Testo, for up to three days, in increments of 24 hours(Fig.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:protein-mass-cells"
@@ -18586,11 +18573,13 @@ reference "fig:protein-mass-cells"
 \end_inset
 
 , left).
- However, there was a clear trend for total protein decrease in samples
- treated with Dexa.
- Whereas total protein density in vehicle-treated cells averaged an essentially
- unchanged total protein density during the first two days of the experiment
- (
+ All the treatments led to loss of total protein starting from the third
+ day, presumably due to senesescence and / or loss of viability.
+ However, there were differences in total protein density prior to the third
+ day, which closely mimicked the in vivo findings.
+ Cells treated with vehicle did not lose significant amounts of protein
+ over the first two days.
+ Total protein concentration was 
 \begin_inset Flex S/R expression
 status open
 
@@ -18602,7 +18591,7 @@ onInCellsV$TimeDays == "0")]))
 
 \end_inset
 
- ug/cm2 in the first day; 
+ ug/cm2 in the first day, 
 \begin_inset Flex S/R expression
 status open
 
@@ -18614,7 +18603,7 @@ onInCellsV$TimeDays == "1")]))
 
 \end_inset
 
- ug/cm2 in the second; 
+ ug/cm2 in the second, and 
 \begin_inset Flex S/R expression
 status open
 
@@ -18626,7 +18615,8 @@ onInCellsV$TimeDays == "2")]))
 
 \end_inset
 
- ug/cm2 in the third), Dexa-treated cells lost protein, sliding from (
+ ug/cm2 in the third, that is, essentialy unchanged.
+ In contrast, Dexa-treated cells lost protein, sliding from (
 \begin_inset Flex S/R expression
 status open
 
@@ -18683,7 +18673,64 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(pvaluesTreatmentAndDateDonly[[1]])
+sig3(pvaluesTreatmentAndDateDonlyOneToThree[[1]])
+\end_layout
+
+\end_inset
+
+).
+ Co-administration of Testo more than compensated the effect of Dexa.
+ Rather than losing protein, cells receiving a combination of 1 uM Dexa
+ and 100 uM Testo gained 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100 * ( mean(DegradationInCellsC$cell_protein_density_microgram_per_cmsq[(D
+egradationInCellsC$TimeDays == "2")]) - mean(DegradationInCellsC$cell_protein_de
+nsity_microgram_per_cmsq[(DegradationInCellsC$TimeDays == "0")])) / mean(Degrada
+tionInCellsC$cell_protein_density_microgram_per_cmsq[(DegradationInCellsC$TimeDa
+ys == "0")]))
+\end_layout
+
+\end_inset
+
+ % total protein over the first two days of the experiment (ANOVA p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(pvaluesTreatmentAndDateConlyOneToThree[[1]])
+\end_layout
+
+\end_inset
+
+).
+ Moreover, increasing the Testo dose to 500 mM further improved protein
+ accretion, leading to a 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100 * ( mean(DegradationInCellsA$cell_protein_density_microgram_per_cmsq[(D
+egradationInCellsA$TimeDays == "2")]) - mean(DegradationInCellsA$cell_protein_de
+nsity_microgram_per_cmsq[(DegradationInCellsA$TimeDays == "0")])) / mean(Degrada
+tionInCellsA$cell_protein_density_microgram_per_cmsq[(DegradationInCellsA$TimeDa
+ys == "0")]))
+\end_layout
+
+\end_inset
+
+ % protein gain during the first two days of the experiment (ANOVA p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(pvaluesTreatmentAndDateAonlyOneToThree[[1]])
 \end_layout
 
 \end_inset
@@ -18708,7 +18755,7 @@ status open
 
 \begin_layout Plain Layout
 echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "5in", fig.width = 6, fig.height = 5,dev='cairo_pdf'
+ = "4in", fig.width = 6, fig.height = 4,dev='cairo_pdf'
 \end_layout
 
 \end_inset
