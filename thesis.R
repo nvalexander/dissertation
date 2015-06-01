@@ -1338,6 +1338,28 @@ plotproteindegradation <- function(){
       scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCmetabolism)+
       theme(legend.position = c(1,1), legend.justification = c(1, 1), legend.direction = "horizontal") +
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
-      xlab("day")))
+      xlab("day")),
+    ggplot(degradationdaytwo) +
+      aes_string( x = colnames(degradationdaytwo)[1], 
+                  y = colnames(degradationdaytwo)[2], 
+                  fill = colnames(degradationdaytwo)[1]) +
+      stat_summary(fun.y = mean, 
+                   geom = "bar", 
+                   colour = "black",
+                   show_guide = FALSE) +
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.1) +
+      stat_summary(geom = "text", 
+                   size = textSize * .4,
+                   aes(family = "Liberation Sans Narrow"),
+                   fun.y = statstringyoverbar, 
+                   hjust = .5,
+                   vjust = -.6,
+                   label = "") +
+      ylab(" medium to cell protein tracer ratio (24 hour)") +
+      coord_cartesian(ylim = c(0, 1)) + 
+      scale_fill_manual(values = c("#ffffff", "#999999", "#222222", "#777777", "#dddddd")) +
+      stdbarplot)
   
 }
