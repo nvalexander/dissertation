@@ -18560,12 +18560,11 @@ name "fig:myotube-diameters"
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing single
 In another experiment, I tested the ability of Testo to preserve protein
  content in C2C12 cells.
  In order to determine the time course of protein content, cells were treated
  with (A) vehicle, (B) 1 uM Dexa, (C) 1 uM Dexa and 100 nM Testo, or (D)
- 1 uM Dexa and 500 nM Testo.
+ 1 uM Dexa and 500 nM Testo, for up to three days, in increments of 24 hours.
  The choice of pharmacological treatment had a statistically significant
  effect on total protein concentration (time X treatment ANOVA, p = 
 \begin_inset Flex S/R expression
@@ -18580,6 +18579,69 @@ sig3(summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "5in", fig.width = 6, fig.height = 5,dev='cairo_pdf'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plotIgf()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Changes in C2C12 myotube protein content following Dexa and / or Testo treatment
+s.
+\end_layout
+
+\end_inset
+
+Changes in C2C12 myotube protein content following Dexa and / or Testo treatment
+s.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
