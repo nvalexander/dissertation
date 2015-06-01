@@ -18827,7 +18827,53 @@ name "fig:protein-mass-cells"
 \begin_layout Standard
 The above described trends are more salient when data is represented after
  normalization to the initial time point.
- 
+\end_layout
+
+\begin_layout Section
+Protein synthesis in cultured cells treated with dexamethasone and testosterone
+\end_layout
+
+\begin_layout Standard
+In preliminary experiments, I found that tracer uptake is minimal during
+ the first two hours.
+ Also, tracer uptake rate became essentially equal to the rate of tracer
+ release due to protein synthesis after the first 18 hours of labeling.
+ Therefore, I performed a series of assays where the rate of protein synthesis
+ was estimated through the rate of tracer uptake over 6 hours.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+C2C12 myotube measurement of protein synthesis rate.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
