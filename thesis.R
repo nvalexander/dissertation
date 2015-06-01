@@ -339,6 +339,7 @@ plotthreetimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
     stdplottimecourse)  
 }
 
+
 #PMID12519877
 loadPMID12519877 <- function(datadirpath){
   df1 <- read.csv(file.path(datadirpath, "PMID12519877", "proteasomeactivity.csv"), header = FALSE, colClasses = c(NA, "NULL", NA))
@@ -1213,70 +1214,12 @@ DegradationInCellsVDCA$treatment <- factor(DegradationInCellsVDCA$treatment,
                                      levels = condsVDCA)
 
 plottotalprotein <- function(){
-  return(grid.arrange(
-    ggplot(DegradationInCellsVDCA) + 
-      aes_string(x = "TimeDays",
-                 y = "cell_protein_density_microgram_per_cmsq",
-                 group = "treatment") +
-      stat_summary(geom = "point",
-                   size = 3,
-                   fun.y = truemean,
-                   position = position_dodge(.1),
-                   aes_string(shape = "treatment")) +
-      stat_summary(geom = "line", 
-                   size = .5, 
-                   fun.y = truemean, 
-                   position = position_dodge(.1)) + 
-#       stat_summary(geom = "text", 
-#                    size = textSize * .4,
-#                    aes(family = "serif"),
-#                    fun.y = statstringyunderbar, 
-#                    hjust = -.2,
-#                    vjust = .25,
-#                    label = "statsstring") + 
-      stat_summary(geom = 'errorbar',
-                   fun.data = 'semInterval',
-                   width = 0.2,
-                   show_guide = FALSE,
-                   position=position_dodge(.1)) +
-      coord_cartesian(ylim = c(71, 86)) + 
-      ylab("cell total protein\ndensity (µg/cm.sq.)") +
-      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, guide = FALSE) +
-      stdplottimecourse,
-  ggplot(DegradationInCellsVDCA) + 
-    aes_string(x = "TimeDays",
-               y = "cell_protein_density_microgram_per_cmsq_normalized_to_first_day",
-               group = "treatment") +
-    stat_summary(geom = "point",
-                 size = 3,
-                 fun.y = truemean,
-                 position = position_dodge(.1),
-                 aes_string(shape = "treatment")) +
-    stat_summary(geom = "line", 
-                 size = .5, 
-                 fun.y = truemean, 
-                 position = position_dodge(.1)) + 
-    #       stat_summary(geom = "text", 
-    #                    size = textSize * .4,
-    #                    aes(family = "serif"),
-    #                    fun.y = statstringyunderbar, 
-    #                    hjust = -.2,
-    #                    vjust = .25,
-    #                    label = "statsstring") + 
-    stat_summary(geom = 'errorbar',
-                 fun.data = 'semInterval',
-                 width = 0.2,
-                 show_guide = FALSE,
-                 position=position_dodge(.1)) +
-    coord_cartesian(ylim = c(.84, 1.11)) + 
-    ylab("cell total protein\ndensity (normalized to first day)") +
-    scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, guide = FALSE) +
-    stdplottimecourse,
-
-  ggplot(DegradationInCellsVDCA) + 
-    aes_string(x = "TimeDays",
-               y = "cell_protein_density_microgram_per_cmsq_normalized_to_vehicle",
-               group = "treatment") +
+  normalizeddata <- DegradationInCellsVDCA[, colnames(DegradationInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq_normalized_to_first_day")]
+  completecasesdataset <- normalizeddata[complete.cases(normalizeddata),]
+  return(ggplot(completecasesdataset) + 
+           aes_string(x = colnames(completecasesdataset)[2],
+                      y = colnames(completecasesdataset)[3],
+                      group = colnames(completecasesdataset)[1]) +
     stat_summary(geom = "point",
                  size = 3,
                  fun.y = truemean,
@@ -1286,21 +1229,21 @@ plottotalprotein <- function(){
                  size = .5, 
                  fun.y = truemean, 
                  position = position_dodge(.1)) + 
-    #       stat_summary(geom = "text", 
-    #                    size = textSize * .4,
-    #                    aes(family = "serif"),
-    #                    fun.y = statstringyunderbar, 
-    #                    hjust = -.2,
-    #                    vjust = .25,
-    #                    label = "statsstring") + 
+#     stat_summary(geom = "text", 
+#                  size = textSize * .4,
+#                  aes(family = "serif"),
+#                  fun.y = statstringyunderbar, 
+#                  hjust = -.2,
+#                  vjust = .25,
+#                  label = statsstring) + 
     stat_summary(geom = 'errorbar',
                  fun.data = 'semInterval',
                  width = 0.2,
                  show_guide = FALSE,
                  position=position_dodge(.1)) +
-    coord_cartesian(ylim = c(.92, 1.07)) + 
-    ylab("cell total protein\ndensity (normalized to vehicle)") +
+    coord_cartesian(ylim = c(0.85, 1.13)) + 
+    ylab("total protein density\n(normalized to first day)") +
+    xlab("hours") +
     scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
-    stdplottimecourse,
-  ncol=1))
+    stdplottimecourse)
 }
