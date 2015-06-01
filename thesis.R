@@ -1170,9 +1170,9 @@ levels(InvitroCelldiams$treatment)[levels(InvitroCelldiams$treatment)=="DU"] <- 
 InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment, 
                                       levels = condsVDCB)
 InvitroCelldiamsCVD <-InvitroCelldiams[InvitroCelldiams$treatment %in% condsVDC , ]
-InvitroCelldiams$Treatment <- factor(InvitroCelldiams$treatment, 
+InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment, 
                                  levels = condsVDCB)
-InvitroCelldiams$Treatment <- factor(InvitroCelldiams$treatment, 
+InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment, 
                                     levels = condsVDC)
 
 plotcelldiams <- function() {
@@ -1207,6 +1207,8 @@ for (i in 0:3) {
 }
 
 DegradationInCellsVDCA <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCA), ]
+DegradationInCellsVDCA$treatment <- factor(DegradationInCellsVDCA$treatment, 
+                                     levels = condsVDCA)
 
 plottotalprotein <- function(){
   return(grid.arrange(
@@ -1237,7 +1239,7 @@ plottotalprotein <- function(){
                    position=position_dodge(.1)) +
       coord_cartesian(ylim = c(71, 86)) + 
       ylab("cell total protein\ndensity (µg/cm.sq.)") +
-      scale_shape_manual(values = c(16, 4, 1, 32), labels = conditionsVDCAcells, guide = FALSE) +
+      scale_shape_manual(values = c(16, 4, 1, 10), labels = conditionsVDCAcells, guide = FALSE) +
       stdplottimecourse,
   ggplot(DegradationInCellsVDCA) + 
     aes_string(x = "TimeDays",
@@ -1266,7 +1268,7 @@ plottotalprotein <- function(){
                  position=position_dodge(.1)) +
     coord_cartesian(ylim = c(.84, 1.11)) + 
     ylab("cell total protein\ndensity (normalized to first day)") +
-    scale_shape_manual(values = c(16, 4, 1, 32), labels = conditionsVDCAcells, guide = FALSE) +
+    scale_shape_manual(values = c(16, 4, 1, 10), labels = conditionsVDCAcells, guide = FALSE) +
     stdplottimecourse,
 
 ggplot(DegradationInCellsVDCA) + 
@@ -1296,7 +1298,6 @@ ggplot(DegradationInCellsVDCA) +
                position=position_dodge(.1)) +
   coord_cartesian(ylim = c(.84, 1.11)) + 
   ylab("cell total protein\ndensity (normalized to vehicle)") +
-  scale_shape_manual(values = c(16, 4, 1, 32), labels = conditionsVDCAcells, guide = FALSE) +
-  stdplottimecourse,
+  scale_shape_manual(values = c(16, 4, 1, 10), labels = conditionsVDCAcells) ,
   ncol=1))
 }
