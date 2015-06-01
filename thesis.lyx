@@ -18329,7 +18329,7 @@ Testosterone alleviates dexamethasone-induced atrophy of cultured cells
 In mouse explanted myofibers and C2C12 cultured myotubes, muscle atrophy
  is a cell-autonomous phenomenon, with all its essential manifestations
  present in vitro.
- I hypothesized that the muscle changes observed in vivo could be replicated
+ I hypothesized that the muscle protection by Testo could be replicated
  in C2C12 cells.
  Indeed, fully differentiated C2C12 myotubes treated for 48 hours with 50
  uM Dexa lost 
@@ -18561,6 +18561,9 @@ name "fig:myotube-diameters"
 
 \begin_layout Standard
 \paragraph_spacing single
+In another experiment, I tested the ability of Testo to preserve protein
+ content in C2C12 cells.
+  
 \begin_inset Newpage pagebreak
 \end_inset
 

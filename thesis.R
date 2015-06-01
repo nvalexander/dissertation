@@ -335,7 +335,7 @@ plotthreetimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
                  position=position_dodge(.05)) +
     coord_cartesian(ylim = ylimit) + 
     ylab(ylabel) +
-    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
+    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
     stdplottimecourse)  
 }
 
@@ -471,6 +471,8 @@ plotbodyweightcourse <- function(){
                                           c(-7, 10), 
                                           "body weight gain (% of pre-treatment)", 
                                           rep("", 6))
+  topplot$layers[[1]]$show_guide = FALSE
+  bottomleftplot$layers[[1]]$show_guide = FALSE
   return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, ncol=2, widths = c(1.25,1) ), 
                        ncol=1)  )
 }
