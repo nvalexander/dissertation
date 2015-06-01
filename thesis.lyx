@@ -18638,8 +18638,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(mean(DegradationInCellsV$cell_protein_density_microgram_per_cmsq[(Degradati
-onInCellsV$TimeDays == "0")]))
+sig3(mean(SynthesisInCellsV$cell_protein_density_microgram_per_cmsq[(SynthesisIn
+CellsV$TimeDays == "0")]))
 \end_layout
 
 \end_inset
@@ -18650,8 +18650,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(mean(DegradationInCellsV$cell_protein_density_microgram_per_cmsq[(Degradati
-onInCellsV$TimeDays == "1")]))
+sig3(mean(SynthesisInCellsV$cell_protein_density_microgram_per_cmsq[(SynthesisIn
+CellsV$TimeDays == "1")]))
 \end_layout
 
 \end_inset
@@ -18662,8 +18662,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(mean(DegradationInCellsV$cell_protein_density_microgram_per_cmsq[(Degradati
-onInCellsV$TimeDays == "2")]))
+sig3(mean(SynthesisInCellsV$cell_protein_density_microgram_per_cmsq[(SynthesisIn
+CellsV$TimeDays == "2")]))
 \end_layout
 
 \end_inset
@@ -18686,8 +18686,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(mean(DegradationInCellsD$cell_protein_density_microgram_per_cmsq[(Degradati
-onInCellsD$TimeDays == "0")]))
+sig3(mean(SynthesisInCellsD$cell_protein_density_microgram_per_cmsq[(SynthesisIn
+CellsD$TimeDays == "0")]))
 \end_layout
 
 \end_inset
@@ -18698,8 +18698,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(mean(DegradationInCellsD$cell_protein_density_microgram_per_cmsq[(Degradati
-onInCellsD$TimeDays == "1")]))
+sig3(mean(SynthesisInCellsD$cell_protein_density_microgram_per_cmsq[(SynthesisIn
+CellsD$TimeDays == "1")]))
 \end_layout
 
 \end_inset
@@ -18710,8 +18710,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(mean(DegradationInCellsD$cell_protein_density_microgram_per_cmsq[(Degradati
-onInCellsD$TimeDays == "2")])) 
+sig3(mean(SynthesisInCellsD$cell_protein_density_microgram_per_cmsq[(SynthesisIn
+CellsD$TimeDays == "2")])) 
 \end_layout
 
 \end_inset
@@ -18722,11 +18722,11 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100 * ( mean(DegradationInCellsD$cell_protein_density_microgram_per_cmsq[(D
-egradationInCellsD$TimeDays == "0")]) - mean(DegradationInCellsD$cell_protein_de
-nsity_microgram_per_cmsq[(DegradationInCellsD$TimeDays == "2")])) / mean(Degrada
-tionInCellsD$cell_protein_density_microgram_per_cmsq[(DegradationInCellsD$TimeDa
-ys == "0")]))
+sig3(100 * ( mean(SynthesisInCellsD$cell_protein_density_microgram_per_cmsq[(Syn
+thesisInCellsD$TimeDays == "0")]) - mean(SynthesisInCellsD$cell_protein_density_
+microgram_per_cmsq[(SynthesisInCellsD$TimeDays == "2")])) / mean(SynthesisInCell
+sD$cell_protein_density_microgram_per_cmsq[(SynthesisInCellsD$TimeDays ==
+ "0")]))
 \end_layout
 
 \end_inset
@@ -18751,11 +18751,11 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100 * ( mean(DegradationInCellsC$cell_protein_density_microgram_per_cmsq[(D
-egradationInCellsC$TimeDays == "2")]) - mean(DegradationInCellsC$cell_protein_de
-nsity_microgram_per_cmsq[(DegradationInCellsC$TimeDays == "0")])) / mean(Degrada
-tionInCellsC$cell_protein_density_microgram_per_cmsq[(DegradationInCellsC$TimeDa
-ys == "0")]))
+sig3(100 * ( mean(SynthesisInCellsC$cell_protein_density_microgram_per_cmsq[(Syn
+thesisInCellsC$TimeDays == "2")]) - mean(SynthesisInCellsC$cell_protein_density_
+microgram_per_cmsq[(SynthesisInCellsC$TimeDays == "0")])) / mean(SynthesisInCell
+sC$cell_protein_density_microgram_per_cmsq[(SynthesisInCellsC$TimeDays ==
+ "0")]))
 \end_layout
 
 \end_inset
@@ -18779,11 +18779,11 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100 * ( mean(DegradationInCellsA$cell_protein_density_microgram_per_cmsq[(D
-egradationInCellsA$TimeDays == "2")]) - mean(DegradationInCellsA$cell_protein_de
-nsity_microgram_per_cmsq[(DegradationInCellsA$TimeDays == "0")])) / mean(Degrada
-tionInCellsA$cell_protein_density_microgram_per_cmsq[(DegradationInCellsA$TimeDa
-ys == "0")]))
+sig3(100 * ( mean(SynthesisInCellsA$cell_protein_density_microgram_per_cmsq[(Syn
+thesisInCellsA$TimeDays == "2")]) - mean(SynthesisInCellsA$cell_protein_density_
+microgram_per_cmsq[(SynthesisInCellsA$TimeDays == "0")])) / mean(SynthesisInCell
+sA$cell_protein_density_microgram_per_cmsq[(SynthesisInCellsA$TimeDays ==
+ "0")]))
 \end_layout
 
 \end_inset
@@ -19091,13 +19091,11 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 100 * ( mean(DegradationInCellsVDC[(DegradationInCellsVDC$TimeDays
- == "3" & DegradationInCellsVDC$treatment == "V"), ]$femtomol_radio_Phe_per_g_ce
-ll_protein) - mean(DegradationInCellsVDC[(DegradationInCellsVDC$TimeDays
- == "3" & DegradationInCellsVDC$treatment == "DDTT"), ]$femtomol_radio_Phe_per_g
-_cell_protein) ) / mean(DegradationInCellsVDC[(DegradationInCellsVDC$TimeDays
- == "3" & DegradationInCellsVDC$treatment == "DDTT"), ]$femtomol_radio_Phe_per_g
-_cell_protein) )
+sig3( 100 * ( mean(SynthesisInCellsV[(SynthesisInCellsV$TimeDays == "3"),
+ ]$femtomol_radio_Phe_per_g_cell_protein) - mean(SynthesisInCellsA[(SynthesisInC
+ellsA$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell_protein) ) / mean(Synthe
+sisInCellsA[(SynthesisInCellsA$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell
+_protein) )
 \end_layout
 
 \end_inset
