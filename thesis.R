@@ -1322,6 +1322,7 @@ plotproteinsynthesis <- function() {
 plotproteindegradation <- function(){
    degradationthreecourses <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
    fivelevelsDT <-c("V", "DD", "DDT", "DDTT")
+   fivelevelslong <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM Testo", "1 µM Dexa\n+ 500 nM Testo")
    degradationdaytwo <- DegradationInCells[
      (DegradationInCells$treatment %in% fivelevelsDT ) &
      (DegradationInCells$TimeDays == "1")  ,]
@@ -1360,7 +1361,9 @@ plotproteindegradation <- function(){
       ylab("medium to cell protein tracer\nratio (24 hour)") +
       coord_cartesian(ylim = c(0, 1)) + 
       scale_fill_manual(values = c("#ffffff", "#222222", "#777777", "#dddddd"),
-                        labels = c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM Testo", "1 µM Dexa\n+ 500 nM Testo")) +
-      stdbarplot,
+                        labels = fivelevelslong) +
+      stdbarplot + 
+      theme(axis.text.x = element_text(color = "black"))+ 
+      scale_x_discrete(labels = fivelevelslong),
     ncol = 1))
 }

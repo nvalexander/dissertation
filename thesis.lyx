@@ -18922,7 +18922,7 @@ use_parbox 0
 use_makebox 0
 width "6in"
 special "none"
-height "4in"
+height "3.3in"
 height_special "none"
 status open
 
@@ -18949,9 +18949,9 @@ has_inner_box 1
 inner_pos "c"
 use_parbox 0
 use_makebox 0
-width "6in"
+width "5in"
 special "none"
-height "4in"
+height "5in"
 height_special "none"
 status open
 
@@ -18961,8 +18961,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "4in", fig.width = 6, fig.height = 4>>=
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "5in", out.height
+ = "5in", fig.width = 5, fig.height = 5>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -19152,7 +19152,7 @@ use_parbox 0
 use_makebox 0
 width "6in"
 special "none"
-height "4in"
+height "3.3in"
 height_special "none"
 status open
 
@@ -19179,9 +19179,9 @@ has_inner_box 1
 inner_pos "c"
 use_parbox 0
 use_makebox 0
-width "6in"
+width "5in"
 special "none"
-height "4in"
+height "5in"
 height_special "none"
 status open
 
@@ -19191,8 +19191,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "4in", fig.width = 6, fig.height = 4>>=
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "5in", out.height
+ = "5in", fig.width = 5, fig.height = 5>>=
 \end_layout
 
 \begin_layout Plain Layout
