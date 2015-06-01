@@ -1320,9 +1320,16 @@ plotproteinsynthesis <- function() {
 }
 
 plotproteindegradation <- function(){
-  unnormalizeddata <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
+   degradationthreecourses <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
+   fivelevelsDT <-c("V", "D", "DD", "DDT", "DDDT")
+   degradationdaytwo <- DegradationInCells[
+     (DegradationInCells$treatment %in% fivelevelsDT ) &
+     (DegradationInCells$TimeDays == "2")  ,]
+   degradationdaytwo <- degradationdaytwo[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
+   degradationdaytwo$treatment <- factor(degradationdaytwo$treatment, 
+                                         levels = fivelevelsDT)
   return(grid.arrange(
-    plotthreetimecourses(unnormalizeddata,  
+    plotthreetimecourses(degradationthreecourses,  
                          c(0, 1), 
                          "medium to cell protein tracer ratio",
                          c("", "", "", "",
