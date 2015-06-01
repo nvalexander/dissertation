@@ -1190,10 +1190,10 @@ DegradationInCells <- read.csv(file.path(datadir, "2014.06.30.protein.degradatio
 colnames(DegradationInCells)[colnames(DegradationInCells)=="Condition"] = "treatment"
 condsVDCA <- c("V", "DD", "DDT", "DDTT") # A is combination with higher Testo than C
 conditionsVDCAcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM T", "1 µM Dexa\n+ 500 nM T")
-DegradationInCells$normalizedgramsprotpersqcm <- a.vector
+DegradationInCells$normalizedgramsprotpersqcm <- NA
 for (i in levels(DegradationInCells$treatment)) {
   DegradationInCells$normalizedgramsprotpersqcm[DegradationInCells$treatment == as.character(i)]  <- 
-    DegradationInCells$normalizedgramsprotpersqcm[DegradationInCells$treatment == as.character(i)] / 
+    DegradationInCells$cell_protein_density_microgram_per_cmsq[DegradationInCells$treatment == as.character(i)] / 
     mean(DegradationInCells$cell_protein_density_microgram_per_cmsq[
       (DegradationInCells$TimeDays == 0 & DegradationInCells$treatment == as.character(i))])
 }
@@ -1209,12 +1209,12 @@ plottotalprotein <- function(){
       stat_summary(geom = "point",
                    size = 3,
                    fun.y = truemean,
-                   position = position_dodge(.05),
+                   position = position_dodge(.1),
                    aes_string(shape = "treatment")) +
       stat_summary(geom = "line", 
                    size = .5, 
                    fun.y = truemean, 
-                   position = position_dodge(.05)) + 
+                   position = position_dodge(.1)) + 
 #       stat_summary(geom = "text", 
 #                    size = textSize * .4,
 #                    aes(family = "serif"),
@@ -1226,8 +1226,8 @@ plottotalprotein <- function(){
                    fun.data = 'semInterval',
                    width = 0.2,
                    show_guide = FALSE,
-                   position=position_dodge(.05)) +
-      coord_cartesian(ylim = c(0, 85)) + 
+                   position=position_dodge(.1)) +
+      coord_cartesian(ylim = c(71, 86)) + 
       ylab("cell total protein\ndensity (µg/cm.sq.)") +
       scale_shape_manual(values = c(16, 4, 1, 32), labels = conditionsVDCAcells, guide = FALSE) +
       stdplottimecourse,
@@ -1238,12 +1238,12 @@ plottotalprotein <- function(){
     stat_summary(geom = "point",
                  size = 3,
                  fun.y = truemean,
-                 position = position_dodge(.05),
+                 position = position_dodge(.1),
                  aes_string(shape = "treatment")) +
     stat_summary(geom = "line", 
                  size = .5, 
                  fun.y = truemean, 
-                 position = position_dodge(.05)) + 
+                 position = position_dodge(.1)) + 
     #       stat_summary(geom = "text", 
     #                    size = textSize * .4,
     #                    aes(family = "serif"),
@@ -1255,9 +1255,10 @@ plottotalprotein <- function(){
                  fun.data = 'semInterval',
                  width = 0.2,
                  show_guide = FALSE,
-                 position=position_dodge(.05)) +
-    coord_cartesian(ylim = c(0, 1.3)) + 
+                 position=position_dodge(.1)) +
+    coord_cartesian(ylim = c(.84, 1.11)) + 
     ylab("cell total protein\ndensity (normalized to vehicle)") +
     scale_shape_manual(values = c(16, 4, 1, 32), labels = conditionsVDCAcells, guide = FALSE) +
-    stdplottimecourse))
+    stdplottimecourse),
+  ncol=1)
 }
