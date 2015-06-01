@@ -127,7 +127,7 @@ InvivoSevendayD <- InvivoSevenday[InvivoSevenday$treatment == "D", ]
 InvivoSevendayC <- InvivoSevenday[InvivoSevenday$treatment == "C", ]
 InvivoSevendayT <- InvivoSevenday[InvivoSevenday$treatment == "T", ]
 InvitroCelldiamsCVD <-InvitroCelldiams[InvitroCelldiams$treatment %in% condsVDCdiameters , ]
-InvitroCelldiamsCVD$treatment <- factor(InvitroCelldiams$treatment, 
+InvitroCelldiamsCVD$treatment <- factor(InvitroCelldiamsCVD$treatment, 
                                      levels = condsVDCdiameters)
 SynthesisInCellsVDC <- SynthesisInCells[(SynthesisInCells$treatment %in% condsVDCmetabolism), ]
 SynthesisInCellsVDC$treatment <- factor(SynthesisInCellsVDC$treatment, 
@@ -1321,6 +1321,6 @@ plotproteinsynthesis <- function() {
 
 plotproteindegradation <- function(){
   unnormalizeddata <- SynthesisInCellsVDC[, colnames(SynthesisInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
-  return(grid.arrange())
+  return(grid.arrange(ggplot(mtcars, aes(mpg, hp)) + geom_point()))
   
 }

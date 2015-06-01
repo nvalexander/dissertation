@@ -18381,7 +18381,7 @@ status open
 \begin_layout Plain Layout
 
 sig3( data.frame(TukeyHSD(x=aov(mean ~ treatment, data = InvitroCelldiamsCVD),
- 'treatment', conf.level=0.95)$treatment)[["C-D", "p.adj"]] )
+ 'treatment', conf.level=0.95)$treatment)[["C-DT", "p.adj"]] )
 \end_layout
 
 \end_inset
@@ -19186,7 +19186,7 @@ status open
 
 \begin_layout Plain Layout
 
-	plotproteinsynthesis()
+	plotproteindegradation()
 \end_layout
 
 \begin_layout Plain Layout
@@ -19225,9 +19225,8 @@ Estimates of protein degradation rate in C2C12 myotubes treated with Dexa
 Estimates of protein degradation rate in C2C12 myotubes treated with Dexa
  and / or Testo.
  (Top) Experimental timeline.
- (Middle) Amount of tracer incorporated into protein per well.
- (Bottom) Amount of tracer incorporated into protein per gram of total protein
- (n=5-6).
+ (Middle) Ratio of trace in medium to tracer in cells (Bottom) Ratio of
+ tracer in medium to tracer in cells at day 2 (n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:protein-degradation-cells"
