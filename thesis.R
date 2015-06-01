@@ -1241,7 +1241,8 @@ plottotalprotein <- function(){
       ylab("total protein density\n(ug per cm.sq.)") +
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
       xlab("day") +
-      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, guide = "none") +
+      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
+      theme(legend.position = c(0 ,1)) +
       stdplottimecourse,
     ggplot(normalizeddata) + 
       aes_string(x = colnames(normalizeddata)[2],
@@ -1268,13 +1269,13 @@ plottotalprotein <- function(){
                    width = 0.2,
                    show_guide = FALSE,
                    position=position_dodge(.1)) +
-      coord_cartesian(ylim = c(0.85, 1.13)) + 
+      coord_cartesian(ylim = c(0.83, 1.13)) + 
       ylab("total protein density\n(normalized to initial time point)") + 
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
       xlab("day") +
-      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
+      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, guide = "none") +
       stdplottimecourse,
-    ncol=2, 
+    ncol=1, 
     widths = c(1,1.2)))
 }
 
