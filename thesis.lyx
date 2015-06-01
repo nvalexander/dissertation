@@ -18567,19 +18567,7 @@ In another experiment, I tested the ability of Testo to preserve protein
  1 uM Dexa and 500 nM Testo, for up to three days, in increments of 24 hours.
  When analyzed in absolute terms, the choice of pharmacological treatment
  appeared to lack statistically significant effect on total protein concentratio
-n (time X treatment ANOVA, p = 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3(summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment
-, data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`[[2]])
-\end_layout
-
-\end_inset
-
-; Fig 
+n (time X treatment ANOVA, p = ; Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:protein-mass-cells"
@@ -18589,6 +18577,98 @@ reference "fig:protein-mass-cells"
 , left).
  However, there was a clear trend for total protein decrease in samples
  treated with Dexa.
+ Whereas total protein density in vehicle-treated cells averaged an essentially
+ unchanged total protein density during the first two days of the experiment
+ (
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellsVDCA$cell_protein_density_microgram_per_cmsq[(Degrad
+ationInCellsVDCA$TimeDays == "0" & DegradationInCellsVDCA$treatment == "V")]))
+\end_layout
+
+\end_inset
+
+ ug/cm2 in the first day; 
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellsVDCA$cell_protein_density_microgram_per_cmsq[(Degrad
+ationInCellsVDCA$TimeDays == "1" & DegradationInCellsVDCA$treatment == "V")]))
+\end_layout
+
+\end_inset
+
+ in the second; 
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellsVDCA$cell_protein_density_microgram_per_cmsq[(Degrad
+ationInCellsVDCA$TimeDays == "2" & DegradationInCellsVDCA$treatment == "V")]))
+\end_layout
+
+\end_inset
+
+ in the third), Dexa-treated cells lost protein, sliding from (
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellsVDCA$cell_protein_density_microgram_per_cmsq[(Degrad
+ationInCellsVDCA$TimeDays == "0" & DegradationInCellsVDCA$treatment == "DD")]))
+\end_layout
+
+\end_inset
+
+ ug/cm2 in the first day to 
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellsVDCA$cell_protein_density_microgram_per_cmsq[(Degrad
+ationInCellsVDCA$TimeDays == "1" & DegradationInCellsVDCA$treatment == "DD")]))
+\end_layout
+
+\end_inset
+
+ in the second and 
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellsVDCA$cell_protein_density_microgram_per_cmsq[(Degrad
+ationInCellsVDCA$TimeDays == "2" & DegradationInCellsVDCA$treatment == "DD")]))
+\end_layout
+
+\end_inset
+
+ in the third day of the experiment (
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+sig3(100 * ( mean(DegradationInCellsVDCA$cell_protein_density_microgram_per_cmsq
+[(DegradationInCellsVDCA$TimeDays == "0" & DegradationInCellsVDCA$treatment
+ == "DD")]) - mean(DegradationInCellsVDCA$cell_protein_density_microgram_per_cms
+q[(DegradationInCellsVDCA$TimeDays == "2" & DegradationInCellsVDCA$treatment
+ == "DD")])) / mean(DegradationInCellsVDCA$cell_protein_density_microgram_per_cm
+sq[(DegradationInCellsVDCA$TimeDays == "0" & DegradationInCellsVDCA$treatment
+ == "DD")]))
+\end_layout
+
+\end_inset
+
+% loss; ANOVA ).
 \end_layout
 
 \begin_layout Standard
