@@ -19052,6 +19052,39 @@ sig3(pvaluesTreatmentAndDateActivityPerWell[[2]])
 \end_inset
 
  for treatment variable).
+ There is no statistically significant difference between treatments at
+ each time point.
+ The amplest difference in translation rate between treatments is in day
+ 4, when the combination improved protein synthesis by a non-significant
+ 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100 * ( mean(DegradationInCellsVDC[(DegradationInCellsVDC$TimeDays
+ == "3" & DegradationInCellsVDC$treatment == "V"), ]$femtomol_radio_Phe_per_g_ce
+ll_protein) - mean(DegradationInCellsVDC[(DegradationInCellsVDC$TimeDays
+ == "3" & DegradationInCellsVDC$treatment == "DDTT"), ]$femtomol_radio_Phe_per_g
+_cell_protein) ) / mean(DegradationInCellsVDC[(DegradationInCellsVDC$TimeDays
+ == "3" & DegradationInCellsVDC$treatment == "DDTT"), ]$femtomol_radio_Phe_per_g
+_cell_protein) )
+\end_layout
+
+\end_inset
+
+%.
+ Withing the limits of this model, protein synthesis changes do not appear
+ to mediate Dexa-induced loss of protein, nor its alleviation by Testo.
+\end_layout
+
+\begin_layout Section
+Protein degradation in cultured cells treated with dexamethasone and testosteron
+e
+\end_layout
+
+\begin_layout Standard
+In
 \begin_inset Newpage pagebreak
 \end_inset
 
