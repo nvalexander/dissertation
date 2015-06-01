@@ -1285,10 +1285,10 @@ plottotalprotein <- function(){
 }
 
 pvaluesTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateVonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsV[SynthesisInCellsV != "3", ]))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateDonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsD[SynthesisInCellsD != "3", ]))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateConlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsC[SynthesisInCellsC != "3", ]))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateAonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsA[SynthesisInCellsA != "3", ]))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateVonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsV[SynthesisInCellsV$TimeDays != "3", ]))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateDonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsD[SynthesisInCellsD$TimeDays != "3", ]))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateConlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsC[SynthesisInCellsC$TimeDays != "3", ]))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateAonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsA[SynthesisInCellsA$TimeDays != "3", ]))[[1]]$`Pr(>F)`
 pvaluesTreatmentAndDateNormalizedToFirst <- summary(aov( cell_protein_density_microgram_per_cmsq_normalized_to_first_day ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
 
 pvaluesTreatmentAndDateActivityPerWell <- summary(aov( activity_in_cell_protein_extract_picoCi ~ TimeDays + treatment, data = SynthesisInCellsVDC))[[1]]$`Pr(>F)`
@@ -1320,7 +1320,17 @@ plotproteinsynthesis <- function() {
 }
 
 plotproteindegradation <- function(){
-  unnormalizeddata <- SynthesisInCellsVDC[, colnames(SynthesisInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
-  return(grid.arrange(ggplot(mtcars, aes(mpg, hp)) + geom_point()))
+  unnormalizeddata <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
+  return(grid.arrange(
+    plotthreetimecourses(unnormalizeddata,  
+                         c(0, 1), 
+                         "medium to cell protein tracer ratio",
+                         c("", "", "", "",
+                           "", "", "", "",
+                           "", "", "", "")) +
+      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCmetabolism)+
+      theme(legend.position = c(1,1), legend.justification = c(1, 1), legend.direction = "horizontal") +
+      scale_x_continuous(labels = c("1", "2", "3", "4")) +
+      xlab("day")))
   
 }
