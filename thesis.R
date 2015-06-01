@@ -256,15 +256,6 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
            stdbarplot)
 }
 
-#   #THIS FORCES THE DISPLAY OF A LEGEND
-# #   meanslayer <- leanoneplot$layers[[1]]
-# #   meanslayer$show_guide <- TRUE
-# #   leanoneplot <- leanoneplot + 
-# #     scale_fill_manual(values = greypalette, labels = conditionsVDC) + 
-# #     guides(fill = guide_legend(title = NULL, override.aes = list(colour = NULL))) + 
-# #     theme(legend.position = c(0, 1), legend.justification = c(0,1))
-
-
 threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   # this function expects a dataframe with two columns, first designating the treatments
   # second column described Ct(GOI)-Ct(housekeeping gene)
@@ -1214,36 +1205,69 @@ DegradationInCellsVDCA$treatment <- factor(DegradationInCellsVDCA$treatment,
                                      levels = condsVDCA)
 
 plottotalprotein <- function(){
+  unnormalizeddata <- DegradationInCellsVDCA[, colnames(DegradationInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq")]
   normalizeddata <- DegradationInCellsVDCA[, colnames(DegradationInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq_normalized_to_first_day")]
-  completecasesdataset <- normalizeddata[complete.cases(normalizeddata),]
-  return(ggplot(completecasesdataset) + 
-           aes_string(x = colnames(completecasesdataset)[2],
-                      y = colnames(completecasesdataset)[3],
-                      group = colnames(completecasesdataset)[1]) +
-    stat_summary(geom = "point",
-                 size = 3,
-                 fun.y = truemean,
-                 position = position_dodge(.1),
-                 aes_string(shape = "treatment", show_guide = TRUE)) +
-    stat_summary(geom = "line", 
-                 size = .5, 
-                 fun.y = truemean, 
-                 position = position_dodge(.1)) + 
-#     stat_summary(geom = "text", 
-#                  size = textSize * .4,
-#                  aes(family = "serif"),
-#                  fun.y = statstringyunderbar, 
-#                  hjust = -.2,
-#                  vjust = .25,
-#                  label = statsstring) + 
-    stat_summary(geom = 'errorbar',
-                 fun.data = 'semInterval',
-                 width = 0.2,
-                 show_guide = FALSE,
-                 position=position_dodge(.1)) +
-    coord_cartesian(ylim = c(0.85, 1.13)) + 
-    ylab("total protein density\n(normalized to first day)") +
-    xlab("hours") +
-    scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
-    stdplottimecourse)
+  return(arrangeGrob(
+    ggplot(unnormalizeddata) + 
+      aes_string(x = colnames(unnormalizeddata)[2],
+                 y = colnames(unnormalizeddata)[3],
+                 group = colnames(unnormalizeddata)[1]) +
+      stat_summary(geom = "point",
+                   size = 3,
+                   fun.y = truemean,
+                   position = position_dodge(.1),
+                   aes_string(shape = "treatment", show_guide = TRUE)) +
+      stat_summary(geom = "line", 
+                   size = .5, 
+                   fun.y = truemean, 
+                   position = position_dodge(.1)) + 
+      #     stat_summary(geom = "text", 
+      #                  size = textSize * .4,
+      #                  aes(family = "serif"),
+      #                  fun.y = statstringyunderbar, 
+      #                  hjust = -.2,
+      #                  vjust = .25,
+      #                  label = statsstring) + 
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.2,
+                   show_guide = FALSE,
+                   position=position_dodge(.1)) +
+      coord_cartesian(ylim = c(70, 90)) + 
+      ylab("total protein density\n(ug per cm.sq.)") +
+      xlab("hours") +
+      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, show_guide = FALSE) +
+      stdplottimecourse,
+    ggplot(normalizeddata) + 
+      aes_string(x = colnames(normalizeddata)[2],
+                 y = colnames(normalizeddata)[3],
+                 group = colnames(normalizeddata)[1]) +
+      stat_summary(geom = "point",
+                   size = 3,
+                   fun.y = truemean,
+                   position = position_dodge(.1),
+                   aes_string(shape = "treatment", show_guide = TRUE)) +
+      stat_summary(geom = "line", 
+                   size = .5, 
+                   fun.y = truemean, 
+                   position = position_dodge(.1)) + 
+      #     stat_summary(geom = "text", 
+      #                  size = textSize * .4,
+      #                  aes(family = "serif"),
+      #                  fun.y = statstringyunderbar, 
+      #                  hjust = -.2,
+      #                  vjust = .25,
+      #                  label = statsstring) + 
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.2,
+                   show_guide = FALSE,
+                   position=position_dodge(.1)) +
+      coord_cartesian(ylim = c(0.85, 1.13)) + 
+      ylab("total protein density\n(normalized to first day)") +
+      xlab("hours") +
+      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
+      stdplottimecourse,
+    ncol=2, 
+    widths = c(1,1.2)))
 }
