@@ -1163,8 +1163,7 @@ plotredd <- function(){
 
 # In vitro cell diameters
 # wrangling data
-condsVDCC <- c("V", "D", "C", "B")
-conditionsVDCcells <- c("Veh", "50 µM Dexa", "50 µM Dexa\n+ 300 nM T", "50 µM Dexa\n+ 1000 nM T")
+condsVDCC <- c("V", "D", "C", "B") # B is combination with higher Testo than C
 InvitroCelldiams <- read.csv(file.path(datadir, "2012.08.26.celldiameters.csv"), header = TRUE)
 levels(InvitroCelldiams$treatment)[levels(InvitroCelldiams$treatment)=="DT"] <- "C"
 levels(InvitroCelldiams$treatment)[levels(InvitroCelldiams$treatment)=="DU"] <- "B"
@@ -1184,4 +1183,51 @@ plotcelldiams <- function() {
     c("a", "b", "a")) + 
            theme(axis.text.x = element_text(color = "black")) + 
            scale_x_discrete(labels = conditionsVDC))
+}
+
+#protein synthesis and accretion in C2C12
+SynthesisInCells <- read.csv(file.path(datadir, "2014.06.30.protein.synthesis.csv"), header = TRUE)
+conditionsVDCcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM T", "1 µM Dexa\n+ 500 nM T")
+colnames(SynthesisInCells)[colnames(SynthesisInCells)=="Condition"] = "treatment"
+
+for (i in levels(synth$treatment)) {
+  synth$normalizedgramsprotpersqcm[synth$treatment == as.character(i)]  <- 
+    synth$normalizedgramsprotpersqcm[synth$treatment == as.character(i)] / 
+    mean(synth$cell_protein_density_microgram_per_cmsq[
+      (synth$TimeDays == 0 & synth$treatment == as.character(i))])
+}
+
+plottotalprotein <- function(){
+  briefdataset <- synth[condi]
+  return(grid.arrange(
+    ggplot(completecasesdataset) + 
+      aes_string(x = colnames(completecasesdataset)[2],
+                 y = colnames(completecasesdataset)[3],
+                 group = colnames(completecasesdataset)[1]) +
+      stat_summary(geom = "point",
+                   size = 3,
+                   fun.y = truemean,
+                   position = position_dodge(.05),
+                   aes_string(shape = colnames(completecasesdataset)[1])) +
+      stat_summary(geom = "line", 
+                   size = .5, 
+                   fun.y = truemean, 
+                   position = position_dodge(.05)) + 
+      stat_summary(geom = "text", 
+                   size = textSize * .4,
+                   aes(family = "serif"),
+                   fun.y = statstringyunderbar, 
+                   hjust = -.2,
+                   vjust = .25,
+                   label = statsstring) + 
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.2,
+                   show_guide = FALSE,
+                   position=position_dodge(.05)) +
+      coord_cartesian(ylim = ylimit) + 
+      ylab(ylabel) +
+      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
+      stdplottimecourse
+  )
 }
