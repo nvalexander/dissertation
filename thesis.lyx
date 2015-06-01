@@ -18565,20 +18565,30 @@ In another experiment, I tested the ability of Testo to preserve protein
  In order to determine the time course of protein content, cells were treated
  with (A) vehicle, (B) 1 uM Dexa, (C) 1 uM Dexa and 100 nM Testo, or (D)
  1 uM Dexa and 500 nM Testo, for up to three days, in increments of 24 hours.
- The choice of pharmacological treatment had a statistically significant
- effect on total protein concentration (time X treatment ANOVA, p = 
+ When analyzed in absolute terms, the choice of pharmacological treatment
+ appeared to lack statistically significant effect on total protein concentratio
+n (time X treatment ANOVA, p = 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
 sig3(summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment
-, data = DegradationInCells))[[1]]$`Pr(>F)`[[2]])
+, data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`[[2]])
 \end_layout
 
 \end_inset
 
-).
+; Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:protein-mass-cells"
+
+\end_inset
+
+, left).
+ However, there was a clear trend for total protein decrease in samples
+ treated with Dexa.
 \end_layout
 
 \begin_layout Standard
@@ -18608,7 +18618,7 @@ echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
 
 \begin_layout Plain Layout
 
-plotIgf()
+print(plottotalprotein())
 \end_layout
 
 \end_inset
@@ -18631,7 +18641,15 @@ s.
 \end_inset
 
 Changes in C2C12 myotube protein content following Dexa and / or Testo treatment
-s.
+s (Left) Absolute total protein density.
+ (Right) The same data, after normalization (n=6).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:protein-mass-cells"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
