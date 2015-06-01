@@ -1190,12 +1190,20 @@ DegradationInCells <- read.csv(file.path(datadir, "2014.06.30.protein.degradatio
 colnames(DegradationInCells)[colnames(DegradationInCells)=="Condition"] = "treatment"
 condsVDCA <- c("V", "DD", "DDT", "DDTT") # A is combination with higher Testo than C
 conditionsVDCAcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM T", "1 µM Dexa\n+ 500 nM T")
-DegradationInCells$normalizedgramsprotpersqcm <- NA
+DegradationInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day <- NA
+DegradationInCells$cell_protein_density_microgram_per_cmsq_normalized_to_vehicle <- NA
 for (i in levels(DegradationInCells$treatment)) {
-  DegradationInCells$normalizedgramsprotpersqcm[DegradationInCells$treatment == as.character(i)]  <- 
+  DegradationInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day[DegradationInCells$treatment == as.character(i)]  <- 
     DegradationInCells$cell_protein_density_microgram_per_cmsq[DegradationInCells$treatment == as.character(i)] / 
     mean(DegradationInCells$cell_protein_density_microgram_per_cmsq[
       (DegradationInCells$TimeDays == 0 & DegradationInCells$treatment == as.character(i))])
+}
+
+for (i in 0:3) {
+  DegradationInCells$cell_protein_density_microgram_per_cmsq_normalized_to_vehicle[DegradationInCells$TimeDays == as.character(i)]  <- 
+    DegradationInCells$cell_protein_density_microgram_per_cmsq[DegradationInCells$TimeDays == as.character(i)] / 
+    mean(DegradationInCells$cell_protein_density_microgram_per_cmsq[
+      (DegradationInCells$TimeDays == as.character(i) & DegradationInCells$treatment == "V")])
 }
 
 DegradationInCellsVDCA <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCA), ]
@@ -1233,7 +1241,7 @@ plottotalprotein <- function(){
       stdplottimecourse,
   ggplot(DegradationInCellsVDCA) + 
     aes_string(x = "TimeDays",
-               y = "normalizedgramsprotpersqcm",
+               y = "cell_protein_density_microgram_per_cmsq_normalized_to_first_day",
                group = "treatment") +
     stat_summary(geom = "point",
                  size = 3,
@@ -1257,8 +1265,38 @@ plottotalprotein <- function(){
                  show_guide = FALSE,
                  position=position_dodge(.1)) +
     coord_cartesian(ylim = c(.84, 1.11)) + 
-    ylab("cell total protein\ndensity (normalized to vehicle)") +
+    ylab("cell total protein\ndensity (normalized to first day)") +
     scale_shape_manual(values = c(16, 4, 1, 32), labels = conditionsVDCAcells, guide = FALSE) +
-    stdplottimecourse),
-  ncol=1)
+    stdplottimecourse,
+
+ggplot(DegradationInCellsVDCA) + 
+  aes_string(x = "TimeDays",
+             y = "cell_protein_density_microgram_per_cmsq_normalized_to_vehicle",
+             group = "treatment") +
+  stat_summary(geom = "point",
+               size = 3,
+               fun.y = truemean,
+               position = position_dodge(.1),
+               aes_string(shape = "treatment", show_guide = TRUE)) +
+  stat_summary(geom = "line", 
+               size = .5, 
+               fun.y = truemean, 
+               position = position_dodge(.1)) + 
+  #       stat_summary(geom = "text", 
+  #                    size = textSize * .4,
+  #                    aes(family = "serif"),
+  #                    fun.y = statstringyunderbar, 
+  #                    hjust = -.2,
+  #                    vjust = .25,
+  #                    label = "statsstring") + 
+  stat_summary(geom = 'errorbar',
+               fun.data = 'semInterval',
+               width = 0.2,
+               show_guide = FALSE,
+               position=position_dodge(.1)) +
+  coord_cartesian(ylim = c(.84, 1.11)) + 
+  ylab("cell total protein\ndensity (normalized to vehicle)") +
+  scale_shape_manual(values = c(16, 4, 1, 32), labels = conditionsVDCAcells, guide = FALSE) +
+  stdplottimecourse,
+  ncol=1))
 }
