@@ -1321,11 +1321,11 @@ plotproteinsynthesis <- function() {
 
 plotproteindegradation <- function(){
    degradationthreecourses <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
-   fivelevelsDT <-c("V", "D", "DD", "DDT", "DDDT")
+   fivelevelsDT <-c("V", "D", "DD", "DDT", "DDTT")
    degradationdaytwo <- DegradationInCells[
      (DegradationInCells$treatment %in% fivelevelsDT ) &
-     (DegradationInCells$TimeDays == "2")  ,]
-   degradationdaytwo <- degradationdaytwo[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
+     (DegradationInCells$TimeDays == "1")  ,]
+   degradationdaytwo <- degradationdaytwo[, colnames(DegradationInCellsVDC) %in% c("treatment", "curie_ratio_protein_depleted_medium_over_cell_protein")]
    degradationdaytwo$treatment <- factor(degradationdaytwo$treatment, 
                                          levels = fivelevelsDT)
   return(grid.arrange(
@@ -1338,7 +1338,7 @@ plotproteindegradation <- function(){
       scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCmetabolism)+
       theme(legend.position = c(1,1), legend.justification = c(1, 1), legend.direction = "horizontal") +
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
-      xlab("day")),
+      xlab("day"),
     ggplot(degradationdaytwo) +
       aes_string( x = colnames(degradationdaytwo)[1], 
                   y = colnames(degradationdaytwo)[2], 
@@ -1360,6 +1360,6 @@ plotproteindegradation <- function(){
       ylab(" medium to cell protein tracer ratio (24 hour)") +
       coord_cartesian(ylim = c(0, 1)) + 
       scale_fill_manual(values = c("#ffffff", "#999999", "#222222", "#777777", "#dddddd")) +
-      stdbarplot)
-  
+      stdbarplot,
+    ncol = 1))
 }
