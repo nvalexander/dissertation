@@ -12587,7 +12587,14 @@ Duplicates were averaged for each unknown.
 \end_layout
 
 \begin_layout Standard
-Primers used were:
+Primers used are listed in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:List-of-RT-PCR"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -12945,7 +12952,14 @@ Reverse: GTAGGCCATGAGGTCCACA
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-List of RT-PCR primers
+List of RT-PCR primers.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:List-of-RT-PCR"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -17565,7 +17579,7 @@ status open
 \begin_layout Plain Layout
 
 <<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2.3in", fig.width = 6, fig.height = 2.3>>=
+ = "2.1in", fig.width = 6, fig.height = 2.1>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -17642,7 +17656,7 @@ status open
 \begin_layout Plain Layout
 
 <<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2.3in", fig.width = 6, fig.height = 2.3>>=
+ = "2.1in", fig.width = 6, fig.height = 2.1>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -18765,7 +18779,7 @@ echo = FALSE, warning = FALSE, message = FALSE, out.width = "5in", out.height
 
 \begin_layout Plain Layout
 
-print(plottotalprotein())
+plottotalprotein()
 \end_layout
 
 \end_inset
@@ -18789,7 +18803,8 @@ s.
 
 Changes in C2C12 myotube protein content following Dexa and / or Testo treatment
 s (Left) Absolute total protein density.
- (Right) The same data, after normalization (n=6).
+ (Right) The same data, after normalization to the average of the initial
+ time point for each condition (n=6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:protein-mass-cells"
@@ -18810,6 +18825,9 @@ name "fig:protein-mass-cells"
 \end_layout
 
 \begin_layout Standard
+The above described trends are more salient when data is represented after
+ normalization to the initial time point.
+ 
 \begin_inset Newpage pagebreak
 \end_inset
 
