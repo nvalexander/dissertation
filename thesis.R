@@ -1280,6 +1280,7 @@ plottotalprotein <- function(){
 }
 
 pvaluesTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateVonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsV[DegradationInCellsV != "3", ]))[[1]]$`Pr(>F)`
 pvaluesTreatmentAndDateDonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsD[DegradationInCellsD != "3", ]))[[1]]$`Pr(>F)`
 pvaluesTreatmentAndDateConlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsC[DegradationInCellsC != "3", ]))[[1]]$`Pr(>F)`
 pvaluesTreatmentAndDateAonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsA[DegradationInCellsA != "3", ]))[[1]]$`Pr(>F)`
