@@ -45,22 +45,23 @@ InvivoSevendayNicenames <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv
                                       nrows = 1, 
                                       stringsAsFactors = FALSE)
 InvitroCelldiams <- read.csv(file.path(datadir, "2012.08.26.celldiameters.csv"), header = TRUE)
-DegradationInCells <- read.csv(file.path(datadir, "2014.06.30.protein.degradation.csv"), header = TRUE)
-colnames(DegradationInCells)[colnames(DegradationInCells)=="Condition"] = "treatment"
-DegradationInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day <- NA
-DegradationInCells$cell_protein_density_microgram_per_cmsq_normalized_to_vehicle <- NA
-for (i in levels(DegradationInCells$treatment)) {
-  DegradationInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day[DegradationInCells$treatment == as.character(i)]  <- 
-    DegradationInCells$cell_protein_density_microgram_per_cmsq[DegradationInCells$treatment == as.character(i)] / 
-    mean(DegradationInCells$cell_protein_density_microgram_per_cmsq[
-      (DegradationInCells$TimeDays == 0 & DegradationInCells$treatment == as.character(i))])
+SynthesisInCells <- read.csv(file.path(datadir, "2014.06.30.protein.synthesis.csv"), header = TRUE)
+colnames(SynthesisInCells)[colnames(SynthesisInCells)=="Condition"] = "treatment"
+SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day <- NA
+SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_vehicle <- NA
+for (i in levels(SynthesisInCells$treatment)) {
+  SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day[SynthesisInCells$treatment == as.character(i)]  <- 
+    SynthesisInCells$cell_protein_density_microgram_per_cmsq[SynthesisInCells$treatment == as.character(i)] / 
+    mean(SynthesisInCells$cell_protein_density_microgram_per_cmsq[
+      (SynthesisInCells$TimeDays == 0 & SynthesisInCells$treatment == as.character(i))])
 }
 for (i in 0:3) {
-  DegradationInCells$cell_protein_density_microgram_per_cmsq_normalized_to_vehicle[DegradationInCells$TimeDays == as.character(i)]  <- 
-    DegradationInCells$cell_protein_density_microgram_per_cmsq[DegradationInCells$TimeDays == as.character(i)] / 
-    mean(DegradationInCells$cell_protein_density_microgram_per_cmsq[
-      (DegradationInCells$TimeDays == as.character(i) & DegradationInCells$treatment == "V")])
+  SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_vehicle[SynthesisInCells$TimeDays == as.character(i)]  <- 
+    SynthesisInCells$cell_protein_density_microgram_per_cmsq[SynthesisInCells$TimeDays == as.character(i)] / 
+    mean(SynthesisInCells$cell_protein_density_microgram_per_cmsq[
+      (SynthesisInCells$TimeDays == as.character(i) & SynthesisInCells$treatment == "V")])
 }
+DegradationInCells <- read.csv(file.path(datadir, "2014.06.30.protein.degradation.csv"), header = TRUE)
 
 #renaming
 levels(InvivoOneday$treatment)[levels(InvivoOneday$treatment)=="A"] <- "C"
@@ -127,17 +128,17 @@ InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment,
                                      levels = condsVDCB)
 InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment, 
                                      levels = condsVDC)
-DegradationInCellsVDCA <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCA), ]
-DegradationInCellsVDCA$treatment <- factor(DegradationInCellsVDCA$treatment, 
+SynthesisInCellsVDCA <- SynthesisInCells[(SynthesisInCells$treatment %in% condsVDCA), ]
+SynthesisInCellsVDCA$treatment <- factor(SynthesisInCellsVDCA$treatment, 
                                            levels = condsVDCA)
-DegradationInCellsVDC <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCsynth), ]
-DegradationInCellsVDC$treatment <- factor(DegradationInCellsVDC$treatment, 
+SynthesisInCellsVDC <- SynthesisInCells[(SynthesisInCells$treatment %in% condsVDCsynth), ]
+SynthesisInCellsVDC$treatment <- factor(SynthesisInCellsVDC$treatment, 
                                            levels = condsVDCsynth)
-DegradationInCellsV <- DegradationInCells[(DegradationInCells$treatment == "V"), ]
-DegradationInCellsD <- DegradationInCells[(DegradationInCells$treatment == "DD"), ]
-DegradationInCellsC <- DegradationInCells[(DegradationInCells$treatment == "DDT"), ]
-DegradationInCellsA <- DegradationInCells[(DegradationInCells$treatment == "DDTT"), ]
-DegradationInCellsQ <- DegradationInCells[(DegradationInCells$treatment == "DDTTP"), ]
+SynthesisInCellsV <- SynthesisInCells[(SynthesisInCells$treatment == "V"), ]
+SynthesisInCellsD <- SynthesisInCells[(SynthesisInCells$treatment == "DD"), ]
+SynthesisInCellsC <- SynthesisInCells[(SynthesisInCells$treatment == "DDT"), ]
+SynthesisInCellsA <- SynthesisInCells[(SynthesisInCells$treatment == "DDTT"), ]
+SynthesisInCellsQ <- SynthesisInCells[(SynthesisInCells$treatment == "DDTTP"), ]
 
 #literal constants
 unistar <- sprintf('\u2736')
@@ -1251,10 +1252,9 @@ plotcelldiams <- function() {
 }
 
 #protein synthesis and accretion in C2C12
-
 plottotalprotein <- function(){
-  unnormalizeddata <- DegradationInCellsVDCA[, colnames(DegradationInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq")]
-  normalizeddata <- DegradationInCellsVDCA[, colnames(DegradationInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq_normalized_to_first_day")]
+  unnormalizeddata <- SynthesisInCellsVDCA[, colnames(SynthesisInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq")]
+  normalizeddata <- SynthesisInCellsVDCA[, colnames(SynthesisInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq_normalized_to_first_day")]
   return(grid.arrange(
     plotfourtimecourses(unnormalizeddata,  
                         c(65, 90), 
@@ -1279,18 +1279,18 @@ plottotalprotein <- function(){
     ncol=1))
 }
 
-pvaluesTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateVonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsV[DegradationInCellsV != "3", ]))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateDonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsD[DegradationInCellsD != "3", ]))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateConlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsC[DegradationInCellsC != "3", ]))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateAonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsA[DegradationInCellsA != "3", ]))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateNormalizedToFirst <- summary(aov( cell_protein_density_microgram_per_cmsq_normalized_to_first_day ~ TimeDays + treatment, data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateVonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsV[SynthesisInCellsV != "3", ]))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateDonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsD[SynthesisInCellsD != "3", ]))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateConlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsC[SynthesisInCellsC != "3", ]))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateAonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsA[SynthesisInCellsA != "3", ]))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateNormalizedToFirst <- summary(aov( cell_protein_density_microgram_per_cmsq_normalized_to_first_day ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
 
-pvaluesTreatmentAndDateActivityPerWell <- summary(aov( activity_in_cell_protein_extract_picoCi ~ TimeDays + treatment, data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateActivityPerWell <- summary(aov( activity_in_cell_protein_extract_picoCi ~ TimeDays + treatment, data = SynthesisInCellsVDC))[[1]]$`Pr(>F)`
 
 plotproteinsynthesis <- function() {
-  unnormalizeddata <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "activity_in_cell_protein_extract_picoCi")]
-  normalizeddata <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "femtomol_radio_Phe_per_g_cell_protein")]
+  unnormalizeddata <- SynthesisInCellsVDC[, colnames(SynthesisInCellsVDC) %in% c("treatment", "TimeDays", "activity_in_cell_protein_extract_picoCi")]
+  normalizeddata <- SynthesisInCellsVDC[, colnames(SynthesisInCellsVDC) %in% c("treatment", "TimeDays", "femtomol_radio_Phe_per_g_cell_protein")]
   return(grid.arrange(
     plotthreetimecourses(unnormalizeddata,  
                         c(1100, 1600), 
