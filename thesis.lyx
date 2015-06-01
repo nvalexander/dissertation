@@ -18563,7 +18563,12 @@ name "fig:myotube-diameters"
 \paragraph_spacing single
 In another experiment, I tested the ability of Testo to preserve protein
  content in C2C12 cells.
-  
+ In order to determine the time course of protein content, cells were treated
+ with (A) vehicle, (B) 1 uM Dexa, (C) 1 uM Dexa and 100 nM Testo, or (D)
+ 1 uM Dexa and %00 nM Testo.
+ The choice of pharmacological treatment had a statistically significant
+ effect on total protein concentration.
+ 
 \begin_inset Newpage pagebreak
 \end_inset
 
