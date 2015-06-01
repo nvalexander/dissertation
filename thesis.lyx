@@ -18590,6 +18590,105 @@ reference "fig:protein-mass-cells"
  treated with Dexa.
  Whereas total protein density in vehicle-treated cells averaged an essentially
  unchanged total protein density during the first two days of the experiment
+ (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellsV$cell_protein_density_microgram_per_cmsq[(Degradati
+onInCellsV$TimeDays == "0")]))
+\end_layout
+
+\end_inset
+
+ ug/cm2 in the first day; 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellsV$cell_protein_density_microgram_per_cmsq[(Degradati
+onInCellsV$TimeDays == "1")]))
+\end_layout
+
+\end_inset
+
+ ug/cm2 in the second; 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellsV$cell_protein_density_microgram_per_cmsq[(Degradati
+onInCellsV$TimeDays == "2")]))
+\end_layout
+
+\end_inset
+
+ ug/cm2 in the third), Dexa-treated cells lost protein, sliding from (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellsD$cell_protein_density_microgram_per_cmsq[(Degradati
+onInCellsD$TimeDays == "0")]))
+\end_layout
+
+\end_inset
+
+ ug/cm2 in the first day to 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellD$cell_protein_density_microgram_per_cmsq[(Degradatio
+nInCellsD$TimeDays == "1")]))
+\end_layout
+
+\end_inset
+
+ ug/cm2 in the second and 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(mean(DegradationInCellsD$cell_protein_density_microgram_per_cmsq[(Degradati
+onInCellsD$TimeDays == "2")])) 
+\end_layout
+
+\end_inset
+
+ ug/cm2 in the third day of the experiment (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(100 * ( mean(DegradationInCellsD$cell_protein_density_microgram_per_cmsq[(D
+egradationInCellsD$TimeDays == "0")]) - mean(DegradationInCellsD$cell_protein_de
+nsity_microgram_per_cmsq[(DegradationInCellsD$TimeDays == "2")])) / mean(Degrada
+tionInCellsD$cell_protein_density_microgram_per_cmsq[(DegradationInCellsD$TimeDa
+ys == "0")]))
+\end_layout
+
+\end_inset
+
+% loss; ANOVA p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(pvaluesTreatmentAndDateDonly[[1]])
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard

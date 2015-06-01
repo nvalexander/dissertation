@@ -1203,6 +1203,10 @@ for (i in 0:3) {
 DegradationInCellsVDCA <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCA), ]
 DegradationInCellsVDCA$treatment <- factor(DegradationInCellsVDCA$treatment, 
                                      levels = condsVDCA)
+DegradationInCellsV <- DegradationInCells[(DegradationInCells$treatment == "V"), ]
+DegradationInCellsD <- DegradationInCells[(DegradationInCells$treatment == "DD"), ]
+DegradationInCellsC <- DegradationInCells[(DegradationInCells$treatment == "DDT"), ]
+DegradationInCellsA <- DegradationInCells[(DegradationInCells$treatment == "DDTT"), ]
 
 plottotalprotein <- function(){
   unnormalizeddata <- DegradationInCellsVDCA[, colnames(DegradationInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq")]
@@ -1275,3 +1279,4 @@ plottotalprotein <- function(){
 }
 
 pvaluesTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
+pvaluesTreatmentAndDateDonly <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsD))[[1]]$`Pr(>F)`
