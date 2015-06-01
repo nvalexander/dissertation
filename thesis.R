@@ -1273,3 +1273,5 @@ plottotalprotein <- function(){
     ncol=2, 
     widths = c(1,1.2)))
 }
+
+pvaluesTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
