@@ -49,6 +49,10 @@ SynthesisInCells <- read.csv(file.path(datadir, "2014.06.30.protein.synthesis.cs
 colnames(SynthesisInCells)[colnames(SynthesisInCells)=="Condition"] = "treatment"
 SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day <- NA
 SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_vehicle <- NA
+DegradationInCells <- read.csv(file.path(datadir, "2014.06.30.protein.degradation.csv"), header = TRUE)
+colnames(DegradationInCells)[colnames(DegradationInCells)=="Condition"] = "treatment"
+
+#column additions
 for (i in levels(SynthesisInCells$treatment)) {
   SynthesisInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day[SynthesisInCells$treatment == as.character(i)]  <- 
     SynthesisInCells$cell_protein_density_microgram_per_cmsq[SynthesisInCells$treatment == as.character(i)] / 
@@ -61,9 +65,8 @@ for (i in 0:3) {
     mean(SynthesisInCells$cell_protein_density_microgram_per_cmsq[
       (SynthesisInCells$TimeDays == as.character(i) & SynthesisInCells$treatment == "V")])
 }
-DegradationInCells <- read.csv(file.path(datadir, "2014.06.30.protein.degradation.csv"), header = TRUE)
 
-#renaming
+#renaming of conditions
 levels(InvivoOneday$treatment)[levels(InvivoOneday$treatment)=="A"] <- "C"
 levels(InvivoOneday$treatment)[levels(InvivoOneday$treatment)=="E"] <- "D"
 levels(InvivoOneday$treatment)[levels(InvivoOneday$treatment)=="W"] <- "V"
@@ -72,73 +75,82 @@ levels(InvivoThreeday$treatment)[levels(InvivoThreeday$treatment)=="B"] <- "C"
 levels(InvivoThreeday$treatment)[levels(InvivoThreeday$treatment)=="G"] <- "D"
 levels(InvivoThreeday$treatment)[levels(InvivoThreeday$treatment)=="X"] <- "V"
 levels(InvivoThreeday$treatment)[levels(InvivoThreeday$treatment)=="U"] <- "T"
-levels(InvitroCelldiams$treatment)[levels(InvitroCelldiams$treatment)=="DT"] <- "C"
-levels(InvitroCelldiams$treatment)[levels(InvitroCelldiams$treatment)=="DU"] <- "B"
-#re-leveling
+
+#frequently used sets of conditions
 condsVDC <- c("V", "D", "C")
-conditionsVDC <- c("Veh", "Dexa", "Comb")
 condsVDTC <- c("V", "D", "T", "C")
+condsVDCdiameters <- c("V", "D", "DT")
+condsVDCmetabolism <- c("V", "DD", "DDTT")
+condsVDCBdiameters <- c("V", "D", "DT", "DU") # DU is higher testosterone in cell diameter
+condsVDCAmetabolism <- c("V", "DD", "DDT", "DDTT") 
+conditionsVDC <- c("Veh", "Dexa", "Comb")
 conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
+conditionsVDCmetabolism <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 500 nM T")
+conditionsVDCAcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM T", "1 µM Dexa\n+ 500 nM T")
 contraststhree <- c("V vs D", "V vs DT", "D vs DT")
 contrastsfour <- c("V vs D", "V vs T", "D vs T", "V vs DT", "D vs DT", "T vs DT")
-condsVDCA <- c("V", "DD", "DDT", "DDTT") # A is combination with higher Testo than C
-condsVDCsynth <- c("V", "DD", "DDTT")
-conditionsVDCAcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM T", "1 µM Dexa\n+ 500 nM T")
-conditionsVDCsynthcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 500 nM T")
-condsVDCB <- c("V", "D", "C", "B") # B is combination with higher Testo than C
 VvsDthreeways <- match("V vs D", contraststhree)[[1]]
 DvsCthreeways <- match("D vs DT", contraststhree)[[1]]
 VvsCthreeways <- match("V vs DT", contraststhree)[[1]]
 VvsDfourways <- match("V vs D", contrastsfour)[[1]]
 VvsTfourways <- match("V vs T", contrastsfour)[[1]]
 DvsCfourways <- match("D vs DT", contrastsfour)[[1]]
-InvivoOnedayCVD <- InvivoOneday[InvivoOneday$treatment %in% condsVDC, ]
+#re-leveling
 InvivoOneday$treatment <- factor(InvivoOneday$treatment, 
-                                      levels = condsVDTC)
+                                 levels = condsVDTC)
+InvivoThreeday$treatment <- factor(InvivoThreeday$treatment, 
+                                   levels = condsVDTC)
+InvivoSevenday$treatment <- factor(InvivoSevenday$treatment, 
+                                   levels = condsVDTC)
+InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment, 
+                                     levels = condsVDCBdiameters)
+#subsetting for convenience
+InvivoOnedayCVD <- InvivoOneday[InvivoOneday$treatment %in% condsVDC, ]
 InvivoOnedayCVD$treatment <- factor(InvivoOnedayCVD$treatment, 
                                             levels = condsVDC)
-
-InvivoThreedayCVD <- InvivoThreeday[InvivoThreeday$treatment %in% condsVDC, ]
-InvivoThreeday$treatment <- factor(InvivoThreeday$treatment, 
-                                        levels = condsVDTC)
-InvivoThreedayCVD$treatment <- factor(InvivoThreedayCVD$treatment, 
-                                              levels = condsVDC)
-
-InvivoSevendayCVD <- InvivoSevenday[InvivoSevenday$treatment %in% condsVDC, ]
-InvivoSevenday$treatment <- factor(InvivoSevenday$treatment, 
-                                        levels = condsVDTC)
-InvivoSevendayCVD$treatment <- factor(InvivoSevendayCVD$treatment, 
-                                              levels = condsVDC)
 InvivoOnedayV <- InvivoOneday[InvivoOneday$treatment == "V", ]
 InvivoOnedayD <- InvivoOneday[InvivoOneday$treatment == "D", ]
 InvivoOnedayC <- InvivoOneday[InvivoOneday$treatment == "C", ]
 InvivoOnedayT <- InvivoOneday[InvivoOneday$treatment == "T", ]
+InvivoThreedayCVD <- InvivoThreeday[InvivoThreeday$treatment %in% condsVDC, ]
+InvivoThreedayCVD$treatment <- factor(InvivoThreedayCVD$treatment, 
+                                              levels = condsVDC)
 InvivoThreedayV <- InvivoThreeday[InvivoThreeday$treatment == "V", ]
 InvivoThreedayD <- InvivoThreeday[InvivoThreeday$treatment == "D", ]
 InvivoThreedayC <- InvivoThreeday[InvivoThreeday$treatment == "C", ]
 InvivoThreedayT <- InvivoThreeday[InvivoThreeday$treatment == "T", ]
+InvivoSevendayCVD <- InvivoSevenday[InvivoSevenday$treatment %in% condsVDC, ]
+InvivoSevendayCVD$treatment <- factor(InvivoSevendayCVD$treatment, 
+                                      levels = condsVDC)
 InvivoSevendayV <- InvivoSevenday[InvivoSevenday$treatment == "V", ]
 InvivoSevendayD <- InvivoSevenday[InvivoSevenday$treatment == "D", ]
 InvivoSevendayC <- InvivoSevenday[InvivoSevenday$treatment == "C", ]
 InvivoSevendayT <- InvivoSevenday[InvivoSevenday$treatment == "T", ]
-InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment, 
-                                     levels = condsVDCB)
-InvitroCelldiamsCVD <-InvitroCelldiams[InvitroCelldiams$treatment %in% condsVDC , ]
-InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment, 
-                                     levels = condsVDCB)
-InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment, 
-                                     levels = condsVDC)
-SynthesisInCellsVDCA <- SynthesisInCells[(SynthesisInCells$treatment %in% condsVDCA), ]
-SynthesisInCellsVDCA$treatment <- factor(SynthesisInCellsVDCA$treatment, 
-                                           levels = condsVDCA)
-SynthesisInCellsVDC <- SynthesisInCells[(SynthesisInCells$treatment %in% condsVDCsynth), ]
+InvitroCelldiamsCVD <-InvitroCelldiams[InvitroCelldiams$treatment %in% condsVDCdiameters , ]
+InvitroCelldiamsCVD$treatment <- factor(InvitroCelldiams$treatment, 
+                                     levels = condsVDCdiameters)
+SynthesisInCellsVDC <- SynthesisInCells[(SynthesisInCells$treatment %in% condsVDCmetabolism), ]
 SynthesisInCellsVDC$treatment <- factor(SynthesisInCellsVDC$treatment, 
-                                           levels = condsVDCsynth)
+                                        levels = condsVDCmetabolism)
+SynthesisInCellsVDCA <- SynthesisInCells[(SynthesisInCells$treatment %in% condsVDCAmetabolism), ]
+SynthesisInCellsVDCA$treatment <- factor(SynthesisInCellsVDCA$treatment, 
+                                           levels = condsVDCAmetabolism)
 SynthesisInCellsV <- SynthesisInCells[(SynthesisInCells$treatment == "V"), ]
 SynthesisInCellsD <- SynthesisInCells[(SynthesisInCells$treatment == "DD"), ]
 SynthesisInCellsC <- SynthesisInCells[(SynthesisInCells$treatment == "DDT"), ]
 SynthesisInCellsA <- SynthesisInCells[(SynthesisInCells$treatment == "DDTT"), ]
 SynthesisInCellsQ <- SynthesisInCells[(SynthesisInCells$treatment == "DDTTP"), ]
+DegradationInCellsVDC <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCmetabolism), ]
+DegradationInCellsVDC$treatment <- factor(DegradationInCellsVDC$treatment, 
+                                          levels = condsVDCmetabolism)
+DegradationInCellsVDCA <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCAmetabolism), ]
+DegradationInCellsVDCA$treatment <- factor(DegradationInCellsVDCA$treatment, 
+                                         levels = condsVDCAmetabolism)
+DegradationInCellsV <- DegradationInCells[(DegradationInCells$treatment == "V"), ]
+DegradationInCellsD <- DegradationInCells[(DegradationInCells$treatment == "DD"), ]
+DegradationInCellsC <- DegradationInCells[(DegradationInCells$treatment == "DDT"), ]
+DegradationInCellsA <- DegradationInCells[(DegradationInCells$treatment == "DDTT"), ]
+DegradationInCellsQ <- DegradationInCells[(DegradationInCells$treatment == "DDTTP"), ]
 
 #literal constants
 unistar <- sprintf('\u2736')
@@ -1053,14 +1065,10 @@ plotcalpainactivity <- function(){
 #ELEVENTH plot
 plotfoxogene <- function(){
   columnnames <- c(
-#     "quadriceps.Ct.Foxo1....Ct.Gapdh.",
     "quadriceps.Ct.Foxo3a....Ct.Gapdh.",
-#     "quadriceps.Ct.Foxo4....Ct.Gapdh.",
     "quadriceps.Ct.Klf15....Ct.Gapdh.")
   ylabels <- c(
-#     "Foxo1 mRNA",
     "Foxo3a mRNA",
-#     "Foxo4 mRNA",
     "Klf15 mRNA")
   ylims <- list(
 #     # quadriceps Foxo1 - days 1, 3, 7:
@@ -1222,9 +1230,6 @@ plotIgf <- function(){
 
 plotredd <- function(){
   return(grid.arrange(
-#     threegeneplot(rescaledtovehicleaszero(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), "quadriceps.Ct.Ddit4....Ct.Gapdh.", c(-.5,10),c("a", "b", "a,b")),
-#     threegeneplot(rescaledtovehicleaszero(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), "quadriceps.Ct.Ddit4....Ct.Gapdh.", c(-.5,8),c("a", "b", "a,b")),
-#     threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), "quadriceps.Ct.Ddit4....Ct.Gapdh.", c(-1,8),threeemptystrings),
     threegeneplot(rescaledtovehicleaszero(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), "gastrocnemius Ddit4 mRNA", c(-.9,7.5), c("a", "b", "b"))+ 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC) +
@@ -1298,7 +1303,7 @@ plotproteinsynthesis <- function() {
                         c("", "", "", "",
                           "", "", "", "",
                           "", "", "", "") ) + 
-      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCsynthcells) +
+      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCmetabolism) +
       theme(legend.position = c(0, 0), legend.justification = c(0, 0), legend.direction = "horizontal") +
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
       xlab("day"),
@@ -1308,9 +1313,14 @@ plotproteinsynthesis <- function() {
                         c("", "", "", "",
                           "", "", "", "",
                           "", "", "", "")) +
-      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCsynthcells, guide = "none")+
+      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCmetabolism, guide = "none")+
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
       xlab("day"),
     ncol=1))
 }
 
+plotproteindegradation <- function(){
+  unnormalizeddata <- SynthesisInCellsVDC[, colnames(SynthesisInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
+  return(grid.arrange())
+  
+}
