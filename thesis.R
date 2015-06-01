@@ -1186,22 +1186,23 @@ plotcelldiams <- function() {
 }
 
 #protein synthesis and accretion in C2C12
-SynthesisInCells <- read.csv(file.path(datadir, "2014.06.30.protein.synthesis.csv"), header = TRUE)
-colnames(SynthesisInCells)[colnames(SynthesisInCells)=="Condition"] = "treatment"
+DegradationInCells <- read.csv(file.path(datadir, "2014.06.30.protein.degradation.csv"), header = TRUE)
+colnames(DegradationInCells)[colnames(DegradationInCells)=="Condition"] = "treatment"
 condsVDCA <- c("V", "DD", "DDT", "DDTT") # A is combination with higher Testo than C
 conditionsVDCAcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM T", "1 µM Dexa\n+ 500 nM T")
-for (i in levels(SynthesisInCells$treatment)) {
-  SynthesisInCells$normalizedgramsprotpersqcm[SynthesisInCells$treatment == as.character(i)]  <- 
-    SynthesisInCells$normalizedgramsprotpersqcm[SynthesisInCells$treatment == as.character(i)] / 
-    mean(SynthesisInCells$cell_protein_density_microgram_per_cmsq[
-      (SynthesisInCells$TimeDays == 0 & SynthesisInCells$treatment == as.character(i))])
+DegradationInCells$normalizedgramsprotpersqcm <- a.vector
+for (i in levels(DegradationInCells$treatment)) {
+  DegradationInCells$normalizedgramsprotpersqcm[DegradationInCells$treatment == as.character(i)]  <- 
+    DegradationInCells$normalizedgramsprotpersqcm[DegradationInCells$treatment == as.character(i)] / 
+    mean(DegradationInCells$cell_protein_density_microgram_per_cmsq[
+      (DegradationInCells$TimeDays == 0 & DegradationInCells$treatment == as.character(i))])
 }
 
-SynthesisInCellsVDCA <- SynthesisInCells[(synth$treatment %in% condsVDCA), ]
+DegradationInCellsVDCA <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCA), ]
 
 plottotalprotein <- function(){
   return(grid.arrange(
-    ggplot(SynthesisInCellsVDCB) + 
+    ggplot(DegradationInCellsVDCA) + 
       aes_string(x = "TimeDays",
                  y = "cell_protein_density_microgram_per_cmsq",
                  group = "treatment") +
@@ -1214,20 +1215,49 @@ plottotalprotein <- function(){
                    size = .5, 
                    fun.y = truemean, 
                    position = position_dodge(.05)) + 
-      stat_summary(geom = "text", 
-                   size = textSize * .4,
-                   aes(family = "serif"),
-                   fun.y = statstringyunderbar, 
-                   hjust = -.2,
-                   vjust = .25,
-                   label = "statsstring") + 
+#       stat_summary(geom = "text", 
+#                    size = textSize * .4,
+#                    aes(family = "serif"),
+#                    fun.y = statstringyunderbar, 
+#                    hjust = -.2,
+#                    vjust = .25,
+#                    label = "statsstring") + 
       stat_summary(geom = 'errorbar',
                    fun.data = 'semInterval',
                    width = 0.2,
                    show_guide = FALSE,
                    position=position_dodge(.05)) +
-      coord_cartesian(ylim = ylimit) + 
-      ylab(ylabel) +
-      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCBcells, guide = FALSE) +
-      stdplottimecourse)
+      coord_cartesian(ylim = c(0, 85)) + 
+      ylab("cell total protein\ndensity (µg/cm.sq.)") +
+      scale_shape_manual(values = c(16, 4, 1, 32), labels = conditionsVDCAcells, guide = FALSE) +
+      stdplottimecourse,
+  ggplot(DegradationInCellsVDCA) + 
+    aes_string(x = "TimeDays",
+               y = "normalizedgramsprotpersqcm",
+               group = "treatment") +
+    stat_summary(geom = "point",
+                 size = 3,
+                 fun.y = truemean,
+                 position = position_dodge(.05),
+                 aes_string(shape = "treatment")) +
+    stat_summary(geom = "line", 
+                 size = .5, 
+                 fun.y = truemean, 
+                 position = position_dodge(.05)) + 
+    #       stat_summary(geom = "text", 
+    #                    size = textSize * .4,
+    #                    aes(family = "serif"),
+    #                    fun.y = statstringyunderbar, 
+    #                    hjust = -.2,
+    #                    vjust = .25,
+    #                    label = "statsstring") + 
+    stat_summary(geom = 'errorbar',
+                 fun.data = 'semInterval',
+                 width = 0.2,
+                 show_guide = FALSE,
+                 position=position_dodge(.05)) +
+    coord_cartesian(ylim = c(0, 1.3)) + 
+    ylab("cell total protein\ndensity (normalized to vehicle)") +
+    scale_shape_manual(values = c(16, 4, 1, 32), labels = conditionsVDCAcells, guide = FALSE) +
+    stdplottimecourse))
 }
