@@ -18644,8 +18644,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(mean(DegradationInCellD$cell_protein_density_microgram_per_cmsq[(Degradatio
-nInCellsD$TimeDays == "1")]))
+sig3(mean(DegradationInCellsD$cell_protein_density_microgram_per_cmsq[(Degradati
+onInCellsD$TimeDays == "1")]))
 \end_layout
 
 \end_inset
