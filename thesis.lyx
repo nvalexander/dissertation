@@ -18839,7 +18839,16 @@ In preliminary experiments, I found that tracer uptake is minimal during
  Also, tracer uptake rate became essentially equal to the rate of tracer
  release due to protein synthesis after the first 18 hours of labeling.
  Therefore, I performed a series of assays where the rate of protein synthesis
- was estimated through the rate of tracer uptake over 6 hours.
+ was estimated through the rate of tracer uptake over am intermediate 6
+ hours (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:protein-synthesis-cells"
+
+\end_inset
+
+, top).
 \end_layout
 
 \begin_layout Standard
@@ -18849,6 +18858,31 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "4in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/cell-labeling-synthesis.pdf
+	width 6in
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -18857,6 +18891,13 @@ status open
 
 \begin_layout Plain Layout
 C2C12 myotube measurement of protein synthesis rate.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:protein-synthesis-cells"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
