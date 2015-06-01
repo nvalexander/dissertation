@@ -1286,5 +1286,27 @@ pvaluesTreatmentAndDateConlyOneToThree <- summary(aov( cell_protein_density_micr
 pvaluesTreatmentAndDateAonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsA[DegradationInCellsA != "3", ]))[[1]]$`Pr(>F)`
 
 plotproteinsynthesis <- function() {
-  
+  unnormalizeddata <- DegradationInCellsVDCQ[, colnames(DegradationInCellsVDCQ) %in% c("treatment", "TimeDays", "activity_in_cell_protein_extract_picoCi")]
+  normalizeddata <- DegradationInCellsVDCQ[, colnames(DegradationInCellsVDCQ) %in% c("treatment", "TimeDays", "femtomol_radio_Phe_per_g_cell_protein")]
+  return(grid.arrange(
+    plotfourtimecourses(unnormalizeddata,  
+                        c(0, 1600), 
+                        "activity in cell protein\nextract (pCi/well)",
+                        conditionsVDCAcells,
+                        c("", "", "", "",
+                          "", "", "", "",
+                          "", "", "", "",
+                          "", "", "", "") ) + 
+      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
+      theme(legend.position = c(0, 0), legend.justification = c(0, 0), legend.direction = "horizontal"),
+    plotfourtimecourses(normalizeddata,  
+                        c(0, 11), 
+                        "tracer enrichment in cell\nprotein (fmol/g)",
+                        conditionsVDCAcells,
+                        c("", "", "", "",
+                          "", "", "", "",
+                          "", "", "", "",
+                          "", "", "", "")) +
+      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, guide = "none"),
+    ncol=1))
 }
