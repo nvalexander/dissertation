@@ -130,7 +130,7 @@ InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment,
 DegradationInCellsVDCA <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCA), ]
 DegradationInCellsVDCA$treatment <- factor(DegradationInCellsVDCA$treatment, 
                                            levels = condsVDCA)
-DegradationInCellsVDC <- DegradationInCells[(DegradationInCells$treatment %in% condsVDC), ]
+DegradationInCellsVDC <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCsynth), ]
 DegradationInCellsVDC$treatment <- factor(DegradationInCellsVDC$treatment, 
                                            levels = condsVDCsynth)
 DegradationInCellsV <- DegradationInCells[(DegradationInCells$treatment == "V"), ]
@@ -412,7 +412,6 @@ plotfourtimecourses <- function(skinnydataset, ylimit, ylabel, categories, stats
            ylab(ylabel) +
            scale_x_continuous(labels = c("1", "2", "3", "4")) +
            xlab("day") +
-           scale_shape_manual(values = c(16, 4, 1, 13), labels = categories) +
            stdplottimecourse)
 }
 
@@ -1286,27 +1285,26 @@ pvaluesTreatmentAndDateConlyOneToThree <- summary(aov( cell_protein_density_micr
 pvaluesTreatmentAndDateAonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = DegradationInCellsA[DegradationInCellsA != "3", ]))[[1]]$`Pr(>F)`
 
 plotproteinsynthesis <- function() {
-  unnormalizeddata <- DegradationInCellsVDCQ[, colnames(DegradationInCellsVDCQ) %in% c("treatment", "TimeDays", "activity_in_cell_protein_extract_picoCi")]
-  normalizeddata <- DegradationInCellsVDCQ[, colnames(DegradationInCellsVDCQ) %in% c("treatment", "TimeDays", "femtomol_radio_Phe_per_g_cell_protein")]
+  unnormalizeddata <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "activity_in_cell_protein_extract_picoCi")]
+  normalizeddata <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "femtomol_radio_Phe_per_g_cell_protein")]
   return(grid.arrange(
     plotthreetimecourses(unnormalizeddata,  
                         c(0, 1600), 
                         "activity in cell protein\nextract (pCi/well)",
-                        conditionsVDCQcells,
                         c("", "", "", "",
                           "", "", "", "",
-                          "", "", "", "",
                           "", "", "", "") ) + 
-      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
-      theme(legend.position = c(0, 0), legend.justification = c(0, 0), legend.direction = "horizontal"),
+      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCsynthcells) +
+      theme(legend.position = c(0, 0), legend.justification = c(0, 0), legend.direction = "horizontal") +
+      xlab("day"),
     plotthreetimecourses(normalizeddata,  
                         c(0, 11), 
                         "tracer enrichment in cell\nprotein (fmol/g)",
-                        conditionsVDCQcells,
                         c("", "", "", "",
                           "", "", "", "",
-                          "", "", "", "",
                           "", "", "", "")) +
-      scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, guide = "none"),
+      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCsynthcells, guide = "none")+
+      xlab("day"),
     ncol=1))
 }
+
