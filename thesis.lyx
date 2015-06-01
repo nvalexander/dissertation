@@ -18578,7 +18578,8 @@ In another experiment, I tested the ability of Testo to preserve protein
  content in C2C12 cells.
  In order to determine the time course of protein content, cells were treated
  with (A) vehicle, (B) 1 uM Dexa, (C) 1 uM Dexa and 100 nM Testo, or (D)
- 1 uM Dexa and 500 nM Testo, for up to three days, in increments of 24 hours(Fig.
+ 1 uM Dexa and 500 nM Testo, for up to three days, in increments of 24 hours
+ (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -18586,13 +18587,51 @@ reference "fig:protein-mass-cells"
 
 \end_inset
 
-, left).
+, top).
  All the treatments led to loss of total protein starting from the third
- day, presumably due to senescence and / or loss of viability.
- However, there were differences in total protein density prior to the third
- day, which closely mimicked the in vivo findings.
- Cells treated with vehicle did not lose significant amounts of protein
- over the first two days.
+ day, presumably due to senescence and / or loss of viability (ANOVA treatment
+ x time, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(pvaluesTreatmentAndDate[[1]])
+\end_layout
+
+\end_inset
+
+ for time variable).
+ When all the samples were analyzed together, treatment had no significant
+ effect (ANOVA treatment x time, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(pvaluesTreatmentAndDate[[2]])
+\end_layout
+
+\end_inset
+
+ for treatment variable).
+\end_layout
+
+\begin_layout Standard
+However, there were differences in total protein density prior to the third
+ day, which mimicked the in vivo findings.
+ These trends become apparent when data is represented after normalization
+ to the initial time point (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:protein-mass-cells"
+
+\end_inset
+
+, top).
+ In the first two days, there were no relevant changes in total protein
+ content in cells treated with vehicle.
  Total protein concentration was 
 \begin_inset Flex S/R expression
 status open
@@ -18629,7 +18668,7 @@ onInCellsV$TimeDays == "2")]))
 
 \end_inset
 
- ug/cm2 in the third, that is, essentialy unchanged.
+ ug/cm2 in the third.
  In contrast, Dexa-treated cells lost protein, sliding from (
 \begin_inset Flex S/R expression
 status open
@@ -18825,10 +18864,8 @@ name "fig:protein-mass-cells"
 \end_layout
 
 \begin_layout Standard
-The above described trends are more salient when data is represented after
- normalization to the initial time point.
- Overall, the changes in cell diameter and total protein content are consonant
- with protein metabolism changes observed in vitro.
+Overall, the changes in cell diameter and total protein content are consonant
+ with protein metabolism changes observed in vivo.
 \end_layout
 
 \begin_layout Section
