@@ -1181,7 +1181,7 @@ plotcelldiams <- function() {
       InvitroCelldiamsCVD[, colnames(InvitroCelldiamsCVD) %in% c("treatment", "mean")]), 
     "mean diameter", 
     c(0, 1.2), 
-    c("a", "b", "c")) + 
+    c("a", "b", "a")) + 
            theme(axis.text.x = element_text(color = "black")) + 
            scale_x_discrete(labels = conditionsVDC))
 }

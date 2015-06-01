@@ -13579,8 +13579,13 @@ key "stodden2014implementing"
  In plots, points represent means, while error bars are standard error of
  the mean.
  In both cases, error bars include only biological variability.
- Experiments with more than two groups were analyzed by analysis of variance
- (
+ Experiments with more than two groups were analyzed by Kruskal-Wallis test
+ for overall non-parametric analysis of variance.
+ Groups were compared in pairs using post-hoc Dunn's test with Bonferroni
+ correction for multiple comparisons.
+ IN the cases where data passed the Shapiro-Wilk test of normality at significan
+ce level of 0.05, parametric tests were used instead, including analysis
+ of variance (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ANOVA"
@@ -13588,10 +13593,11 @@ description "analysis of variance"
 
 \end_inset
 
-) or Kruskal-Wallis test for overall non-parametric analysis of variance.
- Groups were compared in pairs using post-hoc Dunn's test with Bonferroni
- correction for multiple comparisons.
- In a plot, means with the same letter are not significantly different from
+) and post-hoc Tukey's honest significant difference test.
+\end_layout
+
+\begin_layout Standard
+In a plot, means with the same letter are not significantly different from
  each other.
  Tests were considered statistically significant when the null hypothesis
  could not be rejected at any level of significance greater than or equal
@@ -18339,7 +18345,34 @@ lldiams$mean[InvitroCelldiams$treatment=="V"]))
 
 \end_inset
 
-% in diameter ().
+% in diameter (Tukey's HSD, p = 
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+sig3( data.frame(TukeyHSD(x=aov(mean ~ treatment, data = InvitroCelldiamsCVD),
+ 'treatment', conf.level=0.95)$treatment)[["D-V", "p.adj"]] )
+\end_layout
+
+\end_inset
+
+).
+ Co-administration of 300 nM Testo re-established basal diameters (Tukey's
+ HSD vs.
+ Dexa alone, p = 
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+sig3( data.frame(TukeyHSD(x=aov(mean ~ treatment, data = InvitroCelldiamsCVD),
+ 'treatment', conf.level=0.95)$treatment)[["C-D", "p.adj"]] )
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
