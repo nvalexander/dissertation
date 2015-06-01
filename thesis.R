@@ -151,6 +151,10 @@ DegradationInCellsD <- DegradationInCells[(DegradationInCells$treatment == "DD")
 DegradationInCellsC <- DegradationInCells[(DegradationInCells$treatment == "DDT"), ]
 DegradationInCellsA <- DegradationInCells[(DegradationInCells$treatment == "DDTT"), ]
 DegradationInCellsQ <- DegradationInCells[(DegradationInCells$treatment == "DDTTP"), ]
+Degradation6 <- DegradationInCells[(DegradationInCells$TimeDays == "0")  ,]
+Degradation24 <- DegradationInCells[(DegradationInCells$TimeDays == "1")  ,]
+Degradation48 <- DegradationInCells[(DegradationInCells$TimeDays == "2")  ,]
+Degradation72 <- DegradationInCells[(DegradationInCells$TimeDays == "3")  ,]
 
 #literal constants
 unistar <- sprintf('\u2736')
@@ -1319,31 +1323,56 @@ plotproteinsynthesis <- function() {
     ncol=1))
 }
 
+pvaluesDegradationTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
+
 plotproteindegradation <- function(){
-   degradationthreecourses <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
-   fivelevelsDT <-c("V", "DD", "DDT", "DDTT")
-   fivelevelslong <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM Testo", "1 µM Dexa\n+ 500 nM Testo")
-   degradationdaytwo <- DegradationInCells[
-     (DegradationInCells$treatment %in% fivelevelsDT ) &
-     (DegradationInCells$TimeDays == "1")  ,]
-   degradationdaytwo <- degradationdaytwo[, colnames(DegradationInCellsVDC) %in% c("treatment", "curie_ratio_protein_depleted_medium_over_cell_protein")]
-   degradationdaytwo$treatment <- factor(degradationdaytwo$treatment, 
-                                         levels = fivelevelsDT)
+   fourlevelsDT <-c("V", "DD", "DDT", "DDTT")
+   fourlevelslong <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM Testo", "1 µM Dexa\n+ 500 nM Testo")
+   degradationfourcourses <- DegradationInCells[ (DegradationInCells$treatment %in% fourlevelsDT ), colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
+   degradationfourcourses24 <- degradationfourcourses[
+     (degradationfourcourses$TimeDays == "1")  ,
+     colnames(degradationfourcourses) %in% c("treatment", "curie_ratio_protein_depleted_medium_over_cell_protein")]
+   degradationfourcourses24$treatment <- factor(degradationfourcourses24$treatment, 
+                                         levels = fourlevelsDT)
   return(grid.arrange(
-    plotthreetimecourses(degradationthreecourses,  
-                         c(0, 1), 
-                         "medium to cell protein tracer ratio",
-                         c("", "", "", "",
-                           "", "", "", "",
-                           "", "", "", "")) +
-      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCmetabolism)+
+    ggplot(degradationfourcourses) + 
+      aes_string(x = colnames(degradationfourcourses)[2],
+                 y = colnames(degradationfourcourses)[3],
+                 group = colnames(degradationfourcourses)[1]) +
+      stat_summary(geom = "point",
+                   size = 3,
+                   fun.y = truemean,
+                   position = position_dodge(.05),
+                   aes_string(shape = colnames(degradationfourcourses)[1])) +
+      stat_summary(geom = "line", 
+                   size = .5, 
+                   fun.y = truemean, 
+                   position = position_dodge(.05)) + 
+      stat_summary(geom = "text", 
+                   size = textSize * .4,
+                   aes(family = "serif"),
+                   fun.y = statstringyunderbar, 
+                   hjust = -.2,
+                   vjust = .25,
+                   label = c("", "", "", "",
+                             "", "", "", "",
+                             "", "", "", "")) + 
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.2,
+                   show_guide = FALSE,
+                   position=position_dodge(.05)) +
+      coord_cartesian(ylim = c(0, 1)) + 
+      ylab("medium to cell protein tracer ratio") +
+      stdplottimecourse +
+      scale_shape_manual(values = c(16, 4, 1, 9), labels = fourlevelslong) +
       theme(legend.position = c(1,1), legend.justification = c(1, 1), legend.direction = "horizontal") +
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
       xlab("day"),
-    ggplot(degradationdaytwo) +
-      aes_string( x = colnames(degradationdaytwo)[1], 
-                  y = colnames(degradationdaytwo)[2], 
-                  fill = colnames(degradationdaytwo)[1]) +
+    ggplot(degradationfourcourses24) +
+      aes_string( x = colnames(degradationfourcourses24)[1], 
+                  y = colnames(degradationfourcourses24)[2], 
+                  fill = colnames(degradationfourcourses24)[1]) +
       stat_summary(fun.y = truemean, 
                    geom = "bar", 
                    colour = "black",
@@ -1361,9 +1390,9 @@ plotproteindegradation <- function(){
       ylab("medium to cell protein tracer\nratio (24 hour)") +
       coord_cartesian(ylim = c(0, 1)) + 
       scale_fill_manual(values = c("#ffffff", "#222222", "#777777", "#dddddd"),
-                        labels = fivelevelslong) +
+                        labels = fourlevelslong) +
       stdbarplot + 
       theme(axis.text.x = element_text(color = "black"))+ 
-      scale_x_discrete(labels = fivelevelslong),
+      scale_x_discrete(labels = fourlevelslong),
     ncol = 1))
 }
