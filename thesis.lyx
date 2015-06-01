@@ -18754,8 +18754,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "3in", fig.width = 6, fig.height = 3,dev='cairo_pdf'
+echo = FALSE, warning = FALSE, message = FALSE, out.width = "5in", out.height
+ = "5in", fig.width = 5, fig.height = 5, dev='cairo_pdf'
 \end_layout
 
 \end_inset

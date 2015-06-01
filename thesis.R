@@ -1211,7 +1211,7 @@ DegradationInCellsA <- DegradationInCells[(DegradationInCells$treatment == "DDTT
 plottotalprotein <- function(){
   unnormalizeddata <- DegradationInCellsVDCA[, colnames(DegradationInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq")]
   normalizeddata <- DegradationInCellsVDCA[, colnames(DegradationInCellsVDCA) %in% c("treatment", "TimeDays", "cell_protein_density_microgram_per_cmsq_normalized_to_first_day")]
-  return(arrangeGrob(
+  return(grid.arrange(
     ggplot(unnormalizeddata) + 
       aes_string(x = colnames(unnormalizeddata)[2],
                  y = colnames(unnormalizeddata)[3],
@@ -1237,13 +1237,13 @@ plottotalprotein <- function(){
                    width = 0.2,
                    show_guide = FALSE,
                    position=position_dodge(.1)) +
-      coord_cartesian(ylim = c(70, 90)) + 
+      coord_cartesian(ylim = c(65, 90)) + 
       ylab("total protein density\n(ug per cm.sq.)") +
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
       xlab("day") +
       scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells) +
-      theme(legend.position = c(0 ,1)) +
-      stdplottimecourse,
+      stdplottimecourse +
+      theme(legend.position = c(0, 0), legend.justification = c(0, 0), legend.direction = "horizontal"),
     ggplot(normalizeddata) + 
       aes_string(x = colnames(normalizeddata)[2],
                  y = colnames(normalizeddata)[3],
@@ -1275,8 +1275,7 @@ plottotalprotein <- function(){
       xlab("day") +
       scale_shape_manual(values = c(16, 4, 1, 13), labels = conditionsVDCAcells, guide = "none") +
       stdplottimecourse,
-    ncol=1, 
-    widths = c(1,1.2)))
+    ncol=1))
 }
 
 pvaluesTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
