@@ -1288,14 +1288,14 @@ plottotalprotein <- function(){
     ncol=1))
 }
 
-pvaluesTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateVonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsV[SynthesisInCellsV$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateDonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsD[SynthesisInCellsD$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateConlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsC[SynthesisInCellsC$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateAonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsA[SynthesisInCellsA$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-pvaluesTreatmentAndDateNormalizedToFirst <- summary(aov( cell_protein_density_microgram_per_cmsq_normalized_to_first_day ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDate <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDateVonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsV[SynthesisInCellsV$TimeDays != "3", ]))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDateDonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsD[SynthesisInCellsD$TimeDays != "3", ]))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDateConlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsC[SynthesisInCellsC$TimeDays != "3", ]))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDateAonlyOneToThree <- summary(aov( cell_protein_density_microgram_per_cmsq ~ TimeDays, data = SynthesisInCellsA[SynthesisInCellsA$TimeDays != "3", ]))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDateNormalizedToFirst <- summary(aov( cell_protein_density_microgram_per_cmsq_normalized_to_first_day ~ TimeDays + treatment, data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
 
-pvaluesTreatmentAndDateActivityPerWell <- summary(aov( activity_in_cell_protein_extract_picoCi ~ TimeDays + treatment, data = SynthesisInCellsVDC))[[1]]$`Pr(>F)`
+anovaSynthesisTreatmentAndDateActivityPerWell <- summary(aov( activity_in_cell_protein_extract_picoCi ~ TimeDays + treatment, data = SynthesisInCellsVDC))[[1]]$`Pr(>F)`
 
 plotproteinsynthesis <- function() {
   unnormalizeddata <- SynthesisInCellsVDC[, colnames(SynthesisInCellsVDC) %in% c("treatment", "TimeDays", "activity_in_cell_protein_extract_picoCi")]
@@ -1347,16 +1347,7 @@ plotproteindegradation <- function(){
       stat_summary(geom = "line", 
                    size = .5, 
                    fun.y = truemean, 
-                   position = position_dodge(.05)) + 
-      stat_summary(geom = "text", 
-                   size = textSize * .4,
-                   aes(family = "serif"),
-                   fun.y = statstringyunderbar, 
-                   hjust = -.2,
-                   vjust = .25,
-                   label = c("", "", "", "",
-                             "", "", "", "",
-                             "", "", "", "")) + 
+                   position = position_dodge(.05)) +  
       stat_summary(geom = 'errorbar',
                    fun.data = 'semInterval',
                    width = 0.2,
@@ -1367,8 +1358,8 @@ plotproteindegradation <- function(){
       stdplottimecourse +
       scale_shape_manual(values = c(16, 4, 1, 9), labels = fourlevelslong) +
       theme(legend.position = c(1,1), legend.justification = c(1, 1), legend.direction = "horizontal") +
-      scale_x_continuous(labels = c("1", "2", "3", "4")) +
-      xlab("day"),
+      scale_x_continuous(labels = c("6", "24", "48", "72")) +
+      xlab("hours"),
     ggplot(degradationfourcourses24) +
       aes_string( x = colnames(degradationfourcourses24)[1], 
                   y = colnames(degradationfourcourses24)[2], 

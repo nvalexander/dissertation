@@ -18596,7 +18596,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(pvaluesTreatmentAndDate[[1]])
+sig3(anovaProteinDensityTreatmentAndDate[[1]])
 \end_layout
 
 \end_inset
@@ -18609,7 +18609,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(pvaluesTreatmentAndDate[[2]])
+sig3(anovaProteinDensityTreatmentAndDate[[2]])
 \end_layout
 
 \end_inset
@@ -18674,7 +18674,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(pvaluesTreatmentAndDateVonlyOneToThree[[1]])
+sig3(anovaProteinDensityTreatmentAndDateVonlyOneToThree[[1]])
 \end_layout
 
 \end_inset
@@ -18737,7 +18737,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(pvaluesTreatmentAndDateDonlyOneToThree[[1]])
+sig3(anovaProteinDensityTreatmentAndDateDonlyOneToThree[[1]])
 \end_layout
 
 \end_inset
@@ -18766,7 +18766,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(pvaluesTreatmentAndDateConlyOneToThree[[1]])
+sig3(anovaProteinDensityTreatmentAndDateConlyOneToThree[[1]])
 \end_layout
 
 \end_inset
@@ -18794,7 +18794,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(pvaluesTreatmentAndDateAonlyOneToThree[[1]])
+sig3(anovaProteinDensityTreatmentAndDateAonlyOneToThree[[1]])
 \end_layout
 
 \end_inset
@@ -18854,7 +18854,7 @@ s.
 Changes in C2C12 myotube total protein content following Dexa and / or Testo
  treatments (Top) Absolute total protein density.
  (Bottom) The same data, after normalization to the average of the initial
- time point for each condition (n=6).
+ time point for each condition (n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:protein-mass-cells"
@@ -18949,7 +18949,7 @@ has_inner_box 1
 inner_pos "c"
 use_parbox 0
 use_makebox 0
-width "5in"
+width "6in"
 special "none"
 height "5in"
 height_special "none"
@@ -18961,8 +18961,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "5in", out.height
- = "5in", fig.width = 5, fig.height = 5>>=
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "5in", fig.width = 6, fig.height = 5>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -19008,7 +19008,7 @@ Estimates of protein synthesis rate in C2C12 myotubes treated with Dexa
  (Top) Experimental timeline.
  (Middle) Amount of tracer incorporated into protein per well.
  (Bottom) Amount of tracer incorporated into protein per gram of total protein
- (n=5-6).
+ (n=6).
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -19030,9 +19030,20 @@ name "fig:protein-synthesis-cells"
 \end_layout
 
 \begin_layout Standard
-Data has been analyzed as the amount of protein-bound intracellular tracer,
- normalized to the mass of cell protein, thus obtaining specific activity
- (Fig.
+After lysis, cells were assayed for protein-bound tracer.
+ There was no effect of treatment on the amount of tracer uptaken by the
+ cells (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:protein-synthesis-cells"
+
+\end_inset
+
+, middle).
+ To avoid the confounding influence of the atrophy, data was also analyzed
+ as specific activity , that is, protein-bound intracellular tracer normalized
+ to the mass of cell protein (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -19041,16 +19052,7 @@ reference "fig:protein-synthesis-cells"
 \end_inset
 
 , bottom).
- When analyzed as amount of protein-bound intracellular tracer (Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:protein-synthesis-cells"
-
-\end_inset
-
-, middle), without normalization, the same qualitative observations could
- be made.
+ The same qualitative observations could be made after normalization.
  There was a significant effect of time on the rate of protein synthesis
  (ANOVA treatment x time, p = 
 \begin_inset Flex S/R expression
@@ -19058,7 +19060,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(pvaluesTreatmentAndDateActivityPerWell[[1]])
+sig3(anovaSynthesisTreatmentAndDateActivityPerWell[[1]])
 \end_layout
 
 \end_inset
@@ -19075,7 +19077,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(pvaluesTreatmentAndDateActivityPerWell[[2]])
+sig3(anovaSynthesisTreatmentAndDateActivityPerWell[[2]])
 \end_layout
 
 \end_inset
@@ -19084,27 +19086,45 @@ sig3(pvaluesTreatmentAndDateActivityPerWell[[2]])
  There is no statistically significant difference between treatments at
  each time point.
  The amplest difference in translation rate between treatments is in day
- 4, when the combination improved protein synthesis by a non-significant
- 
+ 4, when the Dexa improved protein synthesis by a non-significant 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( 100 * ( mean(SynthesisInCellsV[(SynthesisInCellsV$TimeDays == "3"),
- ]$femtomol_radio_Phe_per_g_cell_protein) - mean(SynthesisInCellsA[(SynthesisInC
-ellsA$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell_protein) ) / mean(Synthe
-sisInCellsA[(SynthesisInCellsA$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell
+sig3( 100 * ( mean(SynthesisInCellsD[(SynthesisInCellsD$TimeDays == "3"),
+ ]$femtomol_radio_Phe_per_g_cell_protein) - mean(SynthesisInCellsV[(SynthesisInC
+ellsV$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell_protein) ) / mean(Synthe
+sisInCellsV[(SynthesisInCellsV$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell
 _protein) )
 \end_layout
 
 \end_inset
 
-%.
+% compared to vehicle, and by non-significant 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3( 100 * ( mean(SynthesisInCellsD[(SynthesisInCellsD$TimeDays == "3"),
+ ]$femtomol_radio_Phe_per_g_cell_protein) - mean(SynthesisInCellsC[(SynthesisInC
+ellsC$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell_protein) ) / mean(Synthe
+sisInCellsC[(SynthesisInCellsC$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell
+_protein) )
+\end_layout
+
+\end_inset
+
+% compared to the combination with testosterone.
+ The trend toward increased protein synthesis with Dexa cannot explain the
+ observed myotube atrophy induced by Dexa.
+ Moreover, the late onset of protein synthesis upregulation indicates that
+ this may be a compensatory response to the earlier loss of protein.
 \end_layout
 
 \begin_layout Standard
-Within the limits of this model, protein synthesis changes do not appear
+Within the limits of the C2C12 model, protein synthesis changes do not appear
  to mediate Dexa-induced loss of protein, nor its alleviation by Testo.
 \end_layout
 
@@ -19117,8 +19137,8 @@ e
 A series of complementary experiments estimated the rate of protein degradation
  in C2C12 myotubes.
  In each case, cells were differentiated over seven days, then treated with
- (A) vehicle, (B) 1 uM Dexa, or (C) 1 uM Dexa and 500 nM Testo, for either
- 6, 24, 48, or 72 hours (Fig.
+ (A) vehicle, (B) 1 uM Dexa, (C) 1 uM Dexa and 100 nM Testo, or (D) 1 uM
+ Dexa and 500 nM Testo, for either 6, 24, 48, or 72 hours (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -19127,13 +19147,13 @@ reference "fig:protein-degradation-cells"
 \end_inset
 
 ).
- The media with new steroids was refreshed every 24 hours.
+ The media with steroids was refreshed every 24 hours.
  The tracer was added three days before the addition of steroids, and was
  maintained in the media until 6 hours before lysis.
- As explained earlier, the rate of incorporation of tracer slows down before
- the first 24 hours, and therefore it may be assumed that, with some approximati
-on, the proportion of tracer to tracee is approximately equal between culture
- medium and the pool of rapid-turnover intracellular protein.
+ Because the rate of incorporation of tracer slows down before the first
+ 24 hours, and therefore it may be assumed that, with some approximation,
+ the ratio of tracer to tracee in culture medium is equal to that in the
+ pool of rapid-turnover intracellular protein.
 \end_layout
 
 \begin_layout Standard
@@ -19179,7 +19199,7 @@ has_inner_box 1
 inner_pos "c"
 use_parbox 0
 use_makebox 0
-width "5in"
+width "6in"
 special "none"
 height "5in"
 height_special "none"
@@ -19191,8 +19211,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "5in", out.height
- = "5in", fig.width = 5, fig.height = 5>>=
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "5in", fig.width = 6, fig.height = 5>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -19258,6 +19278,8 @@ name "fig:protein-degradation-cells"
 \end_layout
 
 \begin_layout Standard
+There was no difference between treatments at 6 hours (), 48 hours, or 72
+ hours.
 \begin_inset Newpage pagebreak
 \end_inset
 
