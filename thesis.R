@@ -46,6 +46,7 @@ InvivoSevendayNicenames <- read.table(file.path(datadir, "2012.08.23.7daysTD.csv
                                       stringsAsFactors = FALSE)
 InvitroCelldiams <- read.csv(file.path(datadir, "2012.08.26.celldiameters.csv"), header = TRUE)
 DegradationInCells <- read.csv(file.path(datadir, "2014.06.30.protein.degradation.csv"), header = TRUE)
+colnames(DegradationInCells)[colnames(DegradationInCells)=="Condition"] = "treatment"
 DegradationInCells$cell_protein_density_microgram_per_cmsq_normalized_to_first_day <- NA
 DegradationInCells$cell_protein_density_microgram_per_cmsq_normalized_to_vehicle <- NA
 for (i in levels(DegradationInCells$treatment)) {
@@ -72,7 +73,6 @@ levels(InvivoThreeday$treatment)[levels(InvivoThreeday$treatment)=="X"] <- "V"
 levels(InvivoThreeday$treatment)[levels(InvivoThreeday$treatment)=="U"] <- "T"
 levels(InvitroCelldiams$treatment)[levels(InvitroCelldiams$treatment)=="DT"] <- "C"
 levels(InvitroCelldiams$treatment)[levels(InvitroCelldiams$treatment)=="DU"] <- "B"
-colnames(DegradationInCells)[colnames(DegradationInCells)=="Condition"] = "treatment"
 #re-leveling
 condsVDC <- c("V", "D", "C")
 conditionsVDC <- c("Veh", "Dexa", "Comb")
@@ -81,7 +81,9 @@ conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
 contraststhree <- c("V vs D", "V vs DT", "D vs DT")
 contrastsfour <- c("V vs D", "V vs T", "D vs T", "V vs DT", "D vs DT", "T vs DT")
 condsVDCA <- c("V", "DD", "DDT", "DDTT") # A is combination with higher Testo than C
+condsVDCQ <- c("V", "DD", "DDTT", "DDTTP") # Q is Dexa, Testo, and PPP
 conditionsVDCAcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM T", "1 µM Dexa\n+ 500 nM T")
+conditionsVDCQcells <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 500 nM T", "1 µM Dexa\n+ 500 nM T\n+ 50 nM PPP")
 condsVDCB <- c("V", "D", "C", "B") # B is combination with higher Testo than C
 VvsDthreeways <- match("V vs D", contraststhree)[[1]]
 DvsCthreeways <- match("D vs DT", contraststhree)[[1]]
@@ -128,10 +130,14 @@ InvitroCelldiams$treatment <- factor(InvitroCelldiams$treatment,
 DegradationInCellsVDCA <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCA), ]
 DegradationInCellsVDCA$treatment <- factor(DegradationInCellsVDCA$treatment, 
                                            levels = condsVDCA)
+DegradationInCellsVDCQ <- DegradationInCells[(DegradationInCells$treatment %in% condsVDCQ), ]
+DegradationInCellsVDCQ$treatment <- factor(DegradationInCellsVDCQ$treatment, 
+                                           levels = condsVDCQ)
 DegradationInCellsV <- DegradationInCells[(DegradationInCells$treatment == "V"), ]
 DegradationInCellsD <- DegradationInCells[(DegradationInCells$treatment == "DD"), ]
 DegradationInCellsC <- DegradationInCells[(DegradationInCells$treatment == "DDT"), ]
 DegradationInCellsA <- DegradationInCells[(DegradationInCells$treatment == "DDTT"), ]
+DegradationInCellsQ <- DegradationInCells[(DegradationInCells$treatment == "DDTTP"), ]
 
 #literal constants
 unistar <- sprintf('\u2736')
