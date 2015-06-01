@@ -1263,7 +1263,7 @@ plottotalprotein <- function(){
   return(grid.arrange(
     plotfourtimecourses(unnormalizeddata,  
                         c(65, 90), 
-                        "total protein density\n(ug per cm.sq.)",
+                        "total protein density\n(µg / cm2)",
                         conditionsVDCAcells,
                         c("", "", "", "",
                           "", "", "", "",
@@ -1321,7 +1321,7 @@ plotproteinsynthesis <- function() {
 
 plotproteindegradation <- function(){
    degradationthreecourses <- DegradationInCellsVDC[, colnames(DegradationInCellsVDC) %in% c("treatment", "TimeDays", "curie_ratio_protein_depleted_medium_over_cell_protein")]
-   fivelevelsDT <-c("V", "D", "DD", "DDT", "DDTT")
+   fivelevelsDT <-c("V", "DD", "DDT", "DDTT")
    degradationdaytwo <- DegradationInCells[
      (DegradationInCells$treatment %in% fivelevelsDT ) &
      (DegradationInCells$TimeDays == "1")  ,]
@@ -1343,7 +1343,7 @@ plotproteindegradation <- function(){
       aes_string( x = colnames(degradationdaytwo)[1], 
                   y = colnames(degradationdaytwo)[2], 
                   fill = colnames(degradationdaytwo)[1]) +
-      stat_summary(fun.y = mean, 
+      stat_summary(fun.y = truemean, 
                    geom = "bar", 
                    colour = "black",
                    show_guide = FALSE) +
@@ -1357,9 +1357,10 @@ plotproteindegradation <- function(){
                    hjust = .5,
                    vjust = -.6,
                    label = "") +
-      ylab(" medium to cell protein tracer ratio (24 hour)") +
+      ylab("medium to cell protein tracer\nratio (24 hour)") +
       coord_cartesian(ylim = c(0, 1)) + 
-      scale_fill_manual(values = c("#ffffff", "#999999", "#222222", "#777777", "#dddddd")) +
+      scale_fill_manual(values = c("#ffffff", "#222222", "#777777", "#dddddd"),
+                        labels = c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 100 nM Testo", "1 µM Dexa\n+ 500 nM Testo")) +
       stdbarplot,
     ncol = 1))
 }
