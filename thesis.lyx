@@ -143,7 +143,7 @@ pagenumbering{gobble}
 
 \backslash
 newgeometry{left=1.5in,right=1in,top=1.5in,bottom=1in,headheight=0in,headsep=0in,f
-ootskip=0in}
+ootskip=0in,includefoot}
 \end_layout
 
 \end_inset
@@ -823,8 +823,15 @@ pagenumbering{roman}
 
 
 \backslash
+pagestyle{preamblepages}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 newgeometry{left=1.5in,right=1in,top=1in,bottom=0.75in,headheight=0.04in,headsep=0.2
-1in,footskip=0.5in}
+1in,footskip=0.5in,includefoot}
 \end_layout
 
 \end_inset
@@ -1024,6 +1031,13 @@ width "2in"
 \begin_layout Standard
 \begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{preamblepages}
+\end_layout
 
 \begin_layout Plain Layout
 
