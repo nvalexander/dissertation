@@ -19168,8 +19168,8 @@ e
 A series of complementary experiments estimated the rate of protein degradation
  in C2C12 myotubes.
  In each case, cells were differentiated over seven days, then treated with
- (A) vehicle, (B) 100 nM Dexa, (C) 1 uM Dexa, (D) 1 uM Dexa and 100 nM Testo,
- or (E) 1 uM Dexa and 500 nM Testo, for either 6, 24, 48, or 72 hours (Fig.
+ (A) vehicle, (B) 1 uM Dexa, (C) 1 uM Dexa and 100 nM Testo, or (D) 1 uM
+ Dexa and 500 nM Testo, for either 6, 24, 48, or 72 hours (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -19332,10 +19332,43 @@ reference "fig:protein-degradation-cells"
 \end_layout
 
 \begin_layout Standard
-There were no statistically significant pairwise differences between treatments
- at any time point due to limited sample size.
+Overall, due to sample size, the treatments were not statistically significant
+ across time points (ANOVA time X treatment, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+anovaDegradationTreatmentAndDate[[1]]
+\end_layout
+
+\end_inset
+
+ for time; p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+anovaDegradationTreatmentAndDate[[2]]
+\end_layout
+
+\end_inset
+
+ for treatment).
  Nevertheless, the effects of the two steroids were ample and dose-dependent
- at the 24 hour time point(Fig.
+ at the 24 hour time point ((ANOVA between treatments, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+anovaDegradationTreatmentAndDate25[[1]]
+\end_layout
+
+\end_inset
+
+; fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref

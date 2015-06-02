@@ -1477,13 +1477,13 @@ anovaDegradationTreatmentAndDate <-
   summary(
     aov( 
       curie_ratio_protein_depleted_medium_over_cell_protein ~ TimeDays + treatment, 
-      data = DegradationInCellsVDCAB))[[1]]$`Pr(>F)`
+      data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
 
 anovaDegradationTreatmentAndDate24 <- 
   summary(
     aov( 
       curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
-      data = DegradationInCellsVDCAB[DegradationInCells$TimeDays == "1", ]))[[1]]$`Pr(>F)`
+      data = DegradationInCellsVDCA[DegradationInCells$TimeDays == "1", ]))[[1]]$`Pr(>F)`
 
 plotproteindegradation <- function(){
    degradationtimecourse <- 
