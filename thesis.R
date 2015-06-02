@@ -1558,7 +1558,7 @@ plotproteindegradation <- function(){
                    vjust = -.6,
                    label = "") +
       ylab("medium to cell protein tracer\nratio (24 hour)") +
-      coord_cartesian(ylim = c(0, .9)) + 
+      coord_cartesian(ylim = c(0, 1)) + 
       scale_fill_manual(values = c("#ffffff", "#888888", "#222222", "#777777", "#dddddd"),
                         labels = conditionsVDCABmetabolism) +
       stdbarplot + 
