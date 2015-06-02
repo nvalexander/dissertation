@@ -1470,11 +1470,15 @@ pvaluesDegradationTreatmentAndDate <-
 plotproteindegradation <- function(){
    degradationfourcourses <- 
      DegradationInCells[ 
-       (DegradationInCells$treatment %in% fourlevelsDT ), 
-       colnames(DegradationInCellsVDC) %in% c(
+       (DegradationInCells$treatment %in% condsVDCAmetabolism ), 
+       colnames(DegradationInCells) %in% c(
          "treatment", 
          "TimeDays", 
          "curie_ratio_protein_depleted_medium_over_cell_protein")]
+   degradationfourcourses$treatment <- 
+     factor(
+       degradationfourcourses$treatment, 
+       levels = condsVDCAmetabolism)
    degradationfourcourses24 <- 
      degradationfourcourses[
        (degradationfourcourses$TimeDays == "1")  ,
@@ -1484,7 +1488,7 @@ plotproteindegradation <- function(){
    degradationfourcourses24$treatment <- 
      factor(
        degradationfourcourses24$treatment, 
-       levels = fourlevelsDT)
+       levels = condsVDCAmetabolism)
   return(grid.arrange(
     ggplot(degradationfourcourses) + 
       aes_string(x = colnames(degradationfourcourses)[2],
@@ -1493,22 +1497,27 @@ plotproteindegradation <- function(){
       stat_summary(geom = "point",
                    size = 3,
                    fun.y = truemean,
-                   position = position_dodge(.05),
+                   position = position_dodge(.2),
                    aes_string(shape = colnames(degradationfourcourses)[1])) +
       stat_summary(geom = "line", 
                    size = .5, 
                    fun.y = truemean, 
-                   position = position_dodge(.05)) +  
+                   position = position_dodge(.2)) +  
       stat_summary(geom = 'errorbar',
                    fun.data = 'semInterval',
                    width = 0.2,
                    show_guide = FALSE,
-                   position=position_dodge(.05)) +
+                   position=position_dodge(.2)) +
       coord_cartesian(ylim = c(0, 1)) + 
       ylab("medium to cell protein tracer ratio") +
       stdplottimecourse +
-      scale_shape_manual(values = c(16, 4, 1, 9), labels = fourlevelslong) +
-      theme(legend.position = c(1,1), legend.justification = c(1, 1), legend.direction = "horizontal") +
+      scale_shape_manual(
+        values = c(16, 4, 1, 9), 
+        labels = conditionsVDCAmetabolism) +
+      theme(
+        legend.position = c(1,1),
+        legend.justification = c(1, 1),
+        legend.direction = "horizontal") +
       scale_x_continuous(labels = c("6", "24", "48", "72")) +
       xlab("hours"),
     ggplot(degradationfourcourses24) +
@@ -1532,9 +1541,9 @@ plotproteindegradation <- function(){
       ylab("medium to cell protein tracer\nratio (24 hour)") +
       coord_cartesian(ylim = c(0, 1)) + 
       scale_fill_manual(values = c("#ffffff", "#222222", "#777777", "#dddddd"),
-                        labels = fourlevelslong) +
+                        labels = conditionsVDCAmetabolism) +
       stdbarplot + 
       theme(axis.text.x = element_text(color = "black"))+ 
-      scale_x_discrete(labels = fourlevelslong),
+      scale_x_discrete(labels = conditionsVDCAmetabolism),
     ncol = 1))
 }
