@@ -89,6 +89,9 @@ knitr
 \begin_body
 
 \begin_layout Standard
+\paragraph_spacing single
+\noindent
+\align center
 \begin_inset Flex Chunk
 status open
 
@@ -127,6 +130,7 @@ source(file.path(codedir, "thesis.R"))
 
 \begin_layout Standard
 \paragraph_spacing single
+\noindent
 \align center
 \begin_inset ERT
 status open
@@ -136,14 +140,6 @@ status open
 
 \backslash
 pagenumbering{gobble}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newgeometry{left=1.5in,right=1in,top=1.5in,bottom=1in,headheight=0in,headsep=0in,f
-ootskip=0in,includefoot}
 \end_layout
 
 \end_inset
