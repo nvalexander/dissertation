@@ -19108,8 +19108,8 @@ status open
 \begin_layout Plain Layout
 
 sig3( 100 * ( mean(SynthesisInCellsD[(SynthesisInCellsD$TimeDays == "3"),
- ]$femtomol_radio_Phe_per_g_cell_protein) - mean(SynthesisInCellsC[(SynthesisInC
-ellsC$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell_protein) ) / mean(Synthe
+ ]$femtomol_radio_Phe_per_g_cell_protein) - mean(SynthesisInCellsA[(SynthesisInC
+ellsA$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell_protein) ) / mean(Synthe
 sisInCellsC[(SynthesisInCellsC$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell
 _protein) )
 \end_layout

@@ -1313,7 +1313,7 @@ plotcelldiams <- function() {
   return(threecolumnplot(rescaledtovehicleasunity(
       InvitroCelldiamsCVD[, colnames(InvitroCelldiamsCVD) %in% 
                             c("treatment", "mean")]), 
-      "mean diameter", 
+      "mean diameter (rel. u.)", 
       c(0, 1.2), 
       c("a", "b", "a")) + 
         theme(axis.text.x = element_text(color = "black")) + 
@@ -1328,12 +1328,18 @@ plottotalprotein <- function(){
                            "treatment", 
                            "TimeDays", 
                            "cell_protein_density_microgram_per_cmsq")]
+  unnormalizeddata$treatment <- factor(
+    unnormalizeddata$treatment,
+    levels = condsVDCAmetabolism)
   normalizeddata <- 
     SynthesisInCellsVDCA[, 
                          colnames(SynthesisInCellsVDCA) %in% c(
                            "treatment", 
                            "TimeDays", 
                            "cell_protein_density_microgram_per_cmsq_normalized_to_first_day")]
+  normalizeddata$treatment <- factor(
+    normalizeddata$treatment,
+    levels = condsVDCAmetabolism)
   return(grid.arrange(
     plotfourtimecourses(
       unnormalizeddata,  
@@ -1346,7 +1352,7 @@ plottotalprotein <- function(){
         "", "", "", "") ) + 
       scale_shape_manual(
         values = c(16, 4, 1, 13), 
-        labels = conditionsVDCAcells) +
+        labels = conditionsVDCAmetabolism) +
       theme(
         legend.position = c(0, 0), 
         legend.justification = c(0, 0), 
@@ -1362,7 +1368,7 @@ plottotalprotein <- function(){
         "", "", "", "")) +
       scale_shape_manual(
         values = c(16, 4, 1, 13), 
-        labels = conditionsVDCAcells, 
+        labels = conditionsVDCAmetabolism, 
         guide = "none") +
       scale_y_continuous(breaks = ((18:22*.05)), labels = percent),
     ncol=1))
@@ -1412,11 +1418,17 @@ plotproteinsynthesis <- function() {
                           "treatment", 
                           "TimeDays", 
                           "activity_in_cell_protein_extract_picoCi")]
+  unnormalizeddata$treatment <- factor(
+    unnormalizeddata$treatment,
+    levels = condsVDCmetabolism)
   normalizeddata <- SynthesisInCellsVDC[, 
                                         colnames(SynthesisInCellsVDC) %in% c(
                                           "treatment", 
                                           "TimeDays", 
                                           "femtomol_radio_Phe_per_g_cell_protein")]
+  normalizeddata$treatment <- factor(
+    normalizeddata$treatment,
+    levels = condsVDCmetabolism)
   return(grid.arrange(
     plotthreetimecourses(
       unnormalizeddata,  
