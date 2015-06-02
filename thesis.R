@@ -1450,12 +1450,12 @@ anovaProteinDensityTreatmentAndDateConlyOneToThree <- aov(
 anovaPvaluesProteinDensityTreatmentAndDateConlyOneToThree <- 
   summary(anovaProteinDensityTreatmentAndDateConlyOneToThree)[[1]]$`Pr(>F)`
 
-# anovaProteinDensityTreatmentAndDateAonlyOneToThree <- aov( 
-#   cell_protein_density_microgram_per_cmsq ~ TimeDays, 
-#   data = SynthesisInCellsV[SynthesisInCellsA$TimeDays != "3", ])
-# anovaPvaluesProteinDensityTreatmentAndDateAonlyOneToThree <- 
-#   summary(anovaProteinDensityTreatmentAndDateAonlyOneToThree)[[1]]$`Pr(>F)`
-# 
+anovaProteinDensityTreatmentAndDateAonlyOneToThree <- aov( 
+  cell_protein_density_microgram_per_cmsq ~ TimeDays, 
+  data = SynthesisInCellsV[SynthesisInCellsA$TimeDays != "3", ])
+anovaPvaluesProteinDensityTreatmentAndDateAonlyOneToThree <- 
+  summary(anovaProteinDensityTreatmentAndDateAonlyOneToThree)[[1]]$`Pr(>F)`
+
 # anovaProteinDensityTreatmentAndDateNormalizedToFirst <- 
 #   summary(
 #     aov(
