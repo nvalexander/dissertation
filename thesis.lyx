@@ -19576,7 +19576,130 @@ In previous experiments, I established that loss of C2C12 myotube protein
  Using a series of chemical inhibitors, I investigated the mechanisms that
  mediate this catabolic upregulation.
  As in the previous experiment, cells were differentiated over 7 days.
- The 
+ In the final three days of differentiation, medium with tracer was refreshed
+ daily.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "1.8in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/cell-labeling-inhibitors.pdf
+	width 6in
+	height 1.8in
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "4.5in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "4in", fig.width = 6, fig.height = 4>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+	plotinhibitors()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Estimates of protein degradation rate in C2C12 myotubes treated with Dexa
+ and / or Testo.
+\end_layout
+
+\end_inset
+
+Estimates of protein degradation rate in C2C12 myotubes treated with Dexa
+ and / or Testo.
+ (Top) Experimental timeline.
+ (Middle) Ratio of tracer in medium to tracer in cells, across time points.
+ (Bottom) Ratio of tracer in medium to tracer in cells, at day 2 (n=5-6).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:protein-degradation-cells-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
