@@ -14,6 +14,7 @@ library(data.table)
 library(extrafont)
 library(Cairo)
 library(scales)
+library(multcomp)
 #font_import(prompt = FALSE)
 options(bitmapType="cairo")
 
