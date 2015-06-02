@@ -1477,7 +1477,13 @@ anovaDegradationTreatmentAndDate <-
   summary(
     aov( 
       curie_ratio_protein_depleted_medium_over_cell_protein ~ TimeDays + treatment, 
-      data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
+      data = DegradationInCellsVDCAB))[[1]]$`Pr(>F)`
+
+anovaDegradationTreatmentAndDate24 <- 
+  summary(
+    aov( 
+      curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
+      data = DegradationInCellsVDCAB[DegradationInCells$TimeDays == "1", ]))[[1]]$`Pr(>F)`
 
 plotproteindegradation <- function(){
    degradationtimecourse <- 
@@ -1493,7 +1499,7 @@ plotproteindegradation <- function(){
        levels = condsVDCmetabolism)
    degradationtimecourse24 <- 
      DegradationInCells[
-       (DegradationInCells$TimeDays == "2" &
+       (DegradationInCells$TimeDays == "1" &
           DegradationInCells$treatment %in% condsVDCABmetabolism)  ,
        colnames(DegradationInCells) %in% c(
          "treatment", 
@@ -1552,7 +1558,7 @@ plotproteindegradation <- function(){
                    vjust = -.6,
                    label = "") +
       ylab("medium to cell protein tracer\nratio (24 hour)") +
-      coord_cartesian(ylim = c(0, .1)) + 
+      coord_cartesian(ylim = c(0, .9)) + 
       scale_fill_manual(values = c("#ffffff", "#888888", "#222222", "#777777", "#dddddd"),
                         labels = conditionsVDCABmetabolism) +
       stdbarplot + 
