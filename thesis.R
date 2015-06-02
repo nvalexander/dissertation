@@ -280,6 +280,10 @@ truemean <- function(x) {
   return( mean(x, na.rm = TRUE) )
 }
 
+percentgrowth <- function(initial, final){
+  return( 100 * (truemean(final) - truemean(initial)) / truemean(initial))
+}
+
 hview <- function(htmllines) {
   htmlFile <- tempfile(fileext = ".html")
   writeLines(htmllines, htmlFile)
@@ -1348,6 +1352,20 @@ plotcelldiams <- function() {
       c("a", "b", "a")) + 
         theme(axis.text.x = element_text(color = "black")) + 
         scale_x_discrete(labels = conditionsVDC))
+}
+
+anovaDiameters <- 
+  aov(mean ~ treatment, data = InvitroCelldiamsCVD)
+tukeyDiameters <-
+  data.frame(TukeyHSD(x=anovaDiameters, 'treatment', conf.level=0.95)$treatment)
+
+printdiameterstats <-function() {
+  print("Diameters normality test:")
+  print(shapiro.test(InvitroCelldiams$mean))
+  print("Diameters ANOVA:")
+  print(summary(anovaDiameters))
+  print("Diameters Tukey post-hoc:")
+  print(tukeyDiameters)
 }
 
 #protein synthesis and accretion in C2C12
