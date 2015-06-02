@@ -19289,7 +19289,8 @@ Estimates of protein degradation rate in C2C12 myotubes treated with Dexa
  and / or Testo.
  (Top) Experimental timeline.
  (Middle) Ratio of tracer in medium to tracer in cells, across time points.
- (Bottom) Ratio of tracer in medium to tracer in cells, at day 2 (n=5-6).
+ (Bottom) Ratio of free tracer in medium to protein-bound tracer in cells,
+ at day 2 (n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:protein-degradation-cells"
@@ -19573,11 +19574,20 @@ Mechanisms of androgenic myoprotection in cultured myotubes treated with
 In previous experiments, I established that loss of C2C12 myotube protein
  during Dexa treatment is associated with an increase in protein degradation
  at 24 hours after the initiation of steroid.
- Using a series of chemical inhibitors, I investigated the mechanisms that
- mediate this catabolic upregulation.
+ Using a series of chemical inhibitors, I investigated the molecular mechanisms
+ that could mediate this catabolic upregulation (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:protein-degradation-cells-inhibitors"
+
+\end_inset
+
+, top).
  As in the previous experiment, cells were differentiated over 7 days.
  In the final three days of differentiation, medium with tracer was refreshed
  daily.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -19672,20 +19682,19 @@ status open
 status open
 
 \begin_layout Plain Layout
-Estimates of protein degradation rate in C2C12 myotubes treated with Dexa
- and / or Testo.
+Interference of protein degradation in C2C12 myotubes treated with Dexa
+ with chemical inhibitors.
 \end_layout
 
 \end_inset
 
-Estimates of protein degradation rate in C2C12 myotubes treated with Dexa
- and / or Testo.
+Interference of protein degradation in C2C12 myotubes treated with Dexa
+ with chemical inhibitors.
  (Top) Experimental timeline.
- (Middle) Ratio of tracer in medium to tracer in cells, across time points.
- (Bottom) Ratio of tracer in medium to tracer in cells, at day 2 (n=5-6).
+ (Bottom) Ratio of tracer in medium to tracer in cells (n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:protein-degradation-cells-1"
+name "fig:protein-degradation-cells-inhibitors"
 
 \end_inset
 
