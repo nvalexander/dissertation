@@ -146,9 +146,6 @@ InvivoSevenday$treatment <- factor(
 InvitroCelldiams$treatment <- factor(
   InvitroCelldiams$treatment,
   levels = condsVDCBdiameters)
-DegradationInCellsVDCAB$treatment <- factor(
-  DegradationInCellsVDCAB$treatment,
-  levels = condsVDCABmetabolism)
 #subsetting for convenience
 InvivoOnedayCVD <- InvivoOneday[InvivoOneday$treatment %in% condsVDC, ]
 InvivoOnedayCVD$treatment <- factor(
