@@ -92,46 +92,6 @@ knitr
 \paragraph_spacing single
 \noindent
 \align center
-\begin_inset Flex Chunk
-status open
-
-\begin_layout Plain Layout
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-preamble, echo = FALSE, warning = FALSE, message = FALSE
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-codedir <- normalizePath(file.path(opts_knit$get("root.dir")))
-\end_layout
-
-\begin_layout Plain Layout
-
-source(file.path(codedir, "thesis.R"))
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing single
-\noindent
-\align center
 \begin_inset ERT
 status open
 
@@ -153,6 +113,8 @@ status open
 
 \backslash
 linebreak
+\backslash
+linebreak
 \end_layout
 
 \end_inset
@@ -164,8 +126,6 @@ status open
 \begin_layout Plain Layout
 
 
-\backslash
-linebreak 
 \backslash
 linebreak 
 \backslash
@@ -796,8 +756,46 @@ Se questa non piace, non voglio più scrivere di musica.
 \end_inset
 
 
-\emph default
+\end_layout
 
+\begin_layout Standard
+\begin_inset Flex Chunk
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+preamble, echo = FALSE, warning = FALSE, message = FALSE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+codedir <- normalizePath(file.path(opts_knit$get("root.dir")))
+\end_layout
+
+\begin_layout Plain Layout
+
+source(file.path(codedir, "thesis.R"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
