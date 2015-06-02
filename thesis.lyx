@@ -17943,8 +17943,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoSevendayC$quadriceps.Ct.Ddit4....Ct.Gapdh.) - truemean(InvivoSev
-endayD$quadriceps.Ct.Ddit4....Ct.Gapdh.)))
+sig3(1 / pcramplificationrate( InvivoSevendayD$quadriceps.Ct.Ddit4....Ct.Gapdh.,
+ InvivoSevendayC$quadriceps.Ct.Ddit4....Ct.Gapdh.))
 \end_layout
 
 \end_inset
@@ -18125,8 +18125,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoOnedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoOne
-dayV$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+sig3(1 / pcramplificationrate( InvivoOnedayV$gastrocnemius.Ct.Igf1....Ct.Gapdh.,
+ InvivoOnedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.))
 \end_layout
 
 \end_inset
@@ -18149,8 +18149,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoThreedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoT
-hreedayV$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+sig3(1 / pcramplificationrate(InvivoThreedayV$gastrocnemius.Ct.Igf1....Ct.Gapdh.,
+ InvivoThreedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.))
 \end_layout
 
 \end_inset
@@ -18173,8 +18173,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoSevendayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoS
-evendayV$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+sig3( 1 / pcramplificationrate( InvivoSevendayV$gastrocnemius.Ct.Igf1....Ct.Gapdh.,
+ InvivoSevendayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.))
 \end_layout
 
 \end_inset
@@ -18199,8 +18199,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoThreedayD$quadriceps.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoThre
-edayV$quadriceps.Ct.Igf1....Ct.Gapdh.)))
+sig3(1 / pcramplificationrate( InvivoThreedayV$quadriceps.Ct.Igf1....Ct.Gapdh.,
+ InvivoThreedayD$quadriceps.Ct.Igf1....Ct.Gapdh.))
 \end_layout
 
 \end_inset
@@ -18223,8 +18223,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoSevendayD$quadriceps.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoSeve
-ndayV$quadriceps.Ct.Igf1....Ct.Gapdh.)))
+sig3(1 / pcramplificationrate( InvivoSevendayV$quadriceps.Ct.Igf1....Ct.Gapdh.,
+ InvivoSevendayD$quadriceps.Ct.Igf1....Ct.Gapdh.))
 \end_layout
 
 \end_inset
@@ -18253,8 +18253,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoOnedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoOne
-dayC$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+sig3( pcramplificationrate( InvivoOnedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh., InvivoOned
+ayC$gastrocnemius.Ct.Igf1....Ct.Gapdh.))
 \end_layout
 
 \end_inset
@@ -18277,8 +18277,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoThreedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoT
-hreedayC$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+sig3( pcramplificationrate( InvivoThreedayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.,
+ InvivoThreedayC$gastrocnemius.Ct.Igf1....Ct.Gapdh.))
 \end_layout
 
 \end_inset
@@ -18301,8 +18301,8 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( 2^(truemean(InvivoSevendayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.) - truemean(InvivoS
-evendayC$gastrocnemius.Ct.Igf1....Ct.Gapdh.)))
+sig3( pcramplificationrate( InvivoSevendayD$gastrocnemius.Ct.Igf1....Ct.Gapdh.,
+ InvivoSevendayC$gastrocnemius.Ct.Igf1....Ct.Gapdh.))
 \end_layout
 
 \end_inset
@@ -18730,11 +18730,9 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100 * ( truemean(SynthesisInCellsD$cell_protein_density_microgram_per_cmsq[
-(SynthesisInCellsD$TimeDays == "0")]) - truemean(SynthesisInCellsD$cell_protein_
-density_microgram_per_cmsq[(SynthesisInCellsD$TimeDays == "2")])) / truemean(Syn
-thesisInCellsD$cell_protein_density_microgram_per_cmsq[(SynthesisInCellsD$TimeDa
-ys == "0")]))
+sig3( -percentgrowth(SynthesisInCellsD$cell_protein_density_microgram_per_cmsq[(
+SynthesisInCellsD$TimeDays == "0")], SynthesisInCellsD$cell_protein_density_micr
+ogram_per_cmsq[(SynthesisInCellsD$TimeDays == "2")]))
 \end_layout
 
 \end_inset
@@ -18759,11 +18757,9 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100 * ( truemean(SynthesisInCellsC$cell_protein_density_microgram_per_cmsq[
-(SynthesisInCellsC$TimeDays == "2")]) - truemean(SynthesisInCellsC$cell_protein_
-density_microgram_per_cmsq[(SynthesisInCellsC$TimeDays == "0")])) / truemean(Syn
-thesisInCellsC$cell_protein_density_microgram_per_cmsq[(SynthesisInCellsC$TimeDa
-ys == "0")]))
+sig3(percentgrowth(SynthesisInCellsC$cell_protein_density_microgram_per_cmsq[(Sy
+nthesisInCellsC$TimeDays == "0")], SynthesisInCellsC$cell_protein_density_microg
+ram_per_cmsq[(SynthesisInCellsC$TimeDays == "2")]))
 \end_layout
 
 \end_inset
@@ -18787,11 +18783,9 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(100 * ( truemean(SynthesisInCellsA$cell_protein_density_microgram_per_cmsq[
-(SynthesisInCellsA$TimeDays == "2")]) - truemean(SynthesisInCellsA$cell_protein_
-density_microgram_per_cmsq[(SynthesisInCellsA$TimeDays == "0")])) / truemean(Syn
-thesisInCellsA$cell_protein_density_microgram_per_cmsq[(SynthesisInCellsA$TimeDa
-ys == "0")]))
+sig3(percentgrowth(SynthesisInCellsA$cell_protein_density_microgram_per_cmsq[(Sy
+nthesisInCellsA$TimeDays == "0")], SynthesisInCellsA$cell_protein_density_microg
+ram_per_cmsq[(SynthesisInCellsA$TimeDays == "2")]))
 \end_layout
 
 \end_inset
@@ -19094,37 +19088,34 @@ sig3(anovaSynthesisTreatmentAndDateActivityPerWell[[2]])
  There is no statistically significant difference between treatments at
  each time point.
  The amplest difference in translation rate between treatments is in day
- 4, when the Dexa improved protein synthesis by a non-significant 
+ 4, when, in Dexa cells, protein synthesis rate is higher than in all other
+ conditions (specific activity 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( 100 * ( truemean(SynthesisInCellsD[(SynthesisInCellsD$TimeDays ==
- "3"), ]$femtomol_radio_Phe_per_g_cell_protein) - truemean(SynthesisInCellsV[(Sy
-nthesisInCellsV$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell_protein)
- ) / truemean(SynthesisInCellsV[(SynthesisInCellsV$TimeDays == "3"), ]$femtomol_
-radio_Phe_per_g_cell_protein) )
+sig3(percentgrowth(SynthesisInCellsV[(SynthesisInCellsV$TimeDays == "3"),
+ ]$femtomol_radio_Phe_per_g_cell_protein, SynthesisInCellsD[(SynthesisInCellsD$T
+imeDays == "3"), ]$femtomol_radio_Phe_per_g_cell_protein) )
 \end_layout
 
 \end_inset
 
-% compared to vehicle, and by non-significant 
+% higher than vehicle, and 
 \begin_inset Flex S/R expression
 status open
 
 \begin_layout Plain Layout
 
-sig3( 100 * ( truemean(SynthesisInCellsD[(SynthesisInCellsD$TimeDays ==
- "3"), ]$femtomol_radio_Phe_per_g_cell_protein) - truemean(SynthesisInCellsA[(Sy
-nthesisInCellsA$TimeDays == "3"), ]$femtomol_radio_Phe_per_g_cell_protein)
- ) / truemean(SynthesisInCellsC[(SynthesisInCellsC$TimeDays == "3"), ]$femtomol_
-radio_Phe_per_g_cell_protein) )
+sig3( percentgrowth( SynthesisInCellsA[(SynthesisInCellsA$TimeDays == "3"),
+ ]$femtomol_radio_Phe_per_g_cell_protein, SynthesisInCellsD[(SynthesisInCellsD$T
+imeDays == "3"), ]$femtomol_radio_Phe_per_g_cell_protein))
 \end_layout
 
 \end_inset
 
-% compared to the combination with testosterone.
+% higher than the combination with testosterone).
  The trend toward increased protein synthesis with Dexa cannot explain the
  observed myotube atrophy induced by Dexa.
  Moreover, the late onset of protein synthesis upregulation indicates that
@@ -19562,8 +19553,14 @@ reference "fig:protein-degradation-cells-inhibitors"
  As in the previous experiment, cells were differentiated over 7 days.
  In the final three days of differentiation, medium with tracer was refreshed
  daily.
- For the final 24 hours, the tracer was removed, and various pharmacological
- agents were given, as detailed later.
+ For the final 24 hours, the tracer was removed, and cells were treated
+ with (A) vehicle, (B) 100 nM Dexa, or (C) 100 nM Dexa and 300 nM Testo.
+ In order to interfere with putative proteolytic pathways, other sets of
+ cels were treated with (D) 100 nM Dexa and 25 uM chloroquine, an inhibitor
+ of autophagy, or (E) 100 nM Dexa and 5 uM MG132, an inhibitor of the proteasome.
+ Finally, in order to interfere with IGF-I signaling, another set of cells
+ were treated with (F) 100 nM Dexa, 300 nM Testo, and 50 nM pycropodophilin,
+ an inhibitor of IGF-1R.
 \end_layout
 
 \begin_layout Standard
