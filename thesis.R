@@ -194,6 +194,11 @@ DegradationInCellsVDCA <- DegradationInCells[(
 DegradationInCellsVDCA$treatment <- factor(
   DegradationInCellsVDCA$treatment, 
   levels = condsVDCAmetabolism)
+DegradationInCellsVDCAB <- DegradationInCells[(
+  DegradationInCells$treatment %in% condsVDCABmetabolism), ]
+DegradationInCellsVDCAB$treatment <- factor(
+  DegradationInCellsVDCAB$treatment,
+  levels = condsVDCABmetabolism)
 DegradationInCellsV <- DegradationInCells[(DegradationInCells$treatment == "V"), ]
 DegradationInCellsD <- DegradationInCells[(DegradationInCells$treatment == "DD"), ]
 DegradationInCellsC <- DegradationInCells[(DegradationInCells$treatment == "DDT"), ]
@@ -1475,37 +1480,38 @@ anovaDegradationTreatmentAndDate <-
       data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
 
 plotproteindegradation <- function(){
-   degradationfourcourses <- 
+   degradationtimecourse <- 
      DegradationInCells[ 
        (DegradationInCells$treatment %in% condsVDCmetabolism ), 
        colnames(DegradationInCells) %in% c(
          "treatment", 
          "TimeDays", 
          "curie_ratio_protein_depleted_medium_over_cell_protein")]
-   degradationfourcourses$treatment <- 
+   degradationtimecourse$treatment <- 
      factor(
-       degradationfourcourses$treatment, 
-       levels = condsVDCAmetabolism)
-   degradationfourcourses24 <- 
-     degradationfourcourses[
-       (DegradationInCells$TimeDays == "1" & DegradationInCells$treatment %in% condsVDCABmetabolism)  ,
-       colnames(degradationfourcourses) %in% c(
+       degradationtimecourse$treatment, 
+       levels = condsVDCmetabolism)
+   degradationtimecourse24 <- 
+     DegradationInCells[
+       (DegradationInCells$TimeDays == "2" &
+          DegradationInCells$treatment %in% condsVDCABmetabolism)  ,
+       colnames(DegradationInCells) %in% c(
          "treatment", 
          "curie_ratio_protein_depleted_medium_over_cell_protein")]
-   degradationfourcourses24$treatment <- 
+   degradationtimecourse24$treatment <- 
      factor(
-       degradationfourcourses24$treatment, 
+       degradationtimecourse24$treatment, 
        levels = condsVDCABmetabolism)
   return(grid.arrange(
-    ggplot(degradationfourcourses) + 
-      aes_string(x = colnames(degradationfourcourses)[2],
-                 y = colnames(degradationfourcourses)[3],
-                 group = colnames(degradationfourcourses)[1]) +
+    ggplot(degradationtimecourse) + 
+      aes_string(x = colnames(degradationtimecourse)[2],
+                 y = colnames(degradationtimecourse)[3],
+                 group = colnames(degradationtimecourse)[1]) +
       stat_summary(geom = "point",
                    size = 3,
                    fun.y = truemean,
                    position = position_dodge(.2),
-                   aes_string(shape = colnames(degradationfourcourses)[1])) +
+                   aes_string(shape = colnames(degradationtimecourse)[1])) +
       stat_summary(geom = "line", 
                    size = .5, 
                    fun.y = truemean, 
@@ -1519,18 +1525,18 @@ plotproteindegradation <- function(){
       ylab("medium to cell protein tracer ratio") +
       stdplottimecourse +
       scale_shape_manual(
-        values = c(16, 4, 1, 9), 
-        labels = conditionsVDCAmetabolism) +
+        values = c(16, 4, 1), 
+        labels = conditionsVDCmetabolism) +
       theme(
         legend.position = c(1,1),
         legend.justification = c(1, 1),
         legend.direction = "horizontal") +
       scale_x_continuous(labels = c("6", "24", "48", "72")) +
       xlab("hours"),
-    ggplot(degradationfourcourses24) +
-      aes_string( x = colnames(degradationfourcourses24)[1], 
-                  y = colnames(degradationfourcourses24)[2], 
-                  fill = colnames(degradationfourcourses24)[1]) +
+    ggplot(degradationtimecourse24) +
+      aes_string( x = colnames(degradationtimecourse24)[1], 
+                  y = colnames(degradationtimecourse24)[2], 
+                  fill = colnames(degradationtimecourse24)[1]) +
       stat_summary(fun.y = truemean, 
                    geom = "bar", 
                    colour = "black",
@@ -1546,11 +1552,11 @@ plotproteindegradation <- function(){
                    vjust = -.6,
                    label = "") +
       ylab("medium to cell protein tracer\nratio (24 hour)") +
-      coord_cartesian(ylim = c(0, 1)) + 
-      scale_fill_manual(values = c("#ffffff", "#222222", "#777777", "#dddddd"),
-                        labels = conditionsVDCAmetabolism) +
+      coord_cartesian(ylim = c(0, .1)) + 
+      scale_fill_manual(values = c("#ffffff", "#888888", "#222222", "#777777", "#dddddd"),
+                        labels = conditionsVDCABmetabolism) +
       stdbarplot + 
-      theme(axis.text.x = element_text(color = "black"))+ 
-      scale_x_discrete(labels = conditionsVDCAmetabolism),
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCABmetabolism),
     ncol = 1))
 }
