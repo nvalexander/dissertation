@@ -19587,7 +19587,8 @@ reference "fig:protein-degradation-cells-inhibitors"
  As in the previous experiment, cells were differentiated over 7 days.
  In the final three days of differentiation, medium with tracer was refreshed
  daily.
- 
+ For the final 24 hours, the tracer was removed, and various pharmacological
+ agents were given, as detailed later.
 \end_layout
 
 \begin_layout Standard
@@ -19709,6 +19710,12 @@ name "fig:protein-degradation-cells-inhibitors"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The medium and the cells were fractionated as in the previous experiment,
+ and protein degradation rate was estimated via the ratio of free tracer
+ in the medium to protein-bound tracer in the cells.
 \end_layout
 
 \begin_layout Standard
