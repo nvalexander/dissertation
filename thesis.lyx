@@ -17570,7 +17570,7 @@ use_parbox 0
 use_makebox 0
 width "6in"
 special "none"
-height "2in"
+height "1.8in"
 height_special "none"
 status open
 
@@ -17578,6 +17578,7 @@ status open
 \begin_inset Graphics
 	filename artwork/Akt/Akt-gastroc.pdf
 	width 6in
+	height 1.8in
 
 \end_inset
 
@@ -17647,7 +17648,7 @@ use_parbox 0
 use_makebox 0
 width "6in"
 special "none"
-height "2in"
+height "1.8in"
 height_special "none"
 status open
 
@@ -17655,6 +17656,7 @@ status open
 \begin_inset Graphics
 	filename artwork/Akt/Akt-levator.pdf
 	width 6in
+	height 1.8in
 
 \end_inset
 
@@ -19311,7 +19313,7 @@ name "fig:protein-degradation-cells"
 \begin_layout Standard
 Preliminary experiments revealed that scintillation data were not completely
  additive.
- Therefore, the this method is semi-quantitative.
+ Therefore, scintillation-based methods are semi-quantitative.
  The amounts of free tracer from cell extract and protein-bound tracer in
  the medium proteins are tens of times lower than the free tracer in the
  medium, and protein-bound tracer in the cells.
