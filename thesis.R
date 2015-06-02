@@ -123,16 +123,16 @@ conditionsVDCAmetabolism <- c(
 conditionsVDCABmetabolism <- c(
   "Veh", 
   "100 nM Dexa",
+  "1 µM Dexa", 
+  "1 µM Dexa\n+ 100 nM T", 
+  "1 µM Dexa\n+ 500 nM T")
+conditionsVDCinhibitors <- c(
+  "Veh", 
+  "100 nM Dexa",
   "100 nM Dexa\n+ 25 µM CHQ",
   "100 nM Dexa\n+ 5 µM MG132",
   "100 nM Dexa\n+ 300 nM T",
   "100 nM Dexa\n+ 300 nM T\n+ 50 nM PPP")
-conditionsVDCinhibitors <- c(
-  "Veh", 
-  "100 nM Dexa",
-  "1 µM Dexa", 
-  "1 µM Dexa\n+ 100 nM T", 
-  "1 µM Dexa\n+ 500 nM T")
 contraststhree <- c("V vs D", "V vs DT", "D vs DT")
 contrastsfour <- c("V vs D", "V vs T", "D vs T", "V vs DT", "D vs DT", "T vs DT")
 VvsDthreeways <- match("V vs D", contraststhree)[[1]]
@@ -1603,9 +1603,18 @@ plotinhibitors <- function() {
                         fun.y = statstringyoverbar, 
                         hjust = .5,
                         vjust = -.6,
-                        label = "statstrings") +
+                        label = "") +
            ylab("medium to cell protein tracer\nratio (24 hour)") +
            coord_cartesian(ylim = c(0, 1.8)) + 
-           scale_fill_manual(values = greypalette) +
-           stdbarplot)
+           scale_fill_manual(values = c(
+             "#ffffff", 
+             "#222222", 
+             "#777777", 
+             "#dddddd", 
+             "#555555", 
+             "#777777"),
+             labels = conditionsVDCinhibitors) +
+           stdbarplot + 
+           theme(axis.text.x = element_text(color = "black")) + 
+           scale_x_discrete(labels = conditionsVDCinhibitors))
 }
