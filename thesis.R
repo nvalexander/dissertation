@@ -103,11 +103,18 @@ condsVDCdiameters <- c("V", "D", "DT")
 condsVDCBdiameters <- c("V", "D", "DT", "DU") # DU is higher testosterone in cell diameter
 condsVDCmetabolism <- c("V", "DD", "DDTT")
 condsVDCAmetabolism <- c("V", "DD", "DDT", "DDTT")
+condsVDCABmetabolism <- c("V", "D", "DD", "DDT", "DDTT")
 conditionsVDC <- c("Veh", "Dexa", "Comb")
 conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
 conditionsVDCmetabolism <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 500 nM T")
 conditionsVDCAmetabolism <- c(
   "Veh", 
+  "1 µM Dexa", 
+  "1 µM Dexa\n+ 100 nM T", 
+  "1 µM Dexa\n+ 500 nM T")
+conditionsVDCABmetabolism <- c(
+  "Veh", 
+  "100 nM Dexa",
   "1 µM Dexa", 
   "1 µM Dexa\n+ 100 nM T", 
   "1 µM Dexa\n+ 500 nM T")
@@ -1461,16 +1468,16 @@ plotproteinsynthesis <- function() {
     ncol=1))
 }
 
-pvaluesDegradationTreatmentAndDate <- 
+anovaDegradationTreatmentAndDate <- 
   summary(
     aov( 
-      cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, 
-      data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
+      curie_ratio_protein_depleted_medium_over_cell_protein ~ TimeDays + treatment, 
+      data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
 
 plotproteindegradation <- function(){
    degradationfourcourses <- 
      DegradationInCells[ 
-       (DegradationInCells$treatment %in% condsVDCAmetabolism ), 
+       (DegradationInCells$treatment %in% condsVDCmetabolism ), 
        colnames(DegradationInCells) %in% c(
          "treatment", 
          "TimeDays", 
@@ -1481,14 +1488,14 @@ plotproteindegradation <- function(){
        levels = condsVDCAmetabolism)
    degradationfourcourses24 <- 
      degradationfourcourses[
-       (degradationfourcourses$TimeDays == "1")  ,
+       (DegradationInCells$TimeDays == "1" & DegradationInCells$treatment %in% condsVDCABmetabolism)  ,
        colnames(degradationfourcourses) %in% c(
          "treatment", 
          "curie_ratio_protein_depleted_medium_over_cell_protein")]
    degradationfourcourses24$treatment <- 
      factor(
        degradationfourcourses24$treatment, 
-       levels = condsVDCAmetabolism)
+       levels = condsVDCABmetabolism)
   return(grid.arrange(
     ggplot(degradationfourcourses) + 
       aes_string(x = colnames(degradationfourcourses)[2],
