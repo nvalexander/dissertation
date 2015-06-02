@@ -1,0 +1,73 @@
+sample,activity_in_100uL_TCA_soluble_cell_extract__CPM,activity_in_100uL_TCA_soluble_medium_extract__CPM,activity_in_100uL_TCA_insoluble_cell_extract__CPM,activity_in_100uL_TCA_insoluble_medium_extract__CPM
+"Vehicle, well 1",25,179,3164,152
+"Vehicle, well 2",36,145,3455,206
+"Vehicle, well 3",33,155,4143,179
+"Vehicle, well 4",42,164,3542,248
+"Vehicle, well 5",42,168,3653,249
+"Vehicle, well 6",43,160,1715,250
+"100 nM Dexa, well 1",25,196,1543,231
+"100 nM Dexa, well 2",33,186,1443,232
+"100 nM Dexa, well 3",22,172,1474,205
+"100 nM Dexa, well 4",21,155,2022,202
+"100 nM Dexa, well 5",18,178,2008,147
+"100 nM Dexa, well 6",34,189,2463,246
+"100 nM Dexa + 100 nM Testo, well 1",53,185,3340,240
+"100 nM Dexa + 100 nM Testo, well 2",50,176,2540,184
+"100 nM Dexa + 100 nM Testo, well 3",37,186,2337,193
+"100 nM Dexa + 100 nM Testo, well 4",35,198,1803,135
+"100 nM Dexa + 100 nM Testo, well 5",44,192,1465,166
+"100 nM Dexa + 100 nM Testo, well 6",43,169,901,141
+"100 nM Dexa + 300 nM Testo, well 1",32,203,3749,135
+"100 nM Dexa + 300 nM Testo, well 2",40,193,3282,190
+"100 nM Dexa + 300 nM Testo, well 3",37,167,3368,184
+"100 nM Dexa + 300 nM Testo, well 4",41,186,3087,182
+"100 nM Dexa + 300 nM Testo, well 5",39,189,4,177
+"100 nM Dexa + 300 nM Testo, well 6",32,172,5672,210
+"100 nM Dexa + 100 nM Testo + 50 nM PPP, well 1",24,226,3285,256
+"100 nM Dexa + 100 nM Testo + 50 nM PPP, well 2",26,177,3354,145
+"100 nM Dexa + 100 nM Testo + 50 nM PPP, well 3",24,94,2867,241
+"100 nM Dexa + 100 nM Testo + 50 nM PPP, well 4",27,193,3459,157
+"100 nM Dexa + 100 nM Testo + 50 nM PPP, well 5",40,176,2860,141
+"100 nM Dexa + 100 nM Testo + 50 nM PPP, well 6",26,168,3284,183
+"100 nM Dexa + 300 nM Testo + 50 nM PPP, well 1",26,190,3879,180
+"100 nM Dexa + 300 nM Testo + 50 nM PPP, well 2",27,178,3077,140
+"100 nM Dexa + 300 nM Testo + 50 nM PPP, well 3",23,171,2543,203
+"100 nM Dexa + 300 nM Testo + 50 nM PPP, well 4",26,205,3710,231
+"100 nM Dexa + 300 nM Testo + 50 nM PPP, well 5",24,162,3320,184
+"100 nM Dexa + 300 nM Testo + 50 nM PPP, well 6",21,174,3528,187
+"100 nM Dexa + 25 uM CHQ, well 1",35,173,4751,216
+"100 nM Dexa + 25 uM CHQ, well 2",36,176,3698,214
+"100 nM Dexa + 25 uM CHQ, well 3",32,165,2426,217
+"100 nM Dexa + 25 uM CHQ, well 4",47,178,3129,216
+"100 nM Dexa + 25 uM CHQ, well 5",34,157,3672,184
+"100 nM Dexa + 25 uM CHQ, well 6",37,156,2677,208
+"100 nM Dexa + 5 uM MG132, well 1",21,105,4110,407
+"100 nM Dexa + 5 uM MG132, well 2",20,84,3470,312
+"100 nM Dexa + 5 uM MG132, well 3",27,82,3817,231
+"100 nM Dexa + 5 uM MG132, well 4",21,91,4042,355
+"100 nM Dexa + 5 uM MG132, well 5",23,104,5018,270
+"100 nM Dexa + 5 uM MG132, well 6",17,79,4385,361
+"Vehicle B, well 1",18,161,3146,203
+"Vehicle B, well 2",19,163,2374,215
+"Vehicle B, well 3",19,149,2267,196
+"Vehicle B, well 4",19,171,3428,232
+"Vehicle B, well 5",27,138,3705,192
+"Vehicle B, well 6",16,159,3318,151
+"100 nM Dexa B, well 1",23,191,3030,225
+"100 nM Dexa B, well 2",25,177,3481,149
+"100 nM Dexa B, well 3",23,186,3250,171
+"100 nM Dexa B, well 4",24,199,3442,192
+"100 nM Dexa B, well 5",21,192,3005,159
+"100 nM Dexa B, well 6",22,187,2911,177
+"100 nM Dexa + 100 nM Testo B, well 1",28,188,3710,185
+"100 nM Dexa + 100 nM Testo B, well 2",20,183,3392,182
+"100 nM Dexa + 100 nM Testo B, well 3",22,188,3119,218
+"100 nM Dexa + 100 nM Testo B, well 4",25,206,3298,159
+"100 nM Dexa + 100 nM Testo B, well 5",21,204,3388,139
+"100 nM Dexa + 100 nM Testo B, well 6",21,180,3504,149
+"baseline, well 1",24,8,5121,70
+"baseline, well 2",24,7,5843,70
+"baseline, well 3",22,8,5784,51
+"baseline, well 4",41,8,6414,63
+"baseline, well 5",34,6,6062,48
+"baseline, well 6",28,6,5522,84
