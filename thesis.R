@@ -111,6 +111,7 @@ condsVDCBdiameters <- c("V", "D", "DT", "DU") # DU is higher testosterone in cel
 condsVDCmetabolism <- c("V", "DD", "DDTT")
 condsVDCAmetabolism <- c("V", "DD", "DDT", "DDTT")
 condsVDCABmetabolism <- c("V", "D", "DD", "DDT", "DDTT")
+condsVDCinhibitors <- c("V", "D", "DC", "DM", "DTT", "DTTP")
 conditionsVDC <- c("Veh", "Dexa", "Comb")
 conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
 conditionsVDCmetabolism <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 500 nM T")
@@ -120,6 +121,13 @@ conditionsVDCAmetabolism <- c(
   "1 µM Dexa\n+ 100 nM T", 
   "1 µM Dexa\n+ 500 nM T")
 conditionsVDCABmetabolism <- c(
+  "Veh", 
+  "100 nM Dexa",
+  "100 nM Dexa\n+ 25 µM CHQ",
+  "100 nM Dexa\n+ 5 µM MG132",
+  "100 nM Dexa\n+ 300 nM T",
+  "100 nM Dexa\n+ 300 nM T\n+ 50 nM PPP")
+conditionsVDCinhibitors <- c(
   "Veh", 
   "100 nM Dexa",
   "1 µM Dexa", 
@@ -215,6 +223,9 @@ Degradation6 <- DegradationInCells[(DegradationInCells$TimeDays == "0")  ,]
 Degradation24 <- DegradationInCells[(DegradationInCells$TimeDays == "1")  ,]
 Degradation48 <- DegradationInCells[(DegradationInCells$TimeDays == "2")  ,]
 Degradation72 <- DegradationInCells[(DegradationInCells$TimeDays == "3")  ,]
+DegradationWithInhibitors$treatment <- factor(
+  DegradationWithInhibitors$treatment,
+  levels = condsVDCinhibitors)
 
 #literal constants
 unistar <- sprintf('\u2736')
@@ -1572,4 +1583,29 @@ plotproteindegradation <- function(){
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDCAmetabolism),
     ncol = 1))
+}
+
+plotinhibitors <- function() {
+  return(ggplot(DegradationWithInhibitors) +
+           aes_string( x = "treatment", 
+                       y = "curie_ratio_protein_depleted_medium_over_cell_protein", 
+                       fill = "treatment") +
+           stat_summary(fun.y = mean, 
+                        geom = "bar", 
+                        colour = "black",
+                        show_guide = FALSE) +
+           stat_summary(geom = 'errorbar',
+                        fun.data = 'semInterval',
+                        width = 0.1) +
+           stat_summary(geom = "text", 
+                        size = textSize * .4,
+                        aes(family = "Liberation Sans Narrow"),
+                        fun.y = statstringyoverbar, 
+                        hjust = .5,
+                        vjust = -.6,
+                        label = "statstrings") +
+           ylab("medium to cell protein tracer\nratio (24 hour)") +
+           coord_cartesian(ylim = c(0, 1.8)) + 
+           scale_fill_manual(values = greypalette) +
+           stdbarplot)
 }
