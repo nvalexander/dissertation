@@ -15,12 +15,12 @@ knitr
 \language_package default
 \inputencoding ascii
 \fontencoding global
-\font_roman Georgia
-\font_sans Arial
-\font_typewriter Liberation Mono
+\font_roman default
+\font_sans default
+\font_typewriter default
 \font_math auto
 \font_default_family default
-\use_non_tex_fonts true
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
@@ -19801,7 +19801,38 @@ sig3(tukeyInhibitors[["DTT-D", "p.adj"]])
 
 ).
  The protective effect of Testo was not altered by the inhibition of the
- IGF-1R pathway.
+ IGF-1R pathway (free medium tracer to protein-bound intracellular tracer
+ 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(truemean(DegradationWithInhibitors[DegradationWithInhibitors$treatment
+ == "DTTP", ]$curie_ratio_protein_depleted_medium_over_cell_protein))
+\end_layout
+
+\end_inset
+
+; Tukey's HSD vs.
+ Dexa, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(tukeyInhibitors[["DTTP-DTT", "p.adj"]])
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Overall, in C2C12 cells, Dexa upregulates protein degradation, mainly through
+ the activation of the proteasome.
+ Testo reverse the activation of proteolysis in an IGF-1R-independent manner.
 \end_layout
 
 \begin_layout Standard
