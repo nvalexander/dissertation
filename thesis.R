@@ -1488,7 +1488,7 @@ anovaDegradationTreatmentAndDate24 <-
 plotproteindegradation <- function(){
    degradationtimecourse <- 
      DegradationInCells[ 
-       (DegradationInCells$treatment %in% condsVDCmetabolism ), 
+       (DegradationInCells$treatment %in% condsVDCAmetabolism ), 
        colnames(DegradationInCells) %in% c(
          "treatment", 
          "TimeDays", 
@@ -1496,18 +1496,18 @@ plotproteindegradation <- function(){
    degradationtimecourse$treatment <- 
      factor(
        degradationtimecourse$treatment, 
-       levels = condsVDCmetabolism)
+       levels = condsVDCAmetabolism)
    degradationtimecourse24 <- 
      DegradationInCells[
        (DegradationInCells$TimeDays == "1" &
-          DegradationInCells$treatment %in% condsVDCABmetabolism)  ,
+          DegradationInCells$treatment %in% condsVDCAmetabolism)  ,
        colnames(DegradationInCells) %in% c(
          "treatment", 
          "curie_ratio_protein_depleted_medium_over_cell_protein")]
    degradationtimecourse24$treatment <- 
      factor(
        degradationtimecourse24$treatment, 
-       levels = condsVDCABmetabolism)
+       levels = condsVDCAmetabolism)
   return(grid.arrange(
     ggplot(degradationtimecourse) + 
       aes_string(x = colnames(degradationtimecourse)[2],
@@ -1531,8 +1531,8 @@ plotproteindegradation <- function(){
       ylab("medium to cell protein tracer ratio") +
       stdplottimecourse +
       scale_shape_manual(
-        values = c(16, 4, 1), 
-        labels = conditionsVDCmetabolism) +
+        values = c(16, 4, 1, 9), 
+        labels = conditionsVDCAmetabolism) +
       theme(
         legend.position = c(1,1),
         legend.justification = c(1, 1),
@@ -1559,10 +1559,10 @@ plotproteindegradation <- function(){
                    label = "") +
       ylab("medium to cell protein tracer\nratio (24 hour)") +
       coord_cartesian(ylim = c(0, 1)) + 
-      scale_fill_manual(values = c("#ffffff", "#888888", "#222222", "#777777", "#dddddd"),
-                        labels = conditionsVDCABmetabolism) +
+      scale_fill_manual(values = c("#ffffff", "#222222", "#777777", "#dddddd"),
+                        labels = conditionsVDCAmetabolism) +
       stdbarplot + 
       theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDCABmetabolism),
+      scale_x_discrete(labels = conditionsVDCAmetabolism),
     ncol = 1))
 }
