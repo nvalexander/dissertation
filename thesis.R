@@ -70,7 +70,7 @@ DegradationWithInhibitors <- read.csv(
   file.path(datadir, "2014.08.31.inhibitors.csv"),
   header = TRUE)
 DegradationWithInhibitors <-DegradationWithInhibitors[
-  !(DegradationWithInhibitors$treatment %in% c("VB", "DB", "DTB", "base")), ]
+  !(DegradationWithInhibitors$treatment %in% c("VB", "DB", "DTB", "base", "DT", "DTP")), ]
 
 
 #column additions
