@@ -19162,8 +19162,7 @@ Within the limits of the C2C12 model, protein synthesis changes do not appear
 \end_layout
 
 \begin_layout Section
-Protein degradation in cultured cells treated with dexamethasone and testosteron
-e
+Testosterone prevents protein catabolism upregulation induced by dexamethasone
 \end_layout
 
 \begin_layout Standard
@@ -19556,6 +19555,26 @@ abolism, ]), 'treatment', conf.level=0.95)$treatment)[["DDT-DD", "p.adj"]]
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+Overall, Dexa myotube atrophy is correlated with an increase in tracer release,
+ indicating an upregulation of protein degradation.
+ Testo protection of myotubes is correlated with an inhibition of protein
+ degradation.
+\end_layout
+
+\begin_layout Section
+Mechanisms of androgenic myoprotection in cultured myotubes treated with
+ dexamethasone
+\end_layout
+
+\begin_layout Standard
+In previous experiments, I established that loss of C2C12 myotube protein
+ during Dexa treatment is associated with an increase in protein degradation
+ at 24 hours after the initiation of steroid.
+ Using a series of chemical inhibitors, I investigated the mechanisms that
+ mediate this catabolic upregulation.
 \end_layout
 
 \begin_layout Standard
