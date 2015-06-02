@@ -1529,12 +1529,22 @@ anovaDegradationTreatmentAndDate24 <- aov(
   data = DegradationInCellsVDCA[DegradationInCellsVDCA$TimeDays == "1", ])
 anovaPvaluesDegradationTreatmentAndDate24 <- 
   summary(anovaDegradationTreatmentAndDate24)[[1]]$`Pr(>F)`
+tukeyDegradationTreatmentAndDate24 <- 
+  data.frame(TukeyHSD(
+    x = anovaDegradationTreatmentAndDate24, 
+    'treatment', 
+    conf.level=0.95)$treatment)
 
 anovaDegradationTreatmentAndDate48 <- aov( 
   curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
   data = DegradationInCellsVDCA[DegradationInCellsVDCA$TimeDays == "2", ])
 anovaPvaluesDegradationTreatmentAndDate48 <- 
   summary(anovaDegradationTreatmentAndDate48)[[1]]$`Pr(>F)`
+tukeyDegradationTreatmentAndDate48 <- 
+  data.frame(TukeyHSD(
+    x = anovaDegradationTreatmentAndDate48, 
+    'treatment', 
+    conf.level=0.95)$treatment)
 
 plotproteindegradation <- function(){
    degradationtimecourse <- 
@@ -1651,3 +1661,15 @@ plotinhibitors <- function() {
            theme(axis.text.x = element_text(color = "black")) + 
            scale_x_discrete(labels = conditionsVDCinhibitors))
 }
+
+
+anovaInhibitors <- aov( 
+  curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
+  data = DegradationWithInhibitors)
+anovaPvaluesInhibitors <- 
+  summary(anovaInhibitors)[[1]]$`Pr(>F)`
+tukeyInhibitors <- 
+  data.frame(TukeyHSD(
+    x = anovaInhibitors, 
+    'treatment', 
+    conf.level=0.95)$treatment)
