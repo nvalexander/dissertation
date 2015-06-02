@@ -284,6 +284,10 @@ percentgrowth <- function(initial, final){
   return( 100 * (truemean(final) - truemean(initial)) / truemean(initial))
 }
 
+pcramplificationrate <- function(initial, final){
+  return(2^(truemean(initial) - truemean(final)))
+}
+
 hview <- function(htmllines) {
   htmlFile <- tempfile(fileext = ".html")
   writeLines(htmllines, htmlFile)
