@@ -19713,7 +19713,95 @@ sig3(tukeyInhibitors[["D-V", "p.adj"]])
 \end_inset
 
 ).
- 
+\end_layout
+
+\begin_layout Standard
+The upregulation in catabolism was dependent on both proteasome and lysosome
+ actions.
+ When the lysosome was inhibited with chloroquine, the ratio of free medium
+ tracer to protein-bound intracellular was brought back to basal levels
+ (
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(truemean(DegradationWithInhibitors[DegradationWithInhibitors$treatment
+ == "DC", ]$curie_ratio_protein_depleted_medium_over_cell_protein))
+\end_layout
+
+\end_inset
+
+ (Tukey's HSD vs.
+ Dexa, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(tukeyInhibitors[["DC-D", "p.adj"]])
+\end_layout
+
+\end_inset
+
+).
+ However, proteasome inhibition had a more ample result, with the ratio
+ of free medium tracer to protein-bound intracellular depressed to 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(truemean(DegradationWithInhibitors[DegradationWithInhibitors$treatment
+ == "DM", ]$curie_ratio_protein_depleted_medium_over_cell_protein))
+\end_layout
+
+\end_inset
+
+ (Tukey's HSD vs.
+ Dexa, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(tukeyInhibitors[["DM-D", "p.adj"]])
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Testo repressed the upregulation of catabolism brought by Dexa to basal
+ levels (free medium tracer to protein-bound intracellular tracer 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(truemean(DegradationWithInhibitors[DegradationWithInhibitors$treatment
+ == "DTT", ]$curie_ratio_protein_depleted_medium_over_cell_protein))
+\end_layout
+
+\end_inset
+
+; Tukey's HSD vs.
+ Dexa, p = 
+\begin_inset Flex S/R expression
+status open
+
+\begin_layout Plain Layout
+
+sig3(tukeyInhibitors[["DTT-D", "p.adj"]])
+\end_layout
+
+\end_inset
+
+).
+ The protective effect of Testo was not altered by the inhibition of the
+ IGF-1R pathway.
 \end_layout
 
 \begin_layout Standard
