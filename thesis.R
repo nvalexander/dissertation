@@ -1426,42 +1426,47 @@ plottotalprotein <- function(){
     ncol=1))
 }
 
-anovaProteinDensityTreatmentAndDate <- 
-  summary(
-    aov( 
-      cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, 
-      data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
-anovaProteinDensityTreatmentAndDateVonlyOneToThree <- 
-  summary(
-    aov( 
-      cell_protein_density_microgram_per_cmsq ~ TimeDays, 
-      data = SynthesisInCellsV[SynthesisInCellsV$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-anovaProteinDensityTreatmentAndDateDonlyOneToThree <-
-  summary(
-    aov(
-      cell_protein_density_microgram_per_cmsq ~ TimeDays, 
-      data = SynthesisInCellsD[SynthesisInCellsD$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-anovaProteinDensityTreatmentAndDateConlyOneToThree <- 
-  summary(
-    aov( 
-      cell_protein_density_microgram_per_cmsq ~ TimeDays, 
-      data = SynthesisInCellsC[SynthesisInCellsC$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-anovaProteinDensityTreatmentAndDateAonlyOneToThree <-
-  summary(
-    aov(
-      cell_protein_density_microgram_per_cmsq ~ TimeDays,
-      data = SynthesisInCellsA[SynthesisInCellsA$TimeDays != "3", ]))[[1]]$`Pr(>F)`
-anovaProteinDensityTreatmentAndDateNormalizedToFirst <- 
-  summary(
-    aov(
-      cell_protein_density_microgram_per_cmsq_normalized_to_first_day ~ TimeDays + treatment, 
-      data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDate <- aov( 
+  cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, 
+  data = SynthesisInCellsVDCA)
+anovaPvaluesProteinDensityTreatmentAndDate <-
+  summary(anovaProteinDensityTreatmentAndDate)[[1]]$`Pr(>F)`
 
-anovaSynthesisTreatmentAndDateActivityPerWell <- 
-  summary(
-    aov(
-      activity_in_cell_protein_extract_picoCi ~ TimeDays + treatment, 
-      data = SynthesisInCellsVDC))[[1]]$`Pr(>F)`
+anovaProteinDensityTreatmentAndDateVonlyOneToThree <- aov( 
+  cell_protein_density_microgram_per_cmsq ~ TimeDays, 
+  data = SynthesisInCellsV[SynthesisInCellsV$TimeDays != "3", ])
+anovaPvaluesProteinDensityTreatmentAndDateVonlyOneToThree <- 
+  summary(anovaProteinDensityTreatmentAndDateVonlyOneToThree)[[1]]$`Pr(>F)`
+
+anovaProteinDensityTreatmentAndDateDonlyOneToThree <- aov( 
+  cell_protein_density_microgram_per_cmsq ~ TimeDays, 
+  data = SynthesisInCellsV[SynthesisInCellsD$TimeDays != "3", ])
+anovaPvaluesProteinDensityTreatmentAndDateDonlyOneToThree <- 
+  summary(anovaProteinDensityTreatmentAndDateDonlyOneToThree)[[1]]$`Pr(>F)`
+
+anovaProteinDensityTreatmentAndDateConlyOneToThree <- aov( 
+  cell_protein_density_microgram_per_cmsq ~ TimeDays, 
+  data = SynthesisInCellsV[SynthesisInCellsC$TimeDays != "3", ])
+anovaPvaluesProteinDensityTreatmentAndDateConlyOneToThree <- 
+  summary(anovaProteinDensityTreatmentAndDateConlyOneToThree)[[1]]$`Pr(>F)`
+
+# anovaProteinDensityTreatmentAndDateAonlyOneToThree <- aov( 
+#   cell_protein_density_microgram_per_cmsq ~ TimeDays, 
+#   data = SynthesisInCellsV[SynthesisInCellsA$TimeDays != "3", ])
+# anovaPvaluesProteinDensityTreatmentAndDateAonlyOneToThree <- 
+#   summary(anovaProteinDensityTreatmentAndDateAonlyOneToThree)[[1]]$`Pr(>F)`
+# 
+# anovaProteinDensityTreatmentAndDateNormalizedToFirst <- 
+#   summary(
+#     aov(
+#       cell_protein_density_microgram_per_cmsq_normalized_to_first_day ~ TimeDays + treatment, 
+#       data = SynthesisInCellsVDCA))[[1]]$`Pr(>F)`
+
+anovaSynthesisTreatmentAndDateActivityPerWell <- aov(
+  activity_in_cell_protein_extract_picoCi ~ TimeDays + treatment, 
+  data = SynthesisInCellsVDC)
+anovaPvaluesSynthesisTreatmentAndDateActivityPerWell <- 
+  summary(anovaSynthesisTreatmentAndDateActivityPerWell)[[1]]$`Pr(>F)`
 
 plotproteinsynthesis <- function() {
   unnormalizeddata <- 
@@ -1513,17 +1518,23 @@ plotproteinsynthesis <- function() {
     ncol=1))
 }
 
-anovaDegradationTreatmentAndDate <- 
-  summary(
-    aov( 
-      curie_ratio_protein_depleted_medium_over_cell_protein ~ TimeDays + treatment, 
-      data = DegradationInCellsVDCA))[[1]]$`Pr(>F)`
+anovaDegradationTreatmentAndDate <- aov( 
+  curie_ratio_protein_depleted_medium_over_cell_protein ~ TimeDays + treatment, 
+  data = DegradationInCellsVDCA)
+anovaPvaluesDegradationTreatmentAndDate <- 
+  summary(anovaDegradationTreatmentAndDate)[[1]]$`Pr(>F)`
 
-anovaDegradationTreatmentAndDate24 <- 
-  summary(
-    aov( 
-      curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
-      data = DegradationInCellsVDCA[DegradationInCells$TimeDays == "1", ]))[[1]]$`Pr(>F)`
+anovaDegradationTreatmentAndDate24 <- aov( 
+  curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
+  data = DegradationInCellsVDCA[DegradationInCellsVDCA$TimeDays == "1", ])
+anovaPvaluesDegradationTreatmentAndDate24 <- 
+  summary(anovaDegradationTreatmentAndDate24)[[1]]$`Pr(>F)`
+
+anovaDegradationTreatmentAndDate48 <- aov( 
+  curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
+  data = DegradationInCellsVDCA[DegradationInCellsVDCA$TimeDays == "2", ])
+anovaPvaluesDegradationTreatmentAndDate48 <- 
+  summary(anovaDegradationTreatmentAndDate48)[[1]]$`Pr(>F)`
 
 plotproteindegradation <- function(){
    degradationtimecourse <- 
