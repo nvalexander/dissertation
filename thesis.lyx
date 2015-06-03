@@ -2222,8 +2222,8 @@ key "bowyer1985steroid"
 
 .
  Based on other metabolic effects, it is likely that the catabolic potency
- ratio is even more tilted towards Dexa than the referenced studies indicate,
- but more detailed human pharmacodynamics studies are lacking.
+ ratio is even more tilted towards Dexa than the referenced studies indicate.
+ More detailed human pharmacodynamics studies are needed.
 \end_layout
 
 \begin_layout Standard
@@ -2261,12 +2261,11 @@ key "rodriguez-carreno2012motor"
 \begin_inset Quotes eld
 \end_inset
 
-steroid myopathy
+steroid myopathy.
 \begin_inset Quotes erd
 \end_inset
 
-.
- Similar electromyographic changes are induced by long-term GC therapy
+ Similar electromyography changes are induced by long-term GC therapy
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dropcho1991steroid-induced"
@@ -2302,9 +2301,8 @@ key "dagostino1966cortisone"
 .
  Owing to the fact that steroid myopathy is not a standalone disease or
  syndrome, terminology has never been standardized.
- In the present work, where an experimental and objective angle is taken,
- through the use of an animal model, the condition of interest will be termed
- GC-associated muscle loss (
+ In the present work, where animal models are examined, the condition of
+ interest will be termed GC-associated muscle loss (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GAML"
@@ -2361,7 +2359,7 @@ key "batchelor1997steroid,shee1990risk"
 \end_inset
 
 .
- When GAML develops, the amplitude of electromyographic changes (that is,
+ When GAML develops, the amplitude of electromyography changes (that is,
  the reduction in action potential duration) is proportional with the total
  GC dose
 \begin_inset CommandInset citation
