@@ -1117,7 +1117,7 @@ hyperadrenalism
  and hypoglycemia.
  Histopathology tests localized the adrenal abnormalities to the zona fasciculat
 a of the cortex.
- Cushing wrote that some of these abnormalities, reflect current adrenal
+ Cushing wrote that some of these abnormalities reflect current adrenal
  hypoactivity, caused by exhaustion after preceding intense stimulation
  and hyperactivity.
 \end_layout
@@ -1137,7 +1137,7 @@ key "cushing1932basophil"
  Based on the curative effect of pituitary surgery, he hypothesized that
  the adrenal defect is secondary to the pituitary abnormality.
  In turn, he inferred that the adrenal changes mediate the disease phenotype,
- which includes obesity with ectopic adipose deposits, kyphosis, amenorrhoea
+ which includes obesity with ectopic adipose deposits, kyphosis, amenorrhea
  / impotence, hypertrichosis, lineae atrophicae, fatigability and weakness.
  Among these disease manifestations, muscle impairment was a serious, if
  variable, component.
@@ -1177,7 +1177,7 @@ key "thorn1939treatment"
 
 \begin_layout Standard
 Today, we know that the truth was more nuanced.
- Oversecretion of the adrenal cortex hormones cortisol and / or corticosterone
+ Hypersecretion of the adrenal cortex hormones cortisol and / or corticosterone
  is termed hypercortisolism.
  One or more clinical signs listed by Cushing (see above) suggest to the
  practitioner the activation of the hypothalamic - pituitary - adrenal (
@@ -1249,7 +1249,7 @@ description "adrenocorticotropic hormone;"
  Their adrenals are usually responsive to further ACTH stimulation tests,
  indicating that previously intact adrenals underwent hyperplasia in response
  to a pathological overstimulation with ACTH.
- When attributed to the pituitary, such ACTH oversecretion, followed by
+ When attributed to the pituitary, such ACTH hypersecretion, followed by
  secondary hypercortisolism, is termed Cushing's disease (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1265,7 +1265,7 @@ key "kirk2000cushings"
 \begin_layout Standard
 The remainder of CS cases consists of hypercortisolism in spite of low ACTH.
  In primary hypercortisolism, ACTH is typically suppressed by negative feedback.
- Adrenal neoplasms are are the most frequent cause of primary hypercortisolism.
+ Adrenal neoplasms are the most frequent cause of primary hypercortisolism.
  Ectopic or diffuse unregulated sources of ACTH or cortisol may cause hypercorti
 solism.
  In recent decades, overdose with synthetic derivatives of cortisol became
@@ -1273,8 +1273,8 @@ solism.
 \end_layout
 
 \begin_layout Standard
-Despite being caused by a diverse set of HPA pathologies, CS is quite invaiable
- in its ability to cause muscle impairment.
+Despite being caused by a diverse set of HPA pathologies, CS is mostly invariabl
+e in its ability to cause muscle impairment.
 \end_layout
 
 \begin_layout Section
@@ -1283,7 +1283,7 @@ Glucocorticoid therapy
 
 \begin_layout Standard
 A series of serendipitous decisions brought impressive knowledge about CS
- of non-pituitary etiology (reviewed in
+ of non-pituitary etiology (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "glyn1998discovery"
