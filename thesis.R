@@ -654,7 +654,7 @@ plotleanfat <- function(){
   #alphabetical order
   columnnames <- c("fat.mass.gain..g.", "lean.mass.gain..g.", "total.water.gain..g.")
   ylabels <- c("fat mass gain (g)", "lean mass loss (g)", "water loss (g)")
-  ylims <- list(c(0, 4), c(0, 4), c(0, 5))
+  ylims <- list(c(0, 4), c(0, 4.5), c(0, 5.2))
   statstrings <- list(
     #fat1, 3, 7:
     threeidenticalgroups,
