@@ -11607,7 +11607,7 @@ One reason why key mediators of GC and AAS actions have not been identified
 \end_layout
 
 \begin_layout Standard
-GAML has been frequently reported in rats.
+GAML has been frequently reported in rats and infrequently in mice.
  A series of studies describe reductions in CSA of mouse myofiber upon Dexa
  treatment.
  On the other hand, Testo has been used to reverse loss of muscle in mice
@@ -11629,9 +11629,9 @@ Studies of GAML suggest that it combines an increase in protein degradation
  including the proteasome, the autophagosome, and soluble proteases.
  Microarray studies showed that Testo reverses GC-induced changes in markers
  of each of these three proteolytic pathways and of protein translation.
- Based on the solid evidence obtained in GAML and on the transcriptional
- changes seen with Testo co-administration, there was a good probability
- that Testo will inhibit all these atrophic mechanisms.
+ Based on the transcriptional changes seen with Testo co-administration,
+ there was a good probability that Testo will inhibit all these atrophic
+ mechanisms.
 \end_layout
 
 \begin_layout Subparagraph*
@@ -19927,7 +19927,7 @@ A 10 mg/(kg d) Dexa dose induced sizable loss of muscle, as evidenced by
  vehicle alone.
  The measurement of fat body mass indicated that the mice treated with vehicle
  had essentially unchanged tissue fat during the experiment.
- The unchanged lean and fat tissue content is evidence for the act that
+ The unchanged lean and fat tissue content is evidence for the fact that
  the experimental manipulations had no effect by themselves.
  The well-being of the study animals was further proven by the fact that
  Dexa exerted its expected stimulating action on body fat accretion.
@@ -19936,8 +19936,23 @@ A 10 mg/(kg d) Dexa dose induced sizable loss of muscle, as evidenced by
 \begin_layout Standard
 The change in total body mass was approximately equal to that in lean body
  mass.
- This may explain why body weight changes, rather than body weight at sacrifice,
- were significantly altered by Dexa.
+ This may explain why body weight changes (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Time-course-of-body-weight"
+
+\end_inset
+
+), rather than body weight at sacrifice (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Body-weight-at-sacrifice"
+
+\end_inset
+
+), were significantly altered by Dexa.
  No other organ or tissue appeared to undergo atrophy upon Dexa treatment.
  Dissection revealed no significant changes in the size of viscera.
  No detectable changes were seen in the wet weight of the heart (data not
@@ -19945,15 +19960,7 @@ The change in total body mass was approximately equal to that in lean body
 \end_layout
 
 \begin_layout Standard
-The loss in total water mass induced by Dexa is about half of the loss of
- lean body mass.
- This suggests that the loss of water is solely the result of tissue mass
- loss, and not a MR-mediated, non-specific alteration of water or electrolyte
- homeostasis.
-\end_layout
-
-\begin_layout Standard
-It is unclear what causes the variation in sensitivity between muscles.
+It is unclear what causes the variation in Dexa sensitivity between muscles.
  Gastrocnemius and quadriceps appeared as more sensitive muscle to Dexa,
  whereas tibialis was essentially unchanged.
  The lack of response in tibialis was surprising, given how common mouse
@@ -19990,13 +19997,103 @@ key "desler1996effects"
 \end_inset
 
 .
- In contrast to the in vivo studies, cells ability to survive degrades towards
+\end_layout
+
+\begin_layout Standard
+In contrast to the in vivo studies, cells ability to thrive degraded towards
  their third day of Dexa treatment, that is, their ninth day of differentiation.
  The overarching manifestations of cell senescence prevented the assessment
- of myotube atrophy beyond the 48 hour time point.
- It is therefore unclear whether C2C12 atrophy in response to GAML carries
- on part the 48 hour.
- The goal 
+ of myotube atrophy beyond the 48-hour time point.
+ Moreover, the atrophic fibers' diameter becomes comparable with that of
+ the nucleus (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:myotube-diameters"
+
+\end_inset
+
+).
+ Further reductions in cell diameter would have required a shrinkage of
+ the nucleus, which has not been observed in the first two days of myotube
+ atrophy.
+ It was therefore impossible to develop a more chronic in vitro model of
+ muscle atrophy.
+\end_layout
+
+\begin_layout Standard
+Co-adminstration of Testo alleviated all macroscopic Dexa effects.
+ Similar to the profile of Dexa action, in absolute terms, the recovery
+ in lean body mass was approximately equal to that in total body weight.
+ The percentage by which total body weight, lean body mass, and individual
+ muscles recovered are similar, indicating that Testo action was also limited
+ to muscle.
+\end_layout
+
+\begin_layout Standard
+The experimental protocol was not ideal for observing the time course of
+ the Testo action.
+ On one hand, the body weight changes during the 7 day experiment (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Time-course-of-body-weight"
+
+\end_inset
+
+, top) suggests that the protective action of Testo starts early on, from
+ the first day of experiment.
+ On the other, the time course is not confirmed by the evolution of individual
+ muscles' weight (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Muscles-weights"
+
+\end_inset
+
+), where 7-day samples appear effectively protected by Testo, whereas 3-day
+ samples show a more limited anabolic response.
+ This discrepancy originates from the fact that the mice analyzed in the
+ 7-day study were slightly more developed than those used in the 3-day sample,
+ as indicated by the difference in levators at sacrifice between vehicle-treated
+ animals at each time point.
+ More likely, the trend observed in the 7-day study, lacking between-subject
+ variability, is more reflective of the GAML in the adult, although one
+ cannot exclude a temporal dissociation between the actions of the two steroids.
+ Nevertheless, the changes surrounding the acute onset of GAML are beyond
+ the scope of this work.
+ At the 7-day time point, which is the most accurate model of chronic steroid
+ myopathy, the alleviation of GAML is well-established.
+ In vitro, myoprotective action of Testo was similarly present at late time-poin
+ts.
+\end_layout
+
+\begin_layout Standard
+The alleviation following Testo was incomplete in terms of lean body mass
+ and individual muscle weights.
+ In contrast, total body weight completely recovered.
+ The source of this discrepancy is not known.
+ Dissection revealed no other viscera with an appearance of hypertrophy
+ following Testo co-administration.
+ The dose of Testo used here was shown to be effective in rats.
+ However, the Dexa dose used in the rat studies was much smaller, suggesting
+ that mice studied here would have benefited even more from an increased
+ dose of Testo.
+ Moreover, mice may be intrinsically less responsive to Testo.
+ The effective dose of Testo for fully preventing GAML should be the aim
+ of future studies.
+ Within the limits of present data, it may be the case that no Testo dose
+ would overcome Dex-induced atrophy, which would then imply that Dexa pro-atroph
+ic mechanisms include pathways outside the scope of AAS action.
+\end_layout
+
+\begin_layout Standard
+There were differences in the responsiveness to Testo between muscle groups.
+ Similar to Dexa sensitivity, an important component appears to be the tendinous
+ content.
+ Levator ani is more responsive to Testo than to Dexa, owing probably to
+ the increased presence of AR compared to other muscles.
 \end_layout
 
 \begin_layout Section
@@ -20009,8 +20106,8 @@ x
 \end_layout
 
 \begin_layout Section*
-IGF-I upregulation facilitates testosterone's myoprotective action in glucocorti
-coid-induced loss of muscle mass
+IGF-I upregulation facilitates testosterone's in vivo myoprotective action
+ in glucocorticoid-induced loss of muscle mass
 \end_layout
 
 \begin_layout Standard
