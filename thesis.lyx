@@ -13678,7 +13678,7 @@ key "stodden2014implementing"
  for overall non-parametric analysis of variance.
  Groups were compared in pairs using post-hoc Dunn's test with Bonferroni
  correction for multiple comparisons.
- IN the cases where data passed the Shapiro-Wilk test of normality at significan
+ In the cases where data passed the Shapiro-Wilk test of normality at significan
 ce level of 0.05, parametric tests were used instead, including analysis
  of variance (
 \begin_inset CommandInset nomenclature
@@ -13688,7 +13688,15 @@ description "analysis of variance"
 
 \end_inset
 
-) and post-hoc Tukey's honest significant difference test.
+) and post-hoc Tukey's honest significant difference (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HSD"
+description "honest significant difference"
+
+\end_inset
+
+) test.
 \end_layout
 
 \begin_layout Standard
@@ -19904,11 +19912,65 @@ The present work investigated the molecular mechanisms mediating androgen
  alleviation of GC-induced muscle atrophy in mouse.
  While the myoprotective action of Testo was proven in humans and dissected
  in rats, it was not studied in mice.
- Although a series of studies investigated transcriptional changes in 
+ In fact, although some studies investigated transcriptional changes in
+ mouse muscle in response to Dexa, surprisingly few describe macroscopic
+ atrophy.
+\end_layout
+
+\begin_layout Standard
+A 10 mg/(kg d) Dexa dose induced sizable loss of muscle, as evidenced by
+ lean body mass and individual muscle weight changes.
+ The effect was progressive, with the losses of lean body mass at day 3
+ being roughly half of those at day 7.
+ The observed time dependence is evidence for a Dexa-specific effect.
+ Moreover, lean body mass is essentially unchanged in mice treated with
+ vehicle alone.
+ The measurement of fat body mass indicated that the mice treated with vehicle
+ had essentially unchanged tissue fat during the experiment.
+ The unchanged lean and fat tissue content is evidence for the act that
+ the experimental manipulations had no effect by themselves.
+ The well-being of the study animals was further proven by the fact that
+ Dexa exerted its expected stimulating action on body fat accretion.
+\end_layout
+
+\begin_layout Standard
+It is unclear what causes the variation in sensitivity between muscles.
+ Gastrocnemius and quadriceps appeared as more sensitive muscle to Dexa,
+ whereas tibialis was essentially unchanged.
+ All three muscles contain nearly equal masses of fast- and slow-twitch
+ fibers, at least in rat, thus excluding an explanation based on the type-specif
+ic differences in responsiveness.
+ The lack of response in tibialis was surprising, given how common mouse
+ tibialis manipulation, such as electroporation of DNA, is described in
+ literature.
+ However, there is no published account of GC-induced loss of tibialis mass
+ in mouse.
+\end_layout
+
+\begin_layout Section
+Testosterone's myoprotective action is based on inhibiting proteolytic and
+ anti-translational effects of dexamethasone
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Section*
+IGF-I upregulation facilitates testosterone's myoprotective action in glucocorti
+coid-induced loss of muscle mass
+\end_layout
+
+\begin_layout Standard
+x
 \end_layout
 
 \begin_layout Section
 Conclusions
+\end_layout
+
+\begin_layout Standard
+x
 \end_layout
 
 \begin_layout Section
@@ -20311,7 +20373,7 @@ You swore to re-read Troncose, Chu201, Baehr.
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Not read:
@@ -20319,10 +20381,6 @@ Not read:
 
 \begin_layout Plain Layout
 contrasts "two-way anova"
-\end_layout
-
-\begin_layout Plain Layout
-Fisher's protected least significant difference or Scheffe's F
 \end_layout
 
 \begin_layout Plain Layout
@@ -21090,40 +21148,6 @@ Bibliography:
 
 \begin_layout Plain Layout
 Other ideas:
-\end_layout
-
-\begin_layout Plain Layout
-* Treat cells with cycloheximide for 10 minutes at room temperature before
- lysis.
-\end_layout
-
-\begin_layout Plain Layout
-* Use DEP (aka DEPC aka diethylpyrocarbonate) to inhibit RNases.
-\end_layout
-
-\begin_layout Plain Layout
-* Determine actively translated mRNA by using puromycin, as it disturbs
- the actively translating ribosomes.
- Only the loss in heavy polysomal fraction from cycloheximide treatment
- to puromycin treatment is the real thing.
-\end_layout
-
-\begin_layout Plain Layout
-* Calculate number of ribosomes per fraction through the A254 curve, counting
- the peaks.
- For the fractions where resolution is not good (many ribosomes per messenger),
- a logarithmic extrapolation can be used (see Arava, 2002).
- The extrapolation may be confirmed by cleavage of specific genes followed
- by northern for the ribosomes on that region (unclear, but mentioned by
- Arava, 2002).
- Use qPCR for the messenger of interest to determine the amount of messenger
- per fraction.
- Arava suggests using the peak fraction as indicative of number of ribosomes
- per messenger, while Lacsina (2011) uses the qPCR results from each fraction
- and calculates an weighted average of ribosomes per specific messenger.
- From these two numbers, one get number of ribosomes per mRNA molecule.
- Using ORF size, one can calculate average distance between ribosomes on
- specific mRNAs.
 \end_layout
 
 \begin_layout Plain Layout
