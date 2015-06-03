@@ -2383,11 +2383,11 @@ classical
 \begin_inset Quotes eld
 \end_inset
 
-within weeks to years
+within weeks to years,
 \begin_inset Quotes erd
 \end_inset
 
-, and acute steroid myopathy, induced in 5-7 days of high-dose GC
+ and acute steroid myopathy, induced in 5-7 days of high-dose GC
 \begin_inset CommandInset citation
 LatexCommand cite
 key "foye2014corticosteroid-induced"
@@ -2396,7 +2396,7 @@ key "foye2014corticosteroid-induced"
 
 .
  However, their description of the two forms of GAML is almost identical,
- suggesting that the two clinical entities are overlapping to a great extend.
+ suggesting that the two clinical entities are largely overlapping.
 \end_layout
 
 \begin_layout Standard
@@ -2570,7 +2570,7 @@ key "khaleeli1983corticosteroid"
 \end_inset
 
 .
- In more recent ones, a type-specific effect was found.
+ In more recent investigations, a type-specific effect was described.
  Women with CS have an increased proportion of type IIx (fast twitch, glycolytic
 ) and a lower proportion of type I (slow twitch, oxidative) fibers in their
  vastus lateralis muscles
@@ -2657,8 +2657,8 @@ key "legrand2007skeletal"
  cells.
  Some or all satellite cells may be activated to proliferate, thus becoming
  myoblasts.
- Many in vitro assays use dividing cells from human muscle, at times assumed
- to be myoblasts.
+ Many in vitro assays use proliferating cells from human muscle, at times
+ assumed to be myoblasts.
  These human 
 \begin_inset Quotes eld
 \end_inset
