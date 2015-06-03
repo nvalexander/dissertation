@@ -936,7 +936,7 @@ Intramuscular atrogene expression and proteasome catalytic activity were
 ion.
  T co-administration reduced the autophagosome-characteristic lipidated
  form of LC3B.
- Translation regulators 4E-BP, eIF3f and eIF2 did not change significantly
+ Translation regulators 4E-BP, eIF3f, and eIF2 did not change significantly
  as a result of androgen co-administration.
  Calpains activity and levels were unchanged by D and T.
  
@@ -6693,7 +6693,7 @@ description "hypoxia-induced factor 1a"
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PGC-1"
-description "PPARg coactivator 1"
+description "PPARγ coactivator 1"
 
 \end_inset
 
@@ -12362,8 +12362,8 @@ description "radioimmunoprecipitation assay"
 \end_inset
 
 ) buffer, containing 150 mM sodium chloride, 20 mM Tris pH 7.5, 100‰ v/v
- glycerol, 10‰ v/v NP-40, 10 g/L w/v sodium deoxycholate, 1 g/L sodium dodecylsu
-lfate (
+ glycerol, 10‰ v/v NP-40, 10 g/L w/v sodium deoxycholate, 1 g/L sodium dodecyl
+ sulfate (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SDS"
