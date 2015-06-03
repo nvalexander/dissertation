@@ -1418,7 +1418,7 @@ key "truss1990contacts"
 \end_inset
 
 .
- The classical effect of the GRE--GR interaction is increased transcription
+ The classical effect of the GRE-GR interaction is increased transcription
  for neighboring target genes (transactivation), as it is the case in polymorpho
 nucleate cells with interleukin 1 (
 \begin_inset CommandInset nomenclature
@@ -1484,7 +1484,7 @@ key "chang2001mechanism"
 
 .
  Within minutes, GC administration induces vasodilation, through direct,
- non-genomic activation of phosphatidylinositol 3-kinase (
+ nongenomic activation of phosphatidylinositol 3-kinase (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PI3K"
@@ -1543,7 +1543,7 @@ key "wendler1950synthesis"
 
 , thus lowering the price and creating the opportunity for large-scale trials.
  The Empire Rheumatism Council organized a randomized trial comparing cortisone
- with acetylsalycilate, and concluded that there is no benefit in cortisone
+ with acetylsalicylate, and concluded that there is no benefit in cortisone
 \begin_inset CommandInset citation
 LatexCommand cite
 key "theempirerheumatismcouncilsub-committee1957multi-centre"
@@ -1555,12 +1555,12 @@ key "theempirerheumatismcouncilsub-committee1957multi-centre"
  well-being, they were afflicted more often with deleterious side effects,
  including edema and hypertension.
  In retrospect, a comparison between two palliative symptomatic therapies
- using cure-indicating outcomes was likely misinformative,
+ using cure-indicating outcomes was likely misleading.
 \end_layout
 
 \begin_layout Standard
-By the time this trial was reported, the chemists were providing more effective
- and safe synthetic GCs (reviewed in 
+By the end of this trial, the chemists were providing more effective and
+ safe synthetic GCs (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "sarett1959aspects"
@@ -1568,8 +1568,8 @@ key "sarett1959aspects"
 \end_inset
 
 ).
- While synthesizing esters with a longer half-life, Scherring chemists introduce
-d a double bond in the A ring of cortisone, thus discovering prednisone,
+ While synthesizing esters with a longer half-life, Schering chemists introduced
+ a double bond in the A ring of cortisone, thus discovering prednisone,
  the first widely used oral GC
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1589,7 +1589,7 @@ key "bunim1955metabolic"
 \end_inset
 
 .
- In a trial of prednisolone versus acetylsalycilate in rheumatoid arthritis,
+ In a trial of prednisolone versus acetylsalicylate in rheumatoid arthritis,
  the GC provided better functional protection to the articulations
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1643,7 +1643,7 @@ key "arth195816-methylated,arth195816-methylateda"
 \end_layout
 
 \begin_layout Standard
-Dexa is completely unable to cause edema and electrolyte imbalance.
+Dexa is unable to cause edema and electrolyte imbalance.
  Nevertheless, Dexa is 52 times more potent in suppressing endogenous GC
  secretion, and 35 times more potent in causing hyperglycemia
 \begin_inset CommandInset citation
@@ -1833,7 +1833,7 @@ key "haack1999glucocorticoid"
 
 \begin_layout Standard
 GCs have been used off-label in many other diseases.
- Most commonly, GCs are perceived by physicians as a fall-back therapeutic
+ Most commonly, GCs are perceived by physicians as a fallback therapeutic
  alternative for cerebral hypertensive conditions, despite sparse evidence
  for efficacy in specific conditions.
  Small trials suggest GCs reduce vasogenic cerebral edema
@@ -1865,7 +1865,7 @@ key "alderson2005corticosteroids"
  common comparator in clinical trials.
  The National Cancer Institute sponsors 311 ongoing clinical studies employing
  Dexa, mainly in the standard-of-care arm, thus providing a plethora of
- data which have been, and may still be, misconstrued as support for the
+ data that have been, and may still be, misconstrued as support for the
  use of GCs.
  Every day practice may drift further apart for the officially sanctioned
  label, thus providing new opportunities for unjustifiable overdose.
@@ -1972,8 +1972,8 @@ key "skversky2011association,vanstaa2000use"
 
 .
  GCs are likely even more often prescribed in the developing world, due
- to affordability and lack of alternatives, poor access to health care not
- withstanding.
+ to affordability and lack of alternatives, poor access to health care notwithst
+anding.
  Dexa and cortisol are the only drugs listed five times in the World Health
  Organization's List of Essential Medicines
 \begin_inset CommandInset citation
@@ -2003,7 +2003,7 @@ key "ravis2007topical"
  Where regulated, over-the-counter GC creams rarely cause CS on their own,
  but may lower the threshold for CS in patients who are also prescribed
  oral GC.
- Unregulated, mislabeled, overdosing GC creams sold as skin bleaching products
+ Unregulated, mislabeled, overdosing GC creams sold as skin-bleaching products
  pose a great CS risk to patients from ethnic groups with darker skin.
  Half of the respondents in a Nigeria poll admitted using GC-based skin
  bleaching products
@@ -2023,7 +2023,7 @@ key "france-presse2015ivory"
 \end_inset
 
 .
- The side-effects of skin bleaching are well recognized by the sub-Saharan
+ The side effects of skin bleaching are well recognized by the sub-Saharan
  medical community.
  Paradoxically, CS caused by bleaching products may be less identifiable
  to practitioners who care for the African diaspora in the developed world,
@@ -2040,7 +2040,7 @@ key "olumide2008complications,rozen2012cosmetic"
 \end_layout
 
 \begin_layout Standard
-Other, less frequent causes of iatrogenic CS, include the interaction between
+Other, less frequent causes of iatrogenic CS include the interaction between
  low dose GC therapy and cytochrome P450 3A4 inhibitors, such as the antiretrovi
 ral ritonavir
 \begin_inset CommandInset citation
@@ -2073,8 +2073,8 @@ key "psaras2011demographic"
 .
  The incidence of iatrogenic CS is difficult to estimate, because there
  is no reporting requirement.
- In the developed world, iatrogenic CS could be as frequent as 1 case per
- thousand and year
+ In the developed world, iatrogenic CS could be as frequent as one case
+ per thousand and year
 \begin_inset CommandInset citation
 LatexCommand cite
 key "prague2013cushings"
@@ -2140,10 +2140,10 @@ key "mastaglia1982adverse"
 \begin_layout Standard
 There are differences between GC-induced cardiovascular changes, depending
  on the nature of the GC.
- Endogenous GC, such as cortisol, have hypertensive effects, while some
+ Endogenous GCs, such as cortisol, have hypertensive effects, while some
  synthetic GCs, Dexa included, lack such non-specific MR-dependent action.
- Nevertheless, excess exogenous and endogenous GC cause essentially the
- same disabling effects on muscle
+ Nevertheless, excess exogenous and endogenous GC cause the same disabling
+ effects on muscle
 \begin_inset CommandInset citation
 LatexCommand cite
 key "douglass1992myopathy"
@@ -2223,7 +2223,7 @@ key "bowyer1985steroid"
 .
  Based on other metabolic effects, it is likely that the catabolic potency
  ratio is even more tilted towards Dexa than the referenced studies indicate,
- but more detailed human pharmacodynamic studies are lacking.
+ but more detailed human pharmacodynamics studies are lacking.
 \end_layout
 
 \begin_layout Standard
@@ -2865,7 +2865,7 @@ key "khaleeli1983corticosteroid"
 \begin_layout Standard
 The last three decades brought a better understanding of protein degradative
  pathways and of muscle atrophy.
- Two major proteolytic systems, the proteasome-ubiquitin system and the
+ Two major proteolytic systems, the proteasome - ubiquitin system and the
  autophagosome (discussed in later sections), have been discovered and dissected.
  But only one published trial investigated the action of GC in human muscle
  biopsies, at a molecular level.
