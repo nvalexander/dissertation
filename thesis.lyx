@@ -947,7 +947,7 @@ C2C12 differentiated myotubes were used to determine the effects of T and
  D on protein synthesis and degradation.
  Myotube diameters were reduced by D, while T co-administration suppressed
  D effect.
- Protein degradation was increased by 24 hour D treatment.
+ Protein degradation was increased by 24-hour D treatment.
  D-stimulated protein degradation was inhibited by proteasome inhibitor
  MG132, and, to a lesser degree, by lysosome inhibitor chloroquine.
  T co-administration returned protein degradation to basal levels.
@@ -1087,7 +1087,7 @@ key "cushing1912pituitary"
  Unlike the earlier and better-studied deficiencies of the thyroid and pancreas,
  pituitary defects were more variable in manifestation and therefore harder
  to unify in a single clinical entity.
- Even when macroscopic hypertrophy of pituitary were localized to a gland
+ Even when macroscopic hypertrophy of pituitary was localized to a gland
  subdomain, it was unclear whether observed pathology could be attributed
  to a hypersecretion from the hypertrophied sector, or to a deficiency in
  the neighboring compressed structures.
@@ -14932,15 +14932,14 @@ plotmuscleweights()
 status open
 
 \begin_layout Plain Layout
-Effects of Dexa and / or Testo treatments on individual muscle weights (normaliz
-ed to body weight).
+Effects of Dexa and / or Testo treatments on individual muscle weights.
 \end_layout
 
 \end_inset
 
 Effects of Dexa and / or Testo treatments on the wet weight of levator ani,
  quadriceps, gastrocnemius, triceps brachii, and tibialis anterior muscles
- (n=5-6).
+ (normalized to body weight; n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Muscles-weights"
