@@ -5865,7 +5865,7 @@ key "mancini2007fmip"
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "KLF-15"
-description "kruppel-like factor-15"
+description "Krüppel-like factor-15"
 
 \end_inset
 
@@ -8873,12 +8873,12 @@ key "verhees2011glycogen"
 
 .
  While inactivation of GSK3-β is typically attributed to latent Akt inhibition,
- the Ser 9 site is also a target for ribosomal protein S6 kinase, 90kDa
+ the Ser 9 site is also a target for ribosomal protein S6 kinase, 90 kDa
  (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "p90-RSK"
-description "ribosomal protein S6 kinase, 90kDa"
+description "ribosomal protein S6 kinase, 90 kDa"
 
 \end_inset
 
@@ -10241,7 +10241,7 @@ key "vary2007nutrient"
 
 \begin_layout Standard
 In C2C12 myotubes, GAML may repress protein synthesis by MAFbx-initiated
- neutralization of eIF3-f
+ neutralization of eIF3f
 \begin_inset CommandInset citation
 LatexCommand citep
 key "lagirand-cantaloube2008initiation"
@@ -10249,12 +10249,12 @@ key "lagirand-cantaloube2008initiation"
 \end_inset
 
 .
- Overexpression of eIF3-f causes hypertrophy, and eIF3-F knockout induces
+ Overexpression of eIF3f causes hypertrophy, and eIF3f knockout induces
  atrophy, supporting the hypothesis that loss of an initiation factor causes
  reductions in the rate of protein synthesis.
- Moreover, further data from the same group shows that loss of eIF3-f impairs
+ Moreover, further data from the same group shows that loss of eIF3f impairs
  the ability of mTOR to bind and phosphorylate p70-S6K, suggesting that
- eIF3-f pro-anabolic action is more complex
+ eIF3f pro-anabolic action is more complex
 \begin_inset CommandInset citation
 LatexCommand citep
 key "csibi2010translation"
@@ -10262,7 +10262,7 @@ key "csibi2010translation"
 \end_inset
 
 .
- The role of eIF3-f in GAML has not been confirmed in vivo.
+ The role of eIF3f in GAML has not been confirmed in vivo.
 \end_layout
 
 \begin_layout Standard
@@ -12420,7 +12420,7 @@ description "bovine serum albumine"
  Männedorf, Switzerland) with absorption at 562 nm.
  The standard curve was fitted to a quadratic equation.
  Typically extracts were diluted to the lowest total protein concentration,
- using the same lysis bufer that was used to extract them.
+ using the same lysis buffer that was used to extract them.
 \end_layout
 
 \begin_layout Standard
@@ -16804,9 +16804,9 @@ name "fig:Phosphorylated-eif2"
 
 \begin_layout Standard
 Another regulator of proteins synthesis that was shown to play a role in
- muscle atrophy upon starvation is eIF3-F.
+ muscle atrophy upon starvation is eIF3f.
  In levator muscles of mice treated with Dexa, there was no statistically
- significant change in the levels of eIF3-F (Dunn's test, p = 
+ significant change in the levels of eIF3f (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16917,13 +16917,13 @@ ploteifthree()
 status open
 
 \begin_layout Plain Layout
-Levels of eIF3-F following Dexa and / or Testo treatments.
+Levels of eIF3f following Dexa and / or Testo treatments.
 \end_layout
 
 \end_inset
 
-Levels of eIF3-F following Dexa and / or Testo treatment in levator ani
- muscles (normalized to simultaneously resolved GAPDH; n=4)
+Levels of eIF3f following Dexa and / or Testo treatment in levator ani muscles
+ (normalized to simultaneously resolved GAPDH; n=4)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:eif3f"

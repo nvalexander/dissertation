@@ -1232,7 +1232,7 @@ ploteiftwo <- function(){
 ploteifthree <- function(){
   shortdf7 <- rescaledtovehicleasunity(
     InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.eIF3f.protein..normalized.to.GAPDH.")])
-  return(threecolumnplot(shortdf7, "eIF3-F\n(normalized to GAPDH)", c(0,1.5), threeidenticalgroups)+ 
+  return(threecolumnplot(shortdf7, "eIF3f\n(normalized to GAPDH)", c(0,1.5), threeidenticalgroups)+ 
            theme(axis.text.x = element_text(color = "black")) + 
            scale_x_discrete(labels = conditionsVDC))
 }
