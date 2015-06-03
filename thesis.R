@@ -1626,7 +1626,7 @@ plotproteindegradation <- function(){
                    vjust = -.6,
                    label = c("a", "a", "a", "a")) +
       ylab("medium to cell protein tracer\nratio (24 hour)") +
-      coord_cartesian(ylim = c(0, 1)) + 
+      coord_cartesian(ylim = c(0, 1.1)) + 
       scale_fill_manual(values = c("#ffffff", "#222222", "#777777", "#dddddd"),
                         labels = conditionsVDCAmetabolism) +
       stdbarplot + 
@@ -1655,7 +1655,7 @@ plotinhibitors <- function() {
                         vjust = -.6,
                         label = "") +
            ylab("medium to cell protein tracer\nratio (24 hour)") +
-           coord_cartesian(ylim = c(0, 1.8)) + 
+           coord_cartesian(ylim = c(0, 1.9)) + 
            scale_fill_manual(values = c(
              "#ffffff", 
              "#222222", 
@@ -1670,7 +1670,7 @@ plotinhibitors <- function() {
                         fun.y = statstringyoverbar, 
                         hjust = .5,
                         vjust = -.6,
-                        label = c("a", "a", "a", "a", "a", "a")) +
+                        label = c("a", "b", "a", "c", "a", "a")) +
            stdbarplot + 
            theme(axis.text.x = element_text(color = "black")) + 
            scale_x_discrete(labels = conditionsVDCinhibitors))

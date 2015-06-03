@@ -19326,7 +19326,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(anovaPvaluesDegradationTreatmentAndDate24[[1]])
+sig3(anovaPvaluesDegradationTreatment24[[1]])
 \end_layout
 
 \end_inset
@@ -19374,7 +19374,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(tukeyDegradationTreatmentAndDate24[["DD-V", "p.adj"]] )
+sig3(tukeyDegradationTreatment24[["DD-V", "p.adj"]] )
 \end_layout
 
 \end_inset
@@ -19402,7 +19402,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(tukeyDegradationTreatmentAndDate24[["DDT-DD", "p.adj"]])
+sig3(tukeyDegradationTreatment24[["DDT-DD", "p.adj"]])
 \end_layout
 
 \end_inset
@@ -19428,7 +19428,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(tukeyDegradationTreatmentAndDate24[["DDTT-DD", "p.adj"]])
+sig3(tukeyDegradationTreatment24[["DDTT-DD", "p.adj"]])
 \end_layout
 
 \end_inset
@@ -19472,7 +19472,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3(tukeyDegradationTreatmentAndDate48[["DD-V", "p.adj"]] )
+sig3(tukeyDegradationTreatment48[["DD-V", "p.adj"]] )
 \end_layout
 
 \end_inset
@@ -19498,7 +19498,7 @@ status open
 
 \begin_layout Plain Layout
 
-sig3( tukeyDegradationTreatmentAndDate48[["DDT-DD", "p.adj"]] )
+sig3( tukeyDegradationTreatment48[["DDT-DD", "p.adj"]] )
 \end_layout
 
 \end_inset
@@ -19844,7 +19844,9 @@ Discussion
 \end_layout
 
 \begin_layout Standard
-todo
+The present work investigated the molecular mechanisms mediating androgen
+ alleviation of GC-induced muscle atrophy.
+ 
 \end_layout
 
 \begin_layout Section
