@@ -2692,7 +2692,7 @@ key "ham1988improved"
 \end_inset
 
 , and personal observation; data not shown).
- For comparison, maximum normal concentrations of endogenous cortisol in
+ For comparison, maximum normal concentration of endogenous cortisol in
  humans is 
 \begin_inset ERT
 status collapsed
@@ -2722,14 +2722,15 @@ key "griffing2014serum"
  myoblasts are subjected to meaningful manipulations of GC concentration.
  Moreover, it appears that GCs are vital for human muscle development and
  maintenance.
- This implies that cell lines which do not require GC, such as those surviving
+ This implies that cell lines that do not require GC, such as those surviving
  in serum-free media, may be less accurate models of muscle.
 \end_layout
 
 \begin_layout Standard
-There are no published cases of increase in circulating myoglobin or creatin
+There are no published cases of increase in circulating myoglobin or creatine
  kinase in response to GC monotherapy, or as a consequence of Cushing's
  disease.
+ 
 \begin_inset Note Greyedout
 status open
 
@@ -2865,8 +2866,8 @@ The last three decades brought a better understanding of protein degradative
  pathways and of muscle atrophy.
  Two major proteolytic systems, the proteasome - ubiquitin system and the
  autophagosome (discussed in later sections), have been discovered and dissected.
- But only one published trial investigated the action of GC in human muscle
- biopsies, at a molecular level.
+ Unfortunately, only one published trial investigated the action of GC in
+ human muscle biopsies, at a molecular level.
  It failed to find a significant change in mRNA of ubiquitin and the C3
  subunit of the proteasome
 \begin_inset CommandInset citation
@@ -2877,7 +2878,7 @@ key "lofberg2002effects"
 
 .
  The result is unsurprising, given that the control of the proteasome system
- may be exercised in other, unprobed ways.
+ may be exercised in other, unexplored ways.
  In animal models, the genes most correlated with muscle loss, including
  GAML, are two E3 ubiquitin ligases, muscle atrophy F-box (
 \begin_inset CommandInset nomenclature
@@ -2907,7 +2908,7 @@ key "bodine2014skeletal"
 \end_layout
 
 \begin_layout Standard
-Recently, pharmacological inhibition of the proteasome become widely available.
+Recently, pharmacological inhibitors of the proteasome became widely available.
  The first proteasome inhibitor, bortezomib, is recommended by the FDA for
  multiple myeloma and mantle cell lymphoma
 \begin_inset CommandInset citation
@@ -2954,8 +2955,8 @@ key "jagannath2006bortezomib"
 
 .
  Taking into account the large variability between trials and the use of
- a atypical population, the comparison is of marginal use, but it does not
- appear that the combination (Dexa + bortezomib) is more muscle protective
+ an atypical population, the comparison is of marginal use, but it does
+ not appear that the combination (Dexa + bortezomib) is more muscle protective
  than Dexa alone.
  Clinical studies directly addressing this comparison in patients prescribed
  high-dose GC are recommended, given that the most commonly accepted hypothesis
@@ -2993,8 +2994,8 @@ key "sanofiaventisusllc2006plaquenil"
  Chronic hydroxychloroquine therapy is known to induce muscle weakness and
  sporadic myopathy, through a distinct, vacuolar mechanism.
  The hydroxychloroquine-induced myopathy is associated with an increase
- in autophagosomal markers in muscle, demonstrating autophagosome's importance
- in muscle regulation
+ in autophagosome markers in muscle, demonstrating the importance of autophagoso
+me in muscle regulation
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lee2012clinical"
@@ -3012,7 +3013,7 @@ key "ghosh2013teaching,nucci1996chloroquine"
 \end_inset
 
 .
- Potential benefits of anti-lysosomal co-therapy for the atrophying muscle
+ Potential benefits of anti-lysosome co-therapy for the atrophying muscle
  remain the subject of speculation.
 \end_layout
 
@@ -3028,8 +3029,9 @@ key "brillon1995effect"
 
 \end_inset
 
- found that a 80 mg cortisol infusion over 13 hours led to 8% increase in
- non-oxidative leucine uptake, indicating an upregulation of protein synthesis.
+ found that an 80 mg cortisol infusion over 13 hours led to 8% increase
+ in non-oxidative leucine uptake, indicating an upregulation of protein
+ synthesis.
  However, using a 200 mg cortisol infusion in the same protocol failed to
  cause a detectable change in protein synthesis compared to placebo, suggesting
  hormesis may confound experiments.
@@ -3042,9 +3044,9 @@ key "lofberg2002effects"
 \end_inset
 
  found that three days of 65 mg / day prednisolone caused a non-significant
- 21% increase in protein synthesis rate and a statistically-significant
+ 21% increase in protein synthesis rate and a statistically significant
  52% increase in the rate of protein degradation, based on the difference
- between arterial and venous levels of tritiated phenyl alanine at leg level.
+ between arterial and venous levels of tritiated phenylalanine at leg level.
  Short and colleagues employed fractional synthesis rate (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -3071,7 +3073,7 @@ key "short2004effect,short2009short-term"
 
 \end_inset
 
- .
+.
  Some of these studies may have been underpowered (sample size n = 6-7)
  or may be troubled by the use of a small dose, but their validity is confirmed
  by the fact that, in each case, the expected hyperglycemic response to
@@ -3122,8 +3124,8 @@ description "Mechanistic Target of Rapamycin"
 \end_inset
 
 ) axis.
- More evidence has been collected in animal models, and is discussed in
- a dedicated section.
+ More evidence has been obtained from animal models (discussed in a dedicated
+ section).
  One study on humans described how Dexa inhibits branched chain amino acids'
  ability to induce phosphorylation of eukaryotic translation initiation
  factor 4E (
@@ -3150,7 +3152,7 @@ key "liu2004glucocorticoids"
 \end_inset
 
 .
- Dexa lacked similar action on another translation regulators, eIF2α.
+ Dexa lacked similar action on another translation regulator, eIF2α.
 \end_layout
 
 \begin_layout Standard
@@ -3169,12 +3171,12 @@ key "mor1987myopathy"
 \end_inset
 
 .
- In both hyercortisolism and hypocortisolism, effects on human muscle remain
+ In both hypercortisolism and hypocortisolism, effects on human muscle remain
  understudied.
  Human studies concord that GC-induced loss of muscle force is an objective
  finding caused by an increased proteolytic activity.
- Indirect evidence indicate human GAML is associated with changes in protein
- synthesis.
+ Indirect evidence indicates that human GAML is associated with changes
+ in protein synthesis.
  In the absence of other proven mitigating interventions, current guidelines
  suggest GC discontinuation if myopathy develops.
  Animal models have been essential for the study of GC-induced muscle loss,
@@ -3249,11 +3251,11 @@ key "brown-sequard1889note"
 \begin_inset Quotes eld
 \end_inset
 
-serious affections of any kind
+serious affections of any kind,
 \begin_inset Quotes erd
 \end_inset
 
-, including cachexia, pulmonary tuberculosis, cancer and leprosy ulcers
+ including cachexia, pulmonary tuberculosis, cancer and leprosy ulcers
 \begin_inset CommandInset citation
 LatexCommand cite
 key "brown-sequard1893new"
@@ -3282,11 +3284,11 @@ The cultural context in which Brown-Séquard worked introduced multiple biases
 \begin_inset Quotes eld
 \end_inset
 
-organotherapy
+organotherapy,
 \begin_inset Quotes erd
 \end_inset
 
-, which had been banished from the British Pharmacopoeia in 1788 after failing
+ which had been banished from the British Pharmacopoeia in 1788 after failing
  the test of oral administration.
  Some organotherapies were shams or even harmful.
  Yet a few of them provided evidence that specific parts of the body store
@@ -3302,7 +3304,7 @@ Second, the Victorian era is an age of body rediscovery.
  Georgian pastimes, such as cock fighting, horse racing, or cricket, are
  replaced by more muscular sports, such as football, rugby, gymnastics,
  and swimming.
- Body building becomes fashionable, with the first professional competition
+ Bodybuilding becomes fashionable, with the first professional competition
  selling out Royal Albert Hall in 1901.
  Brown-Séquard's promise of muscle without effort makes testis organotherapy
  a widespread, well-earning business.
@@ -3387,11 +3389,11 @@ male hormones
 \end_layout
 
 \begin_layout Standard
-The belief in an male-secreted ergogenic substance inspired many commercial
+The belief in a male-secreted ergogenic substance inspired many commercial
  enterprises to sponsor research in male endocrinology, through the decades
  where the evidence was confined to changes in the combs of roosters.
- These dark ages end in 1927, McGee and Koch extract a lipophilic virilizing
- mixture from rooster testis
+ These dark ages end in 1927, when McGee and Koch extract a lipophilic virilizin
+g mixture from rooster testis
 \begin_inset CommandInset citation
 LatexCommand cite
 key "gallagher1929testicular,mcgee1928development"
@@ -3447,8 +3449,8 @@ key "kenyon1938effect"
 
  after less than two weeks, thus establishing the efficacy of Testo replacement
  therapy in men with pathological decreases in circulating Testo.
- With few, narrow exceptions, this population was and remains the only generally
- accepted, FDA-approved indication for Testo therapy
+ Except for a few, narrow exceptions, this population was and remains the
+ only generally accepted, FDA-approved indication for Testo therapy
 \begin_inset CommandInset citation
 LatexCommand cite
 key "auxiliumpharmaceuticalsinc.2014testim,endopharmaceuticalssolutionsinc.2014delatestryl,unimed2004androgel"
@@ -3467,11 +3469,10 @@ Due to manufacturing costs, limited commercial target, and governments'
 \begin_inset Quotes eld
 \end_inset
 
-the second dark age of androgens
+the second dark age of androgens.
 \begin_inset Quotes erd
 \end_inset
 
-.
  Only in 1953, FDA gives its first approval for an androgenic therapy, a
  Testo enanthate injection.
  Then, as now, FDA's approval was based on Testo ability to restore normal
@@ -3483,8 +3484,8 @@ key "endopharmaceuticalssolutionsinc.2014delatestryl"
 \end_inset
 
 .
- But in 18 years of life as experimental drugs, androgenic steroids have
- been trialled in diverse diseases, including male functional impotence
+ However, in 18 years of life as experimental drugs, androgenic steroids
+ have been trialed in diverse diseases, including male functional impotence
 \begin_inset CommandInset citation
 LatexCommand cite
 key "spence1940testosterone"
@@ -3544,10 +3545,10 @@ key "mommers2008male"
 \end_layout
 
 \begin_layout Standard
-The second dark age of Testo were times of limited knowledge, and even more
+The second dark age of Testo was a time of limited knowledge, and even more
  limited adherence to the principles of clinical research.
  Yet in these years, androgenic steroids first gained their reputation as
- ergogens.
+ ergogenics.
  Kenyon noted in his studies on eunuchoid men that Testo injections helped
  them gain weight through protein accretion, as demonstrated by a reduction
  in urinary nitrogen.
@@ -3594,7 +3595,7 @@ key "elashoff1991effects"
 
  and my literature search, no other test of androgens' effect on muscle
  strength is published until 1968.
- Despite the lack of evidence, androgens are used as ergogens in healthy
+ Despite the lack of evidence, androgens are used as ergogenics in healthy
  people, starting with Olympic athletes around 1954
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3611,8 +3612,8 @@ As exemplified by the ergogenic hypothesis, benefits of androgen therapy
 ians to other muscle-depleting conditions, and even to healthy humans.
  Naturally, one of the conditions associated with loss of muscle mass that
  clinicians hoped to improve was hypercortisolism.
- In 1941, Albright shows that the newly-discovered Tp, in 25 mg daily injections
-, was better than estradiol benzoate, progesterone, or vitamin D in restoring
+ In 1941, Albright showed that the newly discovered Tp, in 25 mg daily injection
+s, was better than estradiol benzoate, progesterone, or vitamin D in restoring
  nitrogen balance in three cases of Cushing's disease
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3900,11 +3901,11 @@ key "bergner1976rational"
 
 .
  By the time modern trials with AAS began, the incidence of overt hypercortisoli
-sm have been greatly reduced.
+sm decreased significantly.
  Despite a potential epidemic of covert hypercortisolism, with deleterious
  effects of life quality and expectancy, the interest for studies on hypercortis
 olism has largely waned.
- Clinical studies investigating the benefits of AAS in hyepercortisolism
+ Clinical studies investigating the benefits of AAS in hypercortisolism
  are scarce and small-scale.
  For example, there are no significant-size clinical studies analyzing the
  effect of AAS on the muscle strength of the endogenous CS patient.
@@ -3912,8 +3913,8 @@ olism has largely waned.
 
 \begin_layout Standard
 An unblinded trial observed AAS-induced increases in lean body mass and
- apendicular muscle mass, in men already receiving an average of 6 mg prednisone
- a day over 9 years
+ appendicular muscle mass, in men already receiving an average of 6 mg prednison
+e a day over 9 years
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ragnarsson2013effect"
@@ -3975,7 +3976,7 @@ key "pecorigiraldi2003gender-related"
 
 \begin_layout Standard
 The period when AAS were frequently used as therapy of CS or as adjuvant
- to high-dose GC pre-dates modern molecular biology and genomics.
+ to high-dose GC antedates modern molecular biology and genomics.
  Therefore, there are no published human trials to describe in molecular
  terms the interaction of GCs and AAS at muscle level.
  Most of our knowledge is derived from animal models (discussed later).
@@ -13047,7 +13048,7 @@ description "fetal bovine serum"
 
 ), 100 units/mL penicillin, and 100 mg/L streptomycin, changed every other
  day.
- DMEM contained 400 µM phenyl alanine, 4500 mg/L glucose, 4 mM glutamine,
+ DMEM contained 400 µM phenylalanine, 4500 mg/L glucose, 4 mM glutamine,
  and lacked pyruvate.
 \end_layout
 
@@ -13270,10 +13271,10 @@ For chase experiments, PBS was then replaced with non-radioactive differentiatio
 n medium, for the durations specified at each experiment.
  Chase experiments ended with a double rinse with PBS.
  Preliminary studies revealed that supplementation of differentiation medium
- with 10 mM phenyl alanine made no difference to the rate of tracer release,
+ with 10 mM phenylalanine made no difference to the rate of tracer release,
  compared to differentiation medium alone (data not shown).
  This is plausible, because differentiation medium already contains 0.4 mM
- phenyl alanine, and suggested that additional osmotic stress could be avoided
+ phenylalanine, and suggested that additional osmotic stress could be avoided
  at no cost to sensitivity of the method.
 \end_layout
 
@@ -13579,7 +13580,7 @@ liter}
  Econo-lite scintillation fluid, then counted in a TriCarb 3100TR liquid
  scintillation counter (PerkinElmer) for 3 minutes per sample.
  Counts per minute were converted to disintegrations per minute using a
- standard curve generated using 1-80 µCi/L labeled phenyl alanine dissolved
+ standard curve generated using 1-80 µCi/L labeled phenylalanine dissolved
  in the same solvents as the samples (2:1 TCA:acetone, or 
 \begin_inset ERT
 status open
