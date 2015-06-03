@@ -948,7 +948,7 @@ C2C12 differentiated myotubes were used to determine the effects of T and
  Myotube diameters were reduced by D, while T co-administration suppressed
  D effect.
  Protein degradation was increased by 24 hour D treatment.
- D-stimulated protein degradation was inhibited by proteasomal inhibitor
+ D-stimulated protein degradation was inhibited by proteasome inhibitor
  MG132, and, to a lesser degree, by lysosome inhibitor chloroquine.
  T co-administration returned protein degradation to basal levels.
  Protein synthesis response to D and T did not correlate with the observed
@@ -12406,7 +12406,7 @@ liter}
 
 \end_inset
 
- bovine serum albumine (
+ bovine serum albumin (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "BSA"
