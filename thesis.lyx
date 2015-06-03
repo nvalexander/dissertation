@@ -19945,6 +19945,14 @@ The change in total body mass was approximately equal to that in lean body
 \end_layout
 
 \begin_layout Standard
+The loss in total water mass induced by Dexa is about half of the loss of
+ lean body mass.
+ This suggests that the loss of water is solely the result of tissue mass
+ loss, and not a MR-mediated, non-specific alteration of water or electrolyte
+ homeostasis.
+\end_layout
+
+\begin_layout Standard
 It is unclear what causes the variation in sensitivity between muscles.
  Gastrocnemius and quadriceps appeared as more sensitive muscle to Dexa,
  whereas tibialis was essentially unchanged.
@@ -19954,11 +19962,41 @@ It is unclear what causes the variation in sensitivity between muscles.
  However, there is no published account of GC-induced loss of tibialis mass
  in mouse.
  All three muscles contain nearly equal masses of fast- and slow-twitch
- fibers, at least in rat, thus excluding an explanation based on the type-specif
-ic differences in responsiveness.
+ fibers, at least in rat
+\begin_inset CommandInset citation
+LatexCommand citep
+key "delp1996composition"
+
+\end_inset
+
+, thus excluding an explanation based on the type-specific differences in
+ responsiveness.
  The lack of sensitivity in tibialis may be due to the fact that the tendinous
- component is weighing more in relative terms, than it does in large fleshy
+ component is weighing more in relative terms, compared to large fleshy
  muscles.
+\end_layout
+
+\begin_layout Standard
+There was a remarkable similarity between the in vivo and in vitro findings.
+ Whereas quadriceps and gastrocnemius lost 2-3.5% of their weight for every
+ day of Dexa, C2C12 myotubes lost about 5% of their total protein upon Dexa
+ treatment.
+ This rate is similar to that indicated by Desler for C2C12 myotubes differentia
+ted over three days
+\begin_inset CommandInset citation
+LatexCommand citep
+key "desler1996effects"
+
+\end_inset
+
+.
+ In contrast to the in vivo studies, cells ability to survive degrades towards
+ their third day of Dexa treatment, that is, their ninth day of differentiation.
+ The overarching manifestations of cell senescence prevented the assessment
+ of myotube atrophy beyond the 48 hour time point.
+ It is therefore unclear whether C2C12 atrophy in response to GAML carries
+ on part the 48 hour.
+ The goal 
 \end_layout
 
 \begin_layout Section
@@ -20387,7 +20425,7 @@ You swore to re-read Troncose, Chu201, Baehr.
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Not read:
