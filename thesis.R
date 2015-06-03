@@ -1524,25 +1524,25 @@ anovaDegradationTreatmentAndDate <- aov(
 anovaPvaluesDegradationTreatmentAndDate <- 
   summary(anovaDegradationTreatmentAndDate)[[1]]$`Pr(>F)`
 
-anovaDegradationTreatmentAndDate24 <- aov( 
+anovaDegradationTreatment24 <- aov( 
   curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
   data = DegradationInCellsVDCA[DegradationInCellsVDCA$TimeDays == "1", ])
-anovaPvaluesDegradationTreatmentAndDate24 <- 
-  summary(anovaDegradationTreatmentAndDate24)[[1]]$`Pr(>F)`
-tukeyDegradationTreatmentAndDate24 <- 
+anovaPvaluesDegradationTreatment24 <- 
+  summary(anovaDegradationTreatment24)[[1]]$`Pr(>F)`
+tukeyDegradationTreatment24 <- 
   data.frame(TukeyHSD(
-    x = anovaDegradationTreatmentAndDate24, 
+    x = anovaDegradationTreatment24, 
     'treatment', 
     conf.level=0.95)$treatment)
 
-anovaDegradationTreatmentAndDate48 <- aov( 
+anovaDegradationTreatment48 <- aov( 
   curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
   data = DegradationInCellsVDCA[DegradationInCellsVDCA$TimeDays == "2", ])
-anovaPvaluesDegradationTreatmentAndDate48 <- 
-  summary(anovaDegradationTreatmentAndDate48)[[1]]$`Pr(>F)`
-tukeyDegradationTreatmentAndDate48 <- 
+anovaPvaluesDegradationTreatment48 <- 
+  summary(anovaDegradationTreatment48)[[1]]$`Pr(>F)`
+tukeyDegradationTreatment48 <- 
   data.frame(TukeyHSD(
-    x = anovaDegradationTreatmentAndDate48, 
+    x = anovaDegradationTreatment48, 
     'treatment', 
     conf.level=0.95)$treatment)
 
@@ -1587,7 +1587,14 @@ plotproteindegradation <- function(){
                    fun.data = 'semInterval',
                    width = 0.2,
                    show_guide = FALSE,
-                   position=position_dodge(.2)) +
+                   position=position_dodge(.2))  + 
+      stat_summary(geom = "text", 
+                   size = textSize * .4,
+                   aes(family = "serif"),
+                   fun.y = statstringyunderbar, 
+                   hjust = -.2,
+                   vjust = .25,
+                   label = "") +
       coord_cartesian(ylim = c(0, 1)) + 
       ylab("medium to cell protein tracer ratio") +
       stdplottimecourse +
@@ -1617,7 +1624,7 @@ plotproteindegradation <- function(){
                    fun.y = statstringyoverbar, 
                    hjust = .5,
                    vjust = -.6,
-                   label = "") +
+                   label = c("a", "a", "a", "a")) +
       ylab("medium to cell protein tracer\nratio (24 hour)") +
       coord_cartesian(ylim = c(0, 1)) + 
       scale_fill_manual(values = c("#ffffff", "#222222", "#777777", "#dddddd"),
@@ -1657,6 +1664,13 @@ plotinhibitors <- function() {
              "#555555", 
              "#777777"),
              labels = conditionsVDCinhibitors) +
+           stat_summary(geom = "text", 
+                        size = textSize * .4,
+                        aes(family = "Liberation Sans Narrow"),
+                        fun.y = statstringyoverbar, 
+                        hjust = .5,
+                        vjust = -.6,
+                        label = c("a", "a", "a", "a", "a", "a")) +
            stdbarplot + 
            theme(axis.text.x = element_text(color = "black")) + 
            scale_x_discrete(labels = conditionsVDCinhibitors))
