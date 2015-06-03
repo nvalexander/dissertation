@@ -11547,26 +11547,12 @@ key "keil2013phosphorylation"
 .
  This suggests that in 7-day treated muscle autophagy must be downregulated,
  and goes against many other molecular markers that indicate the opposite.
- The example of Gadd45 illustrates the issues GAML research is confronted
- with.
- On one hand we have macroscopic certainties, such the loss of muscle mass
- following GC therapy, and its alleviation by Testo co-administration.
- On the other, we have invariable molecular correlates of Dexa treatment,
- such as augmented proteolysis, increased Foxo transcriptional activity,
- reduced insulin sensitivity at Akt and mTORC1 level, and upregulation of
- MuRF1 and REDD1.
- Most of these have been proven to mediate the macroscopic loss of muscle,
- but none is essential.
- The hierarchy of molecular events in GAML is unclear, and lags behind progresse
-s made in the study of denervation atrophy.
- Transgenic whole-body experiments are needed, but GAML in the most common
- transgene model, the mouse, is understudied.
- We know little about mouse GAML.
- While some parallels with rat studies may help, differences in resistance
- to Dexa suggests there must be differences.
- Moreover, there is no published account of molecular mechanisms of interaction
- between AAS and GC in mice.
- This work sets out to determine whether AAS can alleviate GAML in mice.
+\end_layout
+
+\begin_layout Standard
+In conclusion, the mechanisms by which Testo prevents GAML appear manifold.
+ However, many of the putative myoprotective actions of Testo are only suggested
+ by Cardozo's microarray, but have never been validated.
 \end_layout
 
 \begin_layout Standard
@@ -11582,20 +11568,86 @@ Hypotheses
 \end_layout
 
 \begin_layout Standard
-1.
- Testosterone alleviates Dexa-induced muscle atrophy in mice.
+The example of Gadd45, at the end of the previous section, illustrates the
+ issues GAML research is confronted with.
+ On one hand we have macroscopic certainties, such the loss of muscle mass
+ following GC therapy.
+ On the other, we have invariable molecular correlates of Dexa treatment,
+ such as augmented proteolysis, increased Foxo transcriptional activity,
+ reduced insulin sensitivity at Akt and mTORC1 level, and upregulation of
+ MuRF1 and REDD1.
+ For many of these, inhibition or interference experiments showed a reduction
+ in muscle atrophy, but none was found to be indispensable for GAML.
+ The hierarchy of molecular events in GAML is unclear, and lags behind progresse
+s made in the study of denervation atrophy.
+ Our understanding of androgen alleviation of GAML is even more incomplete.
 \end_layout
 
 \begin_layout Standard
+One reason why key mediators of GC and AAS actions have not been identified
+ is the lack of transgenic models.
+ Muscle-localized conditional knockout experiments are needed.
+ For this purpose, studies on the most common target of genome manipulation,
+ the mouse, are needed.
+ Surprisingly few studies describe GAML in the mouse.
+ Moreover, to my knowledge, no study of AAS alleviation of GAML in mice
+ has been published.
+ While some parallels with rat studies may help, differences in resistance
+ to Dexa suggests there must be differences.
+ This work sets out to determine whether AAS can alleviate GAML in mice.
+ Upon identifying the conditions that lead to GAML and to its alleviation
+ by AAS, the focus will switch to understanding of the molecular mechanisms
+ underlying them.
+ I set forth the following hypotheses:
+\end_layout
+
+\begin_layout Subparagraph*
+1.
+ Testosterone alleviates dexamethasone-induced muscle atrophy in mice.
+\end_layout
+
+\begin_layout Standard
+GAML has been frequently reported in rats.
+ A series of studies describe reductions in CSA of mouse myofiber upon Dexa
+ treatment.
+ On the other hand, Testo has been used to reverse loss of muscle in mice
+ and other species.
+ Based on the information published prior to this work, there was a strong
+ probability for Testo to prevent GC-induced loss of mouse muscle.
+\end_layout
+
+\begin_layout Subparagraph*
 2.
  Testosterone's myoprotective action is based on inhibiting proteolytic
- and anti-translational effects of Dexa.
+ and anti-translational effects of dexamethasone.
 \end_layout
 
 \begin_layout Standard
+Studies of GAML suggest that it combines an increase in protein degradation
+ and a decrease in protein synthesis.
+ Moreover, protein degradation mechanisms upregulated by Dexa are diverse,
+ including the proteasome, the autophagosome, and soluble proteases.
+ Microarray studies showed that Testo reverses GC-induced changes in markers
+ of each of these three proteolytic pathways and of protein translation.
+ Based on the solid evidence obtained in GAML and on the transcriptional
+ changes seen with Testo co-administration, there was a good probability
+ that Testo will inhibit all these atrophic mechanisms.
+\end_layout
+
+\begin_layout Subparagraph*
 3.
- Testosterone-induced IGF-I upregulation facilitates the former's myoprotective
- action.
+ IGF-I upregulation facilitates testosterone's myoprotective action in glucocort
+icoid-induced loss of muscle mass.
+\end_layout
+
+\begin_layout Standard
+The putative existence of a set of concerted myoprotective actions is suggestive
+ of a focal point where Testo exerts its anti-GC action.
+ The few studies on GAML reversal by AAS revealed that this central mediator
+ is upstream of mTOR and Akt.
+ Based on the microarray studies, which showed that Testo reverses changes
+ in IGF-I and IGFBP induced by Dexa, there was a good likelihood that the
+ myoprotective action of Testo involved the modulation of IGF-I signaling.
 \end_layout
 
 \begin_layout Standard
