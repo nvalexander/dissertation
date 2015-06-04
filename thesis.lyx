@@ -22480,8 +22480,10 @@ The experiments performed in this study clearly exclude a role for autophagosome
  genes across muscle groups and time points.
  Moreover, lysosome-associated cathepsin L enzymatic activity is suppressed
  by Dexa in a statistically significant manner at all time points.
- In the in vivo experiment, inhibition of lysosomes had a significant effect,
- but not as ample as that of proteasome inhibition.
+ The downregulation of cathepsin activity and expression was more ample
+ than the the loss of muscle protein, indicating that an active process
+ of cathepsin degradation is activated by Dexa in vivo.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -22490,14 +22492,57 @@ The finding of Dexa-induced autophagy downregulation was unexpected.
  The rat microarray findings found cathepsin L among the set of genes upregulate
 d by Dexa.
  Even in this study, a narrow measurement, the accumulation of lipidated
- LC3 appeared upregulated by Dexa.
+ LC3 appeared upregulated by Dexa (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:LC3-hyperlipidated"
+
+\end_inset
+
+, middle).
  However, the microarray results were never validated by qRT-PCR.
- The 
+ In the present work, when the hyperlipidated LC3 form is normalized to
+ its precursor, its levels become essentially unchanged in response to Dexa
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:LC3-hyperlipidated"
+
+\end_inset
+
+, right).
+ The accumulation of LC3 protein, both in precursor and mature form, indicates
+ reduced capacity in the autophagolysosome compartment, especially in the
+ present context of downregulated LC3 protein expression.
+ This line of evidence corroborates with the downregulated enzymatic activity
+ to refute a putative role for autophagy in bulk GAML.
 \end_layout
 
 \begin_layout Standard
-Intuitively, the role of autophagy in bulk protein catabolism has been rejected
- even by its 
+Intuitively, it is more likely for bulk protein catabolism to be mediated
+ by the smaller proteasome and atrogenes than the bulky autophagosome.
+ However, in the cell culture experiments, inhibition of lysosomes had a
+ significant protective effect, but not as ample as that of proteasome inhibitio
+n.
+ Even in the in vivo studies, the amplitude and invariability of autophagy
+ inhibition suggests it may have a regulatory role.
+ While the present data solidly exclude a role for bulk protein digestion,
+ further studies are needed to elucidate which proteins are spared from
+ autophagy during GAML, and what is the regulatory effect of their sparing.
+\end_layout
+
+\begin_layout Standard
+Prior to this work, the calpain system was the least likely effector of
+ GAML.
+ In agreement with the literature, this study could not substantiate Dexa-induce
+d changes in calpain enzymatic activity, calpain, or calpastatin protein
+ levels (data not shown).
+ Overall, the absence of Dexa-induced amplification in catabolic activity
+ in the cathepsin and calpain pathways reduces the scope for AAS myoprotection
+ through inhibition of these pathways.
+ 
 \end_layout
 
 \begin_layout Section
