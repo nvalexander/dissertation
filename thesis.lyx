@@ -22240,10 +22240,16 @@ All these catabolic catabolic changes were inhibited by Testo co-administration.
  study on rat muscle.
  Similar to the rat study, the changes in MAFbx were also in agreement with
  the phenotype, but of a lesser amplitude.
- Interestingly, the proteasome activity was suppressed at its day 3 peak.
- This aspect of muscle atrophy, already demonstrated as a component of post-cast
-ration atrophy, has never been investigated in GAML, nor in its alleviation
- by Testo.
+ In addition, the proteasome activity was suppressed at its day 3 peak.
+ This aspect of muscle atrophy, already demonstrated as a component of male
+ post-castration muscle atrophy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "serra2013effects"
+
+\end_inset
+
+, has never been investigated in GAML, nor in its alleviation by Testo.
 \end_layout
 
 \begin_layout Standard
@@ -22254,15 +22260,30 @@ s, beyond the basal levels seen in vehicle-treated cells.
 \end_layout
 
 \begin_layout Standard
-The most plausible scenario is one where the proteasome performs the clearance
- of the bulk of dispensable proteins.
+A study by Baehr and colleagues
+\begin_inset CommandInset citation
+LatexCommand citep
+key "baehr2011muscle"
+
+\end_inset
+
+, which was published while my experiments were under way, showed that MAFbx
+ knockout did not reduce the amplitude of GAML, while MuRF-1 knockout reduced
+ GAML to about half of its amplitude in wild-type mice.
+ My data show that, instead of rejecting the proteasome-centered model of
+ GAML, future studies should focus on finding alternative ways by which
+ the proteasome performs its catabolic function.
+ For example, the simplest scenario fitting today's data is one where the
+ proteasome performs the clearance of the bulk of dispensable proteins.
  An alternative explanation, which takes into account the subsiding evolution
- of the atrogene surge, is that atrogenes ubiquitinate and target or degradation
- a myoprotective intracellular factor.
+ of the atrogene surge, is that atrogenes ubiquitinate, and target for degradati
+on, an yet unidentified myoprotective intracellular factor, thus unleashing
+ a cascade of proteasome-independent mechanisms.
+ If MuRF-1 has only this limited and limiting action, disruption of MuRF-1
+ in Baehr's knockout mice could have been supplanted by partially homologous
+ genes, such as MuRF-2.
  The distinction between the two scenarios is difficult, especially in the
  in vivo approach.
- The study by Baehr and colleagues, which was published during my experiments,
- 
 \end_layout
 
 \begin_layout Section*
