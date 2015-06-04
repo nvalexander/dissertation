@@ -22760,23 +22760,28 @@ reference "fig:IGF1R-phosphorylation"
 \end_inset
 
 ).
- Most likely, the changes in IGF-1R status are subtle, paralleling those
- in insulin receptor.
- As discussed in the literature review section, insulin receptor changes
- in the basal state are undetectable, and require a insulin challenge test
- in order to be substantiated.
- Alternatively, the effects of IGF-I modulation may have been relayed to
- the intracellular environment by the insulin receptor, with which it has
- a moderate cross-reaction.
+ The in vitro study demonstrated that the myoprotective action of Testo
+ on C2C12 was independent of IGF-1R.
+ The effects of IGF-I modulation may have been relayed to the intracellular
+ environment by the insulin receptor, with which it has a moderate cross-reactio
+n.
 \end_layout
 
 \begin_layout Standard
 The present work failed to identify a series of downstream effects of IGF-1R
  activation.
- In contrasts to published accounts of the action of IGF-I on C2C12 cells
- and mouse muscle, Dexa administration did not elicit an increase in Akt
- phosphorylation at Ser 473, nor an upregulation of REDD1.
- In fact, the data shown here demosntrate the oposite
+ Testo failed to improve Akt phosphorylation at Ser 473, a post-translational
+ change frequently associated with IGF-I stimulation.
+ In contrasts to published accounts of the action of IGF-I on mouse muscle,
+ Testo co-administration administration did not elicit an an upregulation
+ of REDD1
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frost2009regulation,pansters2013synergistic"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
