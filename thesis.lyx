@@ -12007,7 +12007,22 @@ description "ethylenediaminetetraacetate"
 
 \end_inset
 
-), and 1% Triton X-100, by nutation at 4°C for 
+), and 1% Triton X-100, by nutation at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ for 
 \begin_inset ERT
 status open
 
@@ -12245,9 +12260,24 @@ minute}
  Background fluorescence, including substrate, was subtracted from sample
  measurements.
  Preliminary tests with manufacturer's positive control and muscle lysate
- indicated that 30 minutes fluorescence measured with optimal gain and with
- background subtraction is proportional with the rate of fluorescence change
- and with the amount of measured enzyme.
+ indicated that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{30}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ fluorescence measured with optimal gain and with background subtraction
+ is proportional with the rate of fluorescence change and with the amount
+ of measured enzyme.
  Thus, more detailed kinetics were not needed.
 \end_layout
 
@@ -12271,9 +12301,29 @@ gram}
 
 \end_inset
 
- powdered muscle was extracted with 8 mL/g tissue of proprietary lysis buffer,
- clarified, stored, and assayed for total protein, in the same manner as
- for the proteasome activity assay.
+ powdered muscle was extracted with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{8}{
+\backslash
+milli
+\backslash
+liter
+\backslash
+per
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ tissue of proprietary lysis buffer, clarified, stored, and assayed for
+ total protein, in the same manner as for the proteasome activity assay.
  Extracts were diluted to the lowest total protein concentration, using
  the same lysis bufer that was used to extract them.
  Per kit manufacturer instructions, 
@@ -12530,10 +12580,26 @@ molar}
  Extracts were clarified, and stored, as described for the proteasome activity
  assay.
  Total protein was measured by Bradford assay.
- Briefly, one microliter sample was mixed with 300 uL Coomasie Plus (Life
- Technologies, Carlsbad, California) in duplicate wells of a 96-well plate,
- incubated 10 minutes at room temperature, and measured spectrophotometrically
- for absorption at 595 nm.
+ Briefly, one microliter sample was mixed with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{300}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ Coomasie Plus (Life Technologies, Carlsbad, California) in duplicate wells
+ of a 96-well plate, incubated 10 minutes at room temperature, and measured
+ spectrophotometrically for absorption at 595 nm.
  Extracts were diluted to the lowest total protein concentration, using
  the same lysis bufer that was used to extract them.
  Per kit manufacturer instructions, 
@@ -12759,8 +12825,45 @@ molar}
 
 \end_inset
 
- Tris pH 7.5, 100‰ v/v glycerol, 10‰ v/v NP-40, 10 g/L w/v sodium deoxycholate,
- 1 g/L sodium dodecyl sulfate (
+ Tris pH 7.5, 100‰ v/v glycerol, 10‰ v/v NP-40, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ sodium deoxycholate, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ sodium dodecyl sulfate (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SDS"
@@ -12802,8 +12905,70 @@ molar}
 
 \end_inset
 
- sodium ethyleneglycol tetraacetate, 10 mg/L leupeptin, 10 mg/L pepstatin,
- 10 mg/L aprotinin, 
+ sodium ethyleneglycol tetraacetate, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ leupeptin, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ pepstatin, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ aprotinin, 
 \begin_inset ERT
 status open
 
@@ -12855,7 +13020,22 @@ molar}
 \end_inset
 
  sodium fluoride.
- The mixture was nutated at 4C for 
+ The mixture was nutated at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ for 
 \begin_inset ERT
 status open
 
@@ -12901,7 +13081,22 @@ minute}
 
 \end_inset
 
- , at 4C.
+ , at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
  The supernatant is collected, aliquoted, and stored for months at -80C.
 \end_layout
 
@@ -12909,8 +13104,41 @@ minute}
 Total protein content was measured with a BCA proprietary kit (Thermo Scientific
  Pierce, Rockford, Illinois).
  First, a 50:1 combination of reagents VW A and B was prepared.
- Next, 200 uL VW reagent mix was combined with 2 uL unknown solution in
- a 96-well plate well.
+ Next, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{200}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ VW reagent mix was combined with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ unknown solution in a 96-well plate well.
  This was done in duplicates for each sample, and for a series of standards
  of 
 \begin_inset ERT
@@ -12967,8 +13195,22 @@ description "polyacrylamide gel electrophoresis"
  In order to settle and migrate, lysates were mixed 1:1 with PAGE sample
  buffer, which contained 30 mM Tris pH 6.8, 10 g/L SDS, 100‰ v/v glycerol,
  0.05 g/L bromophenol blue, and 350 mM DTT.
- The mixture of sample and sample bufer was incubated for 5 minutes at 95°C,
- then loaded on the gel, with equal volumes and masses of total protein
+ The mixture of sample and sample bufer was incubated for 5 minutes at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{95}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+, then loaded on the gel, with equal volumes and masses of total protein
  in each well.
  Electrophoresis was performed in a Miniprotean Tetra cell (Bio-rad, Hercules,
  California), at constant 80 volts, using an electrode buffer with 14.4 g/L
@@ -12978,7 +13220,22 @@ description "polyacrylamide gel electrophoresis"
 \begin_layout Standard
 From the gel, resolved proteins were transfered to nitrocellulose membranes
  using a Bio-rad Mini-trans blot casette, at 8 V/cm constant overnight at
- 4°C.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
  The Towbin transfer buffer had 200‰ v:v methanol, 25 mM Tris pH 8.3, 192
  mM glycine.
 \end_layout
@@ -13029,8 +13286,23 @@ Photographic films were digitized using a FluorChem-SP Imaging System (Alpha
 
 \begin_layout Standard
 At times, antibodies were stripped by incubation with shaking for 45 minutes
- at 50°C in a tight container with pre-warmed stripping buffer (20 g/L SDS,
- 60 mM Tris pH 6.8, 100 mM beta-mercaptoethanol).
+ at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ in a tight container with pre-warmed stripping buffer (20 g/L SDS, 60 mM
+ Tris pH 6.8, 100 mM beta-mercaptoethanol).
  Stripped membranes were rinse with water, washed with TBST, re-blocked,
  and re-probed.
 \end_layout
@@ -13065,20 +13337,119 @@ gram}
 
  powdered muscle was homogenized briefly in 1 mL Trizol (Life Technologies).
  The suspension was incubated 5 minutes at room temperature, then supplemented
- with 200 uL chloroform.
+ with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{200}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ chloroform.
  The tube was shaken vigorously for 15 seconds, then incubated 3 minutes
  at room temperature.
  Phase separation was induced by centrifugation, 15 minutes, 12,000 g, at
- 4°C.
- The top, aqueous fraction (0.5 mL) was collected, then passed through a
- gDNA exclusion column, by centrifugation for 30 seconds, 8,000 g.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
+ The top, aqueous fraction (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{500}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+) was collected, then passed through a gDNA exclusion column, by centrifugation
+ for 30 seconds, 8,000 g.
  The recovered solution was supplemented 1:1 with 700‰ v/v ethanol, then
  passed through an RNeasy column, by centrifugation, 10 seconds at 8,000
  g.
- The column was washed with 0.7 mL of buffer RW1, and twice with 0.5 mL of
- buffer RPE, each time by centrifugation, 15 seconds at 8,000 g.
+ The column was washed with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{700}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ of buffer RW1, and twice with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{500}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ of buffer RPE, each time by centrifugation, 15 seconds at 8,000 g.
  The column was dried by centrifugation 2 minutes at 8,000 g.
- RNA was eluted with 40 uL water, by centrifugation, 1 minute at 8,000 g.
+ RNA was eluted with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{40}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ water, by centrifugation, 1 minute at 8,000 g.
 \end_layout
 
 \begin_layout Standard
@@ -13090,30 +13461,178 @@ Total RNA concentration was measured with an ND-1000 spectrophotometer (Nanodrop
 To obtain cDNA using Accuscript 1st Strand cDNA synthesis kit, 320 ng total
  RNA was combined with 300 ng random primers, 20 nmol of each triphosphate
  nucleotide, and the proprietary AccuScript RT Buffer 10×.
- After incubation 5 minutes at 65°C, and cooling towards room temperature
- another 5 minutes, the RNA mix was supplemented with 2 nmol DTT, 20 units
- RNase Block ribonuclease inhibitor, and 1 μL reverse transcriptase (“AccuScript
- RT”) proprietary stock.
+ After incubation 5 minutes at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{65}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+, and cooling towards room temperature another 5 minutes, the RNA mix was
+ supplemented with 2 nmol DTT, 20 units RNase Block ribonuclease inhibitor,
+ and 1 μL reverse transcriptase (“AccuScript RT”) proprietary stock.
  For negative control purposes, the same mixture was prepared, while withholding
  the RT Buffer and the RT stock.
  This no-RT tube provided a measurement of the leaked DNA, which, in the
  course of this work, was negligible.
- Reverse transcription was performed by incubating 10 minutes at 25°C, then
- 60 minutes at 42°C.
- Reverse transcription was terminated by incubating 15 minutes at 70°C.
- The product was stored at -20°C between measurements.
+ Reverse transcription was performed by incubating 10 minutes at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+, then 60 minutes at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{42}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
+ Reverse transcription was terminated by incubating 15 minutes at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{70}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
+ The product was stored at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ between measurements.
 \end_layout
 
 \begin_layout Standard
 Specific cDNA amounts were measured with an 7500 Fast Real-Time PCR cycler
  (Applied Biosystems, Foster City, California), using 96-well plates.
  Each unknown was measured in duplicates.
- Each well contained 1 uL total cDNA, 10 pmol each sense and anti-sense
- primer (listed later), and proprietary SybrGreen 2X.
- The qRT-PCR cycler incubates samples 2 minutes at 50°C, then 10 minutes
- at 95°C.
- Then, 40 cycles are run, comprising 15 seconds at 95°C and one minute at
- 60°C, with measurements of DNA after each cycle.
+ Each well contained 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ cDNA stock, 10 pmol each sense and anti-sense primer (listed later), and
+ proprietary SybrGreen 2X.
+ The qRT-PCR cycler incubates samples 2 minutes at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+, then 10 minutes at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{95}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
+ Then, 40 cycles are run, comprising 15 seconds at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{95}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ and one minute at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{60}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+, with measurements of DNA after each cycle.
  The amount of specific cDNA is estimated from the number of cycles (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -13555,8 +14074,32 @@ celsius}
 \end_inset
 
 .
- During proliferation, cells were maintained under 0.5 mL/cm2 growth medium,
- that is, Dulbecco's Modified Eagle Medium (
+ During proliferation, cells were maintained under 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{500}{
+\backslash
+micro
+\backslash
+liter
+\backslash
+per
+\backslash
+centi
+\backslash
+meter
+\backslash
+squared}
+\end_layout
+
+\end_inset
+
+ growth medium, that is, Dulbecco's Modified Eagle Medium (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DMEM"
@@ -13594,8 +14137,32 @@ description "dimethyl sulfoxide"
 \end_inset
 
 ), stored under liquid nitrogen.
- For detachment, cells were rinsed twice with pre-warmed 0.2 mL/cm2 phosphate
- buffered saline (
+ For detachment, cells were rinsed twice with pre-warmed 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{200}{
+\backslash
+micro
+\backslash
+liter
+\backslash
+per
+\backslash
+centi
+\backslash
+meter
+\backslash
+squared}
+\end_layout
+
+\end_inset
+
+ phosphate buffered saline (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PBS"
@@ -13603,8 +14170,47 @@ description "phosphate buffered saline"
 
 \end_inset
 
-), then incubated at 37°C for about 5 minutes with 50 uL/cm2 pre-warmed
- 0.05% trypsin / EDTA (Life Technologies).
+), then incubated at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{37}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ for about 5 minutes with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+micro
+\backslash
+liter
+\backslash
+per
+\backslash
+centi
+\backslash
+meter
+\backslash
+squared}
+\end_layout
+
+\end_inset
+
+ pre-warmed 0.05% trypsin / EDTA (Life Technologies).
  After detachment, cells were tested for viability with trypan blue, counted
  on a hemocytometer, and re-seeded at about 5,000 cells/cm2.
 \end_layout
@@ -13761,7 +14367,22 @@ Immunofluorescence microscopy
 After the experimental treatments, the adherent cells were washed twice,
  on ice, with ice-cold PBS.
  The cells were covered with cold 1:1 v:v ethanol:acetone, and incubated
- at -20C for 20 minutes.
+ at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ for 20 minutes.
  This process both fixated and permeabilized the cells.
  The liquid was removed, and the cells were rinsed with PBS.
 \end_layout
@@ -13774,7 +14395,22 @@ On the first day of staining, PBS was removed, and cells were washed briefly
  The blocking liquid was then replaced with the primary antibody solution,
  that is, the same blocking solution, supplemented with 1:20 hybridoma cell
  culture medium containing the anti-myosin heavy chain antibody MF-20.
- Cells were probed with the primary antibody overnight at 4C.
+ Cells were probed with the primary antibody overnight at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -13785,8 +14421,23 @@ Next day, the cells were incubated twice 5 minutes each with the blocking
  and with 1 mg/L DAPI.
  The cells were incubated 1h at room temperature in the dark, then briefly
  washed 4 times with PBS.
- Cells covered in PBS were store at 4C or observed with an Eclipse TE2000-E
- fluorescence microscope (Nikon Instruments, Melville, New York).
+ Cells covered in PBS were store at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ or observed with an Eclipse TE2000-E fluorescence microscope (Nikon Instruments
+, Melville, New York).
 \end_layout
 
 \begin_layout Standard
@@ -14646,8 +15297,24 @@ sig3( truemean(InvivoSevendayV$body.weight.gain.after.7.days..g.
  grams every day during the treatment.
  A similar trend has been seen in the other repetitions of the experiment,
  as well as in other published studies on young rodents.
- A sizable contribution to this growth was brought by the 200 uL vehicle
- injected every day.
+ A sizable contribution to this growth was brought by the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{200}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ vehicle injected every day.
  Once this artifact is taken into account, the gain of a negligible 
 \begin_inset Flex S/R expression
 status open
