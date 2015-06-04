@@ -1217,21 +1217,6 @@ key "nieman2002diagnostic"
 \end_inset
 
 ).
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-In theory, pseudo-Cushing responds to suppression tests by low dose Dexa,
- while true CS does not.
- In practice, specificity is very low and sensitivity is 95%, so latest
- guidelines are recommending against suppression tests.
- Tumors may be less responsive in Dexa suppression and in ACTH stimulation
- tests than hyperplasias per PMID: 4342889
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2730,18 +2715,6 @@ key "griffing2014serum"
 There are no published cases of increase in circulating myoglobin or creatine
  kinase in response to GC monotherapy, or as a consequence of Cushing's
  disease.
- 
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-There are some mentions of the opposite in Uptodate, but the rumor has no
- literature to support it.
- Not even anecdotal.
-\end_layout
-
-\end_inset
-
  The absence of such intramuscular protein from the blood flow suggests
  GC do not cause rhabdomyolysis, that is, loss of muscle through uncontrolled
  rapid membrane leakage.
@@ -4330,16 +4303,6 @@ key "smals1977plasma"
 \end_inset
 
 .
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-Per PMID 5922193, urinary androgens in female CS are repressed by Dexa.
- That could be a biphasic response.
-\end_layout
-
-\end_inset
-
  Other signs of hyperandrogenism, such as voice changes or acne, are rare
  in female CS.
 \end_layout
@@ -4372,23 +4335,9 @@ key "tyler1972laboratory"
 In adult female and in pediatric CS, virilization, muscle catabolism, and
  circulating androgens changes are not correlated.
  These examples suggest that relative hyperandrogenism in some tissues may
- be paralleled by relative hypoandrogenism in others.
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-PMID 14329633 implies Cushing causes polycytemia, which would be another
- sign of hyperandrogenism.
- Some old textbooks also clam the same.
- There is no evidence in that paper nor anywhere else.
- PMID 10409572 shows acute Dexa in healthy men has no effect on hematocrit.
- Nieman reviews do not mention any RBC effect in CS either.
-\end_layout
-
-\end_inset
-
-For example, it may be possible that, in some tissues, excess GC activates
- the androgen receptor (
+ be paralleled by relative hypoandrogenism in others.For example, it may
+ be possible that, in some tissues, excess GC activates the androgen receptor
+ (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "AR"
@@ -5013,16 +4962,6 @@ ive men.
 A cross-sectional study split a cohort of males with heart failure, without
  cachexia and with normal circulating cortisol, Testo and ACTH levels in
  two halves based on their cortisol level.
- 
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-I am rebranding CHF as HF, following the recent guidelines from PMID 16160202.
-\end_layout
-
-\end_inset
-
  The subgroup with lower circulating cortisol achieved a higher peak work
  rate, suggestive of GC-induced muscle damage
 \begin_inset CommandInset citation
@@ -5643,17 +5582,7 @@ Pax7
 
 \end_inset
 
- cells
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ref needed
-\end_layout
-
-\end_inset
-
-.
+ cells.
  Some cells, such as bone marrow stem cells and pericytes, have the ability
  to fuse with myotubes, and possibly contribute to the muscle stem cell
  population
@@ -5756,17 +5685,7 @@ key "berg2002each,wasserman2009four"
 
 ).
  Because its capacity to synthesize fatty acid is negligible, muscle is
- a consumer and a minor store, but not a generator, of fatty acids
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ref needed
-\end_layout
-
-\end_inset
-
-.
+ a consumer and a minor store, but not a generator, of fatty acids.
  During fast, more than half of infused non-esterified fatty acids (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -5919,16 +5838,6 @@ key "defronzo1981effect,katz1983splanchnic"
  it can synthesize and deposit the largest glycogen stores in the body,
  but also because it cannot release glucose.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO expand on glycemia direct action, if any
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -6125,17 +6034,7 @@ With aging, muscle gradually shifts from a mitotic to a postmitotic profile,
 \begin_layout Standard
 Humans achieve muscle mass growth following exercise, although some forms
  of exercise are more suitable at increasing strength or resistance that
- mass per se
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ref needed
-\end_layout
-
-\end_inset
-
-.
+ mass per se.
  In animals, muscle growth is induced by muscle overload, or muscle unloading
  and reloading, which may be conceived as forms of aerobic exercise.
  In healthy volunteers, the acute response to exercise includes increased
@@ -6288,16 +6187,6 @@ key "haugk1995regulation"
 
 .
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO check if MRFs are changed in regeneration after injury.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -6540,16 +6429,6 @@ key "lupu2001roles"
  In the context of pituitary pathology associated with Cushing's disease,
  the associated GH perturbations may contribute to loss of muscle.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Glucagon lacks muscle effect.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -7222,18 +7101,9 @@ g that protein synthesis is upregulated through an mTOR-dependent mechanism.
 \end_layout
 
 \begin_layout Standard
-Given that rapamycin has essentially no effect on adult muscle mass
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ref needed
-\end_layout
-
-\end_inset
-
-, it may be that mTOR is not the crucial effector of denervation-induced
- muscle loss once thought.
+Given that rapamycin has essentially no effect on adult muscle mass, it
+ may be that mTOR is not the crucial effector of denervation-induced muscle
+ loss once thought.
  Recent studies show that its activation, and the downstream net anabolic
  effects it elicits through autophagy and translation, cannot explain the
  observed phenotype.
@@ -9141,16 +9011,6 @@ key "long2003adrenalectomy,wu2004glucocorticoids"
 \end_inset
 
 .
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Or you could give Dexa and rapamycin like Quy and Tang in denervation, FCS.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -14741,17 +14601,6 @@ sig3( dunn.test(InvivoThreedayCVD$lean.mass.gain..g., InvivoThreedayCVD$treatmen
 
 ).
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Is it delayed or only less significant, as it is half of the Dexa effect,
- which is also still in its infancy?
-\end_layout
-
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Standard
@@ -20058,11 +19907,15 @@ reference "fig:Muscles-weights"
  7-day study were slightly more developed than those used in the 3-day sample,
  as indicated by the difference in levators at sacrifice between vehicle-treated
  animals at each time point.
- More likely, the trend observed in the 7-day study, lacking between-subject
- variability, is more reflective of the GAML in the adult, although one
- cannot exclude a temporal dissociation between the actions of the two steroids.
- Nevertheless, the changes surrounding the acute onset of GAML are beyond
- the scope of this work.
+ Moreover, the detection of the Testo myoprotective efect may be strained
+ by its incomplete nature.
+ Because Dexa effect is progressive, its amplitude in the early stages is
+ necessarily small.
+ When Dexa-induced atrophy is hard to detect, its incomplete reversal will
+ be even harder to demonstrate.
+ One cannot exclude a temporal dissociation between the actions of the two
+ steroids, but the changes surrounding the acute onset of GAML were not
+ investigated in more detail, as they were beyond the scope of this work.
  At the 7-day time point, which is the most accurate model of chronic steroid
  myopathy, the alleviation of GAML is well-established.
  In vitro, myoprotective action of Testo was similarly present at late time-poin
@@ -20093,16 +19946,61 @@ There were differences in the responsiveness to Testo between muscle groups.
  Similar to Dexa sensitivity, an important component appears to be the tendinous
  content.
  Levator ani is more responsive to Testo than to Dexa, owing probably to
- the increased presence of AR compared to other muscles.
+ the increased presence of AR compared to other muscles
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bentvelsen1996regulation"
+
+\end_inset
+
+.
+ The apparent dependence of Testo response amplitude to the expression of
+ AR indicates that alleviation of GAML by AAS is a specific effect, rather
+ than an interaction at GR level.
 \end_layout
 
 \begin_layout Section
-Testosterone's myoprotective action is based on inhibiting proteolytic and
- anti-translational effects of dexamethasone
+Testosterone's myoprotective action is based on the inhibition of the dexamethas
+one-induced proteasome upregulation
 \end_layout
 
 \begin_layout Standard
-x
+The mouse model of GAML largely replicated what was known from rat experiments,
+ where a strong upregulation of the proteasome system is seconded by significant
+ alterations in protein synthesis.
+\end_layout
+
+\begin_layout Standard
+In vivo, the E3 ligases also known as atrogenes were upregulated.
+ The upregulation of MuRF-1 was precocious, strong, and reached statistical
+ significance despite the small sample size.
+ Upregulation of MuRF-1 was confirmed at early stages in gastrocnemius,
+ quadriceps, and triceps (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Atrogenes-expression"
+
+\end_inset
+
+; the latter not shown).
+ MuRF-1 upregulation persisted into the third day, but was absent from the
+ seventh day samples.
+\end_layout
+
+\begin_layout Standard
+In agreement with published studies, the more specific ligase, MAFbx, was
+ upregulated by a lesser percentage than MuRF-1.
+ In combination with the practical limitations on sample sizes, the low-grade
+ activation of MAFbx strained its detection to a statistically significant
+ degree in this experiment.
+ Nevertheless, the invariable trend across muscle groups towards increased
+ MAFbx expression in response to Dexa indicates that the second atrogene
+ was also part of the atrophic transcriptional program.
+\end_layout
+
+\begin_layout Standard
+At the peak of atrogene upregulation, in day 3 samples, 
 \end_layout
 
 \begin_layout Section*
@@ -20355,18 +20253,6 @@ Testosterone alleviates glucocorticoid myopathy by inhibiting the proteolytic
 \begin_layout Standard
 \begin_inset Note Note
 status collapsed
-
-\begin_layout Plain Layout
-For example, levator ani contains at least 60 times more AR than other skeletal
- muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bentvelsen1996regulation"
-
-\end_inset
-
-.
-\end_layout
 
 \begin_layout Plain Layout
 Triamcinolone reduces IGF-I expression in diaphragm (PMID: 9872851).
