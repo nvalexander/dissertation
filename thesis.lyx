@@ -22690,8 +22690,8 @@ Studies on protein synthesis rate have been strained by the limited technical
  This study did not measure protein synthesis directly in vivo.
  The more direct measurements of protein synthesis rate in vitro failed
  to identify any significant change in response to Dexa.
- C2C12 cells are surprisingly dependent on protein synthesis, with both
- translational inhibitors cycloheximide and puromycin leading to cell death
+ C2C12 cells are surprisingly dependent on protein synthesis, with either
+ translational inhibitor cycloheximide and puromycin leading to cell death
  and detachment in hours (data not shown).
  Overall the lack of detectable changes in protein synthesis rate agrees
  with findings in rat L6 cells
@@ -22709,16 +22709,23 @@ key "dardevet1998glucocorticoid"
 \end_inset
 
 .
- Moreover, while the reported work were ongoing, Baehr and colleagues reported
- that Dexa decreased protein synthesis rate at day 3 and increased it at
- day 14, both times in a non-statistically significant manner.
+ Moreover, while the reported experiments were ongoing, Baehr and colleagues
+ reported that Dexa decreased protein synthesis rate at day 3 and increased
+ it at day 14, both times in a non-statistically significant manner
+\begin_inset CommandInset citation
+LatexCommand citep
+key "baehr2011muscle"
+
+\end_inset
+
+.
  Most likely, at the chosen 7 day time point investigated in this study,
  a measurement of protein synthesis would have been indecisive.
 \end_layout
 
 \begin_layout Standard
-In order to detect subtle changes in protein synthesis, a thourough investigatio
-n of its regulators was carried in this work.
+In order to detect subtle changes in protein synthesis, a thorough investigation
+ of its regulators was carried in this work.
  I failed to identify changes in levels of phosphorylated eIF2α and eIF3f
  in response to either Dexa or Testo.
  I could not detect ATF4 protein in muscle lysates (data not shown).
@@ -22772,8 +22779,9 @@ This work demonstrates that Testo protects mouse muscle in vivo and in vitro
  Dexa and Testo modulate in opposite manner the transcription of Foxo and
  Klf15 transcription factors.
  Moreover, the two steroid hormones regulate the mTOR inhibitor REDD1.
- In other systems, the canonical model of of separation, downstream of Akt,
- into Foxo and mTOR branches of signaling has been refuted.
+ The only transgenic model studied in the context of GAML si MuRF-1.
+ More transgenic studies are required to establish the relative importance
+ and the eventual interaction between Foxo and mTOR pathways.
 \end_layout
 
 \begin_layout Standard
