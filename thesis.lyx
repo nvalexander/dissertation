@@ -18400,7 +18400,7 @@ name "fig:eif3f"
 \begin_layout Standard
 Finally, Dexa was hypothesized to achieve protein synthesis inhibition by
  stimulating the negative regulator 4E-BP.
- In Dexa-treated mice, gastrocnemius 4EBP protein levels were upregulated
+ In Dexa-treated mice, gastrocnemius 4E-BP protein levels were upregulated
  (
 \begin_inset Flex S/R expression
 status open
@@ -18435,7 +18435,7 @@ reference "fig:4EBP"
 \end_inset
 
 , left).
- However, Dexa also stimulated phosphorylated, that is, inactive 4EBP (
+ However, Dexa also stimulated phosphorylated, that is, inactive 4E-BP (
 \begin_inset Flex S/R expression
 status open
 
@@ -18591,7 +18591,7 @@ name "fig:4EBP"
 \end_layout
 
 \begin_layout Standard
-After 7 days of Testo co-administration, levels of total 4EBP were essentially
+After 7 days of Testo co-administration, levels of total 4E-BP were essentially
  identical to those yielded by Dexa alone (
 \begin_inset Flex S/R expression
 status open
@@ -18627,7 +18627,7 @@ reference "fig:4EBP"
 
 , right).
  At the same time, Testo co-administration was associated with lower phosphoryla
-ted 4EBP (
+ted 4E-BP (
 \begin_inset Flex S/R expression
 status open
 
@@ -18662,8 +18662,8 @@ reference "fig:4EBP"
 
 , left).
  While it is difficult to estimate how amplitude of change in unphosphorylated,
- that is, active 4EBP, the combination of increase in total 4EBP and decrease
- in inactivated 4EBP is unlikely to facilitate muscle recovery.
+ that is, active 4E-BP, the combination of increase in total 4E-BP and decrease
+ in inactivated 4E-BP is unlikely to facilitate muscle recovery.
 \end_layout
 
 \begin_layout Standard
@@ -22558,7 +22558,47 @@ Studies on protein synthesis rate have been strained by the limited technical
  translational inhibitors cycloheximide and puromycin leading to cell death
  and detachment in hours (data not shown).
  Overall the lack of detectable changes in protein synthesis rate agrees
- with findings in rat cells.
+ with findings in rat L6 cells
+\begin_inset CommandInset citation
+LatexCommand citep
+key "menconi2008dexamethasone"
+
+\end_inset
+
+ and explanted muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dardevet1998glucocorticoid"
+
+\end_inset
+
+.
+ Moreover, while the reported work were ongoing, Baehr and colleagues reported
+ that Dexa decreased protein synthesis rate at day 3 and increased it at
+ day 14, both times in a non-statistically significant manner.
+ Most likely, at the chosen 7 day time point investigated in this study,
+ a measurement of protein synthesis would have been indecisive.
+\end_layout
+
+\begin_layout Standard
+In order to detect subtle changes in protein synthesis, a thourough investigatio
+n of its regulators was carried in this work.
+ I failed to identify changes in levels of phosphorylated eIF2α and eIF3f
+ in response to either Dexa or Testo.
+ I could not detect ATF4 protein in muscle lysates (data not shown).
+ In the 7-day samples, both total and phosphorylated 4E-BP were upregulated
+ by Dexa.
+ With these data, it was unclear whether active, unphosphorylated 4E-BP
+ was increased or decreased by chronic Dexa.
+ The changes in total and phosphorylated 4E-BP induced by Testo are small,
+ and cannot lead to increased inactivation of 4E-BP.
+ Therefore, there was no evidence that, at 7-day time point, the protective
+ action of Testo benefits from increased protein synthesis.
+\end_layout
+
+\begin_layout Standard
+Overall, the most reliable mechanisms through which Testo induced muscle
+ protection is the inhibition of the proteasome system.
 \end_layout
 
 \begin_layout Section
@@ -22567,7 +22607,8 @@ IGF-I upregulation facilitates testosterone's in vivo myoprotective action
 \end_layout
 
 \begin_layout Standard
-x
+The repression of proteasome in vivo was correlated with an increased expression
+ in IGF-I expression.
 \end_layout
 
 \begin_layout Section
