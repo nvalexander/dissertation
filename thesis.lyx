@@ -22208,10 +22208,7 @@ reference "fig:Atrogenes-expression"
 \end_inset
 
 ; the latter not shown).
-\end_layout
-
-\begin_layout Standard
-In agreement with published studies, the more specific ligase, MAFbx, was
+ In agreement with published studies, the more specific ligase, MAFbx, was
  upregulated by a lesser percentage than MuRF-1.
  In combination with the practical limitations on sample sizes, the low-grade
  activation of MAFbx strained its detection to a statistically significant
@@ -22219,10 +22216,7 @@ In agreement with published studies, the more specific ligase, MAFbx, was
  Nevertheless, the invariable trend across muscle groups towards increased
  MAFbx expression in response to Dexa indicates that the second atrogene
  was also part of the atrophic transcriptional program.
-\end_layout
-
-\begin_layout Standard
-The massive proteasome upregulation observed in day 3 samples increased
+ The massive proteasome upregulation observed in day 3 samples increased
  the probability of the hypothetical scenario in which protein degradation
  is limited by proteasome availability, rather than E3 ligases.
  However, day 3 also marks the peak of proteasome catalytic activity (Fig.
@@ -22234,12 +22228,34 @@ reference "fig:Proteasome-enzymatic-activity"
 \end_inset
 
 ).
- This further strengthens the idea that proteasome - ubiquitin system is
- at the center of GAML.
+ The synchronized stimulation of the proteasome and of the atrogenes indicates
+ that the proteasome - ubiquitin system is at the center of GAML.
+ 
 \end_layout
 
 \begin_layout Standard
-In vitro, 
+In vitro, proteasome inhibition led to nearly complete suppression of proteolysi
+s, beyond the basal levels seen in vehicle-treated cells.
+ This finding indicates that most of the proteolytic activity in C2C12 cells
+ is dependent on the proteasome.
+\end_layout
+
+\begin_layout Standard
+All these catabolic catabolic changes were inhibited by Testo co-administration.
+ In vitro, atrogenes expression was reduced to basal levels, and, in the
+ case of day 7 samples, even further below.
+\end_layout
+
+\begin_layout Standard
+The most plausible scenario is one where the proteasome performs the clearance
+ of the bulk of dispensable proteins.
+ An alternative explanation, which takes into account the subsiding evolution
+ of the atrogene surge, is that atrogenes ubiquitinate and target or degradation
+ a myoprotective intracellular factor.
+ The distinction between the two scenarios is difficult, especially in the
+ in vivo approach.
+ The study by Baehr and colleagues, which was published during my experiments,
+ 
 \end_layout
 
 \begin_layout Section*
