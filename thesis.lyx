@@ -6252,8 +6252,25 @@ key "chow2006mechanism"
 \end_inset
 
 .
- In male rat muscle, 30 minutes in 30 nM insulin or IGF-I are equally able
- to stimulate protein synthesis and to inhibit protein degradation
+ In male rat muscle, 30 minutes in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{30}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ insulin or IGF-I are equally able to stimulate protein synthesis and to
+ inhibit protein degradation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1998glucocorticoid"
@@ -7327,8 +7344,24 @@ The perception that myotubes response to Dexa is a complete model of GAML
  are outright impossible, because primary cell survival is GC-dependent.
  Moreover, Dexa has hyperplastic and hypertrophic effects on myogenic cell
  lines.
- Commonly tested doses of Dexa, in the range of tens of nM, have been shown
- to synergize with IGF-I 
+ Commonly tested doses of Dexa, in the range of tens of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+, have been shown to synergize with IGF-I 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "giorgino1995dexamethasone"
@@ -10280,8 +10313,41 @@ Proteasome inhibition does not abolish completely Dexa-activated proteolysis,
  indicating that some other catabolic mechanisms must be involved.
  Based on newly discovered role of mTOR as a major modulator of autophagy,
  the second most important effector of GAML was presumed to be autophagosome.
- Moreover, in L6 myotubes, 100 uM chloroquine or 200 mM E-64 reduce the
- rate at which Dexa amplifies proteolytic tracer release
+ Moreover, in L6 myotubes, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ chloroquine or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{200}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ E-64 reduce the rate at which Dexa amplifies proteolytic tracer release
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wang1998dexamethasone"
@@ -10908,7 +10974,24 @@ key "dahlberg1981regulation"
 
 , virtually all GR should be bound to Dexa.
  On the other hand, Ki for Testo competing with Dexa for binding to muscle
- protein extracts is 10 uM
+ protein extracts is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mayer1975interaction"
@@ -11749,7 +11832,22 @@ gram}
  pentobarbital; Diamond Animal Health, Des Moines, Iowa) intraperitoneal,
  followed by quick cervical dislocation.
  Blood was collected immediately after death through thoracotomy and cardiac
- puncture, incubated 15 minutes at room temperature, centrifugated 
+ puncture, incubated 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at room temperature, centrifugated 
 \begin_inset ERT
 status open
 
@@ -11871,9 +11969,29 @@ gram}
 
 \end_inset
 
- powdered muscle was extracted with 8 mL/g tissue of lysis buffer containing
- 150 mM sodium chloride, 50 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonate
- 
+ powdered muscle was extracted with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{8}{
+\backslash
+milli
+\backslash
+liter
+\backslash
+per
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ tissue of lysis buffer containing 150 mM sodium chloride, 50 mM 4-(2-hydroxyeth
+yl)-1-piperazineethanesulfonate 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HEPES"
@@ -11993,8 +12111,24 @@ description "bicinchoninic acid"
 ) method (detailed in the immunoblot section).
  Next, the clarified extract were diluted to match the lowest total protein
  concentration with lysis buffer.
- Per kit manufacturer instructions, 80 uL clarified extract (depending on
- muscle, 
+ Per kit manufacturer instructions, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{80}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ clarified extract (depending on muscle, 
 \begin_inset ERT
 status open
 
@@ -12011,9 +12145,59 @@ gram}
 
 \end_inset
 
- total protein) were mixed, in 96-well plate wells, with 10 uL proprietary
- assay buffer and 10 uL fluorogenic proteasome substrate, Succynyl-Leu-Leu-Val-T
-yr-7-amino-4-methylcoumarin, 500 uM stock.
+ total protein) were mixed, in 96-well plate wells, with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ proprietary assay buffer and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ fluorogenic proteasome substrate, Succynyl-Leu-Leu-Val-Tyr-7-amino-4-methylcoum
+arin, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{500}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ stock.
  This was done in duplicates for each sample, and for a negative control
  (
 \begin_inset Quotes eld
@@ -12070,13 +12254,46 @@ minute}
 \begin_layout Standard
 Lysosome enzymatic activity was measured in a similar protocol, using Cathepsin
  L Activity Fluorometric Assay kit (Abcam plc, Cambridge, England).
- For each animal and muscle, 25 mg powdered muscle was extracted with 8
- mL/g tissue of proprietary lysis buffer, clarified, stored, and assayed
- for total protein, in the same manner as for the proteasome activity assay.
+ For each animal and muscle, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+milli
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ powdered muscle was extracted with 8 mL/g tissue of proprietary lysis buffer,
+ clarified, stored, and assayed for total protein, in the same manner as
+ for the proteasome activity assay.
  Extracts were diluted to the lowest total protein concentration, using
  the same lysis bufer that was used to extract them.
- Per kit manufacturer instructions, 48 uL clarified extract (depending on
- muscle, 
+ Per kit manufacturer instructions, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{48}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ clarified extract (depending on muscle, 
 \begin_inset ERT
 status open
 
@@ -12093,9 +12310,58 @@ gram}
 
 \end_inset
 
- total protein) were mixed, in 96-well plate wells, with 50 uL proprietary
- assay buffer and 2 uL fluorogenic cathepsin substrate, FR-amino-4-trifluorometh
-yl coumarin, 10 mM stock.
+ total protein) were mixed, in 96-well plate wells, with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ proprietary assay buffer and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ fluorogenic cathepsin substrate, FR-amino-4-trifluoromethyl coumarin, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ stock.
  This was done in duplicates for each sample, and for a negative control
  (
 \begin_inset Quotes eld
@@ -12146,9 +12412,96 @@ minute}
 \begin_layout Standard
 Calpain enzymatic activity was measured in a similar protocol, using Cathepsin
  L Activity Fluorometric Assay kit (Promega, Madison, Wisconsin).
- For each animal and muscle, 25 mg powdered muscle was extracted with 8
- mL/g tissue of lysis buffer containing 150 mM sodium chloride, 10 mM HEPES
- pH 7.4, 10 mM dithiothreitol (
+ For each animal and muscle, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+milli
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ powdered muscle was extracted with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{8}{
+\backslash
+milli
+\backslash
+liter
+\backslash
+per
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ tissue of lysis buffer containing 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{150}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ sodium chloride, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ HEPES pH 7.4, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ dithiothreitol (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DTT"
@@ -12156,8 +12509,24 @@ description "dithiothreitol"
 
 \end_inset
 
-), 1 mM EDTA, and 1% Triton X-100, as described for proteasome activity
- assay.
+), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ EDTA, and 1% Triton X-100, as described for proteasome activity assay.
  Extracts were clarified, and stored, as described for the proteasome activity
  assay.
  Total protein was measured by Bradford assay.
@@ -12167,8 +12536,24 @@ description "dithiothreitol"
  for absorption at 595 nm.
  Extracts were diluted to the lowest total protein concentration, using
  the same lysis bufer that was used to extract them.
- Per kit manufacturer instructions, 50 uL clarified extract (depending on
- muscle, 
+ Per kit manufacturer instructions, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ clarified extract (depending on muscle, 
 \begin_inset ERT
 status open
 
@@ -12185,10 +12570,59 @@ gram}
 
 \end_inset
 
- total protein) were mixed, in 96-well plate wells, with 50 uL proprietary
- assay buffer, containing lyophilized luciferase, ATP, 80 uM pro-luminescent
- calpain substrate, Suc-Leu-Leu-Val-Tyr-aminoluciferase, and 8 uM calcium
- chloride.
+ total protein) were mixed, in 96-well plate wells, with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ proprietary assay buffer, containing lyophilized luciferase, ATP, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{80}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ pro-luminescent calpain substrate, Suc-Leu-Leu-Val-Tyr-aminoluciferase,
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{8}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ calcium chloride.
  This was done in duplicates for each sample, and for a negative control
  (
 \begin_inset Quotes eld
@@ -12262,8 +12696,28 @@ gram}
 
 \end_inset
 
- powdered muscle was extracted with 4 mL/g tissue of radioimmunoprecipitation
- assay (
+ powdered muscle was extracted with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+milli
+\backslash
+liter
+\backslash
+per
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ tissue of radioimmunoprecipitation assay (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "RIPA"
@@ -12271,9 +12725,42 @@ description "radioimmunoprecipitation assay"
 
 \end_inset
 
-) buffer, containing 150 mM sodium chloride, 20 mM Tris pH 7.5, 100‰ v/v
- glycerol, 10‰ v/v NP-40, 10 g/L w/v sodium deoxycholate, 1 g/L sodium dodecyl
- sulfate (
+) buffer, containing
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{150}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ sodium chloride, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Tris pH 7.5, 100‰ v/v glycerol, 10‰ v/v NP-40, 10 g/L w/v sodium deoxycholate,
+ 1 g/L sodium dodecyl sulfate (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SDS"
@@ -12281,12 +12768,140 @@ description "sodium dodecylsulfate"
 
 \end_inset
 
-), 1 mM EDTA, 1 mM sodium ethyleneglycol tetraacetate, 10 mg/L leupeptin,
- 10 mg/L pepstatin, 10 mg/L aprotinin, 1 mM phenylmethanesulfonylfluoride,
- 1 mM sodium orthovanadate, 5 mM sodium fluoride.
- The mixture was nutated at 4C for 30 minutes, with vortexing every 10 minutes.
- The suspensions are clarified by centrifugation at 12,000g, 15 minutes,
- at 4C.
+), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ EDTA, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ sodium ethyleneglycol tetraacetate, 10 mg/L leupeptin, 10 mg/L pepstatin,
+ 10 mg/L aprotinin, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ phenylmethanesulfonylfluoride, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ sodium orthovanadate, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ sodium fluoride.
+ The mixture was nutated at 4C for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{30}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+, with vortexing every 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+.
+ The suspensions are clarified by centrifugation at 12,000g, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ , at 4C.
  The supernatant is collected, aliquoted, and stored for months at -80C.
 \end_layout
 
@@ -13019,16 +13634,114 @@ ions, as indicated at each experiment in the results section.
 \end_layout
 
 \begin_layout Standard
-Protein synthesis was inhibited with 100 µM cycloheximide from 360X water-based
- stock, or 5 µM puromycin dihydrochloride from 500X water-based stock.
- Proteasomal activity was inhibited in cell culture with 5 µM MG132 from
- a 80X working stock in differentiation medium, which in turn is derived
- from a 8,000X DMSO-based stock.
- Lysosomal activity was inhibited with 25 µM chloroquine from a 2,000X water-bas
-ed stock.
- Calpain and cathepsin activity was inhibited by 10 µM E-64, from a 100X
- water-based stock.
- IGF-1R was inhibited by 50 nM picropodophyllin (
+Protein synthesis was inhibited with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ cycloheximide from 360X water-based stock, or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ puromycin dihydrochloride from 500X water-based stock.
+ Proteasomal activity was inhibited in cell culture with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ MG132 from a 80X working stock in differentiation medium, which in turn
+ is derived from a 8,000X DMSO-based stock.
+ Lysosomal activity was inhibited with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ chloroquine from a 2,000X water-based stock.
+ Calpain and cathepsin activity was inhibited by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ E-64, from a 100X water-based stock.
+ IGF-1R was inhibited by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ picropodophyllin (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PPP"
@@ -18789,7 +19502,32 @@ isInCellsV$TimeDays == "1")]))
 
 \end_inset
 
- ug/cm2 in the second, and 
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+centi
+\backslash
+meter
+\backslash
+squared}
+\end_layout
+
+\end_inset
+
+ in the second, and 
 \begin_inset Flex S/R expression
 status open
 
@@ -18801,7 +19539,32 @@ isInCellsV$TimeDays == "2")]))
 
 \end_inset
 
- ug/cm2 in the third (ANOVA p = 
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+centi
+\backslash
+meter
+\backslash
+squared}
+\end_layout
+
+\end_inset
+
+ in the third (ANOVA p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -18825,7 +19588,32 @@ isInCellsD$TimeDays == "0")]))
 
 \end_inset
 
- ug/cm2 in the first day to 
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+centi
+\backslash
+meter
+\backslash
+squared}
+\end_layout
+
+\end_inset
+
+ in the first day to 
 \begin_inset Flex S/R expression
 status open
 
@@ -18837,7 +19625,32 @@ isInCellsD$TimeDays == "1")]))
 
 \end_inset
 
- ug/cm2 in the second and 
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+centi
+\backslash
+meter
+\backslash
+squared}
+\end_layout
+
+\end_inset
+
+ in the second and 
 \begin_inset Flex S/R expression
 status open
 
@@ -18849,7 +19662,32 @@ isInCellsD$TimeDays == "2")]))
 
 \end_inset
 
- ug/cm2 in the third day of the experiment (
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+centi
+\backslash
+meter
+\backslash
+squared}
+\end_layout
+
+\end_inset
+
+ in the third day of the experiment (
 \begin_inset Flex S/R expression
 status open
 
@@ -18875,8 +19713,41 @@ sig3(anovaPvaluesProteinDensityTreatmentAndDateDonlyOneToThree[[1]])
 
 ).
  Co-administration of Testo more than compensated the effect of Dexa.
- Rather than losing protein, cells receiving a combination of 1 uM Dexa
- and 100 uM Testo gained 
+ Rather than losing protein, cells receiving a combination of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo gained 
 \begin_inset Flex S/R expression
 status open
 
@@ -18901,8 +19772,24 @@ sig3(anovaPvaluesProteinDensityTreatmentAndDateConlyOneToThree[[1]])
 \end_inset
 
 ).
- Moreover, increasing the Testo dose to 500 mM further improved protein
- accretion, leading to a 
+ Moreover, increasing the Testo dose to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{500}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ further improved protein accretion, leading to a 
 \begin_inset Flex S/R expression
 status open
 
@@ -19014,10 +19901,39 @@ Protein synthesis in cultured cells treated with dexamethasone and testosterone
 In preliminary experiments, I found that tracer uptake is minimal during
  the first two hours.
  Also, tracer uptake rate became essentially equal to the rate of tracer
- release due to protein synthesis after the first 18 hours of labeling.
+ release due to protein synthesis after the first 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{18}{
+\backslash
+hour}
+\end_layout
+
+\end_inset
+
+ of labeling.
  Therefore, I performed a series of assays where the rate of protein synthesis
- was estimated through the rate of tracer uptake over an intermediate 6
- hours (Fig.
+ was estimated through the rate of tracer uptake over an intermediate 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{6}{
+\backslash
+hour}
+\end_layout
+
+\end_inset
+
+ (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -19027,8 +19943,58 @@ reference "fig:protein-synthesis-cells"
 
 , top).
  In each case, cells were differentiated over seven days, then treated with
- (A) vehicle, (B) 1 uM Dexa, or (C) 1 uM Dexa and 500 nM Testo, for either
- 6, 24, 48, or 72 hours.
+ (A) vehicle, (B) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa, or (C) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{500}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo, for either 6, 24, 48, or 72 hours.
  The media with steroids was refreshed every 24 hours.
  The tracer was added with a final medium change, six hours before lysis.
 \end_layout
@@ -19260,8 +20226,92 @@ Testosterone prevents protein catabolism upregulation induced by dexamethasone
 A series of complementary experiments estimated the rate of protein degradation
  in C2C12 myotubes.
  In each case, cells were differentiated over seven days, then treated with
- (A) vehicle, (B) 1 uM Dexa, (C) 1 uM Dexa and 100 nM Testo, or (D) 1 uM
- Dexa and 500 nM Testo, for either 6, 24, 48, or 72 hours (Fig.
+ (A) vehicle, (B) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa, (C) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+  Dexa and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+Testo, or (D) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{500}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo, for either 6, 24, 48, or 72 hours (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -19484,8 +20534,25 @@ sig3(truemean(DegradationInCellsV[(DegradationInCellsV$TimeDays == "1"),
 \end_inset
 
 .
- When cells received 1 uM Dexa, the ratio of free medium tracer to protein-bound
- intracellular increased to 
+ When cells received 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+  Dexa, the ratio of free medium tracer to protein-bound intracellular increased
+ to 
 \begin_inset Flex S/R expression
 status open
 
@@ -19512,8 +20579,25 @@ sig3(tukeyDegradationTreatment24[["DD-V", "p.adj"]] )
 ).
  Co-administration of Testo had a dose-dependent inhibitory effect on protein
  degradation.
- When Dexa was supplemented with 100 nM Testo, the ratio of free medium
- tracer to protein-bound intracellular was reduced to 
+ When Dexa was supplemented with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo, the ratio of free medium tracer to protein-bound intracellular was
+ reduced to 
 \begin_inset Flex S/R expression
 status open
 
@@ -19538,8 +20622,25 @@ sig3(tukeyDegradationTreatment24[["DDT-DD", "p.adj"]])
 \end_inset
 
 ).
- When Dexa was supplemented with 500 nM Testo, the ratio of free medium
- tracer to protein-bound intracellular was further reduced to 
+ When Dexa was supplemented with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{500}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo, the ratio of free medium tracer to protein-bound intracellular was
+ further reduced to 
 \begin_inset Flex S/R expression
 status open
 
@@ -19582,8 +20683,25 @@ sig3(truemean(DegradationInCellsV[(DegradationInCellsV$TimeDays == "2"),
 \end_inset
 
 .
- When cells received 1 uM Dexa, the ratio of free medium tracer to protein-bound
- intracellular increased to 
+ When cells received 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa, the ratio of free medium tracer to protein-bound intracellular increased
+ to 
 \begin_inset Flex S/R expression
 status open
 
@@ -19608,8 +20726,25 @@ sig3(tukeyDegradationTreatment48[["DD-V", "p.adj"]] )
 \end_inset
 
 ).
- Co-administration of 100 nM Testo reduced the ratio of free medium tracer
- to protein-bound intracellular to 
+ Co-administration of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo reduced the ratio of free medium tracer to protein-bound intracellular
+ to 
 \begin_inset Flex S/R expression
 status open
 
@@ -19666,13 +20801,181 @@ reference "fig:protein-degradation-cells-inhibitors"
  In the final three days of differentiation, medium with tracer was refreshed
  daily.
  For the final 24 hours, the tracer was removed, and cells were treated
- with (A) vehicle, (B) 100 nM Dexa, or (C) 100 nM Dexa and 300 nM Testo.
+ with (A) vehicle, (B) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa, or (C) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{300}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo.
  In order to interfere with putative proteolytic pathways, other sets of
- cels were treated with (D) 100 nM Dexa and 25 uM chloroquine, an inhibitor
- of autophagy, or (E) 100 nM Dexa and 5 uM MG132, an inhibitor of the proteasome.
+ cels were treated with (D) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ chloroquine, an inhibitor of autophagy, or (E) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ MG132, an inhibitor of the proteasome.
  Finally, in order to interfere with IGF-I signaling, another set of cells
- were treated with (F) 100 nM Dexa, 300 nM Testo, and 50 nM pycropodophilin,
- an inhibitor of IGF-1R.
+ were treated with (F) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{300}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo, and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ pycropodophilin, an inhibitor of IGF-1R.
 \end_layout
 
 \begin_layout Standard
@@ -19814,8 +21117,25 @@ sig3(truemean(DegradationWithInhibitors[DegradationWithInhibitors$treatment
 \end_inset
 
 .
- When cells received 100 nM Dexa, the ratio of free medium tracer to protein-bou
-nd intracellular increased to 
+ When cells received 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa, the ratio of free medium tracer to protein-bound intracellular increased
+ to 
 \begin_inset Flex S/R expression
 status open
 
