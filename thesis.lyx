@@ -19984,8 +19984,6 @@ reference "fig:Atrogenes-expression"
 \end_inset
 
 ; the latter not shown).
- MuRF-1 upregulation persisted into the third day, but was absent from the
- seventh day samples.
 \end_layout
 
 \begin_layout Standard
@@ -20000,7 +19998,11 @@ In agreement with published studies, the more specific ligase, MAFbx, was
 \end_layout
 
 \begin_layout Standard
-At the peak of atrogene upregulation, in day 3 samples, 
+The massive proteasome upregulation observed in day 3 samples increased
+ the probability of the hypothetical scenario in which protein degradation
+ is limited by proteasome availability, rather than E3 ligases.
+ However, day 3 also marks the peak of proteasome catalytic activity (Fig.
+ ).
 \end_layout
 
 \begin_layout Section*
