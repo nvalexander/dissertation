@@ -22745,14 +22745,21 @@ Overall, the most reliable mechanisms through which Testo induced muscle
 \end_layout
 
 \begin_layout Section
-IGF-I upregulation facilitates testosterone's in vivo myoprotective action
- in glucocorticoid-induced loss of muscle mass
+Testosterone's myoprotective action is not mediated by IGF-1R signaling
 \end_layout
 
 \begin_layout Standard
 The repression of proteasome in vivo was correlated with an increased expression
  in IGF-I expression.
- I could not detect a change in relative phosphorylation of IGF-1R.
+ I could not detect a change in relative phosphorylation of IGF-1R (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IGF1R-phosphorylation"
+
+\end_inset
+
+).
  Most likely, the changes in IGF-1R status are subtle, paralleling those
  in insulin receptor.
  As discussed in the literature review section, insulin receptor changes
@@ -22763,8 +22770,17 @@ The repression of proteasome in vivo was correlated with an increased expression
  a moderate cross-reaction.
 \end_layout
 
+\begin_layout Standard
+The present work failed to identify a series of downstream effects of IGF-1R
+ activation.
+ In contrasts to published accounts of the action of IGF-I on C2C12 cells
+ and mouse muscle, Dexa administration did not elicit an increase in Akt
+ phosphorylation at Ser 473, nor an upregulation of REDD1.
+ In fact, the data shown here demosntrate the oposite
+\end_layout
+
 \begin_layout Section
-Conclusions
+Final considerations
 \end_layout
 
 \begin_layout Standard
@@ -22774,12 +22790,11 @@ This work demonstrates that Testo protects mouse muscle in vivo and in vitro
  no evidence for bulk protein digestion through the autophagosome.
  However, Dexa and Testo significantly modulate autophagy, possibly achieving
  regulatory effects.
- The role of autophagy in GAML and its reversal by AAS will be clarified
+ The role of autophagy in GAML and its reversal by AAS must be clarified
  by studies on LC3-GFP mice.
  Dexa and Testo modulate in opposite manner the transcription of Foxo and
  Klf15 transcription factors.
  Moreover, the two steroid hormones regulate the mTOR inhibitor REDD1.
- The only transgenic model studied in the context of GAML si MuRF-1.
  More transgenic studies are required to establish the relative importance
  and the eventual interaction between Foxo and mTOR pathways.
 \end_layout
