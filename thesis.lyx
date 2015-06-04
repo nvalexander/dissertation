@@ -11990,8 +11990,41 @@ gram}
 
 \end_inset
 
- tissue of lysis buffer containing 150 mM sodium chloride, 50 mM 4-(2-hydroxyeth
-yl)-1-piperazineethanesulfonate 
+ tissue of lysis buffer containing 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{150}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ sodium chloride, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+4-(2-hydroxyethyl)-1-piperazineethanesulfonate 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HEPES"
@@ -11999,7 +12032,24 @@ description "4-(2-hydroxyethyl)-1-piperazineethanesulfonate"
 
 \end_inset
 
- (pH 7.4), 5 mM sodium ethylenediaminetetraacetate (
+ (pH 7.4), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ sodium ethylenediaminetetraacetate (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "EDTA"
@@ -13097,7 +13147,22 @@ celsius}
 \end_inset
 
 .
- The supernatant is collected, aliquoted, and stored for months at -80C.
+ The supernatant is collected, aliquoted, and stored for months at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{-80}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -13168,7 +13233,22 @@ description "bovine serum albumine"
 \end_inset
 
 ) prepared with the same lysis buffer as the unknowns.
- The plate was incubated 30 minutes at 37 C.
+ The plate was incubated 30 minutes at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{37}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+.
  Light absorbance was measured with a Saphire multi-well plate reader (Tecan,
  Männedorf, Switzerland) with absorption at 562 nm.
  The standard curve was fitted to a quadratic equation.
@@ -13187,14 +13267,65 @@ description "polyacrylamide gel electrophoresis"
 
 ).
  The gels were cast in the morning of the electrophoresis.
- The stacking section was a 5% acrylamide gel, with 125 mM Tris pH 6.8.
+ The stacking section was a 5% acrylamide gel, with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{125}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Tris pH 6.8.
  The separating section has a variable concentration of acrylamide (12%
- for low molecular weight unknowns, 8% for others), and 400 mM Tris pH 8.8.
+ for low molecular weight unknowns, 8% for others), and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{400}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Tris pH 8.8.
  Both sections included 1 g/L SDS, and polymerized by the addition of 1
  g/L ammonium persulfate and 0.4‰ v/v tetramethylethylenediamine.
  In order to settle and migrate, lysates were mixed 1:1 with PAGE sample
  buffer, which contained 30 mM Tris pH 6.8, 10 g/L SDS, 100‰ v/v glycerol,
- 0.05 g/L bromophenol blue, and 350 mM DTT.
+ 0.05 g/L bromophenol blue, and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{350}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ DTT.
  The mixture of sample and sample bufer was incubated for 5 minutes at 
 \begin_inset ERT
 status open
@@ -13236,8 +13367,41 @@ celsius}
 \end_inset
 
 .
- The Towbin transfer buffer had 200‰ v:v methanol, 25 mM Tris pH 8.3, 192
- mM glycine.
+ The Towbin transfer buffer had 200‰ v:v methanol, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Tris pH 8.3, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{192}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ glycine.
 \end_layout
 
 \begin_layout Standard
@@ -13249,7 +13413,41 @@ Quality of transfer was assessed by temporary Ponceau staining (20‰ Ponceau
 
 \begin_layout Standard
 Ponceau was removed by washing twice, with shaking 5 minutes at room temperature
-, in TBST (130 mM sodium chloride, 20 mM Tris pH 7.5, 1‰ v/v Tween-20).
+, in TBST (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{130}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ sodium chloride, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Tris pH 7.5, 1‰ v/v Tween-20).
  The membranes were blocked by shaking for one hour in blocking solution
  (TBST with 5% fat-free instant milk) at room temperature.
  Next, membranes were probed by shaking overnight at 4 C in TBST with 50
@@ -13301,8 +13499,41 @@ celsius}
 
 \end_inset
 
- in a tight container with pre-warmed stripping buffer (20 g/L SDS, 60 mM
- Tris pH 6.8, 100 mM beta-mercaptoethanol).
+ in a tight container with pre-warmed stripping buffer (20 g/L SDS, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{60}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Tris pH 6.8, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ beta-mercaptoethanol).
  Stripped membranes were rinse with water, washed with TBST, re-blocked,
  and re-probed.
 \end_layout
