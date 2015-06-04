@@ -13308,7 +13308,13 @@ celsius}
 \end_layout
 
 \begin_layout Standard
-Primary antibodies used were: anti-GAPDH (Pierce), anti-LC3
+Primary antibodies used were: anti-myosin heavy chain (in-house, from MF20
+ hybridoma cells), anti-GAPDH (Pierce), anti-calpain 1 (Abcam), anti-eIF3f
+ (Rockland), anti-LC3, anti-phospho-eIF2, anti-4EBP, anti-phospho-4EBP,
+ anti-ATF4, anti-cathepsin L, anti-calpastatin, anti-IGF-1R, anti-phospho-IGF1-R
+, anti-Akt, anti-phospho-Ser473 Akt (all from Cell Signaling Technologies).
+ Anti-mouse and anti-rabbit secondary antibodies were from Cell Signaling
+ Technologies.
 \end_layout
 
 \begin_layout Section
@@ -22507,7 +22513,14 @@ key "serra2013effects"
 
 \begin_layout Standard
 Upregulation of proteasome activity, independent of atrogene status, has
- been reported in the past.
+ been reported in others
+\begin_inset CommandInset citation
+LatexCommand citep
+key "baehr2014muscle"
+
+\end_inset
+
+.
  It is unclear how Dexa achieves this upregulation.
  In this experiment, limited exploration found no upregulation of transcripts
  for proteasome subunits A6, B10, or D4 (data not shown).
@@ -22540,6 +22553,8 @@ key "baehr2011muscle"
  of the atrogene surge, is that atrogenes ubiquitinate, and target for degradati
 on, an yet unidentified myoprotective intracellular factor, thus unleashing
  a cascade of proteasome-independent mechanisms.
+ Some limited attempts to detect multiple ubiquitination states for MuRF-1's
+ putative substrate, myosin heavy chain, have failed (data not shown).
  If MuRF-1 has only this limited and limiting action, disruption of MuRF-1
  in Baehr's knockout mice could have been supplanted by partially homologous
  genes, such as MuRF-2 or Fbxo40
