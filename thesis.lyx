@@ -11847,7 +11847,7 @@ minute}
 
 \end_inset
 
- at room temperature, centrifugated 
+ at room temperature, centrifuged 
 \begin_inset ERT
 status open
 
@@ -14116,10 +14116,82 @@ description "fetal bovine serum"
 
 \end_inset
 
-), 100 units/mL penicillin, and 100 mg/L streptomycin, changed every other
- day.
- DMEM contained 400 µM phenylalanine, 4500 mg/L glucose, 4 mM glutamine,
- and lacked pyruvate.
+), 100 units/mL penicillin, and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ streptomycin, changed every other day.
+ DMEM contained 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{400}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ phenylalanine, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4.5}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ glucose, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ glutamine, and lacked pyruvate.
 \end_layout
 
 \begin_layout Standard
@@ -14418,7 +14490,28 @@ Next day, the cells were incubated twice 5 minutes each with the blocking
  solution, to wash unbound primary antibody.
  Cells were then probed with the secondary antibody, that is, blocking solution
  supplemented with 1:500 anti-mouse antibody conjugated with rhodamine,
- and with 1 mg/L DAPI.
+ and with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ DAPI.
  The cells were incubated 1h at room temperature in the dark, then briefly
  washed 4 times with PBS.
  Cells covered in PBS were store at 
@@ -14475,9 +14568,29 @@ liter}
 
 \end_inset
 
- radioactive (³H-[ring]) phenylalanine (126 Ci/mmol; PerkinElmer, Shelton,
- Connecticut), starting at the times and for the durations specified at
- each experiment in the results section.
+ radioactive (³H-[ring]) phenylalanine (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{126}{
+\backslash
+curie
+\backslash
+per
+\backslash
+milli
+\backslash
+mole}
+\end_layout
+
+\end_inset
+
+126 Ci/mmol; PerkinElmer, Shelton, Connecticut), starting at the times and
+ for the durations specified at each experiment in the results section.
  For removal of non-specific tracer at the end of labeling stage, cells
  were rinsed with PBS twice, then incubated with 
 \begin_inset ERT
@@ -14547,9 +14660,42 @@ For chase experiments, PBS was then replaced with non-radioactive differentiatio
 n medium, for the durations specified at each experiment.
  Chase experiments ended with a double rinse with PBS.
  Preliminary studies revealed that supplementation of differentiation medium
- with 10 mM phenylalanine made no difference to the rate of tracer release,
- compared to differentiation medium alone (data not shown).
- This is plausible, because differentiation medium already contains 0.4 mM
+ with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ phenylalanine made no difference to the rate of tracer release, compared
+ to differentiation medium alone (data not shown).
+ This is plausible, because differentiation medium already contains 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.4}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
  phenylalanine, and suggested that additional osmotic stress could be avoided
  at no cost to sensitivity of the method.
 \end_layout
@@ -14661,7 +14807,7 @@ molar}
 \end_inset
 
  TCA.
- Protein suspensions were centrifugated at 15,000 RCF, for 
+ Protein suspensions were centrifuged at 15,000 RCF, for 
 \begin_inset ERT
 status open
 
@@ -22334,15 +22480,27 @@ The experiments performed in this study clearly exclude a role for autophagosome
  genes across muscle groups and time points.
  Moreover, lysosome-associated cathepsin L enzymatic activity is suppressed
  by Dexa in a statistically significant manner at all time points.
- These findings were surprising, because they contradict the rat microarray
- findings, where cathepsin L appeared upregulated by Dexa.
- However, the microarray results were never validated by qRT-PCR, suggesting
- that the results from the current study are more plausible.
- Intuitively, the role of autophagy in bulk protein catabolism has been
- rejected even by its
+ In the in vivo experiment, inhibition of lysosomes had a significant effect,
+ but not as ample as that of proteasome inhibition.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Standard
+The finding of Dexa-induced autophagy downregulation was unexpected.
+ Some atrophic conditions, most notably starvation, lead to autophagy regulation.
+ The rat microarray findings found cathepsin L among the set of genes upregulate
+d by Dexa.
+ Even in this study, a narrow measurement, the accumulation of lipidated
+ LC3 appeared upregulated by Dexa.
+ However, the microarray results were never validated by qRT-PCR.
+ The 
+\end_layout
+
+\begin_layout Standard
+Intuitively, the role of autophagy in bulk protein catabolism has been rejected
+ even by its 
+\end_layout
+
+\begin_layout Section
 IGF-I upregulation facilitates testosterone's in vivo myoprotective action
  in glucocorticoid-induced loss of muscle mass
 \end_layout
