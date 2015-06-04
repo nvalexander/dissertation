@@ -22751,7 +22751,8 @@ Testosterone's myoprotective action is not mediated by IGF-1R signaling
 \begin_layout Standard
 The repression of proteasome in vivo was correlated with an increased expression
  in IGF-I expression.
- I could not detect a change in relative phosphorylation of IGF-1R (Fig.
+ However, I could not detect a change in relative phosphorylation of IGF-1R
+ (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -22760,16 +22761,8 @@ reference "fig:IGF1R-phosphorylation"
 \end_inset
 
 ).
- The in vitro study demonstrated that the myoprotective action of Testo
- on C2C12 was independent of IGF-1R.
- The effects of IGF-I modulation may have been relayed to the intracellular
- environment by the insulin receptor, with which it has a moderate cross-reactio
-n.
-\end_layout
-
-\begin_layout Standard
-The present work failed to identify a series of downstream effects of IGF-1R
- activation.
+ Moreover, a series of downstream effects of IGF-1R activation could not
+ be detected in the 7-day samples.
  Testo failed to improve Akt phosphorylation at Ser 473, a post-translational
  change frequently associated with IGF-I stimulation.
  In contrasts to published accounts of the action of IGF-I on mouse muscle,
@@ -22782,6 +22775,8 @@ key "frost2009regulation,pansters2013synergistic"
 \end_inset
 
 .
+ The in vitro study demonstrated that the myoprotective action of Testo
+ on C2C12 was independent of IGF-1R.
 \end_layout
 
 \begin_layout Section
@@ -22800,7 +22795,7 @@ This work demonstrates that Testo protects mouse muscle in vivo and in vitro
  Dexa and Testo modulate in opposite manner the transcription of Foxo and
  Klf15 transcription factors.
  Moreover, the two steroid hormones regulate the mTOR inhibitor REDD1.
- More transgenic studies are required to establish the relative importance
+ More transgenic studies are required to establish the relative importance,
  and the eventual interaction between Foxo and mTOR pathways.
 \end_layout
 
