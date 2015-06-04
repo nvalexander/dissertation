@@ -1285,19 +1285,19 @@ plotIgfr <-function(){
 #     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.IGF1R..normalized.to.GAPDH.")]), "levator.phospho.IGF1R", c(0,2),threeemptystrings),
 #     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.IGF1R.protein..normalized.to.GAPDH.")]), "levator.IGF1R.protein.", c(0,2),threeemptystrings),
 #     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.IGF1R...total.IGF1R")]), "levator.phosph/total.IGF1R", c(0,2),threeemptystrings),
-    threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Igf1r....Ct.Gapdh.")]), "gastrocnemius IGF1R mRNA", c(-1.8,.7),threeemptystrings) + 
-      theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDC),
+#     threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Igf1r....Ct.Gapdh.")]), "gastrocnemius IGF1R mRNA", c(-1.8,.7),threeemptystrings) + 
+#       theme(axis.text.x = element_text(color = "black")) + 
+#       scale_x_discrete(labels = conditionsVDC),
     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.IGF1R.protein..normalized.to.GAPDH.")]), "gastrocnemius IGF1R protein", c(0,2),threeemptystrings) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.IGF1R..normalized.to.GAPDH.")]), "gastrocnemius phospho-IGF1R", c(0,2),threeemptystrings) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
-    threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.IGF1R...total.IGF1R")]), "gastrocnemius phospho/total IGF1R", c(0,2),threeemptystrings) + 
-      theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDC),
-    ncol = 4))
+#     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.IGF1R...total.IGF1R")]), "gastrocnemius phospho/total IGF1R", c(0,2),threeemptystrings) + 
+#       theme(axis.text.x = element_text(color = "black")) + 
+#       scale_x_discrete(labels = conditionsVDC),
+    ncol = 2))
 }
 
 plotIgf <- function(){
