@@ -18752,7 +18752,32 @@ isInCellsV$TimeDays == "0")]))
 
 \end_inset
 
- ug/cm2 in the first day, 
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{
+\backslash
+micro
+\backslash
+gram
+\backslash
+per
+\backslash
+centi
+\backslash
+meter
+\backslash
+squared}
+\end_layout
+
+\end_inset
+
+ in the first day, 
 \begin_inset Flex S/R expression
 status open
 
