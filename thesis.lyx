@@ -11535,12 +11535,13 @@ One reason why key mediators of GC and AAS actions have not been identified
  Surprisingly few studies describe GAML in the mouse.
  Moreover, to my knowledge, no study of AAS alleviation of GAML in mice
  has been published.
- While some parallels with rat studies may help, differences in resistance
- to Dexa suggests there must be differences.
+ While some parallels with rat studies may help, higher resistance to Dexa
+ in mouse suggests there must be differences.
  This work sets out to determine whether AAS can alleviate GAML in mice.
  Upon identifying the conditions that lead to GAML and to its alleviation
  by AAS, the focus will switch to understanding of the molecular mechanisms
  underlying them.
+ Based on the published evidence available at the initiation of this project,
  I set forth the following hypotheses:
 \end_layout
 
@@ -11561,20 +11562,20 @@ GAML has been frequently reported in rats and infrequently in mice.
 
 \begin_layout Subparagraph*
 2.
- Testosterone's myoprotective action is based on inhibiting proteolytic
- and anti-translational effects of dexamethasone.
+ Testosterone's myoprotective action is based on inhibiting dexamethasone's
+ proteolytic effects of dexamethasone.
 \end_layout
 
 \begin_layout Standard
-Studies of GAML suggest that it combines an increase in protein degradation
- and a decrease in protein synthesis.
- Moreover, protein degradation mechanisms upregulated by Dexa are diverse,
- including the proteasome, the autophagosome, and soluble proteases.
+Studies of GAML suggest that it involved a strong upregulation of proteolysis,
+ aggravated by a decrease in protein synthesis.
+ Protein degradation mechanisms upregulated by Dexa are diverse, including
+ the proteasome, the autophagosome, and soluble proteases.
  Microarray studies showed that Testo reverses GC-induced changes in markers
- of each of these three proteolytic pathways and of protein translation.
- Based on the transcriptional changes seen with Testo co-administration,
- there was a good probability that Testo will inhibit all these atrophic
- mechanisms.
+ of each of the three proteolytic pathways and of protein translation.
+ Given that the amplest changes induced by Dexa are on the proteasome -
+ ubiquitin system, there was a good probability that specific reversal of
+ GAML by Testo will include proteasome's repression.
 \end_layout
 
 \begin_layout Subparagraph*
@@ -11584,13 +11585,13 @@ icoid-induced loss of muscle mass.
 \end_layout
 
 \begin_layout Standard
-The putative existence of a set of concerted myoprotective actions is suggestive
- of a focal point where Testo exerts its anti-GC action.
- The few studies on GAML reversal by AAS revealed that this central mediator
- is upstream of mTOR and Akt.
- Based on the microarray studies, which showed that Testo reverses changes
- in IGF-I and IGFBP induced by Dexa, there was a good likelihood that the
- myoprotective action of Testo involved the modulation of IGF-I signaling.
+The few studies on GAML reversal by AAS revealed that Testo action alters
+ mTOR and Akt signaling.
+ Based on the microarray studies which showed that Testo reverses changes
+ in IGF-I and IGFBP induced by Dexa, and on the castration reversal studies
+ indicating that AAS replacement causes IGF-I upregulation, there was a
+ sizeable likelihood that the myoprotective action of Testo involved the
+ modulation of IGF-I signaling.
 \end_layout
 
 \begin_layout Standard
@@ -11624,8 +11625,22 @@ Animal studies
 \begin_layout Standard
 Male, 6-8 week old (young adult), C57Bl/6J mice were purchased from The
  Jackson Laboratories (Bar Harbor, Maine).
- Mice were acclimated for 3-7 days between delivery and initiation of the
- experimental interventions.
+ Mice were acclimated for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SIrange{3}{7}{
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ between delivery and initiation of the experimental interventions.
  Before and during the experiments, mice were maintained in a temperature-contro
 lled facility, at 
 \begin_inset ERT
@@ -11642,7 +11657,37 @@ celsius}
 
 \end_inset
 
-, with 12 hour light / 12 dark cycles.
+, with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{12}{
+\backslash
+hour}
+\end_layout
+
+\end_inset
+
+ light / 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{12}{
+\backslash
+hour}
+\end_layout
+
+\end_inset
+
+ dark cycles.
  Mice were offered water and chow (Purina, Richmond, Indiana) ad libitum.
 \end_layout
 
@@ -11806,7 +11851,7 @@ second}
 
 \begin_layout Standard
 Mice were euthanized humanely by Euthasol® (pentobarbital sodium and phenytoin
- sodium solution;
+ sodium solution; 
 \begin_inset ERT
 status open
 
@@ -11862,7 +11907,7 @@ minute}
 
 \end_inset
 
-, at 10,000 RCF, 
+, at 10,000 g, 
 \begin_inset ERT
 status open
 
@@ -12057,7 +12102,22 @@ description "ethylenediaminetetraacetate"
 
 \end_inset
 
-), and 1% Triton X-100, by nutation at 
+), and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ Triton X-100, by nutation at 
 \begin_inset ERT
 status open
 
@@ -12305,8 +12365,41 @@ minute}
 
 .
  Next, fluorescence was measured with a Saphire multi-well plate reader
- (Tecan, Männedorf, Switzerland) with excitation at 380 nm and emission
- at 460 nm.
+ (Tecan, Männedorf, Switzerland) with excitation at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{380}{
+\backslash
+nano
+\backslash
+meter}
+\end_layout
+
+\end_inset
+
+ and emission at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{460}{
+\backslash
+nano
+\backslash
+meter}
+\end_layout
+
+\end_inset
+
+.
  Background fluorescence, including substrate, was subtracted from sample
  measurements.
  Preliminary tests with manufacturer's positive control and muscle lysate
@@ -12503,8 +12596,41 @@ minute}
 \end_inset
 
 .
- Fluorescence was measured with excitation at 400 nm and emission at 505
- nm.
+ Fluorescence was measured with excitation at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{400}{
+\backslash
+nano
+\backslash
+meter}
+\end_layout
+
+\end_inset
+
+ and emission at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{505}{
+\backslash
+nano
+\backslash
+meter}
+\end_layout
+
+\end_inset
+
+.
  Background fluorescence, including substrate, was subtracted from sample
  measurements.
 \end_layout
@@ -12630,7 +12756,24 @@ molar}
  Extracts were clarified, and stored, as described for the proteasome activity
  assay.
  Total protein was measured by Bradford assay.
- Briefly, one microliter sample was mixed with 
+ Briefly, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ sample was mixed with 
 \begin_inset ERT
 status open
 
@@ -12649,7 +12792,24 @@ liter}
 
  Coomasie Plus (Life Technologies, Carlsbad, California) in duplicate wells
  of a 96-well plate, incubated 10 minutes at room temperature, and measured
- spectrophotometrically for absorption at 595 nm.
+ spectrophotometrically for absorption at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{595}{
+\backslash
+nano
+\backslash
+meter}
+\end_layout
+
+\end_inset
+
+.
  Extracts were diluted to the lowest total protein concentration, using
  the same lysis bufer that was used to extract them.
  Per kit manufacturer instructions, 
@@ -12841,7 +13001,7 @@ description "radioimmunoprecipitation assay"
 
 \end_inset
 
-) buffer, containing
+) buffer, containing 
 \begin_inset ERT
 status open
 
@@ -13233,7 +13393,22 @@ description "bovine serum albumine"
 \end_inset
 
 ) prepared with the same lysis buffer as the unknowns.
- The plate was incubated 30 minutes at 
+ The plate was incubated 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{30}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
 \begin_inset ERT
 status open
 
@@ -13250,7 +13425,24 @@ celsius}
 
 .
  Light absorbance was measured with a Saphire multi-well plate reader (Tecan,
- Männedorf, Switzerland) with absorption at 562 nm.
+ Männedorf, Switzerland) with absorption at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{562}{
+\backslash
+nano
+\backslash
+meter}
+\end_layout
+
+\end_inset
+
+.
  The standard curve was fitted to a quadratic equation.
  Typically extracts were diluted to the lowest total protein concentration,
  using the same lysis buffer that was used to extract them.
@@ -13450,8 +13642,22 @@ molar}
  Tris pH 7.5, 1‰ v/v Tween-20).
  The membranes were blocked by shaking for one hour in blocking solution
  (TBST with 5% fat-free instant milk) at room temperature.
- Next, membranes were probed by shaking overnight at 4 C in TBST with 50
- g/L BSA and primary antibodies of choice (listed later).
+ Next, membranes were probed by shaking overnight at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4}{
+\backslash
+celsius}
+\end_layout
+
+\end_inset
+
+ in TBST with 50 g/L BSA and primary antibodies of choice (listed later).
  Next day, the membranes were washed in TBST, twice briefly and three times
  with 5 minutes shaking at room temperature.
  The washed membranes were then probed by shaking at room temperature for
@@ -19962,142 +20168,6 @@ reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 ).
  A similar trend was seen in quadriceps, but the amplitude was smaller,
  perhaps owing to the fact that Dexa-induced changed in IGF-I were smaller.
-\end_layout
-
-\begin_layout Standard
-The evidence or IGF-1R activation was inconclusive.
- In the 7-day samples, there was an unexpected increase in phosphorylated
- IGF-1R in response to Dexa.
- However, total IGF-1R was also increased by Dexa.
- The response to Testo was equally ambiguous, with mRNA, total protein,
- and phosphorylated IGF-1R downregulated (Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:IGF1R-phosphorylation"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "c"
-use_parbox 0
-use_makebox 0
-width "6in"
-special "none"
-height "1.8in"
-height_special "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename artwork/IGF1R/IGF1R-gastroc.pdf
-	width 6in
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "c"
-use_parbox 0
-use_makebox 0
-width "6in"
-special "none"
-height "2.2in"
-height_special "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2.1in", fig.width = 6, fig.height = 2.1>>=
-\end_layout
-
-\begin_layout Plain Layout
-
-plotIgfr()
-\end_layout
-
-\begin_layout Plain Layout
-
-@
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Levels of total and phosphorylated IGF-1R following Dexa and / or Testo
- treatments.
-\end_layout
-
-\end_inset
-
-Levels of total and phosphorylated IGF-1R following 7 days of Dexa and /
- or Testo treatment in gastrocnemius (top) and levator (bottom) muscles
- (normalized to GAPDH; n=4)
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:IGF1R-phosphorylation"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
