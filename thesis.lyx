@@ -14856,8 +14856,29 @@ liter}
  Econo-lite scintillation fluid, then counted in a TriCarb 3100TR liquid
  scintillation counter (PerkinElmer) for 3 minutes per sample.
  Counts per minute were converted to disintegrations per minute using a
- standard curve generated using 1-80 µCi/L labeled phenylalanine dissolved
- in the same solvents as the samples (2:1 TCA:acetone, or 
+ standard curve generated using 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SIrange{1}{80}{
+\backslash
+micro
+\backslash
+curie
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ labeled phenylalanine dissolved in the same solvents as the samples (2:1
+ TCA:acetone, or 
 \begin_inset ERT
 status open
 
@@ -15559,7 +15580,7 @@ sig3( SEM(InvivoSevendayV$body.weight.gain.after.1.days..percent.) )
 
 \end_inset
 
-% body weight in the 24 hours, due to accretion of non-resorbable vehicle.
+% body weight in the 24 hours, due to accretion of nonresorbable vehicle.
  In contrast, mice receiving Dexa lost 
 \begin_inset Flex S/R expression
 status open
@@ -16068,7 +16089,7 @@ reference "fig:Muscles-weights"
 
 ).
  Despite the small sample size (n=5-6), the atrophying effect of Dexa became
- statistically significant at day 3 on gastrocnemia (Dunn's test, p = 
+ statistically significant at day 3 on gastrocnemius (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -16612,7 +16633,7 @@ eatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_layout
 
 \begin_layout Standard
-Testo co-adminstration had an inhibitory effect on MuRF-1, with a later
+Testo co-administration had an inhibitory effect on MuRF-1, with a later
  onset.
  
 \begin_inset Note Note
@@ -17239,7 +17260,7 @@ VD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]])
 \end_inset
 
 ).
- Across muscle groups and time points, Testo co-adminstration lacked detectable
+ Across muscle groups and time points, Testo co-administration lacked detectable
  effect.
 \end_layout
 
@@ -17325,7 +17346,8 @@ reference "fig:Cathepsin-enzymatic-activity"
 ).
  Unexpectedly, cathepsin L enzymatic activity was reduced in all the assayed
  muscle, in a progressive manner.
- At day 1, cathepsin L activty was suppressed by Dexa in gastrocnemius (
+ At day 1, cathepsin L activity was suppressed by Dexa in gastrocnemius
+ (
 \begin_inset Flex S/R expression
 status open
 
@@ -17398,7 +17420,7 @@ atment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 \end_inset
 
 ).
- At day 3, cathepsin L activty was further suppressed by Dexa in gastrocnemius
+ At day 3, cathepsin L activity was further suppressed by Dexa in gastrocnemius
  (
 \begin_inset Flex S/R expression
 status open
@@ -17472,7 +17494,7 @@ treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 \end_inset
 
 ).
- In day 7 samples, Dexa-induced repression of cathepsin L activty reached
+ In day 7 samples, Dexa-induced repression of cathepsin L activity reached
  
 \begin_inset Flex S/R expression
 status open
@@ -17546,7 +17568,7 @@ CVD$treatment, method = "bonferroni")$P.adjusted[[VvsDthreeways]] )
 \end_inset
 
 ).
- Testo co-adminstration had no statistically significant effect on cathepsin
+ Testo co-administration had no statistically significant effect on cathepsin
  L enzymatic activity, although a trend of reversal to baseline can be seen
  in day 1 and 3 samples.
 \begin_inset Note Note
@@ -17646,7 +17668,7 @@ reference "fig:LC3-hyperlipidated"
 
 ).
  In gastrocnemius at day 7, there was a trend towards enrichment of LC3-II
- in absolute terms upon Dexa treatement (
+ in absolute terms upon Dexa treatment (
 \begin_inset Flex S/R expression
 status open
 
@@ -17944,7 +17966,7 @@ Protein synthesis modulation during Dexa-induced muscle atrophy
 In order to discern possible changes in protein synthesis, I investigated
  a series of its translation regulators.
  A well-documented manner of translational shutdown upon various conditions,
- such as endoplasmic reticulum stress, is phosphorlyation of the initiation
+ such as endoplasmic reticulum stress, is phosphorylation of the initiation
  factor eIF2α by a diverse set of kinases.
  In agreement with published studies, there was no statistically significant
  change in the gastrocnemius of mice treated with Dexa (Dunn's test, p =
@@ -19149,7 +19171,8 @@ reference "fig:Redd1-expression"
 \end_inset
 
 ).
- Dexa upregulated Redd1 expression in gastrocnemia collected at days 1 (
+ Dexa upregulated Redd1 expression in gastrocnemius collected at days 1
+ (
 \begin_inset Flex S/R expression
 status open
 
@@ -20791,7 +20814,7 @@ name "fig:protein-synthesis-cells"
 
 \begin_layout Standard
 After lysis, cells were assayed for protein-bound tracer.
- There was no effect of treatment on the amount of tracer uptaken by the
+ There was no effect of treatment on the amount of tracer uptook by the
  cells (Fig.
  
 \begin_inset CommandInset ref
@@ -22079,7 +22102,7 @@ reference "fig:myotube-diameters"
 \end_layout
 
 \begin_layout Standard
-Co-adminstration of Testo alleviated all macroscopic Dexa effects.
+Co-administration of Testo alleviated all macroscopic Dexa effects.
  Similar to the profile of Dexa action, in absolute terms, the recovery
  in lean body mass was approximately equal to that in total body weight.
  The percentage by which total body weight, lean body mass, and individual
@@ -22113,9 +22136,9 @@ reference "fig:Muscles-weights"
  samples show a more limited anabolic response.
  This discrepancy originates from the fact that the mice analyzed in the
  7-day study were slightly more developed than those used in the 3-day sample,
- as indicated by the difference in levators at sacrifice between vehicle-treated
- animals at each time point.
- Moreover, the detection of the Testo myoprotective efect may be strained
+ as indicated by the difference in levator muscles at sacrifice between
+ vehicle-treated animals at each time point.
+ Moreover, the detection of the Testo myoprotective effect may be strained
  by its incomplete nature.
  Because Dexa effect is progressive, its amplitude in the early stages is
  necessarily small.
@@ -22253,6 +22276,14 @@ key "serra2013effects"
 \end_layout
 
 \begin_layout Standard
+Upregulation of proteasome activity, independent of atrogene status, has
+ been reported in the past.
+ It is unclear how Dexa achieves this upregulation.
+ In this experiment, limited exploration found no upregulation of transcripts
+ for proteasome subunits A6, B10, or D4 (data not shown).
+\end_layout
+
+\begin_layout Standard
 In vitro, proteasome inhibition led to nearly complete suppression of proteolysi
 s, beyond the basal levels seen in vehicle-treated cells.
  This finding indicates that most of the proteolytic activity in C2C12 cells
@@ -22281,9 +22312,34 @@ on, an yet unidentified myoprotective intracellular factor, thus unleashing
  a cascade of proteasome-independent mechanisms.
  If MuRF-1 has only this limited and limiting action, disruption of MuRF-1
  in Baehr's knockout mice could have been supplanted by partially homologous
- genes, such as MuRF-2.
+ genes, such as MuRF-2 or Fbxo40
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shi2011scf-fbxo40,witt2005murf-1"
+
+\end_inset
+
+.
  The distinction between the two scenarios is difficult, especially in the
  in vivo approach.
+ In either scenario, the role of the proteasome is indispensable for GAML.
+ Proteasome inhibition by Testo co-administration emerges as an important
+ mechanism of GAML alleviation.
+\end_layout
+
+\begin_layout Standard
+The experiments performed in this study clearly exclude a role for autophagosome
+ - lysosome system in digestion of bulk myofiber proteins.
+ The in vivo data indicate a persistent suppression of autophagy-related
+ genes across muscle groups and time points.
+ Moreover, lysosome-associated cathepsin L enzymatic activity is suppressed
+ by Dexa in a statistically significant manner at all time points.
+ These findings were surprising, because they contradict the rat microarray
+ findings, where cathepsin L appeared upregulated by Dexa.
+ However, the microarray results were never validated by qRT-PCR, suggesting
+ that the results from the current study are more plausible.
+ Intuitively, the role of autophagy in bulk protein catabolism has been
+ rejected even by its
 \end_layout
 
 \begin_layout Section*
