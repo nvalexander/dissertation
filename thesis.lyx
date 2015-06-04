@@ -18260,8 +18260,39 @@ In mouse explanted myofibers and C2C12 cultured myotubes, muscle atrophy
  present in vitro.
  I hypothesized that the muscle protection by Testo could be replicated
  in C2C12 cells.
- Indeed, fully differentiated C2C12 myotubes treated for 48 hours with 50
- uM Dexa lost 
+ Indeed, fully differentiated C2C12 myotubes treated for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{48}{
+\backslash
+hour}
+\end_layout
+
+\end_inset
+
+ with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa lost 
 \begin_inset Flex S/R expression
 status open
 
@@ -18285,8 +18316,24 @@ sig3(tukeyDiameters[["D-V", "p.adj"]] )
 \end_inset
 
 ).
- Co-administration of 300 nM Testo re-established basal diameters (Tukey's
- HSD vs.
+ Co-administration of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{300}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo re-established basal diameters (Tukey's HSD vs.
  Dexa alone, p = 
 \begin_inset Flex S/R expression
 status open
@@ -18461,9 +18508,60 @@ Changes in C2C12 myotube diameter following Dexa and / or Testo treatments.
 
 \end_inset
 
- Changes in C2C12 myotube diameter following Dexa and / or Testo treatments.
- Micrographs are representative for cells receiving vehicle (top left),
- 50 uM Dexa (top right), or 50 uM Dexa and 300 nM Testo.
+Changes in C2C12 myotube diameter following Dexa and / or Testo treatments.
+ Micrographs are representative for cells receiving (top left) vehicle,
+ or (top right) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa, or (bottom left) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{300}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo.
  Bottom right image compares average myotube diameters for the three treatments
  (n=510-740).
 \begin_inset CommandInset label
@@ -18489,8 +18587,106 @@ name "fig:myotube-diameters"
 In another experiment, I tested the ability of Testo to preserve protein
  content in C2C12 cells.
  In order to determine the time course of protein content, cells were treated
- with (A) vehicle, (B) 1 uM Dexa, (C) 1 uM Dexa and 100 nM Testo, or (D)
- 1 uM Dexa and 500 nM Testo, for up to three days, in increments of 24 hours
+ with (A) vehicle, (B) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa, (C) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo, or (D) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Dexa and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{500}{
+\backslash
+nano
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Testo, for up to three days, in increments of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{24}{
+\backslash
+hour}
+\end_layout
+
+\end_inset
+
  (Fig.
  
 \begin_inset CommandInset ref
@@ -18592,7 +18788,7 @@ sig3(anovaPvaluesProteinDensityTreatmentAndDateVonlyOneToThree[[1]])
 \end_inset
 
 ).
- In contrast, Dexa-treated cells lost protein, sliding from (
+ In contrast, Dexa-treated cells lost protein, declining from 
 \begin_inset Flex S/R expression
 status open
 
@@ -19918,8 +20114,6 @@ reference "fig:Muscles-weights"
  investigated in more detail, as they were beyond the scope of this work.
  At the 7-day time point, which is the most accurate model of chronic steroid
  myopathy, the alleviation of GAML is well-established.
- In vitro, myoprotective action of Testo was similarly present at late time-poin
-ts.
 \end_layout
 
 \begin_layout Standard
@@ -19957,6 +20151,24 @@ key "bentvelsen1996regulation"
  The apparent dependence of Testo response amplitude to the expression of
  AR indicates that alleviation of GAML by AAS is a specific effect, rather
  than an interaction at GR level.
+\end_layout
+
+\begin_layout Standard
+In vitro, myoprotective action of Testo was similarly present at late time-point
+s.
+ The protection of C2C12 myotubes was dose-dependent, based on the total
+ protein assay.
+ In a parallel to the in vivo system, the myoprotective effect was more
+ salient when data was normalized to the first time point in the experiment
+ (fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:protein-mass-cells"
+
+\end_inset
+
+ top versus bottom).
 \end_layout
 
 \begin_layout Section
@@ -20002,7 +20214,20 @@ The massive proteasome upregulation observed in day 3 samples increased
  the probability of the hypothetical scenario in which protein degradation
  is limited by proteasome availability, rather than E3 ligases.
  However, day 3 also marks the peak of proteasome catalytic activity (Fig.
- ).
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Proteasome-enzymatic-activity"
+
+\end_inset
+
+).
+ This further strengthens the idea that proteasome - ubiquitin system is
+ at the center of GAML.
+\end_layout
+
+\begin_layout Standard
+In vitro, 
 \end_layout
 
 \begin_layout Section*
