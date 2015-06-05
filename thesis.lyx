@@ -1088,18 +1088,18 @@ key "cushing1912pituitary"
  pituitary defects were more variable in manifestation and therefore harder
  to unify in a single clinical entity.
  Even when macroscopic hypertrophy of pituitary was localized to a gland
- subdomain, it was unclear whether observed pathology could be attributed
- to a hypersecretion from the hypertrophied sector, or to a deficiency in
- the neighboring compressed structures.
- Similarly, pituitary extracts caused multiple, and even opposite effects,
- in animal models
+ subdomain, pathological mechanisms were ambiguous.
+ Symptoms could have been attributed to a hypersecretion from the hypertrophied
+ sector, or to a deficiency in the neighboring compressed structures.
+ Pituitary extracts caused multiple, and even opposite effects, in animal
+ models
 \begin_inset CommandInset citation
 LatexCommand citep
 key "schafer1899physiological"
 
 \end_inset
 
-, suggestive of a mixture of hormones.
+, further proving the heterogeneous nature of pituitary secretion.
 \end_layout
 
 \begin_layout Standard
@@ -1248,7 +1248,7 @@ key "kirk2000cushings"
 \end_layout
 
 \begin_layout Standard
-The remainder of CS cases consists of hypercortisolism in spite of low ACTH.
+The remainder of CS cases consists of hypercortisolism despite low ACTH.
  In primary hypercortisolism, ACTH is typically suppressed by negative feedback.
  Adrenal neoplasms are the most frequent cause of primary hypercortisolism.
  Ectopic or diffuse unregulated sources of ACTH or cortisol may cause hypercorti
@@ -1258,8 +1258,8 @@ solism.
 \end_layout
 
 \begin_layout Standard
-Despite being caused by a diverse set of HPA pathologies, CS is mostly invariabl
-e in its ability to cause muscle impairment.
+Although CS may originate in various HPA pathologies, muscle impairment
+ is one of its most common, unifying features.
 \end_layout
 
 \begin_layout Section
@@ -1304,18 +1304,18 @@ key "hench1964reversibility"
 
 \end_inset
 
-, impressive improvements in those cases triggered redirected corticosteroid
+, impressive improvements in those cases reordered priorities in corticosteroid
  research.
 \end_layout
 
 \begin_layout Standard
-Previous work did describe multiple effects for adrenal extracts, but little
- was known about purer preparations, such as cortisone.
- In fact, adrenal research was discouraged prior to cortisone purification,
- because less pure extracts combined antagonistic hormones in variable doses,
- leading to the impression that they lack a defined pharmacological effect.
- However, even with purified cortisone, Hench saw a very diverse set of
- consequences for cortisone administration
+Previous work did describe multiple effects for adrenal extracts.
+ In fact, adrenal research was considered a dead end prior to cortisone
+ purification, because less pure extracts combined antagonistic hormones
+ in variable doses, seemingly lacking defined pharmacological or endocrine
+ relevance.
+ Even with purified cortisone, Hench saw a very diverse set of consequences
+ for cortisone administration
 \begin_inset CommandInset citation
 LatexCommand cite
 key "sprague1950observations"
@@ -1323,6 +1323,8 @@ key "sprague1950observations"
 \end_inset
 
 .
+ However, these effects were invariant, demonstrating the complex and vital
+ role of the adrenal.
 \end_layout
 
 \begin_layout Standard
@@ -1367,16 +1369,11 @@ key "clark2007anti-inflammatory,coutinho2011anti-inflammatory"
 ).
  Some of these anti-inflammatory effects, such as reduction in the number
  of circulating white blood cells, are ample and robust.
- The cellular and molecular anti-inflammatory mechanisms are still subject
- of active research.
-\end_layout
-
-\begin_layout Standard
-The knowledge gap around the anti-inflammatory actions of GCs is in part
- caused by the immunology progress.
- Still, some questions remain open, and illustrate the convoluted ways in
- which GC signals are relayed in the cell.
- For example, GCs are often acting in a manner shared with all steroids,
+ Other aspects of GC action remain under active study, facilitated by the
+ rapid progress of immunology.
+ The questions still open illustrate the convoluted ways in which GC signals
+ are relayed in the cell.
+ For example, GCs are often acting in a manner shared with all steroid hormones,
  by binding and activating the glucocorticoid receptor (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1405,7 +1402,7 @@ key "truss1990contacts"
 .
  The classical effect of the GRE-GR interaction is increased transcription
  for neighboring target genes (transactivation), as it is the case in polymorpho
-nucleate cells with interleukin 1 (
+nucleate cells for interleukin 1 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "IL-1"
@@ -1428,7 +1425,7 @@ key "re1994type"
 
 \end_inset
 
-, a decoy inhibitor of the pro-inflammatory IL-1.
+, a decoy inhibitor for the pro-inflammatory IL-1.
  In other circumstances, the activated receptor inhibits transcription directly
  (transrepression), or by interfering with transcription factors.
  For example, in human T lymphocytes, GCs inhibit the transcription factor
@@ -1501,9 +1498,53 @@ Some GC effects may be limited to a range of doses, durations, and frequencies
  Moreover, the example of adrenalectomized rats re-supplemented with corticoster
 one, their most abundant endogenous GC, illustrates how, at times, the same
  GC can induce or repress the same cellular response, depending on the dose.
- A 5 mg / kg physiological dose enhances the immune skin delayed-type hypersensi
-tivity, while a pharmacological 40 mg / kg dose yields the more typical
- GC immunosuppressive behavior 
+ A lower 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ dose enhances the immune skin delayed-type hypersensitivity, while a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{40}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ dose yields the opposite, expected immunosuppressive response 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "dhabhar1999enhancing"
@@ -1511,10 +1552,9 @@ key "dhabhar1999enhancing"
 \end_inset
 
 .
- This behavior, suggestive of a U (or inverted U) shaped response curve,
- is called hormesis or biphasic response, and poses great challenges, both
- to the investigative scientist and to the clinician attempting to establish
- a therapeutic regimen.
+ This biphasic behavior, suggestive of a U (or inverted U) shaped curve,
+ poses great challenges, both to the investigative scientist, and to the
+ clinician attempting to establish a therapeutic regimen.
 \end_layout
 
 \begin_layout Standard
@@ -1541,11 +1581,10 @@ key "theempirerheumatismcouncilsub-committee1957multi-centre"
  including edema and hypertension.
  In retrospect, a comparison between two palliative symptomatic therapies
  using cure-indicating outcomes was likely misleading.
-\end_layout
-
-\begin_layout Standard
-By the end of this trial, the chemists were providing more effective and
- safe synthetic GCs (reviewed in 
+ Nevertheless, cortisone was deemed unfit for therapeutic purposes, at least
+ in Britain.
+ This failure initiated a race for improving endogenous GCs with chemical
+ modifications (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "sarett1959aspects"
@@ -1553,7 +1592,7 @@ key "sarett1959aspects"
 \end_inset
 
 ).
- While synthesizing esters with a longer half-life, Schering chemists introduced
+ While synthesizing esters with a better half-life, Schering chemists introduced
  a double bond in the A ring of cortisone, thus discovering prednisone,
  the first widely used oral GC
 \begin_inset CommandInset citation
@@ -1563,10 +1602,12 @@ key "herzog195511-oxygenated"
 \end_inset
 
 .
- In addition to an improved ability to induce hyperglycemia, prednisone
- lost some of the cortisone's ability to cause edema.
- NIH researchers synthesized and characterized prednisone's active metabolite,
- prednisolone
+ Prednisone was a better anti-inflammatory than cortisone, but had a lower
+ ability to cause edema.
+ This was the first suggestion that GC effect could be separated by chemical
+ modifications.
+ In 1955, NIH researchers synthesized and characterized prednisone's active
+ metabolite, prednisolone
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bunim1955metabolic"
@@ -1582,12 +1623,13 @@ key "medicalresearchcouncil1960comparison"
 
 \end_inset
 
-.
+, thus establishing prednisolone as a standard of care and making GCs even
+ more interesting for chemists.
 \end_layout
 
 \begin_layout Standard
-At Squibb, insertion of a halogen atom was found to abolish GCs ability
- to induce hyperglycemia
+Further improvements were made at Squibb, where it was found that insertion
+ of a halogen atom improves GCs anti-inflammatory effect
 \begin_inset CommandInset citation
 LatexCommand cite
 key "fried1955synthesis,fried1953synthesis"
@@ -1624,22 +1666,7 @@ key "arth195816-methylated,arth195816-methylateda"
 .
  Dexa is the most effective and specific therapeutic synthetic GC to date,
  with 170 times higher ability to inhibit the immune reaction to subcutaneous
- foreign bodies (granuloma) compared to cortisol.
-\end_layout
-
-\begin_layout Standard
-Dexa is unable to cause edema and electrolyte imbalance.
- Nevertheless, Dexa is 52 times more potent in suppressing endogenous GC
- secretion, and 35 times more potent in causing hyperglycemia
-\begin_inset CommandInset citation
-LatexCommand citep
-key "frawley1959effects,meikle1977potency"
-
-\end_inset
-
-.
- In animals, Dexa is 160 times more potent than cortisol in the inhibition
- of granuloma test of immune function
+ foreign bodies (granuloma) compared to cortisol
 \begin_inset CommandInset citation
 LatexCommand citep
 key "silber1959biology"
@@ -1647,12 +1674,23 @@ key "silber1959biology"
 \end_inset
 
 .
- These findings suggest that anti-inflammatory and hyperglycemic actions
- are intermediated by the same specific, Dexa-sensitive receptor, whereas
- electrolyte changes are caused by cortisol through a different pathway.
- Further supporting the idea of a unique Dexa receptor, efforts to synthesize
- steroids with anti-inflammatory action that do not interfere with metabolism
- have failed.
+ The other benefit of Dexa is its virtual inability to cause edema and electroly
+te imbalance.
+\end_layout
+
+\begin_layout Standard
+In addition to being a strong anti-inflammatory, Dexa is 52 times more potent
+ in suppressing endogenous GC secretion, and 35 times more potent in causing
+ hyperglycemia compared to cortisone
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frawley1959effects,meikle1977potency"
+
+\end_inset
+
+.
+ Efforts to synthesize steroids with anti-inflammatory action that do not
+ interfere with metabolism have failed.
  Compounds such as A276575
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1675,9 +1713,13 @@ key "baiula2014mapracorat"
 
 \end_inset
 
- did nor progress beyond phase II clinical trials.
- Therefore, clinicians prescribing GCs in these five decades had to balance
- therapeutic benefit with metabolic side-effects.
+ did not progress beyond phase II clinical trials.
+ These facts demonstrate that the anti-inflammatory and hyperglycemic actions
+ are intermediated by the same specific, Dexa-sensitive receptor, whereas
+ electrolyte changes are caused by cortisol through a different pathway.
+ Clinicians prescribing GCs in these five decades had to balance therapeutic
+ benefit with metabolic side-effects, and, in the case of less specific
+ GCs, with the water retention.
 \end_layout
 
 \begin_layout Standard
@@ -1694,28 +1736,17 @@ description "mineralocorticoid receptor"
  The GC family spans tens of active principles and thousands of formulations,
  from weak GCs with lower specificity, such as cortisone, to strong, specific
  GCs, such as Dexa.
- The list of Food and Drug Administration (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "FDA"
-description "Food and Drug Administration"
-
-\end_inset
-
-)-approved indications for cortisone, Dexa, and prednisone is often changed,
- as better, more specific drugs are developed, and more precautions are
- added
-\begin_inset CommandInset citation
-LatexCommand cite
-key "merckco.inc.2004dexamethasone,pharmaciaandupjohnandcompany2007prednisone,west-wardpharmaceuticalcorp.2008hydrocortisone"
-
-\end_inset
-
-.
+ When strong GR activation is desired, clinicians have to use Dexa in order
+ to avoid MR activation.
+ When safety is desired, such as in over-the-counter products, low-activity,
+ low-specificity compounds are preferred.
 \end_layout
 
 \begin_layout Standard
-The trivial case for using GC therapy is in hormone replacement, such as
+Chronic GC therapy causes glucose metabolism disturbance, osteoporosis and
+ muscle loss, suggesting that their therapeutic use is limited.
+ However, their efficacy makes them some of the most commonly used drugs.
+ The trivial case for using GC therapy is in hormone replacement, such as
  in adrenocortical insufficiency (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1724,15 +1755,35 @@ key "johannsson2015adrenal"
 \end_inset
 
 ).
- GC therapy is suitable for acute immune or allergic conditions, such as
- seasonal rhinitis (reviewed in 
+ In addition, many other diseases are alleviated by GCs to a degree that
+ deleterious effects are outweighed.
+ Based on their ability to lower white blood cell count, GC are an important
+ adjuvant in the palliative and even etiologic treatment of leukemias and
+ lymphomas
 \begin_inset CommandInset citation
 LatexCommand cite
-key "johannsson2015adrenal"
+key "crump2014randomized,pui2006treatment,stewart2015carfilzomib"
 
 \end_inset
 
-).
+.
+ On the balance of benefits and drawbacks, GCs are recommended for many
+ life-threatening or impairing immune reactions, such as in polymyositis
+ (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "marie2011therapy"
+
+\end_inset
+
+), severe sarcoidosis (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dempsey2009sarcoidosis"
+
+\end_inset
+
+), and disseminated pulmonary tuberculosis.
  GCs are relatively safe in topical applications in dermatological conditions
  (pemphigus, psoriasis, most types of dermatitis; reviewed in 
 \begin_inset CommandInset citation
@@ -1750,47 +1801,17 @@ key "christoforidis2012systemic,gordon1950effects"
 \end_inset
 
 , such as diffuse posterior uveitis and optical neuritis.
-\end_layout
-
-\begin_layout Standard
-As envisaged by Hench in his Nobel Lecture, GCs do not address disease causes
- and are recommended for temporary respite.
- For many autoimmune diseases, there are more specific therapeutic alternatives,
- often addressing the cause of disease.
- In addition to the glucose metabolism disturbance, long term GC administration
- causes osteoporosis and muscle loss.
- On the balance of benefits and drawbacks, GCs are recommended for life-threaten
-ing or impairing immune reactions, such as in polymyositis (reviewed in
- 
+ GC therapy is suitable for brief administration in acute immune or allergic
+ conditions, such as seasonal rhinitis (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "marie2011therapy"
+key "johannsson2015adrenal"
 
 \end_inset
 
-), severe sarcoidosis (reviewed in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "dempsey2009sarcoidosis"
-
-\end_inset
-
-), and disseminated pulmonary tuberculosis.
- Based on their ability to lower white blood cell count, GC are an important
- adjuvant in the palliative and even etiologic treatment of leukemias and
- lymphomas
-\begin_inset CommandInset citation
-LatexCommand cite
-key "crump2014randomized,pui2006treatment,stewart2015carfilzomib"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Even in chronic diseases, GCs are recommended for short-term alleviation
- of exacerbations.
+).
+ In chronic diseases, GCs are recommended for short-term alleviation of
+ exacerbations.
  Short-term GC therapy is recommended for rheumatoid arthritis, gouty arthritis,
  psoriatic arthritis, ankylosing spondylitis, asthma
 \begin_inset CommandInset citation
@@ -1817,10 +1838,31 @@ key "haack1999glucocorticoid"
 \end_layout
 
 \begin_layout Standard
-GCs have been used off-label in many other diseases.
+As envisaged by Hench in his Nobel Lecture, GCs do not address disease causes
+ and are recommended for temporary respite.
+ For many immune diseases, more specific therapeutic alternatives are used,
+ often addressing the cause of disease.
+ The list of Food and Drug Administration (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FDA"
+description "Food and Drug Administration"
+
+\end_inset
+
+)-approved indications for cortisone, Dexa, and prednisone is often narrowed
+ by additional precautions and by newly discovered, more specific drugs
+\begin_inset CommandInset citation
+LatexCommand cite
+key "merckco.inc.2004dexamethasone,pharmaciaandupjohnandcompany2007prednisone,west-wardpharmaceuticalcorp.2008hydrocortisone"
+
+\end_inset
+
+.
+ Nevertheless, off-label use of GCs is very frequent.
  Most commonly, GCs are perceived by physicians as a fallback therapeutic
- alternative for cerebral hypertensive conditions, despite sparse evidence
- for efficacy in specific conditions.
+ alternative for cerebral hypertensive conditions, despite scarce evidence
+ for efficacy in any specific conditions.
  Small trials suggest GCs reduce vasogenic cerebral edema
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1835,8 +1877,9 @@ key "levine1989dexamethasone"
 
 \end_inset
 
-, while systematic reviews suggest they might in fact worsen outcomes for
- acute brain trauma victims
+.
+ Given that systematic reviews showed that, in fact, GCs worsen outcomes
+ for acute brain trauma victims
 \begin_inset CommandInset citation
 LatexCommand cite
 key "alderson2005corticosteroids"
@@ -4368,16 +4411,11 @@ key "inder2010dexamethasone"
 Understanding causality in the case of simultaneous muscle loss and hirsutism
  is complicated by dose- and compound-dependent crossconversion of GCs to
  AAS and interference of GCs in AAS synthesis and degradation.
- It is unclear to what degree muscle loss in CS is influenced by the changes
- in endogenous AAP and AAS.
- Based on endogenous levels, it appears that AAS therapy may benefit men,
- but not women and children, with CS.
-\end_layout
-
-\begin_layout Standard
-Interestingly, the Crawford and colleagues trial observed muscle protection
- by AAS as adjuvant to GC therapy although, at enrollment, these men had
- circulating Testo levels in the lower normal range
+ In adult males, muscle loss in CS may be aggravated by the changes in endogenou
+s AAP and AAS.
+ Crawford and colleagues observed muscle protection by AAS as adjuvant to
+ GC therapy although, at enrollment, these men had circulating Testo levels
+ in the lower normal range
 \begin_inset CommandInset citation
 LatexCommand citep
 key "crawford2003randomized"
@@ -4385,8 +4423,8 @@ key "crawford2003randomized"
 \end_inset
 
 .
- This confirms that GC deleterious effects are not solely caused by hypoandrogen
-ism.
+ This trial indicates that GC deleterious effects are favored, but not condition
+ed, by hypoandrogenism.
 \end_layout
 
 \begin_layout Standard
@@ -4812,7 +4850,7 @@ key "ferrando2002testosterone,huang2005effects"
 
 \begin_layout Standard
 While women's endogenous AAS levels are lower than men's, it is unclear
- if benefits of Testo therapy outweigh the deleterious effects
+ whether benefits of Testo therapy outweigh the deleterious effects
 \begin_inset CommandInset citation
 LatexCommand citep
 key "traish2009testosterone,wierman2014androgen"
@@ -5478,8 +5516,7 @@ key "shen2003protein"
 
 .
  Defects in IGF-1R signaling determine low birth weight and subsequent growth
- retardation in humans and transgenic mice, although it is unclear this
- is due to the mitotic or to the anabolic deficiency
+ retardation in humans and transgenic mice
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fernandez2001functional,abuzzahab2003igf-i"
@@ -5487,9 +5524,9 @@ key "fernandez2001functional,abuzzahab2003igf-i"
 \end_inset
 
 .
- Moreover, the murine model may be marred by the formation of hybrid dimers
- between IGF-1R and insulin receptor, which is likely to impair insulin
- signaling as well.
+ However, IGF-1R defects may act by mitotic impairment, by anabolic deficiency,
+ or even by an insulin signaling defect caused by the disappearance of hybrid
+ dimers between IGF-1R and insulin receptor.
 \end_layout
 
 \begin_layout Standard
@@ -9072,7 +9109,7 @@ key "latres2005insulin-like"
 \end_layout
 
 \begin_layout Standard
-Diverging from in vivo studies, some studies showed that L6 and C2C12 myotubes
+Diverging from in vivo studies, most studies agree that L6 and C2C12 myotubes
  exhibit Dexa-induced downregulation of p70-S6K Thr 389 and 4B-EP phosphorylatio
 n and activities, even in the absence of an anabolic stimulus 
 \begin_inset CommandInset citation
@@ -9082,8 +9119,7 @@ key "frost2009regulation,wu2010redd1,shah2000glucocorticoidsa"
 \end_inset
 
 .
- It is unclear whether the difference between in vivo and in vitro studies
- of mTORC1 substrates is caused by the use of different anabolic stimuli.
+ It is unclear what causes the difference between in vivo and in vitro studies.
  Whereas in vivo studies use insulin to elicit an Akt response whose modulation
  by GC is measurable, in vitro studies commonly use IGF-I (for example,
  
@@ -9101,8 +9137,8 @@ key "conejo2001insulina"
 
 \end_inset
 
-, which may perturb experiments where proliferating myoblasts were not actively
- eliminated.
+, which may perturb in vitro experiments where proliferating myoblasts were
+ not actively eliminated.
 \end_layout
 
 \begin_layout Standard
@@ -9834,7 +9870,7 @@ key "lalani2000myostatin"
 \end_inset
 
 .
- Myostatin's relative importance for GAML remains unclear.
+ Myostatin's relative importance for GAML remains incompletely explored.
  The typical experiments, using qualitative alterations of myostatin, may
  override any endogenous mechanism, and yield non-specific anti-atrophic
  effects.
@@ -21318,144 +21354,6 @@ reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \begin_layout Standard
-The evidence or IGF-1R activation was inconclusive (Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Igf1r"
-
-\end_inset
-
-).
- In the 7-day samples, there was an unexpected increase in phosphorylated
- IGF-1R in response to Dexa.
- However, total IGF-1R was also increased by Dexa.
- The response to Testo was equally ambiguous, with total protein and phosphoryla
-ted IGF-1R simultaneously downregulated.
- It was unclear whether either steroid changed the phosphorylated-to-total
- ratio has to a significant degree.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "c"
-use_parbox 0
-use_makebox 0
-width "6in"
-special "none"
-height "1.8in"
-height_special "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename artwork/IGF1R/IGF1R-gastroc.pdf
-	width 6in
-	height 1.8in
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "c"
-use_parbox 0
-use_makebox 0
-width "6in"
-special "none"
-height "3in"
-height_special "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "3in", fig.width = 6, fig.height = 3>>=
-\end_layout
-
-\begin_layout Plain Layout
-
-plotIgfr()
-\end_layout
-
-\begin_layout Plain Layout
-
-@
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Levels of total and phosphorylated IGF-1R after 7 days of Dexa and / or
- Testo.
-\end_layout
-
-\end_inset
-
-Levels of total and phosphorylated IGF-1R after 7 days of Dexa and / or
- Testo in gastrocnemius muscles (n=4, normalized to GAPDH).
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Igf1r"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Throughout this section, the molecular correlates of GAML, as found in rats,
  were confirmed in this novel mouse model.
  However, few of the effects of Dexa were reversed by Testo.
@@ -23862,14 +23760,11 @@ reference "fig:Body-weight-at-sacrifice"
 \end_layout
 
 \begin_layout Standard
-It is unclear what causes the variation in Dexa sensitivity between muscles.
- Gastrocnemius and quadriceps appeared as more sensitive muscle to Dexa,
+Gastrocnemius and quadriceps appeared as more sensitive muscle to Dexa,
  whereas tibialis was essentially unchanged.
  The lack of response in tibialis was surprising, given how common mouse
  tibialis manipulation, such as electroporation of DNA, is described in
  literature.
- However, there is no published account of GC-induced loss of tibialis mass
- in mouse.
  All three muscles contain nearly equal masses of fast- and slow-twitch
  fibers, at least in rat
 \begin_inset CommandInset citation
@@ -24389,9 +24284,32 @@ on, which is catalyzed by mTORC2, typically when cells are stimulated with
  time points.
  However, when I analyzed 7-day samples, I found that Dexa reduced the amount
  of phosphorylated, that is, active Akt, whereas an opposite of Testo on
- Akt Ser 473 phosphorylation could not be observed.
- This finding was in contrast with observations made in rats.
+ Akt Ser 473 phosphorylation could not be observed
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Akt-phosphorylation"
+
+\end_inset
+
+.
+ The absence of Akt response is in contrast with observations made in rats.
+ The reported mouse study differs from the rat study in the Dexa dose, which
+ was much smaller.
+ The higher dose of Dexa led to significant fat accumulation in the studied
+ mice (Fig.
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Changes-in-water-lean-and-fat"
+
+\end_inset
+
+).
+ One can speculate that, in these mice, Dexa might have induced even stronger
+ hyperglycemia, hyperinsulinemia, insulin resistance, and IRS-1 sequestration
+ in the cytosol, compared to the rats from other reports.
+ These might have interfered with IGF-I signals to a degree that reduced
+ Testo action below detectability threshold.
 \end_layout
 
 \begin_layout Section
