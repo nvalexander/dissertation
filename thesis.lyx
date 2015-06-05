@@ -23518,9 +23518,9 @@ reference "fig:eif3f"
 \end_layout
 
 \begin_layout Standard
-Moreover, while the reported experiments were ongoing, Baehr and colleagues
- reported that Dexa decreased protein synthesis rate at day 3 and increased
- it at day 14 in mouse triceps
+While the reported experiments were ongoing, Baehr and colleagues reported
+ that Dexa decreased protein synthesis rate at day 3 and increased it at
+ day 14 in mouse triceps
 \begin_inset CommandInset citation
 LatexCommand citep
 key "baehr2011muscle"
@@ -23540,6 +23540,24 @@ key "baehr2011muscle"
 \end_layout
 
 \begin_layout Standard
+The inhibitory phosphorylation of 4E-BP is induced by mTORC1.
+ I also investigated changes in REDD1 / Ddit4, the negative regulator of
+ mTORC1.
+ Dexa consistently upregulated REDD1 expression in samples from days 1,
+ 3, and 7.
+ However, the 7-day time point were associated with a less ample REDD1 amplifica
+tion.
+ A time course where REDD1 is amplified only for the first week, and subsides
+ later, could explain Baehr's observations on protein synthesis time line.
+ Testo co-administration reversed REDD1 upregulation only at 7-day time
+ point, when Dexa-induced amplification was at its lowest.
+ The implication is that, at later time points, Testo co-administration
+ may become able to remove the breaks from mTORC1 and protein synthesis.
+ Further experiments are needed to analyze such putative changes in protein
+ synthesis at later time points.
+\end_layout
+
+\begin_layout Standard
 In conclusion, Testo induced muscle protection through multiple mechanisms,
  among which inhibition of the proteasome system stood out by amplitude
  and persistence.
@@ -23552,22 +23570,47 @@ IGF-1R signaling during dexamethasone and testosterone administration
 \begin_layout Standard
 In agreement with the rat studies, the present work demonstrates that Dexa-induc
 ed upregulation of atrogenes is co-ordinated with increased transcription
- of Foxo transcription factors.
+ of Foxo transcription factors (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Foxo-expression"
+
+\end_inset
+
+, top).
  Foxo3a surge was even more precocious than the increase in MuRF-1, with
  a statistically significant presence in day 1 samples.
  Moreover, the transcription factor Klf15, which is a target of Foxo transcripti
 on factor, and their synergistic partner in the upregulation of MuRF-1,
- underwent an equally rapid intensification.
+ underwent an equally rapid intensification (Fig.
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Foxo-expression"
+
+\end_inset
+
+, bottom).
 \end_layout
 
 \begin_layout Standard
 As discussed in the literature review section, at least five ways by which
  Dexa stimulates Foxo transcriptional activity have been demonstrated.
- Based on the reduced expression of atrogenes, Testo co-administration appears
- to reduce the activity of Foxo transcription factors.
+ On the other hand, in the present work, I show that atrogenes' upregulation
+ is repressed by Testo co-administration.
+ The means by which Testo achieves atrogene repression are less understood.
  Here, I demonstrate that Testo-induced downregulation of atrogenes is correlate
 d with reduced transcription of Foxo3a.
+\end_layout
+
+\begin_layout Standard
+Another mechanism for Testo-induced repression of is mediated by Akt, the
+ kinase that labels Foxo to degradation.
+ Akt activity on Foxo is mainly stimulated by phosphorylation on the former's
+ Ser 473.
+ Previous studies were ambiguous, with many reporting Dexa inducing Ser
+ 473 phosphorylation, and others reporting the opposite.
 \end_layout
 
 \begin_layout Section
