@@ -11797,9 +11797,9 @@ description "Vehicle-only"
 ).
  Testo propionate and Dexa were from Sigma-Aldrich (St.
  Louis, Missouri).
- Resreach-grade corn oil was purchased from MP Biomedicals (Solon, Ohio).
+ Research-grade corn oil was purchased from MP Biomedicals (Solon, Ohio).
  Unless specified, chemical reagents used in this work were from Fisher
- (Pittsburgh, Pennsylvania), including pharmaceutical-greade ethanol used
+ (Pittsburgh, Pennsylvania), including pharmaceutical-grade ethanol used
  here.
 \end_layout
 
@@ -12069,7 +12069,7 @@ molar}
 
 \end_inset
 
-4-(2-hydroxyethyl)-1-piperazineethanesulfonate 
+ 4-(2-hydroxyethyl)-1-piperazineethanesulfonate 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HEPES"
@@ -12163,7 +12163,7 @@ minute}
 \end_inset
 
 .
- The extract was clarified by centrifugation at at 10,000 g, 
+ The extract was clarified by centrifugation at 10,000 g, 
 \begin_inset ERT
 status open
 
@@ -12332,7 +12332,7 @@ background
 \begin_inset Quotes erd
 \end_inset
 
-), containing lysis bufer instead of muscle extract.
+), containing lysis buffer instead of muscle extract.
  The plate was sealed and incubated at 
 \begin_inset ERT
 status open
@@ -12468,7 +12468,7 @@ gram}
  tissue of proprietary lysis buffer, clarified, stored, and assayed for
  total protein, in the same manner as for the proteasome activity assay.
  Extracts were diluted to the lowest total protein concentration, using
- the same lysis bufer that was used to extract them.
+ the same lysis buffer that was used to extract them.
  Per kit manufacturer instructions, 
 \begin_inset ERT
 status open
@@ -12564,7 +12564,7 @@ background
 \begin_inset Quotes erd
 \end_inset
 
-), containing lysis bufer instead of muscle extract.
+), containing lysis buffer instead of muscle extract.
  The plate was sealed and incubated at 
 \begin_inset ERT
 status open
@@ -12752,7 +12752,22 @@ molar}
 
 \end_inset
 
- EDTA, and 1% Triton X-100, as described for proteasome activity assay.
+ EDTA, and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ Triton X-100, as described for proteasome activity assay.
  Extracts were clarified, and stored, as described for the proteasome activity
  assay.
  Total protein was measured by Bradford assay.
@@ -12791,8 +12806,23 @@ liter}
 \end_inset
 
  Coomasie Plus (Life Technologies, Carlsbad, California) in duplicate wells
- of a 96-well plate, incubated 10 minutes at room temperature, and measured
- spectrophotometrically for absorption at 
+ of a 96-well plate, incubated 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at room temperature, and measured spectrophotometrically for absorption
+ at 
 \begin_inset ERT
 status open
 
@@ -12811,7 +12841,7 @@ meter}
 
 .
  Extracts were diluted to the lowest total protein concentration, using
- the same lysis bufer that was used to extract them.
+ the same lysis buffer that was used to extract them.
  Per kit manufacturer instructions, 
 \begin_inset ERT
 status open
@@ -12908,7 +12938,7 @@ background
 \begin_inset Quotes erd
 \end_inset
 
-), containing lysis bufer instead of muscle extract.
+), containing lysis buffer instead of muscle extract.
  After 
 \begin_inset ERT
 status open
@@ -13035,7 +13065,37 @@ molar}
 
 \end_inset
 
- Tris pH 7.5, 100‰ v/v glycerol, 10‰ v/v NP-40, 
+ Tris pH 7.5, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ v/v glycerol, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ v/v NP-40, 
 \begin_inset ERT
 status open
 
@@ -13459,7 +13519,28 @@ description "polyacrylamide gel electrophoresis"
 
 ).
  The gels were cast in the morning of the electrophoresis.
- The stacking section was a 5% acrylamide gel, with 
+ The stacking section was a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+gram
+\backslash
+per
+\backslash
+deci
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ acrylamide gel, with 
 \begin_inset ERT
 status open
 
@@ -13477,8 +13558,49 @@ molar}
 \end_inset
 
  Tris pH 6.8.
- The separating section has a variable concentration of acrylamide (12%
- for low molecular weight unknowns, 8% for others), and 
+ The separating section has a variable concentration of acrylamide (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{12}{
+\backslash
+gram
+\backslash
+per
+\backslash
+deci
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ for low molecular weight unknowns, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{8}{
+\backslash
+gram
+\backslash
+per
+\backslash
+deci
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ for others), and 
 \begin_inset ERT
 status open
 
@@ -13496,11 +13618,134 @@ molar}
 \end_inset
 
  Tris pH 8.8.
- Both sections included 1 g/L SDS, and polymerized by the addition of 1
- g/L ammonium persulfate and 0.4‰ v/v tetramethylethylenediamine.
+ Both sections included 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ SDS, and polymerized by the addition of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ ammonium persulfate and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0.4}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ v/v tetramethylethylenediamine.
  In order to settle and migrate, lysates were mixed 1:1 with PAGE sample
- buffer, which contained 30 mM Tris pH 6.8, 10 g/L SDS, 100‰ v/v glycerol,
- 0.05 g/L bromophenol blue, and 
+ buffer, which contained 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{30}{
+\backslash
+milli
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+ Tris pH 6.8, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ SDS, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ v/v glycerol, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ bromophenol blue, and 
 \begin_inset ERT
 status open
 
@@ -13518,7 +13763,22 @@ molar}
 \end_inset
 
  DTT.
- The mixture of sample and sample bufer was incubated for 5 minutes at 
+ The mixture of sample and sample buffer was incubated for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
 \begin_inset ERT
 status open
 
@@ -13536,14 +13796,70 @@ celsius}
 , then loaded on the gel, with equal volumes and masses of total protein
  in each well.
  Electrophoresis was performed in a Miniprotean Tetra cell (Bio-rad, Hercules,
- California), at constant 80 volts, using an electrode buffer with 14.4 g/L
- glycine, 3 g/L Tris base, 10 g/L SDS.
+ California), at constant 80 volts, using an electrode buffer with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{14.4}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ glycine, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{3}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ Tris base, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ SDS.
 \end_layout
 
 \begin_layout Standard
 From the gel, resolved proteins were transfered to nitrocellulose membranes
- using a Bio-rad Mini-trans blot casette, at 8 V/cm constant overnight at
- 
+ using a Bio-rad Mini-trans blot cassette, at 8 V/cm constant overnight
+ at 
 \begin_inset ERT
 status open
 
@@ -13597,8 +13913,64 @@ molar}
 \end_layout
 
 \begin_layout Standard
-Quality of transfer was assessed by temporary Ponceau staining (20‰ Ponceau
- S in 300‰ trichloroacetic acid and 300‰ sulfosalicylic acid).
+Quality of transfer was assessed by temporary Ponceau staining (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ Ponceau S in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{300}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ trichloroacetic acid and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{300}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ sulfosalicylic acid).
  At this time, using indications from the molecular weight standards, the
  membrane was sectioned, thus allowing probing with multiple antibodies.
 \end_layout
@@ -20171,6 +20543,144 @@ reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \end_layout
 
 \begin_layout Standard
+The evidence or IGF-1R activation was inconclusive (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Igf1r"
+
+\end_inset
+
+).
+ In the 7-day samples, there was an unexpected increase in phosphorylated
+ IGF-1R in response to Dexa.
+ However, total IGF-1R was also increased by Dexa.
+ The response to Testo was equally ambiguous, with total protein and phosphoryla
+ted IGF-1R simultaneously downregulated.
+ It was unclear whether either steroid changed the phosphorylated-to-total
+ ratio has to a significant degree.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "1.8in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/IGF1R/IGF1R-gastroc.pdf
+	width 6in
+	height 1.8in
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "6in"
+special "none"
+height "3in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+ = "3in", fig.width = 6, fig.height = 3>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plotIgfr()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Levels of total and phosphorylated IGF-1R after 7 days of Dexa and / or
+ Testo.
+\end_layout
+
+\end_inset
+
+Levels of total and phosphorylated IGF-1R after 7 days of Dexa and / or
+ Testo in gastrocnemius muscles (n=4, normalized to GAPDH).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Igf1r"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Throughout this section, the molecular correlates of GAML, as found in rats,
  were confirmed in this novel mouse model.
  However, few of the effects of Dexa were reversed by Testo.
@@ -22750,8 +23260,8 @@ one-induced proteasome upregulation
 
 \begin_layout Standard
 The mouse model of GAML largely replicated what was known from rat experiments,
- where a strong upregulation of the proteasome system is seconded by significant
- alterations in protein synthesis.
+ where a strong upregulation of the proteasome system is seconded by alterations
+ in protein synthesis.
 \end_layout
 
 \begin_layout Standard
@@ -22952,8 +23462,8 @@ d changes in calpain enzymatic activity, calpain, or calpastatin protein
 Studies on protein synthesis rate have been strained by the limited technical
  abilities of measuring protein synthesis in mice.
  This study did not measure protein synthesis directly in vivo.
- The more direct measurements of protein synthesis rate in vitro failed
- to identify any significant change in response to Dexa.
+ The measurements of protein synthesis rate in vitro failed to identify
+ any significant change in response to Dexa.
  C2C12 cells are surprisingly dependent on protein synthesis, with either
  translational inhibitor cycloheximide and puromycin leading to cell death
  and detachment in hours (data not shown).
@@ -22973,30 +23483,34 @@ key "dardevet1998glucocorticoid"
 \end_inset
 
 .
- Moreover, while the reported experiments were ongoing, Baehr and colleagues
- reported that Dexa decreased protein synthesis rate at day 3 and increased
- it at day 14, both times in a non-statistically significant manner
-\begin_inset CommandInset citation
-LatexCommand citep
-key "baehr2011muscle"
-
-\end_inset
-
-.
- Most likely, at the chosen 7 day time point investigated in this study,
- a measurement of protein synthesis would have been indecisive.
 \end_layout
 
 \begin_layout Standard
-In order to detect subtle changes in protein synthesis, a thorough investigation
- of its regulators was carried in this work.
+In order to detect subtle changes in protein synthesis, I investigated a
+ series of its regulators.
  I failed to identify changes in levels of phosphorylated eIF2α and eIF3f
- in response to either Dexa or Testo.
+ in response to either Dexa or Testo (Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Phosphorylated-eif2"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:eif3f"
+
+\end_inset
+
+).
  I could not detect ATF4 protein in muscle lysates (data not shown).
  In the 7-day samples, both total and phosphorylated 4E-BP were upregulated
  by Dexa.
- With these data, it was unclear whether active, unphosphorylated 4E-BP
- was increased or decreased by chronic Dexa.
+ With these data, it was unclear whether the active negative regulator of
+ protein synthesis, unphosphorylated 4E-BP was increased or decreased by
+ chronic Dexa.
  The changes in total and phosphorylated 4E-BP induced by Testo are small,
  and cannot lead to increased inactivation of 4E-BP.
  Therefore, there was no evidence that, at 7-day time point, the protective
@@ -23004,43 +23518,56 @@ In order to detect subtle changes in protein synthesis, a thorough investigation
 \end_layout
 
 \begin_layout Standard
-Overall, the most reliable mechanisms through which Testo induced muscle
- protection is the inhibition of the proteasome system.
-\end_layout
-
-\begin_layout Section
-Testosterone's myoprotective action is not mediated by IGF-1R signaling
-\end_layout
-
-\begin_layout Standard
-The repression of proteasome in vivo was correlated with an increased expression
- in IGF-I expression.
- However, I could not detect a change in relative phosphorylation of IGF-1R
- (Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:IGF1R-phosphorylation"
-
-\end_inset
-
-).
- Moreover, a series of downstream effects of IGF-1R activation could not
- be detected in the 7-day samples.
- Testo failed to improve Akt phosphorylation at Ser 473, a post-translational
- change frequently associated with IGF-I stimulation.
- In contrasts to published accounts of the action of IGF-I on mouse muscle,
- Testo co-administration administration did not elicit an an upregulation
- of REDD1
+Moreover, while the reported experiments were ongoing, Baehr and colleagues
+ reported that Dexa decreased protein synthesis rate at day 3 and increased
+ it at day 14 in mouse triceps
 \begin_inset CommandInset citation
 LatexCommand citep
-key "frost2009regulation,pansters2013synergistic"
+key "baehr2011muscle"
 
 \end_inset
 
 .
- The in vitro study demonstrated that the myoprotective action of Testo
- on C2C12 was independent of IGF-1R.
+ Baehr et al.
+ findings suggest that acute Dexa represses protein synthesis, whereas chronic
+ Dexa is associated with a compensatory restoration of translational capacities.
+ At the 7-day time point analyzed in this study, a measurement of protein
+ synthesis by Baehr's method would have been indecisive, as the muscle would
+ have been midway in the switch from low translation to high translation
+ rate.
+ It is unclear what co-administration of Testo would have induced in adapting
+ translation machinery.
+\end_layout
+
+\begin_layout Standard
+In conclusion, Testo induced muscle protection through multiple mechanisms,
+ among which inhibition of the proteasome system stood out by amplitude
+ and persistence.
+\end_layout
+
+\begin_layout Section
+IGF-1R signaling during dexamethasone and testosterone administration
+\end_layout
+
+\begin_layout Standard
+In agreement with the rat studies, the present work demonstrates that Dexa-induc
+ed upregulation of atrogenes is co-ordinated with increased transcription
+ of Foxo transcription factors.
+ Foxo3a surge was even more precocious than the increase in MuRF-1, with
+ a statistically significant presence in day 1 samples.
+ Moreover, the transcription factor Klf15, which is a target of Foxo transcripti
+on factor, and their synergistic partner in the upregulation of MuRF-1,
+ underwent an equally rapid intensification.
+ 
+\end_layout
+
+\begin_layout Standard
+As discussed in the literature review section, at least five ways by which
+ Dexa stimulates Foxo transcriptional activity have been demonstrated.
+ Based on the reduced expression of atrogenes, Testo co-administration appears
+ to reduce the activity of Foxo transcription factors.
+ Here, I demonstrate that Testo-induced downregulation of atrogenes is correlate
+d with reduced transcription of Foxo3a.
 \end_layout
 
 \begin_layout Section
