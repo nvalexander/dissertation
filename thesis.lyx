@@ -24382,10 +24382,16 @@ d with reduced transcription of Foxo3a.
 \begin_layout Standard
 Another mechanism for Testo-induced repression of is mediated by Akt, the
  kinase that labels Foxo to degradation.
- Akt activity on Foxo is mainly stimulated by phosphorylation on the former's
- Ser 473.
- Previous studies were ambiguous, with many reporting Dexa inducing Ser
- 473 phosphorylation, and others reporting the opposite.
+ Foxo phosphorylation by Akt is stimulated by the latter's Ser 473 phosphorylati
+on, which is catalyzed by mTORC2, typically when cells are stimulated with
+ growth factors, insulin, or nutrients.
+ In this study, I observed that Testo stimulated IGF-I expression at all
+ time points.
+ However, when I analyzed 7-day samples, I found that Dexa reduced the amount
+ of phosphorylated, that is, active Akt, whereas an opposite of Testo on
+ Akt Ser 473 phosphorylation could not be observed.
+ This finding was in contrast with observations made in rats.
+ 
 \end_layout
 
 \begin_layout Section
