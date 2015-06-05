@@ -100,7 +100,7 @@ ToolbarSet
 
 	Toolbar "view/update" "View/Update"
 		Item "View" "buffer-view"
-		Item "Export" "buffer-export"
+		Item "Export" "buffer-export-as"
 		Item "Update" "buffer-update"
 		Item "View master document" "master-buffer-view"
 		Item "Update master document" "master-buffer-update"
