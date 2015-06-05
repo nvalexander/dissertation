@@ -2029,9 +2029,10 @@ key "ravis2007topical"
 \end_inset
 
 .
- Where regulated, over-the-counter GC creams rarely cause CS on their own,
- but may lower the threshold for CS in patients who are also prescribed
- oral GC.
+ In 1987, hydrocortisone creams became over-the-counter in UK.
+ Regulated, over-the-counter GC creams rarely cause CS on their own, but
+ have been frequently suspected to lower the threshold for CS in patients
+ who are also prescribed oral GC.
  Unregulated, mislabeled, overdosing GC creams sold as skin-bleaching products
  pose a great CS risk to patients from ethnic groups with darker skin.
  Half of the respondents in a Nigeria poll admitted using GC-based skin
@@ -2117,7 +2118,7 @@ key "prague2013cushings"
 Signs of iatrogenic CS are as varied as those of Cushing's disease.
  In a cohort of patients receiving for three months more than 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2156,7 +2157,7 @@ key "fardet2007corticosteroid-induced"
  in order, body shape changes, neuropsychiatric disorders, muscle cramps,
  and hand tremor.
  Mastaglia estimated that, in 1982, the most common cause of iatrogenic
- muscle weakness was caused by GC
+ muscle weakness was GC therapy
 \begin_inset CommandInset citation
 LatexCommand cite
 key "mastaglia1982adverse"
@@ -2183,7 +2184,7 @@ key "douglass1992myopathy"
  GCs do differ quantitatively in their ability to cause myopathy.
  Myopathy is invariably induced in two weeks by either 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2217,7 +2218,7 @@ key "batchelor1997steroid"
 
 , or by 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2250,9 +2251,10 @@ key "bowyer1985steroid"
 \end_inset
 
 .
- Based on other metabolic effects, it is likely that the catabolic potency
- ratio is even more tilted towards Dexa than the referenced studies indicate.
- More detailed human pharmacodynamics studies are needed.
+ Based on animal studies, it is likely that the catabolic potency ratio
+ is even more tilted towards Dexa than the referenced studies indicate.
+ Modern human pharmacodynamics studies are needed, in order to establish
+ actual safety thresholds.
 \end_layout
 
 \begin_layout Standard
@@ -2266,8 +2268,8 @@ key "muller1959myopathy"
 
 .
  In their mixed, primary and secondary, endogenous hypercortisolic cohort,
- they found that complaints of muscle weakness were primarily focused on
- the thigh.
+ they found that complaints of muscle weakness were primarily localized
+ on the thigh.
  Objective loss of muscle force was correlated with histopathological changes
  indicative of a muscle fiber defect, such as degenerated fibers, at times
  hyalinized or with loss of striation, muscle replacement with fat and connectiv
@@ -2290,10 +2292,19 @@ key "rodriguez-carreno2012motor"
 \begin_inset Quotes eld
 \end_inset
 
-steroid myopathy.
+steroid myopathy
 \begin_inset Quotes erd
 \end_inset
 
+ (in opposition to a hypothetical 
+\begin_inset Quotes eld
+\end_inset
+
+neuropathy
+\begin_inset Quotes erd
+\end_inset
+
+).
  Similar electromyography changes are induced by long-term GC therapy
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2330,8 +2341,9 @@ key "dagostino1966cortisone"
 .
  Owing to the fact that steroid myopathy is not a standalone disease or
  syndrome, terminology has never been standardized.
- In the present work, where animal models are examined, the condition of
- interest will be termed GC-associated muscle loss (
+ In the present work, the human condition will be designated glucocorticoid
+ myopathy, while its animal models will be termed GC-associated muscle loss
+ (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GAML"
@@ -2347,7 +2359,7 @@ In exogenous CS, GC excess can be better quantified.
  In a population with neurological maladies receiving long-term Dexa, the
  threshold for manifest steroid myopathy appears to be 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2432,7 +2444,7 @@ key "foye2014corticosteroid-induced"
 In a comparative study of patients receiving GC therapy for asthma, half
  of the patients receiving more than 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2458,7 +2470,7 @@ day}
 \end_inset
 
  prednisone exhibited a reduction in hip flexor strength of 2 SD or more,
- compared with health age- and sex-matched controls
+ compared with healthy age- and sex-matched controls
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bowyer1985steroid"
@@ -2478,7 +2490,7 @@ key "batchelor1997steroid"
 .
  In a small cohort, 6 months of 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2538,8 +2550,8 @@ key "pansters2013synergistic"
 \begin_layout Standard
 Another investigative direction in the study of GC-induced muscle weakness
  focused on muscle mass and volume.
- Although correlated, muscle force and muscle mass are not completely reflecting
- each other.
+ Although correlated, muscle force, mass, and volume are not completely
+ reflecting each other.
  The most accessible proxy measurements of muscle mass, such as mid upper-arm
  or thigh circumference, are not sensitive enough in monitoring GC-induced
  muscle loss, even after subtracting skin fold, because GC stimulate intramuscul
@@ -2590,19 +2602,19 @@ key "miller2011quantitative"
 \end_layout
 
 \begin_layout Standard
-In an early study of chronic hypercortisolism, it was found that all types
- of fibers are affected by GC
+Gains in the ratio fast-to-slow twitch fibers are associated with insulin
+ resistance
 \begin_inset CommandInset citation
 LatexCommand citep
-key "khaleeli1983corticosteroid"
+key "simoneau1995skeletal"
 
 \end_inset
 
 .
- In more recent investigations, a type-specific effect was described.
- Women with CS have an increased proportion of type IIx (fast twitch, glycolytic
-) and a lower proportion of type I (slow twitch, oxidative) fibers in their
- vastus lateralis muscles
+ There was a suspicion that GC-induced atrophy is fiber-specific.
+ In one study, women with CS have an increased proportion of type IIx (fast
+ twitch, glycolytic) and a lower proportion of type I (slow twitch, oxidative)
+ fibers in their vastus lateralis muscles
 \begin_inset CommandInset citation
 LatexCommand citep
 key "rebuffe-scrive1988muscle"
@@ -2610,8 +2622,7 @@ key "rebuffe-scrive1988muscle"
 \end_inset
 
 .
- Similar histological findings were made in renal transplant patients receiving
- 
+ Renal transplant patients receiving 
 \begin_inset ERT
 status open
 
@@ -2638,15 +2649,7 @@ day}
 
 \end_inset
 
- prednisone over three months
-\begin_inset CommandInset citation
-LatexCommand citep
-key "topp2003alterations"
-
-\end_inset
-
-.
- In the latter, GC caused an increase in the cross-sectional area (
+ prednisone over three months had lower cross-sectional area (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CSA"
@@ -2654,21 +2657,23 @@ description "cross-sectional area"
 
 \end_inset
 
-) of the type I and IIa (slow twitch, oxidative / glycolytic) fibers.
- Gains in the ratio fast-to-slow twitch fibers are associated with insulin
- resistance
+) in type I and IIa (slow twitch, oxidative / glycolytic) fibers 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "simoneau1995skeletal"
+key "topp2003alterations"
 
 \end_inset
 
 .
- Diameter increases in spite of loss of function and protein content have
- been explained by a disorganized intracellular structure.
- A more practical consequence of these findings is the dereliction of CSA
- measurements in GAML.
- 
+ Others found that all types of fibers are uniformly affected by GC
+\begin_inset CommandInset citation
+LatexCommand citep
+key "khaleeli1983corticosteroid"
+
+\end_inset
+
+.
+ This hypothesis was further followed in animal studies.
 \end_layout
 
 \begin_layout Standard
@@ -2698,7 +2703,7 @@ myoblasts
 
  do not proliferate in the absence of at least 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2724,7 +2729,7 @@ key "ham1988improved"
  For comparison, maximum normal concentration of endogenous cortisol in
  humans is 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2747,12 +2752,12 @@ key "griffing2014serum"
 \end_inset
 
 , that is, tens of times less potent.
- Therefore, it is impossible to conceive an experiment where these human
- myoblasts are subjected to meaningful manipulations of GC concentration.
- Moreover, it appears that GCs are vital for human muscle development and
- maintenance.
- This implies that cell lines that do not require GC, such as those surviving
- in serum-free media, may be less accurate models of muscle.
+ Therefore, it is impossible to conceive an experiment where human myoblasts
+ in culture are subjected to meaningful manipulations of GC concentration.
+ The fact that GCs are vital for human muscle development and maintenance
+ implies that cell lines that do not require GC may be less accurate models
+ of human muscle.
+ This includes most cell culture models.
 \end_layout
 
 \begin_layout Standard
@@ -2777,7 +2782,7 @@ key "sprague1950physiological"
 .
  As little as 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2819,7 +2824,7 @@ key "brillon1995effect"
 .
  More modern mass spectrometric methods revealed that a single dose of 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
