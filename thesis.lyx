@@ -1768,8 +1768,8 @@ key "crump2014randomized,pui2006treatment,stewart2015carfilzomib"
 
 .
  On the balance of benefits and drawbacks, GCs are recommended for many
- life-threatening or impairing immune reactions, such as in polymyositis
- (reviewed in 
+ life-threatening or impairing immune reactions, such as polymyositis (reviewed
+ in 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "marie2011therapy"
@@ -1851,7 +1851,7 @@ description "Food and Drug Administration"
 \end_inset
 
 )-approved indications for cortisone, Dexa, and prednisone is often narrowed
- by additional precautions and by newly discovered, more specific drugs
+ by additional precautions, and by newly discovered, more specific drugs
 \begin_inset CommandInset citation
 LatexCommand cite
 key "merckco.inc.2004dexamethasone,pharmaciaandupjohnandcompany2007prednisone,west-wardpharmaceuticalcorp.2008hydrocortisone"
@@ -1860,7 +1860,7 @@ key "merckco.inc.2004dexamethasone,pharmaciaandupjohnandcompany2007prednisone,we
 
 .
  Nevertheless, off-label use of GCs is very frequent.
- Most commonly, GCs are perceived by physicians as a fallback therapeutic
+ For example, GCs are perceived by physicians as a fallback therapeutic
  alternative for cerebral hypertensive conditions, despite scarce evidence
  for efficacy in any specific conditions.
  Small trials suggest GCs reduce vasogenic cerebral edema
@@ -1878,8 +1878,8 @@ key "levine1989dexamethasone"
 \end_inset
 
 .
- Given that systematic reviews showed that, in fact, GCs worsen outcomes
- for acute brain trauma victims
+ These studies have been carried although earlier systematic reviews showed
+ that, in fact, GCs worsen outcomes for acute brain trauma victims
 \begin_inset CommandInset citation
 LatexCommand cite
 key "alderson2005corticosteroids"
@@ -1887,7 +1887,11 @@ key "alderson2005corticosteroids"
 \end_inset
 
 .
- A similar, paradoxical situation is seen in ongoing clinical research.
+ This example illustrates how strongly rooted are off-label uses of GCs.
+\end_layout
+
+\begin_layout Standard
+A similar, paradoxical situation is seen in ongoing clinical research.
  As of 2015, the patent-free status of the GCs discourages trials for new
  indications, while their de facto standard-of-care status makes them a
  common comparator in clinical trials.
@@ -1895,14 +1899,36 @@ key "alderson2005corticosteroids"
  Dexa, mainly in the standard-of-care arm, thus providing a plethora of
  data that have been, and may still be, misconstrued as support for the
  use of GCs.
- Every day practice may drift further apart for the officially sanctioned
+ Everyday practice may drift further apart for the officially sanctioned
  label, thus providing new opportunities for unjustifiable overdose.
 \end_layout
 
 \begin_layout Standard
-Due their widespread use, GCs are likely to cause covert iatrogenic CS in
- a large population, impairing muscle and quality of life to a certain and
- understudied degree.
+This wide array of uses make GCs some of the most prescribed and used drugs.
+ Every year, about 1% of the Americans and British receive some form of
+ GC
+\begin_inset CommandInset citation
+LatexCommand cite
+key "skversky2011association,vanstaa2000use"
+
+\end_inset
+
+.
+ GCs are likely even more often prescribed in the developing world, due
+ to affordability and lack of alternatives, poor access to health care notwithst
+anding.
+ Dexa and cortisol are the only drugs listed five times in the World Health
+ Organization's List of Essential Medicines
+\begin_inset CommandInset citation
+LatexCommand cite
+key "worldhealthorganization2013who"
+
+\end_inset
+
+.
+ Due to their widespread use, GCs are likely to cause covert iatrogenic
+ CS in a large population, impairing muscle mass and quality of life to
+ a certain and understudied degree.
 \end_layout
 
 \begin_layout Section
@@ -1918,8 +1944,7 @@ key "lindholm2001incidence"
 
 \end_inset
 
-), despite a recent boost from incidental findings during imaging tests
- for other needs.
+), despite a recent boost from incidental imaging diagnoses.
  The symptomatology is non-specific, meaning that, even today in the developed
  world, an average of 6 years pass from signs onset until diagnosis is made
  and treatment is initiated
@@ -1930,8 +1955,8 @@ key "psaras2011demographic"
 \end_inset
 
 .
- It is a life-threatening disease, with untreated patients having a median
- survival rate of 5 years after diagnosis
+ Endogenous hypercortisolism is a life-threatening disease, with untreated
+ patients having a median survival rate of 5 years after diagnosis
 \begin_inset CommandInset citation
 LatexCommand cite
 key "plotz1952natural"
@@ -1974,7 +1999,7 @@ key "muller2006diagnosis"
 \end_inset
 
 .
- Two-fifths of those whose endogenous hypercortisolism is successfully corrected
+ Two fifths of those whose endogenous hypercortisolism is successfully corrected
  by surgery still complain of fatigue
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1989,35 +2014,11 @@ key "lindsay2006long-term"
 \begin_layout Standard
 On the other hand, therapy-induced (iatrogenic) CS is common.
  The glut of GC indications and off-label uses makes them some of the most
- used drugs in the developed countries.
- Every year, about 1% of the Americans and British receive some form of
- GC
-\begin_inset CommandInset citation
-LatexCommand cite
-key "skversky2011association,vanstaa2000use"
-
-\end_inset
-
-.
- GCs are likely even more often prescribed in the developing world, due
- to affordability and lack of alternatives, poor access to health care notwithst
-anding.
- Dexa and cortisol are the only drugs listed five times in the World Health
- Organization's List of Essential Medicines
-\begin_inset CommandInset citation
-LatexCommand cite
-key "worldhealthorganization2013who"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-In most cases, the cause of iatrogenic CS can be identified by careful history
- taking and medication reviews.
+ used drugs in the developed countries, as described earlier.
+ In most cases, the cause of iatrogenic CS can be identified by careful
+ history taking and medication reviews.
  However, an increasing number of cases are not as easily diagnosed, because
- the excess GC is not from prescribed medicine.
+ the excess GC is not from prescription medicine.
  In United States, FDA approved in 1979 over-the-counter sale of 0.5% hydrocortis
 one cream for itching and minor skin inflammation.
  In 1990, 1% hydrocortisone creams were also permitted
