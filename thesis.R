@@ -1348,7 +1348,7 @@ plotredd <- function(){
                             c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]),
       "gastrocnemius Ddit4 mRNA", 
       c(-.9,7.5),
-      threeemptystrings) + 
+      threeidenticalgroups) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC) +
       annotationastitle("seven days", 2, 7.5),
