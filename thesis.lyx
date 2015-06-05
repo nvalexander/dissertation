@@ -11590,7 +11590,7 @@ The few studies on GAML reversal by AAS revealed that Testo action alters
  Based on the microarray studies which showed that Testo reverses changes
  in IGF-I and IGFBP induced by Dexa, and on the castration reversal studies
  indicating that AAS replacement causes IGF-I upregulation, there was a
- sizeable likelihood that the myoprotective action of Testo involved the
+ moderate likelihood that the myoprotective action of Testo involved the
  modulation of IGF-I signaling.
 \end_layout
 
@@ -12805,7 +12805,7 @@ liter}
 
 \end_inset
 
- Coomasie Plus (Life Technologies, Carlsbad, California) in duplicate wells
+ Coomassie Plus (Life Technologies, Carlsbad, California) in duplicate wells
  of a 96-well plate, incubated 
 \begin_inset ERT
 status open
@@ -13090,7 +13090,7 @@ status open
 \backslash
 SI{10}{
 \backslash
-promille}
+promille} 
 \end_layout
 
 \end_inset
@@ -13796,7 +13796,22 @@ celsius}
 , then loaded on the gel, with equal volumes and masses of total protein
  in each well.
  Electrophoresis was performed in a Miniprotean Tetra cell (Bio-rad, Hercules,
- California), at constant 80 volts, using an electrode buffer with 
+ California), at constant 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{80}{
+\backslash
+volt}
+\end_layout
+
+\end_inset
+
+, using an electrode buffer with 
 \begin_inset ERT
 status open
 
@@ -13858,8 +13873,28 @@ liter}
 
 \begin_layout Standard
 From the gel, resolved proteins were transfered to nitrocellulose membranes
- using a Bio-rad Mini-trans blot cassette, at 8 V/cm constant overnight
- at 
+ using a Bio-rad Mini-trans blot cassette, at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{8}{
+\backslash
+volt
+\backslash
+per
+\backslash
+centi
+\backslash
+meter}
+\end_layout
+
+\end_inset
+
+ constant overnight at 
 \begin_inset ERT
 status open
 
@@ -13875,7 +13910,22 @@ celsius}
 \end_inset
 
 .
- The Towbin transfer buffer had 200‰ v:v methanol, 
+ The Towbin transfer buffer had 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{200}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ v/v methanol, 
 \begin_inset ERT
 status open
 
@@ -13976,8 +14026,22 @@ liter}
 \end_layout
 
 \begin_layout Standard
-Ponceau was removed by washing twice, with shaking 5 minutes at room temperature
-, in TBST (
+Ponceau was removed by washing twice, with shaking 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at room temperature, in TBST (
 \begin_inset ERT
 status open
 
@@ -14011,9 +14075,45 @@ molar}
 
 \end_inset
 
- Tris pH 7.5, 1‰ v/v Tween-20).
+ Tris pH 7.5, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ v/v Tween-20).
  The membranes were blocked by shaking for one hour in blocking solution
- (TBST with 5% fat-free instant milk) at room temperature.
+ (TBST with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+gram
+\backslash
+per
+\backslash
+deci
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ fat-free instant milk) at room temperature.
  Next, membranes were probed by shaking overnight at 
 \begin_inset ERT
 status open
@@ -14029,12 +14129,66 @@ celsius}
 
 \end_inset
 
- in TBST with 50 g/L BSA and primary antibodies of choice (listed later).
+ in TBST with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ BSA and primary antibodies of choice (listed later).
  Next day, the membranes were washed in TBST, twice briefly and three times
- with 5 minutes shaking at room temperature.
+ with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ shaking at room temperature.
  The washed membranes were then probed by shaking at room temperature for
- an hour in a solution with TBST, 5% fat-free instant milk, and the secondary
- antibody of choice (listed later).
+ an hour in a solution with TBST, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+gram
+\backslash
+per
+\backslash
+deci
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ fat-free instant milk, and the secondary antibody of choice (listed later).
  The membranes were washed as before.
 \end_layout
 
@@ -14043,12 +14197,56 @@ Next, the membranes were probed with proprietary Amersham ECL Western Blotting
  Detection Reagent (GE Healthcare, Wilmington, Massachusetts).
  Briefly, the two reagent components were warmed to room temperature, mixed
  1:1, and layered on the nitrocellulose membrane.
- The membrane was incubated for 1 minute, then excess liquid was drained.
+ The membrane was incubated for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+, then excess liquid was drained.
  The membrane was placed in the film cassette.
  In a dark room, under red light, a X-Omat photographic film (Kodak, Rochester,
  New York) was placed on the nitrocellulose membrane.
- Exposure was between 10 seconds and 5 minutes, depending on the strength
- of the signal.
+ Exposure was between 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+second}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+, depending on the strength of the signal.
  After developing the first image, longer or shorter exposures were used,
  as needed.
 \end_layout
@@ -14061,7 +14259,21 @@ Photographic films were digitized using a FluorChem-SP Imaging System (Alpha
 \end_layout
 
 \begin_layout Standard
-At times, antibodies were stripped by incubation with shaking for 45 minutes
+At times, antibodies were stripped by incubation with shaking for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{45}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
  at 
 \begin_inset ERT
 status open
@@ -14077,7 +14289,26 @@ celsius}
 
 \end_inset
 
- in a tight container with pre-warmed stripping buffer (20 g/L SDS, 
+ in a tight container with pre-warmed stripping buffer (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+gram
+\backslash
+per
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ SDS, 
 \begin_inset ERT
 status open
 
@@ -14150,9 +14381,40 @@ gram}
 
 \end_inset
 
- powdered muscle was homogenized briefly in 1 mL Trizol (Life Technologies).
- The suspension was incubated 5 minutes at room temperature, then supplemented
- with 
+ powdered muscle was homogenized briefly in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+milli
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ Trizol (Life Technologies).
+ The suspension was incubated 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at room temperature, then supplemented with 
 \begin_inset ERT
 status open
 
@@ -14170,10 +14432,53 @@ liter}
 \end_inset
 
  chloroform.
- The tube was shaken vigorously for 15 seconds, then incubated 3 minutes
+ The tube was shaken vigorously for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+second}
+\end_layout
+
+\end_inset
+
+, then incubated 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{3}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
  at room temperature.
- Phase separation was induced by centrifugation, 15 minutes, 12,000 g, at
- 
+ Phase separation was induced by centrifugation, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+, 12,000 g, at 
 \begin_inset ERT
 status open
 
@@ -14207,10 +14512,53 @@ liter}
 \end_inset
 
 ) was collected, then passed through a gDNA exclusion column, by centrifugation
- for 30 seconds, 8,000 g.
- The recovered solution was supplemented 1:1 with 700‰ v/v ethanol, then
- passed through an RNeasy column, by centrifugation, 10 seconds at 8,000
- g.
+ for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{30}{
+\backslash
+second}
+\end_layout
+
+\end_inset
+
+, 8,000 g.
+ The recovered solution was supplemented 1:1 with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{700}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ v/v ethanol, then passed through an RNeasy column, by centrifugation, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+second}
+\end_layout
+
+\end_inset
+
+ at 8,000 g.
  The column was washed with 
 \begin_inset ERT
 status open
@@ -14245,8 +14593,38 @@ liter}
 
 \end_inset
 
- of buffer RPE, each time by centrifugation, 15 seconds at 8,000 g.
- The column was dried by centrifugation 2 minutes at 8,000 g.
+ of buffer RPE, each time by centrifugation, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+second}
+\end_layout
+
+\end_inset
+
+ at 8,000 g.
+ The column was dried by centrifugation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 8,000 g.
  RNA was eluted with 
 \begin_inset ERT
 status open
@@ -14264,19 +14642,116 @@ liter}
 
 \end_inset
 
- water, by centrifugation, 1 minute at 8,000 g.
+ water, by centrifugation, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 8,000 g.
 \end_layout
 
 \begin_layout Standard
 Total RNA concentration was measured with an ND-1000 spectrophotometer (Nanodrop
-, Wilmington, Delaware) at 260 nm, using its Windows proprietary application.
+, Wilmington, Delaware) at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{260}{
+\backslash
+nano
+\backslash
+meter}
+\end_layout
+
+\end_inset
+
+, using its Windows proprietary application.
 \end_layout
 
 \begin_layout Standard
-To obtain cDNA using Accuscript 1st Strand cDNA synthesis kit, 320 ng total
- RNA was combined with 300 ng random primers, 20 nmol of each triphosphate
- nucleotide, and the proprietary AccuScript RT Buffer 10×.
- After incubation 5 minutes at 
+To obtain cDNA using Accuscript 1st Strand cDNA synthesis kit, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{320}{
+\backslash
+nano
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ total RNA was combined with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{300}{
+\backslash
+nano
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+ random primers, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+nano
+\backslash
+mole}
+\end_layout
+
+\end_inset
+
+ of each triphosphate nucleotide, and the proprietary AccuScript RT Buffer
+ 10×.
+ After incubation for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
 \begin_inset ERT
 status open
 
@@ -14291,14 +14766,76 @@ celsius}
 
 \end_inset
 
-, and cooling towards room temperature another 5 minutes, the RNA mix was
- supplemented with 2 nmol DTT, 20 units RNase Block ribonuclease inhibitor,
- and 1 μL reverse transcriptase (“AccuScript RT”) proprietary stock.
+, and cooling towards room temperature another 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+, the RNA mix was supplemented with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2}{
+\backslash
+nano
+\backslash
+mole}
+\end_layout
+
+\end_inset
+
+ DTT, 20 units RNase Block ribonuclease inhibitor, and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+micro
+\backslash
+liter}
+\end_layout
+
+\end_inset
+
+ reverse transcriptase (“AccuScript RT”) proprietary stock.
  For negative control purposes, the same mixture was prepared, while withholding
  the RT Buffer and the RT stock.
  This no-RT tube provided a measurement of the leaked DNA, which, in the
  course of this work, was negligible.
- Reverse transcription was performed by incubating 10 minutes at 
+ Reverse transcription was performed by incubating 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
 \begin_inset ERT
 status open
 
@@ -14313,7 +14850,22 @@ celsius}
 
 \end_inset
 
-, then 60 minutes at 
+, then 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{60}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
 \begin_inset ERT
 status open
 
@@ -14329,7 +14881,22 @@ celsius}
 \end_inset
 
 .
- Reverse transcription was terminated by incubating 15 minutes at 
+ Reverse transcription was terminated by incubating 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
 \begin_inset ERT
 status open
 
@@ -14384,9 +14951,41 @@ liter}
 
 \end_inset
 
- cDNA stock, 10 pmol each sense and anti-sense primer (listed later), and
- proprietary SybrGreen 2X.
- The qRT-PCR cycler incubates samples 2 minutes at 
+ cDNA stock, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+pico
+\backslash
+mole}
+\end_layout
+
+\end_inset
+
+ each sense and anti-sense primer (listed later), and proprietary SybrGreen
+ 2X.
+ The qRT-PCR cycler incubates samples 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
 \begin_inset ERT
 status open
 
@@ -14401,7 +15000,22 @@ celsius}
 
 \end_inset
 
-, then 10 minutes at 
+, then 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at 
 \begin_inset ERT
 status open
 
@@ -14417,7 +15031,22 @@ celsius}
 \end_inset
 
 .
- Then, 40 cycles are run, comprising 15 seconds at 
+ Then, 40 cycles are run, comprising 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+second}
+\end_layout
+
+\end_inset
+
+at 
 \begin_inset ERT
 status open
 
@@ -14432,7 +15061,22 @@ celsius}
 
 \end_inset
 
- and one minute at 
+, and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{60}{
+\backslash
+second}
+\end_layout
+
+\end_inset
+
+ at 
 \begin_inset ERT
 status open
 
@@ -14922,8 +15566,22 @@ description "Dulbecco's Modified Eagle Medium"
 
 \end_inset
 
-; VWR International, Radnor, Pennsylvania), supplemented with 100‰ v/v fetal
- bovine serum (
+; VWR International, Radnor, Pennsylvania), supplemented with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ fetal bovine serum (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "FBS"
@@ -15015,7 +15673,22 @@ Confluence and multiple passages reduce their ability to proliferate and
  Therefore, cells were propagated in an undifferentiated state, by splitting
  1:40 at ⅔ confluence, about every 5 days.
  Early on, frozen stocks were made, at 1 million cells/mL in growth medium
- supplemented with 100‰ v/v dimethyl sulfoxide (
+ supplemented with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{100}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ dimethyl sulfoxide (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DMSO"
@@ -15106,7 +15779,22 @@ squared}
 For experiments, cells were differentiated into myotubes by seeding at higher
  density (about 5,000 cells/cm2).
  Next day, when cells were nearly confluent, the medium was changed to different
-iation medium, that is, DMEM supplemented with 2% horse serum (
+iation medium, that is, DMEM supplemented with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{20}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ horse serum (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HS"
@@ -15253,7 +15941,7 @@ Immunofluorescence microscopy
 \begin_layout Standard
 After the experimental treatments, the adherent cells were washed twice,
  on ice, with ice-cold PBS.
- The cells were covered with cold 1:1 v:v ethanol:acetone, and incubated
+ The cells were covered with cold 1:1 v/v ethanol:acetone, and incubated
  at 
 \begin_inset ERT
 status open
@@ -15277,8 +15965,22 @@ celsius}
 \begin_layout Standard
 On the first day of staining, PBS was removed, and cells were washed briefly
  twice with PBS.
- For blocking purposes, cells were incubated for 40 minutes at room temperature
- under 1% BSA in PBS.
+ For blocking purposes, cells were incubated for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{40}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at room temperature under 1% BSA in PBS.
  The blocking liquid was then replaced with the primary antibody solution,
  that is, the same blocking solution, supplemented with 1:20 hybridoma cell
  culture medium containing the anti-myosin heavy chain antibody MF-20.
@@ -15301,8 +16003,22 @@ celsius}
 \end_layout
 
 \begin_layout Standard
-Next day, the cells were incubated twice 5 minutes each with the blocking
- solution, to wash unbound primary antibody.
+Next day, the cells were incubated twice 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{5}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ each with the blocking solution, to wash unbound primary antibody.
  Cells were then probed with the secondary antibody, that is, blocking solution
  supplemented with 1:500 anti-mouse antibody conjugated with rhodamine,
  and with 
@@ -15327,8 +16043,22 @@ liter}
 \end_inset
 
  DAPI.
- The cells were incubated 1h at room temperature in the dark, then briefly
- washed 4 times with PBS.
+ The cells were incubated 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{60}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ at room temperature in the dark, then briefly washed 4 times with PBS.
  Cells covered in PBS were store at 
 \begin_inset ERT
 status open
@@ -15404,8 +16134,8 @@ mole}
 
 \end_inset
 
-126 Ci/mmol; PerkinElmer, Shelton, Connecticut), starting at the times and
- for the durations specified at each experiment in the results section.
+; PerkinElmer, Shelton, Connecticut), starting at the times and for the
+ durations specified at each experiment in the results section.
  For removal of non-specific tracer at the end of labeling stage, cells
  were rinsed with PBS twice, then incubated with 
 \begin_inset ERT
@@ -15622,7 +16352,7 @@ molar}
 \end_inset
 
  TCA.
- Protein suspensions were centrifuged at 15,000 RCF, for 
+ Protein suspensions were centrifuged at 15,000 g, for 
 \begin_inset ERT
 status open
 
@@ -15716,7 +16446,22 @@ molar}
 
 \end_inset
 
- NaOH / 1‰ v/v Triton, with sonication 
+ NaOH / 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ Triton, with sonication 
 \begin_inset ERT
 status open
 
@@ -15815,7 +16560,22 @@ liter}
 \end_inset
 
  Econo-lite scintillation fluid, then counted in a TriCarb 3100TR liquid
- scintillation counter (PerkinElmer) for 3 minutes per sample.
+ scintillation counter (PerkinElmer) for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{3}{
+\backslash
+minute}
+\end_layout
+
+\end_inset
+
+ per sample.
  Counts per minute were converted to disintegrations per minute using a
  standard curve generated using 
 \begin_inset ERT
@@ -15854,7 +16614,22 @@ molar}
 
 \end_inset
 
- NaOH / 1‰ v/v Triton).
+ NaOH / 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+promille}
+\end_layout
+
+\end_inset
+
+ v/v Triton).
 \end_layout
 
 \begin_layout Standard
