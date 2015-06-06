@@ -10895,27 +10895,11 @@ key "rigamonti2009muscle,wu2012nandrolone"
 \end_layout
 
 \begin_layout Standard
-The other effector of GAML is the Akt axis.
- Further suggesting a role for Akt, multiple models of hypertrophy in humans
- and rodents correlate with increased muscle IGF-I expression
-\begin_inset CommandInset citation
-LatexCommand citep
-key "urban1995testosterone,lewis2002role"
-
-\end_inset
-
-.
- However, Testo is dispensable for IGF-I upregulation during exercise-induced
- muscle hypertrophy
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kvorning2007suppression"
-
-\end_inset
-
-.
- Conversely, IGF-I signaling deprivation only halves T-induced muscle restoratio
-n after castration-induced atrophy
+Another promising point of interaction is at the level of the Akt axis.
+ Testo upregulates IGF-I in muscle, potentially leading to reversal of Dexa-indu
+ced Akt inhibition.
+ In other atrophy models, including castration, AAS administration had an
+ IGF-I-dependent myoprotective action
 \begin_inset CommandInset citation
 LatexCommand citep
 key "serra2013effects"
@@ -10923,13 +10907,15 @@ key "serra2013effects"
 \end_inset
 
 .
- In the era of immunoblot, only three laboratories published studies of
- co-administration of AAS and GC.
- All three converged towards describing an reversal of Akt pathway inhibition.
+ Of note, this protection was correlated with increased Foxo3a phosphorylation,
+ indicating restoration of Akt pathway.
 \end_layout
 
 \begin_layout Standard
-Sheng laboratory describes the effect of 10-day 
+In the era of immunoblot, only three laboratories published studies of co-admini
+stration of AAS and GC.
+ All three converged towards describing an reversal of Akt pathway inhibition.
+ Sheng laboratory describes the effect of 10-day 
 \begin_inset ERT
 status open
 
@@ -10991,20 +10977,17 @@ key "yin2009regulation"
 \end_inset
 
  on rat gastrocnemius.
- With these doses, Testo reliably reverses losses in body weight, muscle
- mass, and fiber CSA, induced by Dexa.
- At these doses, Testo co-administration exhibits a slight trend towards
- inferiority to basal levels.
+ With these regimen, Testo reliably, but incompletely, reverses losses in
+ body weight, muscle mass, and fiber CSA, induced by Dexa.
  Molecular pathways largely confirm an Akt centered disruption of GAML.
  Muscle IGF-I expression is repressed by Dexa, and returned to basal level
  by Testo co-administration.
- Akt phosphorylation at Ser 473 follows a similar pattern, with Testo addition
- restoring what Dexa downregulates.
- Moreover, p70-S6K phosphorylation at Thr 389 and atrogenes correlate with
- Akt phosphorylation changes, indicating that Testo acts upstream of mTOR
- and Foxo.
- The only divergence from the above pattern is at GSK-3β level, where Dexa
- has no effect.
+ Downstream, similar AAS-induced restorations are seen in Akt phosphorylation
+ at Ser 473, p70-S6K phosphorylation at Thr 389, and atrogenes expression.
+ The only difference from the canonical pattern is at GSK-3β level, where
+ Dexa has no effect.
+ These findings are consistent with AAS-driven restoration of Foxo and mTORC1
+ pathways to basal level.
 \end_layout
 
 \begin_layout Standard
@@ -11074,12 +11057,20 @@ key "jones2010effects"
  levator to extraperitoneal muscles.
  At these doses, Testo co-administration restores levator ani, but not other
  muscles.
- In levator ani, Testo co-administration upregulates IGF-I beyond basal
- levels, while in extraperitoneal muscles, IGF-I is only partially restored.
+ This is a surprising finding, given that muscle atrophy caused by a higher
+ Dexa dose was reversed by a much lower dose of Testo, in the study from
+ Sheng and collaborators.
+\end_layout
+
+\begin_layout Standard
+In Dalton's study, the difference between levator ani and extraperitoneal
+ muscles is ascribed to the fact that Testo co-administration upregulates
+ IGF-I beyond basal levels in the former, and only partially in the latter.
  Possibly as a consequence, Testo addition reduces atrogene expression to
- a larger extend in levator ani.
- In levator ani and C2C12 myotubes, Testo reverses losses of Akt (Ser 473),
- GSK-3β (Ser 9), FOXO3a (Ser 253), and p70-S6K (Thr389) phosphorylation.
+ a larger extent in levator ani.
+ In levator ani and C2C12 myotubes, Testo reverses Dexa-induced hypophosphorylat
+ion of Akt (Ser 473), GSK-3β (Ser 9), FOXO3a (Ser 253), and p70-S6K (Thr
+ 389).
 \end_layout
 
 \begin_layout Standard
@@ -11148,9 +11139,9 @@ key "zhao2008testosterone"
 .
  They ascribed this alleviation to a reduction in proteolysis and atrogenes
  expression.
- In preliminary studies on L6 and C2C12 myotubes overexpressing AR, they
- found that Testo co-administration reverses transcriptional upregulation
- of REDD1 and MAFbx
+ In studies on L6 and C2C12 myotubes overexpressing AR, they found that
+ Testo co-administration reverses transcriptional upregulation of REDD1
+ and MAFbx
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2008expression,wu2010redd1"
@@ -11161,7 +11152,7 @@ key "zhao2008expression,wu2010redd1"
 \end_layout
 
 \begin_layout Standard
-Arguably, the most important contribution they made is the first microarray
+Arguably, the most important contribution Cardozo made is the first microarray
  study on alleviation of GAML with T
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -11180,13 +11171,16 @@ key "wu2010redd1"
  The overlap is not perfect, with important presumptive effectors, including
  IGF-I and MAFbx, failing to pass amplitude and statistical significance
  thresholds.
+ The reversal of GAML is also correlated with a repression of REDD1 to basal
+ levels, suggesting that mTOR is also restored by Testo.
+ Testo also reversed the surge of MuRF-1, proteasomal subunit D8, cathepsin
+ L, LC3, M-type calpain, C/EBP β and δ, and metallothionein 1, exhibiting
+ a wide-spectrum anti-atrophic action.
 \end_layout
 
 \begin_layout Standard
-The microarray study also describes a series of IGF-I-independent effectors.
- The reversal of GAML is also correlated with a repression of REDD1 to basal
- levels, suggesting that mTOR is also restored by Testo.
- Changes in B-cell leukemia/lymphoma 3 (
+Among the novel putative mediators, the microarray study revealed that Testo
+ reversed Dexa-induced changes in B-cell leukemia/lymphoma 3 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Bcl3"
@@ -11194,28 +11188,21 @@ description "B-cell leukemia/lymphoma 3"
 
 \end_inset
 
-) and IκB indicate that GAML relies on NF-κB, and Testo is deactivating
- that pathway too.
- Testo also reversed the surge of MuRF-1, proteasomal subunit D8, cathepsin
- L, LC3, M-type calpain, C/EBP β and δ, and metallothionein 1, exhibiting
- a wide-spectrum anti-atrophic action.
-\end_layout
-
-\begin_layout Standard
-Dexa upregulates CD36, the fatty acid translocase
+), IκB , and CD36.
+ The latter is a fatty acid translocase.
+ Its changes suggest that GAML and its reversal have opposite effects on
+ muscle's ability to use lipids as fuel
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mcfarlan2012vivo"
 
 \end_inset
 
-, while Testo returns it to basal level, suggesting that GAML and its reversal
- have opposite effects on muscle's ability to use lipids as fuel.
- 
+.
 \end_layout
 
 \begin_layout Standard
-Testo reverses the upregulation of the stress sensor Gadd45, isoform β.
+Testo reversed the upregulation of the stress sensor Gadd45, isoform β.
  Recently, it has been shown that Gadd45β is an autophagy blocker
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -11224,13 +11211,13 @@ key "keil2013phosphorylation"
 \end_inset
 
 .
- This suggests that in 7-day treated muscle autophagy must be downregulated,
+ This suggests that in 7-day treated muscle autophagy could be downregulated,
  and goes against many other molecular markers that indicate the opposite.
 \end_layout
 
 \begin_layout Standard
 In conclusion, the mechanisms by which Testo prevents GAML appear manifold.
- However, many of the putative myoprotective actions of Testo are only suggested
+ Many of the putative myoprotective actions of Testo are only suggested
  by Cardozo's microarray, but have never been validated.
 \end_layout
 
@@ -11326,8 +11313,8 @@ The few studies on GAML reversal by AAS revealed that Testo action alters
  Based on the microarray studies which showed that Testo reverses changes
  in IGF-I and IGFBP induced by Dexa, and on the castration reversal studies
  indicating that AAS replacement causes IGF-I upregulation, there was a
- moderate likelihood that the myoprotective action of Testo involved the
- modulation of IGF-I signaling.
+ good probability that the myoprotective action of Testo involved the modulation
+ of IGF-I signaling.
 \end_layout
 
 \begin_layout Standard
