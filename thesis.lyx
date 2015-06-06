@@ -11555,7 +11555,7 @@ description "nuclear magnetic resonance"
 
 ), using a Echo-MRI whole body composition analyzer (Echo Medical Systems,
  Houston, Texas).
- In this procedure, mice are restrained inside a transparent plexiglass
+ In this procedure, mice were restrained inside a transparent plexiglass
  tube for 
 \begin_inset ERT
 status open
@@ -14757,7 +14757,7 @@ celsius}
 \end_inset
 
 .
- Then, 40 cycles are run, comprising 
+ Then, 40 cycles were run, comprising 
 \begin_inset ERT
 status open
 
@@ -16377,6 +16377,8 @@ key "stodden2014implementing"
 \end_inset
 
 .
+ Raw data, with LibreOffice Calc and R calculations, is publicly available
+ on Github.
  Results are presented as means ± standard error of the mean.
  In plots, points represent means, while error bars are standard error of
  the mean.
@@ -17139,9 +17141,9 @@ reference "fig:Time-course-of-body-weight"
  of atrophy, but, because they were run as independent experiments, they
  will not be analyzed in conjunction.
  Because this work is focused on longer-term effects of Dexa, most of the
- reported data in the remainder of the section will be from mice treated
- for 7 days with Dexa and / or Testo, with exceptions and subacute effects
- emphasized.
+ reported data in the remainder of the section will be either from mice
+ treated for 7 days with Dexa and / or Testo, or comparisons of the 1, 3
+ and 7 day samples.
 \end_layout
 
 \begin_layout Standard
@@ -17303,7 +17305,7 @@ lean.mass.before..g.) )
 
 \end_inset
 
- of the total lean body mass).
+% of the total lean body mass).
  Dexa alone induce a massive loss of lean body mass (
 \begin_inset Flex S/R expression
 status open
@@ -17930,7 +17932,7 @@ day}
  Testo co-administration reduced the loss of muscle throughout the seven
  days course.
  While rat experiments have described a series of pathways by which Dexa
- can achieve muscle atrophy, it was unclear which of these, if any, is reversed
+ can achieve muscle atrophy, it was unclear which of them, if any, is reversed
  by Testo co-administration.
 \end_layout
 
@@ -17941,7 +17943,7 @@ ome system
 
 \begin_layout Standard
 The rapid loss of muscle mass induced by Dexa in mice exceed the rate of
- protein turnover in normal adult rodent muscle (about 3% per day
+ protein turnover in normal adult rodent muscle (about 2.5% per day
 \begin_inset CommandInset citation
 LatexCommand citep
 key "millward1975skeletal-muscle"
