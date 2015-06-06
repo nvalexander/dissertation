@@ -8773,8 +8773,8 @@ key "sofer2005regulation"
 
 \begin_layout Standard
 Another way to gauge the role of mTORC1 is to use its inhibitor, rapamycin.
- One group reported that Dexa-induced decrement in protein synthesis is
- unmodified, in absolute terms, upon rapamycin co-administration
+ One group reported that the Dexa-induced decrement in protein synthesis
+ is unmodified, in absolute terms, upon rapamycin co-administration
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1999glucocorticoid-induced"
@@ -8791,7 +8791,7 @@ key "latres2005insulin-like"
 
 \end_inset
 
-, suggesting that, on the contrary, mTOR is indispensable for PI3K effects.
+, indicating that, on the contrary, mTOR is indispensable for PI3K effects.
  Most likely, both hypotheses are based on reductionist models that do not
  reflect true in vivo phenomena.
 \end_layout
@@ -8822,28 +8822,29 @@ key "hosokawa2009nutrient-dependent"
 \end_layout
 
 \begin_layout Standard
-A recent study opens the perspective for a paradigm-overturning situation.
- In an acute study of Dexa on female rates, Britto and colleagues confirmed
- most of the current model
+A recent study on acute Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "britto2014redd1"
 
 \end_inset
 
-.
- Dexa repressed mTORC1 activity, as indicated by lower phosphorylation of
- its substrate 4E-BP1.
- The repression of mTORC1 was correlated with an reduced inactivation of
- the negative regulator PRAS40.
- In contrast, and unexpectedly, acute Dexa increased TSC2 phosphorylation,
- indicating that Dexa induces substrate selectivity changes in Akt.
- As discussed earlier, such Akt selectivity alterations are attributed to
+ opens the perspective for a paradigm-overturning situation.
+ Because it failed to induce protein loss or protein degradation, its results
+ may not apply to chronic GAML.
+ Nevertheless, its findings are the best mechanistic explanation for Dexa-induce
+d inhibition of mTORC1.
+ In wild-type mice, Britto and colleagues found that acute Dexa caused,
+ unexpectedly, increased phosphorylation of TSC2 and Ser 473 on Akt.
+ These mice exhibited lower phosphorylation of 4E-BP1, indicating that their
+ mTORC1 was repressed.
+ Thus, Britto concluded that Dexa-induced mTORC1 inactivation is mediated
+ by PRAS40, which in turn is left unphosphorylated by a hypoactive Akt.
+\end_layout
+
+\begin_layout Standard
+XXXXAs discussed earlier, Akt selectivity alterations are attributed to
  dissociation between Ser 473 and Thr 308 phosphorylation state.
- Indeed, Britto and colleagues found that, after acute Dexa, phosphorylation
- at Ser 473 increases, while at Thr 308 it decreases.
- This is a rare, although not unique, account of Akt hyperphosphorylation
- in GAML.
  
 \end_layout
 
