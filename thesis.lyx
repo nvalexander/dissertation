@@ -2770,9 +2770,8 @@ There are no published cases of increase in circulating myoglobin or creatine
 \end_layout
 
 \begin_layout Standard
-From its first trial, GC therapy ability to induce a negative nitrogen balance,
- through an ample increase in urinary creatine and creatinine, was interpreted
- as evidence for stimulation of tissue protein breakdown
+GC therapy induces a massive loss of nitrogen, a side effect seen from its
+ first trial
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sprague1950physiological"
@@ -2780,6 +2779,8 @@ key "sprague1950physiological"
 \end_inset
 
 .
+ The ample increase in urinary creatine and creatinine is evidence for upregulat
+ed tissue protein breakdown.
  As little as 
 \begin_inset ERT
 status open
@@ -2804,7 +2805,7 @@ gram}
 \end_inset
 
  cortisol infused over 8 hours increases by a quarter the rate of appearance
- of leucine into the bloodstream, suggestive of proteolysis upregulation
+ of leucine into the bloodstream, suggestive of acute proteolysis upregulation
 \begin_inset CommandInset citation
 LatexCommand cite
 key "simmons1984increased"
@@ -2862,7 +2863,7 @@ description "3-methylhistidine"
 
 \end_inset
 
-), a degradation product specific to muscle actin and myosin
+), an non-recyclable degradation product specific to muscle actin and myosin
 \begin_inset CommandInset citation
 LatexCommand cite
 key "elia1981clinical"
@@ -2886,8 +2887,8 @@ key "khaleeli1983corticosteroid"
 \begin_layout Standard
 The last three decades brought a better understanding of protein degradative
  pathways and of muscle atrophy.
- Two major proteolytic systems, the proteasome - ubiquitin system and the
- autophagosome (discussed in later sections), have been discovered and dissected.
+ Two distinct proteolytic systems, the proteasome - ubiquitin system and
+ the autophagosome (discussed in later sections), have been discovered.
  Unfortunately, only one published trial investigated the action of GC in
  human muscle biopsies, at a molecular level.
  It failed to find a significant change in mRNA of ubiquitin and the C3
@@ -2976,16 +2977,13 @@ key "jagannath2006bortezomib"
 \end_inset
 
 .
- Taking into account the large variability between trials and the use of
- an atypical population, the comparison is of marginal use, but it does
- not appear that the combination (Dexa + bortezomib) is more muscle protective
- than Dexa alone.
- Clinical studies directly addressing this comparison in patients prescribed
- high-dose GC are recommended, given that the most commonly accepted hypothesis
- centers on the proteasome as main effector of GC-induced muscle loss.
- It is still more likely to find that bortezomib provides muscle protection.
+ Neither finding is suggestive for superiority of that the combination (Dexa
+ + bortezomib) to Dexa alone.
+ Clinical studies directly addressing this comparison are recommended, given
+ that the most commonly accepted hypothesis centers on the proteasome as
+ main effector of GC-induced muscle loss.
  Proving a beneficial action of bortezomib in co-administration with GC
- will have major practice implications.
+ will have major practice-changing implications.
  Even proving the opposite, that bortezomib has no protective action, will
  be very valuable in better understanding and eventually preventing GC-induced
  muscle loss.
@@ -3013,6 +3011,8 @@ key "sanofiaventisusllc2006plaquenil"
 \end_inset
 
 .
+ However, to my knowledge, no clinical trial compared hydroxychloroquine
+ with GC.
  Chronic hydroxychloroquine therapy is known to induce muscle weakness and
  sporadic myopathy, through a distinct, vacuolar mechanism.
  The hydroxychloroquine-induced myopathy is associated with an increase
@@ -3035,7 +3035,7 @@ key "ghosh2013teaching,nucci1996chloroquine"
 \end_inset
 
 .
- Potential benefits of anti-lysosome co-therapy for the atrophying muscle
+ Potential benefits of anti-lysosome co-therapy in glucocorticoid myopathy
  remain the subject of speculation.
 \end_layout
 
@@ -3097,9 +3097,9 @@ key "short2004effect,short2009short-term"
 
 .
  Some of these studies may have been underpowered (sample size n = 6-7)
- or may be troubled by the use of a small dose, but their validity is confirmed
- by the fact that, in each case, the expected hyperglycemic response to
- GC was observed.
+ or may be troubled by the use of a small dose.
+ Nevertheless, their validity is confirmed by the fact that, in each case,
+ the expected hyperglycemic response to GC was observed.
  
 \end_layout
 
@@ -3146,11 +3146,11 @@ description "Mechanistic Target of Rapamycin"
 \end_inset
 
 ) axis.
- More evidence has been obtained from animal models (discussed in a dedicated
- section).
+ Rather than directly repressing this axis, GCs lower its sensitivity to
+ upstream stimuli.
  One study on humans described how Dexa inhibits branched chain amino acids'
- ability to induce phosphorylation of eukaryotic translation initiation
- factor 4E (
+ ability to induce phosphorylation of mTOR substrates eukaryotic translation
+ initiation factor 4E (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "eIF4E"
@@ -3166,7 +3166,7 @@ description "eIF4E binding protein"
 
 \end_inset
 
-), isoform 1, and p70-S6K
+) and p70-S6K
 \begin_inset CommandInset citation
 LatexCommand cite
 key "liu2004glucocorticoids"
@@ -3174,7 +3174,19 @@ key "liu2004glucocorticoids"
 \end_inset
 
 .
- Dexa lacked similar action on another translation regulator, eIF2α.
+ In the same study, Dexa had no effect on another translation regulator,
+ the α subunit of the eukaryotic initiation factor 2 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "eIF2"
+description "eukaryotic initiation factor 2"
+
+\end_inset
+
+).
+ More evidence has been obtained from animal models (discussed in a dedicated
+ section).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3195,19 +3207,14 @@ key "mor1987myopathy"
 .
  In both hypercortisolism and hypocortisolism, effects on human muscle remain
  understudied.
- Human studies concord that GC-induced loss of muscle force is an objective
+ Animal models have been essential for the study of GC-induced muscle loss
+ (discussed in the dedicated section).
+ Human studies agree that GC-induced loss of muscle force is an objective
  finding caused by an increased proteolytic activity.
  Indirect evidence indicates that human GAML is associated with changes
  in protein synthesis.
- In the absence of other proven mitigating interventions, current guidelines
- suggest GC discontinuation if myopathy develops.
- Animal models have been essential for the study of GC-induced muscle loss,
- although they have been confounded by hormesis (discussed in future sections).
-\end_layout
-
-\begin_layout Standard
-In conclusion, CS of various etiologies leads to an increase in muscle protein
- catabolism, and a reduction in muscle protein synthesis.
+ Current guidelines suggest GC discontinuation if myopathy develops, because
+ proven mitigating interventions have not been developed.
 \end_layout
 
 \begin_layout Section
@@ -3470,9 +3477,10 @@ key "kenyon1938effect"
 \end_inset
 
  after less than two weeks, thus establishing the efficacy of Testo replacement
- therapy in men with pathological decreases in circulating Testo.
+ therapy in hypogonadal men, defined as adults with pathological decreases
+ in circulating Testo.
  Except for a few, narrow exceptions, this population was and remains the
- only generally accepted, FDA-approved indication for Testo therapy
+ sole generally accepted, FDA-approved indication for Testo therapy
 \begin_inset CommandInset citation
 LatexCommand cite
 key "auxiliumpharmaceuticalsinc.2014testim,endopharmaceuticalssolutionsinc.2014delatestryl,unimed2004androgel"
@@ -3480,8 +3488,8 @@ key "auxiliumpharmaceuticalsinc.2014testim,endopharmaceuticalssolutionsinc.2014d
 \end_inset
 
 .
- Recent Testo preparations are still recommended for some breast cancers,
- but this indication is limited to a few, unpredictable, cases.
+ Recent Testo preparations are also recommended for some breast cancers,
+ but this indication is describes as having small, unpredictable efficacy.
 \end_layout
 
 \begin_layout Standard
@@ -3562,13 +3570,14 @@ key "mommers2008male"
  Nevertheless, these trials are, in many cases, the only source of information
  about the action of Testo in the normogonadal population.
  For example, early trials of oral methyltestosterone revealed its hepatic
- toxicity, with the effect that, 50 years later, the development of oral
- androgenic therapies is still discouraged.
+ toxicity.
+ Fifty years later, those limited trials are still the main factor discouraging
+ the development of oral androgenic therapies.
 \end_layout
 
 \begin_layout Standard
-The second dark age of Testo was a time of limited knowledge, and even more
- limited adherence to the principles of clinical research.
+The second dark age of Testo was a time of poor knowledge and poor clinical
+ study design.
  Yet in these years, androgenic steroids first gained their reputation as
  ergogenics.
  Kenyon noted in his studies on eunuchoid men that Testo injections helped
@@ -3599,8 +3608,8 @@ key "kenyon1940comparative"
 \end_inset
 
 .
- Interestingly, in 1942, Samuels and colleagues state that Testo does not
- change grip strength in healthy males
+ In 1942, Samuels and colleagues state that Testo does not change grip strength
+ in healthy males
 \begin_inset CommandInset citation
 LatexCommand cite
 key "samuels1942influence"
@@ -3632,8 +3641,8 @@ key "cowart1987steroids"
 As exemplified by the ergogenic hypothesis, benefits of androgen therapy
  on men with Testo deficiency have been extrapolated by clinicians and theoretic
 ians to other muscle-depleting conditions, and even to healthy humans.
- Naturally, one of the conditions associated with loss of muscle mass that
- clinicians hoped to improve was hypercortisolism.
+ One of the conditions associated with loss of muscle mass that clinicians
+ hoped to improve was hypercortisolism.
  In 1941, Albright showed that the newly discovered Tp, in 25 mg daily injection
 s, was better than estradiol benzoate, progesterone, or vitamin D in restoring
  nitrogen balance in three cases of Cushing's disease
@@ -3974,8 +3983,11 @@ key "vanschoor2006development"
 \end_layout
 
 \begin_layout Standard
-In a subset of CS patients, androgen administration improves muscle mass,
- and, presumably, quality of life.
+In a subset of CS patients, androgen administration improves muscle mass
+ and quality of life.
+ There are no published human trials describing in molecular terms the interacti
+on of GCs and AAS at muscle level.
+ Most of our knowledge is derived from animal models (discussed later).
 \end_layout
 
 \begin_layout Section
@@ -3983,40 +3995,20 @@ Hypercortisolism-induced changes in endogenous androgens levels
 \end_layout
 
 \begin_layout Standard
-Muscle wasting is more common in males than in females with hypercortisolism
+AAS therapy does not change circulating cortisol levels
 \begin_inset CommandInset citation
 LatexCommand citep
-key "pecorigiraldi2003gender-related"
+key "baume2006effect"
 
 \end_inset
 
 .
+ However, the opposite interaction, where hypercortisolism interferes with
+ endogenous AAS secretion, is a common finding, with a complex physiological
+ basis.
  The interaction of GC with endogenous AAS distinguishes male from female
  hypercortisolism, to the point that the two syndromes are qualitatively
  different.
-\end_layout
-
-\begin_layout Standard
-The period when AAS were frequently used as therapy of CS or as adjuvant
- to high-dose GC antedates modern molecular biology and genomics.
- Therefore, there are no published human trials to describe in molecular
- terms the interaction of GCs and AAS at muscle level.
- Most of our knowledge is derived from animal models (discussed later).
- On the other hand, clinical observational studies of circulating biomarkers
- remain common, and reveal an interesting interaction between the two classes
- of steroids.
- More specifically, in many cases, hypercortisolism suppresses endogenous
- AAS.
- Because loss of endogenous AAS, also termed hypoandrogenism, is associated
- with loss of muscle mass and strength
-\begin_inset CommandInset citation
-LatexCommand citep
-key "volpato2014prevalence,ramos1998muscle"
-
-\end_inset
-
-, an AAS replacement strategy in hypoandrogenic hypercortisolism may be
- beneficial for the muscle.
 \end_layout
 
 \begin_layout Standard
@@ -4031,8 +4023,8 @@ key "cumming1983acute,fassnacht2003adrenal"
 \end_inset
 
 .
- The mechanisms through which hypercortisolism causes hypoandrogenism are
- still to be elucidated.
+ The mechanisms through which acute hypercortisolism causes Testo downregulation
+, also termed hypoandrogenism, are debated.
  Some studies suggest that acute hypercortisolism downregulates the pituitary-se
 creted, T-upregulating, luteinizing hormone (
 \begin_inset CommandInset nomenclature
@@ -4050,7 +4042,8 @@ key "kamischke1998testosterone,cortes-gallegos1975effect,kuhn1986fonction"
 \end_inset
 
 .
- Others counter that GC induce hypoandrogenism even when LH is unchanged
+ Others found that GC induce hypoandrogenism even when LH is unchanged,
+ thus locating the repression at gonad level
 \begin_inset CommandInset citation
 LatexCommand citep
 key "schaison1979study"
@@ -4084,8 +4077,8 @@ key "barbetta2001androgen,cunningham1994dissociation"
 \end_inset
 
 .
- Certainly, GC-induced repression of POMC should also repress this unknown
- androgen-stimulating hormone, but its existence was never proven.
+ GC-induced repression of POMC would also repress this unknown androgen-stimulat
+ing hormone, but its existence was never proven.
 \end_layout
 
 \begin_layout Standard
@@ -4099,28 +4092,10 @@ key "martens1994decreased"
 
 .
  Similar observations have been made in endogenous CS, where exposure is
- longer and, depending on etiology, ACTH is increased or decreased compared
- to normal.
- Some studies found that, in CS, LH and another gonad-stimulating pituitary
- hormone, follicle stimulating hormone (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "FSH"
-description "follicle stimulating hormone"
-
-\end_inset
-
-) are lower than normal
-\begin_inset CommandInset citation
-LatexCommand citep
-key "luton1977reversible"
-
-\end_inset
-
-.
- This has been explained as a CS-associated pituitary defect, with loss
- of LH response to stimulation by its hypothalamic regulator, gonadotropin-relea
-sing hormone (
+ longer and, depending on etiology, ACTH may be higher than normal.
+ As with acute studies, multiple competing explanations were suggested.
+ A study found that hypercortisolism impairs hypothalamic GnRH secretion
+ of gonadotropin-releasing hormone (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GnRH"
@@ -4128,16 +4103,7 @@ description "gonadotropin-releasing hormone"
 
 \end_inset
 
-)
-\begin_inset CommandInset citation
-LatexCommand citep
-key "luton1977reversible,boccuzzi1975effect"
-
-\end_inset
-
-.
- Alternatively, others concluded that hypercortisolism impairs hypothalamic
- GnRH secretion
+), the main regulator of LH
 \begin_inset CommandInset citation
 LatexCommand citep
 key "lado-abeal1998menstrual"
@@ -4145,6 +4111,26 @@ key "lado-abeal1998menstrual"
 \end_inset
 
 .
+ Others found that that CS is correlated with pathologically low levels
+ of LH and of the other gonad-stimulating pituitary hormone, follicle stimulatin
+g hormone (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FSH"
+description "follicle stimulating hormone"
+
+\end_inset
+
+), despite normal GnRH secretion
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luton1977reversible,boccuzzi1975effect"
+
+\end_inset
+
+.
+ This scenario suggests that hypercortisolism reduces pituitary's GnRH responsiv
+eness.
  Finally, a small study found that male asthma patients receiving long-term
  prednisone have lower circulating Testo levels despite increases in LH
  and FSH, and concluded that prednisone has an direct inhibitory action
@@ -4158,81 +4144,6 @@ key "reid1985plasma"
 .
  Despite disagreeing on the mechanism, all these studies agree that chronic
  hypercortisolism represses testicular androgen secretion.
-\end_layout
-
-\begin_layout Standard
-AAS therapy does not change circulating cortisol levels
-\begin_inset CommandInset citation
-LatexCommand citep
-key "baume2006effect"
-
-\end_inset
-
-, suggesting that a reverse effect probably does not exist.
- Similarly, it is possible that the direct effect of GC on AAS is only an
- artifact caused by pathological and pharmacological doses.
-\end_layout
-
-\begin_layout Standard
-In both sexes, the most concentrated circulating steroids are dehydroepiandroste
-rone (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "DHEA"
-description "dehydroepiandrosterone"
-
-\end_inset
-
-) and its ester, DHEA sulfate (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "DHEAS"
-description "dehydroepiandrosterone sulfate"
-
-\end_inset
-
-), which originate from the adrenal and, to a lesser degree, from gonads.
- Their most important role appears to be that of precursors for synthesis,
- in glands and peripheral tissue, of androgens and estrogens.
- DHEA has some affinity for the AR, which suggested it may be an AAS.
- Recent studies indicate that, in human female tissue, DHEA may in fact
- be a partial agonist, hindering the action of T
-\begin_inset CommandInset citation
-LatexCommand citep
-key "chen2005direct"
-
-\end_inset
-
-.
- DHEA and DHEAS, now termed adrenal androgen precursors (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "AAP"
-description "adrenal androgen precursor"
-
-\end_inset
-
-), are upregulated by ACTH, through increased synthesis of DHEA in the adrenal
- and rapid bidirectional interconversion
-\begin_inset CommandInset citation
-LatexCommand citep
-key "jones1970steroid,vaitukaitis1969role"
-
-\end_inset
-
-.
- Therefore, Cushing's disease and other conditions associated with increases
- in ACTH will present with increases in AAPs, while primary hypercortisolism
- will be associated with ACTH repression and consequent AAP decrease
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kouyama2011clinicopathological,monteleone2006impaired,barbetta2001androgen,yamaji1984serum"
-
-\end_inset
-
-.
- Both types of hypercortisolism manifest GAML, despite opposite effects
- on AAPs, suggesting that AAPs changes are not mediating GAML.
 \end_layout
 
 \begin_layout Standard
@@ -4254,8 +4165,8 @@ key "burger2002androgen"
 \end_inset
 
 ).
- A feedback loop links LH and estrogens levels, with LH stimulating synthesis
- and secretion of estrogens from the developing and atretic follicles
+ A feedback loop links LH and estrogens levels, with LH directly stimulating
+ synthesis and secretion of estrogens from the developing and atretic follicles
 \begin_inset CommandInset citation
 LatexCommand citep
 key "miller2001androgen"
@@ -4272,8 +4183,9 @@ key "yen1971effect"
 \end_inset
 
 , with the possible exception of ovulation.
- In the direct link, LH must stimulate ovarian Testo synthesis, but a reverse
- link, where Testo directly inhibits LH, is absent in women
+ In the direct link, LH must stimulate ovarian Testo synthesis in order
+ to achieve estrogen upregulation, but a reverse link, where Testo directly
+ inhibits LH, is absent in women
 \begin_inset CommandInset citation
 LatexCommand citep
 key "couzinet1989effects,abdel-rahman2014androgen"
@@ -4357,18 +4269,9 @@ key "smals1977plasma"
 \end_layout
 
 \begin_layout Standard
-In infants, tumors causing CS are exceedingly rare.
- In pediatric Cushing's disease and adrenocortical carcinoma, AAP circulating
- levels are usually normal for the age
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hauffa1984dissociation,wajchenberg2000adrenocortical"
-
-\end_inset
-
-.
- Virilization signs such as change in voice, penile or clitoridian overgrowth,
- and hirsutism are common 
+Apparent hyperandrogenism is also present in children with hypercortisolism.
+ In pediatric hypercortisolism, virilization signs such as change in voice,
+ penile or clitoridian overgrowth, and hirsutism are common 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tyler1972laboratory"
@@ -4377,16 +4280,16 @@ key "tyler1972laboratory"
 
 .
  Published studies do not describe muscle changes in these children, possibly
- due to difficulties in assessment.
+ due to difficulties in assessment and scarcity of cases.
 \end_layout
 
 \begin_layout Standard
-In adult female and in pediatric CS, virilization, muscle catabolism, and
- circulating androgens changes are not correlated.
- These examples suggest that relative hyperandrogenism in some tissues may
- be paralleled by relative hypoandrogenism in others.For example, it may
- be possible that, in some tissues, excess GC activates the androgen receptor
- (
+In adult female CS, virilization, muscle catabolism, and circulating androgens
+ changes are not correlated.
+ This indicates that relative hyperandrogenism in some tissues is coincident
+ with relative hypoandrogenism in others.
+ For example, it may be possible that, in some tissues, excess GC activates
+ the androgen receptor (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "AR"
@@ -4414,14 +4317,95 @@ key "inder2010dexamethasone"
 \end_layout
 
 \begin_layout Standard
-Understanding causality in the case of simultaneous muscle loss and hirsutism
+In both sexes, the most concentrated circulating steroids are dehydroepiandroste
+rone (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DHEA"
+description "dehydroepiandrosterone"
+
+\end_inset
+
+) and its ester, DHEA sulfate (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DHEAS"
+description "dehydroepiandrosterone sulfate"
+
+\end_inset
+
+), which originate from the adrenal and, to a lesser degree, from gonads.
+ Their most important role appears to be that of precursors for synthesis,
+ in glands and peripheral tissue, of androgens and estrogens.
+ DHEA has some affinity for the AR, which suggested it may be an AAS.
+ Recent studies indicate that, in human female tissue, DHEA may in fact
+ be a partial agonist, hindering the action of T
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chen2005direct"
+
+\end_inset
+
+.
+ DHEA and DHEAS, now termed adrenal androgen precursors (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AAP"
+description "adrenal androgen precursor"
+
+\end_inset
+
+), are upregulated by ACTH, through increased synthesis of DHEA in the adrenal
+ and rapid bidirectional interconversion
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones1970steroid,vaitukaitis1969role"
+
+\end_inset
+
+.
+ Therefore, Cushing's disease and other conditions associated with increases
+ in ACTH will present with increases in AAPs, while primary hypercortisolism
+ will be associated with ACTH repression and consequent AAP decrease
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kouyama2011clinicopathological,monteleone2006impaired,barbetta2001androgen,yamaji1984serum"
+
+\end_inset
+
+.
+ Both types of hypercortisolism manifest GAML, despite opposite effects
+ on AAPs, suggesting that AAPs changes do not cause GAML directly.
+ Understanding causality in the case of simultaneous muscle loss and hirsutism
  is complicated by dose- and compound-dependent crossconversion of GCs to
  AAS and interference of GCs in AAS synthesis and degradation.
- In adult males, muscle loss in CS may be aggravated by the changes in endogenou
-s AAP and AAS.
- Crawford and colleagues observed muscle protection by AAS as adjuvant to
- GC therapy although, at enrollment, these men had circulating Testo levels
- in the lower normal range
+\end_layout
+
+\begin_layout Standard
+Loss of endogenous AAS is associated with loss of muscle mass and strength
+\begin_inset CommandInset citation
+LatexCommand citep
+key "volpato2014prevalence,ramos1998muscle"
+
+\end_inset
+
+.
+ Perhaps for this reason, muscle wasting is more common in males than in
+ females with endogenous CS
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pecorigiraldi2003gender-related"
+
+\end_inset
+
+.
+ At least in adult males, muscle loss in CS may be aggravated by the reductions
+ in endogenous AAP and AAS.
+ An AAS replacement strategy in hypoandrogenic hypercortisolism appears
+ intuitively beneficial for the muscle.
+ Moreover, Crawford and colleagues observed the muscle protection by AAS
+ as adjuvant to GC therapy extended to men who had low-normal circulating
+ Testo
 \begin_inset CommandInset citation
 LatexCommand citep
 key "crawford2003randomized"
@@ -4429,14 +4413,8 @@ key "crawford2003randomized"
 \end_inset
 
 .
- This trial indicates that GC deleterious effects are favored, but not condition
-ed, by hypoandrogenism.
-\end_layout
-
-\begin_layout Standard
-Hypercortisolism is associated with hypoandrogenism solely in adult males.
- Androgen therapy for muscle protection in CS is predicted to benefit them
- more than other populations.
+ Androgen therapy for muscle protection in CS is predicted to benefit adult
+ males, especially in the frequent cases of patent hypogonadism.
 \end_layout
 
 \begin_layout Section
@@ -4453,8 +4431,7 @@ g conditions.
 \end_layout
 
 \begin_layout Standard
-Most commonly, studies of AAS on muscle are carried on men with lower than
- normal circulating Testo and / or associated symptoms, also called hypogonadal.
+Most commonly, studies of AAS on muscle are carried on hypogonadal men.
  In male primary hypogonadism, rates of cortisol synthesis and degradation
  are typically normal
 \begin_inset CommandInset citation
@@ -4498,14 +4475,9 @@ description "myosin heavy chain"
 \end_inset
 
 ), indicating that protein accretion is localized in the myotubes.
-\end_layout
-
-\begin_layout Standard
-The referenced studies also measured leucine flux, a proxy for protein degradati
-on, but failed to detect significant changes as a result to Testo therapy.
- The absence of a detectable change in leucine flux may be attributed to
- a true lack of effect on catabolism, or may be an artifact caused by the
- use of whole-body, rather than isolated muscle, methods.
+ The referenced studies also measured leucine flux, a proxy for protein
+ degradation, but failed to detect significant changes as a result to Testo
+ therapy.
 \end_layout
 
 \begin_layout Standard
@@ -4524,18 +4496,18 @@ key "smith2002changes,boxer2005effect"
 \end_inset
 
 .
- In the former, most of the muscle losses are reversed if exogenous Testo
- is co-administered.
- Chemical castration causes decreases in both protein synthesis and degradation
+ This form of chemical castration causes decreases in both protein synthesis
+ and degradation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mauras1998testosterone"
 
 \end_inset
 
-, suggesting that, in some cases, such as restoration of physiological levels,
- Testo supplementation may be followed by a paradoxical increase in protein
- degradation.
+, indicating that loss of muscle is caused by translation changes.
+ In the prostate cancer study, correction of leuprolide-induced hypoandrogenism
+ by co-administration of Testo reversed most of the muscle mass losses,
+ although mechanisms were not studied.
 \end_layout
 
 \begin_layout Standard
@@ -4657,87 +4629,17 @@ key "ferrando2003differential"
 \end_inset
 
 .
- However, their study differs in key aspects from the other studies and
- the medical practice.
  They tested a variable, moderate dose of Testo on normogonadal older men,
- with the goal of maintaining a physiological Testo level.
- Moderate Testo therapy caused an improvement in muscle mass, strength,
- and net protein balance.
- However, they failed to observe an improvement in protein FSR, and concluded
- that the net protein balance improvement must be caused by T-induced inhibition
- of protein degradation.
- The failure to detect protein synthesis rate changes indicates that, perhaps
- due to unusual treatments, this study yielded unusual outcomes, which cannot
- be extrapolated to other studies or populations.
-\end_layout
-
-\begin_layout Standard
-In support of their hypothesis, Ferrando and colleagues showed a significant
- decrease in the rate of phenylalanine disappearance at muscle level and
- in the proteasomal enzymatic activity.
- However, the data they provide show that, on the contrary, proteasomal
- activity is not reduced by Testo therapy.
- Digitizing their plot (Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Proteasome-Ferrando"
-
-\end_inset
-
-) indicates that six-months of placebo changed the normalized lactastatin-sensit
-ive proteasome activity from 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3(PMID12519877data["placebo without inhibitor baseline","V3"] - PMID12519877d
-ata["placebo with inhibitor baseline","V3"])
-\end_layout
-
-\end_inset
-
- to 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3(PMID12519877data["placebo without inhibitor 6 months","V3"] - PMID12519877d
-ata["placebo with inhibitor 6 months","V3"])
-\end_layout
-
-\end_inset
-
- relative units, whereas six months of Testo changed it from 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3(PMID12519877data["testo without inhibitor baseline","V3"] - PMID12519877dat
-a["testo with inhibitor baseline","V3"])
-\end_layout
-
-\end_inset
-
- to 
-\begin_inset Flex S/R expression
-status open
-
-\begin_layout Plain Layout
-
-sig3(PMID12519877data["testo without inhibitor 6 months","V3"] - PMID12519877dat
-a["testo with inhibitor 6 months","V3"])
-\end_layout
-
-\end_inset
-
- relative units, a likely non-significant set of changes.
- The same group found a similar pattern of anticatabolic action, in a short-term
- trial of Testo on men with severe burns, once again doubled by an apparent
- absence of the pro-anabolic component
+ with the goal of maintaining a physiological Testo level over six months.
+ This moderate Testo therapy caused an improvement in muscle mass, strength,
+ and net protein balance, in the absence of an improvement in protein FSR.
+ Therefore, muscle protein accretion could be attributed to decreased protein
+ degradation.
+ Moreover, Ferrando and colleagues showed a significant decrease in the
+ proteasomal enzymatic activity following Testo therapy.
+ The same group found a similar pattern of net gain in muscle protein, correlate
+d with reduced catabolism and unchanged protein synthesis, in a short-term
+ trial of Testo on men with severe burns
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ferrando2001testosterone"
@@ -4745,74 +4647,14 @@ key "ferrando2001testosterone"
 \end_inset
 
 .
- It may be possible that the protective action of Testo changes qualitatively,
- depending on the cumulative dose.
- Alternatively, the anticatabolic action may be more salient when Testo
- supplementation is given to the normogonadal.
+ It is unclear why the anticatabolic action of Testo did not garner more
+ attention.
  The hypothesis that Testo inhibits protein degradation remains tempting,
  but better studies are needed.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename data/PMID12519877/proteasomeactivity.jpg
-	lyxscale 20
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Changes in proteasome enzymatic activity following 6 months of Testo therapy
- (reproduced from 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ferrando2003differential"
-
-\end_inset
-
- with permission).
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Proteasome-Ferrando"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In older men, Testo upregulated intramuscular and circulating levels of
- IGF-I
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ferrando2002testosterone,huang2005effects"
-
-\end_inset
-
-.
- The protection of muscle force provided by Testo to the older hypogonadal
+The protection of muscle force provided by Testo to the older hypogonadal
  men is not hindered by co-administration of finasteride, an inhibitor of
  5α-reductase which causes the transformation of Testo to 5α-dihydrotestosterone
  (
@@ -4843,8 +4685,8 @@ key "bhasin2012effect"
 .
  In human males, conversion to DHT is not required or T's regulation of
  muscle mass.
- Possibly more relevant, Testo upregulates IGF-I in the muscle and in the
- serum of the older men
+ Once more, a more plausible mediator of AAS is IGF-I, the peptide hormone
+ upregulated by Testo in the muscle and in the serum of the older men
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ferrando2002testosterone,huang2005effects"
@@ -4852,6 +4694,7 @@ key "ferrando2002testosterone,huang2005effects"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -4879,9 +4722,6 @@ key "croxson1989changes"
 \end_inset
 
 .
- Some of the drugs used in HIV-AIDS, the anticachectic megestrol and the
- protease inhibitor ritonavir, may cause hypercortisolism, making it even
- more informative about the action of AAS in CS.
  AAS delays loss of muscle mass in AIDS wasting syndrome, leading to better
  quality of life
 \begin_inset CommandInset citation
@@ -4891,8 +4731,8 @@ key "grinspoon1998effects"
 \end_inset
 
 .
- Microarray analysis indicated that T-treated muscle upregulated, as expected,
- expression of genes from the IGF-I- and AR-stimulated signaling pathways
+ Microarray analysis indicated that T-treated muscle upregulated expression
+ of genes from the IGF-I- and AR-stimulated signaling pathways
 \begin_inset CommandInset citation
 LatexCommand citep
 key "montano2007transcriptional"
@@ -4900,10 +4740,9 @@ key "montano2007transcriptional"
 \end_inset
 
 .
- Immunoblot confirmatory studies indicated that Testo caused the upregulation
+ Immunoblot confirmatory studies indicated that Testo caused the activation
  of a key component of the IGF-I signaling pathway, the protein kinase B,
- also known as Akt, in its Serine-473 phosphorylated, that is, activated
- form.
+ also known as Akt, by increasing its Ser-473 phosphorylation.
  Other genes upregulated by Testo are muscle development regulators, such
  as the myocyte enhancer factor 2A (
 \begin_inset CommandInset nomenclature
@@ -4941,8 +4780,8 @@ description "mitogen-activated protein kinases"
 \end_inset
 
 ) pathway.
- However, in the same study, at protein level, MAPK did not appear to be
- modulated by AAS therapy.
+ In the same study, MAPK protein levels did not appear to be modulated by
+ AAS therapy.
  The referenced microarray study failed to find a change in expression of
  the major muscle regulator myostatin
 \begin_inset CommandInset citation
@@ -4952,7 +4791,7 @@ key "mcpherron1997regulation,gonzalez-cadavid1998organization"
 \end_inset
 
 , or of the two E3 ligases typically associated with muscle loss, MAFbx
- and MuRF1
+ and MuRF-1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bodine2001identification,gustafsson2010effects"
@@ -4985,8 +4824,8 @@ key "casaburi2004effects"
 
 .
  These improvements are caused by an increase in fiber CSA, regardless of
- fiber type, and by an upregulation of the IGF-I mRNA isoform known as mechanogr
-owth factor or IGF-IEc
+ fiber type, and by an upregulation of the IGF-I mRNA isoforms IGF-IEa and
+ IGF-IEc
 \begin_inset CommandInset citation
 LatexCommand citep
 key "lewis2007skeletal"
@@ -4994,12 +4833,8 @@ key "lewis2007skeletal"
 \end_inset
 
 .
- In these men, MyHC upregulated by Testo in these men was of isoform 3,
- also known as embryonic MyHC.
- This is also one of the two MyHC isoforms upregulated by Testo in the HIV-posit
-ive men.
- In the COPD cohort, embryonic MyHC was found in thinnest fibers, possibly
- marking them as newly formed.
+ In both COPD and HIV-positive men, Testo upregulated isoform 3, also known
+ as embryonic, MyHC.
 \end_layout
 
 \begin_layout Standard
@@ -5015,8 +4850,8 @@ key "agapitou2013hormonal"
 \end_inset
 
 .
- Some randomized trial showed that heart failure patients improve their
- muscle force with AAS therapy
+ A randomized trial showed that heart failure patients improve their muscle
+ force with AAS therapy
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mirdamadi2014beneficial,stout2012testosterone"
@@ -5032,10 +4867,11 @@ key "xu2013testosterone,basaria2010adverse"
 
 \end_inset
 
-, which will discourage the use of Testo in heart failure.
- In fact, many of the aforementioned conditions where AAS was used are marred
- by higher cardiovascular risks and frailty, pressing the need for alternative,
- equally efficient, anabolic adjuvants.
+, which will discourage the use of Testo in heart failure and, in general,
+ in populations at risk.
+ In 2014, FDA required manufacturers to include on Testo labels a warning
+ regarding increased heart attack and stroke, thus pressing the need for
+ more specific anabolic adjuvants.
  To this end, a deeper understanding of AAS therapy at molecular level is
  required.
 \end_layout
@@ -5047,9 +4883,9 @@ In various conditions that cause muscle loss, AAS benefits share a pattern
  In some conditions, AAS-driven muscle rehabilitation is associated with
  an increase in satellite cells and / or an inhibition of protein degradation.
  Putative molecular mediators known from animal models have not been confirmed
- in humans, with the invariant exception of the upregulation of IGF-I.
+ in humans, with the exception of IGF-I upregulation.
  Better clinical studies are required.
- Animal models and in vitro studies sketch the road ahead.
+ For these, animal models and in vitro studies sketch the road ahead.
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -5077,11 +4913,6 @@ key "wang2003whole-body"
 \end_inset
 
 .
- Owing to the ability to measure individual muscles in any experiment, the
- scientific community has not been under pressure to develop accurate techniques
- that measure total skeletal muscle mass in mice.
- A proxy measure of murine skeletal muscle mass, lean body mass averaged
- 81% of total body weight in adult males (detailed in results section).
  Three fifths of the human body's protein is confined to the muscle contractile
  and support structures
 \begin_inset CommandInset citation
@@ -5099,12 +4930,9 @@ For the most part, the skeletal muscles confers the three-dimensional intricate
  at least at macroscopic level.
  In contrast, at cell level, the relatively high specialization of the skeletal
  muscle leaves little space for diversity or inhomogeneity.
- Skeletal muscles are organized in anatomical units that may impose a force
- on two moving body segments (typically, bones), determining them to come
- closer to each other.
- This specificity of action is ensured by the presence of distinct, well-determi
-ned insertion points, to which skeletal muscles are attached by the means
- of tendons and aponeuroses (reviewed in 
+ Muscles' diverse shapes are conferred by non-contractile auxiliary structures.
+ Largest of these structures, tendons and aponeuroses attach the muscle
+ to other body structures (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "mescher2013junqueiras"
@@ -5112,20 +4940,16 @@ key "mescher2013junqueiras"
 \end_inset
 
 ).
-\end_layout
-
-\begin_layout Standard
-The tendons are dense connective tissue structure, which extend into the
+ The tendons are dense connective tissue structure, which extend into the
  epimysium, a connective tissue sheath surrounding the muscle.
  In turn, epimysium emits connective septing structures termed perimysium,
  splitting muscles into subunits termed fascicles.
  At an even lower level, a thin, sparse connective structure called endomysium
  coats each polynucleate, elongated cell (termed myofiber).
- Connective tissue supports the terminal branches of the nervous, circulatory
- and lymphatic systems.
- In addition, connective tissue inside the muscle provides mechanical anchoring
- between fibers, longitudinally, laterally and with the tendons.
- This is particularly true of perimysium, whose collagen content is 95%
+ The connective tissue inside the muscle provides mechanical anchoring between
+ fibers, longitudinally, laterally and with the tendons.
+ This is particularly true of perimysium, which is almost acellular, at
+ 95% collagen content 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "light1984characterization"
@@ -5133,41 +4957,69 @@ key "light1984characterization"
 \end_inset
 
 .
- The collagen in muscle-associated connective tissue is mainly of types
- I and III (reticulin), with traces of type V collagen and fibronectin,
- while the most frequent proteoglycan is collagen I-binding decorin
-\begin_inset CommandInset citation
-LatexCommand cite
-key "eggen1994decorin"
-
-\end_inset
-
-.
- The external lamina is the equivalent of basement membranes in other tissues,
- an proteic structure surrounding each multinucleate, roughly tubular cell.
- The external lamina contains collagen IV, laminin, and heparan sulfates
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "grounds2005strength,mann2011aberrant"
-
-\end_inset
-
-.
- Muscle mass changes should require remodeling of all these connective structure
-s, with novel collagen synthesis possibly misleading measurements of protein
- synthesis in atrophying muscle.
- In addition to the contractile and connective components, muscles include
- vascular, nervous, adipose, blood and immune cells.
+ Intramuscular connective structures carry terminal branches of the nervous,
+ circulatory and lymphatic systems.
+ In addition, muscles include adipose and immune cells.
+ Muscle mass changes requires remodeling of all these connective structures
+ and may confound in vivo studies.
+ For example, collagen synthesis or macrophage proliferation may misleadingly
+ increase during slow muscle atrophy.
 \end_layout
 
 \begin_layout Standard
-The myofiber is the histological base unit of contractile tissue.
- Another muscle-specific population of cells comprises the mononuclear,
- proliferating cells, called satellite cells.
- Satellite cells are nearly devoid of cytosol, sitting in close proximity
- to the fiber, under the external lamina.
- They can be identified by markers such as Pax7 and, on the membrane, CD34
+The elongated, multinucleate myofiber is the histological base unit of contracti
+le tissue.
+ A large majority of the myofiber cytosol is the contractile apparatus,
+ in the shape of bundles of protein filaments termed myofibrils.
+ Within myofibrils, myosin and actin filaments alternate, held together
+ by multi-protein complexes containing titin.
+ Myofibril proteins are about two thirds of the total myofiber protein
+\begin_inset CommandInset citation
+LatexCommand citep
+key "waterlow1978protein"
+
+\end_inset
+
+.
+ Therefore, any myofiber size change with functional relevance should correlate
+ with changes in myosin II and actin protein content.
+ The sizable actin content poses a challenge to muscle studies.
+ Traditionally, in biological studies, actin is considered a housekeeping,
+ unregulated, invariable protein, and is used in level normalization.
+ In muscle, especially in atrophy, actin cannot be invariable.
+ or example, in rat muscles atrophying due to streptozotocin-induced acute
+ diabetes, an actin degradation fragment is detectable
+\begin_inset CommandInset citation
+LatexCommand citep
+key "du2004activation"
+
+\end_inset
+
+.
+ Therefore, in atrophy studies, normalization to actin may misleadingly
+ reduce the apparent rate of depletion for other proteins.
+ Similar issues govern the use of 3MH as a marker for myofibril protein
+ catabolism.
+ Given that the main correlate of urinary 3MH is muscle mass
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lukaski1981relationship"
+
+\end_inset
+
+, 3MH measurement may lack sensitivity when used as a indicator for muscle
+ catabolic rate.
+ On one hand, increased catabolism is expected to cause increased 3MH output,
+ but on the other, an atrophic muscle has less 3MH to release.
+\end_layout
+
+\begin_layout Standard
+Myofibers acquire nuclei solely by fusion with surrounding proliferative
+ mononucleate cells, or with neighboring myofibers.
+ Two classes of mononucleate cells are relevant for muscle structure and
+ development.
+ Satellite cells are Pax7-positive, mononuclear, nearly devoid of cytosol,
+ sitting in close proximity to the fiber, under the proteic external lamina
  (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5176,35 +5028,9 @@ key "scharner2011muscle"
 \end_inset
 
 ).
-\end_layout
-
-\begin_layout Standard
-Each myofiber is a syncytium, that forms and grows by fusion with neighboring
- cells.
- The only way to acquire nuclei to the myofibers is fusion with surrounding
- proliferative mononucleate cells, or with neighboring myofibers.
- Cells that have the ability to undergo mitosis and to fuse with myofibers
- are typically designated myoblasts.
+ In contrast to the above histological definition, myoblasts are defined
+ in a functional manner, as proliferating cells able to fuse with myofibers.
  In vivo, myoblasts are derived from a subset of satellite cells.
- Experimentally, α7 integrin is an effective marker for selecting proliferative
- precursors from muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "blanco-bose2001purification"
-
-\end_inset
-
-, although its sensitivity and specificity are yet to be established.
- Alternate sources of nuclei in the myofiber are subject of ongoing research,
- but their relative importance is expected to be minor at best (reviewed
- in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "yin2013satellite"
-
-\end_inset
-
-).
  A transplant of seven satellite cells from an adult mouse is capable of
  yielding more than a hundred multinucleate myofibers, thus demonstrating
  former's ability to regenerate muscle
@@ -5215,7 +5041,7 @@ key "collins2005stem"
 \end_inset
 
 .
- The transformation of quiescent satellite cells to proliferating myoblast
+ The transformation of quiescent satellite cells into proliferating myoblast
  is regulated by the interplay of growth factors, external lamina, and contact
  with myofibers
 \begin_inset CommandInset citation
@@ -5225,9 +5051,32 @@ key "bischoff1986proliferation"
 \end_inset
 
 .
- In vivo, myofiber nuclei are typically peripheral, while in vitro incomplete
- models often yield elongated, contractile cells, with central nuclei, akin
- to regenerating fibers.
+ Alternate extra-muscular sources of nuclei in the myofiber are subject
+ of ongoing research, but their relative importance is expected to be minor
+ at best (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "yin2013satellite"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Experimentally, α7 integrin is an effective marker for selecting proliferative
+ precursors from muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "blanco-bose2001purification"
+
+\end_inset
+
+.
+ Many in vitro muscle models are based on the formation of multinucleate
+ fibers from isolated myoblasts.
+ In vivo, myofiber nuclei are typically peripheral, while in vitro multinucleate
+ cells are characterized by central nuclei, akin to regenerating fibers.
  The latter are typically termed myotubes.
 \end_layout
 
@@ -5254,60 +5103,9 @@ key "lowe1999stretch-induced"
 
 .
  These example of amitotic hypertrophy demonstrate that, in some circumstances,
- the number of nuclei and the pace of transcription are not limiting factors
- in muscle growth.
-\end_layout
-
-\begin_layout Standard
-A large majority of the myofiber cytosol is the contractile apparatus, in
- the shape of bundles of protein filaments termed myofibrils.
- Within myofibrils, myosin and actin filaments alternate, held together
- by multi-protein complexes containing titin.
- Myofibril proteins are about two thirds of the total myofiber protein
-\begin_inset CommandInset citation
-LatexCommand citep
-key "waterlow1978protein"
-
-\end_inset
-
-.
- Therefore, any myofiber size change with functional relevance should correlate
- with changes in myosin II and actin protein content.
- In rat muscles, three days of streptozotocin-induced acute diabetes causes
- intramuscular formation of a actin degradation fragment
-\begin_inset CommandInset citation
-LatexCommand citep
-key "du2004activation"
-
-\end_inset
-
-.
- The apparent sensitivity of actin to muscle mass regulators poses a technical
- challenge to protein and even mRNA measurements, because traditionally
- actin is considered a housekeeping, unregulated, and rather constant protein,
- and is used in level normalization.
- If, in an atrophying muscle, some protein of interest is depleted faster
- than actin, immunoblots will convey the certainty that the former is downregula
-ted.
- But if the protein of interest is lost in a less preferential manner, at
- the same rate with actin, immunoblots normalized to actin will convey the
- mistaken appearance of constancy.
-\end_layout
-
-\begin_layout Standard
-Similar issues govern the use of 3MH as a marker for myofibril protein catabolis
-m.
- Given that the main correlate of urinary 3MH is muscle mass
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lukaski1981relationship"
-
-\end_inset
-
-, 3MH measurement may lack sensitivity when used as a indicator for muscle
- catabolic rate.
- On one hand, increased catabolism is expected to cause increased 3MH output,
- but on the other, an atrophic muscle has less 3MH to release.
+ the number of nuclei is not limiting muscle growth.
+ Conversely, it is plausible that a moderate degree of muscle atrophy occurs
+ without loss of nuclei.
 \end_layout
 
 \begin_layout Standard
@@ -5325,8 +5123,19 @@ Preadult muscle development
 \end_layout
 
 \begin_layout Standard
-Around puberty, muscle growth is associated with a massive shift of nuclei
- from the satellite cells to the myofibers
+In humans, immediately after birth, the number of satellite cells is much
+ higher than in the adult, but drops by an order of magnitude between birth
+ and 10 years
+\begin_inset CommandInset citation
+LatexCommand citep
+key "verdijk2014satellite"
+
+\end_inset
+
+.
+ This decay carries on throughout the life time at a slower rate.
+ In mice, muscle growth at puberty is associated with a massive shift of
+ nuclei from the satellite cells to the myofibers
 \begin_inset CommandInset citation
 LatexCommand citep
 key "neal2012satellite"
@@ -5334,16 +5143,28 @@ key "neal2012satellite"
 \end_inset
 
 .
- Even earlier, de novo muscle development is remarkable for its accretion
+ Perinatal Pax7 knockout reduces muscle ability to regenerate, while its
+ genetic depletion in utero or at adulthood does not exhibit pathological
+ traits
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lepper2009adult"
+
+\end_inset
+
+, suggesting that juvenile muscle growth is distinct from muscle development
+ at other ages.
+ 
+\end_layout
+
+\begin_layout Standard
+Even earlier, de novo muscle development is remarkable for its accretion
  of new nuclei to the myofiber.
  Pre-adulthood muscle growth appears reliant on hyperplasia, that is, cell
  proliferation.
  Cell proliferation regulators are crucial in determination of muscle mass
  in before and soon after birth.
-\end_layout
-
-\begin_layout Standard
-In utero, the mesoderm, which is the source of muscle progenitor cells,
+ In utero, the mesoderm, which is the source of muscle progenitor cells,
  undergoes segmentation and differentiation to form somites, dermomyotomes,
  and eventually myotomes (reviewed in 
 \begin_inset CommandInset citation
@@ -5363,9 +5184,9 @@ description "muscle regulatory factor"
 \end_inset
 
 ).
- In animal models, the cells in epaxial and hypaxial muscle initiate the
- formation of trunk and limb muscles.
- The limb muscle early progenitors express myogenic factor (
+ These embryonic epaxial and hypaxial muscles develop into trunk and limb
+ muscles.
+ Early on, limb muscle precursors express myogenic factor (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Myf"
@@ -5381,9 +5202,8 @@ key "daston1996pax-3,francetic2011skeletal"
 \end_inset
 
 .
- Myf5 is a strong inductor of the muscle transcriptional program and phenotype,
- with the ability to convert embryonic fibroblasts to myosin-containing
- syncitia
+ Myf5 is a strong inductor of the muscle phenotype, with the ability to
+ convert embryonic fibroblasts to myosin-containing syncitia
 \begin_inset CommandInset citation
 LatexCommand citep
 key "braun1989novel"
@@ -5391,8 +5211,8 @@ key "braun1989novel"
 \end_inset
 
 .
- Cranial muscle formation is coordinated in a partly different manner, through
- the transcription factors T-box (
+ Cranial muscle formation is coordinated in a slightly different manner,
+ through the transcription factors T-box (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Tbx"
@@ -5444,15 +5264,13 @@ description "Online Mendelian Inheritance in Man"
 
 ) database, there is no reported case of human mutation of Myf5 or MyoD,
  further supporting the idea of duplicate function.
- Neither Myf5, nor MyoD induce muscle attributes.
- However, the expression of either will promote expression of another MRF,
- myogenin, which marks the transition form specification to differentiation.
- MRFs share structural features, and some are juxtaposed in the genome,
- making their study difficult.
 \end_layout
 
 \begin_layout Standard
-Initiation of myogenin expression marks the transition from specification
+Neither Myf5, nor MyoD induce muscle attributes.
+ However, the expression of either will promote expression of another MRF,
+ myogenin, which marks the transition from specification to differentiation.
+ Initiation of myogenin expression marks the transition from specification
  to differentiation stage.
  In cultured cells, myogenin expression is followed by p21 expression, which
  removes the muscle precursor from the cell cycle
@@ -5503,7 +5321,53 @@ key "draeger1987primary"
 \end_layout
 
 \begin_layout Standard
-In chick embryos, overexpression of IGF-I induces a rapid increase in the
+Overall, muscle formation in utero and in early childhood relies heavily
+ on nuclei accretion and, as a consequence, on precursor proliferation.
+ A series of other factors cooperate to improve embryonic muscle formation,
+ including myostatin and IGF-I.
+ Experimental myostatin perturbations in chicken embryos alter the number
+ of muscle precursor cells
+\begin_inset CommandInset citation
+LatexCommand citep
+key "manceau2008myostatin"
+
+\end_inset
+
+.
+ Phenotypic differences between myostatin-null and wild-type mice develop
+ by the second week of embryogenesis, prior to the moment when differences
+ in protein synthesis would become relevant
+\begin_inset CommandInset citation
+LatexCommand citep
+key "matsakas2010altered"
+
+\end_inset
+
+.
+ Similarly, the few reports of viable human mutations in the myostatin gene
+ concern newborns with unusually large muscles
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schuelke2004myostatin"
+
+\end_inset
+
+.
+ Because myostatin defects cause even ampler increases in muscle mass after
+ birth
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lin2002myostatin,schuelke2004myostatin"
+
+\end_inset
+
+, it is possible that myostatin acts through parallel, mitotic and non-mitotic,
+ mechanisms.
+\end_layout
+
+\begin_layout Standard
+IGF-I has a similar composite effect.
+ In chick embryos, overexpression of IGF-I induces a rapid increase in the
  ratio of myoblast to myofiber nuclei, while fiber density is unchanged
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5530,84 +5394,12 @@ key "fernandez2001functional,abuzzahab2003igf-i"
 \end_inset
 
 .
- However, IGF-1R defects may act by mitotic impairment, by anabolic deficiency,
- or even by an insulin signaling defect caused by the disappearance of hybrid
- dimers between IGF-1R and insulin receptor.
+ As in myostatin's case, it is difficult to separate mitotic and non-mitotic
+ effects of IGF-I.
 \end_layout
 
 \begin_layout Standard
-In mice, phenotypic differences between myostatin-null and wild type develop
- by the second week of embryogenesis
-\begin_inset CommandInset citation
-LatexCommand citep
-key "matsakas2010altered"
-
-\end_inset
-
-.
- Experimental myostatin perturbations in chicken embryos alter the population
- of muscle precursor cells
-\begin_inset CommandInset citation
-LatexCommand citep
-key "manceau2008myostatin"
-
-\end_inset
-
-.
- The few reports of viable human mutations in the myostatin gene concern
- newborns with unusual unusually large muscles, due to loss of function
-\begin_inset CommandInset citation
-LatexCommand citep
-key "schuelke2004myostatin"
-
-\end_inset
-
-.
- Nevertheless, myostatin defects appear to cause ampler changes in muscle
- mass after birth
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lin2002myostatin,schuelke2004myostatin"
-
-\end_inset
-
-.
- The relative importance of myostatin in embryo muscle development is to
- be determined.
-\end_layout
-
-\begin_layout Standard
-Immediately after birth, the number of satellite cells is much higher than
- in the adult, with a one magnitude order drops between birth and 10 years
-\begin_inset CommandInset citation
-LatexCommand citep
-key "verdijk2014satellite"
-
-\end_inset
-
-.
- This decay carries on throughout the life time at slower rate.
- Perinatal Pax7 knockout reduces muscle ability to regenerate, while its
- genetic depletion in utero or at adulthood does not exhibit pathological
- traits
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lepper2009adult"
-
-\end_inset
-
-, suggesting that juvenile muscle growth is distinct from muscle development
- at other ages.
- Overall, muscle formation in children appears qualitatively different from
- adult muscle hypertrophy and regeneration, and should be more susceptible
- to modulation via mitotic mechanisms.
- This may be underlie a difference between juvenile and adult in the atrophying
- effect of GC on muscle.
-\end_layout
-
-\begin_layout Standard
-The most likely source of new myofiber nuclei are the adult satellite cells,
- derived from a subset of fetal Pax3
+The adult satellite cells are derived from a subset of fetal Pax3
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -5626,9 +5418,9 @@ Pax7
 \end_inset
 
  cells.
- Some cells, such as bone marrow stem cells and pericytes, have the ability
- to fuse with myotubes, and possibly contribute to the muscle stem cell
- population
+ Because some cells, such as bone marrow stem cells and pericytes, have
+ the ability to fuse with myotubes in vitro, the muscle stem cell population
+ was hypothesized to include extra-muscular self-renewing cells 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dellavalle2011pericytes,labarge2002biological"
@@ -5636,65 +5428,9 @@ key "dellavalle2011pericytes,labarge2002biological"
 \end_inset
 
 .
- In adulthood, most limb and trunk satellite cells are Pax7
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
-, while head satellite cells are often Pax3
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
-Pax7
-\begin_inset script superscript
-
-\begin_layout Plain Layout
--
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "relaix2006pax3"
-
-\end_inset
-
-.
- However, in longitudinal studies, human muscle mass, as estimated by body
- potassium, decreases in men and and stagnates in women over the age of
- 30
-\begin_inset CommandInset citation
-LatexCommand citep
-key "forbes1970adult"
-
-\end_inset
-
-.
- As evidenced by studies such as the New Mexico Elder Health Survey, 1993-1995,
- with aging, loss of muscle mass accelerates 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "baumgartner1998epidemiology"
-
-\end_inset
-
-.
- Any muscle growth mechanism, including that dependent on satellite cells,
- is likely less powerful in adulthood than in childhood.
- Indeed, after the age of 20, nuclei in human muscle maintain an almost
- constant length of telomeres, indicating that mitosis is a rare phenomenon
- in the adult muscle
+ However, after the age of 20, human muscle nuclei maintain an almost constant
+ length of telomeres, suggesting that mitosis and recruitment of extramuscular
+ cells are rare phenomena 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "decary1997replicative"
@@ -5702,8 +5438,8 @@ key "decary1997replicative"
 \end_inset
 
 .
- Moreover, the proportion of satellite cells with proliferating abilities
- decreases with age, as more of them approach the Hayflick limit
+ Moreover, the proportion of resident satellite cells with proliferating
+ abilities decreases with age, as more of them approach the Hayflick limit
 \begin_inset CommandInset citation
 LatexCommand citep
 key "renault2000skeletal"
@@ -5711,6 +5447,21 @@ key "renault2000skeletal"
 \end_inset
 
 .
+ As evidenced by studies such as the New Mexico Elder Health Survey, 1993-1995,
+ aging is associated with accelerated loss of muscle mass 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "baumgartner1998epidemiology"
+
+\end_inset
+
+.
+ Muscle growth mechanisms based on mitosis become the exception, rather
+ than the rule, in adult muscle.
+ This may be underlie a difference between juvenile and adult in the atrophying
+ effect of GC on muscle.
+ The reduced rate of mitosis in adult muscle suggests that GAML and its
+ alleviation by AAS should not be mediated by changes in nuclei density.
 \end_layout
 
 \begin_layout Section
@@ -5914,16 +5665,21 @@ key "gelfand1986removal"
 \end_layout
 
 \begin_layout Standard
-Among the amino acids with a trend for release between meals, isoleucine,
+Other amino acids are more suitable for labeling and protein tracking experiment
+s.
+ Among the amino acids with a trend for release between meals, isoleucine,
  leucine, methionine, phenylalanine, threonine, and valine cannot be synthesized
  by humans.
  Their net release indicates that, at rest, basal level of protein degradation
  slightly surpass protein synthesis.
  Conversely, for a steady muscle mass, there must be net protein synthesis
  in the fed state.
- Feeding status is relayed to the muscle by a surge in insulin and, independentl
-y, by an increase in circulating levels of essential branched-chain amino
- acids (
+ 
+\end_layout
+
+\begin_layout Standard
+Among the above amino acids, valine, isoleucine, and leucine, grouped under
+ the name branched-chain amino acids (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "BCAA"
@@ -5931,8 +5687,7 @@ description "branched-chain amino acids"
 
 \end_inset
 
-), that is, valine, isoleucine, and leucine.
- The signaling effects of BCAA are not completely understood.
+), lead to protein accretion in muscle through a complex mechanism.
  Some studies show that BCAA ingestion or infusion increase protein synthesis
  rate
 \begin_inset CommandInset citation
@@ -5949,19 +5704,11 @@ key "nair1992leucine"
 \end_inset
 
 .
- However, staying true to their energetic value, BCAA supplementation caused
- increases in insulin in all the referenced studies.
- It becomes difficult to extricate BCAA intrinsic effect from that of insulin.
- Moreover, the combination of insulin and BCAA is a potent synergistic anabolic
- stimulus in healthy human muscle
-\begin_inset CommandInset citation
-LatexCommand citep
-key "barazzoni2012insulin"
-
-\end_inset
-
-.
- One study investigated the action of BCAA at clamped normal insulin levels
+ The effect of BCAA supplementation is three-fold, combining increase caloric
+ intake, reflex hyperinsulinemia, and an autonomous, insulin-independent
+ effect.
+ One study investigated the molecular effects of BCAA at clamped normal
+ insulin levels
 \begin_inset CommandInset citation
 LatexCommand citep
 key "cuthbertson2005anabolic"
@@ -5971,10 +5718,8 @@ key "cuthbertson2005anabolic"
 .
  In young, healthy controls, BCAA alone were able to increase the fractional
  synthesis rate for myofibrilar protein.
- At the same time, BCAA caused an increase in phosphorylation of mTOR at
- Serine 2448.
- This posttranslational modification is caused by the ribosomal protein
- S6 kinase, 70 kDa (
+ At the same time, BCAA caused intramuscular hyperphosphorylation of 4E-BP
+ and of the ribosomal protein S6 kinase, 70 kDa (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "p70-S6K"
@@ -5982,15 +5727,8 @@ description "ribosomal protein S6 kinase, 70 kDa"
 
 \end_inset
 
-)
-\begin_inset CommandInset citation
-LatexCommand citep
-key "chiang2005phosphorylation"
-
-\end_inset
-
-.
- Interestingly, p70-S6K is a substrate of mTOR complex 1 (
+).
+ Both are substrates of mTOR complex 1 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "mTORC1"
@@ -5998,8 +5736,8 @@ description "mTOR complex 1"
 
 \end_inset
 
-), with the latter considered an integrator of nutrients, energy, and growth
- factor signaling (reviewed in 
+), an integrator of nutrients, energy, and growth factor signaling (reviewed
+ in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "laplante2012mtor"
@@ -6007,21 +5745,26 @@ key "laplante2012mtor"
 \end_inset
 
 ).
- Indeed, in the same muscle, p70-S6K was activated, as indicated by an increase
- in its Thr 389 phosphorylated form.
- Another substrate of mTORC1, 4E-BP, was hyperphosphorylated.
- The action of mTORC1 on 4E-BP is the canonical way in which the former
- stimulates protein synthesis, by abolishing the latter's ability to bind
- and inhibit the mandatory translation initiation factor eIF4E.
- Many of these anabolic markers may be paradoxically elevated in acute,
- non-starving atrophy settings, where BCAA sudden release increases their
- circulating levels.
+ Hyperphosphorylation of 4E-BP is the canonical way by which mTORC1 stimulates
+ protein synthesis, by abolishing the former's ability to bind and inhibit
+ the mandatory translation initiation factor eIF4E.
+ The activation of p70-S6K lead to the activation of a feedback phosphorylation
+ of mTOR at Serine 2448 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chiang2005phosphorylation"
+
+\end_inset
+
+.
+ Some of these three posttranslational modifications are paradoxically found
+ in acute atrophy settings, when BCAA sudden release increases their circulating
+ levels.
 \end_layout
 
 \begin_layout Standard
-In addition to their signaling roles, BCAA are also used by muscle as protein
- precursors, and as energetic substrates, when preferred energetic substrates
- are not available
+In vivo, BCAA are used by muscle as protein precursors, signaling molecules,
+ and energetic substrates, when preferred energetic substrates are not available
 \begin_inset CommandInset citation
 LatexCommand citep
 key "suryawan1998molecular"
@@ -6031,24 +5774,8 @@ key "suryawan1998molecular"
 .
  In studies which measure leucine disappearance from the bloodstream or
  culture medium, a distinction must be made between the leucine used in
- non-oxidative, anabolic reactions and the alpha-ketoisocaproate-forming,
+ non-oxidative, anabolic reactions, and the alpha-ketoisocaproate-forming,
  ergogenic usage.
- 
-\end_layout
-
-\begin_layout Standard
-The degree to which energetic needs modulate BCAA usage appears to differ
- between humans and rats, reducing the validity of animal models (reviewed
- in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "matthews2005observations"
-
-\end_inset
-
-).
- Amino acid uptake or release rates are perturbed by energy and hormonal
- factors, to a degree that is still to be measured in humans.
  An argument has been made for using phenylalanine as a tracer, because
  muscle catabolism is negligible, and because it has a lower insulin secretagogu
 e effect
@@ -6165,7 +5892,7 @@ key "hanssen2013effect"
 
 .
  On the other hand, long-term exercise induces the expression of catabolic
- markers, such as the E3 ligases MAFbx and MuRF1
+ markers, such as the E3 ligases MAFbx and MuRF-1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "stefanetti2014regulation"
@@ -6944,8 +6671,8 @@ key "gomes2012upregulation"
 \end_inset
 
 , and upregulates all the ubiquitin-proteasome pathway components, including
- ubiquitin, the E3 ligases MuRF1 and MAbx, and the proteasomal subunit A1
- 
+ ubiquitin, the E3 ligases MuRF-1 and MAbx, and the proteasomal subunit
+ A1 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "medina1995increase,bodine2001identification"
@@ -7973,7 +7700,7 @@ key "du2000glucocorticoids"
 
 \begin_layout Standard
 Unbiased searches in atrophying mouse muscles revealed two upregulated genes,
- termed atrogenes, MAFbx and MuRF1
+ termed atrogenes, MAFbx and MuRF-1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bodine2001identification"
@@ -7987,7 +7714,7 @@ key "bodine2001identification"
 
 \begin_layout Standard
 In contrast to other muscle atrophy models, GAML is associated with stronger
- reliance on MuRF1 than on MAFbx.
+ reliance on MuRF-1 than on MAFbx.
  While genetic depletion of either atrogene leads to muscle sparing in the
  denervation model
 \begin_inset CommandInset citation
@@ -7996,7 +7723,7 @@ key "bodine2001identification"
 
 \end_inset
 
-, only MuRF1, but not MAFbx genetic depletion spares muscle treated with
+, only MuRF-1, but not MAFbx genetic depletion spares muscle treated with
  Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -8005,12 +7732,13 @@ key "baehr2011muscle"
 \end_inset
 
 .
- The incomplete sparing of the MuRF1 knockout may be caused by genetic redundanc
-y, but may also be explained by a need for a second, co-operating gene.
+ The incomplete sparing of the MuRF-1 knockout may be caused by genetic
+ redundancy, but may also be explained by a need for a second, co-operating
+ gene.
 \end_layout
 
 \begin_layout Standard
-While MuRF1 promoter includes a GC response element, no similar structure
+While MuRF-1 promoter includes a GC response element, no similar structure
  was found on MAFbx promoter
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -8111,7 +7839,7 @@ key "bodine2014skeletal"
  suggested that MAFbx relative importance is augmented in conditions where
  muscle loss relies more on loss of protein synthesis.
  In contrast, two-yeast hybrid experiments revealed two large classes of
- well-expressed putative MuRF1 substrates, myofibrilar components, including
+ well-expressed putative MuRF-1 substrates, myofibrilar components, including
  titin, nebulin, troponin-I, troponin-T, myosin light chain 2, and components
  of ATP-generating machinery, including NADH dehydrogenase 1a, NADH-ubiquinone
  oxidoreductase, pyruvate dehydrogenase, and ATP synthase beta-subunit
@@ -8123,7 +7851,7 @@ key "witt2005murf-1"
 
 .
  The loss of the latter, but not the former group, was confirmed in the
- transgenic mouse overexpressing MuRF1
+ transgenic mouse overexpressing MuRF-1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hirner2008murf1-dependent"
@@ -8131,7 +7859,7 @@ key "hirner2008murf1-dependent"
 \end_inset
 
 .
- In vitro, MuRF1 ubiquitinates myosin heavy chains
+ In vitro, MuRF-1 ubiquitinates myosin heavy chains
 \begin_inset CommandInset citation
 LatexCommand citep
 key "clarke2007e3"
@@ -8146,7 +7874,7 @@ key "polge2011muscle"
 \end_inset
 
 .
- MuRF1 is therefore a more plausible effector of bulk protein degradation,
+ MuRF-1 is therefore a more plausible effector of bulk protein degradation,
  as it is a better fit for the 
 \begin_inset Quotes eld
 \end_inset
@@ -8168,7 +7896,7 @@ key "stitt2004igf-1/pi3k/akt"
 \end_inset
 
 .
- The sparing of MuRF1 knockout mice revelats its central role in GAML
+ The sparing of MuRF-1 knockout mice revelats its central role in GAML
 \begin_inset CommandInset citation
 LatexCommand citep
 key "baehr2011muscle"
@@ -8251,7 +7979,7 @@ key "alamdari2010sepsis"
 In conclusion, explant models suggest that GAML is, to a wide extend, the
  result of upregulation of the proteasome-ubiquitin system.
  While two important E3 ligases have been identified, the absence of specific
- anti-MAFbx and anti-MuRF1 antibodies prevents the study of their protein
+ anti-MAFbx and anti-MuRF-1 antibodies prevents the study of their protein
  flux and their intracellular localization
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -8790,7 +8518,7 @@ key "ruzzin2005contraction,coderre2007regulation,buren2008insulin"
 \end_inset
 
 .
- Among the many substrates of GSK3-β, the subunit ε of the eukaryotic initiation
+ Among the many substrates of GSK3-β, the subunit ε of eukaryotic initiation
  factor 2B (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -9537,7 +9265,7 @@ key "sandri2004foxo,senf2010foxo"
 
 \begin_layout Standard
 Among the Foxo-induced genes, a special importance was given to the E3 ligases
- associated with muscle loss, MAFbx and MuRF1
+ associated with muscle loss, MAFbx and MuRF-1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "stitt2004igf-1/pi3k/akt"
@@ -9563,7 +9291,7 @@ key "bollinger2014smad3"
 \end_inset
 
 .
- MuRF1 promoter facilitates another synergistic interaction, between FOXO1
+ MuRF-1 promoter facilitates another synergistic interaction, between FOXO1
  and GR
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -9572,8 +9300,8 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 .
- A positive feedback loop links MuRF1 and FOXO1, as indicated by downregulation
- of p85 and FOXO1 in late GAML in the MuRF1 knockout
+ A positive feedback loop links MuRF-1 and FOXO1, as indicated by downregulation
+ of p85 and FOXO1 in late GAML in the MuRF-1 knockout
 \begin_inset CommandInset citation
 LatexCommand citep
 key "furlow2013altered"
@@ -9664,7 +9392,7 @@ key "ma2003glucocorticoid-induced"
 
 .
  In myostatin knockout mice, Dexa induces most of its transcriptional program,
- including modulations of IGF-I, MuRF1, MAFbx, FOXO3A, but Dexa-induced
+ including modulations of IGF-I, MuRF-1, MAFbx, FOXO3A, but Dexa-induced
  muscle loss does not occur 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -10066,7 +9794,7 @@ key "tomas1992insulin-like"
 \end_layout
 
 \begin_layout Standard
-In the MuRF1 knockout mouse, Dexa fails to change FSR
+In the MuRF-1 knockout mouse, Dexa fails to change FSR
 \begin_inset CommandInset citation
 LatexCommand citep
 key "baehr2011muscle"
@@ -10226,16 +9954,8 @@ key "berlanga1999characterization"
 \end_inset
 
 .
- Activated GCN2 phosphorylates eukaryotic initiation factor 2 (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "eIF2"
-description "eukaryotic initiation factor 2"
-
-\end_inset
-
-) at Ser 51 on its α subunit, leading to the formation of an inactivating
- complex with eIF2B
+ Activated GCN2 phosphorylates eIF2α at Ser 51, leading to the formation
+ of an inactivating complex with eIF2B
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gross1987evidence"
@@ -10341,8 +10061,8 @@ Changes in 4E-BP1 and perhaps some other pathways regulating protein synthesis
  The mild alterations of translation molecular markers correlate with the
  moderate loss in protein synthesis rate.
  While the overall effect is not negligible, its reduced amplitude and its
- downstream relation to MuRF1 indicate that anabolism adjustments play a
- complementary role to the activation of the ubiquitin-proteasome system
+ downstream relation to MuRF-1 indicate that anabolism adjustments play
+ a complementary role to the activation of the ubiquitin-proteasome system
  in GAML.
 \end_layout
 
@@ -10675,7 +10395,7 @@ key "itagaki2010dexamethasone"
 
 \begin_layout Standard
 It has been speculated that activations of calpains is an initial step in
- GAML, allowing myofibril protein to interact with MuRF1
+ GAML, allowing myofibril protein to interact with MuRF-1
 \begin_inset CommandInset citation
 LatexCommand citep
 key "goll2003calpain"
@@ -10846,7 +10566,7 @@ key "li2004insulin-like"
 \end_inset
 
 .
- IGF-I co-administration reverses MAFbx and MuRF1 upregulation
+ IGF-I co-administration reverses MAFbx and MuRF-1 upregulation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sacheck2004igf-i,waddell2008glucocorticoid"
@@ -10863,7 +10583,7 @@ key "stitt2004igf-1/pi3k/akt"
 
 \end_inset
 
- and reducing its ability to bind MuRF1 promoter
+ and reducing its ability to bind MuRF-1 promoter
 \begin_inset CommandInset citation
 LatexCommand citep
 key "waddell2008glucocorticoid"
@@ -11502,7 +11222,7 @@ description "B-cell leukemia/lymphoma 3"
 
 ) and IκB indicate that GAML relies on NF-κB, and Testo is deactivating
  that pathway too.
- Testo also reversed the surge of MuRF1, proteasomal subunit D8, cathepsin
+ Testo also reversed the surge of MuRF-1, proteasomal subunit D8, cathepsin
  L, LC3, M-type calpain, C/EBP β and δ, and metallothionein 1, exhibiting
  a wide-spectrum anti-atrophic action.
 \end_layout
@@ -11560,7 +11280,7 @@ The example of Gadd45, at the end of the previous section, illustrates the
  On the other, we have invariable molecular correlates of Dexa treatment,
  such as augmented proteolysis, increased Foxo transcriptional activity,
  reduced insulin sensitivity at Akt and mTORC1 level, and upregulation of
- MuRF1 and REDD1.
+ MuRF-1 and REDD1.
  For many of these, inhibition or interference experiments showed a reduction
  in muscle atrophy, but none was found to be indispensable for GAML.
  The hierarchy of molecular events in GAML is unclear, and lags behind progresse
