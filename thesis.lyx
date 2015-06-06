@@ -8595,8 +8595,8 @@ key "guertin2007defining,laplante2009mtor,inoki2002tsc2"
 \end_inset
 
 ).
- Its modulation in GAML is clearly proven by reduced phosphorylation in
- its substrates, 4E-BP (Thr 37/46) and p70-S6K (Thr 389) 
+ Its modulation in acute Dexa administration is proven by reduced phosphorylatio
+n in its substrates, 4E-BP (Thr 37/46) and p70-S6K (Thr 389) 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shah2000glucocorticoids"
@@ -8615,13 +8615,12 @@ key "long2001dexamethasone,dardevet1999glucocorticoid-induced"
 \end_inset
 
 .
- However, the mechanism by which mTOR is modulated by Dexa is not elucidated
- yet.
 \end_layout
 
 \begin_layout Standard
-Cell models established that activated Akt phosphorylates and inhibits proline-r
-ich Akt substrate of 40-kDa (
+The mechanism by which mTOR is modulated by Dexa is not elucidated yet.
+ Cell models established that activated Akt phosphorylates and inhibits
+ proline-rich Akt substrate of 40-kDa (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PRAS40"
@@ -8832,10 +8831,10 @@ key "britto2014redd1"
  opens the perspective for a paradigm-overturning situation.
  Because it failed to induce protein loss or protein degradation, its results
  may not apply to chronic GAML.
- Nevertheless, its findings are the best mechanistic explanation for Dexa-induce
-d inhibition of mTORC1.
+ Nevertheless, its findings are the most complete mechanistic explanation
+ for Dexa-induced inhibition of mTORC1.
  In wild-type mice, Britto and colleagues found that acute Dexa caused,
- unexpectedly, increased phosphorylation of TSC2 and Ser 473 on Akt.
+ unexpectedly, hyperphosphorylation of TSC2 and Ser 473 on Akt.
  These mice exhibited lower phosphorylation of 4E-BP1, indicating that their
  mTORC1 was repressed.
  Thus, Britto concluded that Dexa-induced mTORC1 inactivation is mediated
@@ -8852,7 +8851,7 @@ e TSC2, but not PRAS40, are attributed to dissociation between Ser 473 and
 \begin_layout Standard
 A series of putative interaction remain to demonstrated.
  Britto speculated that Akt Ser 473 hyperphosphorylation is caused by a
- feedback loop responding to mTORc1 inhibition.
+ feedback loop responding to mTORC1 inhibition.
  The mechanism by which REDD1 inhibits Akt activity on PRAS40 is not known.
  Studies on transformed cells support the hypothesis that REDD1 impairs
  Akt Thr 308 phosphorylation, while proposing various pathways (
@@ -9009,8 +9008,8 @@ key "zhao2007foxo3,sandri2004foxo"
 \end_inset
 
 .
- In vivo, evidence for a similar hypophosphorylated Foxo is limited to a
- few, unusual experiments
+ In vivo, evidence for hypophosphorylation of Foxo is limited to a few,
+ unusual experiments
 \begin_inset CommandInset citation
 LatexCommand citep
 key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
@@ -9129,7 +9128,8 @@ key "qin2010protection"
 .
  More convincing evidence towards Foxo activation comes from its downstream
  effects.
- For example, Dexa increases muscle glutamine synthetase activity
+ For example, tens of reports describe how Dexa upregulates glutamine synthetase
+ expression and activity
 \begin_inset CommandInset citation
 LatexCommand citep
 key "king1983glutamine"
@@ -9363,8 +9363,8 @@ key "salehian2006effect"
 
 \begin_layout Standard
 Myostatin's effects are manifold, and not completely understood.
- For example, while myostatin inhibition in utero leads to doubling of muscle
- mass in adult animals
+ While myostatin inhibition in utero leads to doubling of muscle mass in
+ adult animals
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mcpherron1997regulation"
@@ -9378,8 +9378,9 @@ key "zimmers2002induction"
 
 \end_inset
 
-, indicating that its effect is based on hyperplasia- and hypertrophy-based
- pathways of muscle growth.
+.
+ This split in action indicates that myostatin modulates both hyperplasia-
+ and hypertrophy-based pathways of muscle growth.
  In explanted adult mouse myofibers, where proliferation has been minimized,
  expression of a dominant negative form of activin A receptor, type IIB
  (
@@ -9403,14 +9404,12 @@ key "sartori2009smad2"
  may include both mTOR-dependent and -independent pathways.
  The extensive, multifactorial action of myostatin on muscle suggests that
  it may override any atrophic stimulus, in non-specific ways.
- Recent molecular studies endeavored to establish whether GAML-associated
- myostatin modulation is physiologically relevant, or only a side effect.
 \end_layout
 
 \begin_layout Standard
 A series of experiments describe Akt inhibition in response to myostatin
  treatments.
- In vivo electroporation with myostatin-coding plasmids leads to 10% loss
+ In vivo electroporation with myostatin-encoding plasmids led to 10% loss
  in tibialis anterior mass in the transfected muscle, in the absence of
  any changes at the level of atrogenes
 \begin_inset CommandInset citation
@@ -9420,15 +9419,30 @@ key "amirouche2009down-regulation"
 \end_inset
 
 .
- The investigators behind this study performed an analysis of the mTOR pathway,
- which found loss of phosphorylation on tuberin and p70-S6K, and concluded
- that myostatin affects protein metabolism.
- A simpler explanation would have taken into account the regeneration in
- the scarred electroporated muscle, which should have contributed a high
- number of proliferating cells.
- Another provoking study investigated human myotubes differentiated from
- cultured myoblasts.
- In this model, myostatin treatments lead to reductions in diameter and
+ The atrophy was associated with loss of phosphorylation on TSC2 and p70-S6K,
+ suggesting that Akt was inhibited, and that myostatin affected protein
+ metabolism.
+ However, in regenerating, scarred, electroporated muscle, the number of
+ proliferating cells is likely larger than in normal muscle, suggesting
+ that myostatin might have acted through proliferative rather than anabolic
+ means.
+ This report is consistent with the well-documented myostatin-induced impairment
+ of muscle regeneration
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mccroskery2003myostatin,cohen2015genetic"
+
+\end_inset
+
+.
+ Repression of Akt in proliferating myoblasts is not expected to mediate
+ GAML.
+\end_layout
+
+\begin_layout Standard
+Another study describes Akt inhibition in human myotubes differentiated
+ from cultured myoblasts.
+ In this system, myostatin treatments lead to reductions in diameter and
  atrogene downregulation 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -9437,36 +9451,28 @@ key "trendelenburg2009myostatin"
 \end_inset
 
 .
- The authors of the latter report explain their observations by demonstrating
- that myostatin reduces myoblast fusion and differentiation.
- While interesting in context of muscle development and regeneration, such
- experiments cannot replicate adult GAML.
- Moreover, both reports describe even in the myostatin-free controls, an
- unusual Akt phosphorylation.
- Most of their observations would be consistent with the well-documented
- myostatin-induced impairment of muscle regeneration
+ In contrast, GAML is characterized by an upregulation of atrogenes, possibly
+ facilitated by Akt inhibition.
+ The authors of this study pinpoint the myostatin-induced Akt inhibition
+ to changes in prolierating myoblasts.
+ In conclusion, there is no evidence for adult GAML mediation through a
+ myostatin - Akt axis.
+\end_layout
+
+\begin_layout Standard
+Myostatin-induced or -associated models of atrophy do not upregulate protein
+ degradation.
+ For example, microgravity atrophy is associated myostatin upregulation,
+ but no changes in 3MH excretion 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "mccroskery2003myostatin,cohen2015genetic"
+key "lalani2000myostatin"
 
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-The study on human myotubes
-\begin_inset CommandInset citation
-LatexCommand citep
-key "trendelenburg2009myostatin"
-
-\end_inset
-
- showed that exogenous myostatin downregulates muscle atrogenes.
- In contrast, GAML is characterized by an upregulation of atrogenes.
- Moreover, the upregulation of atrogenes in GAML is attributed, in part,
- to Akt inhibition.
- Therefore, a myostatin - Akt axis does not seem to underlie GAML.
+ This contrasts again with GAML, which strongly relies on upregulation of
+ protein degradation.
 \end_layout
 
 \begin_layout Standard
@@ -9491,20 +9497,12 @@ key "carnac2007myostatin,elliott2012central"
 ).
  But normal adult muscle maintenance involve to a small degree satellite
  cells.
- Loss of their contribution to muscle maintenance, which is supposedly a
- major effect of myostatin, may contribute to, but not command adult GAML.
- In contrast, there is no evidence that myostatin upregulates catabolic
- processes within GAML.
- Even in other models of atrophy, such as microgravity, myostatin upregulation
- occurs while 3MH excretion is unchanged
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lalani2000myostatin"
+ In adult GAML, loss of satellite cells regenerative action may play a minor
+ role, at most.
+\end_layout
 
-\end_inset
-
-.
- Myostatin's relative importance for GAML remains incompletely explored.
+\begin_layout Standard
+Myostatin's relative importance for GAML remains incompletely explored.
  The typical experiments, using qualitative alterations of myostatin, may
  override any endogenous mechanism, and yield non-specific anti-atrophic
  effects.
@@ -9635,9 +9633,12 @@ key "savary1998effect,dardevet1999glucocorticoid-induced"
 \end_inset
 
 .
- In cell cultures, Dexa inhibition of protein synthesis should be more readily
- detectable, given that, in vitro, Dexa affects 4E-BP phosphorylation directly,
- even in basal state
+\end_layout
+
+\begin_layout Standard
+In cell culture, studies of Dexa inhibition of protein synthesis is similarly
+ equivocal, although Dexa causes 4E-BP hypophosphorylation directly, even
+ in basal state
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shah2000glucocorticoidsa"
@@ -9645,7 +9646,6 @@ key "shah2000glucocorticoidsa"
 \end_inset
 
 .
- However, studies are similarly equivocal.
  In the most glaring example, the same group, using the same methods and
  working on the same L6 line, found that protein synthesis is 
 \begin_inset Quotes eld
@@ -9655,7 +9655,7 @@ not altered
 \begin_inset Quotes erd
 \end_inset
 
- by Dexa in one experiment, and decreased in another
+ by Dexa in one article, and decreased in the next
 \begin_inset CommandInset citation
 LatexCommand citep
 key "menconi2008dexamethasone,aversa2012beta-hydroxy-beta-methylbutyrate"
