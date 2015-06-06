@@ -5794,14 +5794,14 @@ With aging, muscle gradually shifts from a mitotic to a postmitotic profile,
  with muscle growth achieved increasingly through hypertrophy, that is,
  cell size growth.
  While the typical middle-aged or elderly adult is undergoing net loss of
- muscle mass, the muscle is still adept at re-growing and remodeling under
- two common circumstances, exercise and injury.
+ muscle mass, muscle re-growth and remodeling is still possible in two common
+ circumstances, exercise and injury.
 \end_layout
 
 \begin_layout Standard
-Humans achieve muscle mass growth following exercise, although some forms
- of exercise are more suitable at increasing strength or resistance that
- mass per se.
+Humans achieve muscle mass growth following exercise.
+ Some forms of exercise are more suitable at increasing strength or resistance
+ that mass per se, but in most cases, mass will increase in pace with force.
  In animals, muscle growth is induced by muscle overload, or muscle unloading
  and reloading, which may be conceived as forms of aerobic exercise.
  In healthy volunteers, the acute response to exercise includes increased
@@ -5823,7 +5823,7 @@ key "fielding1993acute,snijders2014acute"
 \end_inset
 
 .
- In the acute phase, the satellite cells colocalize with IGF-I
+ In the acute phase, the satellite cells co-localize with IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
 key "grubb2014igf-1"
@@ -5831,7 +5831,7 @@ key "grubb2014igf-1"
 \end_inset
 
 .
- The negative muscle regulator myostatin is not correlating with the phenotype,
+ The negative muscle regulator myostatin is not correlated with the phenotype,
  that is, it is not decreased by acute exercise
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5863,8 +5863,8 @@ key "bird2006liquid"
  Variations in regimens of exercise and timing and composition of diet led
  to a plethora of studies.
  Just as most of the short-term exercise routines do not lead to muscle
- macroscopic changes, some studies describe an absence of changes at molecular
- level following short-term exercise (reviewed in 
+ hypertrophy, literature is rich with examples of short exercise studies,
+ where molecular changes have not been detected (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "vanloon2014there"
@@ -5874,13 +5874,13 @@ key "vanloon2014there"
 ).
  An important future direction in exercise science is establishing what
  distinguishes an effective brief exercise routine from an ineffective one.
- In this context, GC may be interesting noninvasive markers.
+ In this context, GCs may be interesting noninvasive markers.
 \end_layout
 
 \begin_layout Standard
 In the long term, exercise increases fiber CSA, density of satellite cells,
- and the number of myofiber nuclei, while the level of intramuscular MyoD,
- IGF-I, myostatin slowly return to normal
+ and the number of myofiber nuclei, while the level of intramuscular MyoD
+ and IGF-I return to normal
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hanssen2013effect"
@@ -5943,7 +5943,7 @@ key "robertson1993role"
 ).
  Most of the studies of regeneration provide circumstantial evidence, such
  as improved healing in the presence of a presumed mediator, rather than
- impaired healing in its absence.
+ impairment in its absence.
  Still unidentified molecules from crushed muscle are able to cause myoblast
  hyperplasia, above the levels caused by stimulation with known growth factors
 \begin_inset CommandInset citation
@@ -5996,13 +5996,7 @@ The variability of muscle mass within population is reflective of the variable
  needs for muscle strength.
  Muscle mass and strength are adjusted to the needs of the organism mainly
  through humoral mechanisms.
- The most relevant endocrine regulators of muscle mass, AAS, GC, and IGF-I,
- will be discussed in dedicated sections.
-\end_layout
-
-\begin_layout Standard
-While anabolic role of IGF-I at muscle level is undisputed, insulin's effect
- is inconsistent, because it is easily altered by external factors.
+ Multiple classical hormones regulate muscle mass.
  The acute phase of insulin response poses a conundrum, with some studies
  showing it stimulates protein synthesis in human muscle
 \begin_inset CommandInset citation
@@ -6045,46 +6039,10 @@ key "dardevet1998glucocorticoid"
 \end_inset
 
 .
- Both effects are above 10%, although the effect on protein degradation
- appears less ample and is marred by higher variability.
 \end_layout
 
 \begin_layout Standard
 Insulin and IGF-I pathways overlap to a some degree.
- The liver is the main source of circulating IGF-I, under the pituitary
- stimulation with growth hormone (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "GH"
-description "growth hormone"
-
-\end_inset
-
-).
- However, auto- and paracrine secretions may full supplant the absence of
- hepatic IGF-I in adult conditional knockout mice
-\begin_inset CommandInset citation
-LatexCommand citep
-key "sjogren1999liver-derived"
-
-\end_inset
-
-.
- In contrast, insulin is secreted solely by the pancreas.
- Our understanding of the regulation of insulin secretion is improving,
- dispelling the simplistic view that nutrients alone are its sole modulators
- (reviewed in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "rorsman2013regulation"
-
-\end_inset
-
-).
- Therefore, both IGF-I and insulin emerge as anabolic stimuli, responding
- to increased demand for macromolecules and / or increased supply of nutrients,
- with IGF-I embracing a more localized and insulin a systemic, integrative
- role.
  For both hormones, physiological concentrations are tens of times higher
  than the half maximal effective concentration (
 \begin_inset CommandInset nomenclature
@@ -6112,11 +6070,54 @@ description "IGF-I receptor"
 
 \end_inset
 
-), with an EC50 about an order of magnitude lower than physiological insulinemia.
+), with an half maximal effective concentration (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "EC50"
+description "half maximal effective concentration"
+
+\end_inset
+
+) about an order of magnitude lower than physiological insulinemia.
  The converse is true, with IGF-I being able to bind and activate insulin
  receptor (IR), isoforms A and B.
  There is a small, but real, potential for interference between insulin
  and IGF-I signals.
+ Therefore, IGF-I and insulin emerge as hybrids between metabolic stimuli
+ and growth factors.
+ The liver is the main source of circulating IGF-I, under the pituitary
+ stimulation with growth hormone (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GH"
+description "growth hormone"
+
+\end_inset
+
+).
+ However, auto- and paracrine secretions may full supplant the absence of
+ hepatic IGF-I in adult conditional knockout mice
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sjogren1999liver-derived"
+
+\end_inset
+
+.
+ In contrast, insulin is secreted solely by one organ, the pancreas.
+ This sets a more important distinction between insulin and IGF-I, with
+ the former embracing a systemic, integrative role, while the latter carries
+ more localized regulatory tasks.
+ Our understanding of the regulation of insulin secretion is improving,
+ dispelling the simplistic view that nutrients alone are its sole modulators
+ (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rorsman2013regulation"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -6149,8 +6150,8 @@ key "tomas1992insulin-like"
  or it may extend its circulating half-life by protecting it from degradation.
  Depending on the isoform and location of IGFBP, the interaction may result
  in extinction or amplification of the IGF-I signal.
- IGFBPs levels are modulated by insulin and their affinity is modified through
- competition by insulin-like growth factor 2 (
+ IGFBPs levels are modulated by insulin, while their availability is modified
+ competitively by insulin-like growth factor 2 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "IGF2"
@@ -6168,21 +6169,22 @@ key "wilson2003autocrine"
 \end_inset
 
 .
- IGF2 is irreplaceable in fetal development
+ IGF2 plays other, independent roles, suggested by the lethality of its
+ knockout 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dechiara1991parental"
 
 \end_inset
 
-, suggesting there might be distinct, unidentified receptors for this hormone
- family.
+.
 \end_layout
 
 \begin_layout Standard
 There is no consensus with regards to the ability of GH to stimulate muscular
  secretion of IGF-I.
- Multiple studies found an upregulation of its mRNA
+ Multiple studies found an upregulation of IGF-I mRNA in response to GH
+ stimulation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "imanaka2008growth,resmini2011identification"
@@ -6198,7 +6200,9 @@ key "sotiropoulos2006growth"
 
 \end_inset
 
-, suggesting that, at best, IGF-I has an intracellular autocrine action.
+, suggesting that IGF-I is absent from the cell culture medium.
+ Alternatively, the hypertrophic action of IGF-I may be exerted by an intracellu
+lar autocrine mechanism.
  In addition to the indirect effect mediated by hepatic and the putative
  muscular IGF-I, GH has an IGF-I-independent effect on muscle.
  For example, knockout of GH receptor impairs body growth further beyond
@@ -6216,7 +6220,7 @@ key "lupu2001roles"
 \end_layout
 
 \begin_layout Standard
-Hypothyroidism is often associated with muscle weakness and pseudohyertrophy
+Hypothyroidism is often associated with muscle weakness and pseudohypertrophy
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mastropasqua2003hoffmans"
@@ -6224,9 +6228,8 @@ key "mastropasqua2003hoffmans"
 \end_inset
 
 .
- Other hormones such as the parathormone, are likely to have small effects
- on muscle protein metabolism, essentially irrelevant outside their respective
- pathologies
+ Other hormones, such as the parathormone, have small effects on muscle
+ protein metabolism, essentially irrelevant outside their respective pathologies
 \begin_inset CommandInset citation
 LatexCommand citep
 key "garber1983effects"
