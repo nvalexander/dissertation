@@ -4698,8 +4698,8 @@ key "ferrando2002testosterone,huang2005effects"
 \end_layout
 
 \begin_layout Standard
-While women's endogenous AAS levels are lower than men's, it is unclear
- whether benefits of Testo therapy outweigh the deleterious effects
+There is no agreement on the balance of benefits and deleterious effects
+ of Testo therapy for women
 \begin_inset CommandInset citation
 LatexCommand citep
 key "traish2009testosterone,wierman2014androgen"
@@ -7679,7 +7679,7 @@ key "chamberlain2012multiple"
 
 \end_inset
 
-, seemingly in consonance with cancer cachexia.
+, seemingly paralleling with cancer cachexia.
  But in contradiction to such parallels, Dexa was shown to inhibit NF-κB
  signals by upregulating inhibitory κBα (
 \begin_inset CommandInset nomenclature
@@ -10535,7 +10535,8 @@ key "li2005insulin-like"
 \end_inset
 
 .
- It is unclear which downstream mediator is in fact relevant for myoprotection.
+ It is not known which of these downstream mediator is in fact relevant
+ for myoprotection.
  Muscle hypertrophy and recovery are halved by rapamycin, indicating that
  other anabolic mediators are as important as the mTOR pathway 
 \begin_inset CommandInset citation
@@ -10767,8 +10768,8 @@ key "ferguson1995effects,vanbalkom1998anabolic,eason2003use"
 \end_layout
 
 \begin_layout Standard
-The mechanism by which AAS accomplishes muscle protection remains unclear
- to date.
+The mechanism by which AAS accomplishes muscle protection in GAML remains
+ unknown to date.
  One early study found that, in vivo, Testo re-establishes the percentage
  of ribosomes that are involved in translation
 \begin_inset CommandInset citation
@@ -11244,8 +11245,10 @@ The example of Gadd45, at the end of the previous section, illustrates the
  MuRF-1 and REDD1.
  For many of these, inhibition or interference experiments showed a reduction
  in muscle atrophy, but none was found to be indispensable for GAML.
- The hierarchy of molecular events in GAML is unclear, and lags behind progresse
-s made in the study of denervation atrophy.
+ The hierarchy of molecular events in GAML is not known.
+ Progresses made in the study of denervation atrophy, greatly favored by
+ the use of transgenic models, are yet to be replicated in the study of
+ GAML.
  Our understanding of androgen alleviation of GAML is even more incomplete.
 \end_layout
 
@@ -19370,8 +19373,8 @@ In order to discern possible changes in protein synthesis, I investigated
  such as endoplasmic reticulum stress, is phosphorylation of the initiation
  factor eIF2α by a diverse set of kinases.
  In agreement with published studies, there was no statistically significant
- change in the gastrocnemius of mice treated with Dexa (Dunn's test, p =
- 
+ change in phospho-eIF2α in the gastrocnemius of mice treated with Dexa
+ (Dunn's test, p = 
 \begin_inset Flex S/R expression
 status open
 
@@ -19724,6 +19727,8 @@ reference "fig:4EBP"
 \end_inset
 
 , right).
+ The effect of Dexa on active, that is, unphosphorylated 4E-BP could not
+ be clearly estimated from these immunoblot data.
 \end_layout
 
 \begin_layout Standard
@@ -19916,14 +19921,17 @@ reference "fig:4EBP"
 \end_inset
 
 , left).
- While it is difficult to estimate how amplitude of change in unphosphorylated,
- that is, active 4E-BP, the combination of increase in total 4E-BP and decrease
- in inactivated 4E-BP is unlikely to facilitate muscle recovery.
+ The combination of increase in total 4E-BP and decrease in inactivated
+ 4E-BP suggests an unexpected increase in active 4E-BP, which could have
+ lead to reduction in the rate of protein synthesis.
+ The amplitude of Testo-induced changes in 4E-BP is small, and the direction
+ opposite to what would be required to upregulate protein synthesis and
+ facilitate muscle recovery.
 \end_layout
 
 \begin_layout Standard
-Overall, regulators of protein synthesis appear largely unchanged by Dexa
- and Testo at later stages of their administration.
+Overall, regulators of protein synthesis appear largely unchanged by Testo
+ at the 7-day stage of their administration.
 \end_layout
 
 \begin_layout Section
@@ -19932,9 +19940,9 @@ Foxo pathway response to dexamethasone and testosterone
 
 \begin_layout Standard
 Previous studies on C2C12 cultured cells showed that the atrogene response
- is crucially regulated by Foxo transcription factors.
- The review section describes a series of at least five means by which Dexa
- is thought to stimulate Foxo transcriptional program.
+ is crucially stimulated by Foxo transcription factors.
+ The review section describes a series of five hyothetical means by which
+ Dexa is thought to stimulate Foxo transcriptional program.
  Most of them converge on upregulation of Foxo transcripts.
  I set to test the hypothesis that muscle Foxo expression is modulated by
  Dexa and Testo in muscle.
@@ -20237,10 +20245,10 @@ Akt pathway response to dexamethasone and testosterone
 A alternative way to achieve Foxo modulation is through their neutralization
  by Akt.
  As described in the literature review section, activation of Akt is dependent
- on its phosphorylation on two residues, Ser 473 and Thr 308.
- I investigated the effect of the two steroids on Ser 473 phosphorylation,
- as this was hypothesized to be the main regulator of Foxo specificity at
- the time of the experiment.
+ on its phosphorylation on two residues, Ser 473 and Thr 308, with the former
+ being the most important regulator of Foxo specificity.
+ I therefore investigated the effect of the two steroids on Ser 473 phosphorylat
+ion.
 \end_layout
 
 \begin_layout Standard
@@ -21980,8 +21988,8 @@ name "fig:protein-mass-cells"
 \end_layout
 
 \begin_layout Standard
-Overall, the changes in cell diameter and total protein content are consonant
- with protein metabolism changes observed in vivo.
+Overall, the changes in cell diameter and total protein content are similar
+ to changes observed in muscle in vivo.
 \end_layout
 
 \begin_layout Section
