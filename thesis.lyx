@@ -10635,7 +10635,15 @@ A related theoretic question was the nature of the nuclear receptor.
  the various steroids, with Dexa and Testo among the most studied compounds.
  In vitro studies have quantified androgens ability to interfere with the
  binding of Dexa to GR.
- The Kd for GR-Dexa association is below nanomolar range
+ The dissociation constant (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Kd"
+description "dissociation constant"
+
+\end_inset
+
+) for GR-Dexa association is below nanomolar range
 \begin_inset CommandInset citation
 LatexCommand citep
 key "levy1989glucocorticoid"
@@ -10646,8 +10654,46 @@ key "levy1989glucocorticoid"
  In vitro Dexa doses used in muscle atrophy experiments range in the tens
  of hundred nanomolar.
  Similar concentrations are likely in the blood of mice injected with the
- 0.5-1 g/kg doses described before.
- At a concentration of 2 pM in rat skeletal muscle
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SIrange{0.5}{1}{
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram}
+\end_layout
+
+\end_inset
+
+0.5-1 g/kg doses described before.
+ At a concentration of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2}{
+\backslash
+pico
+\backslash
+molar}
+\end_layout
+
+\end_inset
+
+2 pM in rat skeletal muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dahlberg1981regulation"
@@ -10655,8 +10701,16 @@ key "dahlberg1981regulation"
 \end_inset
 
 , virtually all GR should be bound to Dexa.
- On the other hand, Ki for Testo competing with Dexa for binding to muscle
- protein extracts is 
+ On the other hand, inhibitory constant (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Ki"
+description "inhibitory constant"
+
+\end_inset
+
+) for Testo competing with Dexa for binding to muscle protein extracts is
+ 
 \begin_inset ERT
 status open
 
@@ -10693,8 +10747,8 @@ key "snochowski1980characterization"
 \end_inset
 
 .
- Therefore, barring allosteric effects, the direct competition between the
- two steroids remains only of theoretical importance.
+ Therefore, barring allosteric effects, direct competition between the two
+ steroids remains only of theoretical importance.
 \end_layout
 
 \begin_layout Standard
