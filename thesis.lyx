@@ -5575,7 +5575,7 @@ key "mancini2007fmip"
  factor-15 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "KLF-15"
+symbol "Klf15"
 description "Krüppel-like factor-15"
 
 \end_inset
@@ -8659,8 +8659,8 @@ key "cai2006activity"
  from Rheb, a small GTPase, that can induce activation of mTORC1.
  Therefore, in theory, Dexa-induced repression of Akt should inhibit mTORC1
  in two distinct ways.
- In practice, there is no evidence for TSC2 or PRAS40 based mechanisms in
- GAML in vivo.
+ In practice, there is little evidence for TSC2 or PRAS40 based mechanisms
+ in GAML in vivo.
 \end_layout
 
 \begin_layout Standard
@@ -8839,30 +8839,23 @@ d inhibition of mTORC1.
  These mice exhibited lower phosphorylation of 4E-BP1, indicating that their
  mTORC1 was repressed.
  Thus, Britto concluded that Dexa-induced mTORC1 inactivation is mediated
- by PRAS40, which in turn is left unphosphorylated by a hypoactive Akt.
+ by PRAS40, which is left hypophosphorylated by a hypoactive Akt.
+ As discussed earlier, selectivity modulations, which enable Akt to phosphorylat
+e TSC2, but not PRAS40, are attributed to dissociation between Ser 473 and
+ Thr 308 phosphorylation state.
+ Britto found more evidence for the REDD1 - Akt - PRAS40 axis in the REDD1
+ knockout mice, who are resistant to Dexa.
+ In these mice, acute Dexa fails to induce hypophosphorylation on PRAS40,
+ and on Thr 308 of Akt.
 \end_layout
 
 \begin_layout Standard
-XXXXAs discussed earlier, Akt selectivity alterations are attributed to
- dissociation between Ser 473 and Thr 308 phosphorylation state.
- 
-\end_layout
-
-\begin_layout Standard
-Britto and colleagues refined their model by observing the effect of Dexa
- in REDD1 knockout mice.
- REDD1 depletion abolishes GAML, although atrogenes are still upregulated.
- This demonstrates the crucial role of REDD1 and its downstream effector,
- mTORC1, in GAML.
- Other changes induced by REDD1 knockout were loss of Dexa-induced hypophosphory
-lation on PRAS40, and on Thr 308 of Akt.
- Therefore, Britto proposed a model where phosphorylation of Akt at Ser
- 473 and of TSC2 are not causative for GAML.
- Moreover, Britto's findings explain Ser 473 hyperphosphorylation after
- acute Dexa through an mTORC1 feedback loop.
- Multiple studies in transformed cells confirm the role of Akt Thr 308 in
- REDD1 repressive action on mTOR, while proposing different intermediaries
- (
+A series of putative interaction remain to demonstrated.
+ Britto speculated that Akt Ser 473 hyperphosphorylation is caused by a
+ feedback loop responding to mTORc1 inhibition.
+ The mechanism by which REDD1 inhibits Akt activity on PRAS40 is not known.
+ Studies on transformed cells support the hypothesis that REDD1 impairs
+ Akt Thr 308 phosphorylation, while proposing various pathways (
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dennis2014redd1"
@@ -8880,12 +8873,9 @@ key "canal2014rtp801/redd1:"
 \end_layout
 
 \begin_layout Standard
-In Britto's experiment, proteolysis was not unaltered, indicating that acute
- Dexa is not a true model of GAML.
- Nevertheless, the hypothesis that REDD1 suppresses Akt and mTORC1 is very
- attractive, because, in contrast to IRS1, REDD1 would be an active and
- permanent repressor.
- The mechanism by which Dexa stimulates REDD1 remains to be studied.
+The hypothesis that REDD1 suppresses Akt and mTORC1 is very attractive,
+ because, in contrast to IRS1, REDD1 would be an active and permanent repressor.
+ The mechanism by which Dexa stimulates REDD1 remains to be found.
  The most robust inducer of REDD1 is hypoxia, through HIF transcription
  factors
 \begin_inset CommandInset citation
@@ -8913,24 +8903,11 @@ key "barel2010exercise"
 While it is certain that GAML is correlated with mTORC1 downregulation,
  it is still unclear how mTORC1 repression is achieved, and what is its
  relative importance.
- Based on the evidence published until now, the recent change of paradigm
- which placed p70-S6K at the forefront of denervation atrophy appears unlikely
- in GAML.
+ Based on the published evidence, the recent change of paradigm which placed
+ p70-S6K at the forefront of denervation atrophy appears unlikely in GAML.
  For now, our understanding of GAML places Akt firmly upstream of mTORC1.
  Better transgenic models, a deeper understanding of mTOR pathways and more
  in vitro / recombinant experiments are required for a definitive conclusion.
-\end_layout
-
-\begin_layout Standard
-Conversely, insulin sensitivity at 4E-BP and p70-S6K is enhanced by removal
- of endogenous GC, through adrenalectomy
-\begin_inset CommandInset citation
-LatexCommand citep
-key "long2003adrenalectomy,wu2004glucocorticoids"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Section
@@ -8951,11 +8928,7 @@ t in GAML.
 The importance of Foxo transcription factors is supported intuitively by
  their role as integrators of multiple atrophy signaling pathways.
  Multiple mechanisms converge to induce Foxo upregulation in GAML.
- 
-\end_layout
-
-\begin_layout Standard
-First, chronic Dexa doubles Foxo expression
+ First, chronic Dexa doubles Foxo expression
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wu2010redd1"
@@ -9011,7 +8984,7 @@ key "waddell2008glucocorticoid"
 
 \begin_layout Standard
 Second, Foxo transcription factors are thought to be potentiated by Dexa
- through post-translational means involving the earlier described Akt pathway
+ through post-translational means involving the earlier-described Akt pathway
  (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -9020,17 +8993,15 @@ key "calnan2008foxo"
 \end_inset
 
 ).
- Akt phosphorylates Foxo1 at Tyr 32 and Ser 253, thus creating binding sites
- for 14-3-3.
+ When active, Akt phosphorylates Foxo1 at Tyr 32 and Ser 253, thus creating
+ binding sites for 14-3-3.
  Phosphorylated Foxo transcription factors are exported from the nucleus,
  and eventually marked for ubiquitin-proteasome-mediated degradation.
- It is believed that the Dexa-induced impairment of Akt contributes to an
- increase in their activity in GAML.
- Given that phosphorylated Foxo is degraded and is elicited by a low-activity
- Akt pathway, Foxo phosphorylation changes may be undetectable in basal
- state.
- In C2C12 myotubes, Foxo phosphorylation downregulation in response to Dexa
- is more readily detected
+ Intuitively, Dexa-induced impairment of Akt is expected to contribute to
+ an increase in Foxo activity in GAML.
+ Finding evidence for this mechanism has been challenging.
+ In C2C12 myotubes, the expected Foxo hypophosphorylation in response to
+ Dexa has been frequently reported 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2007foxo3,sandri2004foxo"
@@ -9038,8 +9009,8 @@ key "zhao2007foxo3,sandri2004foxo"
 \end_inset
 
 .
- A few groups reported reductions in Foxo phosphorylation by chronic Dexa
- at basal state in vivo
+ In vivo, evidence for a similar hypophosphorylated Foxo is limited to a
+ few, unusual experiments
 \begin_inset CommandInset citation
 LatexCommand citep
 key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
@@ -9047,12 +9018,8 @@ key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
 \end_inset
 
 .
- Two out of the three referenced studies also report an unusual activation
- of Akt in basal state, indicating that they may be reflective of special
- conditions (40 days treatment, the use of male levator ani, and so on).
- As mentioned in previous sections, an ongoing debate surrounds the effect
- of Dexa on Akt Ser 473, which alters its ability to phosphorylate FOXO.
- As with mTORC1, the Akt pathway may be more relevant in fed state.
+ Given that phosphorylated Foxo is degraded, the ability to observe and
+ quantify it is limited.
 \end_layout
 
 \begin_layout Standard
@@ -9099,8 +9066,8 @@ key "schiaffino2013mechanisms"
 \end_inset
 
 .
- A whole higher level of regulation of is yet to be studied, with PGC-1α
- splicing dictating its role more.
+ A whole higher level of regulation, centered on PGC-1α splicing, is yet
+ to be studied.
  For example, isoform 1, and not 4, of PGC-1α is correlated with muscle
  hypertrophy
 \begin_inset CommandInset citation
@@ -9160,8 +9127,8 @@ key "qin2010protection"
 \end_inset
 
 .
- More convincing evidence towards Foxo activation comes from the concordance
- in its downstream effects.
+ More convincing evidence towards Foxo activation comes from its downstream
+ effects.
  For example, Dexa increases muscle glutamine synthetase activity
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -9233,7 +9200,7 @@ key "waddell2008glucocorticoid"
 
 .
  A positive feedback loop links MuRF-1 and FOXO1, as indicated by downregulation
- of p85 and FOXO1 in late GAML in the MuRF-1 knockout
+ of FOXO1 in late GAML in the MuRF-1 knockout
 \begin_inset CommandInset citation
 LatexCommand citep
 key "furlow2013altered"
@@ -9244,8 +9211,8 @@ key "furlow2013altered"
 \end_layout
 
 \begin_layout Standard
-In both atrogenes' promoter, a KLF-15 response element is located, near
- the FOXO binding site
+In both atrogenes' promoter, a Klf15 response element is located, near the
+ FOXO binding site
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shimizu2011crosstalk"
@@ -9253,14 +9220,14 @@ key "shimizu2011crosstalk"
 \end_inset
 
 .
- KLF-15 is a direct transcriptional target of GR, and interferes with mTOR
+ Klf15 is a direct transcriptional target of GR, and interferes with mTOR
  signaling.
- A complex network is centered on KLF-15, which upregulates expression of
- FOXO transcription factors, and synergizes with them to upregulate atrogenes.
+ A gene network is centered on Klf15, which upregulates expression of FOXO
+ transcription factors, and synergizes with them to upregulate atrogenes.
  Overall, atrogenes appear to be under a strong control of Foxo, favored
  by concomitant activation of synergistic factors.
- Indeed, dominant negative Foxo3A transfection in rat soleus leads to loss
- of atrogene upregulation
+ Dominant negative Foxo3A transfection in rat soleus leads to loss of atrogene
+ upregulation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "senf2008hsp70"
@@ -9291,7 +9258,8 @@ key "smith2010sepsisa"
 A majority of the effectors described in this chapter appear to be under
  the control of Foxo pathway.
  In addition to atrogenes, Foxo targets include 4E-BP1, cathepsin L, and
- the effector of denervation atrophy, Growth Arrest and DNA Damage 45 (
+ another effector of denervation atrophy, Growth Arrest and DNA Damage 45
+ (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Gadd45"
