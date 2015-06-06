@@ -10788,8 +10788,7 @@ key "ballard1983effects,roeder1986influence"
 
 .
  A study on C2C12 myotubes also rejected an action of Testo on protein metabolis
-m, despite a trend for improved protein synthesis and reduced protein degradatio
-n when 
+m, despite trends for restored protein synthesis and degradation when 
 \begin_inset ERT
 status open
 
@@ -10872,6 +10871,7 @@ key "prezant1997gender-specific"
 \begin_layout Standard
 In the absence of direct interference, studies sought downstream effectors
  at which Testo could prevent Dexa's program.
+ One putative interaction is centered on myostatin.
  Myostatin promoter contains putative androgen responsive elements
 \begin_inset CommandInset citation
 LatexCommand citep
