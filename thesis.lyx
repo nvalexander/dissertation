@@ -11452,7 +11452,7 @@ liter}
 
 \end_inset
 
- grade ethanol, which delivered either (A) 
+ ethanol, which delivered either (A) 
 \begin_inset ERT
 status open
 
@@ -11959,7 +11959,7 @@ description "bicinchoninic acid"
 \end_inset
 
 ) method (detailed in the immunoblot section).
- Next, the clarified extract were diluted to match the lowest total protein
+ Next, the clarified extract was diluted to match the lowest total protein
  concentration with lysis buffer.
  Per kit manufacturer instructions, 
 \begin_inset ERT
@@ -12679,11 +12679,11 @@ minute}
 
 \end_inset
 
- of incubation at room temperature, steady state is reached, with a constant
+ of incubation at room temperature, steady state was reached, with a constant
  rate of free aminoluciferase production, which is immediately converted
  to free luciferin by the excess luciferase.
  Luminescence was measured with a GeniosPro multi-well plate reader (Tecan,
- Männedorf, Switzerland) set at to integrate signal over 
+ Männedorf, Switzerland) set to integrate signal over 
 \begin_inset ERT
 status open
 
@@ -13061,7 +13061,7 @@ minute}
 \end_inset
 
 .
- The suspensions are clarified by centrifugation at 12,000g, 
+ The suspensions were clarified by centrifugation at 12,000g, 
 \begin_inset ERT
 status open
 
@@ -13092,7 +13092,7 @@ celsius}
 \end_inset
 
 .
- The supernatant is collected, aliquoted, and stored for months at 
+ The supernatant was collected, aliquoted, and stored for months at 
 \begin_inset ERT
 status open
 
@@ -14301,7 +14301,8 @@ liter}
 
 \end_inset
 
- of buffer RW1, and twice with 
+ proprietary, guandine and ethanol-containing, RW1buffer, and twice with
+ 
 \begin_inset ERT
 status open
 
@@ -14318,7 +14319,7 @@ liter}
 
 \end_inset
 
- of buffer RPE, each time by centrifugation, 
+ proprietary RPEbuffer, each time by centrifugation, 
 \begin_inset ERT
 status open
 
@@ -14817,7 +14818,7 @@ celsius}
 \end_inset
 
 , with measurements of DNA after each cycle.
- The amount of specific cDNA is estimated from the number of cycles (
+ The amount of specific cDNA was estimated from the number of cycles (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Ct"
@@ -14828,9 +14829,9 @@ description "cycle threshold"
 ; cycle threshold) required to reach a DNA concentration threshold, automaticall
 y chosen by the Applied Biosystems software at midway between the lag phase
  and the end plateau DNA concentrations.
- Moreover, the Applied Biosystems software is able to interpolate the number
- of cycles, thus providing, for each well, a non-integer number of cycles
- that will yield the threshold DNA concentration.
+ Moreover, the Applied Biosystems software may interpolate the number of
+ cycles, thus providing, for each well, a non-integer number of cycles that
+ will yield the threshold DNA concentration.
 \end_layout
 
 \begin_layout Standard
@@ -15593,7 +15594,7 @@ molar}
 \end_inset
 
  MG132 from a 80X working stock in differentiation medium, which in turn
- is derived from a 8,000X DMSO-based stock.
+ was derived from a 8,000X DMSO-based stock.
  Lysosomal activity was inhibited with 
 \begin_inset ERT
 status open
@@ -15655,7 +15656,7 @@ description "picropodophyllin"
 
 \end_inset
 
-), from a 200X working stock in differentiation medium, which in turn is
+), from a 200X working stock in differentiation medium, which in turn was
  derived from a 1,000X DMSO-based stock.
 \end_layout
 
@@ -16426,19 +16427,6 @@ ne OR cortisone OR triamcinolone OR fludrocortisone`, `Cushing`, `ribosome
  OR polysome OR lysosome OR autophagosome OR proteasome OR ligase OR cathepsin
  OR FOXO OR IGF1 OR calpain OR mTOR OR AMPK OR Akt`and combinations thereof.
  Relevant primary data were summarized.
- 
-\end_layout
-
-\begin_layout Standard
-Literature plots were digitized with WebPlotDigitizer, a web application
- created by Ankit Rohatgi
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ankitrohatgi2015webplotdigitizer"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -16458,8 +16446,10 @@ Testosterone reverses dexamethasone-induced muscle atrophy
 \end_layout
 
 \begin_layout Standard
-No published study on mice describes a dose of Dexa that is proven to induce
- muscle atrophy.
+At the time when the project started, no published study on mice described
+ a dose of Dexa that would induce muscle atrophy.
+ To date, there is still no published report of the effective Testo dose
+ that would prevent GAML in mice.
  I attempted to repeat the daily injections protocol described by Jones
  as effective on rats
 \begin_inset CommandInset citation
