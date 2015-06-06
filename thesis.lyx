@@ -9700,8 +9700,11 @@ key "baehr2011muscle"
 
 \end_inset
 
-, suggesting a temporal order, with proteolytic processes preceding and
- initiating changes in protein translation.
+, suggesting a temporal order, with proteolytic processes preceding changes
+ in protein translation.
+ The temporal order is suggestive of a causal mechanism, where protein synthesis
+ changes in GAML have a reactive, less central, nature, compared to protein
+ degradation.
 \end_layout
 
 \begin_layout Standard
@@ -9753,10 +9756,18 @@ key "bai2013activin"
  As of 2015, this response element is proven only in Drosophila.
  The only replication in mouse cultured cells was withdrawn during the preparati
 on of this thesis, for unspecified reason.
- Second, Dexa may regulate 4E-BP through post-translational phosphorylation.
- As shown earlier, Dexa reduces mTOR-effected 4E-BP phosphorylation sensitivity
- to insulin, which is expected to cause reductions in protein synthesis
- rate mainly after feeding.
+ While the transcriptional upregulation of 4E-BP is certain, the mechanisms
+ by which Dexa achieves it are unknown.
+\end_layout
+
+\begin_layout Standard
+Second, Dexa may regulate 4E-BP through post-translational modifications.
+ As shown earlier, Dexa reduces 4E-BP phosphorylation on residues that are
+ usually phosphorylated by mTORC1.
+ The direct reduction is less salient, with reductions in response to insulin
+ being more commonly reported.
+ This mechanism is expected to impede protein synthesis rate mainly after
+ feeding.
  The study of mTOR action is challenged by the existence of multiple phosphoryla
 tion sites, inability of antibodies to discern them, and inability of rapamycin
  to inhibit mTORC1 action on 4E-BP1
