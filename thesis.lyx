@@ -7999,8 +7999,8 @@ Glucocorticoid-induced loss of sensitivity on the IRS - Akt axis
 \begin_layout Standard
 Surprisingly, the most comprehensive account on GC-induced changes on protein
  metabolic regulation comes from the study of glucose metabolism changes.
- The latter is more easily measured because it is mostly unidirectional,
- as described in the section on metabolism.
+ The latter is more easily measured, because it is unidirectional, as described
+ in the section on metabolism.
 \end_layout
 
 \begin_layout Standard
@@ -8013,8 +8013,8 @@ key "nicastro2012effectsa"
 \end_inset
 
 .
- On one hand, Dexa induces concerted catabolic changes which eventually
- converge to hyperglycemia, and consequent hyperinsulinemia.
+ Dexa induces concerted catabolic changes which eventually converge to hyperglyc
+emia, and consequent hyperinsulinemia.
  Together, these yield a higher index of homeostatic model assessment -
  insulin resistance (
 \begin_inset CommandInset nomenclature
@@ -8032,20 +8032,10 @@ key "saad1993modulation"
 \end_inset
 
 .
- On the other, Dexa-induced hyperinsulinemia fails to trigger its typical
- anabolic program in muscle.
- For example, Dexa overrides insulin to reduce muscle glucose uptake
+ But Dexa overrides insulin to reduce muscle glucose uptake
 \begin_inset CommandInset citation
 LatexCommand citep
-key "weinstein1995glucocorticoid-induced"
-
-\end_inset
-
-.
- Typical reductions in insulin-stimulated glucose uptake rate are 40-80%
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dardevet1999glucocorticoid-induced,dardevet1998glucocorticoid"
+key "weinstein1995glucocorticoid-induced,dardevet1998glucocorticoid,dardevet1999glucocorticoid-induced"
 
 \end_inset
 
@@ -8085,10 +8075,14 @@ key "wang1999protein"
 , its suppression by Dexa is strong evidence for Dexa-induced Akt inactivation.
  Dexa-induced inhibition of Akt is surprising, because it occurs during
  hyperinsulinemia, which causes Akt activation in normal muscle.
+ The disconnection between the extracellular hyperinsulinemia and the intracellu
+lar signaling is achieved by Dexa in a multi-step process.
 \end_layout
 
 \begin_layout Standard
-Proving Akt inactivation by Dexa is a complex endeavor, due to the extremely
+The end result of Dexa interference, inhibition of Akt, was the subject
+ of debates in the 2000's.
+ Proving Akt inactivation by Dexa is a complex endeavor, due to the extremely
  low Akt activation in basal state.
  Insulin or IGF-I, in concentrations close to the physiological levels,
  increase glucose uptake about 10-fold
@@ -8113,8 +8107,8 @@ key "dardevet1995sensitivity"
 .
  Unsurprisingly, observations on basal state muscle frequently failed to
  identify further repression of Akt by Dexa.
- Many studies misinterpret this failure to detect as an actual absence of
- effect.
+ Many studies misinterpreted this failure to detect as an actual absence
+ of effect.
 \end_layout
 
 \begin_layout Standard
@@ -8128,16 +8122,13 @@ The opposite situation is also true.
  Most often, overexpression of IGF-I, IGF-1R, Akt, or other mediators on
  this pathway overcompensates Dexa's effect, thus causes overriding Akt
  activation far above the basal level.
- A series of reports from overexpression studies mistakenly conclude that
- Akt pathway is the only mechanism by which Dexa causes atrophy, whereas
- in fact, they are describing non-specific hypertrophy.
+ A long series of reports from overexpression studies mistakenly concluded
+ that Akt pathway is the only mechanism by which Dexa causes atrophy, whereas
+ in fact, they were describing non-specific hypertrophy.
 \end_layout
 
 \begin_layout Standard
-Less definitive studies have found that Dexa inhibits Akt pathway in multiple
- points, thus disconnecting extracellular hyperinsulinemia from intracellular
- signaling in an effective manner.
- The first step is centered on IRS 1.
+Dexa interference on the Akt pathway begins at IRS 1.
  Dexa treatment does not change basal levels of autophosphorylated insulin
  receptor in absolute or stoichiometric terms
 \begin_inset CommandInset citation
@@ -8291,7 +8282,7 @@ key "giron2015beta-hydroxy-beta-methylbutyrate"
 \end_inset
 
 .
- Nevertheless, no reports describe such changes in wild-type healthy animals.
+ No reports describe such changes in wild-type healthy animals.
  Measurements of changes in activation of another MAPK, p38, are contradictory
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -8426,8 +8417,9 @@ key "sarbassov2005phosphorylation"
 
 .
  Thus, the factors that activate Thr 308 should theoretically lead to 3-phosphoi
-nositide synthesis and to Ser 473 activation.
- In practice, Ser 473 and Thr 308 phosphorylation may occur separately.
+nositide synthesis, and to Ser 473 activation.
+ In practice, Ser 473 and Thr 308 phosphorylation may occur separately,
+ with examples in the next section.
  In this case, it may be the case that Dexa impedes Ser 473 phosphorylation
  through another, yet undiscovered, mechanism.
 \end_layout
@@ -8665,22 +8657,15 @@ key "cai2006activity"
 .
  The destruction of TSC1-TSC2 complexes relieves the negative regulation
  from Rheb, a small GTPase, that can induce activation of mTORC1.
- Therefore, Dexa-induced repression of Akt should inhibit mTORC1 in two
- ways.
- The only evidence for these mechanisms is an observation that, in L6 myotubes,
- Dexa stimulates the formation of TSC1-TSC2 complexes
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wang2006dexamethasone"
-
-\end_inset
-
-.
+ Therefore, in theory, Dexa-induced repression of Akt should inhibit mTORC1
+ in two distinct ways.
+ In practice, there is no evidence for TSC2 or PRAS40 based mechanisms in
+ GAML in vivo.
 \end_layout
 
 \begin_layout Standard
-The scarcity of evidence for PRAS40 or TSC2 mediation has suggested that
- other mechanisms may lead to mTORC1 inactivation in GAML.
+The scarcity of evidence for PRAS40 or TSC2 mediation suggested that other
+ mechanisms may lead to mTORC1 inactivation in GAML.
  Moreover, an Akt-mediated Dexa effect on mTORC1 would be subtle, with sizable
  amplitude only during hyperinsulinemia.
  Alternative Akt-independent pathways have been hypothesized.
@@ -8859,28 +8844,24 @@ key "britto2014redd1"
  at Ser 473 increases, while at Thr 308 it decreases.
  This is a rare, although not unique, account of Akt hyperphosphorylation
  in GAML.
- In each case, these findings may be explained by the particular conditions
- of the unique experiment.
- Here, proteolysis was not unaltered, indicating that acute Dexa is not
- a true model of GAML.
+ 
 \end_layout
 
 \begin_layout Standard
 Britto and colleagues refined their model by observing the effect of Dexa
  in REDD1 knockout mice.
  REDD1 depletion abolishes GAML, although atrogenes are still upregulated.
- On the other hand, REDD1 depletion prevents Dexa's hypophosphorylating
- action on 4E-BP1 and p70-S6K.
- These findings place mTORC1 inhibition at the core of GAML.
- Britto and colleagues propose a model of GAML where Ser 473 hyperphosphorylatio
-n is caused by an mTORC1 feedback loop being severed by Dexa.
- Upstream of mTORC1, REDD1 knockout mice lost hypophosphorylation on PRAS40
- and of Akt on Thr 308.
- While Akt remains upstream of mTOR and vital for GAML, Britto's model discards
- phosphorylation of Akt at Ser 473 and of TSC2 from the rapid REDD1-dependent
- response to Dexa.
- Multiple studies in transformed cells confirm the role of Thr 308 in REDD1
- repressive action on mTOR, while proposing different intermediaries (
+ This demonstrates the crucial role of REDD1 and its downstream effector,
+ mTORC1, in GAML.
+ Other changes induced by REDD1 knockout were loss of Dexa-induced hypophosphory
+lation on PRAS40, and on Thr 308 of Akt.
+ Therefore, Britto proposed a model where phosphorylation of Akt at Ser
+ 473 and of TSC2 are not causative for GAML.
+ Moreover, Britto's findings explain Ser 473 hyperphosphorylation after
+ acute Dexa through an mTORC1 feedback loop.
+ Multiple studies in transformed cells confirm the role of Akt Thr 308 in
+ REDD1 repressive action on mTOR, while proposing different intermediaries
+ (
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dennis2014redd1"
@@ -8898,7 +8879,14 @@ key "canal2014rtp801/redd1:"
 \end_layout
 
 \begin_layout Standard
-The most robust inducer of REDD1 is hypoxia, through HIF transcription factors
+In Britto's experiment, proteolysis was not unaltered, indicating that acute
+ Dexa is not a true model of GAML.
+ Nevertheless, the hypothesis that REDD1 suppresses Akt and mTORC1 is very
+ attractive, because, in contrast to IRS1, REDD1 would be an active and
+ permanent repressor.
+ The mechanism by which Dexa stimulates REDD1 remains to be studied.
+ The most robust inducer of REDD1 is hypoxia, through HIF transcription
+ factors
 \begin_inset CommandInset citation
 LatexCommand citep
 key "canal2014rtp801/redd1:"
@@ -8916,8 +8904,8 @@ key "barel2010exercise"
 \end_inset
 
 , suggesting that HIF1a is not involved in REDD1 upregulation.
- The mechanism by which Dexa stimulates REDD1 remains to be studied.
- Candidates include ATF4 and NFAT, discussed in other sections of this chapter.
+ Other putative positive regulators of REDD1 include ATF4 and NFAT, discussed
+ in other sections of this chapter.
 \end_layout
 
 \begin_layout Standard
