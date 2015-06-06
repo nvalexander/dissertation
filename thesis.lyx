@@ -1392,7 +1392,7 @@ description "glucocorticoid responsive-elements"
 
 \end_inset
 
-) 
+)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "truss1990contacts"
@@ -1418,7 +1418,7 @@ description "interleukin 1 receptor type II"
 
 \end_inset
 
-) 
+)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "re1994type"
@@ -1544,7 +1544,7 @@ gram}
 
 \end_inset
 
- dose yields the opposite, expected immunosuppressive response 
+ dose yields the opposite, expected immunosuppressive response
 \begin_inset CommandInset citation
 LatexCommand cite
 key "dhabhar1999enhancing"
@@ -1656,7 +1656,7 @@ description "dexamethasone"
 
 \end_inset
 
-) 
+)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "arth195816-methylated,arth195816-methylateda"
@@ -2144,7 +2144,7 @@ day}
 \end_inset
 
  prednisone, the most common signs were development of ectopic adipose deposits
- (50%), hyperphagia (47%), and muscle cramps (32%) 
+ (50%), hyperphagia (47%), and muscle cramps (32%)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "fardet2007corticosteroid-induced"
@@ -2657,7 +2657,7 @@ description "cross-sectional area"
 
 \end_inset
 
-) in type I and IIa (slow twitch, oxidative / glycolytic) fibers 
+) in type I and IIa (slow twitch, oxidative / glycolytic) fibers
 \begin_inset CommandInset citation
 LatexCommand citep
 key "topp2003alterations"
@@ -4015,7 +4015,7 @@ key "baume2006effect"
 A series of trials observed the effect of short-term (hours or days) hypercortis
 olism in healthy volunteers.
  Experimental acute hypercortisolism represses circulating levels of Testo,
- in a reversible manner, in males and, to a lesser degree, in females 
+ in a reversible manner, in males and, to a lesser degree, in females
 \begin_inset CommandInset citation
 LatexCommand citep
 key "cumming1983acute,fassnacht2003adrenal"
@@ -4209,7 +4209,7 @@ key "salonia2008menstrual,guerrero1976studies"
 \begin_layout Standard
 This sexual dimorphism differentiates male and female AAS response to chronic
  hypercortisolism.
- Women with CS have lower muscle mass compared to general population 
+ Women with CS have lower muscle mass compared to general population
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wajchenberg1995estimation"
@@ -4227,7 +4227,7 @@ key "valassi2011european"
 
 .
  But, in contrast to males, females with CS have normal or even increased
- AAS synthesis and levels, compared to healthy controls 
+ AAS synthesis and levels, compared to healthy controls
 \begin_inset CommandInset citation
 LatexCommand citep
 key "vierhapper2000production,luisi1978plasma"
@@ -4271,7 +4271,7 @@ key "smals1977plasma"
 \begin_layout Standard
 Apparent hyperandrogenism is also present in children with hypercortisolism.
  In pediatric hypercortisolism, virilization signs such as change in voice,
- penile or clitoridian overgrowth, and hirsutism are common 
+ penile or clitoridian overgrowth, and hirsutism are common
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tyler1972laboratory"
@@ -4949,7 +4949,7 @@ key "mescher2013junqueiras"
  The connective tissue inside the muscle provides mechanical anchoring between
  fibers, longitudinally, laterally and with the tendons.
  This is particularly true of perimysium, which is almost acellular, at
- 95% collagen content 
+ 95% collagen content
 \begin_inset CommandInset citation
 LatexCommand cite
 key "light1984characterization"
@@ -5420,7 +5420,7 @@ Pax7
  cells.
  Because some cells, such as bone marrow stem cells and pericytes, have
  the ability to fuse with myotubes in vitro, the muscle stem cell population
- was hypothesized to include extra-muscular self-renewing cells 
+ was hypothesized to include extra-muscular self-renewing cells
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dellavalle2011pericytes,labarge2002biological"
@@ -5430,7 +5430,7 @@ key "dellavalle2011pericytes,labarge2002biological"
 .
  However, after the age of 20, human muscle nuclei maintain an almost constant
  length of telomeres, suggesting that mitosis and recruitment of extramuscular
- cells are rare phenomena 
+ cells are rare phenomena
 \begin_inset CommandInset citation
 LatexCommand citep
 key "decary1997replicative"
@@ -5448,7 +5448,7 @@ key "renault2000skeletal"
 
 .
  As evidenced by studies such as the New Mexico Elder Health Survey, 1993-1995,
- aging is associated with accelerated loss of muscle mass 
+ aging is associated with accelerated loss of muscle mass
 \begin_inset CommandInset citation
 LatexCommand cite
 key "baumgartner1998epidemiology"
@@ -5746,7 +5746,7 @@ key "laplante2012mtor"
  protein synthesis, by abolishing the former's ability to bind and inhibit
  the mandatory translation initiation factor eIF4E.
  The activation of p70-S6K lead to the activation of a feedback phosphorylation
- of mTOR at Serine 2448 
+ of mTOR at Ser 2448
 \begin_inset CommandInset citation
 LatexCommand citep
 key "chiang2005phosphorylation"
@@ -6170,7 +6170,7 @@ key "wilson2003autocrine"
 
 .
  IGF2 plays other, independent roles, suggested by the lethality of its
- knockout 
+ knockout
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dechiara1991parental"
@@ -6301,7 +6301,7 @@ key "arsic2004vascular"
 It has been suggested that the most direct effect of VEGF-A depletion is
  partial segregation of muscle from blood-carried endocrine signals.
  For example, VEGF-A-depleted muscle has lower glucose uptake, a defect
- which is reversed by explantation 
+ which is reversed by explantation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bonner2013muscle-specific"
@@ -6371,7 +6371,7 @@ key "vianna2006hypomorphic,rowe2011pgc-1beta"
 .
  Even in the absence of VEGF, PGC-1 coactivators facilitate mitochondria
  biosynthesis, leading to oxidative fiber hypertrophy and improvements in
- endurance capacity 
+ endurance capacity
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lin2002transcriptional"
@@ -6822,7 +6822,7 @@ description "microtubule-associated protein 1 light chain 3"
 
 \end_inset
 
-) 
+)
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ju2010quantitation"
@@ -6939,7 +6939,7 @@ day}
 
 \end_inset
 
- prednisone increased nitrogen excretion 
+ prednisone increased nitrogen excretion
 \begin_inset CommandInset citation
 LatexCommand citep
 key "muhlbacher1984effects"
@@ -7134,7 +7134,7 @@ molar}
 
 \end_inset
 
-, have been shown to synergize with IGF-I 
+, have been shown to synergize with IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
 key "giorgino1995dexamethasone"
@@ -7229,7 +7229,7 @@ molar}
 
 \end_inset
 
- 
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "menconi2008dexamethasone"
@@ -7765,7 +7765,7 @@ key "baehr2011muscle"
 \begin_layout Standard
 One distinction between the two atrogenes is set by their promoters.
  MuRF-1 promoter includes a GC response element, which MAFbx promoter appears
- to lack 
+ to lack
 \begin_inset CommandInset citation
 LatexCommand citep
 key "waddell2008glucocorticoid,braun2015regulation"
@@ -7773,7 +7773,7 @@ key "waddell2008glucocorticoid,braun2015regulation"
 \end_inset
 
 .
- In contrast, MAFbx promoter is activated by myogenin 
+ In contrast, MAFbx promoter is activated by myogenin
 \begin_inset CommandInset citation
 LatexCommand citep
 key "moresi2010myogenin"
@@ -7806,7 +7806,6 @@ key "baehr2014muscle"
 
 .
  Denervation leads to a stronger myogenin upregulation compared to GAML
- 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mozaffar2007molecular"
@@ -8168,7 +8167,7 @@ day}
 \end_inset
 
  Dexa exhibit only a third of the IRS 1 and 2 phosphorylation, compared
- to untreated animals 
+ to untreated animals
 \begin_inset CommandInset citation
 LatexCommand citep
 key "rojas2003regulation"
@@ -8479,7 +8478,7 @@ key "jacinto2006sin1/mip1"
 More evidence for Dexa-induced inhibition of Akt comes from its substrates,
  such as Ser 9 on GSK3-β.
  Chronic Dexa reduces GSK3-β phosphorylation at Ser 9, thus leading to GSK3-β
- activation 
+ activation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "buren2008insulin"
@@ -8596,7 +8595,7 @@ key "guertin2007defining,laplante2009mtor,inoki2002tsc2"
 
 ).
  Its modulation in acute Dexa administration is proven by reduced phosphorylatio
-n in its substrates, 4E-BP (Thr 37/46) and p70-S6K (Thr 389) 
+n in its substrates, 4E-BP (Thr 37/46) and p70-S6K (Thr 389)
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shah2000glucocorticoids"
@@ -9000,7 +8999,7 @@ key "calnan2008foxo"
  an increase in Foxo activity in GAML.
  Finding evidence for this mechanism has been challenging.
  In C2C12 myotubes, the expected Foxo hypophosphorylation in response to
- Dexa has been frequently reported 
+ Dexa has been frequently reported
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2007foxo3,sandri2004foxo"
@@ -9293,7 +9292,7 @@ key "ma2003glucocorticoid-induced"
 .
  In myostatin knockout mice, Dexa induces most of its transcriptional program,
  including modulations of IGF-I, MuRF-1, MAFbx, FOXO3A, but Dexa-induced
- muscle loss does not occur 
+ muscle loss does not occur
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gilson2007myostatin"
@@ -9443,7 +9442,7 @@ key "mccroskery2003myostatin,cohen2015genetic"
 Another study describes Akt inhibition in human myotubes differentiated
  from cultured myoblasts.
  In this system, myostatin treatments lead to reductions in diameter and
- atrogene downregulation 
+ atrogene downregulation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "trendelenburg2009myostatin"
@@ -9463,7 +9462,7 @@ key "trendelenburg2009myostatin"
 Myostatin-induced or -associated models of atrophy do not upregulate protein
  degradation.
  For example, microgravity atrophy is associated myostatin upregulation,
- but no changes in 3MH excretion 
+ but no changes in 3MH excretion
 \begin_inset CommandInset citation
 LatexCommand citep
 key "lalani2000myostatin"
@@ -9706,8 +9705,8 @@ key "baehr2011muscle"
 \end_layout
 
 \begin_layout Standard
-Suggestive data for protein synthesis modulation in GAML come from various
- molecular correlates.
+While direct evidence has been rarely obtained, indirect evidence showing
+ that Dexa modulates muscle protein synthesis is rich.
  For example, acute GC administration causes a reduction in the proportion
  of polyribosomes
 \begin_inset CommandInset citation
