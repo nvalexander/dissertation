@@ -5478,7 +5478,7 @@ key "berg2002each,wasserman2009four"
 \end_inset
 
 ).
- Because its capacity to synthesize fatty acid is negligible, muscle is
+ Because its capacity to synthesize fatty acid is 2negligible, muscle is
  a consumer and a minor store, but not a generator, of fatty acids.
  During fast, more than half of infused non-esterified fatty acids (
 \begin_inset CommandInset nomenclature
@@ -5662,24 +5662,20 @@ key "gelfand1986removal"
  Glutamine is synthesized in muscle in order to release the excess nitrogen
  yielded by amino acid release during protein degradation.
  Muscle's glutamine is then converted by the liver to urea and excreted.
+ The aforementioned amino acids, with important roles outside protein metabolism
+, are not suitable for labeling and protein tracking experiments.
 \end_layout
 
 \begin_layout Standard
-Other amino acids are more suitable for labeling and protein tracking experiment
-s.
- Among the amino acids with a trend for release between meals, isoleucine,
+Among the amino acids with a trend for release between meals, isoleucine,
  leucine, methionine, phenylalanine, threonine, and valine cannot be synthesized
  by humans.
  Their net release indicates that, at rest, basal level of protein degradation
  slightly surpass protein synthesis.
  Conversely, for a steady muscle mass, there must be net protein synthesis
  in the fed state.
- 
-\end_layout
-
-\begin_layout Standard
-Among the above amino acids, valine, isoleucine, and leucine, grouped under
- the name branched-chain amino acids (
+ Muscle protein synthesis is stimulated by feeding in multiple ways.
+ One of these mechanisms employs effects of branched-chain amino acids (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "BCAA"
@@ -5687,7 +5683,8 @@ description "branched-chain amino acids"
 
 \end_inset
 
-), lead to protein accretion in muscle through a complex mechanism.
+), that is, , valine, isoleucine, and leucine.
+ BCAA stimulate protein accretion in muscle through a complex mechanism.
  Some studies show that BCAA ingestion or infusion increase protein synthesis
  rate
 \begin_inset CommandInset citation
@@ -5704,7 +5701,7 @@ key "nair1992leucine"
 \end_inset
 
 .
- The effect of BCAA supplementation is three-fold, combining increase caloric
+ The effect of BCAA supplementation is three-fold, combining increased caloric
  intake, reflex hyperinsulinemia, and an autonomous, insulin-independent
  effect.
  One study investigated the molecular effects of BCAA at clamped normal
