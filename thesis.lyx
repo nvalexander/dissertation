@@ -22553,13 +22553,12 @@ name "fig:protein-degradation-cells"
 \begin_layout Standard
 Preliminary experiments revealed that scintillation data were not completely
  additive.
- Therefore, scintillation-based methods are semi-quantitative.
- The amounts of free tracer from cell extract and protein-bound tracer in
- the medium proteins are tens of times lower than the free tracer in the
- medium, and protein-bound tracer in the cells.
- In order to avoid addition on non-additive data, protein degradation rate
- was primarily estimated from the ratio of free tracer in the cell culture
- medium to protein-bound tracer in the cell extract (Fig.
+ Fortunately, the amounts of free tracer from cell extract and protein-bound
+ tracer in the medium proteins are tens of times lower than the free tracer
+ in the medium, and protein-bound tracer in the cells.
+ In order to avoid addition of non-additive data, protein degradation rate
+ was estimated from the ratio of free tracer in the cell culture medium
+ to protein-bound tracer in the cell extract (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -22571,6 +22570,10 @@ reference "fig:protein-degradation-cells"
  However, the results are essentially identical when free tracer from cell
  extract and protein-bound tracer in the medium proteins are taken into
  account.
+ This scintillation-based method is semi-quantitative, meaning that a doubling
+ of the ratio of free tracer in the cell culture medium to protein-bound
+ tracer in the cell extract does not indicate a doubling in protein degradation
+ rate, but merely its upregulation.
 \end_layout
 
 \begin_layout Standard
@@ -23278,7 +23281,7 @@ sig3(truemean(DegradationWithInhibitors[DegradationWithInhibitors$treatment
 
 \end_inset
 
- (Tukey's HSD vs.
+; Tukey's HSD vs.
  Dexa, p = 
 \begin_inset Flex S/R expression
 status open
@@ -23407,8 +23410,33 @@ The present work investigated the molecular mechanisms mediating androgen
 \end_layout
 
 \begin_layout Standard
-A 10 mg/(kg d) Dexa dose induced sizable loss of muscle, as evidenced by
- lean body mass and individual muscle weight changes.
+A 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+milli
+\backslash
+gram
+\backslash
+per
+\backslash
+kilo
+\backslash
+gram
+\backslash
+day}
+\end_layout
+
+\end_inset
+
+ Dexa dose induced sizable loss of muscle, as evidenced by lean body mass
+ and individual muscle weight changes.
  The effect was progressive, with the losses of lean body mass at day 3
  being roughly half of those at day 7.
  The observed time dependence is evidence for a Dexa-specific effect.
@@ -23791,15 +23819,35 @@ reference "fig:LC3-hyperlipidated"
 
 \begin_layout Standard
 Intuitively, it is more likely for bulk protein catabolism to be mediated
- by the smaller proteasome and atrogenes than the bulky autophagosome.
- However, in the cell culture experiments, inhibition of lysosomes had a
- significant protective effect, but not as ample as that of proteasome inhibitio
-n.
- Even in the in vivo studies, the amplitude and invariability of autophagy
- inhibition suggests it may have a regulatory role.
+ by the smaller proteasome and atrogenes than the larger autophagosome.
+ However, autophagy may play a regulatory, initiating role in GAML.
+ In the in vivo studies, the amplitude and invariability of autophagy inhibition
+ prove its modulation by Dexa.
+ One could speculate that such changes, ampler than those in muscle mass,
+ cannot be simple inconsequential side effects.
  While the present data solidly exclude a role for bulk protein digestion,
  further studies are needed to elucidate which proteins are spared from
  autophagy during GAML, and what is the regulatory effect of their sparing.
+\end_layout
+
+\begin_layout Standard
+While the in vivo data suggested that downregulation of autophagy is part
+ of GAML, I found the opposite phenomenon in cell culture experiments.
+ There, inhibition of lysosomes with chloroquine had a significant protective
+ effect.
+ The differences between the in vivo and in vitro data reveal the incompleteness
+ of the cell culture model.
+ Many factors absent from the cell culture experiment could have caused
+ the observed contrast, including myoprotective influences of the motoneuron
+ and vascularization.
+ Moreover, the advanced quiescence of the cultured myotubes contrasts with
+ the ample in vivo ability to regenerate.
+ Given the reductionism of the culture cell experiment, the in vivo experiment
+ is likely more reflective of what occurs in human glucocorticoid myopathy.
+ The fact that Testo reversed most of the in vivo effects of Dexa on autophagy
+ suggest that this pathway requires deeper study.
+ The role of autophagy in GAML will be better understood by using LC3-GFP
+ transgenic mice.
 \end_layout
 
 \begin_layout Standard
