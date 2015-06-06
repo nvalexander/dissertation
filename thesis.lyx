@@ -10130,13 +10130,13 @@ key "troncoso2014dexamethasone-induced"
 \end_inset
 
 .
- It appears that in vitro Dexa causes a rapid accumulation of autophagosomes,
- which are dismantled at a lower pace, as they fuse with lysosomes, and
- their content is cleared by proteolysis.
+ Such findings are consistent with a rapid formation of autophagosomes,
+ followed by a slower fusion with lysosomes and clearance.
 \end_layout
 
 \begin_layout Standard
-In vivo, acute Dexa causes accumulation of LC3-II protein
+In vivo, LC3 changes are rarely documented.
+ Acute Dexa causes accumulation of LC3-II protein
 \begin_inset CommandInset citation
 LatexCommand citep
 key "britto2014redd1"
@@ -10144,7 +10144,8 @@ key "britto2014redd1"
 \end_inset
 
 .
- Recently, the enrichment of LCII-B after chronic Dexa has been reported
+ Recently, the enrichment of LC3-II after chronic Dexa has been reported
+ in rats
 \begin_inset CommandInset citation
 LatexCommand citep
 key "yamamoto2010branched-chain"
@@ -10152,8 +10153,6 @@ key "yamamoto2010branched-chain"
 \end_inset
 
 .
- The latter report is uncommon, and may be reflecting a short interval between
- last Dexa dose and sample collection.
 \end_layout
 
 \begin_layout Standard
@@ -10171,8 +10170,8 @@ key "zhao2007foxo3"
 .
  As mentioned earlier, mTORC1 is a negative regulator of autophagy, whose
  inhibition in GAML is hypothesized to stimulate autophagy.
- Indeed, acute Dexa administration reduces ULK1 phosphorylation at Ser 575,
- the mTOR-specific, inhibitory site
+ Acute Dexa administration reduces ULK1 phosphorylation at Ser 575, the
+ mTOR-specific, inhibitory site
 \begin_inset CommandInset citation
 LatexCommand citep
 key "britto2014redd1"
@@ -10241,7 +10240,7 @@ key "rossi2009cytosolic"
 Autophagy may play a significant role in triggering and regulating GAML.
  Current evidence, based on cell culture experiments, is far from satisfactory.
  Given its limited amplitude in vivo, it is improbable that autophagy is
- responsible with bulk protein elimination.
+ responsible for bulk protein elimination.
 \end_layout
 
 \begin_layout Section
@@ -10304,7 +10303,7 @@ key "fareed2006treatment"
 \end_inset
 
 .
- Still in L6 myotubes, Dexa promotes store-operated calcium entry, the mechanism
+ Also in L6 myotubes, Dexa promotes store-operated calcium entry, the mechanism
  by which intracellular Ca concentration is increased when ER stores are
  depleted
 \begin_inset CommandInset citation
@@ -10367,9 +10366,10 @@ key "ballard1983effects"
 .
  While the use of non-fusing myoblasts is certain to introduce confounding
  changes in proliferation, and the equivalence between IGF-I and insulin
- lacks subtlety, his hypothesis captured the attention of many investigators,
- despite going against another theme of interest in those days, the hyperplastic
- synergy between IGF-I and GC
+ lacks subtlety, his hypothesis captured the attention of many investigators.
+ The interest it garnered was even more surprising given that another common
+ research theme in those times was the hyperplastic synergy between IGF-I
+ and GC
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ewton1981effects,elsner1998regulation"
@@ -10377,12 +10377,11 @@ key "ewton1981effects,elsner1998regulation"
 \end_inset
 
 .
- As described in the sections on Akt and mTOR, most of the knowledge we
- have about it is derived from studies of anabolism, where muscle, rather
- than being analyzed in its basal state, is first stimulated with insulin
- or IGF-I.
- In a sense, we know more about the interaction between Dexa and IGF-I than
- we know about Dexa alone.
+ Many reports describe the easily measurable interaction between Dexa and
+ IGF-I on muscle cells, rather than focus on the more subtle changes induced
+ by Dexa alone.
+ For example, the above sections on Akt and mTOR were informed mostly by
+ studies of the interaction.
  Lately, the interpretation of such experiments shifted from mechanism-explainin
 g to a therapeutic paradigm.
  In mice, electroporation of IGF-I plasmid in tibialis protected solely
@@ -10449,8 +10448,8 @@ key "wu2010redd1"
 \end_layout
 
 \begin_layout Standard
-Despite the positive results seen in rodents (described above), very few
- studies analyzed molecular mechanisms by which IGF-I works in vivo.
+Despite the positive results seen in rodents, few studies analyzed molecular
+ mechanisms by which IGF-I works in vivo.
  Because co-administration of GH cannot reverse muscle loss from Dexa or
  triamcinolone
 \begin_inset CommandInset citation
@@ -10459,11 +10458,10 @@ key "petrof1995growth,chrysis1999regulation"
 
 \end_inset
 
-, it is likely that, similar to Dexa, IGF-I action on muscle is cell-autonomous.
- Therefore, a series of studies dissected the molecular mechanisms by which
- IGF-I could alleviate cultured myotube atrophy.
- There, IGF-I alone improves protein synthesis, but has no effect on protein
- degradation
+, it was hypothesized that, similar to Dexa, IGF-I action on muscle is cell-auto
+nomous, and may be modeled by cell cultures.
+ In cell culture, IGF-I alone improves protein synthesis, but has no effect
+ on protein degradation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "quinn2007muscle-specific"
@@ -10471,8 +10469,8 @@ key "quinn2007muscle-specific"
 \end_inset
 
 .
- Nevertheless, myotubes treated with Dexa, co-administration of IGF-I has
- an anti-proteolytic effect
+ In contrast, on myotubes treated with Dexa, co-administration of IGF-I
+ has an anti-proteolytic effect
 \begin_inset CommandInset citation
 LatexCommand citep
 key "quinn2007muscle-specific"
@@ -10497,8 +10495,8 @@ key "sacheck2004igf-i,waddell2008glucocorticoid"
 \end_inset
 
 , in a Foxo dependent manner.
- During co-administration, Dexa is still able to upregulate protein levels
- of Foxo transcription factors, but IGF-I appears to counter them by increasing
+ During co-administration, Foxo regulation is split.
+ Dexa upregulates Foxo protein levels, while IGF-I counters by increasing
  their phosphorylation
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -10514,10 +10512,13 @@ key "waddell2008glucocorticoid"
 \end_inset
 
 .
- The IGF-I induced FOxo phosphorylation is consonant with upstream modulations
+\end_layout
+
+\begin_layout Standard
+The IGF-I-induced Foxo phosphorylation is consistent with upstream modulations
  of the Akt axis.
- First, IGF-I co-administration in cells treated with Dexa causes myoprotective
- increases in phosphorylation of Akt, GSK-3β, p70-S6K and 4E-BP1
+ Among those, myoprotective phosphorylation of Akt, GSK-3β, p70-S6K and
+ 4E-BP1 is seen with IGF-I co-administration in cells
 \begin_inset CommandInset citation
 LatexCommand citep
 key "li2005insulin-like,shah2000translational"
@@ -10525,8 +10526,8 @@ key "li2005insulin-like,shah2000translational"
 \end_inset
 
 .
- Second, studies with chemical inhibitors revealed that IGF-I protective
- effect is mediated by Akt and PI3K
+ Studies with chemical inhibitors revealed that IGF-I protective effect
+ is mediated by Akt and PI3K
 \begin_inset CommandInset citation
 LatexCommand citep
 key "li2005insulin-like"
@@ -10534,10 +10535,17 @@ key "li2005insulin-like"
 \end_inset
 
 .
-\end_layout
+ It is unclear which downstream mediator is in fact relevant for myoprotection.
+ Muscle hypertrophy and recovery are halved by rapamycin, indicating that
+ other anabolic mediators are as important as the mTOR pathway 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pallafacchina2002protein,bodine2001akt/mtor,spangenburg2008functional"
 
-\begin_layout Standard
-From the similarity between muscle protection conferred by IGF-I and by
+\end_inset
+
+.
+ From the similarity between muscle protection conferred by IGF-I and by
  GSK-3β inhibitors, it was speculated that IGF-I acts by inhibiting GSK-3β
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -10549,33 +10557,11 @@ key "evenson2005gsk-3beta,schakman2008role"
 \end_layout
 
 \begin_layout Standard
-Muscle accretion is not completely conditioned by availability of IGF-I.
- Myostatin knockout mice have double muscle size, yet lower circulating
- IGF-I levels, compared to wild type
-\begin_inset CommandInset citation
-LatexCommand citep
-key "williams2011endocrine"
-
-\end_inset
-
-.
- Muscle growth and recovery is halved by rapamycin, indicating that other
- anabolic mediators are as important as the Akt / mTOR pathway 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "pallafacchina2002protein,bodine2001akt/mtor,spangenburg2008functional"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 Based on the current evidence, it appears that IGF-I alleviating action
  is not completely overlapping with the wide spectrum of atrophic actions
  of Dexa.
- Indeed, the putative mediator of muscle loss REDD1 is upregulated by acute
- insulin or IGF-I
+ The putative mediator of muscle loss REDD1 is upregulated by acute insulin
+ or IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
 key "frost2009regulation"
@@ -10583,13 +10569,24 @@ key "frost2009regulation"
 \end_inset
 
 .
- It is unclear whether such REDD1 upregulation in an anabolic context may
- refute the role of REDD1 in muscle loss, or whether, on the contrary, it
- explains the incomplete reversal of GAML by IGF-I.
+ It is possible that REDD1 upregulation contributes to the incompleteness
+ in reversal of GAML by IGF-I.
 \end_layout
 
 \begin_layout Standard
-As our understanding of GAML improved, studies on its alleviation by IGF-I
+IGF-I is only one of the many determinants of muscle mass For example, myostatin
+ knockout mice have double muscle size, yet lower circulating IGF-I levels,
+ compared to wild type
+\begin_inset CommandInset citation
+LatexCommand citep
+key "williams2011endocrine"
+
+\end_inset
+
+.
+ However, the changes induced by Dexa in IGF-I are consistent with its involveme
+nt in the atrophy program.
+ As our understanding of GAML improved, studies on its alleviation by IGF-I
  are lagging.
  A large number of publications focus on the balance of GC and IGF-I on
  Akt in cultured cells.
@@ -10626,7 +10623,7 @@ key "courrier1952relations"
 
 .
  For a long time, during the second dark age of steroids, the combination
- of AAS and GC, with androgenic, but without anabolic potency, was investigated
+ of AAS and GC, with androgenic, but without anabolic potency, was investigated,
  in the hope that it would show the way towards splitting the anabolic from
  the androgenic principle in Testo.
 \end_layout
