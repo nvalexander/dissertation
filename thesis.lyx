@@ -8729,7 +8729,7 @@ key "williams2012dietary,nakken2010effects"
 \end_layout
 
 \begin_layout Standard
-Another putative mTORC1 inactivating mechanism is centered on the stress
+A third putative mTORC1 inactivating mechanism is centered on the stress
  sensor REDD1.
  Dexa upregulates REDD1 expression in muscle
 \begin_inset CommandInset citation
@@ -8767,6 +8767,19 @@ key "sofer2005regulation"
 , at times overriding its action on mTORC1.
  Interestingly, a REDD1-based mechanism could explain the few observations
  on mTORC1 changes just as well as a Akt-centered model would.
+\end_layout
+
+\begin_layout Standard
+Finally, limited evidence suggest that Dexa impedes mTORC1 ability to act
+ on its substrate p70-S6K, through the depletion of a putative scaffold,
+ eIF3f
+\begin_inset CommandInset citation
+LatexCommand citep
+key "csibi2010translation"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -9800,7 +9813,7 @@ key "hu2012mnk2"
  Dexa reduces eIF4G Ser 1108 phosphorylation in wild type mice, but not
  in MNK2 knockout mice.
  This posttranslational modification correlates with nutrient availability,
- but its role in GAML or in general is not known (reviewed in 
+ but its role in GAML was not studied (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "vary2007nutrient"
@@ -10232,7 +10245,7 @@ Autophagy may play a significant role in triggering and regulating GAML.
 \end_layout
 
 \begin_layout Section
-Glucocorticoids and other proteolytic systems
+Other proteolytic systems modulated by glucocorticoids
 \end_layout
 
 \begin_layout Standard
