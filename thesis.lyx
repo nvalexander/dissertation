@@ -23868,7 +23868,11 @@ d changes in calpain enzymatic activity, calpain, or calpastatin protein
 \begin_layout Standard
 Studies on protein synthesis rate have been strained by the limited technical
  abilities of measuring protein synthesis in mice.
- This study did not measure protein synthesis directly in vivo.
+ No study measured changes in the rate of protein synthesis in mice prior
+ to this work.
+ The studies on rats indicated that such measurements are fraught with high
+ variability, and will likely fail to detect any effect.
+ I did not measure protein synthesis directly in vivo.
  The measurements of protein synthesis rate in vitro failed to identify
  any significant change in response to Dexa.
  C2C12 cells are surprisingly dependent on protein synthesis, with either
@@ -23942,26 +23946,6 @@ key "baehr2011muscle"
  synthesis by Baehr's method would have been indecisive, as the muscle would
  have been midway in the switch from low translation to high translation
  rate.
- It is unclear what co-administration of Testo would have induced in adapting
- translation machinery.
-\end_layout
-
-\begin_layout Standard
-The inhibitory phosphorylation of 4E-BP is induced by mTORC1.
- I also investigated changes in REDD1 / Ddit4, the negative regulator of
- mTORC1.
- Dexa consistently upregulated REDD1 expression in samples from days 1,
- 3, and 7.
- However, the 7-day time point were associated with a less ample REDD1 amplifica
-tion.
- A time course where REDD1 is amplified only for the first week, and subsides
- later, could explain Baehr's observations on protein synthesis time line.
- Testo co-administration reversed REDD1 upregulation only at 7-day time
- point, when Dexa-induced amplification was at its lowest.
- The implication is that, at later time points, Testo co-administration
- may become able to remove the breaks from mTORC1 and protein synthesis.
- Further experiments are needed to analyze such putative changes in protein
- synthesis at later time points.
 \end_layout
 
 \begin_layout Standard
@@ -23971,7 +23955,8 @@ In conclusion, Testo induced muscle protection through multiple mechanisms,
 \end_layout
 
 \begin_layout Section
-IGF-1R signaling during dexamethasone and testosterone administration
+Molecular mechanisms linking dexamethasone and testosterone to protein metabolis
+m
 \end_layout
 
 \begin_layout Standard
@@ -24009,6 +23994,24 @@ As discussed in the literature review section, at least five ways by which
  The means by which Testo achieves atrogene repression are less understood.
  Here, I demonstrate that Testo-induced downregulation of atrogenes is correlate
 d with reduced transcription of Foxo3a.
+\end_layout
+
+\begin_layout Standard
+The inhibitory phosphorylation of 4E-BP is induced by mTORC1.
+ I also investigated changes in REDD1 / Ddit4, the negative regulator of
+ mTORC1.
+ Dexa consistently upregulated REDD1 expression in samples from days 1,
+ 3, and 7.
+ However, the 7-day time point were associated with a less ample REDD1 amplifica
+tion.
+ A time course where REDD1 is amplified only for the first week, and subsides
+ later, could explain Baehr's observations on protein synthesis time line.
+ Testo co-administration reversed REDD1 upregulation only at 7-day time
+ point, when Dexa-induced amplification was at its lowest.
+ The implication is that, at later time points, Testo co-administration
+ may become able to remove the breaks from mTORC1 and protein synthesis.
+ Further experiments are needed to analyze such putative changes in protein
+ synthesis at later time points.
 \end_layout
 
 \begin_layout Standard
