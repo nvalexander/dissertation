@@ -4132,8 +4132,8 @@ key "luton1977reversible,boccuzzi1975effect"
 eness.
  Finally, a small study found that male asthma patients receiving long-term
  prednisone have lower circulating Testo levels despite increases in LH
- and FSH, and concluded that prednisone has an direct inhibitory action
- on the testes
+ and FSH, and concluded that prednisone has a direct inhibitory action on
+ the testes
 \begin_inset CommandInset citation
 LatexCommand citep
 key "reid1985plasma"
@@ -4225,7 +4225,7 @@ key "valassi2011european"
 \end_inset
 
 .
- But, in contrast to males, females with CS have normal or even increased
+ However, in contrast to males, females with CS have normal or even increased
  AAS synthesis and levels, compared to healthy controls
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4336,7 +4336,7 @@ description "dehydroepiandrosterone sulfate"
 ), which originate from the adrenal and, to a lesser degree, from gonads.
  Their most important role appears to be that of precursors for synthesis,
  in glands and peripheral tissue, of androgens and estrogens.
- DHEA has some affinity for the AR, which suggested it may be an AAS.
+ DHEA has some affinity for the AR, which suggested it miht be an AAS.
  Recent studies indicate that, in human female tissue, DHEA may in fact
  be a partial agonist, hindering the action of T
 \begin_inset CommandInset citation
@@ -4421,7 +4421,7 @@ Molecular mechanisms of androgenic myoprotection in humans
 \end_layout
 
 \begin_layout Standard
-GAML is a phenomenon well-studied, with its molecular mechanisms dissected
+GAML is a well-studied phenomenon, with its molecular mechanisms dissected
  in human studies.
  In contrast, the effect of AAS in GAML was studied in a few case reports,
  marred by the absence of objective physical outcomes and of molecular analysis.
@@ -4635,7 +4635,7 @@ key "ferrando2003differential"
  Therefore, muscle protein accretion could be attributed to decreased protein
  degradation.
  Moreover, Ferrando and colleagues showed a significant decrease in the
- proteasomal enzymatic activity following Testo therapy.
+ proteasome enzymatic activity following Testo therapy.
  The same group found a similar pattern of net gain in muscle protein, correlate
 d with reduced catabolism and unchanged protein synthesis, in a short-term
  trial of Testo on men with severe burns
@@ -4646,7 +4646,7 @@ key "ferrando2001testosterone"
 \end_inset
 
 .
- It is unclear why the anticatabolic action of Testo did not garner more
+ It is unclear why the anti-catabolic action of Testo did not garner more
  attention.
  The hypothesis that Testo inhibits protein degradation remains tempting,
  but better studies are needed.
@@ -4655,8 +4655,8 @@ key "ferrando2001testosterone"
 \begin_layout Standard
 The protection of muscle force provided by Testo to the older hypogonadal
  men is not hindered by co-administration of finasteride, an inhibitor of
- 5α-reductase which causes the transformation of Testo to 5α-dihydrotestosterone
- (
+ 5α-reductase, which causes the transformation of Testo to 5α-dihydrotestosteron
+e (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DHT"
@@ -6667,8 +6667,8 @@ key "gomes2012upregulation"
 \end_inset
 
 , and upregulates all the ubiquitin-proteasome pathway components, including
- ubiquitin, the E3 ligases MuRF-1 and MAbx, and the proteasomal subunit
- A1 
+ ubiquitin, the E3 ligases MuRF-1 and MAbx, and the proteasome subunit A1
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "medina1995increase,bodine2001identification"
@@ -6795,7 +6795,7 @@ Establishing the role for mTORC1 in denervation-induced loss of muscle mass
  synthesis and remove a restriction on autophagy.
  In particular, denervation-induced autophagy appealed to the muscle biologists
  of the 2000's.
- For example, one group claimed that the lysosomal inhibitor chloroquine
+ For example, one group claimed that the lysosome inhibitor chloroquine
  prevents denervation-induced muscle loss
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -6804,7 +6804,7 @@ key "schwartz1990effects"
 \end_inset
 
 .
- Others showed that denervation upregulates lysosomal enzyme cathepsin L
+ Others showed that denervation upregulates lysosome enzyme cathepsin L
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mammucari2007foxo3"
@@ -6831,7 +6831,7 @@ key "ju2010quantitation"
 .
  These studies were published even as others clearly refuted the role of
  autophagy in denervation.
- The lysosomal inhibitors leupeptin, methylamine, and E64-c have minimal
+ The lysosome inhibitors leupeptin, methylamine, and E64-c have minimal
  effects on the release of free tyrosine from denervated muscle
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -7538,7 +7538,7 @@ key "gilson2007myostatin"
 \end_inset
 
 .
- Dexa upregulates proteasomal subunits such as C1, C2, C4, C5 
+ Dexa upregulates proteasome subunits such as C1, C2, C4, C5 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dardevet1995sensitivity,combaret2004glucocorticoids"
@@ -7605,7 +7605,7 @@ key "wang1998dexamethasone"
 .
  GAML dependence on ATP reinforces the idea that GC-stimulated proteolysis
  takes place in the proteasome.
- In contrast, lysosomal inhibitors had no effect, while E-64 has minimal
+ In contrast, lysosome inhibitors had no effect, while E-64 has minimal
  effect
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -7696,7 +7696,7 @@ key "luo2001heat"
 \end_inset
 
 .
- Moreover, Dexa's inhibition of NF-κB was shown to be necessary for proteasomal
+ Moreover, Dexa's inhibition of NF-κB was shown to be necessary for proteasome
  subunit C3 upregulation in the same L6 cells
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -10159,7 +10159,7 @@ In contrast with the limited body of evidence we have for autophagy upregulation
 , there is a significant amount of literature describing what would drive
  autophagy up in GAML.
  In C2C12 myotubes, overexpression of a constitutively active FoxO3 or chemical
- inhibition of Akt leads to increased lysosomal proteolysis
+ inhibition of Akt leads to increased lysosome proteolysis
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2007foxo3"
@@ -10200,7 +10200,7 @@ key "britto2014redd1,giron2015beta-hydroxy-beta-methylbutyrate"
 \end_inset
 
 .
- In C2C12, acute Dexa upregulates expression of lysosomal markers such as
+ In C2C12, acute Dexa upregulates expression of lysosome markers such as
  autophagy-related 12 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -10478,7 +10478,7 @@ key "quinn2007muscle-specific"
 
 .
  The reduction in proteolysis covers all domains, but, in acute settings,
- appears more effective in repressing lysosomal than proteasomal activity
+ appears more effective in repressing lysosome than proteasome activity
 \begin_inset CommandInset citation
 LatexCommand citep
 key "li2004insulin-like"
@@ -11173,7 +11173,7 @@ key "wu2010redd1"
  thresholds.
  The reversal of GAML is also correlated with a repression of REDD1 to basal
  levels, suggesting that mTOR is also restored by Testo.
- Testo also reversed the surge of MuRF-1, proteasomal subunit D8, cathepsin
+ Testo also reversed the surge of MuRF-1, proteasome subunit D8, cathepsin
  L, LC3, M-type calpain, C/EBP β and δ, and metallothionein 1, exhibiting
  a wide-spectrum anti-atrophic action.
 \end_layout
@@ -15578,7 +15578,7 @@ molar}
 \end_inset
 
  puromycin dihydrochloride from 500X water-based stock.
- Proteasomal activity was inhibited in cell culture with 
+ proteasome activity was inhibited in cell culture with 
 \begin_inset ERT
 status open
 
@@ -15597,7 +15597,7 @@ molar}
 
  MG132 from a 80X working stock in differentiation medium, which in turn
  was derived from a 8,000X DMSO-based stock.
- Lysosomal activity was inhibited with 
+ lysosome activity was inhibited with 
 \begin_inset ERT
 status open
 
@@ -18749,7 +18749,7 @@ name "fig:Autophagy-related-genes"
 
 \begin_layout Standard
 I tested the hypothesis that autophagy mediates protein degradation in GAML
- by measuring lysosomal enzymatic activity in muscle lysates (Fig.
+ by measuring lysosome enzymatic activity in muscle lysates (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
