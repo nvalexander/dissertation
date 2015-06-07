@@ -23083,7 +23083,7 @@ molar}
 
 \end_inset
 
- pycropodophilin, an inhibitor of IGF-1R.
+ picropodophyllin, an inhibitor of IGF-1R.
 \end_layout
 
 \begin_layout Standard
@@ -23483,8 +23483,8 @@ reference "fig:Body-weight-at-sacrifice"
 \end_layout
 
 \begin_layout Standard
-Gastrocnemius and quadriceps appeared as more sensitive muscle to Dexa,
- whereas tibialis was essentially unchanged.
+Gastrocnemius and quadriceps were the more sensitive muscle to Dexa, whereas
+ tibialis was essentially unchanged.
  The lack of response in tibialis was surprising, given how common mouse
  tibialis manipulation, such as electroporation of DNA, is described in
  literature.
@@ -23553,7 +23553,7 @@ Co-administration of Testo alleviated all macroscopic Dexa effects.
 \begin_layout Standard
 The experimental protocol was not ideal for observing the time course of
  the Testo action.
- On one hand, the body weight changes during the 7 day experiment (Fig.
+ On one hand, the body weight changes during the 7-day experiment (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -23561,7 +23561,7 @@ reference "fig:Time-course-of-body-weight"
 
 \end_inset
 
-, top) suggests that the protective action of Testo starts early on, from
+, top) suggest that the protective action of Testo starts early on, from
  the first day of experiment.
  On the other, the time course is not confirmed by the evolution of individual
  muscles' weight (Fig.
@@ -23588,7 +23588,7 @@ reference "fig:Muscles-weights"
  steroids, but the changes surrounding the acute onset of GAML were not
  investigated in more detail, as they were beyond the scope of this work.
  At the 7-day time point, which is the most accurate model of chronic steroid
- myopathy, the alleviation of GAML is well-established.
+ myopathy, the alleviation of GAML is well established.
 \end_layout
 
 \begin_layout Standard
@@ -23606,8 +23606,8 @@ The alleviation following Testo was incomplete in terms of lean body mass
  The effective dose of Testo for fully preventing GAML should be the aim
  of future studies.
  Within the limits of present data, it may be the case that no Testo dose
- would overcome Dex-induced atrophy, which would then imply that Dexa pro-atroph
-ic mechanisms include pathways outside the scope of AAS action.
+ would overcome Dexa-induced atrophy, which would then imply that Dexa pro-atrop
+hic mechanisms include pathways outside the scope of AAS action.
 \end_layout
 
 \begin_layout Standard
@@ -23696,7 +23696,7 @@ reference "fig:Proteasome-enzymatic-activity"
 \end_layout
 
 \begin_layout Standard
-All these catabolic catabolic changes were inhibited by Testo co-administration.
+All these catabolic changes were inhibited by Testo co-administration.
  In vitro, atrogenes expression was reduced to basal levels, and, in the
  case of day 7 samples, even further below.
  The inhibitory effect of Testo on MuRF-1 was predicted by the microarray
@@ -23755,7 +23755,7 @@ key "baehr2011muscle"
  proteasome performs the clearance of the bulk of dispensable proteins.
  An alternative explanation, which takes into account the subsiding evolution
  of the atrogene surge, is that atrogenes ubiquitinate, and target for degradati
-on, an yet unidentified myoprotective intracellular factor, thus unleashing
+on, a yet unidentified myoprotective intracellular factor, thus unleashing
  a cascade of proteasome-independent mechanisms.
  Some limited attempts to detect multiple ubiquitination states for MuRF-1's
  putative substrate, myosin heavy chain, have failed (data not shown).
@@ -23784,8 +23784,8 @@ The experiments performed in this study clearly exclude a role for autophagosome
  Moreover, lysosome-associated cathepsin L enzymatic activity is suppressed
  by Dexa in a statistically significant manner at all time points.
  The downregulation of cathepsin activity and expression was more ample
- than the the loss of muscle protein, indicating that an active process
- of cathepsin degradation is activated by Dexa in vivo.
+ than the loss of muscle protein, indicating that an active process of cathepsin
+ degradation is activated by Dexa in vivo.
  
 \end_layout
 
@@ -23851,7 +23851,7 @@ While the in vivo data suggested that downregulation of autophagy is part
  Given the reductionism of the culture cell experiment, the in vivo experiment
  is likely more reflective of what occurs in human glucocorticoid myopathy.
  The fact that Testo reversed most of the in vivo effects of Dexa on autophagy
- suggest that this pathway may be relevant for GAML alleviation.
+ suggests that this pathway may be relevant for GAML alleviation.
 \end_layout
 
 \begin_layout Standard
@@ -23882,7 +23882,7 @@ Studies on protein synthesis rate have been strained by the limited technical
  C2C12 cells are surprisingly dependent on protein synthesis, with either
  translational inhibitor cycloheximide and puromycin leading to cell death
  and detachment in hours (data not shown).
- Overall the lack of detectable changes in protein synthesis rate agrees
+ Overall, the lack of detectable changes in protein synthesis rate agrees
  with findings in rat L6 cells
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -23965,7 +23965,7 @@ m
 
 \begin_layout Standard
 In agreement with the rat studies, the present work demonstrates that Dexa-induc
-ed upregulation of atrogenes is co-ordinated with increased expression of
+ed upregulation of atrogenes is coordinated with increased expression of
  Foxo transcription factors (Fig.
  
 \begin_inset CommandInset ref
@@ -23995,8 +23995,8 @@ In addition to repression of atrogenes, Testo reverses other actions of
  Dexa.
  This efficient, multi-directional action of Testo suggests that it acts
  on a higher-level mediator of GAML.
- Two molecular levers responded in an uniform, consistent manner to the
- two steroids, and therefore may be high-level mediators of AAS and GC.
+ Two molecular levers responded in a uniform, consistent manner to the two
+ steroids, and therefore may be high-level mediators of AAS and GC.
  The first is REDD1 / Ddit4, the negative regulator of mTORC1.
  Dexa consistently upregulated REDD1 expression in samples from days 1,
  3, and 7.
@@ -24008,8 +24008,8 @@ In addition to repression of atrogenes, Testo reverses other actions of
  Testo co-administration reversed REDD1 upregulation to a significant degree
  at 7-day time point, when Dexa-induced amplification was at its lowest.
  Further experiments are needed to analyze the relationship between REDD1
- and protein synthesis, especially at later time points which have not been
- investigated here.
+ and protein synthesis, especially at later time points, which have not
+ been investigated here.
 \end_layout
 
 \begin_layout Standard
@@ -24066,10 +24066,10 @@ on (data not show).
 
 \begin_layout Standard
 In vitro, I attempted to gauge the role of IGF-1R in Testo myoprotection.
- A novel IGF-1R inhibitor, pycropodophilin, had no effect on Testo protection.
+ A novel IGF-1R inhibitor, picropodophyllin, had no effect on Testo protection.
  However, the same experiment uncovered a series of other shortcomings of
- the cell culture experiment, including an higher reliance on autophagy
- compared to the in vivo model.
+ the cell culture experiment, including a higher reliance on autophagy compared
+ to the in vivo model.
  Better causal inferences will be made by employing in vivo transgenic models
  of interference with the IGF-I / Akt / mTORC1 axis.
 \end_layout
@@ -24094,8 +24094,8 @@ At this time, the mechanisms by which Dexa upregulates Foxo transcription
 \end_layout
 
 \begin_layout Standard
-The in vivo experiment suggest that Testo also reversed Dexa-induced repression
- of autophagy.
+The in vivo experiment suggested that Testo also reversed Dexa-induced repressio
+n of autophagy.
  The role of autophagy in GAML will be better understood by observing the
  effects of GC and AAS on muscle from LC3-GFP transgenic mice.
 \end_layout
