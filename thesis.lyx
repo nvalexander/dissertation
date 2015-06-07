@@ -19947,7 +19947,7 @@ Foxo pathway response to dexamethasone and testosterone
 \begin_layout Standard
 Previous studies on C2C12 cultured cells showed that the atrogene response
  is crucially stimulated by Foxo transcription factors.
- The review section describes a series of five hyothetical means by which
+ The review section describes a series of five hypothetical means by which
  Dexa is thought to stimulate Foxo transcriptional program.
  Most of them converge on upregulation of Foxo transcripts.
  I set to test the hypothesis that muscle Foxo expression is modulated by
@@ -22005,8 +22005,8 @@ Protein synthesis in cultured cells treated with dexamethasone and testosterone
 \begin_layout Standard
 In preliminary experiments, I found that tracer uptake is minimal during
  the first two hours.
- Also, tracer uptake rate became essentially equal to the rate of tracer
- release due to protein synthesis after the first 
+ In addition, tracer uptake rate became essentially equal to the rate of
+ tracer release due to protein synthesis after the first 
 \begin_inset ERT
 status open
 
@@ -22229,7 +22229,7 @@ name "fig:protein-synthesis-cells"
 
 \begin_layout Standard
 After lysis, cells were assayed for protein-bound tracer.
- There was no effect of treatment on the amount of tracer uptook by the
+ There was no effect of treatment on the amount of tracer taken up by the
  cells (Fig.
  
 \begin_inset CommandInset ref
@@ -22382,7 +22382,7 @@ molar}
 
 \end_inset
 
-Testo, or (D) 
+ Testo, or (D) 
 \begin_inset ERT
 status open
 
@@ -22559,9 +22559,9 @@ name "fig:protein-degradation-cells"
 \begin_layout Standard
 Preliminary experiments revealed that scintillation data were not completely
  additive.
- Fortunately, the amounts of free tracer from cell extract and protein-bound
- tracer in the medium proteins are tens of times lower than the free tracer
- in the medium, and protein-bound tracer in the cells.
+ In this experiment, the amounts of free tracer from cell extract and protein-bo
+und tracer in the medium proteins are tens of times lower than the free
+ tracer in the medium, and the protein-bound tracer in the cells.
  In order to avoid addition of non-additive data, protein degradation rate
  was estimated from the ratio of free tracer in the cell culture medium
  to protein-bound tracer in the cell extract (Fig.
@@ -22628,7 +22628,7 @@ reference "fig:protein-degradation-cells"
 \end_inset
 
 , bottom).
- For 24 hour vehicle-treated cells, the ratio of free medium tracer to protein-b
+ For 24-hour vehicle-treated cells, the ratio of free medium tracer to protein-b
 ound intracellular was 
 \begin_inset Flex S/R expression
 status open
@@ -22776,8 +22776,8 @@ sig3(tukeyDegradationTreatment24[["DDTT-DD", "p.adj"]])
 \end_layout
 
 \begin_layout Standard
-A similar trend was recorded at the 48 hour time point.
- For 24 hour vehicle-treated cells, the ratio of free medium tracer to protein-b
+A similar trend was recorded at the 48-hour time point.
+ For 48-hour vehicle-treated cells, the ratio of free medium tracer to protein-b
 ound intracellular was 
 \begin_inset Flex S/R expression
 status open
@@ -22962,7 +22962,7 @@ molar}
 
  Testo.
  In order to interfere with putative proteolytic pathways, other sets of
- cels were treated with (D) 
+ cells were treated with (D) 
 \begin_inset ERT
 status open
 
