@@ -2029,7 +2029,7 @@ key "ravis2007topical"
 
 .
  In 1987, hydrocortisone creams became over-the-counter in UK.
- Regulated, over-the-counter GC creams rarely cause CS on their own, but
+ Regulated over-the-counter GC creams rarely cause CS on their own, but
  have been frequently suspected to lower the threshold for CS in patients
  who are also prescribed oral GC.
  Unregulated, mislabeled, overdosing GC creams sold as skin-bleaching products
@@ -2171,7 +2171,7 @@ There are differences between GC-induced cardiovascular changes, depending
  on the nature of the GC.
  Endogenous GCs, such as cortisol, have hypertensive effects, while some
  synthetic GCs, Dexa included, lack such non-specific MR-dependent action.
- Nevertheless, excess exogenous and endogenous GC cause the same disabling
+ Nevertheless, excess exogenous and endogenous GC causes the same disabling
  effects on muscle
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2180,7 +2180,7 @@ key "douglass1992myopathy"
 \end_inset
 
 , indicating that muscle damage is mediated by GR.
- GCs do differ quantitatively in their ability to cause myopathy.
+ GCs differ quantitatively in their ability to cause myopathy.
  Myopathy is invariably induced in two weeks by either 
 \begin_inset ERT
 status open
@@ -2862,7 +2862,7 @@ description "3-methylhistidine"
 
 \end_inset
 
-), an non-recyclable degradation product specific to muscle actin and myosin
+), a non-recyclable degradation product specific to muscle actin and myosin
 \begin_inset CommandInset citation
 LatexCommand cite
 key "elia1981clinical"
@@ -3690,7 +3690,7 @@ During the 1950's, AAS became part of the standard of care for endogenous
  resonance imaging of the pituitary, identify the target of surgery.
  AAS therapy is now confined to inoperable cases, including unidentified
  ectopic sources of ACTH or cortisone.
- Even these cases benefit from more targeted interventions (see
+ Even these cases benefit from more targeted interventions (see Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Pharmacological-unoperable-Cushing-disease"
@@ -4082,7 +4082,7 @@ ing hormone, but its existence was never proven.
 
 \begin_layout Standard
 In males, chronic hypercortisolism is also associated with hypoandrogenism.
- Long term prednisone therapy reduces circulating Testo levels
+ Long-term prednisone therapy reduces circulating Testo levels
 \begin_inset CommandInset citation
 LatexCommand citep
 key "martens1994decreased"
