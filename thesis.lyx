@@ -10784,8 +10784,8 @@ key "bullock1968effects"
 \end_inset
 
 .
- Two later studies on L6 myotubes stated that AAS cannot reverse the downregulat
-ion of protein synthesis induced by Dexa
+ Two later studies on L6 myotubes found that AAS could not reverse the downregul
+ation of protein synthesis induced by Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ballard1983effects,roeder1986influence"
@@ -10870,7 +10870,7 @@ key "prezant1997gender-specific"
 \end_inset
 
 .
- Sexual dimorphism in animal models confirm that males stand to benefit
+ Sexual dimorphism in animal models confirms that males stand to benefit
  more from AAS therapy in GAML.
 \end_layout
 
@@ -10920,7 +10920,7 @@ key "serra2013effects"
 \begin_layout Standard
 In the era of immunoblot, only three laboratories published studies of co-admini
 stration of AAS and GC.
- All three converged towards describing an reversal of Akt pathway inhibition.
+ All three converged towards describing a reversal of Akt pathway inhibition.
  Sheng laboratory describes the effect of 10-day 
 \begin_inset ERT
 status open
@@ -11194,7 +11194,7 @@ description "B-cell leukemia/lymphoma 3"
 
 \end_inset
 
-), IκB , and CD36.
+), IκB, and CD36.
  The latter is a fatty acid translocase.
  Its changes suggest that GAML and its reversal have opposite effects on
  muscle's ability to use lipids as fuel
@@ -11242,7 +11242,7 @@ Hypotheses
 \begin_layout Standard
 The example of Gadd45, at the end of the previous section, illustrates the
  issues GAML research is confronted with.
- On one hand we have macroscopic certainties, such the loss of muscle mass
+ On one hand, we have macroscopic certainties, such the loss of muscle mass
  following GC therapy.
  On the other, we have invariable molecular correlates of Dexa treatment,
  such as augmented proteolysis, increased Foxo transcriptional activity,
@@ -11424,7 +11424,7 @@ hour}
 \end_layout
 
 \begin_layout Standard
-Experiments involved steroid administration or 1, 3, or 7 days.
+Experiments involved steroid administration for 1, 3, or 7 days.
  Every morning, between 9 and 11 AM, mice were weighted, then injected subcutane
 ously with 
 \begin_inset ERT
@@ -11561,9 +11561,9 @@ description "nuclear magnetic resonance"
 
 \end_inset
 
-), using a Echo-MRI whole body composition analyzer (Echo Medical Systems,
+), using an Echo-MRI whole body composition analyzer (Echo Medical Systems,
  Houston, Texas).
- In this procedure, mice were restrained inside a transparent plexiglass
+ In this procedure, mice were restrained inside a transparent methacrylate
  tube for 
 \begin_inset ERT
 status open
@@ -13237,7 +13237,7 @@ meter}
 
 .
  The standard curve was fitted to a quadratic equation.
- Typically extracts were diluted to the lowest total protein concentration,
+ Typically, extracts were diluted to the lowest total protein concentration,
  using the same lysis buffer that was used to extract them.
 \end_layout
 
@@ -13605,7 +13605,7 @@ liter}
 \end_layout
 
 \begin_layout Standard
-From the gel, resolved proteins were transfered to nitrocellulose membranes
+From the gel, resolved proteins were transferred to nitrocellulose membranes
  using a Bio-rad Mini-trans blot cassette, at 
 \begin_inset ERT
 status open
@@ -13945,7 +13945,7 @@ minute}
 
 \end_inset
 
-, then excess liquid was drained.
+, and then excess liquid was drained.
  The membrane was placed in the film cassette.
  In a dark room, under red light, a X-Omat photographic film (Kodak, Rochester,
  New York) was placed on the nitrocellulose membrane.
@@ -14180,7 +14180,7 @@ second}
 
 \end_inset
 
-, then incubated 
+, and then incubated 
 \begin_inset ERT
 status open
 
@@ -14276,7 +14276,8 @@ promille}
 
 \end_inset
 
- v/v ethanol, then passed through an RNeasy column, by centrifugation, 
+ v/v ethanol, and then passed through an RNeasy column, by centrifugation,
+ 
 \begin_inset ERT
 status open
 
@@ -14309,7 +14310,7 @@ liter}
 
 \end_inset
 
- proprietary, guandine and ethanol-containing, RW1buffer, and twice with
+ proprietary, guanidine and ethanol-containing, RW1buffer, and twice with
  
 \begin_inset ERT
 status open
@@ -14327,7 +14328,7 @@ liter}
 
 \end_inset
 
- proprietary RPEbuffer, each time by centrifugation, 
+ proprietary RPE buffer, each time by centrifugation, 
 \begin_inset ERT
 status open
 
@@ -14417,7 +14418,7 @@ meter}
 \end_layout
 
 \begin_layout Standard
-To obtain cDNA using Accuscript 1st Strand cDNA synthesis kit, 
+To obtain cDNA using AccuScript 1st Strand cDNA synthesis kit, 
 \begin_inset ERT
 status open
 
@@ -14532,7 +14533,7 @@ mole}
 
 \end_inset
 
- DTT, 20 units RNase Block ribonuclease inhibitor, and 
+ DTT, 20 units RNAse Block ribonuclease inhibitor, and 
 \begin_inset ERT
 status open
 
@@ -15601,8 +15602,8 @@ molar}
 
 \end_inset
 
- MG132 from a 80X working stock in differentiation medium, which in turn
- was derived from a 8,000X DMSO-based stock.
+ MG132 from an 80X working stock in differentiation medium, which in turn
+ was derived from an 8,000X DMSO-based stock.
  lysosome activity was inhibited with 
 \begin_inset ERT
 status open
@@ -15792,7 +15793,7 @@ minute}
 
 \end_inset
 
- at room temperature in the dark, then briefly washed 4 times with PBS.
+ at room temperature in the dark, and then briefly washed 4 times with PBS.
  Cells covered in PBS were store at 
 \begin_inset ERT
 status open
@@ -15815,7 +15816,7 @@ celsius}
 \begin_layout Standard
 Cell contours were obtained using Magnetic Lasso in Adobe Photoshop CS4.
  All the cell outlines that could be recognized by Photoshop from two randomly
- chosen fields were pasted in another file, that was read in Matlab 8.
+ chosen fields were pasted in another file, which was read in Matlab 8.
  An automated script determined multiple estimates of the diameter, and
  calculated an average diameter for each fiber.
 \end_layout
@@ -15871,7 +15872,7 @@ mole}
 ; PerkinElmer, Shelton, Connecticut), starting at the times and for the
  durations specified at each experiment in the results section.
  For removal of non-specific tracer at the end of labeling stage, cells
- were rinsed with PBS twice, then incubated with 
+ were rinsed with PBS twice, and then incubated with 
 \begin_inset ERT
 status open
 
@@ -15990,7 +15991,7 @@ description "trichloroacetic acid"
 \end_inset
 
 ).
- Medium was removed from the plate, then supplemented with 
+ Medium was removed from the plate, and then supplemented with 
 \begin_inset ERT
 status open
 
@@ -16293,7 +16294,7 @@ liter}
 
 \end_inset
 
- Econo-lite scintillation fluid, then counted in a TriCarb 3100TR liquid
+ Econo-lite scintillation fluid, and then counted in a TriCarb 3100TR liquid
  scintillation counter (PerkinElmer) for 
 \begin_inset ERT
 status open
