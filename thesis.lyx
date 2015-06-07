@@ -23845,9 +23845,7 @@ While the in vivo data suggested that downregulation of autophagy is part
  Given the reductionism of the culture cell experiment, the in vivo experiment
  is likely more reflective of what occurs in human glucocorticoid myopathy.
  The fact that Testo reversed most of the in vivo effects of Dexa on autophagy
- suggest that this pathway requires deeper study.
- The role of autophagy in GAML will be better understood by using LC3-GFP
- transgenic mice.
+ suggest that this pathway may be relevant for GAML alleviation.
 \end_layout
 
 \begin_layout Standard
@@ -24056,28 +24054,84 @@ reference "fig:Igf1-expression"
  In agreement with all previous studies, I could not substantiate changes
  in the phosphorylation of IGF-1R that would correlate with the IGF-I upregulati
 on (data not show).
- Further downstream, the effects of IGF-I overexpression might have been
- 
+ It is unclear to what extent IGF-I would mediate AAS myoprotection given
+ the aforementioned interference by Dexa at IRS 1 and p85.
+\end_layout
+
+\begin_layout Standard
+In vitro, I attempted to gauge the role of IGF-1R in Testo myoprotection.
+ A novel IGF-1R inhibitor, pycropodophilin, had no effect on Testo protection.
+ However, the same experiment uncovered a series of other shortcomings of
+ the cell culture experiment, including an higher reliance on autophagy
+ compared to the in vivo model.
+ Better causal inferences will be made by employing in vivo transgenic models
+ of interference with the IGF-I / Akt / mTORC1 axis.
 \end_layout
 
 \begin_layout Section
-Final considerations
+Future directions
 \end_layout
 
 \begin_layout Standard
 This work demonstrates that Testo protects mouse muscle in vivo and in vitro
  by reversing the Dexa-induced upregulation of proteasome.
- In contrast to the expectations set by the microarray studies, there was
- no evidence for bulk protein digestion through the autophagosome.
- However, Dexa and Testo significantly modulate autophagy, possibly achieving
- regulatory effects.
- The role of autophagy in GAML and its reversal by AAS must be clarified
- by studies on LC3-GFP mice.
- Dexa and Testo modulate in opposite manner the transcription of Foxo and
- Klf15 transcription factors.
- Moreover, the two steroid hormones regulate the mTOR inhibitor REDD1.
- More transgenic studies are required to establish the relative importance,
- and the eventual interaction between Foxo and mTOR pathways.
+ On the other hand, the set of E3 ligases that cause GAML is incomplete.
+ The role of candidates such as Fbxo40 remains to be investigated.
+ Future studies will need to find if Testo suppresses the other E3 ligases.
+\end_layout
+
+\begin_layout Standard
+At this time, the mechanisms by which Dexa upregulates Foxo transcription
+ factors is the subject of speculation.
+ Even less is known about the way in which Testo represses Foxo.
+ Chromatin immunoprecipitation tests using Foxo promoters are required.
+\end_layout
+
+\begin_layout Standard
+The in vivo experiment suggest that Testo also reversed Dexa-induced repression
+ of autophagy.
+ The role of autophagy in GAML will be better understood by observing the
+ effects of GC and AAS on muscle from LC3-GFP transgenic mice.
+\end_layout
+
+\begin_layout Standard
+Both autophagy and protein synthesis appeared to have changed in time, during
+ the in vivo experiment.
+ Because it was performed as three independent experiments, its ability
+ to observe the time course of changes was limited.
+ A more fine-grained exploration of their time course is required, in order
+ to establish which changes in protein metabolism are late-onset, reactive
+ adjustments.
+\end_layout
+
+\begin_layout Standard
+I was not able to observe the effect of IGF-I modulation, due to an overarching
+ suppressive effect of Dexa which disconnects the transmembrane receptors
+ from their Akt effector.
+ The mechanisms by which Dexa achieve this disconnection are largely the
+ subject of speculation.
+ Studies that establish if and how GR interferes with the IGF-I / Akt pathway
+ are needed.
+\end_layout
+
+\begin_layout Standard
+Transgenic models, such as the triple Foxo knockout, are needed, in order
+ to determine the relative importance and the eventual interaction between
+ Foxo and mTOR pathways.
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+Testo co-administration alleviates loss of muscle mass caused by GC in mice.
+ Testo myoprotection is exerted through an inhibition of the proteasome.
+ AAS therapy may be beneficial for a subset of male adult patients receiving
+ chronic GC, especially if they present with biochemical and clinical hypogonadi
+sm.
+ The relative importance of the proteasome in steroid myopathy suggests
+ that Testo may be a replaced with bortezomib or another proteasome inhibitor.
 \end_layout
 
 \begin_layout Standard
