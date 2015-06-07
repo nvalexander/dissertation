@@ -7094,11 +7094,11 @@ There is no evidence of satellite cell dysfunction in GAML.
 \begin_inset Quotes eld
 \end_inset
 
-glucocorticoid-induced satellite cell dysfunction
+glucocorticoid-induced satellite cell dysfunction,
 \begin_inset Quotes erd
 \end_inset
 
-, but describe solely that Dexa reduces the number of satellite cells in
+ but describe solely that Dexa reduces the number of satellite cells in
  a post-injury regenerating muscle
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -7114,7 +7114,7 @@ key "dong2013myostatin"
 \begin_layout Standard
 The perception that myotubes response to Dexa is a complete model of GAML
  inspired many reductionist in vitro models.
- Many published studies documents the effect of Dexa on the mouse cell line
+ Many published studies document the effect of Dexa on the mouse cell line
  C2C12 and the rat cell line L6.
  However, these and other myogenic cell lines have significant limitations,
  which may cause divergence between in vitro models and the steroid myopathy
@@ -7387,7 +7387,7 @@ day}
 
 \end_inset
 
- Dexa, more than twice the muscle-imparing dose in humans.
+ Dexa, more than twice the muscle-impairing dose in humans.
  Illustrating the higher resistance to Dexa, recently published mouse experiment
 s used even higher doses (
 \begin_inset ERT
@@ -7574,8 +7574,8 @@ molar}
 
 \end_inset
 
- Dexa, the loss of diameter is reliably correlated with an 20% increase
- in protein degradation rate
+ Dexa, the loss of diameter is reliably correlated with a 20% increase in
+ protein degradation rate
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wang1998dexamethasone,menconi2008dexamethasone"
@@ -7686,8 +7686,8 @@ key "chamberlain2012multiple"
 \end_inset
 
 , seemingly paralleling with cancer cachexia.
- But in contradiction to such parallels, Dexa was shown to inhibit NF-κB
- signals by upregulating inhibitory κBα (
+ In contradiction to such parallels, Dexa was shown to inhibit NF-κB signals
+ by upregulating inhibitory κBα (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "IκBα"
@@ -7726,7 +7726,7 @@ key "bodine2001identification"
 .
  Both are E3 ligases, pointing to an important role for the proteasome-ubiquitin
  system in muscle atrophy.
- Studies on cultured myotubes confirmed that GC induce the two atrogenes
+ Studies on cultured myotubes confirmed that GCs induce the two atrogenes
  directly, without a third-party organ mediation
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -7850,7 +7850,7 @@ key "bodine2014skeletal"
 
 ).
  This suggests that MAFbx may be an initiator, neutralizing a few specific
- muscle protecting factors, belonging to multiple metabolic pathways.
+ muscle-protecting factors, belonging to multiple metabolic pathways.
  Because MAFbx neutralizes a translation initiation factor, it has been
  suggested that MAFbx relative importance is augmented in conditions where
  muscle loss relies more on loss of protein synthesis.
@@ -7913,7 +7913,7 @@ The mechanisms by which MuRF-1 is induced are still under study.
  Transgenic mice with a defective GR still exhibit upregulated atrogenes
  in denervation and fasting, thus demonstrating the multiplicity of atrogene-sti
 mulating mechanisms.
- A sizable body of indirect evidence suggests that the main positive regulator
+ A sizable body of indirect evidence suggests that the main positive regulators
  of atrogenes in GAML are FOXO transcription factors.
  Foxo transcripts are reliably upregulated by Dexa in muscle.
  In addition, Dexa may inhibit their kinase, Akt, thus protecting them from
@@ -7973,7 +7973,7 @@ key "alamdari2010sepsis"
  an HDAC inhibitor, upregulates MAFbx, it has been hypothesized that Dexa
  acts by increased histone acetylation.
  The importance of histone acetylation in in vivo GAML and the specific
- genes affected by epigentic mechanisms are still to be determined.
+ genes affected by epigenetic mechanisms are still to be determined.
  As a consequence, the hypothesis that Dexa-induced histone acetylation
  stimulates MuRF-1 remains a speculation.
 \end_layout
