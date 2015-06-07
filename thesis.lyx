@@ -4707,7 +4707,7 @@ key "traish2009testosterone,wierman2014androgen"
 
 .
  There is no FDA-approved Testo preparation for women.
- Therefore the action of Testo in women losing muscle is yet to be investigated.
+ Therefore, the action of Testo in women losing muscle is yet to be investigated.
 \end_layout
 
 \begin_layout Standard
@@ -4813,8 +4813,16 @@ key "macdonald2007nandrolone,yurci2011effects"
 \end_inset
 
 .
- In men with COPD, 100 mg Testo enanthate injected weekly led to improvements
- in muscle mass and strength, potentially augmenting quality of life
+ In men with chronic obstructive pulmonary disease (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "COPD"
+description "chronic obstructive pulmonary disease"
+
+\end_inset
+
+), 100 mg Testo enanthate injected weekly led to improvements in muscle
+ mass and strength, potentially augmenting quality of life
 \begin_inset CommandInset citation
 LatexCommand citep
 key "casaburi2004effects"
@@ -4924,7 +4932,7 @@ key "santilli2014clinical"
 \end_layout
 
 \begin_layout Standard
-For the most part, the skeletal muscles confers the three-dimensional intricate
+For the most part, the skeletal muscles confer the three-dimensional intricate
  conformation of the body, suggesting a complex, detailed organization,
  at least at macroscopic level.
  In contrast, at cell level, the relatively high specialization of the skeletal
@@ -4944,7 +4952,7 @@ key "mescher2013junqueiras"
  In turn, epimysium emits connective septing structures termed perimysium,
  splitting muscles into subunits termed fascicles.
  At an even lower level, a thin, sparse connective structure called endomysium
- coats each polynucleate, elongated cell (termed myofiber).
+ coats each multinucleated, elongated cell (termed myofiber).
  The connective tissue inside the muscle provides mechanical anchoring between
  fibers, longitudinally, laterally and with the tendons.
  This is particularly true of perimysium, which is almost acellular, at
@@ -4959,15 +4967,15 @@ key "light1984characterization"
  Intramuscular connective structures carry terminal branches of the nervous,
  circulatory and lymphatic systems.
  In addition, muscles include adipose and immune cells.
- Muscle mass changes requires remodeling of all these connective structures
+ Muscle mass changes require remodeling of all these connective structures,
  and may confound in vivo studies.
  For example, collagen synthesis or macrophage proliferation may misleadingly
  increase during slow muscle atrophy.
 \end_layout
 
 \begin_layout Standard
-The elongated, multinucleate myofiber is the histological base unit of contracti
-le tissue.
+The elongated, multinucleated myofiber is the histological base unit of
+ contractile tissue.
  A large majority of the myofiber cytosol is the contractile apparatus,
  in the shape of bundles of protein filaments termed myofibrils.
  Within myofibrils, myosin and actin filaments alternate, held together
@@ -4986,7 +4994,7 @@ key "waterlow1978protein"
  Traditionally, in biological studies, actin is considered a housekeeping,
  unregulated, invariable protein, and is used in level normalization.
  In muscle, especially in atrophy, actin cannot be invariable.
- or example, in rat muscles atrophying due to streptozotocin-induced acute
+ For example, in rat muscles atrophying due to streptozotocin-induced acute
  diabetes, an actin degradation fragment is detectable
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5006,7 +5014,7 @@ key "lukaski1981relationship"
 
 \end_inset
 
-, 3MH measurement may lack sensitivity when used as a indicator for muscle
+, 3MH measurement may lack sensitivity when used as an indicator for muscle
  catabolic rate.
  On one hand, increased catabolism is expected to cause increased 3MH output,
  but on the other, an atrophic muscle has less 3MH to release.
@@ -5031,7 +5039,7 @@ key "scharner2011muscle"
  in a functional manner, as proliferating cells able to fuse with myofibers.
  In vivo, myoblasts are derived from a subset of satellite cells.
  A transplant of seven satellite cells from an adult mouse is capable of
- yielding more than a hundred multinucleate myofibers, thus demonstrating
+ yielding more than a hundred multinucleated myofibers, thus demonstrating
  former's ability to regenerate muscle
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5072,10 +5080,10 @@ key "blanco-bose2001purification"
 \end_inset
 
 .
- Many in vitro muscle models are based on the formation of multinucleate
+ Many in vitro muscle models are based on the formation of multinucleated
  fibers from isolated myoblasts.
  In vivo, myofiber nuclei are typically peripheral, while in vitro multinucleate
- cells are characterized by central nuclei, akin to regenerating fibers.
+d cells are characterized by central nuclei, akin to regenerating fibers.
  The latter are typically termed myotubes.
 \end_layout
 
@@ -5132,7 +5140,7 @@ key "verdijk2014satellite"
 \end_inset
 
 .
- This decay carries on throughout the life time at a slower rate.
+ This decay carries on throughout the lifetime at a slower rate.
  In mice, muscle growth at puberty is associated with a massive shift of
  nuclei from the satellite cells to the myofibers
 \begin_inset CommandInset citation
@@ -5202,7 +5210,7 @@ key "daston1996pax-3,francetic2011skeletal"
 
 .
  Myf5 is a strong inductor of the muscle phenotype, with the ability to
- convert embryonic fibroblasts to myosin-containing syncitia
+ convert embryonic fibroblasts to myosin-containing syncytia
 \begin_inset CommandInset citation
 LatexCommand citep
 key "braun1989novel"
@@ -5306,7 +5314,7 @@ key "hasty1993muscle"
 , and, finally, acquisition of fusogenic abilities.
  In humans, by the seventh week of gestation, the initial wave of myoblast
  fusion slows down, and a second proliferative stage starts.
- The latter tapers off, leading to formation of secondary myotubes, within
+ The latter tapers off, leading to formation of secondary myotubes within
  the same laminar sheath with a primary myotube.
  Around the seventeenth week, some secondary myotubes migrate to form independen
 t centers of coalescence for a third set of myotubes
@@ -5612,8 +5620,8 @@ key "itoigawa2010hypoxia"
 
 ).
  An in vitro shift to a more adipose-like phenotype may be associated with
- diminished cell fusion ability, lower protein synthesis and lower mitochondrial
- content, which may be misinterpreted as muscle atrophy.
+ diminished cell fusion ability, lower protein synthesis, and lower mitochondria
+l content, which may be misinterpreted as muscle atrophy.
 \end_layout
 
 \begin_layout Standard
@@ -5629,7 +5637,7 @@ key "defronzo1981effect,katz1983splanchnic"
  insulin resistance and eventually diabetes mellitus.
  After normal feeding, muscle builds polysaccharides reserves, in part because
  it can synthesize and deposit the largest glycogen stores in the body,
- but also because it cannot release glucose.
+ and because it cannot release glucose.
  
 \end_layout
 
@@ -5670,7 +5678,7 @@ Among the amino acids with a trend for release between meals, isoleucine,
  leucine, methionine, phenylalanine, threonine, and valine cannot be synthesized
  by humans.
  Their net release indicates that, at rest, basal level of protein degradation
- slightly surpass protein synthesis.
+ slightly surpasses protein synthesis.
  Conversely, for a steady muscle mass, there must be net protein synthesis
  in the fed state.
  Muscle protein synthesis is stimulated by feeding in multiple ways.
@@ -5682,7 +5690,7 @@ description "branched-chain amino acids"
 
 \end_inset
 
-), that is, , valine, isoleucine, and leucine.
+), that is, valine, isoleucine, and leucine.
  BCAA stimulate protein accretion in muscle through a complex mechanism.
  Some studies show that BCAA ingestion or infusion increase protein synthesis
  rate
