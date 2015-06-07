@@ -24126,12 +24126,66 @@ Conclusions
 
 \begin_layout Standard
 Testo co-administration alleviates loss of muscle mass caused by GC in mice.
- Testo myoprotection is exerted through an inhibition of the proteasome.
+ Testo myoprotection is exerted through an inhibition of the proteasome,
+ mediated by Foxo and REDD1.
+ Changes in these, as well as in IGF-I intramuscular expression, indicate
+ that the two classes of steroids counter each other's effect on the Akt
+ signaling pathway (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mechanisms-of-AAS"
+
+\end_inset
+
+).
  AAS therapy may be beneficial for a subset of male adult patients receiving
  chronic GC, especially if they present with biochemical and clinical hypogonadi
 sm.
  The relative importance of the proteasome in steroid myopathy suggests
  that Testo may be a replaced with bortezomib or another proteasome inhibitor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename artwork/conclusion.pdf
+	width 6in
+	height 5in
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mechanisms of AAS alleviation of GAML
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mechanisms-of-AAS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
