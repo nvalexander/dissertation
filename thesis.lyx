@@ -8988,8 +8988,7 @@ key "alamdari2010sepsis"
 \end_inset
 
 .
- As a consequence, GR knockout reduces expression of FOXO1 and FOXO3a in
- muscle
+ Consequently, GR knockout reduces expression of FOXO1 and FOXO3a in muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "waddell2008glucocorticoid"
@@ -9199,8 +9198,8 @@ key "sandri2004foxo,sandri2006pgc-1alpha,waddell2008glucocorticoid"
 
 .
  These Foxo-responsive elements are in close proximity of SMAD3-binding
- elements, in a shared response element which facilitates synergistic interactio
-ns between the two classes of transcription factors
+ elements, in a shared response element, which facilitates synergistic interacti
+ons between the two classes of transcription factors
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bollinger2014smad3"
@@ -9472,7 +9471,7 @@ key "trendelenburg2009myostatin"
  In contrast, GAML is characterized by an upregulation of atrogenes, possibly
  facilitated by Akt inhibition.
  The authors of this study pinpoint the myostatin-induced Akt inhibition
- to changes in prolierating myoblasts.
+ to changes in proliferating myoblasts.
  In conclusion, there is no evidence for adult GAML mediation through a
  myostatin - Akt axis.
 \end_layout
@@ -9513,8 +9512,8 @@ key "carnac2007myostatin,elliott2012central"
 \end_inset
 
 ).
- But normal adult muscle maintenance involve to a small degree satellite
- cells.
+ However, normal adult muscle maintenance is more dependent on protein accretion
+ than on satellite cells.
  In adult GAML, loss of satellite cells regenerative action may play a minor
  role, at most.
 \end_layout
@@ -9654,7 +9653,7 @@ key "savary1998effect,dardevet1999glucocorticoid-induced"
 \end_layout
 
 \begin_layout Standard
-In cell culture, studies of Dexa inhibition of protein synthesis is similarly
+In cell culture, studies of Dexa inhibition of protein synthesis are similarly
  equivocal, although Dexa causes 4E-BP hypophosphorylation directly, even
  in basal state
 \begin_inset CommandInset citation
@@ -9773,8 +9772,8 @@ key "bai2013activin"
 
 .
  As of 2015, this response element is proven only in Drosophila.
- The only replication in mouse cultured cells was withdrawn during the preparati
-on of this thesis, for unspecified reason.
+ The only replication in mouse cells, in culture, was withdrawn during the
+ preparation of this work, for unspecified reason.
  While the transcriptional upregulation of 4E-BP is certain, the mechanisms
  by which Dexa achieves it are unknown.
 \end_layout
@@ -10301,7 +10300,7 @@ key "dardevet1995sensitivity"
 \end_inset
 
 .
- In L6 myotubes, calpastatin overexpresion halves Dexa-induced proteolysis
+ In L6 myotubes, calpastatin overexpression halves Dexa-induced proteolysis
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fareed2006treatment"
@@ -10336,7 +10335,7 @@ key "goll2003calpain"
 \end_layout
 
 \begin_layout Standard
-Many unbiased studies found that a family of proteased, metallothioneins,
+Many unbiased studies found that a family of proteases, metallothioneins,
  are upregulated in GAML
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -10421,8 +10420,8 @@ key "chrysis2002divergent,chrysis1999regulation"
 
 , thus blunting one of the major effectors of GAML, the ubiquitin-proteasome
  system.
- But Dexa antagonizes IGF-I on many other downstream effects, such as glutamine
- synthesis
+ However, Dexa antagonizes IGF-I on many other downstream effects, such
+ as glutamine synthesis
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kimura2001insulin-like"
@@ -10541,7 +10540,7 @@ key "li2005insulin-like"
 \end_inset
 
 .
- It is not known which of these downstream mediator is in fact relevant
+ It is not known which of these downstream mediators is in fact relevant
  for myoprotection.
  Muscle hypertrophy and recovery are halved by rapamycin, indicating that
  other anabolic mediators are as important as the mTOR pathway 
@@ -10608,7 +10607,7 @@ Alleviation of glucocorticoid myopathy by anabolic steroids
 \begin_layout Standard
 Human studies demonstrated that AAS addition to chronic Dexa benefits male
  adult patients, by reducing their loss of muscle and improving their quality
- of lifes
+ of life
 \begin_inset CommandInset citation
 LatexCommand citep
 key "crawford2003randomized"
@@ -10682,7 +10681,7 @@ gram}
 
 \end_inset
 
-0.5-1 g/kg doses described before.
+ doses described before.
  At a concentration of 
 \begin_inset ERT
 status open
@@ -10700,7 +10699,7 @@ molar}
 
 \end_inset
 
-2 pM in rat skeletal muscle
+ in rat skeletal muscle
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dahlberg1981regulation"
