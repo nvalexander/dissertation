@@ -1850,7 +1850,7 @@ description "Food and Drug Administration"
 \end_inset
 
 )-approved indications for cortisone, Dexa, and prednisone is often narrowed
- by additional precautions, and by newly discovered, more specific drugs
+ by additional precautions, and by newly discovered drugs
 \begin_inset CommandInset citation
 LatexCommand cite
 key "merckco.inc.2004dexamethasone,pharmaciaandupjohnandcompany2007prednisone,west-wardpharmaceuticalcorp.2008hydrocortisone"
@@ -11926,7 +11926,7 @@ celsius}
 
 \end_inset
 
- .
+.
  The clarified extract was collected and stored at 
 \begin_inset ERT
 status open
@@ -13084,7 +13084,7 @@ minute}
 
 \end_inset
 
- , at 
+, at 
 \begin_inset ERT
 status open
 
@@ -17151,7 +17151,7 @@ reference "fig:Time-course-of-body-weight"
  will not be analyzed in conjunction.
  Because this work is focused on longer-term effects of Dexa, most of the
  reported data in the remainder of the section will be either from mice
- treated for 7 days with Dexa and / or Testo, or comparisons of the 1, 3
+ treated for 7 days with Dexa and / or Testo, or comparisons of the 1, 3,
  and 7 day samples.
 \end_layout
 
@@ -20248,7 +20248,7 @@ Akt pathway response to dexamethasone and testosterone
 \end_layout
 
 \begin_layout Standard
-A alternative way to achieve Foxo modulation is through their neutralization
+An alternative way to achieve Foxo modulation is through their neutralization
  by Akt.
  As described in the literature review section, activation of Akt is dependent
  on its phosphorylation on two residues, Ser 473 and Thr 308, with the former
@@ -20546,7 +20546,7 @@ sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.phospho.Akt.Ser473..normalized.t
 
 ).
  Interestingly, Testo co-administration repressed phospho-Ser473 in levator
- ani, a extremely AAS-sensitive muscle (
+ ani, an extremely AAS-sensitive muscle (
 \begin_inset Flex S/R expression
 status open
 
@@ -20575,7 +20575,7 @@ sig3( dunn.test(InvivoSevendayCVD$levator.phospho.Akt.Ser473..normalized.to.GAPD
 \end_layout
 
 \begin_layout Standard
-The other relevant phosphorylation on Akt , Thr 308, is controlled by REDD1.
+The other relevant phosphorylation on Akt, Thr 308, is controlled by REDD1.
  I investigated the effects of the two steroids on REDD1 / Ddit4 transcription
  (fig.
  
@@ -22240,7 +22240,7 @@ reference "fig:protein-synthesis-cells"
 
 , middle).
  To avoid the confounding influence of the atrophy, data was also analyzed
- as specific activity , that is, protein-bound intracellular tracer normalized
+ as specific activity, that is, protein-bound intracellular tracer normalized
  to the mass of cell protein (Fig.
  
 \begin_inset CommandInset ref
