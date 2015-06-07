@@ -16436,7 +16436,7 @@ The introduction section was based on review of all literature indexed by
  OR betamethasone OR triamcinolone OR prednisone OR prednisolone OR hydrocortiso
 ne OR cortisone OR triamcinolone OR fludrocortisone`, `Cushing`, `ribosome
  OR polysome OR lysosome OR autophagosome OR proteasome OR ligase OR cathepsin
- OR FOXO OR IGF1 OR calpain OR mTOR OR AMPK OR Akt`and combinations thereof.
+ OR FOXO OR IGF1 OR calpain OR mTOR OR AMPK OR Akt`, and combinations thereof.
  Relevant primary data were summarized.
 \end_layout
 
@@ -16717,8 +16717,8 @@ name "fig:Body-weight-at-sacrifice"
 Upon finding the Dexa dose effective in inducing muscle atrophy, I analyzed
  the body weight at sacrifice.
  There was no difference between groups in terms of absolute weight, due
- to to the large variability of the initial body weight (Kruskal-Wallis
- p = 
+ to the large variability of the initial body weight (Kruskal-Wallis p =
+ 
 \begin_inset Flex S/R expression
 status open
 
@@ -16739,8 +16739,8 @@ reference "fig:Body-weight-at-sacrifice"
 \end_inset
 
 , right).
- The difference became apparent when percent change in body weight was compared(
-Fig.
+ The difference became apparent when percent change in body weight was compared
+ (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -17951,7 +17951,7 @@ ome system
 \end_layout
 
 \begin_layout Standard
-The rapid loss of muscle mass induced by Dexa in mice exceed the rate of
+The rapid loss of muscle mass induced by Dexa in mice exceeds the rate of
  protein turnover in normal adult rodent muscle (about 2.5% per day
 \begin_inset CommandInset citation
 LatexCommand citep
