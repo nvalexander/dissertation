@@ -11306,8 +11306,8 @@ Studies of GAML suggest that it involved a strong upregulation of proteolysis,
 
 \begin_layout Subparagraph*
 3.
- IGF-I upregulation facilitates testosterone's myoprotective action in glucocort
-icoid-induced loss of muscle mass.
+ Testosterone's myoprotective action in glucocorticoid-induced loss of muscle
+ mass is facilitated by the activation of IGF-I / Akt / mTOR axis.
 \end_layout
 
 \begin_layout Standard
@@ -23961,8 +23961,8 @@ m
 
 \begin_layout Standard
 In agreement with the rat studies, the present work demonstrates that Dexa-induc
-ed upregulation of atrogenes is co-ordinated with increased transcription
- of Foxo transcription factors (Fig.
+ed upregulation of atrogenes is co-ordinated with increased expression of
+ Foxo transcription factors (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -23987,69 +23987,77 @@ reference "fig:Foxo-expression"
 \end_layout
 
 \begin_layout Standard
-As discussed in the literature review section, at least five ways by which
- Dexa stimulates Foxo transcriptional activity have been demonstrated.
- On the other hand, in the present work, I show that atrogenes' upregulation
- is repressed by Testo co-administration.
- The means by which Testo achieves atrogene repression are less understood.
- Here, I demonstrate that Testo-induced downregulation of atrogenes is correlate
-d with reduced transcription of Foxo3a.
-\end_layout
-
-\begin_layout Standard
-The inhibitory phosphorylation of 4E-BP is induced by mTORC1.
- I also investigated changes in REDD1 / Ddit4, the negative regulator of
- mTORC1.
+In addition to repression of atrogenes, Testo reverses other actions of
+ Dexa.
+ This efficient, multi-directional action of Testo suggests that it acts
+ on a higher-level mediator of GAML.
+ Two molecular levers responded in an uniform, consistent manner to the
+ two steroids, and therefore may be high-level mediators of AAS and GC.
+ The first is REDD1 / Ddit4, the negative regulator of mTORC1.
  Dexa consistently upregulated REDD1 expression in samples from days 1,
  3, and 7.
- However, the 7-day time point were associated with a less ample REDD1 amplifica
-tion.
- A time course where REDD1 is amplified only for the first week, and subsides
- later, could explain Baehr's observations on protein synthesis time line.
- Testo co-administration reversed REDD1 upregulation only at 7-day time
- point, when Dexa-induced amplification was at its lowest.
- The implication is that, at later time points, Testo co-administration
- may become able to remove the breaks from mTORC1 and protein synthesis.
- Further experiments are needed to analyze such putative changes in protein
- synthesis at later time points.
+ The amplitude of upregulation decreases in time.
+ A time course where Dexa amplifies REDD1 only for the first week could
+ explain Baehr's observations on protein synthesis changes during GAML.
+ As REDD1 inhibition of mTORC1 subsides, the 4E-BP-mediated brake on protein
+ synthesis is gradually removed.
+ Testo co-administration reversed REDD1 upregulation to a significant degree
+ at 7-day time point, when Dexa-induced amplification was at its lowest.
+ Further experiments are needed to analyze the relationship between REDD1
+ and protein synthesis, especially at later time points which have not been
+ investigated here.
 \end_layout
 
 \begin_layout Standard
-Another mechanism for Testo-induced repression of is mediated by Akt, the
- kinase that labels Foxo to degradation.
- Foxo phosphorylation by Akt is stimulated by the latter's Ser 473 phosphorylati
-on, which is catalyzed by mTORC2, typically when cells are stimulated with
- growth factors, insulin, or nutrients.
- In this study, I observed that Testo stimulated IGF-I expression at all
- time points.
- However, when I analyzed 7-day samples, I found that Dexa reduced the amount
- of phosphorylated, that is, active Akt, whereas an opposite of Testo on
- Akt Ser 473 phosphorylation could not be observed
+The transcriptional upregulation of Foxo by Dexa may have been compounded
+ by Akt inhibition.
+ GC caused a large decrement in Ser 473 phosphorylation of Akt (Fig.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Akt-phosphorylation"
 
 \end_inset
 
-.
- The absence of Akt response is in contrast with observations made in rats.
- The reported mouse study differs from the rat study in the Dexa dose, which
- was much smaller.
- The higher dose of Dexa led to significant fat accumulation in the studied
- mice (Fig.
+), which in turn is expected to protect Foxo from export to cytosol and
+ proteasome-mediated destruction.
+ AAS had no effect on Ser 473 phosphorylation.
+ The discrepancy between Ser 473 phosphorylation and muscle recovery may
+ be explained within the model described by Britto
+\begin_inset CommandInset citation
+LatexCommand citep
+key "britto2014redd1"
+
+\end_inset
+
+, who showed preliminary evidence that Ser 473 is not involved in Akt inactivati
+on during GAML.
+ Another explanation is based on the ability of Dexa to disconnect Akt from
+ insulin and IGF-I signals (discussed in a dedicated section).
+ The only other trait shared between mice receiving Dexa and Comb is accumulatio
+n of fat mass, suggestive of whole-body insulin resistance.
+ At the level of muscle, Dexa induces insulin resistance by interference
+ at IRS 1 and p85 levels.
+\end_layout
+
+\begin_layout Standard
+The other reliable change in GAML and its alleviation by Testo was observed
+ in IGF-I expression.
+ In agreement with studies on rats, Dexa reduced IGF-I expression, while
+ Testo co-administration restored it to basal levels (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Changes-in-water-lean-and-fat"
+reference "fig:Igf1-expression"
 
 \end_inset
 
 ).
- One can speculate that, in these mice, Dexa might have induced even stronger
- hyperglycemia, hyperinsulinemia, insulin resistance, and IRS-1 sequestration
- in the cytosol, compared to the rats from other reports.
- These might have interfered with IGF-I signals to a degree that reduced
- Testo action below detectability threshold.
+ In agreement with all previous studies, I could not substantiate changes
+ in the phosphorylation of IGF-1R that would correlate with the IGF-I upregulati
+on (data not show).
+ Further downstream, the effects of IGF-I overexpression might have been
+ 
 \end_layout
 
 \begin_layout Section
