@@ -6674,8 +6674,8 @@ key "gomes2012upregulation"
 \end_inset
 
 , and upregulates all the ubiquitin-proteasome pathway components, including
- ubiquitin, the E3 ligases MuRF-1 and MAbx, and the proteasome subunit A1
- 
+ ubiquitin, the E3 ligases MuRF-1 and MAFbx, and the proteasome subunit
+ A1 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "medina1995increase,bodine2001identification"
@@ -6759,7 +6759,7 @@ key "quy2013proteasome-dependent"
 \end_inset
 
 .
- In 2014, Tang and colleagues proved that rapamycin, an inhibitor of mTORC1
+ In 2014, Tang and colleagues proved that rapamycin, an inhibitor of mTORC1,
  which lacks intrinsic anabolic properties, abolishes denervation-induced
  loss of muscle mass
 \begin_inset CommandInset citation
@@ -6786,12 +6786,12 @@ description "insulin receptor substrate"
  bortezomib.
  One can hypothesize the existence of an mTOR negative regulator which is
  specifically targeted by the ubiquitin-proteasome system during denervation.
- Alternatively, mTORC1 activation may be caused by the preceding uregulation
+ Alternatively, mTORC1 activation may be caused by the preceding upregulation
  of proteasome, which is stimulating BCAA release.
  The mechanism by which mTORC1 is stimulated by denervation remains to be
  established, but its consequences, including activation of p70-S6K, phosphoryla
-tion of IRS1, inhibition of Akt, and increased Foxo activity, appear well-suport
-ed by evidence.
+tion of IRS1, inhibition of Akt, and increased Foxo activity, appear well-suppor
+ted by evidence.
 \end_layout
 
 \begin_layout Standard
@@ -6799,7 +6799,7 @@ Establishing the role for mTORC1 in denervation-induced loss of muscle mass
  is crucial.
  In the conceptual frame before Quy and Tang experiments, mTORC1 inhibition
  was intuitively attractive, as it would simultaneously downregulate protein
- synthesis and remove a restriction on autophagy.
+ synthesis, and remove a restriction on autophagy.
  In particular, denervation-induced autophagy appealed to the muscle biologists
  of the 2000's.
  For example, one group claimed that the lysosome inhibitor chloroquine
@@ -6819,7 +6819,7 @@ key "mammucari2007foxo3"
 \end_inset
 
 .
- A third group claimed that denervation causes buildup of the autophagosomal
+ A third group claimed that denervation causes buildup of the autophagosome
  marker, microtubule-associated protein 1 light chain 3 (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -6905,7 +6905,7 @@ Given that rapamycin has essentially no effect on adult muscle mass, it
  with inconsequential, or perhaps compensatory, downstream activation of
  protein synthesis and inhibition of autophagy.
  In contrast, denervation-induced muscle loss is correlated systematically,
- and requires the activation of ubiquitin-proteasome system.
+ and requires, the activation of ubiquitin-proteasome system.
  The predicaments of denervation research epitomize similar dilemmas in
  the study of muscle atrophy due to other, less studied etiologies, including
  GAML.
