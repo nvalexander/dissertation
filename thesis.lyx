@@ -1336,13 +1336,12 @@ First, cortisone's action on metabolism was accessible even to the less
 \begin_inset Quotes eld
 \end_inset
 
-buffalo hump
+buffalo hump.
 \begin_inset Quotes erd
 \end_inset
 
-.
  Cortisone also induced hyperglycemia, and subsequent glycosuria.
- For this reason, cortisone, and its endogenous and synthetic analogs, are
+ For this reason, cortisone and its endogenous and synthetic analogs are
  grouped in the glucocorticoid (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1768,7 +1767,7 @@ key "crump2014randomized,pui2006treatment,stewart2015carfilzomib"
 
 .
  On the balance of benefits and drawbacks, GCs are recommended for many
- life-threatening or impairing immune reactions, such as polymyositis (reviewed
+ life threatening or impairing immune reactions, such as polymyositis (reviewed
  in 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1838,7 +1837,7 @@ key "haack1999glucocorticoid"
 \end_layout
 
 \begin_layout Standard
-As envisaged by Hench in his Nobel Lecture, GCs do not address disease causes
+As envisaged by Hench in his Nobel Lecture, GCs do not address disease causes,
  and are recommended for temporary respite.
  For many immune diseases, more specific therapeutic alternatives are used,
  often addressing the cause of disease.
@@ -12865,7 +12864,7 @@ liter}
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SDS"
-description "sodium dodecylsulfate"
+description "sodium dodecyl sulfate"
 
 \end_inset
 
@@ -13176,7 +13175,7 @@ liter}
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "BSA"
-description "bovine serum albumine"
+description "bovine serum albumin"
 
 \end_inset
 
