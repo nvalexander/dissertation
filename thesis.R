@@ -322,6 +322,8 @@ stdplottimecourse <- theme_bw() +
   theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
         panel.grid.major.x = element_blank(),
         panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank(),
         panel.border = element_blank(),
         panel.background = element_blank(),
         axis.line = element_line(colour = "black"),
