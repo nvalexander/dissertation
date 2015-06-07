@@ -6350,8 +6350,8 @@ key "bryan2008coordinated"
  Development of vasculature in growing muscle may be a physiologically meaningfu
 l way to ensure vasculature remains competent upon increase circulatory
  demands.
- Second, although the canonical upregulator of VEGF is hypoxia-induced factor
- 1α (
+ Second, although the canonical positive regulator of VEGF is hypoxia-induced
+ factor 1α (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HIF 1a"
@@ -6484,8 +6484,8 @@ key "oconnor1974cell"
 \end_inset
 
 .
- Eliminated motoneurons include neurons whose axons fail to reach myotubes
- and neurons which eventually fail to maintain contact with myotubes, due
+ Eliminated motoneurons include neurons whose axons fail to reach myotubes,
+ and neurons that eventually fail to maintain contact with myotubes, due
  to synapse elimination.
  The latter is a selective, competitive process, whose molecular basis is
  still unknown, and which ensures injectivity of the correspondence between
@@ -6546,7 +6546,7 @@ The loss of contact with the lower motoneuron elicits similar detrimental
  Conceptually, denervation is distinct from disuse, such as that induced
  by damage to the upper motoneuron.
  Clinically, the latter manifests differently, through a syndrome termed
- pyramidal weakness, that mainly affect muscles opposing gravity
+ pyramidal weakness, which mainly affects muscles opposing gravity
 \begin_inset CommandInset citation
 LatexCommand citep
 key "thijs1998distribution"
