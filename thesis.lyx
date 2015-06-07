@@ -5752,7 +5752,7 @@ key "laplante2012mtor"
  Hyperphosphorylation of 4E-BP is the canonical way by which mTORC1 stimulates
  protein synthesis, by abolishing the former's ability to bind and inhibit
  the mandatory translation initiation factor eIF4E.
- The activation of p70-S6K lead to the activation of a feedback phosphorylation
+ The activation of p70-S6K leads to the activation of a feedback phosphorylation
  of mTOR at Ser 2448
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5776,10 +5776,9 @@ key "suryawan1998molecular"
 \end_inset
 
 .
- In studies which measure leucine disappearance from the bloodstream or
- culture medium, a distinction must be made between the leucine used in
- non-oxidative, anabolic reactions, and the alpha-ketoisocaproate-forming,
- ergogenic usage.
+ In studies that measure leucine disappearance from the bloodstream or culture
+ medium, a distinction must be made between the leucine used in non-oxidative,
+ anabolic reactions, and the alpha-ketoisocaproate-forming, ergogenic usage.
  An argument has been made for using phenylalanine as a tracer, because
  muscle catabolism is negligible, and because it has a lower insulin secretagogu
 e effect
@@ -5940,14 +5939,14 @@ description "transforming growth factor-beta"
 
 \end_inset
 
-) (
+)
 \begin_inset CommandInset citation
 LatexCommand citep
 key "robertson1993role"
 
 \end_inset
 
-).
+.
  Most of the studies of regeneration provide circumstantial evidence, such
  as improved healing in the presence of a presumed mediator, rather than
  impairment in its absence.
@@ -5964,8 +5963,8 @@ key "haugk1995regulation"
 \end_layout
 
 \begin_layout Standard
-Less than half of the C2C12 cells in their proliferating, undifferentiated
- form, express MyoD or Pax7
+Less than half of the C2C12 cells in their proliferating, undifferentiated,
+ form express MyoD or Pax7
 \begin_inset CommandInset citation
 LatexCommand citep
 key "olguin2004pax-7"
@@ -5973,7 +5972,7 @@ key "olguin2004pax-7"
 \end_inset
 
 .
- Limited evidence suggest these myoblast-like cells do not express Pax3
+ Limited evidence suggests these myoblast-like cells do not express Pax3
  either
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5982,7 +5981,7 @@ key "epstein1995pax3"
 \end_inset
 
 .
- Therefore, the C2C12 line are an incomplete model of hyperplastic muscle
+ Therefore, the C2C12 line is an incomplete model of hyperplastic muscle
  accretion.
 \end_layout
 
@@ -6049,13 +6048,13 @@ key "dardevet1998glucocorticoid"
 \end_layout
 
 \begin_layout Standard
-Insulin and IGF-I pathways overlap to a some degree.
+Insulin and IGF-I pathways overlap to some degree.
  For both hormones, physiological concentrations are tens of times higher
- than the half maximal effective concentration (
+ than the half-maximal effective concentration (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "EC50"
-description "half maximal effective concentration"
+description "half-maximal effective concentration"
 
 \end_inset
 
@@ -6077,7 +6076,7 @@ description "IGF-I receptor"
 
 \end_inset
 
-), with an half maximal effective concentration (
+), with a half maximal effective concentration (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "EC50"
@@ -6145,14 +6144,14 @@ description "IGF-I binding protein"
 
 \end_inset
 
-), which are secreted by muscle under IGF-I stimulation (
+), which are secreted by muscle under IGF-I stimulation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tomas1992insulin-like"
 
 \end_inset
 
-).
+.
  The interaction with IGFBP may prevents IGF-I from interacting with receptor,
  or it may extend its circulating half-life by protecting it from degradation.
  Depending on the isoform and location of IGFBP, the interaction may result
@@ -6188,7 +6187,7 @@ key "dechiara1991parental"
 \end_layout
 
 \begin_layout Standard
-There is no consensus with regards to the ability of GH to stimulate muscular
+There is no consensus concerning the ability of GH to stimulate muscular
  secretion of IGF-I.
  Multiple studies found an upregulation of IGF-I mRNA in response to GH
  stimulation
@@ -6278,7 +6277,7 @@ key "olfert2009muscle-specific"
  The muscle-restricted VEGF-A-depleted mice have 12% lighter gastrocnemii,
  although the muscle loss disappears when muscle mass is normalized to total
  body weight.
- The loss does not affect a specific fiber type more than the others.
+ The loss does not affect specific fiber types.
  Therefore, the muscle depleted of VEGF-A is less able of endurance effort
  (80% shorter time to exhaustion on the inclined treadmill) and of brief
  anaerobic exercise (34% lower maximal running speed).
@@ -6308,7 +6307,7 @@ key "arsic2004vascular"
 It has been suggested that the most direct effect of VEGF-A depletion is
  partial segregation of muscle from blood-carried endocrine signals.
  For example, VEGF-A-depleted muscle has lower glucose uptake, a defect
- which is reversed by explantation
+ that is reversed by explantation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bonner2013muscle-specific"
