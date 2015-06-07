@@ -7951,7 +7951,7 @@ key "chamberlain2012multiple"
 .
  Because atrogenes promoters contain putative binding sites for C/EBP transcript
 ion factors, p300 was hypothesized to be yet another mechanism by which
- GC stimulate atrogenes.
+ GCs stimulate atrogenes.
  Interestingly, p300 is a histone acetyltransferase (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -7974,8 +7974,8 @@ key "alamdari2010sepsis"
  acts by increased histone acetylation.
  The importance of histone acetylation in in vivo GAML and the specific
  genes affected by epigenetic mechanisms are still to be determined.
- As a consequence, the hypothesis that Dexa-induced histone acetylation
- stimulates MuRF-1 remains a speculation.
+ Therefore, the hypothesis that Dexa-induced histone acetylation stimulates
+ MuRF-1 remains a speculation.
 \end_layout
 
 \begin_layout Standard
@@ -8018,8 +8018,8 @@ key "nicastro2012effectsa"
 \end_inset
 
 .
- Dexa induces concerted catabolic changes which eventually converge to hyperglyc
-emia, and consequent hyperinsulinemia.
+ Dexa induces concerted catabolic changes, which eventually converge to
+ hyperglycemia, and consequent hyperinsulinemia.
  Together, these yield a higher index of homeostatic model assessment -
  insulin resistance (
 \begin_inset CommandInset nomenclature
@@ -8037,7 +8037,7 @@ key "saad1993modulation"
 \end_inset
 
 .
- But Dexa overrides insulin to reduce muscle glucose uptake
+ However, Dexa overrides insulin to reduce muscle glucose uptake
 \begin_inset CommandInset citation
 LatexCommand citep
 key "weinstein1995glucocorticoid-induced,dardevet1998glucocorticoid,dardevet1999glucocorticoid-induced"
@@ -8085,8 +8085,8 @@ lar signaling is achieved by Dexa in a multi-step process.
 \end_layout
 
 \begin_layout Standard
-The end result of Dexa interference, inhibition of Akt, was the subject
- of debates in the 2000's.
+The inhibition of Akt as result of Dexa interference was the subject of
+ debates in the 2000's.
  Proving Akt inactivation by Dexa is a complex endeavor, due to the extremely
  low Akt activation in basal state.
  Insulin or IGF-I, in concentrations close to the physiological levels,
@@ -8382,8 +8382,8 @@ key "buren2008insulin"
 
 \begin_layout Standard
 Akt has another important phosphorylation site at Ser 473.
- Historically, Ser 473 phosphorylation was seen as an non-limiting step
- towards Akt activation, occurring automatically after Thr 308 phosphorylation.
+ Historically, Ser 473 phosphorylation was seen as a non-limiting step towards
+ Akt activation, occurring automatically after Thr 308 phosphorylation.
  In GAML, Ser 473 appears to closely mimic Thr 308, with Dexa lowering insulin's
  ability to upregulate Ser 473 phosphorylation
 \begin_inset CommandInset citation
@@ -8450,7 +8450,7 @@ key "alessi1996mechanism"
 
 .
  Mutagenic abolition of Ser 473 phosphorylation abrogates Akt activity on
- substrates belonging to the FoxO class, but does not change Akt ability
+ substrates belonging to the Foxo class, but does not change Akt ability
  to phosphorylate tuberin (Tuberous Sclerosis Complex 2; 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -8660,7 +8660,7 @@ key "cai2006activity"
 
 .
  The destruction of TSC1-TSC2 complexes relieves the negative regulation
- from Rheb, a small GTPase, that can induce activation of mTORC1.
+ from Rheb, a small GTPase, which can induce activation of mTORC1.
  Therefore, in theory, Dexa-induced repression of Akt should inhibit mTORC1
  in two distinct ways.
  In practice, there is little evidence for TSC2 or PRAS40 based mechanisms
@@ -8669,7 +8669,7 @@ key "cai2006activity"
 
 \begin_layout Standard
 The scarcity of evidence for PRAS40 or TSC2 mediation suggested that other
- mechanisms may lead to mTORC1 inactivation in GAML.
+ mechanisms might lead to mTORC1 inactivation in GAML.
  Moreover, an Akt-mediated Dexa effect on mTORC1 would be subtle, with sizable
  amplitude only during hyperinsulinemia.
  Alternative Akt-independent pathways have been hypothesized.
@@ -8772,11 +8772,11 @@ key "sofer2005regulation"
 
 , at times overriding its action on mTORC1.
  Interestingly, a REDD1-based mechanism could explain the few observations
- on mTORC1 changes just as well as a Akt-centered model would.
+ on mTORC1 changes just as well as an Akt-centered model would.
 \end_layout
 
 \begin_layout Standard
-Finally, limited evidence suggest that Dexa impedes mTORC1 ability to act
+Finally, limited evidence suggests that Dexa impedes mTORC1 ability to act
  on its substrate p70-S6K, through the depletion of a putative scaffold,
  eIF3f
 \begin_inset CommandInset citation
@@ -8867,7 +8867,7 @@ e TSC2, but not PRAS40, are attributed to dissociation between Ser 473 and
 \end_layout
 
 \begin_layout Standard
-A series of putative interaction remain to demonstrated.
+A series of putative interaction remain to be demonstrated.
  Britto speculated that Akt Ser 473 hyperphosphorylation is caused by a
  feedback loop responding to mTORC1 inhibition.
  The mechanism by which REDD1 inhibits Akt activity on PRAS40 is not known.
@@ -8904,7 +8904,7 @@ key "canal2014rtp801/redd1:"
 .
  As described in the dedicated section, HIF1a also induces VEGF, which in
  turn has a myoprotective action.
- But in GAML, VEGF is downregulated
+ However, in GAML, VEGF is downregulated
 \begin_inset CommandInset citation
 LatexCommand citep
 key "barel2010exercise"
@@ -8920,10 +8920,10 @@ key "barel2010exercise"
 While it is certain that GAML is correlated with mTORC1 downregulation,
  it is still unclear how mTORC1 repression is achieved, and what is its
  relative importance.
- Based on the published evidence, the recent change of paradigm which placed
- p70-S6K at the forefront of denervation atrophy appears unlikely in GAML.
- For now, our understanding of GAML places Akt firmly upstream of mTORC1.
- Better transgenic models, a deeper understanding of mTOR pathways and more
+ Based on the published evidence, the recent change of paradigm, which placed
+ p70-S6K at the forefront of denervation atrophy, appears unlikely in GAML.
+ For now, our understanding of GAML places Akt upstream of mTORC1.
+ Better transgenic models, a deeper understanding of mTOR pathway, and more
  in vitro / recombinant experiments are required for a definitive conclusion.
 \end_layout
 
@@ -8962,7 +8962,7 @@ key "qin2014identification"
 
 .
  In C2C12 myotubes, the response is biphasic, combining a short-lived ample
- and rapid increase, with a gentler long term augmentation
+ and rapid increase, with a gentler long-term augmentation
 \begin_inset CommandInset citation
 LatexCommand citep
 key "nishimura2008effects"
