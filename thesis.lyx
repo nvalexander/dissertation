@@ -4813,16 +4813,8 @@ key "macdonald2007nandrolone,yurci2011effects"
 \end_inset
 
 .
- In men with chronic obstructive pulmonary disease (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "COPD"
-description "chronic obstructive pulmonary disease"
-
-\end_inset
-
-), 100 mg Testo enanthate injected weekly led to improvements in muscle
- mass and strength, potentially augmenting quality of life
+ In men with COPD, 100 mg Testo enanthate injected weekly led to improvements
+ in muscle mass and strength, potentially augmenting quality of life
 \begin_inset CommandInset citation
 LatexCommand citep
 key "casaburi2004effects"
