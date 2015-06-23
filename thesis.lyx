@@ -8961,16 +8961,16 @@ key "canal2014rtp801/redd1:"
 \end_inset
 
 .
- As described in the dedicated section, in muscle, HIF1a also induces VEGF,
- which in turn has a myoprotective action.
- However, in GAML, VEGF is downregulated
+ In contrast, in muscle, Dexa downregulates VEGF 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "barel2010exercise"
 
 \end_inset
 
-, suggesting that HIF1a is not involved in REDD1 upregulation.
+, a downstream effector of HIF (described in the section on vascularization).
+ This suggests that Dexa causes REDD1 upregulation independent of HIF1a
+ and of hypoxia.
  Other putative positive regulators of REDD1 include ATF4 and NFAT, discussed
  in other sections of this chapter.
 \end_layout
