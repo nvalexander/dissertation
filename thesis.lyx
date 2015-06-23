@@ -9084,8 +9084,8 @@ key "zhao2007foxo3,sandri2004foxo"
 \end_inset
 
 .
- In vivo, evidence for hypophosphorylation of Foxo is limited to a few,
- unusual experiments
+ In vivo, evidence for Dexa-induced Foxo hypophosphorylation is limited
+ to a few experiments, performed in unusual conditions, such as diabetes
 \begin_inset CommandInset citation
 LatexCommand citep
 key "jones2010effects,fappi2014effects,jesinkey2014atomoxetine"
@@ -9179,8 +9179,8 @@ key "daitoku2011regulation,nakae2008foxo"
 \end_layout
 
 \begin_layout Standard
-Finally, miR-182, whose expression is inhibited by Dexa, is a negative regulator
- of Foxo3
+Finally, the microRNA miR-182, whose expression is inhibited by Dexa, is
+ a negative regulator of Foxo3
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hudson2014mir-182"
@@ -9311,8 +9311,8 @@ key "senf2008hsp70"
 \end_inset
 
 .
- In cultured myotubes, where transfection of constitutively active FOXO3a
- upregulates MAFbx
+ In cultured myotubes, transfection of constitutively active FOXO3a upregulates
+ MAFbx
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sandri2004foxo"
@@ -9359,7 +9359,7 @@ Glucocorticoid activation of myostatin
 
 \begin_layout Standard
 In rodents, Dexa upregulates myostatin, a strong negative regulator of muscle
- mass, in the atrophying muscle
+ mass
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ma2003glucocorticoid-induced"
@@ -9834,7 +9834,7 @@ key "bai2013activin"
  The only replication in mouse cells, in culture, was withdrawn during the
  preparation of this work, for unspecified reason.
  While the transcriptional upregulation of 4E-BP is certain, the mechanisms
- by which Dexa achieves it are unknown.
+ by which Dexa achieves it remain unknown.
 \end_layout
 
 \begin_layout Standard
@@ -10144,8 +10144,9 @@ key "wang1998dexamethasone"
 A new modality for investigating autophagy hinges on one of the longest-living
  markers on its surface, LC3.
  Transgenic mice with expressing LC3-GFP have been developed, and are regularly
- used for tracking autophagosomes.
- There are no reports of this model being used in the study of GAML.
+ used for tracking autophagosomes, including in denervation atrophy.
+ Unfortunately, there are no reports of this model being used in the study
+ of GAML.
  Alternatively, endogenous LC3 is tracked through immunofluorescence microscopy.
  Some reports describe an accumulation of punctate LC3-containing structures
  in L6 myotubes treated with Dexa for 6 hours
@@ -10224,7 +10225,7 @@ In contrast with the limited body of evidence we have for autophagy upregulation
 , there is a significant amount of literature describing what would drive
  autophagy up in GAML.
  In C2C12 myotubes, overexpression of a constitutively active FoxO3 or chemical
- inhibition of Akt leads to increased lysosome proteolysis
+ inhibition of Akt upregulate lysosome-attributable proteolysis
 \begin_inset CommandInset citation
 LatexCommand citep
 key "zhao2007foxo3"
@@ -10420,7 +10421,7 @@ Alleviation of glucocorticoid myopathy by IGF-I
 \begin_layout Standard
 Upon finding that, in L6 myoblasts, Dexa-stimulated proteolysis is abated
  by co-administration of insulin, Ballard hypothesized in 1983 that Dexa
- acts indirectly, by depleting body's supply of IGF-I
+ acts indirectly, by depleting the body's supply of IGF-I
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ballard1983effects"
@@ -10641,7 +10642,7 @@ key "frost2009regulation"
 \begin_layout Standard
 IGF-I is only one of the many determinants of muscle mass For example, myostatin
  knockout mice have double muscle size, yet lower circulating IGF-I levels,
- compared to wild type
+ compared to wild type mice
 \begin_inset CommandInset citation
 LatexCommand citep
 key "williams2011endocrine"
@@ -11283,7 +11284,8 @@ key "keil2013phosphorylation"
 \begin_layout Standard
 In conclusion, the mechanisms by which Testo prevents GAML appear manifold.
  Many of the putative myoprotective actions of Testo are only suggested
- by Cardozo's microarray, but have never been validated.
+ by Cardozo's microarray, but have never been confirmed in quantitative
+ assays and require further studies to clarify overall mechanism.
 \end_layout
 
 \begin_layout Standard
@@ -11352,8 +11354,8 @@ GAML has been frequently reported in rats and infrequently in mice.
 
 \begin_layout Subparagraph*
 2.
- Testosterone's myoprotective action is based on inhibiting dexamethasone's
- proteolytic effects of dexamethasone.
+ Testosterone's myoprotective action in the context of dexamethasone is
+ based on inhibiting dexamethasone's proteolytic effects.
 \end_layout
 
 \begin_layout Standard
@@ -11377,7 +11379,7 @@ Studies of GAML suggest that it involved a strong upregulation of proteolysis,
 \begin_layout Standard
 The few studies on GAML reversal by AAS revealed that Testo action alters
  mTOR and Akt signaling.
- Based on the microarray studies which showed that Testo reverses changes
+ Based on the microarray studies that showed that Testo reverses changes
  in IGF-I and IGFBP induced by Dexa, and on the castration reversal studies
  indicating that AAS replacement causes IGF-I upregulation, there was a
  good probability that the myoprotective action of Testo involved the modulation
@@ -16691,7 +16693,7 @@ plotbodyweightsatsacrifice()
 status open
 
 \begin_layout Plain Layout
-Body weight at sacrifice, following Dexa and / or Testo treatments.
+Body weight at sacrifice, following Dexa with / without Testo treatments.
 \end_layout
 
 \end_inset
@@ -16723,7 +16725,7 @@ day}
 
 \end_inset
 
- Dexa and / or 
+ Dexa with / without 
 \begin_inset ERT
 status open
 
@@ -17027,12 +17029,12 @@ plotbodyweightcourse()
 status open
 
 \begin_layout Plain Layout
-Time course of body weight Dexa and / or Testo treatments.
+Time course of body weight Dexa with / without Testo treatments.
 \end_layout
 
 \end_inset
 
-Time course of body weight Dexa and / or Testo treatments (n=5-6).
+Time course of body weight Dexa with / without Testo treatments (n=5-6).
  Stars indicate statistically significant differences between Veh and Dexa
  (p <0.05).
  Daggers indicate statistically significant differences between Dexa and
@@ -17210,8 +17212,8 @@ reference "fig:Time-course-of-body-weight"
  will not be analyzed in conjunction.
  Because this work is focused on longer-term effects of Dexa, most of the
  reported data in the remainder of the section will be either from mice
- treated for 7 days with Dexa and / or Testo, or comparisons of the 1, 3,
- and 7 day samples.
+ treated for 7 days with Dexa with / without Testo, or comparisons of the
+ 1, 3, and 7 day samples.
 \end_layout
 
 \begin_layout Standard
@@ -17572,13 +17574,14 @@ plotleanfat()
 status open
 
 \begin_layout Plain Layout
-Changes in water, lean, and fat body mass, after Dexa and / or Testo treatments
+Changes in water, lean, and fat body mass, after Dexa with / without Testo
+ treatments
 \end_layout
 
 \end_inset
 
-Changes in water, lean, and fat body mass, after Dexa and / or Testo treatments
- (n=5-6).
+Changes in water, lean, and fat body mass, after Dexa with / without Testo
+ treatments (n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Changes-in-water-lean-and-fat"
@@ -17761,14 +17764,14 @@ plotmuscleweights()
 status open
 
 \begin_layout Plain Layout
-Effects of Dexa and / or Testo treatments on individual muscle weights.
+Effects of Dexa with / without Testo treatments on individual muscle weights.
 \end_layout
 
 \end_inset
 
-Effects of Dexa and / or Testo treatments on the wet weight of levator ani,
- quadriceps, gastrocnemius, triceps brachii, and tibialis anterior muscles
- (normalized to body weight; n=5-6).
+Effects of Dexa with / without Testo treatments on the wet weight of levator
+ ani, quadriceps, gastrocnemius, triceps brachii, and tibialis anterior
+ muscles (normalized to body weight; n=5-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Muscles-weights"
@@ -18292,13 +18295,13 @@ status open
 
 \begin_layout Plain Layout
 Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
- Dexa and / or Testo treatments
+ Dexa with / without Testo treatments
 \end_layout
 
 \end_inset
 
 Changes in atrogenes MuRF-1 / Trim63 and MAFbx / Fbxo32 expression following
- Dexa and / or Testo treatments, in quadriceps and gastrocnemius muscles
+ Dexa with / without Testo treatments, in quadriceps and gastrocnemius muscles
  (n=3-5, normalized to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
@@ -18614,14 +18617,14 @@ plotproteasomeactivity()
 status open
 
 \begin_layout Plain Layout
-Changes in proteasome enzymatic activity following Dexa and / or Testo treatment
-s.
+Changes in proteasome enzymatic activity following Dexa with / without Testo
+ treatments.
 \end_layout
 
 \end_inset
 
 Changes in proteasome chymotrypsin-like enzymatic activity following Dexa
- and / or Testo treatments, in quadriceps and triceps muscles (n=4-6).
+ with / without Testo treatments, in quadriceps and triceps muscles (n=4-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Proteasome-enzymatic-activity"
@@ -18787,13 +18790,14 @@ plotgastrocnemiusautophagy()
 status open
 
 \begin_layout Plain Layout
-Changes in autophagy-related genes following Dexa and / or Testo treatments.
+Changes in autophagy-related genes following Dexa with / without Testo treatment
+s.
 \end_layout
 
 \end_inset
 
-Changes in autophagy-related genes following Dexa and / or Testo treatments,
- in quadriceps and triceps muscles (n=3-4, normalized to GAPDH).
+Changes in autophagy-related genes following Dexa with / without Testo treatment
+s, in quadriceps and triceps muscles (n=3-4, normalized to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Autophagy-related-genes"
@@ -19096,13 +19100,14 @@ plotcathepsinactivity()
 status open
 
 \begin_layout Plain Layout
-Changes in cathepsin enzymatic activity following Dexa and / or Testo treatments.
+Changes in cathepsin enzymatic activity following Dexa with / without Testo
+ treatments.
 \end_layout
 
 \end_inset
 
-Changes in cathepsin L enzymatic activity following Dexa and / or Testo
- treatments, in quadriceps and triceps muscles (n=4-6).
+Changes in cathepsin L enzymatic activity following Dexa with / without
+ Testo treatments, in quadriceps and triceps muscles (n=4-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Cathepsin-enzymatic-activity"
@@ -19279,13 +19284,13 @@ plotlcprotein()
 status open
 
 \begin_layout Plain Layout
-Changes in LC3 lipidation status following Dexa and / or Testo treatments.
+Changes in LC3 lipidation status following Dexa with / without Testo treatments.
 \end_layout
 
 \end_inset
 
-Changes in hyperlipidated (fast-migrating) LC3 isoform following Dexa and
- / or Testo treatment in gastrocnemius muscles (n=4)
+Changes in hyperlipidated (fast-migrating) LC3 isoform following Dexa with
+ / without Testo treatment in gastrocnemius muscles (n=4)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:LC3-hyperlipidated"
@@ -19377,13 +19382,13 @@ plotcalpainactivity()
 status open
 
 \begin_layout Plain Layout
-Calpain enzymatic activity during Dexa and / or Testo treatments.
+Calpain enzymatic activity during Dexa with / without Testo treatments.
 \end_layout
 
 \end_inset
 
-μ-calpain enzymatic activity, during 7 days of Dexa and / or Testo treatments,
- in gastrocnemius muscles (n=3-6).
+μ-calpain enzymatic activity, during 7 days of Dexa with / without Testo
+ treatments, in gastrocnemius muscles (n=3-6).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Calpain-enzymatic"
@@ -19552,14 +19557,14 @@ ploteiftwo()
 status open
 
 \begin_layout Plain Layout
-Levels of phosphorylated eIF2α following Dexa and / or Testo treatments.
+Levels of phosphorylated eIF2α following Dexa with / without Testo treatments.
 \end_layout
 
 \end_inset
 
-Levels of phosphorylated eIF2α (Ser 51) following Dexa and / or Testo treatment
- in gastrocnemius muscles (normalized to simultaneously resolved GAPDH;
- n=4)
+Levels of phosphorylated eIF2α (Ser 51) following Dexa with / without Testo
+ treatment in gastrocnemius muscles (normalized to simultaneously resolved
+ GAPDH; n=4)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Phosphorylated-eif2"
@@ -19694,13 +19699,13 @@ ploteifthree()
 status open
 
 \begin_layout Plain Layout
-Levels of eIF3f following Dexa and / or Testo treatments.
+Levels of eIF3f following Dexa with / without Testo treatments.
 \end_layout
 
 \end_inset
 
-Levels of eIF3f following Dexa and / or Testo treatment in levator ani muscles
- (normalized to simultaneously resolved GAPDH; n=4)
+Levels of eIF3f following Dexa with / without Testo treatment in levator
+ ani muscles (normalized to simultaneously resolved GAPDH; n=4)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:eif3f"
@@ -19888,14 +19893,15 @@ plotfourebp()
 status open
 
 \begin_layout Plain Layout
-Levels of total and phosphorylated 4E-BP following Dexa and / or Testo treatment
-s.
+Levels of total and phosphorylated 4E-BP following Dexa with / without Testo
+ treatments.
 \end_layout
 
 \end_inset
 
-Levels of total (left) and phosphorylated (right) 4E-BP following Dexa and
- / or Testo treatment in gastrocnemius muscles (normalized to GAPDH; n=4)
+Levels of total (left) and phosphorylated (right) 4E-BP following Dexa with
+ / without Testo treatment in gastrocnemius muscles (normalized to GAPDH;
+ n=4)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:4EBP"
@@ -20134,13 +20140,13 @@ status open
 
 \begin_layout Plain Layout
 Changes in the expression of Foxo3a and Klf15 transcription factors during
- Dexa and / or Testo treatments.
+ Dexa with / without Testo treatments.
 \end_layout
 
 \end_inset
 
 Changes in the expression of Foxo3a (top) and Klf15 (bottom) transcription
- factors, during 7 days of Dexa and / or Testo treatments in quadriceps
+ factors, during 7 days of Dexa with / without Testo treatments in quadriceps
  muscles (n=4, normalized to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
@@ -20486,12 +20492,13 @@ plotlevatorakt()
 status open
 
 \begin_layout Plain Layout
-Levels of total and phosphorylated Akt following Dexa and / or Testo treatments.
+Levels of total and phosphorylated Akt following Dexa with / without Testo
+ treatments.
 \end_layout
 
 \end_inset
 
-Levels of total and phosphorylated Akt following 7 days of Dexa and / or
+Levels of total and phosphorylated Akt following 7 days of Dexa with / without
  Testo treatment in gastrocnemius (top) and levator (bottom) muscles (normalized
  to GAPDH; n=4)
 \begin_inset CommandInset label
@@ -20790,13 +20797,13 @@ plotredd()
 status open
 
 \begin_layout Plain Layout
-Changes in the expression of Redd1 during Dexa and / or Testo treatments.
+Changes in the expression of Redd1 during Dexa with / without Testo treatments.
 \end_layout
 
 \end_inset
 
-Changes in Redd1 transcripts, during 7 days of Dexa and / or Testo treatments
- in gastrocnemius muscles (n=4, normalized to GAPDH).
+Changes in Redd1 transcripts, during 7 days of Dexa with / without Testo
+ treatments in gastrocnemius muscles (n=4, normalized to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Redd1-expression"
@@ -20878,13 +20885,13 @@ plotIgf()
 status open
 
 \begin_layout Plain Layout
-Changes in the expression of IGF-I during Dexa and / or Testo treatments.
+Changes in the expression of IGF-I during Dexa with / without Testo treatments.
 \end_layout
 
 \end_inset
 
-Changes in the expression of IGF-I, during 7 days of Dexa and / or Testo
- treatments in gastrocnemius muscles (n=4, normalized to GAPDH).
+Changes in the expression of IGF-I, during 7 days of Dexa with / without
+ Testo treatments in gastrocnemius muscles (n=4, normalized to GAPDH).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Igf1-expression"
@@ -21380,12 +21387,12 @@ status open
 status open
 
 \begin_layout Plain Layout
-Changes in C2C12 myotube diameter following Dexa and / or Testo treatments.
+Changes in C2C12 myotube diameter following Dexa with / without Testo treatments.
 \end_layout
 
 \end_inset
 
-Changes in C2C12 myotube diameter following Dexa and / or Testo treatments.
+Changes in C2C12 myotube diameter following Dexa with / without Testo treatments.
  Micrographs are representative for cells receiving (top left) vehicle,
  or (top right) 
 \begin_inset ERT
@@ -22023,14 +22030,14 @@ plottotalprotein()
 status open
 
 \begin_layout Plain Layout
-Changes in C2C12 myotube protein content following Dexa and / or Testo treatment
-s.
+Changes in C2C12 myotube protein content following Dexa with / without Testo
+ treatments.
 \end_layout
 
 \end_inset
 
-Changes in C2C12 myotube total protein content following Dexa and / or Testo
- treatments (Top) Absolute total protein density.
+Changes in C2C12 myotube total protein content following Dexa with / without
+ Testo treatments (Top) Absolute total protein density.
  (Bottom) The same data, after normalization to the average of the initial
  time point for each condition (n=5-6).
 \begin_inset CommandInset label
@@ -22255,13 +22262,13 @@ status open
 
 \begin_layout Plain Layout
 Estimates of protein synthesis rate in C2C12 myotubes treated with Dexa
- and / or Testo.
+ with / without Testo.
 \end_layout
 
 \end_inset
 
 Estimates of protein synthesis rate in C2C12 myotubes treated with Dexa
- and / or Testo.
+ with / without Testo.
  (Top) Experimental timeline.
  (Middle) Amount of tracer incorporated into protein per well.
  (Bottom) Amount of tracer incorporated into protein per gram of total protein
@@ -22585,13 +22592,13 @@ status open
 
 \begin_layout Plain Layout
 Estimates of protein degradation rate in C2C12 myotubes treated with Dexa
- and / or Testo.
+ with / without Testo.
 \end_layout
 
 \end_inset
 
 Estimates of protein degradation rate in C2C12 myotubes treated with Dexa
- and / or Testo.
+ with / without Testo.
  (Top) Experimental timeline.
  (Middle) Ratio of tracer in medium to tracer in cells, across time points.
  (Bottom) Ratio of free tracer in medium to protein-bound tracer in cells,
