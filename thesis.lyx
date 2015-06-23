@@ -1066,7 +1066,16 @@ Clinical questions and evidence
 \end_layout
 
 \begin_layout Section
-Cushing's syndrome
+Cushing's syndrome and hints of an atrophy mechanism
+\end_layout
+
+\begin_layout Standard
+Maintenance of muscle mass and force is dependent on the well-adjusted endocrine
+ system.
+ The first evidence for this muscle-hormones interaction came from diseases,
+ interpreted as natural experiments.
+ Interestingly, the role of adrenal hormones in muscle homeostasis was deduced
+ from perturbations of another gland, the pituitary.
 \end_layout
 
 \begin_layout Standard
@@ -1080,7 +1089,7 @@ key "cushing1912pituitary"
 , the scientific and medical community became aware of an otherwise rare
  disease, which bears his name.
  Unlike the earlier and better-studied deficiencies of the thyroid and pancreas,
- pituitary defects were more variable in manifestation and therefore harder
+ pituitary defects are more variable in manifestation and therefore harder
  to unify in a single clinical entity.
  Even when macroscopic hypertrophy of pituitary was localized to a gland
  subdomain, pathological mechanisms were ambiguous.
@@ -1304,7 +1313,7 @@ key "hench1964reversibility"
 \end_layout
 
 \begin_layout Standard
-Previous work did describe multiple effects for adrenal extracts.
+Previous work described multiple effects for adrenal extracts.
  In fact, adrenal research was considered a dead end prior to cortisone
  purification, because less pure extracts combined antagonistic hormones
  in variable doses, seemingly lacking defined pharmacological or endocrine
@@ -1318,15 +1327,15 @@ key "sprague1950observations"
 \end_inset
 
 .
- However, these effects were invariant, demonstrating the complex and vital
- role of the adrenal.
+ However, Hench’s observations were replicable, demonstrating the complex
+ and vital role of the adrenal.
 \end_layout
 
 \begin_layout Standard
 First, cortisone's action on metabolism was accessible even to the less
  sophisticated clinical measurements used 60 years ago.
- Patients receiving cortisone gained weight.
- Chronic cortisone therapy led to accumulation of adipose tissue, often
+ Patients receiving cortisone gain weight.
+ Chronic cortisone therapy leads to accumulation of adipose tissue, often
  in ectopic locations, such as the interscapular 
 \begin_inset Quotes eld
 \end_inset
@@ -1335,7 +1344,7 @@ buffalo hump.
 \begin_inset Quotes erd
 \end_inset
 
- Cortisone also induced hyperglycemia, and subsequent glycosuria.
+ Cortisone also induces hyperglycemia, and subsequent glycosuria.
  For this reason, cortisone and its endogenous and synthetic analogs are
  grouped in the glucocorticoid (
 \begin_inset CommandInset nomenclature
@@ -1460,7 +1469,7 @@ key "chang2001mechanism"
 
 .
  Within minutes, GC administration induces vasodilation, through direct,
- nongenomic activation of phosphatidylinositol 3-kinase (
+ nongenomic activation of endothelial phosphatidylinositol 3-kinase (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PI3K"
@@ -1515,7 +1524,7 @@ gram}
 
 \end_inset
 
- dose enhances the immune skin delayed-type hypersensitivity, while a 
+ dose enhanced the immune skin delayed-type hypersensitivity, while a 
 \begin_inset ERT
 status open
 
@@ -1538,7 +1547,7 @@ gram}
 
 \end_inset
 
- dose yields the opposite, expected immunosuppressive response
+ dose yielded the opposite, expected immunosuppressive response
 \begin_inset CommandInset citation
 LatexCommand cite
 key "dhabhar1999enhancing"
@@ -1598,8 +1607,8 @@ key "herzog195511-oxygenated"
 .
  Prednisone was a better anti-inflammatory than cortisone, but had a lower
  ability to cause edema.
- This was the first suggestion that GC effect could be separated by chemical
- modifications.
+ This was the first suggestion that the many GC effects could be separated
+ by chemical modifications.
  In 1955, NIH researchers synthesized and characterized prednisone's active
  metabolite, prednisolone
 \begin_inset CommandInset citation
@@ -1699,7 +1708,7 @@ key "belvisi2001therapeutic"
 
 \end_inset
 
- did not reach the human studies stage.
+ failed in preclinical studies.
  Mapracorat
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1834,8 +1843,8 @@ key "haack1999glucocorticoid"
 \begin_layout Standard
 As envisaged by Hench in his Nobel Lecture, GCs do not address disease causes,
  and are recommended for temporary respite.
- For many immune diseases, more specific therapeutic alternatives are used,
- often addressing the cause of disease.
+ For many immune diseases, more specific therapeutic alternatives have been
+ developed.
  The list of Food and Drug Administration (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1899,8 +1908,9 @@ A similar, paradoxical situation is seen in ongoing clinical research.
 
 \begin_layout Standard
 This wide array of uses make GCs some of the most prescribed and used drugs.
- Every year, about 1% of the Americans and British receive some form of
- GC
+ Despite the low prevalence of the conditions proven to benefit from GC
+ therapy, every year, about 1% of the Americans and British receive some
+ form of GC
 \begin_inset CommandInset citation
 LatexCommand cite
 key "skversky2011association,vanstaa2000use"
@@ -1908,9 +1918,8 @@ key "skversky2011association,vanstaa2000use"
 \end_inset
 
 .
- GCs are likely even more often prescribed in the developing world, due
- to affordability and lack of alternatives, poor access to health care notwithst
-anding.
+ GCs are likely even more prescribed in the developing world, due to affordabili
+ty and lack of alternatives, poor access to health care notwithstanding.
  Dexa and cortisol are the only drugs listed five times in the World Health
  Organization's List of Essential Medicines
 \begin_inset CommandInset citation
@@ -1974,8 +1983,8 @@ key "valassi2012clinical"
 \end_layout
 
 \begin_layout Standard
-At presentation, about two thirds of Cushing's syndrome cases present with
- muscular complaints, with similar incidence among pituitary and adrenal
+About two thirds of patients with Cushing's syndrome acknowledge muscular
+ problems at presentation, with similar incidence among pituitary and adrenal
  conditions
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1984,8 +1993,8 @@ key "valassi2011european"
 \end_inset
 
 .
- Among patients suspected of endogenous CS, one fifth are referred to the
- endocrinologist due to muscle weakness
+ Among patients diagnosed with endogenous CS, one fifth are referred to
+ the endocrinologist due to muscle weakness
 \begin_inset CommandInset citation
 LatexCommand cite
 key "muller2006diagnosis"
@@ -2023,7 +2032,7 @@ key "ravis2007topical"
 \end_inset
 
 .
- In 1987, hydrocortisone creams became over-the-counter in UK.
+ In 1987, hydrocortisone creams became over-the-counter in Great Britain.
  Regulated over-the-counter GC creams rarely cause CS on their own, but
  have been frequently suspected to lower the threshold for CS in patients
  who are also prescribed oral GC.
@@ -2150,8 +2159,7 @@ key "fardet2007corticosteroid-induced"
  Patients stated that the most distressing signs of hypercortisolism were,
  in order, body shape changes, neuropsychiatric disorders, muscle cramps,
  and hand tremor.
- Mastaglia estimated that, in 1982, the most common cause of iatrogenic
- muscle weakness was GC therapy
+ In 1982, the most common cause of iatrogenic muscle weakness was GC therapy
 \begin_inset CommandInset citation
 LatexCommand cite
 key "mastaglia1982adverse"
@@ -2247,8 +2255,8 @@ key "bowyer1985steroid"
 .
  Based on animal studies, it is likely that the catabolic potency ratio
  is even more tilted towards Dexa than the referenced studies indicate.
- Modern human pharmacodynamics studies are needed, in order to establish
- actual safety thresholds.
+ Modern human pharmacodynamics and epidemiological studies are needed, in
+ order to establish actual safety thresholds.
 \end_layout
 
 \begin_layout Standard
@@ -2272,8 +2280,9 @@ e tissue, and rare hypertrophic fibers.
  is unaffected.
  Together with lack of changes in reflexes, their work negated a neurological
  component of CS.
- Muller and Kugelberg noted faster extinction of the action potential, which
- may be caused by a reduction in the number of fibers, or by fiber atrophy
+ Muller and Kugelberg noted that hypercortisolism is correlated with faster
+ extinction of the action potential, which is typically caused by a reduction
+ in the number of muscle fibers, or by fiber atrophy
 \begin_inset CommandInset citation
 LatexCommand cite
 key "rodriguez-carreno2012motor"
@@ -2281,7 +2290,7 @@ key "rodriguez-carreno2012motor"
 \end_inset
 
 .
- Based on the evidence that GC is a muscle fiber disease, they coined the
+ Based on the evidence that CS is a muscle fiber disease, they coined the
  phrase 
 \begin_inset Quotes eld
 \end_inset
@@ -2333,8 +2342,8 @@ key "dagostino1966cortisone"
 \end_inset
 
 .
- Owing to the fact that steroid myopathy is not a standalone disease or
- syndrome, terminology has never been standardized.
+ Owing to the fact that glucocorticoid myopathy is not a standalone disease
+ or syndrome, terminology has never been standardized.
  In the present work, the human condition will be designated glucocorticoid
  myopathy, while its animal models will be termed GC-associated muscle loss
  (
@@ -2351,7 +2360,7 @@ description "GC-associated muscle loss"
 \begin_layout Standard
 In exogenous CS, GC excess can be better quantified.
  In a population with neurological maladies receiving long-term Dexa, the
- threshold for manifest steroid myopathy appears to be 
+ threshold for manifest glucocorticoid myopathy appears to be 
 \begin_inset ERT
 status open
 
@@ -2404,17 +2413,25 @@ key "coomes1965corticosteroid"
 \end_inset
 
 .
- These findings imply that steroid myopathy can be induced in shorter periods,
- if the GC dose is extremely high.
+ These findings imply that glucocorticoid myopathy can be induced in shorter
+ periods, if the GC dose is extremely high.
  Foye and colleagues drew a distinction between 
 \begin_inset Quotes eld
 \end_inset
 
-classical
+classic
 \begin_inset Quotes erd
 \end_inset
 
- chronic steroid myopathy, induced 
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+chronic
+\begin_inset Quotes erd
+\end_inset
+
+ glucocorticoid myopathy, induced 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2422,7 +2439,15 @@ within weeks to years,
 \begin_inset Quotes erd
 \end_inset
 
- and acute steroid myopathy, induced in 5-7 days of high-dose GC
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+acute
+\begin_inset Quotes erd
+\end_inset
+
+ glucocorticoid myopathy, induced in 5-7 days of high-dose GC
 \begin_inset CommandInset citation
 LatexCommand cite
 key "foye2014corticosteroid-induced"
@@ -2518,7 +2543,11 @@ key "horber1985thigh"
 \end_inset
 
 .
- In a post-hoc analysis of a chronic obstructive pulmonary disease (
+ Such findings suggest that GC-induced weakness has functional consequences.
+\end_layout
+
+\begin_layout Standard
+In a post-hoc analysis of a chronic obstructive pulmonary disease (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "COPD"
@@ -2537,8 +2566,10 @@ key "pansters2013synergistic"
  The maximal inspiratory mouth pressure, a proxy measurement for respiratory
  muscle strength, was significantly better maintained over the 8 weeks of
  the trial in the GC-naive, compared to GC-treated participants.
- Such findings suggest that GC-induced weakness is caused by an objective
- muscle disorder, and negate the alternative, neuropsychiatric etiology.
+ Such findings suggest that GC-induced weakness.
+ Involvement of partly-involuntary muscles further proves that glucocorticoid
+ myopathy is caused by an objective muscle disorder, and negate the alternative,
+ neuropsychiatric etiology.
 \end_layout
 
 \begin_layout Standard
@@ -2596,8 +2627,14 @@ key "miller2011quantitative"
 \end_layout
 
 \begin_layout Standard
-Gains in the ratio fast-to-slow twitch fibers are associated with insulin
- resistance
+Muscle fibers are classified in types, based on their adaptation to either
+ endurance or brief strong bursts.
+ Fast-twitch fibers are further classified based on their propensity for
+ aerobic or anaerobic (glycolytic) metabolism.
+ Differential effects on fiber types and inter-type conversions have been
+ observed in many muscle-afflicting maladies.
+ For example, gains in the ratio fast-to-slow twitch fibers are associated
+ with insulin resistance
 \begin_inset CommandInset citation
 LatexCommand citep
 key "simoneau1995skeletal"
@@ -2605,8 +2642,16 @@ key "simoneau1995skeletal"
 \end_inset
 
 .
- There was a suspicion that GC-induced atrophy is fiber-specific.
- In one study, women with CS have an increased proportion of type IIx (fast
+ In contrast, aging is correlated with preferential loss of fast fibers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scelsi1980histochemical"
+
+\end_inset
+
+.
+ Reports of type-specific effects of GC are inconclusive.
+ In one study, women with CS had an increased proportion of type IIx (fast
  twitch, glycolytic) and a lower proportion of type I (slow twitch, oxidative)
  fibers in their vastus lateralis muscles
 \begin_inset CommandInset citation
@@ -2651,7 +2696,7 @@ description "cross-sectional area"
 
 \end_inset
 
-) in type I and IIa (slow twitch, oxidative / glycolytic) fibers
+) in type IIa (slow twitch, oxidative / glycolytic) and I fibers
 \begin_inset CommandInset citation
 LatexCommand citep
 key "topp2003alterations"
@@ -2712,7 +2757,7 @@ molar}
 
 \end_inset
 
- (
+ Dexa(
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ham1988improved"
@@ -2748,10 +2793,9 @@ key "griffing2014serum"
 , that is, tens of times less potent.
  Therefore, it is impossible to conceive an experiment where human myoblasts
  in culture are subjected to meaningful manipulations of GC concentration.
- The fact that GCs are vital for human muscle development and maintenance
- implies that cell lines that do not require GC may be less accurate models
- of human muscle.
- This includes most cell culture models.
+ The fact that GCs are vital for in vitro human muscle development and maintenan
+ce suggests that cell lines that do not require GC may be less accurate
+ models of human muscle.
 \end_layout
 
 \begin_layout Standard
@@ -3050,8 +3094,7 @@ key "brillon1995effect"
  synthesis.
  However, using a 200 mg cortisol infusion in the same protocol failed to
  cause a detectable change in protein synthesis compared to placebo, suggesting
- hormesis may confound experiments.
- Moreover, this finding was never replicated.
+ a biphasic response.
  Löfberg and colleagues
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3140,8 +3183,8 @@ description "Mechanistic Target of Rapamycin"
 \end_inset
 
 ) axis.
- Rather than directly repressing this axis, GCs lower its sensitivity to
- upstream stimuli.
+ Rather than directly repressing this axis, GCs appear to reduce sensitivity
+ of this axis to upstream stimuli.
  One study on humans described how Dexa inhibits branched chain amino acids'
  ability to induce phosphorylation of mTOR substrates eukaryotic translation
  initiation factor 4E (
@@ -3184,7 +3227,7 @@ description "eukaryotic initiation factor 2"
 \end_layout
 
 \begin_layout Standard
-In addition to GC excess, muscle weakness is caused by GC withdrawal
+In addition to GC excess, muscle weakness is observed with GC withdrawal
 \begin_inset CommandInset citation
 LatexCommand cite
 key "amatruda1960study"
@@ -3226,8 +3269,8 @@ description "anabolic androgenic steroids"
 \end_inset
 
 ) in the attention of clinicians treating hypercortisolism in muscle.
- The same circumstances meant that utility of AAS therapy in steroid myopathy
- has never been fully explored.
+ The same circumstances meant that utility of AAS therapy in glucocorticoid
+ myopathy has never been fully explored.
 \end_layout
 
 \begin_layout Standard
@@ -3287,8 +3330,9 @@ key "brown-sequard1893new"
 
 .
  Because the active principle in testis is made as needed, rather than stored
- in high-concentration depots, it is now obvious that these observations
- were the product of preconception.
+ in high-concentration depots, Brown-Séquard’s injections must have contained
+ very little male hormones.
+ His observations were likely caused by the placebo effect.
 \end_layout
 
 \begin_layout Standard
@@ -3323,17 +3367,17 @@ organotherapy,
 \end_layout
 
 \begin_layout Standard
-Second, the Victorian era is an age of body rediscovery.
- Georgian pastimes, such as cock fighting, horse racing, or cricket, are
+Second, the Victorian era was an age of body rediscovery.
+ Georgian pastimes, such as cock fighting, horse racing, or cricket, were
  replaced by more muscular sports, such as football, rugby, gymnastics,
  and swimming.
- Bodybuilding becomes fashionable, with the first professional competition
+ Bodybuilding became fashionable, with the first professional competition
  selling out Royal Albert Hall in 1901.
- Brown-Séquard's promise of muscle without effort makes testis organotherapy
+ Brown-Séquard's promise of muscle without effort made testis organotherapy
  a widespread, well-earning business.
- When Voronoff is barred from practicing in Paris and judged as fraudulent
- by the Royal Society of Medicine, he takes his testis transplant business
- to Algiers, where he receives patients from all over the world (reviewed
+ When Voronoff was barred from practicing in Paris and judged as fraudulent
+ by the Royal Society of Medicine, he took his testis transplant business
+ to Algiers, where he received patients from all over the world (reviewed
  in 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3408,15 +3452,15 @@ male hormones
 
  were simultaneously androgenic, anabolic, and ergogenic was based on a
  cultural construct that confounded manliness and physical force, rather
- than the product of evidence.
+ than the product of direct scientific evidence.
 \end_layout
 
 \begin_layout Standard
 The belief in a male-secreted ergogenic substance inspired many commercial
  enterprises to sponsor research in male endocrinology, through the decades
  where the evidence was confined to changes in the combs of roosters.
- These dark ages end in 1927, when McGee and Koch extract a lipophilic virilizin
-g mixture from rooster testis
+ These dark ages ended in 1927, when McGee and Koch extracted a lipophilic
+ virilizing mixture from rooster testis
 \begin_inset CommandInset citation
 LatexCommand cite
 key "gallagher1929testicular,mcgee1928development"
@@ -3424,7 +3468,7 @@ key "gallagher1929testicular,mcgee1928development"
 \end_inset
 
 .
- A pure and even more androgenic chemical is extracted in 1935 from bull
+ A pure and even more androgenic chemical was extracted in 1935 from bull
  testis by Laqueur, working for Organon
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3433,7 +3477,7 @@ key "david1935uber"
 \end_inset
 
 .
- Laqueur names his discovery testosterone (
+ Laqueur named his discovery testosterone (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Testo"
@@ -3453,7 +3497,9 @@ key "hoberman1995history"
 \end_inset
 
 ).
- At the University of Chicago, Kenyon tests Testo on four eunuchoid patients
+ The first beneficiaries of the new drug were hypogonadal men, that is,
+ adult males with pathological decreases in circulating Testo.
+ At the University of Chicago, Kenyon tested Testo on four eunuchoid patients
  of testicular and pituitary etiology.
  Daily injections of 25 mg testosterone propionate (
 \begin_inset CommandInset nomenclature
@@ -3463,7 +3509,7 @@ description "testosterone propionate"
 
 \end_inset
 
-) cause an doubling in prostate and penis size
+) caused a doubling in prostate and penis size
 \begin_inset CommandInset citation
 LatexCommand cite
 key "kenyon1938effect"
@@ -3471,8 +3517,7 @@ key "kenyon1938effect"
 \end_inset
 
  after less than two weeks, thus establishing the efficacy of Testo replacement
- therapy in hypogonadal men, defined as adults with pathological decreases
- in circulating Testo.
+ therapy in hypogonadal men.
  Except for a few, narrow exceptions, this population was and remains the
  sole generally accepted, FDA-approved indication for Testo therapy
 \begin_inset CommandInset citation
@@ -3500,7 +3545,7 @@ the second dark age of androgens.
  Only in 1953, FDA gives its first approval for an androgenic therapy, a
  Testo enanthate injection.
  Then, as now, FDA's approval was based on Testo ability to restore normal
- levels of androgens, rather than other, more functional or curative, outcome
+ levels of androgens, rather than other, more functional or curative, outcomes
 \begin_inset CommandInset citation
 LatexCommand cite
 key "endopharmaceuticalssolutionsinc.2014delatestryl"
@@ -3566,7 +3611,7 @@ key "mommers2008male"
  For example, early trials of oral methyltestosterone revealed its hepatic
  toxicity.
  Fifty years later, those limited trials are still the main factor discouraging
- the development of oral androgenic therapies.
+ the development of oral synthetic androgenic therapies.
 \end_layout
 
 \begin_layout Standard
@@ -3576,7 +3621,7 @@ The second dark age of Testo was a time of poor knowledge and poor clinical
  ergogenics.
  Kenyon noted in his studies on eunuchoid men that Testo injections helped
  them gain weight through protein accretion, as demonstrated by a reduction
- in urinary nitrogen.
+ in urinary nitrogen despite fixed dietary intake.
  Other trials evidenced benefits from androgenic therapy in muscle-depleting
  conditions, including thyrotoxic myopathy
 \begin_inset CommandInset citation
@@ -3602,8 +3647,8 @@ key "kenyon1940comparative"
 \end_inset
 
 .
- In 1942, Samuels and colleagues state that Testo does not change grip strength
- in healthy males
+ In 1942, Samuels and colleagues concluded that Testo does not change grip
+ strength in healthy males
 \begin_inset CommandInset citation
 LatexCommand cite
 key "samuels1942influence"
@@ -3619,8 +3664,8 @@ key "elashoff1991effects"
 \end_inset
 
  and my literature search, no other test of androgens' effect on muscle
- strength is published until 1968.
- Despite the lack of evidence, androgens are used as ergogenics in healthy
+ strength was published until 1968.
+ Despite the lack of evidence, androgens were used as ergogenics in healthy
  people, starting with Olympic athletes around 1954
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3675,14 +3720,14 @@ During the 1950's, AAS became part of the standard of care for endogenous
  hypercortisolism during the gap between diagnosis and curative surgery.
  However, this gap narrowed to a few weeks, due to improvements in differential
  diagnosis.
- Development of accurate cortisol assays allowed the measurement of its
- changes in response to Dexa, thus discriminating conditions where feedback
- mechanisms fail (mainly endocrine neoplasms) from cortisol-stimulating
+ Today, development of accurate cortisol assays allowed the measurement
+ of its changes in response to Dexa, thus discriminating conditions where
+ feedback mechanisms fail (mainly endocrine neoplasms) from cortisol-stimulating
  non-endocrine conditions.
  ACTH assays differentiate ACTH-independent cases (typically adrenal tumors)
  from the ACTH-dependent ones (usually localized in the pituitary).
  Modern imaging, including computed tomography of the adrenal and magnetic
- resonance imaging of the pituitary, identify the target of surgery.
+ resonance imaging of the pituitary, rapidly identify the target or surgery.
  AAS therapy is now confined to inoperable cases, including unidentified
  ectopic sources of ACTH or cortisone.
  Even these cases benefit from more targeted interventions (see Table 
@@ -3894,7 +3939,7 @@ key "newell-price2006cushings,molitch2014current"
 Similarly, the opportunities for AAS as adjuvant to GC therapy are very
  limited.
  Many of the diseases previously treated by high-dose GC are now treated
- with more specific drugs.
+ with higher-specificity drugs.
  As practitioners became more accustomed with the risks of GC therapy, doses
  and durations were reduced.
  With the exception of life-threatening conditions, typical GC prescriptions
@@ -4019,8 +4064,8 @@ key "cumming1983acute,fassnacht2003adrenal"
 .
  The mechanisms through which acute hypercortisolism causes Testo downregulation
 , also termed hypoandrogenism, are debated.
- Some studies suggest that acute hypercortisolism downregulates the pituitary-se
-creted, T-upregulating, luteinizing hormone (
+ Some studies suggested that acute hypercortisolism downregulates the pituitary-
+secreted, T-upregulating, luteinizing hormone (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "LH"
@@ -4263,12 +4308,13 @@ key "smals1977plasma"
 \end_layout
 
 \begin_layout Standard
-Apparent hyperandrogenism is also present in children with hypercortisolism.
+Indirect evidence suggests that apparent hyperandrogenism is also present
+ in children with hypercortisolism.
  In pediatric hypercortisolism, virilization signs such as change in voice,
  penile or clitoridian overgrowth, and hirsutism are common
 \begin_inset CommandInset citation
 LatexCommand citep
-key "tyler1972laboratory"
+key "joshi2005cushings,kanter2005single-center"
 
 \end_inset
 
@@ -4278,12 +4324,12 @@ key "tyler1972laboratory"
 \end_layout
 
 \begin_layout Standard
-In adult female CS, virilization, muscle catabolism, and circulating androgens
- changes are not correlated.
- This indicates that relative hyperandrogenism in some tissues is coincident
+In adult female CS, muscle catabolism increase contrasts with virilization
+ and circulating androgens changes.
+ This suggests that relative hyperandrogenism in some tissues is coincident
  with relative hypoandrogenism in others.
- For example, it may be possible that, in some tissues, excess GC activates
- the androgen receptor (
+ For example, it has been shown that in cultured prostate cells excess GC
+ improves the sensitivity of the androgen receptor (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "AR"
@@ -4298,16 +4344,18 @@ key "arora2013glucocorticoid"
 
 \end_inset
 
-, the nuclear receptor specific for AAS at physiological concentrations.
- Because short-term Dexa inhibits AR expression in women's muscle
+, the nuclear receptor mediating the action of AAS.
+ In contrast, in women’s muscle, short-term Dexa inhibits AR expression
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "inder2010dexamethasone"
 
 \end_inset
 
-, it may be possible that GCs interfere with Testo signals in a tissue-specific
- manner.
+.
+ It may be the case that GCs interfere with Testo signals in a tissue- or
+ sex-specific manner.
 \end_layout
 
 \begin_layout Standard
@@ -4368,8 +4416,8 @@ key "kouyama2011clinicopathological,monteleone2006impaired,barbetta2001androgen,
 \end_inset
 
 .
- Both types of hypercortisolism manifest GAML, despite opposite effects
- on AAPs, suggesting that AAPs changes do not cause GAML directly.
+ Both types of hypercortisolism are associated with GAML, despite opposite
+ effects on AAPs, suggesting that AAPs changes do not cause GAML directly.
  Understanding causality in the case of simultaneous muscle loss and hirsutism
  is complicated by dose- and compound-dependent crossconversion of GCs to
  AAS and interference of GCs in AAS synthesis and degradation.
@@ -4517,8 +4565,7 @@ key "finkelstein2013gonadal"
  Aromatase converts Testo in estradiol.
  The continuing muscle protection when Testo cannot be converted to estrogens
  demonstrates that muscle protection is an intrinsic ability of Testo.
- A more plausible mediator is the anabolic hormone insulin-like growth factor
- I (
+ A more plausible mediator for AAS is the insulin-like growth factor I (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "IGF-I"
@@ -4533,7 +4580,7 @@ key "mauras1998testosterone"
 
 \end_inset
 
-, and by short-term, high-dose Dexa.
+.
 \end_layout
 
 \begin_layout Standard
@@ -4601,16 +4648,16 @@ key "sheffield-moore2011randomized"
 \end_inset
 
 .
- Interestingly, some of this newly accrued protein is extracellular matrix,
- as indicated by the upregulation of circulating N-terminal propeptide of
- type III procollagen
+ The increase in muscle fiber protein is correlated with an upregulation
+ of circulating N-terminal propeptide of type III procollagen
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bhasin2009n-terminal"
 
 \end_inset
 
-.
+, indicating that cellular hypertrophy is paralleled by extracellular matrix
+ remodeling.
 \end_layout
 
 \begin_layout Standard
@@ -4648,10 +4695,10 @@ key "ferrando2001testosterone"
 \end_layout
 
 \begin_layout Standard
-The protection of muscle force provided by Testo to the older hypogonadal
- men is not hindered by co-administration of finasteride, an inhibitor of
- 5α-reductase, which causes the transformation of Testo to 5α-dihydrotestosteron
-e (
+Perhaps provocatively, the protection of muscle force provided by Testo
+ to the older hypogonadal men is not hindered by co-administration of finasterid
+e, an inhibitor of 5α-reductase, which causes the transformation of Testo
+ to 5α-dihydrotestosterone (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DHT"
@@ -4667,8 +4714,8 @@ key "borst2014musculoskeletal"
 \end_inset
 
 .
- Similar lack of effect was seen with dutasteride, a less specific inhibitor
- of 5α-reductase, added to exogenous Testo, in a younger, possibly less
+ Similarly, Testo muscle protection was present when another 5α-reductase
+ inhibitor, dutasteride, was co-administered to a younger, possibly less
  hypoandrogenic cohort
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4702,7 +4749,8 @@ key "traish2009testosterone,wierman2014androgen"
 
 .
  There is no FDA-approved Testo preparation for women.
- Therefore, the action of Testo in women losing muscle is yet to be investigated.
+ Therefore, the action of Testo in women remains an area of research requiring
+ further investigation.
 \end_layout
 
 \begin_layout Standard
@@ -4777,22 +4825,22 @@ description "mitogen-activated protein kinases"
  In the same study, MAPK protein levels did not appear to be modulated by
  AAS therapy.
  The referenced microarray study failed to find a change in expression of
- the major muscle regulator myostatin
+ the major muscle regulator myostatin (described in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mcpherron1997regulation,gonzalez-cadavid1998organization"
 
 \end_inset
 
-, or of the two E3 ligases typically associated with muscle loss, MAFbx
- and MuRF-1
+), or of the two E3 ligases typically associated with muscle loss, MAFbx
+ and MuRF-1 (described in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bodine2001identification,gustafsson2010effects"
 
 \end_inset
 
-.
+).
 \end_layout
 
 \begin_layout Standard
@@ -4879,7 +4927,9 @@ In various conditions that cause muscle loss, AAS benefits share a pattern
  Putative molecular mediators known from animal models have not been confirmed
  in humans, with the exception of IGF-I upregulation.
  Better clinical studies are required.
- For these, animal models and in vitro studies sketch the road ahead.
+ In their absence, our insights into glucocorticoid myopathy and AAS muscle
+ protection come from animal and in vitro experiments, discussed in the
+ next section.
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -4924,8 +4974,9 @@ For the most part, the skeletal muscles confer the three-dimensional intricate
  at least at macroscopic level.
  In contrast, at cell level, the relatively high specialization of the skeletal
  muscle leaves little space for diversity or inhomogeneity.
- Muscles' diverse shapes are conferred by non-contractile auxiliary structures.
- Largest of these structures, tendons and aponeuroses attach the muscle
+ Muscles' diverse shapes are conferred by non-contractile proteinic auxiliary
+ structures.
+ The largest of these structures, tendons and aponeuroses, attach the muscle
  to other body structures (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4982,7 +5033,8 @@ key "waterlow1978protein"
  unregulated, invariable protein, and is used in level normalization.
  In muscle, especially in atrophy, actin cannot be invariable.
  For example, in rat muscles atrophying due to streptozotocin-induced acute
- diabetes, an actin degradation fragment is detectable
+ diabetes, an actin degradation fragment becomes upregulated to detectable
+ levels 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "du2004activation"
@@ -5008,12 +5060,12 @@ key "lukaski1981relationship"
 \end_layout
 
 \begin_layout Standard
-Myofibers acquire nuclei solely by fusion with surrounding proliferative
- mononucleate cells, or with neighboring myofibers.
+Myofibers acquire nuclei by fusion with surrounding proliferative mononucleate
+ cells, or with neighboring myofibers.
  Two classes of mononucleate cells are relevant for muscle structure and
  development.
  Satellite cells are Pax7-positive, mononuclear, nearly devoid of cytosol,
- sitting in close proximity to the fiber, under the proteic external lamina
+ sitting in close proximity to the fiber, under the proteinic external lamina
  (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5077,7 +5129,7 @@ d cells are characterized by central nuclei, akin to regenerating fibers.
 \begin_layout Standard
 The proliferative niche can play an important role in muscle atrophy and
  recovery.
- However, muscle hypertrophy may occur without cell divisions.
+ However, muscle hypertrophy may occur without cell division.
  For example, the muscles of mice receiving clenbuterol and of rats undergoing
  eccentric training gain 20-30% muscle mass without apparent DNA changes
 \begin_inset CommandInset citation
@@ -5086,7 +5138,7 @@ key "sharma1997response,wong1990protein"
 
 \end_inset
 
-.
+, suggesting hypertrophy of existing fibers, but not additional cell division.
  Quail muscles depleted of proliferating cells by irradiation still undergo
  hypertrophy in response to stretch-overload
 \begin_inset CommandInset citation
@@ -5463,8 +5515,8 @@ Physiological muscle metabolism
 \end_layout
 
 \begin_layout Standard
-Muscle is a major energy user in the body, using fat during rest and glucose
- during exercise (reviewed in 
+Muscle is a major energy user in the body, with a skewed use of fat during
+ rest and glucose during exercise (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "berg2002each,wasserman2009four"
@@ -5472,7 +5524,7 @@ key "berg2002each,wasserman2009four"
 \end_inset
 
 ).
- Because its capacity to synthesize fatty acid is 2negligible, muscle is
+ Because its capacity to synthesize fatty acid is negligible, muscle is
  a consumer and a minor store, but not a generator, of fatty acids.
  During fast, more than half of infused non-esterified fatty acids (
 \begin_inset CommandInset nomenclature
@@ -5545,9 +5597,9 @@ key "wang2003peroxisome-proliferator-activated"
 \end_layout
 
 \begin_layout Standard
-This work uses extensively the C2C12 cell line, an immortalized female mouse
- muscle progenitor line obtained from a muscle recovering after mechanical
- injury.
+The work described in this dissertation relies extensively on the C2C12
+ cell line, an immortalized female mouse muscle progenitor line obtained
+ from a muscle recovering after mechanical injury.
  Treatment of confluent C2C12 cells with Dexa and 3-isobutyl-1-methylxanthine
  (
 \begin_inset CommandInset nomenclature
@@ -5636,10 +5688,10 @@ ic acid cycle, but a significant amount is converted to lactate and released
  in the blood stream.
  As part of the Cori cycle, circulating lactate is reassembled into glucose
  by the liver, and re-released into the blood stream, for muscle use.
- A similar shuttling mechanism further enables muscle to rely on glycolysis,
- by transaminating excess pyruvate to the amino acid alanine, similarly
- released in the blood.
- Circulating alanine is converted by liver to glucose.
+ A similar gluconeogenetic mechanism employs the intramuscular transamination
+ of excess pyruvate to the amino acid alanine.
+ Muscle-released alanine is converted by liver to glucose, especially at
+ times when dietary carbohydrate intake is inadequate.
  Pyruvate transamination requires the amino acid glutamate.
  Muscle uses glutamate for other metabolic processes, including the synthesis
  of non-essential amino acids, including proline and arginine.
@@ -5707,7 +5759,7 @@ key "cuthbertson2005anabolic"
 \end_inset
 
 .
- In young, healthy controls, BCAA alone were able to increase the fractional
+ In young, healthy men, BCAA alone were able to increase the fractional
  synthesis rate for myofibrilar protein.
  At the same time, BCAA caused intramuscular hyperphosphorylation of 4E-BP
  and of the ribosomal protein S6 kinase, 70 kDa (
@@ -5794,7 +5846,7 @@ With aging, muscle gradually shifts from a mitotic to a postmitotic profile,
 \begin_layout Standard
 Humans achieve muscle mass growth following exercise.
  Some forms of exercise are more suitable at increasing strength or resistance
- that mass per se, but in most cases, mass will increase in pace with force.
+ than mass per se, but in most cases, mass will increase in pace with force.
  In animals, muscle growth is induced by muscle overload, or muscle unloading
  and reloading, which may be conceived as forms of aerobic exercise.
  In healthy volunteers, the acute response to exercise includes increased
@@ -5851,10 +5903,9 @@ key "bird2006liquid"
 \end_inset
 
 .
- Concomitant amino acid feeding extinguishes GC and catabolic response to
- exercise.
- Variations in regimens of exercise and timing and composition of diet led
- to a plethora of studies.
+ Concomitant amino acid feeding counters GC and catabolic response to exercise.
+ Variations in regimens of exercise and timing and composition of diet have
+ led to a plethora of studies.
  Just as most of the short-term exercise routines do not lead to muscle
  hypertrophy, literature is rich with examples of short exercise studies,
  where molecular changes have not been detected (reviewed in 
@@ -5975,9 +6026,9 @@ key "epstein1995pax3"
 \begin_layout Standard
 Generation and regeneration of muscle in common scenarios, such as development
  and adaptation, remain an object of study, due to their complexity.
- Variable importance of the immune cells, of MRFs and of IGF-I, and concurring
- redundancy forestall attempts to envisage a common pattern of muscle hypertroph
-y.
+ The variable importance of the immune cells, of MRFs, and of IGF-I, and
+ concurring redundancy remain to be fully worked out to identify a common
+ pattern for muscle hypertrophy.
 \end_layout
 
 \begin_layout Section
@@ -5988,7 +6039,7 @@ Hormonal control of muscle mass
 The variability of muscle mass within population is reflective of the variable
  needs for muscle strength.
  Muscle mass and strength are adjusted to the needs of the organism mainly
- through humoral mechanisms.
+ through hormonal mechanisms.
  Multiple classical hormones regulate muscle mass.
  The acute phase of insulin response poses a conundrum, with some studies
  showing it stimulates protein synthesis in human muscle
@@ -6088,8 +6139,8 @@ description "growth hormone"
 \end_inset
 
 ).
- However, auto- and paracrine secretions may full supplant the absence of
- hepatic IGF-I in adult conditional knockout mice
+ However, auto- and paracrine secretions fully supplant the absence of hepatic
+ IGF-I in adult conditional knockout mice
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sjogren1999liver-derived"
@@ -6193,7 +6244,7 @@ key "sotiropoulos2006growth"
 
 \end_inset
 
-, suggesting that IGF-I is absent from the cell culture medium.
+, suggesting that IGF-I is not secreted in the cell culture medium.
  Alternatively, the hypertrophic action of IGF-I may be exerted by an intracellu
 lar autocrine mechanism.
  In addition to the indirect effect mediated by hepatic and the putative
@@ -6444,8 +6495,8 @@ Current understanding and future directions for the study of GAML are guided,
 \end_layout
 
 \begin_layout Standard
-Limb and trunk muscles are controlled by the lower (alpha) motoneuron, located
- in the ventral horn of the spinal cord.
+Limb and trunk muscles are controlled by the lower (alpha) motor neuron,
+ located in the ventral horn of the spinal cord.
  Their main point of contact is a chemical synapse, the neuro-muscular junction
  (
 \begin_inset CommandInset nomenclature
@@ -6456,13 +6507,13 @@ description "neuro-muscular junction"
 \end_inset
 
 ).
- In addition to the direct synaptic activity, muscles and lower motoneurons
+ In addition to the direct synaptic activity, muscles and lower motor neurons
  are involved in a mutually beneficial life-long interaction.
  
 \end_layout
 
 \begin_layout Standard
-Motoneuron precursors from the embryo spinal cord degenerate and die if
+Motor neuron precursors from the embryo spinal cord degenerate and die if
  they cannot engage in significant interactions with myofibers
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -6471,12 +6522,12 @@ key "oconnor1974cell"
 \end_inset
 
 .
- Eliminated motoneurons include neurons whose axons fail to reach myotubes,
+ Eliminated motor neurons include neurons whose axons fail to reach myotubes,
  and neurons that eventually fail to maintain contact with myotubes, due
  to synapse elimination.
  The latter is a selective, competitive process, whose molecular basis is
  still unknown, and which ensures injectivity of the correspondence between
- lower motoneurons and myofibers (reviewed in 
+ lower motor neurons and myofibers (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "favero2014hebb-based"
@@ -6484,8 +6535,8 @@ key "favero2014hebb-based"
 \end_inset
 
 ).
- For a few days after birth, rat motoneurons go into a particularly sensitive
- state, when axotomy determines motoneuron death
+ For a few days after birth, rat motor neurons go into a particularly sensitive
+ state, when axotomy determines motor neuron death
 \begin_inset CommandInset citation
 LatexCommand citep
 key "burls1991absence"
@@ -6502,7 +6553,7 @@ key "kuno1990target,grinnell1995dynamics"
 \end_inset
 
 ).
- The re-establishment of contact between the motoneuron and muscle causes
+ The re-establishment of contact between the motor neuron and muscle causes
  the reverse molecular changes, suggesting the existence of muscle-secreted
  neurotrophic factors.
  The NMJ loses functionality with aging, although it is not clear whether
@@ -6527,11 +6578,11 @@ key "serra2013characterization,nishimune2014role,apel2010effect"
 \end_layout
 
 \begin_layout Standard
-The loss of contact with the lower motoneuron elicits similar detrimental
+The loss of contact with the lower motor neuron elicits similar detrimental
  changes in muscle, with clinical relevance in the understanding and treatment
  of spinal cord injury and spinal muscular atrophy.
  Conceptually, denervation is distinct from disuse, such as that induced
- by damage to the upper motoneuron.
+ by damage to the upper motor neuron.
  Clinically, the latter manifests differently, through a syndrome termed
  pyramidal weakness, which mainly affects muscles opposing gravity
 \begin_inset CommandInset citation
@@ -6541,8 +6592,8 @@ key "thijs1998distribution"
 \end_inset
 
 .
- In humans, after upper motoneuron damage, disuse response occurs in a few
- days after injury, and leads to exaggerated spasticity
+ In humans, after upper motor neuron damage, disuse response occurs in a
+ few days after injury, and leads to exaggerated spasticity
 \begin_inset CommandInset citation
 LatexCommand citep
 key "purves2001damage"
@@ -6551,7 +6602,7 @@ key "purves2001damage"
 
 .
  Understandably, literature does not describe any animal model of disuse
- by experimental damage to the upper motoneuron.
+ by experimental damage to the upper motor neuron.
  In fact, literature contains multiple examples where 
 \begin_inset Quotes eld
 \end_inset
@@ -6590,7 +6641,7 @@ ing effects of work, of the NMJ transmitter, acetylcholine, and of any other
 \end_layout
 
 \begin_layout Standard
-In utero, experimental destruction of motoneurons with bungarotoxin abolishes
+In utero, experimental destruction of motor neurons with bungarotoxin abolishes
  formation of secondary myotubes, although it has limited effect on the
  formation of primary fibers
 \begin_inset CommandInset citation
@@ -6866,7 +6917,7 @@ A similar debate surrounds protein synthesis regulation in denervation.
  However, Goldberg's observation could have been explained in other ways.
  For example, specific activity may be preserved if tracer amino acids increasin
 gly released due to denervation would not freely diffuse out of muscle,
- but would be preferentially used in new protein.
+ but would be preferentially reused in new protein.
  More recent functional studies, including some from Goldberg's group, found
  that denervation stimulates translation
 \begin_inset CommandInset citation
@@ -6903,8 +6954,9 @@ Animal models of glucocorticoid myopathy
 \end_layout
 
 \begin_layout Standard
-In the 75 years since the discovery of chronic steroid myopathy, scientists
- attempted, with variable success, to develop multiple animal models.
+In the 75 years since the discovery of iatrogenic glucocorticoid myopathy,
+ scientists attempted, with variable success, to develop multiple animal
+ models.
  In dogs, seven days of 
 \begin_inset ERT
 status open
@@ -7104,8 +7156,8 @@ The perception that myotubes response to Dexa is a complete model of GAML
  Many published studies document the effect of Dexa on the mouse cell line
  C2C12 and the rat cell line L6.
  However, these and other myogenic cell lines have significant limitations,
- which may cause divergence between in vitro models and the steroid myopathy
- they aim to describe.
+ which may cause divergence between in vitro models and the glucocorticoid
+ myopathy they aim to describe.
  As mentioned earlier, in the case of primary cells, experiments with Dexa
  are outright impossible, because primary cell survival is GC-dependent.
  Moreover, Dexa has hyperplastic and hypertrophic effects on myogenic cell
@@ -7416,7 +7468,7 @@ key "furlow2013altered,son2015dexamethasone"
 \begin_layout Standard
 Unless specified, the next sections refer to studies with chronic (5-10
  days) Dexa on adult (not aged) male rodents, which are the best model from
- human male steroid myopathy.
+ human male glucocorticoid myopathy.
 \end_layout
 
 \begin_layout Section
@@ -7655,10 +7707,18 @@ description "nuclear factor kappa - light-chain enhancer of activated B cells"
 
 \end_inset
 
-), a mediator of cancer cachexia (reviewed in 
+), a mediator of muscle loss in conditions such as cancer cachexia (reviewed
+ in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tisdale2008catabolic"
+
+\end_inset
+
+), and a regulator of multiple inflammatory genes (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "peterson2008skeletal"
 
 \end_inset
 
@@ -7672,7 +7732,7 @@ key "chamberlain2012multiple"
 
 \end_inset
 
-, seemingly paralleling with cancer cachexia.
+, seemingly paralleling cancer cachexia.
  In contradiction to such parallels, Dexa was shown to inhibit NF-κB signals
  by upregulating inhibitory κBα (
 \begin_inset CommandInset nomenclature
@@ -7845,8 +7905,7 @@ key "bodine2014skeletal"
 \end_layout
 
 \begin_layout Standard
-Two-yeast hybrid experiments revealed two classes of putative MuRF-1 substrates,
- myofibrilar components
+Two-yeast hybrid experiments revealed two classes of putative MuRF-1 substrates
 \begin_inset CommandInset citation
 LatexCommand citep
 key "witt2005murf-1"
@@ -7859,8 +7918,8 @@ key "witt2005murf-1"
  The second class comprises components of ATP-generating machinery, including
  NADH dehydrogenase 1a, NADH-ubiquinone oxidoreductase, pyruvate dehydrogenase,
  and ATP synthase beta-subunit.
- In the transgenic mouse overexpressing MuRF-1, the sparing of the second
- class was reported
+ In transgenic mouse overexpressing MuRF-1, proteins from the second class
+ were downregulated
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hirner2008murf1-dependent"
@@ -7991,8 +8050,9 @@ Glucocorticoid-induced loss of sensitivity on the IRS - Akt axis
 \begin_layout Standard
 Surprisingly, the most comprehensive account on GC-induced changes on protein
  metabolic regulation comes from the study of glucose metabolism changes.
- The latter is more easily measured, because it is unidirectional, as described
- in the section on metabolism.
+ .
+ The latter is more easily measured in muscle, because it comprises only
+ catabolic, but no anabolic, components (detailed in the dedicated section).
 \end_layout
 
 \begin_layout Standard
@@ -8077,7 +8137,7 @@ The inhibition of Akt as result of Dexa interference was the subject of
  Proving Akt inactivation by Dexa is a complex endeavor, due to the extremely
  low Akt activation in basal state.
  Insulin or IGF-I, in concentrations close to the physiological levels,
- increase glucose uptake about 10-fold
+ increase glucose uptake about 10-fold in muscle explants 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "weinstein1995glucocorticoid-induced"
@@ -8104,7 +8164,7 @@ key "dardevet1995sensitivity"
 \end_layout
 
 \begin_layout Standard
-The opposite situation is also true.
+The opposite situation may also be true.
  Experimental studies on the Akt pathway are conceptually challenged by
  its extremely low basal activity.
  In a molecular biology experiment, in order to prove causality by inhibition,
@@ -8130,8 +8190,8 @@ key "saad1993modulation,corporeau2006adipose,ishizuka1995effect"
 \end_inset
 
 .
- Similarly, Dexa alone does not change the basal level of phosphorylated
- IRS.
+ Similarly, Dexa alone does not appear to change the basal level of phosphorylat
+ed IRS.
  However, in response to insulin, mice treated for 5 days with 
 \begin_inset ERT
 status open
@@ -8329,7 +8389,14 @@ key "hu2009endogenous"
 .
  This non-transcriptional effect has not been fully explored in GAML in
  vivo, but is supported by the unusual persistence of IRS1-PI3K complexes
- during diabetes in GR knockout mice muscle.
+ during diabetes in GR knockout mice muscle
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hu2009endogenous"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -8399,8 +8466,8 @@ key "fappi2014effects,schakman2008role,cho2010time"
 A second distinction between Thr 308 and Ser 473 is the difference in stimuli
  and enzymes causing their phosphorylation.
  Ser 473 phosphorylation is nominally stimulated by growth factors, through
- mTOR complex 2, and through mTOR-independent, 3-phosphoinositide-stimulated
- mechanisms
+ mTOR complex 2, and through little-known, mTOR-independent, 3-phosphoinositide-
+stimulated mechanisms
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sarbassov2005phosphorylation"
@@ -8408,10 +8475,10 @@ key "sarbassov2005phosphorylation"
 \end_inset
 
 .
- Thus, the factors that activate Thr 308 should theoretically lead to 3-phosphoi
-nositide synthesis, and to Ser 473 activation.
- In practice, Ser 473 and Thr 308 phosphorylation may occur separately,
- with examples in the next section.
+ Extracellular stimuli that activate Thr 308 are expected to cause 3-phosphoinos
+itide synthesis, and simultaneous Ser 473 activation.
+ However, Ser 473 and Thr 308 phosphorylation may occur separately (see
+ examples in the next section).
  In this case, it may be the case that Dexa impedes Ser 473 phosphorylation
  through another, yet undiscovered, mechanism.
 \end_layout
@@ -8427,6 +8494,8 @@ key "manning2007akt/pkb"
 \end_inset
 
 ).
+ In vivo, the scarcity of segregation reports leads to lack of knowledge
+ regarding potential independent specializations for the two sites.
  However, in vitro manipulations indicate that the two sites synergize for
  maximal Akt activation
 \begin_inset CommandInset citation
@@ -8565,12 +8634,12 @@ key "sacheck2004igf-i"
 \begin_layout Standard
 In conclusion, Dexa interferes with IRS / Akt pathway in multiple ways,
  thus inhibiting glucose uptake.
- The pathway inhibition is not detectable in basal conditions, but requires
- challenge testes with insulin or IGF-I.
+ The inhibition of this pathway is difficult to detect in basal conditions,
+ but consistently observed during challenge tests with insulin or IGF-I.
  Because the model of GAML centered on Akt is derived from experiments with
  acute states, cell models, and intrinsic anabolic interventions, it is
  perfectible.
- The best studied downstream targets of Akt are mTOR and FOXO.
+ The best-studied downstream targets of Akt are mTOR and FOXO.
 \end_layout
 
 \begin_layout Section
@@ -8587,8 +8656,8 @@ key "guertin2007defining,laplante2009mtor,inoki2002tsc2"
 \end_inset
 
 ).
- Its modulation in acute Dexa administration is proven by reduced phosphorylatio
-n in its substrates, 4E-BP (Thr 37/46) and p70-S6K (Thr 389)
+ The latter's modulation in acute Dexa administration is proven by reduced
+ phosphorylation in its substrates, 4E-BP (Thr 37/46) and p70-S6K (Thr 389)
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shah2000glucocorticoids"
@@ -8833,33 +8902,36 @@ key "britto2014redd1"
 
 \end_inset
 
- opens the perspective for a paradigm-overturning situation.
- Because it failed to induce protein loss or protein degradation, its results
- may not apply to chronic GAML.
- Nevertheless, its findings are the most complete mechanistic explanation
- for Dexa-induced inhibition of mTORC1.
- In wild-type mice, Britto and colleagues found that acute Dexa caused,
- unexpectedly, hyperphosphorylation of TSC2 and Ser 473 on Akt.
- These mice exhibited lower phosphorylation of 4E-BP1, indicating that their
- mTORC1 was repressed.
- Thus, Britto concluded that Dexa-induced mTORC1 inactivation is mediated
- by PRAS40, which is left hypophosphorylated by a hypoactive Akt.
- As discussed earlier, selectivity modulations, which enable Akt to phosphorylat
-e TSC2, but not PRAS40, are attributed to dissociation between Ser 473 and
- Thr 308 phosphorylation state.
+ opens the perspective for a paradigm-changing situation.
+ It provides the most complete mechanistic explanation for Dexa-induced
+ inhibition of mTORC1.
+ In wild-type mouse muscle, Britto and colleagues found that acute Dexa
+ caused mTORC1 inhibition, as demonstrated by lower phosphorylation of 4E-BP1.
+ While Dexa reduced phosphorylation of PRAS40, it unexpectedly led to hyperphosp
+horylation of the other Akt substrate, TSC2.
+ These mice also exhibited simultaneous hyperphosphorylation at Ser 473
+ and hypophosphorylation at Thr 308, thus providing a rare evidence for
+ Akt specificity switching.
+ Britto concluded that Dexa-induced mTORC1 inactivation is mediated by hypophosp
+horylation of PRAS40, which is in turn caused by hypophosphorylation of
+ Akt at Thr 308.
  Britto found more evidence for the REDD1 - Akt - PRAS40 axis in the REDD1
- knockout mice, who are resistant to Dexa.
+ knockout mice, which are resistant to chronic Dexa.
  In these mice, acute Dexa fails to induce hypophosphorylation on PRAS40,
  and on Thr 308 of Akt.
 \end_layout
 
 \begin_layout Standard
-A series of putative interaction remain to be demonstrated.
- Britto speculated that Akt Ser 473 hyperphosphorylation is caused by a
- feedback loop responding to mTORC1 inhibition.
- The mechanism by which REDD1 inhibits Akt activity on PRAS40 is not known.
+Britto's model remains beset by incompleteness.
+ In this report, acute Dexa failed to upregulate protein degradation, suggesting
+ its extrapolation to chronic GAML may be debatable.
+ Britto also speculated that Akt Ser 473 hyperphosphorylation is caused
+ by a feedback loop responding to mTORC1 inhibition, a rather unlikely occurrenc
+e after only 5 hours from oral administration.
+ The mechanism by which REDD1 inhibits Akt activity on PRAS40 remains unknown.
  Studies on transformed cells support the hypothesis that REDD1 impairs
- Akt Thr 308 phosphorylation, while proposing various pathways (
+ Akt Thr 308 phosphorylation, while disagreeing on molecular mechanisms
+ (
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dennis2014redd1"
@@ -8880,8 +8952,8 @@ key "canal2014rtp801/redd1:"
 The hypothesis that REDD1 suppresses Akt and mTORC1 is very attractive,
  because, in contrast to IRS1, REDD1 would be an active and permanent repressor.
  The mechanism by which Dexa stimulates REDD1 remains to be found.
- The most robust inducer of REDD1 is hypoxia, through HIF transcription
- factors
+ In neurons, the most robust inducer of REDD1 is hypoxia, through HIF transcript
+ion factors
 \begin_inset CommandInset citation
 LatexCommand citep
 key "canal2014rtp801/redd1:"
@@ -8889,8 +8961,8 @@ key "canal2014rtp801/redd1:"
 \end_inset
 
 .
- As described in the dedicated section, HIF1a also induces VEGF, which in
- turn has a myoprotective action.
+ As described in the dedicated section, in muscle, HIF1a also induces VEGF,
+ which in turn has a myoprotective action.
  However, in GAML, VEGF is downregulated
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -23574,8 +23646,8 @@ reference "fig:Muscles-weights"
  One cannot exclude a temporal dissociation between the actions of the two
  steroids, but the changes surrounding the acute onset of GAML were not
  investigated in more detail, as they were beyond the scope of this work.
- At the 7-day time point, which is the most accurate model of chronic steroid
- myopathy, the alleviation of GAML is well established.
+ At the 7-day time point, which is the most accurate model of chronic glucocorti
+coid myopathy, the alleviation of GAML is well established.
 \end_layout
 
 \begin_layout Standard
@@ -23831,8 +23903,8 @@ While the in vivo data suggested that downregulation of autophagy is part
  The differences between the in vivo and in vitro data reveal the incompleteness
  of the cell culture model.
  Many factors absent from the cell culture experiment could have caused
- the observed contrast, including myoprotective influences of the motoneuron
- and vascularization.
+ the observed contrast, including myoprotective influences of the motor
+ neuron and vascularization.
  Moreover, the advanced quiescence of the cultured myotubes contrasts with
  the ample in vivo ability to regenerate.
  Given the reductionism of the culture cell experiment, the in vivo experiment
@@ -24135,7 +24207,7 @@ reference "fig:Mechanisms-of-AAS"
  AAS therapy may be beneficial for a subset of male adult patients receiving
  chronic GC, especially if they present with biochemical and clinical hypogonadi
 sm.
- The relative importance of the proteasome in steroid myopathy suggests
+ The relative importance of the proteasome in glucocorticoid myopathy suggests
  that Testo may be a replaced with bortezomib or another proteasome inhibitor.
 \end_layout
 
