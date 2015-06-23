@@ -10640,9 +10640,9 @@ key "frost2009regulation"
 \end_layout
 
 \begin_layout Standard
-IGF-I is only one of the many determinants of muscle mass For example, myostatin
- knockout mice have double muscle size, yet lower circulating IGF-I levels,
- compared to wild type mice
+IGF-I is only one of the many determinants of muscle mass.
+ For example, myostatin knockout mice have double muscle size, yet lower
+ circulating IGF-I levels, compared to wild type mice
 \begin_inset CommandInset citation
 LatexCommand citep
 key "williams2011endocrine"
@@ -17665,7 +17665,7 @@ sig3( dunn.test(InvivoSevendayCVD$levator..mg., InvivoSevendayCVD$treatment,
 
 ).
  In terms of amplitudes, the five measured muscles ranged from extremely
- responsive, such as quadriceps  (
+ responsive, such as quadriceps (
 \begin_inset Flex S/R expression
 status open
 
@@ -18646,8 +18646,8 @@ name "fig:Proteasome-enzymatic-activity"
 
 \begin_layout Standard
 Overall, the good correlation with the macroscopic loss of muscle suggests
- that the proteasome-ubiquitin system is an effector GAML and of its alleviation
- by AAS.
+ that the proteasome-ubiquitin system is an effector of GAML and a target
+ of its alleviation by AAS.
 \end_layout
 
 \begin_layout Section
@@ -19429,7 +19429,7 @@ reference "fig:Calpain-enzymatic"
 
 ).
  The ubiquitin - proteasome system emerges as the main effector of GAML
- and the main target of its alleviation by AAS.
+ and the main target of its alleviation by AAS, in this model.
 \end_layout
 
 \begin_layout Section
@@ -19437,8 +19437,10 @@ Protein synthesis modulation during Dexa-induced muscle atrophy
 \end_layout
 
 \begin_layout Standard
-In order to discern possible changes in protein synthesis, I investigated
- a series of its translation regulators.
+Often, literature reports describe how upregulation of muscle catabolism
+ following Dexa treatments is compounded by repression of protein synthesis.
+ In order to discern putative changes in protein synthesis in this model,
+ I investigated a series of its translation regulators.
  A well-documented manner of translational shutdown upon various conditions,
  such as endoplasmic reticulum stress, is phosphorylation of the initiation
  factor eIF2α by a diverse set of kinases.
@@ -20001,8 +20003,8 @@ reference "fig:4EBP"
 \end_layout
 
 \begin_layout Standard
-Overall, regulators of protein synthesis appear largely unchanged by Testo
- at the 7-day stage of their administration.
+Overall, regulators of protein synthesis appeared largely unchanged by Testo
+ at the 7-day stage of their administration, in this model system.
 \end_layout
 
 \begin_layout Section
@@ -20030,7 +20032,7 @@ reference "fig:Foxo-expression"
 \end_inset
 
 ).
- In quadriceps at day 1, Foxo3a was 
+ In quadriceps at day 1, Foxo3a RNA was 
 \begin_inset Flex S/R expression
 status open
 
@@ -20611,8 +20613,8 @@ sig3( dunn.test(InvivoSevendayCVD$gastrocnemius.phospho.Akt.Ser473..normalized.t
 \end_inset
 
 ).
- Interestingly, Testo co-administration repressed phospho-Ser473 in levator
- ani, an extremely AAS-sensitive muscle (
+ Interestingly, in this model system, Testo co-administration repressed
+ phospho-Ser473 in levator ani, an extremely AAS-sensitive muscle (
 \begin_inset Flex S/R expression
 status open
 
@@ -21117,10 +21119,11 @@ reatment, method = "bonferroni")$P.adjusted[[DvsCthreeways]])
 \begin_layout Standard
 Throughout this section, the molecular correlates of GAML, as found in rats,
  were confirmed in this novel mouse model.
- However, few of the effects of Dexa were reversed by Testo.
- Among the putative mechanisms of alleviation of GAML, there is good evidence
- for the repression of the proteasome - ubiquitin system and for restoration
- of intramuscular IGF-I.
+ However, few of the effects of Dexa were reversed by Testo, at the resolution
+ of my experimental design.
+ However, among the putative mechanisms of alleviation of GAML, there is
+ good evidence for the repression of the proteasome - ubiquitin system and
+ for restoration of intramuscular IGF-I.
  In the next section, I describe my efforts to better understand these myoprotec
 tive mechanisms, using an in vitro model.
  
@@ -22385,8 +22388,9 @@ imeDays == "3"), ]$femtomol_radio_Phe_per_g_cell_protein))
 \end_layout
 
 \begin_layout Standard
-Within the limits of the C2C12 model, protein synthesis changes do not appear
- to mediate Dexa-induced loss of protein, nor its alleviation by Testo.
+Within the limits of the C2C12 model utilized in these experiments, protein
+ synthesis changes do not appear to mediate Dexa-induced loss of protein,
+ nor its alleviation by Testo.
 \end_layout
 
 \begin_layout Section
@@ -23421,9 +23425,9 @@ sig3(tukeyInhibitors[["DTT-D", "p.adj"]])
 \end_inset
 
 ).
- The protective effect of Testo was not altered by the inhibition of the
- IGF-1R pathway (free medium tracer to protein-bound intracellular tracer
- 
+ The protective effect of Testo was not apparently altered by the inhibition
+ of the IGF-1R pathway (free medium tracer to protein-bound intracellular
+ tracer 
 \begin_inset Flex S/R expression
 status open
 
@@ -23453,7 +23457,8 @@ sig3(tukeyInhibitors[["DTTP-DTT", "p.adj"]])
 \begin_layout Standard
 Overall, in C2C12 cells, Dexa upregulates protein degradation, mainly through
  the activation of the proteasome.
- Testo reverse the activation of proteolysis in an IGF-1R-independent manner.
+ Testo reverses the activation of proteolysis in an apparently IGF-1R-independen
+t manner, based on the experimental sensitivity used in these assays.
 \end_layout
 
 \begin_layout Standard
@@ -23473,16 +23478,17 @@ Testosterone alleviates dexamethasone-induced muscle atrophy in mice
 
 \begin_layout Standard
 The present work investigated the molecular mechanisms mediating androgen
- alleviation of GC-induced muscle atrophy in mouse.
- While the myoprotective action of Testo was proven in humans and dissected
- in rats, it was not studied in mice.
+ attenuation of GC-induced muscle atrophy in mouse.
+ While the myoprotective action of Testo was demonstrated in humans and
+ rats, to date the role of Testo in GC-mediated atrophy has not been studied
+ in the mouse.
  In fact, although some studies investigated transcriptional changes in
- mouse muscle in response to Dexa, surprisingly few describe macroscopic
- atrophy.
+ mouse muscle in response to Dexa, surprisingly few have described macroscopic
+ (organ level) atrophy.
 \end_layout
 
 \begin_layout Standard
-A 
+In this dissertation, I demonstrated that a dose of 
 \begin_inset ERT
 status open
 
@@ -23507,25 +23513,26 @@ day}
 
 \end_inset
 
- Dexa dose induced sizable loss of muscle, as evidenced by lean body mass
- and individual muscle weight changes.
+ Dexa induced a significant loss of muscle, as evidenced by decrements in
+ lean body mass and changes in the weight of individual muscles.
  The effect was progressive, with the losses of lean body mass at day 3
- being roughly half of those at day 7.
+ being roughly half of the losses at day 7.
  The observed time dependence is evidence for a Dexa-specific effect.
- Moreover, lean body mass is essentially unchanged in mice treated with
+ As expected, lean body mass was essentially unchanged in mice treated with
  vehicle alone.
  The measurement of fat body mass indicated that the mice treated with vehicle
  had essentially unchanged tissue fat during the experiment.
  The unchanged lean and fat tissue content is evidence for the fact that
  the experimental manipulations had no effect by themselves.
- The well-being of the study animals was further proven by the fact that
- Dexa exerted its expected stimulating action on body fat accretion.
+ The robustness and quality of the study design of the study animals was
+ supported proven by the fact that Dexa exerted its expected stimulatory
+ effect on accretion of body fat.
 \end_layout
 
 \begin_layout Standard
-The change in total body mass was approximately equal to that in lean body
- mass.
- This may explain why body weight changes (Fig.
+The observed change in total body mass was approximately equal to that in
+ lean body mass.
+ This may explain why changes in body weight (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -23541,41 +23548,52 @@ reference "fig:Body-weight-at-sacrifice"
 
 \end_inset
 
-), were significantly altered by Dexa.
- No other organ or tissue appeared to undergo atrophy upon Dexa treatment.
+), were significantly altered by Dexa treatment.
+ No other organ appeared to undergo atrophy upon Dexa treatment.
  Dissection revealed no significant changes in the size of viscera.
  No detectable changes were seen in the wet weight of the heart (data not
  shown).
 \end_layout
 
 \begin_layout Standard
-Gastrocnemius and quadriceps were the more sensitive muscle to Dexa, whereas
+Gastrocnemius and quadriceps were the more sensitive muscles to Dexa, whereas
  tibialis was essentially unchanged.
  The lack of response in tibialis was surprising, given how common mouse
  tibialis manipulation, such as electroporation of DNA, is described in
  literature.
- All three muscles contain nearly equal masses of fast- and slow-twitch
- fibers, at least in rat
+ A report published during this work similarly failed to observe tibialis
+ anterior atrophy following 14 days treatment with a slightly lower Dexa
+ dose
 \begin_inset CommandInset citation
 LatexCommand citep
-key "delp1996composition"
+key "baehr2011muscle"
 
 \end_inset
 
-, thus excluding an explanation based on the type-specific differences in
- responsiveness.
- The lack of sensitivity in tibialis may be due to the fact that the tendinous
- component is weighing more in relative terms, compared to large fleshy
- muscles.
+.
+ With 54% fast glycolytic fibers in gastrocnemius, compared to 59% in tibialis
+ anterior
+\begin_inset CommandInset citation
+LatexCommand citep
+key "augusto2004skeletal"
+
+\end_inset
+
+, the two muscles appear very similar in fiber type distribution.
+ Therefore, even if fiber typing was not evaluated in my model, it is unlikely
+ that differences in muscle sensitivity stem from differences in fiber type.
+ The lack of sensitivity in tibialis may have been due to the fact that
+ the tendinous component is weighing more in relative terms, compared to
+ large fleshy muscles.
 \end_layout
 
 \begin_layout Standard
-There was a remarkable similarity between the in vivo and in vitro findings.
- Whereas quadriceps and gastrocnemius lost 2-3.5% of their weight for every
- day of Dexa, C2C12 myotubes lost about 5% of their total protein upon Dexa
- treatment.
- This rate is similar to that indicated by Desler for C2C12 myotubes differentia
-ted over three days
+There was a remarkable similarity between the first 3 days of the in vivo
+ experiment and the in vitro findings at 48 hour time point.
+ Whereas quadriceps lost 6% of their weight, C2C12 myotubes lost about 5%
+ of their total protein upon Dexa treatment.
+ This rate is similar to that indicated by Desler for C2C12 myotubes that
+ had been differentiated over three days and then treated with Dexa
 \begin_inset CommandInset citation
 LatexCommand citep
 key "desler1996effects"
@@ -23586,12 +23604,17 @@ key "desler1996effects"
 \end_layout
 
 \begin_layout Standard
-In contrast to the in vivo studies, cells ability to thrive degraded towards
- their third day of Dexa treatment, that is, their ninth day of differentiation.
- The overarching manifestations of cell senescence prevented the assessment
- of myotube atrophy beyond the 48-hour time point.
+In contrast to the in vivo studies, the in vitro study could not have been
+ extended beyond the early days.
+ Cells ability to thrive degraded towards their third day of Dexa treatment,
+ that is, their ninth day of differentiation.
+ The significant reduction in protein synthesis seen at the 72-hour time
+ point suggests that the cells became less metabolically active compared
+ to the 48-hour time point, perhaps due to senescence.
+ Therefore, the in vitro model appears inadequate beyond the 48-hour time
+ point.
  Moreover, the atrophic fibers' diameter becomes comparable with that of
- the nucleus (Fig.
+ the nucleus after the first two days (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -23603,7 +23626,7 @@ reference "fig:myotube-diameters"
  Further reductions in cell diameter would have required a shrinkage of
  the nucleus, which has not been observed in the first two days of myotube
  atrophy.
- It was therefore impossible to develop a more chronic in vitro model of
+ It was therefore not possible to develop a longer term in vitro model of
  muscle atrophy.
 \end_layout
 
@@ -23612,14 +23635,14 @@ Co-administration of Testo alleviated all macroscopic Dexa effects.
  Similar to the profile of Dexa action, in absolute terms, the recovery
  in lean body mass was approximately equal to that in total body weight.
  The percentage by which total body weight, lean body mass, and individual
- muscles recovered are similar, indicating that Testo action was also limited
+ muscles recovered were similar, indicating that Testo action was limited
  to muscle.
 \end_layout
 
 \begin_layout Standard
-The experimental protocol was not ideal for observing the time course of
- the Testo action.
- On one hand, the body weight changes during the 7-day experiment (Fig.
+The experimental protocol may not have been ideal for observing the time
+ course for the Testo action.
+ On the one hand, the body weight changes during the 7-day experiment (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -23627,10 +23650,10 @@ reference "fig:Time-course-of-body-weight"
 
 \end_inset
 
-, top) suggest that the protective action of Testo starts early on, from
+, top) suggest that the protective action of Testo begins with on, from
  the first day of experiment.
- On the other, the time course is not confirmed by the evolution of individual
- muscles' weight (Fig.
+ On the other hand, the time course was not reflected in the individual
+ muscle weight (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -23638,50 +23661,62 @@ reference "fig:Muscles-weights"
 
 \end_inset
 
-), where 7-day samples appear effectively protected by Testo, whereas 3-day
- samples show a more limited anabolic response.
- This discrepancy originates from the fact that the mice analyzed in the
- 7-day study were slightly more developed than those used in the 3-day sample,
- as indicated by the difference in levator muscles at sacrifice between
+).
+ While 7-day samples appear effectively protected by Testo, 3-day samples
+ show a more limited anabolic response.
+ This discrepancy may be due to the fact that the mice analyzed in the 7-day
+ study were slightly more developed than those used in the 3-day sample.
+ This was indicated by the difference in levator muscles at sacrifice between
  vehicle-treated animals at each time point.
- Moreover, the detection of the Testo myoprotective effect may be strained
- by its incomplete nature.
+ Moreover, the detection of the Testo protective effect on muscle mass may
+ be strained by its incomplete nature.
  Because Dexa effect is progressive, its amplitude in the early stages is
  necessarily small.
  When Dexa-induced atrophy is hard to detect, its incomplete reversal will
  be even harder to demonstrate.
- One cannot exclude a temporal dissociation between the actions of the two
- steroids, but the changes surrounding the acute onset of GAML were not
- investigated in more detail, as they were beyond the scope of this work.
- At the 7-day time point, which is the most accurate model of chronic glucocorti
-coid myopathy, the alleviation of GAML is well established.
+ I could not exclude a temporal dissociation between the actions of the
+ two steroids, as the changes surrounding the acute onset of GAML were not
+ investigated in more detail, which was beyond the scope of this work.
+ At the 7-day time point, which is the more representative model of chronic
+ glucocorticoid myopathy, the alleviation of GAML has been well established.
 \end_layout
 
 \begin_layout Standard
 The alleviation following Testo was incomplete in terms of lean body mass
  and individual muscle weights.
  In contrast, total body weight completely recovered.
- The source of this discrepancy is not known.
+ The source of this discrepancy remains unclear.
  Dissection revealed no other viscera with an appearance of hypertrophy
  following Testo co-administration.
  The dose of Testo used here was shown to be effective in rats.
  However, the Dexa dose used in the rat studies was much smaller, suggesting
- that mice studied here would have benefited even more from an increased
- dose of Testo.
- Moreover, mice may be intrinsically less responsive to Testo.
- The effective dose of Testo for fully preventing GAML should be the aim
- of future studies.
- Within the limits of present data, it may be the case that no Testo dose
- would overcome Dexa-induced atrophy, which would then imply that Dexa pro-atrop
-hic mechanisms include pathways outside the scope of AAS action.
+ that mice studied here may have benefited even more from an increased dose
+ of Testo.
+ Moreover, mice may be intrinsically less responsive to Testo than rats,
+ as the former appear to be more resistant to many pharmacological treatments,
+ such as Dexa (reviewed here) or streptozotocin
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tay2005can"
+
+\end_inset
+
+.
+ The most effective dose of Testo to fully prevent GAML should be pursued
+ in future studies.
+ Within the limits of the present data, it may be the case that no Testo
+ dose would have overcomed the Dexa-induced atrophy, which would then imply
+ that atrophy inducing mechanisms of Dexa potentially include pathways outside
+ the scope of anabolic stimuli.
 \end_layout
 
 \begin_layout Standard
-There were differences in the responsiveness to Testo between muscle groups.
+Notably, there were differences in the responsiveness to Testo between muscle
+ groups.
  Similar to Dexa sensitivity, an important component appears to be the tendinous
  content.
- Levator ani is more responsive to Testo than to Dexa, owing probably to
- the increased presence of AR compared to other muscles
+ Levator ani is more responsive to Testo than to Dexa, perhaps being explained
+ by the increased presence of AR compared to other muscles 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bentvelsen1996regulation"
@@ -23691,7 +23726,7 @@ key "bentvelsen1996regulation"
 .
  The apparent dependence of Testo response amplitude to the expression of
  AR indicates that alleviation of GAML by AAS is a specific effect, rather
- than an interaction at GR level.
+ than an interaction at the GR level.
 \end_layout
 
 \begin_layout Standard
@@ -23699,9 +23734,9 @@ In vitro, myoprotective action of Testo was similarly present at late time-point
 s.
  The protection of C2C12 myotubes was dose-dependent, based on the total
  protein assay.
- In a parallel to the in vivo system, the myoprotective effect was more
- salient when data was normalized to the first time point in the experiment
- (fig.
+ Paralleling the in vivo system, the myoprotective effect in C2C12 cells
+ was more pronounced when the data were normalized to the first time point
+ in the experiment (fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -23713,20 +23748,21 @@ reference "fig:protein-mass-cells"
 \end_layout
 
 \begin_layout Section
-Testosterone's myoprotective action is based on the inhibition of the dexamethas
-one-induced proteasome upregulation
+Testosterone’s protective action was driven by the inhibition of the dexamethaso
+ne-induced proteasome upregulation
 \end_layout
 
 \begin_layout Standard
 The mouse model of GAML largely replicated what was known from rat experiments,
- where a strong upregulation of the proteasome system is seconded by alterations
+ where a strong upregulation of the proteasome system is followed by alterations
  in protein synthesis.
 \end_layout
 
 \begin_layout Standard
-In vivo, the E3 ligases also known as atrogenes were upregulated.
- The upregulation of MuRF-1 was precocious, strong, and reached statistical
- significance despite the small sample size.
+In vivo, the E3 ligases also known as atrogenes were upregulated in this
+ model system.
+ The upregulation of MuRF-1 was robust, and reached statistical significance
+ despite a small sample size.
  Upregulation of MuRF-1 was confirmed at early stages in gastrocnemius,
  quadriceps, and triceps (Fig.
  
@@ -23739,17 +23775,15 @@ reference "fig:Atrogenes-expression"
 ; the latter not shown).
  In agreement with published studies, the more specific ligase, MAFbx, was
  upregulated by a lesser percentage than MuRF-1.
- In combination with the practical limitations on sample sizes, the low-grade
- activation of MAFbx strained its detection to a statistically significant
- degree in this experiment.
- Nevertheless, the invariable trend across muscle groups towards increased
- MAFbx expression in response to Dexa indicates that the second atrogene
- was also part of the atrophic transcriptional program.
+ In combination with the practical limitations on sample sizes, the low-level
+ activation of MAFbx limited my ability to obtain statistical significance.
+ Nevertheless, the consistent trend across muscle groups of increased MAFbx
+ expression in response to Dexa indicates that the second atrogene was also
+ part of the atrophic transcriptional program.
  The massive proteasome upregulation observed in day 3 samples increased
  the probability of the hypothetical scenario in which protein degradation
  is limited by proteasome availability, rather than E3 ligases.
- However, day 3 also marks the peak of proteasome catalytic activity (Fig.
- 
+ However, day 3 also marks the peak of proteasome catalytic activity ( 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Proteasome-enzymatic-activity"
@@ -23758,13 +23792,13 @@ reference "fig:Proteasome-enzymatic-activity"
 
 ).
  The synchronized stimulation of the proteasome and of the atrogenes indicates
- that the proteasome - ubiquitin system is at the center of GAML.
+ that the proteasome - ubiquitin system may be at the center of GAML.
 \end_layout
 
 \begin_layout Standard
 All these catabolic changes were inhibited by Testo co-administration.
  In vitro, atrogenes expression was reduced to basal levels, and, in the
- case of day 7 samples, even further below.
+ case of day 7 samples, even below baseline levels.
  The inhibitory effect of Testo on MuRF-1 was predicted by the microarray
  study on rat muscle.
  Similar to the rat study, the changes in MAFbx were also in agreement with
@@ -23778,12 +23812,12 @@ key "serra2013effects"
 
 \end_inset
 
-, has never been investigated in GAML, nor in its alleviation by Testo.
+, has never been investigated in GAML, nor in its attenuation by Testo.
 \end_layout
 
 \begin_layout Standard
 Upregulation of proteasome activity, independent of atrogene status, has
- been reported in others
+ been reported by others
 \begin_inset CommandInset citation
 LatexCommand citep
 key "baehr2014muscle"
@@ -23792,8 +23826,8 @@ key "baehr2014muscle"
 
 .
  It is unclear how Dexa achieves this upregulation.
- In this experiment, limited exploration found no upregulation of transcripts
- for proteasome subunits A6, B10, or D4 (data not shown).
+ In this study, limited evaluation of transcripts for proteasome subunits
+ A6, B10, or D4 were inconclusive (data not shown).
 \end_layout
 
 \begin_layout Standard
@@ -23816,7 +23850,7 @@ key "baehr2011muscle"
  GAML to about half of its amplitude in wild-type mice.
  My data show that, instead of rejecting the proteasome-centered model of
  GAML, future studies should focus on finding alternative ways by which
- the proteasome performs its catabolic function.
+ the proteasome promotes catabolic activity.
  For example, the simplest scenario fitting today's data is one where the
  proteasome performs the clearance of the bulk of dispensable proteins.
  An alternative explanation, which takes into account the subsiding evolution
@@ -23824,7 +23858,7 @@ key "baehr2011muscle"
 on, a yet unidentified myoprotective intracellular factor, thus unleashing
  a cascade of proteasome-independent mechanisms.
  Some limited attempts to detect multiple ubiquitination states for MuRF-1's
- putative substrate, myosin heavy chain, have failed (data not shown).
+ putative substrate, myosin heavy chain, were inconclusive (data not shown).
  If MuRF-1 has only this limited and limiting action, disruption of MuRF-1
  in Baehr's knockout mice could have been supplanted by partially homologous
  genes, such as MuRF-2 or Fbxo40
@@ -23838,13 +23872,13 @@ key "shi2011scf-fbxo40,witt2005murf-1"
  The distinction between the two scenarios is difficult, especially in the
  in vivo approach.
  In either scenario, the role of the proteasome is indispensable for GAML.
- Proteasome inhibition by Testo co-administration emerges as an important
- mechanism of GAML alleviation.
+ Nevertheless, proteasome inhibition by Testo co-administration emerges
+ from this work as an important mechanism of GAML alleviation.
 \end_layout
 
 \begin_layout Standard
-The experiments performed in this study clearly exclude a role for autophagosome
- - lysosome system in digestion of bulk myofiber proteins.
+The experiments performed in this study clearly exclude a role for the autophago
+some - lysosome system in digestion of bulk myofiber proteins.
  The in vivo data indicate a persistent suppression of autophagy-related
  genes across muscle groups and time points.
  Moreover, lysosome-associated cathepsin L enzymatic activity is suppressed
@@ -23856,7 +23890,7 @@ The experiments performed in this study clearly exclude a role for autophagosome
 \end_layout
 
 \begin_layout Standard
-The finding of Dexa-induced autophagy downregulation was unexpected.
+The finding of Dexa-induced downregulation of autophagy was unexpected.
  Some atrophic conditions, most notably starvation, lead to autophagy regulation.
  The rat microarray findings found cathepsin L among the set of genes upregulate
 d by Dexa.
@@ -23872,8 +23906,8 @@ reference "fig:LC3-hyperlipidated"
 , middle).
  However, the microarray results were never validated by qRT-PCR.
  In the present work, when the hyperlipidated LC3 form is normalized to
- its precursor, its levels become essentially unchanged in response to Dexa
- (Fig.
+ its precursor, its levels appeared essentially unchanged in response to
+ Dexa (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -23885,8 +23919,8 @@ reference "fig:LC3-hyperlipidated"
  The accumulation of LC3 protein, both in precursor and mature form, indicates
  reduced capacity in the autophagolysosome compartment, especially in the
  present context of downregulated LC3 protein expression.
- This line of evidence corroborates with the downregulated enzymatic activity
- to refute a putative role for autophagy in bulk GAML.
+ This line of evidence corroborates the downregulated enzymatic activity
+ to collectively exclude a putative role for autophagy in bulk GAML.
 \end_layout
 
 \begin_layout Standard
@@ -23899,7 +23933,8 @@ Intuitively, it is more likely for bulk protein catabolism to be mediated
  cannot be simple inconsequential side effects.
  While the present data solidly exclude a role for bulk protein digestion,
  further studies are needed to elucidate which proteins are spared from
- autophagy during GAML, and what is the regulatory effect of their sparing.
+ autophagy during GAML, and what is the regulatory effect of their sparing
+ from autophagy.
 \end_layout
 
 \begin_layout Standard
@@ -23907,17 +23942,17 @@ While the in vivo data suggested that downregulation of autophagy is part
  of GAML, I found the opposite phenomenon in cell culture experiments.
  There, inhibition of lysosomes with chloroquine had a significant protective
  effect.
- The differences between the in vivo and in vitro data reveal the incompleteness
- of the cell culture model.
- Many factors absent from the cell culture experiment could have caused
- the observed contrast, including myoprotective influences of the motor
- neuron and vascularization.
+ The differences between the in vivo and in vitro data underscore the limitation
+s intrinsic to cell culture models.
+ Many factors absent from the cell culture experiment may explain the observed
+ contrast, including myoprotective influences of the motor neuron at neuromuscul
+ar junctions and vascularization of muscle tissue.
  Moreover, the advanced quiescence of the cultured myotubes contrasts with
- the ample in vivo ability to regenerate.
+ the ample in vivo ability for muscle to regenerate.
  Given the reductionism of the culture cell experiment, the in vivo experiment
  is likely more reflective of what occurs in human glucocorticoid myopathy.
  The fact that Testo reversed most of the in vivo effects of Dexa on autophagy
- suggests that this pathway may be relevant for GAML alleviation.
+ suggests that this pathway may be relevant for GAML attenuation.
 \end_layout
 
 \begin_layout Standard
@@ -23931,25 +23966,25 @@ d changes in calpain enzymatic activity, calpain, or calpastatin protein
  through inhibition of these pathways.
  Moreover, Testo had no reliable effect on the Dexa-induced changes in the
  autophagosome - lysosome pathway.
- Therefore, Testo protection is not mediated by inhibition of cathepsin
- or calpain.
+ Therefore, Testo protection is unlikely to be mediated by inhibition of
+ cathepsin or calpain.
 \end_layout
 
 \begin_layout Standard
 Studies on protein synthesis rate have been strained by the limited technical
  abilities of measuring protein synthesis in mice.
- No study measured changes in the rate of protein synthesis in mice prior
- to this work.
+ No study that I am aware of measured changes in the rate of protein synthesis
+ in mice prior to this work.
  The studies on rats indicated that such measurements are fraught with high
- variability, and will likely fail to detect any effect.
+ variability, and would therefore likely fail to detect any effect.
  I did not measure protein synthesis directly in vivo.
  The measurements of protein synthesis rate in vitro failed to identify
  any significant change in response to Dexa.
  C2C12 cells are surprisingly dependent on protein synthesis, with either
  translational inhibitor cycloheximide and puromycin leading to cell death
- and detachment in hours (data not shown).
+ and detachment within hours (data not shown).
  Overall, the lack of detectable changes in protein synthesis rate agrees
- with findings in rat L6 cells
+ with findings in rat L6 cells 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "menconi2008dexamethasone"
@@ -23991,11 +24026,12 @@ reference "fig:eif3f"
  by Dexa.
  With these data, it was unclear whether the active negative regulator of
  protein synthesis, unphosphorylated 4E-BP was increased or decreased by
- chronic Dexa.
+ chronic Dexa exposure.
  The changes in total and phosphorylated 4E-BP induced by Testo are small,
- and cannot lead to increased inactivation of 4E-BP.
- Therefore, there was no evidence that, at 7-day time point, the protective
- action of Testo benefits from increased protein synthesis.
+ and would be unlikely to lead to increased inactivation of 4E-BP.
+ Therefore, based on these data and the limitations of the model system,
+ there was no evidence that, at 7-day time point, that the protective action
+ of Testo benefited from increased protein synthesis.
 \end_layout
 
 \begin_layout Standard
@@ -24013,9 +24049,8 @@ key "baehr2011muscle"
  findings suggest that acute Dexa represses protein synthesis, whereas chronic
  Dexa is associated with a compensatory restoration of translational capacities.
  At the 7-day time point analyzed in this study, a measurement of protein
- synthesis by Baehr's method would have been indecisive, as the muscle would
- have been midway in the switch from low translation to high translation
- rate.
+ synthesis by Baehr’s method would have been indecisive, as the muscle would
+ have been midway in the switch from a low to high translation rate.
 \end_layout
 
 \begin_layout Standard
@@ -24041,11 +24076,11 @@ reference "fig:Foxo-expression"
 \end_inset
 
 , top).
- Foxo3a surge was even more precocious than the increase in MuRF-1, with
- a statistically significant presence in day 1 samples.
- Moreover, the transcription factor Klf15, which is a target of Foxo transcripti
-on factor, and their synergistic partner in the upregulation of MuRF-1,
- underwent an equally rapid intensification (Fig.
+ A Foxo3a surge was even more robust than the increase in MuRF-1, with a
+ statistically significant presence in day 1 samples.
+ Moreover, the transcription factor Klf15, which is a target of Foxo, and
+ their synergistic partner in the upregulation of MuRF-1, underwent an equally
+ rapid intensification (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -24059,18 +24094,18 @@ reference "fig:Foxo-expression"
 \begin_layout Standard
 In addition to repression of atrogenes, Testo reverses other actions of
  Dexa.
- This efficient, multi-directional action of Testo suggests that it acts
- on a higher-level mediator of GAML.
+ This efficient, multi-directional action of Testo suggests that it may
+ act on a higher-level mediator of GAML.
  Two molecular levers responded in a uniform, consistent manner to the two
  steroids, and therefore may be high-level mediators of AAS and GC.
  The first is REDD1 / Ddit4, the negative regulator of mTORC1.
  Dexa consistently upregulated REDD1 expression in samples from days 1,
  3, and 7.
- The amplitude of upregulation decreases in time.
+ The amplitude of upregulation decreased with time.
  A time course where Dexa amplifies REDD1 only for the first week could
  explain Baehr's observations on protein synthesis changes during GAML.
  As REDD1 inhibition of mTORC1 subsides, the 4E-BP-mediated brake on protein
- synthesis is gradually removed.
+ synthesis is gradually reduced.
  Testo co-administration reversed REDD1 upregulation to a significant degree
  at 7-day time point, when Dexa-induced amplification was at its lowest.
  Further experiments are needed to analyze the relationship between REDD1
@@ -24091,7 +24126,7 @@ reference "fig:Akt-phosphorylation"
 
 ), which in turn is expected to protect Foxo from export to cytosol and
  proteasome-mediated destruction.
- AAS had no effect on Ser 473 phosphorylation.
+ AAS had no apparent effect on Ser 473 phosphorylation.
  The discrepancy between Ser 473 phosphorylation and muscle recovery may
  be explained within the model described by Britto
 \begin_inset CommandInset citation
@@ -24104,8 +24139,8 @@ key "britto2014redd1"
 on during GAML.
  Another explanation is based on the ability of Dexa to disconnect Akt from
  insulin and IGF-I signals (discussed in a dedicated section).
- The only other trait shared between mice receiving Dexa and Comb is accumulatio
-n of fat mass, suggestive of whole-body insulin resistance.
+ The only other trait shared between mice receiving Dexa with versus without
+ Testo is accumulation of fat mass, suggestive of whole-body insulin resistance.
  At the level of muscle, Dexa induces insulin resistance by interference
  at IRS 1 and p85 levels.
 \end_layout
@@ -24114,7 +24149,8 @@ n of fat mass, suggestive of whole-body insulin resistance.
 The other reliable change in GAML and its alleviation by Testo was observed
  in IGF-I expression.
  In agreement with studies on rats, Dexa reduced IGF-I expression, while
- Testo co-administration restored it to basal levels (Fig.
+ Testo co-administration restored reduced IGF-I expression to basal levels
+ (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -24136,8 +24172,8 @@ In vitro, I attempted to gauge the role of IGF-1R in Testo myoprotection.
  However, the same experiment uncovered a series of other shortcomings of
  the cell culture experiment, including a higher reliance on autophagy compared
  to the in vivo model.
- Better causal inferences will be made by employing in vivo transgenic models
- of interference with the IGF-I / Akt / mTORC1 axis.
+ Better causal inferences could be made by employing in vivo transgenic
+ models of interference within the IGF-I / Akt / mTORC1 axis.
 \end_layout
 
 \begin_layout Section
@@ -24146,33 +24182,35 @@ Future directions
 
 \begin_layout Standard
 This work demonstrates that Testo protects mouse muscle in vivo and in vitro
- by reversing the Dexa-induced upregulation of proteasome.
+ by reversing the Dexa-induced upregulation of proteasome activity.
  On the other hand, the set of E3 ligases that cause GAML is incomplete.
  The role of candidates such as Fbxo40 remains to be investigated.
- Future studies will need to find if Testo suppresses the other E3 ligases.
+ Future studies will need to determine whether Testo suppresses the other
+ E3 ligases.
 \end_layout
 
 \begin_layout Standard
 At this time, the mechanisms by which Dexa upregulates Foxo transcription
- factors is the subject of speculation.
+ factors is a subject of speculation.
  Even less is known about the way in which Testo represses Foxo.
- Chromatin immunoprecipitation tests using Foxo promoters are required.
+ Chromatin immunoprecipitation tests using Foxo promoters would help resolve
+ this question.
 \end_layout
 
 \begin_layout Standard
-The in vivo experiment suggested that Testo also reversed Dexa-induced repressio
-n of autophagy.
- The role of autophagy in GAML will be better understood by observing the
+The in vivo experiment suggest that Testo also reversed Dexa-induced repression
+ of autophagy.
+ The role of autophagy in GAML would be better understood by observing the
  effects of GC and AAS on muscle from LC3-GFP transgenic mice.
 \end_layout
 
 \begin_layout Standard
 Both autophagy and protein synthesis appeared to have changed in time, during
  the in vivo experiment.
- Because it was performed as three independent experiments, its ability
- to observe the time course of changes was limited.
- A more fine-grained exploration of their time course is required, in order
- to establish which changes in protein metabolism are late-onset, reactive
+ Because they were performed as three independent experiments, an ability
+ to infer the time course of changes was limited.
+ A direct exploration of time-dependent changes is required, in order to
+ establish which changes in protein metabolism are late-onset, reactive
  adjustments.
 \end_layout
 
@@ -24182,14 +24220,15 @@ I was not able to observe the effect of IGF-I modulation, due to an overarching
  from their Akt effector.
  The mechanisms by which Dexa achieve this disconnection are largely the
  subject of speculation.
- Studies that establish if and how GR interferes with the IGF-I / Akt pathway
- are needed.
+ Future studies that establish if and how GR interferes with the IGF-I /
+ Akt pathway are needed.
 \end_layout
 
 \begin_layout Standard
 Transgenic models, such as the triple Foxo knockout, are needed, in order
  to determine the relative importance and the eventual interaction between
- Foxo and mTOR pathways.
+ Foxo and the mTOR pathway.
+ 
 \end_layout
 
 \begin_layout Section
@@ -24197,11 +24236,12 @@ Conclusions
 \end_layout
 
 \begin_layout Standard
-Testo co-administration alleviates loss of muscle mass caused by GC in mice.
- Testo myoprotection is exerted through an inhibition of the proteasome,
- mediated by Foxo and REDD1.
+Testo co-administration attenuates the loss of muscle mass induced by GC
+ administration in mice.
+ Based on the model systems used in this thesis, Testo myoprotection was
+ exerted through an inhibition of the proteasome, mediated by Foxo and REDD1.
  Changes in these, as well as in IGF-I intramuscular expression, indicate
- that the two classes of steroids counter each other's effect on the Akt
+ that the two classes of steroids counter each other’s effect on the Akt
  signaling pathway (Fig.
  
 \begin_inset CommandInset ref
@@ -24212,10 +24252,11 @@ reference "fig:Mechanisms-of-AAS"
 
 ).
  AAS therapy may be beneficial for a subset of male adult patients receiving
- chronic GC, especially if they present with biochemical and clinical hypogonadi
-sm.
+ chronic GC as a treatment, especially if they present with biochemical
+ and clinical signs of hypogonadism.
  The relative importance of the proteasome in glucocorticoid myopathy suggests
- that Testo may be a replaced with bortezomib or another proteasome inhibitor.
+ that in addition to Testo, other more direct proteasome inhibitors such
+ as bortezomib, may be useful as adjunctive therapy.
 \end_layout
 
 \begin_layout Standard
@@ -24323,8 +24364,8 @@ Research experience
 2012-2015: Department of Medicine, Boston University School of Medicine,
  P.I.
  Dr.
- Shalender Bhasin, under the supervision of Dr.
- Carlo Serra
+ Shalender Bhasin, under the supervision of Drs.
+ Carlo Serra and Monty Montano
 \end_layout
 
 \begin_deeper
