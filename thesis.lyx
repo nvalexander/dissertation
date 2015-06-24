@@ -119,7 +119,7 @@ linebreak
 
 \end_inset
 
- DIVISION OF GRADUATE MEDICAL SCIENCES
+ SCHOOL OF MEDICINE
 \begin_inset ERT
 status open
 
@@ -6114,15 +6114,8 @@ description "IGF-I receptor"
 
 \end_inset
 
-), with a half maximal effective concentration (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "EC50"
-description "half maximal effective concentration"
-
-\end_inset
-
-) about an order of magnitude lower than physiological insulinemia.
+), with an EC50 of about an order of magnitude lower than physiological
+ insulinemia.
  The converse is true, with IGF-I being able to bind and activate insulin
  receptor (IR), isoforms A and B.
  There is a small, but real, potential for interference between insulin
