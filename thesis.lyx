@@ -16655,8 +16655,9 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "3in", fig.width = 6, fig.height = 3, dev="cairo_pdf"
+bodyweightsatsacrifice, echo = FALSE, warning = FALSE, message = FALSE,
+ out.width = "6in", out.height = "3in", fig.width = 6, fig.height = 3, dev="cairo_pd
+f"
 \end_layout
 
 \end_inset
@@ -16991,8 +16992,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "5in", fig.width = 6, fig.height = 5, dev="cairo_pdf"
+weightcourse, echo = FALSE, warning = FALSE, message = FALSE, out.width =
+ "6in", out.height = "5in", fig.width = 6, fig.height = 5, dev="cairo_pdf"
 \end_layout
 
 \end_inset
@@ -17536,8 +17537,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6.5in", out.height
- = "5in", fig.width = 6.5, fig.height = 5, dev='cairo_pdf'
+leanfat, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6.5in",
+ out.height = "5in", fig.width = 6.5, fig.height = 5, dev='cairo_pdf'
 \end_layout
 
 \end_inset
