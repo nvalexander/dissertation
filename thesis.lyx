@@ -16,8 +16,8 @@ knitr
 \inputencoding ascii
 \fontencoding global
 \font_roman Georgia
-\font_sans default
-\font_typewriter default
+\font_sans Liberation Sans Narrow
+\font_typewriter Liberation Mono
 \font_math auto
 \font_default_family default
 \use_non_tex_fonts true
