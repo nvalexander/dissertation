@@ -17727,8 +17727,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "8.5in", fig.width = 6, fig.height = 8.5, dev='cairo_pdf'
+muscleweights, echo = FALSE, warning = FALSE, message = FALSE, out.width
+ = "6in", out.height = "8.5in", fig.width = 6, fig.height = 8.5, dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -18261,8 +18261,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "8in", fig.width = 6, fig.height = 8, dev='cairo_pdf'
+atrogenes, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
+ out.height = "8in", fig.width = 6, fig.height = 8, dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -18584,8 +18584,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "4in", fig.width = 6, fig.height = 4,dev='cairo_pdf'
+proteasomeactivity, echo = FALSE, warning = FALSE, message = FALSE, out.width
+ = "6in", out.height = "4in", fig.width = 6, fig.height = 4,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -18757,8 +18757,9 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "7in", fig.width = 6, fig.height = 7,dev='cairo_pdf'
+gastrocnemiusautophagy, echo = FALSE, warning = FALSE, message = FALSE,
+ out.width = "6in", out.height = "7in", fig.width = 6, fig.height = 7,dev='cairo_pdf
+'
 \end_layout
 
 \end_inset
@@ -19067,8 +19068,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "5.5in", fig.width = 6, fig.height = 5.5,dev='cairo_pdf'
+cathepsinactivity, echo = FALSE, warning = FALSE, message = FALSE, out.width
+ = "6in", out.height = "5.5in", fig.width = 6, fig.height = 5.5,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -19242,8 +19243,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "3in", out.height
- = "2.in", fig.width = 3, fig.height = 2.3>>=
+<<lcprotein, echo = FALSE, warning = FALSE, message = FALSE, out.width =
+ "3in", out.height = "2.in", fig.width = 3, fig.height = 2.3>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -19349,8 +19350,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2in", fig.width = 6, fig.height = 2,dev='cairo_pdf'
+calpainactivity, echo = FALSE, warning = FALSE, message = FALSE, out.width
+ = "6in", out.height = "2in", fig.width = 6, fig.height = 2,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -19517,8 +19518,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "3in", out.height
- = "2.in", fig.width = 3, fig.height = 2.3>>=
+<<eiftwo, echo = FALSE, warning = FALSE, message = FALSE, out.width = "3in",
+ out.height = "2.in", fig.width = 3, fig.height = 2.3>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -19659,8 +19660,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "3in", out.height
- = "2.in", fig.width = 3, fig.height = 2.3>>=
+<<eifthree, echo = FALSE, warning = FALSE, message = FALSE, out.width = "3in",
+ out.height = "2.in", fig.width = 3, fig.height = 2.3>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -19853,8 +19854,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2.3in", fig.width = 6, fig.height = 2.3>>=
+<<fourebp, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
+ out.height = "2.3in", fig.width = 6, fig.height = 2.3>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -20108,8 +20109,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "5in", fig.width = 6, fig.height = 5,dev='cairo_pdf'
+foxogene, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
+ out.height = "5in", fig.width = 6, fig.height = 5,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -20374,8 +20375,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2.1in", fig.width = 6, fig.height = 2.1>>=
+<<gastrocnemiusakt, echo = FALSE, warning = FALSE, message = FALSE, out.width
+ = "6in", out.height = "2.1in", fig.width = 6, fig.height = 2.1>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -20452,8 +20453,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2.1in", fig.width = 6, fig.height = 2.1>>=
+<<levatorakt, echo = FALSE, warning = FALSE, message = FALSE, out.width =
+ "6in", out.height = "2.1in", fig.width = 6, fig.height = 2.1>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -20766,8 +20767,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "2.2in", fig.width = 6, fig.height = 2.2,dev='cairo_pdf'
+redd, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in",
+ out.height = "2.2in", fig.width = 6, fig.height = 2.2,dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -20854,7 +20855,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
+Igf, echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
  = "5in", fig.width = 6, fig.height = 5,dev='cairo_pdf'
 \end_layout
 
@@ -21348,8 +21349,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "3in", out.height
- = "2.3in", fig.width = 3, fig.height = 2.3>>=
+<<celldiams, echo = FALSE, warning = FALSE, message = FALSE, out.width =
+ "3in", out.height = "2.3in", fig.width = 3, fig.height = 2.3>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -22000,8 +22001,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-echo = FALSE, warning = FALSE, message = FALSE, out.width = "5in", out.height
- = "4.5in", fig.width = 5, fig.height = 4.5, dev='cairo_pdf'
+totalprotein, echo = FALSE, warning = FALSE, message = FALSE, out.width =
+ "5in", out.height = "4.5in", fig.width = 5, fig.height = 4.5, dev='cairo_pdf'
 \end_layout
 
 \end_inset
@@ -22222,8 +22223,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "4.5in", fig.width = 6, fig.height = 4.5>>=
+<<proteinsynthesis, echo = FALSE, warning = FALSE, message = FALSE, out.width
+ = "6in", out.height = "4.5in", fig.width = 6, fig.height = 4.5>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -22553,8 +22554,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "4.5in", fig.width = 6, fig.height = 4.5>>=
+<<proteindegradation, echo = FALSE, warning = FALSE, message = FALSE, out.width
+ = "6in", out.height = "4.5in", fig.width = 6, fig.height = 4.5>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -23206,8 +23207,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<echo = FALSE, warning = FALSE, message = FALSE, out.width = "6in", out.height
- = "4in", fig.width = 6, fig.height = 4>>=
+<<inhibitors, echo = FALSE, warning = FALSE, message = FALSE, out.width =
+ "6in", out.height = "4in", fig.width = 6, fig.height = 4>>=
 \end_layout
 
 \begin_layout Plain Layout
