@@ -3726,7 +3726,7 @@ During the 1950's, AAS became part of the standard of care for endogenous
  ACTH assays differentiate ACTH-independent cases (typically adrenal tumors)
  from the ACTH-dependent ones (usually localized in the pituitary).
  Modern imaging, including computed tomography of the adrenal and magnetic
- resonance imaging of the pituitary, rapidly identify the target or surgery.
+ resonance imaging of the pituitary, rapidly identify the target for surgery.
  AAS therapy is now confined to inoperable cases, including unidentified
  ectopic sources of ACTH or cortisone.
  Even these cases benefit from more targeted interventions (see Table 
@@ -4378,7 +4378,7 @@ description "dehydroepiandrosterone sulfate"
 ), which originate from the adrenal and, to a lesser degree, from gonads.
  Their most important role appears to be that of precursors for synthesis,
  in glands and peripheral tissue, of androgens and estrogens.
- DHEA has some affinity for the AR, which suggested it miht be an AAS.
+ DHEA has some affinity for the AR, which suggested it might be an AAS.
  Recent studies indicate that, in human female tissue, DHEA may in fact
  be a partial agonist, hindering the action of T
 \begin_inset CommandInset citation
@@ -4629,8 +4629,8 @@ key "sinha-hikim2006effects"
 \end_layout
 
 \begin_layout Standard
-Testo causes improvement in the net balance between protein synthesis and
- degradation at muscle level
+Testo improves the net balance between protein synthesis and degradation
+ at muscle level
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ferrando2002testosterone"
@@ -4989,7 +4989,7 @@ key "mescher2013junqueiras"
  In turn, epimysium emits connective septing structures termed perimysium,
  splitting muscles into subunits termed fascicles.
  At an even lower level, a thin, sparse connective structure called endomysium
- coats each multinucleated, elongated cell (termed myofiber).
+ coats each multinucleate, elongated cell (termed myofiber).
  The connective tissue inside the muscle provides mechanical anchoring between
  fibers, longitudinally, laterally and with the tendons.
  This is particularly true of perimysium, which is almost acellular, at
@@ -5011,8 +5011,8 @@ key "light1984characterization"
 \end_layout
 
 \begin_layout Standard
-The elongated, multinucleated myofiber is the histological base unit of
- contractile tissue.
+The elongated, multinucleate myofiber is the histological base unit of contracti
+le tissue.
  A large majority of the myofiber cytosol is the contractile apparatus,
  in the shape of bundles of protein filaments termed myofibrils.
  Within myofibrils, myosin and actin filaments alternate, held together
@@ -5077,7 +5077,7 @@ key "scharner2011muscle"
  in a functional manner, as proliferating cells able to fuse with myofibers.
  In vivo, myoblasts are derived from a subset of satellite cells.
  A transplant of seven satellite cells from an adult mouse is capable of
- yielding more than a hundred multinucleated myofibers, thus demonstrating
+ yielding more than a hundred multinucleate myofibers, thus demonstrating
  former's ability to regenerate muscle
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5118,10 +5118,10 @@ key "blanco-bose2001purification"
 \end_inset
 
 .
- Many in vitro muscle models are based on the formation of multinucleated
+ Many in vitro muscle models are based on the formation of multinucleate
  fibers from isolated myoblasts.
  In vivo, myofiber nuclei are typically peripheral, while in vitro multinucleate
-d cells are characterized by central nuclei, akin to regenerating fibers.
+ cells are characterized by central nuclei, akin to regenerating fibers.
  The latter are typically termed myotubes.
 \end_layout
 
@@ -5164,7 +5164,7 @@ During experiments that perturb muscle mass equilibrium, the level of the
 \end_layout
 
 \begin_layout Section
-Preadult muscle development
+Pre-adult muscle development
 \end_layout
 
 \begin_layout Standard
@@ -6814,8 +6814,8 @@ description "insulin receptor substrate"
  a p70-S6K - IRS 1-mediated negative feedback loop.
  Quy found that mTORC1 activation is lost upon proteasome inhibition with
  bortezomib.
- One can hypothesize the existence of an mTOR negative regulator which is
- specifically targeted by the ubiquitin-proteasome system during denervation.
+ One can hypothesize the existence of an mTOR negative regulator, which
+ is specifically targeted by the ubiquitin-proteasome system during denervation.
  Alternatively, mTORC1 activation may be caused by the preceding upregulation
  of proteasome, which is stimulating BCAA release.
  The mechanism by which mTORC1 is stimulated by denervation remains to be
@@ -7376,8 +7376,8 @@ key "prezant1997gender-specific"
 \end_layout
 
 \begin_layout Standard
-The nitrogen imbalance induced by Dexa slows down by the third day, and
- is compensated around the seventh day of treatment
+In rats, the nitrogen imbalance induced by Dexa slows down by the third
+ day, and is compensated around the seventh day of treatment
 \begin_inset CommandInset citation
 LatexCommand citep
 key "minet-quinard2000induction,bowes1996effect"
@@ -7479,8 +7479,24 @@ key "goldberg1969protein"
 \end_inset
 
 .
- His comparison of fast-twitch plantaris and slow-twitch soleus found that
- the latter did not exhibit lower muscle mass, not increased proteolysis.
+ His comparison of 
+\begin_inset Quotes eld
+\end_inset
+
+fast-twitch
+\begin_inset Quotes erd
+\end_inset
+
+ plantaris and 
+\begin_inset Quotes eld
+\end_inset
+
+slow-twitch
+\begin_inset Quotes erd
+\end_inset
+
+ soleus found that the latter did not exhibit lower muscle mass, not increased
+ proteolysis.
  Goldberg found that cortisone increases in equal manner the degradation
  of older and newer proteins, and of myofibril and sarcoplasmic proteins.
  A search begun for an undiscriminating proteolytic machine stimulated by
