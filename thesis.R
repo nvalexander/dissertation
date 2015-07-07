@@ -113,6 +113,7 @@ condsVDCABmetabolism <- c("V", "D", "DD", "DDT", "DDTT")
 condsVDCinhibitors <- c("V", "D", "DC", "DM", "DTT", "DTTP")
 conditionsVDC <- c("Veh", "Dexa", "Comb")
 conditionsVDCpresentation <- c("Veh", "Dexa", "Dexa + Testo")
+conditionsVDCpresentationwrap <- c("Veh", "Dexa", "Dexa\n&Testo")
 conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
 conditionsVDCmetabolism <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 500 nM T")
 conditionsVDCAmetabolism <- c(
@@ -1845,16 +1846,16 @@ presentationbodyweights <- function(){
                                 onedayweightstat) +
       annotationastitle("one day", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDC),
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
     threecolumnplotpresentation(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "body.weight.gain.after.3.days..percent.")], 
-                                ylabel, 
+                                "", 
                                 ylimit, 
                                 threedayweightstat) +
       annotationastitle("three days", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) +
       scale_x_discrete(labels = threeemptystrings),
     threecolumnplotpresentation(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "body.weight.gain.after.7.days..percent.")], 
-                                ylabel, 
+                                "", 
                                 ylimit, 
                                 sevendayweightstat) +
       annotationastitle("seven days", 2, ylimit[[2]]) + 
