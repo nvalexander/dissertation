@@ -2002,10 +2002,24 @@ plotmuscleweightspresentation <- function(){
     c("a", "b", "b")
   )
   plotslist <- list()
+  widerplotlist <- list()
   for (i in 1:5){
     shortdf1 <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])]
     shortdf3 <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])]
     shortdf7 <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])]
+    shortdf1bis <- shortdf1
+    shortdf3bis <- shortdf3
+    shortdf7bis <- shortdf7
+    shortdf1bis$day <- rep("one day", dim(shortdf1)[1])
+    shortdf3bis$day <- rep("three days", dim(shortdf3)[1])
+    shortdf7bis$day <- rep("seven days", dim(shortdf7)[1])
+    longerdf <- shortdf1bis
+    print(longerdf)
+    rbind(longerdf, shortdf3bis)
+    print(longerdf)
+    rbind(longerdf, shortdf7bis)
+    print(longerdf)
+    widerplotlist[[i]] <- ninecolumnplotpresentation(longerdf, ylabels[[i]], ylims[[i]], "")
     plotslist[[i*3-2]] <- threecolumnplotpresentation(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
     plotslist[[i*3-1]] <- threecolumnplotpresentation(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threecolumnplotpresentation(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
@@ -2018,6 +2032,7 @@ plotmuscleweightspresentation <- function(){
         annotationastitle("seven days", 2, ylims[[i]][[2]])
     }
   }
+  return(widerplotlist[[1]])
   return(grid.arrange(
     blankgrob,
     plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius
