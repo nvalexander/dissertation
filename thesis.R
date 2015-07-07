@@ -483,13 +483,13 @@ ninecolumnplotpresentation <-  function(skinnydataset, ylabel, ylimit, statstrin
       stat_summary(geom = 'errorbar',
                    fun.data = 'semInterval',
                    width = 0.1) +
-      stat_summary(geom = "text", 
-                   size = presentationTextSize * .4,
-                   aes(family = "Cabin"),
-                   fun.y = statstringyoverbar, 
-                   hjust = .5,
-                   vjust = -.6,
-                   label = statstrings) +
+#       stat_summary(geom = "text", 
+#                    size = presentationTextSize * .4,
+#                    aes(family = "Cabin"),
+#                    fun.y = statstringyoverbar, 
+#                    hjust = .5,
+#                    vjust = -.6,
+#                    label = statstrings) +
       ylab(ylabel) +
       coord_cartesian(ylim = ylimit) + 
       scale_fill_manual(values = presentationcolors) +
@@ -2026,6 +2026,7 @@ plotmuscleweightspresentation <- function(){
         annotationastitle("seven days", 2, ylims[[i]][[2]])
     }
   }
+  return(grid.arrange(widerplotlist[[1]], widerplotlist[[2]], widerplotlist[[3]], ncol = 1))
   return(grid.arrange(
     blankgrob,
     plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius
