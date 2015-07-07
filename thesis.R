@@ -2019,3 +2019,43 @@ plotcelldiamspresentation <- function() {
       scale_x_discrete(labels = conditionsVDCpresentationwrap))
 }
 #svg("celldiameters.svg", width = 3, height = 3); plotcelldiamspresentation(); dev.off(); system ("inkscape celldiameters.svg --export-emf=celldiameters.emf")
+
+plottotalproteinpresentation <- function(){
+  unnormalizeddata <- 
+    SynthesisInCellsVDCA[, 
+                         colnames(SynthesisInCellsVDCA) %in% c(
+                           "treatment", 
+                           "TimeDays", 
+                           "cell_protein_density_microgram_per_cmsq")]
+  unnormalizeddata$treatment <- factor(
+    unnormalizeddata$treatment,
+    levels = condsVDCAmetabolism)
+  normalizeddata <- 
+    SynthesisInCellsVDCA[, 
+                         colnames(SynthesisInCellsVDCA) %in% c(
+                           "treatment", 
+                           "TimeDays", 
+                           "cell_protein_density_microgram_per_cmsq_normalized_to_first_day")]
+  normalizeddata$treatment <- factor(
+    normalizeddata$treatment,
+    levels = condsVDCAmetabolism)
+  return(
+    plotfourtimecourses(
+      normalizeddata,  
+      c(0.83, 1.13), 
+      "total protein density\n(normalized to initial time point)",
+      conditionsVDCAcells,
+      c("", "", "", "",
+        "", "", "", "",
+        "", "", "", "",
+        "", "", "", "")) +
+      scale_shape_manual(
+        values = c(16, 4, 1, 13), 
+        labels = conditionsVDCAmetabolism, 
+        guide = "none") +
+      scale_y_continuous(breaks = ((18:22*.05)), labels = percent) +
+      theme(
+        legend.position = c(0, 0), 
+        legend.justification = c(0, 0), 
+        legend.direction = "horizontal"))
+}
