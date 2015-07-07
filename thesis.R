@@ -232,6 +232,7 @@ DegradationWithInhibitors$treatment <- factor(
 unistar <- sprintf('\u2736')
 unidagger <- sprintf('\u2020')
 threeemptystrings <- c("", "", "")
+threespaces <- c(" ", " ", " ")
 threeidenticalgroups <- c("a", "a", "a")
 
 #helper maths functions
@@ -380,8 +381,8 @@ presentationbarplot <-
         axis.title.x = element_blank(),
         axis.text.x = element_blank(),
         axis.title.y = element_text(size = presentationTextSize, angle = 0),
-        axis.text.x = element_text(size = presentationTextSize),
-        axis.text.y = element_text(size = presentationTextSize))
+        axis.text.x = element_text(size = presentationTextSize * .7),
+        axis.text.y = element_text(size = presentationTextSize * .7))
 
 annotationastitle <- function(text, x, y) {
   return(annotate(geom = "text", label = text, x = x, y = y,
@@ -1853,13 +1854,13 @@ presentationbodyweights <- function(){
                                 threedayweightstat) +
       annotationastitle("three days", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) +
-      scale_x_discrete(labels = threeemptystrings),
+      scale_x_discrete(labels = threespaces),
     threecolumnplotpresentation(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "body.weight.gain.after.7.days..percent.")], 
                                 "", 
                                 ylimit, 
                                 sevendayweightstat) +
       annotationastitle("seven days", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) +
-      scale_x_discrete(labels = threeemptystrings),
+      scale_x_discrete(labels = threespaces),
     ncol=3))
 }
