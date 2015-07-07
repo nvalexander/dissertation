@@ -2012,9 +2012,10 @@ plotcelldiamspresentation <- function() {
   return(threecolumnplotpresentation(rescaledtovehicleasunity(
     InvitroCelldiamsCVD[, colnames(InvitroCelldiamsCVD) %in% 
                           c("treatment", "mean")]), 
-    "mean diameter (rel. u.)", 
+    "", 
     c(0, 1.2), 
     c("a", "b", "a")) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDCpresentationwrap))
 }
+#svg("celldiameters.svg", width = 3, height = 3); plotcelldiamspresentation(); dev.off(); system ("inkscape celldiameters.svg --export-emf=celldiameters.emf")
