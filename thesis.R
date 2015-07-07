@@ -1836,21 +1836,21 @@ presentationbodyweights <- function(){
   threedayweightstat <- c("a,b", "a", "b")
   sevendayweightstat <- threeidenticalgroups
   return(grid.arrange(
-    threecolumnplot(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "day.2.body.weight..g.")], 
+    threecolumnplotpresentation(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "day.2.body.weight..g.")], 
                     ylabel, 
                     ylimit, 
                     onedayweightstat) +
       annotationastitle("one day", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
-    threecolumnplot(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "day.4.body.weight..g.")], 
+    threecolumnplotpresentation(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "day.4.body.weight..g.")], 
                     ylabel, 
                     ylimit, 
                     threedayweightstat) +
       annotationastitle("three days", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) +
       scale_x_discrete(labels = threeemptystrings),
-    threecolumnplot(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "day.8.body.weight..g.")], 
+    threecolumnplotpresentation(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "day.8.body.weight..g.")], 
                     ylabel, 
                     ylimit, 
                     sevendayweightstat) +
