@@ -1830,27 +1830,27 @@ presentationbodyweightcourse <- function(){
 #svg("weight time course.svg", width = 8, height = 5); presentationbodyweightcourse(); dev.off()
 
 presentationbodyweights <- function(){
-  ylabel <- "body weight (g)"
-  ylimit <- c(0, 32)
-  onedayweightstat <- c("a", "b", "a,b")
-  threedayweightstat <- c("a,b", "a", "b")
-  sevendayweightstat <- threeidenticalgroups
+  ylabel <- "body weight (percent gain)"
+  ylimit <- c(0, 8)
+  onedayweightstat <- threeidenticalgroups
+  threedayweightstat <- threeidenticalgroups
+  sevendayweightstat <- c("a", "b", "a")
   return(grid.arrange(
-    threecolumnplotpresentation(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "day.2.body.weight..g.")], 
+    threecolumnplotpresentation(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "body.weight.gain.after.1.days..percent.")], 
                     ylabel, 
                     ylimit, 
                     onedayweightstat) +
       annotationastitle("one day", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
-    threecolumnplotpresentation(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "day.4.body.weight..g.")], 
+    threecolumnplotpresentation(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "body.weight.gain.after.3.days..percent.")], 
                     ylabel, 
                     ylimit, 
                     threedayweightstat) +
       annotationastitle("three days", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) +
       scale_x_discrete(labels = threeemptystrings),
-    threecolumnplotpresentation(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "day.8.body.weight..g.")], 
+    threecolumnplotpresentation(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "body.weight.gain.after.7.days..percent.")], 
                     ylabel, 
                     ylimit, 
                     sevendayweightstat) +
