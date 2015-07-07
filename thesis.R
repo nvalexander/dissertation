@@ -1926,3 +1926,80 @@ plotleanfatpresentation <- function(){
     ncol = 3))
 }
 #svg("leanfat.svg", width = 9, height = 4 ); plotleanfatpresentation(); dev.off()
+
+plotmuscleweightspresentation <- function(){
+  #alphabetical order
+  columnnames <- c("gastrocnemius..mg.",
+                   "levator..mg.",
+                   "quadriceps..mg.",
+                   "tibialis..mg.",
+                   "triceps..mg.")
+  ylabels <- c("gastrocnemius (mg)",
+               "levator ani (mg)",
+               "quadriceps (mg)",
+               "tibialis ant. (mg)",
+               "triceps br. (mg)")
+  ylabels <- rep("", 5)
+  ylims <- list(c(0, 180),
+                c(0, 100), 
+                c(0, 225),
+                c(0, 75),
+                c(0, 150))
+  statstrings <- list(
+    #gastrocnemia1,3,7:
+    threeidenticalgroups,
+    c("a", "b", "a,b"),
+    c("a", "b", "a,b"),
+    #levators1,3,7:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    c("a", "b", "a,b"),
+    #quadriceps:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    c("a", "b", "a,b"),
+    #tibialis:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups,
+    #triceps:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    c("a", "b", "b")
+  )
+  plotslist <- list()
+  for (i in 1:5){
+    shortdf1 <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])]
+    shortdf3 <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])]
+    shortdf7 <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])]
+    plotslist[[i*3-2]] <- threecolumnplotpresentation(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <- threecolumnplotpresentation(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threecolumnplotpresentation(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
+    if ((columnnames[[i]] == "gastrocnemius..mg.") | (columnnames[[i]] == "quadriceps..mg.")){
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] +
+        annotationastitle("one day", 2, ylims[[i]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        annotationastitle("three days", 2, ylims[[i]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        annotationastitle("seven days", 2, ylims[[i]][[2]])
+    }
+    if (columnnames[[i]] == "tibialis..mg.") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDCpresentationwrap)
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDCpresentationwrap)
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDCpresentationwrap)
+    }
+  }
+  return(grid.arrange(
+    plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius
+    plotslist[[13]], plotslist[[14]], plotslist[[15]], # triceps
+    plotslist[[7]], plotslist[[8]], plotslist[[9]], # quadriceps
+    plotslist[[4]], plotslist[[5]], plotslist[[6]], # levator
+    plotslist[[10]], plotslist[[11]], plotslist[[12]], # tibialis
+    ncol = 6))
+}
