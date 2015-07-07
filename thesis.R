@@ -113,6 +113,7 @@ condsVDCAmetabolism <- c("V", "DD", "DDT", "DDTT")
 condsVDCABmetabolism <- c("V", "D", "DD", "DDT", "DDTT")
 condsVDCinhibitors <- c("V", "D", "DC", "DM", "DTT", "DTTP")
 conditionsVDC <- c("Veh", "Dexa", "Comb")
+conditionsVDCpresentation <- c("Veh", "Dexa", "Dexa + Testo")
 conditionsVDTC <- c("Veh", "Dexa", "Testo", "Comb")
 conditionsVDCmetabolism <- c("Veh", "1 µM Dexa", "1 µM Dexa\n+ 500 nM T")
 conditionsVDCAmetabolism <- c(
@@ -314,12 +315,14 @@ rescaledtovehicleaszero <- function(x){
 
 #GENERIC PLOTTING
 textSize <- 11
+presentationTextSize <- 14
 nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 meaningfulpalette <- c("#444444", "#dd0000", "#00dd00", "#0000dd", "#888800", "#880088", "#008888", "#dddddd")
 greypalette <- c("#ffffff", "#222222", "#999999", "#0000dd", "#00dd00", "#dd0000", "#008888", "#888800")
+presentationcolors <- c("grey25", "red3", "green3")
 
 stdplottimecourse <- theme_bw() + 
-  theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
+  theme(text = element_text(size = textSize, color = "black", family = "Liberation Sans Narrow"),
         panel.grid.major.x = element_blank(),
         panel.grid.minor.x = element_blank(),
         panel.grid.major.y = element_blank(),
@@ -327,15 +330,31 @@ stdplottimecourse <- theme_bw() +
         panel.border = element_blank(),
         panel.background = element_blank(),
         axis.line = element_line(colour = "black"),
-        axis.title.x = element_text( size = textSize),
-        axis.title.y = element_text( size = textSize),
+        axis.title.x = element_text( size = textSize ),
+        axis.title.y = element_text( size = textSize ),
         axis.text.x = element_text( size = textSize ),
         axis.text.y = element_text( size = textSize ),
         legend.title = element_blank())
 
+presentationplottimecourse <- theme_bw() + 
+  theme(text = element_text(size = presentationTextSize, color = "black", family = "Cabin"),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(colour = "black"),
+        axis.title.x = element_text( size = presentationTextSize ),
+        axis.title.y = element_text( size = presentationTextSize ),
+        axis.text.x = element_text( size = presentationTextSize ),
+        axis.text.y = element_text( size = presentationTextSize ),
+        legend.title = element_blank(),
+        legend.background = element_rect(fill = alpha('white', 1)))
+
 stdbarplot <- 
   theme_bw() +
-  theme(text = element_text(size = textSize, color = "black", family="Liberation Sans Narrow"),
+  theme(text = element_text(size = textSize, color = "black", family = "Liberation Sans Narrow"),
         panel.grid.major.x = element_blank(),
         panel.grid.minor.x = element_blank(),
         panel.grid.major.y = element_blank(),
@@ -347,6 +366,23 @@ stdbarplot <-
         axis.title.x = element_blank(),
         axis.text.x= element_blank(),
         axis.title.y = element_text( size = textSize))
+
+presentationbarplot <- 
+  theme_bw() +
+  theme(text = element_text(size = presentationTextSize, color = "black", family = "Cabin"),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(color = "black"),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.x = element_blank(),
+        axis.title.y = element_text( size = presentationTextSize ),
+        axis.text.x = element_text( size = presentationTextSize ),
+        axis.text.y = element_text( size = presentationTextSize ))
 
 annotationastitle <- function(text, x, y) {
   return(annotate(geom = "text", label = text, x = x, y = y,
@@ -396,6 +432,33 @@ threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
            coord_cartesian(ylim = ylimit) + 
            scale_fill_manual(values = greypalette) +
            stdbarplot)
+}
+
+threecolumnplotpresentation <- function(skinnydataset, ylabel, ylimit, statstrings){
+  #this function expects a dataframe with two columns, first designating the treatments
+  completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
+  return(ggplot(completecasesdataset) +
+           aes_string( x = colnames(completecasesdataset)[1], 
+                       y = colnames(completecasesdataset)[2], 
+                       fill = colnames(completecasesdataset)[1]) +
+           stat_summary(fun.y = mean, 
+                        geom = "bar", 
+                        colour = "black",
+                        show_guide = FALSE) +
+           stat_summary(geom = 'errorbar',
+                        fun.data = 'semInterval',
+                        width = 0.1) +
+           stat_summary(geom = "text", 
+                        size = presentationTextSize * .4,
+                        aes(family = "Cabin"),
+                        fun.y = statstringyoverbar, 
+                        hjust = .5,
+                        vjust = -.6,
+                        label = statstrings) +
+           ylab(ylabel) +
+           coord_cartesian(ylim = ylimit) + 
+           scale_fill_manual(values = presentationcolors) +
+           presentationbarplot)
 }
 
 threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
@@ -1699,3 +1762,100 @@ tukeyInhibitors <-
     'treatment', 
     conf.level=0.95)$treatment)
 
+presentationbodyweightcourse <- function(){
+  timeseriescolumns <- c("body.weight.gain.after.1.days..percent.",
+                         "body.weight.gain.after.2.days..percent.",
+                         "body.weight.gain.after.3.days..percent.",
+                         "body.weight.gain.after.4.days..percent.",
+                         "body.weight.gain.after.5.days..percent.",
+                         "body.weight.gain.after.6.days..percent.",
+                         "body.weight.gain.after.7.days..percent.",
+                         "body.weight.gain.after.8.days..percent.")
+  shortdf <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", timeseriescolumns)]
+  body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
+  statsstars <- c("", "", "",
+                  "", paste0(unidagger, unistar),"",
+                  "", unidagger,"",
+                  "", unidagger,"",
+                  "", unidagger,"",
+                  "", unidagger,"",
+                  "", unidagger,"",
+                  "", paste0(unidagger, unistar),"")
+  shortdf <- cbind(body.weight.gain.after.0.days..percent., shortdf)
+  shortdf <- melt(shortdf, id = c("treatment"), value.name = "bodyweight")
+  colnames(shortdf)[2] <- "day"
+  setattr(shortdf$day, "levels", 1:8)
+  completecasesdataset <- shortdf[complete.cases(shortdf),]
+  return(ggplot(completecasesdataset) + 
+           aes_string(x = colnames(completecasesdataset)[2],
+                      y = colnames(completecasesdataset)[3],
+                      group = colnames(completecasesdataset)[1]) +
+           stat_summary(geom = "point",
+                        size = 3,
+                        fun.y = truemean,
+                        position = position_dodge(.1),
+                        aes_string(shape = colnames(completecasesdataset)[1], 
+                                   color = colnames(completecasesdataset)[1])) +
+           stat_summary(geom = "line", 
+                        size = 2, 
+                        fun.y = truemean, 
+                        position = position_dodge(.1),
+                        aes_string(color = colnames(completecasesdataset)[1])) + 
+           stat_summary(geom = "text", 
+                        size = presentationTextSize * .4,
+                        aes(family = "serif"),
+                        fun.y = statstringyunderbar, 
+                        hjust = -.2,
+                        vjust = .25,
+                        label = c("", "", "",
+                                  "", paste0(unidagger, unistar),"",
+                                  "", unidagger,"",
+                                  "", unidagger,"",
+                                  "", unidagger,"",
+                                  "", unidagger,"",
+                                  "", unidagger,"",
+                                  "", paste0(unidagger, unistar),"")) + 
+           stat_summary(geom = 'errorbar',
+                        fun.data = 'semInterval',
+                        width = 1,
+                        show_guide = FALSE,
+                        position=position_dodge(.05),
+                        aes_string(color = colnames(completecasesdataset)[1])) +
+           coord_cartesian(ylim = c(-7, 10)) + 
+           ylab("body weight gain (% of pre-treatment)") +
+           scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCpresentation) +
+           scale_color_manual(values = presentationcolors, labels = conditionsVDCpresentation) +
+           presentationplottimecourse)
+}
+#svg("weight time course.svg", width = 8, height = 5); presentationbodyweightcourse(); dev.off()
+
+presentationbodyweights <- function(){
+  ylabel <- "body weight (g)"
+  ylimit <- c(0, 32)
+  onedayweightstat <- c("a", "b", "a,b")
+  threedayweightstat <- c("a,b", "a", "b")
+  sevendayweightstat <- threeidenticalgroups
+  return(grid.arrange(
+    threecolumnplot(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "day.2.body.weight..g.")], 
+                    ylabel, 
+                    ylimit, 
+                    onedayweightstat) +
+      annotationastitle("one day", 2, ylimit[[2]]) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC),
+    threecolumnplot(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "day.4.body.weight..g.")], 
+                    ylabel, 
+                    ylimit, 
+                    threedayweightstat) +
+      annotationastitle("three days", 2, ylimit[[2]]) + 
+      theme(axis.text.x = element_text(color = "black")) +
+      scale_x_discrete(labels = threeemptystrings),
+    threecolumnplot(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "day.8.body.weight..g.")], 
+                    ylabel, 
+                    ylimit, 
+                    sevendayweightstat) +
+      annotationastitle("seven days", 2, ylimit[[2]]) + 
+      theme(axis.text.x = element_text(color = "black")) +
+      scale_x_discrete(labels = threeemptystrings),
+    ncol=3))
+}
