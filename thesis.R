@@ -23,8 +23,7 @@ codedirpath <- dirname(
   tryCatch(normalizePath(parent.frame(2)$ofile),  # works when using source
            error=function(e) # works when using R CMD
              normalizePath(unlist(strsplit(commandArgs()[
-               grep('^--file=', commandArgs())], '='))[2]))
-)
+               grep('^--file=', commandArgs())], '='))[2])))
 codedirpath <- "/media/dump/writingswork/draftthesis"
 datadir <- normalizePath(file.path(codedirpath, "data"))
 InvivoOneday <- read.csv(file.path(
@@ -236,7 +235,7 @@ threeidenticalgroups <- c("a", "a", "a")
 
 #helper maths functions
 SEM <- function(x) {
-  return( sqrt(var(x, na.rm = TRUE) / truecount(x)) )
+  return(sqrt(var(x, na.rm = TRUE) / truecount(x)))
 }
 
 longdescription <- function(x) {
@@ -249,7 +248,7 @@ longdescription <- function(x) {
 }
 
 CI95 <- function(x) {
-  return( qt(.975, df = (truecount(x) - 1)) * SEM(x) )
+  return(qt(.975, df = (truecount(x) - 1)) * SEM(x))
 }
 
 sig3 <- function(x) {
@@ -259,8 +258,7 @@ sig3 <- function(x) {
 semInterval <- function(x) {
   lims <- c(
     mean(x, na.rm = TRUE) - SEM(x),
-    mean(x, na.rm = TRUE) + SEM(x)
-    )
+    mean(x, na.rm = TRUE) + SEM(x))
   names(lims) <- c('ymin','ymax')
   return(lims)
 }
@@ -274,15 +272,15 @@ statstringyoverbar <-function(x){
 }
 
 truecount <- function(x) {
-  return( length(na.omit(x)) )
+  return(length(na.omit(x)))
 }
 
 truemean <- function(x) {
-  return( mean(x, na.rm = TRUE) )
+  return(mean(x, na.rm = TRUE))
 }
 
 percentgrowth <- function(initial, final){
-  return( 100 * (truemean(final) - truemean(initial)) / truemean(initial))
+  return(100 * (truemean(final) - truemean(initial)) / truemean(initial))
 }
 
 pcramplificationrate <- function(initial, final){
@@ -330,10 +328,10 @@ stdplottimecourse <- theme_bw() +
         panel.border = element_blank(),
         panel.background = element_blank(),
         axis.line = element_line(colour = "black"),
-        axis.title.x = element_text( size = textSize ),
-        axis.title.y = element_text( size = textSize ),
-        axis.text.x = element_text( size = textSize ),
-        axis.text.y = element_text( size = textSize ),
+        axis.title.x = element_text(size = textSize),
+        axis.title.y = element_text(size = textSize),
+        axis.text.x = element_text(size = textSize),
+        axis.text.y = element_text(size = textSize),
         legend.title = element_blank())
 
 presentationplottimecourse <- theme_bw() + 
@@ -345,10 +343,10 @@ presentationplottimecourse <- theme_bw() +
         panel.border = element_blank(),
         panel.background = element_blank(),
         axis.line = element_line(colour = "black"),
-        axis.title.x = element_text( size = presentationTextSize ),
-        axis.title.y = element_text( size = presentationTextSize ),
-        axis.text.x = element_text( size = presentationTextSize ),
-        axis.text.y = element_text( size = presentationTextSize ),
+        axis.title.x = element_text(size = presentationTextSize),
+        axis.title.y = element_text(size = presentationTextSize),
+        axis.text.x = element_text(size = presentationTextSize),
+        axis.text.y = element_text(size = presentationTextSize),
         legend.title = element_blank(),
         legend.background = element_rect(fill = alpha('white', 1)))
 
@@ -365,7 +363,7 @@ stdbarplot <-
         axis.ticks.x = element_blank(),
         axis.title.x = element_blank(),
         axis.text.x= element_blank(),
-        axis.title.y = element_text( size = textSize))
+        axis.title.y = element_text(size = textSize))
 
 presentationbarplot <- 
   theme_bw() +
@@ -380,15 +378,15 @@ presentationbarplot <-
         axis.ticks.x = element_blank(),
         axis.title.x = element_blank(),
         axis.text.x = element_blank(),
-        axis.title.y = element_text( size = presentationTextSize ),
-        axis.text.x = element_text( size = presentationTextSize ),
-        axis.text.y = element_text( size = presentationTextSize ))
+        axis.title.y = element_text(size = presentationTextSize, angle = 0),
+        axis.text.x = element_text(size = presentationTextSize),
+        axis.text.y = element_text(size = presentationTextSize))
 
 annotationastitle <- function(text, x, y) {
   return(annotate(geom = "text", label = text, x = x, y = y,
-           vjust = 1, hjust = 0.5,  
-           size = .45 * textSize, 
-           family = "Liberation Sans Narrow"))
+                  vjust = 1, hjust = 0.5,  
+                  size = .45 * textSize, 
+                  family = "Liberation Sans Narrow"))
 }
 
 annotationasaxis <- function(texts, xs, y) {
@@ -410,55 +408,57 @@ annotationasaxis <- function(texts, xs, y) {
 threecolumnplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   #this function expects a dataframe with two columns, first designating the treatments
   completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
-  return(ggplot(completecasesdataset) +
-           aes_string( x = colnames(completecasesdataset)[1], 
-                       y = colnames(completecasesdataset)[2], 
-                       fill = colnames(completecasesdataset)[1]) +
-           stat_summary(fun.y = mean, 
-                        geom = "bar", 
-                        colour = "black",
-                        show_guide = FALSE) +
-           stat_summary(geom = 'errorbar',
-                        fun.data = 'semInterval',
-                        width = 0.1) +
-           stat_summary(geom = "text", 
-                        size = textSize * .4,
-                        aes(family = "Liberation Sans Narrow"),
-                        fun.y = statstringyoverbar, 
-                        hjust = .5,
-                        vjust = -.6,
-                        label = statstrings) +
-           ylab(ylabel) +
-           coord_cartesian(ylim = ylimit) + 
-           scale_fill_manual(values = greypalette) +
-           stdbarplot)
+  return(
+    ggplot(completecasesdataset) +
+      aes_string(x = colnames(completecasesdataset)[1], 
+                 y = colnames(completecasesdataset)[2], 
+                 fill = colnames(completecasesdataset)[1]) +
+      stat_summary(fun.y = mean, 
+                   geom = "bar", 
+                   colour = "black",
+                   show_guide = FALSE) +
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.1) +
+      stat_summary(geom = "text", 
+                   size = textSize * .4,
+                   aes(family = "Liberation Sans Narrow"),
+                   fun.y = statstringyoverbar, 
+                   hjust = .5,
+                   vjust = -.6,
+                   label = statstrings) +
+      ylab(ylabel) +
+      coord_cartesian(ylim = ylimit) + 
+      scale_fill_manual(values = greypalette) +
+      stdbarplot)
 }
 
 threecolumnplotpresentation <- function(skinnydataset, ylabel, ylimit, statstrings){
   #this function expects a dataframe with two columns, first designating the treatments
   completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
-  return(ggplot(completecasesdataset) +
-           aes_string( x = colnames(completecasesdataset)[1], 
-                       y = colnames(completecasesdataset)[2], 
-                       fill = colnames(completecasesdataset)[1]) +
-           stat_summary(fun.y = mean, 
-                        geom = "bar", 
-                        colour = "black",
-                        show_guide = FALSE) +
-           stat_summary(geom = 'errorbar',
-                        fun.data = 'semInterval',
-                        width = 0.1) +
-           stat_summary(geom = "text", 
-                        size = presentationTextSize * .4,
-                        aes(family = "Cabin"),
-                        fun.y = statstringyoverbar, 
-                        hjust = .5,
-                        vjust = -.6,
-                        label = statstrings) +
-           ylab(ylabel) +
-           coord_cartesian(ylim = ylimit) + 
-           scale_fill_manual(values = presentationcolors) +
-           presentationbarplot)
+  return(
+    ggplot(completecasesdataset) +
+      aes_string(x = colnames(completecasesdataset)[1], 
+                 y = colnames(completecasesdataset)[2], 
+                 fill = colnames(completecasesdataset)[1]) +
+      stat_summary(fun.y = mean, 
+                   geom = "bar", 
+                   colour = "black",
+                   show_guide = FALSE) +
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.1) +
+      stat_summary(geom = "text", 
+                   size = presentationTextSize * .4,
+                   aes(family = "Cabin"),
+                   fun.y = statstringyoverbar, 
+                   hjust = .5,
+                   vjust = -.6,
+                   label = statstrings) +
+      ylab(ylabel) +
+      coord_cartesian(ylim = ylimit) + 
+      scale_fill_manual(values = presentationcolors) +
+      presentationbarplot)
 }
 
 threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
@@ -466,33 +466,34 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   # second column described Ct(GOI)-Ct(housekeeping gene)
   completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
   completecasesdataset[,2] <- completecasesdataset[,2] * (-1)
-  return(ggplot(completecasesdataset) +
-           aes_string( x = colnames(completecasesdataset)[1], 
-                       y = colnames(completecasesdataset)[2], 
-                       group = colnames(completecasesdataset)[1]) +
-           stat_summary(geom = "point",
-                        size = 3,
-                        colour = "black",
-                        fun.y = mean,
-                        show_guide = FALSE,
-                        aes_string(shape = colnames(completecasesdataset)[1])) +
-           stat_summary(geom = "text", 
-                        size = textSize * .4,
-                        aes(family = "Liberation Sans Narrow"),
-                        fun.y = statstringyoverbar, 
-                        hjust = .5,
-                        vjust = -.6,
-                        label = statstrings) + 
-           stat_summary(geom = 'errorbar',
-                        fun.data = 'semInterval',
-                        width = 0.1,
-                        show_guide = FALSE,
-                        position=position_dodge(.05)) +
-           ylab(ylabel) +
-           scale_y_continuous(breaks = (-10:10), labels = prettyNum(2^(-10:10))) +
-           coord_cartesian(ylim = ylimit) +
-           scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
-           stdbarplot)
+  return(
+    ggplot(completecasesdataset) +
+      aes_string(x = colnames(completecasesdataset)[1], 
+                 y = colnames(completecasesdataset)[2], 
+                 group = colnames(completecasesdataset)[1]) +
+      stat_summary(geom = "point",
+                   size = 3,
+                   colour = "black",
+                   fun.y = mean,
+                   show_guide = FALSE,
+                   aes_string(shape = colnames(completecasesdataset)[1])) +
+      stat_summary(geom = "text", 
+                   size = textSize * .4,
+                   aes(family = "Liberation Sans Narrow"),
+                   fun.y = statstringyoverbar, 
+                   hjust = .5,
+                   vjust = -.6,
+                   label = statstrings) + 
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.1,
+                   show_guide = FALSE,
+                   position=position_dodge(.05)) +
+      ylab(ylabel) +
+      scale_y_continuous(breaks = (-10:10), labels = prettyNum(2^(-10:10))) +
+      coord_cartesian(ylim = ylimit) +
+      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
+      stdbarplot)
 }
 
 plotthreetimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
@@ -504,35 +505,36 @@ plotthreetimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
   # statsstring can be a long vector of strings, showing: 
   # time1treatment1, time1treatment2, time1treatemnt3, time2treatement1 etc.
   completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
-  return(ggplot(completecasesdataset) + 
-    aes_string(x = colnames(completecasesdataset)[2],
-               y = colnames(completecasesdataset)[3],
-               group = colnames(completecasesdataset)[1]) +
-    stat_summary(geom = "point",
-                 size = 3,
-                 fun.y = truemean,
-                 position = position_dodge(.05),
-                 aes_string(shape = colnames(completecasesdataset)[1])) +
-    stat_summary(geom = "line", 
-                 size = .5, 
-                 fun.y = truemean, 
-                 position = position_dodge(.05)) + 
-    stat_summary(geom = "text", 
-                 size = textSize * .4,
-                 aes(family = "serif"),
-                 fun.y = statstringyunderbar, 
-                 hjust = -.2,
-                 vjust = .25,
-                 label = statsstring) + 
-    stat_summary(geom = 'errorbar',
-                 fun.data = 'semInterval',
-                 width = 0.2,
-                 show_guide = FALSE,
-                 position=position_dodge(.05)) +
-    coord_cartesian(ylim = ylimit) + 
-    ylab(ylabel) +
-    scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
-    stdplottimecourse)  
+  return(
+    ggplot(completecasesdataset) + 
+      aes_string(x = colnames(completecasesdataset)[2],
+                 y = colnames(completecasesdataset)[3],
+                 group = colnames(completecasesdataset)[1]) +
+      stat_summary(geom = "point",
+                   size = 3,
+                   fun.y = truemean,
+                   position = position_dodge(.05),
+                   aes_string(shape = colnames(completecasesdataset)[1])) +
+      stat_summary(geom = "line", 
+                   size = .5, 
+                   fun.y = truemean, 
+                   position = position_dodge(.05)) + 
+      stat_summary(geom = "text", 
+                   size = textSize * .4,
+                   aes(family = "serif"),
+                   fun.y = statstringyunderbar, 
+                   hjust = -.2,
+                   vjust = .25,
+                   label = statsstring) + 
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.2,
+                   show_guide = FALSE,
+                   position=position_dodge(.05)) +
+      coord_cartesian(ylim = ylimit) + 
+      ylab(ylabel) +
+      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC) +
+      stdplottimecourse)  
 }
 
 plotfourtimecourses <- function(skinnydataset, ylimit, ylabel, categories, statsstring){
@@ -544,36 +546,37 @@ plotfourtimecourses <- function(skinnydataset, ylimit, ylabel, categories, stats
   # statsstring can be a long vector of strings, showing: 
   # time1treatment1, time1treatment2, time1treatemnt3, time2treatement1 etc.
   completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
-  return(ggplot(completecasesdataset) + 
-           aes_string(x = colnames(completecasesdataset)[2],
-                      y = colnames(completecasesdataset)[3],
-                      group = colnames(completecasesdataset)[1]) +
-           stat_summary(geom = "point",
-                        size = 3,
-                        fun.y = truemean,
-                        position = position_dodge(.1),
-                        aes_string(shape = "treatment", show_guide = FALSE)) +
-           stat_summary(geom = "line", 
-                        size = .5, 
-                        fun.y = truemean, 
-                        position = position_dodge(.1), show_guide = FALSE) + 
-           #     stat_summary(geom = "text", 
-           #                  size = textSize * .4,
-           #                  aes(family = "serif"),
-           #                  fun.y = statstringyunderbar, 
-           #                  hjust = -.2,
-           #                  vjust = .25,
-           #                  label = statsstring) + 
-           stat_summary(geom = 'errorbar',
-                        fun.data = 'semInterval',
-                        width = 0.2,
-                        show_guide = FALSE,
-                        position=position_dodge(.1)) +
-           coord_cartesian(ylim = ylimit) + 
-           ylab(ylabel) +
-           scale_x_continuous(labels = c("1", "2", "3", "4")) +
-           xlab("day") +
-           stdplottimecourse)
+  return(
+    ggplot(completecasesdataset) + 
+      aes_string(x = colnames(completecasesdataset)[2],
+                 y = colnames(completecasesdataset)[3],
+                 group = colnames(completecasesdataset)[1]) +
+      stat_summary(geom = "point",
+                   size = 3,
+                   fun.y = truemean,
+                   position = position_dodge(.1),
+                   aes_string(shape = "treatment", show_guide = FALSE)) +
+      stat_summary(geom = "line", 
+                   size = .5, 
+                   fun.y = truemean, 
+                   position = position_dodge(.1), show_guide = FALSE) + 
+      #     stat_summary(geom = "text", 
+      #                  size = textSize * .4,
+      #                  aes(family = "serif"),
+      #                  fun.y = statstringyunderbar, 
+      #                  hjust = -.2,
+      #                  vjust = .25,
+      #                  label = statsstring) + 
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.2,
+                   show_guide = FALSE,
+                   position=position_dodge(.1)) +
+      coord_cartesian(ylim = ylimit) + 
+      ylab(ylabel) +
+      scale_x_continuous(labels = c("1", "2", "3", "4")) +
+      xlab("day") +
+      stdplottimecourse)
 }
 
 #PMID12519877
@@ -589,7 +592,7 @@ reportstats <- function(invivodata, invivocolnames){
   myoutput <- ""
   invivodatasubset <- invivodata[invivodata$treatment %in% condsVDC, ]
   invivodatasubset$treatment <- factor(invivodatasubset$treatment, 
-                                levels = condsVDC)
+                                       levels = condsVDC)
   
   for (i in 1:length(invivocolnames)) {
     if (invivocolnames[[i]] %in% c("animal", "TreatmentLong", "treatment")) next
@@ -694,9 +697,9 @@ plotbodyweightcourse <- function(){
   colnames(shortdf)[2] <- "day"
   setattr(shortdf$day, "levels", 1:4)
   bottomleftplot <- plotthreetimecourses(shortdf, 
-                                  c(-7, 10), 
-                                  "body weight gain (% of pre-treatment)", 
-                                  rep("", 12))
+                                         c(-7, 10), 
+                                         "body weight gain (% of pre-treatment)", 
+                                         rep("", 12))
   
   shortdf <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", timeseriescolumns[1:1])]
   body.weight.gain.after.0.days..percent. <- rep(0, dim(shortdf)[1])
@@ -710,8 +713,8 @@ plotbodyweightcourse <- function(){
                                           rep("", 6))
   topplot$layers[[1]]$show_guide = FALSE
   bottomleftplot$layers[[1]]$show_guide = FALSE
-  return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, ncol=2, widths = c(1.1,1) ), 
-                       ncol=1)  )
+  return(grid.arrange(topplot, arrangeGrob(bottomleftplot, bottomrightplot, ncol=2, widths = c(1.1,1)), 
+                      ncol=1))
 }
 
 # THIRD PLOT - body mass composition
@@ -946,7 +949,7 @@ plotatrogenes <- function(){
     c(-1, 2.5), c(-1.5, 5.4), c(-2, 2),
     # quadriceps - Trim63 / Murf1: 1, 3, 7:
     c(-1, 8.5), c(-1.5, 5.4), c(-2, 2))
-    
+  
   statstrings <- list(
     # gastrocnemius - Fbxo32 / Mafbx: 1, 3, 7:
     c("a", "a,b", "b"),
@@ -1219,35 +1222,35 @@ plotfoxogene <- function(){
     "Foxo3a mRNA",
     "Klf15 mRNA")
   ylims <- list(
-#     # quadriceps Foxo1 - days 1, 3, 7:
-#     c(-1,10),
-#     c(-1.5,3.75),
-#     c(-4,2),
+    #     # quadriceps Foxo1 - days 1, 3, 7:
+    #     c(-1,10),
+    #     c(-1.5,3.75),
+    #     c(-4,2),
     # quadriceps Foxo3 - days 1, 3, 7:
     c(-1,10),
     c(-1.5,3.75),
     c(-4,2),
-#     # quadriceps Foxo4 - days 1, 3, 7:
-#     c(-1,10),
-#     c(-1.5,3.75),
-#     c(-4,2),
+    #     # quadriceps Foxo4 - days 1, 3, 7:
+    #     c(-1,10),
+    #     c(-1.5,3.75),
+    #     c(-4,2),
     # quadriceps Klf15 - days 1, 3, 7:
     c(-1,6),
     c(-1,3.75),
     c(-4,2))
   statstrings <- list(
-#     # quadriceps Foxo1 - days 1, 3, 7:
-#     c("a", "b", "a,b"),
-#     c("a", "b", "a,b"),
-#     c("a", "a,b", "b"),
+    #     # quadriceps Foxo1 - days 1, 3, 7:
+    #     c("a", "b", "a,b"),
+    #     c("a", "b", "a,b"),
+    #     c("a", "a,b", "b"),
     # quadriceps Foxo3a - days 1, 3, 7:
     c("a", "b", "a,b"),
     threeidenticalgroups,
     c("a", "b", "a,b"),
-#     # quadriceps Foxo4 - days 1, 3, 7:
-#     c("a", "b", "a,b"),
-#     threeidenticalgroups,
-#     c("a", "b", "a,b"),
+    #     # quadriceps Foxo4 - days 1, 3, 7:
+    #     c("a", "b", "a,b"),
+    #     threeidenticalgroups,
+    #     c("a", "b", "a,b"),
     # quadriceps Klf15 - days 1, 3, 7:
     c("a", "b", "a,b"),
     c("a,b", "a", "b"),
@@ -1287,11 +1290,11 @@ plotfoxogene <- function(){
 }
 
 ploteiftwo <- function(){
-    shortdf7 <- rescaledtovehicleasunity(
-      InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.eIF2alpha..normalized.to.GAPDH.")])
-    return(threecolumnplot(shortdf7, "phospho-eIF2alpha\n(normalized to GAPDH)", c(0,1.5), threeidenticalgroups)+ 
-             theme(axis.text.x = element_text(color = "black")) + 
-             scale_x_discrete(labels = conditionsVDC))
+  shortdf7 <- rescaledtovehicleasunity(
+    InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.eIF2alpha..normalized.to.GAPDH.")])
+  return(threecolumnplot(shortdf7, "phospho-eIF2alpha\n(normalized to GAPDH)", c(0,1.5), threeidenticalgroups)+ 
+           theme(axis.text.x = element_text(color = "black")) + 
+           scale_x_discrete(labels = conditionsVDC))
 }
 
 ploteifthree <- function(){
@@ -1312,8 +1315,8 @@ plotfourebp <- function(){
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
     threecolumnplot(phosphofourebpdf, "phospho 4EBP\n(normalized to GAPDH)", c(0,2), threeidenticalgroups) + 
-           theme(axis.text.x = element_text(color = "black")) + 
-           scale_x_discrete(labels = conditionsVDC),
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC),
     ncol = 2))
 }
 
@@ -1347,21 +1350,21 @@ plotgastrocnemiusakt <- function(){
 
 plotIgfr <-function(){
   return(grid.arrange(
-#     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.IGF1R..normalized.to.GAPDH.")]), "levator.phospho.IGF1R", c(0,2),threeemptystrings),
-#     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.IGF1R.protein..normalized.to.GAPDH.")]), "levator.IGF1R.protein.", c(0,2),threeemptystrings),
-#     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.IGF1R...total.IGF1R")]), "levator.phosph/total.IGF1R", c(0,2),threeemptystrings),
-#     threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Igf1r....Ct.Gapdh.")]), "gastrocnemius IGF1R mRNA", c(-1.8,.7),threeemptystrings) + 
-#       theme(axis.text.x = element_text(color = "black")) + 
-#       scale_x_discrete(labels = conditionsVDC),
+    #     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.IGF1R..normalized.to.GAPDH.")]), "levator.phospho.IGF1R", c(0,2),threeemptystrings),
+    #     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.IGF1R.protein..normalized.to.GAPDH.")]), "levator.IGF1R.protein.", c(0,2),threeemptystrings),
+    #     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.IGF1R...total.IGF1R")]), "levator.phosph/total.IGF1R", c(0,2),threeemptystrings),
+    #     threegeneplot(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Igf1r....Ct.Gapdh.")]), "gastrocnemius IGF1R mRNA", c(-1.8,.7),threeemptystrings) + 
+    #       theme(axis.text.x = element_text(color = "black")) + 
+    #       scale_x_discrete(labels = conditionsVDC),
     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.IGF1R.protein..normalized.to.GAPDH.")]), "gastrocnemius IGF1R protein", c(0,2),threeemptystrings) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.IGF1R..normalized.to.GAPDH.")]), "gastrocnemius phospho-IGF1R", c(0,2),threeemptystrings) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
-#     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.IGF1R...total.IGF1R")]), "gastrocnemius phospho/total IGF1R", c(0,2),threeemptystrings) + 
-#       theme(axis.text.x = element_text(color = "black")) + 
-#       scale_x_discrete(labels = conditionsVDC),
+    #     threecolumnplot(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.IGF1R...total.IGF1R")]), "gastrocnemius phospho/total IGF1R", c(0,2),threeemptystrings) + 
+    #       theme(axis.text.x = element_text(color = "black")) + 
+    #       scale_x_discrete(labels = conditionsVDC),
     ncol = 2))
 }
 
@@ -1423,13 +1426,13 @@ plotredd <- function(){
 # In vitro cell diameters
 plotcelldiams <- function() {
   return(threecolumnplot(rescaledtovehicleasunity(
-      InvitroCelldiamsCVD[, colnames(InvitroCelldiamsCVD) %in% 
-                            c("treatment", "mean")]), 
-      "mean diameter (rel. u.)", 
-      c(0, 1.2), 
-      c("a", "b", "a")) + 
-        theme(axis.text.x = element_text(color = "black")) + 
-        scale_x_discrete(labels = conditionsVDC))
+    InvitroCelldiamsCVD[, colnames(InvitroCelldiamsCVD) %in% 
+                          c("treatment", "mean")]), 
+    "mean diameter (rel. u.)", 
+    c(0, 1.2), 
+    c("a", "b", "a")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC))
 }
 
 anovaDiameters <- 
@@ -1475,7 +1478,7 @@ plottotalprotein <- function(){
       c("", "", "", "",
         "", "", "", "",
         "", "", "", "",
-        "", "", "", "") ) + 
+        "", "", "", "")) + 
       scale_shape_manual(
         values = c(16, 4, 1, 13), 
         labels = conditionsVDCAmetabolism) +
@@ -1500,31 +1503,31 @@ plottotalprotein <- function(){
     ncol=1))
 }
 
-anovaProteinDensityTreatmentAndDate <- aov( 
+anovaProteinDensityTreatmentAndDate <- aov(
   cell_protein_density_microgram_per_cmsq ~ TimeDays + treatment, 
   data = SynthesisInCellsVDCA)
 anovaPvaluesProteinDensityTreatmentAndDate <-
   summary(anovaProteinDensityTreatmentAndDate)[[1]]$`Pr(>F)`
 
-anovaProteinDensityTreatmentAndDateVonlyOneToThree <- aov( 
+anovaProteinDensityTreatmentAndDateVonlyOneToThree <- aov(
   cell_protein_density_microgram_per_cmsq ~ TimeDays, 
   data = SynthesisInCellsV[SynthesisInCellsV$TimeDays != "3", ])
 anovaPvaluesProteinDensityTreatmentAndDateVonlyOneToThree <- 
   summary(anovaProteinDensityTreatmentAndDateVonlyOneToThree)[[1]]$`Pr(>F)`
 
-anovaProteinDensityTreatmentAndDateDonlyOneToThree <- aov( 
+anovaProteinDensityTreatmentAndDateDonlyOneToThree <- aov(
   cell_protein_density_microgram_per_cmsq ~ TimeDays, 
   data = SynthesisInCellsV[SynthesisInCellsD$TimeDays != "3", ])
 anovaPvaluesProteinDensityTreatmentAndDateDonlyOneToThree <- 
   summary(anovaProteinDensityTreatmentAndDateDonlyOneToThree)[[1]]$`Pr(>F)`
 
-anovaProteinDensityTreatmentAndDateConlyOneToThree <- aov( 
+anovaProteinDensityTreatmentAndDateConlyOneToThree <- aov(
   cell_protein_density_microgram_per_cmsq ~ TimeDays, 
   data = SynthesisInCellsV[SynthesisInCellsC$TimeDays != "3", ])
 anovaPvaluesProteinDensityTreatmentAndDateConlyOneToThree <- 
   summary(anovaProteinDensityTreatmentAndDateConlyOneToThree)[[1]]$`Pr(>F)`
 
-anovaProteinDensityTreatmentAndDateAonlyOneToThree <- aov( 
+anovaProteinDensityTreatmentAndDateAonlyOneToThree <- aov(
   cell_protein_density_microgram_per_cmsq ~ TimeDays, 
   data = SynthesisInCellsV[SynthesisInCellsA$TimeDays != "3", ])
 anovaPvaluesProteinDensityTreatmentAndDateAonlyOneToThree <- 
@@ -1567,7 +1570,7 @@ plotproteinsynthesis <- function() {
       "activity in cell protein\nextract (pCi/well)",
       c("", "", "", "",
         "", "", "", "",
-        "", "", "", "") ) + 
+        "", "", "", "")) + 
       scale_shape_manual(
         values = c(16, 4, 1), 
         labels = conditionsVDCmetabolism) +
@@ -1592,13 +1595,13 @@ plotproteinsynthesis <- function() {
     ncol=1))
 }
 
-anovaDegradationTreatmentAndDate <- aov( 
+anovaDegradationTreatmentAndDate <- aov(
   curie_ratio_protein_depleted_medium_over_cell_protein ~ TimeDays + treatment, 
   data = DegradationInCellsVDCA)
 anovaPvaluesDegradationTreatmentAndDate <- 
   summary(anovaDegradationTreatmentAndDate)[[1]]$`Pr(>F)`
 
-anovaDegradationTreatment24 <- aov( 
+anovaDegradationTreatment24 <- aov(
   curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
   data = DegradationInCellsVDCA[DegradationInCellsVDCA$TimeDays == "1", ])
 anovaPvaluesDegradationTreatment24 <- 
@@ -1609,7 +1612,7 @@ tukeyDegradationTreatment24 <-
     'treatment', 
     conf.level=0.95)$treatment)
 
-anovaDegradationTreatment48 <- aov( 
+anovaDegradationTreatment48 <- aov(
   curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
   data = DegradationInCellsVDCA[DegradationInCellsVDCA$TimeDays == "2", ])
 anovaPvaluesDegradationTreatment48 <- 
@@ -1621,28 +1624,28 @@ tukeyDegradationTreatment48 <-
     conf.level=0.95)$treatment)
 
 plotproteindegradation <- function(){
-   degradationtimecourse <- 
-     DegradationInCells[ 
-       (DegradationInCells$treatment %in% condsVDCAmetabolism ), 
-       colnames(DegradationInCells) %in% c(
-         "treatment", 
-         "TimeDays", 
-         "curie_ratio_protein_depleted_medium_over_cell_protein")]
-   degradationtimecourse$treatment <- 
-     factor(
-       degradationtimecourse$treatment, 
-       levels = condsVDCAmetabolism)
-   degradationtimecourse24 <- 
-     DegradationInCells[
-       (DegradationInCells$TimeDays == "1" &
-          DegradationInCells$treatment %in% condsVDCAmetabolism)  ,
-       colnames(DegradationInCells) %in% c(
-         "treatment", 
-         "curie_ratio_protein_depleted_medium_over_cell_protein")]
-   degradationtimecourse24$treatment <- 
-     factor(
-       degradationtimecourse24$treatment, 
-       levels = condsVDCAmetabolism)
+  degradationtimecourse <- 
+    DegradationInCells[ 
+      (DegradationInCells$treatment %in% condsVDCAmetabolism), 
+      colnames(DegradationInCells) %in% c(
+        "treatment", 
+        "TimeDays", 
+        "curie_ratio_protein_depleted_medium_over_cell_protein")]
+  degradationtimecourse$treatment <- 
+    factor(
+      degradationtimecourse$treatment, 
+      levels = condsVDCAmetabolism)
+  degradationtimecourse24 <- 
+    DegradationInCells[
+      (DegradationInCells$TimeDays == "1" &
+         DegradationInCells$treatment %in% condsVDCAmetabolism)  ,
+      colnames(DegradationInCells) %in% c(
+        "treatment", 
+        "curie_ratio_protein_depleted_medium_over_cell_protein")]
+  degradationtimecourse24$treatment <- 
+    factor(
+      degradationtimecourse24$treatment, 
+      levels = condsVDCAmetabolism)
   return(grid.arrange(
     ggplot(degradationtimecourse) + 
       aes_string(x = colnames(degradationtimecourse)[2],
@@ -1682,9 +1685,9 @@ plotproteindegradation <- function(){
       scale_x_continuous(labels = c("6", "24", "48", "72")) +
       xlab("hours"),
     ggplot(degradationtimecourse24) +
-      aes_string( x = colnames(degradationtimecourse24)[1], 
-                  y = colnames(degradationtimecourse24)[2], 
-                  fill = colnames(degradationtimecourse24)[1]) +
+      aes_string(x = colnames(degradationtimecourse24)[1], 
+                 y = colnames(degradationtimecourse24)[2], 
+                 fill = colnames(degradationtimecourse24)[1]) +
       stat_summary(fun.y = truemean, 
                    geom = "bar", 
                    colour = "black",
@@ -1711,9 +1714,9 @@ plotproteindegradation <- function(){
 
 plotinhibitors <- function() {
   return(ggplot(DegradationWithInhibitors) +
-           aes_string( x = "treatment", 
-                       y = "curie_ratio_protein_depleted_medium_over_cell_protein", 
-                       fill = "treatment") +
+           aes_string(x = "treatment", 
+                      y = "curie_ratio_protein_depleted_medium_over_cell_protein", 
+                      fill = "treatment") +
            stat_summary(fun.y = mean, 
                         geom = "bar", 
                         colour = "black",
@@ -1751,7 +1754,7 @@ plotinhibitors <- function() {
 }
 
 
-anovaInhibitors <- aov( 
+anovaInhibitors <- aov(
   curie_ratio_protein_depleted_medium_over_cell_protein ~ treatment, 
   data = DegradationWithInhibitors)
 anovaPvaluesInhibitors <- 
@@ -1830,30 +1833,30 @@ presentationbodyweightcourse <- function(){
 #svg("weight time course.svg", width = 8, height = 5); presentationbodyweightcourse(); dev.off()
 
 presentationbodyweights <- function(){
-  ylabel <- "body weight (percent gain)"
-  ylimit <- c(0, 8)
+  ylabel <- "body\nweight\n(percent\ngain)"
+  ylimit <- c(0, 10)
   onedayweightstat <- threeidenticalgroups
   threedayweightstat <- threeidenticalgroups
   sevendayweightstat <- c("a", "b", "a")
   return(grid.arrange(
     threecolumnplotpresentation(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "body.weight.gain.after.1.days..percent.")], 
-                    ylabel, 
-                    ylimit, 
-                    onedayweightstat) +
+                                ylabel, 
+                                ylimit, 
+                                onedayweightstat) +
       annotationastitle("one day", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC),
     threecolumnplotpresentation(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "body.weight.gain.after.3.days..percent.")], 
-                    ylabel, 
-                    ylimit, 
-                    threedayweightstat) +
+                                ylabel, 
+                                ylimit, 
+                                threedayweightstat) +
       annotationastitle("three days", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) +
       scale_x_discrete(labels = threeemptystrings),
     threecolumnplotpresentation(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "body.weight.gain.after.7.days..percent.")], 
-                    ylabel, 
-                    ylimit, 
-                    sevendayweightstat) +
+                                ylabel, 
+                                ylimit, 
+                                sevendayweightstat) +
       annotationastitle("seven days", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) +
       scale_x_discrete(labels = threeemptystrings),
