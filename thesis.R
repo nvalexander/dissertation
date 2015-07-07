@@ -2007,3 +2007,14 @@ plotmuscleweightspresentation <- function(){
     widths = c(0.15, 1, 1, 1, 0.15, 1, 1, 1)))
 }
 #svg("muscles.svg", width = 9.5, height = 5.5 ); plotmuscleweightspresentation(); dev.off(); system ("inkscape muscles.svg --export-emf=muscles.emf")
+
+plotcelldiamspresentation <- function() {
+  return(threecolumnplotpresentation(rescaledtovehicleasunity(
+    InvitroCelldiamsCVD[, colnames(InvitroCelldiamsCVD) %in% 
+                          c("treatment", "mean")]), 
+    "mean diameter (rel. u.)", 
+    c(0, 1.2), 
+    c("a", "b", "a")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap))
+}
