@@ -465,6 +465,39 @@ threecolumnplotpresentation <- function(skinnydataset, ylabel, ylimit, statstrin
       presentationbarplot)
 }
 
+ninecolumnplotpresentation <-  function(skinnydataset, ylabel, ylimit, statstrings){
+  # this function expects a dataframe with three columns
+  # first designates the treatments
+  # third column describes the day
+  completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
+  return(
+    ggplot(completecasesdataset) +
+      aes_string(x = colnames(completecasesdataset)[1], 
+                 y = colnames(completecasesdataset)[2], 
+                 fill = colnames(completecasesdataset)[1]) +
+      facet_grid(reformulate(colnames(completecasesdataset)[3])) +
+      stat_summary(fun.y = mean, 
+                   geom = "bar", 
+                   colour = "black",
+                   show_guide = FALSE) +
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.1) +
+      stat_summary(geom = "text", 
+                   size = presentationTextSize * .4,
+                   aes(family = "Cabin"),
+                   fun.y = statstringyoverbar, 
+                   hjust = .5,
+                   vjust = -.6,
+                   label = statstrings) +
+      ylab(ylabel) +
+      coord_cartesian(ylim = ylimit) + 
+      scale_fill_manual(values = presentationcolors) +
+      presentationbarplot)
+}
+  
+  
+
 threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
   # this function expects a dataframe with two columns, first designating the treatments
   # second column described Ct(GOI)-Ct(housekeeping gene)
