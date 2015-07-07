@@ -1842,7 +1842,7 @@ presentationbodyweightcourse <- function(){
            presentationplottimecourse +
            theme(axis.title.y = element_text(size = presentationTextSize, angle = 0)))
 }
-#svg("weight time course.svg", width = 9, height = 5); presentationbodyweightcourse(); dev.off()
+#svg("weighttimecourse.svg", width = 9, height = 5); presentationbodyweightcourse(); dev.off(); system ("inkscape weighttimecourse.svg --export-emf=weighttimecourse.emf")
 
 presentationbodyweights <- function(){
   ylabel <- "body\nweight\n(percent\ngain)"
@@ -1874,7 +1874,7 @@ presentationbodyweights <- function(){
       scale_x_discrete(labels = threetworowspaces),
     ncol=3))
 }
-#svg("weights.svg", width = 9, height = 2); presentationbodyweights(); dev.off()
+#svg("weights.svg", width = 9, height = 2); presentationbodyweights(); dev.off(); system ("inkscape weights.svg --export-emf=weights.emf")
 
 plotleanfatpresentation <- function(){
   #alphabetical order
@@ -1933,7 +1933,7 @@ plotleanfatpresentation <- function(){
     plotslist[[4]], plotslist[[5]], plotslist[[6]], # lean
     ncol = 3))
 }
-#svg("leanfat.svg", width = 9, height = 4 ); plotleanfatpresentation(); dev.off()
+#svg("leanfat.svg", width = 9, height = 4 ); plotleanfatpresentation(); dev.off(); system ("inkscape leanfat.svg --export-emf=leanfat.emf")
 
 plotmuscleweightspresentation <- function(){
   #alphabetical order
