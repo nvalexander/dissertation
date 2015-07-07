@@ -1871,6 +1871,7 @@ plotleanfatpresentation <- function(){
   #alphabetical order
   columnnames <- c("fat.mass.gain..g.", "lean.mass.gain..g.", "total.water.gain..g.")
   ylabels <- c("fat mass\ngain (g)", "lean mass\nloss (g)", "water loss (g)")
+  ylabels <- c("", "", "")
   ylims <- list(c(0, 4), c(0, 4.5), c(0, 5.2))
   statstrings <- list(
     #fat1, 3, 7:
@@ -1898,7 +1899,7 @@ plotleanfatpresentation <- function(){
     plotslist[[i*3-2]] <- threecolumnplotpresentation(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
     plotslist[[i*3-1]] <- threecolumnplotpresentation(shortdf3, "", ylims[[i]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threecolumnplotpresentation(shortdf7, "", ylims[[i]], statstrings[[(i*3)]])
-    if (columnnames[[i]] == "total.water.gain..g.") {
+    if (columnnames[[i]] == "fat.mass.gain..g.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
         annotationastitle("one day", 2, ylims[[i]][[2]])
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
@@ -1909,13 +1910,13 @@ plotleanfatpresentation <- function(){
     if (columnnames[[i]] == "lean.mass.gain..g.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
         theme(axis.text.x = element_text(color = "black")) + 
-        scale_x_discrete(labels = conditionsVDC)
+        scale_x_discrete(labels = threetworowspaces)
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
         theme(axis.text.x = element_text(color = "black")) + 
-        scale_x_discrete(labels = conditionsVDC)
+        scale_x_discrete(labels = threetworowspaces)
       plotslist[[i*3]] <- plotslist[[i*3]] + 
         theme(axis.text.x = element_text(color = "black")) + 
-        scale_x_discrete(labels = conditionsVDC)
+        scale_x_discrete(labels = conditionsVDCpresentationwrap)
     }
   }
   return(grid.arrange(
