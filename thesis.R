@@ -2006,3 +2006,4 @@ plotmuscleweightspresentation <- function(){
     ncol = 8,
     widths = c(0.15, 1, 1, 1, 0.15, 1, 1, 1)))
 }
+#svg("muscles.svg", width = 9.5, height = 5.5 ); plotmuscleweightspresentation(); dev.off(); system ("inkscape muscles.svg --export-emf=muscles.emf")
