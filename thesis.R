@@ -1828,7 +1828,7 @@ presentationbodyweightcourse <- function(){
                         position=position_dodge(.1),
                         aes_string(color = colnames(completecasesdataset)[1])) +
            coord_cartesian(ylim = c(-7, 10)) + 
-           ylab("body weight\ngain (% of\npre-treatment)") +
+           ylab("") +
            scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCpresentation) +
            scale_color_manual(values = presentationcolors, labels = conditionsVDCpresentation) +
            presentationplottimecourse +
@@ -1844,7 +1844,7 @@ presentationbodyweights <- function(){
   sevendayweightstat <- c("a", "b", "a")
   return(grid.arrange(
     threecolumnplotpresentation(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "body.weight.gain.after.1.days..percent.")], 
-                                ylabel, 
+                                "", 
                                 ylimit, 
                                 onedayweightstat) +
       annotationastitle("one day", 2, ylimit[[2]]) + 
