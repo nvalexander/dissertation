@@ -1984,18 +1984,18 @@ plotmuscleweightspresentation <- function(){
       plotslist[[i*3]] <- plotslist[[i*3]] + 
         annotationastitle("seven days", 2, ylims[[i]][[2]])
     }
-    if (columnnames[[i]] == "tibialis..mg.") {
-      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
-        theme(axis.text.x = element_text(color = "black")) + 
-        scale_x_discrete(labels = conditionsVDCpresentationwrap)
-      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
-        theme(axis.text.x = element_text(color = "black")) + 
-        scale_x_discrete(labels = conditionsVDCpresentationwrap)
-      plotslist[[i*3]] <- plotslist[[i*3]] + 
-        theme(axis.text.x = element_text(color = "black")) + 
-        scale_x_discrete(labels = conditionsVDCpresentationwrap)
-    }
   }
+  myplot <- plotslist[[1]] +
+    theme(
+      legend.position = c(0, 0), 
+      legend.justification = c(0, 0), 
+      legend.direction = "horizontal")
+  gglegend <- function(mygplot){ 
+    tmp <- ggplot_gtable(ggplot_build(mygplot)) 
+    leg <- which(sapply(tmp$grobs, function(x) x$name) == "guide-box") 
+    legend <- tmp$grobs[[leg]] 
+    return(legend)}
+  legend <- gglegend(myplot) 
   return(grid.arrange(
     blankgrob,
     plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius
@@ -2007,6 +2007,8 @@ plotmuscleweightspresentation <- function(){
     plotslist[[4]], plotslist[[5]], plotslist[[6]], # levator
     blankgrob,
     plotslist[[10]], plotslist[[11]], plotslist[[12]], # tibialis
+    blankgrob, blankgrob, blankgrob,
+    #grid.draw(legend),
     ncol = 8,
     widths = c(0.15, 1, 1, 1, 0.15, 1, 1, 1)))
 }
