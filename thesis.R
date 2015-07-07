@@ -1941,7 +1941,7 @@ plotmuscleweightspresentation <- function(){
                "tibialis ant. (mg)",
                "triceps br. (mg)")
   ylabels <- rep("", 5)
-  ylims <- list(c(0, 180),
+  ylims <- list(c(0, 200),
                 c(0, 100), 
                 c(0, 225),
                 c(0, 75),
@@ -1985,17 +1985,6 @@ plotmuscleweightspresentation <- function(){
         annotationastitle("seven days", 2, ylims[[i]][[2]])
     }
   }
-  myplot <- plotslist[[1]] +
-    theme(
-      legend.position = c(0, 0), 
-      legend.justification = c(0, 0), 
-      legend.direction = "horizontal")
-  gglegend <- function(mygplot){ 
-    tmp <- ggplot_gtable(ggplot_build(mygplot)) 
-    leg <- which(sapply(tmp$grobs, function(x) x$name) == "guide-box") 
-    legend <- tmp$grobs[[leg]] 
-    return(legend)}
-  legend <- gglegend(myplot) 
   return(grid.arrange(
     blankgrob,
     plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius
@@ -2007,8 +1996,6 @@ plotmuscleweightspresentation <- function(){
     plotslist[[4]], plotslist[[5]], plotslist[[6]], # levator
     blankgrob,
     plotslist[[10]], plotslist[[11]], plotslist[[12]], # tibialis
-    blankgrob, blankgrob, blankgrob,
-    #grid.draw(legend),
     ncol = 8,
     widths = c(0.15, 1, 1, 1, 0.15, 1, 1, 1)))
 }
