@@ -2043,7 +2043,8 @@ plottotalproteinpresentation <- function(){
     plotfourtimecourses(
       normalizeddata,  
       c(0.83, 1.13), 
-      "total protein density\n(normalized to initial time point)",
+      "",
+      #"total protein density\n(relative units)",
       conditionsVDCAcells,
       c("", "", "", "",
         "", "", "", "",
@@ -2051,8 +2052,10 @@ plottotalproteinpresentation <- function(){
         "", "", "", "")) +
       scale_shape_manual(
         values = c(16, 4, 1, 13), 
-        labels = conditionsVDCAmetabolism, 
-        guide = "none") +
+        labels = conditionsVDCAmetabolism) +
+      scale_color_manual(
+        values = c(presentationcolors, "green4"), 
+        labels = conditionsVDCAmetabolism) +
       scale_y_continuous(breaks = ((18:22*.05)), labels = percent) +
       theme(
         legend.position = c(0, 0), 
