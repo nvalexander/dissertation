@@ -1866,6 +1866,7 @@ presentationbodyweights <- function(){
       scale_x_discrete(labels = threetworowspaces),
     ncol=3))
 }
+#svg("weights.svg", width = 9, height = 2); presentationbodyweights(); dev.off()
 
 plotleanfatpresentation <- function(){
   #alphabetical order
@@ -1924,3 +1925,4 @@ plotleanfatpresentation <- function(){
     plotslist[[4]], plotslist[[5]], plotslist[[6]], # lean
     ncol = 3))
 }
+#svg("leanfat.svg", width = 9, height = 4 ); plotleanfatpresentation(); dev.off()
