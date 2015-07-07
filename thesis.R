@@ -321,6 +321,7 @@ nicepalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2
 meaningfulpalette <- c("#444444", "#dd0000", "#00dd00", "#0000dd", "#888800", "#880088", "#008888", "#dddddd")
 greypalette <- c("#ffffff", "#222222", "#999999", "#0000dd", "#00dd00", "#dd0000", "#008888", "#888800")
 presentationcolors <- c("grey25", "red3", "green3")
+blankgrob <- rectGrob(gp = gpar(col = "white"))
 
 stdplottimecourse <- theme_bw() + 
   theme(text = element_text(size = textSize, color = "black", family = "Liberation Sans Narrow"),
@@ -1975,7 +1976,7 @@ plotmuscleweightspresentation <- function(){
     plotslist[[i*3-2]] <- threecolumnplotpresentation(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
     plotslist[[i*3-1]] <- threecolumnplotpresentation(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threecolumnplotpresentation(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
-    if ((columnnames[[i]] == "gastrocnemius..mg.") | (columnnames[[i]] == "quadriceps..mg.")){
+    if ((columnnames[[i]] == "gastrocnemius..mg.") | (columnnames[[i]] == "triceps..mg.")){
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] +
         annotationastitle("one day", 2, ylims[[i]][[2]])
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
@@ -1996,10 +1997,16 @@ plotmuscleweightspresentation <- function(){
     }
   }
   return(grid.arrange(
+    blankgrob,
     plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius
+    blankgrob,
     plotslist[[13]], plotslist[[14]], plotslist[[15]], # triceps
+    blankgrob,
     plotslist[[7]], plotslist[[8]], plotslist[[9]], # quadriceps
+    blankgrob,
     plotslist[[4]], plotslist[[5]], plotslist[[6]], # levator
+    blankgrob,
     plotslist[[10]], plotslist[[11]], plotslist[[12]], # tibialis
-    ncol = 6))
+    ncol = 8,
+    widths = c(0.15, 1, 1, 1, 0.15, 1, 1, 1)))
 }
