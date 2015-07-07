@@ -382,7 +382,7 @@ presentationbarplot <-
         axis.ticks.x = element_blank(),
         axis.title.x = element_blank(),
         axis.text.x = element_blank(),
-        axis.title.y = element_text(size = presentationTextSize, angle = 0),
+        axis.title.y = element_text(size = presentationTextSize * 1.2),
         axis.text.x = element_text(size = presentationTextSize * .7),
         axis.text.y = element_text(size = presentationTextSize * .7))
 
@@ -445,6 +445,37 @@ threecolumnplotpresentation <- function(skinnydataset, ylabel, ylimit, statstrin
       aes_string(x = colnames(completecasesdataset)[1], 
                  y = colnames(completecasesdataset)[2], 
                  fill = colnames(completecasesdataset)[1]) +
+      stat_summary(fun.y = mean, 
+                   geom = "bar", 
+                   colour = "black",
+                   show_guide = FALSE) +
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.1) +
+      stat_summary(geom = "text", 
+                   size = presentationTextSize * .4,
+                   aes(family = "Cabin"),
+                   fun.y = statstringyoverbar, 
+                   hjust = .5,
+                   vjust = -.6,
+                   label = statstrings) +
+      ylab(ylabel) +
+      coord_cartesian(ylim = ylimit) + 
+      scale_fill_manual(values = presentationcolors) +
+      presentationbarplot)
+}
+
+ninecolumnplotpresentation <-  function(skinnydataset, ylabel, ylimit, statstrings){
+  # this function expects a dataframe with three columns
+  # first designates the treatments
+  # third column describes the day
+  completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
+  return(
+    ggplot(completecasesdataset) +
+      aes_string(x = colnames(completecasesdataset)[1], 
+                 y = colnames(completecasesdataset)[2], 
+                 fill = colnames(completecasesdataset)[1]) +
+      facet_grid(reformulate(colnames(completecasesdataset)[3])) +
       stat_summary(fun.y = mean, 
                    geom = "bar", 
                    colour = "black",
@@ -1969,10 +2000,20 @@ plotmuscleweightspresentation <- function(){
     c("a", "b", "b")
   )
   plotslist <- list()
+  widerplotlist <- list()
   for (i in 1:5){
     shortdf1 <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])]
     shortdf3 <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])]
     shortdf7 <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])]
+    shortdf1bis <- shortdf1
+    shortdf3bis <- shortdf3
+    shortdf7bis <- shortdf7
+    shortdf1bis$day <- rep("one day", dim(shortdf1)[1])
+    shortdf3bis$day <- rep("three days", dim(shortdf3)[1])
+    shortdf7bis$day <- rep("seven days", dim(shortdf7)[1])
+    longerdf <- rbind(shortdf1bis, shortdf3bis, shortdf7bis)
+    longerdf$day <- factor(longerdf$day, levels = c("one day", "three days", "seven days"))
+    widerplotlist[[i]] <- ninecolumnplotpresentation(longerdf, ylabels[[i]], ylims[[i]], c(statstrings[[(i*3-2)]], statstrings[[(i*3-1)]], statstrings[[(i*3)]]))
     plotslist[[i*3-2]] <- threecolumnplotpresentation(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
     plotslist[[i*3-1]] <- threecolumnplotpresentation(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threecolumnplotpresentation(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
