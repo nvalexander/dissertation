@@ -393,6 +393,13 @@ annotationastitle <- function(text, x, y) {
                   family = "Liberation Sans Narrow"))
 }
 
+annotationastitlepresentation <- function(text, x, y) {
+  return(annotate(geom = "text", label = text, x = x, y = y,
+                  vjust = 1, hjust = 0.5,  
+                  size = .3 * presentationTextSize, 
+                  family = "Cabin"))
+}
+
 annotationasaxis <- function(texts, xs, y) {
   return(
     annotate(geom = "text", label = texts[[1]], x = xs[[1]], y = y,
@@ -1978,11 +1985,11 @@ plotmuscleweightspresentation <- function(){
     plotslist[[i*3]] <- threecolumnplotpresentation(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
     if ((columnnames[[i]] == "gastrocnemius..mg.") | (columnnames[[i]] == "triceps..mg.")){
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] +
-        annotationastitle("one day", 2, ylims[[i]][[2]])
+        annotationastitlepresentation("one day", 2, ylims[[i]][[2]])
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
-        annotationastitle("three days", 2, ylims[[i]][[2]])
+        annotationastitlepresentation("three days", 2, ylims[[i]][[2]])
       plotslist[[i*3]] <- plotslist[[i*3]] + 
-        annotationastitle("seven days", 2, ylims[[i]][[2]])
+        annotationastitlepresentation("seven days", 2, ylims[[i]][[2]])
     }
   }
   return(grid.arrange(
