@@ -233,6 +233,7 @@ unistar <- sprintf('\u2736')
 unidagger <- sprintf('\u2020')
 threeemptystrings <- c("", "", "")
 threespaces <- c(" ", " ", " ")
+threetworowspaces <- c(" \n ", " ", " ")
 threeidenticalgroups <- c("a", "a", "a")
 
 #helper maths functions
@@ -1836,7 +1837,7 @@ presentationbodyweightcourse <- function(){
 
 presentationbodyweights <- function(){
   ylabel <- "body\nweight\n(percent\ngain)"
-  ylimit <- c(0, 10)
+  ylimit <- c(0, 12)
   onedayweightstat <- threeidenticalgroups
   threedayweightstat <- threeidenticalgroups
   sevendayweightstat <- c("a", "b", "a")
@@ -1854,13 +1855,13 @@ presentationbodyweights <- function(){
                                 threedayweightstat) +
       annotationastitle("three days", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) +
-      scale_x_discrete(labels = threespaces),
+      scale_x_discrete(labels = threetworowspaces),
     threecolumnplotpresentation(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "body.weight.gain.after.7.days..percent.")], 
                                 "", 
                                 ylimit, 
                                 sevendayweightstat) +
       annotationastitle("seven days", 2, ylimit[[2]]) + 
       theme(axis.text.x = element_text(color = "black")) +
-      scale_x_discrete(labels = threespaces),
+      scale_x_discrete(labels = threetworowspaces),
     ncol=3))
 }
