@@ -1825,15 +1825,16 @@ presentationbodyweightcourse <- function(){
                         fun.data = 'semInterval',
                         width = 1,
                         show_guide = FALSE,
-                        position=position_dodge(.05),
+                        position=position_dodge(.1),
                         aes_string(color = colnames(completecasesdataset)[1])) +
            coord_cartesian(ylim = c(-7, 10)) + 
-           ylab("body weight gain (% of pre-treatment)") +
+           ylab("body weight\ngain (% of\npre-treatment)") +
            scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDCpresentation) +
            scale_color_manual(values = presentationcolors, labels = conditionsVDCpresentation) +
-           presentationplottimecourse)
+           presentationplottimecourse +
+           theme(axis.title.y = element_text(size = presentationTextSize, angle = 0)))
 }
-#svg("weight time course.svg", width = 8, height = 5); presentationbodyweightcourse(); dev.off()
+#svg("weight time course.svg", width = 9, height = 5); presentationbodyweightcourse(); dev.off()
 
 presentationbodyweights <- function(){
   ylabel <- "body\nweight\n(percent\ngain)"
