@@ -2039,17 +2039,42 @@ plottotalproteinpresentation <- function(){
   normalizeddata$treatment <- factor(
     normalizeddata$treatment,
     levels = condsVDCAmetabolism)
+  completecasesdataset <- normalizeddata[complete.cases(normalizeddata),]
   return(
-    plotfourtimecourses(
-      normalizeddata,  
-      c(0.83, 1.13), 
-      "",
-      #"total protein density\n(relative units)",
-      conditionsVDCAcells,
-      c("", "", "", "",
-        "", "", "", "",
-        "", "", "", "",
-        "", "", "", "")) +
+      ggplot(completecasesdataset) + 
+        aes_string(x = colnames(completecasesdataset)[2],
+                   y = colnames(completecasesdataset)[3],
+                   group = colnames(completecasesdataset)[1]) +
+        stat_summary(geom = "point",
+                     size = 3,
+                     fun.y = truemean,
+                     position = position_dodge(.1),
+                     aes_string(shape = "treatment", color = "treatment", show_guide = FALSE)) +
+        stat_summary(geom = "line", 
+                     size = .5, 
+                     fun.y = truemean, 
+                     position = position_dodge(.1),
+                     aes_string(color = "treatment"),
+                     show_guide = FALSE) + 
+        #     stat_summary(geom = "text", 
+        #                  size = textSize * .4,
+        #                  aes(family = "serif"),
+        #                  fun.y = statstringyunderbar, 
+        #                  hjust = -.2,
+        #                  vjust = .25,
+        #                  label = statsstring) + 
+        stat_summary(geom = 'errorbar',
+                     fun.data = 'semInterval',
+                     width = 0.2,
+                     show_guide = FALSE,
+                     aes_string(color = "treatment"),
+                     position=position_dodge(.1)) +
+        coord_cartesian(ylim = c(0.83, 1.13)) + 
+        ylab("") + 
+        #"total protein density\n(relative units)"
+        scale_x_continuous(labels = c("1", "2", "3", "4")) +
+        xlab("day") +
+        stdplottimecourse +
       scale_shape_manual(
         values = c(16, 4, 1, 13), 
         labels = conditionsVDCAmetabolism) +
