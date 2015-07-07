@@ -1866,3 +1866,60 @@ presentationbodyweights <- function(){
       scale_x_discrete(labels = threetworowspaces),
     ncol=3))
 }
+
+plotleanfatpresentation <- function(){
+  #alphabetical order
+  columnnames <- c("fat.mass.gain..g.", "lean.mass.gain..g.", "total.water.gain..g.")
+  ylabels <- c("fat mass\ngain (g)", "lean mass\nloss (g)", "water loss (g)")
+  ylims <- list(c(0, 4), c(0, 4.5), c(0, 5.2))
+  statstrings <- list(
+    #fat1, 3, 7:
+    threeidenticalgroups,
+    c("a", "a,b", "b"),
+    c("a", "a,b", "b"),
+    #lean1, 3, 7:
+    threeidenticalgroups, 
+    c("a", "b", "a,b"),
+    c("a", "b", "a,b"),
+    #water1, 3, 7:
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups)
+  plotslist <- list()
+  for (i in 1:3) {
+    shortdf1 <- InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])]
+    shortdf3 <- InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])]
+    shortdf7 <- InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])]
+    if (columnnames[[i]] != "fat.mass.gain..g.") {
+      shortdf1[,2] <- shortdf1[, 2] * (-1)
+      shortdf3[,2] <- shortdf3[, 2] * (-1)
+      shortdf7[,2] <- shortdf7[, 2] * (-1)
+    }
+    plotslist[[i*3-2]] <- threecolumnplotpresentation(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <- threecolumnplotpresentation(shortdf3, "", ylims[[i]], statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threecolumnplotpresentation(shortdf7, "", ylims[[i]], statstrings[[(i*3)]])
+    if (columnnames[[i]] == "total.water.gain..g.") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        annotationastitle("one day", 2, ylims[[i]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        annotationastitle("three days", 2, ylims[[i]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        annotationastitle("seven days", 2, ylims[[i]][[2]])
+    }
+    if (columnnames[[i]] == "lean.mass.gain..g.") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+    }
+  }
+  return(grid.arrange(
+    plotslist[[1]], plotslist[[2]], plotslist[[3]], # fat
+    plotslist[[4]], plotslist[[5]], plotslist[[6]], # lean
+    ncol = 3))
+}
