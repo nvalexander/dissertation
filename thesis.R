@@ -519,10 +519,14 @@ threegeneplotpresentation <- function(skinnydataset, ylabel, ylimit, statstrings
                  group = colnames(completecasesdataset)[1]) +
       stat_summary(geom = "point",
                    size = 3,
-                   colour = "black",
                    fun.y = mean,
                    show_guide = FALSE,
-                   aes_string(shape = colnames(completecasesdataset)[1])) +
+                   aes_string(shape = colnames(completecasesdataset)[1], 
+                              color = colnames(completecasesdataset)[1])) +
+      geom_errorbar(stat = "hline", yintercept = "mean",
+                    width=0.8,
+                    aes(ymax=..y.., ymin=..y..),
+                    aes_string(color = colnames(completecasesdataset)[1])) +
       stat_summary(geom = "text", 
                    size = textSize * .4,
                    aes(family = "Liberation Sans Narrow"),
@@ -539,7 +543,8 @@ threegeneplotpresentation <- function(skinnydataset, ylabel, ylimit, statstrings
       scale_y_continuous(breaks = (-10:10), labels = prettyNum(2^(-10:10))) +
       coord_cartesian(ylim = ylimit) +
       scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
-      stdbarplot)
+      scale_color_manual(values = presentationcolors, labels = conditionsVDC, guide = FALSE) +
+      presentationbarplot)
 }
 
 plotthreetimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
