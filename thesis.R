@@ -2737,3 +2737,89 @@ plotproteinsynthesispresentation <- function() {
       xlab("day"))
 }
 #svg("cellsynthesis.svg", width = 9, height = 5); plotproteinsynthesispresentation(); dev.off(); system ("inkscape cellsynthesis.svg --export-emf=cellsynthesis.emf")
+
+plotproteindegradationpresentation <- function(){
+  degradationtimecourse <- 
+    DegradationInCells[ 
+      (DegradationInCells$treatment %in% condsVDCAmetabolism), 
+      colnames(DegradationInCells) %in% c(
+        "treatment", 
+        "TimeDays", 
+        "curie_ratio_protein_depleted_medium_over_cell_protein")]
+  degradationtimecourse$treatment <- 
+    factor(
+      degradationtimecourse$treatment, 
+      levels = condsVDCAmetabolism)
+  degradationtimecourse24 <- 
+    DegradationInCells[
+      (DegradationInCells$TimeDays == "1" &
+         DegradationInCells$treatment %in% condsVDCAmetabolism)  ,
+      colnames(DegradationInCells) %in% c(
+        "treatment", 
+        "curie_ratio_protein_depleted_medium_over_cell_protein")]
+  degradationtimecourse24$treatment <- 
+    factor(
+      degradationtimecourse24$treatment, 
+      levels = condsVDCAmetabolism)
+  completecasesdataset <- degradationtimecourse[complete.cases(degradationtimecourse),]
+  return(
+    ggplot(completecasesdataset) + 
+      aes_string(x = colnames(completecasesdataset)[2],
+                 y = colnames(completecasesdataset)[3],
+                 group = colnames(completecasesdataset)[1]) +
+      stat_summary(geom = "point",
+                   size = 3,
+                   fun.y = truemean,
+                   position = position_dodge(.1),
+                   aes_string(shape = "treatment", color = "treatment", show_guide = FALSE)) +
+      stat_summary(geom = "line", 
+                   size = 2, 
+                   fun.y = truemean, 
+                   position = position_dodge(.1),
+                   aes_string(color = "treatment"),
+                   show_guide = FALSE) + 
+      #     stat_summary(geom = "text", 
+      #                  size = textSize * .4,
+      #                  aes(family = "serif"),
+      #                  fun.y = statstringyunderbar, 
+      #                  hjust = -.2,
+      #                  vjust = .25,
+      #                  label = statsstring) + 
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.2,
+                   show_guide = FALSE,
+                   aes_string(color = "treatment"),
+                   position=position_dodge(.1)) +
+      coord_cartesian(ylim = c(0,1)) + 
+      ylab("") + 
+      #"tracer enrichment in cell\nprotein (fmol/g)"
+      scale_x_continuous(labels = c("1", "2", "3", "4")) +
+      theme_bw() + 
+      theme(text = element_text(size = presentationTextSize, color = "black", family = "Cabin"),
+            panel.grid.major.x = element_blank(),
+            panel.grid.minor.x = element_blank(),
+            panel.grid.major.y = element_blank(),
+            panel.grid.minor.y = element_blank(),
+            panel.border = element_blank(),
+            panel.background = element_blank(),
+            axis.line = element_line(colour = "black"),
+            axis.title.x = element_text(size = presentationTextSize),
+            axis.title.y = element_text(size = presentationTextSize),
+            axis.text.x = element_text(size = presentationTextSize),
+            axis.text.y = element_text(size = presentationTextSize),
+            legend.text = element_text(size = presentationTextSize),
+            legend.title = element_blank()) +
+      scale_shape_manual(
+        values = c(16, 4, 1, 9), 
+        labels = conditionsVDCAmetabolism) +
+      scale_color_manual(
+        values = c(presentationcolors, "green4"), 
+        labels = conditionsVDCAmetabolism) +
+      theme(
+        legend.position = c(1,1), 
+        legend.justification = c(1,1), 
+        legend.direction = "horizontal") +
+      xlab("day"))
+}
+#svg("celldegradation.svg", width = 9, height = 5); plotproteindegradationpresentation(); dev.off(); system ("inkscape celldegradation.svg --export-emf=celldegradation.emf")
