@@ -2606,3 +2606,23 @@ plotfoxogenepresentation <- function(){
     plotslist[[4]], plotslist[[5]], plotslist[[6]],
     ncol = 3))
 }
+
+plotIgfpresentation <- function(){
+  return(grid.arrange(
+#     threegeneplotpresentation(rescaledtovehicleaszero(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "quadriceps.Ct.Igf1....Ct.Gapdh.")]), "quadriceps Igf1 mRNA", c(-3,3), c("a", "a,b", "b")) +
+#       annotationastitle("one day", 2, 3),
+#     threegeneplotpresentation(rescaledtovehicleaszero(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "quadriceps.Ct.Igf1....Ct.Gapdh.")]), "quadriceps Igf1 mRNA", c(-3,3), c("a", "a,b", "b")) +
+#       annotationastitle("three days", 2, 3),
+#     threegeneplotpresentation(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "quadriceps.Ct.Igf1....Ct.Gapdh.")]), "quadriceps Igf1 mRNA", c(-3,3), c("a", "b", "a,b")) +
+#       annotationastitle("seven days", 2, 3),
+    threegeneplotpresentation(rescaledtovehicleaszero(InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", "gastrocnemius.Ct.Igf1....Ct.Gapdh.")]), "", c(-3,3), c("a", "b", "a,b")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    threegeneplotpresentation(rescaledtovehicleaszero(InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", "gastrocnemius.Ct.Igf1....Ct.Gapdh.")]), "", c(-3,3), c("a", "b", "a,b")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    threegeneplotpresentation(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Igf1....Ct.Gapdh.")]), "", c(-3,3), c("a", "b", "a,b")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    ncol = 3))
+}
