@@ -2529,6 +2529,7 @@ plotfourebppresentation <- function(){
       scale_x_discrete(labels = conditionsVDCpresentationwrap),
     ncol = 2))
 }
+#svg("fourebp.svg", width = 8, height = 3.2); plotfourebppresentation(); dev.off(); system ("inkscape fourebp.svg --export-emf=fourebp.emf")
 
 plotfoxogenepresentation <- function(){
   columnnames <- c(
@@ -2593,7 +2594,7 @@ plotfoxogenepresentation <- function(){
   plotslist[[4]] <- plotslist[[4]] + 
     theme(axis.text.x = element_text(color = "black")) + 
     scale_x_discrete(labels = conditionsVDCpresentationwrap)
-  plotslist[[85]] <- plotslist[[5]] + 
+  plotslist[[5]] <- plotslist[[5]] + 
     theme(axis.text.x = element_text(color = "black")) + 
     scale_x_discrete(labels = conditionsVDCpresentationwrap)
   plotslist[[6]] <- plotslist[[6]] + 
