@@ -2513,3 +2513,19 @@ ploteifthreepresentation <- function(){
            theme(axis.text.x = element_text(color = "black")) + 
            scale_x_discrete(labels = conditionsVDCpresentationwrap))
 }
+#svg("eifthree.svg", width = 3, height = 3.5); ploteifthreepresentation(); dev.off(); system ("inkscape eifthree.svg --export-emf=eifthree.emf")
+
+plotfourebppresentation <- function(){
+  totalfourebpdf <- rescaledtovehicleasunity(
+    InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.4EBP.protein..normalized.to.GAPDH.")])
+  phosphofourebpdf <- rescaledtovehicleasunity(
+    InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.4EBP..normalized.to.GAPDH.")])
+  return(grid.arrange(
+    threecolumnplotpresentation(totalfourebpdf, "", c(0,2), threeidenticalgroups) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    threecolumnplotpresentation(phosphofourebpdf, "", c(0,2), threeidenticalgroups) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    ncol = 2))
+}
