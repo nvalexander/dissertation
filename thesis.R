@@ -2504,3 +2504,12 @@ ploteiftwopresentation <- function(){
            theme(axis.text.x = element_text(color = "black")) + 
            scale_x_discrete(labels = conditionsVDCpresentationwrap))
 }
+#svg("eiftwo.svg", width = 3, height = 3.5); ploteiftwopresentation(); dev.off(); system ("inkscape eiftwo.svg --export-emf=eiftwo.emf")
+
+ploteifthreepresentation <- function(){
+  shortdf7 <- rescaledtovehicleasunity(
+    InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.eIF3f.protein..normalized.to.GAPDH.")])
+  return(threecolumnplotpresentation(shortdf7, "", c(0,1.5), threeidenticalgroups)+ 
+           theme(axis.text.x = element_text(color = "black")) + 
+           scale_x_discrete(labels = conditionsVDCpresentationwrap))
+}
