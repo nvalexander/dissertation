@@ -2073,8 +2073,21 @@ plottotalproteinpresentation <- function(){
         ylab("") + 
         #"total protein density\n(relative units)"
         scale_x_continuous(labels = c("1", "2", "3", "4")) +
-        xlab("day") +
-        stdplottimecourse +
+        xlab("day") +theme_bw() + 
+        theme(text = element_text(size = presentationTextSize, color = "black", family = "Cabin"),
+              panel.grid.major.x = element_blank(),
+              panel.grid.minor.x = element_blank(),
+              panel.grid.major.y = element_blank(),
+              panel.grid.minor.y = element_blank(),
+              panel.border = element_blank(),
+              panel.background = element_blank(),
+              axis.line = element_line(colour = "black"),
+              axis.title.x = element_text(size = presentationTextSize),
+              axis.title.y = element_text(size = presentationTextSize),
+              axis.text.x = element_text(size = presentationTextSize),
+              axis.text.y = element_text(size = presentationTextSize),
+              legend.text = element_text(size = presentationTextSize),
+              legend.title = element_blank()) +
       scale_shape_manual(
         values = c(16, 4, 1, 13), 
         labels = conditionsVDCAmetabolism) +
@@ -2087,3 +2100,4 @@ plottotalproteinpresentation <- function(){
         legend.justification = c(0, 0), 
         legend.direction = "horizontal"))
 }
+#svg("totalproteincells.svg", width = 6, height = 3.5); plottotalproteinpresentation(); dev.off(); system ("inkscape totalproteincells.svg --export-emf=totalproteincells.emf")
