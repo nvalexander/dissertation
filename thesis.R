@@ -2450,6 +2450,9 @@ plotlcproteinpresentation <- function(){
     shortdf1 <- rescaledtovehicleasunity(
       InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
     plotslist[[i]] <- threecolumnplotpresentation(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[i]])
+    plotslist[[i]] <- plotslist[[i]] + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap)
   }
   
   return(grid.arrange(
@@ -2459,3 +2462,6 @@ plotlcproteinpresentation <- function(){
     plotslist[[4]],
     ncol = 2))
 }
+#svg("lc.svg", width = 4.5, height = 4.5); plotlcproteinpresentation(); dev.off(); system ("inkscape lc.svg --export-emf=lc.emf")
+
+
