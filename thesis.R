@@ -2356,7 +2356,7 @@ plotgastrocnemiusautophagypresentation <- function(){
     plotslist[[7]], plotslist[[8]], plotslist[[9]], # Map1lc3b
     ncol = 3))
 }
-#svg("autophagygenes.svg", width = 8.75, height = 6.5); plotgastrocnemiusautophagypresentation(); dev.off(); system ("inkscape autophagygenes.svg --export-emf=autophagygenes.emf")
+#svg("autophagygenes.svg", width = 8.5, height = 6); plotgastrocnemiusautophagypresentation(); dev.off(); system ("inkscape autophagygenes.svg --export-emf=autophagygenes.emf")
 
 plotcathepsinactivitypresentation <- function(){
   #alphabetical order
