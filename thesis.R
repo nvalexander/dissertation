@@ -2645,3 +2645,22 @@ plotgastrocnemiusaktpresentation <- function(){
     ncol = 6,
     widths = c(0.3, 1, 0.3, 1, 0.3, 1)))
 }
+#svg("aktgastrocnemius.svg", width = 9, height = 3); plotgastrocnemiusaktpresentation(); dev.off(); system ("inkscape aktgastrocnemius.svg --export-emf=aktgastrocnemius.emf")
+
+plotlevatoraktpresentation <- function(){
+  return(grid.arrange(
+    blankgrob,
+    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.Akt.protein..normalized.to.GAPDH.")]), "", c(0,2),threeidenticalgroups) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    blankgrob,
+    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "", c(0,2),c("a", "a,b", "b")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    blankgrob,
+    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "levator.phospho.Akt.Ser473...total.Akt")]), "", c(0,2),threeidenticalgroups) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    ncol = 6,
+    widths = c(0.3, 1, 0.3, 1, 0.3, 1)))
+}
