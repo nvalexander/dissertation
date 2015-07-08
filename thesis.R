@@ -2630,14 +2630,18 @@ plotIgfpresentation <- function(){
 
 plotgastrocnemiusaktpresentation <- function(){
   return(grid.arrange(
-    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Akt.protein..normalized.to.GAPDH.")]), "gastrocnemius total Akt", c(0,2),threeidenticalgroups) + 
-      theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDC),
-    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "gastrocnemius phospho-Ser473 Akt", c(0,2),threeidenticalgroups) + 
-      theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDCpresentation),
-    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473...total.Akt")]), "gastrocnemius phospho/total Akt", c(0,2), c("a", "a,b", "b")) + 
+    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Akt.protein..normalized.to.GAPDH.")]), "", c(0,2),threeidenticalgroups) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDCpresentationwrap),
-    ncol = 3))
+    blankgrob,
+    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "", c(0,2),threeidenticalgroups) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentation),
+    blankgrob,
+    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473...total.Akt")]), "", c(0,2), c("a", "a,b", "b")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    blankgrob,
+    ncol = 6,
+    widths = c(0.3, 1, 0.3, 1, 0.3, 1)))
 }
