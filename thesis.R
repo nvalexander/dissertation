@@ -2087,12 +2087,12 @@ plottotalproteinpresentation <- function(){
                    y = colnames(completecasesdataset)[3],
                    group = colnames(completecasesdataset)[1]) +
         stat_summary(geom = "point",
-                     size = 3,
+                     size = 5,
                      fun.y = truemean,
                      position = position_dodge(.1),
                      aes_string(shape = "treatment", color = "treatment", show_guide = FALSE)) +
         stat_summary(geom = "line", 
-                     size = .5, 
+                     size = 2, 
                      fun.y = truemean, 
                      position = position_dodge(.1),
                      aes_string(color = "treatment"),
@@ -2667,15 +2667,6 @@ plotlevatoraktpresentation <- function(){
 #svg("aktlevator.svg", width = 9, height = 3); plotgastrocnemiusaktpresentation(); dev.off(); system ("inkscape aktlevator.svg --export-emf=aktlevator.emf")
 
 plotproteinsynthesispresentation <- function() {
-  unnormalizeddata <- 
-    SynthesisInCellsVDC[, 
-                        colnames(SynthesisInCellsVDC) %in% c(
-                          "treatment", 
-                          "TimeDays", 
-                          "activity_in_cell_protein_extract_picoCi")]
-  unnormalizeddata$treatment <- factor(
-    unnormalizeddata$treatment,
-    levels = condsVDCmetabolism)
   normalizeddata <- SynthesisInCellsVDC[, 
                                         colnames(SynthesisInCellsVDC) %in% c(
                                           "treatment", 
@@ -2716,9 +2707,9 @@ plotproteinsynthesispresentation <- function() {
                    position=position_dodge(.1)) +
       coord_cartesian(ylim = c(7, 11)) + 
       ylab("") + 
-      #"activity in cell protein\nextract (pCi/well)"
+      #"tracer enrichment in cell\nprotein (fmol/g)"
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
-      xlab("day") +theme_bw() + 
+      theme_bw() + 
       theme(text = element_text(size = presentationTextSize, color = "black", family = "Cabin"),
             panel.grid.major.x = element_blank(),
             panel.grid.minor.x = element_blank(),
