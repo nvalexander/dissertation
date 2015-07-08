@@ -2714,7 +2714,7 @@ plotproteinsynthesispresentation <- function() {
                    show_guide = FALSE,
                    aes_string(color = "treatment"),
                    position=position_dodge(.1)) +
-      coord_cartesian(ylim = c(1100, 1600)) + 
+      coord_cartesian(ylim = c(7, 11)) + 
       ylab("") + 
       #"activity in cell protein\nextract (pCi/well)"
       scale_x_continuous(labels = c("1", "2", "3", "4")) +
@@ -2743,6 +2743,6 @@ plotproteinsynthesispresentation <- function() {
         legend.position = c(0, 0), 
         legend.justification = c(0, 0), 
         legend.direction = "horizontal") +
-      scale_x_continuous(labels = c("1", "2", "3", "4")) +
       xlab("day"))
 }
+#svg("cellsynthesis.svg", width = 9, height = 5); plotproteinsynthesispresentation(); dev.off(); system ("inkscape cellsynthesis.svg --export-emf=cellsynthesis.emf")
