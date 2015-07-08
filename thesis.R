@@ -2419,3 +2419,43 @@ plotcathepsinactivitypresentation <- function(){
     plotslist[[7]], plotslist[[8]], plotslist[[9]], # triceps
     ncol = 3))
 }
+#svg("cathepsinenzymatic.svg", width = 8.75, height = 6.2); plotcathepsinactivitypresentation(); dev.off(); system ("inkscape cathepsinenzymatic.svg --export-emf=cathepsinenzymatic.emf")
+
+plotlcproteinpresentation <- function(){
+  columnnames <- c(
+    "levator.LC3.II..normalized.to.GAPDH.",
+    "levator.LC3.II...LC.I",
+    "gastrocnemius.LC3.II..normalized.to.GAPDH.",
+    "gastrocnemius.LC3.II...LC.I")
+  ylabels <- c(
+    "LC3-II protein normalized to GAPDH",
+    "LC3-II protein normalized to LC3-I",
+    "LC3-II protein normalized to GAPDH",
+    "LC3-II protein normalized to LC3-I")
+  ylabels <- c("", "", "", "")
+  ylims <- list(
+    c(0,8),
+    c(0,20),
+    c(0,3),
+    c(0,3)
+  )
+  statstrings <- list(
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups,
+    threeidenticalgroups)
+  
+  plotslist <- list()
+  for (i in 1:4){
+    shortdf1 <- rescaledtovehicleasunity(
+      InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
+    plotslist[[i]] <- threecolumnplotpresentation(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[i]])
+  }
+  
+  return(grid.arrange(
+    #plotslist[[1]],
+    #plotslist[[2]], 
+    plotslist[[3]],
+    plotslist[[4]],
+    ncol = 2))
+}
