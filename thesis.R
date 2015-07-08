@@ -523,13 +523,14 @@ threegeneplotpresentation <- function(skinnydataset, ylabel, ylimit, statstrings
                    show_guide = FALSE,
                    aes_string(shape = colnames(completecasesdataset)[1], 
                               color = colnames(completecasesdataset)[1])) +
-      geom_errorbar(stat = "hline", yintercept = "mean",
+      geom_errorbar(stat = "hline",
+                    yintercept = "mean",
                     width=0.8,
-                    aes(ymax=..y.., ymin=..y..),
+                    aes(ymax=..y.., ymin=..y..),,
                     aes_string(color = colnames(completecasesdataset)[1])) +
       stat_summary(geom = "text", 
-                   size = textSize * .4,
-                   aes(family = "Liberation Sans Narrow"),
+                   size = presentationTextSize * .4,
+                   aes(family = "Cabin"),
                    fun.y = statstringyoverbar, 
                    hjust = .5,
                    vjust = -.6,
@@ -538,7 +539,8 @@ threegeneplotpresentation <- function(skinnydataset, ylabel, ylimit, statstrings
                    fun.data = 'semInterval',
                    width = 0.1,
                    show_guide = FALSE,
-                   position=position_dodge(.05)) +
+                   position = position_dodge(.05),
+                   aes_string(color = colnames(completecasesdataset)[1])) +
       ylab(ylabel) +
       scale_y_continuous(breaks = (-10:10), labels = prettyNum(2^(-10:10))) +
       coord_cartesian(ylim = ylimit) +
@@ -2197,11 +2199,11 @@ plotatrogenespresentation <- function(){
     plotslist[[i*3]] <- threegeneplotpresentation(shortdf7, ylabels[[i]], ylims[[(i*3)]], statstrings[[(i*3)]])
     if (columnnames[[i]] == "gastrocnemius.Ct.Trim63....Ct.Gapdh.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
-        annotationastitle("one day", 2, ylims[[(i*3-2)]][[2]])
+        annotationastitlepresentation("one day", 2, ylims[[(i*3-2)]][[2]])
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
-        annotationastitle("three days", 2, ylims[[(i*3-1)]][[2]])
+        annotationastitlepresentation("three days", 2, ylims[[(i*3-1)]][[2]])
       plotslist[[i*3]] <- plotslist[[i*3]] + 
-        annotationastitle("seven days", 2, ylims[[(i*3)]][[2]])
+        annotationastitlepresentation("seven days", 2, ylims[[(i*3)]][[2]])
     }
     if (columnnames[[i]] == "quadriceps.Ct.Fbxo32....Ct.Gapdh.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
