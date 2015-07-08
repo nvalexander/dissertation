@@ -2356,3 +2356,66 @@ plotgastrocnemiusautophagypresentation <- function(){
     plotslist[[7]], plotslist[[8]], plotslist[[9]], # Map1lc3b
     ncol = 3))
 }
+#svg("autophagygenes.svg", width = 8.75, height = 6.5); plotgastrocnemiusautophagypresentation(); dev.off(); system ("inkscape autophagygenes.svg --export-emf=autophagygenes.emf")
+
+plotcathepsinactivitypresentation <- function(){
+  #alphabetical order
+  columnnames <- c("gastrocnemius.cathepsin.activity..rel.u..",
+                   "quadriceps.cathepsin.activity..rel.u..",
+                   "triceps.cathepsin.activity..rel.u..")
+  ylabels <- c("gastrocnemius cathepsin\nactivity (rel.u.)",
+               "quadriceps cathepsin\nactivity (rel.u.)",
+               "triceps cathepsin\nactivity (rel.u.)")
+  ylabels <- c("", "", "")
+  ylims <- c(0, 1.5)
+  statstrings <- list(
+    #gastrocnemius 1, 3, 7:
+    c("a", "b", "a,b"),
+    threeidenticalgroups,
+    c("a", "b", "b"),
+    #quadriceps:
+    c("a", "b", "a"),
+    c("a", "b", "a,b"),
+    c("a", "b", "b"),
+    #triceps:
+    c("a", "b", "a,b"),
+    c("a", "b", "a,b"),
+    c("a", "b", "b"))
+  
+  plotslist <- list()
+  for (i in 1:3){
+    shortdf1 <- rescaledtovehicleasunity(
+      InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf3 <- rescaledtovehicleasunity(
+      InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf7 <- rescaledtovehicleasunity(
+      InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
+    plotslist[[i*3-2]] <- threecolumnplotpresentation(shortdf1, ylabels[[i]], ylims, statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <- threecolumnplotpresentation(shortdf3, ylabels[[i]], ylims, statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threecolumnplotpresentation(shortdf7, ylabels[[i]], ylims, statstrings[[(i*3)]])
+#     if (columnnames[[i]] == "gastrocnemius.cathepsin.activity..rel.u..") {
+#       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+#         annotationastitle("one day", 2, ylims[[2]])
+#       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+#         annotationastitle("three days", 2, ylims[[2]])
+#       plotslist[[i*3]] <- plotslist[[i*3]] + 
+#         annotationastitle("seven days", 2, ylims[[2]])
+#     }
+    if (columnnames[[i]] == "triceps.cathepsin.activity..rel.u..") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDCpresentationwrap)
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDCpresentationwrap)
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDCpresentationwrap)
+    }
+  }
+  return(grid.arrange(
+    plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius
+    plotslist[[4]], plotslist[[5]], plotslist[[6]], # quadriceps
+    plotslist[[7]], plotslist[[8]], plotslist[[9]], # triceps
+    ncol = 3))
+}
