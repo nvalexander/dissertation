@@ -2464,4 +2464,34 @@ plotlcproteinpresentation <- function(){
 }
 #svg("lc.svg", width = 4.5, height = 4.5); plotlcproteinpresentation(); dev.off(); system ("inkscape lc.svg --export-emf=lc.emf")
 
-
+plotcalpainactivitypresentation <- function(){
+  #alphabetical order
+  columnname <- "gastrocnemius.calpain.activity..rel.u.."
+  ylabel <- "gastrocnemius calpain\nactivity (rel.u.)"
+  ylabel <- ""
+  ylims <- c(0, 2)
+  statstrings <- list(
+    #gastrocnemius 1, 3, 7:
+    c("a", "b", "b"),
+    threeidenticalgroups,
+    threeidenticalgroups)
+  plotslist <- list()
+  shortdf1 <- rescaledtovehicleasunity(
+    InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnname)])
+  shortdf3 <- rescaledtovehicleasunity(
+    InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnname)])
+  shortdf7 <- rescaledtovehicleasunity(
+    InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnname)])
+  plotslist[[1]] <- threecolumnplotpresentation(shortdf1, ylabel, ylims, statstrings[[1]])+ 
+    theme(axis.text.x = element_text(color = "black")) + 
+    scale_x_discrete(labels = conditionsVDCpresentationwrap) 
+  plotslist[[2]] <- threecolumnplotpresentation(shortdf3, ylabel, ylims, statstrings[[2]])+ 
+    theme(axis.text.x = element_text(color = "black")) + 
+    scale_x_discrete(labels = conditionsVDCpresentationwrap) 
+  plotslist[[3]] <- threecolumnplotpresentation(shortdf7, ylabel, ylims, statstrings[[3]])+ 
+    theme(axis.text.x = element_text(color = "black")) + 
+    scale_x_discrete(labels = conditionsVDCpresentationwrap) 
+  return(grid.arrange(
+    plotslist[[1]], plotslist[[2]], plotslist[[3]], 
+    ncol = 3))
+}
