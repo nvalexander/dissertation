@@ -1874,7 +1874,7 @@ presentationbodyweightcourse <- function(){
                         fun.data = 'semInterval',
                         width = 1,
                         show_guide = FALSE,
-                        position=position_dodge(.1),
+                        position = position_dodge(.1),
                         aes_string(color = colnames(completecasesdataset)[1])) +
            coord_cartesian(ylim = c(-7, 10)) + 
            ylab("") +
@@ -2494,4 +2494,13 @@ plotcalpainactivitypresentation <- function(){
   return(grid.arrange(
     plotslist[[1]], plotslist[[2]], plotslist[[3]], 
     ncol = 3))
+}
+#svg("calpain.svg", width = 8.75, height = 4); plotcalpainactivitypresentation(); dev.off(); system ("inkscape calpain.svg --export-emf=calpain.emf")
+
+ploteiftwopresentation <- function(){
+  shortdf7 <- rescaledtovehicleasunity(
+    InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.eIF2alpha..normalized.to.GAPDH.")])
+  return(threecolumnplotpresentation(shortdf7, "", c(0,1.5), threeidenticalgroups)+ 
+           theme(axis.text.x = element_text(color = "black")) + 
+           scale_x_discrete(labels = conditionsVDCpresentationwrap))
 }
