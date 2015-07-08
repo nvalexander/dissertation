@@ -573,7 +573,7 @@ plotthreetimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
                    position = position_dodge(.05)) + 
       stat_summary(geom = "text", 
                    size = textSize * .4,
-                   aes(family = "serif"),
+                   aes(family = "Liberation Sans Narrow"),
                    fun.y = statstringyunderbar, 
                    hjust = -.2,
                    vjust = .25,
@@ -614,7 +614,7 @@ plotfourtimecourses <- function(skinnydataset, ylimit, ylabel, categories, stats
                    position = position_dodge(.1), show_guide = FALSE) + 
       #     stat_summary(geom = "text", 
       #                  size = textSize * .4,
-      #                  aes(family = "serif"),
+      #                  aes(family = "Liberation Sans Narrow"),
       #                  fun.y = statstringyunderbar, 
       #                  hjust = -.2,
       #                  vjust = .25,
@@ -1719,7 +1719,7 @@ plotproteindegradation <- function(){
                    position=position_dodge(.2))  + 
       stat_summary(geom = "text", 
                    size = textSize * .4,
-                   aes(family = "serif"),
+                   aes(family = "Liberation Sans Narrow"),
                    fun.y = statstringyunderbar, 
                    hjust = -.2,
                    vjust = .25,
@@ -2098,8 +2098,8 @@ plottotalproteinpresentation <- function(){
                      aes_string(color = "treatment"),
                      show_guide = FALSE) + 
         #     stat_summary(geom = "text", 
-        #                  size = textSize * .4,
-        #                  aes(family = "serif"),
+        #                  size = presentationTextSize * .4,
+        #                  aes(family = "Cabin"),
         #                  fun.y = statstringyunderbar, 
         #                  hjust = -.2,
         #                  vjust = .25,
@@ -2693,8 +2693,8 @@ plotproteinsynthesispresentation <- function() {
                    aes_string(color = "treatment"),
                    show_guide = FALSE) + 
       #     stat_summary(geom = "text", 
-      #                  size = textSize * .4,
-      #                  aes(family = "serif"),
+      #                  size = presentationTextSize * .4,
+      #                  aes(family = "Cabin"),
       #                  fun.y = statstringyunderbar, 
       #                  hjust = -.2,
       #                  vjust = .25,
@@ -2779,8 +2779,8 @@ plotproteindegradationpresentation <- function(){
                    aes_string(color = "treatment"),
                    show_guide = FALSE) + 
       #     stat_summary(geom = "text", 
-      #                  size = textSize * .4,
-      #                  aes(family = "serif"),
+      #                  size = presentationTextSize * .4,
+      #                  aes(family = "Cabin"),
       #                  fun.y = statstringyunderbar, 
       #                  hjust = -.2,
       #                  vjust = .25,
@@ -2838,7 +2838,7 @@ plotinhibitorspresentation <- function() {
                         fun.data = 'semInterval',
                         width = 0.1) +
            stat_summary(geom = "text", 
-                        size = textSize * .4,
+                        size = presentationTextSize * .4,
                         aes(family = "Cabin"),
                         fun.y = statstringyoverbar, 
                         hjust = .5,
@@ -2856,13 +2856,13 @@ plotinhibitorspresentation <- function() {
              "#777777"),
              labels = conditionsVDCinhibitors) +
            stat_summary(geom = "text", 
-                        size = textSize * .4,
+                        size = presentationTextSize * .4,
                         aes(family = "Cabin"),
                         fun.y = statstringyoverbar, 
                         hjust = .5,
                         vjust = -.6,
                         label = c("a", "b", "a", "c", "a", "a")) +
            stdbarplot + 
-           theme(axis.text.x = element_text(color = "black")) + 
+           theme(axis.text.x = element_text(color = "black", size = presentationTextSize * 1.4)) + 
            scale_x_discrete(labels = conditionsVDCinhibitors))
 }
