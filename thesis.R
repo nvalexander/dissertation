@@ -2529,3 +2529,79 @@ plotfourebppresentation <- function(){
       scale_x_discrete(labels = conditionsVDCpresentationwrap),
     ncol = 2))
 }
+
+plotfoxogenepresentation <- function(){
+  columnnames <- c(
+    "quadriceps.Ct.Foxo3a....Ct.Gapdh.",
+    "quadriceps.Ct.Klf15....Ct.Gapdh.")
+  ylabels <- c(
+    "Foxo3a mRNA",
+    "Klf15 mRNA")
+  ylabels <- c("", "")
+  ylims <- list(
+    #     # quadriceps Foxo1 - days 1, 3, 7:
+    #     c(-1,10),
+    #     c(-1.5,3.75),
+    #     c(-4,2),
+    # quadriceps Foxo3 - days 1, 3, 7:
+    c(-1,10),
+    c(-1.5,3.75),
+    c(-4,2),
+    #     # quadriceps Foxo4 - days 1, 3, 7:
+    #     c(-1,10),
+    #     c(-1.5,3.75),
+    #     c(-4,2),
+    # quadriceps Klf15 - days 1, 3, 7:
+    c(-1,6),
+    c(-1,3.75),
+    c(-4,2))
+  statstrings <- list(
+    #     # quadriceps Foxo1 - days 1, 3, 7:
+    #     c("a", "b", "a,b"),
+    #     c("a", "b", "a,b"),
+    #     c("a", "a,b", "b"),
+    # quadriceps Foxo3a - days 1, 3, 7:
+    c("a", "b", "a,b"),
+    threeidenticalgroups,
+    c("a", "b", "a,b"),
+    #     # quadriceps Foxo4 - days 1, 3, 7:
+    #     c("a", "b", "a,b"),
+    #     threeidenticalgroups,
+    #     c("a", "b", "a,b"),
+    # quadriceps Klf15 - days 1, 3, 7:
+    c("a", "b", "a,b"),
+    c("a,b", "a", "b"),
+    c("a", "a,b", "b"))
+  
+  plotslist <- list()
+  for (i in 1:2){
+    shortdf1 <- rescaledtovehicleaszero(
+      InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf3 <- rescaledtovehicleaszero(
+      InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf7 <- rescaledtovehicleaszero(
+      InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
+    plotslist[[i*3-2]] <- threegeneplotpresentation(shortdf1, ylabels[[i]], ylims[[(i*3-2)]], statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <- threegeneplotpresentation(shortdf3, ylabels[[i]], ylims[[(i*3-1)]], statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threegeneplotpresentation(shortdf7, ylabels[[i]], ylims[[(i*3)]], statstrings[[(i*3)]])
+  }
+  
+#   plotslist[[1]] <- plotslist[[1]] + annotationastitle("one day", 2, ylims[[1]][[2]])
+#   plotslist[[2]] <- plotslist[[2]] + annotationastitle("three days", 2, ylims[[2]][[2]])
+#   plotslist[[3]] <- plotslist[[3]] + annotationastitle("seven days", 2, ylims[[3]][[2]])
+  
+  plotslist[[4]] <- plotslist[[4]] + 
+    theme(axis.text.x = element_text(color = "black")) + 
+    scale_x_discrete(labels = conditionsVDCpresentationwrap)
+  plotslist[[85]] <- plotslist[[5]] + 
+    theme(axis.text.x = element_text(color = "black")) + 
+    scale_x_discrete(labels = conditionsVDCpresentationwrap)
+  plotslist[[6]] <- plotslist[[6]] + 
+    theme(axis.text.x = element_text(color = "black")) + 
+    scale_x_discrete(labels = conditionsVDCpresentationwrap)
+  
+  return(grid.arrange(
+    plotslist[[1]], plotslist[[2]], plotslist[[3]],
+    plotslist[[4]], plotslist[[5]], plotslist[[6]],
+    ncol = 3))
+}
