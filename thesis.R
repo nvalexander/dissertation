@@ -2687,7 +2687,7 @@ plotproteinsynthesispresentation <- function() {
                    position = position_dodge(.1),
                    aes_string(shape = "treatment", color = "treatment", show_guide = FALSE)) +
       stat_summary(geom = "line", 
-                   size = .5, 
+                   size = 2, 
                    fun.y = truemean, 
                    position = position_dodge(.1),
                    aes_string(color = "treatment"),
