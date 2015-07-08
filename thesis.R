@@ -526,8 +526,7 @@ threegeneplotpresentation <- function(skinnydataset, ylabel, ylimit, statstrings
       geom_errorbar(stat = "hline",
                     yintercept = "mean",
                     width=0.8,
-                    aes(ymax=..y.., ymin=..y..),,
-                    aes_string(color = colnames(completecasesdataset)[1])) +
+                    aes(ymax=..y.., ymin=..y.., color = treatment)) +
       stat_summary(geom = "text", 
                    size = presentationTextSize * .4,
                    aes(family = "Cabin"),
