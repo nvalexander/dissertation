@@ -2196,14 +2196,14 @@ plotatrogenespresentation <- function(){
     plotslist[[i*3-2]] <- threegeneplotpresentation(shortdf1, ylabels[[i]], ylims[[(i*3-2)]], statstrings[[(i*3-2)]])
     plotslist[[i*3-1]] <- threegeneplotpresentation(shortdf3, ylabels[[i]], ylims[[(i*3-1)]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threegeneplotpresentation(shortdf7, ylabels[[i]], ylims[[(i*3)]], statstrings[[(i*3)]])
-    if (columnnames[[i]] == "gastrocnemius.Ct.Trim63....Ct.Gapdh.") {
-      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
-        annotationastitlepresentation("one day", 2, ylims[[(i*3-2)]][[2]])
-      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
-        annotationastitlepresentation("three days", 2, ylims[[(i*3-1)]][[2]])
-      plotslist[[i*3]] <- plotslist[[i*3]] + 
-        annotationastitlepresentation("seven days", 2, ylims[[(i*3)]][[2]])
-    }
+#     if (columnnames[[i]] == "gastrocnemius.Ct.Trim63....Ct.Gapdh.") {
+#       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+#         annotationastitlepresentation("one day", 2, ylims[[(i*3-2)]][[2]])
+#       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+#         annotationastitlepresentation("three days", 2, ylims[[(i*3-1)]][[2]])
+#       plotslist[[i*3]] <- plotslist[[i*3]] + 
+#         annotationastitlepresentation("seven days", 2, ylims[[(i*3)]][[2]])
+#     }
     if (columnnames[[i]] == "quadriceps.Ct.Fbxo32....Ct.Gapdh.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
         theme(axis.text.x = element_text(color = "black")) + 
