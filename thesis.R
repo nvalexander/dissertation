@@ -1858,7 +1858,7 @@ presentationbodyweightcourse <- function(){
                         aes_string(color = colnames(completecasesdataset)[1])) + 
            stat_summary(geom = "text", 
                         size = presentationTextSize * .4,
-                        aes(family = "serif"),
+                        aes(family = "Cabin"),
                         fun.y = statstringyunderbar, 
                         hjust = -.2,
                         vjust = .25,
