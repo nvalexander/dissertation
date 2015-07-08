@@ -2606,6 +2606,7 @@ plotfoxogenepresentation <- function(){
     plotslist[[4]], plotslist[[5]], plotslist[[6]],
     ncol = 3))
 }
+#svg("foxo.svg", width = 8, height = 5); plotfoxogenepresentation(); dev.off(); system ("inkscape foxo.svg --export-emf=foxo.emf")
 
 plotIgfpresentation <- function(){
   return(grid.arrange(
@@ -2622,6 +2623,20 @@ plotIgfpresentation <- function(){
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDCpresentationwrap),
     threegeneplotpresentation(rescaledtovehicleaszero(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Ct.Igf1....Ct.Gapdh.")]), "", c(-3,3), c("a", "b", "a,b")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    ncol = 3))
+}
+
+plotgastrocnemiusaktpresentation <- function(){
+  return(grid.arrange(
+    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Akt.protein..normalized.to.GAPDH.")]), "gastrocnemius total Akt", c(0,2),threeidenticalgroups) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC),
+    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "gastrocnemius phospho-Ser473 Akt", c(0,2),threeidenticalgroups) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentation),
+    threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473...total.Akt")]), "gastrocnemius phospho/total Akt", c(0,2), c("a", "a,b", "b")) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDCpresentationwrap),
     ncol = 3))
