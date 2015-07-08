@@ -2664,3 +2664,85 @@ plotlevatoraktpresentation <- function(){
     ncol = 6,
     widths = c(0.3, 1, 0.3, 1, 0.3, 1)))
 }
+#svg("aktlevator.svg", width = 9, height = 3); plotgastrocnemiusaktpresentation(); dev.off(); system ("inkscape aktlevator.svg --export-emf=aktlevator.emf")
+
+plotproteinsynthesispresentation <- function() {
+  unnormalizeddata <- 
+    SynthesisInCellsVDC[, 
+                        colnames(SynthesisInCellsVDC) %in% c(
+                          "treatment", 
+                          "TimeDays", 
+                          "activity_in_cell_protein_extract_picoCi")]
+  unnormalizeddata$treatment <- factor(
+    unnormalizeddata$treatment,
+    levels = condsVDCmetabolism)
+  normalizeddata <- SynthesisInCellsVDC[, 
+                                        colnames(SynthesisInCellsVDC) %in% c(
+                                          "treatment", 
+                                          "TimeDays", 
+                                          "femtomol_radio_Phe_per_g_cell_protein")]
+  normalizeddata$treatment <- factor(
+    normalizeddata$treatment,
+    levels = condsVDCmetabolism)
+  completecasesdataset <- normalizeddata[complete.cases(normalizeddata),]
+  return(
+    ggplot(completecasesdataset) + 
+      aes_string(x = colnames(completecasesdataset)[2],
+                 y = colnames(completecasesdataset)[3],
+                 group = colnames(completecasesdataset)[1]) +
+      stat_summary(geom = "point",
+                   size = 3,
+                   fun.y = truemean,
+                   position = position_dodge(.1),
+                   aes_string(shape = "treatment", color = "treatment", show_guide = FALSE)) +
+      stat_summary(geom = "line", 
+                   size = .5, 
+                   fun.y = truemean, 
+                   position = position_dodge(.1),
+                   aes_string(color = "treatment"),
+                   show_guide = FALSE) + 
+      #     stat_summary(geom = "text", 
+      #                  size = textSize * .4,
+      #                  aes(family = "serif"),
+      #                  fun.y = statstringyunderbar, 
+      #                  hjust = -.2,
+      #                  vjust = .25,
+      #                  label = statsstring) + 
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.2,
+                   show_guide = FALSE,
+                   aes_string(color = "treatment"),
+                   position=position_dodge(.1)) +
+      coord_cartesian(ylim = c(1100, 1600)) + 
+      ylab("") + 
+      #"activity in cell protein\nextract (pCi/well)"
+      scale_x_continuous(labels = c("1", "2", "3", "4")) +
+      xlab("day") +theme_bw() + 
+      theme(text = element_text(size = presentationTextSize, color = "black", family = "Cabin"),
+            panel.grid.major.x = element_blank(),
+            panel.grid.minor.x = element_blank(),
+            panel.grid.major.y = element_blank(),
+            panel.grid.minor.y = element_blank(),
+            panel.border = element_blank(),
+            panel.background = element_blank(),
+            axis.line = element_line(colour = "black"),
+            axis.title.x = element_text(size = presentationTextSize),
+            axis.title.y = element_text(size = presentationTextSize),
+            axis.text.x = element_text(size = presentationTextSize),
+            axis.text.y = element_text(size = presentationTextSize),
+            legend.text = element_text(size = presentationTextSize),
+            legend.title = element_blank()) +
+      scale_shape_manual(
+        values = c(16, 4, 1), 
+        labels = conditionsVDCmetabolism) +
+      scale_color_manual(
+        values = c(presentationcolors, "green4"), 
+        labels = conditionsVDCmetabolism) +
+      theme(
+        legend.position = c(0, 0), 
+        legend.justification = c(0, 0), 
+        legend.direction = "horizontal") +
+      scale_x_continuous(labels = c("1", "2", "3", "4")) +
+      xlab("day"))
+}
