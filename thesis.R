@@ -2630,18 +2630,18 @@ plotIgfpresentation <- function(){
 
 plotgastrocnemiusaktpresentation <- function(){
   return(grid.arrange(
+    blankgrob,
     threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.Akt.protein..normalized.to.GAPDH.")]), "", c(0,2),threeidenticalgroups) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDCpresentationwrap),
     blankgrob,
     threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473..normalized.to.GAPDH.")]), "", c(0,2),threeidenticalgroups) + 
       theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDCpresentation),
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
     blankgrob,
     threecolumnplotpresentation(rescaledtovehicleasunity(InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", "gastrocnemius.phospho.Akt.Ser473...total.Akt")]), "", c(0,2), c("a", "a,b", "b")) + 
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDCpresentationwrap),
-    blankgrob,
     ncol = 6,
     widths = c(0.3, 1, 0.3, 1, 0.3, 1)))
 }
