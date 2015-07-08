@@ -2823,3 +2823,46 @@ plotproteindegradationpresentation <- function(){
       xlab("day"))
 }
 #svg("celldegradation.svg", width = 9, height = 5); plotproteindegradationpresentation(); dev.off(); system ("inkscape celldegradation.svg --export-emf=celldegradation.emf")
+
+
+plotinhibitorspresentation <- function() {
+  return(ggplot(DegradationWithInhibitors) +
+           aes_string(x = "treatment", 
+                      y = "curie_ratio_protein_depleted_medium_over_cell_protein", 
+                      fill = "treatment") +
+           stat_summary(fun.y = mean, 
+                        geom = "bar", 
+                        colour = "black",
+                        show_guide = FALSE) +
+           stat_summary(geom = 'errorbar',
+                        fun.data = 'semInterval',
+                        width = 0.1) +
+           stat_summary(geom = "text", 
+                        size = textSize * .4,
+                        aes(family = "Cabin"),
+                        fun.y = statstringyoverbar, 
+                        hjust = .5,
+                        vjust = -.6,
+                        label = "") +
+           #ylab("medium to cell protein tracer\nratio (24 hour)") +
+           ylab("")+
+           coord_cartesian(ylim = c(0, 1.9)) + 
+           scale_fill_manual(values = c(
+             "#ffffff", 
+             "#222222", 
+             "#777777", 
+             "#dddddd", 
+             "#555555", 
+             "#777777"),
+             labels = conditionsVDCinhibitors) +
+           stat_summary(geom = "text", 
+                        size = textSize * .4,
+                        aes(family = "Cabin"),
+                        fun.y = statstringyoverbar, 
+                        hjust = .5,
+                        vjust = -.6,
+                        label = c("a", "b", "a", "c", "a", "a")) +
+           stdbarplot + 
+           theme(axis.text.x = element_text(color = "black")) + 
+           scale_x_discrete(labels = conditionsVDCinhibitors))
+}
