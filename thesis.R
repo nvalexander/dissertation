@@ -2201,13 +2201,13 @@ plotatrogenespresentation <- function(){
     if (columnnames[[i]] == "quadriceps.Ct.Fbxo32....Ct.Gapdh.") {
       plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
         theme(axis.text.x = element_text(color = "black")) + 
-        scale_x_discrete(labels = conditionsVDC)
+        scale_x_discrete(labels = conditionsVDCpresentationwrap)
       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
         theme(axis.text.x = element_text(color = "black")) + 
-        scale_x_discrete(labels = conditionsVDC)
+        scale_x_discrete(labels = conditionsVDCpresentationwrap)
       plotslist[[i*3]] <- plotslist[[i*3]] + 
         theme(axis.text.x = element_text(color = "black")) + 
-        scale_x_discrete(labels = conditionsVDC)
+        scale_x_discrete(labels = conditionsVDCpresentationwrap)
     }
   }
   return(grid.arrange(
