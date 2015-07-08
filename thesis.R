@@ -507,6 +507,41 @@ threegeneplot <- function(skinnydataset, ylabel, ylimit, statstrings){
       stdbarplot)
 }
 
+threegeneplotpresentation <- function(skinnydataset, ylabel, ylimit, statstrings){
+  # this function expects a dataframe with two columns, first designating the treatments
+  # second column described Ct(GOI)-Ct(housekeeping gene)
+  completecasesdataset <- skinnydataset[complete.cases(skinnydataset),]
+  completecasesdataset[,2] <- completecasesdataset[,2] * (-1)
+  return(
+    ggplot(completecasesdataset) +
+      aes_string(x = colnames(completecasesdataset)[1], 
+                 y = colnames(completecasesdataset)[2], 
+                 group = colnames(completecasesdataset)[1]) +
+      stat_summary(geom = "point",
+                   size = 3,
+                   colour = "black",
+                   fun.y = mean,
+                   show_guide = FALSE,
+                   aes_string(shape = colnames(completecasesdataset)[1])) +
+      stat_summary(geom = "text", 
+                   size = textSize * .4,
+                   aes(family = "Liberation Sans Narrow"),
+                   fun.y = statstringyoverbar, 
+                   hjust = .5,
+                   vjust = -.6,
+                   label = statstrings) + 
+      stat_summary(geom = 'errorbar',
+                   fun.data = 'semInterval',
+                   width = 0.1,
+                   show_guide = FALSE,
+                   position=position_dodge(.05)) +
+      ylab(ylabel) +
+      scale_y_continuous(breaks = (-10:10), labels = prettyNum(2^(-10:10))) +
+      coord_cartesian(ylim = ylimit) +
+      scale_shape_manual(values = c(16, 4, 1), labels = conditionsVDC, guide = FALSE) +
+      stdbarplot)
+}
+
 plotthreetimecourses <- function(skinnydataset, ylimit, ylabel, statsstring){
   # This function expects a dataframe with three columns
   # - first column designates the treatments
@@ -2101,3 +2136,84 @@ plottotalproteinpresentation <- function(){
         legend.direction = "horizontal"))
 }
 #svg("totalproteincells.svg", width = 6, height = 3.5); plottotalproteinpresentation(); dev.off(); system ("inkscape totalproteincells.svg --export-emf=totalproteincells.emf")
+
+
+plotatrogenespresentation <- function(){
+  #alphabetical order
+  columnnames <- c(
+    "gastrocnemius.Ct.Fbxo32....Ct.Gapdh.",
+    "quadriceps.Ct.Fbxo32....Ct.Gapdh.",
+    "gastrocnemius.Ct.Trim63....Ct.Gapdh.",
+    "quadriceps.Ct.Trim63....Ct.Gapdh.")
+  ylabels <- c(
+    "gastrocnemius\nFbxo32 mRNA",
+    "quadriceps\nFbxo32 mRNA",
+    "gastrocnemius\nTrim63 mRNA",
+    "quadriceps\nTrim63 mRNA")
+  ylabels <- c("", "", "", "")
+  ylims <- list(
+    # gastrocnemius - Fbxo32 / Mafbx: 1, 3, 7:
+    c(-1, 2.5), c(-1.5, 5.4), c(-2, 2),
+    # quadriceps - Fbxo32 / Mafbx: 1, 3, 7:
+    c(-1, 8.5), c(-1.5, 5.4), c(-2, 2),
+    # gastrocnemius - Trim63 / Murf1: 1, 3, 7:
+    c(-1, 2.5), c(-1.5, 5.4), c(-2, 2),
+    # quadriceps - Trim63 / Murf1: 1, 3, 7:
+    c(-1, 8.5), c(-1.5, 5.4), c(-2, 2))
+  
+  statstrings <- list(
+    # gastrocnemius - Fbxo32 / Mafbx: 1, 3, 7:
+    c("a", "a,b", "b"),
+    threeidenticalgroups,
+    threeidenticalgroups,
+    # quadriceps - Fbxo32 / Mafbx: 1, 3, 7:
+    c("a", "b", "a,b"),
+    c("a,b", "a", "b"),
+    threeidenticalgroups,
+    # gastrocnemius - Trim63 / Murf1: 1, 3, 7:
+    threeidenticalgroups,
+    c("a", "b", "a,b"),
+    threeidenticalgroups,
+    # quadriceps - Trim63 / Murf1: 1, 3, 7:
+    c("a", "b", "a,b"),
+    c("a,b", "a", "b"),
+    c("a", "a,b", "b"))
+  
+  plotslist <- list()
+  for (i in 1:4){
+    shortdf1 <- rescaledtovehicleaszero(
+      InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf3 <- rescaledtovehicleaszero(
+      InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% c("treatment", columnnames[[i]])])
+    shortdf7 <- rescaledtovehicleaszero(
+      InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% c("treatment", columnnames[[i]])])
+    plotslist[[i*3-2]] <- threegeneplotpresentation(shortdf1, ylabels[[i]], ylims[[(i*3-2)]], statstrings[[(i*3-2)]])
+    plotslist[[i*3-1]] <- threegeneplotpresentation(shortdf3, ylabels[[i]], ylims[[(i*3-1)]], statstrings[[(i*3-1)]])
+    plotslist[[i*3]] <- threegeneplotpresentation(shortdf7, ylabels[[i]], ylims[[(i*3)]], statstrings[[(i*3)]])
+    if (columnnames[[i]] == "gastrocnemius.Ct.Trim63....Ct.Gapdh.") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        annotationastitle("one day", 2, ylims[[(i*3-2)]][[2]])
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        annotationastitle("three days", 2, ylims[[(i*3-1)]][[2]])
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        annotationastitle("seven days", 2, ylims[[(i*3)]][[2]])
+    }
+    if (columnnames[[i]] == "quadriceps.Ct.Fbxo32....Ct.Gapdh.") {
+      plotslist[[i*3-2]] <- plotslist[[i*3-2]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+      plotslist[[i*3]] <- plotslist[[i*3]] + 
+        theme(axis.text.x = element_text(color = "black")) + 
+        scale_x_discrete(labels = conditionsVDC)
+    }
+  }
+  return(grid.arrange(
+    plotslist[[7]], plotslist[[8]], plotslist[[9]], # gastrocnemius MuRF1
+    plotslist[[10]], plotslist[[11]], plotslist[[12]], # quadriceps MuRF1
+    plotslist[[1]], plotslist[[2]], plotslist[[3]], # gastrocnemius MAFbx
+    plotslist[[4]], plotslist[[5]], plotslist[[6]], # quadriceps MAFbx
+    ncol = 3))
+}
