@@ -1472,6 +1472,39 @@ plotredd <- function(){
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC) +
       annotationastitle("seven days", 2, 7.5),
+    
+    
+    threegeneplot(
+      rescaledtovehicleaszero(
+        InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% 
+                          c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), 
+      "quadriceps Ddit4 mRNA", 
+      c(-.9,9), 
+      c("a", "b", "b")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC) +
+      annotationastitle("one day", 2, 7.5),
+    threegeneplot(
+      rescaledtovehicleaszero(
+        InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% 
+                            c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]),
+      "quadriceps Ddit4 mRNA", 
+      c(-.9,7.5),
+      c("a", "a,b", "b")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC) +
+      annotationastitle("three days", 2, 7.5),
+    threegeneplot(
+      rescaledtovehicleaszero(
+        InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% 
+                            c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]),
+      "quadriceps Ddit4 mRNA", 
+      c(-2,7.5),
+      threeidenticalgroups) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDC) +
+      annotationastitle("seven days", 2, 7.5),
+    
     ncol = 3))
 }
 
