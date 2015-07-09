@@ -1472,39 +1472,36 @@ plotredd <- function(){
       theme(axis.text.x = element_text(color = "black")) + 
       scale_x_discrete(labels = conditionsVDC) +
       annotationastitle("seven days", 2, 7.5),
-    
-    
-    threegeneplot(
-      rescaledtovehicleaszero(
-        InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% 
-                          c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), 
-      "quadriceps Ddit4 mRNA", 
-      c(-.9,9), 
-      c("a", "b", "b")) + 
-      theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDC) +
-      annotationastitle("one day", 2, 7.5),
-    threegeneplot(
-      rescaledtovehicleaszero(
-        InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% 
-                            c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]),
-      "quadriceps Ddit4 mRNA", 
-      c(-.9,7.5),
-      c("a", "a,b", "b")) + 
-      theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDC) +
-      annotationastitle("three days", 2, 7.5),
-    threegeneplot(
-      rescaledtovehicleaszero(
-        InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% 
-                            c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]),
-      "quadriceps Ddit4 mRNA", 
-      c(-2,7.5),
-      threeidenticalgroups) + 
-      theme(axis.text.x = element_text(color = "black")) + 
-      scale_x_discrete(labels = conditionsVDC) +
-      annotationastitle("seven days", 2, 7.5),
-    
+#     threegeneplot(
+#       rescaledtovehicleaszero(
+#         InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% 
+#                           c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), 
+#       "quadriceps Ddit4 mRNA", 
+#       c(-.9,9), 
+#       c("a", "b", "b")) + 
+#       theme(axis.text.x = element_text(color = "black")) + 
+#       scale_x_discrete(labels = conditionsVDC) +
+#       annotationastitle("one day", 2, 7.5),
+#     threegeneplot(
+#       rescaledtovehicleaszero(
+#         InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% 
+#                             c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]),
+#       "quadriceps Ddit4 mRNA", 
+#       c(-.9,7.5),
+#       c("a", "a,b", "b")) + 
+#       theme(axis.text.x = element_text(color = "black")) + 
+#       scale_x_discrete(labels = conditionsVDC) +
+#       annotationastitle("three days", 2, 7.5),
+#     threegeneplot(
+#       rescaledtovehicleaszero(
+#         InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% 
+#                             c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]),
+#       "quadriceps Ddit4 mRNA", 
+#       c(-2,7.5),
+#       threeidenticalgroups) + 
+#       theme(axis.text.x = element_text(color = "black")) + 
+#       scale_x_discrete(labels = conditionsVDC) +
+#       annotationastitle("seven days", 2, 7.5),
     ncol = 3))
 }
 
@@ -2899,3 +2896,62 @@ plotinhibitorspresentation <- function() {
            theme(axis.text.x = element_text(color = "black", size = presentationTextSize * 1.4)) + 
            scale_x_discrete(labels = conditionsVDCinhibitors))
 }
+#svg("cellinhibitors.svg", width = 9, height = 5); plotinhibitorspresentation(); dev.off(); system ("inkscape cellinhibitors.svg --export-emf=cellinhibitors.emf")
+
+
+plotreddpresentation <- function(){
+  return(grid.arrange(
+    threegeneplotpresentation(
+      rescaledtovehicleaszero(
+        InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% 
+                          c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]), 
+      "", 
+      c(-.9,7.5), 
+      c("a", "b", "b")) + 
+      theme(axis.text.x =  element_blank())  ,
+    threegeneplotpresentation(
+      rescaledtovehicleaszero(
+        InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% 
+                            c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]),
+      "", 
+      c(-.9,7.5),
+      c("a", "a,b", "b")) + 
+      theme(axis.text.x =  element_blank()) ,
+    threegeneplotpresentation(
+      rescaledtovehicleaszero(
+        InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% 
+                            c("treatment", "gastrocnemius.Ct.Ddit4....Ct.Gapdh.")]),
+      "", 
+      c(-.9,7.5),
+      threeidenticalgroups) + 
+      theme(axis.text.x =  element_blank()),
+    threegeneplotpresentation(
+      rescaledtovehicleaszero(
+        InvivoOnedayCVD[, colnames(InvivoOnedayCVD) %in% 
+                          c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]), 
+      "", 
+      c(-.9,9), 
+      c("a", "b", "b")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    threegeneplotpresentation(
+      rescaledtovehicleaszero(
+        InvivoThreedayCVD[, colnames(InvivoThreedayCVD) %in% 
+                            c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]),
+      "", 
+      c(-.9,7.5),
+      c("a", "a,b", "b")) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap),
+    threegeneplotpresentation(
+      rescaledtovehicleaszero(
+        InvivoSevendayCVD[, colnames(InvivoSevendayCVD) %in% 
+                            c("treatment", "quadriceps.Ct.Ddit4....Ct.Gapdh.")]),
+      "", 
+      c(-2,7.5),
+      threeidenticalgroups) + 
+      theme(axis.text.x = element_text(color = "black")) + 
+      scale_x_discrete(labels = conditionsVDCpresentationwrap) ,
+    ncol = 3))
+}
+#svg("redd.svg", width = 9, height = 5); plotreddpresentation(); dev.off(); system ("inkscape redd.svg --export-emf=redd.emf")
