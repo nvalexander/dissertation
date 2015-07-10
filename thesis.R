@@ -2054,14 +2054,14 @@ plotmuscleweightspresentation <- function(){
     plotslist[[i*3-2]] <- threecolumnplotpresentation(shortdf1, ylabels[[i]], ylims[[i]], statstrings[[(i*3-2)]])
     plotslist[[i*3-1]] <- threecolumnplotpresentation(shortdf3, ylabels[[i]], ylims[[i]], statstrings[[(i*3-1)]])
     plotslist[[i*3]] <- threecolumnplotpresentation(shortdf7, ylabels[[i]], ylims[[i]], statstrings[[(i*3)]])
-    if ((columnnames[[i]] == "gastrocnemius..mg.") | (columnnames[[i]] == "triceps..mg.")){
-      plotslist[[i*3-2]] <- plotslist[[i*3-2]] +
-        annotationastitlepresentation("one day", 2, ylims[[i]][[2]])
-      plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
-        annotationastitlepresentation("three days", 2, ylims[[i]][[2]])
-      plotslist[[i*3]] <- plotslist[[i*3]] + 
-        annotationastitlepresentation("seven days", 2, ylims[[i]][[2]])
-    }
+#     if ((columnnames[[i]] == "gastrocnemius..mg.") | (columnnames[[i]] == "triceps..mg.")){
+#       plotslist[[i*3-2]] <- plotslist[[i*3-2]] +
+#         annotationastitlepresentation("one day", 2, ylims[[i]][[2]])
+#       plotslist[[i*3-1]] <- plotslist[[i*3-1]] + 
+#         annotationastitlepresentation("three days", 2, ylims[[i]][[2]])
+#       plotslist[[i*3]] <- plotslist[[i*3]] + 
+#         annotationastitlepresentation("seven days", 2, ylims[[i]][[2]])
+#     }
   }
   return(grid.arrange(
     blankgrob,
@@ -2072,8 +2072,8 @@ plotmuscleweightspresentation <- function(){
     plotslist[[7]], plotslist[[8]], plotslist[[9]], # quadriceps
     blankgrob,
     plotslist[[4]], plotslist[[5]], plotslist[[6]], # levator
-    blankgrob,
-    plotslist[[10]], plotslist[[11]], plotslist[[12]], # tibialis
+    #blankgrob,
+    #plotslist[[10]], plotslist[[11]], plotslist[[12]], # tibialis
     ncol = 8,
     widths = c(0.15, 1, 1, 1, 0.15, 1, 1, 1)))
 }
