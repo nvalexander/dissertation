@@ -1,11 +1,13 @@
-install.packages("ggplot2") # also found in Ubuntu repo
-install.packages("stringr") # also found in Ubuntu repo
-install.packages("plyr") # also found in Ubuntu repo
-install.packages("gridExtra") # also found in Ubuntu repo
-install.packages("xtable") # also found in Ubuntu repo
-install.packages("reshape2") # also found in Ubuntu repo
-install.packages("cairoDevice") # also found in Ubuntu repo
-install.packages("RCurl") # also found in Ubuntu repo
+apt-get install libcairo2-dev r-cran-ggplot2 r-cran-stringr r-cran-plyr r-cran-gridextra r-cran-xtable r-cran-reshape r-cran-cairodevice r-cran-rcurl
+options(repos=structure(c(CRAN="http://watson.nci.nih.gov/cran_mirror/")))
+#install.packages("ggplot2") # also found in Ubuntu repo
+#install.packages("stringr") # also found in Ubuntu repo
+#install.packages("plyr") # also found in Ubuntu repo
+#install.packages("gridExtra") # also found in Ubuntu repo
+#install.packages("xtable") # also found in Ubuntu repo
+#install.packages("reshape2") # also found in Ubuntu repo
+#install.packages("cairoDevice") # also found in Ubuntu repo
+#install.packages("RCurl") # also found in Ubuntu repo
 install.packages("RJSONIO")
 install.packages("PKI")
 install.packages("rstudioapi")
