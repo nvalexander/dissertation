@@ -1,4 +1,4 @@
-apt-get install libcairo2-dev libxt-dev r-cran-ggplot2 r-cran-stringr r-cran-plyr r-cran-gridextra r-cran-xtable r-cran-reshape r-cran-cairodevice r-cran-rcurl r-cran-multcomp
+apt-get install libcairo2-dev libxt-dev r-cran-ggplot2 r-cran-stringr r-cran-plyr r-cran-gridextra r-cran-xtable r-cran-reshape r-cran-cairodevice r-cran-rcurl r-cran-multcomp texlive-luatex
 options(repos=structure(c(CRAN="http://watson.nci.nih.gov/cran_mirror/")))
 #install.packages("ggplot2") # also found in Ubuntu repo
 #install.packages("stringr") # also found in Ubuntu repo
